@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>💰</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; min-height: 100vh; }
+
+  .header { background: linear-gradient(135deg, #1a1d2e 0%, #16213e 100%); padding: 22px 32px; border-bottom: 1px solid #21262d; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 1.5rem; font-weight: 700; color: #fff; }
+  .header p { color: #8b949e; font-size: 0.82rem; margin-top: 3px; }
+  .header-right { text-align: right; }
+  .header-right .updated { color: #8b949e; font-size: 0.78rem; }
+
+  .tabs { display: flex; gap: 4px; padding: 0 32px; background: #161b22; border-bottom: 1px solid #21262d; }
+  .tab { padding: 12px 20px; cursor: pointer; font-size: 0.88rem; color: #8b949e; border-bottom: 2px solid transparent; transition: all 0.2s; }
+  .tab:hover { color: #e1e4e8; }
+  .tab.active { color: #58a6ff; border-bottom-color: #58a6ff; }
+
+  .content { padding: 24px 32px; max-width: 1400px; }
+
+  .month-select { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .month-btn { padding: 6px 18px; border-radius: 20px; border: 1px solid #30363d; background: transparent; color: #8b949e; cursor: pointer; font-size: 0.83rem; transition: all 0.2s; }
+  .month-btn:hover { border-color: #58a6ff; color: #e1e4e8; }
+  .month-btn.active { background: #1f6feb; border-color: #1f6feb; color: #fff; font-weight: 600; }
+
+  .grid { display: grid; gap: 16px; }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .grid-auto { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .card-title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 10px; font-weight: 600; }
+  .stat-value { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
+  .stat-sub { font-size: 0.8rem; color: #8b949e; margin-top: 6px; }
+  .stat-badge { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-top: 6px; font-weight: 600; }
+  .badge-green { background: #23312a; color: #3fb950; }
+  .badge-red { background: #3d1f1f; color: #f85149; }
+  .badge-yellow { background: #302a1c; color: #e3b341; }
+
+  .section-label { font-size: 0.95rem; font-weight: 600; color: #c9d1d9; margin: 24px 0 12px; }
+
+  /* Chart cards */
+  .chart-card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .chart-card h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 16px; font-weight: 600; }
+  .chart-wrap { position: relative; }
+  .chart-wrap canvas { max-height: 280px; }
+
+  /* Category bars */
+  .cat-list { display: flex; flex-direction: column; gap: 14px; }
+  .cat-row { }
+  .cat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+  .cat-name { font-size: 0.85rem; font-weight: 500; }
+  .cat-nums { font-size: 0.78rem; color: #8b949e; }
+  .bar-bg { background: #21262d; border-radius: 6px; height: 8px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 6px; transition: width 0.5s ease; }
+
+  /* Table */
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  th { text-align: left; padding: 10px 14px; border-bottom: 1px solid #21262d; color: #6e7681; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+  td { padding: 10px 14px; border-bottom: 1px solid #0d1117; white-space: nowrap; }
+  tr:hover td { background: #1c2128; }
+  .text-right { text-align: right; }
+  .text-muted { color: #6e7681; }
+  .amount { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  .cat-badge { display: inline-block; padding: 2px 9px; border-radius: 4px; font-size: 0.73rem; font-weight: 600; }
+
+  /* Search / filters */
+  .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+  .filter-input { padding: 8px 12px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; color: #e1e4e8; font-size: 0.85rem; outline: none; min-width: 180px; }
+  .filter-input:focus { border-color: #58a6ff; }
+  select.filter-input { cursor: pointer; }
+
+  .tx-count { color: #6e7681; font-size: 0.78rem; margin-top: 10px; }
+
+  /* Summary table */
+  .summary-table th { text-align: right; }
+  .summary-table th:first-child { text-align: left; }
+  .summary-table td { text-align: right; }
+  .summary-table td:first-child { text-align: left; font-weight: 500; }
+  .summary-table .total-row td { font-weight: 700; border-top: 2px solid #30363d; color: #fff; padding-top: 14px; }
+  .summary-table .total-row td:first-child { color: #8b949e; }
+
+  /* Tab panels */
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* Legend */
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.78rem; color: #8b949e; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+  @media (max-width: 800px) {
+    .grid-4, .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .grid-2 { grid-template-columns: 1fr; }
+    .content { padding: 16px; }
+    .tabs { padding: 0 16px; overflow-x: auto; }
+    .header { padding: 16px; }
+  }
+  @media (max-width: 500px) {
+    .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>💰 Finance Dashboard</h1>
+    <p>Calum's personal cashflow tracker</p>
+  </div>
+  <div class="header-right">
+    <div class="updated" id="updated-label"></div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="overview">Overview</div>
+  <div class="tab" data-tab="categories">Categories</div>
+  <div class="tab" data-tab="transactions">Transactions</div>
+  <div class="tab" data-tab="summary">Monthly Summary</div>
+  <div class="tab" data-tab="compare">Compare</div>
+</div>
+
+<div class="content">
+
+  <!-- OVERVIEW -->
+  <div id="tab-overview" class="tab-panel active">
+    <div class="month-select" id="ov-months"></div>
+    <div class="grid grid-4" id="ov-stats" style="margin-bottom:20px"></div>
+    <div class="grid grid-2">
+      <div class="chart-card">
+        <h3>Spending by Category</h3>
+        <div class="chart-wrap"><canvas id="chart-donut"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Budget vs Actual</h3>
+        <div class="chart-wrap"><canvas id="chart-budget"></canvas></div>
+      </div>
+    </div>
+    
+    <div class="section-label">🔺 Highest Transactions</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>Description</th><th>Account</th><th>Category</th><th class="text-right">Amount (AED)</th></tr></thead>
+          <tbody id="ov-highest"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="section-label">⚠️ Unusual Transactions</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>Description</th><th>Account</th><th>Category</th><th class="text-right">Amount (AED)</th><th>Why unusual</th></tr></thead>
+          <tbody id="ov-unusual"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="section-label">Category Breakdown</div>
+    <div class="card">
+      <div class="cat-list" id="ov-cats"></div>
+    </div>
+    <div class="section-label">Latest Transactions</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>Description</th><th>Account</th><th>Category</th><th class="text-right">Amount (AED)</th></tr></thead>
+          <tbody id="ov-recent"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div id="tab-categories" class="tab-panel">
+    <div class="month-select" id="cat-months"></div>
+    <div class="grid grid-3" id="cat-cards"></div>
+  </div>
+
+  <!-- TRANSACTIONS -->
+  <div id="tab-transactions" class="tab-panel">
+    <div class="filters">
+      <input class="filter-input" type="text" id="tx-search" placeholder="🔍 Search...">
+      <select class="filter-input" id="tx-month">
+        <option value="">All months</option>
+      </select>
+      <select class="filter-input" id="tx-cat">
+        <option value="">All categories</option>
+      </select>
+    </div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Month</th><th>Day</th><th>Description</th><th>Account</th><th>Category</th><th class="text-right">Amount (AED)</th></tr></thead>
+          <tbody id="tx-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="tx-count" id="tx-count"></div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div id="tab-summary" class="tab-panel">
+    <div class="chart-card" style="margin-bottom:20px">
+      <h3>Monthly Spend by Category</h3>
+      <div class="chart-wrap"><canvas id="chart-monthly-bar"></canvas></div>
+    </div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div class="table-wrap">
+        <table class="summary-table" id="summary-tbl">
+          <thead><tr id="sum-head"></tr></thead>
+          <tbody id="sum-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- COMPARE -->
+  <div id="tab-compare" class="tab-panel">
+    <div class="grid grid-3" id="cmp-totals" style="margin-bottom:20px"></div>
+    <div class="grid grid-2" style="margin-bottom:16px">
+      <div class="chart-card">
+        <h3>Real Spend vs Debt Servicing</h3>
+        <div class="chart-wrap"><canvas id="chart-cmp-spend"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Total Spend vs Budget</h3>
+        <div class="chart-wrap"><canvas id="chart-cmp-budget"></canvas></div>
+      </div>
+    </div>
+    <div class="chart-card" style="margin-bottom:16px">
+      <h3>Category Trends Month by Month</h3>
+      <div class="chart-wrap"><canvas id="chart-cmp-trends" style="max-height:320px"></canvas></div>
+    </div>
+    <div class="section-label">Biggest Month-on-Month Swings</div>
+    <div class="grid grid-3" id="cmp-movers"></div>
+  </div>
+</div>
+
+<script>
+// ── Data ───────────────────────────────────────────────────────────────────
+const ALL_TRANSACTIONS = [{"month":"Mar 26","day":1,"description":"Futures","account":"Binance","amount":720,"need":"","category":"Gambling"},{"month":"Mar 26","day":2,"description":"TESCO BANK","account":"BoS","amount":1500,"need":5,"category":"Loan"},{"month":"Mar 26","day":2,"description":"AMEX","account":"BoS","amount":8200,"need":5,"category":"Loan"},{"month":"Mar 26","day":2,"description":"PET HEALTH CLUB","account":"BoS","amount":141.25,"need":4,"category":"Health"},{"month":"Mar 26","day":2,"description":"Gambling","account":"BoS","amount":1000,"need":3,"category":"Gambling"},{"month":"Mar 26","day":3,"description":"JACKSFLIGHTCLUB","account":"BoS","amount":175,"need":3,"category":"Business"},{"month":"Mar 26","day":3,"description":"BOXICA","account":"ADIB","amount":949,"need":4,"category":"Health"},{"month":"Mar 26","day":3,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":3,"description":"Deliveroo","account":"ADIB","amount":36.95,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":4,"description":"AGRIA PET INS","account":"BoS","amount":593.1,"need":4,"category":"Health"},{"month":"Mar 26","day":4,"description":"GiffGaff","account":"Wise","amount":100,"need":2,"category":"Life"},{"month":"Mar 26","day":4,"description":"Futures","account":"Binance","amount":327.6,"need":"","category":"Gambling"},{"month":"Mar 26","day":4,"description":"Krispy Kreme","account":"ADIB","amount":20,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":4,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":4,"description":"Deliveroo","account":"ADIB","amount":19.95,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":5,"description":"MBNA","account":"BoS","amount":1017.15,"need":5,"category":"Loan"},{"month":"Mar 26","day":5,"description":"APPLE.COM/BILL","account":"BoS","amount":59.95,"need":3,"category":"Life"},{"month":"Mar 26","day":6,"description":"PhantomBuster","account":"Wise","amount":300,"need":4,"category":"Business"},{"month":"Mar 26","day":6,"description":"ENOC","account":"ADIB","amount":12.5,"need":2,"category":"Life"},{"month":"Mar 26","day":6,"description":"ENOC","account":"ADIB","amount":36.75,"need":2,"category":"Life"},{"month":"Mar 26","day":6,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":7,"description":"Oura Ring","account":"ADIB","amount":6.99,"need":3,"category":"Health"},{"month":"Mar 26","day":8,"description":"Abby (Virtual PA - Philippines)","account":"Wise","amount":700,"need":3,"category":"Business"},{"month":"Mar 26","day":8,"description":"Futures","account":"Binance","amount":590.4,"need":"","category":"Gambling"},{"month":"Mar 26","day":8,"description":"InstaShop","account":"ADIB","amount":46.7,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":9,"description":"HSBC CREDIT CARD","account":"BoS","amount":200.55,"need":5,"category":"Loan"},{"month":"Mar 26","day":9,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":10,"description":"Amazon.ae","account":"ADIB","amount":109,"need":3,"category":"Life"},{"month":"Mar 26","day":10,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":10,"description":"Deliveroo","account":"ADIB","amount":44.95,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":10,"description":"Deliveroo","account":"ADIB","amount":52.83,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":10,"description":"International Fee","account":"ADIB","amount":0.54,"need":1,"category":"Business"},{"month":"Mar 26","day":10,"description":"VAT Charge","account":"ADIB","amount":0.03,"need":1,"category":"Business"},{"month":"Mar 26","day":11,"description":"AQUA CREDIT CARD","account":"BoS","amount":746.6,"need":5,"category":"Loan"},{"month":"Mar 26","day":11,"description":"AI Homaizi Foods","account":"ADIB","amount":12.54,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":11,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":12,"description":"WIDGIT","account":"ADIB","amount":24,"need":3,"category":"Business"},{"month":"Mar 26","day":12,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":12,"description":"REELLY PERSONAL","account":"ADIB","amount":179.9,"need":3,"category":"Business"},{"month":"Mar 26","day":12,"description":"Deliveroo","account":"ADIB","amount":36.95,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":13,"description":"APPLE.COM/BILL","account":"BoS","amount":59.95,"need":3,"category":"Life"},{"month":"Mar 26","day":13,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":13,"description":"International Fee","account":"ADIB","amount":0.48,"need":1,"category":"Business"},{"month":"Mar 26","day":13,"description":"VAT Charge","account":"ADIB","amount":0.02,"need":1,"category":"Business"},{"month":"Mar 26","day":14,"description":"Futures","account":"Binance","amount":720,"need":"","category":"Gambling"},{"month":"Mar 26","day":14,"description":"InstaShop","account":"ADIB","amount":30.55,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":14,"description":"InstaShop","account":"ADIB","amount":30.55,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":15,"description":"Futures","account":"Binance","amount":72,"need":"","category":"Gambling"},{"month":"Mar 26","day":15,"description":"YouTube Premium","account":"ADIB","amount":26.99,"need":3,"category":"Entertainment"},{"month":"Mar 26","day":15,"description":"ADNOC","account":"ADIB","amount":12.75,"need":2,"category":"Life"},{"month":"Mar 26","day":15,"description":"InstaShop","account":"ADIB","amount":32.45,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":15,"description":"InstaShop","account":"ADIB","amount":53.2,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":15,"description":"Deliveroo","account":"ADIB","amount":205.9,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":16,"description":"Futures","account":"Binance","amount":601.2,"need":"","category":"Gambling"},{"month":"Mar 26","day":16,"description":"FITT Meals","account":"ADIB","amount":721.47,"need":4,"category":"Base Food"},{"month":"Mar 26","day":16,"description":"ADNOC","account":"ADIB","amount":44.5,"need":2,"category":"Life"},{"month":"Mar 26","day":16,"description":"InstaShop","account":"ADIB","amount":30.55,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":16,"description":"InstaShop","account":"ADIB","amount":30.55,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":16,"description":"InstaShop","account":"ADIB","amount":30.55,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":16,"description":"InstaShop","account":"ADIB","amount":30.55,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":17,"description":"APPLE.COM/BILL","account":"BoS","amount":59.95,"need":3,"category":"Life"},{"month":"Mar 26","day":17,"description":"Amazon.ae","account":"ADIB","amount":109,"need":3,"category":"Life"},{"month":"Mar 26","day":17,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":17,"description":"Deliveroo","account":"ADIB","amount":44.95,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":17,"description":"Deliveroo","account":"ADIB","amount":52.83,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":17,"description":"International Fee","account":"ADIB","amount":0.54,"need":1,"category":"Business"},{"month":"Mar 26","day":17,"description":"VAT Charge","account":"ADIB","amount":0.03,"need":1,"category":"Business"},{"month":"Mar 26","day":18,"description":"AMERICAN EXPRESS","account":"BoS","amount":1047.8,"need":5,"category":"Loan"},{"month":"Mar 26","day":18,"description":"tazizi","account":"ADIB","amount":31,"need":3,"category":"Deliveries"},{"month":"Mar 26","day":18,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":18,"description":"Deliveroo","account":"ADIB","amount":36.95,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":19,"description":"MBNA","account":"BoS","amount":245.6,"need":5,"category":"Loan"},{"month":"Mar 26","day":20,"description":"BOXICA","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Mar 26","day":31,"description":"OVERDRAFT INTEREST (TOTAL)","account":"BoS","amount":350,"need":5,"category":"Loan"},{"month":"Mar 26","day":31,"description":"Ali Vids (Content business)","account":"Mashreq","amount":6000,"need":4,"category":"Business"},{"month":"Mar 26","day":31,"description":"Tal Bills","account":"BoS","amount":5000,"need":5,"category":"Life"},{"month":"Mar 26","day":23,"description":"Barclaycard","account":"BoS","amount":450,"need":5,"category":"Loan"},{"month":"Mar 26","day":23,"description":"Santander","account":"BoS","amount":600,"need":5,"category":"Loan"},{"month":"Mar 26","day":23,"description":"Virgin","account":"BoS","amount":760,"need":5,"category":"Loan"},{"month":"Mar 26","day":24,"description":"Corrina","account":"BoS","amount":750,"need":5,"category":"Loan"},{"month":"Mar 26","day":25,"description":"APPLE.COM/BILL","account":"BoS","amount":45,"need":2,"category":"Life"},{"month":"Mar 26","day":25,"description":"Amex","account":"BoS","amount":1100,"need":5,"category":"Loan"},{"month":"Mar 26","day":26,"description":"Charger & Dareem","account":"Tal Card","amount":300,"need":4,"category":"Business"},{"month":"Feb 26","day":2,"description":"Deliveroo","account":"ADIB","amount":95.9,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":2,"description":"Deliveroo","account":"ADIB","amount":147.4,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":2,"description":"Hamlam Trading","account":"ADIB","amount":29,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":2,"description":"Boxica Membership","account":"ADIB","amount":949,"need":4,"category":"Health"},{"month":"Feb 26","day":2,"description":"Deliveroo","account":"ADIB","amount":44.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":2,"description":"Elite Vita Polyclinic","account":"ADIB","amount":3500,"need":5,"category":"Health"},{"month":"Feb 26","day":2,"description":"Deliveroo","account":"ADIB","amount":241.25,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":2,"description":"MBNA LIMITED","account":"BoS","amount":1024.65,"need":5,"category":"Loan"},{"month":"Feb 26","day":2,"description":"PET HEALTH CLUB","account":"BoS","amount":141.25,"need":4,"category":"Health"},{"month":"Feb 26","day":3,"description":"Baskin Robbins","account":"ADIB","amount":26,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":3,"description":"Deliveroo","account":"ADIB","amount":68.05,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":4,"description":"Zofeur","account":"ADIB","amount":57.93,"need":2,"category":"Life"},{"month":"Feb 26","day":4,"description":"Starbucks","account":"ADIB","amount":7,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":4,"description":"Caribou Coffee","account":"ADIB","amount":30.5,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":5,"description":"Circle K Fuel","account":"ADIB","amount":166,"need":2,"category":"Life"},{"month":"Feb 26","day":5,"description":"InstaShop","account":"ADIB","amount":40.15,"need":3,"category":"Deliveries"},{"month":"Feb 26","day":5,"description":"APPLE.COM/BILL","account":"BoS","amount":59.95,"need":3,"category":"Life"},{"month":"Feb 26","day":5,"description":"HSBC CREDIT CARD","account":"BoS","amount":205.7,"need":5,"category":"Loan"},{"month":"Feb 26","day":6,"description":"Deliveroo","account":"ADIB","amount":23.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":7,"description":"InstaShop","account":"ADIB","amount":50.45,"need":3,"category":"Deliveries"},{"month":"Feb 26","day":7,"description":"Boxica Coffee","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":7,"description":"Caribou Coffee","account":"ADIB","amount":20,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":7,"description":"Deliveroo","account":"ADIB","amount":50.05,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":7,"description":"ADNOC Fuel","account":"ADIB","amount":109.37,"need":2,"category":"Life"},{"month":"Feb 26","day":8,"description":"Abby (Virtual PA - Philippines)","account":"Wise","amount":700,"need":3,"category":"Business"},{"month":"Feb 26","day":9,"description":"Innovative Beauty","account":"ADIB","amount":300,"need":3,"category":"Health"},{"month":"Feb 26","day":9,"description":"Mangrove Market","account":"ADIB","amount":2.5,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":9,"description":"Amusement","account":"ADIB","amount":10,"need":3,"category":"Entertainment"},{"month":"Feb 26","day":9,"description":"Oura Ring","account":"ADIB","amount":26.57,"need":3,"category":"Health"},{"month":"Feb 26","day":9,"description":"Starbucks","account":"ADIB","amount":76,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":9,"description":"Westin","account":"ADIB","amount":485,"need":3,"category":"Business"},{"month":"Feb 26","day":9,"description":"Virgin Mobile","account":"ADIB","amount":105,"need":3,"category":"Life"},{"month":"Feb 26","day":9,"description":"Parking","account":"ADIB","amount":30,"need":2,"category":"Life"},{"month":"Feb 26","day":9,"description":"Limitless Park","account":"ADIB","amount":70,"need":3,"category":"Entertainment"},{"month":"Feb 26","day":9,"description":"AQUA CREDIT CARD","account":"BoS","amount":140.4,"need":5,"category":"Loan"},{"month":"Feb 26","day":10,"description":"Deliveroo","account":"ADIB","amount":74.25,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":10,"description":"Deliveroo","account":"ADIB","amount":101.4,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":10,"description":"Deliveroo","account":"ADIB","amount":65.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":10,"description":"Virgin Mobile","account":"ADIB","amount":157.5,"need":3,"category":"Life"},{"month":"Feb 26","day":11,"description":"Coffee","account":"Wise","amount":40,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":11,"description":"Deliveroo","account":"Wise","amount":85,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":11,"description":"Boxica Coffee","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":11,"description":"Deliveroo","account":"ADIB","amount":44.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":11,"description":"InstaShop","account":"ADIB","amount":92.41,"need":3,"category":"Deliveries"},{"month":"Feb 26","day":12,"description":"Deliveroo","account":"Wise","amount":45,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":12,"description":"Cafu","account":"Wise","amount":120,"need":5,"category":"Life"},{"month":"Feb 26","day":12,"description":"Manychat","account":"Wise","amount":55,"need":1,"category":"Business"},{"month":"Feb 26","day":13,"description":"Coffee","account":"Wise","amount":60,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":13,"description":"OpenAI","account":"Wise","amount":100,"need":4,"category":"Business"},{"month":"Feb 26","day":13,"description":"Tradingview","account":"Wise","amount":55,"need":1,"category":"Business"},{"month":"Feb 26","day":13,"description":"Golf","account":"Wise","amount":200,"need":3,"category":"Entertainment"},{"month":"Feb 26","day":13,"description":"Widgit","account":"ADIB","amount":24,"need":4,"category":"Business"},{"month":"Feb 26","day":13,"description":"International Fee","account":"ADIB","amount":0.48,"need":1,"category":"Business"},{"month":"Feb 26","day":13,"description":"VAT Charge","account":"ADIB","amount":0.02,"need":1,"category":"Business"},{"month":"Feb 26","day":14,"description":"Boxica Coffee","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":16,"description":"Hamlam Trading","account":"ADIB","amount":27,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":16,"description":"Reelly Personal","account":"ADIB","amount":179.9,"need":4,"category":"Business"},{"month":"Feb 26","day":16,"description":"Hamlam Trading","account":"ADIB","amount":29,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":16,"description":"Deliveroo","account":"ADIB","amount":97.4,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":16,"description":"Deliveroo","account":"ADIB","amount":568.7,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":16,"description":"Deliveroo","account":"ADIB","amount":52.15,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":16,"description":"MBNA LIMITED","account":"BoS","amount":251.9,"need":5,"category":"Loan"},{"month":"Feb 26","day":17,"description":"Tasheel","account":"Wise","amount":110,"need":3,"category":"Business"},{"month":"Feb 26","day":17,"description":"Hill House","account":"ADIB","amount":245,"need":3,"category":"Entertainment"},{"month":"Feb 26","day":17,"description":"Youtube Premium","account":"ADIB","amount":26.99,"need":3,"category":"Business"},{"month":"Feb 26","day":17,"description":"Tashas","account":"ADIB","amount":29,"need":3,"category":"Deliveries"},{"month":"Feb 26","day":17,"description":"Deliveroo","account":"ADIB","amount":44.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":17,"description":"Deliveroo","account":"ADIB","amount":23.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":17,"description":"Deliveroo","account":"ADIB","amount":74.25,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":17,"description":"International Fee","account":"ADIB","amount":0.54,"need":1,"category":"Business"},{"month":"Feb 26","day":17,"description":"VAT Charge","account":"ADIB","amount":0.03,"need":1,"category":"Business"},{"month":"Feb 26","day":18,"description":"Motor City","account":"ADIB","amount":50,"need":3,"category":"Life"},{"month":"Feb 26","day":18,"description":"Careem","account":"ADIB","amount":38.66,"need":2,"category":"Life"},{"month":"Feb 26","day":18,"description":"Deliveroo","account":"ADIB","amount":53.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":18,"description":"AMERICAN EXPRESS","account":"BoS","amount":1433.95,"need":5,"category":"Loan"},{"month":"Feb 26","day":19,"description":"InstaShop","account":"ADIB","amount":128.94,"need":3,"category":"Deliveries"},{"month":"Feb 26","day":19,"description":"Caribou Coffee","account":"ADIB","amount":20,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":19,"description":"Starbucks","account":"ADIB","amount":43,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":19,"description":"Deliveroo","account":"ADIB","amount":36.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":19,"description":"Deliveroo","account":"ADIB","amount":114.9,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":20,"description":"Deliveroo","account":"ADIB","amount":49.05,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":20,"description":"InstaShop","account":"ADIB","amount":31.2,"need":3,"category":"Deliveries"},{"month":"Feb 26","day":20,"description":"Deliveroo","account":"ADIB","amount":19.95,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":20,"description":"Deliveroo","account":"ADIB","amount":55.85,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":20,"description":"Deliveroo","account":"ADIB","amount":160.4,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":20,"description":"Boxica Coffee","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":20,"description":"SANTANDER CARDS","account":"BoS","amount":588.3,"need":5,"category":"Loan"},{"month":"Feb 26","day":21,"description":"Futures","account":"Binance","amount":687.6,"need":1,"category":"Gambling"},{"month":"Feb 26","day":21,"description":"Caribou Coffee","account":"ADIB","amount":20,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":21,"description":"Deliveroo","account":"ADIB","amount":70.9,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":21,"description":"InstaShop","account":"ADIB","amount":169.14,"need":3,"category":"Deliveries"},{"month":"Feb 26","day":21,"description":"Deliveroo","account":"ADIB","amount":98.9,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":21,"description":"ADNOC Fuel","account":"ADIB","amount":117.67,"need":2,"category":"Life"},{"month":"Feb 26","day":23,"description":"Deliveroo","account":"Wise","amount":90,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":23,"description":"Deliveroo","account":"ADIB","amount":71.6,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":23,"description":"Deliveroo","account":"ADIB","amount":49.55,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":23,"description":"Boxica Coffee","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":23,"description":"Deliveroo","account":"ADIB","amount":35.35,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":23,"description":"Deliveroo","account":"ADIB","amount":137.4,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":23,"description":"M&S CREDIT CARD","account":"BoS","amount":802.85,"need":5,"category":"Loan"},{"month":"Feb 26","day":23,"description":"VIRGIN MONEY","account":"BoS","amount":790.1,"need":5,"category":"Loan"},{"month":"Feb 26","day":23,"description":"BARCLAYCARD VISA","account":"BoS","amount":420.5,"need":5,"category":"Loan"},{"month":"Feb 26","day":24,"description":"Boxica Coffee","account":"ADIB","amount":18,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":25,"description":"Coffee","account":"Wise","amount":20,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":26,"description":"AGRIA PET INS","account":"BoS","amount":593.1,"need":4,"category":"Health"},{"month":"Feb 26","day":27,"description":"Food","account":"Wise","amount":130,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":28,"description":"Manychat","account":"Wise","amount":55,"need":1,"category":"Business"},{"month":"Feb 26","day":28,"description":"Deliveroo","account":"ADIB","amount":140.9,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":28,"description":"Deliveroo","account":"ADIB","amount":93.9,"need":2,"category":"Deliveries"},{"month":"Feb 26","day":28,"description":"OVERDRAFT INTEREST (TOTAL)","account":"BoS","amount":300,"need":5,"category":"Loan"},{"month":"Feb 26","day":28,"description":"Ali Vids","account":"Mashreq","amount":6000,"need":4,"category":"Business"},{"month":"Feb 26","day":28,"description":"Tal Bills","account":"BoS","amount":5000,"need":5,"category":"Life"},{"month":"Mar 26","day":26,"description":"Claude Subscription","account":"Wise","amount":86.94,"category":"Business"},{"month":"Mar 26","day":29,"description":"Anthropic (Max)","account":"Wise","amount":881.57,"category":"Business"},{"month":"Mar 26","day":29,"description":"Anthropic (Max)","account":"Wise","amount":263.14,"category":"Business"},{"month":"Mar 26","day":29,"description":"Anthropic (Max)","account":"Wise","amount":21.88,"category":"Business"},{"month":"Jan 26","day":2,"description":"MBNA LIMITED","account":"BoS","amount":1021.35,"category":"Loan"},{"month":"Jan 26","day":5,"description":"HSBC CREDIT CARD","account":"BoS","amount":203.83,"category":"Loan"},{"month":"Jan 26","day":8,"description":"AQUA CREDIT CARD","account":"BoS","amount":136.98,"category":"Loan"},{"month":"Jan 26","day":15,"description":"MBNA LIMITED","account":"BoS","amount":249.61,"category":"Loan"},{"month":"Jan 26","day":19,"description":"AMERICAN EXPRESS","account":"BoS","amount":854.14,"category":"Loan"},{"month":"Jan 26","day":20,"description":"SANTANDER CARDS","account":"BoS","amount":574.05,"category":"Loan"},{"month":"Jan 26","day":22,"description":"M&S CREDIT CARD","account":"BoS","amount":795.45,"category":"Loan"},{"month":"Jan 26","day":23,"description":"BARCLAYCARD PLAT VISA","account":"BoS","amount":410.31,"category":"Loan"},{"month":"Jan 26","day":26,"description":"VIRGIN MONEY","account":"BoS","amount":778.84,"category":"Loan"},{"month":"Jan 26","day":29,"description":"TESCO BANK","account":"BoS","amount":1178.52,"category":"Loan"},{"month":"Jan 26","day":2,"description":"PET HEALTH CLUB","account":"BoS","amount":136.45,"category":"Health"},{"month":"Jan 26","day":26,"description":"AGRIA PET INS","account":"BoS","amount":572.93,"category":"Health"},{"month":"Jan 26","day":6,"description":"APPLE.COM/BILL","account":"BoS","amount":57.91,"category":"Life"},{"month":"Jan 26","day":14,"description":"APPLE.COM/BILL","account":"BoS","amount":57.91,"category":"Life"},{"month":"Jan 26","day":14,"description":"APPLE.COM/BILL","account":"BoS","amount":57.91,"category":"Life"},{"month":"Jan 26","day":26,"description":"APPLE.COM/BILL","account":"BoS","amount":43.42,"category":"Life"},{"month":"Jan 26","day":5,"description":"JAMES GIBSON","account":"BoS","amount":676.2,"category":"Gambling"},{"month":"Jan 26","day":23,"description":"CORRINA FLAHER","account":"BoS","amount":724.5,"category":"Loan"},{"month":"Jan 26","day":31,"description":"OVERDRAFT INTEREST (TOTAL)","account":"BoS","amount":284.97,"category":"Loan"},{"month":"Feb 26","day":2,"description":"ALEX CASH","account":"BoS","amount":966,"category":"Loan"},{"month":"Feb 26","day":9,"description":"MARK KELLY","account":"BoS","amount":483,"category":"Base Food"},{"month":"Feb 26","day":25,"description":"CORRINA FLAHER","account":"BoS","amount":724.5,"category":"Loan"},{"month":"Feb 26","day":13,"description":"APPLE.COM/BILL","account":"BoS","amount":57.91,"category":"Life"},{"month":"Feb 26","day":16,"description":"APPLE.COM/BILL","account":"BoS","amount":57.91,"category":"Life"},{"month":"Feb 26","day":24,"description":"APPLE.COM/BILL","account":"BoS","amount":43.42,"category":"Life"},{"month":"Mar 26","day":2,"description":"JAMES GIBSON","account":"BoS","amount":966,"category":"Gambling"},{"month":"Mar 26","day":16,"description":"Nationwide (Property)","account":"BoS","amount":241.5,"category":"Life"},{"month":"Mar 26","day":24,"description":"Nationwide (Property)","account":"BoS","amount":193.2,"category":"Life"},{"month":"Mar 26","day":24,"description":"M&S CREDIT CARD","account":"BoS","amount":756.18,"category":"Loan"},{"month":"Mar 26","day":24,"description":"APPLE.COM/BILL","account":"BoS","amount":43.42,"category":"Life"},{"month":"Jan 26","day":1,"description":"ENOC","account":"ADIB CC","amount":130.34,"category":"Life"},{"month":"Jan 26","day":12,"description":"ADNOC","account":"ADIB CC","amount":116.74,"category":"Life"},{"month":"Jan 26","day":15,"description":"ADNOC","account":"ADIB CC","amount":118.29,"category":"Life"},{"month":"Jan 26","day":22,"description":"CAFU","account":"ADIB CC","amount":19.95,"category":"Life"},{"month":"Jan 26","day":22,"description":"CAFU","account":"ADIB CC","amount":116.39,"category":"Life"},{"month":"Jan 26","day":30,"description":"ADNOC","account":"ADIB CC","amount":117.83,"category":"Life"},{"month":"Jan 26","day":15,"description":"CAFU","account":"ADIB CC","amount":7.95,"category":"Life"},{"month":"Jan 26","day":15,"description":"CAFU (large fill)","account":"ADIB CC","amount":659,"category":"Life"},{"month":"Jan 26","day":1,"description":"SPINNEYS","account":"ADIB CC","amount":121,"category":"Base Food"},{"month":"Jan 26","day":5,"description":"Amazon Grocery","account":"ADIB CC","amount":53,"category":"Base Food"},{"month":"Jan 26","day":5,"description":"Amazon Grocery","account":"ADIB CC","amount":48,"category":"Base Food"},{"month":"Jan 26","day":16,"description":"HAMLAM TRADING","account":"ADIB CC","amount":39.95,"category":"Base Food"},{"month":"Jan 26","day":16,"description":"carrefouruae.com","account":"ADIB CC","amount":181.48,"category":"Base Food"},{"month":"Jan 26","day":19,"description":"VALUE BASKET","account":"ADIB CC","amount":45,"category":"Base Food"},{"month":"Jan 26","day":19,"description":"VALUE BASKET","account":"ADIB CC","amount":156,"category":"Base Food"},{"month":"Jan 26","day":19,"description":"FITT MEALS","account":"ADIB CC","amount":2258.94,"category":"Base Food"},{"month":"Jan 26","day":20,"description":"SPINNEYS","account":"ADIB CC","amount":236.75,"category":"Base Food"},{"month":"Jan 26","day":12,"description":"HAMLAM TRADING","account":"ADIB CC","amount":38,"category":"Base Food"},{"month":"Jan 26","day":5,"description":"Groupon","account":"ADIB CC","amount":549,"category":"Entertainment"},{"month":"Jan 26","day":1,"description":"InstaShop","account":"ADIB CC","amount":92.89,"category":"Deliveries"},{"month":"Jan 26","day":1,"description":"InstaShop","account":"ADIB CC","amount":76.55,"category":"Deliveries"},{"month":"Jan 26","day":1,"description":"InstaShop","account":"ADIB CC","amount":64.45,"category":"Deliveries"},{"month":"Jan 26","day":1,"description":"InstaShop","account":"ADIB CC","amount":180.13,"category":"Deliveries"},{"month":"Jan 26","day":1,"description":"InstaShop","account":"ADIB CC","amount":81.25,"category":"Deliveries"},{"month":"Jan 26","day":3,"description":"Deliveroo","account":"ADIB CC","amount":111.4,"category":"Deliveries"},{"month":"Jan 26","day":3,"description":"InstaShop","account":"ADIB CC","amount":89.22,"category":"Deliveries"},{"month":"Jan 26","day":5,"description":"Deliveroo","account":"ADIB CC","amount":105.9,"category":"Deliveries"},{"month":"Jan 26","day":6,"description":"Deliveroo","account":"ADIB CC","amount":73.83,"category":"Deliveries"},{"month":"Jan 26","day":6,"description":"InstaShop","account":"ADIB CC","amount":91.86,"category":"Deliveries"},{"month":"Jan 26","day":6,"description":"Deliveroo","account":"ADIB CC","amount":79.45,"category":"Deliveries"},{"month":"Jan 26","day":7,"description":"CARIBOU COFFEE","account":"ADIB CC","amount":20,"category":"Deliveries"},{"month":"Jan 26","day":8,"description":"tazizi","account":"ADIB CC","amount":21,"category":"Deliveries"},{"month":"Jan 26","day":8,"description":"Deliveroo","account":"ADIB CC","amount":65.95,"category":"Deliveries"},{"month":"Jan 26","day":9,"description":"Deliveroo","account":"ADIB CC","amount":74.25,"category":"Deliveries"},{"month":"Jan 26","day":9,"description":"Deliveroo","account":"ADIB CC","amount":112.4,"category":"Deliveries"},{"month":"Jan 26","day":10,"description":"Deliveroo","account":"ADIB CC","amount":158.9,"category":"Deliveries"},{"month":"Jan 26","day":10,"description":"CARIBOU COFFEE","account":"ADIB CC","amount":34,"category":"Deliveries"},{"month":"Jan 26","day":12,"description":"BOXICA Coffee","account":"ADIB CC","amount":18,"category":"Deliveries"},{"month":"Jan 26","day":12,"description":"STARBUCKS","account":"ADIB CC","amount":19,"category":"Deliveries"},{"month":"Jan 26","day":13,"description":"Deliveroo","account":"ADIB CC","amount":44.95,"category":"Deliveries"},{"month":"Jan 26","day":14,"description":"tazizi","account":"ADIB CC","amount":38,"category":"Deliveries"},{"month":"Jan 26","day":14,"description":"InstaShop","account":"ADIB CC","amount":53.49,"category":"Deliveries"},{"month":"Jan 26","day":14,"description":"Deliveroo","account":"ADIB CC","amount":74.25,"category":"Deliveries"},{"month":"Jan 26","day":14,"description":"InstaShop","account":"ADIB CC","amount":106.09,"category":"Deliveries"},{"month":"Jan 26","day":15,"description":"MCDONALDS","account":"ADIB CC","amount":23,"category":"Deliveries"},{"month":"Jan 26","day":15,"description":"InstaShop","account":"ADIB CC","amount":136.95,"category":"Deliveries"},{"month":"Jan 26","day":15,"description":"Deliveroo","account":"ADIB CC","amount":100.4,"category":"Deliveries"},{"month":"Jan 26","day":15,"description":"Deliveroo","account":"ADIB CC","amount":158.9,"category":"Deliveries"},{"month":"Jan 26","day":16,"description":"CARIBOU COFFEE","account":"ADIB CC","amount":20,"category":"Deliveries"},{"month":"Jan 26","day":16,"description":"CARIBOU COFFEE","account":"ADIB CC","amount":20,"category":"Deliveries"},{"month":"Jan 26","day":16,"description":"InstaShop","account":"ADIB CC","amount":136.95,"category":"Deliveries"},{"month":"Jan 26","day":17,"description":"Deliveroo","account":"ADIB CC","amount":44.95,"category":"Deliveries"},{"month":"Jan 26","day":17,"description":"CARIBOU COFFEE","account":"ADIB CC","amount":20,"category":"Deliveries"},{"month":"Jan 26","day":17,"description":"Deliveroo","account":"ADIB CC","amount":68.35,"category":"Deliveries"},{"month":"Jan 26","day":19,"description":"tazizi","account":"ADIB CC","amount":22,"category":"Deliveries"},{"month":"Jan 26","day":19,"description":"Deliveroo","account":"ADIB CC","amount":66.85,"category":"Deliveries"},{"month":"Jan 26","day":19,"description":"InstaShop","account":"ADIB CC","amount":177.95,"category":"Deliveries"},{"month":"Jan 26","day":19,"description":"BOXICA Coffee","account":"ADIB CC","amount":53,"category":"Deliveries"},{"month":"Jan 26","day":19,"description":"Deliveroo","account":"ADIB CC","amount":190.9,"category":"Deliveries"},{"month":"Jan 26","day":20,"description":"THE LIME TREE CAFE","account":"ADIB CC","amount":168,"category":"Deliveries"},{"month":"Jan 26","day":20,"description":"InstaShop","account":"ADIB CC","amount":99.69,"category":"Deliveries"},{"month":"Jan 26","day":21,"description":"Deliveroo","account":"ADIB CC","amount":25.3,"category":"Deliveries"},{"month":"Jan 26","day":21,"description":"BOXICA Coffee","account":"ADIB CC","amount":18,"category":"Deliveries"},{"month":"Jan 26","day":21,"description":"Deliveroo","account":"ADIB CC","amount":98.9,"category":"Deliveries"},{"month":"Jan 26","day":24,"description":"Deliveroo","account":"ADIB CC","amount":74.25,"category":"Deliveries"},{"month":"Jan 26","day":24,"description":"BOXICA Coffee","account":"ADIB CC","amount":18,"category":"Deliveries"},{"month":"Jan 26","day":26,"description":"Deliveroo","account":"ADIB CC","amount":69.4,"category":"Deliveries"},{"month":"Jan 26","day":26,"description":"Deliveroo","account":"ADIB CC","amount":28.6,"category":"Deliveries"},{"month":"Jan 26","day":26,"description":"InstaShop","account":"ADIB CC","amount":61.95,"category":"Deliveries"},{"month":"Jan 26","day":26,"description":"Deliveroo","account":"ADIB CC","amount":44.95,"category":"Deliveries"},{"month":"Jan 26","day":26,"description":"Deliveroo","account":"ADIB CC","amount":115.7,"category":"Deliveries"},{"month":"Jan 26","day":28,"description":"Deliveroo","account":"ADIB CC","amount":44.95,"category":"Deliveries"},{"month":"Jan 26","day":29,"description":"BOXICA Coffee","account":"ADIB CC","amount":18,"category":"Deliveries"},{"month":"Jan 26","day":30,"description":"Deliveroo","account":"ADIB CC","amount":44.95,"category":"Deliveries"},{"month":"Jan 26","day":31,"description":"CARIBOU COFFEE","account":"ADIB CC","amount":20,"category":"Deliveries"},{"month":"Jan 26","day":31,"description":"BOXICA Coffee","account":"ADIB CC","amount":18,"category":"Deliveries"},{"month":"Jan 26","day":2,"description":"BOXICA Membership","account":"ADIB CC","amount":949,"category":"Health"},{"month":"Jan 26","day":5,"description":"IBN SINA PHARMACY","account":"ADIB CC","amount":21,"category":"Health"},{"month":"Jan 26","day":9,"description":"OURA RING","account":"ADIB CC","amount":26.57,"category":"Health"},{"month":"Jan 26","day":12,"description":"KINGS COLLEGE HOSPITAL","account":"ADIB CC","amount":30,"category":"Health"},{"month":"Jan 26","day":16,"description":"ELITE VITA POLYCLINIC","account":"ADIB CC","amount":3500,"category":"Health"},{"month":"Jan 26","day":17,"description":"MEDISOUQ PHARMACY","account":"ADIB CC","amount":1950,"category":"Health"},{"month":"Jan 26","day":19,"description":"LIFE PHARMACY","account":"ADIB CC","amount":141.35,"category":"Health"},{"month":"Jan 26","day":7,"description":"CAREEM","account":"ADIB CC","amount":40.25,"category":"Life"},{"month":"Jan 26","day":12,"description":"Careem Tip","account":"ADIB CC","amount":10,"category":"Life"},{"month":"Jan 26","day":14,"description":"Zofeur","account":"ADIB CC","amount":60.86,"category":"Life"},{"month":"Jan 26","day":15,"description":"Amazon.ae","account":"ADIB CC","amount":43.9,"category":"Life"},{"month":"Jan 26","day":19,"description":"THE BARBERSHOP","account":"ADIB CC","amount":200,"category":"Life"},{"month":"Jan 26","day":20,"description":"NEXT DIRECTORY","account":"ADIB CC","amount":509.64,"category":"Life"},{"month":"Jan 26","day":20,"description":"UBER","account":"ADIB CC","amount":123.84,"category":"Life"},{"month":"Jan 26","day":21,"description":"UBER","account":"ADIB CC","amount":428.06,"category":"Life"},{"month":"Jan 26","day":22,"description":"QIAN DRAGON LADIES SALOON","account":"ADIB CC","amount":130,"category":"Life"},{"month":"Jan 26","day":23,"description":"Careem Tip","account":"ADIB CC","amount":10,"category":"Life"},{"month":"Jan 26","day":23,"description":"CAREEM","account":"ADIB CC","amount":32.96,"category":"Life"},{"month":"Jan 26","day":24,"description":"UBER","account":"ADIB CC","amount":18.39,"category":"Life"},{"month":"Jan 26","day":26,"description":"CAREEM","account":"ADIB CC","amount":63.63,"category":"Life"},{"month":"Jan 26","day":28,"description":"CAREEM","account":"ADIB CC","amount":47.01,"category":"Life"},{"month":"Jan 26","day":28,"description":"SUITED BOOTED DUBAI","account":"ADIB CC","amount":997.5,"category":"Life"},{"month":"Jan 26","day":5,"description":"Paymob (Phone bill)","account":"ADIB CC","amount":300,"category":"Life"},{"month":"Jan 26","day":5,"description":"Montblanc","account":"ADIB CC","amount":240,"category":"Life"},{"month":"Jan 26","day":13,"description":"NSHAMA TOWN SQUARE","account":"ADIB CC","amount":190,"category":"Unaccounted"},{"month":"Jan 26","day":13,"description":"REELLY PERSONAL","account":"ADIB CC","amount":179.9,"category":"Business"},{"month":"Jan 26","day":13,"description":"WIDGIT","account":"ADIB CC","amount":24,"category":"Business"},{"month":"Jan 26","day":22,"description":"ALEXANDER BUTLER COACH","account":"ADIB CC","amount":1915.09,"category":"Business"},{"month":"Jan 26","day":17,"description":"YouTube Premium","account":"ADIB CC","amount":26.99,"category":"Entertainment"},{"month":"Jan 26","day":31,"description":"Monthly Murabaha Payment","account":"ADIB CC","amount":2408.7,"category":"Loan"},{"month":"Jan 26","day":22,"description":"Ziina Transfer","account":"ADIB CC","amount":440,"category":"Unaccounted"},{"month":"Jan 26","day":31,"description":"PMB Accept","account":"ADIB CC","amount":300,"category":"Unaccounted"},{"month":"Feb 26","day":9,"description":"Amusement Park","account":"ADIB CC","amount":10,"category":"Entertainment"},{"month":"Feb 26","day":9,"description":"Amusement Park","account":"ADIB CC","amount":20,"category":"Entertainment"},{"month":"Feb 26","day":9,"description":"Amusement Park","account":"ADIB CC","amount":10,"category":"Entertainment"},{"month":"Feb 26","day":9,"description":"Amusement Park","account":"ADIB CC","amount":10,"category":"Entertainment"},{"month":"Feb 26","day":28,"description":"Monthly Murabaha Payment","account":"ADIB CC","amount":2175.6,"category":"Loan"},{"month":"Feb 26","day":5,"description":"ATM Cash Withdrawal","account":"Mashreq","amount":100,"category":"Other"},{"month":"Feb 26","day":7,"description":"Emirates Leisure Costa (coffee)","account":"Mashreq","amount":9.5,"category":"Deliveries"},{"month":"Feb 26","day":11,"description":"Ganesh Muddam (transfer)","account":"Mashreq","amount":200,"category":"Other"},{"month":"Mar 26","day":17,"description":"ATM Cash Withdrawal","account":"Mashreq","amount":1000,"category":"Other"},{"month":"Mar 26","day":17,"description":"Clare Page (Mother's Day gift for Tal)","account":"Mashreq","amount":840,"category":"Life"},{"month":"Mar 26","day":4,"description":"Marielle Avinante","account":"Mashreq","amount":200,"category":"Unaccounted"},{"month":"Jan 26","day":1,"description":"One & Only Royal (dinner)","account":"Wise","amount":1469.09,"category":"Entertainment"},{"month":"Jan 26","day":1,"description":"Seven S FM (venue/event)","account":"Wise","amount":538.64,"category":"Entertainment"},{"month":"Jan 26","day":1,"description":"Seven S FM (venue/event)","account":"Wise","amount":293.81,"category":"Entertainment"},{"month":"Jan 26","day":3,"description":"GiffGaff","account":"Wise","amount":38.64,"category":"Life"},{"month":"Jan 26","day":7,"description":"Abby (Virtual PA - Philippines)","account":"Wise","amount":366.26,"category":"Business"},{"month":"Jan 26","day":7,"description":"Abby (Virtual PA - Philippines)","account":"Wise","amount":32.51,"category":"Business"},{"month":"Jan 26","day":13,"description":"OpenAI ChatGPT","account":"Wise","amount":86.36,"category":"Business"},{"month":"Jan 26","day":13,"description":"TradingView","account":"Wise","amount":56.46,"category":"Business"},{"month":"Jan 26","day":19,"description":"GiffGaff","account":"Wise","amount":96.6,"category":"Life"},{"month":"Jan 26","day":19,"description":"Abby (Virtual PA - Philippines)","account":"Wise","amount":294.73,"category":"Business"},{"month":"Feb 26","day":8,"description":"Abby (Virtual PA - Philippines)","account":"Wise","amount":672.92,"category":"Business"},{"month":"Feb 26","day":11,"description":"Kings College Hospital","account":"Wise","amount":69.5,"category":"Health"},{"month":"Feb 26","day":27,"description":"Kings College Hospital","account":"Wise","amount":54.87,"category":"Health"},{"month":"Mar 26","day":13,"description":"OpenAI ChatGPT","account":"Wise","amount":87.23,"category":"Business"},{"month":"Mar 26","day":22,"description":"FITT Meals","account":"Wise","amount":3090.62,"category":"Base Food"},{"month":"Mar 26","day":25,"description":"InstaShop","account":"Wise","amount":16.18,"category":"Deliveries"},{"month":"Feb 26","day":16,"description":"FITT Meals","account":"Wise","amount":2811.74,"category":"Base Food"}];
+const BUDGETS = {"May 26":{"Base Food":4000,"Deliveries":1000,"Life":6000,"Business":7000,"Entertainment":1000,"Investing":2500,"Loan":10000,"Saving":2500,"Health":5000,"Gambling":500,"Other":1000,"Unaccounted":0,"total":40500},"Apr 26":{"Base Food":4000,"Deliveries":500,"Life":2000,"Business":7000,"Entertainment":500,"Investing":250,"Loan":10000,"Saving":250,"Health":4500,"Gambling":1,"Other":999,"Unaccounted":0,"total":30000},"Mar 26":{"Base Food":4000,"Deliveries":500,"Life":2000,"Business":7000,"Entertainment":500,"Investing":250,"Loan":10000,"Saving":250,"Health":4500,"Gambling":1,"Other":999,"Unaccounted":0,"total":30000},"Feb 26":{"Base Food":4000,"Deliveries":500,"Life":2000,"Business":7000,"Entertainment":500,"Investing":250,"Loan":10000,"Saving":250,"Health":4500,"Gambling":1,"Other":999,"Unaccounted":0,"total":30000},"Jan 26":{"Base Food":4000,"Deliveries":500,"Life":2000,"Business":7000,"Entertainment":500,"Investing":250,"Loan":10000,"Saving":250,"Health":4500,"Gambling":1,"Other":999,"Unaccounted":0,"total":30000}};
+const TOTALS = {"May 26":{"Base Food":0,"Deliveries":0,"Life":0,"Business":0,"Entertainment":0,"Investing":0,"Loan":0,"Saving":0,"Health":0,"Gambling":720,"Other":0,"Unaccounted":0,"total":720},"Apr 26":{"Base Food":0,"Deliveries":0,"Life":0,"Business":0,"Entertainment":0,"Investing":0,"Loan":0,"Saving":0,"Health":0,"Gambling":0,"Other":0,"Unaccounted":0,"total":720},"Mar 26":{"Base Food":3846.4700000000003,"Deliveries":1109.45,"Life":5424.5,"Business":7780.54,"Entertainment":0,"Investing":0,"Loan":16967.699999999997,"Saving":0,"Health":949,"Gambling":4031.2,"Other":813.33,"Unaccounted":179.85000000000002,"total":41102.04000000001},"Feb 26":{"Base Food":2800,"Deliveries":4458.339999999999,"Life":5639.63,"Business":8264.46,"Entertainment":200,"Investing":0,"Loan":5958.350000000001,"Saving":0,"Health":4749,"Gambling":687.6,"Other":925.9200000000001,"Unaccounted":59.95,"total":33743.25}};
+const ALL_MONTHS = ["Apr 26","Mar 26","Feb 26","Jan 26"];
+
+// Only show months with actual transactions
+const MONTHS = ALL_MONTHS.filter(m =>
+  ALL_TRANSACTIONS.some(t => t.month === m) || (BUDGETS[m] && BUDGETS[m].total > 0)
+);
+
+const CATEGORIES = ['Base Food','Deliveries','Life','Business','Entertainment','Investing','Loan','Saving','Health','Gambling','Other','Unaccounted'];
+
+const CAT_COLOR = {
+  'Base Food':     '#3fb950',
+  'Deliveries':    '#f0883e',
+  'Life':          '#79c0ff',
+  'Business':      '#d2a8ff',
+  'Entertainment': '#ffa657',
+  'Investing':     '#58a6ff',
+  'Loan':          '#f85149',
+  'Saving':        '#56d364',
+  'Health':        '#39d353',
+  'Gambling':      '#e3b341',
+  'Other':         '#8b949e',
+  'Unaccounted':   '#6e7681',
+};
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+const fmt = n => n ? n.toLocaleString('en-GB', {minimumFractionDigits: 0, maximumFractionDigits: 0}) : '0';
+const fmtD = n => n ? n.toLocaleString('en-GB', {minimumFractionDigits: 2, maximumFractionDigits: 2}) : '0.00';
+const txsFor = m => ALL_TRANSACTIONS.filter(t => t.month === m);
+const catSum = (txs, cat) => txs.filter(t => t.category === cat).reduce((s, t) => s + t.amount, 0);
+
+function catBadge(cat) {
+  const c = CAT_COLOR[cat] || '#8b949e';
+  return `<span class="cat-badge" style="background:${c}22;color:${c}">${cat}</span>`;
+}
+
+// ── Month buttons ──────────────────────────────────────────────────────────
+function buildMonthBtns(containerId, current, cb) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = '';
+  MONTHS.forEach(m => {
+    const b = document.createElement('button');
+    b.className = 'month-btn' + (m === current ? ' active' : '');
+    b.textContent = m;
+    b.onclick = () => cb(m);
+    el.appendChild(b);
+  });
+}
+
+// ── Chart instances ────────────────────────────────────────────────────────
+let donutChart, budgetChart, monthlyBarChart;
+
+function destroyChart(c) { if (c) { c.destroy(); } }
+
+// ── Overview ───────────────────────────────────────────────────────────────
+let ovMonth = MONTHS[0]; // most recent with data
+
+function renderOverview(month) {
+  ovMonth = month;
+  buildMonthBtns('ov-months', month, m => renderOverview(m));
+  const txs = txsFor(month);
+  const total = txs.reduce((s, t) => s + t.amount, 0);
+  const budget = BUDGETS[month]?.total || 0;
+  const diff = budget - total;
+  const pct = budget ? Math.round((total / budget) * 100) : null;
+
+  // Find prev month for comparison
+  const idx = [...MONTHS].reverse().indexOf(month);
+  const prevMonth = [...MONTHS].reverse()[idx + 1];
+  const prevTotal = prevMonth ? txsFor(prevMonth).reduce((s, t) => s + t.amount, 0) : null;
+  const changeVsPrev = prevTotal ? ((total - prevTotal) / prevTotal * 100).toFixed(0) : null;
+
+  document.getElementById('ov-stats').innerHTML = `
+    <div class="card">
+      <div class="card-title">Total Spent</div>
+      <div class="stat-value">AED ${fmt(total)}</div>
+      ${changeVsPrev !== null ? `<div class="stat-badge ${changeVsPrev > 0 ? 'badge-red' : 'badge-green'}">${changeVsPrev > 0 ? '▲' : '▼'} ${Math.abs(changeVsPrev)}% vs last month</div>` : ''}
+    </div>
+    <div class="card">
+      <div class="card-title">Monthly Budget</div>
+      <div class="stat-value">AED ${fmt(budget)}</div>
+      ${pct !== null ? `<div class="stat-sub">${pct}% used</div><div class="stat-badge ${diff >= 0 ? 'badge-green' : 'badge-red'}">${diff >= 0 ? 'AED ' + fmt(diff) + ' remaining' : 'AED ' + fmt(Math.abs(diff)) + ' over'}</div>` : '<div class="stat-sub text-muted">No budget set</div>'}
+    </div>
+    <div class="card">
+      <div class="card-title">Transactions</div>
+      <div class="stat-value">${txs.length}</div>
+      <div class="stat-sub">This month</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Biggest Expense</div>
+      ${(() => { const top = txs.slice().sort((a,b) => b.amount - a.amount)[0]; return top ? `<div class="stat-value" style="font-size:1.3rem">${top.description}</div><div class="stat-sub">AED ${fmtD(top.amount)} · ${top.category}</div>` : '<div class="stat-value">—</div>'; })()}
+    </div>
+  `;
+
+  // Donut chart
+  const catData = CATEGORIES.map(c => ({c, v: catSum(txs, c)})).filter(x => x.v > 0);
+  destroyChart(donutChart);
+  donutChart = new Chart(document.getElementById('chart-donut'), {
+    type: 'doughnut',
+    data: {
+      labels: catData.map(x => x.c),
+      datasets: [{
+        data: catData.map(x => x.v),
+        backgroundColor: catData.map(x => CAT_COLOR[x.c] || '#8b949e'),
+        borderColor: '#161b22',
+        borderWidth: 3,
+        hoverOffset: 6,
+      }]
+    },
+    options: {
+      responsive: true,
+      cutout: '65%',
+      plugins: {
+        legend: { position: 'right', labels: { color: '#8b949e', font: { size: 11 }, padding: 12, usePointStyle: true } },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.label}: AED ${fmt(ctx.raw)}` } }
+      }
+    }
+  });
+
+  // Budget bar chart
+  const budgetCats = CATEGORIES.filter(c => (BUDGETS[month]?.[c] || 0) > 0 || catSum(txs, c) > 0);
+  destroyChart(budgetChart);
+  budgetChart = new Chart(document.getElementById('chart-budget'), {
+    type: 'bar',
+    data: {
+      labels: budgetCats,
+      datasets: [
+        { label: 'Spent', data: budgetCats.map(c => catSum(txs, c)), backgroundColor: budgetCats.map(c => CAT_COLOR[c] + 'cc'), borderRadius: 4 },
+        { label: 'Budget', data: budgetCats.map(c => BUDGETS[month]?.[c] || 0), backgroundColor: '#30363d', borderRadius: 4 },
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#8b949e', font: { size: 11 }, usePointStyle: true } },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: AED ${fmt(ctx.raw)}` } }
+      },
+      scales: {
+        x: { ticks: { color: '#6e7681', font: { size: 10 } }, grid: { color: '#21262d' } },
+        y: { ticks: { color: '#6e7681', callback: v => 'AED ' + fmt(v) }, grid: { color: '#21262d' } }
+      }
+    }
+  });
+
+  // Category bars
+  const sorted = CATEGORIES.map(c => ({ name: c, actual: catSum(txs, c), budget: BUDGETS[month]?.[c] || 0 }))
+    .filter(x => x.actual > 0 || x.budget > 0).sort((a, b) => b.actual - a.actual);
+
+  document.getElementById('ov-cats').innerHTML = sorted.map(c => {
+    const pct = c.budget ? Math.min((c.actual / c.budget) * 100, 100) : 30;
+    const over = c.budget && c.actual > c.budget;
+    const color = CAT_COLOR[c.name] || '#8b949e';
+    return `<div class="cat-row">
+      <div class="cat-header">
+        <span class="cat-name" style="color:${color}">${c.name}</span>
+        <span class="cat-nums">AED ${fmt(c.actual)}${c.budget ? ' / ' + fmt(c.budget) : ''} ${over ? '<span style="color:#f85149;font-size:0.72rem">▲ OVER</span>' : ''}</span>
+      </div>
+      <div class="bar-bg"><div class="bar-fill" style="width:${pct}%;background:${color}${over ? '' : '99'}"></div></div>
+    </div>`;
+  }).join('');
+
+  // Recent
+  renderHighestAndUnusual(txs);
+  document.getElementById('ov-recent').innerHTML = txs.slice().reverse().slice(0, 12).map(t =>
+    `<tr><td class="text-muted">${t.day}</td><td>${t.description}</td><td class="text-muted">${t.account}</td><td>${catBadge(t.category)}</td><td class="text-right amount">AED ${fmtD(t.amount)}</td></tr>`
+  ).join('');
+}
+
+// ── Categories ─────────────────────────────────────────────────────────────
+let catMonth = MONTHS[0];
+
+function renderCategories(month) {
+  catMonth = month;
+  buildMonthBtns('cat-months', month, m => renderCategories(m));
+  const txs = txsFor(month);
+  const active = CATEGORIES.filter(c => catSum(txs, c) > 0 || (BUDGETS[month]?.[c] || 0) > 0);
+
+  document.getElementById('cat-cards').innerHTML = active.map(c => {
+    const actual = catSum(txs, c);
+    const bud = BUDGETS[month]?.[c] || 0;
+    const pct = bud ? ((actual / bud) * 100).toFixed(0) : null;
+    const over = bud && actual > bud;
+    const color = CAT_COLOR[c] || '#8b949e';
+    const items = txs.filter(t => t.category === c).sort((a, b) => b.amount - a.amount);
+    return `<div class="card">
+      <div class="card-title" style="color:${color}">${c}</div>
+      <div class="stat-value" style="font-size:1.5rem">AED ${fmt(actual)}</div>
+      ${bud ? `<div class="stat-sub">Budget: AED ${fmt(bud)}</div><div class="stat-badge ${over ? 'badge-red' : 'badge-green'}">${over ? '▲ Over by AED ' + fmt(actual - bud) : pct + '% used'}</div>` : ''}
+      ${items.length ? `<div style="margin-top:12px;border-top:1px solid #21262d;padding-top:10px">
+        ${items.slice(0,6).map(t => `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #0d1117;font-size:0.8rem"><span style="color:#c9d1d9;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%">${t.description}</span><span style="color:#e1e4e8;font-weight:600;margin-left:8px">AED ${fmtD(t.amount)}</span></div>`).join('')}
+        ${items.length > 6 ? `<div style="font-size:0.75rem;color:#6e7681;margin-top:6px">+ ${items.length - 6} more</div>` : ''}
+      </div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+// ── Transactions ───────────────────────────────────────────────────────────
+function initTxFilters() {
+  const ms = document.getElementById('tx-month');
+  [...MONTHS].reverse().forEach(m => {
+    const o = document.createElement('option'); o.value = m; o.textContent = m; ms.appendChild(o);
+  });
+  const cs = document.getElementById('tx-cat');
+  CATEGORIES.forEach(c => {
+    const o = document.createElement('option'); o.value = c; o.textContent = c; cs.appendChild(o);
+  });
+  document.getElementById('tx-search').addEventListener('input', filterTx);
+  document.getElementById('tx-month').addEventListener('change', filterTx);
+  document.getElementById('tx-cat').addEventListener('change', filterTx);
+  filterTx();
+}
+
+function filterTx() {
+  const search = document.getElementById('tx-search').value.toLowerCase();
+  const month = document.getElementById('tx-month').value;
+  const cat = document.getElementById('tx-cat').value;
+  const filtered = ALL_TRANSACTIONS.filter(t =>
+    (!month || t.month === month) &&
+    (!cat || t.category === cat) &&
+    (!search || t.description.toLowerCase().includes(search) || t.account.toLowerCase().includes(search))
+  );
+  document.getElementById('tx-body').innerHTML = filtered.map(t =>
+    `<tr><td class="text-muted">${t.month}</td><td class="text-muted">${t.day}</td><td>${t.description}</td><td class="text-muted">${t.account}</td><td>${catBadge(t.category)}</td><td class="text-right amount">AED ${fmtD(t.amount)}</td></tr>`
+  ).join('') || '<tr><td colspan="6" style="text-align:center;color:#6e7681;padding:24px">No transactions found</td></tr>';
+  document.getElementById('tx-count').textContent = `${filtered.length} of ${ALL_TRANSACTIONS.length} transactions`;
+}
+
+// ── Summary ────────────────────────────────────────────────────────────────
+function renderSummary() {
+  const months = [...MONTHS];
+
+  // Monthly stacked bar
+  destroyChart(monthlyBarChart);
+  const activeCats = CATEGORIES.filter(c => months.some(m => catSum(txsFor(m), c) > 0));
+  monthlyBarChart = new Chart(document.getElementById('chart-monthly-bar'), {
+    type: 'bar',
+    data: {
+      labels: months,
+      datasets: activeCats.map(c => ({
+        label: c,
+        data: months.map(m => catSum(txsFor(m), c)),
+        backgroundColor: CAT_COLOR[c] + 'cc',
+        borderRadius: 2,
+      }))
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#8b949e', font: { size: 10 }, usePointStyle: true } },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: AED ${fmt(ctx.raw)}` } }
+      },
+      scales: {
+        x: { stacked: true, ticks: { color: '#6e7681' }, grid: { color: '#21262d' } },
+        y: { stacked: true, ticks: { color: '#6e7681', callback: v => 'AED ' + fmt(v) }, grid: { color: '#21262d' } }
+      }
+    }
+  });
+
+  // Table
+  document.getElementById('sum-head').innerHTML = '<th>Category</th>' + months.map(m => `<th style="text-align:right">${m}</th>`).join('') + '<th style="text-align:right">Total</th>';
+  const rows = CATEGORIES.map(c => {
+    const vals = months.map(m => catSum(txsFor(m), c));
+    const total = vals.reduce((s, v) => s + v, 0);
+    if (!total) return '';
+    const color = CAT_COLOR[c] || '#8b949e';
+    return `<tr><td><span style="color:${color}">${c}</span></td>${vals.map(v => `<td style="text-align:right">${v > 0 ? 'AED ' + fmt(v) : '—'}</td>`).join('')}<td style="text-align:right;font-weight:700">AED ${fmt(total)}</td></tr>`;
+  }).filter(Boolean);
+
+  const totals = months.map(m => txsFor(m).reduce((s, t) => s + t.amount, 0));
+  rows.push(`<tr class="total-row"><td>TOTAL</td>${totals.map(v => `<td>AED ${fmt(v)}</td>`).join('')}<td>AED ${fmt(totals.reduce((s,v)=>s+v,0))}</td></tr>`);
+  document.getElementById('sum-body').innerHTML = rows.join('');
+}
+
+
+function detectUnusual(txs) {
+  // Calculate per-category averages across all months
+  const catAmounts = {};
+  ALL_TRANSACTIONS.forEach(t => {
+    catAmounts[t.category] = catAmounts[t.category] || [];
+    catAmounts[t.category].push(t.amount);
+  });
+  const catMean = {};
+  const catStd = {};
+  Object.entries(catAmounts).forEach(([cat, amounts]) => {
+    const mean = amounts.reduce((s,v)=>s+v,0)/amounts.length;
+    const std = Math.sqrt(amounts.reduce((s,v)=>s+(v-mean)**2,0)/amounts.length);
+    catMean[cat] = mean;
+    catStd[cat] = std;
+  });
+
+  return txs.filter(t => {
+    const mean = catMean[t.category] || 0;
+    const std = catStd[t.category] || 0;
+    return std > 0 && t.amount > mean + 2 * std;
+  }).map(t => {
+    const mean = catMean[t.category] || 0;
+    const pct = mean > 0 ? Math.round((t.amount / mean - 1) * 100) : 0;
+    return {...t, unusualReason: pct + '% above avg for ' + t.category};
+  }).sort((a,b) => b.amount - a.amount);
+}
+
+function renderHighestAndUnusual(txs) {
+  // Highest 8
+  const highest = txs.slice().sort((a,b)=>b.amount-a.amount).slice(0,8);
+  document.getElementById('ov-highest').innerHTML = highest.map(t =>
+    `<tr><td class="text-muted">${t.day}</td><td>${t.description}</td><td class="text-muted">${t.account}</td><td>${catBadge(t.category)}</td><td class="text-right amount">AED ${fmtD(t.amount)}</td></tr>`
+  ).join('') || '<tr><td colspan="5" style="text-align:center;color:#6e7681;padding:16px">No transactions</td></tr>';
+
+  // Unusual
+  const unusual = detectUnusual(txs).slice(0,8);
+  document.getElementById('ov-unusual').innerHTML = unusual.map(t =>
+    `<tr><td class="text-muted">${t.day}</td><td>${t.description}</td><td class="text-muted">${t.account}</td><td>${catBadge(t.category)}</td><td class="text-right amount">AED ${fmtD(t.amount)}</td><td style="color:#e3b341;font-size:0.78rem">${t.unusualReason}</td></tr>`
+  ).join('') || '<tr><td colspan="6" style="text-align:center;color:#6e7681;padding:16px">Nothing unusual this month 👍</td></tr>';
+}
+
+
+// ── Compare Tab ─────────────────────────────────────────────────────────────
+let cmpSpendChart, cmpBudgetChart, cmpTrendsChart;
+
+function renderCompare() {
+  const moLabels = MONTHS.filter(m => ALL_TRANSACTIONS.some(t => t.month === m)).reverse();
+
+  // Stat cards per month
+  document.getElementById('cmp-totals').innerHTML = moLabels.map((m, i) => {
+    const txs = txsFor(m);
+    const total = txs.reduce((s,t) => s + t.amount, 0);
+    const loans = txs.filter(t => t.category === 'Loan').reduce((s,t) => s + t.amount, 0);
+    const realSpend = total - loans;
+    const prevM = moLabels[i - 1];
+    const prevSpend = prevM ? (() => { const pt = txsFor(prevM); return pt.reduce((s,t)=>s+t.amount,0) - pt.filter(t=>t.category==='Loan').reduce((s,t)=>s+t.amount,0); })() : null;
+    const chg = prevSpend ? ((realSpend - prevSpend) / prevSpend * 100).toFixed(0) : null;
+    const topCat = CATEGORIES.filter(c => c !== 'Loan').map(c => ({c, v: catSum(txs, c)})).sort((a,b) => b.v - a.v)[0];
+    const budget = BUDGETS[m] && BUDGETS[m].total ? BUDGETS[m].total : 0;
+    const over = budget && total > budget;
+    return '<div class="card">' +
+      '<div class="card-title">' + m + '</div>' +
+      '<div class="stat-value" style="font-size:1.5rem">AED ' + fmt(realSpend) + '</div>' +
+      '<div class="stat-sub">Real spend (ex-loans)</div>' +
+      '<div class="stat-sub">Loans: AED ' + fmt(loans) + '</div>' +
+      (chg !== null ? '<div class="stat-badge ' + (chg > 0 ? 'badge-red' : 'badge-green') + '">' + (chg > 0 ? '▲' : '▼') + ' ' + Math.abs(chg) + '% vs prev</div>' : '') +
+      (topCat ? '<div class="stat-sub" style="margin-top:6px">Top: <span style="color:' + (CAT_COLOR[topCat.c]||'#8b949e') + '">' + topCat.c + '</span> AED ' + fmt(topCat.v) + '</div>' : '') +
+      (budget ? '<div class="stat-badge ' + (over ? 'badge-red' : 'badge-green') + '" style="margin-top:4px">' + (over ? 'AED ' + fmt(total - budget) + ' over' : fmt(Math.round((total/budget)*100)) + '% of budget') + '</div>' : '') +
+      '</div>';
+  }).join('');
+
+  // Real spend + loans stacked bar
+  destroyChart(cmpSpendChart);
+  cmpSpendChart = new Chart(document.getElementById('chart-cmp-spend'), {
+    type: 'bar',
+    data: {
+      labels: moLabels,
+      datasets: [
+        {
+          label: 'Real Spend',
+          data: moLabels.map(m => { const t = txsFor(m); return t.reduce((s,x)=>s+x.amount,0) - t.filter(x=>x.category==='Loan').reduce((s,x)=>s+x.amount,0); }),
+          backgroundColor: '#58a6ff99', borderColor: '#58a6ff', borderWidth: 2, borderRadius: 4,
+        },
+        {
+          label: 'Debt Servicing',
+          data: moLabels.map(m => txsFor(m).filter(t=>t.category==='Loan').reduce((s,t)=>s+t.amount,0)),
+          backgroundColor: '#f8514966', borderColor: '#f85149', borderWidth: 2, borderRadius: 4,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#8b949e', usePointStyle: true, font: { size: 11 } } },
+        tooltip: { callbacks: { label: ctx => ' ' + ctx.dataset.label + ': AED ' + fmt(ctx.raw) } }
+      },
+      scales: {
+        x: { stacked: true, ticks: { color: '#6e7681' }, grid: { color: '#21262d' } },
+        y: { stacked: true, ticks: { color: '#6e7681', callback: v => 'AED ' + fmt(v) }, grid: { color: '#21262d' } }
+      }
+    }
+  });
+
+  // Total vs budget
+  destroyChart(cmpBudgetChart);
+  cmpBudgetChart = new Chart(document.getElementById('chart-cmp-budget'), {
+    type: 'bar',
+    data: {
+      labels: moLabels,
+      datasets: [
+        {
+          label: 'Total Spend',
+          data: moLabels.map(m => txsFor(m).reduce((s,t)=>s+t.amount,0)),
+          backgroundColor: '#d2a8ff88', borderColor: '#d2a8ff', borderWidth: 2, borderRadius: 4,
+        },
+        {
+          label: 'Budget',
+          data: moLabels.map(m => BUDGETS[m] && BUDGETS[m].total ? BUDGETS[m].total : 0),
+          backgroundColor: '#30363d', borderColor: '#6e7681', borderWidth: 2, borderRadius: 4,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#8b949e', usePointStyle: true, font: { size: 11 } } },
+        tooltip: { callbacks: { label: ctx => ' ' + ctx.dataset.label + ': AED ' + fmt(ctx.raw) } }
+      },
+      scales: {
+        x: { ticks: { color: '#6e7681' }, grid: { color: '#21262d' } },
+        y: { ticks: { color: '#6e7681', callback: v => 'AED ' + fmt(v) }, grid: { color: '#21262d' } }
+      }
+    }
+  });
+
+  // Category trends line chart
+  const trendCats = CATEGORIES.filter(c => c !== 'Unaccounted' && c !== 'Other' && moLabels.some(m => catSum(txsFor(m), c) > 0));
+  destroyChart(cmpTrendsChart);
+  cmpTrendsChart = new Chart(document.getElementById('chart-cmp-trends'), {
+    type: 'line',
+    data: {
+      labels: moLabels,
+      datasets: trendCats.map(c => ({
+        label: c,
+        data: moLabels.map(m => catSum(txsFor(m), c)),
+        borderColor: CAT_COLOR[c] || '#8b949e',
+        backgroundColor: (CAT_COLOR[c] || '#8b949e') + '22',
+        tension: 0.3, pointRadius: 5, pointHoverRadius: 7, fill: false, borderWidth: 2,
+      }))
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { labels: { color: '#8b949e', font: { size: 10 }, usePointStyle: true } },
+        tooltip: { callbacks: { label: ctx => ' ' + ctx.dataset.label + ': AED ' + fmt(ctx.raw) } }
+      },
+      scales: {
+        x: { ticks: { color: '#6e7681' }, grid: { color: '#21262d' } },
+        y: { ticks: { color: '#6e7681', callback: v => 'AED ' + fmt(v) }, grid: { color: '#21262d' } }
+      }
+    }
+  });
+
+  // Biggest movers
+  const movers = CATEGORIES.map(c => {
+    const vals = moLabels.map(m => catSum(txsFor(m), c));
+    const max = Math.max(...vals);
+    const min = Math.min(...vals.filter(v => v > 0));
+    const swing = max - (min || 0);
+    return { c, vals, swing };
+  }).filter(x => x.swing > 200).sort((a,b) => b.swing - a.swing).slice(0, 3);
+
+  document.getElementById('cmp-movers').innerHTML = movers.map(x => {
+    const color = CAT_COLOR[x.c] || '#8b949e';
+    let rows = moLabels.map((m, i) => '<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #21262d;font-size:0.84rem"><span style="color:#8b949e">' + m + '</span><span style="font-weight:600">AED ' + fmt(x.vals[i]) + '</span></div>').join('');
+    return '<div class="card"><div class="card-title" style="color:' + color + '">📊 ' + x.c + '</div>' + rows + '<div class="stat-badge badge-yellow" style="margin-top:10px">Swing: AED ' + fmt(x.swing) + '</div></div>';
+  }).join('');
+}
+
+// ── Tabs ───────────────────────────────────────────────────────────────────
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+    // Lazy render summary charts
+    if (tab.dataset.tab === 'summary') renderSummary();
+    if (tab.dataset.tab === 'compare') renderCompare();
+  });
+});
+
+// ── Init ───────────────────────────────────────────────────────────────────
+document.getElementById('updated-label').textContent = 'Updated ' + new Date().toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'});
+renderOverview(ovMonth);
+renderCategories(catMonth);
+initTxFilters();
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calum's Dashboards</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .container { text-align: center; padding: 40px; }
+  h1 { font-size: 2rem; margin-bottom: 8px; }
+  p { color: #8b949e; margin-bottom: 40px; }
+  .cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 32px 40px; text-decoration: none; color: #e1e4e8; transition: all 0.2s; min-width: 200px; }
+  .card:hover { border-color: #58a6ff; transform: translateY(-2px); }
+  .card .icon { font-size: 2.5rem; margin-bottom: 12px; }
+  .card h2 { font-size: 1.1rem; font-weight: 600; }
+  .card p { font-size: 0.85rem; color: #8b949e; margin-top: 6px; margin-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Calum's Dashboards</h1>
+  <p>Your personal command centre</p>
+  <div class="cards">
+    <a href="finance.html" class="card">
+      <div class="icon">💰</div>
+      <h2>Finance</h2>
+      <p>Cashflow, spending & budget</p>
+    </a>
+    <a href="realestate.html" class="card">
+      <div class="icon">💼</div>
+      <h2>Real Estate</h2>
+      <p>Deals, pipeline & targets</p>
+    </a>
+  </div>
+</div>
+</body>
+</html>
