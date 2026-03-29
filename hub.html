@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Max — Command Centre</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #000; overflow: hidden; font-family: 'Courier New', monospace; }
+canvas { display: block; }
+#ui {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 10;
+}
+#title {
+  position: fixed; top: 30px; left: 50%; transform: translateX(-50%);
+  text-align: center; pointer-events: none;
+}
+#title h1 {
+  font-size: 1.2rem; font-weight: 400; letter-spacing: 0.4em;
+  color: #00ffff; text-shadow: 0 0 20px #00ffff88; text-transform: uppercase;
+}
+#title p { font-size: 0.65rem; color: #ffffff44; letter-spacing: 0.3em; margin-top: 4px; }
+
+.screen-label {
+  position: fixed; text-align: center; pointer-events: none;
+  font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+  transition: opacity 0.3s;
+}
+
+#clock {
+  position: fixed; bottom: 30px; right: 40px;
+  font-size: 0.75rem; color: #00ffff88; letter-spacing: 0.2em;
+}
+
+#status {
+  position: fixed; bottom: 30px; left: 40px;
+  font-size: 0.65rem; color: #3fb95088; letter-spacing: 0.15em;
+}
+
+#hint {
+  position: fixed; bottom: 60px; left: 50%; transform: translateX(-50%);
+  font-size: 0.6rem; color: #ffffff33; letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.data-panel {
+  position: fixed; background: rgba(0,20,40,0.9);
+  border: 1px solid #00ffff44; border-radius: 8px;
+  padding: 12px 16px; pointer-events: none;
+  font-size: 0.7rem; color: #00ffff; letter-spacing: 0.1em;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #00ffff22, inset 0 0 20px rgba(0,255,255,0.02);
+  opacity: 0; transition: opacity 0.5s;
+}
+.data-panel.show { opacity: 1; }
+.data-panel .label { color: #ffffff44; font-size: 0.6rem; margin-bottom: 4px; }
+.data-panel .value { color: #00ffff; font-size: 1rem; font-weight: bold; }
+.data-panel .sub { color: #3fb950; font-size: 0.65rem; margin-top: 2px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="title">
+  <h1>⚡ Max — Command Centre</h1>
+  <p>Calum Macleod · Dubai · 2026</p>
+</div>
+
+<div id="clock"></div>
+<div id="status"><span style="color:#3fb950">●</span> ALL SYSTEMS ONLINE</div>
+<div id="hint">CLICK A SCREEN TO OPEN · DRAG TO ROTATE · SCROLL TO ZOOM</div>
+
+<!-- Data panels that float near screens -->
+<div class="data-panel" id="panel-finance" style="top:20%;left:5%">
+  <div class="label">NET WORTH</div>
+  <div class="value">AED 813,000</div>
+  <div class="sub">↑ Tracking from 29 Mar 2026</div>
+</div>
+<div class="data-panel" id="panel-re" style="top:20%;right:5%">
+  <div class="label">2026 BOARD</div>
+  <div class="value">AED 650,365</div>
+  <div class="sub">21.7% of AED 3M target</div>
+</div>
+<div class="data-panel" id="panel-trading" style="bottom:25%;left:5%">
+  <div class="label">CALUMBOT v3</div>
+  <div class="value" style="color:#3fb950">● ARMED</div>
+  <div class="sub">10 pairs · London open Mon 11am</div>
+</div>
+<div class="data-panel" id="panel-social" style="bottom:25%;right:5%">
+  <div class="label">INSTAGRAM</div>
+  <div class="value">205.7K</div>
+  <div class="sub">Views last 30 days · @dubaicalum</div>
+</div>
+
+<script>
+const canvas = document.getElementById('c');
+const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+// Fallback to Canvas 2D if WebGL not available
+if (!gl) {
+  canvas.style.display = 'none';
+  document.body.style.background = '#0f1117';
+  const msg = document.createElement('div');
+  msg.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);color:#00ffff;text-align:center;font-family:monospace';
+  msg.innerHTML = '<h2>Command Centre</h2><p style="margin-top:12px;color:#ffffff44">WebGL not available — use Chrome/Edge</p>';
+  document.body.appendChild(msg);
+}
+
+// ── Three.js-style 3D with raw WebGL ─────────────────────────────────
+// Using a canvas-based 3D engine for the screens
+const ctx2d = (() => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  // Use 2D canvas with perspective transforms for compatibility
+  const c2 = document.createElement('canvas');
+  c2.width = canvas.width;
+  c2.height = canvas.height;
+  c2.style.cssText = 'position:fixed;top:0;left:0;z-index:1';
+  document.body.insertBefore(c2, canvas);
+  canvas.style.display = 'none';
+  return c2.getContext('2d');
+})();
+
+const W = ctx2d.canvas.width;
+const H = ctx2d.canvas.height;
+
+// Camera
+let camX = 0, camY = 0, camDist = 900;
+let rotX = 0.15, rotY = 0;
+let targetRotX = 0.15, targetRotY = 0;
+let isDragging = false, lastMX = 0, lastMY = 0;
+
+// Screens configuration
+const screens = [
+  { id: 'finance',   label: '💰 FINANCE',    url: 'http://localhost:8080/finance-dashboard.html', color: '#3fb950', angle: -Math.PI * 0.6, radius: 320, y: 0 },
+  { id: 're',        label: '💼 REAL ESTATE', url: 'http://localhost:8081/realestate-dashboard.html', color: '#58a6ff', angle: -Math.PI * 0.15, radius: 320, y: 0 },
+  { id: 'social',    label: '📱 SOCIAL',      url: 'http://localhost:8082/social-dashboard.html', color: '#d2a8ff', angle: Math.PI * 0.3, radius: 320, y: 0 },
+  { id: 'trading',   label: '📈 TRADING',     url: 'http://localhost:8083/trading-dashboard.html', color: '#e3b341', angle: Math.PI * 0.75, radius: 320, y: 0 },
+  { id: 'max',       label: '⚡ MAX',          url: null, color: '#00ffff', angle: Math.PI * 1.2, radius: 200, y: -80 },
+];
+
+// Particles
+const particles = Array.from({length: 120}, () => ({
+  x: (Math.random() - 0.5) * 1200,
+  y: (Math.random() - 0.5) * 800,
+  z: (Math.random() - 0.5) * 1200,
+  vx: (Math.random() - 0.5) * 0.3,
+  vy: (Math.random() - 0.5) * 0.3,
+  vz: (Math.random() - 0.5) * 0.3,
+  size: Math.random() * 2 + 0.5,
+  brightness: Math.random(),
+}));
+
+// Grid
+function project(x, y, z) {
+  const cos = Math.cos, sin = Math.sin;
+  // Rotate Y
+  const x1 = x * cos(rotY) - z * sin(rotY);
+  const z1 = x * sin(rotY) + z * cos(rotY);
+  // Rotate X
+  const y2 = y * cos(rotX) - z1 * sin(rotX);
+  const z2 = y * sin(rotX) + z1 * cos(rotX);
+  // Perspective
+  const fov = camDist;
+  const scale = fov / (fov + z2 + 400);
+  return {
+    sx: W/2 + (x1 + camX) * scale,
+    sy: H/2 + (y2 + camY) * scale,
+    scale,
+    z: z2,
+  };
+}
+
+let time = 0;
+let hoveredScreen = null;
+
+function drawGrid() {
+  const size = 600, step = 60;
+  ctx2d.strokeStyle = 'rgba(0,255,255,0.04)';
+  ctx2d.lineWidth = 1;
+  for (let x = -size; x <= size; x += step) {
+    const a = project(x, 120, -size);
+    const b = project(x, 120, size);
+    ctx2d.beginPath();
+    ctx2d.moveTo(a.sx, a.sy);
+    ctx2d.lineTo(b.sx, b.sy);
+    ctx2d.stroke();
+  }
+  for (let z = -size; z <= size; z += step) {
+    const a = project(-size, 120, z);
+    const b = project(size, 120, z);
+    ctx2d.beginPath();
+    ctx2d.moveTo(a.sx, a.sy);
+    ctx2d.lineTo(b.sx, b.sy);
+    ctx2d.stroke();
+  }
+}
+
+function drawScreen(s, idx) {
+  const t = time * 0.001;
+  const bobY = s.y + Math.sin(t + idx * 1.2) * 8;
+  const sx = Math.cos(s.angle + rotY * 0.1) * s.radius;
+  const sz = Math.sin(s.angle + rotY * 0.1) * s.radius;
+
+  const p = project(sx, bobY, sz);
+  if (!p) return;
+
+  const sw = 160 * p.scale;
+  const sh = 100 * p.scale;
+
+  // Glow
+  const isHovered = hoveredScreen === idx;
+  const glowSize = isHovered ? 40 : 20;
+  const grd = ctx2d.createRadialGradient(p.sx, p.sy, 0, p.sx, p.sy, sw * 0.8);
+  grd.addColorStop(0, s.color + (isHovered ? '22' : '11'));
+  grd.addColorStop(1, 'transparent');
+  ctx2d.fillStyle = grd;
+  ctx2d.fillRect(p.sx - sw, p.sy - sh, sw*2, sh*2);
+
+  // Screen background
+  ctx2d.fillStyle = `rgba(0,10,20,${isHovered ? 0.95 : 0.85})`;
+  ctx2d.strokeStyle = s.color + (isHovered ? 'ee' : '66');
+  ctx2d.lineWidth = isHovered ? 2 : 1;
+  roundRect(ctx2d, p.sx - sw/2, p.sy - sh/2, sw, sh, 6 * p.scale);
+  ctx2d.fill();
+  ctx2d.stroke();
+
+  // Corner accents
+  const corner = 10 * p.scale;
+  ctx2d.strokeStyle = s.color;
+  ctx2d.lineWidth = 1.5;
+  [[p.sx-sw/2, p.sy-sh/2], [p.sx+sw/2, p.sy-sh/2],
+   [p.sx-sw/2, p.sy+sh/2], [p.sx+sw/2, p.sy+sh/2]].forEach(([cx,cy],i) => {
+    const dx = i%2===0 ? corner : -corner;
+    const dy = i<2 ? corner : -corner;
+    ctx2d.beginPath();
+    ctx2d.moveTo(cx, cy + dy);
+    ctx2d.lineTo(cx, cy);
+    ctx2d.lineTo(cx + dx, cy);
+    ctx2d.stroke();
+  });
+
+  // Scan line animation
+  const scanY = p.sy - sh/2 + ((t * 40 + idx * 30) % sh);
+  ctx2d.fillStyle = s.color + '11';
+  ctx2d.fillRect(p.sx - sw/2, scanY, sw, 2 * p.scale);
+
+  // Label
+  ctx2d.fillStyle = isHovered ? s.color : s.color + '99';
+  ctx2d.font = `bold ${Math.max(8, 12 * p.scale)}px 'Courier New'`;
+  ctx2d.textAlign = 'center';
+  ctx2d.fillText(s.label, p.sx, p.sy + 5 * p.scale);
+
+  // Click target info
+  if (isHovered && s.url) {
+    ctx2d.fillStyle = '#ffffff88';
+    ctx2d.font = `${Math.max(6, 8 * p.scale)}px 'Courier New'`;
+    ctx2d.fillText('[ CLICK TO OPEN ]', p.sx, p.sy + sh/2 - 8 * p.scale);
+  }
+
+  // Pulsing dot
+  const pulseR = (3 + Math.sin(t * 3 + idx) * 1.5) * p.scale;
+  ctx2d.beginPath();
+  ctx2d.arc(p.sx - sw/2 + 12 * p.scale, p.sy - sh/2 + 10 * p.scale, pulseR, 0, Math.PI*2);
+  ctx2d.fillStyle = s.color;
+  ctx2d.fill();
+
+  // Store screen bounds for click detection
+  s._px = p.sx; s._py = p.sy; s._sw = sw; s._sh = sh; s._scale = p.scale;
+}
+
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x+r, y);
+  ctx.lineTo(x+w-r, y);
+  ctx.arcTo(x+w, y, x+w, y+r, r);
+  ctx.lineTo(x+w, y+h-r);
+  ctx.arcTo(x+w, y+h, x+w-r, y+h, r);
+  ctx.lineTo(x+r, y+h);
+  ctx.arcTo(x, y+h, x, y+h-r, r);
+  ctx.lineTo(x, y+r);
+  ctx.arcTo(x, y, x+r, y, r);
+  ctx.closePath();
+}
+
+function drawParticles() {
+  particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy; p.z += p.vz;
+    if(Math.abs(p.x)>600) p.vx *= -1;
+    if(Math.abs(p.y)>400) p.vy *= -1;
+    if(Math.abs(p.z)>600) p.vz *= -1;
+    const proj = project(p.x, p.y, p.z);
+    const alpha = (0.3 + p.brightness * 0.4) * proj.scale;
+    ctx2d.beginPath();
+    ctx2d.arc(proj.sx, proj.sy, p.size * proj.scale, 0, Math.PI*2);
+    ctx2d.fillStyle = `rgba(0,255,255,${Math.min(alpha, 0.6)})`;
+    ctx2d.fill();
+  });
+}
+
+function drawCentralOrb() {
+  const t = time * 0.001;
+  const p = project(0, -20 + Math.sin(t*1.5)*10, 0);
+
+  // Outer rings
+  for (let r = 0; r < 3; r++) {
+    const radius = (50 + r * 30) * p.scale;
+    const alpha = 0.15 - r * 0.04;
+    ctx2d.beginPath();
+    ctx2d.arc(p.sx, p.sy, radius, 0, Math.PI*2);
+    ctx2d.strokeStyle = `rgba(0,255,255,${alpha})`;
+    ctx2d.lineWidth = 1;
+    ctx2d.stroke();
+  }
+
+  // Core glow
+  const grd = ctx2d.createRadialGradient(p.sx, p.sy, 0, p.sx, p.sy, 40*p.scale);
+  grd.addColorStop(0, 'rgba(0,255,255,0.8)');
+  grd.addColorStop(0.3, 'rgba(0,150,255,0.4)');
+  grd.addColorStop(1, 'transparent');
+  ctx2d.fillStyle = grd;
+  ctx2d.beginPath();
+  ctx2d.arc(p.sx, p.sy, 40*p.scale, 0, Math.PI*2);
+  ctx2d.fill();
+
+  // ⚡ symbol
+  ctx2d.fillStyle = '#000';
+  ctx2d.font = `bold ${Math.max(16, 24*p.scale)}px sans-serif`;
+  ctx2d.textAlign = 'center';
+  ctx2d.textBaseline = 'middle';
+  ctx2d.fillText('⚡', p.sx, p.sy);
+
+  // Connection lines to screens
+  screens.forEach(s => {
+    if (!s._px) return;
+    ctx2d.beginPath();
+    ctx2d.moveTo(p.sx, p.sy);
+    ctx2d.lineTo(s._px, s._py);
+    ctx2d.strokeStyle = s.color + '18';
+    ctx2d.lineWidth = 1;
+    ctx2d.stroke();
+  });
+}
+
+function drawDataStreams() {
+  const t = time * 0.002;
+  for (let i = 0; i < 8; i++) {
+    const angle = (i / 8) * Math.PI * 2 + t * 0.5;
+    const r = 150 + Math.sin(t + i) * 30;
+    const x = Math.cos(angle) * r;
+    const z = Math.sin(angle) * r * 0.5;
+    const p = project(x, -50, z);
+    const char = '01ABCDEF⚡$'.charAt(Math.floor(t * 3 + i * 7) % 10);
+    ctx2d.fillStyle = `rgba(0,255,100,${0.2 + Math.sin(t*2+i)*0.1})`;
+    ctx2d.font = `${Math.max(8, 10*p.scale)}px 'Courier New'`;
+    ctx2d.textAlign = 'center';
+    ctx2d.fillText(char, p.sx, p.sy);
+  }
+}
+
+function render() {
+  time++;
+  ctx2d.clearRect(0, 0, W, H);
+
+  // Background
+  const bg = ctx2d.createRadialGradient(W/2, H/2, 0, W/2, H/2, Math.max(W,H));
+  bg.addColorStop(0, '#020a14');
+  bg.addColorStop(1, '#000005');
+  ctx2d.fillStyle = bg;
+  ctx2d.fillRect(0, 0, W, H);
+
+  drawGrid();
+  drawParticles();
+  drawDataStreams();
+
+  // Sort screens by Z depth for proper rendering
+  const sorted = screens.map((s,i) => ({s,i})).sort((a,b) => {
+    const za = Math.sin(a.s.angle + rotY*0.1) * a.s.radius;
+    const zb = Math.sin(b.s.angle + rotY*0.1) * b.s.radius;
+    return za - zb;
+  });
+  sorted.forEach(({s,i}) => drawScreen(s,i));
+
+  drawCentralOrb();
+
+  // Clock
+  const now = new Date();
+  document.getElementById('clock').textContent =
+    now.toLocaleDateString('en-GB', {weekday:'short',day:'numeric',month:'short'}) +
+    ' · ' + now.toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit',second:'2-digit'}) +
+    ' DUBAI';
+
+  requestAnimationFrame(render);
+}
+
+// Smooth rotation
+function smoothUpdate() {
+  rotY += (targetRotY - rotY) * 0.06;
+  setTimeout(smoothUpdate, 16);
+}
+smoothUpdate();
+
+// Mouse/touch controls
+ctx2d.canvas.addEventListener('mousedown', e => { isDragging = true; lastMX = e.clientX; lastMY = e.clientY; });
+ctx2d.canvas.addEventListener('mousemove', e => {
+  if (isDragging) {
+    targetRotY += (e.clientX - lastMX) * 0.005;
+    targetRotX += (e.clientY - lastMY) * 0.003;
+    targetRotX = Math.max(-0.5, Math.min(0.5, targetRotX));
+    lastMX = e.clientX; lastMY = e.clientY;
+  }
+  // Hover detection
+  const mx = e.clientX, my = e.clientY;
+  hoveredScreen = null;
+  screens.forEach((s,i) => {
+    if (s._px && Math.abs(mx-s._px)<s._sw/2 && Math.abs(my-s._py)<s._sh/2)
+      hoveredScreen = i;
+  });
+  ctx2d.canvas.style.cursor = hoveredScreen !== null ? 'pointer' : 'default';
+
+  // Show/hide data panels
+  document.getElementById('panel-finance').classList.toggle('show', hoveredScreen===0);
+  document.getElementById('panel-re').classList.toggle('show', hoveredScreen===1);
+  document.getElementById('panel-social').classList.toggle('show', hoveredScreen===2);
+  document.getElementById('panel-trading').classList.toggle('show', hoveredScreen===3);
+});
+ctx2d.canvas.addEventListener('mouseup', () => isDragging = false);
+ctx2d.canvas.addEventListener('wheel', e => {
+  camDist = Math.max(400, Math.min(1500, camDist + e.deltaY));
+});
+ctx2d.canvas.addEventListener('click', e => {
+  const mx = e.clientX, my = e.clientY;
+  screens.forEach(s => {
+    if (s.url && s._px && Math.abs(mx-s._px)<s._sw/2 && Math.abs(my-s._py)<s._sh/2)
+      window.open(s.url, '_blank');
+  });
+});
+
+// Touch support
+ctx2d.canvas.addEventListener('touchstart', e => {
+  isDragging = true;
+  lastMX = e.touches[0].clientX;
+  lastMY = e.touches[0].clientY;
+});
+ctx2d.canvas.addEventListener('touchmove', e => {
+  if (isDragging) {
+    targetRotY += (e.touches[0].clientX - lastMX) * 0.005;
+    lastMX = e.touches[0].clientX;
+  }
+  e.preventDefault();
+}, { passive: false });
+ctx2d.canvas.addEventListener('touchend', () => isDragging = false);
+
+// Auto-rotate when idle
+let idleTimer;
+function resetIdle() {
+  clearInterval(idleTimer);
+  idleTimer = setInterval(() => { targetRotY += 0.005; }, 50);
+}
+ctx2d.canvas.addEventListener('mousemove', resetIdle);
+ctx2d.canvas.addEventListener('mousedown', () => clearInterval(idleTimer));
+resetIdle();
+
+window.addEventListener('resize', () => {
+  ctx2d.canvas.width = window.innerWidth;
+  ctx2d.canvas.height = window.innerHeight;
+});
+
+render();
+</script>
+</body>
+</html>
+<!-- Sun Mar 29 18:12:27 +04 2026 -->
