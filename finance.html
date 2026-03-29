@@ -97,6 +97,13 @@
   .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.78rem; color: #8b949e; }
   .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
+  .expandable { cursor: pointer; user-select: none; }
+  .expandable:hover td { background: #1c2128 !important; }
+  .expandable td:first-child::after { content: ' ▶'; font-size: 0.65rem; color: #6e7681; margin-left: 6px; transition: transform 0.2s; display: inline-block; }
+  .expandable.open td:first-child::after { content: ' ▼'; color: #58a6ff; }
+  .expand-detail { display: none; background: #0d1117; }
+  .expand-detail.open { display: table-row; }
+  .expand-detail td { padding: 8px 16px 12px 32px; border-bottom: 1px solid #21262d; }
   @media (max-width: 800px) {
     .grid-4, .grid-3 { grid-template-columns: repeat(2, 1fr); }
     .grid-2 { grid-template-columns: 1fr; }
@@ -259,9 +266,37 @@
       <tbody><tr><td><strong>NC500 Pods (50% stake)</strong></td><td class="text-right amount">£250,000</td><td class="text-right amount" style="color:#3fb950">AED 1,207,500</td><td style="color:#6e7681;font-size:0.78rem">50% of ~£500k glamping business (Scotland)</td></tr>
           <tr><td><strong>Mashreq NEO Plus</strong></td><td class="text-right amount">AED 167</td><td class="text-right amount" style="color:#3fb950">AED 167</td><td style="color:#6e7681;font-size:0.78rem">29 Mar 2026</td></tr>
           <tr><td><strong>Wise GBP</strong></td><td class="text-right amount">£298</td><td class="text-right amount" style="color:#3fb950">AED 1,439</td><td style="color:#6e7681;font-size:0.78rem">29 Mar 2026</td></tr>
-          <tr><td><strong>Biodeposit Trees (Georgia)</strong></td><td class="text-right amount">$952.06</td><td class="text-right amount" style="color:#3fb950">AED 3,494</td><td style="color:#6e7681;font-size:0.78rem">4 trees | Bought: $763 | Current: $952.06 | +$189.06 (+25%)</td></tr>
-          <tr><td><strong>Binance (Crypto + Copy Trading)</strong></td><td class="text-right amount">$3,427.93</td><td class="text-right amount" style="color:#3fb950">AED 12,581</td><td style="color:#6e7681;font-size:0.78rem">Spot coins: $284 (held at current value) | Copy trading: $3,000 deposited → $3,143 (+$143 profit) | Total: $3,427 | 29 Mar 2026</td></tr>
-          <tr><td><strong>Binance Web3 Wallet</strong></td><td class="text-right amount">$1,296.80</td><td class="text-right amount" style="color:#3fb950">AED 4,759</td><td style="color:#6e7681;font-size:0.78rem">20 tokens | BORG, DOT, ADA, IOTA, BTC + others | 29 Mar 2026</td></tr>
+          <tr class="expandable" onclick="toggleExpand('biodeposit')"><td><strong>Biodeposit Trees (Georgia)</strong></td><td class="text-right amount">$952.06</td><td class="text-right amount" style="color:#3fb950">AED 3,494</td><td style="color:#6e7681;font-size:0.78rem">4 trees | Click to expand</td></tr>
+          <tr class="expand-detail" id="biodeposit"><td colspan="4"><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:4px 0">
+            <div class="card" style="padding:12px"><div style="font-size:0.72rem;color:#6e7681">Tree 1 (Spring 2023)</div><div style="font-weight:600;color:#3fb950">$293.64</div><div style="font-size:0.75rem;color:#8b949e">Bought: $214</div></div>
+            <div class="card" style="padding:12px"><div style="font-size:0.72rem;color:#6e7681">Tree 2 (Autumn 2025)</div><div style="font-weight:600;color:#3fb950">$100.09</div><div style="font-size:0.75rem;color:#8b949e">Bought: $144</div></div>
+            <div class="card" style="padding:12px"><div style="font-size:0.72rem;color:#6e7681">Tree 3 (Autumn 2025)</div><div style="font-weight:600;color:#3fb950">$200.09</div><div style="font-size:0.75rem;color:#8b949e">Bought: $144</div></div>
+            <div class="card" style="padding:12px"><div style="font-size:0.72rem;color:#6e7681">Tree 4 (Spring 2022)</div><div style="font-weight:600;color:#3fb950">$358.24</div><div style="font-size:0.75rem;color:#8b949e">Bought: $261</div></div>
+          </div></td></tr>
+          <tr class="expandable" onclick="toggleExpand('binance')"><td><strong>Binance (Crypto + Copy Trading)</strong></td><td class="text-right amount">$3,427.93</td><td class="text-right amount" style="color:#3fb950">AED 12,581</td><td style="color:#6e7681;font-size:0.78rem">Click to expand</td></tr>
+          <tr class="expand-detail" id="binance"><td colspan="4"><div style="padding:4px 0">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+              <div class="card" style="padding:12px"><div style="font-size:0.72rem;color:#6e7681">Spot Holdings</div><div style="font-weight:600;color:#e1e4e8">$284</div><div style="font-size:0.75rem;color:#8b949e">USDT, DOGE, LTC, BTC, PENGU, XRP + others</div></div>
+              <div class="card" style="padding:12px"><div style="font-size:0.72rem;color:#6e7681">Copy Trading</div><div style="font-weight:600;color:#3fb950">$3,143 <span style="font-size:0.8rem">(+$143)</span></div><div style="font-size:0.75rem;color:#8b949e">$3,000 deposited → +$143 profit</div></div>
+            </div>
+            <div style="font-size:0.78rem;color:#8b949e;margin-bottom:6px;font-weight:600">10 Copy Traders:</div>
+            <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px">
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">小狐先生</div><div style="color:#3fb950;font-weight:600">+$85</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">Galaxy Bot 3</div><div style="color:#3fb950;font-weight:600">+$47</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">酷酷的腾</div><div style="color:#3fb950;font-weight:600">+$38</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">Tinyoya</div><div style="color:#3fb950;font-weight:600">+$14</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">创造奇迹666</div><div style="color:#3fb950;font-weight:600">+$7</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">意钦</div><div style="color:#3fb950;font-weight:600">+$5</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">KINGSSSSS</div><div style="color:#f85149;font-weight:600">-$3</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">Btc星爷</div><div style="color:#f85149;font-weight:600">-$7</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">雾里看阴云</div><div style="color:#f85149;font-weight:600">-$8</div></div>
+              <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">ETH阿辰</div><div style="color:#f85149;font-weight:600">-$12</div></div>
+            </div>
+          </div></td></tr>
+          <tr class="expandable" onclick="toggleExpand('web3')"><td><strong>Binance Web3 Wallet</strong></td><td class="text-right amount">$1,296.80</td><td class="text-right amount" style="color:#3fb950">AED 4,759</td><td style="color:#6e7681;font-size:0.78rem">20 tokens | Click to expand</td></tr>
+          <tr class="expand-detail" id="web3"><td colspan="4"><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding:4px 0">
+            <div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">BORG</div><div style="color:#e1e4e8;font-weight:600">$180.22</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">DOT</div><div style="color:#e1e4e8;font-weight:600">$109.73</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">ADA</div><div style="color:#e1e4e8;font-weight:600">$102.45</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">IOTA</div><div style="color:#e1e4e8;font-weight:600">$100.11</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">BTC</div><div style="color:#e1e4e8;font-weight:600">$98.02</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">LMWR</div><div style="color:#e1e4e8;font-weight:600">$92.92</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">VELO</div><div style="color:#e1e4e8;font-weight:600">$89.32</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">SUI</div><div style="color:#e1e4e8;font-weight:600">$85.58</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">MANYU</div><div style="color:#e1e4e8;font-weight:600">$81.44</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">SHX</div><div style="color:#e1e4e8;font-weight:600">$73.18</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">ARB</div><div style="color:#e1e4e8;font-weight:600">$71.67</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">Jager</div><div style="color:#e1e4e8;font-weight:600">$66.13</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">EOS</div><div style="color:#e1e4e8;font-weight:600">$56.06</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">LTC</div><div style="color:#e1e4e8;font-weight:600">$29.10</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">ETH</div><div style="color:#e1e4e8;font-weight:600">$19.00</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">ALVA</div><div style="color:#e1e4e8;font-weight:600">$14.42</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">OPUL</div><div style="color:#e1e4e8;font-weight:600">$13.20</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">BNB</div><div style="color:#e1e4e8;font-weight:600">$6.89</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">DOGE</div><div style="color:#e1e4e8;font-weight:600">$6.07</div></div><div style="background:#161b22;border:1px solid #21262d;border-radius:6px;padding:8px;font-size:0.75rem"><div style="color:#8b949e">SOL</div><div style="color:#e1e4e8;font-weight:600">$1.14</div></div>
+          </div></td></tr>
           <tr style="background:#0d1117;font-weight:700"><td>TOTAL ASSETS</td><td></td><td class="text-right" style="color:#3fb950">AED 1,215,454</td><td></td></tr></tbody>
     </table></div></div>
     <div class="section-label">📉 Credit Cards</div>
@@ -789,6 +824,12 @@ function renderNetWorthChart() {
     }
   });
 }
+function toggleExpand(id) {
+  const row = document.getElementById(id);
+  const trigger = row.previousElementSibling;
+  row.classList.toggle('open');
+  trigger.classList.toggle('open');
+}
 // ── Tabs ───────────────────────────────────────────────────────────────────
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -811,4 +852,4 @@ initTxFilters();
 </script>
 </body>
 </html>
-<!-- Sun Mar 29 11:39:12 +04 2026 -->
+<!-- Sun Mar 29 11:42:07 +04 2026 -->
