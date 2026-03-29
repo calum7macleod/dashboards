@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📈</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; }
+  .header { background: linear-gradient(135deg, #1a1d2e 0%, #16213e 100%); padding: 22px 32px; border-bottom: 1px solid #21262d; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 1.5rem; font-weight: 700; color: #fff; }
+  .header p { color: #8b949e; font-size: 0.82rem; margin-top: 3px; }
+  .tabs { display: flex; gap: 4px; padding: 0 32px; background: #161b22; border-bottom: 1px solid #21262d; overflow-x: auto; }
+  .tab { padding: 12px 20px; cursor: pointer; font-size: 0.88rem; color: #8b949e; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; }
+  .tab:hover { color: #e1e4e8; }
+  .tab.active { color: #58a6ff; border-bottom-color: #58a6ff; }
+  .content { padding: 24px 32px; max-width: 1400px; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .grid { display: grid; gap: 16px; }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .grid-5 { grid-template-columns: repeat(5, 1fr); }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .card-title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 10px; font-weight: 600; }
+  .stat-value { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
+  .stat-sub { font-size: 0.8rem; color: #8b949e; margin-top: 6px; }
+  .stat-badge { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-top: 6px; font-weight: 600; }
+  .badge-green { background: #23312a; color: #3fb950; }
+  .badge-red { background: #3d1f1f; color: #f85149; }
+  .badge-yellow { background: #302a1c; color: #e3b341; }
+  .badge-blue { background: #1c2d4a; color: #79c0ff; }
+  .chart-card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .chart-card h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 16px; font-weight: 600; }
+  .section-label { font-size: 0.95rem; font-weight: 600; color: #c9d1d9; margin: 24px 0 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  th { text-align: left; padding: 10px 14px; border-bottom: 1px solid #21262d; color: #6e7681; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; }
+  td { padding: 9px 14px; border-bottom: 1px solid #0d1117; }
+  tr:hover td { background: #1c2128; }
+  .text-right { text-align: right; }
+  .text-muted { color: #6e7681; }
+  .amount { font-weight: 600; }
+  .win { color: #3fb950; font-weight: 700; }
+  .loss { color: #f85149; font-weight: 700; }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+  .dot-green { background: #3fb950; box-shadow: 0 0 6px #3fb950; }
+  .dot-grey { background: #6e7681; }
+  .pair-card { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 12px; }
+  .strategy-block { background: #0d1117; border-radius: 8px; padding: 16px; margin-bottom: 12px; border-left: 3px solid #58a6ff; }
+  .strategy-block.green { border-left-color: #3fb950; }
+  .strategy-block.yellow { border-left-color: #e3b341; }
+  .strategy-block.purple { border-left-color: #d2a8ff; }
+  @media (max-width: 800px) { .grid-5,.grid-4,.grid-3 { grid-template-columns: repeat(2,1fr); } .grid-2 { grid-template-columns: 1fr; } .content { padding: 16px; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1>📈 Trading Dashboard</h1>
+    <p>CalumBot v3 · Fusion Markets MT4 · 10 Pairs</p>
+  </div>
+  <div style="text-align:right">
+    <div style="color:#8b949e;font-size:0.78rem">Last updated: 29 Mar 2026</div>
+    <div style="margin-top:4px"><span class="status-dot dot-grey"></span><span style="color:#6e7681;font-size:0.78rem">Awaiting first trade</span></div>
+  </div>
+</div>
+<div class="tabs">
+  <div class="tab active" data-tab="overview">Overview</div>
+  <div class="tab" data-tab="strategy">Strategy</div>
+  <div class="tab" data-tab="pairs">Pairs</div>
+  <div class="tab" data-tab="trades">Trade Log</div>
+  <div class="tab" data-tab="settings">Bot Settings</div>
+</div>
+<div class="content">
+
+  <!-- OVERVIEW -->
+  <div id="tab-overview" class="tab-panel active">
+    <div class="grid grid-4" style="margin-bottom:20px">
+      <div class="card">
+        <div class="card-title">Account Balance</div>
+        <div class="stat-value">$1,000</div>
+        <div class="stat-sub">Starting capital</div>
+        <div class="stat-badge badge-blue">Live from Mon 30 Mar</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Total P&L</div>
+        <div class="stat-value" id="total-pnl">$0.00</div>
+        <div class="stat-sub">All time</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Win Rate</div>
+        <div class="stat-value" id="win-rate">—</div>
+        <div class="stat-sub" id="win-rate-sub">No trades yet</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Bot Status</div>
+        <div class="stat-value" style="font-size:1.2rem">
+          <span class="status-dot dot-grey"></span>Waiting
+        </div>
+        <div class="stat-sub">London opens Mon 11am Dubai</div>
+      </div>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:20px">
+      <div class="chart-card">
+        <h3>Equity Curve</h3>
+        <canvas id="chart-equity" style="max-height:220px"></canvas>
+        <div style="font-size:0.75rem;color:#6e7681;text-align:center;margin-top:8px">📍 Starting: $1,000 · 29 Mar 2026</div>
+      </div>
+      <div class="chart-card">
+        <h3>Daily P&L</h3>
+        <canvas id="chart-daily" style="max-height:220px"></canvas>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-title">Today's Trades</div>
+        <div class="stat-value" id="today-trades">0</div>
+        <div class="stat-sub">Across all pairs</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Win Streak</div>
+        <div class="stat-value" id="win-streak">—</div>
+        <div class="stat-sub">Current streak</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Best Trade</div>
+        <div class="stat-value" id="best-trade" style="font-size:1.3rem">—</div>
+        <div class="stat-sub" id="best-trade-sub">Awaiting trades</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STRATEGY -->
+  <div id="tab-strategy" class="tab-panel">
+    <div class="section-label">🤖 CalumBot v3 — How It Works</div>
+
+    <div class="strategy-block green">
+      <div style="font-weight:700;font-size:0.95rem;margin-bottom:8px">🌅 Mode 1: London Session Breakout</div>
+      <div style="font-size:0.85rem;color:#8b949e;margin-bottom:8px">Active: 11:00am–12:30pm Dubai (7:00–8:30 GMT)</div>
+      <div style="font-size:0.84rem;line-height:1.6">
+        1. Identifies the overnight Asian session range (high/low between 1am–5am Dubai)<br>
+        2. Waits for price to break above the high or below the low<br>
+        3. Requires 3 consecutive confirming candles (momentum filter)<br>
+        4. Minimum range of 10 pips — no false breakout on tight ranges<br>
+        5. Buys breakout up, sells breakout down<br>
+        6. SL = 50% of Asian range, TP = 2× the SL (1:2 risk/reward)
+      </div>
+    </div>
+
+    <div class="strategy-block green">
+      <div style="font-weight:700;font-size:0.95rem;margin-bottom:8px">🗽 Mode 2: New York Session Breakout</div>
+      <div style="font-size:0.85rem;color:#8b949e;margin-bottom:8px">Active: 5:00pm–7:00pm Dubai (13:00–15:00 GMT)</div>
+      <div style="font-size:0.84rem;color:#8b949e">Same breakout logic as London. Second opportunity each day when US institutions enter the market.</div>
+    </div>
+
+    <div class="strategy-block yellow">
+      <div style="font-weight:700;font-size:0.95rem;margin-bottom:8px">📊 Mode 3: Mean Reversion</div>
+      <div style="font-size:0.85rem;color:#8b949e;margin-bottom:8px">Active: All other hours (except sleep 1am–11am Dubai)</div>
+      <div style="font-size:0.84rem;line-height:1.6">
+        1. RSI falls below 28 (extreme oversold) → Buy<br>
+        2. RSI rises above 72 (extreme overbought) → Sell<br>
+        3. ATR filter: skips if the market is trending strongly (avoids fighting momentum)<br>
+        4. SL = 25 pips, TP = 50 pips (1:2 ratio)
+      </div>
+    </div>
+
+    <div class="strategy-block purple">
+      <div style="font-weight:700;font-size:0.95rem;margin-bottom:8px">🛡️ Risk Management</div>
+      <div style="font-size:0.84rem;line-height:1.8">
+        <strong style="color:#e1e4e8">Base risk:</strong> 0.5% per trade ($5 on $1,000)<br>
+        <strong style="color:#e1e4e8">Win streak scaling:</strong> +0.25% per level → max 1% after 2 wins<br>
+        <strong style="color:#e1e4e8">Trailing stop:</strong> Moves to breakeven at +20 pips, trails in 10-pip steps<br>
+        <strong style="color:#e1e4e8">Time-based TP:</strong> Closes at 50%+ profit if trade open 4+ hours<br>
+        <strong style="color:#e1e4e8">Daily loss limit:</strong> Bot pauses at -1.5% for the day<br>
+        <strong style="color:#e1e4e8">Spread filter:</strong> No trades if spread > 2.5 pips<br>
+        <strong style="color:#e1e4e8">Max trades:</strong> 1-3 per pair per day (scales with performance)
+      </div>
+    </div>
+
+    <div class="section-label">🕐 Daily Schedule (Dubai time)</div>
+    <div class="card">
+      ${[
+        {time:'1:00am - 11:00am', mode:'😴 Sleep', desc:'No trading — dead Asian session', color:'#6e7681'},
+        {time:'11:00am - 12:30pm', mode:'🌅 London Breakout', desc:'Scan all 10 pairs for Asian range breakouts', color:'#3fb950'},
+        {time:'12:30pm - 5:00pm', mode:'📊 Mean Reversion', desc:'RSI extremes on ranging pairs', color:'#e3b341'},
+        {time:'5:00pm - 7:00pm', mode:'🗽 NY Breakout', desc:'Second breakout window', color:'#58a6ff'},
+        {time:'7:00pm - 1:00am', mode:'📊 Mean Reversion', desc:'Evening ranging session', color:'#e3b341'},
+      ].map(s => `<div style="display:flex;align-items:center;gap:16px;padding:10px 0;border-bottom:1px solid #21262d">
+        <div style="width:160px;font-size:0.8rem;color:#6e7681;flex-shrink:0">${s.time}</div>
+        <div style="width:4px;height:36px;background:${s.color};border-radius:2px;flex-shrink:0"></div>
+        <div><div style="font-weight:600;font-size:0.88rem;color:${s.color}">${s.mode}</div><div style="font-size:0.78rem;color:#8b949e">${s.desc}</div></div>
+      </div>`).join('')}
+    </div>
+  </div>
+
+  <!-- PAIRS -->
+  <div id="tab-pairs" class="tab-panel">
+    <div class="section-label">💱 Active Pairs (10)</div>
+    <div class="grid grid-5">
+      ${[
+        {pair:'GBP/USD', type:'Forex', why:'Tightest spreads, strongest London breakouts'},
+        {pair:'EUR/USD', type:'Forex', why:'Most liquid pair globally, clean technicals'},
+        {pair:'GBP/JPY', type:'Forex', why:'High volatility, excellent breakout range'},
+        {pair:'XAU/USD', type:'Metal', why:'Gold — huge London moves, strong trends'},
+        {pair:'USD/JPY', type:'Forex', why:'Clean breakouts, very liquid'},
+        {pair:'AUD/USD', type:'Forex', why:'Good mean reversion behaviour'},
+        {pair:'NZD/USD', type:'Forex', why:'Ranges well, good RSI signals'},
+        {pair:'USD/CAD', type:'Forex', why:'Oil correlation, trending pair'},
+        {pair:'USD/CHF', type:'Forex', why:'Safe haven flows, clean structure'},
+        {pair:'XAG/USD', type:'Metal', why:'Silver — follows Gold with more volatility'},
+      ].map((p,i) => `<div class="pair-card">
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px">${p.pair}</div>
+        <div style="font-size:0.7rem;color:${p.type==='Metal'?'#e3b341':'#58a6ff'};margin-bottom:6px">${p.type}</div>
+        <div style="font-size:0.75rem;color:#6e7681">${p.why}</div>
+        <div style="margin-top:8px;font-size:0.75rem;color:#6e7681">P&L: <span class="win" id="pair-pnl-${i}">$0.00</span></div>
+      </div>`).join('')}
+    </div>
+  </div>
+
+  <!-- TRADE LOG -->
+  <div id="tab-trades" class="tab-panel">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+      <div class="section-label" style="margin:0">📋 Trade Log</div>
+      <button onclick="addTrade()" style="padding:7px 14px;background:#1f6feb;border:none;border-radius:8px;color:#fff;font-size:0.85rem;cursor:pointer;font-weight:600">+ Add Trade</button>
+    </div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table>
+        <thead><tr><th>Date/Time</th><th>Pair</th><th>Type</th><th>Session</th><th>Lots</th><th class="text-right">Entry</th><th class="text-right">Exit</th><th class="text-right">Pips</th><th class="text-right">P&L</th></tr></thead>
+        <tbody id="trades-tbody">
+          <tr><td colspan="9" style="text-align:center;color:#6e7681;padding:40px">No trades yet — first London session opens Monday 30 March at 11am Dubai time</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="trade-summary" style="display:none;margin-top:16px" class="grid grid-4"></div>
+  </div>
+
+  <!-- SETTINGS -->
+  <div id="tab-settings" class="tab-panel">
+    <div class="section-label">⚙️ CalumBot v3 Settings</div>
+    <div class="card" style="margin-bottom:16px">
+      <table>
+        <thead><tr><th>Parameter</th><th>Value</th><th>Description</th></tr></thead>
+        <tbody>
+          ${[
+            ['RiskPct', '0.5%', 'Base risk per trade'],
+            ['RiskStep', '0.25%', 'Extra risk per win streak level'],
+            ['MaxRiskStreak', '2', 'Max streak levels (risk caps at 1%)'],
+            ['DailyLossLimitPct', '1.5%', 'Bot pauses if down this much'],
+            ['LondonOpenGMT', '7', '8am BST = 7am GMT = 11am Dubai'],
+            ['LondonWindowMins', '90', '90-minute breakout window'],
+            ['NYOpenGMT', '13', '9:30am EST = 1:30pm GMT = 5:30pm Dubai'],
+            ['NYWindowMins', '120', '2-hour NY window'],
+            ['MinAsianRangePips', '10', 'Minimum range to trade breakout'],
+            ['MaxSpreadPips', '2.5', 'Skip trade if spread exceeds this'],
+            ['RR_Ratio', '2.0', 'Take profit = 2× stop loss'],
+            ['RSI_Period', '14', 'RSI calculation period'],
+            ['RSI_Oversold', '28', 'Buy signal threshold'],
+            ['RSI_Overbought', '72', 'Sell signal threshold'],
+            ['MR_SL_Pips', '25', 'Mean reversion stop loss'],
+            ['ATR_Period', '14', 'ATR period for trend filter'],
+            ['ATR_TrendMult', '1.5', 'Skip MR if ATR > 1.5× average'],
+            ['TrailStartPips', '20', 'Move to breakeven after this profit'],
+            ['TrailStepPips', '10', 'Trail step size'],
+            ['TimeTPHours', '4', 'Time-based TP check after this many hours'],
+            ['TimeTPMinPct', '0.5', 'Close early if 50%+ of TP reached'],
+          ].map(([p,v,d]) => `<tr><td style="font-family:monospace;color:#79c0ff">${p}</td><td style="font-weight:600">${v}</td><td style="color:#8b949e;font-size:0.82rem">${d}</td></tr>`).join('')}
+        </tbody>
+      </table>
+    </div>
+    <div class="section-label">📝 Version History</div>
+    <div class="card">
+      ${[
+        {v:'v3', date:'29 Mar 2026', changes:'Trailing SL, NY session, momentum filter, win streak scaling, time-based TP, 10 pairs'},
+        {v:'v2', date:'29 Mar 2026', changes:'Added Gold & Silver, 10 pairs, spread filter, adaptive daily limits, Asian range min'},
+        {v:'v1', date:'29 Mar 2026', changes:'Initial build — London breakout + RSI mean reversion, GBP/USD & EUR/USD'},
+      ].map(v => `<div style="padding:10px 0;border-bottom:1px solid #21262d">
+        <div style="display:flex;gap:12px;align-items:baseline">
+          <span style="background:#1f6feb22;color:#58a6ff;padding:2px 8px;border-radius:4px;font-size:0.75rem;font-weight:700">${v.v}</span>
+          <span style="color:#6e7681;font-size:0.78rem">${v.date}</span>
+        </div>
+        <div style="font-size:0.82rem;color:#8b949e;margin-top:4px">${v.changes}</div>
+      </div>`).join('')}
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Equity chart starting point
+new Chart(document.getElementById('chart-equity'), {
+  type: 'line',
+  data: {
+    labels: ['29 Mar'],
+    datasets: [{
+      label: 'Account Balance',
+      data: [1000],
+      borderColor: '#3fb950',
+      backgroundColor: '#3fb95022',
+      borderWidth: 2,
+      pointRadius: 5,
+      fill: true,
+      tension: 0.3,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' $' + ctx.raw.toFixed(2) } } },
+    scales: {
+      x: { ticks: { color: '#6e7681' }, grid: { color: '#21262d' } },
+      y: { ticks: { color: '#6e7681', callback: v => '$' + v }, grid: { color: '#21262d' }, min: 900 }
+    }
+  }
+});
+
+new Chart(document.getElementById('chart-daily'), {
+  type: 'bar',
+  data: {
+    labels: ['29 Mar'],
+    datasets: [{ label: 'Daily P&L', data: [0], backgroundColor: '#58a6ff88', borderColor: '#58a6ff', borderWidth: 2, borderRadius: 4 }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' $' + ctx.raw.toFixed(2) } } },
+    scales: {
+      x: { ticks: { color: '#6e7681' }, grid: { color: '#21262d' } },
+      y: { ticks: { color: '#6e7681', callback: v => '$' + v }, grid: { color: '#21262d' } }
+    }
+  }
+});
+
+// Tabs
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// Trade log
+let trades = [];
+function addTrade() {
+  const pair   = prompt('Pair (e.g. GBPUSD):'); if(!pair) return;
+  const type   = prompt('BUY or SELL:'); if(!type) return;
+  const session= prompt('Session (LDN/NY/MR):') || 'LDN';
+  const lots   = parseFloat(prompt('Lots:')) || 0.01;
+  const entry  = parseFloat(prompt('Entry price:')) || 0;
+  const exit   = parseFloat(prompt('Exit price:')) || 0;
+  const pnl    = parseFloat(prompt('P&L ($):')) || 0;
+  const pips   = parseFloat(prompt('Pips:')) || 0;
+  trades.unshift({ date: new Date().toLocaleString('en-GB'), pair, type, session, lots, entry, exit, pips, pnl });
+  renderTrades();
+}
+
+function renderTrades() {
+  if(!trades.length) return;
+  const tbody = document.getElementById('trades-tbody');
+  tbody.innerHTML = trades.map(t => `<tr>
+    <td class="text-muted" style="font-size:0.78rem">${t.date}</td>
+    <td><strong>${t.pair}</strong></td>
+    <td style="color:${t.type==='BUY'?'#3fb950':'#f85149'};font-weight:600">${t.type}</td>
+    <td class="text-muted">${t.session}</td>
+    <td class="text-muted">${t.lots}</td>
+    <td class="text-right text-muted">${t.entry}</td>
+    <td class="text-right text-muted">${t.exit}</td>
+    <td class="text-right ${t.pips>=0?'win':'loss'}">${t.pips>=0?'+':''}${t.pips}</td>
+    <td class="text-right ${t.pnl>=0?'win':'loss'}">${t.pnl>=0?'+':''}$${t.pnl.toFixed(2)}</td>
+  </tr>`).join('');
+  
+  const wins   = trades.filter(t=>t.pnl>=0).length;
+  const total  = trades.length;
+  const totalPnl = trades.reduce((s,t)=>s+t.pnl,0);
+  const wr     = total ? (wins/total*100).toFixed(1)+'%' : '—';
+  
+  document.getElementById('total-pnl').textContent = (totalPnl>=0?'+':'') + '$' + totalPnl.toFixed(2);
+  document.getElementById('total-pnl').style.color = totalPnl >= 0 ? '#3fb950' : '#f85149';
+  document.getElementById('win-rate').textContent = wr;
+  document.getElementById('win-rate-sub').textContent = wins + 'W / ' + (total-wins) + 'L';
+  document.getElementById('today-trades').textContent = total;
+  
+  const best = trades.reduce((b,t)=>t.pnl>b.pnl?t:b, trades[0]);
+  document.getElementById('best-trade').textContent = '+$' + best.pnl.toFixed(2);
+  document.getElementById('best-trade-sub').textContent = best.pair + ' · ' + best.session;
+}
+</script>
+</body>
+</html>
+<!-- Sun Mar 29 14:20:35 +04 2026 -->
