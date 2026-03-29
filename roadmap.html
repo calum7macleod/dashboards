@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calum × Max — Roadmap</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1a1d2e 0%, #16213e 100%); padding: 28px 32px; border-bottom: 1px solid #21262d; }
+  .header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; }
+  .header p { color: #8b949e; font-size: 0.85rem; margin-top: 4px; }
+  .content { padding: 28px 32px; max-width: 1200px; }
+  .progress-bar { background: #21262d; border-radius: 20px; height: 8px; margin: 16px 0 24px; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 20px; background: linear-gradient(90deg, #3fb950, #58a6ff); transition: width 0.5s ease; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 0.78rem; color: #6e7681; margin-bottom: 4px; }
+  .section { margin-bottom: 32px; }
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .section-title { font-size: 1rem; font-weight: 700; color: #c9d1d9; }
+  .section-count { font-size: 0.72rem; padding: 2px 8px; border-radius: 12px; font-weight: 600; }
+  .items { display: flex; flex-direction: column; gap: 8px; }
+  .item { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; transition: border-color 0.2s; }
+  .item:hover { border-color: #30363d; }
+  .item.done { opacity: 0.6; }
+  .item.done .item-title { text-decoration: line-through; color: #6e7681; }
+  .item-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+  .item-body { flex: 1; }
+  .item-title { font-size: 0.88rem; font-weight: 600; margin-bottom: 3px; }
+  .item-desc { font-size: 0.78rem; color: #6e7681; line-height: 1.4; }
+  .item-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .tag { font-size: 0.68rem; padding: 1px 7px; border-radius: 10px; font-weight: 600; }
+  .status-badge { flex-shrink: 0; font-size: 0.68rem; padding: 3px 10px; border-radius: 12px; font-weight: 700; white-space: nowrap; align-self: flex-start; margin-top: 1px; }
+  .status-done { background: #23312a; color: #3fb950; }
+  .status-next { background: #1f6feb22; color: #58a6ff; border: 1px solid #1f6feb44; }
+  .status-soon { background: #302a1c; color: #e3b341; }
+  .status-future { background: #21262d; color: #6e7681; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px; }
+  .stat-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 16px; text-align: center; }
+  .stat-num { font-size: 2rem; font-weight: 700; color: #fff; }
+  .stat-label { font-size: 0.72rem; color: #6e7681; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+  @media (max-width: 600px) { .content { padding: 16px; } .grid-2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>⚡ Calum × Max — Master Roadmap</h1>
+  <p>Everything we're building together · Updated 29 Mar 2026</p>
+</div>
+<div class="content">
+
+  <!-- Progress overview -->
+  <div class="grid-2">
+    <div class="stat-card"><div class="stat-num" id="done-count">0</div><div class="stat-label">Done ✅</div></div>
+    <div class="stat-card"><div class="stat-num" id="todo-count">0</div><div class="stat-label">To Do 🔧</div></div>
+  </div>
+  <div class="progress-label"><span>Overall progress</span><span id="pct-label">0%</span></div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+
+  <!-- DONE -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">✅ Done</span>
+      <span class="section-count" style="background:#23312a;color:#3fb950" id="done-badge"></span>
+    </div>
+    <div class="items" id="done-items"></div>
+  </div>
+
+  <!-- NEXT UP -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">🔵 Next Up</span>
+      <span class="section-count" style="background:#1c2d4a;color:#58a6ff" id="next-badge"></span>
+    </div>
+    <div class="items" id="next-items"></div>
+  </div>
+
+  <!-- SOON -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">🟡 Coming Soon</span>
+      <span class="section-count" style="background:#302a1c;color:#e3b341" id="soon-badge"></span>
+    </div>
+    <div class="items" id="soon-items"></div>
+  </div>
+
+  <!-- FUTURE -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">🔮 Future</span>
+      <span class="section-count" style="background:#21262d;color:#6e7681" id="future-badge"></span>
+    </div>
+    <div class="items" id="future-items"></div>
+  </div>
+
+</div>
+
+<script>
+const items = [
+  // DONE
+  { status:'done', icon:'💰', title:'Finance Dashboard', desc:'Full cashflow tracker — 365+ transactions, all bank accounts, categories, budget vs actual, Compare tab', tags:['Finance','Dashboard'] },
+  { status:'done', icon:'📊', title:'Balance Sheet', desc:'Net worth AED 813k — all credit cards, assets (NC500 Pods, Binance, Biodeposit trees), expandable rows', tags:['Finance','Balance Sheet'] },
+  { status:'done', icon:'💼', title:'Real Estate Dashboard', desc:'16 deals, pipeline management, commission tracking, on-track pace indicator, heat-scored buyers/sellers', tags:['Real Estate','Dashboard'] },
+  { status:'done', icon:'📱', title:'Social Dashboard', desc:'Instagram stats, content calendar, ideas bank, lead tracker, strategy recommendations', tags:['Social','Dashboard'] },
+  { status:'done', icon:'📈', title:'CalumBot v3 — Trading EA', desc:'10 pairs, London + NY breakout, mean reversion, trailing SL, streak scaling. Live on Fusion Markets MT4', tags:['Trading','Bot'] },
+  { status:'done', icon:'🌐', title:'Trading Dashboard', desc:'Strategy explainer, pairs, trade log, bot settings, equity curve', tags:['Trading','Dashboard'] },
+  { status:'done', icon:'🔮', title:'3D Command Centre Hub', desc:'Rotating 3D screens, particle field, all dashboards accessible from one place', tags:['Fun','Hub'] },
+  { status:'done', icon:'🐙', title:'GitHub Pages deployment', desc:'All 4 dashboards + hub live at calum7macleod.github.io/dashboards', tags:['Infrastructure'] },
+  { status:'done', icon:'📅', title:'Daily morning brief', desc:'8am every day — RE pipeline, who to call, targets, bot status. Starting Mon 30 Mar', tags:['Automation'] },
+  { status:'done', icon:'🎬', title:'Week 1 content scripts', desc:'10 researched Instagram scripts ready to film Friday 4 April. @offplanjosh analysis included', tags:['Social','Content'] },
+
+  // NEXT UP
+  { status:'next', icon:'🔗', title:'ZeroMQ MT4 connection', desc:'Two-way Python ↔ MT4 bridge. I receive all trade data automatically, push parameter updates without file changes', tags:['Trading','Automation'] },
+  { status:'next', icon:'📊', title:'Live trading P&L in dashboard', desc:'Equity curve updates automatically as trades close. Win rate, drawdown, daily performance live', tags:['Trading','Dashboard'] },
+  { status:'next', icon:'📲', title:'Telegram trade alerts', desc:'Every trade open/close fires a message here. Entry, direction, P&L, running win rate', tags:['Trading','Alerts'] },
+  { status:'next', icon:'🔄', title:'Instagram API connection', desc:'Auto-pull views, reach, follower growth once Meta developer access is approved', tags:['Social','Automation'] },
+  { status:'next', icon:'📋', title:'Airtable content pipeline', desc:'Content ideas → scripted → filmed → edited → posted. Track everything in one place', tags:['Social','Content'] },
+  { status:'next', icon:'💳', title:'Credit card balance tracking', desc:'Monthly update routine — screenshot all 12 cards, I update balance sheet + flag payments due', tags:['Finance','Balance Sheet'] },
+
+  // SOON
+  { status:'soon', icon:'📰', title:'Thursday content brief (weekly)', desc:'Every Thursday 8am — @offplanjosh analysis, trending topics, 10 fresh scripts for Friday filming', tags:['Social','Content'] },
+  { status:'soon', icon:'💹', title:'NC500 Pods income tracking', desc:'Log rental income monthly, build P&L for the glamping business separately from personal finances', tags:['Finance','Business'] },
+  { status:'soon', icon:'🏠', title:'Balance sheet — April update', desc:'Add April card balances, update Binance P&L, add any new assets/liabilities', tags:['Finance','Balance Sheet'] },
+  { status:'soon', icon:'📉', title:'Debt paydown planner', desc:'Which card to hit hardest (Barclaycard 21.69% APR is most expensive), projected payoff dates', tags:['Finance','Planning'] },
+  { status:'soon', icon:'🎯', title:'RE weekly stock update', desc:'Move Jean to proper entry with unit details, keep sellers/buyers current as deals happen', tags:['Real Estate','Pipeline'] },
+  { status:'soon', icon:'🔖', title:'ADIB Mar 26 statement', desc:'March ADIB CC statement not yet sent — needed for complete Mar 26 picture', tags:['Finance','Data'] },
+
+  // FUTURE
+  { status:'future', icon:'🧾', title:'Full balance sheet — liabilities vs assets', desc:'All loans (Tal, Alex), proper mortgage tracking for Edinburgh house, full net worth picture', tags:['Finance','Balance Sheet'] },
+  { status:'future', icon:'📊', title:'LinkedIn dashboard', desc:'Track professional presence separately — posts, connections, leads from LinkedIn', tags:['Social'] },
+  { status:'future', icon:'🎯', title:'TikTok content system', desc:'Repurpose Instagram scripts for TikTok. Different algorithm, same content with minor edits', tags:['Social'] },
+  { status:'future', icon:'🤖', title:'Content AI automation', desc:'Auto-scrape trending topics weekly, auto-generate script drafts, push to Airtable without prompting', tags:['Social','Automation'] },
+  { status:'future', icon:'🏗️', title:'NC500 Pods dashboard', desc:'Business P&L, booking calendar, occupancy rate, income vs costs — separate business dashboard', tags:['Business'] },
+  { status:'future', icon:'📆', title:'Calendar integration', desc:'Connect Google Calendar — I remind you of viewings, deal follow-ups, payment due dates', tags:['Productivity'] },
+  { status:'future', icon:'✉️', title:'Email management', desc:'Connect email — I triage, flag important ones, draft responses for approval', tags:['Productivity'] },
+  { status:'future', icon:'🔮', title:'RE forecasting', desc:'"At current pace you hit AED 3M by October." Projected deal count, income forecast', tags:['Real Estate','Planning'] },
+];
+
+function renderItems() {
+  const groups = { done: [], next: [], soon: [], future: [] };
+  items.forEach(item => groups[item.status].push(item));
+
+  const total = items.length;
+  const doneCount = groups.done.length;
+  const pct = Math.round(doneCount / total * 100);
+
+  document.getElementById('done-count').textContent = doneCount;
+  document.getElementById('todo-count').textContent = total - doneCount;
+  document.getElementById('pct-label').textContent = pct + '%';
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('done-badge').textContent = groups.done.length;
+  document.getElementById('next-badge').textContent = groups.next.length;
+  document.getElementById('soon-badge').textContent = groups.soon.length;
+  document.getElementById('future-badge').textContent = groups.future.length;
+
+  const statusConfig = {
+    done:   { badge: 'status-done',   label: 'Done' },
+    next:   { badge: 'status-next',   label: 'Next' },
+    soon:   { badge: 'status-soon',   label: 'Soon' },
+    future: { badge: 'status-future', label: 'Future' },
+  };
+
+  const tagColors = ['#3fb95033','#58a6ff33','#d2a8ff33','#e3b34133','#f0883e33'];
+  const tagText =   ['#3fb950',  '#58a6ff',  '#d2a8ff',  '#e3b341',  '#f0883e'];
+
+  ['done','next','soon','future'].forEach(status => {
+    const container = document.getElementById(status + '-items');
+    container.innerHTML = groups[status].map((item, i) => {
+      const cfg = statusConfig[status];
+      const tagHtml = item.tags.map((t, ti) =>
+        `<span class="tag" style="background:${tagColors[ti%5]};color:${tagText[ti%5]}">${t}</span>`
+      ).join('');
+      return `<div class="item ${status==='done'?'done':''}">
+        <div class="item-icon">${item.icon}</div>
+        <div class="item-body">
+          <div class="item-title">${item.title}</div>
+          <div class="item-desc">${item.desc}</div>
+          <div class="item-tags">${tagHtml}</div>
+        </div>
+        <span class="status-badge ${cfg.badge}">${cfg.label}</span>
+      </div>`;
+    }).join('') || '<div style="color:#6e7681;font-size:0.82rem;padding:12px">Nothing here yet</div>';
+  });
+}
+
+renderItems();
+</script>
+</body>
+</html>
+<!-- Sun Mar 29 18:43:27 +04 2026 -->

@@ -10,12 +10,12 @@
   .container { text-align: center; padding: 40px; }
   h1 { font-size: 2rem; margin-bottom: 8px; }
   p { color: #8b949e; margin-bottom: 40px; }
-  .cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 32px 40px; text-decoration: none; color: #e1e4e8; transition: all 0.2s; min-width: 180px; }
+  .cards { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; max-width: 800px; }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 24px 28px; text-decoration: none; color: #e1e4e8; transition: all 0.2s; min-width: 150px; }
   .card:hover { border-color: #58a6ff; transform: translateY(-2px); }
-  .card .icon { font-size: 2.5rem; margin-bottom: 12px; }
-  .card h2 { font-size: 1.1rem; font-weight: 600; }
-  .card p { font-size: 0.85rem; color: #8b949e; margin-top: 6px; margin-bottom: 0; }
+  .card .icon { font-size: 2rem; margin-bottom: 10px; }
+  .card h2 { font-size: 1rem; font-weight: 600; }
+  .card p { font-size: 0.8rem; color: #8b949e; margin-top: 4px; margin-bottom: 0; }
 </style>
 </head>
 <body>
@@ -23,10 +23,12 @@
   <h1>Calum's Dashboards</h1>
   <p>Your personal command centre</p>
   <div class="cards">
-    <a href="finance.html" class="card"><div class="icon">💰</div><h2>Finance</h2><p>Cashflow, spending & budget</p></a>
-    <a href="realestate.html" class="card"><div class="icon">💼</div><h2>Real Estate</h2><p>Deals, pipeline & targets</p></a>
-    <a href="social.html" class="card"><div class="icon">📱</div><h2>Social</h2><p>Instagram growth & content</p></a>
-    <a href="trading.html" class="card"><div class="icon">📈</div><h2>Trading</h2><p>CalumBot · Forex · MT4</p></a>
+    <a href="finance.html" class="card"><div class="icon">💰</div><h2>Finance</h2><p>Cashflow & budget</p></a>
+    <a href="realestate.html" class="card"><div class="icon">💼</div><h2>Real Estate</h2><p>Deals & pipeline</p></a>
+    <a href="social.html" class="card"><div class="icon">📱</div><h2>Social</h2><p>Instagram & content</p></a>
+    <a href="trading.html" class="card"><div class="icon">📈</div><h2>Trading</h2><p>CalumBot · MT4</p></a>
+    <a href="hub.html" class="card"><div class="icon">🔮</div><h2>Hub</h2><p>3D command centre</p></a>
+    <a href="roadmap.html" class="card"><div class="icon">🗺️</div><h2>Roadmap</h2><p>What we're building</p></a>
   </div>
 </div>
 </body>
