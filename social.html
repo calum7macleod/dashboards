@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; }
+  .header { background: linear-gradient(135deg, #1a1d2e 0%, #16213e 100%); padding: 22px 32px; border-bottom: 1px solid #21262d; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 1.5rem; font-weight: 700; color: #fff; }
+  .header p { color: #8b949e; font-size: 0.82rem; margin-top: 3px; }
+  .tabs { display: flex; gap: 4px; padding: 0 32px; background: #161b22; border-bottom: 1px solid #21262d; overflow-x: auto; }
+  .tab { padding: 12px 20px; cursor: pointer; font-size: 0.88rem; color: #8b949e; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; }
+  .tab:hover { color: #e1e4e8; }
+  .tab.active { color: #58a6ff; border-bottom-color: #58a6ff; }
+  .content { padding: 24px 32px; max-width: 1400px; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .grid { display: grid; gap: 16px; }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .card-title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 10px; font-weight: 600; }
+  .stat-value { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
+  .stat-sub { font-size: 0.8rem; color: #8b949e; margin-top: 6px; }
+  .stat-badge { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-top: 6px; font-weight: 600; }
+  .badge-green { background: #23312a; color: #3fb950; }
+  .badge-blue { background: #1c2d4a; color: #79c0ff; }
+  .badge-yellow { background: #302a1c; color: #e3b341; }
+  .badge-purple { background: #2a1f3a; color: #d2a8ff; }
+  .chart-card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .chart-card h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 16px; font-weight: 600; }
+  .section-label { font-size: 0.95rem; font-weight: 600; color: #c9d1d9; margin: 24px 0 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  th { text-align: left; padding: 10px 14px; border-bottom: 1px solid #21262d; color: #6e7681; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; }
+  td { padding: 10px 14px; border-bottom: 1px solid #0d1117; }
+  tr:hover td { background: #1c2128; }
+  .text-right { text-align: right; }
+  .text-muted { color: #6e7681; }
+  .amount { font-weight: 600; }
+  .donut-wrap { position: relative; display: flex; align-items: center; gap: 24px; }
+  .donut-wrap canvas { max-width: 160px; max-height: 160px; }
+  .legend-list { display: flex; flex-direction: column; gap: 8px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.83rem; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .legend-val { margin-left: auto; font-weight: 600; color: #e1e4e8; }
+  .bar-bg { background: #21262d; border-radius: 6px; height: 8px; overflow: hidden; margin-top: 6px; }
+  .bar-fill { height: 100%; border-radius: 6px; }
+  .insight-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 16px; border-left: 3px solid #58a6ff; }
+  .insight-card.green { border-left-color: #3fb950; }
+  .insight-card.yellow { border-left-color: #e3b341; }
+  .insight-card.purple { border-left-color: #d2a8ff; }
+  .post-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px; display: flex; align-items: center; gap: 12px; }
+  .post-rank { font-size: 1.2rem; font-weight: 700; color: #6e7681; width: 24px; flex-shrink: 0; }
+  .post-info { flex: 1; }
+  .post-title { font-size: 0.88rem; font-weight: 600; margin-bottom: 3px; }
+  .post-meta { font-size: 0.75rem; color: #6e7681; }
+  .post-views { text-align: right; font-weight: 700; font-size: 1rem; color: #58a6ff; white-space: nowrap; }
+  .platform-pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+  .ig-pill { background: linear-gradient(135deg, #833ab422, #fd1d1d22, #fcb04522); color: #fd1d1d; border: 1px solid #fd1d1d44; }
+  .coming-soon { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 40px; text-align: center; color: #6e7681; }
+  .coming-soon .icon { font-size: 2.5rem; margin-bottom: 12px; }
+  .input-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+  .dash-input { padding: 8px 12px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; color: #e1e4e8; font-size: 0.85rem; outline: none; }
+  .dash-input:focus { border-color: #58a6ff; }
+  .btn { padding: 8px 16px; background: #1f6feb; border: none; border-radius: 8px; color: #fff; font-size: 0.85rem; cursor: pointer; font-weight: 600; }
+  .btn:hover { background: #388bfd; }
+  @media (max-width: 800px) { .grid-4,.grid-3 { grid-template-columns: repeat(2,1fr); } .grid-2 { grid-template-columns: 1fr; } .content { padding: 16px; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1>📱 Social Dashboard</h1>
+    <p>@dubaicalum · Personal brand & real estate leads</p>
+  </div>
+  <div style="text-align:right;color:#8b949e;font-size:0.78rem">Updated 29 Mar 2026</div>
+</div>
+<div class="tabs">
+  <div class="tab active" data-tab="overview">Overview</div>
+  <div class="tab" data-tab="content">Content</div>
+  <div class="tab" data-tab="insights">Insights</div>
+  <div class="tab" data-tab="calendar">Content Calendar</div>
+  <div class="tab" data-tab="leads">Lead Tracker</div>
+  <div class="tab" data-tab="linkedin">LinkedIn 🔜</div>
+</div>
+<div class="content">
+
+  <!-- OVERVIEW -->
+  <div id="tab-overview" class="tab-panel active">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
+      <span class="platform-pill ig-pill">📸 Instagram</span>
+      <span style="color:#6e7681;font-size:0.82rem">Last 30 days · Data as of 29 Mar 2026</span>
+    </div>
+
+    <div class="grid grid-4" style="margin-bottom:20px">
+      <div class="card">
+        <div class="card-title">Followers</div>
+        <div class="stat-value">2,413</div>
+        <div class="stat-sub">@dubaicalum</div>
+        <div class="stat-badge badge-green">Tracking from today</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Total Views</div>
+        <div class="stat-value">205.7K</div>
+        <div class="stat-sub">Last 30 days</div>
+        <div class="stat-badge badge-blue">Reels: 75.7%</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Accounts Reached</div>
+        <div class="stat-value">53.8K</div>
+        <div class="stat-sub">69.7% non-followers 🔥</div>
+        <div class="stat-badge badge-purple">High discovery</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Profile Visits</div>
+        <div class="stat-value">9,013</div>
+        <div class="stat-sub">Interactions: 3,537</div>
+        <div class="stat-badge badge-yellow">Reels: 87.8%</div>
+      </div>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:20px">
+      <div class="chart-card">
+        <h3>Views by Content Type</h3>
+        <div class="donut-wrap">
+          <canvas id="chart-content-type"></canvas>
+          <div class="legend-list">
+            <div class="legend-item"><div class="legend-dot" style="background:#d2a8ff"></div>Reels<span class="legend-val">75.7%</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#58a6ff"></div>Stories<span class="legend-val">17.9%</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div>Posts<span class="legend-val">6.5%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3>Follower Growth</h3>
+        <canvas id="chart-followers" style="max-height:200px"></canvas>
+        <div style="font-size:0.78rem;color:#6e7681;margin-top:10px;text-align:center">📍 Starting point: 2,413 followers · 29 Mar 2026</div>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="insight-card green">
+        <div style="font-size:0.72rem;color:#6e7681;text-transform:uppercase;font-weight:600;margin-bottom:6px">🔥 What's Working</div>
+        <div style="font-size:0.9rem;font-weight:600;margin-bottom:4px">Controversial opinion reels</div>
+        <div style="font-size:0.82rem;color:#8b949e">"UK Needs to Save Itself" hit 38.5K views — 18× your average. Opinionated UK takes are your best format.</div>
+      </div>
+      <div class="insight-card yellow">
+        <div style="font-size:0.72rem;color:#6e7681;text-transform:uppercase;font-weight:600;margin-bottom:6px">⏰ Best Time to Post</div>
+        <div style="font-size:0.9rem;font-weight:600;margin-bottom:4px">Monday at 9am</div>
+        <div style="font-size:0.82rem;color:#8b949e">928 followers most active at this time. Post your best content Monday morning for max reach.</div>
+      </div>
+      <div class="insight-card purple">
+        <div style="font-size:0.72rem;color:#6e7681;text-transform:uppercase;font-weight:600;margin-bottom:6px">💡 Opportunity</div>
+        <div style="font-size:0.9rem;font-weight:600;margin-bottom:4px">69.7% reach is non-followers</div>
+        <div style="font-size:0.82rem;color:#8b949e">You're pulling new audiences well. Add a clearer CTA (DM for viewings, link in bio) to convert reach into leads.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="tab-content" class="tab-panel">
+    <div class="section-label">🏆 Top Performing Content — Last 30 Days</div>
+    <div style="display:flex;flex-direction:column;gap:10px" id="top-content">
+      ${[
+        {rank:1, title:'UK Needs to Save Itself Not Us', type:'Reel', views:38500, date:'2 Mar', color:'#e3b341'},
+        {rank:2, title:'Back to Normal in Dubai?', type:'Reel', views:19700, date:'22 Mar', color:'#58a6ff'},
+        {rank:3, title:'Reply to Jack Kavanagh', type:'Reel', views:12100, date:'6 Mar', color:'#79c0ff'},
+        {rank:4, title:'Back to Work', type:'Reel', views:8500, date:'7 Mar', color:'#3fb950'},
+        {rank:5, title:'Dubai Lifestyle', type:'Reel', views:7500, date:'9 Mar', color:'#3fb950'},
+        {rank:6, title:'How many dirhams were you paid', type:'Reel', views:5700, date:'11 Mar', color:'#8b949e'},
+        {rank:7, title:'WHO AM I?', type:'Reel', views:5300, date:'14 Mar', color:'#8b949e'},
+        {rank:8, title:'Very Rarely Say This', type:'Reel', views:5100, date:'15 Mar', color:'#8b949e'},
+        {rank:9, title:'Life as a Dubai RE Broker Today', type:'Reel', views:4500, date:'16 Mar', color:'#8b949e'},
+      ].map(p => `<div class="post-card">
+        <div class="post-rank">${p.rank}</div>
+        <div class="post-info">
+          <div class="post-title">${p.title}</div>
+          <div class="post-meta">${p.type} · ${p.date}</div>
+        </div>
+        <div class="post-views" style="color:${p.color}">${p.views >= 1000 ? (p.views/1000).toFixed(1)+'K' : p.views}</div>
+      </div>`).join('')}
+    </div>
+
+    <div class="section-label">📊 Performance by Category</div>
+    <div class="card">
+      ${[
+        {cat:'UK Opinion / Controversial', avg:25300, posts:2, color:'#e3b341'},
+        {cat:'Dubai Lifestyle', avg:7500, posts:1, color:'#d2a8ff'},
+        {cat:'Real Estate / Broker Life', avg:5025, posts:4, color:'#58a6ff'},
+        {cat:'Personal Brand', avg:5300, posts:1, color:'#3fb950'},
+      ].map(c => `<div style="margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+          <span style="font-size:0.85rem;font-weight:500">${c.cat}</span>
+          <span style="font-size:0.82rem;color:#8b949e">avg ${c.avg >= 1000 ? (c.avg/1000).toFixed(1)+'K' : c.avg} views · ${c.posts} post${c.posts>1?'s':''}</span>
+        </div>
+        <div class="bar-bg"><div class="bar-fill" style="width:${Math.min(c.avg/380,100)}%;background:${c.color}88"></div></div>
+      </div>`).join('')}
+    </div>
+  </div>
+
+  <!-- INSIGHTS -->
+  <div id="tab-insights" class="tab-panel">
+    <div class="grid grid-2" style="margin-bottom:20px">
+      <div class="chart-card">
+        <h3>Audience Split — Followers vs Discovery</h3>
+        <div class="donut-wrap">
+          <canvas id="chart-audience-split"></canvas>
+          <div class="legend-list">
+            <div class="legend-item"><div class="legend-dot" style="background:#58a6ff"></div>Followers<span class="legend-val">30.3%</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div>Non-followers<span class="legend-val">69.7%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3>Interactions by Content Type</h3>
+        <div class="donut-wrap">
+          <canvas id="chart-interactions"></canvas>
+          <div class="legend-list">
+            <div class="legend-item"><div class="legend-dot" style="background:#d2a8ff"></div>Reels<span class="legend-val">87.8%</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div>Posts<span class="legend-val">8.6%</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#58a6ff"></div>Stories<span class="legend-val">3.6%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">🎯 Strategy Recommendations</div>
+    <div class="grid grid-2">
+      <div class="insight-card green">
+        <div style="font-weight:600;margin-bottom:6px">Double down on opinion content</div>
+        <div style="font-size:0.82rem;color:#8b949e">Your UK opinion reels average 25K+ views vs 5K for RE content. Do 2 opinion reels per week minimum. The controversy drives reach to people who then see your RE content.</div>
+      </div>
+      <div class="insight-card green">
+        <div style="font-weight:600;margin-bottom:6px">Post Monday 9am without fail</div>
+        <div style="font-size:0.82rem;color:#8b949e">928 followers are most active Monday morning. This is your slot for your best weekly content. Never miss a Monday.</div>
+      </div>
+      <div class="insight-card yellow">
+        <div style="font-weight:600;margin-bottom:6px">Add a lead capture CTA</div>
+        <div style="font-size:0.82rem;color:#8b949e">You're reaching 53K people but only getting 9K profile visits. Add "DM me if you're looking to buy in Dubai" to your best performing reels. Convert the reach into enquiries.</div>
+      </div>
+      <div class="insight-card yellow">
+        <div style="font-weight:600;margin-bottom:6px">Stories need work</div>
+        <div style="font-size:0.82rem;color:#8b949e">Stories are only 3.6% of interactions. Use them for engagement (polls, questions) and to drive people to your reels. Behind-the-scenes content, viewings, daily life.</div>
+      </div>
+      <div class="insight-card purple">
+        <div style="font-weight:600;margin-bottom:6px">Target: 5K followers by June</div>
+        <div style="font-size:0.82rem;color:#8b949e">At current trajectory you need ~85 new followers/week. With 1 viral reel per week hitting 10K+ views, that's very achievable. One deal story reel per week would help.</div>
+      </div>
+      <div class="insight-card purple">
+        <div style="font-weight:600;margin-bottom:6px">LinkedIn next — your RE audience is there</div>
+        <div style="font-size:0.82rem;color:#8b949e">Serious buyers and HNWIs are on LinkedIn. Same content, different format — written posts with insights. Start next month once IG cadence is locked in.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT CALENDAR -->
+  <div id="tab-calendar" class="tab-panel">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+      <div class="section-label" style="margin:0">📅 Content Calendar — April 2026</div>
+      <button class="btn" onclick="addIdea()">+ Add Idea</button>
+    </div>
+    <div class="card" style="margin-bottom:20px">
+      <div style="font-size:0.82rem;color:#8b949e;margin-bottom:12px">Weekly target: <strong style="color:#e1e4e8">4 posts</strong> · Best slot: <strong style="color:#3fb950">Monday 9am</strong></div>
+      <div id="calendar-grid" style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;font-size:0.75rem">
+        ${['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map(d => `<div style="text-align:center;color:#6e7681;font-weight:600;padding:4px">${d}</div>`).join('')}
+        ${Array.from({length:30}, (_,i) => {
+          const d = i+1;
+          const day = (i+2)%7; // Apr 1 = Tuesday
+          const isMonday = day === 1;
+          const isPostDay = [1,3,7,10,14,17,21,24,28].includes(d);
+          return `<div style="background:${isMonday?'#1f6feb22':'#161b22'};border:1px solid ${isMonday?'#1f6feb':'#21262d'};border-radius:6px;padding:6px;min-height:50px;${d===1?'grid-column:2':''}">
+            <div style="color:${isMonday?'#58a6ff':'#6e7681'};font-weight:600">${d}</div>
+            ${isPostDay?`<div style="background:#3fb95022;border-radius:3px;padding:2px 4px;margin-top:2px;color:#3fb950;font-size:0.65rem">📹 Reel</div>`:''}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>
+
+    <div class="section-label">💡 Content Ideas Bank</div>
+    <div id="ideas-list" style="display:flex;flex-direction:column;gap:8px">
+      ${[
+        {idea:'Why Dubai real estate is better than London right now', type:'Opinion', priority:'🔥 High'},
+        {idea:'A day in the life — showing a buyer around Lagoons', type:'Behind scenes', priority:'🔥 High'},
+        {idea:'How I closed my biggest deal this year', type:'Deal story', priority:'💪 Medium'},
+        {idea:'What £300k gets you in Dubai vs Edinburgh', type:'Comparison', priority:'🔥 High'},
+        {idea:'The truth about Dubai property fees nobody tells you', type:'Education', priority:'💪 Medium'},
+        {idea:'From Edinburgh to Dubai — my story', type:'Personal', priority:'💪 Medium'},
+      ].map(i => `<div style="background:#161b22;border:1px solid #21262d;border-radius:8px;padding:12px;display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div style="font-weight:500;font-size:0.88rem">${i.idea}</div>
+          <div style="font-size:0.75rem;color:#6e7681;margin-top:3px">${i.type}</div>
+        </div>
+        <span style="font-size:0.8rem;white-space:nowrap;margin-left:12px">${i.priority}</span>
+      </div>`).join('')}
+    </div>
+  </div>
+
+  <!-- LEAD TRACKER -->
+  <div id="tab-leads" class="tab-panel">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+      <div class="section-label" style="margin:0">💬 Instagram Lead Tracker</div>
+      <button class="btn" onclick="addLead()">+ Add Lead</button>
+    </div>
+    <div class="grid grid-3" style="margin-bottom:20px">
+      <div class="card"><div class="card-title">Total Leads</div><div class="stat-value" id="lead-count">0</div><div class="stat-sub">From Instagram DMs</div></div>
+      <div class="card"><div class="card-title">Active Conversations</div><div class="stat-value" id="active-count">0</div><div class="stat-sub">Currently engaged</div></div>
+      <div class="card"><div class="card-title">Converted to Viewing</div><div class="stat-value" id="converted-count">0</div><div class="stat-sub">Deals in pipeline</div></div>
+    </div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table>
+        <thead><tr><th>Name / Handle</th><th>Date</th><th>Post that brought them</th><th>Status</th><th>Notes</th></tr></thead>
+        <tbody id="leads-tbody">
+          <tr><td colspan="5" style="text-align:center;color:#6e7681;padding:30px">No leads yet — add your first Instagram DM lead above</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- LINKEDIN COMING SOON -->
+  <div id="tab-linkedin" class="tab-panel">
+    <div class="coming-soon">
+      <div class="icon">💼</div>
+      <div style="font-size:1.2rem;font-weight:700;color:#e1e4e8;margin-bottom:8px">LinkedIn — Coming Soon</div>
+      <div style="font-size:0.88rem;color:#8b949e;max-width:400px;margin:0 auto">Get Instagram locked in first, then we'll add LinkedIn next month. Your RE audience is there — HNWIs, investors, professionals looking to relocate to Dubai.</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Charts
+new Chart(document.getElementById('chart-content-type'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Reels', 'Stories', 'Posts'],
+    datasets: [{ data: [75.7, 17.9, 6.5], backgroundColor: ['#d2a8ff', '#58a6ff', '#3fb950'], borderColor: '#161b22', borderWidth: 3, hoverOffset: 6 }]
+  },
+  options: { responsive: true, cutout: '65%', plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' ' + ctx.label + ': ' + ctx.raw + '%' } } } }
+});
+
+new Chart(document.getElementById('chart-audience-split'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Followers', 'Non-followers'],
+    datasets: [{ data: [30.3, 69.7], backgroundColor: ['#58a6ff', '#3fb950'], borderColor: '#161b22', borderWidth: 3 }]
+  },
+  options: { responsive: true, cutout: '65%', plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' ' + ctx.label + ': ' + ctx.raw + '%' } } } }
+});
+
+new Chart(document.getElementById('chart-interactions'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Reels', 'Posts', 'Stories'],
+    datasets: [{ data: [87.8, 8.6, 3.6], backgroundColor: ['#d2a8ff', '#3fb950', '#58a6ff'], borderColor: '#161b22', borderWidth: 3 }]
+  },
+  options: { responsive: true, cutout: '65%', plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' ' + ctx.label + ': ' + ctx.raw + '%' } } } }
+});
+
+new Chart(document.getElementById('chart-followers'), {
+  type: 'line',
+  data: {
+    labels: ['29 Mar'],
+    datasets: [{ label: 'Followers', data: [2413], borderColor: '#d2a8ff', backgroundColor: '#d2a8ff22', borderWidth: 2, pointRadius: 6, fill: true, tension: 0.3 }]
+  },
+  options: { responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' ' + ctx.raw.toLocaleString() + ' followers' } } }, scales: { x: { ticks: { color: '#6e7681' }, grid: { color: '#21262d' } }, y: { ticks: { color: '#6e7681' }, grid: { color: '#21262d' }, min: 2000 } } }
+});
+
+// Tabs
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// Lead tracker
+let leads = [];
+function updateLeadStats() {
+  document.getElementById('lead-count').textContent = leads.length;
+  document.getElementById('active-count').textContent = leads.filter(l=>l.status==='Active').length;
+  document.getElementById('converted-count').textContent = leads.filter(l=>l.status==='Viewing' || l.status==='Deal').length;
+  document.getElementById('leads-tbody').innerHTML = leads.length ? leads.map(l =>
+    '<tr><td><strong>'+l.name+'</strong><div style="font-size:0.75rem;color:#6e7681">'+l.handle+'</div></td><td class="text-muted">'+l.date+'</td><td style="font-size:0.82rem">'+l.post+'</td><td><span style="background:#1f6feb22;color:#58a6ff;padding:2px 8px;border-radius:4px;font-size:0.75rem">'+l.status+'</span></td><td style="font-size:0.78rem;color:#6e7681">'+l.notes+'</td></tr>'
+  ).join('') : '<tr><td colspan="5" style="text-align:center;color:#6e7681;padding:30px">No leads yet</td></tr>';
+}
+
+function addLead() {
+  const name = prompt('Lead name / Instagram handle:');
+  if (!name) return;
+  const post = prompt('Which post brought them? (optional):') || '—';
+  const notes = prompt('Notes:') || '';
+  leads.unshift({ name, handle: '@' + name.replace('@',''), date: new Date().toLocaleDateString('en-GB'), post, status: 'Active', notes });
+  updateLeadStats();
+}
+
+function addIdea() {
+  const idea = prompt('Content idea:');
+  if (!idea) return;
+  const type = prompt('Type (Opinion/Reel/Story/etc):') || 'Reel';
+  const div = document.createElement('div');
+  div.style.cssText = 'background:#161b22;border:1px solid #21262d;border-radius:8px;padding:12px;display:flex;justify-content:space-between;align-items:center';
+  div.innerHTML = '<div><div style="font-weight:500;font-size:0.88rem">'+idea+'</div><div style="font-size:0.75rem;color:#6e7681;margin-top:3px">'+type+'</div></div><span style="font-size:0.8rem;white-space:nowrap;margin-left:12px">🆕 New</span>';
+  document.getElementById('ideas-list').prepend(div);
+}
+
+updateLeadStats();
+</script>
+</body>
+</html>
+<!-- Sun Mar 29 12:16:37 +04 2026 -->
