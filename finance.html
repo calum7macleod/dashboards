@@ -248,202 +248,49 @@
 
   <!-- BALANCE SHEET -->
   <div id="tab-balancesheet" class="tab-panel">
-
-    <!-- Net Worth Hero -->
     <div class="grid grid-3" style="margin-bottom:24px">
-      <div class="card" style="border-color:#21262d">
-        <div class="card-title">Total Assets</div>
-        <div class="stat-value" style="font-size:1.5rem;color:#3fb950">AED 1,196,360</div>
-        <div class="stat-sub">≈ £247,694</div>
-      </div>
-      <div class="card" style="border-color:#21262d">
-        <div class="card-title">Total Liabilities</div>
-        <div class="stat-value" style="font-size:1.5rem;color:#f85149">AED 410,367</div>
-        <div class="stat-sub">≈ £84,962</div>
-      </div>
-      <div class="card" style="border-color:#3fb95055">
-        <div class="card-title">Net Worth</div>
-        <div class="stat-value" style="font-size:1.5rem;color:#3fb950">AED 785,994</div>
-        <div class="stat-sub">≈ £162,732</div>
-        <div class="stat-badge badge-green" style="margin-top:8px">Positive net worth</div>
-      </div>
+      <div class="card"><div class="card-title">Total Assets</div><div class="stat-value" style="font-size:1.5rem;color:#3fb950">AED 1,215,454</div><div class="stat-sub">≈ £251,647</div></div>
+      <div class="card"><div class="card-title">Total Liabilities</div><div class="stat-value" style="font-size:1.5rem;color:#f85149">AED 401,961</div><div class="stat-sub">≈ £83,222</div></div>
+      <div class="card" style="border-color:#3fb95055"><div class="card-title">Net Worth</div><div class="stat-value" style="font-size:1.5rem;color:#3fb950">AED 813,493</div><div class="stat-sub">≈ £168,425</div><div class="stat-badge badge-green" style="margin-top:8px">Positive net worth</div></div>
     </div>
-
-    <!-- Assets -->
     <div class="section-label">📈 Assets</div>
-    <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px"><div style="overflow-x:auto">
-      <table>
-        <thead><tr><th>Asset</th><th class="text-right">Value</th><th class="text-right">AED Equiv</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><strong>NC500 Pods (50% stake)</strong></td>
-            <td class="text-right amount">£250,000</td>
-            <td class="text-right amount" style="color:#3fb950">AED 1,207,500</td>
-            <td style="color:#6e7681;font-size:0.78rem">50% of ~£500k glamping business (Scotland)</td>
-          </tr>
-          <tr>
-            <td><strong>Mashreq NEO Plus</strong></td>
-            <td class="text-right amount">AED 167</td>
-            <td class="text-right amount" style="color:#3fb950">AED 167</td>
-            <td style="color:#6e7681;font-size:0.78rem">29 Mar 2026</td>
-          </tr>
-          <tr>
-            <td><strong>Wise GBP</strong></td>
-            <td class="text-right amount">£298</td>
-            <td class="text-right amount" style="color:#3fb950">AED 1,439</td>
-            <td style="color:#6e7681;font-size:0.78rem">Current balance</td>
-          </tr>
-          <tr id="crypto-row" style="display:none">
-            <td><strong>Crypto / Binance</strong></td>
-            <td class="text-right amount" id="crypto-val">—</td>
-            <td class="text-right amount" style="color:#3fb950" id="crypto-aed">—</td>
-            <td style="color:#6e7681;font-size:0.78rem">Pending</td>
-          </tr>
-          <tr style="background:#0d1117;font-weight:700">
-            <td>TOTAL ASSETS</td>
-            <td></td>
-            <td class="text-right" style="color:#3fb950">AED 1,196,360</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div></div>
-
-    <!-- Liabilities -->
-    <div class="section-label">📉 Liabilities — Credit Cards</div>
-    <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px"><div style="overflow-x:auto">
-      <table>
-        <thead><tr><th>Card</th><th class="text-right">Balance</th><th class="text-right">Limit</th><th class="text-right">Util %</th><th class="text-right">AED Equiv</th></tr></thead>
-        <tbody>
-          <tr>
-    <td>undefined <span style="color:#6e7681">••••undefined</span></td>
-    <td class="text-right">AED 8,405.38</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right">—</td>
-    <td class="text-right amount">AED 8,405</td>
-  </tr><tr>
-    <td>undefined <span style="color:#6e7681">••••undefined</span></td>
-    <td class="text-right">USD 27.10</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right">—</td>
-    <td class="text-right amount">AED 27</td>
-  </tr><tr>
-    <td>ADIB Emirates Skywards Visa <span style="color:#6e7681">••••6789</span></td>
-    <td class="text-right">AED 69,985.74</td>
-    <td class="text-right text-muted">AED 70,000</td>
-    <td class="text-right"><span style="color:#f85149;font-weight:600">100%</span></td>
-    <td class="text-right amount">AED 69,986</td>
-  </tr><tr>
-    <td>Amex British Airways <span style="color:#6e7681">••••42002</span></td>
-    <td class="text-right">GBP 29.99</td>
-    <td class="text-right text-muted">GBP 800</td>
-    <td class="text-right"><span style="color:#3fb950;font-weight:600">4%</span></td>
-    <td class="text-right amount">AED 145</td>
-  </tr><tr>
-    <td>Amex Gold (Preferred Rewards) <span style="color:#6e7681">••••83005</span></td>
-    <td class="text-right">GBP 460.00</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right">—</td>
-    <td class="text-right amount">AED 2,222</td>
-  </tr><tr>
-    <td>MBNA Credit Card <span style="color:#6e7681">••••1654</span> <span style="color:#f85149;font-size:0.7rem">⚠️ DUE 2026-04-02</span></td>
-    <td class="text-right">GBP 6,369.28</td>
-    <td class="text-right text-muted">GBP 8,800</td>
-    <td class="text-right"><span style="color:#3fb950;font-weight:600">72%</span></td>
-    <td class="text-right amount">AED 30,764</td>
-  </tr><tr>
-    <td>MBNA Credit Card <span style="color:#6e7681">••••3318</span></td>
-    <td class="text-right">GBP 1,915.87</td>
-    <td class="text-right text-muted">GBP 2,500</td>
-    <td class="text-right"><span style="color:#e3b341;font-weight:600">77%</span></td>
-    <td class="text-right amount">AED 9,254</td>
-  </tr><tr>
-    <td>Aqua Mastercard <span style="color:#6e7681">••••4498</span> <span style="color:#f85149;font-size:0.7rem">⚠️ DUE 2026-04-08</span></td>
-    <td class="text-right">GBP 3,302.01</td>
-    <td class="text-right text-muted">GBP 3,500</td>
-    <td class="text-right"><span style="color:#f85149;font-weight:600">94%</span></td>
-    <td class="text-right amount">AED 15,949</td>
-  </tr><tr>
-    <td>HSBC UK Credit Card <span style="color:#6e7681">••••9345</span> <span style="color:#f85149;font-size:0.7rem">⚠️ DUE 2026-04-07</span></td>
-    <td class="text-right">GBP 1,564.35</td>
-    <td class="text-right text-muted">GBP 2,000</td>
-    <td class="text-right"><span style="color:#e3b341;font-weight:600">78%</span></td>
-    <td class="text-right amount">AED 7,556</td>
-  </tr><tr>
-    <td>Barclaycard Platinum Visa <span style="color:#6e7681">••••3001</span></td>
-    <td class="text-right">GBP 8,242.83</td>
-    <td class="text-right text-muted">GBP 10,000</td>
-    <td class="text-right"><span style="color:#e3b341;font-weight:600">82%</span></td>
-    <td class="text-right amount">AED 39,813</td>
-  </tr><tr>
-    <td>Santander Everyday Credit Card <span style="color:#6e7681">••••1486</span></td>
-    <td class="text-right">GBP 11,531.78</td>
-    <td class="text-right text-muted">GBP 15,000</td>
-    <td class="text-right"><span style="color:#e3b341;font-weight:600">77%</span></td>
-    <td class="text-right amount">AED 55,698</td>
-  </tr><tr>
-    <td>Virgin Money Credit Card <span style="color:#6e7681">••••2995</span></td>
-    <td class="text-right">GBP 7,588.33</td>
-    <td class="text-right text-muted">GBP 10,000</td>
-    <td class="text-right"><span style="color:#e3b341;font-weight:600">76%</span></td>
-    <td class="text-right amount">AED 36,652</td>
-  </tr><tr>
-    <td>Tesco Bank Clubcard Credit Card <span style="color:#6e7681">••••8916</span> <span style="color:#f85149;font-size:0.7rem">⚠️ DUE 2026-03-29</span></td>
-    <td class="text-right">GBP 6,371.75</td>
-    <td class="text-right text-muted">GBP 7,400</td>
-    <td class="text-right"><span style="color:#e3b341;font-weight:600">86%</span></td>
-    <td class="text-right amount">AED 30,776</td>
-  </tr><tr>
-    <td>M&S Mastercard Standard <span style="color:#6e7681">••••0816</span></td>
-    <td class="text-right">GBP 6,106.06</td>
-    <td class="text-right text-muted">GBP 8,000</td>
-    <td class="text-right"><span style="color:#e3b341;font-weight:600">76%</span></td>
-    <td class="text-right amount">AED 29,492</td>
-  </tr>
-          <tr style="background:#0d1117;font-weight:700">
-            <td>TOTAL CREDIT CARDS</td><td></td><td></td><td></td>
-            <td class="text-right" style="color:#f85149">AED 336,737</td>
-          </tr>
-        </tbody>
-      </table>
-    </div></div>
-
-    <div class="section-label">📉 Liabilities — Loans & Overdrafts</div>
-    <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px"><div style="overflow-x:auto">
-      <table>
-        <thead><tr><th>Liability</th><th class="text-right">Balance</th><th class="text-right">Limit</th><th class="text-right">Util %</th><th class="text-right">AED Equiv</th></tr></thead>
-        <tbody>
-          <tr>
-    <td>Tal (Tallia Flaher) <span style="color:#6e7681;font-size:0.78rem">Personal loan from partner</span></td>
-    <td class="text-right">GBP 10,000.00</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right amount">AED 48,300</td>
-  </tr><tr>
-    <td>BoS Overdraft <span style="color:#6e7681;font-size:0.78rem"></span></td>
-    <td class="text-right">GBP 2,999.76</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right amount">AED 14,489</td>
-  </tr><tr>
-    <td>Nationwide (property overdraft) <span style="color:#6e7681;font-size:0.78rem">Edinburgh property account</span></td>
-    <td class="text-right">GBP 2,250.00</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right text-muted">—</td>
-    <td class="text-right amount">AED 10,868</td>
-  </tr>
-          <tr style="background:#0d1117;font-weight:700">
-            <td>TOTAL LOANS & OVERDRAFTS</td><td></td><td></td><td></td>
-            <td class="text-right" style="color:#f85149">AED 73,656</td>
-          </tr>
-        </tbody>
-      </table>
-    </div></div>
-
-    <div style="color:#6e7681;font-size:0.75rem;margin-top:8px">
-      * Edinburgh house and mortgage excluded per Calum's instruction · GBP/AED rate: 4.83 · Last updated: 29 Mar 2026
-    </div>
-  </div></div>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px"><div style="overflow-x:auto"><table>
+      <thead><tr><th>Asset</th><th class="text-right">Value</th><th class="text-right">AED Equiv</th><th>Notes</th></tr></thead>
+      <tbody><tr><td><strong>NC500 Pods (50% stake)</strong></td><td class="text-right amount">£250,000</td><td class="text-right amount" style="color:#3fb950">AED 1,207,500</td><td style="color:#6e7681;font-size:0.78rem">50% of ~£500k glamping business (Scotland)</td></tr>
+          <tr><td><strong>Mashreq NEO Plus</strong></td><td class="text-right amount">AED 167</td><td class="text-right amount" style="color:#3fb950">AED 167</td><td style="color:#6e7681;font-size:0.78rem">29 Mar 2026</td></tr>
+          <tr><td><strong>Wise GBP</strong></td><td class="text-right amount">£298</td><td class="text-right amount" style="color:#3fb950">AED 1,439</td><td style="color:#6e7681;font-size:0.78rem">29 Mar 2026</td></tr>
+          <tr><td><strong>Biodeposit Trees (Georgia)</strong></td><td class="text-right amount">$952.06</td><td class="text-right amount" style="color:#3fb950">AED 3,494</td><td style="color:#6e7681;font-size:0.78rem">4 trees | Bought: $763 | Current: $952.06 | +$189.06 (+25%)</td></tr>
+          <tr><td><strong>Binance (Crypto + Copy Trading)</strong></td><td class="text-right amount">$3,427.93</td><td class="text-right amount" style="color:#3fb950">AED 12,581</td><td style="color:#6e7681;font-size:0.78rem">Spot coins: $284 (held at current value) | Copy trading: $3,000 deposited → $3,143 (+$143 profit) | Total: $3,427 | 29 Mar 2026</td></tr>
+          <tr><td><strong>Binance Web3 Wallet</strong></td><td class="text-right amount">$1,296.80</td><td class="text-right amount" style="color:#3fb950">AED 4,759</td><td style="color:#6e7681;font-size:0.78rem">20 tokens | BORG, DOT, ADA, IOTA, BTC + others | 29 Mar 2026</td></tr>
+          <tr style="background:#0d1117;font-weight:700"><td>TOTAL ASSETS</td><td></td><td class="text-right" style="color:#3fb950">AED 1,215,454</td><td></td></tr></tbody>
+    </table></div></div>
+    <div class="section-label">📉 Credit Cards</div>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px"><div style="overflow-x:auto"><table>
+      <thead><tr><th>Card</th><th class="text-right">Balance</th><th class="text-right">Limit</th><th class="text-right">Util</th><th class="text-right">AED Equiv</th></tr></thead>
+      <tbody><tr><td>ADIB Emirates Skywards Visa <span style="color:#6e7681">••••6789</span></td><td class="text-right">AED 69,985.74</td><td class="text-right text-muted">AED 70,000</td><td class="text-right"><span style="color:#f85149;font-weight:700">100%</span></td><td class="text-right amount">AED 69,986</td></tr>
+          <tr><td>Amex British Airways <span style="color:#6e7681">••••42002</span></td><td class="text-right">GBP 29.99</td><td class="text-right text-muted">GBP 800</td><td class="text-right"><span style="color:#3fb950;font-weight:700">4%</span></td><td class="text-right amount">AED 145</td></tr>
+          <tr><td>Amex Gold (Preferred Rewards) <span style="color:#6e7681">••••83005</span></td><td class="text-right">GBP 460.00</td><td class="text-right text-muted">—</td><td class="text-right">—</td><td class="text-right amount">AED 2,222</td></tr>
+          <tr><td>MBNA Credit Card <span style="color:#6e7681">••••1654</span> <span style="color:#f85149;font-size:0.7rem">⚠️ 2026-04-02</span></td><td class="text-right">GBP 6,369.28</td><td class="text-right text-muted">GBP 8,800</td><td class="text-right"><span style="color:#3fb950;font-weight:700">72%</span></td><td class="text-right amount">AED 30,764</td></tr>
+          <tr><td>MBNA Credit Card <span style="color:#6e7681">••••3318</span></td><td class="text-right">GBP 1,915.87</td><td class="text-right text-muted">GBP 2,500</td><td class="text-right"><span style="color:#e3b341;font-weight:700">77%</span></td><td class="text-right amount">AED 9,254</td></tr>
+          <tr><td>Aqua Mastercard <span style="color:#6e7681">••••4498</span> <span style="color:#f85149;font-size:0.7rem">⚠️ 2026-04-08</span></td><td class="text-right">GBP 3,302.01</td><td class="text-right text-muted">GBP 3,500</td><td class="text-right"><span style="color:#f85149;font-weight:700">94%</span></td><td class="text-right amount">AED 15,949</td></tr>
+          <tr><td>HSBC UK Credit Card <span style="color:#6e7681">••••9345</span> <span style="color:#f85149;font-size:0.7rem">⚠️ 2026-04-07</span></td><td class="text-right">GBP 1,564.35</td><td class="text-right text-muted">GBP 2,000</td><td class="text-right"><span style="color:#e3b341;font-weight:700">78%</span></td><td class="text-right amount">AED 7,556</td></tr>
+          <tr><td>Barclaycard Platinum Visa <span style="color:#6e7681">••••3001</span></td><td class="text-right">GBP 8,242.83</td><td class="text-right text-muted">GBP 10,000</td><td class="text-right"><span style="color:#e3b341;font-weight:700">82%</span></td><td class="text-right amount">AED 39,813</td></tr>
+          <tr><td>Santander Everyday Credit Card <span style="color:#6e7681">••••1486</span></td><td class="text-right">GBP 11,531.78</td><td class="text-right text-muted">GBP 15,000</td><td class="text-right"><span style="color:#e3b341;font-weight:700">77%</span></td><td class="text-right amount">AED 55,698</td></tr>
+          <tr><td>Virgin Money Credit Card <span style="color:#6e7681">••••2995</span></td><td class="text-right">GBP 7,588.33</td><td class="text-right text-muted">GBP 10,000</td><td class="text-right"><span style="color:#e3b341;font-weight:700">76%</span></td><td class="text-right amount">AED 36,652</td></tr>
+          <tr><td>Tesco Bank Clubcard Credit Card <span style="color:#6e7681">••••8916</span> <span style="color:#f85149;font-size:0.7rem">🔴 DUE TODAY</span></td><td class="text-right">GBP 6,371.75</td><td class="text-right text-muted">GBP 7,400</td><td class="text-right"><span style="color:#e3b341;font-weight:700">86%</span></td><td class="text-right amount">AED 30,776</td></tr>
+          <tr><td>M&S Mastercard Standard <span style="color:#6e7681">••••0816</span></td><td class="text-right">GBP 6,106.06</td><td class="text-right text-muted">GBP 8,000</td><td class="text-right"><span style="color:#e3b341;font-weight:700">76%</span></td><td class="text-right amount">AED 29,492</td></tr><tr style="background:#0d1117;font-weight:700"><td>TOTAL CREDIT CARDS</td><td></td><td></td><td></td><td class="text-right" style="color:#f85149">AED 328,305</td></tr></tbody>
+    </table></div></div>
+    <div class="section-label">📉 Loans & Overdrafts</div>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px"><div style="overflow-x:auto"><table>
+      <thead><tr><th>Liability</th><th class="text-right">Balance</th><th class="text-right">Limit</th><th class="text-right">Type</th><th class="text-right">AED Equiv</th></tr></thead>
+      <tbody><tr><td>Tal (Tallia Flaher) <span style="color:#6e7681;font-size:0.78rem">Personal loan from partner</span></td><td class="text-right">GBP 10,000.00</td><td class="text-right text-muted">—</td><td class="text-right text-muted">—</td><td class="text-right amount">AED 48,300</td></tr>
+          <tr><td>BoS Overdraft <span style="color:#6e7681;font-size:0.78rem"></span></td><td class="text-right">GBP 2,999.76</td><td class="text-right text-muted">—</td><td class="text-right text-muted">—</td><td class="text-right amount">AED 14,489</td></tr>
+          <tr><td>Nationwide (property overdraft) <span style="color:#6e7681;font-size:0.78rem">Edinburgh property account</span></td><td class="text-right">GBP 2,250.00</td><td class="text-right text-muted">—</td><td class="text-right text-muted">—</td><td class="text-right amount">AED 10,868</td></tr><tr style="background:#0d1117;font-weight:700"><td>TOTAL LOANS</td><td></td><td></td><td></td><td class="text-right" style="color:#f85149">AED 73,656</td></tr></tbody>
+    </table></div></div>
+    <div class="section-label">📊 Net Worth Over Time</div>
+    <div class="chart-card" style="margin-bottom:20px"><h3>Net Worth (AED) — tracking from 29 Mar 2026</h3><div class="chart-wrap"><canvas id="chart-networth"></canvas></div></div>
+    <div style="color:#6e7681;font-size:0.75rem;margin-top:8px">* Edinburgh house excluded · GBP rate: 4.83 · Updated: 29 Mar 2026</div>
+  </div>
 
 <script>
 // ── Data ───────────────────────────────────────────────────────────────────
@@ -964,4 +811,4 @@ initTxFilters();
 </script>
 </body>
 </html>
-<!-- Sun Mar 29 11:37:53 +04 2026 -->
+<!-- Sun Mar 29 11:39:12 +04 2026 -->
