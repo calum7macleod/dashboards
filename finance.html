@@ -155,32 +155,59 @@
 
     <script>
         const transactionsData = {
-            "Jan 26": {
-                "transactions": [{"month": "Jan 26", "day": 1, "description": "Futures", "account": "Binance", "amount": 720, "category": "Gambling"}],
-                "total": 36556.68,
-                "by_category": {"Gambling": 720}
-            },
-            "Feb 26": {
-                "transactions": [],
-                "total": 39420.12,
-                "by_category": {}
-            },
-            "Mar 26": {
-                "transactions": [],
-                "total": 46608.86,
-                "by_category": {}
-            },
-            "Apr 26": {
-                "transactions": [
-                    {"month": "Apr 26", "day": 2, "description": "DAILY OD INT", "account": "BoS", "amount": 2.09, "category": "Fees"},
-                    {"month": "Apr 26", "day": 7, "description": "DAILY OD INT 03/04", "account": "BoS", "amount": 2.09, "category": "Fees"}
-                ],
-                "total": 4.18,
-                "by_category": {"Fees": 4.18}
-            }
-        };
+  "Jan 26": {
+    "transactions": [
+      {
+        "month": "Jan 26",
+        "day": 1,
+        "description": "Futures",
+        "account": "Binance",
+        "amount": 720,
+        "category": "Gambling"
+      }
+    ],
+    "total": 36556.68,
+    "by_category": {
+      "Gambling": 720
+    }
+  },
+  "Feb 26": {
+    "transactions": [],
+    "total": 39420.12,
+    "by_category": {}
+  },
+  "Mar 26": {
+    "transactions": [],
+    "total": 46608.86,
+    "by_category": {}
+  },
+  "Apr 26": {
+    "transactions": [
+      {"month": "Apr 26", "day": 1, "description": "DAILY OD INT", "account": "BoS", "amount": 2.76, "category": "Fees"},
+      {"month": "Apr 26", "day": 1, "description": "RETURNED DD", "account": "BoS", "amount": 28.25, "category": "Other"},
+      {"month": "Apr 26", "day": 1, "description": "RETURNED DD", "account": "BoS", "amount": 118.62, "category": "Other"},
+      {"month": "Apr 26", "day": 1, "description": "AGRIA PET INS", "account": "BoS", "amount": 118.62, "category": "Health"},
+      {"month": "Apr 26", "day": 1, "description": "PET HEALTH CLUB", "account": "BoS", "amount": 28.25, "category": "Health"},
+      {"month": "Apr 26", "day": 2, "description": "DAILY OD INT", "account": "BoS", "amount": 2.09, "category": "Fees"},
+      {"month": "Apr 26", "day": 2, "description": "TESCO BANK", "account": "BoS", "amount": 268.00, "category": "Loan"},
+      {"month": "Apr 26", "day": 2, "description": "FLAHER TV", "account": "BoS", "amount": 1000.00, "category": "Life"},
+      {"month": "Apr 26", "day": 2, "description": "NIUM FINTECH LIMIT", "account": "BoS", "amount": 200.00, "category": "Other"},
+      {"month": "Apr 26", "day": 2, "description": "MBNA LIMITED", "account": "BoS", "amount": 192.34, "category": "Loan"},
+      {"month": "Apr 26", "day": 7, "description": "DAILY OD INT 03/04", "account": "BoS", "amount": 2.09, "category": "Fees"}
+    ],
+    "total": 1961.02,
+    "by_category": {
+      "Fees": 7.94,
+      "Other": 346.87,
+      "Health": 146.87,
+      "Loan": 460.34,
+      "Life": 1000.00
+    }
+  }
+};
 
         let currentMonth = "Apr 26";
+        let pieChart = null;
 
         function switchTab(tabName) {
             document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
@@ -234,9 +261,10 @@
             document.getElementById('recent-txs').innerHTML = recentHtml || '<tr><td colspan="5" style="text-align: center; color: #8b949e;">No transactions</td></tr>';
 
             // Pie chart
+            if (pieChart) pieChart.destroy();
             const ctx = document.getElementById('chart-pie');
-            if (ctx) {
-                new Chart(ctx, {
+            if (ctx && Object.keys(data.by_category).length > 0) {
+                pieChart = new Chart(ctx, {
                     type: 'doughnut',
                     data: {
                         labels: Object.keys(data.by_category),
@@ -258,7 +286,7 @@
                     <div class="stat-value">AED ${amount.toLocaleString('en-US', {maximumFractionDigits: 2})}</div>
                 </div>
             `).join('');
-            document.getElementById('category-breakdown').innerHTML = catHtml;
+            document.getElementById('category-breakdown').innerHTML = catHtml || '<p style="color: #8b949e;">No transactions</p>';
         }
 
         function renderAllTransactions() {
