@@ -296,7 +296,8 @@ function renderOverview() {
       datasets: [
         {label:'My Board',data:activeMonths.map(m=>Math.round(ds.filter(d=>d.month===m).reduce((s,d)=>s+d.myBoard,0))),backgroundColor:'#d2a8ff88',borderColor:'#d2a8ff',borderWidth:2,borderRadius:4},
         {label:'Take Home',data:activeMonths.map(m=>Math.round(ds.filter(d=>d.month===m).reduce((s,d)=>s+d.myTakeHome,0))),backgroundColor:'#3fb95088',borderColor:'#3fb950',borderWidth:2,borderRadius:4},
-        {type:'line',label:'Monthly Target',data:activeMonths.map(()=>monthlyTarget),borderColor:'#f85149',borderWidth:2,borderDash:[6,4],pointRadius:0,fill:false}
+        {type:'line',label:'Board Target',data:activeMonths.map(()=>monthlyTarget),borderColor:'#d2a8ff',borderWidth:2,borderDash:[6,4],pointRadius:0,fill:false},
+        {type:'line',label:'Take Home Target',data:activeMonths.map(()=>Math.round(monthlyTarget*0.6)),borderColor:'#3fb950',borderWidth:2,borderDash:[6,4],pointRadius:0,fill:false}
       ]
     },
     options: {responsive:true,plugins:{legend:{labels:{color:'#8b949e',usePointStyle:true,font:{size:11}}},tooltip:{callbacks:{label:ctx=>' '+ctx.dataset.label+': AED '+ctx.raw.toLocaleString('en-GB')}}},scales:{x:{ticks:{color:'#6e7681'},grid:{color:'#21262d'}},y:{ticks:{color:'#6e7681',callback:v=>'AED '+(v/1000).toFixed(0)+'k'},grid:{color:'#21262d'}}}}
