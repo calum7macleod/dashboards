@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>💳</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payments Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1a1d2e 0%, #16213e 100%); padding: 22px 32px; border-bottom: 1px solid #21262d; display: flex; justify-content: space-between; align-items: center; }
+  .header h1 { font-size: 1.5rem; font-weight: 700; color: #fff; }
+  .header p { color: #8b949e; font-size: 0.82rem; margin-top: 3px; }
+  .content { padding: 24px 32px; max-width: 1100px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .card-title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 10px; font-weight: 600; }
+  .stat-value { font-size: 1.8rem; font-weight: 700; color: #fff; line-height: 1; }
+  .stat-sub { font-size: 0.8rem; color: #8b949e; margin-top: 6px; }
+  .section-label { font-size: 1rem; font-weight: 700; color: #c9d1d9; margin: 24px 0 12px; display: flex; align-items: center; gap: 8px; }
+  .month-block { margin-bottom: 24px; }
+  .month-title { font-size: 0.85rem; font-weight: 700; color: #58a6ff; background: #1c2d4a; border-radius: 8px; padding: 8px 14px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th { text-align: left; padding: 10px 14px; border-bottom: 1px solid #21262d; color: #6e7681; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; }
+  th.text-right, td.text-right { text-align: right; }
+  td { padding: 10px 14px; border-bottom: 1px solid #0d1117; }
+  tr:hover td { background: #1c2128; }
+  .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+  .badge-green { background: #23312a; color: #3fb950; }
+  .badge-blue { background: #1c2d4a; color: #79c0ff; }
+  .badge-red { background: #3d1f1f; color: #f85149; }
+  .badge-yellow { background: #302a1c; color: #e3b341; }
+  .amount { font-weight: 600; font-variant-numeric: tabular-nums; }
+  @media (max-width: 700px) { .grid-3 { grid-template-columns: 1fr; } .content { padding: 16px; } .header { padding: 16px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>💳 Payments Dashboard</h1>
+    <p>Commission tracking — paid, expected & pipeline</p>
+  </div>
+  <div style="text-align:right;color:#8b949e;font-size:0.78rem">Updated 26 Apr 2026</div>
+</div>
+
+<div class="content">
+
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title">✅ Paid to Date</div>
+      <div class="stat-value" style="color:#3fb950">AED 65,000</div>
+      <div class="stat-sub">3 deals settled</div>
+    </div>
+    <div class="card">
+      <div class="card-title">⏳ Expected Pipeline</div>
+      <div class="stat-value" style="color:#79c0ff">AED 382,506</div>
+      <div class="stat-sub">13 deals pending payment</div>
+    </div>
+    <div class="card">
+      <div class="card-title">⚠️ Unlikely to Pay</div>
+      <div class="stat-value" style="color:#f85149">AED 65,295</div>
+      <div class="stat-sub">3 deals at risk</div>
+    </div>
+  </div>
+
+  <!-- EXPECTED BY MONTH -->
+  <div class="section-label">⏳ Expected Payments</div>
+  <div class="month-block">
+      <div class="month-title">
+        <span>Apr 26</span>
+        <span>AED 105,456</span>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table>
+          <thead><tr><th>Buyer</th><th>Deal</th><th class="text-right">Take Home (AED)</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Scott</strong></td>
+              <td class="text-muted" style="color:#8b949e">Feb 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 15,113</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Sunil</strong></td>
+              <td class="text-muted" style="color:#8b949e">Feb 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 48,405</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Mohammed</strong></td>
+              <td class="text-muted" style="color:#8b949e">Feb 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 20,375</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>James</strong></td>
+              <td class="text-muted" style="color:#8b949e">Mar 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 21,563</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><div class="month-block">
+      <div class="month-title">
+        <span>Jun 26</span>
+        <span>AED 23,140</span>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table>
+          <thead><tr><th>Buyer</th><th>Deal</th><th class="text-right">Take Home (AED)</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Josh</strong></td>
+              <td class="text-muted" style="color:#8b949e">Jan 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 23,140</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><div class="month-block">
+      <div class="month-title">
+        <span>May 26</span>
+        <span>AED 253,910</span>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table>
+          <thead><tr><th>Buyer</th><th>Deal</th><th class="text-right">Take Home (AED)</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Chris</strong></td>
+              <td class="text-muted" style="color:#8b949e">Jan 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 39,500</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Anne-Marie</strong></td>
+              <td class="text-muted" style="color:#8b949e">Apr 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 9,363</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Darryl</strong></td>
+              <td class="text-muted" style="color:#8b949e">Mar 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 14,131</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Adel</strong></td>
+              <td class="text-muted" style="color:#8b949e">Apr 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 16,638</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Ahmad</strong></td>
+              <td class="text-muted" style="color:#8b949e">Apr 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 70,548</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Matthew</strong></td>
+              <td class="text-muted" style="color:#8b949e">Apr 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 11,000</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Marc</strong></td>
+              <td class="text-muted" style="color:#8b949e">Apr 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 54,868</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr><tr>
+              <td><strong>Abby</strong></td>
+              <td class="text-muted" style="color:#8b949e">Apr 26</td>
+              <td class="text-right amount" style="color:#79c0ff">AED 37,862</td>
+              <td style="color:#6e7681;font-size:0.78rem"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  <!-- PAID -->
+  <div class="section-label">✅ Paid Deals</div>
+  <div class="card" style="padding:0;overflow:hidden">
+    <table>
+      <thead><tr><th>Buyer</th><th>Deal</th><th class="text-right">Take Home (AED)</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Bruce</strong></td>
+          <td style="color:#8b949e">Jan 26</td>
+          <td class="text-right amount" style="color:#3fb950">AED 5,875</td>
+          <td><span class="badge badge-green">Paid</span></td>
+        </tr><tr>
+          <td><strong>Amit</strong></td>
+          <td style="color:#8b949e">Feb 26</td>
+          <td class="text-right amount" style="color:#3fb950">AED 42,750</td>
+          <td><span class="badge badge-green">Paid</span></td>
+        </tr><tr>
+          <td><strong>Puneet</strong></td>
+          <td style="color:#8b949e">Jan 26</td>
+          <td class="text-right amount" style="color:#3fb950">AED 16,375</td>
+          <td><span class="badge badge-green">Paid</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- UNLIKELY -->
+  <div class="section-label">⚠️ Unlikely to Pay</div>
+  <div class="card" style="padding:0;overflow:hidden">
+    <table>
+      <thead><tr><th>Buyer</th><th>Deal</th><th class="text-right">Take Home (AED)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Jose</strong></td>
+          <td style="color:#8b949e">Jan 26</td>
+          <td class="text-right amount" style="color:#f85149">AED 20,100</td>
+          <td style="color:#6e7681;font-size:0.78rem">Likely not paying</td>
+        </tr><tr>
+          <td><strong>Majid</strong></td>
+          <td style="color:#8b949e">Feb 26 (Malta)</td>
+          <td class="text-right amount" style="color:#f85149">AED 27,125</td>
+          <td style="color:#6e7681;font-size:0.78rem">Likely not paying</td>
+        </tr><tr>
+          <td><strong>Majid</strong></td>
+          <td style="color:#8b949e">Feb 26 (Costa)</td>
+          <td class="text-right amount" style="color:#f85149">AED 18,070</td>
+          <td style="color:#6e7681;font-size:0.78rem">Likely not paying</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
