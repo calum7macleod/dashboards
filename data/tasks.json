@@ -5,12 +5,12 @@
       "title": "stuff",
       "area": "Real Estate",
       "priority": "medium",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": null,
       "created": "2026-05-31",
       "notes": null,
-      "completed": null,
+      "completed": "2026-05-31",
       "snoozedUntil": null
     },
     {
@@ -70,12 +70,12 @@
       "title": "Review BTC dollar-cost average plan",
       "area": "Investing",
       "priority": "medium",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": null,
       "created": "2026-05-26",
       "notes": null,
-      "completed": null,
+      "completed": "2026-05-31",
       "snoozedUntil": null
     }
   ],
