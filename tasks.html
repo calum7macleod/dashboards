@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>✅</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasks Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; min-height: 100vh; }
+
+  /* ---- Header ---- */
+  .header { background: linear-gradient(135deg, #1a1d2e 0%, #16213e 100%); padding: 22px 32px; border-bottom: 1px solid #21262d; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .header h1 { font-size: 1.5rem; font-weight: 700; color: #fff; }
+  .header p { color: #8b949e; font-size: 0.82rem; margin-top: 3px; }
+  .header-right { text-align: right; }
+  .header-date { color: #8b949e; font-size: 0.78rem; }
+  .header-counts { margin-top: 6px; display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+  .pill-count { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; font-weight: 600; background: #161b22; border: 1px solid #21262d; color: #c9d1d9; }
+  .pill-count b { color: #fff; }
+  .pill-count.high { color: #f85149; border-color: #3d1f1f; background: #2a1717; }
+
+  /* ---- Tabs ---- */
+  .tabs { display: flex; gap: 4px; padding: 0 32px; background: #161b22; border-bottom: 1px solid #21262d; overflow-x: auto; }
+  .tab { padding: 12px 18px; cursor: pointer; font-size: 0.88rem; color: #8b949e; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; }
+  .tab:hover { color: #c9d1d9; }
+  .tab.active { color: #58a6ff; border-bottom-color: #58a6ff; }
+  .tab .tab-n { font-size: 0.72rem; color: #6e7681; margin-left: 4px; }
+  .tab.active .tab-n { color: #58a6ff; }
+
+  /* ---- Layout ---- */
+  .content { padding: 24px 32px; max-width: 1100px; }
+  .grid { display: grid; gap: 16px; }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
+  .card-title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 10px; font-weight: 600; }
+  .stat-value { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
+  .stat-sub { font-size: 0.8rem; color: #8b949e; margin-top: 6px; }
+  .section-label { font-size: 0.95rem; font-weight: 600; color: #c9d1d9; margin: 28px 0 12px; display: flex; align-items: center; gap: 8px; }
+
+  /* ---- Toolbar / filters ---- */
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 20px 0 4px; }
+  .filter-input { padding: 8px 12px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; color: #e1e4e8; font-size: 0.85rem; outline: none; }
+  .filter-input:focus { border-color: #58a6ff; }
+  select.filter-input { cursor: pointer; }
+  .btn { padding: 8px 16px; border-radius: 8px; border: 1px solid #30363d; background: #161b22; color: #e1e4e8; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; font-weight: 500; }
+  .btn:hover { border-color: #58a6ff; }
+  .btn-primary { background: #1f6feb; border-color: #1f6feb; color: #fff; font-weight: 600; }
+  .btn-primary:hover { background: #388bfd; border-color: #388bfd; }
+  .btn-ghost { background: transparent; }
+  .toggle { display: inline-flex; align-items: center; gap: 7px; font-size: 0.83rem; color: #8b949e; cursor: pointer; user-select: none; padding: 8px 4px; }
+  .toggle input { accent-color: #1f6feb; width: 15px; height: 15px; cursor: pointer; }
+  .spacer { flex: 1; }
+
+  /* ---- Add task form ---- */
+  .form-card { margin-top: 14px; display: none; }
+  .form-card.open { display: block; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .form-row { display: flex; flex-direction: column; gap: 6px; }
+  .form-row.full { grid-column: 1 / -1; }
+  .form-row label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6e7681; font-weight: 600; }
+  .form-input { padding: 9px 12px; background: #0f1117; border: 1px solid #30363d; border-radius: 8px; color: #e1e4e8; font-size: 0.9rem; outline: none; width: 100%; font-family: inherit; }
+  .form-input:focus { border-color: #58a6ff; }
+  textarea.form-input { resize: vertical; min-height: 60px; }
+  .form-actions { display: flex; gap: 10px; margin-top: 4px; grid-column: 1 / -1; }
+
+  /* ---- Task cards ---- */
+  .task-list { display: flex; flex-direction: column; gap: 10px; }
+  .task-card { display: flex; align-items: flex-start; gap: 14px; background: #161b22; border: 1px solid #21262d; border-left: 3px solid #30363d; border-radius: 10px; padding: 14px 16px; transition: border-color 0.15s, background 0.15s; }
+  .task-card:hover { background: #1c2128; }
+  .task-card.prio-high { border-left-color: #f85149; }
+  .task-card.prio-medium { border-left-color: #e3b341; }
+  .task-card.prio-low { border-left-color: #3fb950; }
+  .task-card.is-done { opacity: 0.55; }
+  .task-card.is-snoozed { opacity: 0.7; border-left-style: dashed; }
+
+  .check { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; border: 2px solid #30363d; background: transparent; cursor: pointer; margin-top: 1px; transition: all 0.15s; position: relative; }
+  .check:hover { border-color: #3fb950; }
+  .check.done { background: #3fb950; border-color: #3fb950; }
+  .check.done::after { content: '✓'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #0f1117; font-size: 0.8rem; font-weight: 800; }
+
+  .task-body { flex: 1; min-width: 0; }
+  .task-title { font-size: 0.95rem; font-weight: 500; color: #e1e4e8; word-break: break-word; }
+  .task-card.is-done .task-title { text-decoration: line-through; color: #8b949e; }
+  .task-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 7px; }
+  .task-notes { font-size: 0.8rem; color: #8b949e; margin-top: 6px; white-space: pre-wrap; word-break: break-word; }
+
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 0.72rem; padding: 2px 9px; border-radius: 12px; font-weight: 600; }
+  .badge-high { background: #3d1f1f; color: #f85149; }
+  .badge-medium { background: #302a1c; color: #e3b341; }
+  .badge-low { background: #23312a; color: #3fb950; }
+  .area-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.74rem; color: #c9d1d9; padding: 2px 9px 2px 7px; border-radius: 12px; background: #21262d; }
+  .area-dot { width: 7px; height: 7px; border-radius: 50%; flex: 0 0 auto; }
+  .due { font-size: 0.74rem; color: #8b949e; display: inline-flex; align-items: center; gap: 4px; }
+  .due.overdue { color: #f85149; font-weight: 600; }
+  .due.today { color: #e3b341; font-weight: 600; }
+
+  .task-actions { display: flex; gap: 6px; flex: 0 0 auto; }
+  .icon-btn { width: 30px; height: 30px; border-radius: 7px; border: 1px solid #30363d; background: transparent; color: #8b949e; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+  .icon-btn:hover { border-color: #58a6ff; color: #e1e4e8; }
+  .icon-btn.danger:hover { border-color: #f85149; color: #f85149; }
+
+  .empty { text-align: center; color: #6e7681; padding: 40px 20px; font-size: 0.9rem; }
+
+  /* ---- Done-today log ---- */
+  .done-row { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid #0d1117; font-size: 0.86rem; }
+  .done-row:last-child { border-bottom: none; }
+  .done-row .done-tick { color: #3fb950; }
+  .done-row .done-title { color: #8b949e; text-decoration: line-through; flex: 1; }
+
+  /* ---- Connect gate ---- */
+  .gate { display: none; }
+  .gate.show { display: block; }
+  .gate input { max-width: 420px; }
+
+  /* ---- Toast + saving ---- */
+  .save-dot { font-size: 0.74rem; color: #6e7681; display: inline-flex; align-items: center; gap: 6px; }
+  .save-dot .d { width: 8px; height: 8px; border-radius: 50%; background: #3fb950; }
+  .save-dot.saving .d { background: #e3b341; animation: pulse 1s infinite; }
+  .save-dot.error .d { background: #f85149; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(20px); background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 12px 18px; font-size: 0.85rem; color: #e1e4e8; box-shadow: 0 8px 24px rgba(0,0,0,0.4); opacity: 0; pointer-events: none; transition: all 0.25s; z-index: 50; max-width: 90vw; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .toast.err { border-color: #f85149; }
+
+  @media (max-width: 800px) {
+    .header { padding: 16px; }
+    .tabs { padding: 0 10px; }
+    .content { padding: 16px; }
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .form-grid { grid-template-columns: 1fr; }
+    .toolbar .filter-input, .toolbar .btn { flex: 1 1 auto; }
+  }
+  @media (max-width: 480px) {
+    .grid-4 { grid-template-columns: 1fr 1fr; }
+    .stat-value { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>✅ Tasks Dashboard</h1>
+    <p>Calum's task command centre</p>
+  </div>
+  <div class="header-right">
+    <div class="header-date" id="header-date"></div>
+    <div class="header-counts">
+      <span class="pill-count"><b id="count-active">0</b> active</span>
+      <span class="pill-count high"><b id="count-high">0</b> high priority</span>
+    </div>
+  </div>
+</div>
+
+<div class="tabs" id="tabs"></div>
+
+<div class="content">
+
+  <!-- Connect gate (shown only when a write needs a token) -->
+  <div class="card gate" id="gate" style="margin-bottom:20px">
+    <div class="card-title">🔌 Connect GitHub</div>
+    <p style="color:#8b949e;font-size:0.85rem;margin-bottom:12px">Paste a GitHub token with <b>Contents · Read &amp; write</b> access to the <code>dashboards</code> repo. It is stored only in this browser (localStorage) and never committed.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <input class="form-input" type="password" id="gate-token" placeholder="github_pat_..." autocomplete="off">
+      <button class="btn btn-primary" id="gate-save">Save &amp; connect</button>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid grid-4" id="stats"></div>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <button class="btn btn-primary" id="btn-new">+ New Task</button>
+    <select class="filter-input" id="filter-priority">
+      <option value="">All priorities</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <input class="filter-input" type="text" id="filter-search" placeholder="🔍 Search tasks...">
+    <label class="toggle"><input type="checkbox" id="toggle-done"> Show done</label>
+    <span class="spacer"></span>
+    <span class="save-dot" id="save-dot" title="Sync status"><span class="d"></span><span id="save-text">Synced</span></span>
+    <button class="btn btn-ghost icon-btn" id="btn-refresh" title="Reload from GitHub" style="width:36px">↻</button>
+    <button class="btn btn-ghost icon-btn" id="btn-settings" title="GitHub token" style="width:36px">⚙</button>
+  </div>
+
+  <!-- Add task form -->
+  <div class="card form-card" id="form-card">
+    <div class="card-title">New Task</div>
+    <div class="form-grid">
+      <div class="form-row full">
+        <label for="f-title">Title</label>
+        <input class="form-input" type="text" id="f-title" placeholder="What needs doing?">
+      </div>
+      <div class="form-row">
+        <label for="f-area">Area</label>
+        <select class="form-input" id="f-area"></select>
+      </div>
+      <div class="form-row">
+        <label for="f-priority">Priority</label>
+        <select class="form-input" id="f-priority">
+          <option value="high">High</option>
+          <option value="medium" selected>Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="f-due">Due date <span style="text-transform:none;color:#484f58">(optional)</span></label>
+        <input class="form-input" type="date" id="f-due">
+      </div>
+      <div class="form-row">
+        <label for="f-notes">Notes <span style="text-transform:none;color:#484f58">(optional)</span></label>
+        <input class="form-input" type="text" id="f-notes" placeholder="Extra detail">
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary" id="f-add">Add task</button>
+        <button class="btn btn-ghost" id="f-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Task list -->
+  <div class="task-list" id="task-list" style="margin-top:18px"></div>
+
+  <!-- Completed today -->
+  <div class="section-label">✓ Completed today</div>
+  <div class="card" id="done-today"></div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- Optional local config (gitignored). Absent on the live site — token then comes from the Connect panel. -->
+<script src="config.js" onerror="void 0"></script>
+<script src="js/tasks.js"></script>
+</body>
+</html>

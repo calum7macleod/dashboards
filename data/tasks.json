@@ -1,0 +1,64 @@
+{
+  "tasks": [
+    {
+      "id": "seed-1",
+      "title": "Follow up with Reelly on Dubai Hills listing",
+      "area": "Real Estate",
+      "priority": "high",
+      "status": "active",
+      "due": "2026-06-03",
+      "created": "2026-05-28",
+      "notes": "Chase the brochure + payment plan PDF",
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
+      "id": "seed-2",
+      "title": "Pay AQUA credit card",
+      "area": "Finance",
+      "priority": "high",
+      "status": "active",
+      "due": "2026-06-01",
+      "created": "2026-05-27",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
+      "id": "seed-3",
+      "title": "Book blood test at Elite Vita",
+      "area": "Health",
+      "priority": "medium",
+      "status": "active",
+      "due": "2026-06-05",
+      "created": "2026-05-29",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
+      "id": "seed-4",
+      "title": "Edit 3 reels for Instagram",
+      "area": "Content",
+      "priority": "low",
+      "status": "active",
+      "due": null,
+      "created": "2026-05-30",
+      "notes": "Batch from last shoot",
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
+      "id": "seed-5",
+      "title": "Review BTC dollar-cost average plan",
+      "area": "Investing",
+      "priority": "medium",
+      "status": "active",
+      "due": null,
+      "created": "2026-05-26",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    }
+  ]
+}
