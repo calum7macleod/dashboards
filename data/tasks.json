@@ -1,6 +1,18 @@
 {
   "tasks": [
     {
+      "id": "9411c8ca-4798-45ce-93e6-a96428bf43a7",
+      "title": "stuff",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "due": null,
+      "created": "2026-05-31",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "seed-1",
       "title": "Follow up with Reelly on Dubai Hills listing",
       "area": "Real Estate",
