@@ -6,6 +6,7 @@
       "area": "Real Estate",
       "priority": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-05-31",
       "notes": null,
@@ -18,6 +19,7 @@
       "area": "Real Estate",
       "priority": "high",
       "status": "active",
+      "difficulty": "hard",
       "due": "2026-06-03",
       "created": "2026-05-28",
       "notes": "Chase the brochure + payment plan PDF",
@@ -30,6 +32,7 @@
       "area": "Finance",
       "priority": "high",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-06-01",
       "created": "2026-05-27",
       "notes": null,
@@ -42,6 +45,7 @@
       "area": "Health",
       "priority": "medium",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-06-05",
       "created": "2026-05-29",
       "notes": null,
@@ -54,6 +58,7 @@
       "area": "Content",
       "priority": "low",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-05-30",
       "notes": "Batch from last shoot",
@@ -66,11 +71,15 @@
       "area": "Investing",
       "priority": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-05-26",
       "notes": null,
       "completed": null,
       "snoozedUntil": null
     }
-  ]
+  ],
+  "units": [],
+  "contentIdeas": [],
+  "buildLog": []
 }
