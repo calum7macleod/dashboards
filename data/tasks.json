@@ -109,12 +109,12 @@
       "title": "Plan 2 vids",
       "area": "Content",
       "priority": "medium",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": null,
       "created": "2026-05-31",
       "notes": null,
-      "completed": null,
+      "completed": "2026-06-01",
       "snoozedUntil": null
     },
     {
@@ -232,30 +232,6 @@
       "created": "2026-06-01",
       "notes": "8am",
       "completed": "2026-06-01",
-      "snoozedUntil": null
-    },
-    {
-      "id": "5e8555ad-91ca-485c-a884-588d678c057a",
-      "title": "Take mic to office",
-      "area": "Tasks",
-      "priority": "medium",
-      "status": "active",
-      "due": "2026-06-01",
-      "created": "2026-06-01",
-      "notes": "7pm",
-      "completed": null,
-      "snoozedUntil": null
-    },
-    {
-      "id": "ff4fefff-5db4-4e94-9c20-9c014445c5cd",
-      "title": "Record 2 Hudayriyat vids",
-      "area": "Content",
-      "priority": "medium",
-      "status": "active",
-      "due": "2026-06-02",
-      "created": "2026-06-01",
-      "notes": "Morning",
-      "completed": null,
       "snoozedUntil": null
     }
   ],
