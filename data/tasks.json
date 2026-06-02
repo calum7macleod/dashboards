@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "b498f676-1956-41b6-b760-ca1fbb84d392",
+      "title": "add buyer",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-06-02",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "9411c8ca-4798-45ce-93e6-a96428bf43a7",
       "title": "stuff",
       "area": "Real Estate",
