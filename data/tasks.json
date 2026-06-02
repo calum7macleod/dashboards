@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "d7f685e3-a9d2-41bd-b02b-23257a61e20f",
+      "title": "Post a video",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-06-02",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "b498f676-1956-41b6-b760-ca1fbb84d392",
       "title": "add buyer",
       "area": "Real Estate",
