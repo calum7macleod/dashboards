@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "d5a7dd44-35f7-43e7-885b-35683e32fa8e",
+      "title": "Check Darryl",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-06-02",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "d7f685e3-a9d2-41bd-b02b-23257a61e20f",
       "title": "Post a video",
       "area": "Real Estate",
