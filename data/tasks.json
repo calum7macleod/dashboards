@@ -305,6 +305,18 @@
       "notes": null,
       "completed": null,
       "snoozedUntil": null
+    },
+    {
+      "id": "f3315ab3-73d2-4e7a-b622-7255b4e933af",
+      "title": "AI: pull Lagoons transaction data - true values + daily reports",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "due": null,
+      "created": "2026-06-01",
+      "notes": "Improvement build - AI ingests DAMAC Lagoons transaction data, outputs true values and a daily report",
+      "completed": null,
+      "snoozedUntil": null
     }
   ],
   "units": [],
