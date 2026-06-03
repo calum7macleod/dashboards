@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "106a3007-c539-47e9-94f0-7d787fe7ba06",
+      "title": "make content dashboard",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-06-03",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "d5a7dd44-35f7-43e7-885b-35683e32fa8e",
       "title": "Check Darryl",
       "area": "Real Estate",
