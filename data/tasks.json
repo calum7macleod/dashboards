@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "2c896f44-8894-46eb-bf53-7d710eab8e91",
+      "title": "New phone number & set up messaging",
+      "area": "Real Estate",
+      "priority": "high",
+      "status": "active",
+      "due": null,
+      "created": "2026-06-01",
+      "notes": "TOP PRIORITY",
+      "completed": null,
+      "order": 0,
+      "snoozedUntil": null
+    },
+    {
       "id": "106a3007-c539-47e9-94f0-7d787fe7ba06",
       "title": "make content dashboard",
       "area": "Real Estate",
