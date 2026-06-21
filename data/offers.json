@@ -1,7 +1,5 @@
 [
   {
-    "id": "offer-tbc-bl858-portofino",
-    "order": 1,
     "date": "2026-01-08",
     "status": "Active",
     "buyer": "TBC",
@@ -21,11 +19,11 @@
     "diff": -100000,
     "fees": 50000,
     "score": 0.64,
-    "notes": "Seller set on price, hard to bring up buyer"
+    "notes": "Seller set on price, hard to bring up buyer",
+    "order": 1,
+    "id": "tbc-0"
   },
   {
-    "id": "offer-tbc-q478",
-    "order": 2,
     "date": "2026-01-08",
     "status": "Active",
     "buyer": "TBC",
@@ -45,11 +43,11 @@
     "diff": -110000,
     "fees": 50000,
     "score": 0.4,
-    "notes": "Seller set on price, hard to bring up buyer"
+    "notes": "Seller set on price, hard to bring up buyer",
+    "order": 2,
+    "id": "tbc-1"
   },
   {
-    "id": "offer-tbc-bl683",
-    "order": 3,
     "date": "2026-01-08",
     "status": "Active",
     "buyer": "TBC",
@@ -69,11 +67,11 @@
     "diff": -50000,
     "fees": 50000,
     "score": 0.68,
-    "notes": "Will get it done if we can prove vastu"
+    "notes": "Will get it done if we can prove vastu",
+    "order": 3,
+    "id": "tbc-2"
   },
   {
-    "id": "offer-ovies-k396",
-    "order": 4,
     "date": "2026-01-08",
     "status": "Other Unit",
     "buyer": "Ovies",
@@ -93,11 +91,11 @@
     "diff": 50000,
     "fees": 50000,
     "score": 0.84,
-    "notes": "Not sure if he'll take - convince or other option"
+    "notes": "Not sure if he'll take - convince or other option",
+    "order": 4,
+    "id": "ovies-3"
   },
   {
-    "id": "offer-tbc-k396",
-    "order": 5,
     "date": "2026-01-08",
     "status": "Other Unit",
     "buyer": "TBC",
@@ -117,11 +115,11 @@
     "diff": 25000,
     "fees": 50000,
     "score": 0.8,
-    "notes": "Close to F elsewhere so this is plan C"
+    "notes": "Close to F elsewhere so this is plan C",
+    "order": 5,
+    "id": "tbc-4"
   },
   {
-    "id": "offer-tbc-r385",
-    "order": 6,
     "date": "2026-01-08",
     "status": "Active",
     "buyer": "TBC",
@@ -141,11 +139,11 @@
     "diff": -300000,
     "fees": 51000,
     "score": 0.56,
-    "notes": "Seller set on price, hard to bring up buyer"
+    "notes": "Seller set on price, hard to bring up buyer",
+    "order": 6,
+    "id": "tbc-5"
   },
   {
-    "id": "offer-tbc-r385-2",
-    "order": 7,
     "date": "2026-01-16",
     "status": "Active",
     "buyer": "TBC",
@@ -165,6 +163,8 @@
     "diff": -300000,
     "fees": 51000,
     "score": 0.56,
-    "notes": "Seller set on price, hard to bring up buyer"
+    "notes": "Seller set on price, hard to bring up buyer",
+    "order": 7,
+    "id": "tbc-6"
   }
 ]
