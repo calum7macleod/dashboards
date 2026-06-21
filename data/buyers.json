@@ -623,5 +623,30 @@
     "notes": "4 bed any cluster, 2.6M mortgage. TOP 5 BUYER.",
     "order": 8,
     "id": "borris-24"
+  },
+  {
+    "date": "2026-06-16",
+    "status": "Active",
+    "buyer": "Karimulla",
+    "source": "Unknown",
+    "colleague": "Self",
+    "area": "Lagoons",
+    "cluster1": "Later",
+    "cluster2": "",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": 4,
+    "finance": "Cash",
+    "budget": 2350000,
+    "needed": 2350000,
+    "diff": 0,
+    "responsiveness": 3,
+    "relationship": 3,
+    "unitSupply": 3,
+    "feeling": 3,
+    "score": 0.6,
+    "notes": "New lead. 4 bed Later cluster, 2.35M cash. To qualify.",
+    "id": "karimulla-25",
+    "order": 26
   }
 ]
