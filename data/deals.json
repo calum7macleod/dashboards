@@ -1,7 +1,5 @@
 [
   {
-    "id": "deal-mohamed-p151",
-    "order": 1,
     "date": "2026-06-09",
     "month": "June",
     "buyer": "Mohamed",
@@ -24,11 +22,11 @@
     "myComs": 39840,
     "myTakeHome": 39840,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 1,
+    "id": "mohamed-0"
   },
   {
-    "id": "deal-michael-a5-108",
-    "order": 2,
     "date": "2026-06-08",
     "month": "June",
     "buyer": "Michael",
@@ -51,11 +49,11 @@
     "myComs": 70656,
     "myTakeHome": 70656,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 2,
+    "id": "michael-1"
   },
   {
-    "id": "deal-ankur-th-68",
-    "order": 3,
     "date": "2026-06-08",
     "month": "June",
     "buyer": "Ankur",
@@ -78,11 +76,11 @@
     "myComs": 102504,
     "myTakeHome": 102504,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 3,
+    "id": "ankur-2"
   },
   {
-    "id": "deal-victoria-q818",
-    "order": 4,
     "date": "2026-05-23",
     "month": "May",
     "buyer": "Victoria",
@@ -105,11 +103,11 @@
     "myComs": 32000,
     "myTakeHome": 32000,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 4,
+    "id": "victoria-3"
   },
   {
-    "id": "deal-vinutha-q319",
-    "order": 5,
     "date": "2026-05-20",
     "month": "May",
     "buyer": "Vinutha",
@@ -132,11 +130,11 @@
     "myComs": 16100,
     "myTakeHome": 16100,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 5,
+    "id": "vinutha-4"
   },
   {
-    "id": "deal-external-strada-bl326",
-    "order": 6,
     "date": "2026-05-13",
     "month": "May",
     "buyer": "External (Strada)",
@@ -159,11 +157,11 @@
     "myComs": 18800,
     "myTakeHome": 18800,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 6,
+    "id": "external-strada-5"
   },
   {
-    "id": "deal-sarah-j478",
-    "order": 7,
     "date": "2026-04-30",
     "month": "April",
     "buyer": "Sarah",
@@ -186,11 +184,11 @@
     "myComs": 14300,
     "myTakeHome": 14300,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 7,
+    "id": "sarah-6"
   },
   {
-    "id": "deal-abby-a4-103",
-    "order": 8,
     "date": "2026-04-23",
     "month": "April",
     "buyer": "Abby",
@@ -213,11 +211,11 @@
     "myComs": 37862,
     "myTakeHome": 37862,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 8,
+    "id": "abby-7"
   },
   {
-    "id": "deal-marc-a1-1007",
-    "order": 9,
     "date": "2026-04-23",
     "month": "April",
     "buyer": "Marc",
@@ -240,11 +238,11 @@
     "myComs": 54868,
     "myTakeHome": 54868,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 9,
+    "id": "marc-8"
   },
   {
-    "id": "deal-matthew-j581",
-    "order": 10,
     "date": "2026-04-21",
     "month": "April",
     "buyer": "Matthew",
@@ -267,11 +265,11 @@
     "myComs": 11000,
     "myTakeHome": 11000,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 10,
+    "id": "matthew-9"
   },
   {
-    "id": "deal-ahmad-k175",
-    "order": 11,
     "date": "2026-04-08",
     "month": "April",
     "buyer": "Ahmad",
@@ -294,11 +292,11 @@
     "myComs": 70548,
     "myTakeHome": 70548,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 11,
+    "id": "ahmad-10"
   },
   {
-    "id": "deal-adel-bl963",
-    "order": 12,
     "date": "2026-04-08",
     "month": "April",
     "buyer": "Adel",
@@ -321,11 +319,11 @@
     "myComs": 16638,
     "myTakeHome": 16638,
     "monthAcc": 0,
-    "annualAcc": 0
+    "annualAcc": 0,
+    "order": 12,
+    "id": "adel-11"
   },
   {
-    "id": "deal-anne-marie-k341",
-    "order": 13,
     "date": "2026-04-05",
     "month": "April",
     "buyer": "Anne-Marie",
@@ -348,11 +346,11 @@
     "myComs": 9362.5,
     "myTakeHome": 9362.5,
     "monthAcc": 22975,
-    "annualAcc": 22975
+    "annualAcc": 22975,
+    "order": 13,
+    "id": "anne-marie-12"
   },
   {
-    "id": "deal-darryl-j596",
-    "order": 14,
     "date": "2026-03-27",
     "month": "March",
     "buyer": "Darryl",
@@ -375,11 +373,11 @@
     "myComs": 28261.11,
     "myTakeHome": 14130.56,
     "monthAcc": 71386.11,
-    "annualAcc": 822061.4592063492
+    "annualAcc": 822061.4592063492,
+    "order": 14,
+    "id": "darryl-13"
   },
   {
-    "id": "deal-james-b157",
-    "order": 15,
     "date": "2026-03-08",
     "month": "March",
     "buyer": "James",
@@ -402,11 +400,11 @@
     "myComs": 43125,
     "myTakeHome": 21562.5,
     "monthAcc": 407874.5238095238,
-    "annualAcc": 622103.5238095238
+    "annualAcc": 622103.5238095238,
+    "order": 15,
+    "id": "james-14"
   },
   {
-    "id": "deal-amit-s464",
-    "order": 16,
     "date": "2026-02-15",
     "month": "February",
     "buyer": "Amit",
@@ -429,11 +427,11 @@
     "myComs": 85500,
     "myTakeHome": 42750,
     "monthAcc": 327959.5238095238,
-    "annualAcc": 542188.5238095238
+    "annualAcc": 542188.5238095238,
+    "order": 16,
+    "id": "amit-15"
   },
   {
-    "id": "deal-majid-k518",
-    "order": 17,
     "date": "2026-02-15",
     "month": "February",
     "buyer": "Majid",
@@ -456,11 +454,11 @@
     "myComs": 36140,
     "myTakeHome": 18070,
     "monthAcc": 364749.5238095238,
-    "annualAcc": 578978.5238095238
+    "annualAcc": 578978.5238095238,
+    "order": 17,
+    "id": "majid-16"
   },
   {
-    "id": "deal-mohammed-c149",
-    "order": 18,
     "date": "2026-02-07",
     "month": "February",
     "buyer": "Mohammed",
@@ -483,11 +481,11 @@
     "myComs": 40750,
     "myTakeHome": 20375,
     "monthAcc": 239984.52380952382,
-    "annualAcc": 454213.5238095238
+    "annualAcc": 454213.5238095238,
+    "order": 18,
+    "id": "mohammed-17"
   },
   {
-    "id": "deal-majid-q396",
-    "order": 19,
     "date": "2026-02-03",
     "month": "February",
     "buyer": "Majid",
@@ -510,11 +508,11 @@
     "myComs": 54250,
     "myTakeHome": 27125,
     "monthAcc": 194984.52380952382,
-    "annualAcc": 409213.5238095238
+    "annualAcc": 409213.5238095238,
+    "order": 19,
+    "id": "majid-18"
   },
   {
-    "id": "deal-sunil-k396",
-    "order": 20,
     "date": "2026-02-02",
     "month": "February",
     "buyer": "Sunil",
@@ -537,11 +535,11 @@
     "myComs": 96809.52380952382,
     "myTakeHome": 48404.76190476191,
     "monthAcc": 136984.52380952382,
-    "annualAcc": 351213.5238095238
+    "annualAcc": 351213.5238095238,
+    "order": 20,
+    "id": "sunil-19"
   },
   {
-    "id": "deal-scott-p132",
-    "order": 21,
     "date": "2026-02-01",
     "month": "February",
     "buyer": "Scott",
@@ -564,11 +562,11 @@
     "myComs": 30225,
     "myTakeHome": 15112.5,
     "monthAcc": 40175,
-    "annualAcc": 254404
+    "annualAcc": 254404,
+    "order": 21,
+    "id": "scott-20"
   },
   {
-    "id": "deal-chris-107",
-    "order": 22,
     "date": "2026-01-30",
     "month": "January",
     "buyer": "Chris",
@@ -591,11 +589,11 @@
     "myComs": 79000,
     "myTakeHome": 39500,
     "monthAcc": 214229,
-    "annualAcc": 214229
+    "annualAcc": 214229,
+    "order": 22,
+    "id": "chris-21"
   },
   {
-    "id": "deal-bruce-january",
-    "order": 23,
     "date": "2026-01-27",
     "month": "January",
     "buyer": "Bruce",
@@ -618,11 +616,11 @@
     "myComs": 11749,
     "myTakeHome": 5874.5,
     "monthAcc": 135229,
-    "annualAcc": 135229
+    "annualAcc": 135229,
+    "order": 23,
+    "id": "bruce-22"
   },
   {
-    "id": "deal-josh-207",
-    "order": 24,
     "date": "2026-01-13",
     "month": "January",
     "buyer": "Josh",
@@ -645,11 +643,11 @@
     "myComs": 46280,
     "myTakeHome": 23140,
     "monthAcc": 123480,
-    "annualAcc": 123480
+    "annualAcc": 123480,
+    "order": 24,
+    "id": "josh-23"
   },
   {
-    "id": "deal-jose-q149",
-    "order": 25,
     "date": "2026-01-04",
     "month": "January",
     "buyer": "Jose",
@@ -672,11 +670,11 @@
     "myComs": 40200,
     "myTakeHome": 20100,
     "monthAcc": 77200,
-    "annualAcc": 77200
+    "annualAcc": 77200,
+    "order": 25,
+    "id": "jose-24"
   },
   {
-    "id": "deal-puneet-228",
-    "order": 26,
     "date": "2025-12-18",
     "month": "January",
     "buyer": "Puneet",
@@ -699,11 +697,11 @@
     "myComs": 32750,
     "myTakeHome": 16375,
     "monthAcc": 32750,
-    "annualAcc": 32750
+    "annualAcc": 32750,
+    "order": 26,
+    "id": "puneet-25"
   },
   {
-    "id": "deal-donna-r189",
-    "order": 27,
     "date": "2025-12-11",
     "month": "December",
     "buyer": "Donna",
@@ -726,11 +724,11 @@
     "myComs": 37856.3492063492,
     "myTakeHome": 18928.1746031746,
     "monthAcc": 41173.015873015866,
-    "annualAcc": 171696.82539682538
+    "annualAcc": 171696.82539682538,
+    "order": 27,
+    "id": "donna-26"
   },
   {
-    "id": "deal-shane-a154",
-    "order": 28,
     "date": "2025-10-27",
     "month": "October",
     "buyer": "Shane",
@@ -753,11 +751,11 @@
     "myComs": 36523.80952380953,
     "myTakeHome": 18261.904761904763,
     "monthAcc": 130523.80952380953,
-    "annualAcc": 130523.80952380953
+    "annualAcc": 130523.80952380953,
+    "order": 28,
+    "id": "shane-27"
   },
   {
-    "id": "deal-pratik-r405",
-    "order": 29,
     "date": "2025-10-20",
     "month": "October",
     "buyer": "Pratik",
@@ -780,6 +778,8 @@
     "myComs": 84750,
     "myTakeHome": 42375,
     "monthAcc": 89750,
-    "annualAcc": 89750
+    "annualAcc": 89750,
+    "order": 29,
+    "id": "pratik-28"
   }
 ]
