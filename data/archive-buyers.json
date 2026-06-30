@@ -1323,5 +1323,30 @@
     "notes": "4 bed Malta, 2.5M mortgage. Responsive. HIGH.",
     "order": 53,
     "id": "nauman-52"
+  },
+  {
+    "date": "2026-05-30",
+    "status": "Archived",
+    "buyer": "Jad",
+    "source": "Unknown",
+    "colleague": "Self",
+    "area": "Lagoons",
+    "cluster1": "Costa Brava",
+    "cluster2": "",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": 5,
+    "finance": "Mortgage",
+    "budget": 3300000,
+    "needed": 3300000,
+    "diff": 0,
+    "responsiveness": 4,
+    "relationship": 4,
+    "unitSupply": 4,
+    "feeling": 4,
+    "score": 0.83,
+    "notes": "5 bed Costa, 3.3M mortgage. Wants premium unit — needs to be a good one.",
+    "order": 54,
+    "id": "jad-12"
   }
 ]
