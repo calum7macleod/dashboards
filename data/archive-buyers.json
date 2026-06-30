@@ -1423,5 +1423,30 @@
     "notes": "6 bed single row any cluster. 5.5M mortgage. Vastu required. Hot.",
     "order": 57,
     "id": "prasenjit-7"
+  },
+  {
+    "date": "2026-05-30",
+    "status": "Archived",
+    "buyer": "Jiby",
+    "source": "Unknown",
+    "colleague": "Self",
+    "area": "Lagoons",
+    "cluster1": "Costa Brava",
+    "cluster2": "",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": 4,
+    "finance": "Mortgage",
+    "budget": 2600000,
+    "needed": 2600000,
+    "diff": 0,
+    "responsiveness": 4,
+    "relationship": 4,
+    "unitSupply": 4,
+    "feeling": 5,
+    "score": 0.85,
+    "notes": "4 bed Costa Brava, 2.6M mortgage. HIGH.",
+    "order": 58,
+    "id": "jiby-13"
   }
 ]
