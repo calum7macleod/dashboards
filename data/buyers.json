@@ -575,31 +575,6 @@
     "id": "wanderlust-15"
   },
   {
-    "date": "2026-05-12",
-    "status": "Active",
-    "buyer": "Ahmad",
-    "source": "Unknown",
-    "colleague": "Self",
-    "area": "Lagoons",
-    "cluster1": "Costa Brava",
-    "cluster2": "Santorini",
-    "cluster3": "",
-    "matchedUnit": "",
-    "beds": 6,
-    "finance": "Mortgage",
-    "budget": 7000000,
-    "needed": 7000000,
-    "diff": 0,
-    "responsiveness": 5,
-    "relationship": 5,
-    "unitSupply": 4,
-    "feeling": 5,
-    "score": 0.75,
-    "notes": "Budget up to 7M but needs to sell first. Costa/Santorini 6 bed SR. Mortgage.",
-    "order": 24,
-    "id": "ahmad-6"
-  },
-  {
     "date": "2026-04-20",
     "status": "Active",
     "buyer": "Talar",
@@ -621,7 +596,7 @@
     "feeling": 5,
     "score": 0.7,
     "notes": "Going quiet. No longer on Ronnie's K302. Malta 2.7M mortgage.",
-    "order": 25,
+    "order": 24,
     "id": "talar-4"
   },
   {
@@ -646,7 +621,7 @@
     "feeling": 3,
     "score": 0.68,
     "notes": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
-    "order": 26,
+    "order": 25,
     "id": "tony-niki-1"
   },
   {
@@ -671,7 +646,7 @@
     "feeling": 4,
     "score": 0.65,
     "notes": "Need to reach out. Keep quite high. Confident will buy.",
-    "order": 27,
+    "order": 26,
     "id": "yi-0"
   },
   {
@@ -696,33 +671,8 @@
     "feeling": 4,
     "score": 0.65,
     "notes": "Will buy but timelines a bit wofty",
-    "order": 28,
+    "order": 27,
     "id": "mel-james-2"
-  },
-  {
-    "date": "2026-05-30",
-    "status": "Active",
-    "buyer": "Poonam",
-    "source": "Unknown",
-    "colleague": "Self",
-    "area": "Lagoons",
-    "cluster1": "Santorini",
-    "cluster2": "Malta",
-    "cluster3": "",
-    "matchedUnit": "",
-    "beds": 5,
-    "finance": "Mortgage",
-    "budget": 3500000,
-    "needed": 3500000,
-    "diff": 0,
-    "responsiveness": 3,
-    "relationship": 3,
-    "unitSupply": 3,
-    "feeling": 3,
-    "score": 0.65,
-    "notes": "5 bed Santorini or Malta, 3.5M mortgage. Decent prospect.",
-    "order": 29,
-    "id": "poonam-14"
   },
   {
     "date": "2026-05-04",
@@ -746,7 +696,7 @@
     "feeling": 5,
     "score": 0.6,
     "notes": "Offplan. Tara Park 3 bed, 3.8M. Cash payment plan. Close to buying. May also consider townhouses.",
-    "order": 30,
+    "order": 28,
     "id": "sanjay-5"
   }
 ]
