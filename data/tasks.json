@@ -518,6 +518,18 @@
       "notes": null,
       "completed": null,
       "snoozedUntil": null
+    },
+    {
+      "id": "b68353cc-a627-4cbf-b174-d1fa33a48c6d",
+      "title": "Buyer pipeline segmentation (improvement day)",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "due": null,
+      "created": "2026-06-27",
+      "notes": "IMPROVEMENT DAY. Section buyers into pipeline stages instead of one top-to-bottom order. Currently pushing early/new buyers to the top as a proxy for stage. Want proper stages (e.g. New/Early > Engaged > Viewing > Negotiating > Closing) with ordering within each stage.",
+      "completed": null,
+      "snoozedUntil": null
     }
   ],
   "units": [],
