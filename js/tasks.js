@@ -362,23 +362,23 @@ function groupSort(list) {
 function renderList() {
   const vis = visibleTasks();
   const top3 = state.tasks.filter(t => t.top3 && t.status === 'active');
-  let html = '';
-  html += `<div class="group-header top3-header"><span>◆ Top 3 Today</span><span class="group-n">${top3.length}/3</span></div>`;
-  html += `<div class="task-group top3-zone" data-group="top3">` + (top3.length ? groupSort(top3).map(taskCard).join('') : `<div class="top3-empty">Drag your three most important tasks here.</div>`) + `</div>`;
-  if (!vis.length && !top3.length) {
-    $('task-list').innerHTML = html + `<div class="card empty">${state.loaded ? 'No tasks here. Add one with <b>+ New Task</b>.' : 'Loading…'}</div>`;
-    initSortables();
-    return;
-  }
   const buckets = {};
   vis.forEach(t => { if (t.top3 && t.status === 'active') return; const g = taskGroup(t); (buckets[g] = buckets[g] || []).push(t); });
-  GROUPS.forEach(([key, label]) => {
+  const bucket = (key, label, extraClass) => {
     const items = buckets[key] || [];
-    if (!items.length && !['today','week','month','nodate'].includes(key)) return;
-    const nStyle = key === 'overdue' ? ' style="color:#f85149"' : '';
-    html += `<div class="group-header"><span>${label}</span><span class="group-n"${nStyle}>${items.length}</span></div>`;
-    html += `<div class="task-group" data-group="${key}">` + groupSort(items).map(taskCard).join('') + `</div>`;
-  });
+    return `<div class="bucket ${extraClass || ''}">
+      <div class="bucket-head"><span>${label}</span><span class="group-n${key === 'overdue' ? ' n-red' : ''}">${items.length}</span></div>
+      <div class="task-group" data-group="${key}">${groupSort(items).map(taskCard).join('')}</div>
+    </div>`;
+  };
+  let html = '';
+  html += `<div class="top3-wrap"><div class="bucket-head top3-head"><span>◆ Top 3 Today</span><span class="group-n">${top3.length}/3</span></div>
+    <div class="task-group top3-zone" data-group="top3">${groupSort(top3).map(taskCard).join('')}</div></div>`;
+  if ((buckets.overdue || []).length) html += `<div class="board board-1">${bucket('overdue', 'Overdue', 'bucket-overdue')}</div>`;
+  html += `<div class="board board-3">${bucket('today', 'Today')}${bucket('week', 'This Week')}${bucket('month', 'This Month')}</div>`;
+  html += `<div class="board board-2">${bucket('later', 'Later')}${bucket('nodate', 'Inbox · No Date')}</div>`;
+  if ((buckets.snoozed || []).length) html += `<div class="board board-1">${bucket('snoozed', 'Snoozed')}</div>`;
+  if (state.showDone && (buckets.done || []).length) html += `<div class="board board-1">${bucket('done', 'Completed')}</div>`;
   $('task-list').innerHTML = html;
   document.querySelectorAll('#task-list [data-act]').forEach(el => el.addEventListener('click', () => {
     const id = el.dataset.id, act = el.dataset.act;
@@ -437,7 +437,7 @@ function taskCard(t) {
       <div class="task-meta">
         <span class="area-badge"><span class="area-dot" style="background:${AREA_COLOR[t.area] || '#8b949e'}"></span>${esc(t.area)}</span>
         <span class="badge badge-${t.priority}">${PRIO_LABEL[t.priority]}</span>
-        ${diffHtml}${dueHtml}${snoozeHtml}
+        ${dueHtml}${snoozeHtml}
       </div>
       ${notesHtml}
     </div>
