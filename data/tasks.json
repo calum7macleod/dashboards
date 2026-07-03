@@ -429,14 +429,14 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": "2026-07-31",
+      "due": null,
       "created": "2026-06-01",
       "notes": null,
       "completed": null,
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 2,
       "top3": false,
       "id": "593a540f-080c-4845-a098-0ad52c6ef5b9",
       "title": "Video: Lagoons problems (buyer angle)",
@@ -451,7 +451,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 3,
       "top3": false,
       "id": "6e1bc193-e40c-4449-8450-0a5065415a54",
       "title": "Video: Lagoons problems (seller angle)",
@@ -466,7 +466,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 4,
       "top3": false,
       "id": "cec561ab-98a6-4d7d-a96e-005415491c1e",
       "title": "Video: Abu Dhabi vs Dubai - the numbers (high quality)",
@@ -496,7 +496,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 5,
       "top3": false,
       "id": "24f6a528-21ec-4fef-9ab1-8fcffe79dbaf",
       "title": "Video: The rise of Binghatti",
@@ -511,7 +511,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 6,
       "top3": false,
       "id": "a590010e-a6d6-41d5-8e90-48689707faaf",
       "title": "HNW advisors: how to find them, demonstrate value, split efforts",
@@ -556,7 +556,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 7,
       "top3": false,
       "id": "2251e35b-6225-44fb-9494-2d393600dee0",
       "title": "Strategy to get to 1 BTC",
@@ -586,7 +586,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 8,
       "top3": false,
       "id": "7b28e51f-2416-49cf-9f69-fd829fff309d",
       "title": "Find appointment setter",
@@ -601,7 +601,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 9,
       "top3": false,
       "id": "b68353cc-a627-4cbf-b174-d1fa33a48c6d",
       "title": "Buyer pipeline segmentation (improvement day)",
@@ -616,7 +616,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 10,
       "top3": false,
       "id": "fcadcaa3-7417-4238-851c-a0ff4c1fb129",
       "title": "AI: pull Lagoons transaction data - true values + daily reports",
@@ -631,7 +631,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 11,
       "top3": false,
       "id": "0f800a11-8489-4c95-b6dc-4736e39c3375",
       "title": "Video: Binghatti build-then-sell model",
@@ -646,7 +646,7 @@
       "snoozedUntil": null
     },
     {
-      "order": null,
+      "order": 12,
       "top3": false,
       "id": "aca99ce9-f70d-4e64-8014-78b7483ced51",
       "title": "Reorder and tidy videos + posting tracker",
