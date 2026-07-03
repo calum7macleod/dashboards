@@ -601,7 +601,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 3,
+      "order": 4,
       "top3": false,
       "id": "fcadcaa3-7417-4238-851c-a0ff4c1fb129",
       "title": "AI: pull Lagoons transaction data - true values + daily reports",
@@ -609,7 +609,7 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "intense",
-      "due": "2026-07-31",
+      "due": "2026-07-05",
       "created": "2026-06-27",
       "notes": "Improvement build - AI ingests Lagoons transaction data, outputs true values and a daily report",
       "completed": null,
