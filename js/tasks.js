@@ -403,7 +403,10 @@ function initSortables() {
   if (typeof Sortable === 'undefined') return;
   document.querySelectorAll('#task-list .task-group').forEach(el => {
     new Sortable(el, {
-      group: 'tasks', handle: '.drag-handle', animation: 150, ghostClass: 'drag-ghost',
+      group: 'tasks', animation: 150, ghostClass: 'drag-ghost',
+      filter: 'button, .icon-btn, .check, select, input, a', preventOnFilter: false,
+      delay: 150, delayOnTouchOnly: true, touchStartThreshold: 4,
+      scroll: true, scrollSensitivity: 70, scrollSpeed: 14,
       onMove: (evt) => {
         if (evt.to.dataset.group === 'top3') {
           const n = evt.to.querySelectorAll('[data-tid]').length;
