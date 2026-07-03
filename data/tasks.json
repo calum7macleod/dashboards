@@ -530,6 +530,42 @@
       "notes": "IMPROVEMENT DAY. Section buyers into pipeline stages instead of one top-to-bottom order. Currently pushing early/new buyers to the top as a proxy for stage. Want proper stages (e.g. New/Early > Engaged > Viewing > Negotiating > Closing) with ordering within each stage.",
       "completed": null,
       "snoozedUntil": null
+    },
+    {
+      "id": "fcadcaa3-7417-4238-851c-a0ff4c1fb129",
+      "title": "AI: pull Lagoons transaction data - true values + daily reports",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "due": null,
+      "created": "2026-06-27",
+      "notes": "Improvement build - AI ingests Lagoons transaction data, outputs true values and a daily report",
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
+      "id": "0f800a11-8489-4c95-b6dc-4736e39c3375",
+      "title": "Video: Binghatti build-then-sell model",
+      "area": "Content",
+      "priority": "medium",
+      "status": "active",
+      "due": null,
+      "created": "2026-06-27",
+      "notes": "Builds structure first then sells - deadlines, targets, payment schedule aligned",
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
+      "id": "aca99ce9-f70d-4e64-8014-78b7483ced51",
+      "title": "Reorder and tidy videos + posting tracker",
+      "area": "Content",
+      "priority": "medium",
+      "status": "active",
+      "due": null,
+      "created": "2026-06-27",
+      "notes": "Show where each video has been posted (IG/TikTok/YouTube)",
+      "completed": null,
+      "snoozedUntil": null
     }
   ],
   "units": [],
