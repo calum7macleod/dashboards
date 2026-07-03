@@ -436,51 +436,6 @@
       "snoozedUntil": null
     },
     {
-      "order": 2,
-      "top3": false,
-      "id": "593a540f-080c-4845-a098-0ad52c6ef5b9",
-      "title": "Video: Lagoons problems (buyer angle)",
-      "area": "Content",
-      "priority": "medium",
-      "status": "active",
-      "difficulty": "medium",
-      "due": null,
-      "created": "2026-06-01",
-      "notes": null,
-      "completed": null,
-      "snoozedUntil": null
-    },
-    {
-      "order": 3,
-      "top3": false,
-      "id": "6e1bc193-e40c-4449-8450-0a5065415a54",
-      "title": "Video: Lagoons problems (seller angle)",
-      "area": "Content",
-      "priority": "medium",
-      "status": "active",
-      "difficulty": "medium",
-      "due": null,
-      "created": "2026-06-01",
-      "notes": null,
-      "completed": null,
-      "snoozedUntil": null
-    },
-    {
-      "order": 4,
-      "top3": false,
-      "id": "cec561ab-98a6-4d7d-a96e-005415491c1e",
-      "title": "Video: Abu Dhabi vs Dubai - the numbers (high quality)",
-      "area": "Content",
-      "priority": "medium",
-      "status": "active",
-      "difficulty": "hard",
-      "due": null,
-      "created": "2026-06-01",
-      "notes": "High production quality",
-      "completed": null,
-      "snoozedUntil": null
-    },
-    {
       "order": null,
       "top3": false,
       "id": "f2886628-c868-415a-af64-872a7732c12c",
@@ -493,21 +448,6 @@
       "created": "2026-06-01",
       "notes": "Explain how Binghatti builds the structure first then sells the project - keeps construction deadlines and sales targets met, and the payment schedule aligned",
       "completed": "2026-06-03",
-      "snoozedUntil": null
-    },
-    {
-      "order": 5,
-      "top3": false,
-      "id": "24f6a528-21ec-4fef-9ab1-8fcffe79dbaf",
-      "title": "Video: The rise of Binghatti",
-      "area": "Content",
-      "priority": "medium",
-      "status": "active",
-      "difficulty": "hard",
-      "due": null,
-      "created": "2026-06-01",
-      "notes": null,
-      "completed": null,
       "snoozedUntil": null
     },
     {
@@ -631,21 +571,6 @@
       "snoozedUntil": null
     },
     {
-      "order": 11,
-      "top3": false,
-      "id": "0f800a11-8489-4c95-b6dc-4736e39c3375",
-      "title": "Video: Binghatti build-then-sell model",
-      "area": "Content",
-      "priority": "medium",
-      "status": "active",
-      "difficulty": "medium",
-      "due": null,
-      "created": "2026-06-27",
-      "notes": "Builds structure first then sells - deadlines, targets, payment schedule aligned",
-      "completed": null,
-      "snoozedUntil": null
-    },
-    {
       "order": 12,
       "top3": false,
       "id": "aca99ce9-f70d-4e64-8014-78b7483ced51",
@@ -662,6 +587,52 @@
     }
   ],
   "units": [],
-  "contentIdeas": [],
+  "contentIdeas": [
+    {
+      "id": "df493b1b-2874-4e02-8325-67d1bf18d78f",
+      "title": "Binghatti build-then-sell model",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
+      "notes": "Builds structure first then sells - deadlines, targets, payment schedule aligned",
+      "created": "2026-07-03"
+    },
+    {
+      "id": "d4736366-bac7-4dbb-ae68-f690d6292dd7",
+      "title": "The rise of Binghatti",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
+      "notes": null,
+      "created": "2026-07-03"
+    },
+    {
+      "id": "957780c5-17b3-453d-b9b3-fc93eb0848dc",
+      "title": "Abu Dhabi vs Dubai - the numbers (high quality)",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
+      "notes": "High production quality",
+      "created": "2026-07-03"
+    },
+    {
+      "id": "3efb0f3c-f261-420b-8b42-21ac0f6167fb",
+      "title": "Lagoons problems (seller angle)",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
+      "notes": null,
+      "created": "2026-07-03"
+    },
+    {
+      "id": "bd5bac52-e0b8-4bb9-aa75-3ef3ccdb805d",
+      "title": "Lagoons problems (buyer angle)",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
+      "notes": null,
+      "created": "2026-07-03"
+    }
+  ],
   "buildLog": []
 }
