@@ -303,11 +303,14 @@ function renderStats() {
   const doneToday = state.tasks.filter(x => x.status === 'done' && x.completed === t).length;
   const snoozed = state.tasks.filter(x => x.status === 'snoozed').length;
   const overdue = state.tasks.filter(x => x.status === 'active' && x.due && x.due < t).length;
+  const pts = (d) => state.tasks.filter(x => x.status === 'done' && x.completed === d).reduce((s, x) => s + (DIFFICULTY[x.difficulty] || 3), 0);
+  const scoreToday = pts(t), scoreYest = pts(addDaysStr(-1));
+  const cmp = scoreYest ? (scoreToday >= scoreYest ? `Yesterday ${scoreYest} — ahead` : `Yesterday ${scoreYest} — behind`) : 'Yesterday 0';
   $('stats').innerHTML = [
+    statCard("Today's Score", scoreToday, cmp, scoreToday >= scoreYest && scoreToday > 0 ? '#E8C96B' : undefined),
     statCard('Active Tasks', active, overdue ? `${overdue} overdue` : 'Nothing overdue'),
     statCard('High Priority', high, 'Need attention'),
-    statCard('Done Today', doneToday, 'Keep it up'),
-    statCard('Snoozed', snoozed, 'Resting')
+    statCard('Done Today', doneToday, 'Keep it up')
   ].join('');
 }
 function statCard(title, value, sub, subColor) {
@@ -440,7 +443,7 @@ function taskCard(t) {
       <div class="task-meta">
         <span class="area-badge"><span class="area-dot" style="background:${AREA_COLOR[t.area] || '#8b949e'}"></span>${esc(t.area)}</span>
         <span class="badge badge-${t.priority}">${PRIO_LABEL[t.priority]}</span>
-        ${dueHtml}${snoozeHtml}
+        <span class="pts-chip" title="${DIFF_LABEL[t.difficulty]}">+${DIFFICULTY[t.difficulty] || 3}</span>${dueHtml}${snoozeHtml}
       </div>
       ${notesHtml}
     </div>
