@@ -204,12 +204,12 @@ h1,h2,h3{font-family:'Palatino Linotype',Palatino,Georgia,serif;color:#F5EDE0}
 .board-2{grid-template-columns:repeat(2,1fr)}
 .board-1{grid-template-columns:1fr}
 @media(max-width:900px){.board-3,.board-2{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
-.bucket{background:#182F24;border:1px solid #2E5A40;border-radius:14px;padding:12px;display:flex;flex-direction:column}
+.bucket{background:#182F24;border:1px solid #2E5A40;border-radius:14px;padding:12px;display:flex;flex-direction:column;min-height:120px}
 .bucket-overdue{border-color:#f85149}
 .bucket-head{display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#C9A84C;font-weight:700;margin:2px 2px 10px}
 .bucket-head .group-n{background:#152A1F;border:1px solid #2E5A40;color:#8FA898;border-radius:10px;padding:1px 8px;font-size:11px}
 .bucket-head .n-red{color:#f85149;border-color:#f85149}
-.task-group{display:flex;flex-direction:column;gap:8px;min-height:44px;border-radius:10px}
+.task-group{display:flex;flex-direction:column;gap:8px;min-height:64px;border-radius:10px;flex:1}
 .task-group:empty{border:1px dashed #2E5A40}
 .task-group:empty::after{content:'Drop here';display:block;text-align:center;color:#4E6B58;font-size:12px;padding:12px 0}
 .top3-wrap{margin-top:18px}
@@ -514,6 +514,6 @@ input,select,textarea,.form-input,.filter-input{background:#182F24;border-color:
 <!-- Optional local config (gitignored). Absent on the live site — token then comes from the Connect panel. -->
 <script src="config.js" onerror="void 0"></script>
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
-<script src="js/tasks.js?v=5"></script>
+<script src="js/tasks.js?v=6"></script>
 </body>
 </html>
