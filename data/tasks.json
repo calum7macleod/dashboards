@@ -1,6 +1,51 @@
 {
   "tasks": [
     {
+      "id": "b5e65760-a9ff-43be-86af-e08725fb0c85",
+      "title": "Replicate on finances page",
+      "area": "Tasks",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-07-03",
+      "created": "2026-07-03",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 3,
+      "top3": true
+    },
+    {
+      "id": "df70aff1-35c6-484d-a732-3dd0b5fa8e8e",
+      "title": "Replicate on real estate page",
+      "area": "Tasks",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-07-03",
+      "created": "2026-07-03",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 2,
+      "top3": true
+    },
+    {
+      "id": "84236a0d-06e7-44d9-866e-048d203b6432",
+      "title": "Create tasks page",
+      "area": "Tasks",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-07-03",
+      "created": "2026-07-03",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": true
+    },
+    {
       "order": 0,
       "top3": false,
       "id": "2c896f44-8894-46eb-bf53-7d710eab8e91",
