@@ -22,13 +22,13 @@ function setToken(t) { if (t) localStorage.setItem(TOKEN_KEY, t.trim()); else lo
 /* ---- Constants ---------------------------------------------------------- */
 const AREAS = ['Real Estate', 'Health', 'Content', 'Finance', 'Investing', 'Tasks'];
 const AREA_COLOR = {
-  'Real Estate': '#58a6ff',
-  'Health':      '#3fb950',
-  'Content':     '#d2a8ff',
-  'Finance':     '#e3b341',
-  'Investing':   '#56d364',
-  'Tasks':       '#f0883e',
-  'General':     '#8b949e'
+  'Real Estate': '#C9A84C',
+  'Health':      '#8FBF9F',
+  'Content':     '#C97D5E',
+  'Finance':     '#E8DCA8',
+  'Investing':   '#7FA6B8',
+  'Tasks':       '#A9A195',
+  'General':     '#8FA898'
 };
 const PRIO_LABEL = { high: 'High', medium: 'Medium', low: 'Low' };
 const DIFFICULTY = { easy: 1, medium: 3, hard: 5, intense: 8 };
