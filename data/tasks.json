@@ -1,19 +1,23 @@
 {
   "tasks": [
     {
+      "order": 0,
+      "top3": false,
       "id": "2c896f44-8894-46eb-bf53-7d710eab8e91",
       "title": "New phone number & set up messaging",
       "area": "Real Estate",
       "priority": "high",
       "status": "done",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-06-01",
       "notes": "TOP PRIORITY",
       "completed": "2026-06-27",
-      "order": 0,
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "106a3007-c539-47e9-94f0-7d787fe7ba06",
       "title": "make content dashboard",
       "area": "Real Estate",
@@ -27,6 +31,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "d5a7dd44-35f7-43e7-885b-35683e32fa8e",
       "title": "Check Darryl",
       "area": "Real Estate",
@@ -40,6 +46,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "d7f685e3-a9d2-41bd-b02b-23257a61e20f",
       "title": "Post a video",
       "area": "Real Estate",
@@ -53,6 +61,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "b498f676-1956-41b6-b760-ca1fbb84d392",
       "title": "add buyer",
       "area": "Real Estate",
@@ -66,6 +76,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "9411c8ca-4798-45ce-93e6-a96428bf43a7",
       "title": "stuff",
       "area": "Real Estate",
@@ -79,6 +91,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "seed-1",
       "title": "Follow up with Reelly on Dubai Hills listing",
       "area": "Real Estate",
@@ -92,6 +106,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "seed-2",
       "title": "Pay AQUA credit card",
       "area": "Finance",
@@ -105,6 +121,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "seed-3",
       "title": "Book blood test at Elite Vita",
       "area": "Health",
@@ -118,6 +136,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "seed-4",
       "title": "Edit 3 reels for Instagram",
       "area": "Content",
@@ -131,6 +151,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "seed-5",
       "title": "Review BTC dollar-cost average plan",
       "area": "Investing",
@@ -144,6 +166,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "3e3fd53c-6751-4544-a430-62433689b3b0",
       "title": "Facebook ad",
       "area": "Content",
@@ -157,6 +181,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "0b2482a0-96ca-4cfe-bae2-5807c5be9ac1",
       "title": "Redford 2 vids",
       "area": "Content",
@@ -170,6 +196,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "0d707f45-d718-4bda-8019-0a02f697fd27",
       "title": "Plan 2 vids",
       "area": "Content",
@@ -183,6 +211,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "184ac518-ff6a-40d8-b626-bffbb2513c9f",
       "title": "Abby Elle",
       "area": "Tasks",
@@ -196,6 +226,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "5c586531-d0e0-4d47-85b0-abbb5d23f8d7",
       "title": "Abby spark",
       "area": "Tasks",
@@ -209,6 +241,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "4f53fcbd-5872-4c59-a600-023ba3faad11",
       "title": "WhatsApp's",
       "area": "Real Estate",
@@ -222,6 +256,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "e7a84673-9233-4e0a-bc6d-27f191942f6d",
       "title": "J460",
       "area": "Real Estate",
@@ -235,6 +271,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "05c9b8bb-e8f4-4f9e-9f6c-c117e533ed13",
       "title": "Sort J340 in Salesforce",
       "area": "Real Estate",
@@ -248,6 +286,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "bea687b3-fa9e-4c62-89fa-c583da473e6b",
       "title": "V1000s 19m",
       "area": "Real Estate",
@@ -261,6 +301,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "8ecb6146-23b6-428a-9537-439be909b1e4",
       "title": "Sort phone over",
       "area": "Tasks",
@@ -274,6 +316,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "64935ded-d860-4ec0-87b1-2f48c8bfab0d",
       "title": "Message +971 56 352 8515",
       "area": "Real Estate",
@@ -287,6 +331,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "fd60e06f-64ad-4ea0-8c5e-2d4853e5a067",
       "title": "Call and message Ankur",
       "area": "Real Estate",
@@ -300,6 +346,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "bf6c3f85-5240-4add-bd91-a55d86f3b6a2",
       "title": "Call re: J518 & J481 (viewings)",
       "area": "Real Estate",
@@ -313,6 +361,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "82b6a3ed-6e2c-4828-96e4-673364c57af6",
       "title": "Check J444",
       "area": "Real Estate",
@@ -326,6 +376,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "3e20d189-29ce-457f-b266-7ad9ccec4bf7",
       "title": "Add my buyers",
       "area": "Real Estate",
@@ -339,6 +391,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "ba1142f8-0a23-4d22-a648-d3cbede9f16d",
       "title": "Sort ESTA for USA",
       "area": "Tasks",
@@ -352,6 +406,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "379299da-138e-4e4c-9269-b01b4b780342",
       "title": "Reorder and tidy videos",
       "area": "Content",
@@ -365,19 +421,23 @@
       "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "f9236f36-b394-49a7-bffc-ccb2d5e265b3",
       "title": "Start TikTok",
       "area": "Content",
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": null,
+      "due": "2026-07-03",
       "created": "2026-06-01",
       "notes": null,
       "completed": null,
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "593a540f-080c-4845-a098-0ad52c6ef5b9",
       "title": "Video: Lagoons problems (buyer angle)",
       "area": "Content",
@@ -391,6 +451,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "6e1bc193-e40c-4449-8450-0a5065415a54",
       "title": "Video: Lagoons problems (seller angle)",
       "area": "Content",
@@ -404,6 +466,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "cec561ab-98a6-4d7d-a96e-005415491c1e",
       "title": "Video: Abu Dhabi vs Dubai - the numbers (high quality)",
       "area": "Content",
@@ -417,6 +481,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "f2886628-c868-415a-af64-872a7732c12c",
       "title": "Video: Binghatti build-then-sell model",
       "area": "Content",
@@ -430,6 +496,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "24f6a528-21ec-4fef-9ab1-8fcffe79dbaf",
       "title": "Video: The rise of Binghatti",
       "area": "Content",
@@ -443,6 +511,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "a590010e-a6d6-41d5-8e90-48689707faaf",
       "title": "HNW advisors: how to find them, demonstrate value, split efforts",
       "area": "Real Estate",
@@ -456,6 +526,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "3e6af94c-dbac-4ffb-b827-0c1fd3cbd716",
       "title": "Message Pats",
       "area": "Real Estate",
@@ -469,6 +541,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "f7b76f5c-edeb-4f2d-af3e-11ebe88135f2",
       "title": "Message Deeps",
       "area": "Real Estate",
@@ -482,6 +556,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "2251e35b-6225-44fb-9494-2d393600dee0",
       "title": "Strategy to get to 1 BTC",
       "area": "Investing",
@@ -495,6 +571,8 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "3b8ac016-6793-41cf-8aa1-c719ec765b18",
       "title": "Make Tara Park carousel",
       "area": "Content",
@@ -508,11 +586,14 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "7b28e51f-2416-49cf-9f69-fd829fff309d",
       "title": "Find appointment setter",
       "area": "Real Estate",
       "priority": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-06-01",
       "notes": null,
@@ -520,11 +601,14 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "b68353cc-a627-4cbf-b174-d1fa33a48c6d",
       "title": "Buyer pipeline segmentation (improvement day)",
       "area": "Real Estate",
       "priority": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-06-27",
       "notes": "IMPROVEMENT DAY. Section buyers into pipeline stages instead of one top-to-bottom order. Currently pushing early/new buyers to the top as a proxy for stage. Want proper stages (e.g. New/Early > Engaged > Viewing > Negotiating > Closing) with ordering within each stage.",
@@ -532,11 +616,14 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "fcadcaa3-7417-4238-851c-a0ff4c1fb129",
       "title": "AI: pull Lagoons transaction data - true values + daily reports",
       "area": "Real Estate",
       "priority": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-06-27",
       "notes": "Improvement build - AI ingests Lagoons transaction data, outputs true values and a daily report",
@@ -544,11 +631,14 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "0f800a11-8489-4c95-b6dc-4736e39c3375",
       "title": "Video: Binghatti build-then-sell model",
       "area": "Content",
       "priority": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-06-27",
       "notes": "Builds structure first then sells - deadlines, targets, payment schedule aligned",
@@ -556,11 +646,14 @@
       "snoozedUntil": null
     },
     {
+      "order": null,
+      "top3": false,
       "id": "aca99ce9-f70d-4e64-8014-78b7483ced51",
       "title": "Reorder and tidy videos + posting tracker",
       "area": "Content",
       "priority": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": null,
       "created": "2026-06-27",
       "notes": "Show where each video has been posted (IG/TikTok/YouTube)",
