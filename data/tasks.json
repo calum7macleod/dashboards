@@ -526,7 +526,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 2,
+      "order": 3,
       "top3": false,
       "id": "7b28e51f-2416-49cf-9f69-fd829fff309d",
       "title": "Find appointment setter",
@@ -534,7 +534,7 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": null,
+      "due": "2026-07-05",
       "created": "2026-06-01",
       "notes": null,
       "completed": null,
