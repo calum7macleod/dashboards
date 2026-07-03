@@ -175,6 +175,7 @@ async function refreshSha() {
 function normaliseTasks(arr) {
   return arr.map(t => ({
     order: (typeof t.order === 'number' ? t.order : null),
+    top3: t.top3 === true,
     id: t.id || uid(),
     title: t.title || '(untitled)',
     area: AREAS.includes(t.area) ? t.area : 'Tasks',
@@ -360,16 +361,20 @@ function groupSort(list) {
 }
 function renderList() {
   const vis = visibleTasks();
-  if (!vis.length) {
-    $('task-list').innerHTML = `<div class="card empty">${state.loaded ? 'No tasks here. Add one with <b>+ New Task</b>.' : 'Loading…'}</div>`;
+  const top3 = state.tasks.filter(t => t.top3 && t.status === 'active');
+  let html = '';
+  html += `<div class="group-header top3-header"><span>◆ Top 3 Today</span><span class="group-n">${top3.length}/3</span></div>`;
+  html += `<div class="task-group top3-zone" data-group="top3">` + (top3.length ? groupSort(top3).map(taskCard).join('') : `<div class="top3-empty">Drag your three most important tasks here.</div>`) + `</div>`;
+  if (!vis.length && !top3.length) {
+    $('task-list').innerHTML = html + `<div class="card empty">${state.loaded ? 'No tasks here. Add one with <b>+ New Task</b>.' : 'Loading…'}</div>`;
+    initSortables();
     return;
   }
   const buckets = {};
-  vis.forEach(t => { const g = taskGroup(t); (buckets[g] = buckets[g] || []).push(t); });
-  let html = '';
+  vis.forEach(t => { if (t.top3 && t.status === 'active') return; const g = taskGroup(t); (buckets[g] = buckets[g] || []).push(t); });
   GROUPS.forEach(([key, label]) => {
-    const items = buckets[key];
-    if (!items || !items.length) return;
+    const items = buckets[key] || [];
+    if (!items.length && !['today','week','month','nodate'].includes(key)) return;
     const nStyle = key === 'overdue' ? ' style="color:#f85149"' : '';
     html += `<div class="group-header"><span>${label}</span><span class="group-n"${nStyle}>${items.length}</span></div>`;
     html += `<div class="task-group" data-group="${key}">` + groupSort(items).map(taskCard).join('') + `</div>`;
@@ -383,14 +388,38 @@ function renderList() {
   }));
   initSortables();
 }
+function applyGroupDate(t, group) {
+  if (group === 'top3') { t.top3 = true; if (!t.due || t.due > todayStr()) t.due = todayStr(); if (t.status === 'snoozed') { t.status = 'active'; t.snoozedUntil = null; } return; }
+  t.top3 = false;
+  if (group === 'today' || group === 'overdue') t.due = todayStr();
+  else if (group === 'week') t.due = endOfWeekStr() === todayStr() ? todayStr() : endOfWeekStr();
+  else if (group === 'month') t.due = endOfMonthStr();
+  else if (group === 'later') { const d = new Date(); const nm = new Date(d.getFullYear(), d.getMonth() + 2, 0); t.due = todayStr(nm); }
+  else if (group === 'nodate') t.due = null;
+  else if (group === 'snoozed') { t.status = 'snoozed'; t.snoozedUntil = addDaysStr(7); return; }
+  if (t.status === 'snoozed') { t.status = 'active'; t.snoozedUntil = null; }
+}
 function initSortables() {
   if (typeof Sortable === 'undefined') return;
   document.querySelectorAll('#task-list .task-group').forEach(el => {
-    new Sortable(el, { handle: '.drag-handle', animation: 150, ghostClass: 'drag-ghost', onEnd: () => {
-      const ids = Array.from(el.querySelectorAll('[data-tid]')).map(x => x.dataset.tid);
-      ids.forEach((id, i) => { const t = findTask(id); if (t) t.order = i + 1; });
-      save();
-    }});
+    new Sortable(el, {
+      group: 'tasks', handle: '.drag-handle', animation: 150, ghostClass: 'drag-ghost',
+      onMove: (evt) => {
+        if (evt.to.dataset.group === 'top3') {
+          const n = evt.to.querySelectorAll('[data-tid]').length;
+          if (evt.from !== evt.to && n >= 3) return false;
+        }
+        return true;
+      },
+      onEnd: (evt) => {
+        const t = findTask(evt.item.dataset.tid);
+        const toGroup = evt.to.dataset.group;
+        if (t && toGroup) applyGroupDate(t, toGroup);
+        const ids = Array.from(evt.to.querySelectorAll('[data-tid]')).map(x => x.dataset.tid);
+        ids.forEach((id, i) => { const x = findTask(id); if (x) x.order = i + 1; });
+        render(); save();
+      }
+    });
   });
 }
 function taskCard(t) {
@@ -480,10 +509,20 @@ function renderContent() {
         ${c.notes ? `<div class="task-notes">${esc(c.notes)}</div>` : ''}
       </div>
       <div class="task-actions">
+        <button class="icon-btn" data-act="promote-content" data-id="${c.id}" title="Promote to task">⇧</button>
         <button class="icon-btn danger" data-act="del-content" data-id="${c.id}" title="Delete">🗑</button>
       </div>
     </div>`).join('');
   wireStatusSelects('content');
+  document.querySelectorAll('#c-list [data-act="promote-content"]').forEach(el => el.addEventListener('click', () => {
+    const c = state.contentIdeas.find(x => x.id === el.dataset.id);
+    if (!c) return;
+    mutate(() => {
+      state.tasks.unshift({ id: uid(), title: c.title, area: 'Content', priority: c.priority || 'medium', difficulty: 'medium', status: 'active', due: null, created: todayStr(), notes: c.notes || null, completed: null, snoozedUntil: null, order: null, top3: false });
+      c.status = 'In Progress';
+    });
+    toast('Promoted to task — drag it into a day bucket');
+  }));
   document.querySelectorAll('#c-list [data-act="del-content"]').forEach(el => el.addEventListener('click', () => {
     const c = state.contentIdeas.find(x => x.id === el.dataset.id);
     if (confirm(`Delete "${c ? c.title : 'this idea'}"?`)) mutate(() => { const i = state.contentIdeas.findIndex(x => x.id === el.dataset.id); if (i > -1) state.contentIdeas.splice(i, 1); });
