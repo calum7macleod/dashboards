@@ -70,14 +70,38 @@
   @media (max-width: 500px) {
     .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   }
+
+/* ===== Calum brand skin ===== */
+body{background:#152A1F;color:#F5EDE0;font-family:Calibri,'Segoe UI',sans-serif}
+.header,header{background:linear-gradient(180deg,#1E3D2F,#152A1F);border-bottom:1px solid #2E5A40}
+.header p,header p{color:#8FA898}
+.header-eyebrow{font-size:10px;letter-spacing:.28em;color:#C9A84C;text-transform:uppercase;font-weight:600;margin-bottom:2px}
+.header-title{font-family:Calibri,'Segoe UI',sans-serif;font-weight:800;font-size:26px;color:#F5EDE0;line-height:1.1}
+.card,.chart-card{background:#1E3D2F;border:1px solid #2E5A40}
+.card-title,.text-muted{color:#8FA898}
+.stat-value{font-family:'Palatino Linotype',Palatino,Georgia,serif;color:#E8C96B}
+.stat-sub{color:#8FA898}
+.section-label{color:#C9A84C;letter-spacing:.12em}
+.tab{background:transparent;border:none;border-bottom:2px solid transparent;color:#8FA898;border-radius:0}
+.tab.active{background:transparent;color:#F5EDE0;border-bottom-color:#C9A84C}
+.tab-n,.stat-badge{background:transparent;border:none;color:#C9A84C;font-weight:700}
+table{color:#F5EDE0}
+th{color:#C9A84C;letter-spacing:.08em;border-bottom:1px solid #2E5A40}
+td{border-bottom:1px solid #23422F}
+tr:hover td{background:#1E3D2F}
+input,select,textarea,.filter-input{background:#182F24;border:1px solid #2E5A40;color:#F5EDE0}
+.btn{border-color:#2E5A40;color:#F5EDE0;background:#1E3D2F}
+.btn-primary{background:#C9A84C;color:#152A1F;border-color:#C9A84C;font-weight:700}
+a{color:#E8C96B}
+::-webkit-scrollbar-thumb{background:#2E5A40}
+
 </style>
 </head>
 <body>
 
 <div class="header">
   <div>
-    <h1>💰 Finance Dashboard</h1>
-    <p>Calum's personal cashflow tracker</p>
+    <div class="header-eyebrow">CALUM MACLEOD &nbsp;◆&nbsp; COMMAND CENTRE</div><h1 class="header-title">Finance</h1>
   </div>
   <div style="text-align:right">
     <div style="color:#8b949e;font-size:0.78rem">Updated 26 Apr 2026</div>
