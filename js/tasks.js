@@ -174,6 +174,7 @@ async function refreshSha() {
    ========================================================================= */
 function normaliseTasks(arr) {
   return arr.map(t => ({
+    order: (typeof t.order === 'number' ? t.order : null),
     id: t.id || uid(),
     title: t.title || '(untitled)',
     area: AREAS.includes(t.area) ? t.area : 'Tasks',
@@ -334,19 +335,63 @@ function visibleTasks() {
     return true;
   });
 }
+function endOfWeekStr() { const d = new Date(); const diff = (7 - d.getDay()) % 7; d.setDate(d.getDate() + diff); return todayStr(d); }
+function endOfMonthStr() { const d = new Date(); return todayStr(new Date(d.getFullYear(), d.getMonth() + 1, 0)); }
+function taskGroup(t) {
+  if (t.status === 'done') return 'done';
+  if (t.status === 'snoozed') return 'snoozed';
+  if (!t.due) return 'nodate';
+  const td = todayStr();
+  if (t.due < td) return 'overdue';
+  if (t.due === td) return 'today';
+  if (t.due <= endOfWeekStr()) return 'week';
+  if (t.due <= endOfMonthStr()) return 'month';
+  return 'later';
+}
+const GROUPS = [['overdue','Overdue'],['today','Today'],['week','This Week'],['month','This Month'],['later','Later'],['nodate','No Date'],['snoozed','Snoozed'],['done','Completed']];
+function groupSort(list) {
+  return list.slice().sort((a, b) => {
+    const ao = a.order == null ? 1e9 : a.order, bo = b.order == null ? 1e9 : b.order;
+    if (ao !== bo) return ao - bo;
+    if (PRIO_ORDER[a.priority] !== PRIO_ORDER[b.priority]) return PRIO_ORDER[a.priority] - PRIO_ORDER[b.priority];
+    if (a.due && b.due) return a.due < b.due ? -1 : 1;
+    if (a.due) return -1; if (b.due) return 1; return 0;
+  });
+}
 function renderList() {
-  const list = sortTasks(visibleTasks());
-  if (!list.length) {
+  const vis = visibleTasks();
+  if (!vis.length) {
     $('task-list').innerHTML = `<div class="card empty">${state.loaded ? 'No tasks here. Add one with <b>+ New Task</b>.' : 'Loading…'}</div>`;
     return;
   }
-  $('task-list').innerHTML = list.map(taskCard).join('');
+  const buckets = {};
+  vis.forEach(t => { const g = taskGroup(t); (buckets[g] = buckets[g] || []).push(t); });
+  let html = '';
+  GROUPS.forEach(([key, label]) => {
+    const items = buckets[key];
+    if (!items || !items.length) return;
+    const nStyle = key === 'overdue' ? ' style="color:#f85149"' : '';
+    html += `<div class="group-header"><span>${label}</span><span class="group-n"${nStyle}>${items.length}</span></div>`;
+    html += `<div class="task-group" data-group="${key}">` + groupSort(items).map(taskCard).join('') + `</div>`;
+  });
+  $('task-list').innerHTML = html;
   document.querySelectorAll('#task-list [data-act]').forEach(el => el.addEventListener('click', () => {
     const id = el.dataset.id, act = el.dataset.act;
     if (act === 'done') mutate(() => toggleDone(id));
     else if (act === 'snooze') mutate(() => snooze(id));
     else if (act === 'delete') { const tsk = findTask(id); if (confirm(`Delete "${tsk ? tsk.title : 'this task'}"?`)) mutate(() => removeTask(id)); }
   }));
+  initSortables();
+}
+function initSortables() {
+  if (typeof Sortable === 'undefined') return;
+  document.querySelectorAll('#task-list .task-group').forEach(el => {
+    new Sortable(el, { handle: '.drag-handle', animation: 150, ghostClass: 'drag-ghost', onEnd: () => {
+      const ids = Array.from(el.querySelectorAll('[data-tid]')).map(x => x.dataset.tid);
+      ids.forEach((id, i) => { const t = findTask(id); if (t) t.order = i + 1; });
+      save();
+    }});
+  });
 }
 function taskCard(t) {
   const ds = dueState(t.due);
@@ -355,7 +400,8 @@ function taskCard(t) {
   const diffHtml = `<span class="badge badge-diff-${t.difficulty}" title="${DIFFICULTY[t.difficulty]} pts">${DIFF_LABEL[t.difficulty]}</span>`;
   const notesHtml = t.notes ? `<div class="task-notes">${esc(t.notes)}</div>` : '';
   return `
-  <div class="task-card prio-${t.priority} ${t.status === 'done' ? 'is-done' : ''} ${t.status === 'snoozed' ? 'is-snoozed' : ''}">
+  <div class="task-card prio-${t.priority} ${t.status === 'done' ? 'is-done' : ''} ${t.status === 'snoozed' ? 'is-snoozed' : ''}" data-tid="${t.id}">
+    <span class="drag-handle" title="Drag to reorder">⠿</span>
     <button class="check ${t.status === 'done' ? 'done' : ''}" data-act="done" data-id="${t.id}" title="${t.status === 'done' ? 'Mark active' : 'Mark done'}"></button>
     <div class="task-body">
       <div class="task-title">${esc(t.title)}</div>
