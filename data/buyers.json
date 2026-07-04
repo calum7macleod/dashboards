@@ -50,6 +50,31 @@
     "order": 2
   },
   {
+    "date": "2026-06-16",
+    "status": "Active",
+    "buyer": "Ari",
+    "source": "Unknown",
+    "colleague": "Self",
+    "area": "Lagoons",
+    "cluster1": "Single Row",
+    "cluster2": "Costa Brava (stretch)",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": 5,
+    "finance": "Cash",
+    "budget": 3300000,
+    "needed": 3300000,
+    "diff": 0,
+    "responsiveness": 4,
+    "relationship": 4,
+    "unitSupply": 4,
+    "feeling": 5,
+    "score": 0.9,
+    "notes": "Met 4 Jul - really sound. French, newborn. 5 bed single row, CASH, 3.3M. Costa Brava preferred but budget won't reach. Can wait. Does NOT want clusters next to the apartments. Send options and narrow down.",
+    "id": "ari-26",
+    "order": 3
+  },
+  {
     "date": "2026-07-04",
     "status": "Active",
     "buyer": "Ashna",
@@ -73,7 +98,7 @@
     "score": 0.85,
     "notes": "Strong cash position, likely no mortgage pre-approval. Wants options: DAMAC Islands (off-plan) or Lagoons. Send options ASAP.",
     "id": "ash-32",
-    "order": 3
+    "order": 4
   },
   {
     "date": "2026-06-27",
@@ -98,7 +123,7 @@
     "score": 0.7,
     "notes": "4 bed Santorini, 2.65M. Vastu compliant required.",
     "id": "shiri-27",
-    "order": 4
+    "order": 5
   },
   {
     "date": "2026-07-04",
@@ -123,7 +148,7 @@
     "score": 0.72,
     "notes": "Costa Brava, 2.5M, mortgage. Vastu compliant required.",
     "id": "nikhil-31",
-    "order": 5
+    "order": 6
   },
   {
     "date": "2026-06-27",
@@ -149,31 +174,6 @@
     "score": 0.72,
     "notes": "Off-plan buyer.",
     "id": "muaz-29",
-    "order": 6
-  },
-  {
-    "date": "2026-06-16",
-    "status": "Active",
-    "buyer": "Ari",
-    "source": "Unknown",
-    "colleague": "Self",
-    "area": "Lagoons",
-    "cluster1": "Single Row",
-    "cluster2": "",
-    "cluster3": "",
-    "matchedUnit": "",
-    "beds": "4-5",
-    "finance": "Cash",
-    "budget": 3500000,
-    "needed": 3500000,
-    "diff": 0,
-    "responsiveness": 4,
-    "relationship": 4,
-    "unitSupply": 4,
-    "feeling": 4,
-    "score": 0.85,
-    "notes": "4 or 5 bed, single row. 2.5M (4bd) / 3.5M (5bd). Cash buyer.",
-    "id": "ari-26",
     "order": 7
   },
   {
