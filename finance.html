@@ -182,6 +182,11 @@ a{color:#E8C96B}
 .dq-p{background:#182F24;border:1px solid #2E5A40;border-radius:14px;padding:14px;text-align:center}
 .dq-p .who{font-size:11px;letter-spacing:.14em;color:#8FA898}
 .dq-p .amt{font-family:'Palatino Linotype',Palatino,serif;font-size:22px;color:#F5EDE0;margin-top:4px}
+.dq-pbar{height:10px;background:#0F211A;border:1px solid #2E5A40;border-radius:6px;overflow:hidden;margin-top:10px}
+.dq-pbar-fill{height:100%;background:linear-gradient(90deg,#8a6f2a,#E8C96B);border-radius:6px;transition:width .6s}
+.dq-p .paidline{font-size:10px;color:#8FA898;margin-top:5px}
+.dq-p-done{border-color:#C9A84C;background:rgba(201,168,76,.06)}
+.dq-p-done .amt{color:#E8C96B;letter-spacing:.14em;font-size:15px}
 @media(max-width:820px){.dq-strip{grid-template-columns:repeat(2,1fr)}.dq-big3{grid-template-columns:1fr}.dq-destroyed{font-size:44px}.dq-nm{flex-basis:120px}.dq-meta{display:none}}
 
 
@@ -734,8 +739,14 @@ function renderDebt(){
       <div class="dq-nwhat">${c.card} <span>· ${c.dueNote||''}</span></div>
       <div class="dq-namt">${c.dueAmount?('£'+c.dueAmount.toLocaleString('en-GB',{minimumFractionDigits:2})):'DD'}</div>
     </div>`;}).join('')||'<div style="color:#8FA898">Nothing scheduled</div>';
-  el('d-personal-list').innerHTML=pers.map(p=>
-    `<div class="dq-p"><div class="who">${p.to.toUpperCase()}</div><div class="amt">${fmtG(p.amount)}</div></div>`).join('');
+  el('d-personal-list').innerHTML=pers.map(p=>{
+    const orig=p.original||p.amount, paid=Math.max(0,orig-p.amount), pct=orig?paid/orig*100:0, done=p.amount<=0;
+    return `<div class="dq-p ${done?'dq-p-done':''}">
+      <div class="who">${done?'✓ ':''}${p.to.toUpperCase()}</div>
+      <div class="amt">${done?'CLEARED':fmtG(p.amount)}</div>
+      <div class="dq-pbar"><div class="dq-pbar-fill" style="width:${pct.toFixed(1)}%"></div></div>
+      <div class="paidline">${fmtG(paid)} of ${fmtG(orig)} paid · ${pct.toFixed(0)}%</div>
+    </div>`;}).join('');
 }
 function renderCCBalances() {
   const GBP_TO_AED = 4.85;
