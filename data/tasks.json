@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "6bc7bce7-46a5-4050-95d0-e558d00ec9b7",
+      "title": "Whatsapps",
+      "area": "Tasks",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "easy",
+      "due": "2026-07-06",
+      "created": "2026-07-06",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "order": 1,
       "top3": false,
       "id": "eebfed5d-04f4-4d5d-bd6a-0e7284cf528e",
