@@ -3710,21 +3710,24 @@
    "amount": 38000,
    "currency": "GBP",
    "asOf": "2026-07-02",
-   "note": "3,250 paid 2 Jul"
+   "note": "3,250 paid 2 Jul",
+   "original": 41250
   },
   {
    "to": "Lewis",
    "amount": 17000,
    "currency": "GBP",
    "asOf": "2026-07-02",
-   "note": "5,000 paid 2 Jul"
+   "note": "5,000 paid 2 Jul",
+   "original": 22000
   },
   {
    "to": "Dad",
    "amount": 0,
    "currency": "GBP",
    "asOf": "2026-07-02",
-   "note": "PAID IN FULL 2 Jul"
+   "note": "PAID IN FULL 2 Jul",
+   "original": 500
   }
  ],
  "debtBaseline": {
