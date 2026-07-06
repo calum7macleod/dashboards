@@ -3560,11 +3560,11 @@
    "date": "2026-07-06",
    "month": "Jul 26",
    "card": "Virgin Money",
-   "balance": 10181.5,
+   "balance": 9981.5,
    "currency": "GBP",
-   "available": 0.0,
+   "available": 18.5,
    "limit": 10000,
-   "status": "OVER LIMIT - pay now"
+   "status": "Under limit - paid down 6 Jul"
   },
   {
    "date": "2026-07-06",
@@ -3574,7 +3574,10 @@
    "currency": "GBP",
    "available": 160.9,
    "limit": 10000,
-   "status": "Min 108.94 due 20 Jul"
+   "status": "Min 108.94 due 20 Jul",
+   "dueDate": "2026-07-20",
+   "dueAmount": 108.94,
+   "dueNote": "Min payment"
   },
   {
    "date": "2026-07-06",
@@ -3584,7 +3587,10 @@
    "currency": "GBP",
    "available": 12.78,
    "limit": 8000,
-   "status": "Min 199.46 due 23 Jul"
+   "status": "Min 199.46 due 23 Jul",
+   "dueDate": "2026-07-23",
+   "dueAmount": 199.46,
+   "dueNote": "Min payment"
   },
   {
    "date": "2026-07-06",
@@ -3594,7 +3600,10 @@
    "currency": "GBP",
    "available": 80.24,
    "limit": 6325,
-   "status": "Min 286 due 29 Jul"
+   "status": "Min 286 due 29 Jul",
+   "dueDate": "2026-07-29",
+   "dueAmount": 286.0,
+   "dueNote": "Min payment"
   },
   {
    "date": "2026-07-06",
@@ -3604,17 +3613,20 @@
    "currency": "GBP",
    "available": 0.39,
    "limit": 3500,
-   "status": "DD 9 Jul"
+   "status": "DD 9 Jul",
+   "dueDate": "2026-07-09",
+   "dueAmount": null,
+   "dueNote": "Direct debit"
   },
   {
    "date": "2026-07-06",
    "month": "Jul 26",
    "card": "HSBC",
-   "balance": 2002.66,
+   "balance": 1966.41,
    "currency": "GBP",
    "available": 33.59,
    "limit": 2000,
-   "status": "Over limit; min 36.25 paid 6 Jul"
+   "status": "Under limit - min paid 6 Jul"
   },
   {
    "date": "2026-07-06",
@@ -3624,7 +3636,10 @@
    "currency": "GBP",
    "available": null,
    "limit": null,
-   "status": "538.25 due 11 Jul"
+   "status": "538.25 due 11 Jul",
+   "dueDate": "2026-07-11",
+   "dueAmount": 538.25,
+   "dueNote": "Balance due"
   },
   {
    "date": "2026-07-06",
@@ -3680,11 +3695,14 @@
    "date": "2026-07-06",
    "month": "Jul 26",
    "card": "Santander Everyday",
-   "balance": 12246.96,
+   "balance": 12146.96,
    "currency": "GBP",
-   "available": -96.96,
+   "available": 3.04,
    "limit": 12150,
-   "status": "OVER LIMIT; min 330.96 due 21 Jul (DD)"
+   "status": "Paid under limit 6 Jul (exact balance TBC)",
+   "dueDate": "2026-07-21",
+   "dueAmount": 330.96,
+   "dueNote": "Min (DD set)"
   }
  ],
  "personalDebts": [
@@ -3706,5 +3724,12 @@
    "currency": "GBP",
    "asOf": "2026-07-01"
   }
- ]
+ ],
+ "debtBaseline": {
+  "date": "2026-07-06",
+  "cardsTotal": 81514.57,
+  "personalTotal": 63750,
+  "grandTotal": 145264.57,
+  "note": "Starting line for the debt-destruction game"
+ }
 }
