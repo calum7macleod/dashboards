@@ -959,6 +959,21 @@
       "notes": "Book Fri/Sat - he lands Fri or Sat morning from London.",
       "completed": null,
       "snoozedUntil": null
+    },
+    {
+      "id": "6a045f46-ef1c-4dec-862a-5fb80ef190f3",
+      "title": "Francis: build + send portfolio review report",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-10",
+      "created": "2026-07-06",
+      "notes": "First conversion from portfolio-analysis outreach. Spoke 6 Jul, wants a review report this week. Deliver by Friday.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 40,
+      "top3": false
     }
   ],
   "units": [],
