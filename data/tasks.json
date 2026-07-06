@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "3a2a3b36-3c8f-4e9c-b3fe-92a772c8a919",
+      "title": "Finace Setup",
+      "area": "Tasks",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "hard",
+      "due": "2026-07-06",
+      "created": "2026-07-06",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "6bc7bce7-46a5-4050-95d0-e558d00ec9b7",
       "title": "Whatsapps",
       "area": "Tasks",
