@@ -12,13 +12,13 @@ Last updated: 2026-07-06 (CC refresh)
 
 ## Pipeline state (headline only - buyers.json is truth)
 - SB #1: cash, loaded, 5bd Portofino or V3, London Mon-Fri (weekend viewings, Thu/Fri follow-ups)
-- Nad: 5bd Malta SR 3.8M - was signing Sat 4 Jul, OUTCOME UNCONFIRMED, chase task open
+- Nad: BOUGHT ELSEWHERE (archived 7 Jul) - the 3.8M Malta signing went to another broker
 - Ahmed: Canadian, V3 at 7M (14M behind per Som), V3 viewing Tue 7 Jul + more to arrange
 - Ashna: cash, DAMAC Islands/Lagoons, Offplan segment, options owed
 - Big Monday 6 Jul follow-up stack: Ashna, Ari, Misha, Sarah, Nigel + SB weekend booking
 
 ## Open threads / flags
-- Nad signing outcome - ask until answered
+- Big cleanup 7 Jul: 10 archived (Nad/Zenam/Wanderlust bought elsewhere). Jonathan downgraded (5bd 3.3M, unlikely)
 - Duplicate-Ahmed merge done 4 Jul; if a separate Costa Ahmed (4bd 2.6M) resurfaces, restore him
 - "Era vs Ari" spelling never confirmed
 - Sarah budget 2.6M (from calendar); Misha calendar said 2.5m vs logged 2.6M offer target
