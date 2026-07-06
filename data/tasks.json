@@ -13,7 +13,7 @@
       "completed": null,
       "snoozedUntil": null,
       "top3": false,
-      "order": 1
+      "order": 2
     },
     {
       "id": "3c0a13b1-017d-42f5-ab4f-ff34c9a8a59b",
@@ -28,7 +28,7 @@
       "completed": null,
       "snoozedUntil": null,
       "top3": false,
-      "order": 3
+      "order": 4
     },
     {
       "id": "9d3c4215-a4b1-42f5-9b81-c15ce4bdb949",
@@ -46,8 +46,8 @@
       "order": 3
     },
     {
-      "order": 2,
-      "top3": true,
+      "order": 1,
+      "top3": false,
       "id": "9e666118-7222-42c5-83e7-f5716b0bb796",
       "title": "LUTs",
       "area": "Health",
@@ -76,7 +76,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 2,
+      "order": 3,
       "top3": false,
       "id": "6bc7bce7-46a5-4050-95d0-e558d00ec9b7",
       "title": "Whatsapps",
@@ -106,7 +106,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 4,
+      "order": 5,
       "top3": false,
       "id": "3407745e-6974-4ea5-ad64-785a9c635e2c",
       "title": "Send Ari 5-bed single row options (cash, 3.3M, not near apartments)",
@@ -136,7 +136,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 5,
+      "order": 6,
       "top3": false,
       "id": "0f2e58a4-3a5a-4d7c-a7da-3c5e32d83bd2",
       "title": "Pull options for Ashna - DAMAC Islands + Lagoons, send today",
@@ -781,7 +781,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 10,
+      "order": 11,
       "top3": false,
       "id": "11e43db4-47f9-4058-8457-6e05bd8056e2",
       "title": "Follow up Misha - offer on Ronnie's Costa (2.65 ask, push 2.6 offer)",
@@ -796,7 +796,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 6,
+      "order": 7,
       "top3": false,
       "id": "36e892cd-80b5-470c-9413-7f76088db33c",
       "title": "Follow up Sarah - single row options, 3bd vs 4bd (Malta/Costa)",
@@ -826,7 +826,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 7,
+      "order": 8,
       "top3": false,
       "id": "657d8847-efdf-4516-8655-59f2d753323d",
       "title": "SB: line up 5bd Portofino + V3 options for next weekend",
@@ -841,7 +841,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 8,
+      "order": 9,
       "top3": false,
       "id": "384585a5-8e03-45b3-a6c6-d04aa24acde2",
       "title": "Ahmed: get back + arrange V3 viewings early next week",
@@ -856,7 +856,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 9,
+      "order": 10,
       "top3": false,
       "id": "97e680b0-6edb-4c20-9ae3-a34fd6a8ba66",
       "title": "SB: arrange second viewing next weekend",
