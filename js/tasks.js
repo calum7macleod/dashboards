@@ -224,7 +224,26 @@ function normaliseBuild(arr) {
 /* =========================================================================
    Mutations  (optimistic: update memory + UI, then persist)
    ========================================================================= */
-function mutate(fn) { fn(); render(); save(); }
+const undoStack = [];
+function snapshot() {
+  undoStack.push(JSON.stringify({ tasks: state.tasks, units: state.units, contentIdeas: state.contentIdeas, buildLog: state.buildLog }));
+  if (undoStack.length > 25) undoStack.shift();
+}
+function mutate(fn) { snapshot(); fn(); render(); save(); }
+function undoLast() {
+  const s = undoStack.pop();
+  if (!s) { toast('Nothing to undo'); return; }
+  const d = JSON.parse(s);
+  ['tasks', 'units', 'contentIdeas', 'buildLog'].forEach(k => { if (d[k] !== undefined) state[k] = d[k]; });
+  render(); save(); toast('Undone');
+}
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
+    const tag = (document.activeElement && document.activeElement.tagName) || '';
+    if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
+    e.preventDefault(); undoLast();
+  }
+});
 
 /* --- tasks (unchanged behaviour) --- */
 function findTask(id) { return state.tasks.find(t => t.id === id); }
@@ -388,6 +407,7 @@ function renderList() {
     if (act === 'done') mutate(() => toggleDone(id));
     else if (act === 'snooze') mutate(() => snooze(id));
     else if (act === 'delete') { const tsk = findTask(id); if (confirm(`Delete "${tsk ? tsk.title : 'this task'}"?`)) mutate(() => removeTask(id)); }
+    else if (act === 'edit-due') editDue(id);
   }));
   initSortables();
 }
@@ -401,6 +421,23 @@ function applyGroupDate(t, group) {
   else if (group === 'nodate') t.due = null;
   else if (group === 'snoozed') { t.status = 'snoozed'; t.snoozedUntil = addDaysStr(7); return; }
   if (t.status === 'snoozed') { t.status = 'active'; t.snoozedUntil = null; }
+}
+let dueInput = null;
+function editDue(id) {
+  const t = findTask(id); if (!t) return;
+  if (!dueInput) {
+    dueInput = document.createElement('input'); dueInput.type = 'date';
+    dueInput.style.cssText = 'position:fixed;opacity:0;pointer-events:none;left:50%;top:40%';
+    document.body.appendChild(dueInput);
+    dueInput.addEventListener('change', () => {
+      const task = findTask(dueInput.dataset.tid);
+      if (task) mutate(() => { task.due = dueInput.value || null; });
+    });
+  }
+  dueInput.dataset.tid = id; dueInput.value = t.due || todayStr();
+  if (dueInput.showPicker) { try { dueInput.showPicker(); return; } catch (e) {} }
+  const v = prompt('Due date (YYYY-MM-DD, blank to clear)', t.due || todayStr());
+  if (v !== null) mutate(() => { t.due = v.trim() || null; });
 }
 function initSortables() {
   if (typeof Sortable === 'undefined') return;
@@ -418,6 +455,7 @@ function initSortables() {
         return true;
       },
       onEnd: (evt) => {
+        snapshot();
         const t = findTask(evt.item.dataset.tid);
         const toGroup = evt.to.dataset.group;
         if (t && toGroup) applyGroupDate(t, toGroup);
@@ -430,7 +468,7 @@ function initSortables() {
 }
 function taskCard(t) {
   const ds = dueState(t.due);
-  const dueHtml = t.due ? `<span class="due ${ds}">📅 ${ds === 'today' ? 'Today' : ds === 'overdue' ? 'Overdue · ' + prettyDate(t.due) : prettyDate(t.due)}</span>` : '';
+  const dueHtml = t.due ? `<span class="due ${ds} due-edit" data-act="edit-due" data-id="${t.id}" title="Change due date">📅 ${ds === 'today' ? 'Today' : ds === 'overdue' ? 'Overdue · ' + prettyDate(t.due) : prettyDate(t.due)}</span>` : `<span class="due due-edit no-due" data-act="edit-due" data-id="${t.id}" title="Set due date">📅 Set date</span>`;
   const snoozeHtml = t.status === 'snoozed' && t.snoozedUntil ? `<span class="due">💤 until ${prettyDate(t.snoozedUntil)}</span>` : '';
   const diffHtml = `<span class="badge badge-diff-${t.difficulty}" title="${DIFFICULTY[t.difficulty]} pts">${DIFF_LABEL[t.difficulty]}</span>`;
   const notesHtml = t.notes ? `<div class="task-notes">${esc(t.notes)}</div>` : '';
