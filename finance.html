@@ -116,25 +116,74 @@ a{color:#E8C96B}
 .header-title{line-height:1.25;padding-bottom:2px}
 
 
-.d-row{display:flex;align-items:center;gap:12px;padding:10px 6px;border-bottom:1px solid #23422F}
-.d-row:last-child{border-bottom:none}
-.d-name{flex:0 0 175px;font-weight:600}
-.d-bar{flex:1;background:#152A1F;border:1px solid #2E5A40;border-radius:8px;height:14px;overflow:hidden}
-.d-fill{height:100%;background:#4E6B58}
-.d-fill.hot{background:#f28b82}
-.d-fill.warm{background:#C9A84C}
-.d-amt{flex:0 0 110px;text-align:right;font-family:'Palatino Linotype',Palatino,serif;color:#F5EDE0}
-.d-sub{flex:0 0 170px;font-size:11px;color:#8FA898;text-align:right}
-.d-dead{opacity:.55;text-decoration:line-through}
-.mile{padding:3px 10px;border-radius:12px;border:1px solid #2E5A40;font-size:11px;color:#4E6B58}
-.mile.won{border-color:#C9A84C;color:#E8C96B;background:rgba(201,168,76,.1)}
-.cal-row{display:flex;align-items:center;gap:12px;padding:9px 6px;border-bottom:1px solid #23422F}
-.cal-row:last-child{border-bottom:none}
-.cal-date{flex:0 0 84px;font-weight:700;color:#C9A84C}
-.cal-date.soon{color:#f28b82}
-.cal-what{flex:1}
-.cal-amt{flex:0 0 100px;text-align:right;font-family:'Palatino Linotype',Palatino,serif}
-.cal-done{opacity:.5}
+/* ===== Debt Quest ===== */
+.dq-hero{position:relative;text-align:center;padding:34px 20px 26px;background:radial-gradient(ellipse at 50% -20%,#274D3A 0%,#152A1F 70%);border:1px solid #2E5A40;border-radius:18px;margin-bottom:14px;overflow:hidden}
+.dq-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 120%,rgba(201,168,76,.14),transparent 60%);pointer-events:none}
+.dq-eyebrow{font-size:10px;letter-spacing:.34em;color:#C9A84C;font-weight:700}
+.dq-destroyed{font-family:'Palatino Linotype',Palatino,Georgia,serif;font-size:64px;line-height:1.05;color:#E8C96B;margin:10px 0 2px;text-shadow:0 0 34px rgba(201,168,76,.35)}
+.dq-sub{font-size:11px;letter-spacing:.2em;color:#8FA898}
+.dq-levelrow{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:18px}
+.dq-level{width:58px;height:58px;border:2px solid #C9A84C;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(201,168,76,.08);box-shadow:0 0 18px rgba(201,168,76,.25)}
+.dq-lvl-n{font-family:'Palatino Linotype',Palatino,serif;font-size:22px;color:#E8C96B;line-height:1}
+.dq-lvl-t{font-size:8px;letter-spacing:.2em;color:#C9A84C}
+.dq-title{font-family:'Palatino Linotype',Palatino,serif;font-size:19px;color:#F5EDE0}
+.dq-card{padding:16px 18px;margin-bottom:14px}
+.dq-label{font-size:11px;letter-spacing:.14em;color:#C9A84C;font-weight:700;margin-bottom:12px}
+.dq-hint{color:#8FA898;font-weight:400;letter-spacing:.04em;text-transform:none;margin-left:8px}
+.dq-track{position:relative;height:26px;background:#0F211A;border:1px solid #2E5A40;border-radius:14px;overflow:hidden}
+.dq-fill{height:100%;width:0;background:linear-gradient(90deg,#8a6f2a,#C9A84C 40%,#E8C96B);background-size:200% 100%;animation:dqshimmer 3s linear infinite;transition:width .8s ease}
+@keyframes dqshimmer{0%{background-position:0 0}100%{background-position:200% 0}}
+.dq-ticks{position:absolute;inset:0;pointer-events:none}
+.dq-tick{position:absolute;top:0;bottom:0;width:1px;background:rgba(245,237,224,.16)}
+.dq-tick.won::after{content:'◆';position:absolute;top:-19px;left:-6px;font-size:11px;color:#E8C96B}
+.dq-track{overflow:visible}
+.dq-fill{border-radius:14px}
+.dq-trackfoot{display:flex;justify-content:space-between;margin-top:8px;font-size:11.5px;color:#8FA898}
+.dq-nextmile{color:#E8C96B}
+.dq-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.dq-stat{background:#1E3D2F;border:1px solid #2E5A40;border-radius:14px;padding:12px 14px}
+.dq-stat .k{font-size:9.5px;letter-spacing:.14em;color:#8FA898}
+.dq-stat .v{font-family:'Palatino Linotype',Palatino,serif;font-size:23px;color:#F5EDE0;margin-top:3px}
+.dq-stat .s{font-size:10.5px;color:#8FA898;margin-top:2px}
+.dq-target{background:linear-gradient(135deg,#234534,#1E3D2F);border:1px solid #C9A84C;border-radius:16px;padding:16px 18px;margin-bottom:14px;display:flex;align-items:center;gap:16px;box-shadow:0 0 24px rgba(201,168,76,.12)}
+.dq-target .tag{font-size:10px;letter-spacing:.2em;color:#152A1F;background:#C9A84C;padding:3px 9px;border-radius:9px;font-weight:800;white-space:nowrap}
+.dq-target .nm{font-family:'Palatino Linotype',Palatino,serif;font-size:19px}
+.dq-target .amt{margin-left:auto;font-family:'Palatino Linotype',Palatino,serif;font-size:24px;color:#E8C96B}
+.dq-target .why{font-size:11px;color:#8FA898}
+.dq-enemy{display:flex;align-items:center;gap:14px;padding:11px 8px;border-bottom:1px solid #23422F;border-radius:8px;transition:background .15s}
+.dq-enemy:hover{background:#20402F}
+.dq-enemy:last-child{border-bottom:none}
+.dq-rank{flex:0 0 22px;text-align:center;color:#4E6B58;font-size:11px;font-weight:700}
+.dq-nm{flex:0 0 168px;font-weight:600;font-size:13.5px}
+.dq-hp{flex:1;position:relative;height:16px;background:#0F211A;border:1px solid #2E5A40;border-radius:9px;overflow:hidden}
+.dq-hpfill{height:100%;border-radius:9px}
+.hp-max{background:linear-gradient(90deg,#7d3b36,#f28b82)}
+.hp-hot{background:linear-gradient(90deg,#8a6f2a,#C9A84C)}
+.hp-ok{background:linear-gradient(90deg,#3f6b50,#8FBF9F)}
+.dq-hptext{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:9.5px;color:rgba(245,237,224,.85);letter-spacing:.06em}
+.dq-amt{flex:0 0 96px;text-align:right;font-family:'Palatino Linotype',Palatino,serif;font-size:15px}
+.dq-meta{flex:0 0 165px;font-size:10.5px;color:#8FA898;text-align:right;line-height:1.35}
+.dq-dead{opacity:.45}
+.dq-dead .dq-nm{text-decoration:line-through}
+.dq-dead .stamp{color:#E8C96B;font-size:10px;letter-spacing:.18em;border:1px solid #C9A84C;padding:1px 7px;border-radius:8px;margin-left:6px;text-decoration:none;display:inline-block}
+.dq-timeline{position:relative;padding-left:26px}
+.dq-timeline::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:#2E5A40}
+.dq-node{position:relative;display:flex;align-items:center;gap:12px;padding:10px 4px}
+.dq-node::before{content:'';position:absolute;left:-24px;width:12px;height:12px;border-radius:50%;background:#1E3D2F;border:2px solid #C9A84C}
+.dq-node.done{opacity:.45}
+.dq-node.done::before{background:#C9A84C}
+.dq-node.soon::before{background:#f28b82;border-color:#f28b82;animation:dqpulse 1.4s ease infinite}
+@keyframes dqpulse{0%{box-shadow:0 0 0 0 rgba(242,139,130,.5)}70%{box-shadow:0 0 0 9px rgba(242,139,130,0)}100%{box-shadow:0 0 0 0 rgba(242,139,130,0)}}
+.dq-ndate{flex:0 0 78px;font-weight:700;color:#C9A84C;font-size:13px}
+.dq-node.soon .dq-ndate{color:#f28b82}
+.dq-nwhat{flex:1;font-size:13.5px}.dq-nwhat span{color:#8FA898;font-size:11px}
+.dq-namt{font-family:'Palatino Linotype',Palatino,serif;font-size:15px}
+.dq-big3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.dq-p{background:#182F24;border:1px solid #2E5A40;border-radius:14px;padding:14px;text-align:center}
+.dq-p .who{font-size:11px;letter-spacing:.14em;color:#8FA898}
+.dq-p .amt{font-family:'Palatino Linotype',Palatino,serif;font-size:22px;color:#F5EDE0;margin-top:4px}
+@media(max-width:820px){.dq-strip{grid-template-columns:repeat(2,1fr)}.dq-big3{grid-template-columns:1fr}.dq-destroyed{font-size:44px}.dq-nm{flex-basis:120px}.dq-meta{display:none}}
+
 
 </style>
 </head>
@@ -257,40 +306,61 @@ a{color:#E8C96B}
   <!-- CC BALANCES -->
   
   <div id="tab-debt" class="tab-panel">
-    <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px">
-      <div class="card" style="padding:14px 16px"><div class="card-title">DEBT DESTROYED</div><div class="stat-value" id="d-destroyed">–</div><div class="stat-sub" id="d-destroyed-sub">since 6 Jul 2026</div></div>
-      <div class="card" style="padding:14px 16px"><div class="card-title">CARDS + OD</div><div class="stat-value" id="d-cards">–</div><div class="stat-sub" id="d-cards-aed">&nbsp;</div></div>
-      <div class="card" style="padding:14px 16px"><div class="card-title">PERSONAL</div><div class="stat-value" id="d-personal">–</div><div class="stat-sub">Mum · Lewis · Dad</div></div>
-      <div class="card" style="padding:14px 16px"><div class="card-title">TOTAL REMAINING</div><div class="stat-value" id="d-total">–</div><div class="stat-sub" id="d-total-aed">&nbsp;</div></div>
-    </div>
 
-    <div class="card" style="padding:16px;margin-bottom:18px">
-      <div class="card-title" style="margin-bottom:8px">ROAD TO ZERO</div>
-      <div style="background:#152A1F;border:1px solid #2E5A40;border-radius:10px;height:22px;overflow:hidden">
-        <div id="d-progress" style="height:100%;width:0%;background:linear-gradient(90deg,#C9A84C,#E8C96B);transition:width .6s"></div>
+    <!-- HERO -->
+    <div class="dq-hero">
+      <div class="dq-glow"></div>
+      <div class="dq-eyebrow">THE ROAD TO ZERO</div>
+      <div class="dq-destroyed" id="d-destroyed">£0</div>
+      <div class="dq-sub">DEBT DESTROYED <span id="d-destroyed-sub"></span></div>
+      <div class="dq-levelrow">
+        <div class="dq-level"><div class="dq-lvl-n" id="d-level">1</div><div class="dq-lvl-t">LEVEL</div></div>
+        <div class="dq-title" id="d-title">Getting Started</div>
       </div>
-      <div style="display:flex;justify-content:space-between;margin-top:6px;font-size:11px;color:#8FA898">
-        <span id="d-prog-label">0% destroyed</span><span id="d-next-mile">&nbsp;</span>
+    </div>
+
+    <!-- SUMMIT BAR -->
+    <div class="card dq-card">
+      <div class="dq-label">◆ THE CLIMB</div>
+      <div class="dq-track">
+        <div class="dq-fill" id="d-progress"></div>
+        <div class="dq-ticks" id="d-ticks"></div>
       </div>
-      <div id="d-milestones" style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"></div>
+      <div class="dq-trackfoot">
+        <span id="d-prog-label"></span>
+        <span id="d-next-mile" class="dq-nextmile"></span>
+      </div>
     </div>
 
-    <div class="card" style="padding:16px;margin-bottom:18px">
-      <div class="card-title" style="margin-bottom:10px">JULY PAYMENT RUN</div>
-      <div id="d-calendar"></div>
+    <!-- STATS STRIP -->
+    <div class="dq-strip">
+      <div class="dq-stat"><div class="k">CARDS + OD</div><div class="v" id="d-cards">–</div><div class="s" id="d-cards-aed"></div></div>
+      <div class="dq-stat"><div class="k">PERSONAL</div><div class="v" id="d-personal">–</div><div class="s">Mum · Lewis · Dad</div></div>
+      <div class="dq-stat"><div class="k">REMAINING</div><div class="v" id="d-total">–</div><div class="s" id="d-total-aed"></div></div>
+      <div class="dq-stat"><div class="k">KILLS</div><div class="v" id="d-kills">0</div><div class="s">debts wiped to zero</div></div>
     </div>
 
-    <div class="card" style="padding:16px;margin-bottom:18px">
-      <div class="card-title" style="margin-bottom:10px">THE LADDER — smallest first, kill them one by one</div>
+    <!-- NEXT TARGET -->
+    <div id="d-target"></div>
+
+    <!-- ENEMY LIST -->
+    <div class="card dq-card">
+      <div class="dq-label">◆ THE HIT LIST <span class="dq-hint">smallest first — take them down one by one</span></div>
       <div id="d-ladder"></div>
     </div>
 
-    <div class="card" style="padding:16px">
-      <div class="card-title" style="margin-bottom:10px">PERSONAL DEBTS</div>
-      <div id="d-personal-list"></div>
+    <!-- PAYMENT RUN -->
+    <div class="card dq-card">
+      <div class="dq-label">◆ JULY PAYMENT RUN</div>
+      <div class="dq-timeline" id="d-calendar"></div>
+    </div>
+
+    <!-- PERSONAL -->
+    <div class="card dq-card">
+      <div class="dq-label">◆ THE BIG THREE</div>
+      <div class="dq-big3" id="d-personal-list"></div>
     </div>
   </div>
-
   <div id="tab-ccbalances" class="tab-panel">
     <div class="grid grid-2" style="margin-bottom:20px">
       <div class="card">
@@ -581,57 +651,75 @@ function renderCompare() {
 function renderDebt(){
   const GBPAED=4.85;
   const fmtG=n=>'£'+Math.round(n).toLocaleString('en-GB');
-  const cards=CC_BALANCES||[]; const pers=(window.PERSONAL_DEBTS||[]);
-  const base=window.DEBT_BASELINE||null;
+  const el=id=>document.getElementById(id);
+  if(!el('d-total'))return;
+  const cards=CC_BALANCES||[]; const pers=(window.PERSONAL_DEBTS||[]); const base=window.DEBT_BASELINE||null;
   const cardsTotal=cards.reduce((s,c)=>s+(c.balance||0),0);
   const persTotal=pers.reduce((s,p)=>s+(p.amount||0),0);
   const total=cardsTotal+persTotal;
   const destroyed=base?Math.max(0,base.grandTotal-total):0;
-  const el=id=>document.getElementById(id);
-  if(!el('d-total'))return;
+  // hero count-up
+  const target=Math.round(destroyed); const dur=900; const t0=performance.now();
+  (function tick(t){const p=Math.min(1,(t-t0)/dur);const ease=1-Math.pow(1-p,3);
+    el('d-destroyed').textContent='£'+Math.round(target*ease).toLocaleString('en-GB');
+    if(p<1)requestAnimationFrame(tick);})(t0);
+  el('d-destroyed-sub').textContent='· of '+fmtG(base?base.grandTotal:total)+' since 6 Jul 2026';
+  const MILE=5000;
+  const lvl=Math.floor(destroyed/MILE)+1;
+  const TITLES=['Getting Started','First Blood','Momentum','Snowball','On a Roll','Warpath','Relentless','Unstoppable','Six Figures Down? Soon','Halfway Hero','Closer','The Endgame','Debt Slayer'];
+  el('d-level').textContent=lvl;
+  el('d-title').textContent=TITLES[Math.min(lvl-1,TITLES.length-1)];
+  // climb bar + milestone ticks
+  const pct=base?Math.min(100,destroyed/base.grandTotal*100):0;
+  el('d-progress').style.width=pct.toFixed(2)+'%';
+  el('d-prog-label').textContent=pct.toFixed(1)+'% of the mountain cleared';
+  el('d-next-mile').textContent=fmtG(lvl*MILE-destroyed)+' to Level '+(lvl+1)+' ◆';
+  const nTicks=base?Math.floor(base.grandTotal/MILE):0;
+  el('d-ticks').innerHTML=Array.from({length:nTicks},(_,i)=>{
+    const x=((i+1)*MILE)/base.grandTotal*100;
+    return `<div class="dq-tick ${destroyed>=(i+1)*MILE?'won':''}" style="left:${x}%"></div>`;}).join('');
+  // stats
   el('d-cards').textContent=fmtG(cardsTotal);
   el('d-cards-aed').textContent='AED '+Math.round(cardsTotal*GBPAED).toLocaleString();
   el('d-personal').textContent=fmtG(persTotal);
   el('d-total').textContent=fmtG(total);
   el('d-total-aed').textContent='AED '+Math.round(total*GBPAED).toLocaleString();
-  el('d-destroyed').textContent=fmtG(destroyed);
-  const pct=base?Math.min(100,destroyed/base.grandTotal*100):0;
-  el('d-progress').style.width=pct.toFixed(2)+'%';
-  el('d-prog-label').textContent=pct.toFixed(1)+'% destroyed';
-  const MILE=5000;
-  const won=Math.floor(destroyed/MILE);
-  el('d-next-mile').textContent=fmtG((won+1)*MILE-destroyed)+' to next milestone';
-  el('d-milestones').innerHTML=Array.from({length:12},(_,i)=>
-    `<span class="mile ${i<won?'won':''}">${i<won?'◆':'◇'} ${fmtG((i+1)*MILE)}</span>`).join('');
-  // ladder: smallest balance first, dead cards last
-  const ladder=cards.slice().sort((a,b)=>a.balance-b.balance);
-  el('d-ladder').innerHTML=ladder.map(c=>{
-    const util=c.limit?Math.min(100,c.balance/c.limit*100):100;
-    const cls=util>=98?'hot':util>=85?'warm':'';
+  const kills=cards.filter(c=>c.balance<=0).length;
+  el('d-kills').textContent=kills;
+  // next target = smallest living debt
+  const living=cards.filter(c=>c.balance>0).sort((a,b)=>a.balance-b.balance);
+  el('d-target').innerHTML=living.length?`<div class="dq-target">
+     <span class="tag">🎯 NEXT KILL</span>
+     <div><div class="nm">${living[0].card}</div><div class="why">wipe it and claim the skull</div></div>
+     <div class="amt">${fmtG(living[0].balance)}</div></div>`:'';
+  // hit list
+  const ladder=cards.slice().sort((a,b)=>(a.balance<=0)-(b.balance<=0)||a.balance-b.balance);
+  el('d-ladder').innerHTML=ladder.map((c,i)=>{
     const dead=c.balance<=0;
-    return `<div class="d-row ${dead?'d-dead':''}">
-      <div class="d-name">${dead?'💀 ':''}${c.card}</div>
-      <div class="d-bar"><div class="d-fill ${cls}" style="width:${util}%"></div></div>
-      <div class="d-amt">${fmtG(c.balance)}</div>
-      <div class="d-sub">${c.limit?('limit '+fmtG(c.limit)+' · '):''}${c.status||''}</div>
+    const util=c.limit?Math.min(100,c.balance/c.limit*100):100;
+    const cls=util>=97?'hp-max':util>=80?'hp-hot':'hp-ok';
+    return `<div class="dq-enemy ${dead?'dq-dead':''}">
+      <div class="dq-rank">${dead?'💀':(i+1)}</div>
+      <div class="dq-nm">${c.card}${dead?'<span class="stamp">DEFEATED</span>':''}</div>
+      <div class="dq-hp"><div class="dq-hpfill ${cls}" style="width:${dead?0:util}%"></div><div class="dq-hptext">${dead?'0 HP':Math.round(util)+'% of limit'}</div></div>
+      <div class="dq-amt">${fmtG(c.balance)}</div>
+      <div class="dq-meta">${c.limit?('limit '+fmtG(c.limit)+'<br>'):''}${c.status||''}</div>
     </div>`;}).join('');
-  // calendar
+  // payment run timeline
   const today=new Date().toISOString().slice(0,10);
   const cal=cards.filter(c=>c.dueDate).sort((a,b)=>a.dueDate<b.dueDate?-1:1);
   el('d-calendar').innerHTML=cal.map(c=>{
     const past=c.dueDate<today;
     const soon=!past&&((new Date(c.dueDate)-new Date(today))/86400000<=3);
     const d=new Date(c.dueDate).toLocaleDateString('en-GB',{day:'numeric',month:'short'});
-    return `<div class="cal-row ${past?'cal-done':''}">
-      <div class="cal-date ${soon?'soon':''}">${d}</div>
-      <div class="cal-what">${c.card} <span style="color:#8FA898;font-size:11px">· ${c.dueNote||''}</span></div>
-      <div class="cal-amt">${c.dueAmount?('£'+c.dueAmount.toLocaleString('en-GB',{minimumFractionDigits:2})):'DD'}</div>
-    </div>`;}).join('') || '<div style="color:#8FA898">Nothing scheduled</div>';
+    return `<div class="dq-node ${past?'done':''} ${soon?'soon':''}">
+      <div class="dq-ndate">${d}</div>
+      <div class="dq-nwhat">${c.card} <span>· ${c.dueNote||''}</span></div>
+      <div class="dq-namt">${c.dueAmount?('£'+c.dueAmount.toLocaleString('en-GB',{minimumFractionDigits:2})):'DD'}</div>
+    </div>`;}).join('')||'<div style="color:#8FA898">Nothing scheduled</div>';
   el('d-personal-list').innerHTML=pers.map(p=>
-    `<div class="d-row"><div class="d-name">${p.to}</div><div class="d-bar"><div class="d-fill warm" style="width:100%"></div></div>
-     <div class="d-amt">${fmtG(p.amount)}</div><div class="d-sub">as of ${p.asOf}</div></div>`).join('');
+    `<div class="dq-p"><div class="who">${p.to.toUpperCase()}</div><div class="amt">${fmtG(p.amount)}</div></div>`).join('');
 }
-
 function renderCCBalances() {
   const GBP_TO_AED = 4.85;
   let totalBalance = 0, totalAvailable = 0;
