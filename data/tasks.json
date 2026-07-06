@@ -7,11 +7,13 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": null,
+      "due": "2026-07-06",
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 10
     },
     {
       "id": "48cb271f-8449-43ff-9974-710230a9e5cd",
@@ -26,7 +28,7 @@
       "completed": null,
       "snoozedUntil": null,
       "top3": false,
-      "order": 12
+      "order": 13
     },
     {
       "id": "4e4e8c19-dd6d-4ae7-8e72-1723c2bbb039",
@@ -41,7 +43,7 @@
       "completed": null,
       "snoozedUntil": null,
       "top3": false,
-      "order": 11
+      "order": 12
     },
     {
       "id": "59ffddc1-0fc7-4842-8481-fd7264feeb4c",
@@ -824,7 +826,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 10,
+      "order": 11,
       "top3": false,
       "id": "11e43db4-47f9-4058-8457-6e05bd8056e2",
       "title": "Follow up Misha - offer on Ronnie's Costa (2.65 ask, push 2.6 offer)",
