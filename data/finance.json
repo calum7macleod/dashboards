@@ -3632,24 +3632,21 @@
    "date": "2026-07-06",
    "month": "Jul 26",
    "card": "AmEx Gold",
-   "balance": 928.72,
+   "balance": 0.0,
    "currency": "GBP",
    "available": null,
    "limit": null,
-   "status": "538.25 due 11 Jul",
-   "dueDate": "2026-07-11",
-   "dueAmount": 538.25,
-   "dueNote": "Balance due"
+   "status": "PAID IN FULL 6 Jul"
   },
   {
    "date": "2026-07-06",
    "month": "Jul 26",
    "card": "AmEx BA",
-   "balance": 73.86,
+   "balance": 0.0,
    "currency": "GBP",
-   "available": 726.0,
+   "available": 800.0,
    "limit": 800,
-   "status": "Nothing due"
+   "status": "PAID IN FULL 6 Jul"
   },
   {
    "date": "2026-07-06",
@@ -3708,21 +3705,24 @@
  "personalDebts": [
   {
    "to": "Mum",
-   "amount": 41250,
+   "amount": 38000,
    "currency": "GBP",
-   "asOf": "2026-07-01"
+   "asOf": "2026-07-02",
+   "note": "3,250 paid 2 Jul"
   },
   {
    "to": "Lewis",
-   "amount": 22000,
+   "amount": 17000,
    "currency": "GBP",
-   "asOf": "2026-07-01"
+   "asOf": "2026-07-02",
+   "note": "5,000 paid 2 Jul"
   },
   {
    "to": "Dad",
-   "amount": 500,
+   "amount": 0,
    "currency": "GBP",
-   "asOf": "2026-07-01"
+   "asOf": "2026-07-02",
+   "note": "PAID IN FULL 2 Jul"
   }
  ],
  "debtBaseline": {
@@ -3730,6 +3730,6 @@
   "cardsTotal": 81514.57,
   "personalTotal": 63750,
   "grandTotal": 145264.57,
-  "note": "Starting line for the debt-destruction game"
+  "note": "Starting line for the debt-destruction game (personal debts as of 1 Jul, cards as of 6 Jul pre-paydown)"
  }
 }
