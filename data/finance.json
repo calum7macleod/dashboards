@@ -3657,34 +3657,34 @@
    "status": "Daily OD interest running"
   },
   {
-   "date": "2026-04-05",
-   "month": "Apr 26",
+   "date": "2026-07-06",
+   "month": "Jul 26",
    "card": "MBNA Main",
-   "balance": 6176.94,
+   "balance": 8496.91,
    "currency": "GBP",
-   "available": 2623.06,
+   "available": 303.09,
    "limit": 8800,
-   "status": "STALE Apr - refresh"
+   "status": "DD taken 2 Jul (241.70)"
   },
   {
-   "date": "2026-04-05",
-   "month": "Apr 26",
+   "date": "2026-07-06",
+   "month": "Jul 26",
    "card": "MBNA 2",
-   "balance": 1915.87,
+   "balance": 2498.74,
    "currency": "GBP",
-   "available": 0,
-   "limit": 1915.87,
-   "status": "STALE Apr - refresh"
+   "available": 1.26,
+   "limit": 2500,
+   "status": "Maxed"
   },
   {
-   "date": "2026-04-05",
-   "month": "Apr 26",
-   "card": "Santander",
-   "balance": 11531.78,
+   "date": "2026-07-06",
+   "month": "Jul 26",
+   "card": "Santander Everyday",
+   "balance": 12246.96,
    "currency": "GBP",
-   "available": 3468.22,
-   "limit": 15000,
-   "status": "STALE Apr - refresh"
+   "available": -96.96,
+   "limit": 12150,
+   "status": "OVER LIMIT; min 330.96 due 21 Jul (DD)"
   }
  ],
  "personalDebts": [
