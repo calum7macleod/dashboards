@@ -944,6 +944,21 @@
       "notes": "Book Fri/Sat - he lands Fri or Sat morning from London.",
       "completed": null,
       "snoozedUntil": null
+    },
+    {
+      "id": "c2c780a3-21c7-4732-b906-02af078fb790",
+      "title": "Chase portfolio-analysis non-responders (Morad, Steven, Francis, Patrik, Lee, Kaushar)",
+      "area": "Real Estate",
+      "priority": "medium",
+      "difficulty": "easy",
+      "status": "active",
+      "due": "2026-07-09",
+      "created": "2026-07-06",
+      "notes": "Reached out 6 Jul. Follow up anyone silent by Thursday.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 91,
+      "top3": false
     }
   ],
   "units": [],
