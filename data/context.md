@@ -5,7 +5,7 @@ Last updated: 2026-07-06 (CC refresh)
 ## Current numbers
 - H1 2026 closed: ~25 deals, ~AED 70.1M sales value, AED 790,623 take-home (deals.json runs to 9 Jun - late-June deals may be missing)
 - Commission split: progressing 50% toward 70/30 target
-- UK debt 6 Jul COMPLETE: cards+OD GBP 81,515 (Santander 12.2K OVER LIMIT, Virgin 10.2K OVER LIMIT, Barclaycard 9.8K, MBNA Main 8.5K, M&S 8K, Tesco 6.2K, AQUA 3.5K maxed, MBNA2 2.5K maxed, BoS OD 2.5K, HSBC 2K over limit, AmEx 1K, ADIB 15K maxed). Personal: Mum 41,250 + Lewis 22,000 + Dad 500 = 63,750. GRAND TOTAL ~GBP 145,265
+- UK debt 6 Jul COMPLETE: cards+OD GBP 81,515 (Santander 12.2K OVER LIMIT, Virgin 10.2K OVER LIMIT, Barclaycard 9.8K, MBNA Main 8.5K, M&S 8K, Tesco 6.2K, AQUA 3.5K maxed, MBNA2 2.5K maxed, BoS OD 2.5K, HSBC 2K over limit, AmEx 1K, ADIB 15K maxed). Personal: Mum 41,250 + Lewis 22,000 + Dad 500 = 63,750. GRAND TOTAL remaining ~GBP 135,176 (destroyed 10,089 of 145,265 baseline; AmEx x2 + Dad cleared; Mum 38K, Lewis 17K)
 - Sleep: ~5h40 avg, plan 21:00/04:30, noon caffeine cut, 19:45 phone away
 - Finance tracking: July 2026 clean start, 30K/month budget carried over
 - BTC: mining ~0.0006/day + DCA plan (review pending)
