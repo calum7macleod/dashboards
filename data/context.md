@@ -35,6 +35,7 @@ Last updated: 2026-07-06 (CC refresh)
 5. Mobile tap-to-move menu on task cards if long-press drag annoys
 6. Lagoons transaction data AI (DLD source decision first) - task exists
 7. Monday hit-list format: per-buyer angle sheet on request
+8. DEBT INTEL PLAN (agreed 6 Jul, build over time): collect per card - APR, 0% promo + expiry, DD amount/date, statement date, min formula. Then build into Debt Quest: (a) avalanche ranking = most expensive first, shown next to snowball, (b) monthly interest-bleed counter (what the debt costs to hold), (c) payoff projection - months to zero at chosen monthly amount, (d) DD-vs-statement calendar to avoid interest traps, (e) balance-transfer scanner (MBNA offers BT options) + GBP/AED transfer cost awareness since income is AED
 
 ## Standing behaviours
 - Advisor mode: challenge weak plans, question numbers, suggest improvements unprompted
