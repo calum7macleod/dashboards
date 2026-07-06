@@ -349,6 +349,12 @@ a{color:#E8C96B}
       <div id="d-ladder"></div>
     </div>
 
+    <!-- WORKING CREDIT -->
+    <div class="card dq-card">
+      <div class="dq-label">⟳ WORKING CREDIT <span class="dq-hint">daily-use accounts — fluctuate, not part of the game</span></div>
+      <div id="d-working"></div>
+    </div>
+
     <!-- PAYMENT RUN -->
     <div class="card dq-card">
       <div class="dq-label">◆ JULY PAYMENT RUN</div>
@@ -654,29 +660,32 @@ function renderDebt(){
   const el=id=>document.getElementById(id);
   if(!el('d-total'))return;
   const cards=CC_BALANCES||[]; const pers=(window.PERSONAL_DEBTS||[]); const base=window.DEBT_BASELINE||null;
+  const kill=cards.filter(c=>!c.revolving), rev=cards.filter(c=>c.revolving);
   const cardsTotal=cards.reduce((s,c)=>s+(c.balance||0),0);
+  const killCards=kill.reduce((s,c)=>s+(c.balance||0),0);
   const persTotal=pers.reduce((s,p)=>s+(p.amount||0),0);
   const total=cardsTotal+persTotal;
-  const destroyed=base?Math.max(0,base.grandTotal-total):0;
+  const baseKill=base?(base.killableTotal||base.grandTotal):0;
+  const destroyed=base?Math.max(0,baseKill-(killCards+persTotal)):0;
   // hero count-up
   const target=Math.round(destroyed); const dur=900; const t0=performance.now();
   (function tick(t){const p=Math.min(1,(t-t0)/dur);const ease=1-Math.pow(1-p,3);
     el('d-destroyed').textContent='£'+Math.round(target*ease).toLocaleString('en-GB');
     if(p<1)requestAnimationFrame(tick);})(t0);
-  el('d-destroyed-sub').textContent='· of '+fmtG(base?base.grandTotal:total)+' since 6 Jul 2026';
+  el('d-destroyed-sub').textContent='· of '+fmtG(baseKill)+' killable · since 1 Jul 2026';
   const MILE=5000;
   const lvl=Math.floor(destroyed/MILE)+1;
   const TITLES=['Getting Started','First Blood','Momentum','Snowball','On a Roll','Warpath','Relentless','Unstoppable','Six Figures Down? Soon','Halfway Hero','Closer','The Endgame','Debt Slayer'];
   el('d-level').textContent=lvl;
   el('d-title').textContent=TITLES[Math.min(lvl-1,TITLES.length-1)];
   // climb bar + milestone ticks
-  const pct=base?Math.min(100,destroyed/base.grandTotal*100):0;
+  const pct=base?Math.min(100,destroyed/baseKill*100):0;
   el('d-progress').style.width=pct.toFixed(2)+'%';
   el('d-prog-label').textContent=pct.toFixed(1)+'% of the mountain cleared';
   el('d-next-mile').textContent=fmtG(lvl*MILE-destroyed)+' to Level '+(lvl+1)+' ◆';
-  const nTicks=base?Math.floor(base.grandTotal/MILE):0;
+  const nTicks=base?Math.floor(baseKill/MILE):0;
   el('d-ticks').innerHTML=Array.from({length:nTicks},(_,i)=>{
-    const x=((i+1)*MILE)/base.grandTotal*100;
+    const x=((i+1)*MILE)/baseKill*100;
     return `<div class="dq-tick ${destroyed>=(i+1)*MILE?'won':''}" style="left:${x}%"></div>`;}).join('');
   // stats
   el('d-cards').textContent=fmtG(cardsTotal);
@@ -684,16 +693,16 @@ function renderDebt(){
   el('d-personal').textContent=fmtG(persTotal);
   el('d-total').textContent=fmtG(total);
   el('d-total-aed').textContent='AED '+Math.round(total*GBPAED).toLocaleString();
-  const kills=cards.filter(c=>c.balance<=0).length;
+  const kills=kill.filter(c=>c.balance<=0).length;
   el('d-kills').textContent=kills;
   // next target = smallest living debt
-  const living=cards.filter(c=>c.balance>0).sort((a,b)=>a.balance-b.balance);
+  const living=kill.filter(c=>c.balance>0).sort((a,b)=>a.balance-b.balance);
   el('d-target').innerHTML=living.length?`<div class="dq-target">
      <span class="tag">🎯 NEXT KILL</span>
      <div><div class="nm">${living[0].card}</div><div class="why">wipe it and claim the skull</div></div>
      <div class="amt">${fmtG(living[0].balance)}</div></div>`:'';
   // hit list
-  const ladder=cards.slice().sort((a,b)=>(a.balance<=0)-(b.balance<=0)||a.balance-b.balance);
+  const ladder=kill.slice().sort((a,b)=>(a.balance<=0)-(b.balance<=0)||a.balance-b.balance);
   el('d-ladder').innerHTML=ladder.map((c,i)=>{
     const dead=c.balance<=0;
     const util=c.limit?Math.min(100,c.balance/c.limit*100):100;
@@ -705,6 +714,14 @@ function renderDebt(){
       <div class="dq-amt">${fmtG(c.balance)}</div>
       <div class="dq-meta">${c.limit?('limit '+fmtG(c.limit)+'<br>'):''}${c.status||''}</div>
     </div>`;}).join('');
+  // working credit
+  const wcHost=document.getElementById('d-working');
+  if(wcHost) wcHost.innerHTML=rev.map(c=>{
+    const util=c.limit?Math.min(100,c.balance/c.limit*100):100;
+    return `<div class="dq-enemy"><div class="dq-rank">⟳</div><div class="dq-nm">${c.card}</div>
+      <div class="dq-hp"><div class="dq-hpfill ${util>=97?'hp-max':util>=80?'hp-hot':'hp-ok'}" style="width:${util}%"></div><div class="dq-hptext">${Math.round(util)}% used</div></div>
+      <div class="dq-amt">${fmtG(c.balance)}</div>
+      <div class="dq-meta">${c.limit?('limit '+fmtG(c.limit)+'<br>'):''}${c.status||''}</div></div>`;}).join('');
   // payment run timeline
   const today=new Date().toISOString().slice(0,10);
   const cal=cards.filter(c=>c.dueDate).sort((a,b)=>a.dueDate<b.dueDate?-1:1);
