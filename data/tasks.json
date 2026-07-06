@@ -121,7 +121,7 @@
       "order": 2
     },
     {
-      "order": 9,
+      "order": 2,
       "top3": false,
       "id": "9e666118-7222-42c5-83e7-f5716b0bb796",
       "title": "LUTs",
@@ -129,7 +129,7 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": "2026-07-06",
+      "due": "2026-07-31",
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
@@ -944,21 +944,6 @@
       "notes": "Book Fri/Sat - he lands Fri or Sat morning from London.",
       "completed": "2026-07-06",
       "snoozedUntil": null
-    },
-    {
-      "id": "a6c9ff5c-0760-44fa-8b78-ceb8ecea3038",
-      "title": "Set up manual-video workflow (Blackmagic locked settings + CapCut preset)",
-      "area": "Content",
-      "priority": "medium",
-      "difficulty": "easy",
-      "status": "active",
-      "due": "2026-07-08",
-      "created": "2026-07-06",
-      "notes": "Base iPhone 17 - no Apple Log. Blackmagic Camera: 4K HEVC, lock WB per scene, shutter 1/50, manual exposure (protect highlights). Save signature CapCut Adjust preset (Max to spec values). Test clip before next shoot.",
-      "completed": null,
-      "snoozedUntil": null,
-      "order": 92,
-      "top3": false
     }
   ],
   "units": [],
