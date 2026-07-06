@@ -7,11 +7,13 @@
       "priority": "high",
       "status": "active",
       "difficulty": "intense",
-      "due": "2026-07-09",
+      "due": "2026-07-12",
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 2
     },
     {
       "id": "754b07a9-29b7-4cf9-8e74-6295ea6aa3cf",
@@ -689,7 +691,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 5,
+      "order": 6,
       "top3": false,
       "id": "f9236f36-b394-49a7-bffc-ccb2d5e265b3",
       "title": "Start TikTok",
@@ -719,7 +721,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 3,
+      "order": 4,
       "top3": false,
       "id": "a590010e-a6d6-41d5-8e90-48689707faaf",
       "title": "HNW advisors: how to find them, demonstrate value, split efforts",
@@ -794,7 +796,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 4,
+      "order": 5,
       "top3": false,
       "id": "7b28e51f-2416-49cf-9f69-fd829fff309d",
       "title": "Find appointment setter",
@@ -824,7 +826,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 2,
+      "order": 3,
       "top3": false,
       "id": "fcadcaa3-7417-4238-851c-a0ff4c1fb129",
       "title": "AI: pull Lagoons transaction data - true values + daily reports",
