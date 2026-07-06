@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "59ffddc1-0fc7-4842-8481-fd7264feeb4c",
+      "title": "Call 100 Costa",
+      "area": "Content",
+      "priority": "high",
+      "status": "active",
+      "difficulty": "hard",
+      "due": null,
+      "created": "2026-07-06",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "3c0a13b1-017d-42f5-ab4f-ff34c9a8a59b",
       "title": "Watch 3 Viral video",
       "area": "Content",
