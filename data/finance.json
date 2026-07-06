@@ -74,9 +74,32 @@
    "Other": 999,
    "Unaccounted": 0,
    "total": 30000
+  },
+  "Jul 26": {
+   "Base Food": 4000,
+   "Deliveries": 500,
+   "Life": 2000,
+   "Business": 7000,
+   "Entertainment": 500,
+   "Investing": 250,
+   "Loan": 10000,
+   "Saving": 250,
+   "Health": 4500,
+   "Gambling": 1,
+   "Other": 999,
+   "Unaccounted": 0,
+   "total": 30000
   }
  },
  "transactions": [
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "July clean start - tracking live via Max",
+   "account": "-",
+   "amount": 0,
+   "category": "Other"
+  },
   {
    "month": "Mar 26",
    "day": 1,
