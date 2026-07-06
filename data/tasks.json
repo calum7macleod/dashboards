@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "07faba04-9a7f-4f9b-a1fa-5fbebb7a44d3",
+      "title": "Francis Report",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "hard",
+      "due": "2026-07-07",
+      "created": "2026-07-06",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "2e69ad04-ffc5-49f3-b24a-f6c8ad51ee32",
       "title": "DLD Report Link Sent to Me - Daily / Weekly",
       "area": "Real Estate",
