@@ -944,6 +944,21 @@
       "notes": "Book Fri/Sat - he lands Fri or Sat morning from London.",
       "completed": "2026-07-06",
       "snoozedUntil": null
+    },
+    {
+      "id": "a6c9ff5c-0760-44fa-8b78-ceb8ecea3038",
+      "title": "Set up Log shooting workflow (Blackmagic + VN grade) before next shoot",
+      "area": "Content",
+      "priority": "medium",
+      "difficulty": "easy",
+      "status": "active",
+      "due": "2026-07-08",
+      "created": "2026-07-06",
+      "notes": "Blackmagic Camera: HEVC, 4K, Apple Log, shutter 1/60, zebras 95. VN: import Apple's official Log-to-Rec709 LUT for the grade, then edit in CapCut. Test clip first.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 92,
+      "top3": false
     }
   ],
   "units": [],
