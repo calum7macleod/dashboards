@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "9e666118-7222-42c5-83e7-f5716b0bb796",
+      "title": "LUTs",
+      "area": "Health",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": "2026-07-06",
+      "created": "2026-07-06",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "3a2a3b36-3c8f-4e9c-b3fe-92a772c8a919",
       "title": "Finace Setup",
       "area": "Tasks",
