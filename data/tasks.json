@@ -13,7 +13,7 @@
       "completed": null,
       "snoozedUntil": null,
       "top3": false,
-      "order": 3
+      "order": 1
     },
     {
       "id": "2e69ad04-ffc5-49f3-b24a-f6c8ad51ee32",
@@ -28,7 +28,7 @@
       "completed": null,
       "snoozedUntil": null,
       "top3": false,
-      "order": 1
+      "order": 2
     },
     {
       "id": "754b07a9-29b7-4cf9-8e74-6295ea6aa3cf",
@@ -826,7 +826,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 2,
+      "order": 3,
       "top3": false,
       "id": "b68353cc-a627-4cbf-b174-d1fa33a48c6d",
       "title": "Buyer pipeline segmentation (improvement day)",
