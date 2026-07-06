@@ -11,7 +11,8 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "order": 10
     },
     {
       "id": "3a2a3b36-3c8f-4e9c-b3fe-92a772c8a919",
@@ -24,7 +25,9 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 7
     },
     {
       "id": "6bc7bce7-46a5-4050-95d0-e558d00ec9b7",
@@ -777,7 +780,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 6,
+      "order": 5,
       "top3": false,
       "id": "657d8847-efdf-4516-8655-59f2d753323d",
       "title": "SB: line up 5bd Portofino + V3 options for next weekend",
@@ -792,7 +795,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 7,
+      "order": 6,
       "top3": false,
       "id": "384585a5-8e03-45b3-a6c6-d04aa24acde2",
       "title": "Ahmed: get back + arrange V3 viewings early next week",
