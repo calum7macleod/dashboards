@@ -3652,11 +3652,12 @@
    "date": "2026-07-06",
    "month": "Jul 26",
    "card": "ADIB Emirates VC Sig",
-   "balance": 15000.0,
+   "balance": 14600.0,
    "currency": "GBP",
-   "available": 0.0,
+   "available": 400.0,
    "limit": 15000,
-   "status": "Maxed (per Calum)"
+   "status": "Working card - fluctuates with daily use",
+   "revolving": true
   },
   {
    "date": "2026-07-06",
@@ -3666,7 +3667,8 @@
    "currency": "GBP",
    "available": 485.47,
    "limit": 3000,
-   "status": "Daily OD interest running"
+   "status": "Working account - fluctuates. OD interest daily",
+   "revolving": true
   },
   {
    "date": "2026-07-06",
@@ -3730,6 +3732,7 @@
   "cardsTotal": 81514.57,
   "personalTotal": 63750,
   "grandTotal": 145264.57,
-  "note": "Starting line for the debt-destruction game (personal debts as of 1 Jul, cards as of 6 Jul pre-paydown)"
+  "note": "Game counts killable debts only (9 cards + personal). BoS OD + ADIB are working credit, excluded from Destroyed",
+  "killableTotal": 127750.04
  }
 }
