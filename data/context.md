@@ -1,0 +1,42 @@
+# Max Context - living state file
+Maintained by Max. Read at session start. Update whenever material facts change.
+Last updated: 2026-07-06
+
+## Current numbers
+- H1 2026 closed: ~25 deals, ~AED 70.1M sales value, AED 790,623 take-home (deals.json runs to 9 Jun - late-June deals may be missing)
+- Commission split: progressing 50% toward 70/30 target
+- UK cards: ~GBP 51K across 10 cards (Apr snapshot - REFRESH PENDING, task open for current balances)
+- Sleep: ~5h40 avg, plan 21:00/04:30, noon caffeine cut, 19:45 phone away
+- Finance tracking: July 2026 clean start, 30K/month budget carried over
+- BTC: mining ~0.0006/day + DCA plan (review pending)
+
+## Pipeline state (headline only - buyers.json is truth)
+- SB #1: cash, loaded, 5bd Portofino or V3, London Mon-Fri (weekend viewings, Thu/Fri follow-ups)
+- Nad: 5bd Malta SR 3.8M - was signing Sat 4 Jul, OUTCOME UNCONFIRMED, chase task open
+- Ahmed: Canadian, V3 at 7M (14M behind per Som), V3 viewing Tue 7 Jul + more to arrange
+- Ashna: cash, DAMAC Islands/Lagoons, Offplan segment, options owed
+- Big Monday 6 Jul follow-up stack: Ashna, Ari, Misha, Sarah, Nigel + SB weekend booking
+
+## Open threads / flags
+- Nad signing outcome - ask until answered
+- Duplicate-Ahmed merge done 4 Jul; if a separate Costa Ahmed (4bd 2.6M) resurfaces, restore him
+- "Era vs Ari" spelling never confirmed
+- Sarah budget 2.6M (from calendar); Misha calendar said 2.5m vs logged 2.6M offer target
+- Jonathan buyer added at #4 with NO details - chase
+- Avantglamp TM01 resignation - unconfirmed, legal exposure
+- 2026 take-home target - never answered, ask when natural
+- CC balance refresh - task open
+
+## Improvement backlog (Max-suggested, Calum-approved direction)
+1. Buyer pipeline stages on Buyers tab (New/Early > Engaged > Viewing > Negotiating > Closing) + Offplan section - task exists, segment field seeded
+2. Video/posting tracker (where each video is posted: IG/TikTok/YouTube) - task exists
+3. Finance: income line from deals.json -> net per month view (after spend data is current)
+4. Migrate remaining dashboards (health, payments, trading, social) to data files
+5. Mobile tap-to-move menu on task cards if long-press drag annoys
+6. Lagoons transaction data AI (DLD source decision first) - task exists
+7. Monday hit-list format: per-buyer angle sheet on request
+
+## Standing behaviours
+- Advisor mode: challenge weak plans, question numbers, suggest improvements unprompted
+- Score every task difficulty myself; content ideas to inbox not task board
+- Update THIS FILE when state changes; tell Calum only when project INSTRUCTIONS need a manual paste
