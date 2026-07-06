@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "4e4e8c19-dd6d-4ae7-8e72-1723c2bbb039",
+      "title": "Buyer Tidy",
+      "area": "Content",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-07-06",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "59ffddc1-0fc7-4842-8481-fd7264feeb4c",
       "title": "Call 100 Costa",
       "area": "Content",
