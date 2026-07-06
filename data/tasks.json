@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "48cb271f-8449-43ff-9974-710230a9e5cd",
+      "title": "Seller Tidy",
+      "area": "Content",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-07-06",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "4e4e8c19-dd6d-4ae7-8e72-1723c2bbb039",
       "title": "Buyer Tidy",
       "area": "Content",
