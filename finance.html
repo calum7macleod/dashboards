@@ -115,6 +115,27 @@ a{color:#E8C96B}
 .header{background:linear-gradient(180deg,#1E3D2F,#152A1F);border-bottom:none;padding:20px 32px 16px}
 .header-title{line-height:1.25;padding-bottom:2px}
 
+
+.d-row{display:flex;align-items:center;gap:12px;padding:10px 6px;border-bottom:1px solid #23422F}
+.d-row:last-child{border-bottom:none}
+.d-name{flex:0 0 175px;font-weight:600}
+.d-bar{flex:1;background:#152A1F;border:1px solid #2E5A40;border-radius:8px;height:14px;overflow:hidden}
+.d-fill{height:100%;background:#4E6B58}
+.d-fill.hot{background:#f28b82}
+.d-fill.warm{background:#C9A84C}
+.d-amt{flex:0 0 110px;text-align:right;font-family:'Palatino Linotype',Palatino,serif;color:#F5EDE0}
+.d-sub{flex:0 0 170px;font-size:11px;color:#8FA898;text-align:right}
+.d-dead{opacity:.55;text-decoration:line-through}
+.mile{padding:3px 10px;border-radius:12px;border:1px solid #2E5A40;font-size:11px;color:#4E6B58}
+.mile.won{border-color:#C9A84C;color:#E8C96B;background:rgba(201,168,76,.1)}
+.cal-row{display:flex;align-items:center;gap:12px;padding:9px 6px;border-bottom:1px solid #23422F}
+.cal-row:last-child{border-bottom:none}
+.cal-date{flex:0 0 84px;font-weight:700;color:#C9A84C}
+.cal-date.soon{color:#f28b82}
+.cal-what{flex:1}
+.cal-amt{flex:0 0 100px;text-align:right;font-family:'Palatino Linotype',Palatino,serif}
+.cal-done{opacity:.5}
+
 </style>
 </head>
 <body>
@@ -135,6 +156,7 @@ a{color:#E8C96B}
   <div class="tab" data-tab="summary">Monthly Summary</div>
   <div class="tab" data-tab="compare">Compare</div>
   <div class="tab" data-tab="ccbalances">CC Balances</div>
+  <div class="tab" data-tab="debt">◆ Debt</div>
 </div>
 
 <div class="content">
@@ -233,6 +255,42 @@ a{color:#E8C96B}
   </div>
 
   <!-- CC BALANCES -->
+  
+  <div id="tab-debt" class="tab-panel">
+    <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px">
+      <div class="card" style="padding:14px 16px"><div class="card-title">DEBT DESTROYED</div><div class="stat-value" id="d-destroyed">–</div><div class="stat-sub" id="d-destroyed-sub">since 6 Jul 2026</div></div>
+      <div class="card" style="padding:14px 16px"><div class="card-title">CARDS + OD</div><div class="stat-value" id="d-cards">–</div><div class="stat-sub" id="d-cards-aed">&nbsp;</div></div>
+      <div class="card" style="padding:14px 16px"><div class="card-title">PERSONAL</div><div class="stat-value" id="d-personal">–</div><div class="stat-sub">Mum · Lewis · Dad</div></div>
+      <div class="card" style="padding:14px 16px"><div class="card-title">TOTAL REMAINING</div><div class="stat-value" id="d-total">–</div><div class="stat-sub" id="d-total-aed">&nbsp;</div></div>
+    </div>
+
+    <div class="card" style="padding:16px;margin-bottom:18px">
+      <div class="card-title" style="margin-bottom:8px">ROAD TO ZERO</div>
+      <div style="background:#152A1F;border:1px solid #2E5A40;border-radius:10px;height:22px;overflow:hidden">
+        <div id="d-progress" style="height:100%;width:0%;background:linear-gradient(90deg,#C9A84C,#E8C96B);transition:width .6s"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-top:6px;font-size:11px;color:#8FA898">
+        <span id="d-prog-label">0% destroyed</span><span id="d-next-mile">&nbsp;</span>
+      </div>
+      <div id="d-milestones" style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"></div>
+    </div>
+
+    <div class="card" style="padding:16px;margin-bottom:18px">
+      <div class="card-title" style="margin-bottom:10px">JULY PAYMENT RUN</div>
+      <div id="d-calendar"></div>
+    </div>
+
+    <div class="card" style="padding:16px;margin-bottom:18px">
+      <div class="card-title" style="margin-bottom:10px">THE LADDER — smallest first, kill them one by one</div>
+      <div id="d-ladder"></div>
+    </div>
+
+    <div class="card" style="padding:16px">
+      <div class="card-title" style="margin-bottom:10px">PERSONAL DEBTS</div>
+      <div id="d-personal-list"></div>
+    </div>
+  </div>
+
   <div id="tab-ccbalances" class="tab-panel">
     <div class="grid grid-2" style="margin-bottom:20px">
       <div class="card">
@@ -519,6 +577,61 @@ function renderCompare() {
   });
 }
 
+
+function renderDebt(){
+  const GBPAED=4.85;
+  const fmtG=n=>'£'+Math.round(n).toLocaleString('en-GB');
+  const cards=CC_BALANCES||[]; const pers=(window.PERSONAL_DEBTS||[]);
+  const base=window.DEBT_BASELINE||null;
+  const cardsTotal=cards.reduce((s,c)=>s+(c.balance||0),0);
+  const persTotal=pers.reduce((s,p)=>s+(p.amount||0),0);
+  const total=cardsTotal+persTotal;
+  const destroyed=base?Math.max(0,base.grandTotal-total):0;
+  const el=id=>document.getElementById(id);
+  if(!el('d-total'))return;
+  el('d-cards').textContent=fmtG(cardsTotal);
+  el('d-cards-aed').textContent='AED '+Math.round(cardsTotal*GBPAED).toLocaleString();
+  el('d-personal').textContent=fmtG(persTotal);
+  el('d-total').textContent=fmtG(total);
+  el('d-total-aed').textContent='AED '+Math.round(total*GBPAED).toLocaleString();
+  el('d-destroyed').textContent=fmtG(destroyed);
+  const pct=base?Math.min(100,destroyed/base.grandTotal*100):0;
+  el('d-progress').style.width=pct.toFixed(2)+'%';
+  el('d-prog-label').textContent=pct.toFixed(1)+'% destroyed';
+  const MILE=5000;
+  const won=Math.floor(destroyed/MILE);
+  el('d-next-mile').textContent=fmtG((won+1)*MILE-destroyed)+' to next milestone';
+  el('d-milestones').innerHTML=Array.from({length:12},(_,i)=>
+    `<span class="mile ${i<won?'won':''}">${i<won?'◆':'◇'} ${fmtG((i+1)*MILE)}</span>`).join('');
+  // ladder: smallest balance first, dead cards last
+  const ladder=cards.slice().sort((a,b)=>a.balance-b.balance);
+  el('d-ladder').innerHTML=ladder.map(c=>{
+    const util=c.limit?Math.min(100,c.balance/c.limit*100):100;
+    const cls=util>=98?'hot':util>=85?'warm':'';
+    const dead=c.balance<=0;
+    return `<div class="d-row ${dead?'d-dead':''}">
+      <div class="d-name">${dead?'💀 ':''}${c.card}</div>
+      <div class="d-bar"><div class="d-fill ${cls}" style="width:${util}%"></div></div>
+      <div class="d-amt">${fmtG(c.balance)}</div>
+      <div class="d-sub">${c.limit?('limit '+fmtG(c.limit)+' · '):''}${c.status||''}</div>
+    </div>`;}).join('');
+  // calendar
+  const today=new Date().toISOString().slice(0,10);
+  const cal=cards.filter(c=>c.dueDate).sort((a,b)=>a.dueDate<b.dueDate?-1:1);
+  el('d-calendar').innerHTML=cal.map(c=>{
+    const past=c.dueDate<today;
+    const soon=!past&&((new Date(c.dueDate)-new Date(today))/86400000<=3);
+    const d=new Date(c.dueDate).toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+    return `<div class="cal-row ${past?'cal-done':''}">
+      <div class="cal-date ${soon?'soon':''}">${d}</div>
+      <div class="cal-what">${c.card} <span style="color:#8FA898;font-size:11px">· ${c.dueNote||''}</span></div>
+      <div class="cal-amt">${c.dueAmount?('£'+c.dueAmount.toLocaleString('en-GB',{minimumFractionDigits:2})):'DD'}</div>
+    </div>`;}).join('') || '<div style="color:#8FA898">Nothing scheduled</div>';
+  el('d-personal-list').innerHTML=pers.map(p=>
+    `<div class="d-row"><div class="d-name">${p.to}</div><div class="d-bar"><div class="d-fill warm" style="width:100%"></div></div>
+     <div class="d-amt">${fmtG(p.amount)}</div><div class="d-sub">as of ${p.asOf}</div></div>`).join('');
+}
+
 function renderCCBalances() {
   const GBP_TO_AED = 4.85;
   let totalBalance = 0, totalAvailable = 0;
@@ -548,10 +661,10 @@ function renderCCBalances() {
 });
 
 fetch('data/finance.json?t='+Date.now()).then(r=>r.json()).then(d=>{
-  ALL_TRANSACTIONS=d.transactions||[];BUDGETS=d.budgets||{};CC_BALANCES=d.ccBalances||[];CATEGORIES=d.categories||[];
+  ALL_TRANSACTIONS=d.transactions||[];BUDGETS=d.budgets||{};CC_BALANCES=d.ccBalances||[];CATEGORIES=d.categories||[];window.PERSONAL_DEBTS=d.personalDebts||[];window.DEBT_BASELINE=d.debtBaseline||null;
   computeDerived();
   curMonth=ALL_MONTHS[0];
-  renderOverview();renderTransactions();renderSummary();renderCCBalances();
+  renderOverview();renderTransactions();renderSummary();renderCCBalances();renderDebt();
 }).catch(e=>console.error('finance data load failed',e));
 </script>
 </body>
