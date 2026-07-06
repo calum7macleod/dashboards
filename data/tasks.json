@@ -12,7 +12,8 @@
       "notes": null,
       "completed": null,
       "snoozedUntil": null,
-      "order": 10
+      "order": 5,
+      "top3": false
     },
     {
       "id": "3a2a3b36-3c8f-4e9c-b3fe-92a772c8a919",
@@ -750,7 +751,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 5,
+      "order": 4,
       "top3": false,
       "id": "36e892cd-80b5-470c-9413-7f76088db33c",
       "title": "Follow up Sarah - single row options, 3bd vs 4bd (Malta/Costa)",
