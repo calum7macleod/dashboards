@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "9d6eab82-c49d-4ceb-9de5-b4402b3ed9df",
+      "title": "VN AG",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-07-07",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "ec840f1c-cd43-4f0e-9a63-aba1d1aca744",
       "title": "Record 2 videos",
       "area": "Real Estate",
