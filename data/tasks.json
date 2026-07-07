@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "ec840f1c-cd43-4f0e-9a63-aba1d1aca744",
+      "title": "Record 2 videos",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-07-07",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "9a09c753-d32a-425e-91ca-ee3d2231b9eb",
       "title": "Save Drafts",
       "area": "Real Estate",
