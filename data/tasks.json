@@ -1,6 +1,21 @@
 {
   "tasks": [
     {
+      "id": "2de2a45a-7937-4418-a058-943c96b89c52",
+      "title": "Patrik Report",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": "2026-07-07",
+      "created": "2026-07-07",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 1
+    },
+    {
       "id": "9d6eab82-c49d-4ceb-9de5-b4402b3ed9df",
       "title": "VN AG",
       "area": "Real Estate",
