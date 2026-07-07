@@ -1,6 +1,8 @@
 {
   "tasks": [
     {
+      "order": 1,
+      "top3": false,
       "id": "07faba04-9a7f-4f9b-a1fa-5fbebb7a44d3",
       "title": "Francis Report",
       "area": "Real Estate",
@@ -11,11 +13,11 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": false,
       "id": "2e69ad04-ffc5-49f3-b24a-f6c8ad51ee32",
       "title": "DLD Report Link Sent to Me - Daily / Weekly",
       "area": "Real Estate",
@@ -26,11 +28,11 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 2
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": false,
       "id": "754b07a9-29b7-4cf9-8e74-6295ea6aa3cf",
       "title": "Clear Homescreed",
       "area": "Content",
@@ -41,26 +43,26 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": "2026-07-06",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 2
+      "snoozedUntil": null
     },
     {
+      "order": 3,
+      "top3": false,
       "id": "e69d35e0-35a0-46d8-b07c-77f5495f84e4",
       "title": "Ankur Pack - Factor Interest in Lagoons",
       "area": "Content",
       "priority": "medium",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": "2026-07-06",
       "created": "2026-07-06",
       "notes": null,
-      "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 3
+      "completed": "2026-07-07",
+      "snoozedUntil": null
     },
     {
+      "order": 12,
+      "top3": false,
       "id": "48cb271f-8449-43ff-9974-710230a9e5cd",
       "title": "Seller Tidy",
       "area": "Content",
@@ -71,11 +73,11 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": "2026-07-06",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 12
+      "snoozedUntil": null
     },
     {
+      "order": 11,
+      "top3": false,
       "id": "4e4e8c19-dd6d-4ae7-8e72-1723c2bbb039",
       "title": "Buyer Tidy",
       "area": "Content",
@@ -86,11 +88,11 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": "2026-07-06",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 11
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "59ffddc1-0fc7-4842-8481-fd7264feeb4c",
       "title": "Call 100 Costa",
       "area": "Content",
@@ -101,11 +103,11 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": false,
       "id": "3c0a13b1-017d-42f5-ab4f-ff34c9a8a59b",
       "title": "Watch 3 Viral video",
       "area": "Content",
@@ -116,11 +118,11 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 2
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": true,
       "id": "9d3c4215-a4b1-42f5-9b81-c15ce4bdb949",
       "title": "Plan & Reachout Portfolio Analysis",
       "area": "Real Estate",
@@ -131,9 +133,7 @@
       "created": "2026-07-06",
       "notes": null,
       "completed": "2026-07-06",
-      "snoozedUntil": null,
-      "top3": true,
-      "order": 2
+      "snoozedUntil": null
     },
     {
       "order": 2,
@@ -961,19 +961,19 @@
       "snoozedUntil": null
     },
     {
+      "order": 45,
+      "top3": false,
       "id": "571fc597-70c1-4277-8950-60fc58d1ec26",
       "title": "Sameer (M107): lock in meeting for his Dubai trip + get full unit details",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "easy",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-07-20",
       "created": "2026-07-07",
       "notes": "Over in a few weeks, wants to meet. Motivated (6-month WASL deadline, needs 7M). Portfolio seller - Elie Saab Beachfront + Meraas exits. Relationship play, not just one listing.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 45,
-      "top3": false
+      "snoozedUntil": null
     }
   ],
   "units": [],
