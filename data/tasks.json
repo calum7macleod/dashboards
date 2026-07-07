@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "07124063-07d2-4c18-9330-4daf262126cc",
+      "title": "WA",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-07-07",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "2de2a45a-7937-4418-a058-943c96b89c52",
       "title": "Patrik Report",
       "area": "Real Estate",
