@@ -67,11 +67,13 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": null,
+      "due": "2026-07-07",
       "created": "2026-07-07",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 5
     },
     {
       "id": "68326966-6fb1-4040-aad3-30a1bcc14650",
