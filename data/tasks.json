@@ -1,6 +1,8 @@
 {
   "tasks": [
     {
+      "order": 2,
+      "top3": false,
       "id": "79ebe634-0063-455f-b5fc-08b77554c336",
       "title": "LI Post",
       "area": "Real Estate",
@@ -11,11 +13,11 @@
       "created": "2026-07-07",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 2
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "07124063-07d2-4c18-9330-4daf262126cc",
       "title": "WA",
       "area": "Real Estate",
@@ -26,26 +28,26 @@
       "created": "2026-07-07",
       "notes": null,
       "completed": "2026-07-07",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "2de2a45a-7937-4418-a058-943c96b89c52",
       "title": "Patrik Report",
       "area": "Real Estate",
       "priority": "medium",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": "2026-07-07",
       "created": "2026-07-07",
       "notes": null,
-      "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "completed": "2026-07-08",
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": false,
       "id": "9d6eab82-c49d-4ceb-9de5-b4402b3ed9df",
       "title": "VN AG",
       "area": "Real Estate",
@@ -56,11 +58,11 @@
       "created": "2026-07-07",
       "notes": null,
       "completed": "2026-07-07",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 2
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": false,
       "id": "ec840f1c-cd43-4f0e-9a63-aba1d1aca744",
       "title": "Record 2 videos",
       "area": "Real Estate",
@@ -71,11 +73,11 @@
       "created": "2026-07-07",
       "notes": null,
       "completed": "2026-07-07",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 2
+      "snoozedUntil": null
     },
     {
+      "order": 4,
+      "top3": false,
       "id": "9a09c753-d32a-425e-91ca-ee3d2231b9eb",
       "title": "Save Drafts",
       "area": "Real Estate",
@@ -86,11 +88,11 @@
       "created": "2026-07-07",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 4
+      "snoozedUntil": null
     },
     {
+      "order": 3,
+      "top3": false,
       "id": "ed60d608-84a8-4141-8c0e-57d84e9946d2",
       "title": "Organise Videos",
       "area": "Real Estate",
@@ -101,11 +103,11 @@
       "created": "2026-07-07",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 3
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "68326966-6fb1-4040-aad3-30a1bcc14650",
       "title": "Posts for Bashayer",
       "area": "Real Estate",
@@ -116,9 +118,7 @@
       "created": "2026-07-07",
       "notes": null,
       "completed": "2026-07-07",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "snoozedUntil": null
     },
     {
       "order": 1,
