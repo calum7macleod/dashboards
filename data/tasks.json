@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "758a6f62-a5f5-4272-9962-cc86432c5dba",
+      "title": "Plan Calls",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "easy",
+      "due": null,
+      "created": "2026-07-08",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "id": "621e8f03-139e-4cd3-a137-53fffe2a60bf",
       "title": "Messages",
       "area": "Real Estate",
