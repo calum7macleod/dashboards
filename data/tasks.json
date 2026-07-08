@@ -7,11 +7,13 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": null,
+      "due": "2026-07-08",
       "created": "2026-07-08",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 4
     },
     {
       "id": "8d06eea2-3616-4afb-84d6-18a02f8c066a",
@@ -29,7 +31,7 @@
       "order": 1
     },
     {
-      "order": 4,
+      "order": 1,
       "top3": false,
       "id": "79ebe634-0063-455f-b5fc-08b77554c336",
       "title": "LI Post",
@@ -239,7 +241,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 5,
+      "order": 2,
       "top3": false,
       "id": "59ffddc1-0fc7-4842-8481-fd7264feeb4c",
       "title": "Call 100 Costa",
@@ -254,7 +256,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 6,
+      "order": 3,
       "top3": false,
       "id": "3c0a13b1-017d-42f5-ab4f-ff34c9a8a59b",
       "title": "Watch 3 Viral video",
