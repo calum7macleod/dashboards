@@ -7,11 +7,13 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "easy",
-      "due": null,
+      "due": "2026-07-08",
       "created": "2026-07-08",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 1
     },
     {
       "order": 2,
