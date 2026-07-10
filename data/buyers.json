@@ -352,31 +352,6 @@
     "id": "baljit-20"
   },
   {
-    "date": "2026-06-05",
-    "status": "Active",
-    "buyer": "Ahmed",
-    "source": "Colleague",
-    "colleague": "Lewis",
-    "area": "Lagoons",
-    "cluster1": "Costa Brava",
-    "cluster2": "",
-    "cluster3": "",
-    "matchedUnit": "",
-    "beds": 5,
-    "finance": "Mortgage",
-    "budget": 3700000,
-    "needed": 3700000,
-    "diff": 0,
-    "responsiveness": 4,
-    "relationship": 4,
-    "unitSupply": 4,
-    "feeling": 5,
-    "score": 0.85,
-    "notes": "5 bed SR Costa, 3.7M mortgage. Showing Lewis's unit. HIGH.",
-    "order": 15,
-    "id": "ahmed-18"
-  },
-  {
     "date": "2026-03-31",
     "status": "Active",
     "buyer": "Tony & Niki",
@@ -398,7 +373,7 @@
     "feeling": 3,
     "score": 0.68,
     "notes": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
-    "order": 16,
+    "order": 15,
     "id": "tony-niki-1"
   },
   {
@@ -424,7 +399,7 @@
     "score": 0.4,
     "notes": "5 bed, 3.3M. Unlikely to convert - keep warm, low effort.",
     "id": "jonathan-37",
-    "order": 17
+    "order": 16
   },
   {
     "date": "2026-05-04",
@@ -448,7 +423,7 @@
     "feeling": 5,
     "score": 0.6,
     "notes": "Offplan. Tara Park 3 bed, 3.8M. Cash payment plan. Close to buying. May also consider townhouses.",
-    "order": 18,
+    "order": 17,
     "id": "sanjay-5"
   },
   {
@@ -474,6 +449,6 @@
     "score": 0.4,
     "notes": "Wants Costa at 2.6M. Sent Ronnie's (asking 2.65M) to offer 2.6M. Dealing with other agents - low quality, needs consistent follow-up.",
     "id": "misha-33",
-    "order": 19
+    "order": 18
   }
 ]
