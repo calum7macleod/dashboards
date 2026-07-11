@@ -450,5 +450,30 @@
     "notes": "Wants Costa at 2.6M. Sent Ronnie's (asking 2.65M) to offer 2.6M. Dealing with other agents - low quality, needs consistent follow-up.",
     "id": "misha-33",
     "order": 18
+  },
+  {
+    "date": "2026-07-08",
+    "status": "Active",
+    "buyer": "ET",
+    "source": "Unknown",
+    "colleague": "Self",
+    "area": "Villanova / Lagoons",
+    "cluster1": "Villanova",
+    "cluster2": "",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": "3-4",
+    "finance": "",
+    "budget": 2600000,
+    "needed": 2600000,
+    "diff": 0,
+    "responsiveness": 3,
+    "relationship": 3,
+    "unitSupply": 3,
+    "feeling": 2,
+    "score": 0.45,
+    "notes": "Viewed Lagoons 8 Jul - 4bd gardens too small, 3bd too tight. Readiness unclear. Pivot: Villanova 3-bed (cheapest fit at ~2.6M). Options going Monday.",
+    "id": "et-18",
+    "order": 19
   }
 ]
