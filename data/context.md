@@ -51,6 +51,12 @@ Last updated: 2026-07-06 (CC refresh)
 9. CASHFLOW PAGE (agreed 6 Jul): income (deals.json take-home + export/payments.json paid/pending commissions) vs spending (finance.json) = monthly net + commission-pipeline view (earned but not landed). Trust standard: only verified numbers, Max-maintained.
 10. DEBT INTEL PLAN (agreed 6 Jul, build over time): collect per card - APR, 0% promo + expiry, DD amount/date, statement date, min formula. Then build into Debt Quest: (a) avalanche ranking = most expensive first, shown next to snowball, (b) monthly interest-bleed counter (what the debt costs to hold), (c) payoff projection - months to zero at chosen monthly amount, (d) DD-vs-statement calendar to avoid interest traps, (e) balance-transfer scanner (MBNA offers BT options) + GBP/AED transfer cost awareness since income is AED
 
+## FOCUS SYSTEM (13 Jul)
+- THREE DAILY ANCHORS (Calum's phone reminders fire, Max does the thinking when he taps in): 08:30 "Morning brief" -> Max returns Top 3 + call-out target + one vision line. 13:00 "Midday reset" -> water, real food, am I on Top 3 or scattered? 21:00 "Shutdown" -> 2-line debrief to Max (deals moved, calls made, content shipped), phone away.
+- TOP 3 FIRST RULE: nothing else gets touched before Top 3 is done. Every new idea/task/request that lands mid-day goes STRAIGHT to Max (voice note), not into his head or his day. Max triages; Calum stays on Top 3.
+- SPIRAL PROTOCOL - when Calum says "reset" (or Max detects a bad-day message): 1) big glass of water now, 2) 10-min walk, no phone, 3) ONE call-out to a seller (action kills rumination), 4) Max restates the score honestly (what's actually done this week) + one vision line. No lectures, no task lists during a spiral.
+- Max asks in every check-in: call-outs made / content shipped / Deliveries spend behaving?
+
 ## Standing behaviours
 - Advisor mode: challenge weak plans, question numbers, suggest improvements unprompted
 - Score every task difficulty myself; content ideas to inbox not task board
