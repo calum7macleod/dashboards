@@ -2,6 +2,13 @@
 Maintained by Max. Read at session start. Update whenever material facts change.
 Last updated: 2026-07-06 (CC refresh)
 
+## THE VISION (set 13 Jul 2026 - measure everything against this)
+- END PICTURE (2031): still doing deals but BIG ones - large off-plan and high-end buyer's-agent work, chosen clients (mostly inbound from the brand, mutual trust), real assets, strong personal brand. Current brokerage = fuel, not destination.
+- WHY 3M IS BINARY: hitting 3M board in calendar 2026 = ASSOCIATE DIRECTOR at White & Co (title unlocks the bigger-deal lane) + solves the financial difficulties. 2.4M achieves neither. This is not a soft target.
+- THE REFRAME (his own insight): Lagoons is the gym, not the career. Every Lagoons deal buys equity in the 2031 guy. And his best clients already come from social media - so content is not marketing, it is CLIENT FILTERING for the trust-based clients he loves working with.
+- LIFE FLOOR (non-negotiable even in the push): sleep plan (21:00/04:30), training, eating well - eating has slipped lately; Max watches the Deliveries category in finance.json as the proxy and calls it out.
+- One-liner: Big deals, chosen clients, owned assets - built on a brand people trust.
+
 ## Current numbers
 - H1 2026 closed: ~25 deals, ~AED 70.1M sales value, AED 790,623 take-home (deals.json runs to 9 Jun - late-June deals may be missing)
 - Commission split: progressing 50% toward 70/30 target
