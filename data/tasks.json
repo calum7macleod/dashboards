@@ -1,6 +1,51 @@
 {
   "tasks": [
     {
+      "id": "a3659503-0328-47a4-a5b7-1a176eb671eb",
+      "title": "Batch film 4 content clips at this week's viewings",
+      "area": "Content",
+      "priority": "medium",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-18",
+      "created": "2026-07-13",
+      "notes": "Camera comes to work: 60-90s per unit while already on site. Feeds the 'run the numbers' series without a dedicated filming day.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": false
+    },
+    {
+      "id": "6cc26453-2f57-4eea-825b-b076ec22e0c4",
+      "title": "Book Saturday viewing stack - 6+ viewings",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-16",
+      "created": "2026-07-13",
+      "notes": "The 4-Jul format rebuilt the whole book in one day. Repeat it: stack Saturday back-to-back, film clips at each unit while there.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": true
+    },
+    {
+      "id": "b5215b7c-fb1e-4b84-8389-7c6db2b88751",
+      "title": "OFFER WEEK: push every warm buyer to a number",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-15",
+      "created": "2026-07-13",
+      "notes": "Misha (Ronnie's 2.6), Hania (later-cluster SR), Ari (vs Amman J304), Akash (feed Sameer M107), ET (Villanova), Georgia (vacant list). No more nurturing - ask each for an offer or a no.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": true
+    },
+    {
       "id": "85046f0a-27e2-4655-9bdf-6f28b67e2da4",
       "title": "300 Calls",
       "area": "Real Estate",
