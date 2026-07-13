@@ -1,140 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧊</text></svg>">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Health Dashboard</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Journal - Calum MacLeod</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; min-height: 100vh; }
-  .header { background: linear-gradient(135deg, #1a1d2e 0%, #16213e 100%); padding: 22px 32px; border-bottom: 1px solid #21262d; display: flex; align-items: center; justify-content: space-between; }
-  .header h1 { font-size: 1.5rem; font-weight: 700; color: #fff; }
-  .header p { color: #8b949e; font-size: 0.82rem; margin-top: 3px; }
-  .content { padding: 24px 32px; max-width: 1200px; }
-  .grid { display: grid; gap: 16px; }
-  .grid-2 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
-  .grid-4 { grid-template-columns: repeat(4, 1fr); }
-  .card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
-  .card-title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 10px; font-weight: 600; }
-  .stat-value { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
-  .stat-sub { font-size: 0.8rem; color: #8b949e; margin-top: 6px; }
-  .badge { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-top: 6px; font-weight: 600; }
-  .badge-green { background: #23312a; color: #3fb950; }
-  .badge-red { background: #3d1f1f; color: #f85149; }
-  .badge-yellow { background: #302a1c; color: #e3b341; }
-  .section-label { font-size: 0.95rem; font-weight: 600; color: #c9d1d9; margin: 24px 0 12px; }
-  .chart-card { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 20px; }
-  .chart-card h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6e7681; margin-bottom: 16px; font-weight: 600; }
-  .habit-row { display: grid; grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr 60px; gap: 12px; align-items: center; padding: 12px 16px; border-bottom: 1px solid #21262d; font-size: 0.85rem; }
-  .habit-row:last-child { border-bottom: none; }
-  .habit-header { font-size: 0.72rem; text-transform: uppercase; color: #6e7681; font-weight: 600; }
-  .tick { font-size: 1.1rem; }
-  .progress-bar { background: #21262d; border-radius: 6px; height: 8px; overflow: hidden; margin-top: 4px; }
-  .progress-fill { height: 100%; border-radius: 6px; }
-  .whoop-score { font-size: 1.4rem; font-weight: 700; }
-  .streak-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-  .streak-dot { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; }
-  @media (max-width: 800px) {
-    .grid-4, .grid-3 { grid-template-columns: repeat(2, 1fr); }
-    .grid-2 { grid-template-columns: 1fr; }
-    .content { padding: 16px; }
-    .header { padding: 16px; }
-    .habit-row { grid-template-columns: 80px repeat(4, 1fr) 50px; font-size: 0.78rem; }
-  }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Calibri,'Segoe UI',sans-serif;background:#152A1F;color:#F5EDE0;min-height:100vh}
+.header{background:linear-gradient(180deg,#1E3D2F,#152A1F);padding:20px 28px 14px}
+.eyebrow{font-size:10px;letter-spacing:.28em;color:#C9A84C;font-weight:700}
+h1{font-family:'Palatino Linotype',Palatino,Georgia,serif;font-weight:400;font-size:28px;margin-top:2px}
+.sub{color:#8FA898;font-size:12px;margin-top:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 24px 50px}
+.today{background:#1E3D2F;border:1px solid #2E5A40;border-radius:16px;padding:18px;margin-bottom:16px}
+.t-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.t-date{font-family:'Palatino Linotype',Palatino,serif;font-size:20px}
+.t-total{font-family:'Palatino Linotype',Palatino,serif;font-size:26px;color:#E8C96B}
+.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.m{background:#182F24;border:1px solid #2E5A40;border-radius:12px;padding:10px;text-align:center}
+.m .k{font-size:9px;letter-spacing:.14em;color:#8FA898;font-weight:700}
+.m .v{font-family:'Palatino Linotype',Palatino,serif;font-size:24px;margin-top:3px}
+.m .bar{height:5px;background:#0F211A;border-radius:3px;margin-top:7px;overflow:hidden}
+.m .fill{height:100%;background:linear-gradient(90deg,#8a6f2a,#E8C96B);border-radius:3px}
+.empty{color:#8FA898;font-size:13px;padding:8px 0}
+.card{background:#1E3D2F;border:1px solid #2E5A40;border-radius:16px;padding:18px;margin-bottom:16px}
+.label{font-size:11px;letter-spacing:.14em;color:#C9A84C;font-weight:700;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{color:#C9A84C;text-align:left;font-size:10px;letter-spacing:.1em;padding:6px 8px;border-bottom:1px solid #2E5A40}
+td{padding:7px 8px;border-bottom:1px solid #23422F}
+tr:hover td{background:#20402F}
+.score{display:inline-block;min-width:22px;text-align:center;border-radius:6px;padding:1px 5px;font-weight:700}
+.s5{background:rgba(201,168,76,.25);color:#E8C96B}.s4{background:rgba(143,191,159,.2);color:#8FBF9F}
+.s3{background:rgba(143,168,152,.15);color:#8FA898}.s2,.s1{background:rgba(242,139,130,.15);color:#f28b82}
+.avgs{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.note{color:#8FA898;font-style:italic}
+@media(max-width:760px){.metrics,.avgs{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
-
 <div class="header">
-  <div>
-    <h1>🧊 Health Dashboard</h1>
-    <p>Calum's daily accountability tracker</p>
-  </div>
-  <div style="text-align:right">
-    <div style="color:#8b949e;font-size:0.78rem">Updated 26 Apr 2026</div>
-    <div style="color:#3fb950;font-size:0.85rem;font-weight:600;margin-top:4px">1 days tracked</div>
-  </div>
+ <div class="eyebrow">CALUM MACLEOD &nbsp;◆&nbsp; COMMAND CENTRE</div>
+ <h1 class="header-title">Daily Journal</h1>
+ <div class="sub">Eating · Water · Exercise · Sleep · Mindset · Focus - scored 1-5 with Max at the 19:30 shutdown</div>
 </div>
-
-<div class="content">
-
-  <!-- STATS -->
-  <div class="grid grid-4" style="margin-bottom:20px">
-    <div class="card">
-      <div class="card-title">🧊 Ice Baths</div>
-      <div class="stat-value">1/1</div>
-      <div class="stat-sub">0 morning · 1 evening</div>
-      <div class="badge badge-green">100% hit rate</div>
-    </div>
-    <div class="card">
-      <div class="card-title">🥊 Boxica</div>
-      <div class="stat-value">1/1</div>
-      <div class="stat-sub">Sessions attended</div>
-      <div class="badge badge-green">100% attendance</div>
-    </div>
-    <div class="card">
-      <div class="card-title">💚 Avg Recovery</div>
-      <div class="stat-value whoop-score" style="color:#f85149">28%</div>
-      <div class="stat-sub">Whoop recovery score</div>
-      <div class="badge badge-red">Low</div>
-    </div>
-    <div class="card">
-      <div class="card-title">😴 Avg Sleep</div>
-      <div class="stat-value whoop-score" style="color:#f85149">54%</div>
-      <div class="stat-sub">Whoop sleep score</div>
-      <div class="badge badge-red">Poor</div>
-    </div>
-  </div>
-
-  <!-- HABIT LOG TABLE -->
-  <div class="section-label">Daily Log</div>
-  <div class="card" style="padding:0;overflow:hidden">
-    <div style="overflow-x:auto">
-      <div class="habit-row habit-header">
-        <div>Date</div>
-        <div>🧊 Ice Bath</div>
-        <div>🥊 Boxica</div>
-        <div>📵 Phone 8PM</div>
-        <div>💧 Water</div>
-        <div>💚 Recovery</div>
-        <div>😴 Sleep</div>
-      </div>
-      <div class="habit-row">
-          <div style="font-weight:600">Monday<br><span style="color:#6e7681;font-size:0.75rem">2026-04-20</span></div>
-          <div style="color:#e3b341;font-weight:600">🌙 Evening</div>
-          <div><span style="color:#3fb950;font-weight:600">✅ Done</span></div>
-          <div>✅</div>
-          <div><span style="color:#e3b341">3.0L</span></div>
-          <div style="color:#f85149;font-weight:600">28%</div>
-          <div style="color:#f85149;font-weight:600">54%</div>
-        </div>
-    </div>
-  </div>
-
-  <!-- CHARTS -->
-  
-
-  <!-- NOTES -->
-  
-  <div class="section-label">Notes</div>
-  <div class="card">
-    
-      <div style="padding:8px 0;border-bottom:1px solid #21262d;font-size:0.85rem">
-        <span style="color:#6e7681;font-size:0.78rem">Monday 2026-04-20</span><br>
-        Woke up late. Doesn't feel his best. Low recovery triggering the health focus this week.
-      </div>
-    
-  </div>
-
+<div class="wrap">
+ <div class="today" id="today-card"><div class="empty">Loading...</div></div>
+ <div class="card"><div class="label">◆ LAST 14 DAYS</div><div id="history"></div></div>
+ <div class="card"><div class="label">◆ 7-DAY AVERAGES</div><div class="avgs" id="avgs"></div></div>
 </div>
-
 <script>
-const LOG = [{"date":"2026-04-20","day":"Monday","checkIn":"07:15","iceBath":false,"iceBathNight":"DONE","boxica":true,"boxicaNotes":"Showed up but didn't perform well","phone8pm":"DONE","hydration":null,"whoopSleep":54,"whoopRecovery":28,"notes":"Woke up late. Doesn't feel his best. Low recovery triggering the health focus this week.","waterMl":3000}];
-
-
+const METRICS=["eating","water","exercise","sleep","mindset","focus"];
+const todayStr=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+fetch("data/journal.json?t="+Date.now()).then(r=>r.json()).then(arr=>{
+ arr.sort((a,b)=>a.date<b.date?1:-1);
+ const t=arr.find(e=>e.date===todayStr());
+ const tc=document.getElementById("today-card");
+ if(t){
+  const total=METRICS.reduce((s,m)=>s+(t[m]||0),0);
+  tc.innerHTML='<div class="t-head"><div class="t-date">Today · '+new Date(t.date).toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"})+'</div><div class="t-total">'+total+' / 30</div></div>'+
+  '<div class="metrics">'+METRICS.map(m=>'<div class="m"><div class="k">'+m.toUpperCase()+'</div><div class="v">'+(t[m]??"-")+'</div><div class="bar"><div class="fill" style="width:'+((t[m]||0)*20)+'%"></div></div></div>').join("")+'</div>'+
+  (t.note?'<div class="note" style="margin-top:10px">"'+t.note+'"</div>':"");
+ } else {
+  tc.innerHTML='<div class="t-head"><div class="t-date">Today</div><div class="t-total">- / 30</div></div><div class="empty">Not logged yet - send Max your scores at the 19:30 shutdown.</div>';
+ }
+ document.getElementById("history").innerHTML = arr.length ?
+  '<table><tr><th>DATE</th>'+METRICS.map(m=>'<th>'+m.slice(0,5).toUpperCase()+'</th>').join("")+'<th>TOTAL</th><th>NOTE</th></tr>'+
+  arr.slice(0,14).map(e=>{
+   const tot=METRICS.reduce((s,m)=>s+(e[m]||0),0);
+   return '<tr><td>'+new Date(e.date).toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"})+'</td>'+
+    METRICS.map(m=>'<td><span class="score s'+(e[m]||1)+'">'+(e[m]??"-")+'</span></td>').join("")+
+    '<td><b>'+tot+'</b></td><td class="note">'+(e.note||"")+'</td></tr>';
+  }).join("")+'</table>' : '<div class="empty">First entry lands tonight.</div>';
+ const last7=arr.slice(0,7);
+ document.getElementById("avgs").innerHTML=METRICS.map(m=>{
+  const vals=last7.map(e=>e[m]).filter(v=>v!=null);
+  const avg=vals.length?(vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(1):"-";
+  return '<div class="m"><div class="k">'+m.toUpperCase()+'</div><div class="v">'+avg+'</div></div>';
+ }).join("");
+}).catch(e=>{document.getElementById("today-card").innerHTML='<div class="empty">Could not load journal data.</div>'});
 </script>
 </body>
 </html>
