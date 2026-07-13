@@ -1,6 +1,51 @@
 {
   "tasks": [
     {
+      "id": "37c934c6-8e5a-4468-ba90-a4f56884d419",
+      "title": "CALL OUTS - big volume day for stock",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-07-14",
+      "created": "2026-07-13",
+      "notes": "Back to basics. 15+ call-outs today toward the 50 this week. Log responsive sellers to Max.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 3,
+      "top3": true
+    },
+    {
+      "id": "20a106b0-8c1c-47b2-a146-fccd888b8d96",
+      "title": "Call everyone that needs it - work the follow-up list",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-14",
+      "created": "2026-07-13",
+      "notes": "Phone, not WhatsApp, for anyone warm: offer pushes, viewing bookings, seller check-ins.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 2,
+      "top3": true
+    },
+    {
+      "id": "2c94efa1-9d71-40bc-a537-b895d5260f4b",
+      "title": "Reach out to ALL weekend buyers + sellers - update everybody",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-07-14",
+      "created": "2026-07-13",
+      "notes": "Every buyer and seller touched over the weekend gets a message/update today. Nobody left hanging.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": true
+    },
+    {
       "id": "ef63401e-7554-4821-aa7a-f2e407c662c9",
       "title": "CALL OUTS: 10/day for stock - 50 this week",
       "area": "Real Estate",
@@ -13,7 +58,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 1,
-      "top3": true
+      "top3": false
     },
     {
       "id": "a3659503-0328-47a4-a5b7-1a176eb671eb",
@@ -43,7 +88,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 1,
-      "top3": true
+      "top3": false
     },
     {
       "id": "b5215b7c-fb1e-4b84-8389-7c6db2b88751",
@@ -58,7 +103,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 1,
-      "top3": true
+      "top3": false
     },
     {
       "id": "85046f0a-27e2-4655-9bdf-6f28b67e2da4",
@@ -332,7 +377,7 @@
     },
     {
       "order": 1,
-      "top3": true,
+      "top3": false,
       "id": "59ffddc1-0fc7-4842-8481-fd7264feeb4c",
       "title": "Call 100 Costa",
       "area": "Content",
@@ -347,7 +392,7 @@
     },
     {
       "order": 1,
-      "top3": true,
+      "top3": false,
       "id": "3c0a13b1-017d-42f5-ab4f-ff34c9a8a59b",
       "title": "Watch 3 Viral video",
       "area": "Content",
@@ -362,7 +407,7 @@
     },
     {
       "order": 2,
-      "top3": true,
+      "top3": false,
       "id": "9d3c4215-a4b1-42f5-9b81-c15ce4bdb949",
       "title": "Plan & Reachout Portfolio Analysis",
       "area": "Real Estate",
@@ -392,7 +437,7 @@
     },
     {
       "order": 1,
-      "top3": true,
+      "top3": false,
       "id": "3a2a3b36-3c8f-4e9c-b3fe-92a772c8a919",
       "title": "Finace Setup",
       "area": "Tasks",
@@ -422,7 +467,7 @@
     },
     {
       "order": 1,
-      "top3": true,
+      "top3": false,
       "id": "eebfed5d-04f4-4d5d-bd6a-0e7284cf528e",
       "title": "Ahmed V3 viewing Tuesday - prep unit + comps (7M budget, 14M behind)",
       "area": "Real Estate",
@@ -452,7 +497,7 @@
     },
     {
       "order": 1,
-      "top3": true,
+      "top3": false,
       "id": "c9d35831-3620-49b4-8fa2-ce1223af3158",
       "title": "Nad signing TODAY - chase and make sure it lands with us",
       "area": "Real Estate",
@@ -482,7 +527,7 @@
     },
     {
       "order": 3,
-      "top3": true,
+      "top3": false,
       "id": "b5e65760-a9ff-43be-86af-e08725fb0c85",
       "title": "Replicate on finances page",
       "area": "Tasks",
@@ -497,7 +542,7 @@
     },
     {
       "order": 2,
-      "top3": true,
+      "top3": false,
       "id": "df70aff1-35c6-484d-a732-3dd0b5fa8e8e",
       "title": "Replicate on real estate page",
       "area": "Tasks",
@@ -512,7 +557,7 @@
     },
     {
       "order": 1,
-      "top3": true,
+      "top3": false,
       "id": "84236a0d-06e7-44d9-866e-048d203b6432",
       "title": "Create tasks page",
       "area": "Tasks",
