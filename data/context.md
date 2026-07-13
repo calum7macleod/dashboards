@@ -24,7 +24,9 @@ Last updated: 2026-07-06 (CC refresh)
 - Sarah budget 2.6M (from calendar); Misha calendar said 2.5m vs logged 2.6M offer target
 - Jonathan buyer added at #4 with NO details - chase
 - Avantglamp TM01 resignation - unconfirmed, legal exposure
-- 2026 take-home target - never answered, ask when natural
+- 2026 TARGET (given 13 Jul): 3M for the year. At 1.55M on day ~195 of 365 - required pace 1.607M, so BEHIND BY ~57K = ONE DEAL. H2 maths: 1.45M in 24 weeks = one deal a week wins the year.
+- H2 OPERATING PLAN (agreed 13 Jul): mornings = money (3 buyer pushes + 2 seller touches before noon daily) - Wednesday = offer day (every warm buyer asked for a number) - Saturday = viewing stack day - launches are multipliers not the plan
+- People problem (13 Jul): Calum worn down by cut-out culture in Lagoons secondary. Fix is structural not emotional: signed agency agreements, control access via motivated sellers (Amman, Sameer), weight toward off-plan/launch where commission is developer-side and cut-proof, bigger clients (SB, Ahmed) cut less. Watch his energy on this.
 - July payment calendar: AQUA DD 9th, AmEx 538 on 11th, Barclaycard min 20th, Santander DD 21st, M&S 23rd, Tesco 29th. THREE cards over limit (Santander, Virgin, HSBC)
 
 ## Improvement backlog (Max-suggested, Calum-approved direction)
