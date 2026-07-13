@@ -1,6 +1,21 @@
 {
   "tasks": [
     {
+      "id": "ef63401e-7554-4821-aa7a-f2e407c662c9",
+      "title": "CALL OUTS: 10/day for stock - 50 this week",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-07-17",
+      "created": "2026-07-13",
+      "notes": "The H2 lever. Own the stock and buyer loyalty stops mattering. Log every responsive seller to stock.json via Max. Score: 50 calls, target 3 new sellers, 1 with signed form/access control.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": true
+    },
+    {
       "id": "a3659503-0328-47a4-a5b7-1a176eb671eb",
       "title": "Batch film 4 content clips at this week's viewings",
       "area": "Content",
