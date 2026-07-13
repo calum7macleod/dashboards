@@ -26,6 +26,9 @@ Last updated: 2026-07-06 (CC refresh)
 - Avantglamp TM01 resignation - unconfirmed, legal exposure
 - 2026 TARGET (given 13 Jul): 3M for the year. At 1.55M on day ~195 of 365 - required pace 1.607M, so BEHIND BY ~57K = ONE DEAL. H2 maths: 1.45M in 24 weeks = one deal a week wins the year.
 - H2 OPERATING PLAN (agreed 13 Jul): mornings = money (3 buyer pushes + 2 seller touches before noon daily) - Wednesday = offer day (every warm buyer asked for a number) - Saturday = viewing stack day - launches are multipliers not the plan
+- REALITY CHECK 13 Jul: even off-plan isn't cut-proof - Modon offered Tony a unit DIRECT before launch. Nothing is fully safe; the durable edge is OWNING STOCK + being undeniably more useful than going direct (the Bashayer deck is the template for that).
+- CORE H2 LEVER (Calum's own call): CALL OUT FOR STOCK. Daily call-out block, 10/day, 50/week. Stock ownership beats buyer loyalty - rats can't cut out the man who holds the door. Max tracks weekly call-out count + content shipped in EVERY check-in.
+- Content cadence: batch-film at viewings, 2 posts/week fixed slots, Abby to take scheduling. Max chases this like a deal.
 - People problem (13 Jul): Calum worn down by cut-out culture in Lagoons secondary. Fix is structural not emotional: signed agency agreements, control access via motivated sellers (Amman, Sameer), weight toward off-plan/launch where commission is developer-side and cut-proof, bigger clients (SB, Ahmed) cut less. Watch his energy on this.
 - July payment calendar: AQUA DD 9th, AmEx 538 on 11th, Barclaycard min 20th, Santander DD 21st, M&S 23rd, Tesco 29th. THREE cards over limit (Santander, Virgin, HSBC)
 
