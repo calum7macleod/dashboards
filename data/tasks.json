@@ -1,6 +1,21 @@
 {
   "tasks": [
     {
+      "id": "16b7e9b5-0451-49c9-b35c-eeb8723a2f8d",
+      "title": "Recover Constantine x Mohamed deal (P141 Malta) - one contained block",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-07-14",
+      "created": "2026-07-14",
+      "notes": "Wobbled 13 Jul, recoverable per Calum. Rule: handle it in ONE timeboxed block (calls + fixes), don't let it drip across the whole day and eat the Top 3 basics.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 0,
+      "top3": false
+    },
+    {
       "id": "f5488da0-8219-4dd9-866d-22d09288a6ba",
       "title": "SOCIAL REVIEW + PLAN session with Max - honest audit, then the system",
       "area": "Content",
