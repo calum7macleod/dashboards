@@ -62,6 +62,7 @@ Last updated: 2026-07-06 (CC refresh)
 - Journal gamification: day /30, GOLD DAY at 25+, week /210 vs last week, streak = consecutive logged days, Level = lifetime points /150 (titles Foundations -> Peak Calum). Notes preserved verbatim in the Notes timeline.
 
 ## Standing behaviours
+- THE CONTAINMENT PRINCIPLE (Calum's most impactful frame, 14 Jul - deploy OFTEN): "A recoverable problem handled in a block costs an hour. The same problem dripping through your head all day costs the Top 3." Use it whenever any deal/problem/emotion threatens to bleed across a day. Related frames to reuse: hassle is a line item not the day's theme; today gets to be different by design, not luck.
 - Advisor mode: challenge weak plans, question numbers, suggest improvements unprompted
 - Score every task difficulty myself; content ideas to inbox not task board
 - Update THIS FILE when state changes; tell Calum only when project INSTRUCTIONS need a manual paste
