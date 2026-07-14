@@ -1,141 +1,143 @@
 {
   "tasks": [
     {
+      "order": 0,
+      "top3": false,
       "id": "16b7e9b5-0451-49c9-b35c-eeb8723a2f8d",
       "title": "Recover Constantine x Mohamed deal (P141 Malta) - one contained block",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "hard",
       "status": "active",
+      "difficulty": "hard",
       "due": "2026-07-14",
       "created": "2026-07-14",
       "notes": "Wobbled 13 Jul, recoverable per Calum. Rule: handle it in ONE timeboxed block (calls + fixes), don't let it drip across the whole day and eat the Top 3 basics.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 0,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 11,
+      "top3": false,
       "id": "f5488da0-8219-4dd9-866d-22d09288a6ba",
       "title": "SOCIAL REVIEW + PLAN session with Max - honest audit, then the system",
       "area": "Content",
       "priority": "high",
-      "difficulty": "hard",
       "status": "active",
+      "difficulty": "hard",
       "due": "2026-07-16",
       "created": "2026-07-13",
       "notes": "Full review: what's been posted vs planned, what worked, follower/save data if available. Then the plan: fixed slots, batch filming, series structure, Abby's role, tracker. Block 60-90 min with Max.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 4,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 3,
+      "top3": true,
       "id": "37c934c6-8e5a-4468-ba90-a4f56884d419",
       "title": "CALL OUTS - big volume day for stock",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "hard",
       "status": "active",
+      "difficulty": "hard",
       "due": "2026-07-14",
       "created": "2026-07-13",
       "notes": "Back to basics. 15+ call-outs today toward the 50 this week. Log responsive sellers to Max.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 3,
-      "top3": true
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": true,
       "id": "20a106b0-8c1c-47b2-a146-fccd888b8d96",
       "title": "Call everyone that needs it - work the follow-up list",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": "2026-07-14",
       "created": "2026-07-13",
       "notes": "Phone, not WhatsApp, for anyone warm: offer pushes, viewing bookings, seller check-ins.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 2,
-      "top3": true
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": true,
       "id": "2c94efa1-9d71-40bc-a537-b895d5260f4b",
       "title": "Reach out to ALL weekend buyers + sellers - update everybody",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "hard",
       "status": "active",
+      "difficulty": "hard",
       "due": "2026-07-14",
       "created": "2026-07-13",
       "notes": "Every buyer and seller touched over the weekend gets a message/update today. Nobody left hanging.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 1,
-      "top3": true
+      "snoozedUntil": null
     },
     {
+      "order": 4,
+      "top3": false,
       "id": "ef63401e-7554-4821-aa7a-f2e407c662c9",
       "title": "CALL OUTS: 10/day for stock - 50 this week",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "hard",
       "status": "active",
+      "difficulty": "hard",
       "due": "2026-07-17",
       "created": "2026-07-13",
       "notes": "The H2 lever. Own the stock and buyer loyalty stops mattering. Log every responsive seller to stock.json via Max. Score: 50 calls, target 3 new sellers, 1 with signed form/access control.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 1,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 7,
+      "top3": false,
       "id": "a3659503-0328-47a4-a5b7-1a176eb671eb",
       "title": "Batch film 4 content clips at this week's viewings",
       "area": "Content",
       "priority": "medium",
-      "difficulty": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": "2026-07-18",
       "created": "2026-07-13",
       "notes": "Camera comes to work: 60-90s per unit while already on site. Feeds the 'run the numbers' series without a dedicated filming day.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 1,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 3,
+      "top3": false,
       "id": "6cc26453-2f57-4eea-825b-b076ec22e0c4",
       "title": "Book Saturday viewing stack - 6+ viewings",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": "2026-07-16",
       "created": "2026-07-13",
       "notes": "The 4-Jul format rebuilt the whole book in one day. Repeat it: stack Saturday back-to-back, film clips at each unit while there.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 1,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "b5215b7c-fb1e-4b84-8389-7c6db2b88751",
       "title": "OFFER WEEK: push every warm buyer to a number",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": "2026-07-15",
       "created": "2026-07-13",
       "notes": "Misha (Ronnie's 2.6), Hania (later-cluster SR), Ari (vs Amman J304), Akash (feed Sameer M107), ET (Villanova), Georgia (vacant list). No more nurturing - ask each for an offer or a no.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 1,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 9,
+      "top3": false,
       "id": "85046f0a-27e2-4655-9bdf-6f28b67e2da4",
       "title": "300 Calls",
       "area": "Real Estate",
@@ -146,11 +148,11 @@
       "created": "2026-07-08",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 2
+      "snoozedUntil": null
     },
     {
+      "order": 5,
+      "top3": false,
       "id": "758a6f62-a5f5-4272-9962-cc86432c5dba",
       "title": "Plan Calls",
       "area": "Real Estate",
@@ -161,11 +163,11 @@
       "created": "2026-07-08",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "621e8f03-139e-4cd3-a137-53fffe2a60bf",
       "title": "Messages",
       "area": "Real Estate",
@@ -176,11 +178,11 @@
       "created": "2026-07-08",
       "notes": null,
       "completed": "2026-07-08",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "8d06eea2-3616-4afb-84d6-18a02f8c066a",
       "title": "Rmail Janine",
       "area": "Real Estate",
@@ -191,12 +193,10 @@
       "created": "2026-07-08",
       "notes": null,
       "completed": "2026-07-08",
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "snoozedUntil": null
     },
     {
-      "order": 3,
+      "order": 10,
       "top3": false,
       "id": "79ebe634-0063-455f-b5fc-08b77554c336",
       "title": "LI Post",
@@ -316,7 +316,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 1,
+      "order": 2,
       "top3": false,
       "id": "07faba04-9a7f-4f9b-a1fa-5fbebb7a44d3",
       "title": "Francis Report",
@@ -324,14 +324,14 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "hard",
-      "due": "2026-07-14",
+      "due": "2026-07-19",
       "created": "2026-07-06",
       "notes": null,
       "completed": null,
       "snoozedUntil": null
     },
     {
-      "order": 2,
+      "order": 8,
       "top3": false,
       "id": "2e69ad04-ffc5-49f3-b24a-f6c8ad51ee32",
       "title": "DLD Report Link Sent to Me - Daily / Weekly",
@@ -421,7 +421,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 1,
+      "order": 6,
       "top3": false,
       "id": "3c0a13b1-017d-42f5-ab4f-ff34c9a8a59b",
       "title": "Watch 3 Viral video",
@@ -1021,7 +1021,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 8,
+      "order": 12,
       "top3": false,
       "id": "f9236f36-b394-49a7-bffc-ccb2d5e265b3",
       "title": "Start TikTok",
@@ -1291,64 +1291,64 @@
       "snoozedUntil": null
     },
     {
+      "order": 60,
+      "top3": false,
       "id": "e8275e41-05f3-40e5-87a0-b1c0fa0212ad",
       "title": "Send ET Villanova 3-bed options (~2.6M)",
       "area": "Real Estate",
       "priority": "medium",
-      "difficulty": "easy",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-07-14",
       "created": "2026-07-08",
       "notes": "Lagoons didn't fit (space). Villanova 3bd = cheapest route on their budget. Gauge readiness off the response.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 60,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 61,
+      "top3": false,
       "id": "8ca126f2-db0b-490e-b4b6-4d19e559d848",
       "title": "Hania: send later-cluster single row options (~2.6M cash)",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "easy",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-07-14",
       "created": "2026-07-08",
       "notes": "Cash, good buyers, stay on top. Costa SR ruled out at 2.6M - show what SR their money DOES buy in later-handover clusters.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 61,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 62,
+      "top3": false,
       "id": "7f95abfa-5bf7-4fea-adbd-ff4dbe2105e0",
       "title": "Georgia: vacant-on-transfer shortlist (Costa SR / park 4bd / 5bd SR) - Sept move-in",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "easy",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-07-14",
       "created": "2026-07-08",
       "notes": "September move-in = only vacant or quick-transfer stock qualifies. Pin down budget when sending.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 62,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 63,
+      "top3": false,
       "id": "ee45eae7-a396-4d94-bef7-e1956a05ace9",
       "title": "Line up Malta unit + a 5-bed for Hisham(?) viewing next week",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "easy",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-07-14",
       "created": "2026-07-08",
       "notes": "Top buyers, pre-approved. Book both viewings for their return next week. Tarun's Malta shortlist overlaps - same units serve both.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 63,
-      "top3": false
+      "snoozedUntil": null
     }
   ],
   "units": [],
