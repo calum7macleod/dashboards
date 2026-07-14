@@ -428,31 +428,6 @@
     "id": "adam-11"
   },
   {
-    "date": "2026-06-05",
-    "status": "Active",
-    "buyer": "Baljit",
-    "source": "Unknown",
-    "colleague": "Self",
-    "area": "Lagoons",
-    "cluster1": "Various",
-    "cluster2": "",
-    "cluster3": "",
-    "matchedUnit": "",
-    "beds": 4,
-    "finance": "Mortgage",
-    "budget": 2600000,
-    "needed": 2600000,
-    "diff": 0,
-    "responsiveness": 5,
-    "relationship": 4,
-    "unitSupply": 5,
-    "feeling": 5,
-    "score": 0.87,
-    "notes": "4 bed any cluster, 2.6M. Mortgage PRE-APPROVED. HIGH — ready to go.",
-    "order": 18,
-    "id": "baljit-20"
-  },
-  {
     "date": "2026-03-31",
     "status": "Active",
     "buyer": "Tony & Niki",
@@ -474,7 +449,7 @@
     "feeling": 3,
     "score": 0.68,
     "notes": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
-    "order": 19,
+    "order": 18,
     "id": "tony-niki-1"
   },
   {
@@ -500,7 +475,7 @@
     "score": 0.4,
     "notes": "5 bed, 3.3M. Unlikely to convert - keep warm, low effort.",
     "id": "jonathan-37",
-    "order": 20
+    "order": 19
   },
   {
     "date": "2026-05-04",
@@ -524,7 +499,7 @@
     "feeling": 5,
     "score": 0.6,
     "notes": "Offplan. Tara Park 3 bed, 3.8M. Cash payment plan. Close to buying. May also consider townhouses.",
-    "order": 21,
+    "order": 20,
     "id": "sanjay-5"
   },
   {
@@ -550,7 +525,7 @@
     "score": 0.4,
     "notes": "Wants Costa at 2.6M. Sent Ronnie's (asking 2.65M) to offer 2.6M. Dealing with other agents - low quality, needs consistent follow-up.",
     "id": "misha-33",
-    "order": 22
+    "order": 21
   },
   {
     "date": "2026-07-08",
@@ -575,7 +550,7 @@
     "score": 0.45,
     "notes": "Viewed Lagoons 8 Jul - 4bd gardens too small, 3bd too tight. Readiness unclear. Pivot: Villanova 3-bed (cheapest fit at ~2.6M). Options going Monday.",
     "id": "et-18",
-    "order": 23
+    "order": 22
   },
   {
     "date": "2026-06-27",
@@ -600,7 +575,7 @@
     "score": 0.7,
     "notes": "4 bed Santorini, 2.65M. Vastu compliant required. | 14 Jul: pivoted - wants DAMAC Islands OFF-PLAN now.",
     "id": "shiri-27",
-    "order": 24,
+    "order": 23,
     "segment": "Offplan"
   }
 ]
