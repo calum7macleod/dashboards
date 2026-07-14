@@ -41,6 +41,9 @@ Last updated: 2026-07-06 (CC refresh)
 - People problem (13 Jul): Calum worn down by cut-out culture in Lagoons secondary. Fix is structural not emotional: signed agency agreements, control access via motivated sellers (Amman, Sameer), weight toward off-plan/launch where commission is developer-side and cut-proof, bigger clients (SB, Ahmed) cut less. Watch his energy on this.
 - July payment calendar: AQUA DD 9th, AmEx 538 on 11th, Barclaycard min 20th, Santander DD 21st, M&S 23rd, Tesco 29th. THREE cards over limit (Santander, Virgin, HSBC)
 
+## Segments
+- Buyer segments in play: "Offplan" (Ashna, Muaz...), "Distressed" (NEW 14 Jul - Mukesh, +91 84474 00100, owns Malta, gets ANY distressed deal on sight). When the pipeline-stages build happens, render segment sections on the Buyers tab. Distressed feed sources: call-outs hitting overdue-instalment sellers, deadline sellers (Sameer-type), bank cases.
+
 ## Improvement backlog (Max-suggested, Calum-approved direction)
 1. Buyer pipeline stages on Buyers tab (New/Early > Engaged > Viewing > Negotiating > Closing) + Offplan section - task exists, segment field seeded
 2. Video/posting tracker (where each video is posted: IG/TikTok/YouTube) - task exists
