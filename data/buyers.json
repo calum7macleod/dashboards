@@ -226,6 +226,31 @@
     "order": 9
   },
   {
+    "date": "2026-07-14",
+    "status": "Active",
+    "buyer": "Sha",
+    "source": "Unknown",
+    "colleague": "Self",
+    "area": "Lagoons",
+    "cluster1": "Santorini",
+    "cluster2": "",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": "3-4",
+    "finance": "Mortgage",
+    "budget": 2700000,
+    "needed": 2700000,
+    "diff": 0,
+    "responsiveness": 3,
+    "relationship": 3,
+    "unitSupply": 4,
+    "feeling": 3,
+    "score": 0.75,
+    "notes": "2.7M, 3 or 4 bed, Santorini. Mortgage.",
+    "id": "sha-25",
+    "order": 10
+  },
+  {
     "date": "2026-07-04",
     "status": "Active",
     "buyer": "SB",
@@ -248,7 +273,7 @@
     "score": 1.0,
     "notes": "Best of the day 4 Jul. Loaded - already owns off-plans. CASH. 5 bed Portofino first choice, open to a V3. Commutes to London for the work week, back Fri/Sat morning - weekend viewings only. Sound, and he trusts me. Priority #1.",
     "id": "sb-37",
-    "order": 10
+    "order": 11
   },
   {
     "date": "2026-07-07",
@@ -273,7 +298,7 @@
     "score": 0.85,
     "notes": "4 bed Costa, 2.5M, mortgage. INVESTOR - buying to rent out. PLAY: pivot him to Tara Phase 2/3 off-plan (Calum invested personally - yield + payment plan story beats a 2.5M secondary for a landlord).",
     "id": "amit-29",
-    "order": 11
+    "order": 12
   },
   {
     "date": "2026-06-16",
@@ -298,7 +323,7 @@
     "score": 0.9,
     "notes": "Met 4 Jul - really sound. French, newborn. 5 bed single row, CASH, 3.3M. Costa Brava preferred but budget won't reach. Can wait. Does NOT want clusters next to the apartments. Send options and narrow down.",
     "id": "ari-26",
-    "order": 12
+    "order": 13
   },
   {
     "date": "2026-07-04",
@@ -324,7 +349,7 @@
     "score": 0.85,
     "notes": "Strong cash position, likely no mortgage pre-approval. Wants options: DAMAC Islands (off-plan) or Lagoons. Send options ASAP.",
     "id": "ash-32",
-    "order": 13
+    "order": 14
   },
   {
     "date": "2026-06-27",
@@ -349,7 +374,7 @@
     "score": 0.7,
     "notes": "4 bed Santorini, 2.65M. Vastu compliant required.",
     "id": "shiri-27",
-    "order": 14
+    "order": 15
   },
   {
     "date": "2026-06-27",
@@ -375,7 +400,7 @@
     "score": 0.72,
     "notes": "Off-plan buyer.",
     "id": "muaz-29",
-    "order": 15
+    "order": 16
   },
   {
     "date": "2026-06-27",
@@ -400,7 +425,7 @@
     "score": 0.7,
     "notes": "4 bed Costa Brava, 2.6M, mortgage.",
     "id": "charul-26",
-    "order": 16
+    "order": 17
   },
   {
     "date": "2026-06-16",
@@ -425,7 +450,7 @@
     "score": 0.9,
     "notes": "4 bed Later cluster, 2.35M cash. Good buyer. HIGH.",
     "id": "karimulla-25",
-    "order": 17
+    "order": 18
   },
   {
     "date": "2026-05-25",
@@ -449,7 +474,7 @@
     "feeling": 5,
     "score": 0.99,
     "notes": "Now wants Town Square. Previously Costa SR. Mortgage 3.1M.",
-    "order": 18,
+    "order": 19,
     "id": "ibrahim-9"
   },
   {
@@ -474,7 +499,7 @@
     "feeling": 5,
     "score": 0.94,
     "notes": "Now wants single row Later cluster. Cash. 4M budget.",
-    "order": 19,
+    "order": 20,
     "id": "adam-11"
   },
   {
@@ -499,7 +524,7 @@
     "feeling": 5,
     "score": 0.87,
     "notes": "4 bed any cluster, 2.6M. Mortgage PRE-APPROVED. HIGH — ready to go.",
-    "order": 20,
+    "order": 21,
     "id": "baljit-20"
   },
   {
@@ -524,7 +549,7 @@
     "feeling": 3,
     "score": 0.68,
     "notes": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
-    "order": 21,
+    "order": 22,
     "id": "tony-niki-1"
   },
   {
@@ -550,7 +575,7 @@
     "score": 0.4,
     "notes": "5 bed, 3.3M. Unlikely to convert - keep warm, low effort.",
     "id": "jonathan-37",
-    "order": 22
+    "order": 23
   },
   {
     "date": "2026-05-04",
@@ -574,7 +599,7 @@
     "feeling": 5,
     "score": 0.6,
     "notes": "Offplan. Tara Park 3 bed, 3.8M. Cash payment plan. Close to buying. May also consider townhouses.",
-    "order": 23,
+    "order": 24,
     "id": "sanjay-5"
   },
   {
@@ -600,7 +625,7 @@
     "score": 0.4,
     "notes": "Wants Costa at 2.6M. Sent Ronnie's (asking 2.65M) to offer 2.6M. Dealing with other agents - low quality, needs consistent follow-up.",
     "id": "misha-33",
-    "order": 24
+    "order": 25
   },
   {
     "date": "2026-07-08",
@@ -625,6 +650,6 @@
     "score": 0.45,
     "notes": "Viewed Lagoons 8 Jul - 4bd gardens too small, 3bd too tight. Readiness unclear. Pivot: Villanova 3-bed (cheapest fit at ~2.6M). Options going Monday.",
     "id": "et-18",
-    "order": 25
+    "order": 26
   }
 ]
