@@ -41,6 +41,11 @@ Last updated: 2026-07-06 (CC refresh)
 - People problem (13 Jul): Calum worn down by cut-out culture in Lagoons secondary. Fix is structural not emotional: signed agency agreements, control access via motivated sellers (Amman, Sameer), weight toward off-plan/launch where commission is developer-side and cut-proof, bigger clients (SB, Ahmed) cut less. Watch his energy on this.
 - July payment calendar: AQUA DD 9th, AmEx 538 on 11th, Barclaycard min 20th, Santander DD 21st, M&S 23rd, Tesco 29th. THREE cards over limit (Santander, Virgin, HSBC)
 
+## BEAT THE AGENTS (14 Jul - the compete frame weaponised)
+- New tracking convention: when Calum mentions competing agents on any buyer/seller, Max logs it in that record's notes as "VS: <agent/agency>" and tallies wins. Metric = TAKEN counter: clients won off other agents (celebrate each like a skull in Debt Quest).
+- The win playbook vs other agents: 1) SPEED - options to a shared buyer within 2 hours of any contact, first always. 2) THE DECK STANDARD - Bashayer-level prep makes other agents look casual. 3) ACCESS - own the stock, host don't compete. 4) HONEST ODDS - percentages and straight talk build trust rats can't fake. 5) CADENCE - day 1/3/7 follow-up, never lets a shared client go quiet.
+- Max asks "who else is on this?" when new buyers/sellers get logged.
+
 ## Segments
 - Buyer segments in play: "Offplan" (Ashna, Muaz...), "Distressed" (NEW 14 Jul - Mukesh, +91 84474 00100, owns Malta, gets ANY distressed deal on sight). When the pipeline-stages build happens, render segment sections on the Buyers tab. Distressed feed sources: call-outs hitting overdue-instalment sellers, deadline sellers (Sameer-type), bank cases.
 
