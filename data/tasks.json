@@ -76,7 +76,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 3,
+      "order": 1,
       "top3": false,
       "id": "ef63401e-7554-4821-aa7a-f2e407c662c9",
       "title": "CALL OUTS: 10/day for stock - 50 this week",
@@ -84,7 +84,7 @@
       "priority": "high",
       "status": "active",
       "difficulty": "hard",
-      "due": "2026-07-17",
+      "due": "2026-07-19",
       "created": "2026-07-13",
       "notes": "The H2 lever. Own the stock and buyer loyalty stops mattering. Log every responsive seller to stock.json via Max. Score: 50 calls, target 3 new sellers, 1 with signed form/access control.",
       "completed": null,
@@ -106,7 +106,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 1,
+      "order": 2,
       "top3": false,
       "id": "6cc26453-2f57-4eea-825b-b076ec22e0c4",
       "title": "Book Saturday viewing stack - 6+ viewings",
@@ -316,7 +316,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 2,
+      "order": 3,
       "top3": false,
       "id": "07faba04-9a7f-4f9b-a1fa-5fbebb7a44d3",
       "title": "Francis Report",
