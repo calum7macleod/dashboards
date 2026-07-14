@@ -26,6 +26,7 @@ Last updated: 2026-07-06 (CC refresh)
 - Big Monday 6 Jul follow-up stack: Ashna, Ari, Misha, Sarah, Nigel + SB weekend booking
 
 ## Open threads / flags
+- LIVE DEAL WOBBLE (13 Jul): Constantine x Mohamed, P141 Malta - went wrong, recoverable per Calum, recovery in progress 14 Jul. Ask for status at check-ins until closed or dead. This was the deal behind the focus-1 journal day.
 - Big cleanup 7 Jul: 10 archived (Nad/Zenam/Wanderlust bought elsewhere). Jonathan downgraded (5bd 3.3M, unlikely)
 - Duplicate-Ahmed merge done 4 Jul; if a separate Costa Ahmed (4bd 2.6M) resurfaces, restore him
 - "Era vs Ari" spelling never confirmed
