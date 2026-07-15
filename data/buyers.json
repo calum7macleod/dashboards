@@ -50,6 +50,31 @@
     "order": 2
   },
   {
+    "date": "2026-07-15",
+    "status": "Active",
+    "buyer": "Rana",
+    "source": "Unknown",
+    "colleague": "Self",
+    "area": "Lagoons",
+    "cluster1": "Malta",
+    "cluster2": "",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": 5,
+    "finance": "Mortgage",
+    "budget": 4500000,
+    "needed": 4500000,
+    "diff": 0,
+    "responsiveness": 4,
+    "relationship": 3,
+    "unitSupply": 4,
+    "feeling": 4,
+    "score": 0.9,
+    "notes": "5 bed Malta - END corner, single row. 4.5M, mortgage. Premium spec, proper budget.",
+    "id": "rana-23",
+    "order": 3
+  },
+  {
     "date": "2026-07-08",
     "status": "Active",
     "buyer": "Akash",
@@ -72,7 +97,7 @@
     "score": 0.9,
     "notes": "Really good buyers. Between a 4 and a 5 bed. Mortgage progressing - see where it gets to. NOT in a rush - happy to wait on the right one for a better price. Patient-money profile: feed them motivated sellers.",
     "id": "akash-22",
-    "order": 3
+    "order": 4
   },
   {
     "date": "2026-07-04",
@@ -97,7 +122,7 @@
     "score": 0.95,
     "notes": "Canadian - really good. Viewed Costa 4bd 4 Jul, now wants a V3. 7M target, Som says 14M behind them. V3 viewing Tue 7 Jul + arrange more V3s early next week. Sound, engaged.",
     "id": "ahmed-v3-35",
-    "order": 4
+    "order": 5
   },
   {
     "date": "2026-07-14",
@@ -122,7 +147,7 @@
     "score": 0.85,
     "notes": "2.6M, mortgage. Wants to be near the lagoon.",
     "id": "ashraf-23",
-    "order": 5
+    "order": 6
   },
   {
     "date": "2026-07-04",
@@ -147,7 +172,7 @@
     "score": 0.85,
     "notes": "Met 4 Jul - went well, got on great. 3 or 4 bed SINGLE ROW, Malta or Costa Brava. Budget 2.6M (from calendar), mortgage. Good chance - stay close.",
     "id": "sarah-36",
-    "order": 6
+    "order": 7
   },
   {
     "date": "2026-07-08",
@@ -172,7 +197,7 @@
     "score": 0.85,
     "notes": "CASH. Wants Costa Brava single row at 2.6M - told them straight that's not achievable; pivoting to later-handover clusters where SR fits the budget. Good buyers - stay on top of them.",
     "id": "hania-20",
-    "order": 7
+    "order": 8
   },
   {
     "date": "2026-07-14",
@@ -198,7 +223,7 @@
     "score": 0.8,
     "notes": "DISTRESSED BUYER. Owns in Malta already. Phone +91 84474 00100. STANDING ORDER: send him ANY distressed deal that comes through - overdue instalments, forced sales, deadline sellers. Fast-action profile.",
     "id": "mukesh-24",
-    "order": 8
+    "order": 9
   },
   {
     "date": "2026-07-14",
@@ -223,7 +248,7 @@
     "score": 0.75,
     "notes": "2.7M, 3 or 4 bed, Santorini. Mortgage.",
     "id": "sha-25",
-    "order": 9
+    "order": 10
   },
   {
     "date": "2026-07-04",
@@ -248,7 +273,7 @@
     "score": 1.0,
     "notes": "Best of the day 4 Jul. Loaded - already owns off-plans. CASH. 5 bed Portofino first choice, open to a V3. Commutes to London for the work week, back Fri/Sat morning - weekend viewings only. Sound, and he trusts me. Priority #1.",
     "id": "sb-37",
-    "order": 10
+    "order": 11
   },
   {
     "date": "2026-07-07",
@@ -273,7 +298,7 @@
     "score": 0.85,
     "notes": "4 bed Costa, 2.5M, mortgage. INVESTOR - buying to rent out. PLAY: pivot him to Tara Phase 2/3 off-plan (Calum invested personally - yield + payment plan story beats a 2.5M secondary for a landlord).",
     "id": "amit-29",
-    "order": 11
+    "order": 12
   },
   {
     "date": "2026-06-16",
@@ -298,7 +323,7 @@
     "score": 0.9,
     "notes": "Met 4 Jul - really sound. French, newborn. 5 bed single row, CASH, 3.3M. Costa Brava preferred but budget won't reach. Can wait. Does NOT want clusters next to the apartments. Send options and narrow down.",
     "id": "ari-26",
-    "order": 12
+    "order": 13
   },
   {
     "date": "2026-07-04",
@@ -324,7 +349,7 @@
     "score": 0.85,
     "notes": "Strong cash position, likely no mortgage pre-approval. Wants options: DAMAC Islands (off-plan) or Lagoons. Send options ASAP.",
     "id": "ash-32",
-    "order": 13
+    "order": 14
   },
   {
     "date": "2026-06-27",
@@ -350,7 +375,7 @@
     "score": 0.72,
     "notes": "Off-plan buyer.",
     "id": "muaz-29",
-    "order": 14
+    "order": 15
   },
   {
     "date": "2026-06-16",
@@ -375,7 +400,7 @@
     "score": 0.9,
     "notes": "4 bed Later cluster, 2.35M cash. Good buyer. HIGH.",
     "id": "karimulla-25",
-    "order": 15
+    "order": 16
   },
   {
     "date": "2026-05-25",
@@ -399,7 +424,7 @@
     "feeling": 5,
     "score": 0.99,
     "notes": "Now wants Town Square. Previously Costa SR. Mortgage 3.1M.",
-    "order": 16,
+    "order": 17,
     "id": "ibrahim-9"
   },
   {
@@ -424,7 +449,7 @@
     "feeling": 5,
     "score": 0.94,
     "notes": "Now wants single row Later cluster. Cash. 4M budget.",
-    "order": 17,
+    "order": 18,
     "id": "adam-11"
   },
   {
@@ -449,7 +474,7 @@
     "feeling": 3,
     "score": 0.68,
     "notes": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
-    "order": 18,
+    "order": 19,
     "id": "tony-niki-1"
   },
   {
@@ -475,7 +500,7 @@
     "score": 0.4,
     "notes": "5 bed, 3.3M. Unlikely to convert - keep warm, low effort.",
     "id": "jonathan-37",
-    "order": 19
+    "order": 20
   },
   {
     "date": "2026-05-04",
@@ -499,7 +524,7 @@
     "feeling": 5,
     "score": 0.6,
     "notes": "Offplan. Tara Park 3 bed, 3.8M. Cash payment plan. Close to buying. May also consider townhouses.",
-    "order": 20,
+    "order": 21,
     "id": "sanjay-5"
   },
   {
@@ -525,7 +550,7 @@
     "score": 0.4,
     "notes": "Wants Costa at 2.6M. Sent Ronnie's (asking 2.65M) to offer 2.6M. Dealing with other agents - low quality, needs consistent follow-up.",
     "id": "misha-33",
-    "order": 21
+    "order": 22
   },
   {
     "date": "2026-07-08",
@@ -550,7 +575,7 @@
     "score": 0.45,
     "notes": "Viewed Lagoons 8 Jul - 4bd gardens too small, 3bd too tight. Readiness unclear. Pivot: Villanova 3-bed (cheapest fit at ~2.6M). Options going Monday.",
     "id": "et-18",
-    "order": 22
+    "order": 23
   },
   {
     "date": "2026-06-27",
@@ -575,7 +600,7 @@
     "score": 0.7,
     "notes": "4 bed Santorini, 2.65M. Vastu compliant required. | 14 Jul: pivoted - wants DAMAC Islands OFF-PLAN now.",
     "id": "shiri-27",
-    "order": 23,
+    "order": 24,
     "segment": "Offplan"
   }
 ]
