@@ -91,7 +91,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 4,
+      "order": 5,
       "top3": false,
       "id": "a3659503-0328-47a4-a5b7-1a176eb671eb",
       "title": "Batch film 4 content clips at this week's viewings",
@@ -136,7 +136,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 6,
+      "order": 7,
       "top3": false,
       "id": "85046f0a-27e2-4655-9bdf-6f28b67e2da4",
       "title": "300 Calls",
@@ -316,7 +316,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 2,
+      "order": 3,
       "top3": false,
       "id": "07faba04-9a7f-4f9b-a1fa-5fbebb7a44d3",
       "title": "Francis Report",
@@ -331,7 +331,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 5,
+      "order": 6,
       "top3": false,
       "id": "2e69ad04-ffc5-49f3-b24a-f6c8ad51ee32",
       "title": "DLD Report Link Sent to Me - Daily / Weekly",
@@ -421,7 +421,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 3,
+      "order": 4,
       "top3": false,
       "id": "3c0a13b1-017d-42f5-ab4f-ff34c9a8a59b",
       "title": "Watch 3 Viral video",
@@ -1021,7 +1021,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 7,
+      "order": 8,
       "top3": false,
       "id": "f9236f36-b394-49a7-bffc-ccb2d5e265b3",
       "title": "Start TikTok",
@@ -1141,7 +1141,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 4,
+      "order": 2,
       "top3": false,
       "id": "b68353cc-a627-4cbf-b174-d1fa33a48c6d",
       "title": "Buyer pipeline segmentation (improvement day)",
@@ -1149,7 +1149,7 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "hard",
-      "due": "2026-07-26",
+      "due": "2026-07-19",
       "created": "2026-06-27",
       "notes": "IMPROVEMENT DAY. Section buyers into pipeline stages instead of one top-to-bottom order. Currently pushing early/new buyers to the top as a proxy for stage. Want proper stages (e.g. New/Early > Engaged > Viewing > Negotiating > Closing) with ordering within each stage.",
       "completed": null,
