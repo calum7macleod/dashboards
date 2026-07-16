@@ -1,6 +1,21 @@
 {
   "tasks": [
     {
+      "id": "e45d15bc-6805-472a-b79f-4850a86bedbe",
+      "title": "Write one more BIG video script",
+      "area": "Content",
+      "priority": "high",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-16",
+      "created": "2026-07-16",
+      "notes": "One flagship script today. Max can draft from a topic - say the word.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 4,
+      "top3": false
+    },
+    {
       "id": "206a5c7b-ba78-45a1-83e1-8b60f0ba3cb2",
       "title": "Call loads - buyers, sellers, call-outs",
       "area": "Real Estate",
