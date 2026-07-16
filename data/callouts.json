@@ -1,7 +1,19 @@
 {
- "target": 1000,
- "start": "2026-07-16",
- "end": "2026-07-31",
- "banks": [],
- "outcomes": []
+  "target": 1000,
+  "start": "2026-07-16",
+  "end": "2026-07-31",
+  "banks": [
+    {
+      "date": "2026-07-17",
+      "calls": 200,
+      "note": "Costa Brava 1 swept completely (~300 numbers). Numbers heavily worked by other agents."
+    }
+  ],
+  "outcomes": [
+    {
+      "date": "2026-07-17",
+      "type": "LISTING",
+      "detail": "J444 Costa Brava - 5 bed single row at 4.05M NET, fees on top. Viewing + NOC to arrange."
+    }
+  ]
 }
