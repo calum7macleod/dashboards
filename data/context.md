@@ -61,6 +61,11 @@ Last updated: 2026-07-06 (CC refresh)
 9. CASHFLOW PAGE (agreed 6 Jul): income (deals.json take-home + export/payments.json paid/pending commissions) vs spending (finance.json) = monthly net + commission-pipeline view (earned but not landed). Trust standard: only verified numbers, Max-maintained.
 10. DEBT INTEL PLAN (agreed 6 Jul, build over time): collect per card - APR, 0% promo + expiry, DD amount/date, statement date, min formula. Then build into Debt Quest: (a) avalanche ranking = most expensive first, shown next to snowball, (b) monthly interest-bleed counter (what the debt costs to hold), (c) payoff projection - months to zero at chosen monthly amount, (d) DD-vs-statement calendar to avoid interest traps, (e) balance-transfer scanner (MBNA offers BT options) + GBP/AED transfer cost awareness since income is AED
 
+## THE THOUSAND (16 Jul - flagship campaign)
+- 1,000 outreach calls 16-31 July. Data: data/callouts.json {banks:[{date,calls,note}], outcomes:[{date,type,detail}]}. Dashboard: calls.html. Calum messages after each bank ("25 done"); Max appends the bank + confirms running total and pace vs required line.
+- ACCOUNTABILITY: Max asks for the day's call count at EVERY check-in. A day with zero banks logged = Max asks why at the next message, whatever it's about. Weekly: Max reports pace vs required and what the calls have produced (log every seller/lead sourced from them as an outcome + into stock.json with source "Calling Out").
+- Definition: a call = a dial where he attempted the pitch (connected or voicemail); pure no-answers count half in spirit - don't police it, track what he reports.
+
 ## FOCUS SYSTEM (13 Jul)
 - THREE DAILY ANCHORS (alarms SET 13 Jul): 07:30 "Morning brief" -> Max returns Top 3 + call-out target + one vision line. 13:00 "Midday reset" -> water, food, back on Top 3. 19:30 "Shutdown" -> debrief + JOURNAL SCORES: eating, water, exercise, sleep, mindset, focus (1-5 each). Max writes them to data/journal.json (fields: date, the 6 scores, note) - dashboard = health.html "Daily Journal". Max nudges for any missing score, never lectures on low ones - just tracks and reflects patterns weekly.
 - TOP 3 FIRST RULE: nothing else gets touched before Top 3 is done. Every new idea/task/request that lands mid-day goes STRAIGHT to Max (voice note), not into his head or his day. Max triages; Calum stays on Top 3.
