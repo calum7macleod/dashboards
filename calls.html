@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Thousand - Calum MacLeod</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Calibri,'Segoe UI',sans-serif;background:#152A1F;color:#F5EDE0;min-height:100vh}
+.header{background:linear-gradient(180deg,#1E3D2F,#152A1F);padding:20px 28px 14px}
+.eyebrow{font-size:10px;letter-spacing:.28em;color:#C9A84C;font-weight:700}
+h1{font-family:'Palatino Linotype',Palatino,Georgia,serif;font-weight:400;font-size:28px;margin-top:2px}
+.sub{color:#8FA898;font-size:12px;margin-top:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 24px 50px}
+.hero{position:relative;text-align:center;padding:28px 18px 24px;background:radial-gradient(ellipse at 50% -20%,#274D3A 0%,#152A1F 70%);border:1px solid #2E5A40;border-radius:18px;margin-bottom:14px;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 130%,rgba(201,168,76,.13),transparent 60%);pointer-events:none}
+.h-eyebrow{font-size:10px;letter-spacing:.3em;color:#C9A84C;font-weight:700}
+.h-n{font-family:'Palatino Linotype',Palatino,serif;font-size:64px;color:#E8C96B;line-height:1.05;margin:6px 0 0;text-shadow:0 0 34px rgba(201,168,76,.35)}
+.h-of{font-size:12px;letter-spacing:.2em;color:#8FA898}
+.climb{height:22px;background:#0F211A;border:1px solid #2E5A40;border-radius:12px;overflow:hidden;margin:18px auto 6px;max-width:760px;position:relative;z-index:1}
+.climb-fill{height:100%;background:linear-gradient(90deg,#8a6f2a,#C9A84C,#E8C96B);background-size:200% 100%;animation:sh 3s linear infinite;border-radius:12px;transition:width .8s}
+@keyframes sh{0%{background-position:0 0}100%{background-position:200% 0}}
+.mile{display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap;position:relative;z-index:1}
+.dm{width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:14px;border-radius:8px;border:1px solid #2E5A40;color:#4E6B58}
+.dm.gold{border-color:#C9A84C;color:#E8C96B;background:rgba(201,168,76,.12);box-shadow:0 0 10px rgba(201,168,76,.3)}
+.h-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px;position:relative;z-index:1}
+.h-stat{background:#1E3D2F;border:1px solid #2E5A40;border-radius:12px;padding:10px}
+.h-stat .k{font-size:9px;letter-spacing:.16em;color:#8FA898;font-weight:700}
+.h-stat .v{font-family:'Palatino Linotype',Palatino,serif;font-size:22px;color:#F5EDE0;margin-top:2px}
+.h-stat .s{font-size:10px;color:#8FA898;margin-top:1px}
+.card{background:#1E3D2F;border:1px solid #2E5A40;border-radius:16px;padding:18px;margin-bottom:14px}
+.label{font-size:11px;letter-spacing:.14em;color:#C9A84C;font-weight:700;margin-bottom:12px}
+.days{display:flex;align-items:flex-end;gap:5px;height:120px}
+.day{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px}
+.day .bar{width:100%;background:linear-gradient(180deg,#E8C96B,#8a6f2a);border-radius:4px 4px 0 0;min-height:2px}
+.day .d{font-size:8.5px;color:#8FA898}
+.day .n{font-size:10px;color:#E8C96B;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{color:#C9A84C;text-align:left;font-size:10px;letter-spacing:.1em;padding:6px 8px;border-bottom:1px solid #2E5A40}
+td{padding:7px 8px;border-bottom:1px solid #23422F}
+.empty{color:#8FA898;font-size:13px;padding:8px 0}
+.warn{color:#f28b82}.good{color:#8FBF9F}
+@media(max-width:760px){.h-strip{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="header">
+ <div class="eyebrow">CALUM MACLEOD &nbsp;◆&nbsp; COMMAND CENTRE</div>
+ <h1>The Thousand</h1>
+ <div class="sub">1,000 outreach calls · 16 - 31 July · tracked with Max, bank by bank</div>
+</div>
+<div class="wrap">
+ <div class="hero">
+  <div class="h-eyebrow">CALLS MADE</div>
+  <div class="h-n" id="h-n">0</div>
+  <div class="h-of">OF 1,000</div>
+  <div class="climb"><div class="climb-fill" id="climb" style="width:0%"></div></div>
+  <div class="mile" id="mile"></div>
+  <div class="h-strip">
+   <div class="h-stat"><div class="k">TODAY</div><div class="v" id="s-today">0</div><div class="s">calls logged</div></div>
+   <div class="h-stat"><div class="k">PACE NEEDED</div><div class="v" id="s-need">-</div><div class="s">per day from here</div></div>
+   <div class="h-stat"><div class="k">VS TARGET PACE</div><div class="v" id="s-vs">-</div><div class="s" id="s-vs-sub">on required line</div></div>
+   <div class="h-stat"><div class="k">DAYS LEFT</div><div class="v" id="s-days">-</div><div class="s">to 31 July</div></div>
+  </div>
+ </div>
+ <div class="card"><div class="label">◆ CALLS PER DAY</div><div class="days" id="days"></div></div>
+ <div class="card"><div class="label">◆ WHAT THE THOUSAND PRODUCED</div><div id="outcomes"><div class="empty">Sellers, leads and deals sourced from these calls land here - tell Max as they happen.</div></div></div>
+ <div class="card"><div class="label">◆ CALL BANKS</div><div id="banks"><div class="empty">Send Max a message after each bank: "25 calls done". First bank starts the engine.</div></div></div>
+</div>
+<script>
+fetch("data/callouts.json?t="+Date.now()).then(r=>r.json()).then(D=>{
+ const banks=D.banks||[], total=banks.reduce((s,b)=>s+(b.calls||0),0);
+ const el=id=>document.getElementById(id);
+ // count-up
+ let c=0; const step=Math.max(1,Math.round(total/60));
+ const iv=setInterval(()=>{c=Math.min(total,c+step);el("h-n").textContent=c.toLocaleString();if(c>=total)clearInterval(iv);},16);
+ el("climb").style.width=(total/D.target*100).toFixed(1)+"%";
+ // milestones every 100
+ let mh="";
+ for(let i=1;i<=10;i++) mh+='<div class="dm '+(total>=i*100?"gold":"")+'" title="'+(i*100)+'">◆</div>';
+ el("mile").innerHTML=mh;
+ // stats
+ const ds=d=>{const x=new Date(d);return x.getFullYear()+"-"+String(x.getMonth()+1).padStart(2,"0")+"-"+String(x.getDate()).padStart(2,"0")};
+ const today=ds(new Date());
+ el("s-today").textContent=banks.filter(b=>b.date===today).reduce((s,b)=>s+b.calls,0);
+ const end=new Date(D.end+"T23:59:59"); const now=new Date();
+ const daysLeft=Math.max(1,Math.ceil((end-now)/86400000));
+ el("s-days").textContent=daysLeft;
+ el("s-need").textContent=Math.ceil(Math.max(0,D.target-total)/daysLeft);
+ // vs required line: days elapsed since start (inclusive)
+ const start=new Date(D.start+"T00:00:00");
+ const totalDays=Math.round((end-start)/86400000)+1;
+ const elapsed=Math.min(totalDays,Math.max(1,Math.floor((now-start)/86400000)+1));
+ const reqByNow=Math.round(D.target*elapsed/totalDays);
+ const diff=total-reqByNow;
+ el("s-vs").textContent=(diff>=0?"+":"")+diff;
+ el("s-vs").className="v "+(diff>=0?"good":"warn");
+ el("s-vs-sub").textContent="required by now: "+reqByNow;
+ // per-day bars
+ const byDay={}; banks.forEach(b=>byDay[b.date]=(byDay[b.date]||0)+b.calls);
+ const dates=[]; for(let d=new Date(start);d<=end;d.setDate(d.getDate()+1)) dates.push(ds(d));
+ const mx=Math.max(72,...Object.values(byDay));
+ el("days").innerHTML=dates.map(d=>{
+  const n=byDay[d]||0;
+  return '<div class="day">'+(n?'<div class="n">'+n+'</div>':'')+'<div class="bar" style="height:'+(n/mx*95)+'%"></div><div class="d">'+d.slice(8)+'</div></div>';
+ }).join("");
+ // outcomes
+ if((D.outcomes||[]).length)
+  el("outcomes").innerHTML='<table><tr><th>DATE</th><th>TYPE</th><th>DETAIL</th></tr>'+D.outcomes.map(o=>'<tr><td>'+o.date.slice(5)+'</td><td>'+o.type+'</td><td>'+o.detail+'</td></tr>').join("")+'</table>';
+ // banks log
+ if(banks.length)
+  el("banks").innerHTML='<table><tr><th>DATE</th><th>CALLS</th><th>NOTE</th></tr>'+banks.slice().reverse().map(b=>'<tr><td>'+b.date.slice(5)+'</td><td><b>'+b.calls+'</b></td><td>'+(b.note||"")+'</td></tr>').join("")+'</table>';
+}).catch(e=>{});
+</script>
+</body>
+</html>
