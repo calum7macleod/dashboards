@@ -5,12 +5,32 @@
  },
  "pipeline": [
   {
-   "id": "c1",
-   "title": "Inside the Deal: The Bashayer launch was chaos. It was designed that way.",
+   "id": "c4",
+   "title": "Inside the Deal: 2 vs 18 - new residents per off-plan home, Dubai vs Abu Dhabi",
    "series": "Inside the Deal",
    "status": "scripted",
    "created": "2026-07-19",
    "postDate": "2026-07-19",
+   "hook": "In Dubai, two new residents arrive for every off-plan home sold. In Abu Dhabi it's eighteen.",
+   "metrics": {}
+  },
+  {
+   "id": "c5",
+   "title": "The Verdict: Yas Point - the closest homes to Disney Abu Dhabi",
+   "series": "The Verdict",
+   "status": "idea",
+   "created": "2026-07-19",
+   "postDate": "2026-07-20",
+   "hook": "Disney is coming to Abu Dhabi. These are the closest homes you can buy to it.",
+   "metrics": {}
+  },
+  {
+   "id": "c1",
+   "title": "Inside the Deal: The Bashayer launch was chaos. It was designed that way.",
+   "series": "Inside the Deal",
+   "status": "idea",
+   "created": "2026-07-19",
+   "postDate": null,
    "hook": "Modon just sold out another launch in hours. Everyone thinks it was chaos. It was a design.",
    "metrics": {}
   },
@@ -18,9 +38,9 @@
    "id": "c2",
    "title": "Inside the Deal: The 5-year visa mistake costing buyers 5 years",
    "series": "Inside the Deal",
-   "status": "scripted",
+   "status": "idea",
    "created": "2026-07-19",
-   "postDate": "2026-07-20",
+   "postDate": null,
    "hook": "My client was told he could only get a 5 year visa in Abu Dhabi. That advice was wrong by exactly 5 years.",
    "metrics": {}
   },
