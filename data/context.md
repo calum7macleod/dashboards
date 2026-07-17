@@ -37,6 +37,18 @@ Last updated: 2026-07-06 (CC refresh)
 - H2 OPERATING PLAN (agreed 13 Jul): mornings = money (3 buyer pushes + 2 seller touches before noon daily) - Wednesday = offer day (every warm buyer asked for a number) - Saturday = viewing stack day - launches are multipliers not the plan
 - REALITY CHECK 13 Jul: even off-plan isn't cut-proof - Modon offered Tony a unit DIRECT before launch. Nothing is fully safe; the durable edge is OWNING STOCK + being undeniably more useful than going direct (the Bashayer deck is the template for that).
 - CORE H2 LEVER (Calum's own call): CALL OUT FOR STOCK. Daily call-out block, 10/day, 50/week. Stock ownership beats buyer loyalty - rats can't cut out the man who holds the door. Max tracks weekly call-out count + content shipped in EVERY check-in.
+- CONTENT DOCTRINE (from Calum's viral course, absorbed 19 Jul - Max applies to every script):
+  1. Structure = HOOK (<=5s, opens a question loop, auditory+visual) / SUBSTANCE (75-80%, dense, edit-driven retention) / PAYOFF (closes the loop, end IMMEDIATELY after - our Verdict card IS the payoff).
+  2. Idea test before scripting - needs 2+ of: relatable to a BIG audience, raises questions, provokes reaction, seems unrealistic.
+  3. Watch time beats everything; "the algorithm is the audience". Staged rollout: followers first, then strangers.
+  4. Quality over quantity: 3/week great ideas beats daily filler. 12/month target aligned.
+  5. Steal like an artist: recreate proven viral ideas from any niche with his spin. Use IG professional dashboard -> Inspiration tab.
+  6. FORMAT COMMITMENT RULE (his historic weakness): stick to the chosen format 10-20 attempts before judging. No format-hopping.
+  7. Engagement: 10-15 min/day replying (him+Abby), mild honest controversy (his verdicts), comment-magnet CTAs, occasional deliberate tiny "mistake" sparingly.
+  8. Relatability hack: anchor content to famous/familiar things (Disney, known landmarks, pop culture -> Dubai property angles).
+  9. Posting: caption = second hook, 3-5 relevant hashtags, location tag, highest quality ON, translated captions ON, cover chosen for grid aesthetics only.
+  10. Shooting: arm's length back camera, eyes on top-third line, CLEAN THE LENS, bright window-style light - platforms promote bright contrasty video. IG rewards aesthetic; TikTok rewards raw - same video both platforms.
+  - HDR note: course says HDR OFF (for desktop-edit pipelines); Josh-look says HDR ON. Rule: FIELD clips edited light on phone = HDR ON; desktop/heavy-grade = HDR OFF. Test decides.
 - CONTENT HQ (built 19 Jul): content.html + data/content.json {targets, pipeline[{id,title,series,status: idea/scripted/filmed/posted, postDate, hook, metrics}], posted[]}. Target 12+/month, followers-per-post 40 (from 10). Max moves items through the pipeline as Calum reports, logs metrics ~48h after each post, weekly scoreboard report. Series: The Verdict / Inside the Deal / Skin in the Game. Posts Tue+Thu 6pm minimum. Old cadence note superseded.
 - Content cadence: batch-film at viewings, 2 posts/week fixed slots, Abby to take scheduling. Max chases this like a deal.
 - People problem (13 Jul): Calum worn down by cut-out culture in Lagoons secondary. Fix is structural not emotional: signed agency agreements, control access via motivated sellers (Amman, Sameer), weight toward off-plan/launch where commission is developer-side and cut-proof, bigger clients (SB, Ahmed) cut less. Watch his energy on this.
