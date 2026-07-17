@@ -1,0 +1,39 @@
+{
+ "targets": {
+  "postsPerMonth": 12,
+  "followersPerPost": 40
+ },
+ "pipeline": [
+  {
+   "id": "c1",
+   "title": "Inside the Deal: The Bashayer launch was chaos. It was designed that way.",
+   "series": "Inside the Deal",
+   "status": "scripted",
+   "created": "2026-07-19",
+   "postDate": "2026-07-19",
+   "hook": "Modon just sold out another launch in hours. Everyone thinks it was chaos. It was a design.",
+   "metrics": {}
+  },
+  {
+   "id": "c2",
+   "title": "Inside the Deal: The 5-year visa mistake costing buyers 5 years",
+   "series": "Inside the Deal",
+   "status": "scripted",
+   "created": "2026-07-19",
+   "postDate": "2026-07-20",
+   "hook": "My client was told he could only get a 5 year visa in Abu Dhabi. That advice was wrong by exactly 5 years.",
+   "metrics": {}
+  },
+  {
+   "id": "c3",
+   "title": "The Verdict: J444 - a 5-bed on the lagoons at 4.05M net",
+   "series": "The Verdict",
+   "status": "idea",
+   "created": "2026-07-19",
+   "postDate": null,
+   "hook": "I found this unit by cold calling 200 owners in one day. Here is the verdict.",
+   "metrics": {}
+  }
+ ],
+ "posted": []
+}
