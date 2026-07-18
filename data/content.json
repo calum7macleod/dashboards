@@ -15,16 +15,6 @@
    "metrics": {}
   },
   {
-   "id": "c5",
-   "title": "The Verdict: Yas Point - the closest homes to Disney Abu Dhabi",
-   "series": "The Verdict",
-   "status": "idea",
-   "created": "2026-07-19",
-   "postDate": "2026-07-20",
-   "hook": "Disney is coming to Abu Dhabi. These are the closest homes you can buy to it.",
-   "metrics": {}
-  },
-  {
    "id": "c1",
    "title": "Inside the Deal: The Bashayer launch was chaos. It was designed that way.",
    "series": "Inside the Deal",
@@ -55,5 +45,13 @@
    "metrics": {}
   }
  ],
- "posted": []
+ "posted": [
+  {
+   "id": "c5",
+   "title": "The Verdict: Yas Point - the closest homes to Disney Abu Dhabi",
+   "series": "The Verdict",
+   "postDate": "2026-07-19",
+   "metrics": {}
+  }
+ ]
 }
