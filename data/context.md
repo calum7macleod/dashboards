@@ -79,6 +79,10 @@ Last updated: 2026-07-06 (CC refresh)
 - ACCOUNTABILITY: Max asks for the day's call count at EVERY check-in. A day with zero banks logged = Max asks why at the next message, whatever it's about. Weekly: Max reports pace vs required and what the calls have produced (log every seller/lead sourced from them as an outcome + into stock.json with source "Calling Out").
 - Definition: a call = a dial where he attempted the pitch (connected or voicemail); pure no-answers count half in spirit - don't police it, track what he reports.
 
+## WEEKLY REVIEW (set 19 Jul)
+- Every SUNDAY: Calum voice-notes a few minutes on the whole week - work, family, health, everything. Max structures it into: wins / hard bits / patterns (cross-checked against journal + calls + content + deals data) / 3 priorities for the week ahead. Saved so weeks are comparable. First one: 20 Jul per Calum ("tomorrow").
+- MONDAY BRIEF REMINDER (one-off, next Monday): restate the new protocols so the week starts on them - (1) INTAKE: call every new buyer straight away, voice-note Max after, prebuyers list; (2) DAY-3 post-viewing follow-up calls, Max surfaces due ones in 07:30 brief; (3) J444 online this week (one-listing-per-week cadence); (4) disqualify on criteria not mood; (5) loss log lines on every dead deal.
+
 ## FOCUS SYSTEM (13 Jul)
 - THREE DAILY ANCHORS (alarms SET 13 Jul): 07:30 "Morning brief" -> Max returns Top 3 + call-out target + one vision line. 13:00 "Midday reset" -> water, food, back on Top 3. 19:30 "Shutdown" -> debrief + JOURNAL SCORES: eating, water, exercise, sleep, mindset, focus (1-5 each). Max writes them to data/journal.json (fields: date, the 6 scores, note) - dashboard = health.html "Daily Journal". Max nudges for any missing score, never lectures on low ones - just tracks and reflects patterns weekly.
 - TOP 3 FIRST RULE: nothing else gets touched before Top 3 is done. Every new idea/task/request that lands mid-day goes STRAIGHT to Max (voice note), not into his head or his day. Max triages; Calum stays on Top 3.
