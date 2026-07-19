@@ -1,6 +1,21 @@
 {
   "tasks": [
     {
+      "id": "4fb22741-fb11-4a94-a011-8129e933e79a",
+      "title": "FULL BOOK SWEEP: call every buyer + every seller, high-value message if no answer",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "intense",
+      "status": "active",
+      "due": "2026-07-22",
+      "created": "2026-07-21",
+      "notes": "Every active buyer (23) and every stock seller. Phone first. No-answers get the high-value templates (Max drafted - in chat). Voice-note Max outcomes as you go: offers, dead, updates. This is Intake Protocol + Ghost Sweep + Offer push in one day.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": true
+    },
+    {
       "id": "79b3ea08-a84c-4bc2-915c-414c8f27354a",
       "title": "WEEKLY REVIEW with Max - few minutes voice note: work, family, everything",
       "area": "Personal",
@@ -133,7 +148,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 3,
-      "top3": true
+      "top3": false
     },
     {
       "id": "9c53eb48-eda4-40a6-a979-0ba05727caaf",
@@ -148,7 +163,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 2,
-      "top3": true
+      "top3": false
     },
     {
       "id": "01a3e8ef-1297-4d40-897b-c49646683d45",
@@ -163,7 +178,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 1,
-      "top3": true
+      "top3": false
     },
     {
       "order": 7,
