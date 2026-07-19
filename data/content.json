@@ -5,13 +5,13 @@
  },
  "pipeline": [
   {
-   "id": "c4",
-   "title": "Inside the Deal: 2 vs 18 - new residents per off-plan home, Dubai vs Abu Dhabi",
+   "id": "c7",
+   "title": "Inside the Deal: 117 billion in a war - Abu Dhabi's surge despite the region",
    "series": "Inside the Deal",
    "status": "scripted",
-   "created": "2026-07-19",
-   "postDate": "2026-07-19",
-   "hook": "In Dubai, two new residents arrive for every off-plan home sold. In Abu Dhabi it's eighteen.",
+   "created": "2026-07-21",
+   "postDate": null,
+   "hook": "There is a war in the region, and Abu Dhabi property just did 117 billion dirhams in six months. Those two things are connected.",
    "metrics": {}
   },
   {
@@ -62,6 +62,13 @@
    "title": "The Verdict: Yas Point - the closest homes to Disney Abu Dhabi",
    "series": "The Verdict",
    "postDate": "2026-07-19",
+   "metrics": {}
+  },
+  {
+   "id": "c4",
+   "title": "Inside the Deal: 2 vs 18 - new residents per off-plan home, Dubai vs Abu Dhabi",
+   "series": "Inside the Deal",
+   "postDate": "2026-07-20",
    "metrics": {}
   }
  ]
