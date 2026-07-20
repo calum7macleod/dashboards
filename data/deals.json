@@ -808,5 +808,32 @@
     "annualAcc": 1589523.6338095237,
     "order": 30,
     "id": "georgia-k331"
+  },
+  {
+    "date": "2026-07-22",
+    "month": "July",
+    "buyer": "TBC",
+    "buyerSource": "Unknown",
+    "seller": "TBC",
+    "sellerSource": "Unknown",
+    "unit": "P218",
+    "cluster": "Malta",
+    "area": "Lagoons",
+    "otherBroker": "TBC",
+    "price": 2680000,
+    "buyerCom": null,
+    "sellerCom": null,
+    "comPct": null,
+    "split": null,
+    "myPct": 0.006343283582089552,
+    "convey": null,
+    "totalComs": null,
+    "myBoard": 17000,
+    "myComs": null,
+    "myTakeHome": 6600,
+    "monthAcc": null,
+    "annualAcc": 1606523.6338095237,
+    "order": 31,
+    "id": "p218-malta"
   }
 ]
