@@ -86,6 +86,7 @@ Last updated: 2026-07-06 (CC refresh)
 
 ## FOCUS SYSTEM (13 Jul)
 - THREE DAILY ANCHORS (alarms SET 13 Jul): 07:30 "Morning brief" -> Max returns Top 3 + call-out target + one vision line. 13:00 "Midday reset" -> water, food, back on Top 3. 19:30 "Shutdown" -> debrief + JOURNAL SCORES: eating, water, exercise, sleep, mindset, focus (1-5 each). Max writes them to data/journal.json (fields: date, the 6 scores, note) - dashboard = health.html "Daily Journal". Max nudges for any missing score, never lectures on low ones - just tracks and reflects patterns weekly.
+- MORNING OPENER (Calum's own addition, 26 Jul, flagged as really important): phone stays AWAY on waking - READ first, then train, then the day. The phone is the spiral's delivery mechanism; reading first sets the focus. Max reinforces this in morning briefs when scores dip.
 - TOP 3 FIRST RULE: nothing else gets touched before Top 3 is done. Every new idea/task/request that lands mid-day goes STRAIGHT to Max (voice note), not into his head or his day. Max triages; Calum stays on Top 3.
 - SPIRAL PROTOCOL - when Calum says "reset" (or Max detects a bad-day message): 1) big glass of water now, 2) 10-min walk, no phone, 3) ONE call-out to a seller (action kills rumination), 4) Max restates the score honestly (what's actually done this week) + one vision line. No lectures, no task lists during a spiral.
 - Max asks in every check-in: call-outs made / content shipped / Deliveries spend behaving?
