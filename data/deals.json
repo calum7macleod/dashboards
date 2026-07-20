@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-07-24",
+    "month": "July",
+    "buyer": "Georgia Clark",
+    "buyerSource": "Unknown",
+    "seller": "Patrik",
+    "sellerSource": "Portfolio outreach",
+    "unit": "K331",
+    "cluster": "Costa Brava",
+    "area": "Lagoons",
+    "otherBroker": "Self",
+    "price": 3650000,
+    "buyerCom": 0,
+    "sellerCom": 0,
+    "comPct": 0.039047397260273974,
+    "split": 0,
+    "myPct": 0.020687945205479452,
+    "convey": 0,
+    "totalComs": 142523,
+    "myBoard": 75511,
+    "myComs": 75511,
+    "myTakeHome": 42757,
+    "monthAcc": 92511,
+    "annualAcc": 1589523.6338095237,
+    "order": 1,
+    "id": "georgia-k331"
+  },
+  {
+    "date": "2026-07-22",
+    "month": "July",
+    "buyer": "TBC",
+    "buyerSource": "Unknown",
+    "seller": "TBC",
+    "sellerSource": "Unknown",
+    "unit": "P218",
+    "cluster": "Malta",
+    "area": "Lagoons",
+    "otherBroker": "TBC",
+    "price": 2680000,
+    "buyerCom": 0,
+    "sellerCom": 0,
+    "comPct": 0,
+    "split": 0,
+    "myPct": 0.006343283582089552,
+    "convey": 0,
+    "totalComs": 0,
+    "myBoard": 17000,
+    "myComs": 17000,
+    "myTakeHome": 6600,
+    "monthAcc": 17000,
+    "annualAcc": 1635000,
+    "order": 2,
+    "id": "p218-malta"
+  },
+  {
     "date": "2026-06-09",
     "month": "June",
     "buyer": "Mohamed",
@@ -23,7 +77,7 @@
     "myTakeHome": 39840,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 1,
+    "order": 3,
     "id": "mohamed-0"
   },
   {
@@ -50,7 +104,7 @@
     "myTakeHome": 70656,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 2,
+    "order": 4,
     "id": "michael-1"
   },
   {
@@ -77,7 +131,7 @@
     "myTakeHome": 102504,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 3,
+    "order": 5,
     "id": "ankur-2"
   },
   {
@@ -104,7 +158,7 @@
     "myTakeHome": 32000,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 4,
+    "order": 6,
     "id": "victoria-3"
   },
   {
@@ -131,7 +185,7 @@
     "myTakeHome": 16100,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 5,
+    "order": 7,
     "id": "vinutha-4"
   },
   {
@@ -158,7 +212,7 @@
     "myTakeHome": 18800,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 6,
+    "order": 8,
     "id": "external-strada-5"
   },
   {
@@ -185,7 +239,7 @@
     "myTakeHome": 14300,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 7,
+    "order": 9,
     "id": "sarah-6"
   },
   {
@@ -212,7 +266,7 @@
     "myTakeHome": 37862,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 8,
+    "order": 10,
     "id": "abby-7"
   },
   {
@@ -239,7 +293,7 @@
     "myTakeHome": 54868,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 9,
+    "order": 11,
     "id": "marc-8"
   },
   {
@@ -266,7 +320,7 @@
     "myTakeHome": 11000,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 10,
+    "order": 12,
     "id": "matthew-9"
   },
   {
@@ -293,7 +347,7 @@
     "myTakeHome": 70548,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 11,
+    "order": 13,
     "id": "ahmad-10"
   },
   {
@@ -320,7 +374,7 @@
     "myTakeHome": 16638,
     "monthAcc": 0,
     "annualAcc": 0,
-    "order": 12,
+    "order": 14,
     "id": "adel-11"
   },
   {
@@ -347,7 +401,7 @@
     "myTakeHome": 9362.5,
     "monthAcc": 22975,
     "annualAcc": 22975,
-    "order": 13,
+    "order": 15,
     "id": "anne-marie-12"
   },
   {
@@ -374,7 +428,7 @@
     "myTakeHome": 14130.56,
     "monthAcc": 71386.11,
     "annualAcc": 822061.4592063492,
-    "order": 14,
+    "order": 16,
     "id": "darryl-13"
   },
   {
@@ -401,7 +455,7 @@
     "myTakeHome": 21562.5,
     "monthAcc": 407874.5238095238,
     "annualAcc": 622103.5238095238,
-    "order": 15,
+    "order": 17,
     "id": "james-14"
   },
   {
@@ -428,7 +482,7 @@
     "myTakeHome": 42750,
     "monthAcc": 327959.5238095238,
     "annualAcc": 542188.5238095238,
-    "order": 16,
+    "order": 18,
     "id": "amit-15"
   },
   {
@@ -455,7 +509,7 @@
     "myTakeHome": 18070,
     "monthAcc": 364749.5238095238,
     "annualAcc": 578978.5238095238,
-    "order": 17,
+    "order": 19,
     "id": "majid-16"
   },
   {
@@ -482,7 +536,7 @@
     "myTakeHome": 20375,
     "monthAcc": 239984.52380952382,
     "annualAcc": 454213.5238095238,
-    "order": 18,
+    "order": 20,
     "id": "mohammed-17"
   },
   {
@@ -509,7 +563,7 @@
     "myTakeHome": 27125,
     "monthAcc": 194984.52380952382,
     "annualAcc": 409213.5238095238,
-    "order": 19,
+    "order": 21,
     "id": "majid-18"
   },
   {
@@ -536,7 +590,7 @@
     "myTakeHome": 48404.76190476191,
     "monthAcc": 136984.52380952382,
     "annualAcc": 351213.5238095238,
-    "order": 20,
+    "order": 22,
     "id": "sunil-19"
   },
   {
@@ -563,7 +617,7 @@
     "myTakeHome": 15112.5,
     "monthAcc": 40175,
     "annualAcc": 254404,
-    "order": 21,
+    "order": 23,
     "id": "scott-20"
   },
   {
@@ -590,7 +644,7 @@
     "myTakeHome": 39500,
     "monthAcc": 214229,
     "annualAcc": 214229,
-    "order": 22,
+    "order": 24,
     "id": "chris-21"
   },
   {
@@ -617,7 +671,7 @@
     "myTakeHome": 5874.5,
     "monthAcc": 135229,
     "annualAcc": 135229,
-    "order": 23,
+    "order": 25,
     "id": "bruce-22"
   },
   {
@@ -644,7 +698,7 @@
     "myTakeHome": 23140,
     "monthAcc": 123480,
     "annualAcc": 123480,
-    "order": 24,
+    "order": 26,
     "id": "josh-23"
   },
   {
@@ -671,7 +725,7 @@
     "myTakeHome": 20100,
     "monthAcc": 77200,
     "annualAcc": 77200,
-    "order": 25,
+    "order": 27,
     "id": "jose-24"
   },
   {
@@ -698,7 +752,7 @@
     "myTakeHome": 16375,
     "monthAcc": 32750,
     "annualAcc": 32750,
-    "order": 26,
+    "order": 28,
     "id": "puneet-25"
   },
   {
@@ -725,7 +779,7 @@
     "myTakeHome": 18928.1746031746,
     "monthAcc": 41173.015873015866,
     "annualAcc": 171696.82539682538,
-    "order": 27,
+    "order": 29,
     "id": "donna-26"
   },
   {
@@ -752,7 +806,7 @@
     "myTakeHome": 18261.904761904763,
     "monthAcc": 130523.80952380953,
     "annualAcc": 130523.80952380953,
-    "order": 28,
+    "order": 30,
     "id": "shane-27"
   },
   {
@@ -779,61 +833,7 @@
     "myTakeHome": 42375,
     "monthAcc": 89750,
     "annualAcc": 89750,
-    "order": 29,
-    "id": "pratik-28"
-  },
-  {
-    "date": "2026-07-24",
-    "month": "July",
-    "buyer": "Georgia Clark",
-    "buyerSource": "Unknown",
-    "seller": "Patrik",
-    "sellerSource": "Portfolio outreach",
-    "unit": "K331",
-    "cluster": "Costa Brava",
-    "area": "Lagoons",
-    "otherBroker": "Self",
-    "price": 3650000,
-    "buyerCom": null,
-    "sellerCom": null,
-    "comPct": 0.039047397260273974,
-    "split": null,
-    "myPct": 0.020687945205479452,
-    "convey": null,
-    "totalComs": 142523,
-    "myBoard": 75511,
-    "myComs": null,
-    "myTakeHome": 42757,
-    "monthAcc": null,
-    "annualAcc": 1589523.6338095237,
-    "order": 30,
-    "id": "georgia-k331"
-  },
-  {
-    "date": "2026-07-22",
-    "month": "July",
-    "buyer": "TBC",
-    "buyerSource": "Unknown",
-    "seller": "TBC",
-    "sellerSource": "Unknown",
-    "unit": "P218",
-    "cluster": "Malta",
-    "area": "Lagoons",
-    "otherBroker": "TBC",
-    "price": 2680000,
-    "buyerCom": null,
-    "sellerCom": null,
-    "comPct": null,
-    "split": null,
-    "myPct": 0.006343283582089552,
-    "convey": null,
-    "totalComs": null,
-    "myBoard": 17000,
-    "myComs": null,
-    "myTakeHome": 6600,
-    "monthAcc": null,
-    "annualAcc": 1635000,
     "order": 31,
-    "id": "p218-malta"
+    "id": "pratik-28"
   }
 ]
