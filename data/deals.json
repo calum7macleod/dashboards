@@ -781,5 +781,32 @@
     "annualAcc": 89750,
     "order": 29,
     "id": "pratik-28"
+  },
+  {
+    "date": "2026-07-24",
+    "month": "July",
+    "buyer": "Georgia Clark",
+    "buyerSource": "Unknown",
+    "seller": "Patrik",
+    "sellerSource": "Portfolio outreach",
+    "unit": "K331",
+    "cluster": "Costa Brava",
+    "area": "Lagoons",
+    "otherBroker": "Self",
+    "price": 3650000,
+    "buyerCom": null,
+    "sellerCom": null,
+    "comPct": 0.039047397260273974,
+    "split": null,
+    "myPct": 0.020687945205479452,
+    "convey": null,
+    "totalComs": 142523,
+    "myBoard": 75511,
+    "myComs": null,
+    "myTakeHome": 42757,
+    "monthAcc": null,
+    "annualAcc": 1589523.6338095237,
+    "order": 30,
+    "id": "georgia-k331"
   }
 ]
