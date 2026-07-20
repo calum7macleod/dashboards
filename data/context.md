@@ -33,6 +33,7 @@ Last updated: 2026-07-06 (CC refresh)
 - Sarah budget 2.6M (from calendar); Misha calendar said 2.5m vs logged 2.6M offer target
 - Jonathan buyer added at #4 with NO details - chase
 - Avantglamp TM01 resignation - unconfirmed, legal exposure
+- BOARD RECONCILIATION (24 Jul): official 2026 board = 1.635M per Calum after K331 (+75,511) and P218 (+17,000). deals.json raw sum shows ~1.607M - a ~28.5K variance (likely an unlogged deal or adjustment). Reconcile at month end; Calum's figure is authoritative.
 - 2026 TARGET (given 13 Jul): 3M for the year. At 1.55M on day ~195 of 365 - required pace 1.607M, so BEHIND BY ~57K = ONE DEAL. H2 maths: 1.45M in 24 weeks = one deal a week wins the year.
 - H2 OPERATING PLAN (agreed 13 Jul): mornings = money (3 buyer pushes + 2 seller touches before noon daily) - Wednesday = offer day (every warm buyer asked for a number) - Saturday = viewing stack day - launches are multipliers not the plan
 - REALITY CHECK 13 Jul: even off-plan isn't cut-proof - Modon offered Tony a unit DIRECT before launch. Nothing is fully safe; the durable edge is OWNING STOCK + being undeniably more useful than going direct (the Bashayer deck is the template for that).
