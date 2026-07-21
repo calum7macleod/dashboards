@@ -1,6 +1,51 @@
 {
   "tasks": [
     {
+      "id": "57da7e80-08f3-46b2-af28-76002b71c7d8",
+      "title": "TONY: value for his Bashayer villa",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-27",
+      "created": "2026-07-27",
+      "notes": "Current market value on the villa - comps + honest band, quick-turn version of the standard report.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 3,
+      "top3": true
+    },
+    {
+      "id": "cc51bd10-b5b8-46a7-9196-e2a49a0fc944",
+      "title": "TONY: introduction to the golden visa guy",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "easy",
+      "status": "active",
+      "due": "2026-07-27",
+      "created": "2026-07-27",
+      "notes": "Warm intro connecting Tony with the visa specialist - certificate + document checklist follows.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 2,
+      "top3": true
+    },
+    {
+      "id": "5c877bfe-e644-44f2-a4fb-418ddb8b7a7c",
+      "title": "TONY: investor certificate confirmation from Modon",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "medium",
+      "status": "active",
+      "due": "2026-07-27",
+      "created": "2026-07-27",
+      "notes": "Request the investor/ownership certificate for his villa - name per passport, purchase value, paid to date, addressed to ICP/ADRO. Confirm title status while at it.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 1,
+      "top3": true
+    },
+    {
       "id": "e41cd25f-742e-490e-8e15-25c22f6fddff",
       "title": "DEEP WORK BLOCK (90 min, first thing): film + edit one complete video",
       "area": "Content",
@@ -13,11 +58,11 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 1,
-      "top3": true
+      "top3": false
     },
     {
       "order": 1,
-      "top3": true,
+      "top3": false,
       "id": "4fb22741-fb11-4a94-a011-8129e933e79a",
       "title": "FULL BOOK SWEEP: call every buyer + every seller, high-value message if no answer",
       "area": "Real Estate",
