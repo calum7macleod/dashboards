@@ -1,0 +1,12 @@
+CHAT ARCHIVE - HOW TO USE
+=========================
+Full pre-migration Max chat history. Raw base:
+https://raw.githubusercontent.com/calum7macleod/dashboards/main/data/chat-archive/
+
+READ ORDER for context: 1) 2026-07-21-final-session-digest.md (everything after the last transcript - deals week, Frank W265 report, Tony 8M penthouse, book review ritual, open questions)  2) INDEX.txt (one-paragraph summary of each era)  3) transcripts below only when word-for-word detail is needed.
+
+Transcripts are chunked (API size limit). Fetch parts in order, concatenate:
+- 2026-07-13-dashboards-crm-deck-part{1..8}of8.txt  (system build, CRM, Bashayer deck era)
+- 2026-07-15-vision-journal-bashayer-part{1..6}of6.txt  (vision/3M, journal, golden visa era)
+- 2026-07-17-content-era-thousand-part{1..4}of4.txt  (content strategy, THE THOUSAND, uaecalum era)
+Note: secret tokens inside transcript text are auto-masked as [REDACTED] in these copies - surrounding conversation is intact. Some embedded code blocks may be garbled by the masking; all live code exists in the repo itself anyway.
