@@ -2,6 +2,7 @@
 Maintained by Max. Read at session start. Update whenever material facts change.
 Last updated: 2026-07-21 (new Max, archive pointer)
 DATE HYGIENE: some datestamps in the 27-Jul-labelled patch drifted ahead of the real calendar (real date at handover = 21 Jul). Events true; re-anchor exact deal dates with Calum as they come up.
+CONTENT METRIC (set 22 Jul): SHARES are the north-star engagement metric alongside saves. Best to date: 28 shares on a recent video. Targets: next milestone 50 shares on a single video, then 100. Max asks about shares when reviewing content performance.
 CHAT ARCHIVE: full pre-migration chat history lives at data/chat-archive/ - read MANIFEST.txt first (digest -> INDEX -> chunked transcripts). Word-for-word detail from the 13-21 Jul eras is there, not in chat memory.
 
 ## THE VISION (set 13 Jul 2026 - measure everything against this)
