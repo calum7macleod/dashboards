@@ -2,6 +2,8 @@
 Maintained by Max. Read at session start. Update whenever material facts change.
 Last updated: 2026-07-21 (new Max, archive pointer)
 DATE HYGIENE: some datestamps in the 27-Jul-labelled patch drifted ahead of the real calendar (real date at handover = 21 Jul). Events true; re-anchor exact deal dates with Calum as they come up.
+EP DECK TEMPLATE: the Lagoons EP1 deck (content-assets/lagoons-ep1/, generator deck-generator.js) is the reusable format for the series - COPY it for the next Lagoons video in the same project with very different numbers (the bad/ugly episode). Same structure: cover hook / unit / series / SOA redacted / recent tx / pre-conflict tx / maths x2 / verdict.
+NEXT VIDEO (structured 22 Jul): Disney launch video for Mon 28 Jul - early-retention structure agreed with Max; cold-open on map, number in first line, 45-60s.
 CONTENT METRIC (set 22 Jul): SHARES are the north-star engagement metric alongside saves. Best to date: 28 shares on a recent video. Targets: next milestone 50 shares on a single video, then 100. Max asks about shares when reviewing content performance.
 CHAT ARCHIVE: full pre-migration chat history lives at data/chat-archive/ - read MANIFEST.txt first (digest -> INDEX -> chunked transcripts). Word-for-word detail from the 13-21 Jul eras is there, not in chat memory.
 
