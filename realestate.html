@@ -137,6 +137,11 @@ a{color:#E8C96B}
       <div class="chart-card"><h3>Board vs Take-Home by Month</h3><canvas id="chart-takehome-month"></canvas></div>
     </div>
     <div class="grid grid-3" id="ov-bottom"></div>
+    <div class="grid grid-2" style="margin-top:20px">
+      <div class="chart-card"><h3>Avg Deal Size Trend</h3><canvas id="chart-avg-deal"></canvas></div>
+      <div class="chart-card"><h3>Avg Take-Home / Deal Trend</h3><canvas id="chart-avg-th"></canvas></div>
+    </div>
+    <div class="grid grid-3" style="margin-top:20px" id="ov-records"></div>
   </div>
 
   <!-- BUYERS -->
@@ -297,7 +302,7 @@ const STATUS_COLOR = {"Active":"#3fb950","Inactive":"#6e7681","Database":"#58a6f
 const MONTHS_ORDER = ['October','November','December','January','February','March','April','May','June','July','August','September'];
 const YEAR_MONTHS = { 2025: ['October','November','December'], 2026: ['January','February','March','April','May','June','July','August','September'], all: MONTHS_ORDER };
 let currentYear = 2026;
-let dealChart, thChart;
+let dealChart, thChart, avgDealChart, avgThChart;
 
 function fmt(n) { return n ? Math.round(n).toLocaleString('en-GB') : '0'; }
 function pct(n,t) { return t ? (n/t*100).toFixed(1) : 0; }
@@ -373,10 +378,59 @@ function renderOverview() {
     '</div>'+
     '<div class="card"><div class="card-title">Active Pipeline</div><div class="stat-value">'+STOCK.filter(s=>s.status==="Active").length+' + '+BUYERS.filter(b=>b.status==="Active").length+'</div><div class="stat-sub">Sellers + buyers</div><div class="stat-badge badge-blue">'+OFFERS.filter(o=>o.status==="Active").length+' live offers</div></div>';
 
+  const top3 = [...ds].sort((a,b)=>b.myTakeHome-a.myTakeHome).slice(0,3);
+  const medals = ['\u{1F947}','\u{1F948}','\u{1F949}'];
+  const podium = top3.map((d,i)=>'<div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid #21262d"><span>'+medals[i]+' <strong>'+d.buyer+'</strong> <span style="color:#6e7681;font-size:0.72rem">'+(d.cluster||'')+'</span></span><span style="color:#3fb950;font-weight:700">AED '+fmt(d.myTakeHome)+'</span></div>').join('');
+
   document.getElementById('ov-bottom').innerHTML =
     '<div class="card"><div class="card-title">Avg Deal Size</div><div class="stat-value" style="font-size:1.4rem">AED '+fmt(ds.filter(d=>d.price>0).reduce((s,d)=>s+d.price,0)/Math.max(ds.filter(d=>d.price>0).length,1))+'</div></div>'+
     '<div class="card"><div class="card-title">Avg Take Home / Deal</div><div class="stat-value" style="font-size:1.4rem">AED '+fmt(th/Math.max(ds.length,1))+'</div><div class="stat-sub">Board avg: AED '+fmt(board/Math.max(ds.length,1))+'</div></div>'+
-    (best?'<div class="card"><div class="card-title">Best Deal</div><div class="stat-value" style="font-size:1.2rem">'+best.buyer+'</div><div class="stat-sub">AED '+fmt(best.myTakeHome)+' take-home · '+(best.cluster||'')+(best.month?' · '+best.month:'')+'</div></div>':'');
+    '<div class="card"><div class="card-title">\u{1F3C6} Top 3 Deals</div>'+(podium||'<div class="stat-sub">No deals yet</div>')+'</div>';
+
+  // ---- Records & Milestones (all-time, independent of year filter) ----
+  const all = DEALS.filter(d=>d.price>0);
+  const careerVol = DEALS.reduce((s,d)=>s+(d.price||0),0);
+  const nextVolMilestone = careerVol < 100000000 ? 100000000 : Math.ceil((careerVol+1)/50000000)*50000000;
+  const biggest = all.reduce((b,d)=>d.price>(b?.price||0)?d:b, null);
+  const byMonthBoard = {};
+  DEALS.forEach(d=>{ if(d.month) byMonthBoard[d.month+' '+(YEAR_MONTHS[2025].includes(d.month)?'25':'26')] = (byMonthBoard[d.month+' '+(YEAR_MONTHS[2025].includes(d.month)?'25':'26')]||0)+d.myBoard; });
+  const bestMonth = Object.entries(byMonthBoard).sort((a,b)=>b[1]-a[1])[0];
+  const monthsWithDeal = MONTHS_ORDER.filter(m=>DEALS.some(d=>d.month===m)).length;
+
+  document.getElementById('ov-records').innerHTML =
+    '<div class="card"><div class="card-title">\u{1F680} Career Volume</div><div class="stat-value" style="font-size:1.3rem">AED '+fmt(careerVol)+'</div>'+
+      '<div class="progress-bar-bg"><div class="progress-bar-fill" style="width:'+Math.min(careerVol/nextVolMilestone*100,100).toFixed(1)+'%;background:#e3b341"></div></div>'+
+      '<div class="stat-sub" style="margin-top:6px">'+pct(careerVol,nextVolMilestone)+'% of AED '+(nextVolMilestone/1000000)+'M milestone</div></div>'+
+    (biggest?'<div class="card"><div class="card-title">\u{1F4AA} Records</div>'+
+      '<div style="padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#6e7681;font-size:0.78rem">Biggest deal</span><div><strong>AED '+fmt(biggest.price)+'</strong> <span style="color:#6e7681;font-size:0.72rem">'+biggest.buyer+' · '+(biggest.cluster||'')+'</span></div></div>'+
+      (bestMonth?'<div style="padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#6e7681;font-size:0.78rem">Best month (board)</span><div><strong>AED '+fmt(bestMonth[1])+'</strong> <span style="color:#6e7681;font-size:0.72rem">'+bestMonth[0]+'</span></div></div>':'')+
+      '<div style="padding:4px 0"><span style="color:#6e7681;font-size:0.78rem">Months with a deal</span><div><strong>'+monthsWithDeal+'</strong> <span style="color:#6e7681;font-size:0.72rem">months active</span></div></div>'+
+    '</div>':'')+
+    '<div class="card"><div class="card-title">\u{1F4C8} Year-End Projection</div>'+(function(){
+      if (currentYear!==2026) return '<div class="stat-sub">Switch to 2026 for projection</div>';
+      const proj = yearPct>0 ? board/yearPct : 0;
+      const projTH = yearPct>0 ? th/yearPct : 0;
+      const hit = proj>=boardTarget;
+      return '<div class="stat-value" style="font-size:1.3rem;color:'+(hit?'#3fb950':'#f0883e')+'">AED '+fmt(proj)+'</div>'+
+        '<div class="stat-sub">Projected board at current pace</div>'+
+        '<div class="stat-badge '+(hit?'badge-green':'badge-red')+'">'+(hit?'\u25B2 On pace to beat 3M by AED '+fmt(proj-boardTarget):'\u25BC AED '+fmt(boardTarget-proj)+' short at this pace')+'</div>'+
+        '<div class="stat-sub" style="margin-top:6px">Take-home projection: AED '+fmt(projTH)+'</div>';
+    })()+'</div>';
+
+  // ---- Avg trend charts ----
+  if (avgDealChart) avgDealChart.destroy();
+  avgDealChart = new Chart(document.getElementById('chart-avg-deal'), {
+    type: 'line',
+    data: { labels: activeMonths, datasets: [{label:'Avg deal size',data:activeMonths.map(m=>{const md=ds.filter(d=>d.month===m&&d.price>0);return md.length?Math.round(md.reduce((s,d)=>s+d.price,0)/md.length):null;}),borderColor:'#58a6ff',backgroundColor:'#58a6ff33',borderWidth:2,tension:0.3,fill:true,spanGaps:true}] },
+    options: {responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>' AED '+(ctx.raw||0).toLocaleString('en-GB')}}},scales:{x:{ticks:{color:'#6e7681'},grid:{color:'#21262d'}},y:{ticks:{color:'#6e7681',callback:v=>'AED '+(v/1000000).toFixed(1)+'M'},grid:{color:'#21262d'}}}}
+  });
+
+  if (avgThChart) avgThChart.destroy();
+  avgThChart = new Chart(document.getElementById('chart-avg-th'), {
+    type: 'line',
+    data: { labels: activeMonths, datasets: [{label:'Avg take-home/deal',data:activeMonths.map(m=>{const md=ds.filter(d=>d.month===m);return md.length?Math.round(md.reduce((s,d)=>s+d.myTakeHome,0)/md.length):null;}),borderColor:'#3fb950',backgroundColor:'#3fb95033',borderWidth:2,tension:0.3,fill:true,spanGaps:true}] },
+    options: {responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>' AED '+(ctx.raw||0).toLocaleString('en-GB')}}},scales:{x:{ticks:{color:'#6e7681'},grid:{color:'#21262d'}},y:{ticks:{color:'#6e7681',callback:v=>'AED '+(v/1000).toFixed(0)+'k'},grid:{color:'#21262d'}}}}
+  });
 
   if (dealChart) dealChart.destroy();
   dealChart = new Chart(document.getElementById('chart-deals-month'), {
