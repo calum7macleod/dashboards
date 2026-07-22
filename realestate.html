@@ -141,7 +141,7 @@ a{color:#E8C96B}
       <div class="chart-card"><h3>Avg Deal Size Trend</h3><canvas id="chart-avg-deal"></canvas></div>
       <div class="chart-card"><h3>Avg Take-Home / Deal Trend</h3><canvas id="chart-avg-th"></canvas></div>
     </div>
-    <div class="grid grid-3" style="margin-top:20px" id="ov-records"></div>
+    <div class="grid grid-4" style="margin-top:20px" id="ov-records"></div>
   </div>
 
   <!-- BUYERS -->
@@ -404,8 +404,30 @@ function renderOverview() {
     (biggest?'<div class="card"><div class="card-title">\u{1F4AA} Records</div>'+
       '<div style="padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#6e7681;font-size:0.78rem">Biggest deal</span><div><strong>AED '+fmt(biggest.price)+'</strong> <span style="color:#6e7681;font-size:0.72rem">'+biggest.buyer+' · '+(biggest.cluster||'')+'</span></div></div>'+
       (bestMonth?'<div style="padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#6e7681;font-size:0.78rem">Best month (board)</span><div><strong>AED '+fmt(bestMonth[1])+'</strong> <span style="color:#6e7681;font-size:0.72rem">'+bestMonth[0]+'</span></div></div>':'')+
-      '<div style="padding:4px 0"><span style="color:#6e7681;font-size:0.78rem">Months with a deal</span><div><strong>'+monthsWithDeal+'</strong> <span style="color:#6e7681;font-size:0.72rem">months active</span></div></div>'+
+      '<div style="padding:4px 0"><span style="color:#6e7681;font-size:0.78rem">Avg deals / month</span><div><strong>'+(DEALS.length/Math.max(monthsWithDeal,1)).toFixed(1)+'</strong> <span style="color:#6e7681;font-size:0.72rem">career pace</span></div></div>'+
     '</div>':'')+
+    (function(){
+      // chronological months Oct'25 -> Sep'26
+      const chrono = [...YEAR_MONTHS[2025].map(m=>({m,y:'25'})), ...YEAR_MONTHS[2026].map(m=>({m,y:'26'}))];
+      const nowM = new Date().toLocaleString('en-GB',{month:'long'});
+      let curIdx = chrono.findIndex(x=>x.m===nowM && x.y==='26');
+      if (curIdx<0) curIdx = chrono.length-1;
+      let streak = 0;
+      for (let i=curIdx;i>=0;i--){ if (DEALS.some(d=>d.month===chrono[i].m)) streak++; else break; }
+      const lastDate = DEALS.map(d=>d.date).filter(Boolean).sort().slice(-1)[0];
+      const daysSince = lastDate ? Math.max(0, Math.floor((new Date()-new Date(lastDate))/86400000)) : null;
+      const dsColor = daysSince===null?'#6e7681':daysSince<=7?'#3fb950':daysSince<=14?'#e3b341':'#f85149';
+      const thisMonthBoard = DEALS.filter(d=>d.month===nowM).reduce((s,d)=>s+d.myBoard,0);
+      const bestM = bestMonth?bestMonth[1]:0;
+      const race = bestM?Math.min(thisMonthBoard/bestM*100,100):0;
+      return '<div class="card"><div class="card-title">\u{1F525} Momentum</div>'+
+        '<div style="padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#6e7681;font-size:0.78rem">Deal streak</span><div><strong>'+streak+'</strong> <span style="color:#6e7681;font-size:0.72rem">consecutive months with a deal</span></div></div>'+
+        '<div style="padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#6e7681;font-size:0.78rem">Days since last deal</span><div><strong style="color:'+dsColor+'">'+(daysSince===null?'\u2014':daysSince)+'</strong> <span style="color:#6e7681;font-size:0.72rem">'+(daysSince!==null&&daysSince<=7?'hot':daysSince!==null&&daysSince<=14?'warming down':'go hunting')+'</span></div></div>'+
+        '<div style="padding:4px 0"><span style="color:#6e7681;font-size:0.78rem">'+nowM+' vs best month</span>'+
+          '<div class="progress-bar-bg" style="margin-top:4px"><div class="progress-bar-fill" style="width:'+race.toFixed(1)+'%;background:#f0883e"></div></div>'+
+          '<div class="stat-sub" style="margin-top:4px">AED '+fmt(thisMonthBoard)+' of AED '+fmt(bestM)+' record ('+race.toFixed(0)+'%)</div></div>'+
+      '</div>';
+    })()+
     '<div class="card"><div class="card-title">\u{1F4C8} Year-End Projection</div>'+(function(){
       if (currentYear!==2026) return '<div class="stat-sub">Switch to 2026 for projection</div>';
       const proj = yearPct>0 ? board/yearPct : 0;
