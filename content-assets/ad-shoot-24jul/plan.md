@@ -1,162 +1,109 @@
-# UPDATED SLATE (locked 23 Jul evening)
-**3 videos: Tara Park ('I bought here too') · Golden Visa DXB vs AD (hotel) · ADGM 'Where the money's actually moving' (hotel). YAS/DISNEY VIDEO DROPPED. + Visit Modon show villa (Hudayriyat) - walkthrough b-roll/possible bonus content. Aldar office stop no longer needed.**
-
-# ABU DHABI SHOOT DAY - FRIDAY 24 JULY
-**4 videos · 45-55s each · all vertical 9:16 · one repeatable stat per video · hard stops, no outros**
+# FRIDAY 24 JUL - MASTER RUN SHEET
+**4 pieces · everything in filming order · one chunk = one breath = one clip, hard cut after · 2-3 takes per chunk · hooks filmed 5 ways · dead stops, no outros**
 
 ---
 
-## THE DAY AT A GLANCE
+## TONIGHT (Thursday)
+- [ ] Mic collected (order #74CA7BA, Virgin Dubai Hills) → charge case + both transmitters
+- [ ] Receiver settings: **Adaptive Gain ON · Noise Cancelling BASIC**
+- [ ] 10-second test clip on iPhone → play back → confirm audio is from the mic
+- [ ] Screen-record 2 map zooms (for the edit): (1) Al Maryah tight zoom, (2) Al Maryah → Reem pull
+- [ ] All chunk sheets below → Notes app
+- [ ] Kit by door: phone charged, power bank + cable, mic case, tripod/prop, lens cloth
+- [ ] Phone away 19:45. Lights 21:00. Tomorrow runs on tonight's sleep.
 
-| Time | Where | What |
+## THE DAY
+| When | Where | What |
 |---|---|---|
-| 08:30 | Leave Dubai | Rehearse hooks out loud in the car - each hook 5x |
-| 10:00-11:00 | TARA PARK site | VIDEO 1 shoot + 15 min b-roll |
-| 11:30-12:15 | ALDAR office, Yas | VIDEO 2 shoot |
-| 12:15-12:45 | Lunch near Yas | Real food - the rails travel with you |
-| 13:15-14:00 | Hotel | Check in, VIDEO 3 (Golden Visa) |
-| 14:15-14:45 | Hotel | VIDEO 4 |
-| 15:00 | DONE | Weekend starts. Nothing content-related after this. |
+| Morning, before leaving | JGE | VIDEO 1 chunks 1-7 (Dubai half) |
+| Getting in car | JGE | VIDEO 1 chunk 8 (bridge line) |
+| Drive to AD | - | Rehearse Tara Park hooks out loud |
+| Arrive Reem | Tara Park plot | VIDEO 2 (all 14) → VIDEO 3 (all 9, both CTAs) → VIDEO 1 chunks 9-15 |
+| After | Modon show villa | B-ROLL (list below) |
+| Hotel | - | Retakes only if something failed · then DONE |
 
-**Release schedule:** V2 (Disney/Yas) Monday 28 morning as launch breaks · V1 (Tara Park) Wednesday · V3 (Golden Visa) Saturday 1 Aug (weekend = peak forwarding) · V4 held as the following week's banker.
-
----
-
-## KIT CHECKLIST (pack Thursday night)
-- Phone FULLY charged + power bank + cable
-- Tripod or anything that props the phone (hotel videos)
-- Lav mic if you have one - outdoor wind at Tara Park is the #1 audio risk. No lav = film close, phone 40-50cm from face
-- Lens wiped before EVERY location (heat haze + pocket grease kills more takes than anything)
-- This plan downloaded offline + scripts in Notes app
-- Sunglasses OFF on camera. Always.
-
-**Craft rules for every video:** 3 takes minimum per beat · film the HOOK 5 different ways (pick best in edit) · visual change every 3-4s in the edit · say the repeatable stat twice · end mid-energy on the CTA, cut instantly.
+Sun rule: face the sun, building lit behind you. Wipe lens at every location.
 
 ---
 
-# VIDEO 1 - TARA PARK: "SKIN IN THE GAME" (~45s)
-**The video nobody else can film.**
+# VIDEO 1 - GOLDEN VISA: DUBAI vs ABU DHABI (~55s)
+**Tone: genuinely surprised at your own verdict - the AD guy conceding one to Dubai.**
 
-### Where exactly
-1. **Hook + verdict:** standing with the Tara Park building/hoarding clearly behind you. Morning sun BEHIND the camera (you facing the sun, building lit). Frame: waist-up, building filling the top third.
-2. **Middle beats:** walking slowly toward/alongside the site - walking shots = free retention.
-3. **B-roll (15 min, silent):** slow pan up the building · construction/site detail · your hand on the hoarding/render board · you looking up at it · car arriving. 10-15s clips each.
+**JGE (villas behind you, walking or static):**
+1. "I've finally found something where Dubai absolutely destroys Abu Dhabi for off-plan."
+2. "And I'm not joking - it's not even close."
+3. "The Golden Visa. Ten years. Family included. Both cities: two million in property."
+4. "But Dubai counts the property's VALUE - not your cash."
+5. "Off-plan, booking deposit paid, registered - you qualify."
+6. "Mortgaged? Fine. One percent into the payment plan? Fine."
+7. "Your actual cash in - as little as around a hundred grand."
 
-### Script (word for word)
-> **[0-4s - HOOK, static, building behind]**
-> "I sell this project to my clients. What they don't always know - I bought here too. This is my actual statement of account."
->
-> **[4-12s - walking]**
-> "Tara Park, Abu Dhabi. I paid [YOUR PRICE] for my unit. Same payment plan I put my clients on - no special agent deal, same price list."
->
-> **[12-24s - RE-HOOK: the why]**
-> "Why here? Three reasons I can defend with numbers: [REASON 1 - e.g. per-sqft vs comparable AD projects], Disney twenty minutes that way, and a payment plan that means my cash stays working elsewhere."
->
-> **[24-36s - the numbers beat, price card on screen]**
-> "So far I'm in [X] dirhams. Units like mine are now listed/transacting at [Y]. I'll show you the full maths at handover - good or bad, same as I do for every project."
->
-> **[36-45s - CTA, static again, building behind]**
-> "Never take investment advice from someone with nothing on the line. Send this to whoever's asking if agents actually buy what they sell." **[HARD STOP]**
+**Car:**
+8. "Abu Dhabi? Totally different story. I'll show you when I get there."
 
-### Fill before filming (from YOUR SOA - bring it Thursday)
-- [YOUR PRICE], [X paid in], [Y current market] - I'll compute the deltas once you give me the SOA.
+**Abu Dhabi (Tara Park or hotel):**
+9. "Right - here, the two million has to be YOUR money. Actually in."
+10. "Mortgage doesn't count. Early instalments don't count. Two million. Paid."
+11. "Same visa. Dubai's door: a hundred K. Abu Dhabi's: two million."
+12. "That's twenty times the cash - and it changed in February. Nobody's noticed."
+13. "I invest in Abu Dhabi myself. Not stopping."
+14. "But for the visa? Dubai just won by knockout."
+15. "Send this to whoever keeps asking how people get the ten-year visa." [DEAD STOP]
 
-**Repeatable stat:** your paid-in number. **Text cards:** "I BOUGHT HERE TOO" (hook) · price card at 24s.
-**Trap to avoid:** do NOT promise a return - "I'll show you the maths at handover" keeps it honest and seeds a future video.
+**Cards:** `DUBAI: ~100K IN` (7) · `ABU DHABI: 2M IN` (10) · `20× DIFFERENCE` (11) · `CHANGED FEB 2026` (12)
+**Rail:** always "as little as AROUND a hundred grand" - never a hard number.
 
 ---
 
-# VIDEO 2 - YAS / DISNEY LAUNCH NUMBERS (~50s)
-**Sequel to the 28-share video, with the retention fix. Films at Aldar office.**
+# VIDEO 2 - TARA PARK x ADGM (~55s)
+**At the plot, Al Maryah skyline in view. Tone: standing inside the story, pointing at it.**
 
-### Where exactly
-1. **Cold open:** NOT you. Screen/tablet showing the Yas map zooming toward the Disney site (recreate the map-zoom from the 28-share video), your voice over it.
-2. **You enter at ~5s:** in front of the Aldar office branding or a Yas masterplan model/wall if they have one - ask at reception, they always do.
-3. **B-roll:** office exterior with Aldar signage · masterplan model close-ups · you pointing at the Disney plot on the map.
-
-### Script
-> **[0-5s - map zooming, VOICE ONLY]**
-> "Disneyland Abu Dhabi apartments officially launch Monday - and a one-bed next to the park is two point two million."
->
-> **[5-14s - you appear, mid-energy]**
-> "Everyone asked after my last video: what's the best investment near Disney? The price list is out. Let's run it."
->
-> **[14-30s - price cards stacking on screen as you speak]**
-> "Studio - 1.65. One-bed - 2.2. Two-bed - 3.4. Three-bed plus maids - 5.5. But here's what nobody's telling you..."
->
-> **[30-42s - THE TRAP, lean in]**
-> "Per square foot, the studio costs 3,300 a foot. The three-bed? 2,700. The smallest unit carries the BIGGEST premium. If you're buying for investment, that changes everything."
->
-> **[42-50s - CTA]**
-> "To hold a one-bed: 154 grand down, that's it - I'll break the full payment plan down Monday when it launches. Send this to whoever's been talking about Disney Abu Dhabi." **[HARD STOP]**
-
-**Repeatable stat:** 3,300/sqft studio vs 2,700 three-bed - say both numbers twice.
-**Text cards:** "LAUNCHES MONDAY" (hook) · price stack at 14s · "3,300 vs 2,700 PER SQFT" at 30s.
-**Note:** numbers from the price list you gave me (5% + 2% ADM = 154K on the 1-bed). If Aldar won't allow office filming, fallback: film outside with Yas skyline, same script.
+1. "BlackRock is on floor 25. JPMorgan's on floor 9. Same tower - and it's not in Dubai... it's right over there." [POINT at Maryah, hold a beat] *(film 5 ways - vary the pause and the smile)*
+2. "That's ADGM - Abu Dhabi's financial centre. English common law - same system as London, same as DIFC in Dubai." [map card]
+3. "That's why global firms come - contracts they already trust."
+4. "BlackRock, JPMorgan, same building - and Binance? First crypto exchange in the world with a full ADGM global licence."
+5. "Forty-seven thousand people now work here - up forty-four percent in a YEAR." [card: `47,047 · +44% YoY`]
+6. "For perspective: Dubai's DIFC has fifty thousand - and it's been going TWICE as long." [card: `ADGM 47K (10 yrs) vs DIFC 50K (20 yrs)`]
+7. "The ten-year-old is about to catch the twenty-year-old champion. At this growth rate? Next year."
+8. "Here's the problem: the original island's been over ninety-five percent full for YEARS." [map: Al Maryah]
+9. "So the government extended the financial district ten times over - onto the next island. Reem." [map zoom Maryah→Reem, card: `×10`]
+10. "And since January, property here registers under ADGM's own law - this island is legally part of the financial centre."
+11. "Which is where I'm standing: Tara Park, Modon's project, ON Reem." [gesture at building]
+12. "Forty-seven thousand workers and counting, the deepest pockets in finance, one island full - the overflow lands HERE. I bought in this building with my own money."
+13. "Save this video. When people ask in three years how you knew - it was the map." [DEAD STOP]
 
 ---
 
-# VIDEO 3 - GOLDEN VISA: DUBAI vs ABU DHABI (~50s)
-**At the hotel. The hook you loved. VERIFY AGAINST TONY'S FILE FIRST - non-negotiable.**
+# VIDEO 3 - TARA PARK: "I ONLY BOUGHT ONE" (~45s)
+**At the plot. Tone: investor explaining his own decision, not agent pitching. Chunks reorderable in edit.**
 
-### Where exactly
-1. **Hook:** sat or stood by the hotel window, city/skyline behind. Daylight from the side, not behind you (silhouette kills it). Phone propped at eye level.
-2. **Rounds:** same seat - the ROUNDS graphics carry the visual change here, not locations. One card per round.
-3. Optional: hook filmed in the car on the drive as a second option.
-
-### Script
-> **[0-4s - HOOK]**
-> "Dubai will give you a ten-year visa for a hundred-grand deposit. Abu Dhabi wants the full two million paid. Same country. Let me explain."
->
-> **[4-14s - ROUND 1 card: "CASH TO QUALIFY"]**
-> "The rule changed in February. In Dubai, a two-million off-plan unit registered in your name now qualifies you - even if you've only paid the five percent booking. That's roughly a hundred thousand dirhams in. Abu Dhabi still wants your actual money in to hit two million."
->
-> **[14-26s - ROUND 2 card: "WHAT 2M BUYS"]**
-> "But flip it. The same two million buys you meaningfully more property in Abu Dhabi - I sell both markets, and the gap is real. Fast visa: Dubai. More building for your money: Abu Dhabi."
->
-> **[26-36s - ROUND 3 card: "THE FINE PRINT"]**
-> "Abu Dhabi freehold is nine zones - Yas, Saadiyat, Reem and co. Dubai's freehold map is far wider. Different portals, different paperwork - and yes, family included on both: spouse, kids, ten years, no employer."
->
-> **[36-46s - VERDICT]**
-> "I'm mid-process on an Abu Dhabi one for a client right now, so this isn't theory. Minimum cash, fast - Dubai. You've got the two million anyway - Abu Dhabi gets you more."
->
-> **[46-52s - CTA]**
-> "Send this to whoever's choosing between Dubai and Abu Dhabi. This decides it." **[HARD STOP]**
-
-**Repeatable stat:** "visa for a 100K deposit."
-**⚠️ BEFORE FILMING:** check every Round-1 claim against Tony's actual AD file. If his case shows nuance on the AD paid-in rule, the line becomes "Abu Dhabi wants your money in" - softer, still true, still lands.
+1. **HOOK:** "I sell every project in this market. I only BOUGHT one. This one - here's the five reasons why."
+2. **R1:** "Reason one: Modon - majority-owned by ADQ, the government's own investment company. My counterparty is the state." [card: `STATE-OWNED DEVELOPER`]
+3. **R2:** "Reason two: directly opposite Reem Mall - literal bridge into it. Five minutes to ADGM, five to downtown. And the financial district is overflowing onto THIS island." [card: `5 · 5 · 25`]
+4. **R3:** "Reason three: two-beds around 2.8 million, three-beds around 3.6. Brand-new tower, mall opposite, financial-district postcode - look what that buys you anywhere else."
+5. **R4a:** "Reason four: five percent plus the ADM fee to get in. Me? I was in for under two hundred K."
+6. **R4b:** "Then five percent every six months - never more than 200K a go. My money stays working elsewhere between payments." [card: `5% EVERY 6 MONTHS`]
+7. **R5:** "And look who's five minutes away - BlackRock, JPMorgan, Binance. Their people are this island's future owners and tenants. That's the quality of demand on my doorstep." [card: `BLACKROCK · JPMORGAN · BINANCE`]
+8. **Close:** "I looked at everything. I bought here. Make of that what you want."
+9. **CTA - FILM BOTH:**
+   - 9a ORGANIC: "DM me TARA and I'll send you all the information." [DEAD STOP]
+   - 9b AD: "Click here and I'll send you all the information." [DEAD STOP]
 
 ---
 
-# VIDEO 4 - HOTEL BANKER: "SAME MONEY, TWO CITIES" (~45s)
-**Pick confirmed Thursday morning - this is my recommendation of the three candidates.**
+# B-ROLL - MODON SHOW VILLA + TARA PARK PLOT
+**Silent clips, 10-15 seconds each, slow and steady:**
+- Show villa: front door approach · each main room walking through · kitchen detail · finishes close-ups · master bedroom · view from windows/balcony · you walking a hallway (from behind)
+- Tara Park plot: slow pan of site/hoarding · you looking at masterplan board · pointing at Maryah skyline · car arriving · walking the plot edge
+- General: Reem Mall exterior · the bridge if visible · any crane/construction motion
 
-### Where exactly
-Balcony or window with the AD skyline visible. Golden hour if you re-shoot in the evening; otherwise midday works with the card-driven format.
-
-### Script
-> **[0-4s - HOOK]**
-> "Two million dirhams. Dubai or Abu Dhabi. Most people get this wrong because they've only priced one of them."
->
-> **[4-16s - DUBAI card]**
-> "In Dubai, two million today gets you: [1-bed in X / townhouse in Y - I'll pull live listings Thursday]. Decent. Now watch."
->
-> **[16-30s - ABU DHABI card]**
-> "Same two million here: [larger unit / better location example]. That's not opinion - that's the same money buying roughly [X]% more space."
->
-> **[30-40s - the turn]**
-> "And since February, either one can carry a ten-year Golden Visa. So the real question isn't Dubai or Abu Dhabi - it's how much building do you want your two million to buy."
->
-> **[40-45s - CTA]**
-> "Send this to the group chat that argues about this weekly. You know the one." **[HARD STOP]**
-
-**Repeatable stat:** the % more space figure (I compute it Thursday from live comparables).
-**Why this over the salary video:** it chains with V3 - two videos feeding each other's comments - and the balcony IS the Abu Dhabi argument, visually.
+This bank covers edits for ALL of today's videos plus future ones. 10 minutes per location, worth gold.
 
 ---
 
-## THURSDAY (TOMORROW) - WHAT LOCKS THE PLAN
-**You bring:** Tony's visa checklist (V3 gate) · your Tara Park SOA (V1 numbers) · confirm Aldar office access for filming.
-**I bring:** live Dubai-vs-AD comparables for V4 · final text-card copy · captions for all four in the 3-platform format · the [bracket] numbers filled into every script.
-
-Then Friday you just execute the timetable.
+## CRAFT RULES (every video)
+- One chunk, one breath, hard cut - flat take? Re-say just that chunk
+- Hook 5 ways, everything else 2-3 takes
+- Mic on collar, receiver in phone, playback-check first clip at each location
+- Visual variety free wins: alternate static/walking chunks
+- End mid-energy on the CTA. Nothing after. Ever.
