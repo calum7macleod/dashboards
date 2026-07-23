@@ -1,3 +1,6 @@
+# UPDATED SLATE (locked 23 Jul evening)
+**3 videos: Tara Park ('I bought here too') · Golden Visa DXB vs AD (hotel) · ADGM 'Where the money's actually moving' (hotel). YAS/DISNEY VIDEO DROPPED. + Visit Modon show villa (Hudayriyat) - walkthrough b-roll/possible bonus content. Aldar office stop no longer needed.**
+
 # ABU DHABI SHOOT DAY - FRIDAY 24 JULY
 **4 videos · 45-55s each · all vertical 9:16 · one repeatable stat per video · hard stops, no outros**
 
