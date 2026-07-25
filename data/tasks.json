@@ -1664,6 +1664,21 @@
    "snoozedUntil": null,
    "top3": false,
    "order": 98
+  },
+  {
+   "id": "ceb7423a-b116-4928-b6cf-489fd17d9484",
+   "title": "BUILD: follow-up CRM layer - never miss a touch again",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": 5,
+   "status": "active",
+   "due": "2026-07-29",
+   "created": "2026-07-24",
+   "notes": "Trigger: lost a deal this week - didn't reach back fast enough / didn't join the dots that stock matched their need; they bought elsewhere. Design session with Max next week. Sketch: (1) extend buyers.json with lastContact, nextTouch, needSummary fields; (2) 'Today's Touches' panel on realestate.html - everyone overdue a follow-up, sorted by heat; (3) match engine - when new stock lands, flag which pipeline buyers it fits; (4) win-back loop (playbook stage 7) runs off nextTouch automatically; (5) Max maintains dates during viewing debriefs + live-fire sessions. Rule: every buyer conversation ends with a nextTouch date set.",
+   "completed": null,
+   "snoozedUntil": null,
+   "top3": false,
+   "order": 97
   }
  ],
  "units": [],
