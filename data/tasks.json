@@ -1679,6 +1679,21 @@
    "snoozedUntil": null,
    "top3": false,
    "order": 97
+  },
+  {
+   "id": "f2e3dfdb-d0fd-48c8-8f94-06e37e6d4729",
+   "title": "DM Instagram followers - direct outreach campaign",
+   "area": "Content",
+   "priority": "high",
+   "difficulty": 3,
+   "status": "active",
+   "due": "2026-07-28",
+   "created": "2026-07-24",
+   "notes": "Calum: '100% need to message all Instagram followers.' Plan with Max: (1) segment - recent engagers/story repliers/new followers first (warmest), then full list; (2) message = value-first not pitch (e.g. Golden Visa change or Tara Park early access), personalised first line; (3) IG limits: manual DMs throttled ~50-100/day for account safety - batch daily, Abby can run from a script; (4) consider IG Broadcast Channel as the scalable layer; (5) track replies -> buyers.json pipeline. Ties into CRM build.",
+   "completed": null,
+   "snoozedUntil": null,
+   "top3": false,
+   "order": 96
   }
  ],
  "units": [],
