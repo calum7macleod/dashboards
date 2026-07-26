@@ -388,7 +388,7 @@ a{color:#E8C96B}
     <div class="card" style="padding:0;overflow:hidden">
       <div style="overflow-x:auto">
         <table>
-          <thead><tr><th>Card</th><th class="text-right">Balance (GBP)</th><th class="text-right">Balance (AED)</th><th class="text-right">Available</th><th class="text-right">Limit</th><th>Status</th></tr></thead>
+          <thead id="cc-thead"></thead>
           <tbody id="cc-tbody"></tbody>
         </table>
       </div>
@@ -749,26 +749,51 @@ function renderDebt(){
     </div>`;}).join('');
 }
 function renderCCBalances() {
-  const GBP_TO_AED = 4.85;
-  let totalBalance = 0, totalAvailable = 0;
-  
-  document.getElementById('cc-tbody').innerHTML = CC_BALANCES.map(cc => {
-    totalBalance += cc.balance;
-    totalAvailable += cc.available;
-    const aedBalance = cc.balance * GBP_TO_AED;
+  // pivot: latest snapshot per card per date -> columns = last two snapshot dates + change
+  const dates = [...new Set(CC_BALANCES.map(c=>c.date||'2026-07-06'))].sort();
+  const last2 = dates.slice(-2);
+  const byCard = {};
+  CC_BALANCES.forEach(c => {
+    const dt = c.date||'2026-07-06';
+    const key = c.card.replace(/^AQUA$/,'Aqua').replace(/^AmEx BA$/,'BA Amex').replace(/^MBNA Main$/,'MBNA 1').replace(/^BoS Classic overdraft$/,'Classic current acct OVERDRAFT');
+    byCard[key] = byCard[key]||{};
+    byCard[key][dt] = c;   // last write per date wins
+  });
+  const fmtDate = s => { const d=new Date(s); return d.getDate()+' '+d.toLocaleString('en-GB',{month:'short'}); };
+  document.getElementById('cc-thead').innerHTML = '<tr><th>Card</th>'+
+    last2.map(dt=>`<th class="text-right">${fmtDate(dt)}</th>`).join('')+
+    '<th class="text-right">Change</th><th class="text-right">Limit</th><th>Status</th></tr>';
+  let tot = {}, totAvail = 0;
+  last2.forEach(dt=>tot[dt]=0);
+  const rows = Object.keys(byCard).sort((a,b)=>{
+    const lb = byCard[b][last2[1]]?.balance ?? byCard[b][last2[0]]?.balance ?? 0;
+    const la = byCard[a][last2[1]]?.balance ?? byCard[a][last2[0]]?.balance ?? 0;
+    return lb-la;
+  }).map(card => {
+    const rec = byCard[card];
+    const latest = rec[last2[1]] || rec[last2[0]];
+    const cur = rec[last2[1]]?.balance;
+    last2.forEach(dt => { if(rec[dt] && (latest.currency||'GBP')==='GBP') tot[dt]+= rec[dt].balance; });
+    if (latest.available!=null && (latest.currency||'GBP')==='GBP') totAvail += latest.available;
+    const prev = rec[last2[0]]?.balance;
+    const chg = (cur!=null && prev!=null) ? cur-prev : null;
+    const ccy = (latest.currency||'GBP')==='AED' ? 'AED ' : '£';
+    const chgTxt = chg==null ? '—' : (chg===0?'flat':(chg>0?'+':'−')+ccy+fmtD(Math.abs(chg)));
+    const chgCol = chg==null?'#6e7681':(chg>0?'#f85149':chg<0?'#3fb950':'#6e7681');
     return `<tr>
-      <td><strong>${cc.card}</strong></td>
-      <td class="text-right amount">£${fmtD(cc.balance)}</td>
-      <td class="text-right amount">AED ${fmt(aedBalance)}</td>
-      <td class="text-right">£${fmtD(cc.available)}</td>
-      <td class="text-right">£${fmtD(cc.limit)}</td>
-      <td class="text-muted">${cc.status}</td>
+      <td><strong>${card}</strong></td>`+
+      last2.map(dt=>`<td class="text-right amount">${rec[dt]? ccy+fmtD(rec[dt].balance):'—'}</td>`).join('')+
+      `<td class="text-right" style="color:${chgCol}">${chgTxt}</td>
+      <td class="text-right">${latest.limit? ccy+fmtD(latest.limit):'—'}</td>
+      <td class="text-muted">${latest.status||''}</td>
     </tr>`;
   }).join('');
-  
-  document.getElementById('cc-total').textContent = '£' + fmtD(totalBalance);
-  document.getElementById('cc-total-aed').textContent = 'AED ' + fmt(totalBalance * GBP_TO_AED);
-  document.getElementById('cc-available').textContent = '£' + fmtD(totalAvailable);
+  document.getElementById('cc-tbody').innerHTML = rows;
+  const latestTot = tot[last2[1]] ?? tot[last2[0]];
+  document.getElementById('cc-total').textContent = '£' + fmtD(latestTot);
+  const GBP_TO_AED = 4.85;
+  document.getElementById('cc-total-aed').textContent = 'AED ' + fmt(latestTot * GBP_TO_AED);
+  document.getElementById('cc-available').textContent = '£' + fmtD(totAvail);
 }
 
 // Transaction tab filters
