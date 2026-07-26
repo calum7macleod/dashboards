@@ -114,7 +114,7 @@
    "priority": "high",
    "status": "active",
    "difficulty": "intense",
-   "due": "2026-07-29",
+   "due": "2026-07-27",
    "created": "2026-07-21",
    "notes": "Every active buyer (23) and every stock seller. Phone first. No-answers get the high-value templates (Max drafted - in chat). Voice-note Max outcomes as you go: offers, dead, updates. This is Intake Protocol + Ghost Sweep + Offer push in one day.",
    "completed": null,
@@ -129,7 +129,7 @@
    "priority": "high",
    "status": "active",
    "difficulty": "easy",
-   "due": "2026-07-31",
+   "due": "2026-07-26",
    "created": "2026-07-19",
    "notes": "First one. Max structures into wins / hard bits / patterns vs the data / 3 priorities for next week. Every Sunday after.",
    "completed": null,
@@ -172,13 +172,13 @@
    "title": "Check easy search buyers",
    "area": "Real Estate",
    "priority": "medium",
-   "status": "snoozed",
+   "status": "active",
    "difficulty": "easy",
-   "due": "2026-07-30",
+   "due": "2026-07-28",
    "created": "2026-07-16",
    "notes": "Portal/CRM buyer-match sweep.",
    "completed": null,
-   "snoozedUntil": "2026-07-29"
+   "snoozedUntil": null
   },
   {
    "order": 3,
@@ -202,13 +202,13 @@
    "title": "Message Matthew + similar people",
    "area": "Real Estate",
    "priority": "medium",
-   "status": "snoozed",
+   "status": "active",
    "difficulty": "easy",
-   "due": "2026-07-30",
+   "due": "2026-07-26",
    "created": "2026-07-16",
    "notes": "Network touch - Matthew and contacts of the same type.",
    "completed": null,
-   "snoozedUntil": "2026-07-29"
+   "snoozedUntil": null
   },
   {
    "order": 18,
@@ -577,13 +577,13 @@
    "title": "Francis Report",
    "area": "Real Estate",
    "priority": "medium",
-   "status": "snoozed",
+   "status": "active",
    "difficulty": "hard",
-   "due": "2026-07-30",
+   "due": "2026-07-27",
    "created": "2026-07-06",
    "notes": null,
    "completed": null,
-   "snoozedUntil": "2026-08-03"
+   "snoozedUntil": null
   },
   {
    "order": 16,
@@ -592,13 +592,13 @@
    "title": "DLD Report Link Sent to Me - Daily / Weekly",
    "area": "Real Estate",
    "priority": "high",
-   "status": "snoozed",
+   "status": "active",
    "difficulty": "intense",
-   "due": "2026-07-30",
+   "due": "2026-07-27",
    "created": "2026-07-06",
    "notes": null,
    "completed": null,
-   "snoozedUntil": "2026-08-03"
+   "snoozedUntil": null
   },
   {
    "order": 2,
@@ -1357,13 +1357,13 @@
    "title": "Strategy to get to 1 BTC",
    "area": "Investing",
    "priority": "medium",
-   "status": "snoozed",
+   "status": "active",
    "difficulty": "medium",
-   "due": "2026-07-31",
+   "due": "2026-07-30",
    "created": "2026-06-01",
    "notes": null,
    "completed": null,
-   "snoozedUntil": "2026-08-02"
+   "snoozedUntil": null
   },
   {
    "order": null,
@@ -1387,13 +1387,13 @@
    "title": "Find appointment setter",
    "area": "Real Estate",
    "priority": "medium",
-   "status": "snoozed",
+   "status": "active",
    "difficulty": "medium",
-   "due": "2026-07-30",
+   "due": "2026-07-27",
    "created": "2026-06-01",
    "notes": null,
    "completed": null,
-   "snoozedUntil": "2026-08-05"
+   "snoozedUntil": null
   },
   {
    "order": 13,
@@ -1672,12 +1672,12 @@
    "priority": "high",
    "difficulty": 5,
    "status": "active",
-   "due": "2026-07-29",
+   "due": "2026-07-27",
    "created": "2026-07-24",
-   "notes": "Trigger 1: lost a deal - didn't reach back fast enough, they bought elsewhere. Trigger 2: no way to track 'I'm away, talk in September' people - they vanish. Design session with Max next week. Core: (1) buyers.json fields: lastContact, nextTouch, touchReason, needSummary, status incl SNOOZED-UNTIL-DATE; (2) 'Today's Touches' panel on realestate.html - overdue + due-today + waking-up-today snoozes, sorted by heat; (3) SNOOZE mechanic: 'back in Sept' = status snoozed, wake 1 Sep with touchReason='said they'd be back from holiday' so the message writes itself; (4) match engine: new stock/launch -> flags which pipeline+snoozed buyers it fits (the dot-joining); (5) win-back loop runs off nextTouch; (6) Max maintains all dates during debriefs/live-fire - zero admin for Calum; (7) RULE: no buyer convo ends without a nextTouch or snooze date. Wake-up message pattern: 'You mentioned you were back around now - here's what actually happened in the market while you were away: [1 real fact]. Still thinking about [their thing]?' MERGED IN: pipeline segmentation + Lagoons transaction data pull (true values/daily reports) are part of this build.",
+   "notes": "Trigger 1: lost a deal - didn't reach back fast enough, they bought elsewhere. Trigger 2: no way to track 'I'm away, talk in September' people - they vanish. Design session with Max next week. Core: (1) buyers.json fields: lastContact, nextTouch, touchReason, needSummary, status incl SNOOZED-UNTIL-DATE; (2) 'Today's Touches' panel on realestate.html - overdue + due-today + waking-up-today snoozes, sorted by heat; (3) SNOOZE mechanic: 'back in Sept' = status snoozed, wake 1 Sep with touchReason='said they'd be back from holiday' so the message writes itself; (4) match engine: new stock/launch -> flags which pipeline+snoozed buyers it fits (the dot-joining); (5) win-back loop runs off nextTouch; (6) Max maintains all dates during debriefs/live-fire - zero admin for Calum; (7) RULE: no buyer convo ends without a nextTouch or snooze date. Wake-up message pattern: 'You mentioned you were back around now - here's what actually happened in the market while you were away: [1 real fact]. Still thinking about [their thing]?' MERGED IN: pipeline segmentation + Lagoons transaction data pull (true values/daily reports) are part of this build. Calum re-confirmed: pipeline segmentation inside CRM is priority - Monday morning.",
    "completed": null,
    "snoozedUntil": null,
-   "top3": false,
+   "top3": true,
    "order": 97
   },
   {
@@ -1687,7 +1687,7 @@
    "priority": "high",
    "difficulty": 3,
    "status": "active",
-   "due": "2026-07-28",
+   "due": "2026-07-27",
    "created": "2026-07-24",
    "notes": "Calum: '100% need to message all Instagram followers.' Plan with Max: (1) segment - recent engagers/story repliers/new followers first (warmest), then full list; (2) message = value-first not pitch (e.g. Golden Visa change or Tara Park early access), personalised first line; (3) IG limits: manual DMs throttled ~50-100/day for account safety - batch daily, Abby can run from a script; (4) consider IG Broadcast Channel as the scalable layer; (5) track replies -> buyers.json pipeline. Ties into CRM build.",
    "completed": null,
@@ -1701,13 +1701,13 @@
    "area": "Content",
    "priority": "high",
    "difficulty": 3,
-   "status": "active",
+   "status": "done",
    "due": "2026-07-26",
    "created": "2026-07-25",
-   "notes": "Map + price cards format at the desk (no AD needed). Script done in chat (cold open on map zoom, price ladder, per-sqft trap 3,300 vs 2,700, 154K to hold, send-to CTA). Launch is Mon 28 - this rides the news wave. Pre-mortem before filming per standing rule.",
-   "completed": null,
+   "notes": "Map + price cards format at the desk (no AD needed). Script done in chat (cold open on map zoom, price ladder, per-sqft trap 3,300 vs 2,700, 154K to hold, send-to CTA). Launch is Mon 28 - this rides the news wave. Pre-mortem before filming per standing rule. Calum confirmed complete.",
+   "completed": "2026-07-26",
    "snoozedUntil": null,
-   "top3": true,
+   "top3": false,
    "order": 2
   }
  ],
