@@ -3702,6 +3702,131 @@
    "dueDate": "2026-07-21",
    "dueAmount": 330.96,
    "dueNote": "Min (DD set)"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "Tesco Clubcard",
+   "balance": 6323.99,
+   "currency": "GBP",
+   "available": 1.01,
+   "limit": 6325,
+   "status": "Cash-advance fees on Wise txns; interest charges on stmt"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "Virgin Money",
+   "balance": 9981.5,
+   "currency": "GBP",
+   "available": 18.5,
+   "limit": 10000,
+   "status": "MISSED PAYMENT 369.80 - DD leaving 27 Jul, verify + call for goodwill removal",
+   "dueDate": "2026-07-27",
+   "dueAmount": 369.8
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "Santander Everyday",
+   "balance": 12146.96,
+   "currency": "GBP",
+   "available": 3.04,
+   "limit": 12150,
+   "status": "Min 330.96 was due 21 Jul - DD active, verify it took"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "MBNA 1",
+   "balance": 8799.49,
+   "currency": "GBP",
+   "available": 0.51,
+   "limit": 8800,
+   "status": "Cash fee 10.13; Wise treated as cash advance"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "MBNA 2",
+   "balance": 2495.21,
+   "currency": "GBP",
+   "available": 4.79,
+   "limit": 2500,
+   "status": "Wise pending 35.44"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "M&S",
+   "balance": 7999.22,
+   "currency": "GBP",
+   "available": 0.78,
+   "limit": 8000,
+   "status": "Min 199.46 was due 23 Jul - verify paid"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "HSBC",
+   "balance": 1972.02,
+   "currency": "GBP",
+   "available": 2.66,
+   "limit": 2000,
+   "status": "Min 49.30 due 4 Aug",
+   "dueDate": "2026-08-04",
+   "dueAmount": 49.3
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "Barclaycard Plat",
+   "balance": 9983.31,
+   "currency": "GBP",
+   "available": 16.69,
+   "limit": 10000,
+   "status": "DD took 108.94 on 20 Jul"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "Aqua",
+   "balance": 3494.08,
+   "currency": "GBP",
+   "available": 5.92,
+   "limit": 3500,
+   "status": "DD due 10 Aug",
+   "dueDate": "2026-08-10"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "BA Amex",
+   "balance": 61.98,
+   "currency": "GBP",
+   "available": 738.0,
+   "limit": 800,
+   "status": "Nothing due; 9,649 Avios"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "Amex Gold (charge)",
+   "balance": 1684.37,
+   "currency": "GBP",
+   "available": null,
+   "limit": null,
+   "status": "Charge card - nothing due shown"
+  },
+  {
+   "date": "2026-07-26",
+   "month": "Jul 26",
+   "card": "Classic current acct OVERDRAFT",
+   "balance": 2368.32,
+   "currency": "GBP",
+   "available": 631.68,
+   "limit": 3000,
+   "status": "OD interest 2.75/day (~83/mo); Virgin 369.80 leaving 27 Jul; Flaher TV +1000 in"
   }
  ],
  "personalDebts": [
@@ -3744,6 +3869,13 @@
   "personalTotal": 63750,
   "grandTotal": 145264.57,
   "note": "Game counts killable debts only (9 cards + personal). BoS OD + ADIB are working credit, excluded from Destroyed",
-  "killableTotal": 127750.04
+  "killableTotal": 127750.04,
+  "2026-07-26": {
+   "totalCards": 64942.13,
+   "overdraft": 2368.32,
+   "totalUnsecured": 67310.45,
+   "utilisationPct": 98.8,
+   "availableAllCards": 791.9
+  }
  }
 }
