@@ -3887,5 +3887,65 @@
    "adibGBP": 14600,
    "totalUnsecuredInclADIB": 81910.45
   }
+ },
+ "paydayPlan": {
+  "expected": 50000,
+  "currency": "GBP",
+  "created": "2026-07-26",
+  "status": "LOCKED - execute on arrival",
+  "sequence": "1) BoS 5K first (kills OD, creates buffer) 2) verify Virgin/Santander/M&S minimums collected 3) kills & headroom 4) family 5) fun",
+  "allocations": [
+   {
+    "to": "BoS current account",
+    "amount": 5000,
+    "note": "kills OD 2,368, leaves ~2,632 buffer; stops 2.75/day"
+   },
+   {
+    "to": "Holiday",
+    "amount": 5000
+   },
+   {
+    "to": "Push present",
+    "amount": 3000
+   },
+   {
+    "to": "Lewis",
+    "amount": 7000,
+    "note": "12K -> 5K remaining"
+   },
+   {
+    "to": "Tal - bills",
+    "amount": 3000
+   },
+   {
+    "to": "Tal - going home",
+    "amount": 3000
+   },
+   {
+    "to": "Tal - Amex",
+    "amount": 4000
+   },
+   {
+    "to": "Luca",
+    "amount": 1000,
+    "note": "cleared in full, due 1 Aug"
+   },
+   {
+    "to": "ADIB card",
+    "amount": 14600,
+    "note": "KILL - most expensive debt (~480/mo interest gone)"
+   },
+   {
+    "to": "Headroom: 200 each to Tesco, Virgin, Santander, MBNA1, MBNA2, M&S, HSBC, Barclaycard",
+    "amount": 1600,
+    "note": "over-limit protection on all tight cards"
+   },
+   {
+    "to": "Aqua",
+    "amount": 2800,
+    "note": "HYBRID: knocks 39.9% card to ~700 remaining"
+   }
+  ],
+  "outcome": "Dead: OD, ADIB, Luca, Tal Amex. Aqua down to ~700. All cards protected from over-limit. ~640/mo interest deleted. Ex-Mum debt after: ~61.9K (cards ~56.9K + Lewis 5K)."
  }
 }
