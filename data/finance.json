@@ -3656,7 +3656,7 @@
    "currency": "GBP",
    "available": 400.0,
    "limit": 15000,
-   "status": "Working card - fluctuates with daily use",
+   "status": "Working card - fluctuates with daily use | CORRECTED 26 Jul: balance is ~GBP 14.6-15K (not AED)",
    "revolving": true
   },
   {
@@ -3833,8 +3833,8 @@
    "month": "Jul 26",
    "card": "ADIB Emirates VC Sig",
    "balance": 14600,
-   "currency": "AED",
-   "status": "Still maxed (working credit - excluded from killable)"
+   "currency": "GBP",
+   "status": "Still maxed (working credit - excluded from killable) | CORRECTED 26 Jul: balance is ~GBP 14.6-15K (not AED)"
   }
  ],
  "personalDebts": [
@@ -3883,7 +3883,9 @@
    "overdraft": 2368.32,
    "totalUnsecured": 67310.45,
    "utilisationPct": 98.8,
-   "availableAllCards": 791.9
+   "availableAllCards": 791.9,
+   "adibGBP": 14600,
+   "totalUnsecuredInclADIB": 81910.45
   }
  }
 }
