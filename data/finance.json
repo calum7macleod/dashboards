@@ -3728,6 +3728,14 @@
    "asOf": "2026-07-02",
    "note": "PAID IN FULL 2 Jul",
    "original": 500
+  },
+  {
+   "to": "Luca",
+   "amount": 1000,
+   "currency": "GBP",
+   "asOf": "2026-07-26",
+   "note": "To be paid back on the 1st (Aug)",
+   "original": 1000
   }
  ],
  "debtBaseline": {
