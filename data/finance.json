@@ -3989,10 +3989,19 @@
   },
   {
    "date": "2026-04-30",
-   "gross_aed": 110555.25,
+   "gross_aed": 50000.0,
    "deals": 4,
    "employer": "White & Co",
-   "mode": "WPS"
+   "mode": "WPS",
+   "note": "CASH ACTUALLY RECEIVED 50K (formal slip 5071 showed 110,555.25 of deal attribution - not cash). Part of SOA 165,240.24 batch."
+  },
+  {
+   "date": "2026-05-31",
+   "employer": "White & Co",
+   "mode": "WPS",
+   "gross_aed": 50000.0,
+   "deals": 0,
+   "note": "Second 50K instalment against SOA 30-04 batch."
   },
   {
    "date": "2026-06-30",
@@ -4013,12 +4022,12 @@
  ],
  "commissionReconciliation": {
   "asOf": "2026-07-27",
-  "totalReceived_aed": 669850.75,
-  "paidDeals": 22,
-  "unpaidDeals": 11,
-  "estimatedOwed_aed": 472514.5,
-  "agedUnpaid": "Q149 (Jan), 107 (Jan), Q396 (Feb), K518 (Feb), K341 (Apr) = 114,157 est - CHASE with accounts",
-  "recentUnpaid": "A5-108, TH-68, P151 (Jun) + P218, K331, Penthouse (Jul) = 358,357 est - likely next slips",
-  "note": "Owed figures are ledger estimates until paid; splits have stepped 50->55->60% over the year."
+  "cashReceived_aed": 659295.5,
+  "earnedOnDocuments_aed": 724535.74,
+  "shortfall_aed": 65240.24,
+  "shortfallNote": "EXACT match to SOA 30-04-2026 balance (165,240.24 batch minus 2x50K WPS). Never caught up on any later slip. This is the documented chase.",
+  "ghostDeals": "Q149 (4 Jan, est 20,100) + Q396 (3 Feb, est 27,125) + K518 (15 Feb, est 18,070) = 65,295 est - on NO document ever. Second chase item.",
+  "recentUnpaid": "A5-108 + TH-68 + P151 (Jun, 60%) + P218 + K331 + Penthouse (Jul, 65%) = ~370K est - expect on Aug/Sep slips.",
+  "totalOutstanding_aed_est": 500775
  }
 }
