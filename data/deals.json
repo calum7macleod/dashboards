@@ -879,6 +879,19 @@
   "split": "100%",
   "myTakeHome": 95440.0,
   "takeHomeSource": "payslip 30-07-2026",
-  "notes": "Added from payslip - was missing from ledger. 100% split deal."
+  "notes": "CALUM'S OWN UNIT (Tara Park) - commission on own purchase at 100% split; not a client deal. Ledger-tagged for income accuracy.",
+  "ownUnit": true
+ },
+ {
+  "date": "2026-01-13",
+  "property": "Unit 207",
+  "unit": "207",
+  "buyer": "Josh Urquhart",
+  "price": 1157000,
+  "commission": 46280,
+  "split": "55%",
+  "myTakeHome": 25454.0,
+  "takeHomeSource": "payslip 30-07-2026",
+  "notes": "Added from payslip - Josh Urquhart deal. NOT the 27-Jan mystery deal (that thread stays open)."
  }
 ]
