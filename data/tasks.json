@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "8ff348a2-2c83-45b8-bbc3-c326086789c6",
+      "title": "Sameer Listing Live",
+      "area": "Real Estate",
+      "priority": "medium",
+      "status": "active",
+      "difficulty": "medium",
+      "due": null,
+      "created": "2026-07-27",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "order": 11,
       "top3": false,
       "id": "c8916d44-4890-43f9-b3bb-4e18c475b5c8",
