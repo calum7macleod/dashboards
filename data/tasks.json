@@ -22,11 +22,13 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": null,
+      "due": "2026-07-31",
       "created": "2026-07-27",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null
+      "snoozedUntil": null,
+      "top3": false,
+      "order": 1
     },
     {
       "order": 11,
