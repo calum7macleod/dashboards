@@ -3959,6 +3959,50 @@
  },
  "payslips": [
   {
+   "date": "2025-11-27",
+   "gross_aed": 42631.75,
+   "deals": 1,
+   "employer": "White & Co",
+   "mode": "WPS"
+  },
+  {
+   "date": "2026-01-14",
+   "gross_aed": 53563.0,
+   "deals": 3,
+   "employer": "White & Co",
+   "mode": "WPS"
+  },
+  {
+   "date": "2026-01-29",
+   "gross_aed": 6154.25,
+   "deals": 1,
+   "note": "FX transaction referral",
+   "employer": "White & Co",
+   "mode": "WPS"
+  },
+  {
+   "date": "2026-04-01",
+   "gross_aed": 46048.75,
+   "deals": 1,
+   "employer": "White & Co",
+   "mode": "WPS"
+  },
+  {
+   "date": "2026-04-30",
+   "gross_aed": 110555.25,
+   "deals": 4,
+   "employer": "White & Co",
+   "mode": "WPS"
+  },
+  {
+   "date": "2026-06-30",
+   "gross_aed": 115271.0,
+   "deals": 5,
+   "note": "deductions: family sponsorship 1,550 + ILOE 126 + medical upgrade 5,536 = 7,212",
+   "employer": "White & Co",
+   "mode": "WPS"
+  },
+  {
    "date": "2026-07-30",
    "employer": "White & Co",
    "gross_aed": 295626.75,
@@ -3966,5 +4010,15 @@
    "deals": 8,
    "note": "8 deals incl A4-1703 at 100% split (95,440). GBP equiv ~60.5-61.5K at 4.80-4.90."
   }
- ]
+ ],
+ "commissionReconciliation": {
+  "asOf": "2026-07-27",
+  "totalReceived_aed": 669850.75,
+  "paidDeals": 22,
+  "unpaidDeals": 11,
+  "estimatedOwed_aed": 472514.5,
+  "agedUnpaid": "Q149 (Jan), 107 (Jan), Q396 (Feb), K518 (Feb), K341 (Apr) = 114,157 est - CHASE with accounts",
+  "recentUnpaid": "A5-108, TH-68, P151 (Jun) + P218, K331, Penthouse (Jul) = 358,357 est - likely next slips",
+  "note": "Owed figures are ledger estimates until paid; splits have stepped 50->55->60% over the year."
+ }
 }
