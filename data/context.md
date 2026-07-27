@@ -1,3 +1,5 @@
+RESOLVED 27 Jul: the 27-Jan zero-price '500K' mystery deal = FX Transaction referral (comm 11,189.52 @55% = 6,154.24, paid 29-01). No property volume attached - career-volume bar stands correct without it. Nag closed.
+
 STANDING RULE - MATCH RITUAL (set 27 Jul): whenever Calum mentions ANY new unit/stock, Max immediately cross-checks the full buyer pipeline (including Snoozed and archived) for price/beds/cluster fits and lists candidates with last-contact dates + a revival message for any forgotten ones. Reverse direction too: any new buyer -> check against all active stock. The CRM page has an automated Matches panel; Max runs the deeper judgement pass in-chat.
 # Max Context - living state file
 Maintained by Max. Read at session start. Update whenever material facts change.
