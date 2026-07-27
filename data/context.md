@@ -1,3 +1,5 @@
+COMMISSION TIERS (set 27 Jul): deals closed in Q3 2026 pay 65% split; Q4 2026 pays 70%. Historic: 50% (late 2025) -> 55% (Q1) -> 60% (Q2). Use for all take-home estimates and projections.
+
 RESOLVED 27 Jul: the 27-Jan zero-price '500K' mystery deal = FX Transaction referral (comm 11,189.52 @55% = 6,154.24, paid 29-01). No property volume attached - career-volume bar stands correct without it. Nag closed.
 
 STANDING RULE - MATCH RITUAL (set 27 Jul): whenever Calum mentions ANY new unit/stock, Max immediately cross-checks the full buyer pipeline (including Snoozed and archived) for price/beds/cluster fits and lists candidates with last-contact dates + a revival message for any forgotten ones. Reverse direction too: any new buyer -> check against all active stock. The CRM page has an automated Matches panel; Max runs the deeper judgement pass in-chat.
