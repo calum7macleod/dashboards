@@ -3976,9 +3976,9 @@
    "date": "2026-01-29",
    "gross_aed": 6154.25,
    "deals": 1,
-   "note": "FX transaction referral",
    "employer": "White & Co",
-   "mode": "WPS"
+   "mode": "WPS",
+   "note": "FX referral"
   },
   {
    "date": "2026-04-01",
@@ -3990,44 +3990,46 @@
   {
    "date": "2026-04-30",
    "gross_aed": 50000.0,
-   "deals": 4,
+   "deals": 0,
    "employer": "White & Co",
    "mode": "WPS",
-   "note": "CASH ACTUALLY RECEIVED 50K (formal slip 5071 showed 110,555.25 of deal attribution - not cash). Part of SOA 165,240.24 batch."
+   "note": "SOA batch instalment 1"
   },
   {
-   "date": "2026-05-31",
+   "date": "2026-05-21",
+   "gross_aed": 115240.25,
+   "deals": 0,
    "employer": "White & Co",
    "mode": "WPS",
-   "gross_aed": 50000.0,
-   "deals": 0,
-   "note": "Second 50K instalment against SOA 30-04 batch."
+   "note": "SOA batch settled in full (165,240.24 total: incl 107 + K341)"
   },
   {
    "date": "2026-06-30",
-   "gross_aed": 115271.0,
+   "gross_aed": 113595.0,
    "deals": 5,
-   "note": "deductions: family sponsorship 1,550 + ILOE 126 + medical upgrade 5,536 = 7,212",
    "employer": "White & Co",
-   "mode": "WPS"
+   "mode": "WPS",
+   "note": "Slip said 115,271 - bank received 113,595. 1,676 gap: query with accounts"
   },
   {
    "date": "2026-07-30",
-   "employer": "White & Co",
    "gross_aed": 295626.75,
-   "mode": "WPS",
    "deals": 8,
-   "note": "8 deals incl A4-1703 at 100% split (95,440). GBP equiv ~60.5-61.5K at 4.80-4.90."
+   "employer": "White & Co",
+   "mode": "WPS",
+   "note": "Expected 30 Jul (slip issued)"
   }
  ],
  "commissionReconciliation": {
   "asOf": "2026-07-27",
-  "cashReceived_aed": 659295.5,
+  "source": "Mashreq statement Jul25-Jul26 (bank-verified)",
+  "cashReceived_toDate_aed": 427233.0,
+  "expected30Jul_aed": 295626.75,
   "earnedOnDocuments_aed": 724535.74,
-  "shortfall_aed": 65240.24,
-  "shortfallNote": "EXACT match to SOA 30-04-2026 balance (165,240.24 batch minus 2x50K WPS). Never caught up on any later slip. This is the documented chase.",
-  "ghostDeals": "Q149 (4 Jan, est 20,100) + Q396 (3 Feb, est 27,125) + K518 (15 Feb, est 18,070) = 65,295 est - on NO document ever. Second chase item.",
-  "recentUnpaid": "A5-108 + TH-68 + P151 (Jun, 60%) + P218 + K331 + Penthouse (Jul, 65%) = ~370K est - expect on Aug/Sep slips.",
-  "totalOutstanding_aed_est": 500775
+  "residualGap_aed": 1676.0,
+  "verdict": "PAID PROPERLY. SOA batch fully settled 21 May (50K + 115,240.25). Only discrepancy: June slip 115,271 vs bank 113,595 = 1,676 short - one-line query to accounts.",
+  "ghostDeals": "Q149 (Jan, ~20,100) + Q396 (Feb, ~27,125) + K518 (Feb, ~18,070) = ~65,295 est: never on any slip/SOA. Ask accounts when these invoice.",
+  "recentUnpaid": "A5-108, TH-68, P151 (Jun) + P218, K331, Penthouse (Jul) = ~370K est, expect Aug/Sep slips.",
+  "totalOutstanding_aed_est": 435765
  }
 }
