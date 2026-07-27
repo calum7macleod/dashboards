@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "c8916d44-4890-43f9-b3bb-4e18c475b5c8",
+      "title": "High Level Social Plan",
+      "area": "Real Estate",
+      "priority": "high",
+      "status": "active",
+      "difficulty": "hard",
+      "due": "2026-07-28",
+      "created": "2026-07-27",
+      "notes": null,
+      "completed": null,
+      "snoozedUntil": null
+    },
+    {
       "order": 1,
       "top3": false,
       "id": "04217f0a-0aef-4eae-bfbd-3557ba7f302f",
