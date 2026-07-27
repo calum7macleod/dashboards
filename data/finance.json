@@ -3892,7 +3892,7 @@
   "expected": 50000,
   "currency": "GBP",
   "created": "2026-07-26",
-  "status": "LOCKED (runs 4,200 over - gap to solve before/at execution)",
+  "status": "FUNDED - actual ~\u00a360.9K vs \u00a354.2K plan: GAP OF 4,200 SOLVED with ~\u00a36.7K spare",
   "sequence": "1) BoS 5K 2) verify Virgin/Santander/M&S minimums 3) ADIB full kill 4) headroom 5) family+Amex 6) business 7) fun",
   "allocations": [
    {
@@ -3952,6 +3952,19 @@
   "total_allocated": 54200,
   "gap": -4200,
   "gapNote": "4,200 short vs 50K expected. TO SOLVE (not today): options - pay actual amount if >50K lands, trim on the day, or short-delay one allocation. Nothing executes blind: gap resolved at execution walkthrough with Max.",
-  "outcome": "Dead: OD, ADIB, Aqua? NO - Aqua untouched per Calum. Dead: OD, ADIB, Luca, Tal Amex, Calum Amex. Headroom on all 8. ~660/mo interest deleted. Business funded."
- }
+  "outcome": "Dead: OD, ADIB, Aqua? NO - Aqua untouched per Calum. Dead: OD, ADIB, Luca, Tal Amex, Calum Amex. Headroom on all 8. ~660/mo interest deleted. Business funded.",
+  "actualReceived_aed": 295626.75,
+  "actualReceived_gbp_est": 60950,
+  "spareNote": "Spare ~6-7K: recommend Aqua kill (3,494) + rest to BoS buffer"
+ },
+ "payslips": [
+  {
+   "date": "2026-07-30",
+   "employer": "White & Co",
+   "gross_aed": 295626.75,
+   "mode": "WPS",
+   "deals": 8,
+   "note": "8 deals incl A4-1703 at 100% split (95,440). GBP equiv ~60.5-61.5K at 4.80-4.90."
+  }
+ ]
 }
