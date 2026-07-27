@@ -1934,6 +1934,21 @@
    "snoozedUntil": null,
    "top3": false,
    "order": 85
+  },
+  {
+   "id": "a0fc30ec-a2e0-4888-b0a0-7b3864e0dacc",
+   "title": "GitHub 2-min: enable the DLD auto-pull (login -> paste workflow OR tick Workflows permission on token)",
+   "area": "Real Estate",
+   "priority": "medium",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-07-28",
+   "created": "2026-07-27",
+   "notes": "Route A: github.com login -> dashboards repo -> Add file -> .github/workflows/lagoons-data.yml -> paste Max's file -> commit -> Actions -> Run workflow. Route B (easier): Settings -> Developer settings -> Fine-grained tokens -> edit dashboards token -> add 'Workflows: Read and write' -> save -> tell Max 'done' and he pushes + runs it. Until then, Thu report runs off a PM export.",
+   "completed": null,
+   "snoozedUntil": null,
+   "top3": false,
+   "order": 84
   }
  ],
  "units": [],
