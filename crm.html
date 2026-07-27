@@ -63,12 +63,15 @@ select,input[type=date]{background:#12241b;color:var(--cream);border:1px solid v
 <div id="touches" class="hidden"><h2>Today's Touches</h2><div id="touchList"></div></div>
 <div id="matches" class="hidden" style="background:var(--panel);border:1px solid var(--div);border-radius:14px;padding:12px;margin:0 auto 16px;max-width:1200px">
 <h2 style="color:var(--lgold);font-size:18px;margin-bottom:8px">Unit ↔ Buyer Matches</h2><div id="matchList"></div></div>
+<div style="max-width:1200px;margin:0 auto 10px;display:flex;justify-content:flex-end">
+<button class="btn" onclick="newBuyer()">+ New Buyer</button></div>
 <div id="board"></div>
 <div id="modal" class="hidden"><div id="mbox"></div></div>
 <div id="sync"><span class="dot"></span><span id="syncTxt">Loading…</span></div>
 <script>
 const OWNER='calum7macleod', REPO='dashboards', PATH='data/buyers.json';
 const STAGES=['New','Qualified','Viewing','Offer','Won','Lost'];
+let showSnoozed=false;
 const CAD={5:1,4:2,3:3,2:4,1:5};
 let BUYERS=[], STOCK=[], SHA=null, PAT=localStorage.getItem('crm_pat')||localStorage.getItem('gh_pat')||'';
 const $=id=>document.getElementById(id);
@@ -105,17 +108,12 @@ function render(){
   $('touches').classList.remove('hidden');
   // Board
   $('board').innerHTML=STAGES.map(st=>{
-    const cards=BUYERS.filter(b=>b.stage===st||(st==='New'&&!b.stage)).sort((a,b)=>(a.order||99)-(b.order||99));
+    const cards=BUYERS.filter(b=>b.stage===st||(st==='New'&&!b.stage)).sort((a,b)=>(b.heat||0)-(a.heat||0));
     return `<div class="col" data-stage="${st}" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}')">
       <h3>${st} <span class="count">${cards.length}</span></h3>
-      ${cards.map(b=>`<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
-        <div class="nm">${b.buyer||'?'}</div>
-        <div class="heat">${heatStr(b.heat)} <span class="bdg">${fmtB(b.budget)}</span></div>
-        <div class="need">${(b.needSummary||'').slice(0,70)}</div>
-        <div class="nt ${ntClass(b.nextTouch)}">⏰ ${b.nextTouch||'—'}</div>
-      </div>`).join('')}
+      ${cards.map(b=>cardHtml(b)).join('')}
     </div>`;
-  }).join('');
+  }).join('') + snoozedCol();
   renderMatches();
 }
 function tr(b,isWake){
@@ -155,6 +153,26 @@ function renderMatches(){
   $('matches').classList.remove('hidden');
 }
 
+
+function cardHtml(b){
+  return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
+    <div class="nm">${b.buyer||'?'}</div>
+    <div class="heat">${heatStr(b.heat)} <span class="bdg">${fmtB(b.budget)}</span></div>
+    <div class="need">${(b.needSummary||'').slice(0,70)}</div>
+    <div class="nt ${ntClass(b.nextTouch)}">\u23f0 ${b.nextTouch||'\u2014'}</div>
+  </div>`;
+}
+function snoozedCol(){
+  const sn=BUYERS.filter(b=>b.stage==='Snoozed').sort((a,b)=>(a.snoozedUntil||'9').localeCompare(b.snoozedUntil||'9'));
+  return `<div class="col" style="opacity:.85" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'Snoozed')">
+    <h3 onclick="showSnoozed=!showSnoozed;render()" style="cursor:pointer">\ud83d\udca4 Snoozed <span class="count">${sn.length} ${showSnoozed?'\u25be':'\u25b8'}</span></h3>
+    ${showSnoozed? sn.map(b=>`<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
+      <div class="nm">${b.buyer}</div><div class="heat">${heatStr(b.heat)}</div>
+      <div class="nt ok">wakes ${b.snoozedUntil||'?'}</div>
+      <div class="need">${(b.touchReason||'').slice(0,60)}</div></div>`).join('') : ''}
+  </div>`;
+}
+
 let dragId=null;
 function drag(e,id){dragId=id;e.dataTransfer.effectAllowed='move'}
 function dragOver(e){e.preventDefault();e.currentTarget.classList.add('dragover')}
@@ -191,6 +209,23 @@ function heatCh(id,d){const b=byId(id);b.heat=Math.min(5,Math.max(1,(b.heat||3)+
 function snooze(id){const v=$('snz').value;if(!v)return;const b=byId(id);b.stage='Snoozed';b.snoozedUntil=v;b.nextTouch=v;b.touchReason='Snoozed — wake '+v;$('modal').classList.add('hidden');render();queueSave('CRM: snoozed '+b.buyer)}
 function stageSel(id){const b=byId(id);b.stage=$('stSel').value;render();queueSave('CRM: '+b.buyer+' → '+b.stage);openCard(id)}
 $('modal').addEventListener('click',e=>{if(e.target.id==='modal')$('modal').classList.add('hidden')});
+
+function newBuyer(){
+  const name=prompt('Name?'); if(!name)return;
+  const phone=prompt('Phone (with +)?')||'';
+  const budget=parseFloat(prompt('Budget AED (e.g. 2600000, blank if unknown)?')||'0')||0;
+  const beds=prompt('Beds (e.g. 4 or 4-5)?')||'';
+  const clu=prompt('Cluster/area (e.g. Costa Brava)?')||'';
+  const heat=Math.min(5,Math.max(1,parseInt(prompt('Heat 1-5?')||'3')||3));
+  const id=name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'-'+Date.now().toString().slice(-4);
+  BUYERS.push({buyer:name, notes:phone?('Ph: '+phone):'', source:'Manual', date:today(), status:'Active',
+    area:'', cluster1:clu, cluster2:'', cluster3:'', beds:beds, finance:'', budget:budget,
+    stage:'New', heat:heat, lastContact:today(), nextTouch:addDays(today(),CAD[heat]||3),
+    touchReason:'New lead - first proper conversation', needSummary:(beds?beds+'bd ':'')+(clu||'')+(budget?(' ~'+fmtB(budget)):''),
+    snoozedUntil:null, touches:[{date:today(),channel:'manual',summary:'Created on dashboard'}], id:id, order:99});
+  render(); queueSave('CRM: new buyer '+name);
+}
+
 async function init(){
   if(PAT)$('connectBox').classList.add('hidden');
   try{await fetchData();render();$('syncTxt').textContent='Loaded '+BUYERS.length+' buyers'}
