@@ -187,7 +187,9 @@
   "annualAcc": 0,
   "order": 7,
   "id": "victoria-3",
-  "takeHomeSource": "payslip 30-07-2026 (was est 32000)"
+  "takeHomeSource": "payslip 2026-07-30",
+  "paid": true,
+  "paidDate": "2026-07-30"
  },
  {
   "date": "2026-05-20",
@@ -215,7 +217,9 @@
   "annualAcc": 0,
   "order": 8,
   "id": "vinutha-4",
-  "takeHomeSource": "payslip 30-07-2026 (was est 16100)"
+  "takeHomeSource": "payslip 2026-07-30",
+  "paid": true,
+  "paidDate": "2026-07-30"
  },
  {
   "date": "2026-05-13",
@@ -243,7 +247,9 @@
   "annualAcc": 0,
   "order": 9,
   "id": "external-strada-5",
-  "takeHomeSource": "payslip 30-07-2026 (was est 18800)"
+  "takeHomeSource": "payslip 2026-07-30",
+  "paid": true,
+  "paidDate": "2026-07-30"
  },
  {
   "date": "2026-04-30",
@@ -266,11 +272,14 @@
   "totalComs": 30000,
   "myBoard": 26000,
   "myComs": 14300,
-  "myTakeHome": 14300,
+  "myTakeHome": 13560.0,
   "monthAcc": 0,
   "annualAcc": 0,
   "order": 10,
-  "id": "sarah-6"
+  "id": "sarah-6",
+  "paid": true,
+  "paidDate": "2026-06-30",
+  "takeHomeSource": "payslip 2026-06-30"
  },
  {
   "date": "2026-04-23",
@@ -298,7 +307,9 @@
   "annualAcc": 0,
   "order": 11,
   "id": "abby-7",
-  "takeHomeSource": "payslip 30-07-2026 (was est 37862)"
+  "takeHomeSource": "payslip 2026-07-30",
+  "paid": true,
+  "paidDate": "2026-07-30"
  },
  {
   "date": "2026-04-23",
@@ -326,7 +337,9 @@
   "annualAcc": 0,
   "order": 12,
   "id": "marc-8",
-  "takeHomeSource": "payslip 30-07-2026 (was est 54868)"
+  "takeHomeSource": "payslip 2026-07-30",
+  "paid": true,
+  "paidDate": "2026-07-30"
  },
  {
   "date": "2026-04-21",
@@ -354,7 +367,9 @@
   "annualAcc": 0,
   "order": 13,
   "id": "matthew-9",
-  "takeHomeSource": "payslip 30-07-2026 (was est 11000)"
+  "takeHomeSource": "payslip 2026-07-30",
+  "paid": true,
+  "paidDate": "2026-07-30"
  },
  {
   "date": "2026-04-08",
@@ -377,11 +392,14 @@
   "totalComs": 0,
   "myBoard": 136950,
   "myComs": 70548,
-  "myTakeHome": 70548,
+  "myTakeHome": 74100.0,
   "monthAcc": 0,
   "annualAcc": 0,
   "order": 14,
-  "id": "ahmad-10"
+  "id": "ahmad-10",
+  "paid": true,
+  "paidDate": "2026-06-30",
+  "takeHomeSource": "payslip 2026-06-30"
  },
  {
   "date": "2026-04-08",
@@ -404,11 +422,14 @@
   "totalComs": 0,
   "myBoard": 34500,
   "myComs": 16638,
-  "myTakeHome": 16638,
+  "myTakeHome": 19200.0,
   "monthAcc": 0,
   "annualAcc": 0,
   "order": 15,
-  "id": "adel-11"
+  "id": "adel-11",
+  "paid": true,
+  "paidDate": "2026-06-30",
+  "takeHomeSource": "payslip 2026-06-30"
  },
  {
   "date": "2026-04-05",
@@ -458,11 +479,14 @@
   "totalComs": 125000,
   "myBoard": 28261.11,
   "myComs": 28261.11,
-  "myTakeHome": 14130.56,
+  "myTakeHome": 15623.1,
   "monthAcc": 71386.11,
   "annualAcc": 822061.4592063492,
   "order": 17,
-  "id": "darryl-13"
+  "id": "darryl-13",
+  "paid": true,
+  "paidDate": "2026-06-30",
+  "takeHomeSource": "payslip 2026-06-30"
  },
  {
   "date": "2026-03-08",
@@ -485,11 +509,14 @@
   "totalComs": 172500,
   "myBoard": 43125,
   "myComs": 43125,
-  "myTakeHome": 21562.5,
+  "myTakeHome": 22550.0,
   "monthAcc": 407874.5238095238,
   "annualAcc": 622103.5238095238,
   "order": 18,
-  "id": "james-14"
+  "id": "james-14",
+  "paid": true,
+  "paidDate": "2026-04-30",
+  "takeHomeSource": "payslip 2026-04-30"
  },
  {
   "date": "2026-02-15",
@@ -512,11 +539,14 @@
   "totalComs": 175950,
   "myBoard": 87975,
   "myComs": 85500,
-  "myTakeHome": 42750,
+  "myTakeHome": 46048.75,
   "monthAcc": 327959.5238095238,
   "annualAcc": 542188.5238095238,
   "order": 19,
-  "id": "amit-15"
+  "id": "amit-15",
+  "paid": true,
+  "paidDate": "2026-04-01",
+  "takeHomeSource": "payslip 2026-04-01"
  },
  {
   "date": "2026-02-15",
@@ -566,11 +596,14 @@
   "totalComs": 81500,
   "myBoard": 45000,
   "myComs": 40750,
-  "myTakeHome": 20375,
+  "myTakeHome": 22412.5,
   "monthAcc": 239984.52380952382,
   "annualAcc": 454213.5238095238,
   "order": 21,
-  "id": "mohammed-17"
+  "id": "mohammed-17",
+  "paid": true,
+  "paidDate": "2026-04-30",
+  "takeHomeSource": "payslip 2026-04-30"
  },
  {
   "date": "2026-02-03",
@@ -620,11 +653,14 @@
   "totalComs": 96809.52380952382,
   "myBoard": 96809.52380952382,
   "myComs": 96809.52380952382,
-  "myTakeHome": 48404.76190476191,
+  "myTakeHome": 48570.24,
   "monthAcc": 136984.52380952382,
   "annualAcc": 351213.5238095238,
   "order": 23,
-  "id": "sunil-19"
+  "id": "sunil-19",
+  "paid": true,
+  "paidDate": "2026-04-30",
+  "takeHomeSource": "payslip 2026-04-30"
  },
  {
   "date": "2026-02-01",
@@ -647,11 +683,14 @@
   "totalComs": 60450,
   "myBoard": 40175,
   "myComs": 30225,
-  "myTakeHome": 15112.5,
+  "myTakeHome": 17022.5,
   "monthAcc": 40175,
   "annualAcc": 254404,
   "order": 24,
-  "id": "scott-20"
+  "id": "scott-20",
+  "paid": true,
+  "paidDate": "2026-04-30",
+  "takeHomeSource": "payslip 2026-04-30"
  },
  {
   "date": "2026-01-30",
@@ -701,16 +740,21 @@
   "totalComs": 11749,
   "myBoard": 11749,
   "myComs": 11749,
-  "myTakeHome": 5874.5,
+  "myTakeHome": 6154.24,
   "monthAcc": 135229,
   "annualAcc": 135229,
   "order": 26,
-  "id": "bruce-22"
+  "id": "bruce-22",
+  "paid": true,
+  "paidDate": "2026-01-29",
+  "takeHomeSource": "payslip 2026-01-29",
+  "property": "FX Transaction (28-01-2026)",
+  "notes": "MYSTERY RESOLVED: the 27-Jan zero-price entry = FX transaction referral, comm 11,189.52 at 55%. No property volume."
  },
  {
   "date": "2026-01-13",
   "month": "January",
-  "buyer": "Josh",
+  "buyer": "Josh Urquhart",
   "buyerSource": "Socials",
   "seller": "Verde",
   "sellerSource": "Offplan",
@@ -728,11 +772,15 @@
   "totalComs": 46280,
   "myBoard": 46280,
   "myComs": 46280,
-  "myTakeHome": 23140,
+  "myTakeHome": 25454.0,
   "monthAcc": 123480,
   "annualAcc": 123480,
   "order": 27,
-  "id": "josh-23"
+  "id": "josh-23",
+  "notes": " Josh Urquhart deal (payslip-confirmed).",
+  "paid": true,
+  "paidDate": "2026-07-30",
+  "takeHomeSource": "payslip 2026-07-30"
  },
  {
   "date": "2026-01-04",
@@ -782,11 +830,14 @@
   "totalComs": 65500,
   "myBoard": 32750,
   "myComs": 32750,
-  "myTakeHome": 16375,
+  "myTakeHome": 16375.0,
   "monthAcc": 32750,
   "annualAcc": 32750,
   "order": 29,
-  "id": "puneet-25"
+  "id": "puneet-25",
+  "paid": true,
+  "paidDate": "2026-01-14",
+  "takeHomeSource": "payslip 2026-01-14"
  },
  {
   "date": "2025-12-11",
@@ -809,11 +860,14 @@
   "totalComs": 113569.04761904762,
   "myBoard": 41173.015873015866,
   "myComs": 37856.3492063492,
-  "myTakeHome": 18928.1746031746,
+  "myTakeHome": 18926.28,
   "monthAcc": 41173.015873015866,
   "annualAcc": 171696.82539682538,
   "order": 30,
-  "id": "donna-26"
+  "id": "donna-26",
+  "paid": true,
+  "paidDate": "2026-01-14",
+  "takeHomeSource": "payslip 2026-01-14"
  },
  {
   "date": "2025-10-27",
@@ -836,11 +890,14 @@
   "totalComs": 73047.61904761905,
   "myBoard": 40773.80952380953,
   "myComs": 36523.80952380953,
-  "myTakeHome": 18261.904761904763,
+  "myTakeHome": 18261.9,
   "monthAcc": 130523.80952380953,
   "annualAcc": 130523.80952380953,
   "order": 31,
-  "id": "shane-27"
+  "id": "shane-27",
+  "paid": true,
+  "paidDate": "2026-01-14",
+  "takeHomeSource": "payslip 2026-01-14"
  },
  {
   "date": "2025-10-20",
@@ -863,11 +920,14 @@
   "totalComs": 113000,
   "myBoard": 89750,
   "myComs": 84750,
-  "myTakeHome": 42375,
+  "myTakeHome": 42631.88,
   "monthAcc": 89750,
   "annualAcc": 89750,
   "order": 32,
-  "id": "pratik-28"
+  "id": "pratik-28",
+  "paid": true,
+  "paidDate": "2025-11-27",
+  "takeHomeSource": "payslip 2025-11-27"
  },
  {
   "date": "2026-04-23",
@@ -878,20 +938,10 @@
   "commission": 95440,
   "split": "100%",
   "myTakeHome": 95440.0,
-  "takeHomeSource": "payslip 30-07-2026",
+  "takeHomeSource": "payslip 2026-07-30",
   "notes": "CALUM'S OWN UNIT (Tara Park) - commission on own purchase at 100% split; not a client deal. Ledger-tagged for income accuracy.",
-  "ownUnit": true
- },
- {
-  "date": "2026-01-13",
-  "property": "Unit 207",
-  "unit": "207",
-  "buyer": "Josh Urquhart",
-  "price": 1157000,
-  "commission": 46280,
-  "split": "55%",
-  "myTakeHome": 25454.0,
-  "takeHomeSource": "payslip 30-07-2026",
-  "notes": "Added from payslip - Josh Urquhart deal. NOT the 27-Jan mystery deal (that thread stays open)."
+  "ownUnit": true,
+  "paid": true,
+  "paidDate": "2026-07-30"
  }
 ]
