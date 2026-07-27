@@ -61,6 +61,8 @@ select,input[type=date]{background:#12241b;color:var(--cream);border:1px solid v
   <button class="btn" onclick="savePat()">Save &amp; connect</button>
 </div>
 <div id="touches" class="hidden"><h2>Today's Touches</h2><div id="touchList"></div></div>
+<div id="matches" class="hidden" style="background:var(--panel);border:1px solid var(--div);border-radius:14px;padding:12px;margin:0 auto 16px;max-width:1200px">
+<h2 style="color:var(--lgold);font-size:18px;margin-bottom:8px">Unit ↔ Buyer Matches</h2><div id="matchList"></div></div>
 <div id="board"></div>
 <div id="modal" class="hidden"><div id="mbox"></div></div>
 <div id="sync"><span class="dot"></span><span id="syncTxt">Loading…</span></div>
@@ -68,7 +70,7 @@ select,input[type=date]{background:#12241b;color:var(--cream);border:1px solid v
 const OWNER='calum7macleod', REPO='dashboards', PATH='data/buyers.json';
 const STAGES=['New','Qualified','Viewing','Offer','Won','Lost'];
 const CAD={5:1,4:2,3:3,2:4,1:5};
-let BUYERS=[], SHA=null, PAT=localStorage.getItem('crm_pat')||localStorage.getItem('gh_pat')||'';
+let BUYERS=[], STOCK=[], SHA=null, PAT=localStorage.getItem('crm_pat')||localStorage.getItem('gh_pat')||'';
 const $=id=>document.getElementById(id);
 function today(){return new Date().toISOString().slice(0,10)}
 function addDays(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x.toISOString().slice(0,10)}
@@ -77,6 +79,7 @@ async function fetchData(){
   const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}?ref=main&t=${Date.now()}`,{headers:PAT?{Authorization:'Bearer '+PAT}:{}});
   const j=await r.json(); SHA=j.sha;
   BUYERS=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
+  try{const r2=await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/stock.json?t=${Date.now()}`);STOCK=await r2.json();}catch(e){STOCK=[]}
 }
 let saveTimer=null, dirty=false;
 function queueSave(msg){dirty=true;$('syncTxt').textContent='Saving…';clearTimeout(saveTimer);saveTimer=setTimeout(()=>push(msg),1200)}
@@ -113,6 +116,7 @@ function render(){
       </div>`).join('')}
     </div>`;
   }).join('');
+  renderMatches();
 }
 function tr(b,isWake){
   return `<div class="touchrow"><span class="tname">${b.buyer}</span>
@@ -121,6 +125,36 @@ function tr(b,isWake){
    <button class="btn mini" onclick="touched('${b.id}')">Touched ✓</button>
    <button class="btn sec mini" onclick="openCard('${b.id}')">Open</button></div>`;
 }
+
+function bedsOf(s){if(!s)return[];return String(s).match(/\d/g)?.map(Number)||[]}
+function clustersOf(b){return [b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(x=>x.toLowerCase())}
+function computeMatches(){
+  const act=STOCK.filter(u=>(u.status||'').toLowerCase()==='active'&&u.price);
+  const live=BUYERS.filter(b=>!['Won','Lost'].includes(b.stage));
+  const out=[];
+  for(const u of act){
+    const uBeds=bedsOf(u.beds), uc=(u.cluster||'').toLowerCase();
+    const hits=live.filter(b=>{
+      const bb=bedsOf(b.beds), bc=clustersOf(b);
+      const bedOk=!uBeds.length||!bb.length||uBeds.some(x=>bb.includes(x));
+      const cluOk=!bc.length||bc.some(c=>uc.includes(c)||c.includes(uc));
+      const budOk=!b.budget||b.budget>=u.price*0.9;
+      return bedOk&&cluOk&&budOk;
+    }).sort((a,b)=>(b.heat||0)-(a.heat||0));
+    if(hits.length)out.push({u,hits});
+  }
+  return out.sort((a,b)=>b.hits.length-a.hits.length);
+}
+function renderMatches(){
+  const M=computeMatches();
+  $('matchList').innerHTML=M.slice(0,12).map(({u,hits})=>
+    `<div class="touchrow"><span class="tname">${u.cluster} ${u.unit}</span>
+     <span class="bdg">${fmtB(u.price)}${u.beds?' · '+u.beds+'bd':''}</span>
+     <span class="treason">${hits.slice(0,6).map(h=>`${h.buyer} ${'🔥'.repeat(h.heat||0)}${h.stage==='Snoozed'?' 💤':''}`).join('  ·  ')}${hits.length>6?' +'+(hits.length-6):''}</span>
+    </div>`).join('')||'<div style="color:var(--muted);padding:6px">No matches yet — fill buyer budgets/beds to light this up</div>';
+  $('matches').classList.remove('hidden');
+}
+
 let dragId=null;
 function drag(e,id){dragId=id;e.dataTransfer.effectAllowed='move'}
 function dragOver(e){e.preventDefault();e.currentTarget.classList.add('dragover')}
