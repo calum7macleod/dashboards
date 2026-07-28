@@ -1,6 +1,8 @@
 {
   "tasks": [
     {
+      "order": 7,
+      "top3": false,
       "id": "8a8497b9-71d2-4b95-9635-08843f3cf494",
       "title": "Mahmoud 2 listings live",
       "area": "Real Estate",
@@ -11,24 +13,22 @@
       "created": "2026-07-27",
       "notes": null,
       "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 7
+      "snoozedUntil": null
     },
     {
+      "order": 1,
+      "top3": false,
       "id": "8ff348a2-2c83-45b8-bbc3-c326086789c6",
       "title": "Sameer Listing Live",
       "area": "Real Estate",
       "priority": "medium",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": "2026-07-27",
       "created": "2026-07-27",
       "notes": null,
-      "completed": null,
-      "snoozedUntil": null,
-      "top3": false,
-      "order": 1
+      "completed": "2026-07-28",
+      "snoozedUntil": null
     },
     {
       "order": 2,
