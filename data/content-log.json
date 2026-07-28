@@ -238,8 +238,138 @@
   "rates": {
    "skip": "40.9% (lower)",
    "share": "0.7% (lower)",
-   "like": "0.7% (lower)"
+   "like": "0.7% (lower)",
+   "save": "0.2% (lower)",
+   "repost": "0.1% (higher)",
+   "comment": "0.3% (lower)"
   },
-  "notes": "Crossposted to Facebook. Save/repost/comment rates, retention curve and top sources not captured in this batch."
+  "notes": "Crossposted to Facebook.",
+  "topSources": {
+   "reelsTab": "45.0%",
+   "feed": "36.8%",
+   "stories": "8.1%",
+   "explore": "5.5%",
+   "profile": "2.9%",
+   "search": "0.4%"
+  },
+  "length": "1:02"
+ },
+ {
+  "video": "Huge difference in Golden Visa rules",
+  "platform": "ig",
+  "format": "reel",
+  "posted": "2026-07-25",
+  "postedSource": "inferred from views-over-time graph start",
+  "checked": "2026-07-28",
+  "views": 1438,
+  "viewsByPlatform": {
+   "instagram": 1200,
+   "facebook": 238
+  },
+  "accountsReached": 875,
+  "skip": "66.7%",
+  "avgWatch": "13s",
+  "shares": 3,
+  "saves": 2,
+  "likes": 10,
+  "comments": 2,
+  "follows": 0,
+  "reposts": 0,
+  "rates": {
+   "skip": "66.7% (higher)",
+   "share": "0.4% (lower)",
+   "like": "1.0% (lower)",
+   "save": "0.2% (lower)",
+   "repost": "0.0% (lower)",
+   "comment": "0.2% (lower)"
+  },
+  "topSources": {
+   "reelsTab": "33.9%",
+   "feed": "30.6%",
+   "stories": "24.4%",
+   "explore": "4.8%",
+   "profile": "4.6%",
+   "search": "0.1%"
+  },
+  "length": "0:56",
+  "notes": "Crossposted to Facebook."
+ },
+ {
+  "video": "Desert piece-to-camera, 0:53 (no title overlay shown in insights)",
+  "platform": "ig",
+  "format": "reel",
+  "posted": "2026-07-24",
+  "postedSource": "inferred from views-over-time graph start",
+  "checked": "2026-07-28",
+  "views": 2232,
+  "viewsByPlatform": {
+   "instagram": 1997,
+   "facebook": 235
+  },
+  "accountsReached": 1207,
+  "skip": "54.1%",
+  "avgWatch": "15s",
+  "shares": 7,
+  "saves": 3,
+  "likes": 23,
+  "comments": 9,
+  "follows": 1,
+  "reposts": 0,
+  "rates": {
+   "skip": "54.1% (lower)",
+   "share": "0.6% (lower)",
+   "like": "1.6% (lower)",
+   "save": "0.2% (lower)",
+   "repost": "0.0% (lower)",
+   "comment": "0.6% (higher)"
+  },
+  "topSources": {
+   "feed": "44.5%",
+   "reelsTab": "30.5%",
+   "stories": "15.2%",
+   "explore": "5.1%",
+   "profile": "3.5%"
+  },
+  "length": "0:53",
+  "notes": "Crossposted to Facebook."
+ },
+ {
+  "video": "How to avoid what losers did (same project)",
+  "platform": "ig",
+  "format": "reel",
+  "posted": "2026-07-24",
+  "postedSource": "inferred from views-over-time graph start",
+  "checked": "2026-07-28",
+  "views": 1566,
+  "viewsByPlatform": {
+   "instagram": 1178,
+   "facebook": 388
+  },
+  "accountsReached": 788,
+  "skip": "63.5%",
+  "avgWatch": "7s",
+  "shares": 6,
+  "saves": 5,
+  "likes": 14,
+  "comments": 2,
+  "follows": 0,
+  "reposts": 1,
+  "rates": {
+   "skip": "63.5% (higher)",
+   "share": "0.9% (lower)",
+   "like": "1.6% (lower)",
+   "save": "0.6% (higher)",
+   "repost": "0.1% (higher)",
+   "comment": "0.2% (lower)"
+  },
+  "topSources": {
+   "reelsTab": "31.7%",
+   "stories": "27.4%",
+   "feed": "26.0%",
+   "profile": "9.3%",
+   "explore": "3.3%"
+  },
+  "length": "0:30",
+  "notes": "Crossposted to Facebook."
  }
 ]
