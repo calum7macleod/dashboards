@@ -1,29 +1,40 @@
 {
-  "target": 1000,
-  "start": "2026-07-16",
-  "end": "2026-07-31",
-  "banks": [
-    {
-      "date": "2026-07-17",
-      "calls": 200,
-      "note": "Costa Brava 1 swept completely (~300 numbers). Numbers heavily worked by other agents."
-    },
-    {
-      "date": "2026-07-20",
-      "calls": 100,
-      "note": "Low traction day - 1 warm lead (detail pending)"
-    }
-  ],
-  "outcomes": [
-    {
-      "date": "2026-07-17",
-      "type": "LISTING",
-      "detail": "J444 Costa Brava - 5 bed single row at 4.05M NET, fees on top. Viewing + NOC to arrange."
-    },
-    {
-      "date": "2026-07-20",
-      "type": "warm lead",
-      "detail": "1 promising contact from 100-call bank - name/unit pending from Calum"
-    }
-  ]
+ "target": 1000,
+ "start": "2026-07-16",
+ "end": "2026-07-31",
+ "banks": [
+  {
+   "date": "2026-07-17",
+   "calls": 200,
+   "note": "Costa Brava 1 swept completely (~300 numbers). Numbers heavily worked by other agents."
+  },
+  {
+   "date": "2026-07-20",
+   "calls": 100,
+   "note": "Low traction day - 1 warm lead (detail pending)"
+  },
+  {
+   "date": "2026-07-28",
+   "calls": 50,
+   "note": "V3s (bigger units) - 4 GOOD prospects. Hit rate 1:12.5 vs 1:100 on smaller stock. Signal: big-unit owners answer + engage."
+  }
+ ],
+ "outcomes": [
+  {
+   "date": "2026-07-17",
+   "type": "LISTING",
+   "detail": "J444 Costa Brava - 5 bed single row at 4.05M NET, fees on top. Viewing + NOC to arrange."
+  },
+  {
+   "date": "2026-07-20",
+   "type": "warm lead",
+   "detail": "1 promising contact from 100-call bank - name/unit pending from Calum"
+  },
+  {
+   "date": "2026-07-28",
+   "type": "4 good prospects",
+   "detail": "From 50-call V3 bank - details pending from Calum (names/units). Bigger units = dramatically better traction."
+  }
+ ],
+ "runningTotal": 350
 }
