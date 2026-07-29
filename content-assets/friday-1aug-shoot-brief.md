@@ -2,13 +2,12 @@ FRIDAY 1 AUG - THE SHOOT 🎬
 Calum + Lewis on camera / Willan shooting / hard stop: home 11:30
 
 THE FILM (the vlog's spine)
-"Friday mornings in Dubai - when your best mate finally quits the UK to join you."
-Cold open, Calum in the ice bath, 04:45:
-"This is what Friday mornings look like in Dubai... especially when your best mate finally quits the UK and comes to join you. Six years I've been telling him. He's here. So today - surf at sunrise, a couple of the biggest new projects in the country, and I'll show him what his new life costs and pays. We'll chuck some property in along the way. Come have some fun with us."
-The whole day is that story: the fun IS the film, the property is what we bump into. Lewis's first-time reactions = the viewer's reactions. We close at home with one honest line from Lewis about finally being here - unscripted, we catch it, not write it.
+"After six years of living here, I've finally convinced my best mate to quit the UK and join me."
+That line IS the video - we film it together, boards in hand at the beach or wherever the energy's right (doesn't need to be the first thing shot; the edit opens with it over the ice-bath/wake-up footage). Then the promise, loose in Calum's words: "So today - surf at sunrise, a couple of the biggest new projects in the country, some fun along the way. Come join us."
+The whole day is that story: the fun IS the film, the property is what we bump into. Lewis's first-time reactions = the viewer's reactions. We close at home catching one honest line from Lewis about finally being here - unscripted.
 
 RUN OF SHOW
-04:45 - Calum's. Willan arrives. Wake-up beats, ICE BATH + cold-open line. 10 min max.
+04:45 - Calum's. Willan arrives. Wake-up beats, ICE BATH (the edit’s opening visuals). 10 min max.
 05:30 - pick up Lewis (film the pickup - sleepy faces welcome).
 05:30-06:00 - DRIVE 1 > Dubai Harbour. Mics ON. Topic: our two moves to Dubai - Calum's 6 years ago vs Lewis now. What you arrived with, first shocks, what took you so long.
 06:00-07:00 - SURF, Dubai Harbour (booked). Sunrise wides, slow-mo, fails and wins. One beach line each to camera. 60 seconds of usable action is plenty - don't over-shoot.
@@ -30,7 +29,7 @@ AT EACH PROJECT SITE (JGE2 60 min / Bayn 40 min)
 6. B-roll sweep - details, views, walking shots, exteriors. (Bayn: shorten this if tight.)
 
 HOOK LINES (film exactly, on location)
-- Beach, post-surf, board in hand: "Most people think THIS is what moving to Dubai looks like. Give me four hours - I'll show you what pays for it."
+- Beach, boards in hand, TOGETHER: "After six years of living here, I’ve finally convinced my best mate to quit the UK and join me." (THE spine line - film it properly, both orientations, couple of takes.)
 - JGE2: "Wasl is building a second Jumeirah Golf Estates. We came to see if the sequel beats the original."
 - Bayn: "Halfway between Dubai and Abu Dhabi, on the beach. If the two-city story is real, this is where it pays."
 (Each vertical too, for the reels.)
