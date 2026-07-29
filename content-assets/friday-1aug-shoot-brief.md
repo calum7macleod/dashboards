@@ -1,67 +1,57 @@
-# FRIDAY 1 AUG — DAY-IN-THE-LIFE DOUBLE SHOOT
-**Calum + Lewis on camera · Willan shooting · hard stop: home 11:30**
+FRIDAY 1 AUG - THE SHOOT 🎬
+Calum + Lewis on camera / Willan shooting / hard stop: home 11:30
 
-## THE SPINE (what the shared vlog IS)
-Open on a question, answer it by living one morning:
-**"Is Dubai still worth it in 2026 — or did everyone miss the boat?"**
-- 04:45 cold open (ice bath): Calum poses the question straight to camera.
-- Every segment is evidence, not vlog filler: the LIFESTYLE case (surf at sunrise, jacuzzi at a golf estate), the OPPORTUNITY case (two brand-new mega-projects in one morning), the CONVICTION case (we both bought here with our own money — Tara Park), the PEOPLE case (Lewis just moved; Calum 6 years deep — same decision, different eras).
-- Close at home, 11:30, one-line verdicts from each: "worth it?" — answered with what the viewer just watched.
-This turns "watch our day" (weak ask) into "watch us answer the question you're already asking" (strong ask). The moving-stories conversation survives inside it as Drive 1.
+THE FILM (the vlog's spine)
+"Friday mornings in Dubai - when your best mate finally quits the UK to join you."
+Cold open, Calum in the ice bath, 04:45:
+"This is what Friday mornings look like in Dubai... especially when your best mate finally quits the UK and comes to join you. Six years I've been telling him. He's here. So today - surf at sunrise, a couple of the biggest new projects in the country, and I'll show him what his new life costs and pays. We'll chuck some property in along the way. Come have some fun with us."
+The whole day is that story: the fun IS the film, the property is what we bump into. Lewis's first-time reactions = the viewer's reactions. We close at home with one honest line from Lewis about finally being here - unscripted, we catch it, not write it.
 
-## RUN OF SHOW
-**04:45 — Calum's place.** Willan arrives. Film: wake-up beats, ICE BATH + question-to-camera (the cold open), out the door. 10 min of shooting max.
-**05:30 — pick up Lewis.** Film the pickup (dap, sleepy faces — authenticity beat).
-**05:30–06:00 — DRIVE 1 → Dubai Harbour.** Mic'd: **our moving-to-Dubai stories.** Calum's 6-years-ago Dubai vs the city Lewis just landed in. Prompts: what you arrived with · first shock · what you'd tell yourself on day one · what's changed about who moves here.
-**06:00–07:00 — SURF, Dubai Harbour** (booked). Wides, fails, wins, sunrise slow-mo. One beach line to camera each, board in hand (see hooks). 60s usable action is plenty.
-**07:00–07:30 — DRIVE 2 → JGE.** Mic'd: **"we both bought Tara Park — here's why."** Prompts: the moment each decided · what the money was doing before · the counterparty logic (state-backed) · what would've stopped you · what you'd buy there today. NOTE: this conversation is a standalone video in itself — shoot it clean.
-**07:30–08:30 — JGE: jacuzzi/shower/reset.** Minimal filming: walk-in, into the jacuzzi, one lifestyle beat + optional 10s Golden Visa callback ("this is what the visa lifestyle actually looks like"). **Wheels rolling 08:30 sharp.**
-**08:30–09:00 — DRIVE 3 → JGE2 (Wasl).** Mic'd: **"what we'd buy at every price point"** — ladder from low to high: 500K · 1M · 2M · 3M · 5M · 10M. Rules: real answers, name real projects/areas, disagree where you disagree (disagreement = retention). This is the most save-able conversation of the day.
-**09:00–10:00 — JGE2 SITE (Wasl).** Structure below.
-**10:00–10:10 — DRIVE 4 → Bayn.** Short. Topic TBC on the day — holding options: "what we look for in a launch in the first 10 minutes" · "the biggest mistake friends made buying here" · or breathe/reset if energy needs it.
-**10:10–11:00 — BAYN SITE (ORA).** Same structure.
-**11:00 — DRIVE 5 → home.** Mic'd, relaxed: **life in Dubai + the projects, general** — the decompression chat; verdict lines for the vlog close get captured here.
-**11:30 — HOME. Hard stop.**
+RUN OF SHOW
+04:45 - Calum's. Willan arrives. Wake-up beats, ICE BATH + cold-open line. 10 min max.
+05:30 - pick up Lewis (film the pickup - sleepy faces welcome).
+05:30-06:00 - DRIVE 1 > Dubai Harbour. Mics ON. Topic: our two moves to Dubai - Calum's 6 years ago vs Lewis now. What you arrived with, first shocks, what took you so long.
+06:00-07:00 - SURF, Dubai Harbour (booked). Sunrise wides, slow-mo, fails and wins. One beach line each to camera. 60 seconds of usable action is plenty - don't over-shoot.
+07:00-07:30 - DRIVE 2 > JGE. Topic: WE BOTH BOUGHT TARA PARK - why. The decision moment, the counterparty logic, what would've stopped us, what we'd buy there today. Shoot this clean - it's a standalone video.
+07:30-08:30 - JGE: jacuzzi/shower/reset. Minimal filming: walk-in, into the jacuzzi, one lifestyle beat. WHEELS ROLLING 08:30.
+08:30-09:00 - DRIVE 3 > JGE2 (Wasl). Topic: WHAT WE'D BUY AT EVERY PRICE POINT - 500K / 1M / 2M / 3M / 5M / 10M. Real answers, real areas. Rule: disagree where you disagree - that's the good stuff.
+09:00-10:00 - JGE2 SITE (Wasl). Structure below.
+10:00-10:10 - DRIVE 4 > Bayn. Topic TBC on the day (options: what we check in the first 10 minutes of any launch / biggest mistake mates made buying here / or just breathe).
+10:10-10:50 - BAYN SITE (ORA). Same structure, tighter.
+10:50-11:30 - DRIVE 5 > home. Mics on, relaxed: life in Dubai, the projects, whatever flows - the vlog's closing lines get caught here.
+11:30 - HOME. Hard stop.
 
-## SITE STRUCTURE (same at JGE2 and Bayn — 50 min each)
-1. **Arrival beat (2 min):** both walking in, one wide establishing, drone if permitted.
-2. **Joint walk-around (15 min):** the two of you reacting naturally — pointing, comparing, first impressions. This footage is SHARED across both people's videos; Willan follows, no direction needed.
-3. **Calum solo pieces (10 min):** hook line filmed vertical AND horizontal, then 3 short pieces to camera (30–45s each): (a) what this project actually is + who's building it, (b) the investor read — who it suits, what the play is, (c) the honest caveat — who should NOT buy here / what to check. Structural, evergreen — exact prices stay OUT (cards carry numbers in the edit so footage doesn't date).
-4. **Lewis solo pieces (10 min):** same 3-beat structure, his own angle (fresh-eyes/new-arrival read works well against Calum's operator read).
-5. **Thumbnail poses (2 min):** each person, each location — deliberate, eyes to lens, 3 seconds.
-6. **B-roll sweep (10 min):** details, signage, views toward landmarks, walking shots, car-arrival exteriors.
+AT EACH PROJECT SITE (JGE2 60 min / Bayn 40 min)
+1. Arrival beat - both walking in, one wide, drone if allowed (2 min)
+2. JOINT walk-around - natural reactions, pointing, comparing. Shared footage for both videos. Willan follows. (15 min)
+3. CALUM solo - hook line (vertical AND horizontal) + 3 pieces to camera, 30-45s each: what this is & who's building it / the investor read - who it suits / the honest caveat - who should NOT buy. No prices on camera - cards carry numbers in the edit so footage never dates. (10 min)
+4. LEWIS solo - same 3-beat structure, fresh-eyes angle. (10 min)
+5. Thumbnail poses - each of us, 3 seconds, eyes to lens. (2 min)
+6. B-roll sweep - details, views, walking shots, exteriors. (Bayn: shorten this if tight.)
 
-## THE CONTENT MATRIX (what Friday yields)
-**YouTube (3):**
-1. Shared vlog — "Is Dubai still worth it in 2026? We answered it in one morning"
-2. JGE2 project film — joint walk + both talking heads (~6–8 min)
-3. Bayn project film — same (~6–8 min)
-**Reels (8+):**
-- Day-in-the-life ×2 (one each, vertical vlog cut)
-- JGE2 reel ×2 (one each) · Bayn reel ×2 (one each)
-- BONUS ×2 from the day's conversations: the Tara Park drive chat (Drive 2) and the price-point ladder (Drive 3) both cut into standalone talking reels
-**Banked extras:** moving-stories audio (podcast-style clip), Golden Visa callback beat, surf-metaphor hook for future use.
+HOOK LINES (film exactly, on location)
+- Beach, post-surf, board in hand: "Most people think THIS is what moving to Dubai looks like. Give me four hours - I'll show you what pays for it."
+- JGE2: "Wasl is building a second Jumeirah Golf Estates. We came to see if the sequel beats the original."
+- Bayn: "Halfway between Dubai and Abu Dhabi, on the beach. If the two-city story is real, this is where it pays."
+(Each vertical too, for the reels.)
 
-## HOOK LINES (film these exactly, on location)
-- Beach, post-surf, board in hand: "Most people think THIS is what moving to Dubai looks like. Give me four hours — I'll show you what pays for it."
-- JGE2 arrival: "Wasl is building a second Jumeirah Golf Estates. We came to see if the sequel beats the original."
-- Bayn arrival: "Halfway between Dubai and Abu Dhabi, on the beach. If the two-city thesis is real, this is where it pays."
-(Each also filmed vertical for the reels.)
+WHAT FRIDAY YIELDS
+YouTube x3: the vlog (best-mate story) / JGE2 film (joint walk + both talking) / Bayn film (same)
+Reels x8: day-in-the-life x2 (one each) / JGE2 x2 / Bayn x2 / BONUS x2 - the Tara Park car chat and the price-ladder chat both cut as standalone talking reels
+Banked: moving-stories audio, Golden Visa jacuzzi callback, surf-metaphor hook.
 
-## WILLAN'S TECH CARD
-- Both mics live from 05:30 — car audio IS content. Test before Drive 1.
-- Every piece-to-camera: vertical AND horizontal versions.
-- Sunrise (surf) = the beauty shots of the day: wides + slow-mo priority.
-- Batteries, storage, phone-charge check Thursday night. Phone as BTS second angle.
-- Folder discipline: albums per block — VLOG / DRIVES / JGE2 / BAYN / BROLL.
-- Thumbnail frames at every location (both subjects, singles and together).
+WILLAN'S CARD
+- Both mics live from 05:30 - the car chats ARE content. Test before Drive 1.
+- Every piece to camera in BOTH orientations (YouTube horizontal, reels vertical).
+- Sunrise surf = the beauty shots of the day. Prioritise wides + slow-mo there.
+- Thumbnail frames at every location - singles and together.
+- Albums: VLOG / DRIVES / JGE2 / BAYN / BROLL. File as we go.
+- Batteries, storage, kit check THURSDAY NIGHT. Phone as second/BTS angle.
 
-## CONTINGENCY + FLAGS
-- **Bayn → home timing:** Bayn (Ghantoot direction) to home is likely 30–40 min — if the 11:30 promise is hard, leave Bayn 10:50, not 11:00.
-- Heat by 10:00 will be real — water in the car, JGE2 outdoor pieces before Bayn's, shade for talking heads.
-- If running behind: the cut is Drive 4's topic and Bayn's b-roll sweep — never the solo pieces.
-- Site access: confirm both sales centres are open to film Friday morning (JGE2 + Bayn) — one WhatsApp each on Thursday.
+FLAGS
+- Bayn > home is ~30-40 min - that's why we leave Bayn 10:50, not 11:00. The 11:30 is a hard promise.
+- Heat is real by 10am: water in the car, outdoor pieces early at each site, shade for talking heads.
+- Running behind? Cut Drive 4's topic and Bayn b-roll - NEVER the solo pieces.
+- Thursday: confirm filming OK at both sales centres (one WhatsApp each), surf booking reconfirm, early night - 04:45 call.
 
-## THURSDAY PREP (so Friday is execution only)
-- Calum + Max: per-project talking-point sheets (JGE2 + Bayn — verified facts, who's building, positioning, buyer fit) — Max researches, Calum reviews.
-- Confirm site access ×2 · surf booking ✓ · Willan kit check · early night (04:45 call time).
+One morning. One story. Eleven pieces of content. Let's have some fun with it. 🏄
