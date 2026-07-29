@@ -838,11 +838,11 @@
   "source": "Unknown",
   "colleague": "Self",
   "area": "Lagoons",
-  "cluster1": "",
+  "cluster1": "Costa Brava",
   "cluster2": "",
   "cluster3": "",
   "matchedUnit": "",
-  "beds": "4",
+  "beds": "3",
   "finance": "Cash",
   "budget": 2450000,
   "needed": 0,
@@ -852,7 +852,7 @@
   "unitSupply": 0,
   "feeling": 0,
   "score": 0,
-  "notes": "Phone contact saved as 'Masoud Buyer 3 Cash'. Incoming call 2026-07-29 11:25, 5 mins. Offered 2.45M on a 4-bed. INCOMPLETE: cluster not confirmed (Calum's note read 'cost of four bed' - likely Costa Brava, unverified) and his message was cut off mid-sentence. Seller/unit not captured, so no offers.json entry yet.",
+  "notes": "Phone contact saved as 'Masoud Buyer 3 Cash'. Incoming call 2026-07-29 11:25, 5 mins. Offered 2.45M on a Costa Brava 3-bed (Calum confirmed cluster and bed count). Seller/unit not captured, so no offers.json entry yet.",
   "id": "masoud-25",
   "order": 25,
   "stage": "Offer",
@@ -860,13 +860,13 @@
   "lastContact": "2026-07-29",
   "nextTouch": "2026-07-30",
   "touchReason": "Chase response on the 2.45M offer",
-  "needSummary": "Cash buyer, 4-bed, offered 2.45M; cluster unconfirmed",
+  "needSummary": "Cash buyer, Costa Brava 3-bed, offered 2.45M",
   "snoozedUntil": null,
   "touches": [
    {
     "date": "2026-07-29",
     "channel": "call",
-    "summary": "Incoming call 11:25, 5 mins - offered 2.45M on a 4-bed (cluster to confirm)."
+    "summary": "Incoming call 11:25, 5 mins - offered 2.45M on a Costa Brava 3-bed."
    }
   ],
   "phone": "+971 54 446 9769"
