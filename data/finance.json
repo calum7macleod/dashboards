@@ -3848,11 +3848,12 @@
   },
   {
    "to": "Lewis",
-   "amount": 12000,
+   "amount": 0,
    "currency": "GBP",
    "asOf": "2026-07-26",
    "note": "Original 17K; 5K paid last month. 12K remaining. 7K allocated from this payday -> will leave 5K.",
-   "original": 22000
+   "original": 22000,
+   "status": "RESOLVED - Lewis declined repayment (30 Jul). Calum sent D10,000 gesture instead."
   },
   {
    "to": "Dad",
@@ -3892,7 +3893,7 @@
   "expected": 50000,
   "currency": "GBP",
   "created": "2026-07-26",
-  "status": "FUNDED - actual ~\u00a360.9K vs \u00a354.2K plan: GAP OF 4,200 SOLVED with ~\u00a36.7K spare",
+  "status": "EXECUTING 30 Jul - final v3",
   "sequence": "1) BoS 5K 2) verify Virgin/Santander/M&S minimums 3) ADIB full kill 4) headroom 5) family+Amex 6) business 7) fun",
   "allocations": [
    {
@@ -3955,7 +3956,29 @@
   "outcome": "Dead: OD, ADIB, Aqua? NO - Aqua untouched per Calum. Dead: OD, ADIB, Luca, Tal Amex, Calum Amex. Headroom on all 8. ~660/mo interest deleted. Business funded.",
   "actualReceived_aed": 295626.75,
   "actualReceived_gbp_est": 60950,
-  "spareNote": "Spare ~6-7K: recommend Aqua kill (3,494) + rest to BoS buffer"
+  "spareNote": "Spare ~6-7K: recommend Aqua kill (3,494) + rest to BoS buffer",
+  "finalAllocations": {
+   "UK_wise_single_transfer_gbp": 23494,
+   "UK": {
+    "BoS": 5000,
+    "Headroom_500x8": 4000,
+    "CalumAmexGold": 2000,
+    "TalAmex": 4000,
+    "Luca": 1000,
+    "TalBills": 1000,
+    "TalHome": 3000,
+    "Aqua_KILL": 3494
+   },
+   "AED": {
+    "ADIB_KILL_aed": 71000,
+    "Lewis_gift_aed": 10000,
+    "Holiday_aed": 24250,
+    "Push_aed": 14550,
+    "Business_aed": 24250
+   },
+   "leftover_est_gbp": 7800,
+   "note": "Lewis loan resolved by his own call; D10K gesture. Headroom upgraded 200->500/card. Aqua killed from freed funds."
+  }
  },
  "payslips": [
   {
