@@ -25,7 +25,8 @@
   "annualAcc": 1795000,
   "order": 1,
   "id": "tony-bashayer-ph",
-  "takeHomeSource": "est at 65% Q3 tier (was 96,000 at assumed 60%)"
+  "takeHomeSource": "est at 65% Q3 tier (was 96,000 at assumed 60%)",
+  "expectedPay": "2026-08"
  },
  {
   "date": "2026-07-24",
@@ -81,7 +82,8 @@
   "annualAcc": 1635000,
   "order": 3,
   "id": "p218-malta",
-  "takeHomeSource": "est at 65% Q3 tier (was 6,600 at assumed 60%)"
+  "takeHomeSource": "est at 65% Q3 tier (was 6,600 at assumed 60%)",
+  "expectedPay": "2026-08"
  },
  {
   "date": "2026-06-09",
@@ -108,7 +110,8 @@
   "monthAcc": 0,
   "annualAcc": 0,
   "order": 4,
-  "id": "mohamed-0"
+  "id": "mohamed-0",
+  "expectedPay": "2026-08"
  },
  {
   "date": "2026-06-08",
@@ -135,7 +138,8 @@
   "monthAcc": 0,
   "annualAcc": 0,
   "order": 5,
-  "id": "michael-1"
+  "id": "michael-1",
+  "expectedPay": "2026-09"
  },
  {
   "date": "2026-06-08",
@@ -162,7 +166,8 @@
   "monthAcc": 0,
   "annualAcc": 0,
   "order": 6,
-  "id": "ankur-2"
+  "id": "ankur-2",
+  "expectedPay": "2026-10"
  },
  {
   "date": "2026-05-23",
