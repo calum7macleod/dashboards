@@ -3978,7 +3978,25 @@
    },
    "leftover_est_gbp": 7800,
    "note": "Lewis loan resolved by his own call; D10K gesture. Headroom upgraded 200->500/card. Aqua killed from freed funds."
-  }
+  },
+  "executionLog": [
+   {
+    "date": "2026-07-30",
+    "action": "D130,000 sent (via Tal) to FX for UK leg - covers the 23.5K GBP distribution list"
+   },
+   {
+    "date": "2026-07-30",
+    "action": "D5,000 stays with Tal in her account"
+   },
+   {
+    "date": "2026-07-30",
+    "action": "ADIB: ~D20,000 paid (daily transfer limit hit). Remainder ~D51,000 due TOMORROW MORNING - completes the kill"
+   },
+   {
+    "date": "2026-07-31",
+    "action": "PENDING: ADIB balance ~51K + Lewis 10K gesture + holiday/push/business parks (~63K)"
+   }
+  ]
  },
  "payslips": [
   {
