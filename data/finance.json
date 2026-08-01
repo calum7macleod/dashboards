@@ -3553,6 +3553,78 @@
    "amount": 1101,
    "need": "",
    "category": "Business"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "SELFDRIVE AE (card *789) 14:42",
+   "account": "ADIB CC",
+   "amount": 245.66,
+   "category": "Life"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "SELFDRIVE AE (card *789) 14:42",
+   "account": "ADIB CC",
+   "amount": 245.66,
+   "category": "Life"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "SELFDRIVE AE (card *789) 14:42",
+   "account": "ADIB CC",
+   "amount": 245.66,
+   "category": "Life"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "PARKONIC PARKING SYS (card *789) 20:05",
+   "account": "ADIB CC",
+   "amount": 10.0,
+   "category": "Life"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "Qlub*CQ French Brasser (card *789) 21:02",
+   "account": "ADIB CC",
+   "amount": 488.83,
+   "category": "Entertainment"
+  },
+  {
+   "month": "Aug 26",
+   "day": 1,
+   "description": "BOXICA (card *789) 00:04",
+   "account": "ADIB CC",
+   "amount": 949.0,
+   "category": "Other"
+  },
+  {
+   "month": "Jul 26",
+   "day": 30,
+   "description": "CARD PAYMENT IN - credit to card *789 (negative = repayment, not spend)",
+   "account": "ADIB CC",
+   "amount": -19993.52,
+   "category": "Loan"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "CARD PAYMENT IN - credit to card *789 (negative = repayment, not spend)",
+   "account": "ADIB CC",
+   "amount": -30000.0,
+   "category": "Loan"
+  },
+  {
+   "month": "Aug 26",
+   "day": 1,
+   "description": "CARD PAYMENT IN - credit to card *789, reported verbally by Calum, no SMS captured",
+   "account": "ADIB CC",
+   "amount": -24000.0,
+   "category": "Loan"
   }
  ],
  "ccBalances": [
@@ -3835,6 +3907,16 @@
    "balance": 14600,
    "currency": "GBP",
    "status": "Still maxed (working credit - excluded from killable) | CORRECTED 26 Jul: balance is ~GBP 14.6-15K (not AED)"
+  },
+  {
+   "date": "2026-08-01",
+   "month": "Aug 26",
+   "card": "ADIB *789",
+   "balance": null,
+   "currency": "AED",
+   "available": 45505.9,
+   "limit": null,
+   "status": "Avl bal per SMS after BOXICA 01/08 00:04. Two payments in: 19,993.52 (30 Jul) + 30,000.00 (31 Jul); Calum reports a further 24,000 paid 1 Aug (not yet in this figure). M&S DXBH 51.24 on 30/07 15:42 was REJECTED - insufficient funds - pre-payments. Card identity vs 'ADIB Emirates VC Sig' record not confirmed."
   }
  ],
  "personalDebts": [
