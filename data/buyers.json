@@ -870,5 +870,45 @@
    }
   ],
   "phone": "+971 54 446 9769"
+ },
+ {
+  "date": "2026-08-01",
+  "status": "Active",
+  "buyer": "Najla Aboobakar",
+  "source": "Property Finder",
+  "colleague": "Self",
+  "area": "Costa Brava / The Valley",
+  "cluster1": "Malta",
+  "cluster2": "The Valley",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "4",
+  "finance": "Mortgage",
+  "budget": 2500000,
+  "needed": 0,
+  "diff": 0,
+  "responsiveness": 4,
+  "relationship": 0,
+  "unitSupply": 0,
+  "feeling": 0,
+  "score": 0,
+  "notes": "Property Finder lead on Costa Brava 1 4-bed TH listing (1,547 sqft, 'Premium | Mortgageable | Neutral Color'). Met in person 2026-08-01. Budget 2.4-2.5M. Mortgage 2M plus deposit and costs on top. Deciding between here (Lagoons) and The Valley. They preferred the single rows; Calum's read is The Valley likely the best fit, and Malta flagged as the best cluster option - Calum's view, not the buyers' stated preference. He is a facade designer and works with the developer a lot. UNCONFIRMED: whether 'they' is Najla plus partner - only Najla's number captured. Also unclear whether 'no one doubt' referred to a specific unit.",
+  "id": "najla-26",
+  "order": 26,
+  "stage": "Qualified",
+  "heat": 4,
+  "lastContact": "2026-08-01",
+  "nextTouch": "2026-08-03",
+  "touchReason": "Send Malta and The Valley options following the meeting",
+  "needSummary": "4-bed TH, 2.4-2.5M, 2M mortgage + deposit, Lagoons vs The Valley, prefers single rows",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-01",
+    "channel": "meeting",
+    "summary": "Met in person. Budget 2.4-2.5M, 2M mortgage plus deposit/costs. Torn between Lagoons and The Valley; preferred single rows. Facade designer, works with the developer often. Calum's steer: Malta / The Valley."
+   }
+  ],
+  "phone": "+971 50 518 8013"
  }
 ]
