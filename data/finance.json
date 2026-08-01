@@ -3917,6 +3917,16 @@
    "available": 45505.9,
    "limit": null,
    "status": "Avl bal per SMS after BOXICA 01/08 00:04. Two payments in: 19,993.52 (30 Jul) + 30,000.00 (31 Jul); Calum reports a further 24,000 paid 1 Aug (not yet in this figure). M&S DXBH 51.24 on 30/07 15:42 was REJECTED - insufficient funds - pre-payments. Card identity vs 'ADIB Emirates VC Sig' record not confirmed."
+  },
+  {
+   "date": "2026-08-01",
+   "month": "Aug 26",
+   "card": "ADIB Emirates VC Sig (*789)",
+   "balance": 0,
+   "currency": "AED",
+   "available": 69500,
+   "limit": null,
+   "status": "KILLED 30 Jul-1 Aug: payments 19,993.52 + 30,000 + 24,000 = 73,993.52 cleared full balance (was ~GBP 14.6K equiv). *789 = same card as 'ADIB Emirates VC Sig' record - reconciled. New spend already: ~2,186 AED (SelfDrive/Qlub/Boxica) - designated live daily card, PAY IN FULL monthly rule applies."
   }
  ],
  "personalDebts": [
@@ -4101,6 +4111,10 @@
    {
     "date": "2026-08-03",
     "action": "TAL PAID IN FULL: \u00a39,000 (Amex 4K + bills + going home). Barclaycard \u00a3550 re-sent and cleared (earlier attempt had bounced). BoS balance after pending: \u00a3855.91. PENDING: Luca \u00a31,000 status?, the \u00a3750 card ID, ADIB tail ~D21K."
+   },
+   {
+    "date": "2026-08-01",
+    "action": "ADIB FULLY DEAD: 73,993.52 total payments across 3 days cleared the card. Available ~69.5K. THE most expensive debt eliminated (~470/mo interest gone). Plan now 100% on kills."
    }
   ]
  },
