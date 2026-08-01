@@ -4007,6 +4007,10 @@
    {
     "date": "2026-07-30",
     "action": "PENDING: HSBC 500 (payment blocked - retry), Luca 1,000, Tal 506. TOMORROW: ADIB tail ~D21K, Tal remaining 3,494, HSBC retry."
+   },
+   {
+    "date": "2026-07-31",
+    "action": "Barclaycard 550 cleared (pending resolved). BoS balance now \u00a3855 + OD headroom. ~\u00a34K still inbound for Tal's remainder."
    }
   ]
  },
