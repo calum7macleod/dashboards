@@ -1,110 +1,119 @@
 [
-  {
-    "id": "c01733ad-b372-4cd4-a461-80f0dd5af828",
-    "date": "2026-07-04",
-    "buyer": "Nad",
-    "unit": "",
-    "cluster": "Malta",
-    "outcome": "Met in person. Signing today - hopefully with us.",
-    "nextStep": "Chase signing today, confirm it lands with us"
-  },
-  {
-    "id": "ad243540-a8b1-4b5e-9395-e4f2bf171d91",
-    "date": "2026-07-04",
-    "buyer": "Ari",
-    "unit": "",
-    "cluster": "Costa Brava (interest)",
-    "outcome": "Met in person - really sound. French couple, newborn. Wants 5bd single row cash but Costa won't fit 3.3M budget. Can wait; doesn't want clusters near the apartments.",
-    "nextStep": "Send more 5bd single row options within 3.3M, narrow down what he wants"
-  },
-  {
-    "id": "eca05b0b-075b-435a-b03f-40a519516f43",
-    "date": "2026-07-04",
-    "buyer": "Nikhil",
-    "unit": "",
-    "cluster": "",
-    "outcome": "Viewing couldn't happen (no access to unit) but buyer kept insisting on going anyway. Frustrating exchange.",
-    "nextStep": "Passive - see if he comes back. No proactive follow-up."
-  },
-  {
-    "id": "85baa3cd-9f6a-4199-8298-0f892c01ff3b",
-    "date": "2026-07-04",
-    "buyer": "Sarah",
-    "unit": "",
-    "cluster": "Malta / Costa Brava (interest)",
-    "outcome": "Went well, good rapport. Deciding between 3bd and 4bd single row. Sensible budget, mortgage.",
-    "nextStep": "Stay in touch - follow up Monday with single row options both bed counts"
-  },
-  {
-    "id": "d01cad9b-7c14-40d8-bfe7-2236000e9b29",
-    "date": "2026-07-04",
-    "buyer": "Nigel",
-    "unit": "",
-    "cluster": "Costa Brava (interest)",
-    "outcome": "Met - sound, went well. Abu Dhabi based, likely relocating here. Big family but OK with 4 bed. Expecting 2.5M - position the 2.5 unit as sold. Likes Costa Brava, open to alternatives. Mortgage.",
-    "nextStep": "Follow up Monday with Costa options above 2.5 + comparable clusters"
-  },
-  {
-    "id": "e0e64483-293a-4fa6-a09a-501a7c0a7684",
-    "date": "2026-07-04",
-    "buyer": "SB",
-    "unit": "",
-    "cluster": "Portofino / V3 (interest)",
-    "outcome": "Best meeting of the day. Wealthy, existing off-plan owner, cash. Thinking 5bd Portofino, open to a V3. Strong trust built.",
-    "nextStep": "Line up 5bd Portofino + V3 options for next weekend (he's only in Fri/Sat-Sun)"
-  },
-  {
-    "id": "76c423e1-71e8-4f55-9572-1407746cb078",
-    "date": "2026-07-04",
-    "buyer": "Ahmed",
-    "unit": "",
-    "cluster": "Costa Brava 4bd",
-    "outcome": "Really good. Canadian. Viewing shifted his brief up - now wants a V3 (7M, 14M behind per Som).",
-    "nextStep": "Get back to him, arrange several V3 viewings early next week (Tue V3 already set)"
-  },
-  {
-    "id": "cb453abd-5a60-41df-a44c-7230874efca9",
-    "date": "2026-07-08",
-    "buyer": "ET",
-    "unit": "",
-    "cluster": "Lagoons 4bd + 3bd",
-    "outcome": "Not great. 4-bed gardens too small; 3-beds don't have the space inside. Readiness to buy unclear.",
-    "nextStep": "Send Villanova 3-bed options Monday - cheapest route at ~2.6M budget"
-  },
-  {
-    "id": "30df0a47-11f9-4047-acd6-42ca66683157",
-    "date": "2026-07-08",
-    "buyer": "Hania",
-    "unit": "",
-    "cluster": "Costa Brava SR (enquiry)",
-    "outcome": "Cash buyers, 2.6M, want Costa Brava single row - told them honestly not achievable at that price. Receptive to other clusters. Good energy.",
-    "nextStep": "Send single-row alternatives in other clusters at 2.6M"
-  },
-  {
-    "id": "4225c3fe-9f52-4ef7-a40d-987b915f2505",
-    "date": "2026-07-08",
-    "buyer": "Hania",
-    "unit": "",
-    "cluster": "Costa Brava (interest)",
-    "outcome": "Good buyers, cash. Want Costa SR at 2.6M - told them honestly it's not achievable at that number. Open to later-handover clusters.",
-    "nextStep": "Send single-row options in later clusters at ~2.6M. Stay close."
-  },
-  {
-    "id": "79dfe470-157c-4197-92f2-904048cdd05e",
-    "date": "2026-07-08",
-    "buyer": "Georgia",
-    "unit": "",
-    "cluster": "Costa Brava / park-backing (interest)",
-    "outcome": "Good British buyers. Torn between Costa SR, a 4bd on the park, or a 5bd SR at the lower end. Must move in by September.",
-    "nextStep": "Filter to vacant-on-transfer units only; send shortlist Monday"
-  },
-  {
-    "id": "d55b9d1d-50c9-48cc-a716-29cee6631796",
-    "date": "2026-07-08",
-    "buyer": "Akash",
-    "unit": "",
-    "cluster": "",
-    "outcome": "Really good meeting. Between 4bd and 5bd. Mortgage in progress. No rush - value hunters, will wait for the right price.",
-    "nextStep": "Track mortgage progress; feed motivated-seller deals as they appear"
-  }
+ {
+  "id": "c01733ad-b372-4cd4-a461-80f0dd5af828",
+  "date": "2026-07-04",
+  "buyer": "Nad",
+  "unit": "",
+  "cluster": "Malta",
+  "outcome": "Met in person. Signing today - hopefully with us.",
+  "nextStep": "Chase signing today, confirm it lands with us"
+ },
+ {
+  "id": "ad243540-a8b1-4b5e-9395-e4f2bf171d91",
+  "date": "2026-07-04",
+  "buyer": "Ari",
+  "unit": "",
+  "cluster": "Costa Brava (interest)",
+  "outcome": "Met in person - really sound. French couple, newborn. Wants 5bd single row cash but Costa won't fit 3.3M budget. Can wait; doesn't want clusters near the apartments.",
+  "nextStep": "Send more 5bd single row options within 3.3M, narrow down what he wants"
+ },
+ {
+  "id": "eca05b0b-075b-435a-b03f-40a519516f43",
+  "date": "2026-07-04",
+  "buyer": "Nikhil",
+  "unit": "",
+  "cluster": "",
+  "outcome": "Viewing couldn't happen (no access to unit) but buyer kept insisting on going anyway. Frustrating exchange.",
+  "nextStep": "Passive - see if he comes back. No proactive follow-up."
+ },
+ {
+  "id": "85baa3cd-9f6a-4199-8298-0f892c01ff3b",
+  "date": "2026-07-04",
+  "buyer": "Sarah",
+  "unit": "",
+  "cluster": "Malta / Costa Brava (interest)",
+  "outcome": "Went well, good rapport. Deciding between 3bd and 4bd single row. Sensible budget, mortgage.",
+  "nextStep": "Stay in touch - follow up Monday with single row options both bed counts"
+ },
+ {
+  "id": "d01cad9b-7c14-40d8-bfe7-2236000e9b29",
+  "date": "2026-07-04",
+  "buyer": "Nigel",
+  "unit": "",
+  "cluster": "Costa Brava (interest)",
+  "outcome": "Met - sound, went well. Abu Dhabi based, likely relocating here. Big family but OK with 4 bed. Expecting 2.5M - position the 2.5 unit as sold. Likes Costa Brava, open to alternatives. Mortgage.",
+  "nextStep": "Follow up Monday with Costa options above 2.5 + comparable clusters"
+ },
+ {
+  "id": "e0e64483-293a-4fa6-a09a-501a7c0a7684",
+  "date": "2026-07-04",
+  "buyer": "SB",
+  "unit": "",
+  "cluster": "Portofino / V3 (interest)",
+  "outcome": "Best meeting of the day. Wealthy, existing off-plan owner, cash. Thinking 5bd Portofino, open to a V3. Strong trust built.",
+  "nextStep": "Line up 5bd Portofino + V3 options for next weekend (he's only in Fri/Sat-Sun)"
+ },
+ {
+  "id": "76c423e1-71e8-4f55-9572-1407746cb078",
+  "date": "2026-07-04",
+  "buyer": "Ahmed",
+  "unit": "",
+  "cluster": "Costa Brava 4bd",
+  "outcome": "Really good. Canadian. Viewing shifted his brief up - now wants a V3 (7M, 14M behind per Som).",
+  "nextStep": "Get back to him, arrange several V3 viewings early next week (Tue V3 already set)"
+ },
+ {
+  "id": "cb453abd-5a60-41df-a44c-7230874efca9",
+  "date": "2026-07-08",
+  "buyer": "ET",
+  "unit": "",
+  "cluster": "Lagoons 4bd + 3bd",
+  "outcome": "Not great. 4-bed gardens too small; 3-beds don't have the space inside. Readiness to buy unclear.",
+  "nextStep": "Send Villanova 3-bed options Monday - cheapest route at ~2.6M budget"
+ },
+ {
+  "id": "30df0a47-11f9-4047-acd6-42ca66683157",
+  "date": "2026-07-08",
+  "buyer": "Hania",
+  "unit": "",
+  "cluster": "Costa Brava SR (enquiry)",
+  "outcome": "Cash buyers, 2.6M, want Costa Brava single row - told them honestly not achievable at that price. Receptive to other clusters. Good energy.",
+  "nextStep": "Send single-row alternatives in other clusters at 2.6M"
+ },
+ {
+  "id": "4225c3fe-9f52-4ef7-a40d-987b915f2505",
+  "date": "2026-07-08",
+  "buyer": "Hania",
+  "unit": "",
+  "cluster": "Costa Brava (interest)",
+  "outcome": "Good buyers, cash. Want Costa SR at 2.6M - told them honestly it's not achievable at that number. Open to later-handover clusters.",
+  "nextStep": "Send single-row options in later clusters at ~2.6M. Stay close."
+ },
+ {
+  "id": "79dfe470-157c-4197-92f2-904048cdd05e",
+  "date": "2026-07-08",
+  "buyer": "Georgia",
+  "unit": "",
+  "cluster": "Costa Brava / park-backing (interest)",
+  "outcome": "Good British buyers. Torn between Costa SR, a 4bd on the park, or a 5bd SR at the lower end. Must move in by September.",
+  "nextStep": "Filter to vacant-on-transfer units only; send shortlist Monday"
+ },
+ {
+  "id": "d55b9d1d-50c9-48cc-a716-29cee6631796",
+  "date": "2026-07-08",
+  "buyer": "Akash",
+  "unit": "",
+  "cluster": "",
+  "outcome": "Really good meeting. Between 4bd and 5bd. Mortgage in progress. No rush - value hunters, will wait for the right price.",
+  "nextStep": "Track mortgage progress; feed motivated-seller deals as they appear"
+ },
+ {
+  "id": "144efe9f-d3d6-4284-a9d7-463136018dac",
+  "date": "2026-08-03",
+  "buyer": "Rohan",
+  "unit": "Costa Brava single row (specific unit TBC) - originally enquired on Bayut 15560179",
+  "cluster": "Costa Brava",
+  "outcome": "Scheduled - Mon 3 Aug 5pm, meet at DAMAC Lagoons main gate. Calum in black BMW 1 series.",
+  "nextStep": "Run the viewing; bring Malta handover date and any single row under 3.5M"
+ }
 ]
