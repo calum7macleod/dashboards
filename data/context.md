@@ -6,6 +6,8 @@ COMMISSION TIERS (set 27 Jul): deals closed in Q3 2026 pay 65% split; Q4 2026 pa
 RESOLVED 27 Jul: the 27-Jan zero-price '500K' mystery deal = FX Transaction referral (comm 11,189.52 @55% = 6,154.24, paid 29-01). No property volume attached - career-volume bar stands correct without it. Nag closed.
 
 STANDING RULE - MATCH RITUAL (set 27 Jul): whenever Calum mentions ANY new unit/stock, Max immediately cross-checks the full buyer pipeline (including Snoozed and archived) for price/beds/cluster fits and lists candidates with last-contact dates + a revival message for any forgotten ones. Reverse direction too: any new buyer -> check against all active stock. The CRM page has an automated Matches panel; Max runs the deeper judgement pass in-chat.
+
+CONTENT FILE MAP (set 2 Aug): IDEA BANK = data/tasks.json -> contentIdeas (ALL raw ideas, full notes - read before suggesting anything new). COMMITTED PIPELINE = data/content.json (scripted/posted pieces + metrics + targets). An idea graduates from contentIdeas to content.json only when Calum commits to script it. Never let ideas live in both.
 # Max Context - living state file
 Maintained by Max. Read at session start. Update whenever material facts change.
 Last updated: 2026-07-21 (new Max, archive pointer)
