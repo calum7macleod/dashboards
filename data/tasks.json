@@ -2151,11 +2151,11 @@
    "area": "Real Estate",
    "priority": "medium",
    "difficulty": 3,
-   "status": "active",
+   "status": "done",
    "due": "2026-08-02",
    "created": "2026-08-02",
    "notes": "Light Sunday list.",
-   "completed": null,
+   "completed": "2026-08-02",
    "snoozedUntil": null,
    "top3": false,
    "order": 73
@@ -2354,7 +2354,7 @@
   },
   {
    "id": "8498dda8-d812-45d1-8d43-d1d4864bdec4",
-   "title": "How to own INFINITE properties starting from \u00a3100K - the off-plan compounding ladder",
+   "title": "How to own INFINITE properties starting from £100K - the off-plan compounding ladder",
    "format": "Reel",
    "status": "Idea",
    "priority": "medium",
