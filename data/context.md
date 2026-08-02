@@ -8,6 +8,9 @@ RESOLVED 27 Jul: the 27-Jan zero-price '500K' mystery deal = FX Transaction refe
 STANDING RULE - MATCH RITUAL (set 27 Jul): whenever Calum mentions ANY new unit/stock, Max immediately cross-checks the full buyer pipeline (including Snoozed and archived) for price/beds/cluster fits and lists candidates with last-contact dates + a revival message for any forgotten ones. Reverse direction too: any new buyer -> check against all active stock. The CRM page has an automated Matches panel; Max runs the deeper judgement pass in-chat.
 
 CONTENT FILE MAP (set 2 Aug): IDEA BANK = data/tasks.json -> contentIdeas (ALL raw ideas, full notes - read before suggesting anything new). COMMITTED PIPELINE = data/content.json (scripted/posted pieces + metrics + targets). An idea graduates from contentIdeas to content.json only when Calum commits to script it. Never let ideas live in both.
+
+STANDING RITUAL - SUNDAY PLANNING (Calum's call, 2 Aug: 'I like planning on a Sunday, I'm going to get it back'): every Sunday = week plan + content calendar with Max, messages swept, one post. Max prompts it if Sunday afternoon arrives without it.
+WEEK 3-9 AUG PLAN (locked 2 Aug, calendar is source): Mon edit Hudayriyat ads/script Infinite+Tara, CRM build, DLD feed, buyer-seller catchups, Santorini calls, Rohan 5pm. Tue record Tara+Infinite, social review, coaching session. Wed edit/script 117bn+Top5, HNW buyers work, Easy Search. Thu record 117bn+Top5, Poppy 121. Fri record What-is-Best at home. Sat viewings 8:45-4:30. Sun messages zero + finance. WA BRIDGE GO-LIVE not slotted in calendar - flagged to Calum 2 Aug.
 # Max Context - living state file
 Maintained by Max. Read at session start. Update whenever material facts change.
 Last updated: 2026-07-21 (new Max, archive pointer)
