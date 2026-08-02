@@ -2,234 +2,313 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CRM — Buyers</title>
+<title>CRM — Calum MacLeod</title>
 <style>
-:root{--bg:#152A1F;--panel:#1E3D2F;--gold:#C9A84C;--lgold:#E8C96B;--cream:#F5EDE0;--muted:#8FA898;--div:#2E5A40;--red:#f85149;--green:#3fb950;--amber:#d29922}
+:root{--bg:#152A1F;--panel:#1E3D2F;--card:#162b20;--gold:#C9A84C;--lgold:#E8C96B;--cream:#F5EDE0;--muted:#8FA898;--div:#2E5A40;--red:#f85149;--green:#3fb950;--amber:#d29922}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--cream);font-family:Calibri,'Segoe UI',sans-serif;min-height:100vh;padding:14px}
+body{background:var(--bg);color:var(--cream);font-family:Calibri,'Segoe UI',sans-serif;min-height:100vh;padding:12px}
 h1,h2,h3{font-family:'Palatino Linotype',Palatino,serif}
-.eyebrow{letter-spacing:4px;font-size:12px;font-weight:bold;color:var(--gold);text-transform:uppercase;text-align:center;margin:6px 0 2px}
-h1{text-align:center;font-size:26px;margin-bottom:12px}
-.connect{background:var(--panel);border:1px solid var(--div);border-radius:12px;padding:14px;max-width:560px;margin:0 auto 14px}
-.connect input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--div);background:#12241b;color:var(--cream);margin:8px 0}
-.btn{background:var(--gold);color:#152A1F;font-weight:bold;border:none;border-radius:9px;padding:10px 16px;cursor:pointer;font-size:14px}
+.eyebrow{letter-spacing:4px;font-size:11px;font-weight:bold;color:var(--gold);text-transform:uppercase;text-align:center;margin:4px 0 2px}
+h1{text-align:center;font-size:24px;margin-bottom:10px}
+.tabs{display:flex;gap:8px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.tab{background:var(--panel);border:1px solid var(--div);color:var(--cream);padding:9px 18px;border-radius:20px;cursor:pointer;font-size:14px;font-weight:bold}
+.tab.on{background:var(--gold);color:#152A1F;border-color:var(--gold)}
+.btn{background:var(--gold);color:#152A1F;font-weight:bold;border:none;border-radius:9px;padding:9px 14px;cursor:pointer;font-size:13px}
 .btn.sec{background:transparent;color:var(--lgold);border:1px solid var(--div)}
+.mini{padding:6px 10px;font-size:12px;border-radius:7px}
 .hidden{display:none!important}
-#touches{background:var(--panel);border:1px solid var(--div);border-radius:14px;padding:12px;margin:0 auto 16px;max-width:1200px}
-#touches h2{color:var(--lgold);font-size:18px;margin-bottom:8px}
+.wrap{max-width:1400px;margin:0 auto}
+.panelbox{background:var(--panel);border:1px solid var(--div);border-radius:14px;padding:12px;margin-bottom:14px}
 .touchrow{display:flex;align-items:center;gap:10px;padding:9px 6px;border-top:1px solid var(--div);flex-wrap:wrap}
 .touchrow:first-of-type{border-top:none}
-.tname{font-weight:bold;min-width:130px}
-.treason{color:var(--muted);font-size:13px;flex:1;min-width:160px}
+.tname{font-weight:bold;min-width:120px;cursor:pointer}
+.treason{color:var(--muted);font-size:13px;flex:1;min-width:150px}
 .due-over{color:var(--red);font-size:12px;font-weight:bold}
 .due-today{color:var(--amber);font-size:12px;font-weight:bold}
-.mini{padding:6px 10px;font-size:12px;border-radius:7px}
-#board{display:flex;gap:12px;overflow-x:auto;padding-bottom:20px;max-width:1400px;margin:0 auto}
-.col{background:var(--panel);border:1px solid var(--div);border-radius:14px;min-width:240px;width:240px;flex:0 0 auto;padding:10px}
-.col h3{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between;margin-bottom:8px}
-.col .count{color:var(--muted);font-family:Calibri}
+#board,#sboard{display:flex;gap:10px;overflow-x:auto;padding-bottom:16px}
+.col{background:var(--panel);border:1px solid var(--div);border-radius:14px;min-width:235px;width:235px;flex:0 0 auto;padding:9px}
+.col h3{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between;margin-bottom:4px}
+.colval{font-size:11px;color:var(--muted);margin-bottom:8px}
 .col.dragover{outline:2px dashed var(--lgold)}
-.card{background:#162b20;border:1px solid var(--div);border-radius:11px;padding:10px;margin-bottom:9px;cursor:grab}
-.card:active{cursor:grabbing}
-.card .nm{font-weight:bold;font-size:15px}
-.heat{color:var(--lgold);font-size:12px;letter-spacing:1px}
-.card .need{color:var(--muted);font-size:12px;margin:4px 0}
-.card .nt{font-size:12px}
-.nt.over{color:var(--red)} .nt.today{color:var(--amber)} .nt.ok{color:var(--muted)}
-.bdg{font-size:12px;color:var(--cream)}
-#modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;padding:14px;z-index:50}
-#mbox{background:var(--panel);border:1px solid var(--div);border-radius:16px;max-width:560px;width:100%;max-height:88vh;overflow-y:auto;padding:18px}
-#mbox h2{color:var(--lgold);margin-bottom:2px}
-#mbox .sub{color:var(--muted);font-size:13px;margin-bottom:10px}
-.kv{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--div);font-size:14px}
-.kv b{color:var(--lgold)}
-.mrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.notes{color:var(--cream);font-size:13px;margin-top:10px;white-space:pre-wrap}
-.thist{margin-top:10px;font-size:12px;color:var(--muted)}
-select,input[type=date]{background:#12241b;color:var(--cream);border:1px solid var(--div);border-radius:7px;padding:8px}
-#sync{position:fixed;bottom:10px;left:12px;font-size:12px;color:var(--muted)}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:5px}
+.card{background:var(--card);border:1px solid var(--div);border-radius:11px;padding:9px;margin-bottom:8px;cursor:grab}
+.card .nm{font-weight:bold;font-size:14px}
+.heat{color:var(--lgold);font-size:11.5px;letter-spacing:1px}
+.card .need{color:var(--muted);font-size:11.5px;margin:3px 0}
+.nt{font-size:11.5px}.nt.over{color:var(--red)}.nt.today{color:var(--amber)}.nt.ok{color:var(--muted)}
+.bdg{font-size:11.5px;color:var(--cream)}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding:12px;z-index:50;overflow-y:auto}
+#mbox{background:var(--panel);border:1px solid var(--div);border-radius:16px;max-width:620px;width:100%;padding:16px;margin:10px 0 40px}
+.phead{display:flex;gap:14px;align-items:center;border-bottom:1px solid var(--div);padding-bottom:12px;margin-bottom:10px;flex-wrap:wrap}
+.heatball{width:74px;height:74px;border-radius:50%;background:var(--card);border:3px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto}
+.heatball b{font-size:26px;color:var(--lgold);font-family:'Palatino Linotype',serif}
+.heatball span{font-size:9px;letter-spacing:2px;color:var(--muted)}
+.pmeta{flex:1;min-width:200px}
+.pmeta h2{color:var(--cream);font-size:22px}
+.pmeta .sub{color:var(--muted);font-size:13px;margin-top:2px}
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.pill{background:var(--card);border:1px solid var(--div);border-radius:14px;padding:4px 10px;font-size:12px;color:var(--cream)}
+.drivers{background:var(--card);border:1px solid var(--div);border-radius:10px;padding:9px;margin:10px 0;font-size:12.5px;color:var(--muted)}
+.drivers b{color:var(--lgold)}
+.tl{margin-top:10px}
+.tlrow{display:flex;gap:10px;padding:8px 0;border-top:1px solid var(--div)}
+.tlic{flex:0 0 26px;text-align:center;font-size:15px}
+.tlbody{flex:1}
+.tldate{font-size:11px;color:var(--muted)}
+.tltext{font-size:13px;color:var(--cream)}
+.mrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+select,input[type=date],input[type=text]{background:#12241b;color:var(--cream);border:1px solid var(--div);border-radius:7px;padding:8px;font-size:13px}
+#peopleList .touchrow{cursor:pointer}
+#search{width:100%;max-width:420px;margin:0 auto 12px;display:block}
+#sync{position:fixed;bottom:8px;left:10px;font-size:11.5px;color:var(--muted);background:rgba(21,42,31,.9);padding:4px 8px;border-radius:8px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:5px}
+.connect{background:var(--panel);border:1px solid var(--div);border-radius:12px;padding:14px;max-width:560px;margin:0 auto 14px}
+.connect input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--div);background:#12241b;color:var(--cream);margin:8px 0}
+a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;font-weight:bold;text-decoration:none;font-size:13px}
 </style>
 </head>
 <body>
 <div class="eyebrow">White &amp; Co · Calum MacLeod</div>
-<h1>Buyer CRM</h1>
-<div class="connect" id="connectBox">
-  <b>🔌 Connect GitHub</b>
-  <div style="color:var(--muted);font-size:13px;margin-top:4px">Paste the GitHub token (stored only in this browser).</div>
-  <input id="patIn" placeholder="github_pat_..." />
-  <button class="btn" onclick="savePat()">Save &amp; connect</button>
+<h1>CRM</h1>
+<div class="connect" id="connectBox"><b>🔌 Connect GitHub</b>
+<input id="patIn" placeholder="github_pat_..." /><button class="btn" onclick="savePat()">Connect</button></div>
+<div class="tabs">
+  <div class="tab on" data-t="today" onclick="tab('today')">Today</div>
+  <div class="tab" data-t="pipeline" onclick="tab('pipeline')">Pipeline</div>
+  <div class="tab" data-t="people" onclick="tab('people')">People</div>
+  <div class="tab" data-t="sellers" onclick="tab('sellers')">Sellers</div>
 </div>
-<div id="touches" class="hidden"><h2>Today's Touches</h2><div id="touchList"></div></div>
-<div id="matches" class="hidden" style="background:var(--panel);border:1px solid var(--div);border-radius:14px;padding:12px;margin:0 auto 16px;max-width:1200px">
-<h2 style="color:var(--lgold);font-size:18px;margin-bottom:8px">Unit ↔ Buyer Matches</h2><div id="matchList"></div></div>
-<div style="max-width:1200px;margin:0 auto 10px;display:flex;justify-content:flex-end">
-<button class="btn" onclick="newBuyer()">+ New Buyer</button></div>
-<div id="board"></div>
-<div id="modal" class="hidden"><div id="mbox"></div></div>
+<div class="wrap">
+  <div id="v-today">
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Today's Touches</h2><div id="touchList"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Unit ↔ Buyer Matches</h2><div id="matchList"></div></div>
+  </div>
+  <div id="v-pipeline" class="hidden">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px">
+      <div id="pipeTotals" style="font-size:13px;color:var(--muted)"></div>
+      <button class="btn" onclick="newBuyer()">+ New Buyer</button>
+    </div>
+    <div id="board"></div>
+  </div>
+  <div id="v-people" class="hidden">
+    <input type="text" id="search" placeholder="Search people…" oninput="renderPeople()">
+    <div class="panelbox" id="peopleList"></div>
+  </div>
+  <div id="v-sellers" class="hidden">
+    <div id="sTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
+    <div id="sboard"></div>
+  </div>
+</div>
+<div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div id="mbox"></div></div>
 <div id="sync"><span class="dot"></span><span id="syncTxt">Loading…</span></div>
 <script>
-const OWNER='calum7macleod', REPO='dashboards', PATH='data/buyers.json';
+const OWNER='calum7macleod', REPO='dashboards';
 const STAGES=['New','Qualified','Viewing','Offer','Won','Lost'];
-let showSnoozed=false;
+const SSTAGES=['Active','Offer','Sold','Later','Lost'];
 const CAD={5:1,4:2,3:3,2:4,1:5};
-let BUYERS=[], STOCK=[], SHA=null, PAT=localStorage.getItem('crm_pat')||localStorage.getItem('gh_pat')||'';
+let BUYERS=[], STOCK=[], VIEWINGS=[], SHAS={}, PAT=localStorage.getItem('crm_pat')||'';
+let showSnoozed=false, curTab='today';
 const $=id=>document.getElementById(id);
-function today(){return new Date().toISOString().slice(0,10)}
-function addDays(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x.toISOString().slice(0,10)}
+const today=()=>new Date().toISOString().slice(0,10);
+const addDays=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x.toISOString().slice(0,10)};
 function savePat(){PAT=$('patIn').value.trim();if(!PAT)return;localStorage.setItem('crm_pat',PAT);init()}
-async function fetchData(){
-  const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}?ref=main&t=${Date.now()}`,{headers:PAT?{Authorization:'Bearer '+PAT}:{}});
-  const j=await r.json(); SHA=j.sha;
-  BUYERS=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
-  try{const r2=await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/stock.json?t=${Date.now()}`);STOCK=await r2.json();}catch(e){STOCK=[]}
+async function fetchFile(path){
+  const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}?ref=main&t=${Date.now()}`,{headers:PAT?{Authorization:'Bearer '+PAT}:{}});
+  const j=await r.json(); SHAS[path]=j.sha;
+  return JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
 }
-let saveTimer=null, dirty=false;
-function queueSave(msg){dirty=true;$('syncTxt').textContent='Saving…';clearTimeout(saveTimer);saveTimer=setTimeout(()=>push(msg),1200)}
-async function push(msg){
+let saveTimer=null;
+function queueSave(path,data,msg){$('syncTxt').textContent='Saving…';clearTimeout(saveTimer);saveTimer=setTimeout(()=>push(path,data,msg),1000)}
+async function push(path,data,msg){
   try{
-    const body={message:msg||'CRM update',content:btoa(unescape(encodeURIComponent(JSON.stringify(BUYERS,null,1)))),sha:SHA,branch:'main'};
-    const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`,{method:'PUT',headers:{Authorization:'Bearer '+PAT,'Content-Type':'application/json'},body:JSON.stringify(body)});
+    const body={message:msg||'CRM update',content:btoa(unescape(encodeURIComponent(JSON.stringify(data,null,1)))),sha:SHAS[path],branch:'main'};
+    const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`,{method:'PUT',headers:{Authorization:'Bearer '+PAT,'Content-Type':'application/json'},body:JSON.stringify(body)});
     const j=await r.json();
-    if(r.ok){SHA=j.content.sha;dirty=false;$('syncTxt').textContent='Synced '+new Date().toLocaleTimeString()}
-    else{ if(r.status===409){await fetchData();$('syncTxt').textContent='Conflict — refreshed, redo last change'} else $('syncTxt').textContent='Save failed ('+r.status+')'; }
-  }catch(e){$('syncTxt').textContent='Offline — will retry';setTimeout(()=>push(msg),4000)}
+    if(r.ok){SHAS[path]=j.content.sha;$('syncTxt').textContent='Synced '+new Date().toLocaleTimeString()}
+    else if(r.status===409){await fetchAll();$('syncTxt').textContent='Conflict — refreshed, redo change'}
+    else $('syncTxt').textContent='Save failed ('+r.status+')';
+  }catch(e){$('syncTxt').textContent='Offline — retrying';setTimeout(()=>push(path,data,msg),4000)}
 }
-function heatStr(h){return '🔥'.repeat(h||0)||'—'}
-function ntClass(nt){if(!nt)return'ok';if(nt<today())return'over';if(nt===today())return'today';return'ok'}
-function fmtB(b){return b? 'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':''}
-function render(){
-  // Today's touches
-  const due=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today())
-    .sort((a,b)=>(b.heat||0)-(a.heat||0)||a.nextTouch.localeCompare(b.nextTouch));
+const heatStr=h=>'🔥'.repeat(h||0)||'—';
+const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
+const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
+const commOf=b=>b?Math.round(b*0.02*0.65):0; // 2% comm at 65% split
+function suggestedHeat(b){
+  // THE BRAIN v1: recency + stage + momentum
+  let s=3;
+  const lc=b.lastContact||b.date; const days=lc?Math.floor((new Date(today())-new Date(lc))/864e5):99;
+  if(days<=2)s+=1; else if(days>10)s-=1; if(days>21)s-=1;
+  if(['Viewing','Offer'].includes(b.stage))s+=1;
+  const t=(b.touches||[]).filter(x=>x.date>=addDays(today(),-14)).length;
+  if(t>=3)s+=1;
+  return Math.min(5,Math.max(1,s));
+}
+function heatDrivers(b){
+  const lc=b.lastContact||b.date; const days=lc?Math.floor((new Date(today())-new Date(lc))/864e5):'?';
+  const t14=(b.touches||[]).filter(x=>x.date>=addDays(today(),-14)).length;
+  const sug=suggestedHeat(b);
+  return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system suggests <b>${heatStr(sug)}</b>${sug!==(b.heat||3)?' — consider updating':''}`;
+}
+function tab(t){curTab=t;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
+  ['today','pipeline','people','sellers'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
+async function fetchAll(){
+  BUYERS=await fetchFile('data/buyers.json');
+  try{STOCK=await fetchFile('data/stock.json')}catch(e){STOCK=[]}
+  try{VIEWINGS=await fetchFile('data/viewings.json')}catch(e){VIEWINGS=[]}
+}
+function render(){renderToday();renderBoard();renderPeople();renderSellers();}
+function renderToday(){
+  const due=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).sort((a,b)=>(b.heat||0)-(a.heat||0));
   const wake=BUYERS.filter(b=>b.stage==='Snoozed'&&b.snoozedUntil&&b.snoozedUntil<=today());
-  const rows=[...wake.map(b=>tr(b,true)),...due.map(b=>tr(b,false))];
-  $('touchList').innerHTML=rows.join('')||'<div style="color:var(--muted);padding:6px">Nothing due — clear runway 👌</div>';
-  $('touches').classList.remove('hidden');
-  // Board
+  $('touchList').innerHTML=[...wake.map(b=>trow(b,true)),...due.map(b=>trow(b,false))].join('')||'<div style="color:var(--muted);padding:6px">Nothing due — clear runway 👌</div>';
+  const M=computeMatches();
+  $('matchList').innerHTML=M.slice(0,10).map(({u,hits})=>`<div class="touchrow"><span class="tname">${u.cluster} ${u.unit}</span><span class="bdg">${fmtB(u.price)}</span>
+   <span class="treason">${hits.slice(0,5).map(h=>`<span style="cursor:pointer" onclick="openCard('${h.id}')">${h.buyer}</span> ${'🔥'.repeat(h.heat||0)}${h.stage==='Snoozed'?'💤':''}`).join(' · ')}</span></div>`).join('')||'<div style="color:var(--muted);padding:6px">No matches — fill budgets/beds</div>';
+}
+function trow(b,isWake){return `<div class="touchrow"><span class="tname" onclick="openCard('${b.id}')">${b.buyer}</span>
+ <span class="${b.nextTouch<today()?'due-over':'due-today'}">${isWake?'WAKING':(b.nextTouch<today()?'OVERDUE':'DUE TODAY')}</span>
+ <span class="treason">${b.touchReason||b.needSummary||''}</span>
+ <button class="btn mini" onclick="touched('${b.id}')">Touched ✓</button></div>`}
+function renderBoard(){
+  const live=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage));
+  const pipeVal=live.reduce((a,b)=>a+(b.budget||0),0);
+  $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(pipeVal).toLocaleString()}</b> <span style="font-size:11px">(2% @ 65%)</span>`;
   $('board').innerHTML=STAGES.map(st=>{
-    const cards=BUYERS.filter(b=>b.stage===st||(st==='New'&&!b.stage)).sort((a,b)=>(b.heat||0)-(a.heat||0));
-    return `<div class="col" data-stage="${st}" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}')">
-      <h3>${st} <span class="count">${cards.length}</span></h3>
-      ${cards.map(b=>cardHtml(b)).join('')}
-    </div>`;
-  }).join('') + snoozedCol();
-  renderMatches();
+    const cards=BUYERS.filter(b=>b.stage===st).sort((a,b)=>(b.heat||0)-(a.heat||0));
+    const val=cards.reduce((a,b)=>a+(b.budget||0),0);
+    return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','buyer')">
+      <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${val?fmtB(val):''}</div>
+      ${cards.map(cardHtml).join('')}</div>`;
+  }).join('')+snoozedCol();
 }
-function tr(b,isWake){
-  return `<div class="touchrow"><span class="tname">${b.buyer}</span>
-   <span class="${b.nextTouch<today()?'due-over':'due-today'}">${isWake?'WAKING':'DUE '+(b.nextTouch<today()?'· overdue':'today')}</span>
-   <span class="treason">${b.touchReason||b.needSummary||''}</span>
-   <button class="btn mini" onclick="touched('${b.id}')">Touched ✓</button>
-   <button class="btn sec mini" onclick="openCard('${b.id}')">Open</button></div>`;
+function cardHtml(b){return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
+  <div class="nm">${b.buyer||'?'}</div><div class="heat">${heatStr(b.heat)} <span class="bdg">${fmtB(b.budget)}</span></div>
+  <div class="need">${(b.needSummary||'').slice(0,64)}</div>
+  <div class="nt ${ntClass(b.nextTouch)}">⏰ ${b.nextTouch||'—'}</div></div>`}
+function snoozedCol(){
+  const sn=BUYERS.filter(b=>b.stage==='Snoozed').sort((a,b)=>(a.snoozedUntil||'9').localeCompare(b.snoozedUntil||'9'));
+  return `<div class="col" style="opacity:.85" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'Snoozed','buyer')">
+   <h3 onclick="showSnoozed=!showSnoozed;renderBoard()" style="cursor:pointer">💤 Snoozed <span style="color:var(--muted)">${sn.length} ${showSnoozed?'▾':'▸'}</span></h3>
+   ${showSnoozed?sn.map(b=>`<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')"><div class="nm">${b.buyer}</div><div class="nt ok">wakes ${b.snoozedUntil||'?'}</div><div class="need">${(b.touchReason||'').slice(0,55)}</div></div>`).join(''):''}</div>`}
+function renderPeople(){
+  const q=($('search').value||'').toLowerCase();
+  const list=BUYERS.filter(b=>!q||JSON.stringify(b).toLowerCase().includes(q)).sort((a,b)=>(b.heat||0)-(a.heat||0));
+  $('peopleList').innerHTML=list.map(b=>`<div class="touchrow" onclick="openCard('${b.id}')">
+   <span class="tname">${b.buyer}</span><span class="heat">${heatStr(b.heat)}</span>
+   <span class="bdg">${b.stage}${b.stage==='Snoozed'&&b.snoozedUntil?' → '+b.snoozedUntil:''}</span>
+   <span class="treason">${(b.needSummary||'').slice(0,70)}</span></div>`).join('')||'<div style="color:var(--muted)">No matches</div>';
 }
-
+function renderSellers(){
+  const val=STOCK.filter(s=>!['Sold','Lost'].includes(sStage(s))).reduce((a,s)=>a+(s.price||0),0);
+  $('sTotals').innerHTML=`Stock book: <b style="color:var(--lgold)">${fmtB(val)}</b> across ${STOCK.filter(s=>!['Sold','Lost'].includes(sStage(s))).length} live units · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(val).toLocaleString()}</b>`;
+  $('sboard').innerHTML=SSTAGES.map(st=>{
+    const cards=STOCK.filter(s=>sStage(s)===st);
+    const v=cards.reduce((a,s)=>a+(s.price||0),0);
+    return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','seller')">
+     <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${v?fmtB(v):''}</div>
+     ${cards.map(s=>`<div class="card" draggable="true" ondragstart="drag(event,'stock:${s.id}')" onclick="openStock('${s.id}')">
+      <div class="nm">${s.cluster||''} ${s.unit||''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.beds?' · '+s.beds+'bd':''}</span></div>
+      <div class="need">${(s.seller||'')} ${(s.notes||'').slice(0,45)}</div></div>`).join('')}</div>`;
+  }).join('');
+}
+function sStage(s){
+  if(s.stage)return s.stage;
+  const st=(s.status||'').toLowerCase();
+  if(st.includes('sold'))return'Sold'; if(st.includes('offer'))return'Offer';
+  if(st.includes('later')||st.includes('snooze')||st.includes('park'))return'Later';
+  if(st.includes('lost')||st.includes('dead'))return'Lost';
+  return'Active';
+}
+let dragId=null;
+function drag(e,id){dragId=id}
+function dragOver(e){e.preventDefault();e.currentTarget.classList.add('dragover')}
+function drop(e,stage,kind){e.preventDefault();e.currentTarget.classList.remove('dragover');
+  if(kind==='seller'&&dragId.startsWith('stock:')){
+    const s=STOCK.find(x=>String(x.id)===dragId.slice(6));if(!s)return;
+    s.stage=stage;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${stage}`);return;}
+  const b=BUYERS.find(x=>x.id===dragId);if(!b)return;
+  b.stage=stage;if(['Won','Lost'].includes(stage))b.nextTouch=null;
+  render();queueSave('data/buyers.json',BUYERS,`CRM: ${b.buyer} → ${stage}`);}
+const byId=id=>BUYERS.find(x=>x.id===id);
+function touched(id){const b=byId(id);if(!b)return;
+  b.lastContact=today();b.nextTouch=addDays(today(),CAD[b.heat||3]||3);
+  if(b.stage==='Snoozed'){b.stage='Qualified';b.snoozedUntil=null}
+  (b.touches=b.touches||[]).push({date:today(),channel:'wa',summary:'Touched (dashboard)'});
+  render();queueSave('data/buyers.json',BUYERS,`CRM: touched ${b.buyer}`);}
+function timeline(b){
+  const items=[...(b.touches||[]).map(t=>({d:t.date,ic:t.channel==='call'?'📞':t.channel==='viewing'?'🏠':t.channel==='manual'?'📝':'💬',x:t.summary})),
+    ...VIEWINGS.filter(v=>v.buyer&&b.buyer&&v.buyer.toLowerCase().includes(b.buyer.split(' ')[0].toLowerCase())).map(v=>({d:v.date,ic:'🏠',x:`Viewing ${v.unit||''} — ${v.outcome||''}`}))]
+    .sort((a,b)=>(b.d||'').localeCompare(a.d||''));
+  return items.map(i=>`<div class="tlrow"><div class="tlic">${i.ic}</div><div class="tlbody"><div class="tldate">${i.d||''}</div><div class="tltext">${i.x||''}</div></div></div>`).join('')||'<div style="color:var(--muted);font-size:13px;padding:8px 0">No history yet — the bridge and history upload will fill this.</div>';
+}
+function phoneOf(b){const m=JSON.stringify(b).match(/\+?\d{10,15}/);return m?m[0].replace(/\D/g,''):null}
+function openCard(id){const b=byId(id);if(!b)return;
+  const ph=phoneOf(b);
+  $('mbox').innerHTML=`<div class="phead">
+    <div class="heatball"><b>${b.heat||'—'}</b><span>HEAT</span></div>
+    <div class="pmeta"><h2>${b.buyer}</h2><div class="sub">${b.stage} · ${b.area||''} ${[b.cluster1,b.cluster2].filter(Boolean).join(', ')}</div>
+      <div class="pills">${b.budget?`<span class="pill">💰 ${fmtB(b.budget)}</span>`:''}${b.beds?`<span class="pill">🛏 ${b.beds} bed</span>`:''}${b.finance?`<span class="pill">🏦 ${b.finance}</span>`:''}<span class="pill">⏰ ${b.nextTouch||'no touch set'}</span></div></div>
+    <div style="display:flex;gap:6px;flex-direction:column">${ph?`<a class="act" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a><a class="act" href="tel:+${ph}">📞 Call</a>`:'<span style="font-size:11px;color:var(--muted)">no number on file</span>'}</div>
+  </div>
+  <div class="drivers">${heatDrivers(b)}</div>
+  <div class="mrow">
+    <button class="btn mini" onclick="touched('${b.id}');openCard('${b.id}')">Touched ✓</button>
+    <button class="btn sec mini" onclick="heatCh('${b.id}',1)">Heat +</button>
+    <button class="btn sec mini" onclick="heatCh('${b.id}',-1)">Heat −</button>
+    <button class="btn sec mini" onclick="addNote('${b.id}')">📝 Note</button>
+    <select onchange="stageSel('${b.id}',this.value)">${STAGES.concat('Snoozed').map(s=>`<option ${s===b.stage?'selected':''}>${s}</option>`).join('')}</select>
+    <input type="date" id="snz"><button class="btn sec mini" onclick="snooze('${b.id}')">💤</button>
+  </div>
+  <div style="margin-top:10px;font-size:13px;color:var(--cream)">${(b.notes||'')}</div>
+  <h3 style="color:var(--lgold);font-size:15px;margin-top:12px">Timeline</h3>
+  <div class="tl">${timeline(b)}</div>
+  <div class="mrow"><button class="btn" onclick="closeModal()">Close</button></div>`;
+  $('modal').classList.remove('hidden');}
+function openStock(id){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;
+  $('mbox').innerHTML=`<div class="phead"><div class="pmeta"><h2>${s.cluster||''} ${s.unit||''}</h2>
+   <div class="sub">${sStage(s)} · seller: ${s.seller||'?'}</div>
+   <div class="pills">${s.price?`<span class="pill">💰 ${fmtB(s.price)}</span>`:''}${s.beds?`<span class="pill">🛏 ${s.beds} bed</span>`:''}</div></div></div>
+  <div style="font-size:13px;white-space:pre-wrap">${s.notes||s.note||''}</div>
+  <div class="mrow"><select onchange="stockStage('${s.id}',this.value)">${SSTAGES.map(x=>`<option ${x===sStage(s)?'selected':''}>${x}</option>`).join('')}</select>
+  <button class="btn" onclick="closeModal()">Close</button></div>`;
+  $('modal').classList.remove('hidden');}
+function stockStage(id,st){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;s.stage=st;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${st}`);closeModal();}
+function heatCh(id,d){const b=byId(id);b.heat=Math.min(5,Math.max(1,(b.heat||3)+d));render();queueSave('data/buyers.json',BUYERS,'CRM: heat '+b.buyer);openCard(id)}
+function addNote(id){const n=prompt('Note:');if(!n)return;const b=byId(id);
+  (b.touches=b.touches||[]).push({date:today(),channel:'manual',summary:n});
+  queueSave('data/buyers.json',BUYERS,'CRM: note '+b.buyer);openCard(id);}
+function snooze(id){const v=$('snz').value;if(!v)return;const b=byId(id);b.stage='Snoozed';b.snoozedUntil=v;b.nextTouch=v;b.touchReason='Snoozed — wake '+v;render();queueSave('data/buyers.json',BUYERS,'CRM: snoozed '+b.buyer);closeModal()}
+function stageSel(id,v){const b=byId(id);b.stage=v;render();queueSave('data/buyers.json',BUYERS,'CRM: '+b.buyer+' → '+v);openCard(id)}
+function closeModal(){$('modal').classList.add('hidden')}
 function bedsOf(s){if(!s)return[];return String(s).match(/\d/g)?.map(Number)||[]}
-function clustersOf(b){return [b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(x=>x.toLowerCase())}
+function clustersOf(b){return[b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(x=>x.toLowerCase())}
 function computeMatches(){
-  const act=STOCK.filter(u=>(u.status||'').toLowerCase()==='active'&&u.price);
+  const act=STOCK.filter(u=>sStage(u)==='Active'&&u.price);
   const live=BUYERS.filter(b=>!['Won','Lost'].includes(b.stage));
   const out=[];
   for(const u of act){
-    const uBeds=bedsOf(u.beds), uc=(u.cluster||'').toLowerCase();
+    const uB=bedsOf(u.beds),uc=(u.cluster||'').toLowerCase();
     const hits=live.filter(b=>{
-      const bb=bedsOf(b.beds), bc=clustersOf(b);
-      const bedOk=!uBeds.length||!bb.length||uBeds.some(x=>bb.includes(x));
-      const cluOk=!bc.length||bc.some(c=>uc.includes(c)||c.includes(uc));
-      const budOk=!b.budget||b.budget>=u.price*0.9;
-      return bedOk&&cluOk&&budOk;
+      const bb=bedsOf(b.beds),bc=clustersOf(b);
+      return(!uB.length||!bb.length||uB.some(x=>bb.includes(x)))&&(!bc.length||bc.some(c=>uc.includes(c)||c.includes(uc)))&&(!b.budget||b.budget>=u.price*0.9);
     }).sort((a,b)=>(b.heat||0)-(a.heat||0));
     if(hits.length)out.push({u,hits});
   }
   return out.sort((a,b)=>b.hits.length-a.hits.length);
 }
-function renderMatches(){
-  const M=computeMatches();
-  $('matchList').innerHTML=M.slice(0,12).map(({u,hits})=>
-    `<div class="touchrow"><span class="tname">${u.cluster} ${u.unit}</span>
-     <span class="bdg">${fmtB(u.price)}${u.beds?' · '+u.beds+'bd':''}</span>
-     <span class="treason">${hits.slice(0,6).map(h=>`${h.buyer} ${'🔥'.repeat(h.heat||0)}${h.stage==='Snoozed'?' 💤':''}`).join('  ·  ')}${hits.length>6?' +'+(hits.length-6):''}</span>
-    </div>`).join('')||'<div style="color:var(--muted);padding:6px">No matches yet — fill buyer budgets/beds to light this up</div>';
-  $('matches').classList.remove('hidden');
-}
-
-
-function cardHtml(b){
-  return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
-    <div class="nm">${b.buyer||'?'}</div>
-    <div class="heat">${heatStr(b.heat)} <span class="bdg">${fmtB(b.budget)}</span></div>
-    <div class="need">${(b.needSummary||'').slice(0,70)}</div>
-    <div class="nt ${ntClass(b.nextTouch)}">\u23f0 ${b.nextTouch||'\u2014'}</div>
-  </div>`;
-}
-function snoozedCol(){
-  const sn=BUYERS.filter(b=>b.stage==='Snoozed').sort((a,b)=>(a.snoozedUntil||'9').localeCompare(b.snoozedUntil||'9'));
-  return `<div class="col" style="opacity:.85" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'Snoozed')">
-    <h3 onclick="showSnoozed=!showSnoozed;render()" style="cursor:pointer">\ud83d\udca4 Snoozed <span class="count">${sn.length} ${showSnoozed?'\u25be':'\u25b8'}</span></h3>
-    ${showSnoozed? sn.map(b=>`<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
-      <div class="nm">${b.buyer}</div><div class="heat">${heatStr(b.heat)}</div>
-      <div class="nt ok">wakes ${b.snoozedUntil||'?'}</div>
-      <div class="need">${(b.touchReason||'').slice(0,60)}</div></div>`).join('') : ''}
-  </div>`;
-}
-
-let dragId=null;
-function drag(e,id){dragId=id;e.dataTransfer.effectAllowed='move'}
-function dragOver(e){e.preventDefault();e.currentTarget.classList.add('dragover')}
-function drop(e,stage){e.preventDefault();e.currentTarget.classList.remove('dragover');
-  const b=BUYERS.find(x=>x.id===dragId);if(!b)return;
-  b.stage=stage; if(stage==='Won'||stage==='Lost')b.nextTouch=null;
-  render();queueSave(`CRM: ${b.buyer} → ${stage}`);}
-function byId(id){return BUYERS.find(x=>x.id===id)}
-function touched(id){const b=byId(id);if(!b)return;
-  b.lastContact=today();b.nextTouch=addDays(today(),CAD[b.heat||3]||3);
-  if(b.stage==='Snoozed'){b.stage='Qualified';b.snoozedUntil=null}
-  (b.touches=b.touches||[]).push({date:today(),channel:'wa',summary:'Touched (dashboard)'});
-  render();queueSave(`CRM: touched ${b.buyer}`);}
-function openCard(id){const b=byId(id);if(!b)return;
-  $('mbox').innerHTML=`<h2>${b.buyer}</h2><div class="sub">${b.stage} · ${heatStr(b.heat)} · ${b.area||''} ${b.cluster1||''}</div>
-   <div class="kv"><span>Budget</span><b>${fmtB(b.budget)||'—'}</b></div>
-   <div class="kv"><span>Finance</span><b>${b.finance||'—'}</b></div>
-   <div class="kv"><span>Beds</span><b>${b.beds||'—'}</b></div>
-   <div class="kv"><span>Last contact</span><b>${b.lastContact||'—'}</b></div>
-   <div class="kv"><span>Next touch</span><b>${b.nextTouch||'—'}</b></div>
-   <div class="kv"><span>Why</span><b>${b.touchReason||'—'}</b></div>
-   <div class="mrow">
-     <button class="btn mini" onclick="touched('${b.id}');openCard('${b.id}')">Touched today ✓</button>
-     <button class="btn sec mini" onclick="heatCh('${b.id}',1)">Heat +</button>
-     <button class="btn sec mini" onclick="heatCh('${b.id}',-1)">Heat −</button>
-   </div>
-   <div class="mrow">Snooze: <input type="date" id="snz"/> <button class="btn sec mini" onclick="snooze('${b.id}')">Snooze 💤</button>
-     <select id="stSel" onchange="stageSel('${b.id}')">${STAGES.concat('Snoozed').map(s=>`<option ${s===b.stage?'selected':''}>${s}</option>`).join('')}</select></div>
-   <div class="notes">${b.notes||''}</div>
-   <div class="thist">${(b.touches||[]).slice(-5).reverse().map(t=>`${t.date} · ${t.channel} · ${t.summary}`).join('<br>')}</div>
-   <div class="mrow"><button class="btn" onclick="$('modal').classList.add('hidden')">Close</button></div>`;
-  $('modal').classList.remove('hidden');}
-function heatCh(id,d){const b=byId(id);b.heat=Math.min(5,Math.max(1,(b.heat||3)+d));render();queueSave('CRM: heat '+b.buyer);openCard(id)}
-function snooze(id){const v=$('snz').value;if(!v)return;const b=byId(id);b.stage='Snoozed';b.snoozedUntil=v;b.nextTouch=v;b.touchReason='Snoozed — wake '+v;$('modal').classList.add('hidden');render();queueSave('CRM: snoozed '+b.buyer)}
-function stageSel(id){const b=byId(id);b.stage=$('stSel').value;render();queueSave('CRM: '+b.buyer+' → '+b.stage);openCard(id)}
-$('modal').addEventListener('click',e=>{if(e.target.id==='modal')$('modal').classList.add('hidden')});
-
 function newBuyer(){
-  const name=prompt('Name?'); if(!name)return;
-  const phone=prompt('Phone (with +)?')||'';
-  const budget=parseFloat(prompt('Budget AED (e.g. 2600000, blank if unknown)?')||'0')||0;
-  const beds=prompt('Beds (e.g. 4 or 4-5)?')||'';
-  const clu=prompt('Cluster/area (e.g. Costa Brava)?')||'';
+  const name=prompt('Name?');if(!name)return;
+  const phone=prompt('Phone (+971…)?')||'';
+  const budget=parseFloat(prompt('Budget AED?')||'0')||0;
+  const beds=prompt('Beds?')||'';const clu=prompt('Cluster/area?')||'';
   const heat=Math.min(5,Math.max(1,parseInt(prompt('Heat 1-5?')||'3')||3));
   const id=name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'-'+Date.now().toString().slice(-4);
-  BUYERS.push({buyer:name, notes:phone?('Ph: '+phone):'', source:'Manual', date:today(), status:'Active',
-    area:'', cluster1:clu, cluster2:'', cluster3:'', beds:beds, finance:'', budget:budget,
-    stage:'New', heat:heat, lastContact:today(), nextTouch:addDays(today(),CAD[heat]||3),
-    touchReason:'New lead - first proper conversation', needSummary:(beds?beds+'bd ':'')+(clu||'')+(budget?(' ~'+fmtB(budget)):''),
-    snoozedUntil:null, touches:[{date:today(),channel:'manual',summary:'Created on dashboard'}], id:id, order:99});
-  render(); queueSave('CRM: new buyer '+name);
+  BUYERS.push({buyer:name,notes:phone?('Ph: '+phone):'',source:'Manual',date:today(),status:'Active',area:'',cluster1:clu,cluster2:'',cluster3:'',beds,finance:'',budget,stage:'New',heat,lastContact:today(),nextTouch:addDays(today(),CAD[heat]||3),touchReason:'New lead',needSummary:(beds?beds+'bd ':'')+(clu||'')+(budget?(' ~'+fmtB(budget)):''),snoozedUntil:null,touches:[{date:today(),channel:'manual',summary:'Created on dashboard'}],id,order:99});
+  render();queueSave('data/buyers.json',BUYERS,'CRM: new buyer '+name);
 }
-
 async function init(){
   if(PAT)$('connectBox').classList.add('hidden');
-  try{await fetchData();render();$('syncTxt').textContent='Loaded '+BUYERS.length+' buyers'}
-  catch(e){$('syncTxt').textContent='Load failed — check token/connection'}
+  try{await fetchAll();render();$('syncTxt').textContent=BUYERS.length+' buyers · '+STOCK.length+' units'}
+  catch(e){$('syncTxt').textContent='Load failed — check token'}
 }
 init();
 </script>
