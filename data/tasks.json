@@ -1762,12 +1762,12 @@
       "title": "Pay Luca back GBP 1,000",
       "area": "Finance",
       "priority": "high",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": "2026-08-01",
       "created": "2026-07-26",
       "notes": "Borrowed Jul 26, repay on the 1st. Logged in finance.json personalDebts.",
-      "completed": null,
+      "completed": "2026-08-02",
       "snoozedUntil": null
     },
     {
