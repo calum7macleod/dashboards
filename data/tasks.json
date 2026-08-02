@@ -2189,6 +2189,21 @@
    "snoozedUntil": null,
    "top3": false,
    "order": 71
+  },
+  {
+   "id": "a08d0939-28b2-43f2-8bc8-1c301b9d9eee",
+   "title": "WA BRIDGE GO-LIVE: VPS + QR scan (after first video)",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": 3,
+   "status": "active",
+   "due": "2026-08-03",
+   "created": "2026-08-02",
+   "top3": true,
+   "order": 2,
+   "notes": "SETUP.md in repo tools/wa-bridge/ - Hetzner/DO smallest Ubuntu (~4/mo), paste commands, scan QR, pm2. THEN: export FULL history from all phones' business chats -> intake project (one-time backfill). Max delivers CRM v2 structure proposal (HubSpot-grade) in the morning brief first.",
+   "completed": null,
+   "snoozedUntil": null
   }
  ],
  "units": [],
