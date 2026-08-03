@@ -188,9 +188,8 @@ function fillClusterFilter(){const cs=[...new Set([...BUYERS.flatMap(b=>[b.clust
 function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>1.01)b.heat=Math.min(5,Math.max(1,Math.round(b.score)));else if(typeof b.score==='number'&&b.score>0){b.score=Math.min(5,Math.max(1,Math.round(b.score*5)));b.heat=b.score;}});}
 const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
 const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
-let DEALS=[],BOARDPCT=0.02,TIER=0.65; // tier: Q3-26 65%, Q4-26 70%
-function calcComm(){const v=DEALS.reduce((a,x)=>a+(+x.price||0),0);const bd=DEALS.reduce((a,x)=>a+(+x.myBoard||0),0);
-  if(v>0&&bd>0)BOARDPCT=bd/v;}
+let DEALS=[],BOARDPCT=0.02,TIER=0.65; // board 2% (bank-reconciled, Calum 3 Aug); tier: Q3-26 65%, Q4-26 70%
+function calcComm(){/* myBoard field = gross deal comm, not Calum's board - do NOT derive from it. 2% confirmed vs take-home. */}
 const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
 const commLbl=()=>`${(BOARDPCT*100).toFixed(2)}% board × ${Math.round(TIER*100)}% tier = ${(BOARDPCT*TIER*100).toFixed(2)}%`;
 function suggestedHeat(b){
