@@ -111,6 +111,24 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
   </div>
   <div id="v-people" class="hidden">
     <input type="text" id="search" placeholder="Search people…" oninput="renderPeople()">
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+      <select id="p-role" onchange="renderPeople()" class="fsel">
+        <option value="">Everyone</option><option value="buyer">Buyers</option>
+        <option value="offplan">Off-plan buyers</option><option value="seller">Sellers</option>
+      </select>
+      <select id="p-cluster" onchange="renderPeople()" class="fsel"></select>
+      <select id="p-budget" onchange="renderPeople()" class="fsel">
+        <option value="">Any budget</option><option value="2500000">≤ 2.5M</option>
+        <option value="3000000">≤ 3M</option><option value="3500000">≤ 3.5M</option>
+        <option value="99999999">3.5M+</option>
+      </select>
+      <select id="p-beds" onchange="renderPeople()" class="fsel">
+        <option value="">Any beds</option><option>3</option><option>4</option><option>5</option>
+      </select>
+      <select id="p-fin" onchange="renderPeople()" class="fsel">
+        <option value="">Any finance</option><option value="cash">Cash</option><option value="mortgage">Mortgage</option>
+      </select>
+    </div>
     <div class="panelbox" id="peopleList"></div>
   </div>
   <div id="v-sellers" class="hidden">
@@ -163,12 +181,18 @@ function passF(b){
   if(FILT.seg==='Offplan'&&b.segment!=='Offplan')return false;
   if(FILT.seg==='secondary'&&b.segment==='Offplan')return false;
   return true;}
-function fillClusterFilter(){const cs=[...new Set(BUYERS.flatMap(b=>[b.cluster1,b.cluster2,b.cluster3]).filter(Boolean))].sort();
-  if($('f-cluster'))$('f-cluster').innerHTML='<option value="">Any cluster</option>'+cs.map(c=>`<option>${c}</option>`).join('');}
+function fillClusterFilter(){const cs=[...new Set([...BUYERS.flatMap(b=>[b.cluster1,b.cluster2,b.cluster3]),...STOCK.map(s=>s.cluster)].filter(Boolean))].sort();
+  const opts='<option value="">Any cluster</option>'+cs.map(c=>`<option>${c}</option>`).join('');
+  if($('f-cluster'))$('f-cluster').innerHTML=opts;
+  if($('p-cluster'))$('p-cluster').innerHTML=opts;}
 function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>1.01)b.heat=Math.min(5,Math.max(1,Math.round(b.score)));else if(typeof b.score==='number'&&b.score>0){b.score=Math.min(5,Math.max(1,Math.round(b.score*5)));b.heat=b.score;}});}
 const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
 const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
-const commOf=b=>b?Math.round(b*0.02*0.65):0; // 2% comm at 65% split
+let DEALS=[],BOARDPCT=0.02,TIER=0.65; // tier: Q3-26 65%, Q4-26 70%
+function calcComm(){const v=DEALS.reduce((a,x)=>a+(+x.price||0),0);const bd=DEALS.reduce((a,x)=>a+(+x.myBoard||0),0);
+  if(v>0&&bd>0)BOARDPCT=bd/v;}
+const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
+const commLbl=()=>`${(BOARDPCT*100).toFixed(2)}% board × ${Math.round(TIER*100)}% tier = ${(BOARDPCT*TIER*100).toFixed(2)}%`;
 function suggestedHeat(b){
   // THE BRAIN v1: recency + stage + momentum
   let s=3;
@@ -191,6 +215,7 @@ async function fetchAll(){
   BUYERS=await fetchFile('data/buyers.json');
   try{STOCK=await fetchFile('data/stock.json')}catch(e){STOCK=[]}
   try{VIEWINGS=await fetchFile('data/viewings.json')}catch(e){VIEWINGS=[]}
+  try{DEALS=await fetchFile('data/deals.json');calcComm()}catch(e){}
   syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
 function render(){renderToday();renderBoard();renderPeople();renderSellers();}
@@ -209,7 +234,7 @@ function trow(b,isWake){return `<div class="touchrow"><span class="tname" onclic
 function renderBoard(){
   const live=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&passF(b));
   const pipeVal=live.reduce((a,b)=>a+(b.budget||0),0);
-  $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(pipeVal).toLocaleString()}</b> <span style="font-size:11px">(2% @ 65%)</span>`;
+  $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · your comms if it all lands ≈ <b style="color:var(--lgold)">Đ${commOf(pipeVal).toLocaleString()}</b> <span style="font-size:11px">(${commLbl()})</span>`;
   $('board').innerHTML=STAGES.map(st=>{
     const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>(b.score||0)-(a.score||0));
     const val=cards.reduce((a,b)=>a+(b.budget||0),0);
@@ -229,11 +254,38 @@ function snoozedCol(){
    ${showSnoozed?sn.map(b=>`<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')"><div class="nm">${b.buyer}</div><div class="nt ok">wakes ${b.snoozedUntil||'?'}</div><div class="need">${(b.touchReason||'').slice(0,55)}</div></div>`).join(''):''}</div>`}
 function renderPeople(){
   const q=($('search').value||'').toLowerCase();
-  const list=BUYERS.filter(b=>!q||JSON.stringify(b).toLowerCase().includes(q)).sort((a,b)=>(b.score||0)-(a.score||0));
-  $('peopleList').innerHTML=list.map(b=>`<div class="touchrow" onclick="openCard('${b.id}')">
-   <span class="tname">${b.buyer}</span><span class="heat"><b>${scr(b)}</b></span>
-   <span class="bdg">${b.stage}${b.stage==='Snoozed'&&b.snoozedUntil?' → '+b.snoozedUntil:''}</span>
-   <span class="treason">${(b.needSummary||'').slice(0,70)}</span></div>`).join('')||'<div style="color:var(--muted)">No matches</div>';
+  const role=$('p-role')?$('p-role').value:'';
+  const fc=$('p-cluster')?$('p-cluster').value:'', fb=$('p-budget')?$('p-budget').value:'',
+        fd=$('p-beds')?$('p-beds').value:'', ff=$('p-fin')?$('p-fin').value:'';
+  const pf=(cl,bd,beds,fin)=>{
+    if(fc&&!cl.includes(fc))return false;
+    if(fb){if(fb==='99999999'){if((bd||0)<=3500000)return false}else if(!bd||bd>+fb)return false;}
+    if(fd&&String(beds||'').indexOf(fd)===-1)return false;
+    if(ff&&!(fin||'').toLowerCase().includes(ff))return false;
+    return true;};
+  let rows=[];
+  if(role!=='seller'){
+    BUYERS.filter(b=>{
+      if(role==='offplan'&&b.segment!=='Offplan')return false;
+      if(role==='buyer'&&b.segment==='Offplan')return false;
+      return pf([b.cluster1,b.cluster2,b.cluster3].filter(Boolean),b.budget,b.beds,b.finance)
+        &&(!q||JSON.stringify(b).toLowerCase().includes(q));
+    }).sort((a,b)=>(b.score||0)-(a.score||0)).forEach(b=>rows.push(
+      `<div class="touchrow" onclick="openCard('${b.id}')">
+       <span class="tname">${b.buyer}</span><span class="heat"><b>${scr(b)}</b></span>
+       <span class="bdg">${b.segment==='Offplan'?'Off-plan · ':''}${b.stage}${b.stage==='Snoozed'&&b.snoozedUntil?' → '+b.snoozedUntil:''}</span>
+       <span class="treason">${(b.needSummary||b.notes||'').slice(0,70)}</span></div>`));
+  }
+  if(!role||role==='seller'){
+    STOCK.filter(s=>pf([s.cluster].filter(Boolean),s.price,s.beds,'')
+      &&(!q||JSON.stringify(s).toLowerCase().includes(q)))
+      .forEach(s=>rows.push(
+      `<div class="touchrow" onclick="openStock('${s.id}')">
+       <span class="tname">${s.seller||s.owner||s.unit||'Seller'}</span><span class="heat" style="color:var(--muted)">SELLER</span>
+       <span class="bdg">${sStage(s)} · ${s.cluster||''} ${s.unit||''} · ${fmtB(s.price)}</span>
+       <span class="treason">${(s.notes||'').slice(0,70)}</span></div>`));
+  }
+  $('peopleList').innerHTML=rows.join('')||'<div style="color:var(--muted)">No matches</div>';
 }
 function renderSellers(){
   const val=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).reduce((a,s)=>a+(s.price||0),0);
