@@ -1011,8 +1011,8 @@
   "order": 26,
   "stage": "Offer",
   "heat": 4,
-  "lastContact": "2026-07-29",
-  "nextTouch": "2026-07-30",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-05",
   "touchReason": "Chase response on the 2.45M offer",
   "needSummary": "Cash buyer, Costa Brava 3-bed, offered 2.45M",
   "snoozedUntil": null,
@@ -1021,6 +1021,11 @@
     "date": "2026-07-29",
     "channel": "call",
     "summary": "Incoming call 11:25, 5 mins - offered 2.45M on a Costa Brava 3-bed."
+   },
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
    }
   ],
   "phone": "+971 54 446 9769",
