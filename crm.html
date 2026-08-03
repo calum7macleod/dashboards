@@ -148,7 +148,7 @@ async function push(path,data,msg){
   }catch(e){$('syncTxt').textContent='Offline — retrying';setTimeout(()=>push(path,data,msg),4000)}
 }
 const heatStr=h=>'';
-const scr=b=>(typeof b.score==='number'&&b.score>0)?b.score.toFixed(2):'—';
+const scr=b=>(typeof b.score==='number'&&b.score>0)?String(Math.round(b.score)):'—';
 let FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};
 function setF(){FILT={cluster:$('f-cluster').value,budget:$('f-budget').value,beds:$('f-beds').value,fin:$('f-fin').value,seg:$('f-seg').value};renderBoard();}
 function clearF(){['f-cluster','f-budget','f-beds','f-fin','f-seg'].forEach(i=>$(i).value='');FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};renderBoard();}
@@ -162,7 +162,7 @@ function passF(b){
   return true;}
 function fillClusterFilter(){const cs=[...new Set(BUYERS.flatMap(b=>[b.cluster1,b.cluster2,b.cluster3]).filter(Boolean))].sort();
   if($('f-cluster'))$('f-cluster').innerHTML='<option value="">Any cluster</option>'+cs.map(c=>`<option>${c}</option>`).join('');}
-function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>0)b.heat=Math.min(5,Math.max(1,Math.round(b.score*5)));});}
+function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>1.01)b.heat=Math.min(5,Math.max(1,Math.round(b.score)));else if(typeof b.score==='number'&&b.score>0){b.score=Math.min(5,Math.max(1,Math.round(b.score*5)));b.heat=b.score;}});}
 const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
 const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
 const commOf=b=>b?Math.round(b*0.02*0.65):0; // 2% comm at 65% split
@@ -180,7 +180,7 @@ function heatDrivers(b){
   const lc=b.lastContact||b.date; const days=lc?Math.floor((new Date(today())-new Date(lc))/864e5):'?';
   const t14=(b.touches||[]).filter(x=>x.date>=addDays(today(),-14)).length;
   const sug=suggestedHeat(b);
-  return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system read: <b>${(sug/5).toFixed(2)}</b>${Math.abs((sug/5)-(b.score||0))>=0.2?' — consider updating score':''}`;
+  return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system read: <b>${sug}</b>${Math.abs(sug-(b.score||0))>=2?' — consider updating score':''}`;
 }
 function tab(t){curTab=t;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
   ['today','pipeline','people','sellers'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
@@ -307,7 +307,7 @@ function openStock(id){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)re
   <button class="btn" onclick="closeModal()">Close</button></div>`;
   $('modal').classList.remove('hidden');}
 function stockStage(id,st){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;s.stage=st;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${st}`);closeModal();}
-function heatCh(id,d){const b=byId(id);b.score=Math.min(1,Math.max(0.05,+(((b.score||0.6)+d*0.05).toFixed(2))));b.heat=Math.min(5,Math.max(1,Math.round(b.score*5)));render();queueSave('data/buyers.json',BUYERS,'CRM: score '+b.buyer);openCard(id)}
+function heatCh(id,d){const b=byId(id);b.score=Math.min(5,Math.max(1,Math.round((b.score||3)+d)));b.heat=b.score;render();queueSave('data/buyers.json',BUYERS,'CRM: score '+b.buyer);openCard(id)}
 function addNote(id){const n=prompt('Note:');if(!n)return;const b=byId(id);
   (b.touches=b.touches||[]).push({date:today(),channel:'manual',summary:n});
   queueSave('data/buyers.json',BUYERS,'CRM: note '+b.buyer);openCard(id);}
