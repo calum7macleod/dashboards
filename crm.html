@@ -200,6 +200,8 @@ function calcComm(){/* myBoard field = gross deal comm, not Calum's board - do N
 const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
 const gross2=v=>v?Math.round(v*BOARDPCT):0;
 const fmtK=v=>v>=1000000?('Đ'+(v/1000000).toFixed(2)+'M'):('Đ'+Math.round(v/1000)+'K');
+const bComm=b=>Math.round((b.budget||0)*(b.commPct||0.02));
+const sComm=s=>Math.round((s.price||0)*(s.commPct||0.02));
 function marketFit(b){
   if(!b.budget)return null;
   const cls=[b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(c=>c.toLowerCase());
@@ -253,11 +255,12 @@ function renderToday(){
   const mDeals=DEALS.filter(d=>String(d.date||d.month||'').includes('2026-08')||String(d.month||'').toLowerCase().includes('aug'));
   const mTH=mDeals.reduce((a,d)=>a+(+d.myTakeHome||0),0);
   const box=(l,v,s)=>`<div style="flex:1;min-width:150px;background:var(--panel);border:1px solid var(--div);border-radius:12px;padding:10px 12px"><div style="font-size:10.5px;letter-spacing:2px;color:var(--muted)">${l}</div><div style="font-size:19px;color:var(--lgold);font-weight:700">${v}</div><div style="font-size:11px;color:var(--muted)">${s||''}</div></div>`;
-  $('headStrip').innerHTML=box('LIVE PIPELINE',fmtB(pv),'comms @2% ≈ '+fmtK(gross2(pv)))+box('STOCK BOOK',fmtB(sv),liveS.length+' live units · @2% ≈ '+fmtK(gross2(sv)))+box('TOUCHES DUE',dueN,dueN?'work the list':'clear runway')+box('CLOSED AUG',mDeals.length+' deals',mTH?('take-home Đ'+Math.round(mTH).toLocaleString()):'—');
-  const mb=liveB.filter(b=>(b.score||0)>=4&&b.nextStep).sort((a,b)=>((b.budget||0)-(a.budget||0))).slice(0,6);
+  const pvc=liveB.reduce((a,b)=>a+bComm(b),0), svc=liveS.reduce((a,s)=>a+sComm(s),0);
+  $('headStrip').innerHTML=box('LIVE PIPELINE',fmtB(pv),'gross comms ≈ '+fmtK(pvc))+box('STOCK BOOK',fmtB(sv),liveS.length+' live units · ≈ '+fmtK(svc))+box('TOUCHES DUE',dueN,dueN?'work the list':'clear runway')+box('CLOSED AUG',mDeals.length+' deals',mTH?('take-home Đ'+Math.round(mTH).toLocaleString()):'—');
+  const mb=liveB.filter(b=>(b.score||0)>=4&&b.nextStep).sort((a,b)=>(bComm(b)-bComm(a))).slice(0,6);
   $('moneyBoard').innerHTML=mb.map(b=>`<div class="touchrow" onclick="openCard('${b.id}')">
     <span class="tname">${b.buyer}</span><span class="heat"><b>${scr(b)}</b></span>
-    <span class="bdg" style="color:var(--lgold)">${b.budget?fmtK(gross2(b.budget)):'—'}</span>
+    <span class="bdg" style="color:var(--lgold)">${b.budget?fmtK(bComm(b))+((b.commPct&&b.commPct!==0.02)?" @"+(b.commPct*100)+"%":""):'—'}</span>
     <span class="treason">${b.nextStep}</span></div>`).join('')||'<div style="color:var(--muted);padding:6px">No high-score buyers with next steps — that itself is the warning.</div>';
   const cold=liveB.filter(b=>(b.score||0)>=4&&(!b.lastContact||b.lastContact<new Date(Date.now()-7*864e5).toISOString().slice(0,10)));
   const dv=BUYERS.filter(b=>typeof b.maxScore==='number'&&typeof b.score==='number'&&Math.abs(b.maxScore-b.score)>=1);
@@ -288,17 +291,18 @@ function trow(b,isWake){return `<div class="touchrow"><span class="tname" onclic
 function renderBoard(){
   const live=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&passF(b));
   const pipeVal=live.reduce((a,b)=>a+(b.budget||0),0);
-  $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · your comms if it all lands ≈ <b style="color:var(--lgold)">Đ${commOf(pipeVal).toLocaleString()}</b> <span style="font-size:11px">(${commLbl()})</span>`;
+  const pipeC=live.reduce((a,b)=>a+bComm(b),0);
+  $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · gross ≈ <b style="color:var(--lgold)">${fmtK(pipeC)}</b> · take-home @${Math.round(TIER*100)}% ≈ <b style="color:var(--lgold)">${fmtK(Math.round(pipeC*TIER))}</b> <span style="font-size:11px">(2% secondary · 3-4% off-plan)</span>`;
   $('board').innerHTML=STAGES.map(st=>{
     const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>(b.score||0)-(a.score||0));
-    const val=cards.reduce((a,b)=>a+(b.budget||0),0);
+    const val=cards.reduce((a,b)=>a+(b.budget||0),0);const vc=cards.reduce((a,b)=>a+bComm(b),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','buyer')">
-      <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${val?fmtB(val):''}</div>
+      <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${val?fmtB(val)+' <span style="color:var(--lgold)">· '+fmtK(vc)+'</span>':''}</div>
       ${cards.map(cardHtml).join('')}</div>`;
   }).join('')+snoozedCol();
 }
 function cardHtml(b){return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
-  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span>${b.budget?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(gross2(b.budget))}</span>`:``} ${fitStr(b)}</div>
+  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span>${b.budget?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(bComm(b))}${(b.commPct&&b.commPct!==0.02)?" @"+(b.commPct*100)+"%":""}</span>`:``} ${fitStr(b)}</div>
   <div class="need">${(b.needSummary||'').slice(0,64)}</div>
   <div class="nt ${ntClass(b.nextTouch)}">⏰ ${b.nextTouch||'—'}</div></div>`}
 function snoozedCol(){
@@ -348,11 +352,11 @@ function renderSellers(){
   $('sTotals').innerHTML=`Stock book: <b style="color:var(--lgold)">${fmtB(val)}</b> across ${STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).length} live units · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(val).toLocaleString()}</b>`;
   $('sboard').innerHTML=SSTAGES.map(st=>{
     const cards=STOCK.filter(s=>sStage(s)===st);
-    const v=cards.reduce((a,s)=>a+(s.price||0),0);
+    const v=cards.reduce((a,s)=>a+(s.price||0),0);const vc=cards.reduce((a,s)=>a+sComm(s),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','seller')">
-     <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${v?fmtB(v)+' <span style="color:var(--lgold)">· '+fmtK(gross2(v))+'</span>':''}</div>
+     <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${v?fmtB(v)+' <span style="color:var(--lgold)">· '+fmtK(vc)+'</span>':''}</div>
      ${cards.map(s=>`<div class="card" draggable="true" ondragstart="drag(event,'stock:${s.id}')" onclick="openStock('${s.id}')">
-      <div class="nm">${s.cluster||''} ${s.unit||''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.beds?' · '+s.beds+'bd':''}</span>${s.price?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(gross2(s.price))}</span>`:``}</div>
+      <div class="nm">${s.cluster||''} ${s.unit||''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.beds?' · '+s.beds+'bd':''}</span>${s.price?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(sComm(s))}</span>`:``}</div>
       <div class="need">${(s.seller||'')} ${(s.notes||'').slice(0,45)}</div></div>`).join('')}</div>`;
   }).join('');
 }
