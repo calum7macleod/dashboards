@@ -23,7 +23,8 @@
   "score": null,
   "notes": "Malakai - FIVE units total (3 known so far - get the other 2). Prices above market on all three - PRIORITY: work them down. Nice 4-beds market ~2.4-2.5 vs asking 2.6. Portofino 3.7 needs comps check. Multi-unit seller = leverage: package deal / exclusive across all 5 in exchange for realistic pricing.",
   "order": 1,
-  "id": "malakai-m580"
+  "id": "malakai-m580",
+  "stage": "Qualified"
  },
  {
   "date": "2026-07-27",
@@ -49,7 +50,8 @@
   "score": null,
   "notes": "Malakai - FIVE units total (3 known so far - get the other 2). Prices above market on all three - PRIORITY: work them down. Nice 4-beds market ~2.4-2.5 vs asking 2.6. Portofino 3.7 needs comps check. Multi-unit seller = leverage: package deal / exclusive across all 5 in exchange for realistic pricing.",
   "order": 2,
-  "id": "malakai-m576"
+  "id": "malakai-m576",
+  "stage": "Qualified"
  },
  {
   "date": "2026-07-27",
@@ -75,7 +77,8 @@
   "score": null,
   "notes": "Malakai - FIVE units total (3 known so far - get the other 2). Prices above market on all three - PRIORITY: work them down. Nice 4-beds market ~2.4-2.5 vs asking 2.6. Portofino 3.7 needs comps check. Multi-unit seller = leverage: package deal / exclusive across all 5 in exchange for realistic pricing.",
   "order": 3,
-  "id": "malakai-bl482"
+  "id": "malakai-bl482",
+  "stage": "New"
  },
  {
   "date": "2026-07-25",
@@ -101,7 +104,8 @@
   "score": 0.95,
   "notes": "Patrik's next unit after K331 sold at 3.65M. Listed 3.65M. Relationship proven - he's seen the machine work.",
   "order": 4,
-  "id": "patrik-k332"
+  "id": "patrik-k332",
+  "stage": "New"
  },
  {
   "date": "2026-07-17",
@@ -127,7 +131,8 @@
   "score": 0.85,
   "notes": "CALL-OUT WIN 17 Jul. 5bd SINGLE ROW, 4.05M NET, seller happy with fees on top. Arrange viewing + potentially NOC.  Seller: Faisal.",
   "order": 5,
-  "id": "j444"
+  "id": "j444",
+  "stage": "New"
  },
  {
   "date": "2026-07-06",
@@ -153,7 +158,8 @@
   "score": 0.85,
   "notes": "5bd Costa Brava, wants 3.7M. Gets handover Thu 9 Jul - happy to arrange access for Calum to view. Fresh stock, move fast.",
   "order": 6,
-  "id": "amman-19"
+  "id": "amman-19",
+  "stage": "New"
  },
  {
   "date": "2026-07-07",
@@ -179,7 +185,8 @@
   "score": 0.9,
   "notes": "Spoke 7 Jul. NEEDS 7M within 6 MONTHS - proceeds fund next payment on a WASL unit. Experienced seller: sold Elie Saab @ Emaar Beachfront + a Meraas unit. Deadline means he'll price properly sooner or later; current ask fair given direct-on-lagoon position. In Dubai in a few weeks - wants to meet (do it, more business behind him).",
   "order": 7,
-  "id": "sameer-m107"
+  "id": "sameer-m107",
+  "stage": "New"
  },
  {
   "date": "2026-04-06",
@@ -203,9 +210,10 @@
   "negotiation": 4,
   "feeling": 4,
   "score": 0.75,
-  "notes": "J569 \u2014 good score but 4M is high for location. Will give NOC this week. Watch closely.",
+  "notes": "J569 — good score but 4M is high for location. Will give NOC this week. Watch closely.",
   "order": 8,
-  "id": "adel-11"
+  "id": "adel-11",
+  "stage": "New"
  },
  {
   "date": "2026-06-02",
@@ -229,9 +237,10 @@
   "negotiation": 4,
   "feeling": 4,
   "score": 0.72,
-  "notes": "Q687 \u2014 end corner 5 bed Malta. Wants 4.4M but needs to be 3.7M. Seems desperate, working to bring price down.",
+  "notes": "Q687 — end corner 5 bed Malta. Wants 4.4M but needs to be 3.7M. Seems desperate, working to bring price down.",
   "order": 9,
-  "id": "sandeep-16"
+  "id": "sandeep-16",
+  "stage": "New"
  },
  {
   "date": "2026-04-05",
@@ -257,7 +266,8 @@
   "score": 0.7,
   "notes": "BL698 end corner, 3000 sqft. 3.8M. CALL TODAY.",
   "order": 10,
-  "id": "agam-9"
+  "id": "agam-9",
+  "stage": "New"
  },
  {
   "date": "2026-04-06",
@@ -281,9 +291,10 @@
   "negotiation": 3,
   "feeling": 3,
   "score": 0.68,
-  "notes": "K179 \u2014 now wants 4M.",
+  "notes": "K179 — now wants 4M.",
   "order": 11,
-  "id": "haroon-13"
+  "id": "haroon-13",
+  "stage": "New"
  },
  {
   "date": "2026-01-07",
@@ -309,7 +320,8 @@
   "score": 0.6666666666666666,
   "notes": "",
   "order": 12,
-  "id": "mahamoud-3"
+  "id": "mahamoud-3",
+  "stage": "New"
  },
  {
   "date": "2026-03-31",
@@ -335,7 +347,8 @@
   "score": 0.65,
   "notes": "Back to back units K403 + K404. Brought up slightly.",
   "order": 13,
-  "id": "viswajith-8"
+  "id": "viswajith-8",
+  "stage": "New"
  },
  {
   "date": "2026-04-06",
@@ -361,7 +374,8 @@
   "score": 0.65,
   "notes": "K149 Costa, 3.6M. CALL NOW.",
   "order": 14,
-  "id": "ahmed-12"
+  "id": "ahmed-12",
+  "stage": "New"
  },
  {
   "date": "2026-01-07",
@@ -387,7 +401,8 @@
   "score": 0.6,
   "notes": "Will sell at handover",
   "order": 15,
-  "id": "john-5"
+  "id": "john-5",
+  "stage": "New"
  },
  {
   "date": "2026-06-02",
@@ -411,9 +426,10 @@
   "negotiation": 4,
   "feeling": 5,
   "score": 0.88,
-  "notes": "P243 Malta \u2014 really really good unit. 4 bed SR facing park. 2.8M net. HIGH.",
+  "notes": "P243 Malta — really really good unit. 4 bed SR facing park. 2.8M net. HIGH.",
   "order": 16,
-  "id": "salwa-18"
+  "id": "salwa-18",
+  "stage": "New"
  },
  {
   "date": "2026-01-07",
@@ -439,7 +455,8 @@
   "score": 0.5666666666666667,
   "notes": "",
   "order": 17,
-  "id": "jafar-6"
+  "id": "jafar-6",
+  "stage": "New"
  },
  {
   "date": "2026-01-08",
@@ -465,7 +482,8 @@
   "score": 0.5666666666666667,
   "notes": "",
   "order": 18,
-  "id": "adnana-7"
+  "id": "adnana-7",
+  "stage": "New"
  },
  {
   "date": "2026-04-06",
@@ -491,7 +509,8 @@
   "score": 0.48,
   "notes": "J165 Costa 3.75M. CALL NOW.",
   "order": 19,
-  "id": "harish-14"
+  "id": "harish-14",
+  "stage": "New"
  },
  {
   "date": "2026-06-02",
@@ -517,7 +536,8 @@
   "score": 0.9,
   "notes": "J340 Costa 4 bed 2.8M. Arranging viewing. TOP SELLER #2.",
   "order": 20,
-  "id": "farhan-17"
+  "id": "farhan-17",
+  "stage": "New"
  },
  {
   "date": "2026-01-07",
@@ -543,7 +563,8 @@
   "score": 0.4,
   "notes": "",
   "order": 21,
-  "id": "letitia-1"
+  "id": "letitia-1",
+  "stage": "New"
  },
  {
   "date": "2026-01-07",
@@ -569,7 +590,8 @@
   "score": 0.36666666666666664,
   "notes": "",
   "order": 22,
-  "id": "mohammad-4"
+  "id": "mohammad-4",
+  "stage": "New"
  },
  {
   "date": "2026-01-07",
@@ -595,7 +617,8 @@
   "score": 0.3,
   "notes": "K114 CB 12M (needs 10M). TEXT NOW.",
   "order": 23,
-  "id": "leila-0"
+  "id": "leila-0",
+  "stage": "New"
  },
  {
   "date": "2026-08-02",
@@ -621,6 +644,7 @@
   "score": null,
   "notes": "Seller came down to 2.7M on 2026-08-02 after two voice notes from Calum on 28 Jul. Calum's read: now very well priced, and a fantastic location - pushing to find buyers for it. Previous asking price not captured (voice notes not transcribed).",
   "order": 24,
-  "id": "mukesh-q845"
+  "id": "mukesh-q845",
+  "stage": "New"
  }
 ]
