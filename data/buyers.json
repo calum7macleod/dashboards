@@ -579,12 +579,18 @@
   "order": 17,
   "heat": 4,
   "stage": "Qualified",
-  "lastContact": "2026-06-27",
-  "nextTouch": "2026-07-30",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-05",
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "Off-plan buyer.",
   "snoozedUntil": null,
-  "touches": [],
+  "touches": [
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
+   }
+  ],
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 2,
@@ -887,8 +893,8 @@
   "order": 1,
   "heat": 5,
   "stage": "Offer",
-  "lastContact": "2026-07-27",
-  "nextTouch": "2026-07-29",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-04",
   "touchReason": "Sent masterplan - come back with Costa Brava 4-bed options at 2.5M",
   "needSummary": "4 bed Costa Brava, 2.5M, mortgage, investment - happy with a tenant in place.",
   "snoozedUntil": null,
@@ -897,6 +903,11 @@
     "date": "2026-07-27",
     "channel": "wa",
     "summary": "Brief in: 4 bed Lagoons ideally Costa Brava, 2.5M, mortgage, investment, tenanted fine. Voice notes both ways, masterplan sent."
+   },
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
    }
   ],
   "nextStep": "Chase seller Form F acceptance - CLOSE",
