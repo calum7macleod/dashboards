@@ -200,6 +200,21 @@ function calcComm(){/* myBoard field = gross deal comm, not Calum's board - do N
 const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
 const gross2=v=>v?Math.round(v*BOARDPCT):0;
 const fmtK=v=>v>=1000000?('Đ'+(v/1000000).toFixed(2)+'M'):('Đ'+Math.round(v/1000)+'K');
+function marketFit(b){
+  if(!b.budget)return null;
+  const cls=[b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(c=>c.toLowerCase());
+  const beds=String(b.beds||'');
+  const pool=STOCK.filter(s=>!['Won','Lost'].includes(sStage(s))&&s.price
+    &&(!cls.length||cls.some(c=>(s.cluster||'').toLowerCase().includes(c.split(' ')[0])))
+    &&(!beds||!s.beds||String(s.beds).includes(beds)));
+  if(!pool.length)return {n:0};
+  const sorted=pool.sort((a,x)=>a.price-x.price);
+  const ch=sorted[0], gap=b.budget-ch.price;
+  return {n:pool.length,cheap:ch,gap,within:sorted.filter(s=>s.price<=b.budget).length};
+}
+const fitStr=b=>{const f=marketFit(b);if(!f)return '';if(!f.n)return '<span style="color:#6e7681;font-size:10px">no stock match</span>';
+  return f.gap>=0?`<span style="color:#3fb950;font-size:10px">✓ ${f.within}/${f.n} in budget</span>`
+  :`<span style="color:#f0883e;font-size:10px">${fmtK(-f.gap)} short of ${f.cheap.unit}</span>`;};
 const commLbl=()=>`${(BOARDPCT*100).toFixed(2)}% board × ${Math.round(TIER*100)}% tier = ${(BOARDPCT*TIER*100).toFixed(2)}%`;
 function suggestedHeat(b){
   // THE BRAIN v1: recency + stage + momentum
@@ -283,7 +298,7 @@ function renderBoard(){
   }).join('')+snoozedCol();
 }
 function cardHtml(b){return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
-  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span>${b.budget?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(gross2(b.budget))}</span>`:``}</div>
+  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span>${b.budget?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(gross2(b.budget))}</span>`:``} ${fitStr(b)}</div>
   <div class="need">${(b.needSummary||'').slice(0,64)}</div>
   <div class="nt ${ntClass(b.nextTouch)}">⏰ ${b.nextTouch||'—'}</div></div>`}
 function snoozedCol(){
@@ -375,7 +390,7 @@ function phoneOf(b){const m=JSON.stringify(b).match(/\+?\d{10,15}/);return m?m[0
 function openCard(id){const b=byId(id);if(!b)return;
   const ph=phoneOf(b);
   $('mbox').innerHTML=`<div class="phead">
-    <div class="heatball"><b>${scr(b)}</b><span>SCORE</span></div>${typeof b.maxScore==='number'?`<div style="font-size:11.5px;color:var(--muted);margin:6px 0 2px"><b style="color:var(--lgold)">MAX READ ${b.maxScore.toFixed(1)}</b> — ${b.maxScoreWhy||''}</div>`:''}
+    <div class="heatball"><b>${scr(b)}</b><span>SCORE</span></div>${typeof b.maxScore==='number'?`<div style="font-size:11.5px;color:var(--muted);margin:6px 0 2px"><b style="color:var(--lgold)">MAX READ ${b.maxScore.toFixed(1)}</b> — ${b.maxScoreWhy||''}</div>`:''}${(()=>{const f=marketFit(b);if(!f||!f.n)return '';const s=f.gap>=0?`covers ${f.within} of ${f.n} matching units — cheapest ${f.cheap.cluster} ${f.cheap.unit} at ${fmtB(f.cheap.price)}`:`<b style="color:#f0883e">${fmtK(-f.gap)} SHORT</b> of cheapest match ${f.cheap.cluster} ${f.cheap.unit} (${fmtB(f.cheap.price)}) — pool ${f.n} units`;return `<div style="font-size:11.5px;color:var(--muted);margin:2px 0"><b style="color:var(--lgold)">MARKET FIT</b> — budget ${fmtB(b.budget)} ${s}</div>`})()}
     <div class="pmeta"><h2>${b.buyer}</h2><div class="sub">${b.stage} · ${b.area||''} ${[b.cluster1,b.cluster2].filter(Boolean).join(', ')}</div>${ph?`<div class="sub" style="margin-top:2px">📱 <a href="tel:+${ph}" style="color:var(--lgold)">+${ph}</a> · <a href="https://wa.me/${ph}" target="_blank" style="color:var(--lgold)">WhatsApp</a></div>`:`<div class="sub" style="margin-top:2px;color:#c07">📱 no number — add one (dedupe key)</div>`}
       <div class="pills">${b.budget?`<span class="pill">💰 ${fmtB(b.budget)}</span>`:''}${b.beds?`<span class="pill">🛏 ${b.beds} bed</span>`:''}${b.finance?`<span class="pill">🏦 ${b.finance}</span>`:''}<span class="pill">⏰ ${b.nextTouch||'no touch set'}</span></div></div>
     <div style="display:flex;gap:6px;flex-direction:column">${ph?`<a class="act" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a><a class="act" href="tel:+${ph}">📞 Call</a>`:'<span style="font-size:11px;color:var(--muted)">no number on file</span>'}</div>
