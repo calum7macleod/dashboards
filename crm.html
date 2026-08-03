@@ -147,7 +147,8 @@ async function push(path,data,msg){
     else $('syncTxt').textContent='Save failed ('+r.status+')';
   }catch(e){$('syncTxt').textContent='Offline — retrying';setTimeout(()=>push(path,data,msg),4000)}
 }
-const heatStr=h=>'🔥'.repeat(h||0)||'—';
+const heatStr=h=>'';
+const scr=b=>(typeof b.score==='number'&&b.score>0)?b.score.toFixed(2):'—';
 let FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};
 function setF(){FILT={cluster:$('f-cluster').value,budget:$('f-budget').value,beds:$('f-beds').value,fin:$('f-fin').value,seg:$('f-seg').value};renderBoard();}
 function clearF(){['f-cluster','f-budget','f-beds','f-fin','f-seg'].forEach(i=>$(i).value='');FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};renderBoard();}
@@ -179,7 +180,7 @@ function heatDrivers(b){
   const lc=b.lastContact||b.date; const days=lc?Math.floor((new Date(today())-new Date(lc))/864e5):'?';
   const t14=(b.touches||[]).filter(x=>x.date>=addDays(today(),-14)).length;
   const sug=suggestedHeat(b);
-  return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system suggests <b>${heatStr(sug)}</b>${sug!==(b.heat||3)?' — consider updating':''}`;
+  return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system read: <b>${(sug/5).toFixed(2)}</b>${Math.abs((sug/5)-(b.score||0))>=0.2?' — consider updating score':''}`;
 }
 function tab(t){curTab=t;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
   ['today','pipeline','people','sellers'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
@@ -191,12 +192,12 @@ async function fetchAll(){
 }
 function render(){renderToday();renderBoard();renderPeople();renderSellers();}
 function renderToday(){
-  const due=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).sort((a,b)=>(b.heat||0)-(a.heat||0));
+  const due=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).sort((a,b)=>(b.score||0)-(a.score||0));
   const wake=BUYERS.filter(b=>b.stage==='Snoozed'&&b.snoozedUntil&&b.snoozedUntil<=today());
   $('touchList').innerHTML=[...wake.map(b=>trow(b,true)),...due.map(b=>trow(b,false))].join('')||'<div style="color:var(--muted);padding:6px">Nothing due — clear runway 👌</div>';
   const M=computeMatches();
   $('matchList').innerHTML=M.slice(0,10).map(({u,hits})=>`<div class="touchrow"><span class="tname">${u.cluster} ${u.unit}</span><span class="bdg">${fmtB(u.price)}</span>
-   <span class="treason">${hits.slice(0,5).map(h=>`<span style="cursor:pointer" onclick="openCard('${h.id}')">${h.buyer}</span> ${'🔥'.repeat(h.heat||0)}${h.stage==='Snoozed'?'💤':''}`).join(' · ')}</span></div>`).join('')||'<div style="color:var(--muted);padding:6px">No matches — fill budgets/beds</div>';
+   <span class="treason">${hits.slice(0,5).map(h=>`<span style="cursor:pointer" onclick="openCard('${h.id}')">${h.buyer}</span> <b style="color:var(--lgold)">${scr(h)}</b>${h.stage==='Snoozed'?'💤':''}`).join(' · ')}</span></div>`).join('')||'<div style="color:var(--muted);padding:6px">No matches — fill budgets/beds</div>';
 }
 function trow(b,isWake){return `<div class="touchrow"><span class="tname" onclick="openCard('${b.id}')">${b.buyer}</span>
  <span class="${b.nextTouch<today()?'due-over':'due-today'}">${isWake?'WAKING':(b.nextTouch<today()?'OVERDUE':'DUE TODAY')}</span>
@@ -207,7 +208,7 @@ function renderBoard(){
   const pipeVal=live.reduce((a,b)=>a+(b.budget||0),0);
   $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(pipeVal).toLocaleString()}</b> <span style="font-size:11px">(2% @ 65%)</span>`;
   $('board').innerHTML=STAGES.map(st=>{
-    const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>(b.heat||0)-(a.heat||0));
+    const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>(b.score||0)-(a.score||0));
     const val=cards.reduce((a,b)=>a+(b.budget||0),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','buyer')">
       <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${val?fmtB(val):''}</div>
@@ -215,7 +216,7 @@ function renderBoard(){
   }).join('')+snoozedCol();
 }
 function cardHtml(b){return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
-  <div class="nm">${b.buyer||'?'}</div><div class="heat">${heatStr(b.heat)} <span class="bdg">${fmtB(b.budget)}</span></div>
+  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span></div>
   <div class="need">${(b.needSummary||'').slice(0,64)}</div>
   <div class="nt ${ntClass(b.nextTouch)}">⏰ ${b.nextTouch||'—'}</div></div>`}
 function snoozedCol(){
@@ -225,9 +226,9 @@ function snoozedCol(){
    ${showSnoozed?sn.map(b=>`<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')"><div class="nm">${b.buyer}</div><div class="nt ok">wakes ${b.snoozedUntil||'?'}</div><div class="need">${(b.touchReason||'').slice(0,55)}</div></div>`).join(''):''}</div>`}
 function renderPeople(){
   const q=($('search').value||'').toLowerCase();
-  const list=BUYERS.filter(b=>!q||JSON.stringify(b).toLowerCase().includes(q)).sort((a,b)=>(b.heat||0)-(a.heat||0));
+  const list=BUYERS.filter(b=>!q||JSON.stringify(b).toLowerCase().includes(q)).sort((a,b)=>(b.score||0)-(a.score||0));
   $('peopleList').innerHTML=list.map(b=>`<div class="touchrow" onclick="openCard('${b.id}')">
-   <span class="tname">${b.buyer}</span><span class="heat">${heatStr(b.heat)}</span>
+   <span class="tname">${b.buyer}</span><span class="heat"><b>${scr(b)}</b></span>
    <span class="bdg">${b.stage}${b.stage==='Snoozed'&&b.snoozedUntil?' → '+b.snoozedUntil:''}</span>
    <span class="treason">${(b.needSummary||'').slice(0,70)}</span></div>`).join('')||'<div style="color:var(--muted)">No matches</div>';
 }
@@ -278,7 +279,7 @@ function phoneOf(b){const m=JSON.stringify(b).match(/\+?\d{10,15}/);return m?m[0
 function openCard(id){const b=byId(id);if(!b)return;
   const ph=phoneOf(b);
   $('mbox').innerHTML=`<div class="phead">
-    <div class="heatball"><b>${b.heat||'—'}</b><span>HEAT</span></div>
+    <div class="heatball"><b>${scr(b)}</b><span>SCORE</span></div>
     <div class="pmeta"><h2>${b.buyer}</h2><div class="sub">${b.stage} · ${b.area||''} ${[b.cluster1,b.cluster2].filter(Boolean).join(', ')}</div>
       <div class="pills">${b.budget?`<span class="pill">💰 ${fmtB(b.budget)}</span>`:''}${b.beds?`<span class="pill">🛏 ${b.beds} bed</span>`:''}${b.finance?`<span class="pill">🏦 ${b.finance}</span>`:''}<span class="pill">⏰ ${b.nextTouch||'no touch set'}</span></div></div>
     <div style="display:flex;gap:6px;flex-direction:column">${ph?`<a class="act" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a><a class="act" href="tel:+${ph}">📞 Call</a>`:'<span style="font-size:11px;color:var(--muted)">no number on file</span>'}</div>
@@ -286,8 +287,8 @@ function openCard(id){const b=byId(id);if(!b)return;
   <div class="drivers">${heatDrivers(b)}</div>
   <div class="mrow">
     <button class="btn mini" onclick="touched('${b.id}');openCard('${b.id}')">Touched ✓</button>
-    <button class="btn sec mini" onclick="heatCh('${b.id}',1)">Heat +</button>
-    <button class="btn sec mini" onclick="heatCh('${b.id}',-1)">Heat −</button>
+    <button class="btn sec mini" onclick="heatCh('${b.id}',1)">Score +</button>
+    <button class="btn sec mini" onclick="heatCh('${b.id}',-1)">Score −</button>
     <button class="btn sec mini" onclick="addNote('${b.id}')">📝 Note</button>
     <select onchange="stageSel('${b.id}',this.value)">${STAGES.concat('Snoozed').map(s=>`<option ${s===b.stage?'selected':''}>${s}</option>`).join('')}</select>
     <input type="date" id="snz"><button class="btn sec mini" onclick="snooze('${b.id}')">💤</button>
@@ -306,7 +307,7 @@ function openStock(id){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)re
   <button class="btn" onclick="closeModal()">Close</button></div>`;
   $('modal').classList.remove('hidden');}
 function stockStage(id,st){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;s.stage=st;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${st}`);closeModal();}
-function heatCh(id,d){const b=byId(id);b.heat=Math.min(5,Math.max(1,(b.heat||3)+d));b.score=+(b.heat/5).toFixed(2);render();queueSave('data/buyers.json',BUYERS,'CRM: heat+score '+b.buyer);openCard(id)}
+function heatCh(id,d){const b=byId(id);b.score=Math.min(1,Math.max(0.05,+(((b.score||0.6)+d*0.05).toFixed(2))));b.heat=Math.min(5,Math.max(1,Math.round(b.score*5)));render();queueSave('data/buyers.json',BUYERS,'CRM: score '+b.buyer);openCard(id)}
 function addNote(id){const n=prompt('Note:');if(!n)return;const b=byId(id);
   (b.touches=b.touches||[]).push({date:today(),channel:'manual',summary:n});
   queueSave('data/buyers.json',BUYERS,'CRM: note '+b.buyer);openCard(id);}
@@ -324,7 +325,7 @@ function computeMatches(){
     const hits=live.filter(b=>{
       const bb=bedsOf(b.beds),bc=clustersOf(b);
       return(!uB.length||!bb.length||uB.some(x=>bb.includes(x)))&&(!bc.length||bc.some(c=>uc.includes(c)||c.includes(uc)))&&(!b.budget||b.budget>=u.price*0.9);
-    }).sort((a,b)=>(b.heat||0)-(a.heat||0));
+    }).sort((a,b)=>(b.score||0)-(a.score||0));
     if(hits.length)out.push({u,hits});
   }
   return out.sort((a,b)=>b.hits.length-a.hits.length);
