@@ -333,7 +333,7 @@ function phoneOf(b){const m=JSON.stringify(b).match(/\+?\d{10,15}/);return m?m[0
 function openCard(id){const b=byId(id);if(!b)return;
   const ph=phoneOf(b);
   $('mbox').innerHTML=`<div class="phead">
-    <div class="heatball"><b>${scr(b)}</b><span>SCORE</span></div>
+    <div class="heatball"><b>${scr(b)}</b><span>SCORE</span></div>${typeof b.maxScore==='number'?`<div style="font-size:11.5px;color:var(--muted);margin:6px 0 2px"><b style="color:var(--lgold)">MAX READ ${b.maxScore.toFixed(1)}</b> — ${b.maxScoreWhy||''}</div>`:''}
     <div class="pmeta"><h2>${b.buyer}</h2><div class="sub">${b.stage} · ${b.area||''} ${[b.cluster1,b.cluster2].filter(Boolean).join(', ')}</div>${ph?`<div class="sub" style="margin-top:2px">📱 <a href="tel:+${ph}" style="color:var(--lgold)">+${ph}</a> · <a href="https://wa.me/${ph}" target="_blank" style="color:var(--lgold)">WhatsApp</a></div>`:`<div class="sub" style="margin-top:2px;color:#c07">📱 no number — add one (dedupe key)</div>`}
       <div class="pills">${b.budget?`<span class="pill">💰 ${fmtB(b.budget)}</span>`:''}${b.beds?`<span class="pill">🛏 ${b.beds} bed</span>`:''}${b.finance?`<span class="pill">🏦 ${b.finance}</span>`:''}<span class="pill">⏰ ${b.nextTouch||'no touch set'}</span></div></div>
     <div style="display:flex;gap:6px;flex-direction:column">${ph?`<a class="act" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a><a class="act" href="tel:+${ph}">📞 Call</a>`:'<span style="font-size:11px;color:var(--muted)">no number on file</span>'}</div>
