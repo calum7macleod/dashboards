@@ -151,7 +151,10 @@
   "snoozedUntil": null,
   "touches": [],
   "phone": "",
-  "history": "2.6M, mortgage. Wants to be near the lagoon."
+  "history": "2.6M, mortgage. Wants to be near the lagoon.",
+  "maxScore": 2.7,
+  "maxScoreWhy": "Clear hard constraint (must be near lagoon) + 2.6 mortgage = matchable but narrow. No viewings or momentum logged yet - constraint-led buyers convert fast when THE unit appears, drift otherwise.",
+  "maxScoreDate": "2026-08-03"
  },
  {
   "date": "2026-07-04",
