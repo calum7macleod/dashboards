@@ -33,6 +33,7 @@ h1{text-align:center;font-size:24px;margin-bottom:10px}
 .card{background:var(--card);border:1px solid var(--div);border-radius:11px;padding:9px;margin-bottom:8px;cursor:grab}
 .card .nm{font-weight:bold;font-size:14px}
 .heat{color:var(--lgold);font-size:11.5px;letter-spacing:1px}
+.fsel{background:var(--card);color:var(--cream,#F5EDE0);border:1px solid var(--gold);border-radius:6px;padding:5px 8px;font-size:12px}
 .card .need{color:var(--muted);font-size:11.5px;margin:3px 0}
 .nt{font-size:11.5px}.nt.over{color:var(--red)}.nt.today{color:var(--amber)}.nt.ok{color:var(--muted)}
 .bdg{font-size:11.5px;color:var(--cream)}
@@ -87,6 +88,24 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
       <div id="pipeTotals" style="font-size:13px;color:var(--muted)"></div>
       <button class="btn" onclick="newBuyer()">+ New Buyer</button>
     </div>
+    <div id="filtbar" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+      <select id="f-cluster" onchange="setF()" class="fsel"></select>
+      <select id="f-budget" onchange="setF()" class="fsel">
+        <option value="">Any budget</option><option value="2500000">≤ 2.5M</option>
+        <option value="3000000">≤ 3M</option><option value="3500000">≤ 3.5M</option>
+        <option value="99999999">3.5M+</option>
+      </select>
+      <select id="f-beds" onchange="setF()" class="fsel">
+        <option value="">Any beds</option><option>3</option><option>4</option><option>5</option>
+      </select>
+      <select id="f-fin" onchange="setF()" class="fsel">
+        <option value="">Any finance</option><option value="cash">Cash</option><option value="mortgage">Mortgage</option>
+      </select>
+      <select id="f-seg" onchange="setF()" class="fsel">
+        <option value="">Secondary + Offplan</option><option value="Offplan">Offplan only</option><option value="secondary">Secondary only</option>
+      </select>
+      <button class="btn sec mini" onclick="clearF()">Clear</button>
+    </div>
     <div id="board"></div>
   </div>
   <div id="v-people" class="hidden">
@@ -129,6 +148,20 @@ async function push(path,data,msg){
   }catch(e){$('syncTxt').textContent='Offline — retrying';setTimeout(()=>push(path,data,msg),4000)}
 }
 const heatStr=h=>'🔥'.repeat(h||0)||'—';
+let FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};
+function setF(){FILT={cluster:$('f-cluster').value,budget:$('f-budget').value,beds:$('f-beds').value,fin:$('f-fin').value,seg:$('f-seg').value};renderBoard();}
+function clearF(){['f-cluster','f-budget','f-beds','f-fin','f-seg'].forEach(i=>$(i).value='');FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};renderBoard();}
+function passF(b){
+  if(FILT.cluster&&![b.cluster1,b.cluster2,b.cluster3].filter(Boolean).some(c=>c===FILT.cluster))return false;
+  if(FILT.budget){const bd=b.budget||0;if(FILT.budget==='99999999'){if(bd<=3500000)return false;}else if(bd>+FILT.budget||!bd)return false;}
+  if(FILT.beds&&String(b.beds||'').indexOf(FILT.beds)===-1)return false;
+  if(FILT.fin&&!(b.finance||'').toLowerCase().includes(FILT.fin))return false;
+  if(FILT.seg==='Offplan'&&b.segment!=='Offplan')return false;
+  if(FILT.seg==='secondary'&&b.segment==='Offplan')return false;
+  return true;}
+function fillClusterFilter(){const cs=[...new Set(BUYERS.flatMap(b=>[b.cluster1,b.cluster2,b.cluster3]).filter(Boolean))].sort();
+  if($('f-cluster'))$('f-cluster').innerHTML='<option value="">Any cluster</option>'+cs.map(c=>`<option>${c}</option>`).join('');}
+function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>0)b.heat=Math.min(5,Math.max(1,Math.round(b.score*5)));});}
 const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
 const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
 const commOf=b=>b?Math.round(b*0.02*0.65):0; // 2% comm at 65% split
@@ -154,6 +187,7 @@ async function fetchAll(){
   BUYERS=await fetchFile('data/buyers.json');
   try{STOCK=await fetchFile('data/stock.json')}catch(e){STOCK=[]}
   try{VIEWINGS=await fetchFile('data/viewings.json')}catch(e){VIEWINGS=[]}
+  syncHeatFromScore();fillClusterFilter();
 }
 function render(){renderToday();renderBoard();renderPeople();renderSellers();}
 function renderToday(){
@@ -169,11 +203,11 @@ function trow(b,isWake){return `<div class="touchrow"><span class="tname" onclic
  <span class="treason">${b.touchReason||b.needSummary||''}</span>
  <button class="btn mini" onclick="touched('${b.id}')">Touched ✓</button></div>`}
 function renderBoard(){
-  const live=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage));
+  const live=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage)&&passF(b));
   const pipeVal=live.reduce((a,b)=>a+(b.budget||0),0);
   $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(pipeVal).toLocaleString()}</b> <span style="font-size:11px">(2% @ 65%)</span>`;
   $('board').innerHTML=STAGES.map(st=>{
-    const cards=BUYERS.filter(b=>b.stage===st).sort((a,b)=>(b.heat||0)-(a.heat||0));
+    const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>(b.heat||0)-(a.heat||0));
     const val=cards.reduce((a,b)=>a+(b.budget||0),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','buyer')">
       <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${val?fmtB(val):''}</div>
@@ -272,7 +306,7 @@ function openStock(id){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)re
   <button class="btn" onclick="closeModal()">Close</button></div>`;
   $('modal').classList.remove('hidden');}
 function stockStage(id,st){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;s.stage=st;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${st}`);closeModal();}
-function heatCh(id,d){const b=byId(id);b.heat=Math.min(5,Math.max(1,(b.heat||3)+d));render();queueSave('data/buyers.json',BUYERS,'CRM: heat '+b.buyer);openCard(id)}
+function heatCh(id,d){const b=byId(id);b.heat=Math.min(5,Math.max(1,(b.heat||3)+d));b.score=+(b.heat/5).toFixed(2);render();queueSave('data/buyers.json',BUYERS,'CRM: heat+score '+b.buyer);openCard(id)}
 function addNote(id){const n=prompt('Note:');if(!n)return;const b=byId(id);
   (b.touches=b.touches||[]).push({date:today(),channel:'manual',summary:n});
   queueSave('data/buyers.json',BUYERS,'CRM: note '+b.buyer);openCard(id);}
