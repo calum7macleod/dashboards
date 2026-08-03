@@ -494,7 +494,7 @@ function filterBuyers() {
   const search = (document.getElementById('buyers-search').value||'').toLowerCase();
   const rows = BUYERS
     .filter(b=>(!status||b.status===status)&&(!search||b.buyer.toLowerCase().includes(search)||(b.cluster1||'').toLowerCase().includes(search)||(b.notes||'').toLowerCase().includes(search)))
-    .sort((a,b)=>(a.order||0)-(b.order||0));
+    .sort((a,b)=>((b.score||0)-(a.score||0))||((a.order||99)-(b.order||99)));
   document.getElementById('buyers-tbody').innerHTML = rows.map(b => {
     const clusters = [b.cluster1,b.cluster2,b.cluster3].filter(Boolean).join(' · ');
     return '<tr>'+
