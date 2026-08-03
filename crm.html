@@ -280,7 +280,7 @@ function openCard(id){const b=byId(id);if(!b)return;
   const ph=phoneOf(b);
   $('mbox').innerHTML=`<div class="phead">
     <div class="heatball"><b>${scr(b)}</b><span>SCORE</span></div>
-    <div class="pmeta"><h2>${b.buyer}</h2><div class="sub">${b.stage} · ${b.area||''} ${[b.cluster1,b.cluster2].filter(Boolean).join(', ')}</div>
+    <div class="pmeta"><h2>${b.buyer}</h2><div class="sub">${b.stage} · ${b.area||''} ${[b.cluster1,b.cluster2].filter(Boolean).join(', ')}</div>${ph?`<div class="sub" style="margin-top:2px">📱 <a href="tel:+${ph}" style="color:var(--lgold)">+${ph}</a> · <a href="https://wa.me/${ph}" target="_blank" style="color:var(--lgold)">WhatsApp</a></div>`:`<div class="sub" style="margin-top:2px;color:#c07">📱 no number — add one (dedupe key)</div>`}
       <div class="pills">${b.budget?`<span class="pill">💰 ${fmtB(b.budget)}</span>`:''}${b.beds?`<span class="pill">🛏 ${b.beds} bed</span>`:''}${b.finance?`<span class="pill">🏦 ${b.finance}</span>`:''}<span class="pill">⏰ ${b.nextTouch||'no touch set'}</span></div></div>
     <div style="display:flex;gap:6px;flex-direction:column">${ph?`<a class="act" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a><a class="act" href="tel:+${ph}">📞 Call</a>`:'<span style="font-size:11px;color:var(--muted)">no number on file</span>'}</div>
   </div>
@@ -330,9 +330,13 @@ function computeMatches(){
   }
   return out.sort((a,b)=>b.hits.length-a.hits.length);
 }
+const normPh=p=>String(p||'').replace(/\D/g,'').replace(/^00/,'').replace(/^0/,'971');
+function dupeByPhone(p){const n=normPh(p);if(!n)return null;return BUYERS.find(b=>normPh(b.phone)===n||(!b.phone&&phoneOf(b)===n));}
 function newBuyer(){
   const name=prompt('Name?');if(!name)return;
   const phone=prompt('Phone (+971…)?')||'';
+  const dup=dupeByPhone(phone);
+  if(dup){alert('That number already belongs to "'+dup.buyer+'" — opening their profile instead. No duplicates.');openCard(dup.id);return;}
   const budget=parseFloat(prompt('Budget AED?')||'0')||0;
   const beds=prompt('Beds?')||'';const clu=prompt('Cluster/area?')||'';
   const heat=Math.min(5,Math.max(1,parseInt(prompt('Heat 1-5?')||'3')||3));
