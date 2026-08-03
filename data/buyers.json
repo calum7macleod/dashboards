@@ -227,12 +227,18 @@
   "order": 8,
   "heat": 2,
   "stage": "Viewing",
-  "lastContact": "2026-07-04",
-  "nextTouch": "2026-07-29",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-07",
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "Met 4 Jul - went well, got on great. 3 or 4 bed SINGLE ROW, Malta or Costa Brava. Budget 2.6M (from calendar), mortgage.",
   "snoozedUntil": null,
-  "touches": [],
+  "touches": [
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
+   }
+  ],
   "phone": "",
   "history": "Met 4 Jul - went well, got on great. 3 or 4 bed SINGLE ROW, Malta or Costa Brava. Budget 2.6M (from calendar), mortgage. Good chance - stay close.",
   "maxScore": 2.8,
@@ -661,12 +667,18 @@
   "id": "ibrahim-9",
   "heat": 2,
   "stage": "Viewing",
-  "lastContact": "2026-05-25",
-  "nextTouch": "2026-07-28",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-07",
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "Now wants Town Square. Previously Costa SR. Mortgage 3.1M.",
   "snoozedUntil": null,
-  "touches": [],
+  "touches": [
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
+   }
+  ],
   "phone": "",
   "history": "Now wants Town Square. Previously Costa SR. Mortgage 3.1M.",
   "maxScore": 1.8,
@@ -699,12 +711,18 @@
   "id": "adam-11",
   "heat": 3,
   "stage": "Viewing",
-  "lastContact": "2026-05-30",
-  "nextTouch": "2026-07-28",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-06",
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "Now wants single row Later cluster. Cash. 4M budget.",
   "snoozedUntil": null,
-  "touches": [],
+  "touches": [
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
+   }
+  ],
   "phone": "",
   "history": "Now wants single row Later cluster. Cash. 4M budget.",
   "maxScore": 3,
@@ -944,8 +962,8 @@
   "order": 25,
   "stage": "Qualified",
   "heat": 2,
-  "lastContact": "2026-07-29",
-  "nextTouch": "2026-07-30",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-07",
   "touchReason": "Awaiting his reply on move-in timing and whether he is in UAE - chase to book the call",
   "needSummary": "End-user, 2.7M, mortgage pre-approved, DAMAC Lagoons, beds/timeline unknown",
   "snoozedUntil": null,
@@ -954,6 +972,11 @@
     "date": "2026-07-29",
     "channel": "wa",
     "summary": "Bayut enquiry on listing 15119092; confirmed unit available. Says buying for himself, pre-approved, budget 2.7M. Asked him ready-to-move vs wait + UAE or UK - no reply yet."
+   },
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
    }
   ],
   "phone": "+44 7939 988295",
@@ -1032,8 +1055,8 @@
   "order": 27,
   "stage": "Qualified",
   "heat": 2,
-  "lastContact": "2026-08-01",
-  "nextTouch": "2026-08-03",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-07",
   "touchReason": "Send Malta and The Valley options following the meeting",
   "needSummary": "4-bed TH, 2.4-2.5M, 2M mortgage + deposit, Lagoons vs The Valley, prefers single rows",
   "snoozedUntil": null,
@@ -1042,6 +1065,11 @@
     "date": "2026-08-01",
     "channel": "meeting",
     "summary": "Met in person. Budget 2.4-2.5M, 2M mortgage plus deposit/costs. Torn between Lagoons and The Valley; preferred single rows. Facade designer, works with the developer often. Calum's steer: Malta / The Valley."
+   },
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
    }
   ],
   "phone": "+971 50 518 8013",
