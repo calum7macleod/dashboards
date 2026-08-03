@@ -1076,8 +1076,8 @@
   "order": 2,
   "stage": "Viewing",
   "heat": 4,
-  "lastContact": "2026-08-02",
-  "nextTouch": "2026-08-03",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-05",
   "touchReason": "Viewing Mon 3 Aug 5pm at DAMAC Lagoons main gate - confirm on the day; also owes him the Malta handover date",
   "needSummary": "5-bed single row, Costa Brava/Malta, budget max 3.5M (may stretch), rejects back-to-back",
   "snoozedUntil": null,
@@ -1091,6 +1091,11 @@
     "date": "2026-08-02",
     "channel": "wa",
     "summary": "Viewing agreed for Monday 3 Aug 5pm, meeting at main gate (pin sent). Confirmed 'see you tomorrow'."
+   },
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
    }
   ],
   "phone": "+971 55 880 2412",
