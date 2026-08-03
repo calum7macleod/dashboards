@@ -236,8 +236,8 @@ function renderPeople(){
    <span class="treason">${(b.needSummary||'').slice(0,70)}</span></div>`).join('')||'<div style="color:var(--muted)">No matches</div>';
 }
 function renderSellers(){
-  const val=STOCK.filter(s=>!['Sold','Lost'].includes(sStage(s))).reduce((a,s)=>a+(s.price||0),0);
-  $('sTotals').innerHTML=`Stock book: <b style="color:var(--lgold)">${fmtB(val)}</b> across ${STOCK.filter(s=>!['Sold','Lost'].includes(sStage(s))).length} live units · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(val).toLocaleString()}</b>`;
+  const val=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).reduce((a,s)=>a+(s.price||0),0);
+  $('sTotals').innerHTML=`Stock book: <b style="color:var(--lgold)">${fmtB(val)}</b> across ${STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).length} live units · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(val).toLocaleString()}</b>`;
   $('sboard').innerHTML=SSTAGES.map(st=>{
     const cards=STOCK.filter(s=>sStage(s)===st);
     const v=cards.reduce((a,s)=>a+(s.price||0),0);
