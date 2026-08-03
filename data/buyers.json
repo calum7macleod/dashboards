@@ -25,12 +25,18 @@
   "order": 3,
   "heat": 5,
   "stage": "Viewing",
-  "lastContact": "2026-07-08",
-  "nextTouch": "2026-07-28",
+  "lastContact": "2026-08-03",
+  "nextTouch": "2026-08-04",
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "TOP TOP buyers. Might do 5bd or 4bd, like Costa, but probably Malta - better options there. Pre-approved, but needs to s",
   "snoozedUntil": null,
-  "touches": [],
+  "touches": [
+   {
+    "date": "2026-08-03",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
+   }
+  ],
   "phone": "",
   "nextStep": "Weekend viewing block Sat 8 - line up 4/5bd Costa",
   "history": "TOP TOP buyers. Might do 5bd or 4bd, like Costa, but probably Malta - better options there. Pre-approved, but needs to switch [bank/rate - confirm detail]. Back next week: line up a Malta unit + a 5-bed to view.",
