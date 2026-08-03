@@ -45,10 +45,9 @@ async function loadKnownNumbers() {
   } catch (e) { console.error('[bridge] known-load failed', e.message); }
 }
 
-function isBusiness(msg, chat, body) {
-  if (chat.isGroup) return false;                                   // groups skipped v1
-  const num = (msg.from || '').replace(/\D/g, '').slice(-9);
-  if (KNOWN.has(num)) return true;                                  // known CRM contact
+// v1.1: no chat-object dependency (msg.getChat() breaks on current WA Web internals)
+function isBusiness(num9, body) {
+  if (KNOWN.has(num9)) return true;                                 // known CRM contact
   if (PROPERTY_WORDS.test(body || '')) return true;                 // property signals
   return false;                                                     // else personal -> never logged
 }
@@ -59,21 +58,22 @@ client.on('ready', () => console.log('[bridge] connected, listening (read-only).
 
 async function handle(msg, fromMe) {
   try {
-    const chat = await msg.getChat();
+    const from = String(msg.from || ''), to = String(msg.to || '');
+    if (from.endsWith('@g.us') || to.endsWith('@g.us')) return;     // groups skipped v1
     const body = msg.body || `[${msg.type}]`;
-    if (!isBusiness(msg, chat, body) && !(fromMe && PROPERTY_WORDS.test(body))) {
-      // for outbound: also keep call-receipt style messages to known numbers
-      const num = (msg.to || '').replace(/\D/g, '').slice(-9);
-      if (!(fromMe && KNOWN.has(num))) return;
-    }
+    const rawNum = (fromMe ? to : from).replace(/@.*/, '');
+    const num9 = rawNum.replace(/\D/g, '').slice(-9);
+    if (!isBusiness(num9, body)) return;                            // personal -> never logged
+    let name = '';
+    try { name = (msg._data && (msg._data.notifyName || msg._data.pushName)) || ''; } catch (_) {}
     queue.push({
-      at: new Date(msg.timestamp * 1000).toISOString(),
+      at: new Date((msg.timestamp || Date.now() / 1000) * 1000).toISOString(),
       dir: fromMe ? 'out' : 'in',
-      contact: chat.name || chat.id.user,
-      number: (fromMe ? msg.to : msg.from || '').replace(/@.*/, ''),
-      text: body.slice(0, 1200)
+      contact: name || rawNum,
+      number: rawNum,
+      text: String(body).slice(0, 1200)
     });
-  } catch (e) { console.error('[bridge] handle err', e.message); }
+  } catch (e) { console.error('[bridge] handle err', e && e.message); }
 }
 client.on('message', m => handle(m, false));
 client.on('message_create', m => { if (m.fromMe) handle(m, true); });
