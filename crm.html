@@ -123,7 +123,9 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
 <script>
 const OWNER='calum7macleod', REPO='dashboards';
 const STAGES=['Longer Term','New','Qualified','Viewing','Offer','Won','Lost'];
-const SSTAGES=['Active','Offer','Sold','Later','Lost'];
+const SSTAGES=['Longer Term','New','Qualified','Ready','Offer','Won','Lost'];
+const SMIG={'Active':'Qualified','Sold':'Won','Later':'Longer Term'};
+function migSellerStages(){STOCK.forEach(s=>{if(SMIG[s.stage])s.stage=SMIG[s.stage];if(!s.stage||!SSTAGES.includes(s.stage))s.stage=s.stage&&SSTAGES.includes(s.stage)?s.stage:'New';});}
 const CAD={5:1,4:2,3:3,2:4,1:5};
 let BUYERS=[], STOCK=[], VIEWINGS=[], SHAS={}, PAT=localStorage.getItem('crm_pat')||'';
 let showSnoozed=false, curTab='today';
@@ -189,7 +191,7 @@ async function fetchAll(){
   BUYERS=await fetchFile('data/buyers.json');
   try{STOCK=await fetchFile('data/stock.json')}catch(e){STOCK=[]}
   try{VIEWINGS=await fetchFile('data/viewings.json')}catch(e){VIEWINGS=[]}
-  syncHeatFromScore();fillClusterFilter();
+  syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
 function render(){renderToday();renderBoard();renderPeople();renderSellers();}
 function renderToday(){
