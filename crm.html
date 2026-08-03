@@ -17,7 +17,7 @@ h1{text-align:center;font-size:24px;margin-bottom:10px}
 .btn.sec{background:transparent;color:var(--lgold);border:1px solid var(--div)}
 .mini{padding:6px 10px;font-size:12px;border-radius:7px}
 .hidden{display:none!important}
-.wrap{max-width:1400px;margin:0 auto}
+.wrap{max-width:97vw;margin:0 auto}
 .panelbox{background:var(--panel);border:1px solid var(--div);border-radius:14px;padding:12px;margin-bottom:14px}
 .touchrow{display:flex;align-items:center;gap:10px;padding:9px 6px;border-top:1px solid var(--div);flex-wrap:wrap}
 .touchrow:first-of-type{border-top:none}
@@ -26,7 +26,8 @@ h1{text-align:center;font-size:24px;margin-bottom:10px}
 .due-over{color:var(--red);font-size:12px;font-weight:bold}
 .due-today{color:var(--amber);font-size:12px;font-weight:bold}
 #board,#sboard{display:flex;gap:10px;overflow-x:auto;padding-bottom:16px}
-.col{background:var(--panel);border:1px solid var(--div);border-radius:14px;min-width:235px;width:235px;flex:0 0 auto;padding:9px}
+.col{background:var(--panel);border:1px solid var(--div);border-radius:14px;min-width:150px;flex:1 1 0;padding:8px}
+@media(max-width:1100px){.col{min-width:220px;flex:0 0 auto}}
 .col h3{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between;margin-bottom:4px}
 .colval{font-size:11px;color:var(--muted);margin-bottom:8px}
 .col.dragover{outline:2px dashed var(--lgold)}
