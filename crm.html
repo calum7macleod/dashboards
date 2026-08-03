@@ -81,7 +81,14 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
 </div>
 <div class="wrap">
   <div id="v-today">
+    <div id="headStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Money Board — today's highest-value actions</h2><div id="moneyBoard"></div></div>
+    <div id="warnBox"></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Today's Touches</h2><div id="touchList"></div></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <div class="panelbox" style="flex:1;min-width:260px"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">Buyers by score <span style="font-size:11px;color:var(--muted)">(tap a bar)</span></h2><div id="scoreChartB"></div></div>
+      <div class="panelbox" style="flex:1;min-width:260px"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">Sellers by score</h2><div id="scoreChartS"></div></div>
+    </div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Unit ↔ Buyer Matches</h2><div id="matchList"></div></div>
   </div>
   <div id="v-pipeline" class="hidden">
@@ -191,6 +198,8 @@ const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
 let DEALS=[],BOARDPCT=0.02,TIER=0.65; // board 2% (bank-reconciled, Calum 3 Aug); tier: Q3-26 65%, Q4-26 70%
 function calcComm(){/* myBoard field = gross deal comm, not Calum's board - do NOT derive from it. 2% confirmed vs take-home. */}
 const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
+const gross2=v=>v?Math.round(v*BOARDPCT):0;
+const fmtK=v=>v>=1000000?('Đ'+(v/1000000).toFixed(2)+'M'):('Đ'+Math.round(v/1000)+'K');
 const commLbl=()=>`${(BOARDPCT*100).toFixed(2)}% board × ${Math.round(TIER*100)}% tier = ${(BOARDPCT*TIER*100).toFixed(2)}%`;
 function suggestedHeat(b){
   // THE BRAIN v1: recency + stage + momentum
@@ -218,7 +227,38 @@ async function fetchAll(){
   syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
 function render(){renderToday();renderBoard();renderPeople();renderSellers();}
+let SCOREF='';
+function scoreFilter(role,s){SCOREF=String(s);if($('p-role'))$('p-role').value=role==='seller'?'seller':'';openTab('people');renderPeople();}
 function renderToday(){
+  const liveB=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage));
+  const pv=liveB.reduce((a,b)=>a+(b.budget||0),0);
+  const liveS=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s)));
+  const sv=liveS.reduce((a,s)=>a+(s.price||0),0);
+  const dueN=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).length;
+  const mDeals=DEALS.filter(d=>String(d.date||d.month||'').includes('2026-08')||String(d.month||'').toLowerCase().includes('aug'));
+  const mTH=mDeals.reduce((a,d)=>a+(+d.myTakeHome||0),0);
+  const box=(l,v,s)=>`<div style="flex:1;min-width:150px;background:var(--panel);border:1px solid var(--div);border-radius:12px;padding:10px 12px"><div style="font-size:10.5px;letter-spacing:2px;color:var(--muted)">${l}</div><div style="font-size:19px;color:var(--lgold);font-weight:700">${v}</div><div style="font-size:11px;color:var(--muted)">${s||''}</div></div>`;
+  $('headStrip').innerHTML=box('LIVE PIPELINE',fmtB(pv),'comms @2% ≈ '+fmtK(gross2(pv)))+box('STOCK BOOK',fmtB(sv),liveS.length+' live units · @2% ≈ '+fmtK(gross2(sv)))+box('TOUCHES DUE',dueN,dueN?'work the list':'clear runway')+box('CLOSED AUG',mDeals.length+' deals',mTH?('take-home Đ'+Math.round(mTH).toLocaleString()):'—');
+  const mb=liveB.filter(b=>(b.score||0)>=4&&b.nextStep).sort((a,b)=>((b.budget||0)-(a.budget||0))).slice(0,6);
+  $('moneyBoard').innerHTML=mb.map(b=>`<div class="touchrow" onclick="openCard('${b.id}')">
+    <span class="tname">${b.buyer}</span><span class="heat"><b>${scr(b)}</b></span>
+    <span class="bdg" style="color:var(--lgold)">${b.budget?fmtK(gross2(b.budget)):'—'}</span>
+    <span class="treason">${b.nextStep}</span></div>`).join('')||'<div style="color:var(--muted);padding:6px">No high-score buyers with next steps — that itself is the warning.</div>';
+  const cold=liveB.filter(b=>(b.score||0)>=4&&(!b.lastContact||b.lastContact<new Date(Date.now()-7*864e5).toISOString().slice(0,10)));
+  const dv=BUYERS.filter(b=>typeof b.maxScore==='number'&&typeof b.score==='number'&&Math.abs(b.maxScore-b.score)>=1);
+  const over=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&b.nextTouch&&b.nextTouch<today());
+  let w='';
+  if(cold.length)w+=`<div class="panelbox" style="border-color:#f85149"><b style="color:#f85149">🔴 Going cold (4+, 7d silent):</b> ${cold.map(b=>`<span style="cursor:pointer;color:var(--lgold)" onclick="openCard('${b.id}')">${b.buyer}</span>`).join(' · ')}</div>`;
+  if(over.length)w+=`<div class="panelbox" style="border-color:#e3b341"><b style="color:#e3b341">🟡 Overdue touches:</b> ${over.map(b=>`<span style="cursor:pointer;color:var(--lgold)" onclick="openCard('${b.id}')">${b.buyer}</span>`).join(' · ')}</div>`;
+  if(dv.length)w+=`<div class="panelbox"><b style="color:var(--muted)">⚪ Calum vs Max ≥1 apart:</b> ${dv.map(b=>`<span style="cursor:pointer;color:var(--lgold)" onclick="openCard('${b.id}')">${b.buyer} (${b.score}/${b.maxScore})</span>`).join(' · ')}</div>`;
+  $('warnBox').innerHTML=w;
+  const bar=(role,s,n,mx)=>`<div style="display:flex;align-items:center;gap:8px;margin:3px 0;cursor:pointer" onclick="scoreFilter('${role}',${s})"><span style="width:14px;color:var(--muted)">${s}</span><div style="flex:1;background:var(--card);border-radius:4px;height:16px"><div style="width:${mx?Math.round(n/mx*100):0}%;background:var(--gold);height:16px;border-radius:4px"></div></div><span style="width:22px;color:var(--lgold);font-weight:700">${n}</span></div>`;
+  const bc={},sc={};
+  liveB.forEach(b=>{const s=Math.round(b.score||0);if(s)bc[s]=(bc[s]||0)+1});
+  liveS.forEach(x=>{const s=Math.round(x.score||0);if(s)sc[s]=(sc[s]||0)+1});
+  const bmax=Math.max(1,...Object.values(bc)), smax=Math.max(1,...Object.values(sc));
+  $('scoreChartB').innerHTML=[5,4,3,2,1].map(s=>bar('buyer',s,bc[s]||0,bmax)).join('');
+  $('scoreChartS').innerHTML=[5,4,3,2,1].map(s=>bar('seller',s,sc[s]||0,smax)).join('');
   const due=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).sort((a,b)=>(b.score||0)-(a.score||0));
   const wake=BUYERS.filter(b=>b.stage==='Snoozed'&&b.snoozedUntil&&b.snoozedUntil<=today());
   $('touchList').innerHTML=[...wake.map(b=>trow(b,true)),...due.map(b=>trow(b,false))].join('')||'<div style="color:var(--muted);padding:6px">Nothing due — clear runway 👌</div>';
@@ -243,7 +283,7 @@ function renderBoard(){
   }).join('')+snoozedCol();
 }
 function cardHtml(b){return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
-  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span></div>
+  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span>${b.budget?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(gross2(b.budget))}</span>`:``}</div>
   <div class="need">${(b.needSummary||'').slice(0,64)}</div>
   <div class="nt ${ntClass(b.nextTouch)}">⏰ ${b.nextTouch||'—'}</div></div>`}
 function snoozedCol(){
@@ -263,11 +303,13 @@ function renderPeople(){
     if(ff&&!(fin||'').toLowerCase().includes(ff))return false;
     return true;};
   let rows=[];
+  if(SCOREF)rows.push(`<div style="margin-bottom:8px"><span class="bdg" style="cursor:pointer" onclick="SCOREF='';renderPeople()">Score ${SCOREF} ✕ clear</span></div>`);
+  const sfB=x=>!SCOREF||Math.round(x.score||0)===+SCOREF;
   if(role!=='seller'){
     BUYERS.filter(b=>{
       if(role==='offplan'&&b.segment!=='Offplan')return false;
       if(role==='buyer'&&b.segment==='Offplan')return false;
-      return pf([b.cluster1,b.cluster2,b.cluster3].filter(Boolean),b.budget,b.beds,b.finance)
+      return sfB(b)&&pf([b.cluster1,b.cluster2,b.cluster3].filter(Boolean),b.budget,b.beds,b.finance)
         &&(!q||JSON.stringify(b).toLowerCase().includes(q));
     }).sort((a,b)=>(b.score||0)-(a.score||0)).forEach(b=>rows.push(
       `<div class="touchrow" onclick="openCard('${b.id}')">
@@ -276,7 +318,7 @@ function renderPeople(){
        <span class="treason">${(b.needSummary||b.notes||'').slice(0,70)}</span></div>`));
   }
   if(!role||role==='seller'){
-    STOCK.filter(s=>pf([s.cluster].filter(Boolean),s.price,s.beds,'')
+    STOCK.filter(s=>sfB(s)&&pf([s.cluster].filter(Boolean),s.price,s.beds,'')
       &&(!q||JSON.stringify(s).toLowerCase().includes(q)))
       .forEach(s=>rows.push(
       `<div class="touchrow" onclick="openStock('${s.id}')">
@@ -293,9 +335,9 @@ function renderSellers(){
     const cards=STOCK.filter(s=>sStage(s)===st);
     const v=cards.reduce((a,s)=>a+(s.price||0),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','seller')">
-     <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${v?fmtB(v):''}</div>
+     <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${v?fmtB(v)+' <span style="color:var(--lgold)">· '+fmtK(gross2(v))+'</span>':''}</div>
      ${cards.map(s=>`<div class="card" draggable="true" ondragstart="drag(event,'stock:${s.id}')" onclick="openStock('${s.id}')">
-      <div class="nm">${s.cluster||''} ${s.unit||''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.beds?' · '+s.beds+'bd':''}</span></div>
+      <div class="nm">${s.cluster||''} ${s.unit||''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.beds?' · '+s.beds+'bd':''}</span>${s.price?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(gross2(s.price))}</span>`:``}</div>
       <div class="need">${(s.seller||'')} ${(s.notes||'').slice(0,45)}</div></div>`).join('')}</div>`;
   }).join('');
 }
