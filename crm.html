@@ -121,7 +121,7 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
 <div id="sync"><span class="dot"></span><span id="syncTxt">Loading…</span></div>
 <script>
 const OWNER='calum7macleod', REPO='dashboards';
-const STAGES=['New','Qualified','Viewing','Offer','Won','Lost'];
+const STAGES=['Longer Term','New','Qualified','Viewing','Offer','Won','Lost'];
 const SSTAGES=['Active','Offer','Sold','Later','Lost'];
 const CAD={5:1,4:2,3:3,2:4,1:5};
 let BUYERS=[], STOCK=[], VIEWINGS=[], SHAS={}, PAT=localStorage.getItem('crm_pat')||'';
@@ -192,7 +192,7 @@ async function fetchAll(){
 }
 function render(){renderToday();renderBoard();renderPeople();renderSellers();}
 function renderToday(){
-  const due=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).sort((a,b)=>(b.score||0)-(a.score||0));
+  const due=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).sort((a,b)=>(b.score||0)-(a.score||0));
   const wake=BUYERS.filter(b=>b.stage==='Snoozed'&&b.snoozedUntil&&b.snoozedUntil<=today());
   $('touchList').innerHTML=[...wake.map(b=>trow(b,true)),...due.map(b=>trow(b,false))].join('')||'<div style="color:var(--muted);padding:6px">Nothing due — clear runway 👌</div>';
   const M=computeMatches();
@@ -204,7 +204,7 @@ function trow(b,isWake){return `<div class="touchrow"><span class="tname" onclic
  <span class="treason">${b.touchReason||b.needSummary||''}</span>
  <button class="btn mini" onclick="touched('${b.id}')">Touched ✓</button></div>`}
 function renderBoard(){
-  const live=BUYERS.filter(b=>!['Won','Lost','Snoozed'].includes(b.stage)&&passF(b));
+  const live=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&passF(b));
   const pipeVal=live.reduce((a,b)=>a+(b.budget||0),0);
   $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(pipeVal).toLocaleString()}</b> <span style="font-size:11px">(2% @ 65%)</span>`;
   $('board').innerHTML=STAGES.map(st=>{
