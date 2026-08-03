@@ -12,7 +12,7 @@
   "matchedUnit": "",
   "beds": "4-5",
   "finance": "Mortgage (pre-approved)",
-  "budget": 0,
+  "budget": 4000000,
   "needed": 0,
   "diff": 0,
   "responsiveness": 5,
@@ -44,7 +44,8 @@
   "purpose": "End-user",
   "maxScore": 4.2,
   "maxScoreWhy": "Pre-approved and specific (4/5bd Malta) = quality. Momentum paused on bank switch and 'back next week' - every week of pause decays conversion. Re-engage hard on return.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "commPct": 0.02
  },
  {
   "date": "2026-07-08",
@@ -373,7 +374,7 @@
   "matchedUnit": "",
   "beds": "",
   "finance": "",
-  "budget": 0,
+  "budget": 2500000,
   "needed": 0,
   "diff": 0,
   "responsiveness": 4,
@@ -398,7 +399,8 @@
   "purpose": "Investment - flip",
   "maxScore": 3.4,
   "maxScoreWhy": "Conditional weapon: owns Malta, moves fast, but ONLY fires on distressed. Score is availability-weighted - a 5 the day a forced sale appears, dormant otherwise.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "commPct": 0.02
  },
  {
   "date": "2026-07-04",
@@ -572,7 +574,7 @@
   "matchedUnit": "",
   "beds": "",
   "finance": "",
-  "budget": 0,
+  "budget": 10000000,
   "needed": 0,
   "diff": 0,
   "responsiveness": 3,
@@ -599,9 +601,11 @@
   ],
   "phone": "",
   "history": "Off-plan buyer.",
-  "maxScore": 2,
-  "maxScoreWhy": "Off-plan interest, otherwise unqualified. One qualifying conversation decides keep or archive.",
-  "maxScoreDate": "2026-08-03"
+  "maxScore": 3.2,
+  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreDate": "2026-08-03",
+  "commPct": 0.04,
+  "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
  },
  {
   "date": "2026-06-16",
@@ -742,7 +746,7 @@
   "matchedUnit": "",
   "beds": 0,
   "finance": "Unknown",
-  "budget": 0,
+  "budget": 2000000,
   "needed": 0,
   "diff": 0,
   "responsiveness": 4,
@@ -765,7 +769,8 @@
   "history": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
   "maxScore": 2.2,
   "maxScoreWhy": "Budget TBC after initial contact = unqualified. UK couple pattern suggests weekend workflow if they firm up.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "commPct": 0.03
  },
  {
   "date": "2026-07-04",
@@ -1186,7 +1191,7 @@
   "matchedUnit": "The Artery Residences (IMKAN) - brochure + availability sheet sent 2026-08-03",
   "beds": "1",
   "finance": "Equity release from UK property sale",
-  "budget": null,
+  "budget": 4000000,
   "needed": 0,
   "diff": 0,
   "responsiveness": 5,
@@ -1222,8 +1227,9 @@
   "nextStep": "Calls on W availability -> revert + chase Artery verdict + book video call (by Wed 5)",
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
-  "maxScore": 4,
-  "maxScoreWhy": "Elite engagement: 3 days sustained, sophisticated questions, moved channels, wants 1-2 units. Discounts: zero budget stated after 3 days, funds locked in unsold UK house, Q4 at earliest. High intent, real execution risk.",
-  "maxScoreDate": "2026-08-03"
+  "maxScore": 4.4,
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreDate": "2026-08-03",
+  "commPct": 0.04
  }
 ]
