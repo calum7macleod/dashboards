@@ -257,7 +257,9 @@ function dldSalesRange(days,offset,incl){offset=offset||0;const end=addDays(toda
   return DLD.filter(r=>r.d>start&&r.d<=end&&/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
 function mktAll(incl){return DLD.filter(r=>/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
 const clusName=r=>((r.proj||r.mp||'').replace(/damac lagoons/i,'').replace(/^[\s-]+/,'').replace(/\s*\(\d+\)\s*$/,'').replace(/\s+\d+$/,'').trim())||'—';
-const dldBeds=r=>{const m=/(\d+)\s*B/i.exec(r.r||'');return m?+m[1]:(/studio/i.test(r.r||'')?0:null);};
+const dldBeds=r=>{const m=/(\d+)\s*B/i.exec(r.r||'');if(m)return +m[1];if(/studio/i.test(r.r||''))return 0;
+  if(/lagoon views/i.test(r.proj||''))return null;const v=r.v||0;if(!v)return null;
+  return v<2500000?3:v<=3200000?4:v<=5000000?5:6;}; // Calum's bands 4-Aug: <2.5=3bd, 2.5-3.2=4bd, 3.2-5=5bd, >5=6bd (DLD omits rooms on villas)
 const psfOf=r=>(r.v&&r.sqm)?r.v/(r.sqm*10.7639):null;
 const avg=a=>a.length?Math.round(a.reduce((x,y)=>x+y,0)/a.length):0;
 const pct=(a,b)=>b?Math.round((a-b)/b*100):null;
@@ -269,8 +271,8 @@ function monthlyAvg(rows,months,bedFilter){
   return months.map(k=>{const xs=rows.filter(r=>(r.d||'').slice(0,7)===k&&(bedFilter==null||dldBeds(r)===bedFilter)&&r.v).map(r=>r.v);
     return xs.length?avg(xs):null;});
 }
-function svgTrend(series,months,h){
-  h=h||170;const w=560,padL=50,padR=12,padT=10,padB=20;
+function svgTrend(series,months,h,w){
+  h=h||170;w=w||560;const padL=46,padR=10,padT=8,padB=18;
   const flat=series.flatMap(s=>s.pts.filter(p=>p!=null));
   if(!flat.length)return '<div style="color:var(--muted);font-size:12px;padding:8px 0">no price data yet — history deepens daily</div>';
   let lo=Math.min(...flat),hi=Math.max(...flat);if(lo===hi){lo*=0.95;hi*=1.05;}
@@ -290,6 +292,19 @@ function svgTrend(series,months,h){
   });
   return `<svg viewBox="0 0 ${w} ${h}" style="width:100%;height:auto">${g}</svg>`;
 }
+function miniCharts(scopeRows,months){
+  const bs=[...new Set(scopeRows.map(dldBeds).filter(b=>b!==null&&b>=2))].sort((a,b)=>a-b);
+  const defs=[{label:'All',color:BEDCOL.all,f:null}].concat(bs.map(b=>({label:b+' bed',color:BEDCOL[b]||'#8FA898',f:b})));
+  return '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px">'+defs.map(cd=>{
+    const pts=monthlyAvg(scopeRows,months,cd.f);
+    const have=pts.filter(Boolean);
+    if(have.length<2&&cd.f!==null)return '';
+    const ch=have.length>=2?pct(have[have.length-1],have[0]):null;
+    return `<div style="background:var(--card);border:1px solid var(--div);border-radius:10px;padding:8px 10px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:10.5px;letter-spacing:1.5px;color:${cd.color}">${cd.label.toUpperCase()}</span><span style="font-size:11.5px;font-weight:bold;color:${ch===null?'var(--muted)':ch>=0?'#3fb950':'#f0883e'}">${ch===null?'':(ch>=0?'+':'')+ch+'%'}</span></div>
+      ${svgTrend([{label:cd.label,color:cd.color,bold:true,pts}],months,100,250)}
+    </div>`;}).join('')+'</div>';
+}
 function renderMarketTab(){
   const el=$('mktHead');if(!el)return;
   if(!DLD.length){el.innerHTML='<span style="color:var(--muted);font-size:12px">DLD feed loading…</span>';return;}
@@ -301,20 +316,14 @@ function renderMarketTab(){
     +mbox('MED Đ/SQFT',Math.round(med(cur.map(psfOf).filter(Boolean))||0).toLocaleString()+trChip(pct(med(cur.map(psfOf).filter(Boolean)),med(prev.map(psfOf).filter(Boolean)))))
     +mbox('SALES',cur.length+trChip(pct(cur.length,prev.length)))
     +mbox('TOTAL VALUE',fmtB(vals.reduce((a,v)=>a+v,0)));
-  // ---- price trend chart (overall + per-beds lines, scoped by cluster dropdown)
+  // ---- price trend mini-charts (scoped by cluster dropdown)
   const sel=$('mkt-mcl');const keep=sel.value;
   const allCl=[...new Set(all.map(clusName))].sort();
   sel.innerHTML='<option value="">All clusters</option>'+allCl.map(c=>`<option>${c}</option>`).join('');
   if([...sel.options].some(o=>o.value===keep))sel.value=keep;
   const scope=sel.value?all.filter(r=>clusName(r)===sel.value):all;
   const months=last6Months();
-  const scopeBeds=[...new Set(scope.map(dldBeds).filter(b=>b!==null&&b>=2))].sort((a,b)=>a-b);
-  const series=[{label:'All',color:BEDCOL.all,bold:true,pts:monthlyAvg(scope,months,null)}]
-    .concat(scopeBeds.map(b=>({label:b+' bed',color:BEDCOL[b]||'#8FA898',bold:false,pts:monthlyAvg(scope,months,b)})));
-  const legend=series.map(s=>`<span style="font-size:10.5px;color:${s.color};margin-right:10px">● ${s.label}</span>`).join('');
-  const mAll=series[0].pts.filter(Boolean);
-  const chg6=mAll.length>=2?pct(mAll[mAll.length-1],mAll[0]):null;
-  $('mktChart').innerHTML=`<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:4px"><div>${legend}</div><div style="font-size:11.5px;color:var(--muted)">avg price over period${chg6!==null?': <b style="color:'+(chg6>=0?'#3fb950':'#f0883e')+'">'+(chg6>=0?'+':'')+chg6+'%</b>':''}</div></div>`+svgTrend(series,months);
+  $('mktChart').innerHTML=miniCharts(scope,months)+`<div style="font-size:9.5px;color:var(--muted);margin-top:6px">monthly average price · % = first-to-last month change · beds estimated from price bands where DLD omits rooms (3bd &lt;2.5M · 4bd 2.5-3.2M · 5bd 3.2-5M · 6bd &gt;5M) · history deepens daily</div>`;
   // ---- beds breakdown cards (price-first)
   const bedsSet=[...new Set(cur.map(dldBeds).filter(b=>b!==null))].sort((a,b)=>a-b);
   $('mktBedsCards').innerHTML=bedsSet.map(b=>{
@@ -361,10 +370,6 @@ function renderMktDrill(all){
   if(!rs.length){box.innerHTML='';return;}
   const v=rs.map(r=>r.v).filter(Boolean), p=rs.map(psfOf).filter(Boolean);
   const months=last6Months();
-  const dBeds=[...new Set(rs.map(dldBeds).filter(b=>b!==null&&b>=2))].sort((a,b)=>a-b);
-  const dSeries=[{label:'All',color:BEDCOL.all,bold:true,pts:monthlyAvg(rs,months,null)}]
-    .concat(dBeds.map(b=>({label:b+' bed',color:BEDCOL[b]||'#8FA898',bold:false,pts:monthlyAvg(rs,months,b)})));
-  const dLegend=dSeries.map(s=>`<span style="font-size:10px;color:${s.color};margin-right:9px">● ${s.label}</span>`).join('');
   const bd={};rs.forEach(r=>{const b=dldBeds(r);if(b!==null)(bd[b]=bd[b]||[]).push(r);});
   box.innerHTML=`<div class="panelbox" style="border-color:var(--gold)">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
@@ -373,7 +378,7 @@ function renderMktDrill(all){
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
       ${mbox('AVG',fmtB(avg(v)))}${mbox('MEDIAN',fmtB(med(v)))}${mbox('Đ/SQFT',Math.round(med(p)||0).toLocaleString())}${mbox('LAST SALE',rs[0].d)}
     </div>
-    <div style="margin-bottom:8px">${dLegend}${svgTrend(dSeries,months,150)}</div>
+    <div style="margin-bottom:8px">${miniCharts(rs,months)}</div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
       ${Object.keys(bd).sort((a,b)=>a-b).map(b=>{const xs=bd[b].map(r=>r.v).filter(Boolean);
         return `<div style="flex:1;min-width:120px;background:var(--card);border:1px solid var(--div);border-radius:9px;padding:7px 9px">
