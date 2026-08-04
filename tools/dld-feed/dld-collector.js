@@ -76,19 +76,21 @@ async function main() {
   if (!rows.length) { console.error('[dld] zero rows - aborting without writes'); process.exit(1); }
 
   // citywide daily summary
+  const isSale = p => /sale|sell/i.test(p || '') && !/grant|lease|mortgage/i.test(p || '');
   for (const r of rows) {
     if (!r.d) continue;
     const s = summary[r.d] = summary[r.d] || { count: 0, value: 0, offplan: 0, byArea: {} };
     if (s._seen && s._seen[r.n]) continue;
     s._seen = s._seen || {}; s._seen[r.n] = 1;
     s.count++; s.value += (r.v || 0); s.offplan += r.op;
+    if (isSale(r.proc)) { s.sCount = (s.sCount || 0) + 1; s.sValue = (s.sValue || 0) + (r.v || 0); }
     const a = r.area || '?'; s.byArea[a] = (s.byArea[a] || 0) + 1;
   }
   const cutS = iso(new Date(Date.now() - cfg.keep_days_summary * 86400000));
   for (const k of Object.keys(summary)) if (k < cutS) delete summary[k];
   // strip dedupe maps before storing (keep file small); dedupe only matters within run overlap
   const summaryOut = {};
-  for (const [k, s] of Object.entries(summary)) summaryOut[k] = { count: s.count, value: Math.round(s.value), offplan: s.offplan, byArea: s.byArea };
+  for (const [k, s] of Object.entries(summary)) summaryOut[k] = { count: s.count, value: Math.round(s.value), offplan: s.offplan, sCount: s.sCount || 0, sValue: Math.round(s.sValue || 0), byArea: s.byArea };
   await ghPut('data/dld/daily-summary.json', summaryOut, summarySha, `dld-feed: summary ${iso(to)}`);
   console.log('[dld] pushed daily-summary.json');
 
