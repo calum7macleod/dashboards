@@ -1,5 +1,5 @@
 /**
- * WA->CRM BRIDGE v1.5 (read-only, CAPTURE-ALL incl groups, SELF-HEALING) - Calum MacLeod
+ * WA->CRM BRIDGE v1.6 (capture-all, self-healing, junk-filtered, real-number resolution) - Calum MacLeod
  * 1:1 chats  -> crm-inbox data/wa-inbox.json  (rolling 4000)
  * Group chats -> crm-inbox data/wa-groups.json (rolling 3000, separate so noise never evicts clients)
  * No keyword filter - triage/matching happens downstream (Max), verified with Calum.
@@ -94,7 +94,7 @@ async function loadBlocklist() {
 const client = new Client({ authStrategy: new LocalAuth({ dataPath: './session' }), puppeteer: { headless: true, args: ['--no-sandbox'] } });
 client.on('qr', qr => { console.log('\nSCAN THIS WITH WHATSAPP (Linked devices > Link a device):\n'); qrcode.generate(qr, { small: true }); });
 let READY = false, BOOT = Date.now();
-client.on('ready', () => { READY = true; console.log('[bridge] connected, listening (read-only, capture-all v1.5 self-healing).'); });
+client.on('ready', () => { READY = true; console.log('[bridge] connected, listening (read-only, capture-all v1.6).'); });
 client.on('disconnected', r => { console.error('[bridge] WA disconnected:', r, '- restarting in 10s'); setTimeout(() => process.exit(1), 10000); });
 // WATCHDOG: WA Web reloads silently kill the hooks while the process looks alive (the 4-Aug zombie).
 // Every 5 min: probe client state; not CONNECTED or probe throws -> exit, pm2 revives us on the saved session.
@@ -105,16 +105,24 @@ setInterval(() => {
   }).catch(e => { console.error('[bridge] watchdog probe failed:', e.message, '- restarting in 10s'); setTimeout(() => process.exit(1), 10000); });
 }, 5 * 60 * 1000);
 
+const SKIP_TYPES = new Set(['notification_template','e2e_notification','protocol','ciphertext','revoked','gp2','call_log','broadcast_notification']);
 async function handle(msg, fromMe) {
   try {
+    if (SKIP_TYPES.has(msg.type)) return;                                     // system/junk events never logged
     const from = String(msg.from || ''), to = String(msg.to || '');
     if (from === 'status@broadcast' || to === 'status@broadcast') return;     // stories skipped
     const isGroup = from.endsWith('@g.us') || to.endsWith('@g.us');
     const body = msg.body || `[${msg.type}]`;
     const groupId = isGroup ? (fromMe ? to : from).replace(/@.*/, '') : '';
-    const personRaw = isGroup
+    let personRaw = isGroup
       ? (fromMe ? 'me' : String(msg.author || '').replace(/@.*/, ''))
       : (fromMe ? to : from).replace(/@.*/, '');
+    let lid = '';
+    try {                                                                      // resolve real number when WA hides it behind a lid
+      const d = msg._data || {};
+      const pn = String((fromMe ? (d.recipientPn || '') : (d.senderPn || '')) || '').replace(/@.*/, '');
+      if (pn && /\d{9,}/.test(pn) && pn !== personRaw) { lid = personRaw; personRaw = pn; }
+    } catch (_) {}
     const num9 = last9(personRaw);
     if (BLOCKED.has(num9) || (groupId && BLOCKED.has(last9(groupId)))) return; // hard blocklist - silent
     const known = KNOWN.has(num9);
@@ -130,6 +138,7 @@ async function handle(msg, fromMe) {
       known,
       text: String(body).slice(0, 1200)
     };
+    if (lid) rec.lid = lid;
     if (isGroup) { rec.group = groupId; queueG.push(rec); } else { queue1.push(rec); }
   } catch (e) { console.error('[bridge] handle err', e && e.message); }
 }
