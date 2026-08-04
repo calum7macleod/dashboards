@@ -1,5 +1,5 @@
 /**
- * WA->CRM BRIDGE v1.4 (read-only, CAPTURE-ALL incl groups) - Calum MacLeod
+ * WA->CRM BRIDGE v1.5 (read-only, CAPTURE-ALL incl groups, SELF-HEALING) - Calum MacLeod
  * 1:1 chats  -> crm-inbox data/wa-inbox.json  (rolling 4000)
  * Group chats -> crm-inbox data/wa-groups.json (rolling 3000, separate so noise never evicts clients)
  * No keyword filter - triage/matching happens downstream (Max), verified with Calum.
@@ -31,9 +31,11 @@ let dirty = 0;
 
 function ghGet(repo, path) {
   return new Promise((res, rej) => {
-    https.get({ host: 'api.github.com', path: `/repos/${repo}/contents/${path}?ref=main`,
-      headers: { Authorization: `Bearer ${GH_TOKEN}`, 'User-Agent': 'wa-bridge', Accept: 'application/vnd.github+json' } },
-      r => { let b = ''; r.on('data', d => b += d); r.on('end', () => res(JSON.parse(b))); }).on('error', rej);
+    const rq = https.get({ host: 'api.github.com', path: `/repos/${repo}/contents/${path}?ref=main`,
+      headers: { Authorization: `Bearer ${GH_TOKEN}`, 'User-Agent': 'wa-bridge', Accept: 'application/vnd.github+json' }, timeout: 30000 },
+      r => { let b = ''; r.on('data', d => b += d); r.on('end', () => res(JSON.parse(b))); });
+    rq.on('timeout', () => { rq.destroy(); rej(new Error('ghGet timeout')); });
+    rq.on('error', rej);
   });
 }
 function ghPut(repo, path, contentObj, sha, msg) {
@@ -42,6 +44,7 @@ function ghPut(repo, path, contentObj, sha, msg) {
     const req = https.request({ host: 'api.github.com', path: `/repos/${repo}/contents/${path}`, method: 'PUT',
       headers: { Authorization: `Bearer ${GH_TOKEN}`, 'User-Agent': 'wa-bridge', 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) } },
       r => { let b = ''; r.on('data', d => b += d); r.on('end', () => r.statusCode < 300 ? res(JSON.parse(b)) : rej(new Error(`${r.statusCode}: ${b.slice(0,200)}`))); });
+    req.setTimeout(30000, () => { req.destroy(); rej(new Error('ghPut timeout')); });
     req.on('error', rej); req.write(body); req.end();
   });
 }
@@ -90,7 +93,17 @@ async function loadBlocklist() {
 
 const client = new Client({ authStrategy: new LocalAuth({ dataPath: './session' }), puppeteer: { headless: true, args: ['--no-sandbox'] } });
 client.on('qr', qr => { console.log('\nSCAN THIS WITH WHATSAPP (Linked devices > Link a device):\n'); qrcode.generate(qr, { small: true }); });
-client.on('ready', () => console.log('[bridge] connected, listening (read-only, capture-all v1.4 incl groups).'));
+let READY = false, BOOT = Date.now();
+client.on('ready', () => { READY = true; console.log('[bridge] connected, listening (read-only, capture-all v1.5 self-healing).'); });
+client.on('disconnected', r => { console.error('[bridge] WA disconnected:', r, '- restarting in 10s'); setTimeout(() => process.exit(1), 10000); });
+// WATCHDOG: WA Web reloads silently kill the hooks while the process looks alive (the 4-Aug zombie).
+// Every 5 min: probe client state; not CONNECTED or probe throws -> exit, pm2 revives us on the saved session.
+setInterval(() => {
+  if (!READY) { if (Date.now() - BOOT > 10 * 60 * 1000) { console.error('[bridge] never became ready in 10min - restarting'); process.exit(1); } return; }
+  client.getState().then(st => {
+    if (st !== 'CONNECTED') { console.error(`[bridge] watchdog: state=${st} - restarting in 10s`); setTimeout(() => process.exit(1), 10000); }
+  }).catch(e => { console.error('[bridge] watchdog probe failed:', e.message, '- restarting in 10s'); setTimeout(() => process.exit(1), 10000); });
+}, 5 * 60 * 1000);
 
 async function handle(msg, fromMe) {
   try {
@@ -144,6 +157,6 @@ setInterval(flush, PUSH_EVERY_MS);
 setInterval(() => { if (dirty && Date.now() - dirty > FAST_FLUSH_MS) { dirty = 0; flush(); } }, 15 * 1000);
 
 loadBlocklist();
-loadKnownNumbers().then(() => client.initialize());
+loadKnownNumbers().then(() => client.initialize().catch(e => { console.error('[bridge] init failed:', e.message, '- restarting in 15s'); setTimeout(() => process.exit(1), 15000); }));
 setInterval(loadKnownNumbers, 6 * 60 * 60 * 1000);   // refresh known numbers 6-hourly
 setInterval(loadBlocklist, 10 * 60 * 1000);          // re-read blocklists (local + repo) every 10 min
