@@ -1024,7 +1024,7 @@
   "order": 26,
   "stage": "Offer",
   "heat": 4,
-  "lastContact": "2026-08-03",
+  "lastContact": "2026-08-04",
   "nextTouch": "2026-08-05",
   "touchReason": "Chase response on the 2.45M offer",
   "needSummary": "Cash buyer, Costa Brava 3-bed, offered 2.45M",
@@ -1039,13 +1039,19 @@
     "date": "2026-08-03",
     "channel": "wa",
     "summary": "Touched (dashboard)"
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Chasing NOC for viewing ('any chance to take a NOC for viewing of the above?') - waiting on Calum. Captured by bridge."
    }
   ],
   "phone": "+971 54 446 9769",
   "history": "Phone contact saved as 'Masoud Buyer 3 Cash'. Incoming call 2026-07-29 11:25, 5 mins. Offered 2.45M on a Costa Brava 3-bed (Calum confirmed cluster and bed count). Seller/unit not captured, so no offers.json entry yet.",
   "maxScore": 3.6,
   "maxScoreWhy": "Cash + live offer at 2.45 = serious. But offer floating outside offers.json, unit/seller uncaptured, and single-unit fixation risk if this one dies. Capture the deal structure to firm this up.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "nextStep": "GET THE NOC + confirm viewing slot with Masoud (he is chasing us - do not let this cool)"
  },
  {
   "date": "2026-08-01",
@@ -1323,5 +1329,71 @@
   "history": "Created 4-Aug from bridge triage. Calum verdict: new buyer.",
   "id": "ruth-1",
   "order": 31
+ },
+ {
+  "buyer": "Dean Scott",
+  "status": "Active",
+  "stage": "Longer Term",
+  "score": 2,
+  "date": "2026-08-04",
+  "source": "TBC",
+  "area": null,
+  "cluster1": null,
+  "cluster2": null,
+  "cluster3": null,
+  "matchedUnit": null,
+  "beds": null,
+  "finance": null,
+  "budget": null,
+  "segment": null,
+  "phone": "821868595",
+  "notes": "NEW 4-Aug via bridge - voice-note exchange, Calum verdict: LONGER TERM | Brief unknown yet",
+  "nextStep": "Low-cadence: qualify brief when he resurfaces",
+  "touches": [
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Voice-note exchange (3x ptt, content unheard - bridge v1 logs markers only)."
+   }
+  ],
+  "lastContact": "2026-08-04",
+  "maxScore": 2.0,
+  "maxScoreWhy": "Unqualified, parked to Longer Term by Calum on day one",
+  "history": "Created 4-Aug from bridge triage.",
+  "id": "dean-scott-1",
+  "order": 32
+ },
+ {
+  "buyer": "Sonam",
+  "status": "Active",
+  "stage": "Viewing",
+  "score": 3,
+  "date": "2026-08-04",
+  "source": "TBC",
+  "area": "DAMAC Lagoons",
+  "cluster1": null,
+  "cluster2": null,
+  "cluster3": null,
+  "matchedUnit": null,
+  "beds": null,
+  "finance": null,
+  "budget": null,
+  "segment": null,
+  "phone": "821364477",
+  "notes": "NEW 4-Aug via bridge | Viewing WED 5-Aug 4pm - half-confirmed (she asked for Wed, Calum offered 4pm, her reply was voice notes) | Brief/unit TBC from debrief",
+  "nextStep": "TODAY: lock Wed 4pm viewing as confirmed + which unit",
+  "touches": [
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Viewing negotiation: Sat proposed, she wants Wed, 4pm offered - confirmation pending in voice notes. Captured by bridge."
+   }
+  ],
+  "lastContact": "2026-08-04",
+  "maxScore": 3.0,
+  "maxScoreWhy": "Books viewings fast = intent; funding/brief unknown",
+  "history": "Created 4-Aug from bridge triage. Calum verdict: new buyer, hopefully viewing tomorrow.",
+  "id": "sonam-1",
+  "order": 33
  }
 ]
