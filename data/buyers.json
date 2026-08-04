@@ -766,12 +766,12 @@
   "snoozedUntil": null,
   "touches": [],
   "phone": "",
-  "history": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC. | 4-Aug: Hanne Froyland-Jensen = Jake Nazer assistant, mortgage/paperwork contact on Tony Bashayer deal (WA group ...395898). Bashayer 8M CLOSED 27-Jul, logged in deals.json. This record = their NEXT purchase brief (cheap TH / lagoon view ~2M).",
+  "history": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
   "maxScore": 2.2,
   "maxScoreWhy": "Budget TBC after initial contact = unqualified. UK couple pattern suggests weekend workflow if they firm up.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.03,
-  "nextStep": "Qualify next-purchase budget (post-Bashayer glow)"
+  "nextStep": null
  },
  {
   "date": "2026-07-04",
@@ -1232,5 +1232,31 @@
   "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
+ },
+ {
+  "buyer": "Tony Done-Orrell",
+  "status": "Active",
+  "stage": "Won",
+  "score": 5,
+  "date": "2026-07-27",
+  "source": "Referral",
+  "colleague": null,
+  "area": "Hudayriyat - Abu Dhabi",
+  "cluster1": "Bashayer",
+  "cluster2": null,
+  "cluster3": null,
+  "matchedUnit": "Bashayer Penthouse 4bd",
+  "beds": "4",
+  "finance": "Mortgage",
+  "budget": 8000000,
+  "segment": "Offplan",
+  "commPct": 0.02,
+  "notes": "CLOSED WON 27-Jul: Bashayer penthouse 4bd D8M, co-broke Jake Nazer (+160K board / career-biggest by price) | Hanne Froyland-Jensen (Jake Nazer's assistant) = mortgage/paperwork contact, WA group ...395898 | Golden visa in motion: Modon investor certificate + docs checklist agreed",
+  "nextStep": "Nurture: golden visa completion + next-investment conversation (Modon courts him direct - stay the indispensable channel)",
+  "history": "4-Aug card created from WA bridge triage (Hanne group identified). Deal in deals.json 27-Jul. Golden-visa docs checklist: Modon certificate addressed to ICP/ADRO + SPA + payments + passport/photo/insurance.",
+  "maxScore": 5.0,
+  "maxScoreWhy": "Closed 8M, repeat-investor profile, direct developer relationships - highest-value relationship in book",
+  "id": "tony-done-orrell-1",
+  "order": 30
  }
 ]
