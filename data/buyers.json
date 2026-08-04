@@ -1065,6 +1065,11 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "Calum blasted requirement to agent groups: HOT CASH buyer, Costa 3 bed, 2.6M, 'ideally covered'. (Budget updated 2.45M->2.6M per blast.) Hunting stock beyond our book; Abdul Moiz thread live ('yes available', handover end-Aug). NOC pass-by also in motion."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Fatima Elamin (agent) negotiating a unit for him - seller 'flexible', MOU/closing timeline asked, Calum confirmed fast transfer (cash). Awaiting Fatima feedback. Captured by bridge."
    }
   ],
   "phone": "+971 54 446 9769",
@@ -1072,7 +1077,7 @@
   "maxScore": 3.6,
   "maxScoreWhy": "Cash + live offer at 2.45 = serious. But offer floating outside offers.json, unit/seller uncaptured, and single-unit fixation risk if this one dies. Capture the deal structure to firm this up.",
   "maxScoreDate": "2026-08-03",
-  "nextStep": "Line up 2-3 Costa 3-bed options (own stock + agent-stock + group replies) and get him viewing this week - cash buyer at Offer heat"
+  "nextStep": "Chase Fatima feedback on flexible seller + keep 2nd option warm; cash speed is the lever"
  },
  {
   "date": "2026-08-01",
@@ -1149,7 +1154,7 @@
   "order": 2,
   "stage": "Viewing",
   "heat": 4,
-  "lastContact": "2026-08-03",
+  "lastContact": "2026-08-04",
   "nextTouch": "2026-08-05",
   "touchReason": "Viewing Mon 3 Aug 5pm at DAMAC Lagoons main gate - confirm on the day; also owes him the Malta handover date",
   "needSummary": "5-bed single row, Costa Brava/Malta, budget max 3.5M (may stretch), rejects back-to-back",
@@ -1169,10 +1174,15 @@
     "date": "2026-08-03",
     "channel": "wa",
     "summary": "Touched (dashboard)"
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "manual",
+    "summary": "K332 VIEWING BOOKED for Wed 5 Aug (Calum: 'really trying to get on K332'). Mon-evening meeting outcome still unlogged."
    }
   ],
   "phone": "+971 55 880 2412",
-  "nextStep": "Meeting tonight - present 2 units, confirm SR vs B2B",
+  "nextStep": "WED: K332 viewing - close hard; Yusuf-camp interest = second horse if he stalls",
   "history": "Contact saved as 'Rohan Buyer 5 CB SR'. Bayut lead 2026-08-01 on listing 15560179 (Costa Brava 5-bed, 1,976 sqft, AED 3,499,999). Budget max 3.5M - asked to be told about anything cheaper. Wants SINGLE ROW: he already owns/has a back-to-back in Mudon and wants a change. Calum offered the cheapest/best Costa single row at 3.7M (thinks 3.65M achievable) - Rohan said over budget but said he'd see if he can manage a bit more cash. Malta floated as an alternative; Rohan asked when Malta handover is - NOT ANSWERED in these screenshots. The listing he first enquired on is back-to-back, not single row; a similar unit next door was already sold by Calum. | 2 Aug: PROMOTED TO #2 - really high quality, bang-on brief. TWO strong unit matches identified. Meeting them TONIGHT (Sun 2 Aug evening). Debrief after: log viewing, scores, next step.",
   "timeline": "Now",
   "purpose": "End-user",

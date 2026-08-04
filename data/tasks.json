@@ -2362,12 +2362,12 @@
    "title": "ROHAN: meeting tonight - present 2 matched units, debrief to Max after",
    "area": "Real Estate",
    "priority": "high",
-   "status": "active",
+   "status": "done",
    "difficulty": "medium",
    "due": "2026-08-02",
    "created": "2026-08-02",
-   "notes": "#2 buyer. 5-bed CB/Malta, budget 3.5M. Two strong matches lined up. Voice-note debrief: outcome, scores, next step -> viewings.json.",
-   "completed": null,
+   "notes": "#2 buyer. 5-bed CB/Malta, budget 3.5M. Two strong matches lined up. Voice-note debrief: outcome, scores, next step -> viewings.json. | Superseded: K332 viewing booked Wed 5 Aug. Mon outcome never debriefed.",
+   "completed": "2026-08-04",
    "snoozedUntil": null
   },
   {
@@ -2444,6 +2444,21 @@
    "notes": "Docs promised to Damac guy by 5 Aug. Also pitch Olga Nice 4BR SR 2.7 net.",
    "completed": null,
    "snoozedUntil": null
+  },
+  {
+   "id": "rohan-k332-viewing",
+   "title": "WED: ROHAN x K332 viewing - close hard, debrief Max after",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": "medium",
+   "status": "active",
+   "due": "2026-08-05",
+   "created": "2026-08-04",
+   "notes": "Seller Patrik very ready. Calum thinks covered at 3.6, asking 3.65. Yusuf-camp interest = auction leverage if needed.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 104,
+   "top3": false
   }
  ],
  "units": [],
