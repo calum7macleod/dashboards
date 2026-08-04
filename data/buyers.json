@@ -348,17 +348,24 @@
   "order": 11,
   "heat": 4,
   "stage": "Lost",
-  "lastContact": "2026-07-24",
+  "lastContact": "2026-08-04",
   "nextTouch": null,
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "2.6M, SINGLE ROW, Nice cluster.",
   "snoozedUntil": null,
-  "touches": [],
-  "phone": "",
+  "touches": [
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Finance progressing: contacted Damac contact re Prypco-Damac, docs promised by 5 Aug. Real number captured by bridge. "
+   }
+  ],
+  "phone": "804172299",
   "history": "2.6M, SINGLE ROW, Nice cluster.",
   "maxScore": 2.6,
   "maxScoreWhy": "Clear ask (2.6 SR Nice) but thin engagement history - no viewings, no momentum markers logged.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "nextStep": "Chase Damac docs confirmation (due 5 Aug) + pitch Olga Nice 4BR single row 2.7M net (fits his Nice brief)"
  },
  {
   "date": "2026-07-14",
@@ -1251,7 +1258,7 @@
   "budget": 8000000,
   "segment": "Offplan",
   "commPct": 0.02,
-  "notes": "CLOSED WON 27-Jul: Bashayer penthouse 4bd D8M, co-broke Jake Nazer (+160K board / career-biggest by price) | Hanne Froyland-Jensen (Jake Nazer's assistant) = paperwork contact (visa docs), WA group ...395898 | Golden visa in motion: Modon investor certificate + docs checklist agreed",
+  "notes": "CLOSED WON 27-Jul: Bashayer penthouse 4bd D8M, co-broke Jake Nazer (+160K board / career-biggest by price) | Hanne Froyland-Jensen (Jake Nazer's assistant) = paperwork contact (visa docs), WA group ...395898 | Wife: Nicola | Golden visa in motion: Modon investor certificate + docs checklist agreed",
   "nextStep": "Nurture: golden visa completion + next-investment conversation (Modon courts him direct - stay the indispensable channel)",
   "history": "4-Aug card created from WA bridge triage (Hanne group identified). Deal in deals.json 27-Jul. Golden-visa docs checklist: Modon certificate addressed to ICP/ADRO + SPA + payments + passport/photo/insurance. || 4-Aug WA (group w/ Hanne): application paperwork in progress (golden visa/residency likely - he bought CASH, so not a mortgage) - Hanne prepping occupation declarations (incl. spouse), bank statement shared/received. Not yet submitted at capture.",
   "maxScore": 5.0,
@@ -1273,6 +1280,11 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "1:1 with Tony re Modon form - occupation/salary declaration to finalise, Tony: 'come back to you' (pending his answer). Captured by bridge."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "KYC forms for Tony + Nicola (wife) sent to Hanne's group; occupation for Nicola = housewife (Companies House company option rejected - 'can of worms'). Calum's actions complete, pending Hanne confirmation. Captured by bridge."
    }
   ],
   "lastContact": "2026-08-04",
