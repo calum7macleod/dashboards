@@ -1268,9 +1268,48 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "Hanne (Jake Nazer's assistant) progressing application paperwork - occupation declarations incl. spouse, bank statement shared. Golden visa likely (cash deal, no mortgage). Captured by bridge."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "1:1 with Tony re Modon form - occupation/salary declaration to finalise, Tony: 'come back to you' (pending his answer). Captured by bridge."
    }
   ],
   "lastContact": "2026-08-04",
-  "nextTouch": "2026-08-11"
+  "nextTouch": "2026-08-11",
+  "waId": "209689027543156"
+ },
+ {
+  "buyer": "Ruth",
+  "status": "Active",
+  "stage": "New",
+  "score": 3,
+  "date": "2026-08-04",
+  "source": "TBC",
+  "area": null,
+  "cluster1": null,
+  "cluster2": null,
+  "cluster3": null,
+  "matchedUnit": null,
+  "beds": null,
+  "finance": null,
+  "budget": null,
+  "segment": null,
+  "notes": "NEW 4-Aug via WA bridge - appointment proposed 2pm (date TBC) | Brief unknown - intake call to qualify",
+  "nextStep": "2pm appointment - confirm date/details, intake debrief to Max after",
+  "touches": [
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Appointment proposed: 'Yes perfect. Shall we book in 2pm?' Captured by bridge."
+   }
+  ],
+  "lastContact": "2026-08-04",
+  "waId": "69887892410487",
+  "maxScore": 3.0,
+  "maxScoreWhy": "Unqualified - engaged enough to book an appointment same-day; funding unknown",
+  "history": "Created 4-Aug from bridge triage. Calum verdict: new buyer.",
+  "id": "ruth-1",
+  "order": 31
  }
 ]
