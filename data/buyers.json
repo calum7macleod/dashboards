@@ -45,10 +45,15 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "Touched (dashboard)"
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Zeemah (intermediary on his thread) passed his direct number 0502800923 - asked Calum to call him. Number backfilled (assumed his - confirm on call)."
    }
   ],
-  "phone": "",
-  "nextStep": "Weekend viewing block Sat 8 - line up 4/5bd Costa",
+  "phone": "0502800923",
+  "nextStep": "CALL him direct on 0502800923 (Zeemah asked) - K332 conversation opener",
   "history": "TOP TOP buyers. Might do 5bd or 4bd, like Costa, but probably Malta - better options there. Pre-approved, but needs to switch [bank/rate - confirm detail]. Back next week: line up a Malta unit + a 5-bed to view.",
   "timeline": "1-3mo",
   "purpose": "End-user",
@@ -619,7 +624,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -644,23 +649,30 @@
   "relationship": 4,
   "unitSupply": 4,
   "feeling": 5,
-  "score": 5,
+  "score": 3,
   "notes": "4bd Later cluster, 2.35M CASH | High quality",
   "id": "karimulla-25",
   "order": 18,
   "heat": 5,
-  "stage": "Lost",
+  "stage": "Longer Term",
   "lastContact": "2026-06-16",
   "nextTouch": null,
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "4 bed Later cluster, 2.35M cash. Good buyer. HIGH.",
   "snoozedUntil": null,
-  "touches": [],
+  "touches": [
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "'For now we paused - send me any interesting deals.' Moved to Longer Term, score 5->3 (placeholder heat corrected by his own words). Captured by bridge."
+   }
+  ],
   "phone": "",
   "history": "4 bed Later cluster, 2.35M cash. Good buyer. HIGH.",
   "maxScore": 3.6,
   "maxScoreWhy": "Specific (4bd Later, 2.35 cash), described high quality. Clean brief + cash = fast close IF supply appears at his number.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "nextStep": "Drip only: send genuinely interesting 4bd deals occasionally, no chasing"
  },
  {
   "date": "2026-05-25",
@@ -1087,7 +1099,7 @@
   "maxScore": 3.6,
   "maxScoreWhy": "Cash + live offer at 2.45 = serious. But offer floating outside offers.json, unit/seller uncaptured, and single-unit fixation risk if this one dies. Capture the deal structure to firm this up.",
   "maxScoreDate": "2026-08-03",
-  "nextStep": "Chase Fatima feedback on flexible seller + keep 2nd option warm; cash speed is the lever"
+  "nextStep": "URGENT: answer Fatima - she chased twice (last 12:19, unanswered 6h), her seller waiting on Masoud confirmation. Also: unknown agent replied 2.65-2.7 available to the blast - chase it."
  },
  {
   "date": "2026-08-01",
@@ -1283,7 +1295,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1332,6 +1344,11 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "KYC forms for Tony + Nicola (wife) sent to Hanne's group; occupation for Nicola = housewife (Companies House company option rejected - 'can of worms'). Calum's actions complete, pending Hanne confirmation. Captured by bridge."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Jake Nazer group: cheque names + amounts for transfer being prepared - Jake/Hanne delivering tomorrow morning."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1425,12 +1442,17 @@
   "segment": null,
   "phone": "821364477",
   "notes": "NEW 4-Aug via bridge | Viewing WED 5-Aug 4pm - half-confirmed (she asked for Wed, Calum offered 4pm, her reply was voice notes) | Brief/unit TBC from debrief",
-  "nextStep": "TODAY: lock Wed 4pm viewing as confirmed + which unit",
+  "nextStep": "WED viewing - debrief Max after (get unit, budget, finance, temperature)",
   "touches": [
    {
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "Viewing negotiation: Sat proposed, she wants Wed, 4pm offered - confirmation pending in voice notes. Captured by bridge."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "VIEWING CONFIRMED for Wed 5 Aug - location pin (main gate) sent, she confirmed 'see you tomorrow'. Captured by bridge."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1440,5 +1462,38 @@
   "id": "sonam-1",
   "order": 33,
   "heat": 3
+ },
+ {
+  "buyer": "Usman Miah",
+  "status": "Active",
+  "stage": "New",
+  "score": 3,
+  "date": "2026-08-04",
+  "source": "TBC",
+  "area": "Abu Dhabi / central",
+  "cluster1": "Bashayer",
+  "cluster2": null,
+  "cluster3": null,
+  "matchedUnit": "B4-412 pitched",
+  "beds": "4",
+  "finance": null,
+  "budget": 13000000,
+  "segment": "Offplan",
+  "phone": "043652242",
+  "notes": "Penthouse hunter - talking 12-13M CENTRAL penthouse | B4-412 (8M) breakdown PDF sent 4 Aug | Serious money profile - qualify source of funds + timeline",
+  "nextStep": "Follow up on B4-412 PDF reaction + qualify the 12-13M central brief properly",
+  "touches": [
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Asked 'breakdown whats needed now' - B4-412 PDF sent same hour. Also discussing 12-13M central penthouse. Captured by bridge."
+   }
+  ],
+  "lastContact": "2026-08-04",
+  "maxScore": 3.5,
+  "maxScoreWhy": "Engaged same-day on 8M product, talks 12-13M - unqualified but the ceiling is high",
+  "history": "Created 4-Aug from bridge triage.",
+  "id": "usman-miah-1",
+  "order": 34
  }
 ]
