@@ -2384,6 +2384,21 @@
    "notes": "Sequence: broker quotes (personal/individual director D&O, 6yr run-off) -> incept while still in post -> take copies of accounts/minutes/bank -> list every personal guarantee signed -> THEN resign + TM01. Insurance covers unknowns only - honest proposal or policy is voidable. Consider 1hr UK solicitor on exit sequencing. Shares = leverage: no free stock transfer without release/PG clean-up.",
    "completed": null,
    "snoozedUntil": null
+  },
+  {
+   "id": "dld-feed-build",
+   "title": "DLD FEED: droplet collector -> data/dld/*.json -> CRM market panel + auto Lagoons report",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": "hard",
+   "status": "active",
+   "due": "2026-08-05",
+   "created": "2026-08-04",
+   "notes": "Max builds. Calum: 2 short droplet pastes (recon tonight, install after). Dubai-only (DLD); Abu Dhabi needs DARI later. Supersedes 'DLD Report Link' chase.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 100,
+   "top3": false
   }
  ],
  "units": [],
