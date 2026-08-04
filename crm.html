@@ -148,16 +148,19 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
     <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
       <select id="mkt-days" class="fsel" onchange="renderMarketTab()"><option value="30">Last 30 days</option><option value="60">Last 60 days</option><option value="90">Last 90 days</option></select>
       <label style="font-size:12px;color:var(--muted);cursor:pointer"><input type="checkbox" id="mkt-incl" onchange="renderMarketTab()"> include Lagoon Views + Valencia</label>
-      <div style="font-size:11px;color:var(--muted)">source: DLD open data · auto-refresh 06:15 daily · Nice/Morocco/phases merged per cluster</div>
+      <div style="font-size:11px;color:var(--muted)">source: DLD open data · auto-refresh 06:15 daily · phases + Nice/Morocco merged</div>
     </div>
     <div id="mktHead" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px"></div>
-    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:8px">◆ Clusters — tap one to open its full book</h2>
-      <div id="clusterGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:9px"></div></div>
+    <div class="panelbox"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:4px">
+      <h2 style="color:var(--lgold);font-size:16px">◆ Price Trend — monthly averages</h2>
+      <select id="mkt-mcl" class="fsel" onchange="renderMarketTab()"></select></div>
+      <div id="mktChart"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:8px">◆ By Bedrooms — average price & change</h2>
+      <div id="mktBedsCards" style="display:flex;gap:9px;flex-wrap:wrap"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:8px">◆ Clusters — tap one for its full book</h2>
+      <div id="clusterGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:9px"></div></div>
     <div id="mktDrill"></div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <div class="panelbox" style="flex:1.35;min-width:350px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Average Price — Cluster × Beds</h2><div id="mktMatrix" style="overflow-x:auto"></div><div style="font-size:10px;color:var(--muted);margin-top:4px">averages for selected period · small number = deals</div></div>
-      <div class="panelbox" style="flex:1;min-width:300px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Monthly Trend — last 6 months</h2><select id="mkt-mcl" class="fsel" onchange="renderMarketTab()" style="margin-bottom:8px"></select><div id="mktMonthly"></div></div>
-    </div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Average Price — Cluster × Beds</h2><div id="mktMatrix" style="overflow-x:auto"></div><div style="font-size:10px;color:var(--muted);margin-top:4px">averages for selected period · small number = deal count</div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Every Transaction — selected period</h2><div id="mktList" style="max-height:480px;overflow-y:auto"></div></div>
   </div>
 </div>
@@ -248,7 +251,7 @@ function renderMarket(){
     return `<tr style="border-bottom:1px solid var(--div)"><td style="padding:4px 6px;color:var(--cream)">${c}</td><td style="padding:4px;color:var(--muted)">${rs.length} tx</td><td style="padding:4px;color:var(--lgold)">med ${fmtB(med(rs.map(r=>r.v)))}</td><td style="padding:4px;color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString()+'/sqft':''}</td></tr>`;}).join('')}</table>
   ${big?`<div style="font-size:11.5px;color:var(--muted);margin-top:6px">Biggest 30d: <b style="color:var(--lgold)">${(big.proj||'').replace(/DAMAC LAGOONS[\s-]*/i,'')} ${fmtB(big.v)}</b> (${big.r||big.t||''}, ${big.d}) · source: DLD open data, auto-refreshed 06:15</div>`:''}`;
 }
-// ---- MARKET TAB v2 (interactive: merged clusters, drill-down, beds matrix, monthly trend) ----
+// ---- MARKET TAB v3 (price-centric: trend charts, beds breakdown, drill-down) ----
 const MKT={sel:null};
 function dldSalesRange(days,offset,incl){offset=offset||0;const end=addDays(today(),-offset),start=addDays(today(),-(offset+days));
   return DLD.filter(r=>r.d>start&&r.d<=end&&/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
@@ -261,52 +264,86 @@ const pct=(a,b)=>b?Math.round((a-b)/b*100):null;
 const trChip=t=>t===null?'':` <span style="font-size:11px;color:${t>=0?'#3fb950':'#f0883e'}">${t>=0?'▲':'▼'}${Math.abs(t)}%</span>`;
 function last6Months(){const out=[];const n=new Date(today());for(let i=5;i>=0;i--){const d=new Date(n.getFullYear(),n.getMonth()-i,1);out.push(`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`);}return out;}
 const mLbl=k=>['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+k.slice(5,7)-1];
+const BEDCOL={all:'#F5EDE0',3:'#8FA898',4:'#E8C96B',5:'#C9A84C',6:'#d29922',7:'#f0883e',2:'#7aa88f',0:'#5c7f6d'};
+function monthlyAvg(rows,months,bedFilter){
+  return months.map(k=>{const xs=rows.filter(r=>(r.d||'').slice(0,7)===k&&(bedFilter==null||dldBeds(r)===bedFilter)&&r.v).map(r=>r.v);
+    return xs.length?avg(xs):null;});
+}
+function svgTrend(series,months,h){
+  h=h||170;const w=560,padL=50,padR=12,padT=10,padB=20;
+  const flat=series.flatMap(s=>s.pts.filter(p=>p!=null));
+  if(!flat.length)return '<div style="color:var(--muted);font-size:12px;padding:8px 0">no price data yet — history deepens daily</div>';
+  let lo=Math.min(...flat),hi=Math.max(...flat);if(lo===hi){lo*=0.95;hi*=1.05;}
+  const m=(hi-lo)*0.12;lo-=m;hi+=m;
+  const X=i=>padL+i*(w-padL-padR)/Math.max(1,months.length-1);
+  const Y=v=>padT+(1-(v-lo)/(hi-lo))*(h-padT-padB);
+  const fmtS=v=>v>=1e6?(v/1e6).toFixed(v>=3e6?1:2).replace(/\.?0+$/,'')+'M':Math.round(v/1e3)+'K';
+  let g='';
+  for(let t=0;t<=2;t++){const v=lo+(hi-lo)*t/2,y=Y(v);
+    g+=`<line x1="${padL}" y1="${y}" x2="${w-padR}" y2="${y}" stroke="#2E5A40" stroke-width="1"/><text x="${padL-6}" y="${y+3.5}" fill="#8FA898" font-size="10" text-anchor="end">${fmtS(v)}</text>`;}
+  months.forEach((k,i)=>{g+=`<text x="${X(i)}" y="${h-5}" fill="#8FA898" font-size="10" text-anchor="middle">${mLbl(k)}</text>`;});
+  series.forEach(s=>{
+    let path='',open=false;
+    s.pts.forEach((p,i)=>{if(p==null){open=false;return;}path+=`${open?' L':' M'}${X(i)},${Y(p)}`;open=true;});
+    g+=`<path d="${path}" fill="none" stroke="${s.color}" stroke-width="${s.bold?2.6:1.8}" ${s.bold?'':'stroke-opacity=".9"'}/>`;
+    s.pts.forEach((p,i)=>{if(p!=null)g+=`<circle cx="${X(i)}" cy="${Y(p)}" r="${s.bold?3:2.4}" fill="${s.color}"/>`;});
+  });
+  return `<svg viewBox="0 0 ${w} ${h}" style="width:100%;height:auto">${g}</svg>`;
+}
 function renderMarketTab(){
   const el=$('mktHead');if(!el)return;
   if(!DLD.length){el.innerHTML='<span style="color:var(--muted);font-size:12px">DLD feed loading…</span>';return;}
   const days=+($('mkt-days')?$('mkt-days').value:30), incl=$('mkt-incl')&&$('mkt-incl').checked;
   const cur=dldSalesRange(days,0,incl), prev=dldSalesRange(days,days,incl), all=mktAll(incl);
   const vals=cur.map(r=>r.v).filter(Boolean), pvals=prev.map(r=>r.v).filter(Boolean);
-  el.innerHTML=mbox('SALES',cur.length+trChip(pct(cur.length,prev.length)))
-    +mbox('TOTAL VALUE',fmtB(vals.reduce((a,v)=>a+v,0)))
-    +mbox('AVERAGE',fmtB(avg(vals))+trChip(pct(avg(vals),avg(pvals))))
-    +mbox('MEDIAN',fmtB(med(vals)))
-    +mbox('MED Đ/SQFT',Math.round(med(cur.map(psfOf).filter(Boolean))||0).toLocaleString())
-    +mbox('VELOCITY',(cur.length/days).toFixed(1)+'/day');
+  el.innerHTML=mbox('AVERAGE',fmtB(avg(vals))+trChip(pct(avg(vals),avg(pvals))))
+    +mbox('MEDIAN',fmtB(med(vals))+trChip(pct(med(vals),med(pvals))))
+    +mbox('MED Đ/SQFT',Math.round(med(cur.map(psfOf).filter(Boolean))||0).toLocaleString()+trChip(pct(med(cur.map(psfOf).filter(Boolean)),med(prev.map(psfOf).filter(Boolean)))))
+    +mbox('SALES',cur.length+trChip(pct(cur.length,prev.length)))
+    +mbox('TOTAL VALUE',fmtB(vals.reduce((a,v)=>a+v,0)));
+  // ---- price trend chart (overall + per-beds lines, scoped by cluster dropdown)
+  const sel=$('mkt-mcl');const keep=sel.value;
+  const allCl=[...new Set(all.map(clusName))].sort();
+  sel.innerHTML='<option value="">All clusters</option>'+allCl.map(c=>`<option>${c}</option>`).join('');
+  if([...sel.options].some(o=>o.value===keep))sel.value=keep;
+  const scope=sel.value?all.filter(r=>clusName(r)===sel.value):all;
+  const months=last6Months();
+  const scopeBeds=[...new Set(scope.map(dldBeds).filter(b=>b!==null&&b>=2))].sort((a,b)=>a-b);
+  const series=[{label:'All',color:BEDCOL.all,bold:true,pts:monthlyAvg(scope,months,null)}]
+    .concat(scopeBeds.map(b=>({label:b+' bed',color:BEDCOL[b]||'#8FA898',bold:false,pts:monthlyAvg(scope,months,b)})));
+  const legend=series.map(s=>`<span style="font-size:10.5px;color:${s.color};margin-right:10px">● ${s.label}</span>`).join('');
+  const mAll=series[0].pts.filter(Boolean);
+  const chg6=mAll.length>=2?pct(mAll[mAll.length-1],mAll[0]):null;
+  $('mktChart').innerHTML=`<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:4px"><div>${legend}</div><div style="font-size:11.5px;color:var(--muted)">avg price over period${chg6!==null?': <b style="color:'+(chg6>=0?'#3fb950':'#f0883e')+'">'+(chg6>=0?'+':'')+chg6+'%</b>':''}</div></div>`+svgTrend(series,months);
+  // ---- beds breakdown cards (price-first)
+  const bedsSet=[...new Set(cur.map(dldBeds).filter(b=>b!==null))].sort((a,b)=>a-b);
+  $('mktBedsCards').innerHTML=bedsSet.map(b=>{
+    const xs=cur.filter(r=>dldBeds(r)===b),v=xs.map(r=>r.v).filter(Boolean);
+    const pv=prev.filter(r=>dldBeds(r)===b).map(r=>r.v).filter(Boolean);
+    const ps=xs.map(psfOf).filter(Boolean);
+    return `<div style="flex:1;min-width:150px;background:var(--card);border:1px solid var(--div);border-radius:11px;padding:9px 11px">
+      <div style="font-size:10px;letter-spacing:2px;color:${BEDCOL[b]||'var(--muted)'}">${b==0?'STUDIO':b+' BEDROOM'}</div>
+      <div style="font-size:19px;color:var(--lgold);font-family:'Palatino Linotype',serif;font-weight:700;margin-top:2px">${fmtB(avg(v))}${trChip(pct(avg(v),avg(pv)))}</div>
+      <div style="font-size:10.5px;color:var(--muted);margin-top:2px">med ${fmtB(med(v))} · ${ps.length?Math.round(med(ps)).toLocaleString()+'/sqft':''} · ${xs.length} deals</div>
+    </div>`;}).join('')||'<span style="color:var(--muted)">no data</span>';
+  // ---- cluster cards (price trend emphasised)
   const cl={},clP={};cur.forEach(r=>{(cl[clusName(r)]=cl[clusName(r)]||[]).push(r);});prev.forEach(r=>{(clP[clusName(r)]=clP[clusName(r)]||[]).push(r);});
   const ordered=Object.entries(cl).sort((a,b)=>b[1].length-a[1].length);
   const maxN=ordered.length?ordered[0][1].length:1;
   $('clusterGrid').innerHTML=ordered.map(([c,rs],i)=>{const v=rs.map(r=>r.v).filter(Boolean);
-    const t=pct(rs.length,(clP[c]||[]).length);
+    const pv=(clP[c]||[]).map(r=>r.v).filter(Boolean);
     return `<div onclick="mktSel(this.dataset.c)" data-c="${c}" style="cursor:pointer;background:${MKT.sel===c?'rgba(201,168,76,.14)':'var(--card)'};border:1px solid ${MKT.sel===c?'var(--gold)':'var(--div)'};border-radius:11px;padding:9px 10px">
       <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:13px;color:var(--cream)">${c}</b>${i===0?'<span style="color:var(--gold);font-size:9px">◆ TOP VOL</span>':''}</div>
-      <div style="font-size:20px;color:var(--lgold);font-family:'Palatino Linotype',serif;font-weight:700">${rs.length}<span style="font-size:10px;color:var(--muted)"> deals${trChip(t)}</span></div>
-      <div style="font-size:11px;color:var(--muted)">avg ${fmtB(avg(v))} · med ${fmtB(med(v))}</div>
+      <div style="font-size:18px;color:var(--lgold);font-family:'Palatino Linotype',serif;font-weight:700;margin-top:1px">${fmtB(avg(v))}${trChip(pct(avg(v),avg(pv)))}</div>
+      <div style="font-size:10.5px;color:var(--muted)">avg price · med ${fmtB(med(v))} · ${rs.length} deals</div>
       <div style="height:5px;border-radius:3px;background:var(--gold);opacity:.7;width:${Math.max(6,Math.round(rs.length/maxN*100))}%;margin-top:5px"></div>
     </div>`;}).join('')||'<span style="color:var(--muted)">no sales in period</span>';
   renderMktDrill(all);
-  const bedsSet=[...new Set(cur.map(dldBeds).filter(b=>b!==null))].sort((a,b)=>a-b);
+  // ---- cluster × beds average matrix
   $('mktMatrix').innerHTML=`<table style="font-size:12px;border-collapse:collapse;width:100%"><tr style="color:var(--muted);font-size:9.5px;letter-spacing:1px"><td style="padding:3px 6px">CLUSTER</td>${bedsSet.map(b=>`<td class="r" style="padding:3px 6px">${b==0?'ST':b+'BR'}</td>`).join('')}</tr>`+
     ordered.map(([c,rs])=>`<tr style="border-top:1px solid var(--div)"><td style="padding:4px 6px;color:var(--cream)">${c}</td>${bedsSet.map(b=>{const xs=rs.filter(r=>dldBeds(r)===b).map(r=>r.v).filter(Boolean);
       return `<td class="r" style="padding:4px 6px">${xs.length?`<span style="color:var(--lgold)">${fmtB(avg(xs))}</span> <span style="color:var(--muted);font-size:9px">${xs.length}</span>`:'<span style="color:#3a5c48">—</span>'}</td>`;}).join('')}</tr>`).join('')+'</table>';
-  const sel=$('mkt-mcl');const keep=sel.value;
-  const allCl=[...new Set(all.map(clusName))].sort();
-  sel.innerHTML='<option value="">All clusters (overall)</option>'+allCl.map(c=>`<option>${c}</option>`).join('');
-  if([...sel.options].some(o=>o.value===keep))sel.value=keep;
-  const scope=sel.value?all.filter(r=>clusName(r)===sel.value):all;
-  const months=last6Months();
-  const byM={};scope.forEach(r=>{const k=(r.d||'').slice(0,7);(byM[k]=byM[k]||[]).push(r.v||0);});
-  let prevAvg=null;
-  const mrows=months.map(k=>{const xs=(byM[k]||[]).filter(Boolean);const a=avg(xs);const ch=prevAvg&&a?pct(a,prevAvg):null;if(a)prevAvg=a;
-    return {k,n:(byM[k]||[]).length,a,ch};});
-  const maxA=Math.max(...mrows.map(m=>m.a||0),1);
-  $('mktMonthly').innerHTML=mrows.map(m=>`<div style="display:flex;align-items:center;gap:7px;padding:3.5px 0;border-top:1px solid var(--div)">
-    <div style="width:30px;font-size:11px;color:var(--muted)">${mLbl(m.k)}</div>
-    <div style="flex:1"><div style="height:13px;border-radius:3px;background:${m.a?'var(--gold)':'var(--div)'};opacity:.8;width:${m.a?Math.max(4,Math.round(m.a/maxA*100)):2}%"></div></div>
-    <div style="width:66px;text-align:right;font-size:11.5px;color:var(--lgold)">${m.a?fmtB(m.a):'—'}</div>
-    <div style="width:44px;text-align:right;font-size:10px;color:var(--muted)">${m.n} tx</div>
-    <div style="width:44px;text-align:right;font-size:10.5px;color:${m.ch===null?'var(--muted)':m.ch>=0?'#3fb950':'#f0883e'}">${m.ch===null?'':(m.ch>=0?'+':'')+m.ch+'%'}</div>
-  </div>`).join('')+`<div style="font-size:9.5px;color:var(--muted);margin-top:5px">avg price per month · % = change vs prior month · history deepens daily</div>`;
+  // ---- full list
   const list=[...cur].sort((a,b)=>a.d<b.d?1:-1);
   $('mktList').innerHTML=`<table style="width:100%;font-size:12px;border-collapse:collapse">
     <tr style="color:var(--muted);font-size:10px;letter-spacing:1px;position:sticky;top:0;background:var(--panel)"><td style="padding:4px 6px">DATE</td><td>CLUSTER</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>`+
@@ -323,20 +360,26 @@ function renderMktDrill(all){
   const rs=all.filter(r=>clusName(r)===MKT.sel).sort((a,b)=>a.d<b.d?1:-1);
   if(!rs.length){box.innerHTML='';return;}
   const v=rs.map(r=>r.v).filter(Boolean), p=rs.map(psfOf).filter(Boolean);
-  const bd={};rs.forEach(r=>{const b=dldBeds(r);if(b!==null)(bd[b]=bd[b]||[]).push(r.v||0);});
-  const months=last6Months();const byM={};rs.forEach(r=>{const k=(r.d||'').slice(0,7);(byM[k]=byM[k]||[]).push(r.v||0);});
+  const months=last6Months();
+  const dBeds=[...new Set(rs.map(dldBeds).filter(b=>b!==null&&b>=2))].sort((a,b)=>a-b);
+  const dSeries=[{label:'All',color:BEDCOL.all,bold:true,pts:monthlyAvg(rs,months,null)}]
+    .concat(dBeds.map(b=>({label:b+' bed',color:BEDCOL[b]||'#8FA898',bold:false,pts:monthlyAvg(rs,months,b)})));
+  const dLegend=dSeries.map(s=>`<span style="font-size:10px;color:${s.color};margin-right:9px">● ${s.label}</span>`).join('');
+  const bd={};rs.forEach(r=>{const b=dldBeds(r);if(b!==null)(bd[b]=bd[b]||[]).push(r);});
   box.innerHTML=`<div class="panelbox" style="border-color:var(--gold)">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-      <h2 style="color:var(--lgold);font-size:17px">◆ ${MKT.sel} — the full book (${rs.length} sales on record)</h2>
+      <h2 style="color:var(--lgold);font-size:17px">◆ ${MKT.sel} — full book (${rs.length} sales on record)</h2>
       <button class="btn mini sec" onclick="mktSel(MKT.sel)">close ✕</button></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
       ${mbox('AVG',fmtB(avg(v)))}${mbox('MEDIAN',fmtB(med(v)))}${mbox('Đ/SQFT',Math.round(med(p)||0).toLocaleString())}${mbox('LAST SALE',rs[0].d)}
     </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px">
-      <div style="flex:1;min-width:220px"><div style="font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-bottom:3px">BY BEDROOMS (avg)</div>
-        ${Object.keys(bd).sort((a,b)=>a-b).map(b=>`<div style="display:flex;justify-content:space-between;font-size:12px;padding:2.5px 0;border-top:1px solid var(--div)"><span>${b} bed <span style="color:var(--muted);font-size:10px">(${bd[b].length})</span></span><b style="color:var(--lgold)">${fmtB(avg(bd[b].filter(Boolean)))}</b></div>`).join('')}</div>
-      <div style="flex:1;min-width:220px"><div style="font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-bottom:3px">BY MONTH (avg · tx)</div>
-        ${months.map(k=>{const xs=(byM[k]||[]).filter(Boolean);return `<div style="display:flex;justify-content:space-between;font-size:12px;padding:2.5px 0;border-top:1px solid var(--div)"><span style="color:var(--muted)">${mLbl(k)}</span><span><b style="color:var(--lgold)">${xs.length?fmtB(avg(xs)):'—'}</b> <span style="color:var(--muted);font-size:10px">${(byM[k]||[]).length} tx</span></span></div>`;}).join('')}</div>
+    <div style="margin-bottom:8px">${dLegend}${svgTrend(dSeries,months,150)}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+      ${Object.keys(bd).sort((a,b)=>a-b).map(b=>{const xs=bd[b].map(r=>r.v).filter(Boolean);
+        return `<div style="flex:1;min-width:120px;background:var(--card);border:1px solid var(--div);border-radius:9px;padding:7px 9px">
+        <div style="font-size:9.5px;letter-spacing:1.5px;color:${BEDCOL[b]||'var(--muted)'}">${b==0?'STUDIO':b+' BED'} <span style="color:var(--muted)">(${bd[b].length})</span></div>
+        <div style="font-size:15px;color:var(--lgold);font-weight:700">${fmtB(avg(xs))}</div>
+        <div style="font-size:10px;color:var(--muted)">med ${fmtB(med(xs))}</div></div>`;}).join('')}
     </div>
     <div style="max-height:300px;overflow-y:auto"><table style="width:100%;font-size:12px;border-collapse:collapse">
       <tr style="color:var(--muted);font-size:10px;letter-spacing:1px"><td style="padding:3px 6px">DATE</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>
