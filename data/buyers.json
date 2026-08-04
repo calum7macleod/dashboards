@@ -25,8 +25,8 @@
   "order": 3,
   "heat": 5,
   "stage": "Viewing",
-  "lastContact": "2026-08-03",
-  "nextTouch": "2026-08-04",
+  "lastContact": "2026-08-04",
+  "nextTouch": "2026-08-05",
   "touchReason": "Initial cadence set at CRM migration - review",
   "needSummary": "TOP TOP buyers. Might do 5bd or 4bd, like Costa, but probably Malta - better options there. Pre-approved, but needs to s",
   "snoozedUntil": null,
@@ -40,6 +40,11 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "K332 Costa 5bd SR pitched toward his camp at 3.65M ('catch up with Yusuf soon... can get this for you guys'). Captured by bridge."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
    }
   ],
   "phone": "",
@@ -614,7 +619,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -930,7 +935,7 @@
   "heat": 5,
   "stage": "Offer",
   "lastContact": "2026-08-04",
-  "nextTouch": "2026-08-04",
+  "nextTouch": "2026-08-05",
   "touchReason": "Sent masterplan - come back with Costa Brava 4-bed options at 2.5M",
   "needSummary": "4 bed Costa Brava, 2.5M, mortgage, investment - happy with a tenant in place.",
   "snoozedUntil": null,
@@ -949,6 +954,11 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "Docs thread: 'I think these will be the ones' + latest SOA being pulled now - Form F/transfer machinery moving. Captured by bridge."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Touched (dashboard)"
    }
   ],
   "nextStep": "Chase seller Form F acceptance - CLOSE",
@@ -1273,7 +1283,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1298,7 +1308,7 @@
   "notes": "CLOSED WON 27-Jul: Bashayer penthouse 4bd D8M, co-broke Jake Nazer (+160K board / career-biggest by price) | Hanne Froyland-Jensen (Jake Nazer's assistant) = paperwork contact (visa docs), WA group ...395898 | Wife: Nicola | Golden visa in motion: Modon investor certificate + docs checklist agreed",
   "nextStep": "Nurture: golden visa completion + next-investment conversation (Modon courts him direct - stay the indispensable channel)",
   "history": "4-Aug card created from WA bridge triage (Hanne group identified). Deal in deals.json 27-Jul. Golden-visa docs checklist: Modon certificate addressed to ICP/ADRO + SPA + payments + passport/photo/insurance. || 4-Aug WA (group w/ Hanne): application paperwork in progress (golden visa/residency likely - he bought CASH, so not a mortgage) - Hanne prepping occupation declarations (incl. spouse), bank statement shared/received. Not yet submitted at capture.",
-  "maxScore": 5.0,
+  "maxScore": 5,
   "maxScoreWhy": "Closed 8M, repeat-investor profile, direct developer relationships - highest-value relationship in book",
   "id": "tony-done-orrell-1",
   "order": 30,
@@ -1326,7 +1336,8 @@
   ],
   "lastContact": "2026-08-04",
   "nextTouch": "2026-08-11",
-  "waId": "209689027543156"
+  "waId": "209689027543156",
+  "heat": 5
  },
  {
   "buyer": "Ruth",
@@ -1355,11 +1366,12 @@
   ],
   "lastContact": "2026-08-04",
   "waId": "69887892410487",
-  "maxScore": 3.0,
+  "maxScore": 3,
   "maxScoreWhy": "Unqualified - engaged enough to book an appointment same-day; funding unknown",
   "history": "Created 4-Aug from bridge triage. Calum verdict: new buyer.",
   "id": "ruth-1",
-  "order": 31
+  "order": 31,
+  "heat": 3
  },
  {
   "buyer": "Dean Scott",
@@ -1388,11 +1400,12 @@
    }
   ],
   "lastContact": "2026-08-04",
-  "maxScore": 2.0,
+  "maxScore": 2,
   "maxScoreWhy": "Unqualified, parked to Longer Term by Calum on day one",
   "history": "Created 4-Aug from bridge triage.",
   "id": "dean-scott-1",
-  "order": 32
+  "order": 32,
+  "heat": 2
  },
  {
   "buyer": "Sonam",
@@ -1421,10 +1434,11 @@
    }
   ],
   "lastContact": "2026-08-04",
-  "maxScore": 3.0,
+  "maxScore": 3,
   "maxScoreWhy": "Books viewings fast = intent; funding/brief unknown",
   "history": "Created 4-Aug from bridge triage. Calum verdict: new buyer, hopefully viewing tomorrow.",
   "id": "sonam-1",
-  "order": 33
+  "order": 33,
+  "heat": 3
  }
 ]
