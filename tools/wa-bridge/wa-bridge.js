@@ -15,6 +15,7 @@ const PROPERTY_WORDS = /\b(unit|villa|townhouse|apartment|bed|beds|price|aed|mil
 
 let KNOWN = new Set();      // phone numbers from buyers.json + stock.json
 let queue = [];
+let dirty = 0;
 
 function ghGet(path) {
   return new Promise((res, rej) => {
@@ -35,12 +36,21 @@ function ghPut(path, contentObj, sha, msg) {
 
 async function loadKnownNumbers() {
   try {
+    const fresh = new Set();
     for (const f of ['data/buyers.json', 'data/stock.json']) {
       const meta = await ghGet(f);
       const arr = JSON.parse(Buffer.from(meta.content, 'base64').toString());
-      const text = JSON.stringify(arr);
-      (text.match(/\+?\d{9,15}/g) || []).forEach(n => KNOWN.add(n.replace(/\D/g, '').slice(-9)));
+      const list = Array.isArray(arr) ? arr : (arr.buyers || arr.stock || []);
+      for (const rec of list) {
+        for (const v of Object.values(rec)) {
+          if (typeof v === 'string' && /\d{7,}/.test(v.replace(/[\s-]/g,''))) {
+            const digits = v.replace(/\D/g, '');
+            if (digits.length >= 9 && digits.length <= 15) fresh.add(digits.slice(-9));
+          }
+        }
+      }
     }
+    if (fresh.size) KNOWN = fresh;
     console.log(`[bridge] known numbers loaded: ${KNOWN.size}`);
   } catch (e) { console.error('[bridge] known-load failed', e.message); }
 }
@@ -63,7 +73,10 @@ async function handle(msg, fromMe) {
     const body = msg.body || `[${msg.type}]`;
     const rawNum = (fromMe ? to : from).replace(/@.*/, '');
     const num9 = rawNum.replace(/\D/g, '').slice(-9);
-    if (!isBusiness(num9, body)) return;                            // personal -> never logged
+    const q = isBusiness(num9, body);
+    console.log(`[bridge] rx ${fromMe?'->':'<-'} ${num9} len:${(body||'').length} qualified:${q}`);
+    if (!q) return;                                                 // personal -> never logged
+    dirty = Date.now();                                             // fast-flush timer
     let name = '';
     try { name = (msg._data && (msg._data.notifyName || msg._data.pushName)) || ''; } catch (_) {}
     queue.push({
@@ -78,7 +91,7 @@ async function handle(msg, fromMe) {
 client.on('message', m => handle(m, false));
 client.on('message_create', m => { if (m.fromMe) handle(m, true); });
 
-setInterval(async () => {
+async function flush() {
   if (!queue.length) return;
   const batch = queue.splice(0, queue.length);
   try {
@@ -89,7 +102,9 @@ setInterval(async () => {
     await ghPut(INBOX_PATH, inbox, sha, `wa-bridge: +${batch.length} messages`);
     console.log(`[bridge] pushed ${batch.length} (${new Date().toISOString()})`);
   } catch (e) { console.error('[bridge] push failed, requeueing', e.message); queue.unshift(...batch); }
-}, PUSH_EVERY_MS);
+}
+setInterval(flush, PUSH_EVERY_MS);
+setInterval(() => { if (dirty && Date.now() - dirty > 45 * 1000) { dirty = 0; flush(); } }, 15 * 1000);
 
 loadKnownNumbers().then(() => client.initialize());
 setInterval(loadKnownNumbers, 6 * 60 * 60 * 1000);                  // refresh known numbers 6-hourly
