@@ -1017,7 +1017,7 @@
   "matchedUnit": "",
   "beds": "3",
   "finance": "Cash",
-  "budget": 2450000,
+  "budget": 2600000,
   "needed": 0,
   "diff": 0,
   "responsiveness": 5,
@@ -1055,6 +1055,11 @@
     "date": "2026-08-04",
     "channel": "wa",
     "summary": "Calum live: no NOC for that unit, checking another to pass by - Masoud: 'Perfect'. Captured by bridge."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Calum blasted requirement to agent groups: HOT CASH buyer, Costa 3 bed, 2.6M, 'ideally covered'. (Budget updated 2.45M->2.6M per blast.) Hunting stock beyond our book; Abdul Moiz thread live ('yes available', handover end-Aug). NOC pass-by also in motion."
    }
   ],
   "phone": "+971 54 446 9769",
@@ -1062,7 +1067,7 @@
   "maxScore": 3.6,
   "maxScoreWhy": "Cash + live offer at 2.45 = serious. But offer floating outside offers.json, unit/seller uncaptured, and single-unit fixation risk if this one dies. Capture the deal structure to firm this up.",
   "maxScoreDate": "2026-08-03",
-  "nextStep": "GET THE NOC + confirm viewing slot with Masoud (he is chasing us - do not let this cool)"
+  "nextStep": "Line up 2-3 Costa 3-bed options (own stock + agent-stock + group replies) and get him viewing this week - cash buyer at Offer heat"
  },
  {
   "date": "2026-08-01",
