@@ -2152,12 +2152,12 @@
    "title": "WA BRIDGE GO-LIVE: VPS + QR scan (after first video)",
    "area": "Real Estate",
    "priority": "high",
-   "status": "active",
+   "status": "done",
    "difficulty": "medium",
    "due": "2026-08-03",
    "created": "2026-08-02",
-   "notes": "SETUP.md in repo tools/wa-bridge/ - Hetzner/DO smallest Ubuntu (~4/mo), paste commands, scan QR, pm2. THEN: export FULL history from all phones' business chats -> intake project (one-time backfill). Max delivers CRM v2 structure proposal (HubSpot-grade) in the morning brief first. | Runs INSIDE Mon CRM build block 10:30-12:30.",
-   "completed": null,
+   "notes": "SETUP.md in repo tools/wa-bridge/ - Hetzner/DO smallest Ubuntu (~4/mo), paste commands, scan QR, pm2. THEN: export FULL history from all phones' business chats -> intake project (one-time backfill). Max delivers CRM v2 structure proposal (HubSpot-grade) in the morning brief first. | Runs INSIDE Mon CRM build block 10:30-12:30. | DONE 4 Aug: v1.3/1.4 capture-all live, private repo crm-inbox verified end-to-end (first msg: Davey Rose ptt 09:12). Pending: blocklist numbers, v1.4 paste confirm.",
+   "completed": "2026-08-04",
    "snoozedUntil": null
   },
   {
