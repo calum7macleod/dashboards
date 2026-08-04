@@ -1,11 +1,13 @@
 /**
- * WA->CRM BRIDGE v1.3 (read-only, CAPTURE-ALL) - Calum MacLeod
- * Logs EVERY 1:1 conversation, inbound + outbound. Groups and status skipped.
+ * WA->CRM BRIDGE v1.4 (read-only, CAPTURE-ALL incl groups) - Calum MacLeod
+ * 1:1 chats  -> crm-inbox data/wa-inbox.json  (rolling 4000)
+ * Group chats -> crm-inbox data/wa-groups.json (rolling 3000, separate so noise never evicts clients)
  * No keyword filter - triage/matching happens downstream (Max), verified with Calum.
- * HARD BLOCKLIST: ./blocklist.txt on the server (one number per line). Blocked
- * numbers are never logged, never pushed, and never leave the box. File is
- * re-read every 10 min so additions take effect without a restart.
- * HARD RULES: never sends messages. Blocklist stays server-side only.
+ * BLOCKLIST (numbers AND group ids, one per line, last-9 matched):
+ *   - server-side ./blocklist.txt (never leaves the box)
+ *   - PLUS blocklist.txt at the root of the PRIVATE inbox repo (Max-manageable remotely)
+ *   Both merged, re-read every 10 min. Blocked = silently dropped, nothing logged.
+ * HARD RULES: never sends messages. Voice notes/media logged as [ptt]/[image] markers (no download yet).
  */
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
@@ -14,15 +16,17 @@ const fs = require('fs');
 
 const GH_TOKEN = process.env.GH_TOKEN; // set in environment - never hardcode
 const REPO = 'calum7macleod/dashboards';           // read-side: buyers/stock for match tagging
-const INBOX_REPO = process.env.INBOX_REPO || REPO; // write-side: point at a PRIVATE repo when ready
+const INBOX_REPO = process.env.INBOX_REPO || REPO; // write-side: private repo
 const INBOX_PATH = 'data/wa-inbox.json';
+const GROUPS_PATH = 'data/wa-groups.json';
 const BLOCKLIST_FILE = './blocklist.txt';
 const PUSH_EVERY_MS = 15 * 60 * 1000;      // batch every 15 min
 const FAST_FLUSH_MS = 45 * 1000;           // ...or 45s after the last message in a burst
 
 let KNOWN = new Set();      // phone numbers from buyers.json + stock.json (tagging only)
-let BLOCKED = new Set();    // server-side blocklist, last-9 normalised
-let queue = [];
+let BLOCKED = new Set();    // merged blocklist, last-9 normalised
+let queue1 = [];            // 1:1 messages
+let queueG = [];            // group messages
 let dirty = 0;
 
 function ghGet(repo, path) {
@@ -41,6 +45,8 @@ function ghPut(repo, path, contentObj, sha, msg) {
     req.on('error', rej); req.write(body); req.end();
   });
 }
+
+const last9 = s => String(s).replace(/\D/g, '').slice(-9);
 
 async function loadKnownNumbers() {
   try {
@@ -63,59 +69,76 @@ async function loadKnownNumbers() {
   } catch (e) { console.error('[bridge] known-load failed', e.message); }
 }
 
-function loadBlocklist() {
+async function loadBlocklist() {
+  const fresh = new Set();
   try {
-    const lines = fs.readFileSync(BLOCKLIST_FILE, 'utf8').split(/\r?\n/);
-    BLOCKED = new Set(lines.map(l => l.replace(/\D/g, '').slice(-9)).filter(d => d.length === 9));
-    console.log(`[bridge] blocklist loaded: ${BLOCKED.size}`);
-  } catch (_) {
-    if (BLOCKED.size === 0) console.log('[bridge] no blocklist file yet - ALL non-group chats are being logged');
-  }
+    for (const l of fs.readFileSync(BLOCKLIST_FILE, 'utf8').split(/\r?\n/)) {
+      const d = last9(l); if (d.length === 9) fresh.add(d);
+    }
+  } catch (_) {}
+  try {
+    const meta = await ghGet(INBOX_REPO, 'blocklist.txt');
+    if (meta && meta.content) {
+      for (const l of Buffer.from(meta.content, 'base64').toString().split(/\r?\n/)) {
+        const d = last9(l); if (d.length === 9) fresh.add(d);
+      }
+    }
+  } catch (_) {}
+  BLOCKED = fresh;
+  console.log(BLOCKED.size ? `[bridge] blocklist loaded: ${BLOCKED.size}` : '[bridge] blocklist EMPTY - all non-status chats are being logged');
 }
 
 const client = new Client({ authStrategy: new LocalAuth({ dataPath: './session' }), puppeteer: { headless: true, args: ['--no-sandbox'] } });
 client.on('qr', qr => { console.log('\nSCAN THIS WITH WHATSAPP (Linked devices > Link a device):\n'); qrcode.generate(qr, { small: true }); });
-client.on('ready', () => console.log('[bridge] connected, listening (read-only, capture-all).'));
+client.on('ready', () => console.log('[bridge] connected, listening (read-only, capture-all v1.4 incl groups).'));
 
 async function handle(msg, fromMe) {
   try {
     const from = String(msg.from || ''), to = String(msg.to || '');
-    if (from.endsWith('@g.us') || to.endsWith('@g.us')) return;               // groups skipped v1
     if (from === 'status@broadcast' || to === 'status@broadcast') return;     // stories skipped
+    const isGroup = from.endsWith('@g.us') || to.endsWith('@g.us');
     const body = msg.body || `[${msg.type}]`;
-    const rawNum = (fromMe ? to : from).replace(/@.*/, '');
-    const num9 = rawNum.replace(/\D/g, '').slice(-9);
-    if (BLOCKED.has(num9)) return;                                            // hard blocklist - silent, nothing logged
+    const groupId = isGroup ? (fromMe ? to : from).replace(/@.*/, '') : '';
+    const personRaw = isGroup
+      ? (fromMe ? 'me' : String(msg.author || '').replace(/@.*/, ''))
+      : (fromMe ? to : from).replace(/@.*/, '');
+    const num9 = last9(personRaw);
+    if (BLOCKED.has(num9) || (groupId && BLOCKED.has(last9(groupId)))) return; // hard blocklist - silent
     const known = KNOWN.has(num9);
-    console.log(`[bridge] rx ${fromMe?'->':'<-'} ${num9} len:${(body||'').length} known:${known}`);
+    console.log(`[bridge] rx ${fromMe?'->':'<-'}${isGroup?'g':' '} ${num9 || groupId.slice(-9)} len:${(body||'').length} known:${known}`);
     dirty = Date.now();                                                       // fast-flush timer
     let name = '';
     try { name = (msg._data && (msg._data.notifyName || msg._data.pushName)) || ''; } catch (_) {}
-    queue.push({
+    const rec = {
       at: new Date((msg.timestamp || Date.now() / 1000) * 1000).toISOString(),
       dir: fromMe ? 'out' : 'in',
-      contact: name || rawNum,
-      number: rawNum,
+      contact: name || personRaw,
+      number: personRaw,
       known,
       text: String(body).slice(0, 1200)
-    });
+    };
+    if (isGroup) { rec.group = groupId; queueG.push(rec); } else { queue1.push(rec); }
   } catch (e) { console.error('[bridge] handle err', e && e.message); }
 }
 client.on('message', m => handle(m, false));
 client.on('message_create', m => { if (m.fromMe) handle(m, true); });
 
-async function flush() {
-  if (!queue.length) return;
-  const batch = queue.splice(0, queue.length);
+async function flushOne(path, batch, cap) {
+  if (!batch.length) return;
   try {
-    let sha, inbox = [];
-    try { const meta = await ghGet(INBOX_REPO, INBOX_PATH); sha = meta.sha; inbox = JSON.parse(Buffer.from(meta.content, 'base64').toString()); } catch (_) {}
-    if (!Array.isArray(inbox)) inbox = [];
-    inbox.push(...batch);
-    if (inbox.length > 4000) inbox = inbox.slice(-4000);                      // rolling window
-    await ghPut(INBOX_REPO, INBOX_PATH, inbox, sha, `wa-bridge: +${batch.length} messages`);
-    console.log(`[bridge] pushed ${batch.length} (${new Date().toISOString()})`);
-  } catch (e) { console.error('[bridge] push failed, requeueing', e.message); queue.unshift(...batch); }
+    let sha, arr = [];
+    try { const meta = await ghGet(INBOX_REPO, path); sha = meta.sha; arr = JSON.parse(Buffer.from(meta.content, 'base64').toString()); } catch (_) {}
+    if (!Array.isArray(arr)) arr = [];
+    arr.push(...batch);
+    if (arr.length > cap) arr = arr.slice(-cap);
+    await ghPut(INBOX_REPO, path, arr, sha, `wa-bridge: +${batch.length}`);
+    console.log(`[bridge] pushed ${batch.length} -> ${path} (${new Date().toISOString()})`);
+    batch.length = 0;
+  } catch (e) { console.error('[bridge] push failed, requeueing', e.message); }
+}
+async function flush() {
+  if (queue1.length) { const b = queue1.splice(0); await flushOne(INBOX_PATH, b, 4000); if (b.length) queue1.unshift(...b); }
+  if (queueG.length) { const b = queueG.splice(0); await flushOne(GROUPS_PATH, b, 3000); if (b.length) queueG.unshift(...b); }
 }
 setInterval(flush, PUSH_EVERY_MS);
 setInterval(() => { if (dirty && Date.now() - dirty > FAST_FLUSH_MS) { dirty = 0; flush(); } }, 15 * 1000);
@@ -123,4 +146,4 @@ setInterval(() => { if (dirty && Date.now() - dirty > FAST_FLUSH_MS) { dirty = 0
 loadBlocklist();
 loadKnownNumbers().then(() => client.initialize());
 setInterval(loadKnownNumbers, 6 * 60 * 60 * 1000);   // refresh known numbers 6-hourly
-setInterval(loadBlocklist, 10 * 60 * 1000);          // re-read blocklist every 10 min
+setInterval(loadBlocklist, 10 * 60 * 1000);          // re-read blocklists (local + repo) every 10 min
