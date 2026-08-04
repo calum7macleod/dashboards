@@ -78,6 +78,7 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
   <div class="tab" data-t="pipeline" onclick="tab('pipeline')">Pipeline</div>
   <div class="tab" data-t="people" onclick="tab('people')">People</div>
   <div class="tab" data-t="sellers" onclick="tab('sellers')">Sellers</div>
+  <div class="tab" data-t="market" onclick="tab('market')">Market</div>
 </div>
 <div class="wrap">
   <div id="v-today">
@@ -142,6 +143,19 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
   <div id="v-sellers" class="hidden">
     <div id="sTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
     <div id="sboard"></div>
+  </div>
+  <div id="v-market" class="hidden">
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
+      <select id="mkt-days" class="fsel" onchange="renderMarketTab()"><option value="30">Last 30 days</option><option value="60">Last 60 days</option><option value="90">Last 90 days</option></select>
+      <label style="font-size:12px;color:var(--muted);cursor:pointer"><input type="checkbox" id="mkt-incl" onchange="renderMarketTab()"> include Lagoon Views + Valencia</label>
+      <div style="font-size:11px;color:var(--muted)">source: DLD open data · auto-refresh 06:15 daily</div>
+    </div>
+    <div id="mktHead" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px"></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <div class="panelbox" style="flex:1.25;min-width:310px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Clusters</h2><div id="mktClusters"></div></div>
+      <div class="panelbox" style="flex:1;min-width:270px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ By Bedrooms</h2><div id="mktBeds"></div><div id="mktInsight" style="font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.5"></div></div>
+    </div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Every Transaction</h2><div id="mktList" style="max-height:560px;overflow-y:auto"></div></div>
   </div>
 </div>
 <div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div id="mbox"></div></div>
@@ -231,6 +245,67 @@ function renderMarket(){
     return `<tr style="border-bottom:1px solid var(--div)"><td style="padding:4px 6px;color:var(--cream)">${c}</td><td style="padding:4px;color:var(--muted)">${rs.length} tx</td><td style="padding:4px;color:var(--lgold)">med ${fmtB(med(rs.map(r=>r.v)))}</td><td style="padding:4px;color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString()+'/sqft':''}</td></tr>`;}).join('')}</table>
   ${big?`<div style="font-size:11.5px;color:var(--muted);margin-top:6px">Biggest 30d: <b style="color:var(--lgold)">${(big.proj||'').replace(/DAMAC LAGOONS[\s-]*/i,'')} ${fmtB(big.v)}</b> (${big.r||big.t||''}, ${big.d}) · source: DLD open data, auto-refreshed 06:15</div>`:''}`;
 }
+// ---- MARKET TAB (full DLD breakdown) ----
+function dldSalesRange(days,offset,incl){offset=offset||0;const end=addDays(today(),-offset),start=addDays(today(),-(offset+days));
+  return DLD.filter(r=>r.d>start&&r.d<=end&&/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
+const clusName=r=>((r.proj||r.mp||'').replace(/damac lagoons/i,'').replace(/^[\s-]+/,'').replace(/\s*\(\d+\)\s*$/,'').trim())||'—';
+const dldBeds=r=>{const m=/(\d+)\s*B/i.exec(r.r||'');return m?+m[1]:(/studio/i.test(r.r||'')?0:null);};
+const psfOf=r=>(r.v&&r.sqm)?r.v/(r.sqm*10.7639):null;
+const pct=(a,b)=>b?Math.round((a-b)/b*100):null;
+const trChip=t=>t===null?'':` <span style="font-size:11px;color:${t>=0?'#3fb950':'#f0883e'}">${t>=0?'▲':'▼'}${Math.abs(t)}%</span>`;
+function renderMarketTab(){
+  const el=$('mktHead');if(!el)return;
+  if(!DLD.length){el.innerHTML='<span style="color:var(--muted);font-size:12px">DLD feed loading…</span>';return;}
+  const days=+($('mkt-days')?$('mkt-days').value:30), incl=$('mkt-incl')&&$('mkt-incl').checked;
+  const cur=dldSalesRange(days,0,incl), prev=dldSalesRange(days,days,incl);
+  const vals=cur.map(r=>r.v).filter(Boolean), pvals=prev.map(r=>r.v).filter(Boolean);
+  const psfs=cur.map(psfOf).filter(Boolean);
+  const op=cur.filter(r=>r.op).length;
+  el.innerHTML=mbox('SALES',cur.length+trChip(pct(cur.length,prev.length)))
+    +mbox('TOTAL VALUE',fmtB(vals.reduce((a,v)=>a+v,0)))
+    +mbox('MEDIAN',fmtB(med(vals))+trChip(pct(med(vals),med(pvals))))
+    +mbox('AVERAGE',fmtB(vals.length?Math.round(vals.reduce((a,v)=>a+v,0)/vals.length):0))
+    +mbox('MED Đ/SQFT',Math.round(med(psfs)||0).toLocaleString())
+    +mbox('OFF-PLAN',Math.round(op/Math.max(1,cur.length)*100)+'%');
+  // clusters
+  const cl={};cur.forEach(r=>{(cl[clusName(r)]=cl[clusName(r)]||[]).push(r);});
+  const rows=Object.entries(cl).sort((a,b)=>b[1].length-a[1].length);
+  const maxN=rows.length?rows[0][1].length:1;
+  $('mktClusters').innerHTML=`<table style="width:100%;font-size:12.5px;border-collapse:collapse">
+    <tr style="color:var(--muted);font-size:10.5px;letter-spacing:1px"><td style="padding:4px 6px">CLUSTER</td><td>TX</td><td>MEDIAN</td><td>RANGE</td><td>Đ/SQFT</td><td></td></tr>`+
+    rows.map(([c,rs],i)=>{const v=rs.map(r=>r.v).filter(Boolean),p=rs.map(psfOf).filter(Boolean);
+      return `<tr style="border-top:1px solid var(--div)${i===0?';background:rgba(201,168,76,.08)':''}">
+      <td style="padding:5px 6px;color:var(--cream);font-weight:${i===0?'bold':'normal'}">${c}${i===0?' <span style="color:var(--gold);font-size:10px">◆ VOLUME LEADER</span>':''}</td>
+      <td style="color:var(--lgold)">${rs.length}</td><td>${fmtB(med(v))}</td>
+      <td style="color:var(--muted);font-size:11.5px">${fmtB(Math.min(...v))}–${fmtB(Math.max(...v))}</td>
+      <td style="color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString():''}</td>
+      <td style="width:70px"><div style="height:6px;border-radius:3px;background:var(--gold);opacity:.75;width:${Math.max(6,Math.round(rs.length/maxN*70))}px"></div></td></tr>`;}).join('')+'</table>';
+  // beds
+  const bd={};cur.forEach(r=>{const b=dldBeds(r);if(b!==null)(bd[b]=bd[b]||[]).push(r);});
+  $('mktBeds').innerHTML=`<table style="width:100%;font-size:12.5px;border-collapse:collapse">
+    <tr style="color:var(--muted);font-size:10.5px;letter-spacing:1px"><td style="padding:4px 6px">BEDS</td><td>TX</td><td>MEDIAN</td><td>RANGE</td><td>Đ/SQFT</td></tr>`+
+    Object.keys(bd).sort((a,b)=>a-b).map(b=>{const rs=bd[b],v=rs.map(r=>r.v).filter(Boolean),p=rs.map(psfOf).filter(Boolean);
+      return `<tr style="border-top:1px solid var(--div)"><td style="padding:5px 6px;color:var(--cream);font-weight:bold">${b==0?'Studio':b+' BED'}</td>
+      <td style="color:var(--lgold)">${rs.length}</td><td>${fmtB(med(v))}</td>
+      <td style="color:var(--muted);font-size:11.5px">${fmtB(Math.min(...v))}–${fmtB(Math.max(...v))}</td>
+      <td style="color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString():''}</td></tr>`;}).join('')+'</table>';
+  // insight
+  const big=cur.length?cur.reduce((a,r)=>(r.v||0)>(a.v||0)?r:a):null;
+  const small=cur.filter(r=>r.v).length?cur.filter(r=>r.v).reduce((a,r)=>r.v<a.v?r:a):null;
+  const rate=(cur.length/days).toFixed(1);
+  $('mktInsight').innerHTML=(big?`Biggest: <b style="color:var(--lgold)">${clusName(big)} ${fmtB(big.v)}</b> (${big.r||''}, ${big.d})<br>`:'')
+    +(small?`Cheapest: ${clusName(small)} ${fmtB(small.v)} (${small.r||''}, ${small.d})<br>`:'')
+    +`Velocity: <b style="color:var(--lgold)">${rate} sales/day</b> · ${incl?'launches & apartments INCLUDED':'resale core (LV + Valencia excluded)'}`;
+  // full list
+  const list=[...cur].sort((a,b)=>a.d<b.d?1:-1);
+  $('mktList').innerHTML=`<table style="width:100%;font-size:12px;border-collapse:collapse">
+    <tr style="color:var(--muted);font-size:10.5px;letter-spacing:1px;position:sticky;top:0;background:var(--panel)"><td style="padding:4px 6px">DATE</td><td>CLUSTER</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>`+
+    list.map(r=>{const p=psfOf(r);return `<tr style="border-top:1px solid var(--div)">
+      <td style="padding:4px 6px;color:var(--muted)">${r.d}</td><td style="color:var(--cream)">${clusName(r)}</td>
+      <td>${r.r||''}</td><td style="color:var(--muted);font-size:11px">${r.op?'off-plan':'resale'}</td>
+      <td style="color:var(--muted)">${r.sqm?Math.round(r.sqm*10.7639).toLocaleString():''}</td>
+      <td style="color:var(--lgold)">${fmtB(r.v)}</td><td style="color:var(--muted)">${p?Math.round(p).toLocaleString():''}</td></tr>`;}).join('')+'</table>';
+}
 function marketFit(b){
   if(!b.budget)return null;
   const cls=[b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(c=>c.toLowerCase());
@@ -264,7 +339,7 @@ function heatDrivers(b){
   return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system read: <b>${sug}</b>${Math.abs(sug-(b.score||0))>=2?' — consider updating score':''}`;
 }
 function tab(t){curTab=t;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
-  ['today','pipeline','people','sellers'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
+  ['today','pipeline','people','sellers','market'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
 async function fetchAll(){
   BUYERS=await fetchFile('data/buyers.json');
   try{STOCK=await fetchFile('data/stock.json')}catch(e){STOCK=[]}
@@ -273,7 +348,7 @@ async function fetchAll(){
   try{DLD=await (await fetch('https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/data/dld/lagoons.json?t='+Date.now())).json();if(!Array.isArray(DLD))DLD=[]}catch(e){DLD=[]}
   syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
-function render(){renderToday();renderMarket();renderBoard();renderPeople();renderSellers();}
+function render(){renderToday();renderMarket();renderMarketTab();renderBoard();renderPeople();renderSellers();}
 let SCOREF='';
 function scoreFilter(role,s){SCOREF=String(s);if($('p-role'))$('p-role').value=role==='seller'?'seller':'';openTab('people');renderPeople();}
 function renderToday(){
