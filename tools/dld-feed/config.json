@@ -1,11 +1,17 @@
 {
-  "days_back": 14,
-  "seed_days": 120,
-  "page_size": 200,
-  "max_pages": 500,
-  "watch": [
-    { "key": "lagoons", "match": ["damac lagoons"] }
-  ],
-  "keep_days_watch": 400,
-  "keep_days_summary": 400
+ "days_back": 200,
+ "seed_days": 120,
+ "page_size": 200,
+ "max_pages": 800,
+ "watch": [
+  {
+   "key": "lagoons",
+   "match": [
+    "damac lagoons"
+   ]
+  }
+ ],
+ "keep_days_watch": 400,
+ "keep_days_summary": 400,
+ "_note": "days_back TEMP 200 for 6-month backfill (set 4 Aug) - Max reverts to 14 after 5 Aug run"
 }
