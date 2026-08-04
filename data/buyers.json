@@ -1251,12 +1251,26 @@
   "budget": 8000000,
   "segment": "Offplan",
   "commPct": 0.02,
-  "notes": "CLOSED WON 27-Jul: Bashayer penthouse 4bd D8M, co-broke Jake Nazer (+160K board / career-biggest by price) | Hanne Froyland-Jensen (Jake Nazer's assistant) = mortgage/paperwork contact, WA group ...395898 | Golden visa in motion: Modon investor certificate + docs checklist agreed",
+  "notes": "CLOSED WON 27-Jul: Bashayer penthouse 4bd D8M, co-broke Jake Nazer (+160K board / career-biggest by price) | Hanne Froyland-Jensen (Jake Nazer's assistant) = paperwork contact (visa docs), WA group ...395898 | Golden visa in motion: Modon investor certificate + docs checklist agreed",
   "nextStep": "Nurture: golden visa completion + next-investment conversation (Modon courts him direct - stay the indispensable channel)",
   "history": "4-Aug card created from WA bridge triage (Hanne group identified). Deal in deals.json 27-Jul. Golden-visa docs checklist: Modon certificate addressed to ICP/ADRO + SPA + payments + passport/photo/insurance. || 4-Aug WA (group w/ Hanne): application paperwork in progress (golden visa/residency likely - he bought CASH, so not a mortgage) - Hanne prepping occupation declarations (incl. spouse), bank statement shared/received. Not yet submitted at capture.",
   "maxScore": 5.0,
   "maxScoreWhy": "Closed 8M, repeat-investor profile, direct developer relationships - highest-value relationship in book",
   "id": "tony-done-orrell-1",
-  "order": 30
+  "order": 30,
+  "touches": [
+   {
+    "date": "2026-07-27",
+    "channel": "manual",
+    "summary": "CLOSED WON - Bashayer penthouse 4bd D8M CASH, co-broke Jake Nazer. +160K board, career-biggest deal by price."
+   },
+   {
+    "date": "2026-08-04",
+    "channel": "wa",
+    "summary": "Hanne (Jake Nazer's assistant) progressing application paperwork - occupation declarations incl. spouse, bank statement shared. Golden visa likely (cash deal, no mortgage). Captured by bridge."
+   }
+  ],
+  "lastContact": "2026-08-04",
+  "nextTouch": "2026-08-11"
  }
 ]
