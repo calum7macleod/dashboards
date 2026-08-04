@@ -148,14 +148,17 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
     <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
       <select id="mkt-days" class="fsel" onchange="renderMarketTab()"><option value="30">Last 30 days</option><option value="60">Last 60 days</option><option value="90">Last 90 days</option></select>
       <label style="font-size:12px;color:var(--muted);cursor:pointer"><input type="checkbox" id="mkt-incl" onchange="renderMarketTab()"> include Lagoon Views + Valencia</label>
-      <div style="font-size:11px;color:var(--muted)">source: DLD open data · auto-refresh 06:15 daily</div>
+      <div style="font-size:11px;color:var(--muted)">source: DLD open data · auto-refresh 06:15 daily · Nice/Morocco/phases merged per cluster</div>
     </div>
     <div id="mktHead" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px"></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:8px">◆ Clusters — tap one to open its full book</h2>
+      <div id="clusterGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:9px"></div></div>
+    <div id="mktDrill"></div>
     <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <div class="panelbox" style="flex:1.25;min-width:310px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Clusters</h2><div id="mktClusters"></div></div>
-      <div class="panelbox" style="flex:1;min-width:270px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ By Bedrooms</h2><div id="mktBeds"></div><div id="mktInsight" style="font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.5"></div></div>
+      <div class="panelbox" style="flex:1.35;min-width:350px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Average Price — Cluster × Beds</h2><div id="mktMatrix" style="overflow-x:auto"></div><div style="font-size:10px;color:var(--muted);margin-top:4px">averages for selected period · small number = deals</div></div>
+      <div class="panelbox" style="flex:1;min-width:300px"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Monthly Trend — last 6 months</h2><select id="mkt-mcl" class="fsel" onchange="renderMarketTab()" style="margin-bottom:8px"></select><div id="mktMonthly"></div></div>
     </div>
-    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Every Transaction</h2><div id="mktList" style="max-height:560px;overflow-y:auto"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Every Transaction — selected period</h2><div id="mktList" style="max-height:480px;overflow-y:auto"></div></div>
   </div>
 </div>
 <div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div id="mbox"></div></div>
@@ -245,66 +248,101 @@ function renderMarket(){
     return `<tr style="border-bottom:1px solid var(--div)"><td style="padding:4px 6px;color:var(--cream)">${c}</td><td style="padding:4px;color:var(--muted)">${rs.length} tx</td><td style="padding:4px;color:var(--lgold)">med ${fmtB(med(rs.map(r=>r.v)))}</td><td style="padding:4px;color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString()+'/sqft':''}</td></tr>`;}).join('')}</table>
   ${big?`<div style="font-size:11.5px;color:var(--muted);margin-top:6px">Biggest 30d: <b style="color:var(--lgold)">${(big.proj||'').replace(/DAMAC LAGOONS[\s-]*/i,'')} ${fmtB(big.v)}</b> (${big.r||big.t||''}, ${big.d}) · source: DLD open data, auto-refreshed 06:15</div>`:''}`;
 }
-// ---- MARKET TAB (full DLD breakdown) ----
+// ---- MARKET TAB v2 (interactive: merged clusters, drill-down, beds matrix, monthly trend) ----
+const MKT={sel:null};
 function dldSalesRange(days,offset,incl){offset=offset||0;const end=addDays(today(),-offset),start=addDays(today(),-(offset+days));
   return DLD.filter(r=>r.d>start&&r.d<=end&&/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
-const clusName=r=>((r.proj||r.mp||'').replace(/damac lagoons/i,'').replace(/^[\s-]+/,'').replace(/\s*\(\d+\)\s*$/,'').trim())||'—';
+function mktAll(incl){return DLD.filter(r=>/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
+const clusName=r=>((r.proj||r.mp||'').replace(/damac lagoons/i,'').replace(/^[\s-]+/,'').replace(/\s*\(\d+\)\s*$/,'').replace(/\s+\d+$/,'').trim())||'—';
 const dldBeds=r=>{const m=/(\d+)\s*B/i.exec(r.r||'');return m?+m[1]:(/studio/i.test(r.r||'')?0:null);};
 const psfOf=r=>(r.v&&r.sqm)?r.v/(r.sqm*10.7639):null;
+const avg=a=>a.length?Math.round(a.reduce((x,y)=>x+y,0)/a.length):0;
 const pct=(a,b)=>b?Math.round((a-b)/b*100):null;
 const trChip=t=>t===null?'':` <span style="font-size:11px;color:${t>=0?'#3fb950':'#f0883e'}">${t>=0?'▲':'▼'}${Math.abs(t)}%</span>`;
+function last6Months(){const out=[];const n=new Date(today());for(let i=5;i>=0;i--){const d=new Date(n.getFullYear(),n.getMonth()-i,1);out.push(`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`);}return out;}
+const mLbl=k=>['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+k.slice(5,7)-1];
 function renderMarketTab(){
   const el=$('mktHead');if(!el)return;
   if(!DLD.length){el.innerHTML='<span style="color:var(--muted);font-size:12px">DLD feed loading…</span>';return;}
   const days=+($('mkt-days')?$('mkt-days').value:30), incl=$('mkt-incl')&&$('mkt-incl').checked;
-  const cur=dldSalesRange(days,0,incl), prev=dldSalesRange(days,days,incl);
+  const cur=dldSalesRange(days,0,incl), prev=dldSalesRange(days,days,incl), all=mktAll(incl);
   const vals=cur.map(r=>r.v).filter(Boolean), pvals=prev.map(r=>r.v).filter(Boolean);
-  const psfs=cur.map(psfOf).filter(Boolean);
-  const op=cur.filter(r=>r.op).length;
   el.innerHTML=mbox('SALES',cur.length+trChip(pct(cur.length,prev.length)))
     +mbox('TOTAL VALUE',fmtB(vals.reduce((a,v)=>a+v,0)))
-    +mbox('MEDIAN',fmtB(med(vals))+trChip(pct(med(vals),med(pvals))))
-    +mbox('AVERAGE',fmtB(vals.length?Math.round(vals.reduce((a,v)=>a+v,0)/vals.length):0))
-    +mbox('MED Đ/SQFT',Math.round(med(psfs)||0).toLocaleString())
-    +mbox('OFF-PLAN',Math.round(op/Math.max(1,cur.length)*100)+'%');
-  // clusters
-  const cl={};cur.forEach(r=>{(cl[clusName(r)]=cl[clusName(r)]||[]).push(r);});
-  const rows=Object.entries(cl).sort((a,b)=>b[1].length-a[1].length);
-  const maxN=rows.length?rows[0][1].length:1;
-  $('mktClusters').innerHTML=`<table style="width:100%;font-size:12.5px;border-collapse:collapse">
-    <tr style="color:var(--muted);font-size:10.5px;letter-spacing:1px"><td style="padding:4px 6px">CLUSTER</td><td>TX</td><td>MEDIAN</td><td>RANGE</td><td>Đ/SQFT</td><td></td></tr>`+
-    rows.map(([c,rs],i)=>{const v=rs.map(r=>r.v).filter(Boolean),p=rs.map(psfOf).filter(Boolean);
-      return `<tr style="border-top:1px solid var(--div)${i===0?';background:rgba(201,168,76,.08)':''}">
-      <td style="padding:5px 6px;color:var(--cream);font-weight:${i===0?'bold':'normal'}">${c}${i===0?' <span style="color:var(--gold);font-size:10px">◆ VOLUME LEADER</span>':''}</td>
-      <td style="color:var(--lgold)">${rs.length}</td><td>${fmtB(med(v))}</td>
-      <td style="color:var(--muted);font-size:11.5px">${fmtB(Math.min(...v))}–${fmtB(Math.max(...v))}</td>
-      <td style="color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString():''}</td>
-      <td style="width:70px"><div style="height:6px;border-radius:3px;background:var(--gold);opacity:.75;width:${Math.max(6,Math.round(rs.length/maxN*70))}px"></div></td></tr>`;}).join('')+'</table>';
-  // beds
-  const bd={};cur.forEach(r=>{const b=dldBeds(r);if(b!==null)(bd[b]=bd[b]||[]).push(r);});
-  $('mktBeds').innerHTML=`<table style="width:100%;font-size:12.5px;border-collapse:collapse">
-    <tr style="color:var(--muted);font-size:10.5px;letter-spacing:1px"><td style="padding:4px 6px">BEDS</td><td>TX</td><td>MEDIAN</td><td>RANGE</td><td>Đ/SQFT</td></tr>`+
-    Object.keys(bd).sort((a,b)=>a-b).map(b=>{const rs=bd[b],v=rs.map(r=>r.v).filter(Boolean),p=rs.map(psfOf).filter(Boolean);
-      return `<tr style="border-top:1px solid var(--div)"><td style="padding:5px 6px;color:var(--cream);font-weight:bold">${b==0?'Studio':b+' BED'}</td>
-      <td style="color:var(--lgold)">${rs.length}</td><td>${fmtB(med(v))}</td>
-      <td style="color:var(--muted);font-size:11.5px">${fmtB(Math.min(...v))}–${fmtB(Math.max(...v))}</td>
-      <td style="color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString():''}</td></tr>`;}).join('')+'</table>';
-  // insight
-  const big=cur.length?cur.reduce((a,r)=>(r.v||0)>(a.v||0)?r:a):null;
-  const small=cur.filter(r=>r.v).length?cur.filter(r=>r.v).reduce((a,r)=>r.v<a.v?r:a):null;
-  const rate=(cur.length/days).toFixed(1);
-  $('mktInsight').innerHTML=(big?`Biggest: <b style="color:var(--lgold)">${clusName(big)} ${fmtB(big.v)}</b> (${big.r||''}, ${big.d})<br>`:'')
-    +(small?`Cheapest: ${clusName(small)} ${fmtB(small.v)} (${small.r||''}, ${small.d})<br>`:'')
-    +`Velocity: <b style="color:var(--lgold)">${rate} sales/day</b> · ${incl?'launches & apartments INCLUDED':'resale core (LV + Valencia excluded)'}`;
-  // full list
+    +mbox('AVERAGE',fmtB(avg(vals))+trChip(pct(avg(vals),avg(pvals))))
+    +mbox('MEDIAN',fmtB(med(vals)))
+    +mbox('MED Đ/SQFT',Math.round(med(cur.map(psfOf).filter(Boolean))||0).toLocaleString())
+    +mbox('VELOCITY',(cur.length/days).toFixed(1)+'/day');
+  const cl={},clP={};cur.forEach(r=>{(cl[clusName(r)]=cl[clusName(r)]||[]).push(r);});prev.forEach(r=>{(clP[clusName(r)]=clP[clusName(r)]||[]).push(r);});
+  const ordered=Object.entries(cl).sort((a,b)=>b[1].length-a[1].length);
+  const maxN=ordered.length?ordered[0][1].length:1;
+  $('clusterGrid').innerHTML=ordered.map(([c,rs],i)=>{const v=rs.map(r=>r.v).filter(Boolean);
+    const t=pct(rs.length,(clP[c]||[]).length);
+    return `<div onclick="mktSel(this.dataset.c)" data-c="${c}" style="cursor:pointer;background:${MKT.sel===c?'rgba(201,168,76,.14)':'var(--card)'};border:1px solid ${MKT.sel===c?'var(--gold)':'var(--div)'};border-radius:11px;padding:9px 10px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:13px;color:var(--cream)">${c}</b>${i===0?'<span style="color:var(--gold);font-size:9px">◆ TOP VOL</span>':''}</div>
+      <div style="font-size:20px;color:var(--lgold);font-family:'Palatino Linotype',serif;font-weight:700">${rs.length}<span style="font-size:10px;color:var(--muted)"> deals${trChip(t)}</span></div>
+      <div style="font-size:11px;color:var(--muted)">avg ${fmtB(avg(v))} · med ${fmtB(med(v))}</div>
+      <div style="height:5px;border-radius:3px;background:var(--gold);opacity:.7;width:${Math.max(6,Math.round(rs.length/maxN*100))}%;margin-top:5px"></div>
+    </div>`;}).join('')||'<span style="color:var(--muted)">no sales in period</span>';
+  renderMktDrill(all);
+  const bedsSet=[...new Set(cur.map(dldBeds).filter(b=>b!==null))].sort((a,b)=>a-b);
+  $('mktMatrix').innerHTML=`<table style="font-size:12px;border-collapse:collapse;width:100%"><tr style="color:var(--muted);font-size:9.5px;letter-spacing:1px"><td style="padding:3px 6px">CLUSTER</td>${bedsSet.map(b=>`<td class="r" style="padding:3px 6px">${b==0?'ST':b+'BR'}</td>`).join('')}</tr>`+
+    ordered.map(([c,rs])=>`<tr style="border-top:1px solid var(--div)"><td style="padding:4px 6px;color:var(--cream)">${c}</td>${bedsSet.map(b=>{const xs=rs.filter(r=>dldBeds(r)===b).map(r=>r.v).filter(Boolean);
+      return `<td class="r" style="padding:4px 6px">${xs.length?`<span style="color:var(--lgold)">${fmtB(avg(xs))}</span> <span style="color:var(--muted);font-size:9px">${xs.length}</span>`:'<span style="color:#3a5c48">—</span>'}</td>`;}).join('')}</tr>`).join('')+'</table>';
+  const sel=$('mkt-mcl');const keep=sel.value;
+  const allCl=[...new Set(all.map(clusName))].sort();
+  sel.innerHTML='<option value="">All clusters (overall)</option>'+allCl.map(c=>`<option>${c}</option>`).join('');
+  if([...sel.options].some(o=>o.value===keep))sel.value=keep;
+  const scope=sel.value?all.filter(r=>clusName(r)===sel.value):all;
+  const months=last6Months();
+  const byM={};scope.forEach(r=>{const k=(r.d||'').slice(0,7);(byM[k]=byM[k]||[]).push(r.v||0);});
+  let prevAvg=null;
+  const mrows=months.map(k=>{const xs=(byM[k]||[]).filter(Boolean);const a=avg(xs);const ch=prevAvg&&a?pct(a,prevAvg):null;if(a)prevAvg=a;
+    return {k,n:(byM[k]||[]).length,a,ch};});
+  const maxA=Math.max(...mrows.map(m=>m.a||0),1);
+  $('mktMonthly').innerHTML=mrows.map(m=>`<div style="display:flex;align-items:center;gap:7px;padding:3.5px 0;border-top:1px solid var(--div)">
+    <div style="width:30px;font-size:11px;color:var(--muted)">${mLbl(m.k)}</div>
+    <div style="flex:1"><div style="height:13px;border-radius:3px;background:${m.a?'var(--gold)':'var(--div)'};opacity:.8;width:${m.a?Math.max(4,Math.round(m.a/maxA*100)):2}%"></div></div>
+    <div style="width:66px;text-align:right;font-size:11.5px;color:var(--lgold)">${m.a?fmtB(m.a):'—'}</div>
+    <div style="width:44px;text-align:right;font-size:10px;color:var(--muted)">${m.n} tx</div>
+    <div style="width:44px;text-align:right;font-size:10.5px;color:${m.ch===null?'var(--muted)':m.ch>=0?'#3fb950':'#f0883e'}">${m.ch===null?'':(m.ch>=0?'+':'')+m.ch+'%'}</div>
+  </div>`).join('')+`<div style="font-size:9.5px;color:var(--muted);margin-top:5px">avg price per month · % = change vs prior month · history deepens daily</div>`;
   const list=[...cur].sort((a,b)=>a.d<b.d?1:-1);
   $('mktList').innerHTML=`<table style="width:100%;font-size:12px;border-collapse:collapse">
-    <tr style="color:var(--muted);font-size:10.5px;letter-spacing:1px;position:sticky;top:0;background:var(--panel)"><td style="padding:4px 6px">DATE</td><td>CLUSTER</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>`+
+    <tr style="color:var(--muted);font-size:10px;letter-spacing:1px;position:sticky;top:0;background:var(--panel)"><td style="padding:4px 6px">DATE</td><td>CLUSTER</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>`+
     list.map(r=>{const p=psfOf(r);return `<tr style="border-top:1px solid var(--div)">
       <td style="padding:4px 6px;color:var(--muted)">${r.d}</td><td style="color:var(--cream)">${clusName(r)}</td>
       <td>${r.r||''}</td><td style="color:var(--muted);font-size:11px">${r.op?'off-plan':'resale'}</td>
       <td style="color:var(--muted)">${r.sqm?Math.round(r.sqm*10.7639).toLocaleString():''}</td>
       <td style="color:var(--lgold)">${fmtB(r.v)}</td><td style="color:var(--muted)">${p?Math.round(p).toLocaleString():''}</td></tr>`;}).join('')+'</table>';
+}
+function mktSel(c){MKT.sel=MKT.sel===c?null:c;renderMarketTab();if(MKT.sel){const d=$('mktDrill');d&&d.scrollIntoView({behavior:'smooth',block:'start'});}}
+function renderMktDrill(all){
+  const box=$('mktDrill');if(!box)return;
+  if(!MKT.sel){box.innerHTML='';return;}
+  const rs=all.filter(r=>clusName(r)===MKT.sel).sort((a,b)=>a.d<b.d?1:-1);
+  if(!rs.length){box.innerHTML='';return;}
+  const v=rs.map(r=>r.v).filter(Boolean), p=rs.map(psfOf).filter(Boolean);
+  const bd={};rs.forEach(r=>{const b=dldBeds(r);if(b!==null)(bd[b]=bd[b]||[]).push(r.v||0);});
+  const months=last6Months();const byM={};rs.forEach(r=>{const k=(r.d||'').slice(0,7);(byM[k]=byM[k]||[]).push(r.v||0);});
+  box.innerHTML=`<div class="panelbox" style="border-color:var(--gold)">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <h2 style="color:var(--lgold);font-size:17px">◆ ${MKT.sel} — the full book (${rs.length} sales on record)</h2>
+      <button class="btn mini sec" onclick="mktSel(MKT.sel)">close ✕</button></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+      ${mbox('AVG',fmtB(avg(v)))}${mbox('MEDIAN',fmtB(med(v)))}${mbox('Đ/SQFT',Math.round(med(p)||0).toLocaleString())}${mbox('LAST SALE',rs[0].d)}
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px">
+      <div style="flex:1;min-width:220px"><div style="font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-bottom:3px">BY BEDROOMS (avg)</div>
+        ${Object.keys(bd).sort((a,b)=>a-b).map(b=>`<div style="display:flex;justify-content:space-between;font-size:12px;padding:2.5px 0;border-top:1px solid var(--div)"><span>${b} bed <span style="color:var(--muted);font-size:10px">(${bd[b].length})</span></span><b style="color:var(--lgold)">${fmtB(avg(bd[b].filter(Boolean)))}</b></div>`).join('')}</div>
+      <div style="flex:1;min-width:220px"><div style="font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-bottom:3px">BY MONTH (avg · tx)</div>
+        ${months.map(k=>{const xs=(byM[k]||[]).filter(Boolean);return `<div style="display:flex;justify-content:space-between;font-size:12px;padding:2.5px 0;border-top:1px solid var(--div)"><span style="color:var(--muted)">${mLbl(k)}</span><span><b style="color:var(--lgold)">${xs.length?fmtB(avg(xs)):'—'}</b> <span style="color:var(--muted);font-size:10px">${(byM[k]||[]).length} tx</span></span></div>`;}).join('')}</div>
+    </div>
+    <div style="max-height:300px;overflow-y:auto"><table style="width:100%;font-size:12px;border-collapse:collapse">
+      <tr style="color:var(--muted);font-size:10px;letter-spacing:1px"><td style="padding:3px 6px">DATE</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>
+      ${rs.map(r=>{const pp=psfOf(r);return `<tr style="border-top:1px solid var(--div)"><td style="padding:3.5px 6px;color:var(--muted)">${r.d}</td><td>${r.r||''}</td><td style="color:var(--muted);font-size:11px">${r.op?'off-plan':'resale'}</td><td style="color:var(--muted)">${r.sqm?Math.round(r.sqm*10.7639).toLocaleString():''}</td><td style="color:var(--lgold)">${fmtB(r.v)}</td><td style="color:var(--muted)">${pp?Math.round(pp).toLocaleString():''}</td></tr>`;}).join('')}
+    </table></div>
+  </div>`;
 }
 function marketFit(b){
   if(!b.budget)return null;
