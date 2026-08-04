@@ -602,7 +602,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -766,11 +766,12 @@
   "snoozedUntil": null,
   "touches": [],
   "phone": "",
-  "history": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC.",
+  "history": "Reached out this week. UK couple. Want cheap townhouse or lagoon views. Budget TBC. | 4-Aug: Hanne Froyland-Jensen = Jake Nazer assistant, mortgage/paperwork contact on Tony Bashayer deal (WA group ...395898). Bashayer 8M CLOSED 27-Jul, logged in deals.json. This record = their NEXT purchase brief (cheap TH / lagoon view ~2M).",
   "maxScore": 2.2,
   "maxScoreWhy": "Budget TBC after initial contact = unqualified. UK couple pattern suggests weekend workflow if they firm up.",
   "maxScoreDate": "2026-08-03",
-  "commPct": 0.03
+  "commPct": 0.03,
+  "nextStep": "Qualify next-purchase budget (post-Bashayer glow)"
  },
  {
   "date": "2026-07-04",
@@ -1228,7 +1229,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  }
