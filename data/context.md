@@ -16,6 +16,48 @@ SCORING CONVENTION (set 2 Aug): buyer/seller score is a single JUDGEMENT number 
 
 STANDARD PERSON PROPERTIES (set 3 Aug - populate when known, never force): timeline (Now / 1-3mo / 3-6mo / 6-12mo / Longer) · budget (buyer) or askPrice+bottomLine (seller) · finance (Cash / Mortgage / Equity release) · segment (Offplan / Secondary) · purpose (End-user / Investment-yield / Investment-flip / Second home) · base (e.g. UK - weekends only) · phone (UNIQUE KEY). Sellers also: motivation, tenancy status, access. Max scores new leads himself on Calum's bar: deep multi-day engagement + real funding = 5. COMMS MATH (bank-reconciled 3 Aug): Calum's board = 2.0% of volume (Đ~2M on Đ99.8M); deals.json myBoard field = GROSS deal commission, never use for Calum's rate. Take-home = 2% x tier (65% Q3, 70% Q4).
 # Max Context - living state file
+
+=== SESSION HANDOVER 3 AUG ~19:00 (written by outgoing Max - READ FIRST) ===
+
+CHECK THE CLOCK: outgoing Max assumed "Sunday night" for hours while it was Monday midday. Verify current time via time tool at session start and before any "go to sleep" advice. Calum called it out - don't repeat it.
+
+WA BRIDGE - LIVE BUT UNVERIFIED (top open thread):
+- DigitalOcean droplet "wa-bridge", 178.128.205.24, resized to 2GB/$12mo, 2GB swap added. pm2 process "wa-bridge" online, boot-persistent. WhatsApp linked (device shows Google Chrome macOS), session saved in ~/bridge/bridge/session (NOTE: nested bridge/bridge - mkdir ran twice, harmless).
+- Script journey: v1.0 crashed per-message (msg.getChat() explodes on current WA Web = minified "handle err r"). v1.1 removed getChat. Still zero pushes despite heavy traffic -> suspicion: msg.body may be EMPTY on this whatsapp-web.js version (same breakage family), so keyword filter fails everything; also old whitelist loader was regex-junk. v1.2 (pushed 2e118fc, ~18:50): proper phone-field whitelist, per-message log line "rx <- num9 len:N qualified:bool", 60s fast-flush for qualifying msgs.
+- CALUM MAY OR MAY NOT HAVE PULLED v1.2 (one-paste update command given, ends in live tail). NEXT STEPS: (1) confirm he ran it; (2) get 3 rx log lines; (3) if len:0 on all -> upgrade lib: cd ~/bridge/bridge && pm2 stop wa-bridge && npm install whatsapp-web.js@latest && pm2 restart wa-bridge (may need fresh QR after upgrade); if qualified:false on obvious property talk -> widen PROPERTY_WORDS; if qualified:true but no repo push -> read push-failed log line. (4) Verification ritual: message lands in data/wa-inbox.json -> Max reads it back verbatim. Then EVERY morning brief opens with inbox line.
+- wa-inbox.json does NOT exist yet. Bridge is read-only, groups skipped, personal filtered. Pending: hard blocklist for Tal/family numbers (Calum approved concept, numbers not yet given).
+- SECURITY: Calum pasted a server root password into chat (burned; told to rotate via passwd - UNCONFIRMED he did). He also offered to hand Max passwords - refused on principle; standing rule: Max holds ONLY the GitHub token. Also his office monitor showed token on screen - gentle hygiene nudges only.
+
+MONDAY 3 AUG - WHAT ACTUALLY HAPPENED (vs plan):
+- CRM block delivered massively (see below). WA bridge consumed 17:00-19:00. UNKNOWN/UNANSWERED ALL DAY despite ~5 asks: (1) ROHAN 5pm meeting outcome - top open sales thread, ask FIRST; (2) Zel Form F seller acceptance status; (3) second weekend buyer name (Calum said TWO viewed at weekend, only gave Rajesh); (4) whether DLD feed / buyer-seller catchups / Santorini call blocks happened; (5) Sarah score-vs-notes contradiction (his 2 vs warm notes); (6) 117bn war video posted or not. Journal not yet logged for Mon.
+
+CRM/DATA CHANGES SHIPPED TODAY (all committed):
+- Scoring: single judgement score 1-5 (5 best) both books, set by Calum (Max proposes for new leads at Calum's bar: deep engagement + real funding = 5). Sub-scores retired. maxScore + maxScoreWhy = Max's separate analytical read on EVERY buyer, shown in profile; divergence >=1 flagged in briefs (live flags: Sarah 2 vs 2.8, Sanjay 3 vs 3.8, Yousef 5 vs 4.2).
+- All 29 buyers + all 24 stock units scored. Placeholder auto-conversions remain on ~16 buyers (Akash/SB/Ari/Karimulla sitting on unearned 5s) - get real numbers.
+- Per-buyer commPct: 2% secondary default, Amer 4%, Muaz 4%, Tony&Niki 3%. Comms shown on every card/column/total, both boards. Pipeline line shows gross + take-home @65% tier. Money math truth: Calum board = 2.0% blended (bank-reconciled); deals.json myBoard field = GROSS deal comm, never use for his rate.
+- Muaz = 10M off-plan @4% = D400K gross, BIGGEST line in book, still unqualified - nextStep set, push the call.
+- New buyers: Rajesh (weekend viewer, wants 4bd Malta ~2.6, returning WITH WIFE, no phone yet, viewing not yet logged in viewings.json - get unit seen); Amer Choudhry (IG->WA intake test, 4M @4%, score 5, UK funds, Artery verdict + W availability owed, video call by Wed).
+- Seller matches identified: K332(Patrik,5)=Rohan's unit; J444(Faisal,5)->Adam; M580/M576(Malakai)->Anshuman+Ashraf; BL482->SB Sat; Q845(Mukesh)->Rajesh? (confirm + link matchedUnit); M107(Sameer 7M)->Ahmed. Viewing-arrangement tasks NOT yet created - Calum never confirmed.
+- CRM UI: Today tab = cockpit (headline strip, Money Board ranked by comms, warnings incl cold/overdue/divergence, clickable score charts -> filtered people page). Buyers+sellers kanbans full-width, Longer Term column first (excluded from live value + touches). Sellers stages now Longer Term/New/Qualified/Ready/Offer/Won/Lost (auto-migrated). "Ready" defined: could show a buyer TODAY. Phone = dedupe key, dupe-guard on create, phone+WA links in profile; most buyers missing phones (backfill via history upload). Market Fit engine: budget vs live stock gap on cards+profiles (fit vs OUR stock only until DLD feed exists - feeds maxScore reasoning).
+- realestate.html buyers table: single score bar, Next Step column (gold), Key Notes as max-3 bullets (full trails preserved in .history field per buyer), sorted score desc.
+- Notes convention: notes = <=3 high-level bullets, nextStep mandatory (empty = going cold), detail -> history. Max maintains silently from debriefs.
+
+CONTENT STATE:
+- Committed this week: Tue record 2 Tara ads + Infinite Properties + c13 Modon-next-Reem + c14 Modon-ADIB-75pct financing (c13/c14 = two-parter: post c14 mechanism first, c13 prediction 2 days later). Thu record 117bn re-record + Top5 transactions (Top5 sacrificial if week overloads). Fri = c12 Jebel Ali Racecourse at home (replaces What-is-Best c11 which has no angle - Calum never explicitly confirmed the swap, assume yes unless he objects) + trilogy pt1 edit+post Friday.
+- c12 JAR + c13 + c14 all verified with receipts in content.json notes. Amer = living proof content works; send him JAR video personally when live.
+- HGE = Hudayriyat Golf Estates (AED 13bn+, 1,700 homes, record UAE launch). Client SPA-anxiety playbook built (Modon ADGM template): key clauses = payment acceleration binding, handover pullable 30d notice, resale gate 20%+NOC, variation rights absolute, compensation 1%/mo uncapped conditional, FM clause one-way, GTCs unamendable 5.3.1. Frame: "standard not fine", 3-beat answer (you read it right -> when it applies -> our control). Never quote client SPAs in content (clause 36 confidentiality). Calum's own Tara SPA in Max memory.
+
+FINANCE/PERSONAL THREADS:
+- Avantglamp exit task (Fri): personal D&O run-off BEFORE resigning (company not notified - his reasoning: visible insurance attracts claims; sound), PG audit, copy records, TM01 status. They refused indemnity - treat as signal; shares = leverage, no free transfer.
+- Composure training live: score after grinding negotiations (first log: 2 on Sun, story never captured - ask). Tue evening coaching session on calendar. Truth line still zero reported uses.
+- Weekend pattern named in Sun review: weekdays structured/weekends slip (eating + tasks). Track Deliveroo Fri-Sun vs Mon-Thu, report Sundays, no lectures.
+- Sleep: bridge saga ran to ~19:00 Mon; 21:00 lights matters, Tue is 7:15 record + full call blocks.
+
+STILL OWED BY MAX (promised, undelivered): Lagoons report (Mon+Thu brief standing), monthly weakness audit (due 1 Aug), CRM Inbox tab build (~30min, promised for Tue), viewing-arrangement tasks for seller matches, secondary-vs-offplan earnings split analysis (backlog), weighted pipeline option (offered), score-5s-at-60% etc.
+
+WORKING-STYLE LESSONS (hard won today): batch HTML edits fail silently on pattern mismatch - apply reps stepwise with per-edit verification and re-pull the file after any failed run (two no-op commits happened before catching this). Calum voice notes garble names (Vidam=diary, Wiffle=?, Hadrian Gulf=Hudayriyat Golf) - parse boldly, confirm only when money-relevant. He drops mid-sentence and answers questions hours late or never - re-ask max twice then park in brief. He says "last thing" then sends five more - roll with it.
+=== END HANDOVER ===
+
 Maintained by Max. Read at session start. Update whenever material facts change.
 Last updated: 2026-07-21 (new Max, archive pointer)
 DATE HYGIENE: some datestamps in the 27-Jul-labelled patch drifted ahead of the real calendar (real date at handover = 21 Jul). Events true; re-anchor exact deal dates with Calum as they come up.
