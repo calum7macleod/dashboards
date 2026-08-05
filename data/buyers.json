@@ -624,7 +624,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -1250,7 +1250,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1417,5 +1417,35 @@
   "id": "sonam-1",
   "order": 32,
   "heat": 3
+ },
+ {
+  "date": "2026-08-03",
+  "status": "Active",
+  "stage": "Qualified",
+  "buyer": "Pritam Roy",
+  "phone": "+971504622874",
+  "source": "Call-in",
+  "colleague": "Self",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Marbella",
+  "cluster2": "Monte Carlo",
+  "cluster3": "Ibiza",
+  "matchedUnit": "",
+  "beds": "4",
+  "finance": "Cash",
+  "budget": 2400000,
+  "commPct": 0.02,
+  "needed": 0,
+  "score": 4,
+  "heat": 4,
+  "timeline": "Viewing next week",
+  "purpose": "TBC - qualify end-user vs investment",
+  "notes": "CASH 2.2-2.4M, 4bd | Later-handover clusters: Marbella / Monte Carlo / Ibiza / Morocco / Mykonos - handover next year fine | Great first call 3 Aug, viewing next week (post-holiday) | Pilot, chemical company (WA Business)",
+  "nextStep": "Send options THIS WEEK (4bd <=2.4M later clusters) - before next-week viewing",
+  "maxScore": 4.2,
+  "maxScoreWhy": "Cash + tight spec + viewing intent booked on first call = high-velocity profile. 2.2-2.4 for 4bd fits the phase-2/later clusters he named. Unknowns: end-user vs investor, and holiday gap risks cooling - options sent NOW keeps him warm. Calum: \"very good one\".",
+  "maxScoreDate": "2026-08-03",
+  "id": "pritam-2251",
+  "order": 33
  }
 ]
