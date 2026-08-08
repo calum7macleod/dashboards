@@ -1,0 +1,225 @@
+{
+ "project": "Cedarwood Estates South - JGE 2.0 The Next Chapter (Wasl)",
+ "sheetDate": "2026 inventory, received 2026-08-08",
+ "commissionPct": 0.03,
+ "serviceChargesPsf": 6,
+ "paymentPlan": [
+  {
+   "milestone": "On booking",
+   "pct": 10
+  },
+  {
+   "milestone": "2026-12-30",
+   "pct": 10
+  },
+  {
+   "milestone": "2027-06-30",
+   "pct": 10
+  },
+  {
+   "milestone": "2027-12-30",
+   "pct": 10
+  },
+  {
+   "milestone": "2028-07-30",
+   "pct": 10
+  },
+  {
+   "milestone": "Handover Q1 2029",
+   "pct": 50
+  }
+ ],
+ "units": [
+  {
+   "unit": "V-123",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6534,
+   "price": 13380000,
+   "down": 1338000
+  },
+  {
+   "unit": "V-129",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6361,
+   "price": 13420000,
+   "down": 1342000
+  },
+  {
+   "unit": "V-131",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6361,
+   "price": 13430000,
+   "down": 1343000
+  },
+  {
+   "unit": "V-137",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6361,
+   "price": 13350000,
+   "down": 1335000
+  },
+  {
+   "unit": "V-143",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6361,
+   "price": 13410000,
+   "down": 1341000
+  },
+  {
+   "unit": "V-146",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6877,
+   "price": 13510000,
+   "down": 1351000
+  },
+  {
+   "unit": "V-185",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6540,
+   "price": 13430000,
+   "down": 1343000
+  },
+  {
+   "unit": "V-189",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6540,
+   "price": 13380000,
+   "down": 1338000
+  },
+  {
+   "unit": "V-192",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 6540,
+   "price": 13370000,
+   "down": 1337000
+  },
+  {
+   "unit": "V-195",
+   "type": "V4B",
+   "bua": 6085,
+   "plot": 7330,
+   "price": 14130000,
+   "down": 1413000
+  },
+  {
+   "unit": "V-147",
+   "type": "V5B",
+   "bua": 7646,
+   "plot": 17538,
+   "price": 24070000,
+   "down": 2407000
+  },
+  {
+   "unit": "V-148",
+   "type": "V5B",
+   "bua": 7646,
+   "plot": 18091,
+   "price": 24290000,
+   "down": 2429000
+  },
+  {
+   "unit": "V-178",
+   "type": "V5B",
+   "bua": 7646,
+   "plot": 13204,
+   "price": 22320000,
+   "down": 2232000
+  },
+  {
+   "unit": "V-180",
+   "type": "V5B",
+   "bua": 7646,
+   "plot": 9922,
+   "price": 18670000,
+   "down": 1867000
+  },
+  {
+   "unit": "V-149",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 10764,
+   "price": 26670000,
+   "down": 2667000
+  },
+  {
+   "unit": "V-152",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 11836,
+   "price": 26830000,
+   "down": 2683000
+  },
+  {
+   "unit": "V-155",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 13132,
+   "price": 28690000,
+   "down": 2869000
+  },
+  {
+   "unit": "V-157",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 13332,
+   "price": 28420000,
+   "down": 2842000
+  },
+  {
+   "unit": "V-159",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 12161,
+   "price": 26950000,
+   "down": 2695000
+  },
+  {
+   "unit": "V-166",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 11485,
+   "price": 25960000,
+   "down": 2596000
+  },
+  {
+   "unit": "V-167",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 13574,
+   "price": 29300000,
+   "down": 2930000
+  },
+  {
+   "unit": "V-171",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 11983,
+   "price": 27260000,
+   "down": 2726000
+  },
+  {
+   "unit": "V-172",
+   "type": "V6B",
+   "bua": 9212,
+   "plot": 12480,
+   "price": 27950000,
+   "down": 2795000
+  }
+ ],
+ "amenities": [
+  "Cycle track",
+  "Jogging track",
+  "Sikka gardens",
+  "Green islands"
+ ],
+ "notes": "Live developer sheet beats portal prices (12.79M stale). 4bd psf ~D2,199 BUA. V-180 = 5bd value outlier (18.67M, smaller plot). Masterplan page: 4/5/6bd typologies along golf frontage."
+}
