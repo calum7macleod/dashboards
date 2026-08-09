@@ -2668,15 +2668,16 @@
    "id": "t-competitor-feed",
    "title": "Build competitor feed: IG Business Discovery + YT API on droplet",
    "area": "Content",
-   "priority": "high",
+   "priority": "medium",
    "difficulty": 5,
-   "status": "active",
+   "status": "snoozed",
    "due": "2026-08-10",
    "created": "2026-08-08",
-   "notes": "BLOCKED ON: Calum's competitor handle list (10-20 IG + 2-3 aspirational). Then: fetcher script, cron weekly, data/competitor-feed.json, baseline = trailing median engagement per account, flag >3x = breakout, surface in Monday brief. TikTok deferred (Apify ~D40-100/mo if ever needed).",
+   "notes": "PINNED 8 Aug - too technical for solo run-through. Everything is BUILT and committed (tools/competitor-feed/: fetch.py, config with 4 handles, README with exact steps). Remaining = 10-min token walkthrough + droplet paste. UNBLOCK OPTIONS when revived: (a) Max talks Calum through it live step-by-step on a quiet evening, (b) hand README to Abby, (c) do it during next droplet session anyway. GOAL (north star): pull the best-performing videos across the market weekly, detect breakouts vs each creator's own baseline, reverse-engineer hooks/structure, and shape Calum's content from real data. IG Business Discovery = official API, no ban risk. Handles: offplanjosh, kudrat.ibr, tristtaylor, thekeytodubai + aspirational TBC (Nathan Mistry handle to confirm).",
    "completed": null,
    "order": 53,
-   "top3": false
+   "top3": false,
+   "snoozedUntil": "2026-08-16"
   }
  ],
  "units": [],
