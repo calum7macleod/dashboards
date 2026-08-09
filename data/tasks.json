@@ -2615,9 +2615,9 @@
    "priority": "high",
    "difficulty": 1,
    "status": "active",
-   "due": "2026-08-09",
+   "due": "2026-08-10",
    "created": "2026-08-08",
-   "notes": "Verdict reached early 8 Aug: $500/mo tier needed for API-to-Claude, not worth it. Replacing with free stack: Meta Business Discovery (IG) + YouTube Data API -> droplet cron -> data/competitor-feed.json -> Max baseline/breakout analysis in Monday brief. Cancel before day 7 billing.",
+   "notes": "Verdict reached early 8 Aug: $500/mo tier needed for API-to-Claude, not worth it. Replacing with free stack: Meta Business Discovery (IG) + YouTube Data API -> droplet cron -> data/competitor-feed.json -> Max baseline/breakout analysis in Monday brief. Cancel before day 7 billing. ROLLED TO MONDAY per Calum 9 Aug: cancel subscription/trial AND remove sandcastles block from ~/.claude.json (restore .bak or delete entry). Trial billing risk - do not slip past day 7.",
    "completed": null,
    "order": 99,
    "top3": false
