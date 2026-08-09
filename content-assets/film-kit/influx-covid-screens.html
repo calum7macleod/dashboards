@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Film Kit - Influx + COVID screens</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#152A1F; color:#F5EDE0; font-family:Calibri, 'Segoe UI', sans-serif; overflow:hidden; }
+  .slide { display:none; width:100vw; height:100vh; padding:5vh 6vw; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+  .slide.on { display:flex; }
+  .eyebrow { letter-spacing:0.4em; font-size:2vh; color:#C9A84C; text-transform:uppercase; font-weight:bold; margin-bottom:3vh; }
+  .giant { font-family:Palatino, Georgia, serif; font-size:14vh; line-height:1.05; color:#F5EDE0; }
+  .gold { color:#E8C96B; }
+  .sub { font-size:3vh; color:#8FA898; margin-top:3vh; }
+  .src { position:absolute; bottom:3vh; right:4vw; font-size:1.8vh; color:#8FA898; }
+  .tag { position:absolute; top:3vh; left:4vw; font-size:1.8vh; color:#2E5A40; background:#0f1f16; padding:0.8vh 1.5vw; border-radius:2vh; }
+  /* bars */
+  .bars { display:flex; gap:8vw; align-items:flex-end; height:50vh; margin-top:4vh; }
+  .bar { width:16vw; background:#C9A84C; border-radius:1vh 1vh 0 0; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; animation:grow 1.2s ease-out; position:relative; }
+  .bar.small { background:#2E5A40; }
+  .bar .num { font-family:Palatino, serif; font-size:7vh; margin-top:-9vh; color:#F5EDE0; }
+  .bar .lbl { position:absolute; bottom:-6vh; font-size:2.6vh; color:#8FA898; letter-spacing:0.1em; }
+  @keyframes grow { from { height:0 !important; } }
+  /* calendar */
+  .cal { display:flex; gap:3vw; margin-top:4vh; }
+  .month { width:16vw; height:34vh; border:2px solid #2E5A40; border-radius:2vh; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Palatino, serif; font-size:4.5vh; position:relative; }
+  .month.dead::after { content:""; position:absolute; inset:0; background:linear-gradient(to top left, transparent 47%, #C9A84C 48%, #C9A84C 52%, transparent 53%), linear-gradient(to top right, transparent 47%, #C9A84C 48%, #C9A84C 52%, transparent 53%); }
+  .month.hot { border-color:#C9A84C; background:#1E3D2F; box-shadow:0 0 6vh rgba(201,168,76,0.25); }
+  .month .cnt { font-size:2.4vh; color:#8FA898; margin-top:1vh; font-family:Calibri; }
+  /* queue */
+  .queue { display:flex; flex-direction:column; gap:1.6vh; margin-top:3vh; width:60vw; }
+  .qrow { background:#1E3D2F; border-left:0.6vw solid #C9A84C; padding:1.8vh 2vw; text-align:left; font-size:3vh; border-radius:0.8vh; animation:slidein 0.5s ease-out backwards; }
+  .qrow:nth-child(2){animation-delay:.15s}.qrow:nth-child(3){animation-delay:.3s}.qrow:nth-child(4){animation-delay:.45s}.qrow:nth-child(5){animation-delay:.6s}.qrow:nth-child(6){animation-delay:.75s}
+  @keyframes slidein { from { transform:translateX(8vw); opacity:0; } }
+  /* curve */
+  svg.curve { width:80vw; height:52vh; margin-top:3vh; }
+  .nav { position:fixed; bottom:2vh; left:0; right:0; text-align:center; font-size:1.8vh; color:#2E5A40; }
+  a.link { display:block; color:#E8C96B; font-size:3vh; margin:1.2vh 0; text-decoration:none; border-bottom:1px solid #2E5A40; padding-bottom:1vh; }
+  .cream { background:#F5EDE0; color:#152A1F; }
+  .cream .giant { color:#152A1F; }
+</style>
+</head>
+<body>
+
+<!-- ============ VIDEO 1 ============ -->
+
+<!-- 1: opening chart -->
+<div class="slide on">
+  <div class="tag">V1 · S1 · behind you from frame one</div>
+  <div class="eyebrow">Dubai Project Launches · First Half of Year</div>
+  <div class="bars">
+    <div class="bar" style="height:46vh;"><div class="num">410</div><div class="lbl">H1 2025</div></div>
+    <div class="bar small" style="height:14vh;"><div class="num">124</div><div class="lbl">H1 2026</div></div>
+  </div>
+  <div class="src">Source: Cavendish Maxwell, H1 2026</div>
+</div>
+
+<!-- 2: text hook -->
+<div class="slide">
+  <div class="tag">V1 · S2 · text hook (hold 2s while you speak)</div>
+  <div class="giant">SEPTEMBER<br>CHANGES<br><span class="gold">EVERYTHING</span></div>
+</div>
+
+<!-- 3: calendar -->
+<div class="slide">
+  <div class="tag">V1 · S3 · "prime launch season - basically empty"</div>
+  <div class="eyebrow">Spring 2026 · Prime Launch Season</div>
+  <div class="cal">
+    <div class="month dead">MAR</div>
+    <div class="month dead">APR</div>
+    <div class="month dead">MAY</div>
+  </div>
+  <div class="sub">Launches shelved as regional uncertainty hit</div>
+</div>
+
+<!-- 4: the queue -->
+<div class="slide">
+  <div class="tag">V1 · S4 · "they didn't die - they moved"</div>
+  <div class="eyebrow">The Queue · September - October</div>
+  <div class="queue">
+    <div class="qrow">Deferred launch · master community phase</div>
+    <div class="qrow">Deferred launch · waterfront apartments</div>
+    <div class="qrow">Deferred launch · golf villas release</div>
+    <div class="qrow">Deferred launch · branded residences</div>
+    <div class="qrow">Deferred launch · townhouse cluster</div>
+    <div class="qrow gold" style="border-left-color:#E8C96B;">+ every launch that waited out the spring…</div>
+  </div>
+</div>
+
+<!-- 5: mechanism -->
+<div class="slide">
+  <div class="tag">V1 · S5 · the mechanism</div>
+  <div class="eyebrow">When they all launch at once, they compete on</div>
+  <div class="giant" style="font-size:8.5vh;">LAUNCH PRICING<br>PAYMENT PLANS<br><span class="gold">UNIT SELECTION</span></div>
+  <div class="sub">First time in three years the buyer holds the cards</div>
+</div>
+
+<!-- 6: dead stop -->
+<div class="slide">
+  <div class="tag">V1 · S6 · final frame, dead stop</div>
+  <div class="giant" style="font-size:22vh;">8 <span class="gold">WEEKS.</span></div>
+</div>
+
+<!-- ============ VIDEO 2 ============ -->
+
+<!-- 7: hook - DLD pair placeholder -->
+<div class="slide cream">
+  <div class="tag" style="color:#8FA898;">V2 · S1 · open pointing at this (swap for live DXB Interact page if preferred)</div>
+  <div class="eyebrow">DLD Transaction Record · 2020</div>
+  <div class="giant" style="font-size:11vh;">SOLD 2020<br>Đ1.1M</div>
+  <div class="sub" style="color:#2E5A40;">[REAL PAIR INCOMING - Max swaps exact unit + numbers]</div>
+</div>
+
+<!-- 8: text hook -->
+<div class="slide">
+  <div class="tag">V2 · S2 · text hook</div>
+  <div class="giant" style="font-size:9.5vh;">THEY CALLED HIM<br><span class="gold">CRAZY</span><br>IN 2020</div>
+</div>
+
+<!-- 9: today's value -->
+<div class="slide cream">
+  <div class="tag" style="color:#8FA898;">V2 · S3 · "nobody calls him mad anymore"</div>
+  <div class="eyebrow">Same Property · Today</div>
+  <div class="giant" style="font-size:11vh;">WORTH ~Đ2.7M<br><span style="font-size:5vh; color:#2E5A40;">indicatively · 2026</span></div>
+</div>
+
+<!-- 10: the citywide receipt -->
+<div class="slide">
+  <div class="tag">V2 · S4 · "he wasn't a genius" - the citywide proof</div>
+  <div class="eyebrow">Dubai Median Price / Sqft · DLD Records</div>
+  <svg class="curve" viewBox="0 0 800 400">
+    <polyline points="40,340 160,330 280,290 400,220 520,160 640,120 760,80" fill="none" stroke="#C9A84C" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="40" cy="340" r="10" fill="#E8C96B"/><circle cx="760" cy="80" r="10" fill="#E8C96B"/>
+    <text x="40" y="380" fill="#8FA898" font-size="26" text-anchor="middle">2020</text>
+    <text x="760" y="380" fill="#8FA898" font-size="26" text-anchor="middle">2026</text>
+    <text x="400" y="60" fill="#F5EDE0" font-size="34" text-anchor="middle" font-family="Palatino">Nearly DOUBLED from the 2020 trough</text>
+  </svg>
+  <div class="src">Source: DLD transaction data via DXB Analytics · ~11.7% CAGR 2020-2026</div>
+</div>
+
+<!-- 11: objection beat -->
+<div class="slide">
+  <div class="tag">V2 · S5 · "my working, not my opinion" - flick back to V1 chart</div>
+  <div class="eyebrow">The Working</div>
+  <div class="bars">
+    <div class="bar" style="height:46vh;"><div class="num">410</div><div class="lbl">LAUNCHES H1 25</div></div>
+    <div class="bar small" style="height:14vh;"><div class="num">124</div><div class="lbl">LAUNCHES H1 26</div></div>
+  </div>
+  <div class="src">Cavendish Maxwell · H1 2026</div>
+</div>
+
+<!-- 12: the rhyme -->
+<div class="slide">
+  <div class="tag">V2 · S6 · "2026 gave you the same shape"</div>
+  <div class="eyebrow">The Shape Rhymes</div>
+  <svg class="curve" viewBox="0 0 800 400">
+    <text x="200" y="40" fill="#8FA898" font-size="28" text-anchor="middle">2020</text>
+    <polyline points="60,120 140,200 220,260 300,250 340,180" fill="none" stroke="#8FA898" stroke-width="5" stroke-linecap="round"/>
+    <text x="220" y="310" fill="#8FA898" font-size="24" text-anchor="middle">scare → pause → climb</text>
+    <text x="600" y="40" fill="#E8C96B" font-size="28" text-anchor="middle">2026</text>
+    <polyline points="460,120 540,200 620,260 700,255" fill="none" stroke="#C9A84C" stroke-width="5" stroke-linecap="round"/>
+    <polyline points="700,255 740,190" fill="none" stroke="#C9A84C" stroke-width="5" stroke-dasharray="12 10" stroke-linecap="round"/>
+    <text x="620" y="310" fill="#E8C96B" font-size="24" text-anchor="middle">scare → pause → ?</text>
+  </svg>
+  <div class="sub">The hesitation IS the window</div>
+</div>
+
+<!-- 13: skin beat -->
+<div class="slide">
+  <div class="tag">V2 · S7 · skin beat - flash your own SPA here (have PDF ready to alt-tab)</div>
+  <div class="eyebrow">Skin In The Game</div>
+  <div class="giant" style="font-size:7.5vh;">MY OWN MONEY WENT IN<br><span class="gold">DURING THE QUIET MONTHS</span></div>
+</div>
+
+<!-- 14: CTA -->
+<div class="slide">
+  <div class="tag">V2 · S8 · CTA then hard cut to slide 7 for the loop</div>
+  <div class="giant" style="font-size:20vh;"><span class="gold">SEPTEMBER.</span></div>
+  <div class="sub">Comment WINDOW</div>
+</div>
+
+<!-- 15: links -->
+<div class="slide">
+  <div class="tag">REFERENCE · open these live on screen if you want real pages in shot</div>
+  <div class="eyebrow">Live Sources</div>
+  <div style="width:70vw;">
+    <a class="link" href="https://www.zawya.com/en/press-release/research-studies/dubai-adds-24800-new-residential-units-in-h1-2026-as-market-shifts-from-launch-led-to-delivery-driven-says-cavendish-maxwell-414719">Cavendish Maxwell H1-26 report (Zawya) - the 410 vs 124 receipt</a>
+    <a class="link" href="https://gulfnews.com/business/property/dubai-homebuyers-get-more-choice-as-24800-new-units-enter-the-market-1.500625443">Gulf News coverage - same stats, recognisable masthead for screen</a>
+    <a class="link" href="https://dxbanalytics.com/blog/dubai-property-prices-2026">DXB Analytics - "nearly doubled from 2020 trough" median psf receipt</a>
+    <a class="link" href="https://dxbinteract.com">DXB Interact - live DLD price index, pull any community's 2020 vs now on camera</a>
+  </div>
+</div>
+
+<div class="nav">← → arrow keys or tap left/right edge · slide <span id="n">1</span>/15</div>
+<script>
+  const s=[...document.querySelectorAll('.slide')]; let i=0;
+  function go(d){ s[i].classList.remove('on'); i=Math.min(s.length-1,Math.max(0,i+d)); s[i].classList.add('on'); document.getElementById('n').textContent=i+1; }
+  addEventListener('keydown',e=>{ if(e.key==='ArrowRight'||e.key===' ')go(1); if(e.key==='ArrowLeft')go(-1); });
+  addEventListener('click',e=>{ go(e.clientX>innerWidth/2?1:-1); });
+</script>
+</body>
+</html>
