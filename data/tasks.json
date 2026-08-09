@@ -2692,6 +2692,48 @@
    "completed": null,
    "order": 3,
    "top3": false
+  },
+  {
+   "id": "t-valustrat-ad",
+   "title": "Pull ValuStrat Abu Dhabi report - extract AD numbers for Amer/Racecourse work",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-10",
+   "created": "2026-08-09",
+   "notes": "Max: fetch latest ValuStrat AD review (price index, villa/apartment psf, Reem/Hudayriyat/Maryah reads). Feeds Amer strategy doc + Taraf research + Tara Park position.",
+   "completed": null,
+   "order": 4,
+   "top3": false
+  },
+  {
+   "id": "t-wa-bridge-fix",
+   "title": "WA bridge: diagnose silent-since-Tuesday, restore push to wa-inbox.json",
+   "area": "Tasks",
+   "priority": "high",
+   "difficulty": 3,
+   "status": "active",
+   "due": "2026-08-10",
+   "created": "2026-08-09",
+   "notes": "30-sec check first: ssh droplet -> pm2 status; pm2 logs wa-bridge --lines 50. Likely session expiry (re-scan QR) or crash. Goal: WhatsApp messages flowing to Max again. Calum runs commands, Max reads output.",
+   "completed": null,
+   "order": 5,
+   "top3": false
+  },
+  {
+   "id": "t-crm-full-update",
+   "title": "CRM full sweep: update ALL buyers and sellers with Max",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": 5,
+   "status": "active",
+   "due": "2026-08-10",
+   "created": "2026-08-09",
+   "notes": "Walk the whole book: 38 buyer cards (statuses, scores, next steps, owed debriefs - Rohan/Sonam/Yousef/Masoud/Zel/Anshuman/NK/Santosh households) + stock book statuses/prices. Max drives card by card, Calum voice-notes verdicts.",
+   "completed": null,
+   "order": 6,
+   "top3": false
   }
  ],
  "units": [],
