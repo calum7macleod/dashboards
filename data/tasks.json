@@ -2610,14 +2610,14 @@
   },
   {
    "id": "t-sandcastles-verdict",
-   "title": "Sandcastles day-6 verdict: cancel or keep ($49/mo trial)",
+   "title": "CANCEL Sandcastles trial + delete MCP block from ~/.claude.json",
    "area": "Content",
-   "priority": "medium",
+   "priority": "high",
    "difficulty": 1,
    "status": "active",
-   "due": "2026-08-14",
+   "due": "2026-08-09",
    "created": "2026-08-08",
-   "notes": "Judge on ONE question: did it hand me a hook I actually filmed? If no - cancel before day 7 AND delete sandcastles block from ~/.claude.json. Affiliate-link signup, unplanned spend - log to finance.json if charge lands.",
+   "notes": "Verdict reached early 8 Aug: $500/mo tier needed for API-to-Claude, not worth it. Replacing with free stack: Meta Business Discovery (IG) + YouTube Data API -> droplet cron -> data/competitor-feed.json -> Max baseline/breakout analysis in Monday brief. Cancel before day 7 billing.",
    "completed": null,
    "order": 99,
    "top3": false
@@ -2662,6 +2662,20 @@
    "notes": "Slides S16-S22. Script in ci-wave-v3.",
    "completed": null,
    "order": 52,
+   "top3": false
+  },
+  {
+   "id": "t-competitor-feed",
+   "title": "Build competitor feed: IG Business Discovery + YT API on droplet",
+   "area": "Content",
+   "priority": "high",
+   "difficulty": 5,
+   "status": "active",
+   "due": "2026-08-10",
+   "created": "2026-08-08",
+   "notes": "BLOCKED ON: Calum's competitor handle list (10-20 IG + 2-3 aspirational). Then: fetcher script, cron weekly, data/competitor-feed.json, baseline = trailing median engagement per account, flag >3x = breakout, surface in Monday brief. TikTok deferred (Apify ~D40-100/mo if ever needed).",
+   "completed": null,
+   "order": 53,
    "top3": false
   }
  ],
