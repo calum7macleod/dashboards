@@ -2621,6 +2621,34 @@
    "completed": null,
    "order": 99,
    "top3": false
+  },
+  {
+   "id": "t-film-influx",
+   "title": "Film: The Launch Drought (influx video)",
+   "area": "Content",
+   "priority": "high",
+   "difficulty": 3,
+   "status": "active",
+   "due": "2026-08-10",
+   "created": "2026-08-08",
+   "notes": "Script + receipts in ci notes. Frame one: 410 vs 124.",
+   "completed": null,
+   "order": 50,
+   "top3": false
+  },
+  {
+   "id": "t-film-covid",
+   "title": "Film: This Is Your COVID (2-3 days after influx video)",
+   "area": "Content",
+   "priority": "high",
+   "difficulty": 3,
+   "status": "active",
+   "due": "2026-08-12",
+   "created": "2026-08-08",
+   "notes": "Honesty beat mandatory. CTA comment WINDOW.",
+   "completed": null,
+   "order": 51,
+   "top3": false
   }
  ],
  "units": [],
@@ -2701,9 +2729,9 @@
    "id": "86e001ba-ed97-42de-8323-489e33c07451",
    "title": "'This is your COVID' - the window everyone will claim they saw",
    "format": "Reel",
-   "status": "Idea",
+   "status": "Committed",
    "priority": "medium",
-   "notes": "Hook: 'Everyone who bought in Dubai during COVID looks like a genius now. Here's the thing - THIS is that moment again.' Thesis: COVID buyers bought fear at the bottom (2020-21 prices) and got called lucky; the conflict dip + recovery is the same shaped window (have the Malta/Costa Brava deed data: dip Feb-May, recovery Jun-Jul). Beats: what COVID buyers paid vs 2024 peaks -> the dip we just lived through -> deeds already climbing -> 'in 3 years people will say you were lucky too'. RAILS: not advice, no guarantees - frame as pattern observation, 'windows only look obvious backwards'. Receipts: real transaction data both eras.",
+   "notes": "Hook: 'Everyone who bought in Dubai during COVID looks like a genius now. Here's the thing - THIS is that moment again.' Thesis: COVID buyers bought fear at the bottom (2020-21 prices) and got called lucky; the conflict dip + recovery is the same shaped window (have the Malta/Costa Brava deed data: dip Feb-May, recovery Jun-Jul). Beats: what COVID buyers paid vs 2024 peaks -> the dip we just lived through -> deeds already climbing -> 'in 3 years people will say you were lucky too'. RAILS: not advice, no guarantees - frame as pattern observation, 'windows only look obvious backwards'. Receipts: real transaction data both eras. SCRIPT LOCKED 8 Aug - runs 2-3 days AFTER influx video. Hook: 'everyone who bought in 2020 gets called a genius now - nobody did at the time.' Rhyme: scare -> pause -> flat prices -> supply wall at competitive pricing; window = the hesitation. MANDATORY honesty beat: 'not promising 2020 returns - conditions rhyme: max choice, motivated developers, minimum crowd.' CTA comment WINDOW -> warm list for Sept launches. DO NOT cut honesty beat in edit.",
    "created": "2026-07-23"
   },
   {
@@ -2823,9 +2851,9 @@
   },
   {
    "title": "Get ready: end-of-year off-plan launch INFLUX incoming",
-   "status": "Idea",
+   "status": "Committed",
    "created": "2026-08-05",
-   "notes": "Hook: developers held launches through the conflict window (Mar-Jun) - pipeline backed up, expect a wave Q4. VERIFY before filming: launch-count data H1 vs prior years (DLD feed can prove it). Angle: get positioned/agent-ready BEFORE the wave. Pairs with Modon/HGE momentum content."
+   "notes": "Hook: developers held launches through the conflict window (Mar-Jun) - pipeline backed up, expect a wave Q4. VERIFY before filming: launch-count data H1 vs prior years (DLD feed can prove it). Angle: get positioned/agent-ready BEFORE the wave. Pairs with Modon/HGE momentum content. SCRIPT LOCKED 8 Aug. RECEIPTS (Cavendish Maxwell H1-26): 124 launches/28K units H1-26 vs 410/102K H1-25 (~-70%); Jan-May launches -68.5% y/y; slowdown BEGAN Q1 pre-conflict (post record 24-25), intensified Q2 on deferrals - say 'already easing, conflict slammed brakes'. Prices +1.9% y/y Jun, -2.6% q/q = pause not crash. Modon line = observation only ('one of the very few'), no stat. Hook: '410 launches H1 last year. This year: 124.' Key line: 'those projects didn't die - they moved. Queue opens September.' Mechanism: compressed launches = compete on price/plans/selection. Payoff teases video 2. 45-55s."
   },
   {
    "id": "ci-jge-vs-hge",
