@@ -2607,6 +2607,20 @@
    "completed": null,
    "order": 2,
    "top3": false
+  },
+  {
+   "id": "t-sandcastles-verdict",
+   "title": "Sandcastles day-6 verdict: cancel or keep ($49/mo trial)",
+   "area": "Content",
+   "priority": "medium",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-14",
+   "created": "2026-08-08",
+   "notes": "Judge on ONE question: did it hand me a hook I actually filmed? If no - cancel before day 7 AND delete sandcastles block from ~/.claude.json. Affiliate-link signup, unplanned spend - log to finance.json if charge lands.",
+   "completed": null,
+   "order": 99,
+   "top3": false
   }
  ],
  "units": [],
