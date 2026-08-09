@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Film Kit - Influx + COVID screens</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; user-select:none; -webkit-user-select:none; }
   body { background:#152A1F; color:#F5EDE0; font-family:Calibri, 'Segoe UI', sans-serif; overflow:hidden; }
   .slide { display:none; width:100vw; height:100vh; padding:5vh 6vw; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
   .slide.on { display:flex; }
@@ -106,23 +106,24 @@
 
 <!-- 7: hook - DLD pair placeholder -->
 <div class="slide cream">
-  <div class="tag" style="color:#8FA898;">V2 · S1 · open pointing at this (swap for live DXB Interact page if preferred)</div>
-  <div class="eyebrow">DLD Transaction Record · 2020</div>
-  <div class="giant" style="font-size:11vh;">SOLD 2020<br>Đ1.1M</div>
-  <div class="sub" style="color:#2E5A40;">[REAL PAIR INCOMING - Max swaps exact unit + numbers]</div>
+  <div class="tag" style="color:#8FA898;">V2 · S1 · open pointing at this (or the live DXB Interact record)</div>
+  <div class="eyebrow">Villa J135 · Costa Brava · DAMAC Lagoons · Title Deed</div>
+  <div class="giant" style="font-size:10vh;">SOLD MAY 2022<br>Đ4,736,000</div>
+  <div class="sub" style="color:#2E5A40;">6-bed · 4,800 sqft · Đ987/sqft · initial sale · 50/50 plan</div>
 </div>
 
 <!-- 8: text hook -->
 <div class="slide">
   <div class="tag">V2 · S2 · text hook</div>
-  <div class="giant" style="font-size:9.5vh;">THEY CALLED HIM<br><span class="gold">CRAZY</span><br>IN 2020</div>
+  <div class="giant" style="font-size:9.5vh;">THEY CALLED HIM<br><span class="gold">CRAZY</span><br>IN 2022</div>
 </div>
 
 <!-- 9: today's value -->
 <div class="slide cream">
   <div class="tag" style="color:#8FA898;">V2 · S3 · "nobody calls him mad anymore"</div>
-  <div class="eyebrow">Same Property · Today</div>
-  <div class="giant" style="font-size:11vh;">WORTH ~Đ2.7M<br><span style="font-size:5vh; color:#2E5A40;">indicatively · 2026</span></div>
+  <div class="eyebrow">Same Villa · Title Deed · Resale</div>
+  <div class="giant" style="font-size:10vh;">SOLD MAR 2026<br>Đ7,250,000</div>
+  <div class="sub" style="color:#2E5A40;">+Đ2.5M · +53% · Đ1,510/sqft · under 4 years</div>
 </div>
 
 <!-- 10: the citywide receipt -->
@@ -155,10 +156,10 @@
   <div class="tag">V2 · S6 · "2026 gave you the same shape"</div>
   <div class="eyebrow">The Shape Rhymes</div>
   <svg class="curve" viewBox="0 0 800 400">
-    <text x="200" y="40" fill="#8FA898" font-size="28" text-anchor="middle">2020</text>
+    <text x="200" y="40" fill="#8FA898" font-size="28" text-anchor="middle">COVID exit · 2022</text>
     <polyline points="60,120 140,200 220,260 300,250 340,180" fill="none" stroke="#8FA898" stroke-width="5" stroke-linecap="round"/>
     <text x="220" y="310" fill="#8FA898" font-size="24" text-anchor="middle">scare → pause → climb</text>
-    <text x="600" y="40" fill="#E8C96B" font-size="28" text-anchor="middle">2026</text>
+    <text x="600" y="40" fill="#E8C96B" font-size="28" text-anchor="middle">Conflict exit · 2026</text>
     <polyline points="460,120 540,200 620,260 700,255" fill="none" stroke="#C9A84C" stroke-width="5" stroke-linecap="round"/>
     <polyline points="700,255 740,190" fill="none" stroke="#C9A84C" stroke-width="5" stroke-dasharray="12 10" stroke-linecap="round"/>
     <text x="620" y="310" fill="#E8C96B" font-size="24" text-anchor="middle">scare → pause → ?</text>
@@ -197,7 +198,7 @@
   const s=[...document.querySelectorAll('.slide')]; let i=0;
   function go(d){ s[i].classList.remove('on'); i=Math.min(s.length-1,Math.max(0,i+d)); s[i].classList.add('on'); document.getElementById('n').textContent=i+1; }
   addEventListener('keydown',e=>{ if(e.key==='ArrowRight'||e.key===' ')go(1); if(e.key==='ArrowLeft')go(-1); });
-  addEventListener('click',e=>{ go(e.clientX>innerWidth/2?1:-1); });
+  addEventListener('pointerup',e=>{ if(e.target.closest('a'))return; go(e.clientX>innerWidth/2?1:-1); });
 </script>
 </body>
 </html>
