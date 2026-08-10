@@ -1010,10 +1010,10 @@
   "notes": "Offered 2.45M on a CB 3bd CASH | Capture seller/unit -> offers.json",
   "id": "masoud-25",
   "order": 25,
-  "stage": "Offer",
+  "stage": "Lost",
   "heat": 4,
   "lastContact": "2026-08-04",
-  "nextTouch": "2026-08-05",
+  "nextTouch": null,
   "touchReason": "Chase response on the 2.45M offer",
   "needSummary": "Cash buyer, Costa Brava 3-bed, offered 2.45M",
   "snoozedUntil": null,
@@ -1519,7 +1519,8 @@
   "maxScoreWhy": "Brand new - asking cost questions = practical intent, nothing else known yet",
   "history": "Created 4-Aug. Calum: 'number ending 1155, just started speaking to.'",
   "id": "buyer-1155",
-  "order": 35
+  "order": 35,
+  "heat": 2
  },
  {
   "buyer": "Michael (Tara Park owner)",
@@ -1554,11 +1555,12 @@
    }
   ],
   "lastContact": "2026-08-05",
-  "maxScore": 4.0,
+  "maxScore": 4,
   "maxScoreWhy": "Proven closer (2.9M done), asks smart supply questions, came back unprompted - repeat business waiting for an answer",
   "history": "Card created 5-Aug from bridge triage (was chatting as 'Hazey'). Same Michael as June Tara deal.",
   "id": "michael-tara-1",
-  "order": 36
+  "order": 36,
+  "heat": 4
  },
  {
   "buyer": "Samia Dokhan",
@@ -1587,11 +1589,12 @@
    }
   ],
   "lastContact": "2026-08-05",
-  "maxScore": 3.0,
+  "maxScore": 3,
   "maxScoreWhy": "Engaged with a number and a spec; 2.4M for 4bd is below market (4bd avg 2.68M) - either stretches or educates to 3bd",
   "history": "Created 5-Aug from bridge triage.",
   "id": "samia-dokhan-1",
-  "order": 37
+  "order": 37,
+  "heat": 3
  },
  {
   "buyer": "Santosh + family (3 households)",
@@ -1619,6 +1622,7 @@
   "notes": "Viewed Sat 8 Aug with 3 family households (cousin-sister, cousin-brother, sister) - each wants own house. Malta or Costa Brava, cheaper end. Group chat forming - options pack going today. Qualify each household separately; split into own cards when names/phones land.",
   "segment": "",
   "id": "santosh-family-1",
-  "order": 38
+  "order": 38,
+  "heat": 4
  }
 ]
