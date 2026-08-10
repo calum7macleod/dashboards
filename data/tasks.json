@@ -2735,12 +2735,12 @@
    "title": "CRM full sweep: update ALL buyers and sellers with Max",
    "area": "Real Estate",
    "priority": "high",
-   "status": "active",
+   "status": "done",
    "difficulty": "medium",
    "due": "2026-08-10",
    "created": "2026-08-09",
    "notes": "Walk the whole book: 38 buyer cards (statuses, scores, next steps, owed debriefs - Rohan/Sonam/Yousef/Masoud/Zel/Anshuman/NK/Santosh households) + stock book statuses/prices. Max drives card by card, Calum voice-notes verdicts.",
-   "completed": null,
+   "completed": "2026-08-10",
    "snoozedUntil": null
   },
   {
@@ -2783,6 +2783,20 @@
    "notes": "4bd ~2.5M, IG lead. When pre-approval lands: pitch Q845 2.7M (negotiable?) or source sub-2.6M.",
    "completed": null,
    "order": 20,
+   "top3": false
+  },
+  {
+   "id": "t-malachi-3",
+   "title": "Speak to Malachi re his 3 units - get details into stock book",
+   "area": "Real Estate",
+   "priority": "medium",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-12",
+   "created": "2026-08-10",
+   "notes": "Colleague Malachi holds 3 units (per 10 Aug seller sweep). Capture unit/cluster/price/terms; check matches vs 2.2-2.6M gap queue.",
+   "completed": null,
+   "order": 21,
    "top3": false
   }
  ],
