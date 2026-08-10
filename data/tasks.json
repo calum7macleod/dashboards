@@ -2770,6 +2770,20 @@
    "completed": null,
    "order": 8,
    "top3": false
+  },
+  {
+   "id": "t-helaly-mortgage",
+   "title": "Helaly: check mortgage progress + confirm broker name",
+   "area": "Real Estate",
+   "priority": "medium",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-13",
+   "created": "2026-08-10",
+   "notes": "4bd ~2.5M, IG lead. When pre-approval lands: pitch Q845 2.7M (negotiable?) or source sub-2.6M.",
+   "completed": null,
+   "order": 20,
+   "top3": false
   }
  ],
  "units": [],
