@@ -994,10 +994,13 @@
   "area": "Lagoons",
   "price": 2600000,
   "myBoard": 41580,
-  "myTakeHome": 29277.0,
-  "notes": "ZEL CLOSED 11 Aug. TakeHome per Calum formula: 51,580 x 65% - 4,250 (fee) = 29,277. DISCREPANCY FLAG: board given as 41,580 but takehome formula bases on 51,580 - confirm which is the true board figure (10K delta unexplained). Reconcile against payslip when paid.",
+  "myTakeHome": 22777.0,
+  "notes": "ZEL CLOSED 11 Aug. Structure: 4% total comm on 2.6M = 104K gross; external agent took 30K; remainder split Calum/Nathan = 41,580 board EACH. TakeHome = 41,580 x 65% - 4,250 conveyancing = 22,777. (Earlier 51,580 formula base was a typo.) Reconcile vs payslip when paid.",
   "order": 34,
   "id": "zel-j221",
-  "paid": false
+  "paid": false,
+  "comPct": 0.04,
+  "otherBroker": "External agent (30K) + split with Nathan",
+  "convey": 4250
  }
 ]
