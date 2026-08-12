@@ -1,17 +1,79 @@
 {
-  "days_back": 14,
-  "seed_days": 120,
-  "page_size": 200,
-  "max_pages": 800,
-  "watch": [
-    {
-      "key": "lagoons",
-      "match": [
-        "damac lagoons"
-      ]
-    }
-  ],
-  "keep_days_watch": 400,
-  "keep_days_summary": 400,
-  "_note": "days_back TEMP 200 for 6-month backfill (set 4 Aug) - Max reverts to 14 after 5 Aug run"
+ "days_back": 180,
+ "seed_days": 120,
+ "page_size": 200,
+ "max_pages": 1400,
+ "watch": [
+  {
+   "key": "lagoons",
+   "match": [
+    "damac lagoons"
+   ]
+  },
+  {
+   "key": "emirates-hills",
+   "match": [
+    "emirates hills"
+   ]
+  },
+  {
+   "key": "hattan-lakes",
+   "match": [
+    "hattan",
+    "the lakes"
+   ]
+  },
+  {
+   "key": "meadows-springs",
+   "match": [
+    "the meadows",
+    "the springs"
+   ]
+  },
+  {
+   "key": "greens-views",
+   "match": [
+    "the greens",
+    "the views"
+   ]
+  },
+  {
+   "key": "barsha-heights",
+   "match": [
+    "barsha heights",
+    "al thanyah first",
+    "tecom"
+   ]
+  },
+  {
+   "key": "barsha-south-arjan",
+   "match": [
+    "arjan",
+    "al barsha south third"
+   ]
+  },
+  {
+   "key": "jvc",
+   "match": [
+    "jumeirah village circle",
+    "al barsha south fourth"
+   ]
+  },
+  {
+   "key": "jlt",
+   "match": [
+    "jumeirah lakes towers",
+    "jumeirah lake towers"
+   ]
+  },
+  {
+   "key": "racecourse-zone",
+   "match": [
+    "al thanyah second"
+   ]
+  }
+ ],
+ "keep_days_watch": 400,
+ "keep_days_summary": 400,
+ "_note": "days_back TEMP 180 for comp-ring backfill (set 11 Aug, Amer/JAR report) - Max reverts to 14 after the run. Watch keys expanded for racecourse comp ladder; Max validates buckets after first pull and re-maps any empties."
 }
