@@ -2705,12 +2705,12 @@
    "title": "Pull ValuStrat Abu Dhabi report - extract AD numbers for Amer/Racecourse work",
    "area": "Real Estate",
    "priority": "high",
-   "status": "active",
+   "status": "done",
    "difficulty": "medium",
    "due": "2026-08-10",
    "created": "2026-08-09",
    "notes": "Max: fetch latest ValuStrat AD review (price index, villa/apartment psf, Reem/Hudayriyat/Maryah reads). Feeds Amer strategy doc + Taraf research + Tara Park position.",
-   "completed": null,
+   "completed": "2026-08-12",
    "snoozedUntil": null
   },
   {
@@ -2825,6 +2825,20 @@
    "notes": "apt update && apt upgrade -y && reboot. Do NOT run during dld-feed crawl. pm2 resurrects processes on boot (verify pm2 startup/save is configured). Also: install Termius (iPhone+laptop) host 178.128.205.24 root - replaces DO web console.",
    "completed": null,
    "order": 22,
+   "top3": false
+  },
+  {
+   "id": "t-jar-plot-video",
+   "title": "Film Jebel Ali Racecourse plot - current-state ground footage (c12 + Amer file)",
+   "area": "Content",
+   "priority": "high",
+   "difficulty": 3,
+   "status": "active",
+   "due": "2026-08-15",
+   "created": "2026-08-12",
+   "notes": "Before ground-break footage: the empty 5sqkm, the fences (Emirates Hills across the road), gates, track. Doubles as c12 receipts + Amer report companion.",
+   "completed": null,
+   "order": 54,
    "top3": false
   }
  ],
@@ -3068,6 +3082,13 @@
    "status": "Idea",
    "created": "2026-08-12",
    "notes": "CONTRADICT 'sold-out != good investment' crowd BY CONCEDING IT FIRST. Structure: hook 'you're right - now here's what you're missing' / concede sell-outs measure hype / flip: only data that matters = secondary market, resales above launch = votes that cost money / RECEIPTS: Modon (Hudayriyat) resale transactions + premiums from DARI-ADREC + ValuStrat AD + PM-AD / skin beat: 'I own Modon - judge my incentive, check my numbers' / dead stop 'sold out = marketed well; resold higher = built something people fight over.' GATE: film ONLY if secondary premiums verify - if flat, no video (and private Tara Park intel either way). Max pulling ValuStrat + DARI 12 Aug."
+  },
+  {
+   "id": "ci-valustrat-ad",
+   "title": "Video: ValuStrat AD numbers breakdown - the capital is earlier in the cycle",
+   "status": "Idea",
+   "created": "2026-08-12",
+   "notes": "Run through ValuStrat AD data on the studio screen: +17.8% annual, apartments +24% vs villas +12-13%, Al Reef +41.6%, Reem +22%, off-plan 2,191psf vs ready 1,507psf (38% gap), and the Tuaima quote 'capital sits earlier in its property cycle than Dubai'. Angle: receipts pillar + skin-in-game (own Reem exposure). Hook option: 'Dubai agents won't show you this chart - it's not about Dubai.'"
   }
  ],
  "buildLog": []
