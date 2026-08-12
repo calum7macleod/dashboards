@@ -1,7 +1,7 @@
 {
   "tasks": [
     {
-      "order": null,
+      "order": 6,
       "top3": false,
       "id": "57b300a7-7f94-434b-9e62-fa49c86fb5d5",
       "title": "Performance Coach",
@@ -9,7 +9,7 @@
       "priority": "medium",
       "status": "active",
       "difficulty": "medium",
-      "due": null,
+      "due": "2026-08-12",
       "created": "2026-08-10",
       "notes": null,
       "completed": null,
@@ -2266,7 +2266,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 19,
+      "order": 4,
       "top3": false,
       "id": "5773c74a-2163-4186-bb16-338636248314",
       "title": "THU: Record 117bn War + Top 5 Transactions",
@@ -2791,7 +2791,7 @@
       "snoozedUntil": null
     },
     {
-      "order": 21,
+      "order": 5,
       "top3": false,
       "id": "t-malachi-3",
       "title": "Speak to Malachi re his 3 units - get details into stock book",
