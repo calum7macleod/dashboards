@@ -962,5 +962,42 @@
   "ownUnit": true,
   "paid": true,
   "paidDate": "2026-07-30"
+ },
+ {
+  "date": "2026-08-05",
+  "month": "August",
+  "buyer": "Umer",
+  "buyerSource": "Bayut",
+  "seller": "Elliot listing seller",
+  "sellerSource": "White & Co (Elliot)",
+  "unit": "BL907",
+  "cluster": "Portofino",
+  "area": "Lagoons",
+  "otherBroker": "Elliot & Christie (3-way)",
+  "price": 2815000,
+  "myBoard": 12150,
+  "myTakeHome": 7897.5,
+  "notes": "Split deal with Elliot & Christie - Calum buyer-side slice. TakeHome = 12,150 x 65%.",
+  "order": 33,
+  "id": "umer-bl907",
+  "paid": false
+ },
+ {
+  "date": "2026-08-11",
+  "month": "August",
+  "buyer": "Zel",
+  "buyerSource": "Bayut",
+  "seller": "Romanian footballer (direct)",
+  "sellerSource": "Bayut/direct",
+  "unit": "J221",
+  "cluster": "Costa Brava",
+  "area": "Lagoons",
+  "price": 2600000,
+  "myBoard": 41580,
+  "myTakeHome": 29277.0,
+  "notes": "ZEL CLOSED 11 Aug. TakeHome per Calum formula: 51,580 x 65% - 4,250 (fee) = 29,277. DISCREPANCY FLAG: board given as 41,580 but takehome formula bases on 51,580 - confirm which is the true board figure (10K delta unexplained). Reconcile against payslip when paid.",
+  "order": 34,
+  "id": "zel-j221",
+  "paid": false
  }
 ]
