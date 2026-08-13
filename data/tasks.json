@@ -2692,12 +2692,12 @@
    "title": "Build off-plan buyer guide (branded PDF) + send to the two who asked",
    "area": "Real Estate",
    "priority": "high",
-   "status": "active",
+   "status": "done",
    "difficulty": "medium",
    "due": "2026-08-10",
    "created": "2026-08-09",
-   "notes": "Monday task. Max drafts the guide (structure: how off-plan works, payment plans, escrow/DLD protections, launch-day process, fees, red flags, September window angle). Recipients: TWO people who asked - names TBC from Calum. Guide doubles as the READY-checklist funnel doc for V3.",
-   "completed": null,
+   "notes": "Monday task. Max drafts the guide (structure: how off-plan works, payment plans, escrow/DLD protections, launch-day process, fees, red flags, September window angle). Recipients: TWO people who asked - names TBC from Calum. Guide doubles as the READY-checklist funnel doc for V3. BUILT 13 Aug: The Honest Guide to UAE Off-Plan, 11pp, in library. Still owed: send to the two requesters (names never given) + one-pager teaser version.",
+   "completed": "2026-08-13",
    "snoozedUntil": null
   },
   {
@@ -2888,6 +2888,20 @@
    "notes": "Funds ready, sold on concept, back 21 Sept = launch-wave peak.",
    "completed": null,
    "order": 26,
+   "top3": false
+  },
+  {
+   "id": "t-guide-onepager",
+   "title": "Guide one-pager teaser (for low-intent DMs) + wire DM keyword flow",
+   "area": "Content",
+   "priority": "medium",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-15",
+   "created": "2026-08-13",
+   "notes": "Two-tier: teaser -> full guide on request = built-in qualification. Full guide done, in content-assets/library/.",
+   "completed": null,
+   "order": 27,
    "top3": false
   }
  ],
