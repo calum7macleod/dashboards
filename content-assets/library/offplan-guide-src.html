@@ -5,238 +5,375 @@
 <style>
   @page { size: 210mm 297mm; margin: 0; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: Calibri, 'Segoe UI', sans-serif; color:#F5EDE0; background:#152A1F; font-size:10.5pt; line-height:1.55; }
-  .page { width:210mm; height:297mm; padding:16mm 16mm 15mm; page-break-after:always; position:relative; background:#152A1F; }
+  body { font-family: Calibri, 'Segoe UI', sans-serif; color:#F5EDE0; background:#152A1F; font-size:10.3pt; line-height:1.52; }
+  .page { width:210mm; height:297mm; padding:15mm 16mm 15mm; page-break-after:always; position:relative; background:#152A1F; overflow:hidden; }
   .page.cream { background:#F5EDE0; color:#1E3D2F; }
   .cream .eyebrow { color:#8a6d2f; }
-  .cream h1, .cream h2 { color:#1E3D2F; }
-  .cream h2 { color:#2E5A40; }
+  .cream h1 { color:#1E3D2F; } .cream h2 { color:#2E5A40; }
   .cream .panel { background:#fff; border-color:#d8ccb4; }
   .cream .muted { color:#5c6f63; }
-  .cream td { border-color:#d8ccb4; }
-  .cream th { color:#8a6d2f; border-color:#8a6d2f; }
+  .cream td { border-color:#d8ccb4; } .cream th { color:#8a6d2f; border-color:#8a6d2f; }
+  .cream .kpi { background:#fff; border-color:#d8ccb4; }
   .eyebrow { letter-spacing:0.35em; font-size:8pt; color:#C9A84C; text-transform:uppercase; font-weight:bold; }
-  h1 { font-family:Palatino, Georgia, serif; font-size:23pt; font-weight:normal; margin:4mm 0 3mm; }
-  h2 { font-family:Palatino, Georgia, serif; font-size:14pt; font-weight:normal; color:#E8C96B; margin:5mm 0 2.5mm; }
-  p { margin-bottom:2.8mm; }
+  h1 { font-family:Palatino, Georgia, serif; font-size:22pt; font-weight:normal; margin:3.5mm 0 2.5mm; }
+  h2 { font-family:Palatino, Georgia, serif; font-size:13.5pt; font-weight:normal; color:#E8C96B; margin:4mm 0 2mm; }
+  p { margin-bottom:2.6mm; }
   .muted { color:#8FA898; }
-  .panel { background:#1E3D2F; border:1px solid #2E5A40; border-radius:3mm; padding:4.5mm 5.5mm; margin:3.5mm 0; }
+  .panel { background:#1E3D2F; border:1px solid #2E5A40; border-radius:3mm; padding:4mm 5mm; margin:3mm 0; }
   .panel.gold { border-color:#C9A84C; }
-  .kpis { display:flex; gap:4mm; margin:4mm 0; }
-  .kpi { flex:1; background:#1E3D2F; border:1px solid #2E5A40; border-radius:3mm; padding:4mm; text-align:center; }
-  .kpi .v { font-family:Palatino, serif; font-size:15pt; color:#E8C96B; }
-  .kpi .l { font-size:7.5pt; letter-spacing:0.12em; color:#8FA898; text-transform:uppercase; margin-top:1mm; }
-  table { width:100%; border-collapse:collapse; margin:3mm 0; font-size:9.5pt; }
-  th { text-align:left; color:#C9A84C; letter-spacing:0.1em; font-size:8pt; text-transform:uppercase; padding:2mm 2.5mm; border-bottom:1px solid #C9A84C; }
-  td { padding:2mm 2.5mm; border-bottom:1px solid #2E5A40; vertical-align:top; }
+  .kpis { display:flex; gap:3.5mm; margin:3.5mm 0; }
+  .kpi { flex:1; background:#1E3D2F; border:1px solid #2E5A40; border-radius:3mm; padding:3.5mm; text-align:center; }
+  .kpi .v { font-family:Palatino, serif; font-size:14pt; color:#E8C96B; }
+  .kpi .l { font-size:7.2pt; letter-spacing:0.1em; color:#8FA898; text-transform:uppercase; margin-top:1mm; }
+  table { width:100%; border-collapse:collapse; margin:2.5mm 0; font-size:9.3pt; }
+  th { text-align:left; color:#C9A84C; letter-spacing:0.1em; font-size:7.8pt; text-transform:uppercase; padding:1.8mm 2.5mm; border-bottom:1px solid #C9A84C; }
+  td { padding:1.8mm 2.5mm; border-bottom:1px solid #2E5A40; vertical-align:top; }
   tr.hi td { color:#E8C96B; font-weight:bold; }
-  .motif { color:#C9A84C; text-align:center; margin:3mm 0; letter-spacing:0.6em; font-size:9pt; }
+  .motif { color:#C9A84C; text-align:center; margin:2.5mm 0; letter-spacing:0.6em; font-size:9pt; }
   .foot { position:absolute; bottom:8mm; left:16mm; right:16mm; display:flex; justify-content:space-between; font-size:8pt; color:#8FA898; border-top:1px solid #2E5A40; padding-top:2.5mm; }
   .cream .foot { border-color:#d8ccb4; color:#5c6f63; }
   .foot b { color:#C9A84C; font-weight:normal; }
-  .step { display:flex; gap:4mm; margin-bottom:3.2mm; }
-  .step .n { font-family:Palatino, serif; font-size:14pt; color:#C9A84C; min-width:8mm; }
-  ul.tight { margin:1.5mm 0 3mm 5mm; } ul.tight li { margin-bottom:1.5mm; }
+  .step { display:flex; gap:3.5mm; margin-bottom:2.6mm; }
+  .step .n { font-family:Palatino, serif; font-size:13pt; color:#C9A84C; min-width:7mm; }
+  ul.tight { margin:1.2mm 0 2.5mm 5mm; } ul.tight li { margin-bottom:1.3mm; }
+  svg text { font-family:Calibri, sans-serif; }
 </style>
 </head>
 <body>
 
 <!-- 1 COVER -->
 <div class="page" style="display:flex; flex-direction:column; justify-content:center; text-align:center;">
+  <svg viewBox="0 0 800 190" style="width:170mm; margin:0 auto 6mm;">
+    <!-- skyline -->
+    <g fill="#1E3D2F" stroke="#2E5A40" stroke-width="1">
+      <rect x="60" y="90" width="34" height="100"/><rect x="104" y="60" width="26" height="130"/>
+      <polygon points="150,190 150,50 163,20 176,50 176,190"/>
+      <rect x="196" y="100" width="40" height="90"/><rect x="246" y="70" width="22" height="120"/>
+      <polygon points="288,190 288,40 300,8 312,40 312,190"/>
+      <rect x="330" y="85" width="30" height="105"/><rect x="370" y="55" width="26" height="135"/>
+      <polygon points="416,190 416,64 452,26 452,190"/>
+      <rect x="472" y="95" width="36" height="95"/><rect x="518" y="45" width="24" height="145"/>
+      <rect x="552" y="78" width="30" height="112"/><polygon points="602,190 602,58 614,30 626,58 626,190"/>
+      <rect x="646" y="98" width="38" height="92"/><rect x="694" y="72" width="24" height="118"/>
+    </g>
+    <!-- crane -->
+    <g stroke="#C9A84C" stroke-width="3" fill="none">
+      <line x1="540" y1="45" x2="540" y2="10"/><line x1="475" y1="10" x2="600" y2="10"/>
+      <line x1="540" y1="10" x2="505" y2="28"/><line x1="600" y1="10" x2="600" y2="26"/>
+    </g>
+    <circle cx="740" cy="30" r="14" fill="none" stroke="#E8C96B" stroke-width="2"/>
+    <line x1="0" y1="190" x2="800" y2="190" stroke="#C9A84C" stroke-width="2"/>
+  </svg>
   <div class="eyebrow">The Honest Guide</div>
-  <h1 style="font-size:32pt; margin-top:6mm;">Off-Plan Property<br>in the UAE</h1>
-  <p class="muted" style="font-size:12pt; margin-top:3mm;">Buying property in Dubai &amp; Abu Dhabi before it's built -<br>explained properly, for people who don't live here.</p>
+  <h1 style="font-size:31pt; margin-top:4mm;">Off-Plan Property<br>in the UAE</h1>
+  <p class="muted" style="font-size:11.5pt; margin-top:2mm;">Buying property in Dubai &amp; Abu Dhabi before it's built -<br>explained properly, for people who don't live here.</p>
   <div class="motif">◆ ◆ ◆</div>
-  <p class="muted" style="font-size:9.5pt;">Written by Calum MacLeod · White &amp; Co, Dubai<br>Off-plan specialist · Invested in what I recommend<br><br>All prices in UAE Dirhams (Đ) and Pounds (£) at ~£1 = Đ4.7, indicative.<br>This guide is market information, not financial advice.</p>
+  <p class="muted" style="font-size:9pt;">Written by Calum MacLeod · White &amp; Co, Dubai<br>Off-plan specialist · Invested in what I recommend - my own purchase is in Chapter Ten<br><br>Prices in UAE Dirhams (Đ) and Pounds (£) at ~£1 = Đ4.7, indicative.<br>Market information, not financial advice.</p>
 </div>
 
-<!-- 2 WHAT IS OFF-PLAN -->
+<!-- 2 WHAT IS OFF-PLAN + TIMELINE -->
 <div class="page">
   <div class="eyebrow">Chapter One</div>
   <h1>What Off-Plan Actually Is</h1>
-  <p><b>Off-plan means buying a property directly from the developer before, or while, it's being built.</b> You choose a specific unit from the masterplan, sign a purchase agreement, and pay in instalments tied to construction - not all at once. You get the keys when it's finished, usually two to four years later.</p>
-  <h2>Why anyone would do that</h2>
+  <p><b>Off-plan means buying directly from the developer before, or while, the property is built.</b> You choose a specific unit from the plan, sign a purchase agreement, and pay in instalments tied to construction - keys usually two to four years later. Here's the whole life of a project, and where you enter it:</p>
+  <svg viewBox="0 0 800 210" style="width:178mm; margin:2mm 0;">
+    <line x1="30" y1="120" x2="770" y2="120" stroke="#2E5A40" stroke-width="3"/>
+    <!-- rising price curve -->
+    <path d="M 150 118 Q 400 95 600 62 T 770 40" fill="none" stroke="#C9A84C" stroke-width="3" stroke-dasharray="1 0"/>
+    <text x="775" y="38" fill="#E8C96B" font-size="15" text-anchor="end" >value</text>
+    <!-- nodes -->
+    <g font-size="15" fill="#F5EDE0" text-anchor="middle">
+      <circle cx="70" cy="120" r="7" fill="#2E5A40" stroke="#8FA898" stroke-width="2"/>
+      <text x="70" y="150">Land &amp;</text><text x="70" y="168">masterplan</text>
+      <circle cx="150" cy="120" r="9" fill="#C9A84C"/>
+      <text x="150" y="150" fill="#E8C96B">LAUNCH</text><text x="150" y="168" fill="#E8C96B">you buy here</text>
+      <circle cx="330" cy="120" r="7" fill="#2E5A40" stroke="#8FA898" stroke-width="2"/>
+      <text x="330" y="150">Construction</text><text x="330" y="168">(instalments)</text>
+      <circle cx="520" cy="120" r="7" fill="#2E5A40" stroke="#8FA898" stroke-width="2"/>
+      <text x="520" y="150">Resale window</text><text x="520" y="168">opens (30-40% paid)</text>
+      <circle cx="650" cy="120" r="9" fill="#E8C96B"/>
+      <text x="650" y="150" fill="#E8C96B">HANDOVER</text><text x="650" y="168" fill="#E8C96B">keys + title</text>
+      <circle cx="750" cy="120" r="7" fill="#2E5A40" stroke="#8FA898" stroke-width="2"/>
+      <text x="750" y="150">Rent, hold,</text><text x="750" y="168">mortgage or sell</text>
+    </g>
+    <text x="150" y="95" fill="#8FA898" font-size="14" text-anchor="middle">lowest price</text>
+    <text x="650" y="30" fill="#8FA898" font-size="14" text-anchor="middle">market price</text>
+  </svg>
+  <h2>Why anyone buys a building that doesn't exist</h2>
   <ul class="tight">
-    <li><b>Price:</b> developers price launches below what the finished product is expected to be worth - it's how they fund construction and reward early buyers for waiting. The gap between launch price and completed value is the core of the opportunity.</li>
-    <li><b>Instalments, not a mortgage:</b> a typical plan asks for 10-20% at booking and spreads the rest across the build. Many buyers own UAE property outright without ever taking a loan.</li>
-    <li><b>Brand-new stock, first choice:</b> earliest buyers pick the best units - the corner plot, the park view, the high floor. Those units carry a premium forever.</li>
-    <li><b>Currency reality for UK buyers:</b> the dirham is pegged to the US dollar. Your asset sits in a dollar-linked currency, which has been a quiet tailwind for sterling-based owners over most recent years.</li>
+    <li><b>Price:</b> launches are priced below expected completed value - it funds construction and pays you for waiting. That gap is the core opportunity.</li>
+    <li><b>Instalments, not a mortgage:</b> 10-20% at booking, the rest spread across the build. Many buyers own outright without ever borrowing.</li>
+    <li><b>First choice of stock:</b> early buyers take the corner plots, park views and high floors - units that carry a premium forever.</li>
+    <li><b>Currency, for UK buyers:</b> the dirham is pegged to the US dollar - your asset sits in a dollar-linked currency.</li>
   </ul>
-  <h2>The honest other half</h2>
-  <p>You're buying a contract and a promise, not bricks you can touch. Completion takes years. The market can move both ways while you wait. Developers vary enormously in quality and punctuality. Every one of those risks is real - and every one has a protection or a tactic against it, which is what the rest of this guide is for.</p>
-  <div class="panel gold"><p style="margin:0;"><b>The one-line version:</b> off-plan trades time for price. You commit early and wait patiently; in exchange you enter below the finished market with your payments spread out. Everything else is detail - important detail.</p></div>
+  <div class="panel gold"><p style="margin:0;"><b>One line:</b> off-plan trades time for price. You commit early and wait; in exchange you enter below the finished market with payments spread out. Everything else is detail - important detail, which is what the next twelve pages are.</p></div>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 3 WHY THE UAE IS DIFFERENT -->
+<!-- 3 WHY UAE DIFFERENT -->
 <div class="page">
   <div class="eyebrow">Chapter Two</div>
   <h1>Why the UAE Does This Better Than Anywhere</h1>
-  <p>"Buying something that doesn't exist yet, abroad" sounds terrifying. It's a fair instinct - and it's exactly why the UAE built one of the world's strictest off-plan frameworks. The rules were forged the hard way, after 2008 exposed every weakness, and the system that emerged is the reason this market now runs at the scale it does.</p>
-  <h2>The protections, in plain English</h2>
-  <ul class="tight">
-    <li><b>Your money doesn't go to the developer.</b> Every off-plan project must have a government-monitored <b>escrow account</b>. Your instalments go there, and the developer can only draw funds as construction milestones are certified. They cannot spend your money on another project, a yacht, or anything except building your building.</li>
-    <li><b>Projects must be registered and land must be owned</b> before a single unit can be sold - regulators (DLD/RERA in Dubai, ADREC in Abu Dhabi) approve projects before launch.</li>
-    <li><b>Your purchase is registered with the government from day one</b> - in Dubai as an "Oqood" (pre-title registration in your name), converting to full title deed at handover. You legally own that specific unit's contract; it's not an IOU.</li>
-    <li><b>If a project is cancelled,</b> the regulator - not the developer - oversees refunds from the escrow account.</li>
-    <li><b>Foreigners own outright.</b> In designated freehold zones (which include effectively every area an international buyer would consider), you own the property fully, forever, in your name - no local partner, no leasehold games.</li>
-  </ul>
-  <h2>And the ownership economics</h2>
-  <div class="panel"><p style="margin:0;">No annual property tax. No capital gains tax. No inheritance tax on UAE assets under the frameworks most international buyers use. Rental income untaxed in the UAE (your home country's rules may still apply - take advice). The purchase cost is a one-time registration fee, covered in Chapter Five. For UK buyers used to stamp duty bands and Section 24, this is a different planet.</p></div>
-  <p class="muted" style="font-size:9pt;">Regulatory details are simplified for clarity and current at the time of writing - specifics are confirmed per-project before you commit to anything.</p>
+  <p>"Buying something that doesn't exist yet, abroad" sounds terrifying - fair instinct. It's why the UAE built one of the world's strictest off-plan frameworks after 2008 exposed every weakness. The protections:</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v">ESCROW</div><div class="l">Your money sits in a government-monitored account - developers draw it only as construction milestones are certified</div></div>
+    <div class="kpi"><div class="v">REGISTERED</div><div class="l">Projects approved by the regulator before launch; your unit registered in YOUR name from day one (Oqood)</div></div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="v">REFUNDS</div><div class="l">Cancelled project? The regulator - not the developer - oversees refunds from escrow</div></div>
+    <div class="kpi"><div class="v">FREEHOLD</div><div class="l">Foreigners own outright, forever, in designated zones - no local partner, no leasehold games</div></div>
+  </div>
+  <h2>The ownership economics</h2>
+  <div class="kpis">
+    <div class="kpi"><div class="v">0%</div><div class="l">Annual property tax</div></div>
+    <div class="kpi"><div class="v">0%</div><div class="l">Capital gains tax</div></div>
+    <div class="kpi"><div class="v">0%</div><div class="l">Tax on rental income (UAE side)</div></div>
+    <div class="kpi"><div class="v">ONE-TIME</div><div class="l">Registration fee at purchase - 4% Dubai / 2% Abu Dhabi</div></div>
+  </div>
+  <p>For UK buyers used to stamp duty bands, Section 24 and CGT - this is a different planet. Your home-country tax position still needs its own advice; the UAE side is genuinely this clean.</p>
+  <p class="muted" style="font-size:8.8pt;">Regulatory detail simplified for clarity, current at time of writing; specifics confirmed per-project before you commit to anything.</p>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 4 THE MONEY MECHANICS -->
+<!-- 4 MONEY MECHANICS -->
 <div class="page">
   <div class="eyebrow">Chapter Three</div>
   <h1>How the Money Actually Works</h1>
-  <h2>Anatomy of a payment plan</h2>
-  <p>Every project publishes its plan up front. A typical structure on a Đ2,000,000 (~£425,000) apartment:</p>
+  <h2>Anatomy of a payment plan - worked on Đ3,000,000 (~£640K)</h2>
   <table>
-    <tr><th>Stage</th><th>Typical %</th><th>On Đ2M</th><th>~£</th></tr>
-    <tr><td>Booking / down payment</td><td>10-20%</td><td>Đ200,000-400,000</td><td>£43,000-85,000</td></tr>
-    <tr><td>During construction (instalments over 2-4 yrs)</td><td>30-50%</td><td>Đ600,000-1,000,000</td><td>£128,000-213,000</td></tr>
-    <tr><td>On handover (keys)</td><td>40-60%</td><td>Đ800,000-1,200,000</td><td>£170,000-255,000</td></tr>
+    <tr><th>Stage</th><th>Typical %</th><th>On Đ3M</th><th>~£</th></tr>
+    <tr><td>Booking / down payment</td><td>10-20%</td><td>Đ300,000-600,000</td><td>£64,000-128,000</td></tr>
+    <tr><td>During construction (2-4 yrs of instalments)</td><td>30-50%</td><td>Đ900,000-1,500,000</td><td>£190,000-320,000</td></tr>
+    <tr><td>On handover (keys)</td><td>40-60%</td><td>Đ1,200,000-1,800,000</td><td>£255,000-385,000</td></tr>
   </table>
-  <p>Plans are quoted like "20/80", "60/40", "10/90" - construction share / handover share. Some developers offer <b>post-handover plans</b>: you keep paying instalments for 2-5 years AFTER receiving keys, often while the property earns rent. Powerful, and priced in - post-handover plans usually carry slightly higher headline prices.</p>
-  <h2>The real day-one number</h2>
-  <div class="panel gold"><p style="margin:0;">The booking percentage is not the whole first cheque. Add the government registration fee (<b>4% of price in Dubai; 2% in Abu Dhabi</b>) plus small admin fees. On a Đ2M Dubai purchase with a 20% booking: Đ400,000 + Đ80,000 + ~Đ5,000 = <b>~Đ485,000 (~£103,000) to open the door.</b> Anyone who quotes you only the booking percentage is selling, not advising.</p></div>
-  <h2>What buying costs you in fees</h2>
+  <p>Plans are quoted "20/80", "60/40" - construction share / handover share. Some developers offer <b>post-handover plans</b>: instalments continue 2-5 years AFTER keys, often while the property earns rent - powerful, and priced in.</p>
+  <div class="panel gold"><p style="margin:0;"><b>The real day-one number:</b> booking % + registration fee (<b>4% Dubai / 2% Abu Dhabi</b>) + small admin. Đ3M in Dubai at 20% booking: Đ600,000 + Đ120,000 + ~Đ5,000 = <b>~Đ725,000 (~£154,000) to open the door.</b> Anyone quoting only the booking percentage is selling, not advising.</p></div>
+  <h2>Fees, complete</h2>
   <ul class="tight">
-    <li><b>Broker fee for off-plan: usually nothing.</b> The developer pays the brokerage. My advice, the launch access, the negotiation - costs you zero. (Resale/secondary purchases are different: typically 2% buyer-side.)</li>
-    <li><b>Registration:</b> the 4% / 2% above - one-time, not annual.</li>
-    <li><b>After handover:</b> service charges (building upkeep) - indicatively Đ10-30 per sqft per year on apartments, lower rates on villas. Budget for it in any yield maths.</li>
+    <li><b>Broker fee on off-plan: usually nothing to you.</b> Developers pay the brokerage - my advice, launch access and negotiation cost you zero. (Secondary/resale differs: typically 2% buyer-side.)</li>
+    <li><b>Registration:</b> the 4% / 2% - one-time, never annual.</li>
+    <li><b>After handover:</b> service charges - indicatively Đ10-30/sqft/year on apartments, lower rates on villas.</li>
   </ul>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 5 WHAT YOUR BUDGET BUYS -->
+<!-- 5 CASH COMPARISON -->
 <div class="page cream">
-  <div class="eyebrow">Chapter Four</div>
-  <h1>What Your Budget Buys</h1>
-  <p>Three broad brackets, both cities, in round numbers. These are indicative entry levels for NEW launches at the time of writing - individual projects vary, and this is exactly what the call at the end of this guide is for.</p>
-  <h2>Up to Đ3M (~£640K)</h2>
-  <table>
-    <tr><th>What</th><th>Where it lives</th><th>Indicative entry</th></tr>
-    <tr><td>1-2 bed apartments, strong communities</td><td>Dubai - established masterplans, waterfront edges</td><td>Đ1.2M-3M / £255K-640K</td></tr>
-    <tr><td>1-2 bed apartments, island communities</td><td>Abu Dhabi - Reem, Yas, Saadiyat edges, new districts</td><td>Đ1M-2.5M / £213K-530K</td></tr>
-    <tr><td>Townhouses, emerging communities</td><td>Both cities, further from centre</td><td>Đ2M-3M / £425K-640K</td></tr>
-  </table>
-  <h2>Đ3M - Đ10M (~£640K - £2.1M)</h2>
-  <table>
-    <tr><td>3-4 bed townhouses &amp; villas, prime masterplans</td><td>Dubai - lagoon, golf and park communities</td><td>Đ3M-8M / £640K-1.7M</td></tr>
-    <tr><td>Premium apartments &amp; penthouses</td><td>Both - waterfront, branded buildings</td><td>Đ3M-10M / £640K-2.1M</td></tr>
-    <tr><td>Villas on the islands</td><td>Abu Dhabi - Yas, Hudayriyat, Saadiyat orbit</td><td>Đ4M-10M / £850K-2.1M</td></tr>
-  </table>
-  <h2>Đ10M - Đ25M (~£2.1M - £5.3M)</h2>
-  <table>
-    <tr><td>Signature villas - golf, park &amp; water frontage</td><td>Dubai - new premium districts, established golf</td><td>Đ10M-25M / £2.1M-5.3M</td></tr>
-    <tr><td>Branded residences &amp; mansion plots</td><td>Both - operator-branded, low-density islands</td><td>Đ12M-25M+ / £2.6M-5.3M+</td></tr>
-  </table>
-  <div class="panel"><p style="margin:0;"><b>A note on the Golden Visa:</b> property worth Đ2M+ (~£425K+) qualifies the owner for a renewable 10-year UAE residency visa - including off-plan purchases from approved developers, conditions applying. For many UK buyers this transforms the purchase from an investment into an option on a whole second life.</p></div>
+  <div class="eyebrow">Chapter Three · Continued</div>
+  <h1>Off-Plan vs Secondary - The Cash Truth</h1>
+  <p>The most under-explained advantage: <b>how much less cash off-plan needs on day one.</b> Buying a completed (secondary) property means a mortgage deposit of at least 20% - fine, that's equity - PLUS ~7% of dead fees in Dubai (4% registration + 2% agency + misc) or ~5% in Abu Dhabi (2% + 2% + misc). Off-plan flips the maths: booking payments start as low as 5-10%, no agency fee, and the registration fee is the only addition.</p>
+  <h2>Day-one cash on a Đ3M (~£640K) purchase</h2>
+  <svg viewBox="0 0 800 300" style="width:172mm; margin:2mm 0;">
+    <g font-size="15">
+      <!-- Dubai secondary 27% = 810K -->
+      <rect x="150" y="30" width="486" height="40" fill="#2E5A40"/>
+      <text x="20" y="56" fill="#1E3D2F" font-weight="bold">Dubai · secondary</text>
+      <text x="646" y="56" fill="#1E3D2F">Đ810,000 (~£172K) · 27%</text>
+      <!-- Dubai offplan 20% booking = 24% -->
+      <rect x="150" y="90" width="432" height="40" fill="#8a6d2f"/>
+      <text x="20" y="116" fill="#1E3D2F" font-weight="bold">Dubai · off-plan (20% booking)</text>
+      <text x="592" y="116" fill="#1E3D2F">Đ725,000 (~£154K) · 24%</text>
+      <!-- Dubai offplan 5% booking = 9% -->
+      <rect x="150" y="150" width="162" height="40" fill="#C9A84C"/>
+      <text x="20" y="176" fill="#1E3D2F" font-weight="bold">Dubai · off-plan (5% booking)</text>
+      <text x="322" y="176" fill="#1E3D2F" font-weight="bold">Đ275,000 (~£59K) · 9%</text>
+      <!-- AD offplan 10% = 12% -->
+      <rect x="150" y="210" width="216" height="40" fill="#C9A84C"/>
+      <text x="20" y="236" fill="#1E3D2F" font-weight="bold">Abu Dhabi · off-plan (10% booking)</text>
+      <text x="376" y="236" fill="#1E3D2F" font-weight="bold">Đ366,000 (~£78K) · 12%</text>
+      <text x="150" y="285" fill="#5c6f63" font-size="13">Secondary bar = 20% deposit + ~7% fees (Dubai) - the deposit becomes equity, the fees are gone forever.</text>
+    </g>
+  </svg>
+  <div class="panel"><p style="margin:0;"><b>Read the gold bars:</b> a 5% launch plan in Dubai opens the same Đ3M asset for roughly <b>a third of the cash</b> a secondary purchase demands on day one - Đ275K vs Đ810K. That difference is capital you still hold: for the next instalment, the next purchase, or your life. It's also why off-plan returns on CASH INVESTED can be multiples of the headline price growth - Chapter Seven shows that engine.</p></div>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 6 DUBAI VS ABU DHABI -->
+<!-- 6 BUDGET BRACKETS -->
+<div class="page cream">
+  <div class="eyebrow">Chapter Four</div>
+  <h1>What Your Budget Buys</h1>
+  <p>Three brackets, both cities, round numbers - indicative entry levels for new launches at time of writing. Matching a real project to your bracket is what the call at the end is for.</p>
+  <h2>Up to Đ3M (~£640K)</h2>
+  <table>
+    <tr><th>What</th><th>Where</th><th>Indicative entry</th></tr>
+    <tr><td>1-2 bed apartments, strong communities</td><td>Dubai masterplans, waterfront edges</td><td>Đ1.2-3M / £255-640K</td></tr>
+    <tr><td>1-2 bed apartments, island communities</td><td>Abu Dhabi - Reem, Yas, new districts</td><td>Đ1-2.5M / £213-530K</td></tr>
+    <tr><td>Townhouses, emerging communities</td><td>Both cities, further out</td><td>Đ2-3M / £425-640K</td></tr>
+  </table>
+  <h2>Đ3M - Đ10M (~£640K - £2.1M)</h2>
+  <table>
+    <tr><td>3-4 bed townhouses &amp; villas, prime masterplans</td><td>Dubai lagoon, golf &amp; park communities</td><td>Đ3-8M / £640K-1.7M</td></tr>
+    <tr><td>Premium &amp; branded apartments, penthouses</td><td>Both - waterfront, branded towers</td><td>Đ3-10M / £640K-2.1M</td></tr>
+    <tr><td>Island villas</td><td>Abu Dhabi - Yas, Hudayriyat, Saadiyat orbit</td><td>Đ4-10M / £850K-2.1M</td></tr>
+  </table>
+  <h2>Đ10M - Đ25M (~£2.1M - £5.3M)</h2>
+  <table>
+    <tr><td>Signature villas - golf, park &amp; water frontage</td><td>Dubai's new premium districts</td><td>Đ10-25M / £2.1-5.3M</td></tr>
+    <tr><td>Branded residences &amp; mansion plots</td><td>Both - operator-branded, low-density islands</td><td>Đ12-25M+ / £2.6-5.3M+</td></tr>
+  </table>
+  <div class="panel"><p style="margin:0;"><b>The Golden Visa:</b> property worth Đ2M+ (~£425K+) qualifies you for a renewable 10-year UAE residency visa. <b>In Dubai, off-plan qualifies from purchase</b> - buy at launch, apply. In Abu Dhabi the rules currently require the qualifying capital to be paid in. Conditions apply either way - but for many UK buyers this turns a purchase into an option on a whole second life.</p></div>
+  <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
+</div>
+
+<!-- 7 DUBAI VS AD -->
 <div class="page">
   <div class="eyebrow">Chapter Five</div>
   <h1>Dubai or Abu Dhabi - The Honest Answer</h1>
-  <p>Most guides won't pick a side. I will, because the numbers do - and then I'll tell you why the answer still depends on you.</p>
+  <p>Most guides won't pick a side. I will, because the numbers do - then I'll tell you why the answer still depends on you.</p>
   <div class="kpis">
     <div class="kpi"><div class="v">+17.8%</div><div class="l">Abu Dhabi values, past year</div></div>
     <div class="kpi"><div class="v">+24%</div><div class="l">AD apartments, past year</div></div>
     <div class="kpi"><div class="v">84%</div><div class="l">of AD sales are off-plan</div></div>
     <div class="kpi"><div class="v">~2x</div><div class="l">Dubai's rise from its 2020 low</div></div>
   </div>
+  <svg viewBox="0 0 800 190" style="width:172mm; margin:1mm 0;">
+    <line x1="40" y1="160" x2="780" y2="160" stroke="#2E5A40" stroke-width="2"/>
+    <path d="M 60 150 L 180 145 L 300 138 L 420 95 L 540 55 L 660 42 L 760 40" fill="none" stroke="#C9A84C" stroke-width="4"/>
+    <path d="M 60 155 L 180 152 L 300 148 L 420 132 L 540 108 L 660 75 L 760 52" fill="none" stroke="#8FA898" stroke-width="4" stroke-dasharray="8 6"/>
+    <text x="765" y="36" fill="#E8C96B" font-size="15" text-anchor="end">Dubai - ran first, now flattening</text>
+    <text x="765" y="70" fill="#8FA898" font-size="15" text-anchor="end">Abu Dhabi - still accelerating</text>
+    <g fill="#8FA898" font-size="13" text-anchor="middle">
+      <text x="60" y="180">2020</text><text x="300" y="180">2022</text><text x="540" y="180">2024</text><text x="760" y="180">2026</text>
+    </g>
+  </svg>
   <h2>The case the numbers make</h2>
-  <p>Dubai ran first and ran hard - values roughly doubled from the 2020 trough, and its growth has now flattened into single digits as the market digests that run. Abu Dhabi started later and is still accelerating: +17.8% in the past year, apartments +24%, and the capital's own leading researchers on record that it <b>sits earlier in its property cycle than Dubai</b>. When 84% of everything sold in a market is off-plan, that market's buyers have voted on where the value is. <b>On today's numbers, for pure capital growth, the capital is the stronger entry.</b></p>
+  <p>Dubai ran first and hard - roughly doubling from the 2020 trough, now digesting that run with growth flattened to single digits. Abu Dhabi started later and is still accelerating: +17.8% in a year, apartments +24%, and the capital's leading researchers on record that it <b>sits earlier in its property cycle than Dubai</b>. When 84% of a market's sales are off-plan, its buyers have voted where the value is. <b>On today's numbers, for pure capital growth, the capital is the stronger entry.</b></p>
   <h2>Why Dubai still wins for many buyers</h2>
-  <p>Dubai is the deeper market: more stock, more variety, more liquidity when you exit, the stronger global brand, the bigger rental pool, and the place most international buyers actually want to LIVE or holiday. If your purchase is partly a life decision - a base, a future home, a short-let you'll use yourself - Dubai's ecosystem is unmatched. Growth cycles rotate; liquidity is structural.</p>
-  <div class="panel gold"><p style="margin:0;"><b>How I'd frame the choice:</b> buying purely as an investor on a 3-7 year horizon - weight toward Abu Dhabi. Buying a base you'll use, or your first UAE property with an eye on living here - Dubai, and buy the community, not the brochure. Many of my buyers now do one of each, in that order or reverse. Markets cycle; the framework above outlives any quarter's numbers.</p></div>
-  <p class="muted" style="font-size:9pt;">Figures: ValuStrat Q2-2026 (Abu Dhabi VPI), DLD transaction data (Dubai). Cycles shift - the numbers get refreshed, the logic doesn't.</p>
-  <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
+  <p>Deeper market, more liquidity when you exit, the global brand, the bigger rental pool - and the place most buyers actually want to LIVE or holiday. If the purchase is partly a life decision, Dubai's ecosystem is unmatched. Growth rotates; liquidity is structural.</p>
+  <div class="panel gold"><p style="margin:0;"><b>My framing:</b> pure investor, 3-7 year horizon - weight toward Abu Dhabi. A base you'll use, or a first purchase with an eye on living here - Dubai, and buy the community, not the brochure. Many of my buyers now do one of each.</p></div>
+  <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>Figures: ValuStrat Q2-26, DLD data - refreshed on our call</span></div>
 </div>
 
-<!-- 7 THE PROCESS -->
+<!-- 8 PROCESS -->
 <div class="page cream">
   <div class="eyebrow">Chapter Six</div>
   <h1>The Process, Start to Keys</h1>
-  <p>You do not need to live here. You do not need to visit (though it helps). You do not need a UAE bank account to start. Here's the whole journey:</p>
-  <div class="step"><div class="n">1</div><div><b>Define the brief (one call).</b> Budget, purpose (growth / rental / future base), cities, timeline. This is where I earn my keep - matching the brief to launches actually worth your money.</div></div>
-  <div class="step"><div class="n">2</div><div><b>Shortlist &amp; evidence.</b> You get real numbers for each option: pricing, payment plan, developer track record, area transaction data - not brochures. Video walkthroughs of show units and sites if you're remote.</div></div>
-  <div class="step"><div class="n">3</div><div><b>Register interest (EOI).</b> For sought-after launches, a refundable deposit (typically Đ20,000-100,000) queues you for allocation. Fully refundable if you don't proceed - and being registered early is how you get the good units.</div></div>
-  <div class="step"><div class="n">4</div><div><b>Allocation &amp; booking.</b> Launch day: you're offered specific units. Decide fast (we'll have decided your criteria in advance), pay the booking amount, sign the reservation.</div></div>
-  <div class="step"><div class="n">5</div><div><b>SPA - the contract.</b> The Sale &amp; Purchase Agreement arrives within weeks. Everything's in it: plan, dates, specs, penalties both ways. Signable electronically from anywhere on earth.</div></div>
-  <div class="step"><div class="n">6</div><div><b>Registration.</b> Your purchase is registered with the government in your name (Oqood in Dubai). Pay the registration fee. You now legally hold that unit.</div></div>
-  <div class="step"><div class="n">7</div><div><b>Pay &amp; track.</b> Instalments per the plan, into escrow. I send construction updates; you watch your building grow from your sofa in Surrey.</div></div>
-  <div class="step"><div class="n">8</div><div><b>Snagging &amp; handover.</b> Near completion: inspection (I arrange professional snagging if you're abroad), defects fixed, final payment, keys, title deed. Then we furnish it, rent it, or hand it to you - whichever the plan was.</div></div>
-  <div class="panel"><p style="margin:0;"><b>Documents needed to buy: your passport.</b> That's genuinely nearly it. No visa required to own. Power of attorney available for anything needing a signature in person.</p></div>
+  <p>You don't need to live here. You don't need to visit (it helps). You don't need a UAE bank account to start.</p>
+  <div class="step"><div class="n">1</div><div><b>Define the brief (one call).</b> Budget, purpose, cities, timeline - and I match it to launches actually worth your money.</div></div>
+  <div class="step"><div class="n">2</div><div><b>Shortlist &amp; evidence.</b> Real numbers per option: pricing, payment plan, developer track record, area transaction data. Video walkthroughs if you're remote.</div></div>
+  <div class="step"><div class="n">3</div><div><b>Register interest (EOI).</b> For hot launches a refundable deposit (Đ20-100K) queues you for allocation - fully refundable, and it's how you get the good units.</div></div>
+  <div class="step"><div class="n">4</div><div><b>Allocation &amp; booking.</b> Launch day: specific units offered. We decided your criteria in advance, so you decide fast. Booking paid, reservation signed.</div></div>
+  <div class="step"><div class="n">5</div><div><b>SPA - the contract.</b> Everything in it: plan, dates, specs, penalties both ways. Signable electronically from anywhere.</div></div>
+  <div class="step"><div class="n">6</div><div><b>Registration.</b> Purchase registered with the government in your name (Oqood in Dubai). Registration fee paid. You legally hold the unit.</div></div>
+  <div class="step"><div class="n">7</div><div><b>Pay &amp; track.</b> Instalments into escrow; I send construction updates. Your building grows while you're on the sofa in Surrey.</div></div>
+  <div class="step"><div class="n">8</div><div><b>Snagging &amp; handover.</b> Professional inspection (arranged if you're abroad), defects fixed, final payment, keys, title. Then furnish it, rent it, or move in.</div></div>
+  <div class="panel"><p style="margin:0;"><b>Documents needed to buy: your passport.</b> That's nearly it. No visa required to own. Power of attorney covers anything needing an in-person signature.</p></div>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 8 RISKS -->
+<!-- 9 EXITS -->
 <div class="page">
   <div class="eyebrow">Chapter Seven</div>
-  <h1>The Risks - Named, Not Hidden</h1>
-  <p>Anyone selling you off-plan without this page is not on your side. Here's what can go wrong and what protects you:</p>
-  <table>
-    <tr><th>Risk</th><th>Reality</th><th>Protection / tactic</th></tr>
-    <tr><td><b>Delay</b></td><td>Common. Months more often than years. Contracts include grace periods.</td><td>SPA penalties beyond grace; escrow keeps your money tied to actual progress; buy developers with delivery records, not renders.</td></tr>
-    <tr><td><b>Cancellation</b></td><td>Rare in the modern framework.</td><td>Regulator-supervised refunds from escrow; project registration requirements weed out most fantasy projects before launch.</td></tr>
-    <tr><td><b>Market falls while you build</b></td><td>Possible - cycles are real (Chapter Eight).</td><td>Buy below-market at launch (margin of safety), hold horizon 5+ years, buy locations with structural demand - never buy the last phase of a hype cycle at a premium.</td></tr>
-    <tr><td><b>Quality disappoints</b></td><td>Varies hugely by developer tier.</td><td>Track record over brochures; professional snagging before acceptance; retention rights on defects.</td></tr>
-    <tr><td><b>You need out early</b></td><td>Resale before handover is restricted.</td><td>Typically allowed after 30-40% is paid, with developer NOC (small fee). Plan your liquidity before entering - off-plan money should be patient money.</td></tr>
-    <tr><td><b>Currency swings (£ buyers)</b></td><td>Đ is dollar-pegged; £/$ moves.</td><td>Instalments average your entry rate over years - a built-in smoothing most buyers never notice they're getting. Forward contracts exist for larger sums.</td></tr>
-  </table>
-  <div class="panel gold"><p style="margin:0;"><b>The biggest real risk isn't on this table:</b> it's buying the wrong project from the wrong developer because a stranger with a lanyard promised guaranteed returns. There are no guaranteed returns. There are good buildings in good locations from serious developers at fair prices - and there's everything else. Telling those apart is the entire job.</p></div>
+  <h1>The Exits - Four Ways Out (Or Onward)</h1>
+  <p>A purchase without an exit plan is a hope. Off-plan gives you four, and the timing changes the maths dramatically:</p>
+  <div class="step"><div class="n">1</div><div><b>Sell before handover.</b> Once typically 30-40% is paid (developer NOC required, small fee), you can sell the contract on. Because you've only deployed part of the price, price growth is amplified on your cash - this is where the "doubled their money" stories genuinely come from. If prices rise 20% while you've paid in 30%, the return on your cash is ~60%+ before costs.</div></div>
+  <div class="step"><div class="n">2</div><div><b>Sell at handover.</b> The classic maximum-ROE exit: you sell as keys arrive, never paying the final instalment (often the largest, 40-60%). Full price growth, captured on the partial capital you actually deployed.</div></div>
+  <div class="step"><div class="n">3</div><div><b>Keep and rent.</b> Take keys, let it - long-term or short-let. UAE gross yields have historically run well above UK city norms, untaxed on the UAE side.</div></div>
+  <div class="step"><div class="n">4</div><div><b>Keep, mortgage, extract.</b> At handover, banks lend against COMPLETED value. If the property has grown through the build, a mortgage can release much of your original cash - you keep the asset, redeploy the capital. This is how one purchase becomes a ladder.</div></div>
+  <h2>A real one, from the public record</h2>
+  <div class="panel gold"><p style="margin:0;">A villa in DAMAC Lagoons, Dubai: bought at launch in May 2022 for <b>Đ4,736,000</b>, resold in March 2026 for <b>Đ7,250,000</b> - <b>+53% on price</b> in under four years (Dubai Land Department records). And because the buyer was on a 50/50 plan, for most of that period only half his money was in the property - the return on cash actually deployed ran far ahead of the headline. That's the off-plan engine: staged capital, full-price growth.</p></div>
+  <p class="muted" style="font-size:8.8pt;">Illustrations of mechanics, not promises - prices move both ways, costs apply to every exit, and Chapter Eight is next for a reason.</p>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 9 CYCLES -->
+<!-- 10 RISKS -->
 <div class="page">
   <div class="eyebrow">Chapter Eight</div>
+  <h1>The Risks - Named, Not Hidden</h1>
+  <p>Anyone selling you off-plan without this page is not on your side.</p>
+  <table>
+    <tr><th>Risk</th><th>Reality</th><th>Protection / tactic</th></tr>
+    <tr><td><b>Delay</b></td><td>Common - months more often than years; contracts include grace periods.</td><td>SPA penalties beyond grace; escrow ties money to progress; buy delivery records, not renders.</td></tr>
+    <tr><td><b>Cancellation</b></td><td>Rare in the modern framework.</td><td>Regulator-supervised escrow refunds; registration rules filter fantasy projects pre-launch.</td></tr>
+    <tr><td><b>Market falls mid-build</b></td><td>Possible - cycles are real (next page).</td><td>Below-market entry = margin of safety; 5+ year horizon; structural-demand locations; never buy a hype cycle's last phase at a premium.</td></tr>
+    <tr><td><b>Quality disappoints</b></td><td>Varies hugely by developer tier.</td><td>Track record over brochures; professional snagging before acceptance; defect retention rights.</td></tr>
+    <tr><td><b>You need out early</b></td><td>Resale restricted until 30-40% paid.</td><td>NOC route (small fee) after threshold; enter with patient money and the exit map from Chapter Seven.</td></tr>
+    <tr><td><b>Currency swings (£)</b></td><td>Đ is dollar-pegged; £/$ moves.</td><td>Instalments average your entry rate across years - built-in smoothing; forward contracts for larger sums.</td></tr>
+  </table>
+  <div class="panel gold"><p style="margin:0;"><b>The biggest risk isn't on the table:</b> buying the wrong project from the wrong developer because a stranger with a lanyard promised guaranteed returns. There are no guaranteed returns. There are good buildings, good locations, serious developers, fair prices - and everything else. Telling them apart is the entire job.</p></div>
+  <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
+</div>
+
+<!-- 11 CYCLES WITH CHART -->
+<div class="page">
+  <div class="eyebrow">Chapter Nine</div>
   <h1>Cycles - The Only Chart That Matters</h1>
-  <p>UAE property is cyclical and always has been. Pretending otherwise is how people get hurt; understanding it is how people get wealthy.</p>
-  <h2>The shape of the last two decades</h2>
-  <p>A ferocious boom into 2008, a brutal crash that built today's regulations. Recovery into 2014, then five soft years - the market digesting supply. Then 2020: a pandemic trough that marked the bottom of the cycle, followed by the strongest run in the market's history - citywide Dubai values roughly <b>doubling from that trough</b>, with Abu Dhabi following the same shape a few years behind, as it historically does.</p>
+  <p>UAE property is cyclical and always has been. Pretending otherwise is how people get hurt; reading the cycle is how people get wealthy. The last two decades, in one picture:</p>
+  <svg viewBox="0 0 800 250" style="width:174mm; margin:1mm 0;">
+    <line x1="40" y1="210" x2="780" y2="210" stroke="#2E5A40" stroke-width="2"/>
+    <path d="M 60 190 L 120 90 L 160 60 L 200 170 L 260 150 L 320 120 L 380 135 L 440 160 L 480 175 L 520 110 L 580 70 L 640 45 L 700 38 L 760 36"
+          fill="none" stroke="#C9A84C" stroke-width="4"/>
+    <g fill="#8FA898" font-size="13" text-anchor="middle">
+      <text x="70" y="230">2006</text><text x="160" y="230">2008</text><text x="270" y="230">2014</text><text x="480" y="230">2020</text><text x="640" y="230">2024</text><text x="760" y="230">now</text>
+    </g>
+    <g font-size="14" fill="#F5EDE0">
+      <text x="160" y="42" text-anchor="middle">'08 peak</text>
+      <text x="205" y="192" text-anchor="middle">crash → today's laws</text>
+      <text x="480" y="198" text-anchor="middle" fill="#E8C96B">2020 trough</text>
+      <text x="660" y="26" text-anchor="middle" fill="#E8C96B">~2x from the trough</text>
+    </g>
+    <circle cx="740" cy="37" r="9" fill="none" stroke="#E8C96B" stroke-width="3"/>
+    <text x="740" y="70" fill="#E8C96B" font-size="14" text-anchor="middle">Dubai: here</text>
+    <circle cx="600" cy="63" r="9" fill="none" stroke="#8FA898" stroke-width="3"/>
+    <text x="588" y="95" fill="#8FA898" font-size="14" text-anchor="middle">Abu Dhabi: here</text>
+  </svg>
   <h2>What the shape teaches</h2>
   <ul class="tight">
-    <li><b>Entry point matters more than almost anything.</b> The people called geniuses today are mostly people who bought when others hesitated.</li>
-    <li><b>The two cities rotate.</b> Dubai leads, the capital follows with a lag - which is why the "which city" answer in Chapter Five changes over time, and why owning across both is how serious UAE investors end up positioned.</li>
-    <li><b>Hold horizons beat timing.</b> Nobody rings a bell at the bottom. A 5-10 year horizon has historically forgiven imperfect timing; a 12-month flip mentality has punished it.</li>
-    <li><b>Off-plan is a cycle instrument.</b> You commit at today's sentiment and receive at tomorrow's - powerful when entering during hesitation, dangerous when entering at peak euphoria. Knowing which one it is right now is a conversation, not a chart.</li>
+    <li><b>Entry point beats almost everything.</b> Today's "geniuses" mostly just bought when others hesitated.</li>
+    <li><b>The two cities rotate</b> - Dubai leads, the capital follows with a lag. That's why Chapter Five's answer changes over time, and why serious UAE investors end up owning across both.</li>
+    <li><b>Hold horizons beat timing.</b> Nobody rings a bell at the bottom; 5-10 year horizons have historically forgiven imperfect timing.</li>
+    <li><b>Off-plan is a cycle instrument:</b> you commit at today's sentiment and receive at tomorrow's. Powerful entering hesitation; dangerous entering euphoria.</li>
   </ul>
-  <div class="panel"><p style="margin:0;"><b>Where are we in the cycle as you read this?</b> Deliberately not printed here - it changes, and this guide doesn't. It's the first thing I'll show you on our call, with current transaction data on screen, not opinions.</p></div>
+  <div class="panel"><p style="margin:0;"><b>Where we are as I write:</b> Dubai high on its curve and flattening; Abu Dhabi visibly behind it and climbing - the markers on the chart. On our call I'll put the live version on screen with current transaction data, because this picture moves and your entry deserves the current frame.</p></div>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 10 SKIN + WHO I AM -->
+<!-- 12 MY OWN DEAL -->
 <div class="page cream">
-  <div class="eyebrow">Chapter Nine</div>
+  <div class="eyebrow">Chapter Ten</div>
+  <h1>My Own Money - The Actual Numbers</h1>
+  <p>Everything in this guide, I've done with my own capital. Here is my current off-plan purchase, real numbers, so you can see the framework applied - and judge whether I eat my own cooking.</p>
+  <h2>The purchase</h2>
+  <table>
+    <tr><th>What</th><th>Detail</th></tr>
+    <tr><td>Property</td><td>2-bedroom apartment, Tara Park - Reem Island, Abu Dhabi (Modon)</td></tr>
+    <tr><td>Why there</td><td>The capital, earlier in its cycle · Reem apartments +22% in the past year · island facing a Đ60bn financial-district expansion</td></tr>
+    <tr class="hi"><td>Price</td><td>Đ2,386,000 (~£508,000) · ~1,303 sqft · Đ1,832/sqft</td></tr>
+    <tr><td>Payment plan</td><td>5% instalments through construction (40% total) + 60% on handover, anticipated 2030</td></tr>
+    <tr><td>Cash to open</td><td>First 5% + 2% registration ≈ <b>Đ167,000 (~£36,000)</b> - on a half-million-pound asset</td></tr>
+    <tr><td>Deployed by handover</td><td>Đ954,400 (~£203,000) - 40%, spread over ~4 years</td></tr>
+  </table>
+  <h2>The plan</h2>
+  <p>Hold through handover, short-let it on the island, and let the build-out compound. If Reem does even HALF its current annual pace between now and keys, the unit sits comfortably above entry with only 40% of my money in - and the exit map from Chapter Seven stays open the whole way: the pre-handover sale, the handover sale, or the mortgage-and-keep. I bought the framework in this guide. Literally.</p>
+  <div class="panel"><p style="margin:0;"><b>Why I'm showing you this:</b> not because my deal is your deal - your brief will be different. Because you should never take off-plan advice from someone who hasn't signed an SPA with their own name on it. I have. Judge my incentives, then check my numbers - they're all above.</p></div>
+  <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
+</div>
+
+<!-- 13 WHY LISTEN -->
+<div class="page cream">
+  <div class="eyebrow">Chapter Eleven</div>
   <h1>Why Listen To Me</h1>
-  <p>I'm Calum MacLeod - Scottish, six years in Dubai, off-plan and secondary specialist at White &amp; Co, one of Dubai's largest independent brokerages. I publish the receipts behind this market daily to an audience who followed me here from that content - which is probably how you found this guide.</p>
-  <h2>Skin in the game</h2>
-  <div class="panel"><p style="margin:0;">I don't just sell this asset class - <b>I buy it. My own money is in UAE off-plan, including in Abu Dhabi's growth corridor</b>, purchased on the exact logic in these pages: below-market entry, staged payments, patient horizon, city rotation. When I recommend a structure, it's one I've signed myself. Judge my incentives however you like - then check my numbers, because everything I claim is sourced from government transaction data, and I'll show you the working.</p></div>
+  <p>I'm Calum MacLeod - Scottish, six years in Dubai, off-plan and secondary specialist and <b>one of the top-performing brokers at White &amp; Co</b>, one of Dubai's largest independent brokerages. Over <b>Đ100 million (~£21M) in property transacted in my first year</b> - and I publish the receipts behind this market daily to the audience that probably brought you to this guide.</p>
   <h2>How I work with remote buyers</h2>
   <ul class="tight">
-    <li>Everything over video and WhatsApp - brief, shortlists, site walkthroughs, launch day, signing. My UK buyers mostly never fly out until handover (some not even then).</li>
-    <li><b>You pay me nothing on off-plan</b> - developers pay the brokerage. My incentive is the relationship and the next purchase, which only happens if the first one was right.</li>
-    <li>I'll tell you not to buy. Some briefs should wait, some budgets fit nothing worth owning right now, and some "opportunities" are marketing. Hearing that costs you one phone call.</li>
+    <li>Everything over video and WhatsApp - brief, shortlists, site walkthroughs, launch day, signing. Most of my UK buyers never fly out before handover.</li>
+    <li><b>You pay me nothing on off-plan</b> - developers pay the brokerage. My incentive is the relationship and your next purchase, which only happens if the first one was right.</li>
+    <li>I'll tell you not to buy. Some briefs should wait, some budgets fit nothing worth owning, some "opportunities" are marketing. Hearing that costs you one call.</li>
   </ul>
+  <div class="panel"><p style="margin:0;">My own targets are on the wall and my own money is on the line (Chapter Ten). I work with a small number of serious buyers properly rather than a large number badly - which is exactly why the next page is one ask, not ten.</p></div>
   <div class="foot"><span><b>CALUM MACLEOD</b> · White &amp; Co</span><span>The Honest Guide to UAE Off-Plan</span></div>
 </div>
 
-<!-- 11 CTA -->
+<!-- 14 CTA -->
 <div class="page" style="display:flex; flex-direction:column; justify-content:center; text-align:center;">
   <div class="eyebrow">The Next Step</div>
   <h1 style="font-size:26pt;">One Call. Real Numbers.<br>No Pressure.</h1>
-  <p class="muted" style="font-size:11pt; max-width:150mm; margin:4mm auto;">Fifteen minutes on video or phone. You bring your budget and what you're trying to achieve; I bring live pricing, current launch access, and the cycle chart - and I'll tell you honestly whether now, later, or not-this is your answer.</p>
+  <p class="muted" style="font-size:11pt; max-width:150mm; margin:4mm auto;">Fifteen minutes on video or phone. You bring your budget and what you're trying to achieve; I bring live pricing, launch access, and the current cycle chart - and I'll tell you honestly whether now, later, or not-this is your answer.</p>
   <div class="motif">◆</div>
-  <div class="panel gold" style="max-width:130mm; margin:4mm auto; text-align:center;">
-    <p style="margin:0; font-size:12pt;"><b>WhatsApp: +971 55 350 2699</b><br>Instagram: <b>@uaecalum</b> - message "CALL"<br><span class="muted" style="font-size:9.5pt;">Calum MacLeod · White &amp; Co · Dubai</span></p>
+  <div class="panel gold" style="max-width:135mm; margin:4mm auto; text-align:center;">
+    <p style="margin:0; font-size:12.5pt;"><b>Message me and say you'd like a call.</b><br><br>WhatsApp: <b>+971 55 350 2699</b><br>Instagram: <b>@uaecalum</b><br><span class="muted" style="font-size:9.5pt;">Calum MacLeod · White &amp; Co · Dubai</span></p>
   </div>
-  <p class="muted" style="font-size:8.5pt; margin-top:6mm;">This guide is general market information prepared in good faith, not financial, tax or investment advice. Figures are indicative at time of writing and confirmed per-project. Your capital is at risk in any property purchase; take independent advice on your home-country tax position.</p>
+  <p class="muted" style="font-size:8.5pt; margin-top:6mm;">General market information prepared in good faith - not financial, tax or investment advice. Figures indicative at time of writing, confirmed per-project. Your capital is at risk in any property purchase; take independent advice on your home-country tax position.</p>
 </div>
 
 </body>
