@@ -136,7 +136,7 @@
  },
  {
   "date": "2026-07-06",
-  "status": "Active",
+  "status": "Rental only",
   "seller": "Amman",
   "source": "",
   "rl": null,
@@ -156,7 +156,7 @@
   "negotiation": 3,
   "feeling": 4,
   "score": 2,
-  "notes": "10 Aug: Calum to reach out. | 5bd Costa Brava, wants 3.7M. Gets handover Thu 9 Jul - happy to arrange access for Calum to view. Fresh stock, move fast.",
+  "notes": "13 Aug: OWNER AMMAD KEPT KEYS - got handover, rejected 3.65M offer, now RENT ONLY (wants ~3.6%+... rent instruction). OFF the sales book. Fresh landlord relationship - list the rental, revisit sale in 6-12mo. | 10 Aug: Calum to reach out. | 5bd Costa Brava, wants 3.7M. Gets handover Thu 9 Jul - happy to arrange access for Calum to view. Fresh stock, move fast.",
   "order": 6,
   "id": "amman-19",
   "stage": "Qualified"
@@ -628,7 +628,7 @@
   "rl": null,
   "cluster": "Malta",
   "unit": "Q845",
-  "matchedBuyer": "",
+  "matchedBuyer": "Santosh family",
   "beds": "",
   "note": "WhatsApp +91 84474 00100 (India number). Contact saved as 'Mukesh Mal Q845'.",
   "finance": "",
@@ -642,9 +642,24 @@
   "negotiation": null,
   "feeling": null,
   "score": 4,
-  "notes": "10 Aug: harder work - seller tougher, keep working him. | Seller came down to 2.7M on 2026-08-02 after two voice notes from Calum on 28 Jul. Calum's read: now very well priced, and a fantastic location - pushing to find buyers for it. Previous asking price not captured (voice notes not transcribed).",
+  "notes": "12 Aug: PITCHED to Santosh family at 2.8m ask / 2.7 NET (facing villas, 1min lagoon+park, Vastu angle). Await reaction. | 10 Aug: harder work - seller tougher, keep working him. | Seller came down to 2.7M on 2026-08-02 after two voice notes from Calum on 28 Jul. Calum's read: now very well priced, and a fantastic location - pushing to find buyers for it. Previous asking price not captured (voice notes not transcribed).",
   "order": 24,
   "id": "mukesh-q845",
   "stage": "Ready"
+ },
+ {
+  "date": "2026-08-13",
+  "status": "Agent stock",
+  "seller": "via Muhammad Abdullah (ext agent)",
+  "source": "WhatsApp agent",
+  "cluster": "Malta",
+  "unit": "P156",
+  "beds": "4",
+  "price": 2600000,
+  "notes": "13 Aug: Malta 2 P-series, 2.6M NET, snagging done, 'very good location', agent says give offer he'll push. FIRST sub-2.6M Malta seen - serves gap queue: Helaly 2.5 / Samia 2.5 / Pritam / Santosh households. MOVE TODAY.",
+  "score": 4,
+  "order": 25,
+  "id": "p156-agent",
+  "stage": "New"
  }
 ]
