@@ -2819,6 +2819,20 @@
    "notes": "He asked today - same-day service. Also capture: budget, finance, UK return date. J444 = single-row bullseye at 4.05M.",
    "completed": null,
    "snoozedUntil": null
+  },
+  {
+   "id": "t-hud-resale-intel",
+   "title": "Hudayriyat sales centre: ask for current inventory + resale/NOC picture on earlier phases",
+   "area": "Real Estate",
+   "priority": "medium",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-15",
+   "created": "2026-08-12",
+   "notes": "= the Modon secondary receipt we couldn't get from public data. Also unlocks ci-modon-secondary video gate.",
+   "completed": null,
+   "order": 23,
+   "top3": false
   }
  ],
  "units": [],
@@ -3063,6 +3077,48 @@
    "status": "Idea",
    "created": "2026-08-12",
    "notes": "Receipts: Henley 16,500 UK millionaires projected leaving over 7yrs; UBS forecast -17% UK millionaire population by 2029; AD millionaires +75% since 2013, centimillionaires +150% by 2040 (ValuStrat Q2 media section). Angle: Scottish broker, UK-expat buyer book (Amer, Danny, Muaz) - 'I don't read this in reports, I meet it at viewings.' Pillar: Markets & Maps + skin. Hook: 'Britain is exporting millionaires. I know where they land.'"
+  },
+  {
+   "id": "ci-ad-market-split",
+   "title": "Hudayriyat sales centre: 84% off-plan vs ready -28% - the market split",
+   "status": "Idea",
+   "created": "2026-08-12",
+   "notes": "Film IN sales centre. Hook: '84% of everything sold in AD last quarter was off-plan. Ready sales DROPPED 28%. This building is why.' Receipts: ValuStrat Q2 (6,061 off-plan +156%y). Companion/replacement for Modon-sceptics video."
+  },
+  {
+   "id": "ci-ad-rent-freeze",
+   "title": "The rent freeze decoder: AD 0% cap from 2 Jun - who wins, who loses",
+   "status": "Idea",
+   "created": "2026-08-12",
+   "notes": "Nobody covering this. Landlords lose escalation / tenants win / short-let untouched -> explains capital-growth+Airbnb buyer logic. Receipt: ValuStrat Q2 (0% temp cap replacing 5%). High share - useful decoder content."
+  },
+  {
+   "id": "ci-hud-skin",
+   "title": "Hudayriyat: why my own money is on this island",
+   "status": "Idea",
+   "created": "2026-08-12",
+   "notes": "Skin pillar underfed. On-site walk: Reem +22%, AD +17.8%, earlier in cycle than Dubai. Cheapest high-trust video available this week."
+  },
+  {
+   "id": "ci-reem-22",
+   "title": "Reem +22% from the inside - real listing pair",
+   "status": "Idea",
+   "created": "2026-08-12",
+   "notes": "Point at towers: 'ValuStrat: Reem apartments +22% in 12 months. This building, then vs now.' Pull one real listing pair = mini-J135."
+  },
+  {
+   "id": "ci-60bn-neighbour",
+   "title": "The D60 billion neighbour - filmed on Reem pointing at Maryah",
+   "status": "Idea",
+   "created": "2026-08-12",
+   "notes": "Hook: 'Aldar + Mubadala just committed 60 BILLION to expand THAT island. I'm standing on the island next door. Work it out.' 30-sec film, receipt: ValuStrat Q2 / official JV announcement. Possibly best hook of the set."
+  },
+  {
+   "id": "ci-ad-cycle-lag",
+   "title": "Abu Dhabi is Dubai four years ago - the cycle-lag thesis",
+   "status": "Idea",
+   "created": "2026-08-12",
+   "notes": "VPI 151 chart vs Dubai curve + Tuaima quote 'capital sits earlier in its cycle'. COVID video's AD twin - sets up every AD launch sale."
   }
  ],
  "buildLog": []
