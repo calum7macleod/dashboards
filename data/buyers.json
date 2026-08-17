@@ -624,7 +624,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -1255,7 +1255,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1505,13 +1505,13 @@
   "budget": 2750000,
   "segment": "Secondary",
   "phone": "1155 (last-4 only - full number when it surfaces in bridge)",
-  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (Đ733,870 day-one)",
+  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (\u0110733,870 day-one)",
   "nextStep": "Get name + full number + which cluster/unit sparked the conversation; intake call",
   "touches": [
    {
     "date": "2026-08-04",
     "channel": "wa",
-    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one Đ733,870)."
+    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one \u0110733,870)."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1736,5 +1736,45 @@
   "segment": "",
   "id": "hatem-26",
   "order": 42
+ },
+ {
+  "date": "2026-08-17",
+  "status": "Active",
+  "buyer": "James Ramsey",
+  "source": "Instagram outreach",
+  "colleague": "Self",
+  "area": "",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": 0,
+  "diff": 0,
+  "responsiveness": 5,
+  "relationship": 0,
+  "unitSupply": 0,
+  "feeling": 0,
+  "score": 0,
+  "notes": "IG @jamesramsey__ (1.9K followers, follows Calum, 134 mutuals). Outbound DM from Calum 2026-08-17 05:37 - not inbound. UK property investor, 10+ years holding UK property. Lived in the region 5 years so familiar with the UAE, but has never pulled the trigger on investing here. Says he increasingly believes he will buy a place at some point; the blocker has been TIMING rather than not finding the right opportunity. In and out of the UAE regularly - next out 2 September, wants to grab a coffee. Calum offered a WhatsApp call to run through the market, areas and timing. Gave UAE mobile +971 58 570 1146 for WhatsApp. NOT YET ESTABLISHED: budget, area, unit type, cash vs mortgage, target timeline beyond 'timing'.",
+  "id": "james-ramsey-43",
+  "order": 43,
+  "stage": "Qualified",
+  "heat": 4,
+  "lastContact": "2026-08-17",
+  "nextTouch": "2026-08-18",
+  "touchReason": "Open the WhatsApp thread on the number he gave, then book the intro call; pencil coffee around 2 Sept",
+  "needSummary": "UK investor, 10+ yrs UK property, familiar with region, never bought UAE. Blocker is timing. In UAE from 2 Sept. Budget/area/type all unknown.",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-17",
+    "channel": "ig",
+    "summary": "Outbound IG DM. 10+ yrs UK property, lived in region 5 yrs, believes he'll buy here eventually - held back by timing not opportunity. Next in UAE 2 Sept, up for coffee. Shared WhatsApp +971 58 570 1146."
+   }
+  ],
+  "phone": "+971 58 570 1146"
  }
 ]
