@@ -1776,5 +1776,45 @@
    }
   ],
   "phone": "+971 58 570 1146"
+ },
+ {
+  "date": "2026-08-17",
+  "status": "Active",
+  "buyer": "Sophia",
+  "source": "Property Finder",
+  "colleague": "Self",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Costa Brava",
+  "cluster2": "Portofino",
+  "cluster3": "",
+  "matchedUnit": "Enquired on Costa Brava 2 4-bed TH (PF listing GAKC1KSPMN10FCCEF7SFVSJ5QM). Sent Portofino 3-bed video + 4-bed TH middle unit floorplan (LTH-4B-M).",
+  "beds": "3",
+  "finance": "",
+  "budget": null,
+  "needed": 0,
+  "diff": 0,
+  "responsiveness": 5,
+  "relationship": 0,
+  "unitSupply": 0,
+  "feeling": 0,
+  "score": 0,
+  "notes": "Contact saved as 'Sophia Buyer 3'. Italian number (+39). Property Finder lead 2026-08-17 on a Costa Brava 2 4-bed townhouse, but says she is looking at DAMAC Lagoons in general and asked for options, floorplans and videos, then to schedule viewings on whatever she likes. END USER - moving in, not investment. BEDS: does not have to be a 4 bed, open to 3 beds - actively PREFERS a 3 bed even if the price is the same, because she wants bigger living space and fewer rooms. TIMING: flexible. Ideally move in by end of 2026, but will wait until June 2027 for something she really loves. Calum sent Portofino 3-bed video. Budget not stated. Whether 'we' means a partner/family is not established.",
+  "id": "sophia-44",
+  "order": 44,
+  "stage": "Qualified",
+  "heat": 5,
+  "lastContact": "2026-08-17",
+  "nextTouch": "2026-08-18",
+  "touchReason": "Send more 3-bed options with big living space (Portofino/Costa Brava), get her budget, then book viewings",
+  "needSummary": "End user, 3-bed preferred over 4 (bigger living, fewer rooms), DAMAC Lagoons. Move in by end 2026, can wait to June 2027. Budget unknown.",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-17",
+    "channel": "wa",
+    "summary": "PF lead on Costa Brava 2 4-bed. Looking at Lagoons broadly, wants options/floorplans/videos then viewings. Moving in herself. Prefers 3-bed over 4 for bigger living space. Flexible timing - ideally end 2026, can wait to June 2027. Sent Portofino 3-bed video + 4-bed floorplan."
+   }
+  ],
+  "phone": "+39 346 355 7605"
  }
 ]
