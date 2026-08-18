@@ -688,5 +688,32 @@
   "order": 26,
   "id": "malta-p153",
   "stage": "Ready"
+ },
+ {
+  "date": "2026-08-18",
+  "status": "Active",
+  "seller": "",
+  "source": "",
+  "rl": null,
+  "cluster": "Costa Brava",
+  "unit": "J103",
+  "matchedBuyer": "",
+  "beds": "",
+  "note": "Unit confirmed as J103 by Calum. Seller name/contact not captured. Bed count not stated in the listing post.",
+  "finance": "",
+  "price": 8000000,
+  "needed": 8000000,
+  "diff": 0,
+  "fees": "",
+  "responsiveness": null,
+  "relationship": null,
+  "unitDesire": null,
+  "negotiation": null,
+  "feeling": null,
+  "score": null,
+  "notes": "Posted to the DAMAC LAGOONS broker group 2026-08-18 09:23. Costa Brava V3, snagging complete, park facing. 8m. Net figure not stated - 8m is the quoted price.",
+  "order": 27,
+  "id": "costabrava-j103",
+  "stage": "Ready"
  }
 ]
