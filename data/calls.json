@@ -1,0 +1,10 @@
+{
+ "_schema": "Each entry: {date, name, phone(optional), result: connected|voicemail|no-answer|gatekeeper, mins(optional), outcome(one line), nextStep(one line), linkedTo(buyer/stock id optional)}",
+ "_workflow": "Calum voice-notes after the block (or mid-block): 'call log: [name] - [what happened] - [next step]'. Max writes entries same session, links to CRM cards, creates follow-up tasks, updates streak + scoreboard. Daily totals feed the morning brief and Friday receipts.",
+ "streak": {
+  "current": 0,
+  "best": 0,
+  "lastBlockDate": null
+ },
+ "days": []
+}
