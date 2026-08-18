@@ -270,7 +270,7 @@
   "stage": "Longer Term"
  },
  {
-  "date": "2026-04-06",
+  "date": "2026-08-18",
   "status": "Active",
   "seller": "Haroon",
   "source": "Calling Out",
@@ -278,12 +278,12 @@
   "cluster": "Costa Brava",
   "unit": "K179",
   "matchedBuyer": "",
-  "beds": 4,
-  "note": "",
+  "beds": "5",
+  "note": "BEDS CONFLICT: listed as 5 bed in the 18 Aug broker post, record previously had 4 bed - confirm which is right.",
   "finance": "",
-  "price": 4000000,
+  "price": 4300000,
   "needed": 4000000,
-  "diff": 0,
+  "diff": 300000,
   "fees": "",
   "responsiveness": 3,
   "relationship": 3,
@@ -291,10 +291,10 @@
   "negotiation": 3,
   "feeling": 3,
   "score": 3,
-  "notes": "10 Aug: in good contact. | K179 \u2014 now wants 4M.",
+  "notes": "18 Aug: Marketed in the DAMAC LAGOONS broker group at 4.3m. 5 bed, end corner single row, park backing. Seller needs 4m, so 4.3m ask leaves ~300k. | 10 Aug: in good contact. | K179 \u2014 now wants 4M.",
   "order": 11,
   "id": "haroon-13",
-  "stage": "Qualified"
+  "stage": "Ready"
  },
  {
   "date": "2026-01-07",
