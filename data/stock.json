@@ -661,5 +661,32 @@
   "order": 25,
   "id": "p156-agent",
   "stage": "New"
+ },
+ {
+  "date": "2026-08-18",
+  "status": "Active",
+  "seller": "",
+  "source": "",
+  "rl": null,
+  "cluster": "Malta",
+  "unit": "P154",
+  "matchedBuyer": "",
+  "beds": "5",
+  "note": "Unit read off the circled plot on the Malta masterplan - P153/P155 adjacent, CONFIRM. Seller name/contact not captured.",
+  "finance": "",
+  "price": 4200000,
+  "needed": 4000000,
+  "diff": 200000,
+  "fees": "",
+  "responsiveness": null,
+  "relationship": null,
+  "unitDesire": null,
+  "negotiation": null,
+  "feeling": null,
+  "score": null,
+  "notes": "Posted to the DAMAC LAGOONS broker group 2026-08-18 08:32. 5 bed end corner, big plot, HANDED OVER, near lagoon. Asking 4.2m, around 4m net closes it. Calum's read: good one. PLAN: get an offer in at 3.9m inclusive of fees tomorrow (19 Aug).",
+  "order": 26,
+  "id": "malta-p154",
+  "stage": "Ready"
  }
 ]
