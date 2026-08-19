@@ -3071,6 +3071,20 @@
    "completed": null,
    "order": 7,
    "top3": false
+  },
+  {
+   "id": "t-vantage-gold",
+   "title": "Move 3K from Vantage to gold trader",
+   "area": "Investing",
+   "priority": "medium",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-20",
+   "created": "2026-08-19",
+   "notes": "Per 19 Aug evening. Log actual transfer in finance.json once executed (confirm currency + destination). Max flag: confirm the gold trader's live track record (months visible, max drawdown) before funding - one look, then your call.",
+   "completed": null,
+   "order": 8,
+   "top3": false
   }
  ],
  "units": [],
