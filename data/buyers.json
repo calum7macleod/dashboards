@@ -624,7 +624,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -1255,7 +1255,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1505,13 +1505,13 @@
   "budget": 2750000,
   "segment": "Secondary",
   "phone": "1155 (last-4 only - full number when it surfaces in bridge)",
-  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (Đ733,870 day-one)",
+  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (\u0110733,870 day-one)",
   "nextStep": "Get name + full number + which cluster/unit sparked the conversation; intake call",
   "touches": [
    {
     "date": "2026-08-04",
     "channel": "wa",
-    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one Đ733,870)."
+    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one \u0110733,870)."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1889,5 +1889,43 @@
   "segment": "",
   "id": "saumyadeep-8401",
   "order": 46
+ },
+ {
+  "buyer": "Nasreen Shanawaz",
+  "status": "Active",
+  "date": "2026-08-19",
+  "source": "",
+  "colleague": "",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Any",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": 4,
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 4,
+  "relationship": 2,
+  "unitSupply": 4,
+  "feeling": 3,
+  "score": 3,
+  "notes": "19 Aug: WhatsApp +971 50 484 1790. Saw the community, flexible - 'any cluster is fine'. Asked for pictures and price. Calum pitched Nice 4 bed single row, mortgageable, 2.9M (with masterplan image). Budget not yet stated.",
+  "id": "nasreen-shanawaz",
+  "order": 999,
+  "stage": "New",
+  "heat": 3,
+  "lastContact": "2026-08-19",
+  "nextTouch": "2026-08-20",
+  "touchReason": "Chase reaction to Nice 4bed SR 2.9M pitch; ask budget fork + beds must-haves",
+  "needSummary": "4 bed Lagoons, any cluster, budget TBC - reacting to 2.9M Nice pitch",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-19",
+    "channel": "wa",
+    "summary": "Asked for pictures + price, any cluster fine; Calum sent Nice 4bed SR mortgageable 2.9M with map"
+   }
+  ]
  }
 ]
