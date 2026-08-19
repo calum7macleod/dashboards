@@ -2617,12 +2617,12 @@
       "title": "CANCEL Sandcastles trial + delete MCP block from ~/.claude.json",
       "area": "Content",
       "priority": "high",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": "2026-08-10",
       "created": "2026-08-08",
       "notes": "Verdict reached early 8 Aug: $500/mo tier needed for API-to-Claude, not worth it. Replacing with free stack: Meta Business Discovery (IG) + YouTube Data API -> droplet cron -> data/competitor-feed.json -> Max baseline/breakout analysis in Monday brief. Cancel before day 7 billing. ROLLED TO MONDAY per Calum 9 Aug: cancel subscription/trial AND remove sandcastles block from ~/.claude.json (restore .bak or delete entry). Trial billing risk - do not slip past day 7.",
-      "completed": null,
+      "completed": "2026-08-19",
       "snoozedUntil": null
     },
     {
