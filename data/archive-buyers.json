@@ -420,7 +420,7 @@
   "unitSupply": 4,
   "feeling": 4,
   "score": 0.78,
-  "notes": "Fell out \u2014 gone elsewhere.",
+  "notes": "Fell out — gone elsewhere.",
   "order": 17,
   "id": "hrushit-16"
  },
@@ -570,7 +570,7 @@
   "unitSupply": 4,
   "feeling": 5,
   "score": 0.9,
-  "notes": "Form B done. Was actively offering on Nice at 2.275M \u2014 that unit fell through. Need to find replacement unit urgently. HIGH PRIORITY.",
+  "notes": "Form B done. Was actively offering on Nice at 2.275M — that unit fell through. Need to find replacement unit urgently. HIGH PRIORITY.",
   "order": 23,
   "id": "meera-22"
  },
@@ -695,7 +695,7 @@
   "unitSupply": 4,
   "feeling": 3,
   "score": 0.78,
-  "notes": "Pretty ready. Jumped up. External agent. Looking at Malta \u2014 JJ unit may work.",
+  "notes": "Pretty ready. Jumped up. External agent. Looking at Malta — JJ unit may work.",
   "order": 28,
   "id": "ihab-27"
  },
@@ -720,7 +720,7 @@
   "unitSupply": 4,
   "feeling": 5,
   "score": 0.8,
-  "notes": "HOT. Referral. 4 bed Costa Brava, 2.7M. Needs to move in within 60 days max \u2014 urgent timeline.",
+  "notes": "HOT. Referral. 4 bed Costa Brava, 2.7M. Needs to move in within 60 days max — urgent timeline.",
   "order": 29,
   "id": "jay-28"
  },
@@ -895,7 +895,7 @@
   "unitSupply": 3,
   "feeling": 4,
   "score": 0.83,
-  "notes": "4 bed Costa Brava, 2.5M mortgage. Trying to get on Ronnie's unit at 2.6M \u2014 100k budget gap to bridge.",
+  "notes": "4 bed Costa Brava, 2.5M mortgage. Trying to get on Ronnie's unit at 2.6M — 100k budget gap to bridge.",
   "order": 36,
   "id": "arman-35"
  },
@@ -970,7 +970,7 @@
   "unitSupply": 4,
   "feeling": 4,
   "score": 0.75,
-  "notes": "2x 4 bed Malta at 2.5M each. Mortgage. Shared with Lewis. Sound buyers \u2014 push hard.",
+  "notes": "2x 4 bed Malta at 2.5M each. Mortgage. Shared with Lewis. Sound buyers — push hard.",
   "order": 39,
   "id": "ahmed-cousin-38"
  },
@@ -995,7 +995,7 @@
   "unitSupply": 4,
   "feeling": 3,
   "score": 0.72,
-  "notes": "2.5M mortgage, any cluster. Not sure how ready. Viewed \u2014 ok reaction but not great.",
+  "notes": "2.5M mortgage, any cluster. Not sure how ready. Viewed — ok reaction but not great.",
   "order": 40,
   "id": "vishnu-39"
  },
@@ -1195,7 +1195,7 @@
   "unitSupply": 4,
   "feeling": 5,
   "score": 0.9199999999999999,
-  "notes": "HIGH QUALITY. Single row 5 bed, mortgageable clusters, 3.5M. Confirmed will sign. Ready to buy \u2014 prioritise.",
+  "notes": "HIGH QUALITY. Single row 5 bed, mortgageable clusters, 3.5M. Confirmed will sign. Ready to buy — prioritise.",
   "order": 48,
   "id": "danish-47"
  },
@@ -1295,7 +1295,7 @@
   "unitSupply": 3,
   "feeling": 3,
   "score": 0.62,
-  "notes": "Viewed inside 5 bed Costa. Wants 4 bed at 2.5M \u2014 very unlikely at that price. Need to sell Business Bay first. 40% mortgage issue to fix. Calum told them to act now or prices will rise.",
+  "notes": "Viewed inside 5 bed Costa. Wants 4 bed at 2.5M — very unlikely at that price. Need to sell Business Bay first. 40% mortgage issue to fix. Calum told them to act now or prices will rise.",
   "order": 52,
   "id": "irina-51"
  },
@@ -1345,7 +1345,7 @@
   "unitSupply": 4,
   "feeling": 4,
   "score": 0.83,
-  "notes": "5 bed Costa, 3.3M mortgage. Wants premium unit \u2014 needs to be a good one.",
+  "notes": "5 bed Costa, 3.3M mortgage. Wants premium unit — needs to be a good one.",
   "order": 54,
   "id": "jad-12"
  },
@@ -1595,7 +1595,7 @@
   "unitSupply": 3,
   "feeling": 2,
   "score": 0.88,
-  "notes": "Giving cheques at 6.5M for Costa villas. BUMP UP \u2014 serious buyer. | 7 Jul: Archived",
+  "notes": "Giving cheques at 6.5M for Costa villas. BUMP UP — serious buyer. | 7 Jul: Archived",
   "order": 79,
   "id": "dan-3"
  },
@@ -2070,7 +2070,7 @@
   "unitSupply": 5,
   "feeling": 5,
   "score": 0.87,
-  "notes": "4 bed any cluster, 2.6M. Mortgage PRE-APPROVED. HIGH \u2014 ready to go. | Archived 14 Jul",
+  "notes": "4 bed any cluster, 2.6M. Mortgage PRE-APPROVED. HIGH — ready to go. | Archived 14 Jul",
   "order": 128,
   "id": "baljit-20"
  },
@@ -2219,5 +2219,34 @@
   "maxScoreDate": "2026-08-03",
   "nextStep": "Drip only: send genuinely interesting 4bd deals occasionally, no chasing",
   "archived": "2026-08-04"
+ },
+ {
+  "buyer": "Helaly",
+  "status": "Closed Lost",
+  "stage": "Negotiating",
+  "date": "2026-08-10",
+  "source": "Instagram -> WhatsApp",
+  "colleague": "",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Costa Brava",
+  "cluster2": "Malta",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "4",
+  "finance": "Mortgage (in progress)",
+  "budget": "D2.55-2.6M (firmed)",
+  "needed": "4-bed",
+  "responsiveness": 3,
+  "relationship": 3,
+  "unitSupply": 3,
+  "feeling": 3,
+  "score": 4,
+  "maxScore": 4,
+  "maxScoreWhy": "Moved to live offer inside 3 days of first contact, budget firmed, family anchor in the community (brother in Portofino). Mortgage progress still unconfirmed - verify before offer submission.",
+  "notes": "19 Aug: CLOSED LOST - bought with another agent. Family still in community (brother Portofino) - keep warm for future/referrals. | 13 Aug QUALIFIED per Calum: agreed plan IN HIS WORDS - 'let's spend a week time to try for costa brava 2.6, or 2.55 in Malta.' Malta P-series unit pitched (plan sent, circled ~P396/397), Calum asked 'shall I offer 2.55 on this one? See what we can do.' KEY DRIVER: 'my brother just brought a unit in Portofino, where Costa Brava is more closer' - family-proximity purchase = urgency + lower price elasticity. P156 2.6 net = backup. | 13 Aug: PROGRESSING - agreed to spend a week trying CB at 2.6 or Malta at 2.55. P-series Malta unit pitched (plan sent, ~P396/397 area), Calum offering 2.55. Family driver: BROTHER JUST BOUGHT PORTOFINO - wants proximity, CB 'more clos",
+  "segment": "",
+  "id": "helaly-6439",
+  "order": 39,
+  "heat": 4
  }
 ]
