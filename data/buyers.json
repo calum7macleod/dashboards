@@ -1483,7 +1483,7 @@
   "matchedUnit": "",
   "beds": "4",
   "finance": "Cash",
-  "budget": "D4-4.5M (revised UP from ~2.5M)",
+  "budget": 2500000,
   "commPct": 0.02,
   "score": 4,
   "heat": 4,
@@ -1495,7 +1495,8 @@
   "maxScoreWhy": "Budget doubled to 4-4.5M with active engagement - but still no direct number captured (WhatsApp group only) and now split across two areas. Capture the number, then this is a 5.",
   "maxScoreDate": "2026-08-05",
   "id": "toufik-8513",
-  "order": 34
+  "order": 34,
+  "budgetText": "D4-4.5M (revised UP from ~2.5M)"
  },
  {
   "buyer": "Buyer ...1155 (name TBC)",
@@ -1622,7 +1623,7 @@
   "matchedUnit": "Q845 (pitched 2.7 net)",
   "beds": "3-4",
   "finance": "Mortgage",
-  "budget": "~D7.5M total across 3 houses (~2.5M each)",
+  "budget": 2500000,
   "needed": "3 houses (one per household)",
   "responsiveness": 4,
   "relationship": 3,
@@ -1635,7 +1636,8 @@
   "segment": "",
   "id": "santosh-family-1",
   "order": 38,
-  "heat": 4
+  "heat": 4,
+  "budgetText": "~D7.5M total across 3 houses (~2.5M each)"
  },
  {
   "buyer": "Danny",
@@ -1651,7 +1653,7 @@
   "matchedUnit": "",
   "beds": "5",
   "finance": "TBC",
-  "budget": "~D3.5-4M indicative (anchored on 3.5M enquiry listing)",
+  "budget": 3500000,
   "needed": "5-bed SINGLE ROW villa, family use. Ready or handover next quarter. NOT Portofino (hates exteriors). Malta ok if handover works. Knows CB layouts (visited).",
   "responsiveness": 4,
   "relationship": 3,
@@ -1664,7 +1666,8 @@
   "segment": "",
   "id": "danny-cb5sr",
   "order": 39,
-  "heat": 4
+  "heat": 4,
+  "budgetText": "~D3.5-4M indicative (anchored on 3.5M enquiry listing)"
  },
  {
   "buyer": "Nauman",
@@ -1680,7 +1683,7 @@
   "matchedUnit": "",
   "beds": "V3",
   "finance": "CASH",
-  "budget": "D6.5M",
+  "budget": 6500000,
   "needed": "Nice LV3 villa, 6.5M cash, MOVE-IN (ready). Phone +971 50 446 1629.",
   "responsiveness": 4,
   "relationship": 3,
@@ -1693,7 +1696,8 @@
   "segment": "",
   "id": "nauman-1629",
   "order": 40,
-  "heat": 4
+  "heat": 4,
+  "budgetText": "D6.5M"
  },
  {
   "buyer": "Hatem Khalifa",
@@ -1709,7 +1713,7 @@
   "matchedUnit": "K-row unit found 2.65M",
   "beds": "4",
   "finance": "TBC",
-  "budget": "D2.6M",
+  "budget": 2600000,
   "needed": "J/K-series handed-over CB 4-bed at 2.6M",
   "responsiveness": 4,
   "relationship": 3,
@@ -1722,7 +1726,8 @@
   "segment": "",
   "id": "hatem-26",
   "order": 41,
-  "heat": 4
+  "heat": 4,
+  "budgetText": "D2.6M"
  },
  {
   "date": "2026-08-17",
@@ -1858,7 +1863,7 @@
   "matchedUnit": "",
   "beds": "4",
   "finance": "Mortgage",
-  "budget": "D2.8M MAX",
+  "budget": 2800000,
   "needed": "4-bed SINGLE ROW, any cluster. Handed over OR notice served - MOVE IN BY OCTOBER latest. NOT facing same way as Santorini C. Ready to sign as soon as requirements met.",
   "responsiveness": 5,
   "relationship": 4,
@@ -1871,7 +1876,8 @@
   "segment": "",
   "id": "saumyadeep-8401",
   "order": 45,
-  "heat": 5
+  "heat": 5,
+  "budgetText": "D2.8M MAX"
  },
  {
   "buyer": "Nasreen Shanawaz",
@@ -1964,7 +1970,7 @@
   "matchedUnit": "",
   "beds": "3-4",
   "finance": "TBC",
-  "budget": "Up to D2.7M",
+  "budget": 2700000,
   "responsiveness": 4,
   "relationship": 4,
   "unitSupply": 4,
@@ -1976,6 +1982,7 @@
   "segment": "",
   "id": "pedro-lewis",
   "order": 1000,
-  "heat": 4
+  "heat": 4,
+  "budgetText": "Up to D2.7M"
  }
 ]
