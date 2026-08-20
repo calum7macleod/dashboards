@@ -624,7 +624,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -1255,7 +1255,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1505,13 +1505,13 @@
   "budget": 2750000,
   "segment": "Secondary",
   "phone": "1155 (last-4 only - full number when it surfaces in bridge)",
-  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (Đ733,870 day-one)",
+  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (\u0110733,870 day-one)",
   "nextStep": "Get name + full number + which cluster/unit sparked the conversation; intake call",
   "touches": [
    {
     "date": "2026-08-04",
     "channel": "wa",
-    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one Đ733,870)."
+    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one \u0110733,870)."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1896,6 +1896,44 @@
     "date": "2026-08-19",
     "channel": "wa",
     "summary": "Asked for pictures + price, any cluster fine; Calum sent Nice 4bed SR mortgageable 2.9M with map"
+   }
+  ]
+ },
+ {
+  "buyer": "Mal Lawson",
+  "status": "Active",
+  "date": "2026-08-20",
+  "source": "",
+  "colleague": "",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Costa Brava",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": 4,
+  "finance": "",
+  "budget": 2650000,
+  "needed": "",
+  "responsiveness": 5,
+  "relationship": 5,
+  "unitSupply": 5,
+  "feeling": 5,
+  "score": 5,
+  "notes": "20 Aug: Calum's BEST buyer. WhatsApp +971 58 562 7080 (contact saved 'Mal Lawson Buyer 4 CB'). Wants 4 bed Costa Brava, OK at 2.65M. Son's school is right next to Lagoons (the Stuarts, adjoining Portofino side) - strong location lock-in. Calum's read: they'll lock in with him and sign soon.",
+  "id": "mal-lawson",
+  "order": 999,
+  "stage": "Viewing",
+  "heat": 5,
+  "lastContact": "2026-08-20",
+  "nextTouch": "2026-08-21",
+  "touchReason": "Heat 5 daily cadence - line up 4bed CB options around 2.65M and push to signing",
+  "needSummary": "4 bed Costa Brava, ~2.65M, school next to Lagoons, ready to sign soon",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-20",
+    "channel": "wa",
+    "summary": "Logged as best buyer: 4bed CB at 2.65M, school beside Lagoons, locked in with Calum, signing soon"
    }
   ]
  }
