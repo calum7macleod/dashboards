@@ -490,7 +490,9 @@ function renderBoard(){
   const pipeC=live.reduce((a,b)=>a+bComm(b),0);
   $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · gross ≈ <b style="color:var(--lgold)">${fmtK(pipeC)}</b> · take-home @${Math.round(TIER*100)}% ≈ <b style="color:var(--lgold)">${fmtK(Math.round(pipeC*TIER))}</b> <span style="font-size:11px">(2% secondary · 3-4% off-plan)</span>`;
   $('board').innerHTML=STAGES.map(st=>{
-    const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>(b.score||0)-(a.score||0));
+    const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>{
+      if(['Won','Lost'].includes(st)){const da=a.closedDate||a.date||'',db=b.closedDate||b.date||'';return da<db?1:da>db?-1:0;}
+      return (b.score||0)-(a.score||0);});
     const val=cards.reduce((a,b)=>a+(b.budget||0),0);const vc=cards.reduce((a,b)=>a+bComm(b),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','buyer')">
       <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${val?fmtB(val)+' <span style="color:var(--lgold)">· '+fmtK(vc)+'</span>':''}</div>
