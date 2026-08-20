@@ -629,7 +629,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -1260,7 +1260,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1324,7 +1324,7 @@
  {
   "buyer": "Ruth",
   "status": "Active",
-  "stage": "Viewing",
+  "stage": "Longer Term",
   "score": 3,
   "date": "2026-08-04",
   "source": "TBC",
@@ -1510,13 +1510,13 @@
   "budget": 2750000,
   "segment": "Secondary",
   "phone": "1155 (last-4 only - full number when it surfaces in bridge)",
-  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (\u0110733,870 day-one)",
+  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (Đ733,870 day-one)",
   "nextStep": "Get name + full number + which cluster/unit sparked the conversation; intake call",
   "touches": [
    {
     "date": "2026-08-04",
     "channel": "wa",
-    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one \u0110733,870)."
+    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one Đ733,870)."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1864,7 +1864,8 @@
   "notes": "19 Aug: HIS WORDS: 'in 2.8 ready to movein any single row please let me know on priority.' Brief confirmed in writing by Calum: single row / 4bed / any cluster / mortgage / handed over or notice served (move in October LATEST) / 2.8m max / NOT facing same way as Santorini C. Phone +971 54 445 8401. STRAIGHT TO VIEWINGS. Candidates: Q845 Malta 2.7 net (facing villas), P156 Malta 2.6 net (P-series), J340 CB 2.8. NOTE: Hatem's K-row 2.65 target = possible competition for same stock class - manage carefully.",
   "segment": "",
   "id": "saumyadeep-8401",
-  "order": 45
+  "order": 45,
+  "heat": 5
  },
  {
   "buyer": "Nasreen Shanawaz",
