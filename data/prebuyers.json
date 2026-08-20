@@ -1,5 +1,8 @@
 [
  {
+  "_schema": "LAUNCH BENCH - off-plan buyers waiting for the right launch. Fields: name, phone, brief{product,areas,budget,timing,triggers}, lastSpoke, source, notes, status(Bench/Activated/Gone). RULE: every new launch Max hears about gets cross-checked against this bench + active book + archive; ranked matches + revival messages returned. Max owns remembering; Calum owns calling."
+ },
+ {
   "date": "2026-08-04",
   "name": "NK",
   "source": "Bayut listing lead",
@@ -46,5 +49,35 @@
   "source": "Joe Vaughan (W&Co)",
   "notes": "SOLD on Golf Estates (Calum's pitch). Funds-ready. Away until 21 Sept - closing window opens exactly at launch-wave peak. If no affordable townhouse appears he buys another off-plan. Follow up 22 Sept with Joe.",
   "status": "Warm - dated"
+ },
+ {
+  "name": "Michael (Tara Park owner / 'Hazey')",
+  "phone": "",
+  "brief": {
+   "product": "Launch deals - open brief, repeat buyer",
+   "areas": "Dubai + AD",
+   "budget": "TBC on landing",
+   "timing": "Lands mid-Sept, wants September deals",
+   "triggers": "Any strong Sept launch"
+  },
+  "lastSpoke": "2026-08-13",
+  "source": "Repeat client",
+  "notes": "Tara Park owner. Line up 2-3 launch options for his arrival.",
+  "status": "Bench"
+ },
+ {
+  "name": "Amer Choudhry",
+  "phone": "",
+  "brief": {
+   "product": "Phase-1 villa OR apartment tier",
+   "areas": "Jebel Ali Racecourse (The Park), Lulu watch, AD growth corridor",
+   "budget": "Villa ~7.5M+ stretch vs apartment ~1.8M+ rung - per Income Plan sequencing",
+   "timing": "Docs launch-ready by end of year",
+   "triggers": "JAR registration opening / first price sheet; any Lulu sales programme"
+  },
+  "lastSpoke": "2026-08-12",
+  "source": "Client - Ground Floor report",
+  "notes": "Trigger rules to be set on next call: 'if phase-1 opens below X psf, in for Y.'",
+  "status": "Bench"
  }
 ]
