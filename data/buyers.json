@@ -1499,8 +1499,8 @@
  },
  {
   "buyer": "Buyer ...1155 (name TBC)",
-  "status": "Active",
-  "stage": "New",
+  "status": "Closed Lost",
+  "stage": "Lost",
   "score": 2,
   "date": "2026-08-04",
   "source": "TBC",
@@ -1529,7 +1529,9 @@
   "history": "Created 4-Aug. Calum: 'number ending 1155, just started speaking to.'",
   "id": "buyer-1155",
   "order": 35,
-  "heat": 2
+  "heat": 2,
+  "nextTouch": null,
+  "closedDate": "2026-08-20"
  },
  {
   "buyer": "Michael (Tara Park owner)",
@@ -1972,6 +1974,7 @@
   "notes": "20 Aug: NEW via Lewis - SPLIT DEAL. Already at Offer stage. 3 or 4 bed, any cluster, up to 2.7M. Which unit is the offer on? - capture at next touch. Gap-queue adjacent: P156 (2.6 net) and Q845 (2.7 net) both fit if current offer stalls.",
   "segment": "",
   "id": "pedro-lewis",
-  "order": 1000
+  "order": 1000,
+  "heat": 4
  }
 ]
