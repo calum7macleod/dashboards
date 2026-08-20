@@ -1180,7 +1180,7 @@
  {
   "date": "2026-08-03",
   "status": "Active",
-  "stage": "Viewing",
+  "stage": "Lost",
   "buyer": "Rajesh",
   "phone": "",
   "source": "Unknown",
@@ -1208,7 +1208,8 @@
   "purpose": "End-user",
   "maxScore": 3.5,
   "maxScoreWhy": "Viewed within days of appearing, returning with wife, price negotiation already live. Textbook early velocity. Unproven: finance type unknown, wife = untested decision-maker.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "nextTouch": null
  },
  {
   "date": "2026-08-03",
