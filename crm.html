@@ -572,7 +572,7 @@ function drop(e,stage,kind){e.preventDefault();e.currentTarget.classList.remove(
     const s=STOCK.find(x=>String(x.id)===dragId.slice(6));if(!s)return;
     s.stage=stage;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${stage}`);return;}
   const b=BUYERS.find(x=>x.id===dragId);if(!b)return;
-  b.stage=stage;if(['Won','Lost'].includes(stage))b.nextTouch=null;
+  b.stage=stage;if(['Won','Lost'].includes(stage)){b.nextTouch=null;b.closedDate=today();b.status='Closed '+stage;}
   render();queueSave('data/buyers.json',BUYERS,`CRM: ${b.buyer} → ${stage}`);}
 const byId=id=>BUYERS.find(x=>x.id===id);
 function touched(id){const b=byId(id);if(!b)return;

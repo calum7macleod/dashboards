@@ -1064,7 +1064,7 @@
  },
  {
   "date": "2026-08-01",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Najla Aboobakar",
   "source": "Property Finder",
   "colleague": "Self",
@@ -1109,7 +1109,8 @@
   "history": "Property Finder lead on Costa Brava 1 4-bed TH listing (1,547 sqft, 'Premium | Mortgageable | Neutral Color'). Met in person 2026-08-01. Budget 2.4-2.5M. Mortgage 2M plus deposit and costs on top. Deciding between here (Lagoons) and The Valley. They preferred the single rows; Calum's read is The Valley likely the best fit, and Malta flagged as the best cluster option - Calum's view, not the buyers' stated preference. He is a facade designer and works with the developer a lot. UNCONFIRMED: whether 'they' is Najla plus partner - only Najla's number captured. Also unclear whether 'no one doubt' referred to a specific unit.",
   "maxScore": 2.4,
   "maxScoreWhy": "Comparing Lagoons vs The Valley = early-funnel, mortgage, modest budget. Liked SRs; Malta fit noted. Nurture cadence, not chase.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "closedDate": "2026-08-20"
  },
  {
   "date": "2026-08-01",
@@ -1180,7 +1181,7 @@
  },
  {
   "date": "2026-08-03",
-  "status": "Active",
+  "status": "Closed Lost",
   "stage": "Lost",
   "buyer": "Rajesh",
   "phone": "",
@@ -1210,7 +1211,8 @@
   "maxScore": 3.5,
   "maxScoreWhy": "Viewed within days of appearing, returning with wife, price negotiation already live. Textbook early velocity. Unproven: finance type unknown, wife = untested decision-maker.",
   "maxScoreDate": "2026-08-03",
-  "nextTouch": null
+  "nextTouch": null,
+  "closedDate": "2026-08-20"
  },
  {
   "date": "2026-08-03",
