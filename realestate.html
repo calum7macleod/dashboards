@@ -494,7 +494,16 @@ function filterBuyers() {
   const search = (document.getElementById('buyers-search').value||'').toLowerCase();
   const rows = BUYERS
     .filter(b=>(!status||b.status===status)&&(!search||b.buyer.toLowerCase().includes(search)||(b.cluster1||'').toLowerCase().includes(search)||(b.notes||'').toLowerCase().includes(search)))
-    .sort((a,b)=>((b.score||0)-(a.score||0))||((a.order||99)-(b.order||99)));
+    .sort((a,b)=>{
+      const closed=s=>/^closed/i.test(s.status||'');
+      // closed cards sort below active, then by closedDate (fallback: date) newest first
+      if(closed(a)!==closed(b)) return closed(a)?1:-1;
+      if(closed(a)&&closed(b)){
+        const da=a.closedDate||a.date||'', db=b.closedDate||b.date||'';
+        return da<db?1:da>db?-1:0;
+      }
+      return ((b.score||0)-(a.score||0))||((a.order||99)-(b.order||99));
+    });
   document.getElementById('buyers-tbody').innerHTML = rows.map(b => {
     const clusters = [b.cluster1,b.cluster2,b.cluster3].filter(Boolean).join(' · ');
     return '<tr>'+
