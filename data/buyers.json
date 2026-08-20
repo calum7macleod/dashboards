@@ -940,7 +940,8 @@
   "maxScore": 4.8,
   "maxScoreWhy": "Furthest-progressed buyer in book: B done, F issued, stated ready to sign. Only residual risks: seller-side acceptance pending + mortgage not cash. Close probability very high within days.",
   "maxScoreDate": "2026-08-03",
-  "waId": "840343226"
+  "waId": "840343226",
+  "closedDate": "2026-08-11"
  },
  {
   "date": "2026-07-28",
@@ -1063,7 +1064,7 @@
  },
  {
   "date": "2026-08-01",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Najla Aboobakar",
   "source": "Property Finder",
   "colleague": "Self",
@@ -1108,7 +1109,8 @@
   "history": "Property Finder lead on Costa Brava 1 4-bed TH listing (1,547 sqft, 'Premium | Mortgageable | Neutral Color'). Met in person 2026-08-01. Budget 2.4-2.5M. Mortgage 2M plus deposit and costs on top. Deciding between here (Lagoons) and The Valley. They preferred the single rows; Calum's read is The Valley likely the best fit, and Malta flagged as the best cluster option - Calum's view, not the buyers' stated preference. He is a facade designer and works with the developer a lot. UNCONFIRMED: whether 'they' is Najla plus partner - only Najla's number captured. Also unclear whether 'no one doubt' referred to a specific unit.",
   "maxScore": 2.4,
   "maxScoreWhy": "Comparing Lagoons vs The Valley = early-funnel, mortgage, modest budget. Liked SRs; Malta fit noted. Nurture cadence, not chase.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "closedDate": "2026-08-20"
  },
  {
   "date": "2026-08-01",
@@ -1179,7 +1181,7 @@
  },
  {
   "date": "2026-08-03",
-  "status": "Active",
+  "status": "Closed Lost",
   "stage": "Lost",
   "buyer": "Rajesh",
   "phone": "",
@@ -1209,7 +1211,8 @@
   "maxScore": 3.5,
   "maxScoreWhy": "Viewed within days of appearing, returning with wife, price negotiation already live. Textbook early velocity. Unproven: finance type unknown, wife = untested decision-maker.",
   "maxScoreDate": "2026-08-03",
-  "nextTouch": null
+  "nextTouch": null,
+  "closedDate": "2026-08-20"
  },
  {
   "date": "2026-08-03",
@@ -1497,7 +1500,7 @@
  {
   "buyer": "Buyer ...1155 (name TBC)",
   "status": "Active",
-  "stage": "Lost",
+  "stage": "New",
   "score": 2,
   "date": "2026-08-04",
   "source": "TBC",
@@ -1526,8 +1529,7 @@
   "history": "Created 4-Aug. Calum: 'number ending 1155, just started speaking to.'",
   "id": "buyer-1155",
   "order": 35,
-  "heat": 2,
-  "nextTouch": null
+  "heat": 2
  },
  {
   "buyer": "Michael (Tara Park owner)",
@@ -1843,7 +1845,7 @@
  {
   "buyer": "Saumyadeep",
   "status": "Active",
-  "stage": "Viewing",
+  "stage": "Offer",
   "date": "2026-08-19",
   "source": "Inbound WhatsApp",
   "colleague": "",
@@ -1892,10 +1894,10 @@
   "notes": "19 Aug: WhatsApp +971 50 484 1790. Saw the community, flexible - 'any cluster is fine'. Asked for pictures and price. Calum pitched Nice 4 bed single row, mortgageable, 2.9M (with masterplan image). Budget not yet stated.",
   "id": "nasreen-shanawaz",
   "order": 46,
-  "stage": "Lost",
+  "stage": "New",
   "heat": 3,
   "lastContact": "2026-08-19",
-  "nextTouch": null,
+  "nextTouch": "2026-08-20",
   "touchReason": "Chase reaction to Nice 4bed SR 2.9M pitch; ask budget fork + beds must-haves",
   "needSummary": "4 bed Lagoons, any cluster, budget TBC - reacting to 2.9M Nice pitch",
   "snoozedUntil": null,
