@@ -18,7 +18,12 @@
   "paid": false,
   "comPct": 0.04,
   "otherBroker": "External agent (30K) + split with Nathan",
-  "convey": 4250
+  "convey": 4250,
+  "buyerSide": "Calum",
+  "sellerSide": "External agent",
+  "splitType": "External agent + Nathan",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-08-05",
@@ -37,7 +42,9 @@
   "notes": "Split deal with Elliot & Christie - Calum buyer-side slice. TakeHome = 12,150 x 65%.",
   "order": 33,
   "id": "umer-bl907",
-  "paid": false
+  "paid": false,
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-07-27",
@@ -66,7 +73,12 @@
   "order": 1,
   "id": "tony-bashayer-ph",
   "takeHomeSource": "est at 65% Q3 tier (was 96,000 at assumed 60%)",
-  "expectedPay": "2026-08"
+  "expectedPay": "2026-08",
+  "buyerSide": "Calum",
+  "sellerSide": "Developer",
+  "sourceCat": "Referral",
+  "segment": "Offplan",
+  "notes": "Referral buyer Tony. Co-broke Jake Nazer. 160K board = PRE-SPLIT gross - Calum-side figure TBC (Q1)."
  },
  {
   "date": "2026-07-24",
@@ -94,7 +106,13 @@
   "annualAcc": 1589523.6338095237,
   "order": 2,
   "id": "georgia-k331",
-  "takeHomeSource": "est at 65% Q3 tier (was 42,757 at assumed 60%)"
+  "takeHomeSource": "est at 65% Q3 tier (was 42,757 at assumed 60%)",
+  "buyerSide": "Georgia (internal)",
+  "sellerSide": "Calum",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Callout",
+  "segment": "Secondary",
+  "notes": "Seller from CALLING OUT; buyer via Georgia (Lagoons team)."
  },
  {
   "date": "2026-07-22",
@@ -123,7 +141,12 @@
   "order": 3,
   "id": "p218-malta",
   "takeHomeSource": "est at 65% Q3 tier (was 6,600 at assumed 60%)",
-  "expectedPay": "2026-08"
+  "expectedPay": "2026-08",
+  "buyerSide": "External agent",
+  "sellerSide": "Calum",
+  "splitType": "External agent",
+  "sourceCat": "Unknown",
+  "segment": "Secondary"
  },
  {
   "date": "2026-06-09",
@@ -132,7 +155,7 @@
   "buyerSource": "Bayut",
   "seller": "Konstantin",
   "sellerSource": "Calling Out",
-  "unit": "P151",
+  "unit": "P141",
   "cluster": "Malta",
   "area": "Lagoons",
   "otherBroker": "",
@@ -151,7 +174,12 @@
   "annualAcc": 0,
   "order": 4,
   "id": "mohamed-0",
-  "expectedPay": "2026-08"
+  "expectedPay": "2026-08",
+  "buyerSide": "Calum",
+  "sellerSide": "Calum",
+  "splitType": null,
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-06-08",
@@ -179,7 +207,11 @@
   "annualAcc": 0,
   "order": 5,
   "id": "michael-1",
-  "expectedPay": "2026-09"
+  "expectedPay": "2026-09",
+  "sourceCat": "Socials",
+  "segment": "Offplan",
+  "buyerSide": "Calum",
+  "sellerSide": "Developer"
  },
  {
   "date": "2026-06-08",
@@ -207,7 +239,11 @@
   "annualAcc": 0,
   "order": 6,
   "id": "ankur-2",
-  "expectedPay": "2026-10"
+  "expectedPay": "2026-10",
+  "buyerSide": "Calum",
+  "sellerSide": "Developer",
+  "sourceCat": "Own Lagoons listing (converted)",
+  "segment": "Offplan"
  },
  {
   "date": "2026-05-23",
@@ -237,7 +273,13 @@
   "id": "victoria-3",
   "takeHomeSource": "payslip 2026-07-30",
   "paid": true,
-  "paidDate": "2026-07-30"
+  "paidDate": "2026-07-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Calum",
+  "splitType": null,
+  "sourceCat": "Portals",
+  "segment": "Secondary",
+  "notes": "Online source, both sides Calum (per 21 Aug session)."
  },
  {
   "date": "2026-05-20",
@@ -267,7 +309,13 @@
   "id": "vinutha-4",
   "takeHomeSource": "payslip 2026-07-30",
   "paid": true,
-  "paidDate": "2026-07-30"
+  "paidDate": "2026-07-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Calum",
+  "splitType": null,
+  "sourceCat": "Portals",
+  "segment": "Secondary",
+  "notes": "Online source, both sides Calum (per 21 Aug session)."
  },
  {
   "date": "2026-05-13",
@@ -327,7 +375,12 @@
   "id": "sarah-6",
   "paid": true,
   "paidDate": "2026-06-30",
-  "takeHomeSource": "payslip 2026-06-30"
+  "takeHomeSource": "payslip 2026-06-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Anto",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Unknown",
+  "segment": "Secondary"
  },
  {
   "date": "2026-04-23",
@@ -357,7 +410,11 @@
   "id": "abby-7",
   "takeHomeSource": "payslip 2026-07-30",
   "paid": true,
-  "paidDate": "2026-07-30"
+  "paidDate": "2026-07-30",
+  "sourceCat": "Socials",
+  "segment": "Offplan",
+  "buyerSide": "Calum",
+  "sellerSide": "Developer"
  },
  {
   "date": "2026-04-23",
@@ -387,7 +444,11 @@
   "id": "marc-8",
   "takeHomeSource": "payslip 2026-07-30",
   "paid": true,
-  "paidDate": "2026-07-30"
+  "paidDate": "2026-07-30",
+  "sourceCat": "Socials",
+  "segment": "Offplan",
+  "buyerSide": "Calum",
+  "sellerSide": "Developer"
  },
  {
   "date": "2026-04-23",
@@ -434,7 +495,12 @@
   "id": "matthew-9",
   "takeHomeSource": "payslip 2026-07-30",
   "paid": true,
-  "paidDate": "2026-07-30"
+  "paidDate": "2026-07-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Ronnie",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Unknown",
+  "segment": "Secondary"
  },
  {
   "date": "2026-04-08",
@@ -464,7 +530,12 @@
   "id": "ahmad-10",
   "paid": true,
   "paidDate": "2026-06-30",
-  "takeHomeSource": "payslip 2026-06-30"
+  "takeHomeSource": "payslip 2026-06-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Calum",
+  "splitType": null,
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-04-08",
@@ -494,7 +565,12 @@
   "id": "adel-11",
   "paid": true,
   "paidDate": "2026-06-30",
-  "takeHomeSource": "payslip 2026-06-30"
+  "takeHomeSource": "payslip 2026-06-30",
+  "buyerSide": "Internal colleague",
+  "sellerSide": "Calum",
+  "splitType": "Internal - other team",
+  "sourceCat": "Colleague",
+  "segment": "Secondary"
  },
  {
   "date": "2026-04-05",
@@ -526,7 +602,12 @@
   "takeHomeSource": "SOA 30-04 batch, settled via WPS 21-05-2026 (bank-verified)",
   "notes": " Split with Nathan Daley. Invoiced on SOA 30-04-2026; batch balance 65,240.24 as of 31 May - settlement unconfirmed.",
   "paid": true,
-  "paidDate": "2026-05-21"
+  "paidDate": "2026-05-21",
+  "buyerSide": "Calum",
+  "sellerSide": "External agent",
+  "splitType": "External agent + Nathan",
+  "sourceCat": "Unknown",
+  "segment": "Secondary"
  },
  {
   "date": "2026-03-27",
@@ -556,7 +637,12 @@
   "id": "darryl-13",
   "paid": true,
   "paidDate": "2026-06-30",
-  "takeHomeSource": "payslip 2026-06-30"
+  "takeHomeSource": "payslip 2026-06-30",
+  "buyerSide": "Calum",
+  "sellerSide": "External agent",
+  "splitType": "External agent",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-03-08",
@@ -586,7 +672,12 @@
   "id": "james-14",
   "paid": true,
   "paidDate": "2026-04-30",
-  "takeHomeSource": "payslip 2026-04-30"
+  "takeHomeSource": "payslip 2026-04-30",
+  "buyerSide": "Lewis/Babs",
+  "sellerSide": "Calum",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Internal - Lagoons team",
+  "segment": "Secondary"
  },
  {
   "date": "2026-02-15",
@@ -616,7 +707,12 @@
   "id": "amit-15",
   "paid": true,
   "paidDate": "2026-04-01",
-  "takeHomeSource": "payslip 2026-04-01"
+  "takeHomeSource": "payslip 2026-04-01",
+  "buyerSide": "Ellie",
+  "sellerSide": "Calum",
+  "splitType": "Internal - other team",
+  "sourceCat": "Internal - other team",
+  "segment": "Secondary"
  },
  {
   "date": "2026-02-15",
@@ -643,7 +739,12 @@
   "monthAcc": 364749.5238095238,
   "annualAcc": 578978.5238095238,
   "order": 20,
-  "id": "majid-16"
+  "id": "majid-16",
+  "buyerSide": "Calum",
+  "sellerSide": "Ronnie",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Internal - Lagoons team",
+  "segment": "Secondary"
  },
  {
   "date": "2026-02-07",
@@ -673,7 +774,12 @@
   "id": "mohammed-17",
   "paid": true,
   "paidDate": "2026-04-30",
-  "takeHomeSource": "payslip 2026-04-30"
+  "takeHomeSource": "payslip 2026-04-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Ronnie",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-02-03",
@@ -700,7 +806,12 @@
   "monthAcc": 194984.52380952382,
   "annualAcc": 409213.5238095238,
   "order": 22,
-  "id": "majid-18"
+  "id": "majid-18",
+  "buyerSide": "Calum",
+  "sellerSide": "External agent",
+  "splitType": "External agent",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-02-02",
@@ -730,7 +841,13 @@
   "id": "sunil-19",
   "paid": true,
   "paidDate": "2026-04-30",
-  "takeHomeSource": "payslip 2026-04-30"
+  "takeHomeSource": "payslip 2026-04-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Calum",
+  "splitType": null,
+  "sourceCat": "Portals",
+  "segment": "Secondary",
+  "notes": "Seller originated from CALLOUT; buyer PF. All Calum."
  },
  {
   "date": "2026-02-01",
@@ -760,7 +877,12 @@
   "id": "scott-20",
   "paid": true,
   "paidDate": "2026-04-30",
-  "takeHomeSource": "payslip 2026-04-30"
+  "takeHomeSource": "payslip 2026-04-30",
+  "buyerSide": "Calum",
+  "sellerSide": "External agent",
+  "splitType": "External agent",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2026-01-30",
@@ -793,7 +915,11 @@
   "takeHomeSource": "SOA 30-04 batch, settled via WPS 21-05-2026 (bank-verified)",
   "notes": " Invoiced on SOA 30-04-2026 within 165,240.24 batch; batch part-paid (2x50K WPS Apr+May), balance 65,240.24 as of 31 May - settlement of THIS line unconfirmed.",
   "paid": true,
-  "paidDate": "2026-05-21"
+  "paidDate": "2026-05-21",
+  "buyerSide": "Calum",
+  "sellerSide": "Developer",
+  "sourceCat": "Socials",
+  "segment": "Offplan"
  },
  {
   "date": "2026-01-27",
@@ -802,8 +928,8 @@
   "buyerSource": "FX",
   "seller": "",
   "sellerSource": "",
-  "unit": "Tara Park comm.",
-  "cluster": "Tara Park",
+  "unit": "FX commission",
+  "cluster": "FX / Other income",
   "area": "",
   "otherBroker": "",
   "price": 0,
@@ -825,8 +951,12 @@
   "paidDate": "2026-01-29",
   "takeHomeSource": "payslip 2026-01-29",
   "property": "FX Transaction (28-01-2026)",
-  "notes": "MYSTERY RESOLVED: the 27-Jan zero-price entry = FX transaction referral, comm 11,189.52 at 55%. No property volume. Labelled Tara Park per Calum 21 Aug - unit ref TBC in deal session.",
-  "project": "Tara Park"
+  "notes": "Foreign-exchange commission (Bruce). NOT a property deal - excluded from property analytics, included in income totals.",
+  "project": "FX",
+  "segment": "Other income",
+  "sourceCat": "FX referral",
+  "buyerSide": "n/a",
+  "sellerSide": "n/a"
  },
  {
   "date": "2026-01-13",
@@ -857,7 +987,11 @@
   "notes": " Josh Urquhart deal (payslip-confirmed).",
   "paid": true,
   "paidDate": "2026-07-30",
-  "takeHomeSource": "payslip 2026-07-30"
+  "takeHomeSource": "payslip 2026-07-30",
+  "buyerSide": "Calum",
+  "sellerSide": "Developer",
+  "sourceCat": "Socials",
+  "segment": "Offplan"
  },
  {
   "date": "2026-01-04",
@@ -884,7 +1018,12 @@
   "monthAcc": 77200,
   "annualAcc": 77200,
   "order": 28,
-  "id": "jose-24"
+  "id": "jose-24",
+  "buyerSide": "Lee",
+  "sellerSide": "Calum",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Internal - Lagoons team",
+  "segment": "Secondary"
  },
  {
   "date": "2025-12-18",
@@ -914,7 +1053,12 @@
   "id": "puneet-25",
   "paid": true,
   "paidDate": "2026-01-14",
-  "takeHomeSource": "payslip 2026-01-14"
+  "takeHomeSource": "payslip 2026-01-14",
+  "buyerSide": "Calum",
+  "sellerSide": "Ellie",
+  "splitType": "Internal - other team",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2025-12-11",
@@ -944,7 +1088,12 @@
   "id": "donna-26",
   "paid": true,
   "paidDate": "2026-01-14",
-  "takeHomeSource": "payslip 2026-01-14"
+  "takeHomeSource": "payslip 2026-01-14",
+  "buyerSide": "Sinead/Hannah",
+  "sellerSide": "Calum",
+  "splitType": "Internal - other team",
+  "sourceCat": "Internal - other team",
+  "segment": "Secondary"
  },
  {
   "date": "2025-10-27",
@@ -974,7 +1123,12 @@
   "id": "shane-27",
   "paid": true,
   "paidDate": "2026-01-14",
-  "takeHomeSource": "payslip 2026-01-14"
+  "takeHomeSource": "payslip 2026-01-14",
+  "buyerSide": "Calum",
+  "sellerSide": "Anto",
+  "splitType": "Internal - Lagoons team",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  },
  {
   "date": "2025-10-20",
@@ -1004,6 +1158,10 @@
   "id": "pratik-28",
   "paid": true,
   "paidDate": "2025-11-27",
-  "takeHomeSource": "payslip 2025-11-27"
+  "takeHomeSource": "payslip 2025-11-27",
+  "buyerSide": "Calum",
+  "sellerSide": "Calum",
+  "sourceCat": "Portals",
+  "segment": "Secondary"
  }
 ]
