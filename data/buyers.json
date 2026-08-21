@@ -2022,5 +2022,43 @@
     "summary": "IG->WA: sent Marsa Al Saadiyat guide PDF; he'll come back with questions; Calum asked if he owns there already"
    }
   ]
+ },
+ {
+  "buyer": "Sofian",
+  "status": "Active",
+  "date": "2026-08-21",
+  "source": "",
+  "colleague": "",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Morocco",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": 4,
+  "finance": "60/40 payment plan",
+  "budget": 2400000,
+  "needed": "",
+  "responsiveness": 5,
+  "relationship": 5,
+  "unitSupply": 5,
+  "feeling": 5,
+  "score": 5,
+  "notes": "21 Aug: HOT buyer. WhatsApp +971 50 390 7143 (contact saved 'Sofian Buyer 4 Morocco'). 4 bed Morocco, budget 2.4M, wants 60/40 payment plan.",
+  "id": "sofian-morocco",
+  "order": 999,
+  "stage": "Viewing",
+  "heat": 5,
+  "lastContact": "2026-08-21",
+  "nextTouch": "2026-08-22",
+  "touchReason": "Heat 5 daily cadence - line up 4bed Morocco units at ~2.4M on 60/40 plan",
+  "needSummary": "4 bed Morocco, 2.4M, 60/40 payment plan",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-21",
+    "channel": "wa",
+    "summary": "Logged as hot buyer: 4bed Morocco, 2.4M budget, 60/40 payment plan"
+   }
+  ]
  }
 ]
