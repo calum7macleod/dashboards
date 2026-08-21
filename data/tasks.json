@@ -3102,6 +3102,20 @@
    "order": 2,
    "notes": "Proper sit-down, not a summary. Max has the base numbers pre-run (33 deals, 102.9M vol, 2.01M board, 1.10M take, 85% split rate, 11 unknown sources). Session: walk all 33 deal-by-deal - Calum fills source + side + split shape per deal; then hours-worked reconstruction; then hourly rate by activity + solo-vs-split margin strategy for the 500K months.",
    "completed": null
+  },
+  {
+   "id": "t-review-social-sent",
+   "title": "Review social content sent across (edits/drafts received)",
+   "area": "Content",
+   "priority": "high",
+   "difficulty": 1,
+   "status": "active",
+   "due": "2026-08-21",
+   "created": "2026-08-21",
+   "notes": "Review what's been delivered - approve / notes back same day so the pipeline keeps moving. If it's edited videos: check against content laws (hook frame one, <0:55, dead stop, captions non-AI).",
+   "completed": null,
+   "order": 5,
+   "top3": false
   }
  ],
  "units": [],
