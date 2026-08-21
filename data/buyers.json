@@ -629,7 +629,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -1264,7 +1264,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1515,13 +1515,13 @@
   "budget": 2750000,
   "segment": "Secondary",
   "phone": "1155 (last-4 only - full number when it surfaces in bridge)",
-  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (Đ733,870 day-one)",
+  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (\u0110733,870 day-one)",
   "nextStep": "Get name + full number + which cluster/unit sparked the conversation; intake call",
   "touches": [
    {
     "date": "2026-08-04",
     "channel": "wa",
-    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one Đ733,870)."
+    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one \u0110733,870)."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1984,5 +1984,43 @@
   "order": 1000,
   "heat": 4,
   "budgetText": "Up to D2.7M"
+ },
+ {
+  "buyer": "Abdulrazak Al-Ahmadi (Abdo)",
+  "status": "Active",
+  "date": "2026-08-21",
+  "source": "Instagram",
+  "colleague": "",
+  "area": "Marsa Al Saadiyat",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 3,
+  "relationship": 2,
+  "unitSupply": null,
+  "feeling": 2,
+  "score": 2,
+  "notes": "21 Aug: IG lead (@abdo_alahmadi, 259 followers) asked for the Marsa Al Saadiyat guide. Moved to WhatsApp +971 55 844 8025, Calum sent 'Marsa Al Saadiyat - All We Know' PDF. He replied 'will reach back out if I have any questions'. Calum asked if he already owns places there - awaiting reply. Requirements/budget unknown.",
+  "id": "abdo-alahmadi",
+  "order": 999,
+  "stage": "New",
+  "heat": 2,
+  "lastContact": "2026-08-21",
+  "nextTouch": "2026-08-23",
+  "touchReason": "Chase if no reply to 'already own places here?' - qualify intent and budget for Marsa Al Saadiyat",
+  "needSummary": "Marsa Al Saadiyat interest, guide sent, requirements TBC",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-21",
+    "channel": "wa",
+    "summary": "IG->WA: sent Marsa Al Saadiyat guide PDF; he'll come back with questions; Calum asked if he owns there already"
+   }
+  ]
  }
 ]
