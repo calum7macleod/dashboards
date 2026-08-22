@@ -2083,7 +2083,7 @@
   "cluster1": "Costa Brava",
   "cluster2": "",
   "cluster3": "",
-  "matchedUnit": "",
+  "matchedUnit": "Deciding: Nathan's 5BR CB (offer 3.5, ~3.6 closes) vs Faisal J444 CB 5BR ask 4.05M (offer 3.8, ~4.0 closes - doing the maths)",
   "beds": 5,
   "finance": "Mortgage - ADIB indicative pre-approval up to 4,000,000 AED (3.99% fixed 36 months, letter dated 21/08/2026)",
   "budget": 3450000,
@@ -2093,14 +2093,14 @@
   "unitSupply": 5,
   "feeling": 5,
   "score": 5,
-  "notes": "22 Aug: WhatsApp +971 54 511 1166 (contact 'MBM Syed Buyer 5 CB'). Viewed a 5BR Costa Brava ~3,200 sqft BUA asking 3.45M on 21 Aug. Wants good 5BR units in similar price range, preferably ready or handing over in September. Notes sellers getting more flexible with upcoming 50% DAMAC payment. Sent ADIB pre-approval letter (max 4M).",
+  "notes": "22 Aug: WhatsApp +971 54 511 1166 (contact 'MBM Syed Buyer 5 CB'). Viewed a 5BR Costa Brava ~3,200 sqft BUA asking 3.45M on 21 Aug. Wants good 5BR units in similar price range, preferably ready or handing over in September. Notes sellers getting more flexible with upcoming 50% DAMAC payment. Sent ADIB pre-approval letter (max 4M). | 22 Aug PM: READY TO BUY - Form B being prepared. Two-horse race: Nathan's listing (would offer 3.5, Calum reads 3.6 done) vs Calum's own listing Faisal J444 top unit (would offer 3.8, needs ~4.0 to close - Syed doing maths on it). ADIB cap is exactly 4.0M - J444 at full ask leaves zero headroom.",
   "id": "mbm-syed",
   "order": 999,
-  "stage": "Viewing",
+  "stage": "Offer",
   "heat": 5,
   "lastContact": "2026-08-22",
-  "nextTouch": "2026-08-23",
-  "touchReason": "Heat 5 daily cadence - send 5BR CB options ~3.45M ready/Sept handover (mortgage-ready to 4M)",
+  "nextTouch": "2026-08-22",
+  "touchReason": "CLOSE TODAY: Form B, then pick lane - Nathan unit at ~3.6 or Faisal J444 at ~4.0",
   "needSummary": "5 bed Costa Brava ~3.45M, ready or Sept handover, ADIB pre-approved to 4M",
   "snoozedUntil": null,
   "touches": [
@@ -2108,6 +2108,17 @@
     "date": "2026-08-22",
     "channel": "wa",
     "summary": "Viewed 5BR CB 3,200sqft @3.45M; asked for similar 5BRs ready/Sept; sent ADIB pre-approval (4M max)"
+   },
+   {
+    "date": "2026-08-22",
+    "channel": "viewing",
+    "summary": "Ready to buy. Form B next. Choosing Nathan listing vs Faisal J444. Inshallah closing today."
+   }
+  ],
+  "history": [
+   {
+    "date": "2026-08-22",
+    "note": "Stage -> Offer. Form B prep. Nathan unit (3.5 offer/3.6 done) vs Faisal J444 (3.8 offer/~4.0 done). Close-today push."
    }
   ]
  },
