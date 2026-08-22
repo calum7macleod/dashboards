@@ -3134,6 +3134,36 @@
    "snoozedUntil": null,
    "order": 1,
    "top3": false
+  },
+  {
+   "id": "cb-4bed-sourcing-sweep",
+   "title": "SOURCING SWEEP: every genuinely available Costa Brava 4-bed - verified sellers, prices, viewable Wed",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": "intense",
+   "status": "active",
+   "due": "2026-08-25",
+   "created": "2026-08-22",
+   "notes": "Feeds Mark (2.75M, Wed 26 tour, closable) + Hatem 2.65, Anshuman 2.7, Pedro 2.7, Shiri 2.65, Mal 2.65, Ashraf/Misha/Hania/Masoud 2.6. Call every CB lister incl. Viswajith K403/404 (3.4M ask - test flex). Verify: still available, seller motivated, viewable Wednesday, real price not portal bait. Output: ranked list w/ prices in stock.json.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 1,
+   "top3": true
+  },
+  {
+   "id": "mark-wed-tour",
+   "title": "Mark: run Wed CB 4-bed availability tour - confirm time + line-up Tue night",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": "medium",
+   "status": "active",
+   "due": "2026-08-26",
+   "created": "2026-08-22",
+   "notes": "Budget to 2.75M, close-ready. Capture finance method (cash/mortgage) on the tour. Sequence best unit second-to-last.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 2,
+   "top3": false
   }
  ],
  "units": [],
