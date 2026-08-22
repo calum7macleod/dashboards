@@ -2060,5 +2060,43 @@
     "summary": "Logged as hot buyer: 4bed Morocco, 2.4M budget, 60/40 payment plan"
    }
   ]
+ },
+ {
+  "buyer": "MBM Syed",
+  "status": "Active",
+  "date": "2026-08-22",
+  "source": "",
+  "colleague": "",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Costa Brava",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": 5,
+  "finance": "Mortgage - ADIB indicative pre-approval up to 4,000,000 AED (3.99% fixed 36 months, letter dated 21/08/2026)",
+  "budget": 3450000,
+  "needed": "",
+  "responsiveness": 5,
+  "relationship": 5,
+  "unitSupply": 5,
+  "feeling": 5,
+  "score": 5,
+  "notes": "22 Aug: WhatsApp +971 54 511 1166 (contact 'MBM Syed Buyer 5 CB'). Viewed a 5BR Costa Brava ~3,200 sqft BUA asking 3.45M on 21 Aug. Wants good 5BR units in similar price range, preferably ready or handing over in September. Notes sellers getting more flexible with upcoming 50% DAMAC payment. Sent ADIB pre-approval letter (max 4M).",
+  "id": "mbm-syed",
+  "order": 999,
+  "stage": "Viewing",
+  "heat": 5,
+  "lastContact": "2026-08-22",
+  "nextTouch": "2026-08-23",
+  "touchReason": "Heat 5 daily cadence - send 5BR CB options ~3.45M ready/Sept handover (mortgage-ready to 4M)",
+  "needSummary": "5 bed Costa Brava ~3.45M, ready or Sept handover, ADIB pre-approved to 4M",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-22",
+    "channel": "wa",
+    "summary": "Viewed 5BR CB 3,200sqft @3.45M; asked for similar 5BRs ready/Sept; sent ADIB pre-approval (4M max)"
+   }
+  ]
  }
 ]
