@@ -2110,5 +2110,51 @@
     "summary": "Viewed 5BR CB 3,200sqft @3.45M; asked for similar 5BRs ready/Sept; sent ADIB pre-approval (4M max)"
    }
   ]
+ },
+ {
+  "date": "2026-08-22",
+  "status": "Active",
+  "buyer": "Mark",
+  "source": "",
+  "colleague": "Self",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Costa Brava",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "TBC - Wed 26 Aug tour of available CB 4-beds",
+  "beds": "4",
+  "finance": "",
+  "budget": 2750000,
+  "budgetText": "\u01102.75M (voice note also said 2.7 - confirm ceiling)",
+  "needed": 0,
+  "diff": 0,
+  "responsiveness": 5,
+  "relationship": 4,
+  "unitSupply": 4,
+  "feeling": 5,
+  "score": 5,
+  "notes": "Viewed 22 Aug - hot, score 5. CB 4-bed up to ~\u01102.75M. Can close soon. Returning Wed 26 Aug to view ACTUAL available units - sourcing sweep needed before then. Finance method not yet captured.",
+  "id": "mark-2208",
+  "order": 47,
+  "stage": "Viewing",
+  "heat": 5,
+  "lastContact": "2026-08-22",
+  "nextTouch": "2026-08-26",
+  "touchReason": "Wed 26 Aug: tour available CB 4-beds - closable",
+  "needSummary": "CB 4-bed, up to \u01102.75M, close-ready, Wed tour of real availability",
+  "snoozedUntil": null,
+  "history": [
+   {
+    "date": "2026-08-22",
+    "note": "Created from viewing debrief. Hot, 5, CB 4-bed to 2.75M, Wed 26 return for available-units tour."
+   }
+  ],
+  "touches": [
+   {
+    "date": "2026-08-22",
+    "channel": "viewing",
+    "summary": "First viewing. Very strong. Wants CB 4-bed, budget to 2.75M, can close soon. Agreed Wed 26 Aug return to see actually-available units."
+   }
+  ]
  }
 ]
