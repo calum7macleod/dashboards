@@ -3224,6 +3224,36 @@
    "snoozedUntil": null,
    "order": 4,
    "top3": false
+  },
+  {
+   "id": "fb-leads-call-2308",
+   "title": "Call the 2 Facebook ad leads (AM)",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": "easy",
+   "status": "active",
+   "due": "2026-08-23",
+   "created": "2026-08-22",
+   "notes": "Sunday morning. Speed-to-lead: these decay by the hour. Qualify against the CB 4-bed demand wall - if either fits 2.4-2.75, straight onto the sweep list. Log names+phones to buyers.json after.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 2,
+   "top3": false
+  },
+  {
+   "id": "fb-ads-manager-2308",
+   "title": "Download Meta Ads Manager app",
+   "area": "Content",
+   "priority": "medium",
+   "difficulty": "easy",
+   "status": "active",
+   "due": "2026-08-23",
+   "created": "2026-08-22",
+   "notes": "Sunday AM alongside lead calls. Check lead cost + frequency on the live campaign while in there.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 10,
+   "top3": false
   }
  ],
  "units": [],
