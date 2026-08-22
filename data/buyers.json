@@ -2156,5 +2156,51 @@
     "summary": "First viewing. Very strong. Wants CB 4-bed, budget to 2.75M, can close soon. Agreed Wed 26 Aug return to see actually-available units."
    }
   ]
+ },
+ {
+  "date": "2026-08-22",
+  "status": "Active",
+  "buyer": "Winnie",
+  "source": "",
+  "colleague": "Self",
+  "area": "DAMAC Lagoons",
+  "cluster1": "Costa Brava",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": 2700000,
+  "budgetText": "OK up to \u01102.7M - likely to offer under",
+  "needed": 0,
+  "diff": 0,
+  "responsiveness": 4,
+  "relationship": 4,
+  "unitSupply": 4,
+  "feeling": 4,
+  "score": 4,
+  "notes": "Viewed 22 Aug - good, score 4. Thinking Costa Brava, comfortable to \u01102.7M but will probably offer below. Beds + finance not yet captured. Feeds off CB 4-bed sourcing sweep.",
+  "id": "winnie-2208",
+  "order": 48,
+  "stage": "Viewing",
+  "heat": 4,
+  "lastContact": "2026-08-22",
+  "nextTouch": "2026-08-24",
+  "touchReason": "Follow up post-viewing: qualify beds + finance, send CB availability from sweep",
+  "needSummary": "Costa Brava, to \u01102.7M (offers under), post-viewing warm",
+  "snoozedUntil": null,
+  "history": [
+   {
+    "date": "2026-08-22",
+    "note": "Created from viewing debrief. Score 4. CB to 2.7M, likely under-offerer."
+   }
+  ],
+  "touches": [
+   {
+    "date": "2026-08-22",
+    "channel": "viewing",
+    "summary": "Viewed - good. Thinking Costa Brava, okay up to 2.7M, may offer a bit less."
+   }
+  ]
  }
 ]
