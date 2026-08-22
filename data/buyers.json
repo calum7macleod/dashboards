@@ -1810,44 +1810,56 @@
   "phone": "+39 346 355 7605"
  },
  {
-  "date": "2026-08-18",
+  "date": "2026-08-22",
   "status": "Active",
   "buyer": "Jayde B",
   "source": "Property Finder",
   "colleague": "Self",
   "area": "DAMAC Lagoons",
-  "cluster1": "Costa Brava",
-  "cluster2": "",
+  "cluster1": "Malta",
+  "cluster2": "Costa Brava",
   "cluster3": "",
-  "matchedUnit": "Costa Brava 2 4-bed TH - PF listing GAKC1KSPMN10FCCEF7SFVSJ5QM",
+  "matchedUnit": "Ronnie's Malta listing - bigger plot (unit TBC)",
   "beds": "4",
-  "finance": "",
-  "budget": null,
+  "finance": "Mortgage - NOT pre-approved yet",
+  "budget": 2500000,
   "needed": 0,
   "diff": 0,
   "responsiveness": 5,
-  "relationship": 0,
-  "unitSupply": 0,
-  "feeling": 0,
-  "score": 0,
-  "notes": "Contact saved as 'Jayde B Buyer 4 CB'. WhatsApp Business account. Property Finder lead 2026-08-18 07:33 on a Costa Brava 2 4-bed townhouse. Buying with her husband - both want to view. Asked to set up a viewing on this property plus a few others and to see the community. Calum replied he has access to every mortgageable cluster for viewings. NOT YET ESTABLISHED: budget, move-in vs investment, timeline, cash vs mortgage, which other clusters she wants to see. Viewing date not yet agreed.",
+  "relationship": 4,
+  "unitSupply": 4,
+  "feeling": 5,
+  "score": 5,
+  "notes": "Pilot, buying with wife. Viewed 22 Aug - hot, sensible, bumped to 5. Wants slightly bigger plot; on Ronnie's bigger-plot Malta unit. \u01102.5M opening budget, stretch likely. Sits on the single-row/B2B line. Mortgage NOT pre-approved - Calum open to offering before approval.",
   "id": "jayde-45",
   "order": 44,
-  "stage": "Qualified",
+  "stage": "Viewing",
   "heat": 5,
-  "lastContact": "2026-08-18",
-  "nextTouch": "2026-08-19",
-  "touchReason": "Lock in a viewing date for CB2 4-bed + a few others and a community tour; qualify budget and move-in vs investment",
-  "needSummary": "4-bed Costa Brava, buying with husband, wants multi-unit viewing + community tour. Budget/timeline/use unknown.",
+  "lastContact": "2026-08-22",
+  "nextTouch": "2026-08-24",
+  "touchReason": "Push Ronnie's Malta bigger-plot unit; start mortgage pre-approval in parallel; test stretch above 2.5M",
+  "needSummary": "4-bed, bigger plot preferred. Malta (Ronnie listing) front-runner. \u01102.5M can stretch. Pilot + wife. Mortgage not started.",
   "snoozedUntil": null,
   "touches": [
    {
     "date": "2026-08-18",
     "channel": "wa",
     "summary": "PF lead on Costa Brava 2 4-bed TH. She and her husband want to view that unit plus a few others and see the community. Calum confirmed access to every mortgageable cluster. Date not yet set."
+   },
+   {
+    "date": "2026-08-22",
+    "channel": "viewing",
+    "summary": "Viewed. Really good - hot. Wants slightly bigger plot; Ronnie's Malta bigger-plot unit in frame. Budget 2.5M (first number, can extend). Edge single row vs B2B. Pilot. Not pre-approved; may offer anyway."
    }
   ],
-  "phone": "+971 58 531 3684"
+  "phone": "+971 58 531 3684",
+  "budgetText": "\u01102.5M first number - can likely stretch; edge of single row vs B2B",
+  "history": [
+   {
+    "date": "2026-08-22",
+    "note": "Viewing debrief: hot buyer, score 0->5. Bigger plot want, Ronnie Malta target, 2.5M stretchable, pilot, mortgage not started, offer-before-approval strategy."
+   }
+  ]
  },
  {
   "buyer": "Saumyadeep",
