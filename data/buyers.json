@@ -2083,7 +2083,7 @@
   "cluster1": "Costa Brava",
   "cluster2": "",
   "cluster3": "",
-  "matchedUnit": "Deciding: Nathan's 5BR CB (offer 3.5, ~3.6 closes) vs Faisal J444 CB 5BR ask 4.05M (offer 3.8, ~4.0 closes - doing the maths)",
+  "matchedUnit": "J444",
   "beds": 5,
   "finance": "Mortgage - ADIB indicative pre-approval up to 4,000,000 AED (3.99% fixed 36 months, letter dated 21/08/2026)",
   "budget": 3450000,
@@ -2099,8 +2099,8 @@
   "stage": "Offer",
   "heat": 5,
   "lastContact": "2026-08-22",
-  "nextTouch": "2026-08-22",
-  "touchReason": "CLOSE TODAY: Form B, then pick lane - Nathan unit at ~3.6 or Faisal J444 at ~4.0",
+  "nextTouch": "2026-08-23",
+  "touchReason": "Chase Faisal response to 3.9M offer on J444; keep Syed warm",
   "needSummary": "5 bed Costa Brava ~3.45M, ready or Sept handover, ADIB pre-approved to 4M",
   "snoozedUntil": null,
   "touches": [
@@ -2113,6 +2113,11 @@
     "date": "2026-08-22",
     "channel": "viewing",
     "summary": "Ready to buy. Form B next. Choosing Nathan listing vs Faisal J444. Inshallah closing today."
+   },
+   {
+    "date": "2026-08-22",
+    "channel": "wa",
+    "summary": "Offered 3.9M on Faisal J444 (5bd SR, 4.05M net)"
    }
   ],
   "history": [
