@@ -3269,6 +3269,21 @@
    "snoozedUntil": null,
    "order": 3,
    "top3": false
+  },
+  {
+   "id": "cinematic-video-2308",
+   "title": "Cinematic home showcase video - test the mavgpt workflow on a live CB listing",
+   "area": "Content",
+   "priority": "medium",
+   "difficulty": "medium",
+   "status": "active",
+   "due": "2026-08-23",
+   "created": "2026-08-22",
+   "notes": "From FB-ad resource (mavgpt.ai cinematic-home-showcase-video-2026 - link in chat, page not machine-readable). Best pairing: film during sweep viewings Sun/Mon so one trip = sourcing + content. Run PRE-MORTEM before filming. Content law: number in frame one, 45-55s, re-hook 8-10s, dead stop.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 11,
+   "top3": false
   }
  ],
  "units": [],
