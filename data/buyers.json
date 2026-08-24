@@ -2599,5 +2599,43 @@
     "summary": "First outreach sent, no response yet"
    }
   ]
+ },
+ {
+  "buyer": "Aryia",
+  "status": "Active",
+  "date": "2026-08-24",
+  "source": "Ads",
+  "colleague": "",
+  "area": "Jumeirah Golf Estates",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": 2000000,
+  "needed": "",
+  "responsiveness": 3,
+  "relationship": 2,
+  "unitSupply": 1,
+  "feeling": 1,
+  "score": 1,
+  "notes": "24 Aug: JGE ads lead (contact 'Aryia JGE Ads', WA Business account ~Enzo Enzo / Eminence Capital Group). Wants a 2M townhouse in JGE - unrealistic for the area, expectation reset needed. PHONE NOT CAPTURED from screenshot - add when available.",
+  "id": "aryia-jge",
+  "order": 999,
+  "stage": "New",
+  "heat": 1,
+  "lastContact": "2026-08-24",
+  "nextTouch": "2026-08-26",
+  "touchReason": "Reset expectations - show what 2M actually buys near JGE or alt communities; qualify if budget can move",
+  "needSummary": "JGE townhouse at 2M (below market) - expectation reset needed",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-24",
+    "channel": "wa",
+    "summary": "Asked for a 2M townhouse in JGE - below realistic entry"
+   }
+  ]
  }
 ]
