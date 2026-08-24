@@ -2523,5 +2523,43 @@
     "summary": "Asked what's the biggest we can get in JGE"
    }
   ]
+ },
+ {
+  "buyer": "Clive",
+  "status": "Active",
+  "date": "2026-08-24",
+  "source": "Ads",
+  "colleague": "",
+  "area": "Jumeirah Golf Estates",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 1,
+  "relationship": 1,
+  "unitSupply": null,
+  "feeling": 2,
+  "score": 2,
+  "notes": "24 Aug: JGE ads lead. WhatsApp +971 58 524 8704 (contact 'Clive JGE Ads'). Messaged - no response yet.",
+  "id": "clive-jge",
+  "order": 999,
+  "stage": "New",
+  "heat": 2,
+  "lastContact": "2026-08-24",
+  "nextTouch": "2026-08-26",
+  "touchReason": "Follow up - no response to first message yet",
+  "needSummary": "JGE ads lead, no response yet, everything TBC",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-24",
+    "channel": "wa",
+    "summary": "First outreach sent, no response yet"
+   }
+  ]
  }
 ]
