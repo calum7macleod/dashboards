@@ -2480,5 +2480,43 @@
     "summary": "Lead captured from JGE ads, contact saved - not yet qualified"
    }
   ]
+ },
+ {
+  "buyer": "Mahtab",
+  "status": "Active",
+  "date": "2026-08-24",
+  "source": "Ads",
+  "colleague": "",
+  "area": "Jumeirah Golf Estates",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 3,
+  "relationship": 2,
+  "unitSupply": null,
+  "feeling": 2,
+  "score": 2,
+  "notes": "24 Aug: JGE ads lead. WhatsApp +971 50 650 0578 (contact 'Mahtab JGE Ads'). Asked what's the BIGGEST we can get in JGE - size-led brief, budget/timeline TBC.",
+  "id": "mahtab-jge",
+  "order": 999,
+  "stage": "New",
+  "heat": 2,
+  "lastContact": "2026-08-24",
+  "nextTouch": "2026-08-25",
+  "touchReason": "Answer 'biggest available in JGE' with top plot/BUA options; qualify budget and timeline",
+  "needSummary": "JGE, wants biggest available, budget TBC",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-24",
+    "channel": "wa",
+    "summary": "Asked what's the biggest we can get in JGE"
+   }
+  ]
  }
 ]
