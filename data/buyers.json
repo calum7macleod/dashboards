@@ -2336,14 +2336,14 @@
   "unitSupply": 3,
   "feeling": 3,
   "score": 3,
-  "notes": "24 Aug: Now thinking ALAYA instead of/alongside Cedarwood South. | 22 Aug: Ads lead (contact saved 'Sumaira Payel JGE 2 Ads 12m' - JGE ads campaign, 12m timeline per contact name). WhatsApp +971 56 478 7788. Calum sent Cedarwood Estates South masterplan page, highlighted plot V12-189 on map, and JGE sales offer PDF for unit V-189 (sales-offer-22082026). Awaiting her reaction.",
+  "notes": "24 Aug PM: Alaya confirmed - sent her Mike's Alaya options. | 24 Aug: Now thinking ALAYA instead of/alongside Cedarwood South. | 22 Aug: Ads lead (contact saved 'Sumaira Payel JGE 2 Ads 12m' - JGE ads campaign, 12m timeline per contact name). WhatsApp +971 56 478 7788. Calum sent Cedarwood Estates South masterplan page, highlighted plot V12-189 on map, and JGE sales offer PDF for unit V-189 (sales-offer-22082026). Awaiting her reaction.",
   "id": "sumaira-payel",
   "order": 999,
   "stage": "Qualified",
   "heat": 3,
   "lastContact": "2026-08-24",
   "nextTouch": "2026-08-26",
-  "touchReason": "Send Alaya options/pricing; gauge vs Cedarwood V-189 offer",
+  "touchReason": "Chase reaction to Mike's Alaya options",
   "needSummary": "JGE - now leaning Alaya (was Cedarwood South V-189), budget/beds TBC, ~12m timeline",
   "snoozedUntil": null,
   "touches": [
@@ -2356,6 +2356,11 @@
     "date": "2026-08-24",
     "channel": "wa",
     "summary": "Shifted interest to Alaya"
+   },
+   {
+    "date": "2026-08-24",
+    "channel": "wa",
+    "summary": "Alaya confirmed; sent Mike's Alaya options"
    }
   ]
  },
