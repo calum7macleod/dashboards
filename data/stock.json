@@ -109,7 +109,7 @@
  },
  {
   "date": "2026-07-17",
-  "status": "Active",
+  "status": "Sold",
   "seller": "Faisal",
   "source": "Calling Out",
   "rl": null,
@@ -117,7 +117,7 @@
   "unit": "J444",
   "matchedBuyer": "MBM Syed",
   "beds": 5,
-  "note": "From The Thousand",
+  "note": "From The Thousand | SOLD 23 Aug to MBM Syed @ 3.95M, both sides.",
   "finance": "",
   "price": 4050000,
   "needed": 4050000,
@@ -132,7 +132,9 @@
   "notes": "22 Aug: OFFER IN - Syed 3.9M vs 4.05M net (fees on top), gap 150k. Present to Faisal. | 10 Aug: good contact, seller really sound, working away. | CALL-OUT WIN 17 Jul. 5bd SINGLE ROW, 4.05M NET, seller happy with fees on top. Arrange viewing + potentially NOC.  Seller: Faisal.",
   "order": 5,
   "id": "j444",
-  "stage": "Ready"
+  "stage": "Ready",
+  "soldDate": "2026-08-23",
+  "soldPrice": 3950000
  },
  {
   "date": "2026-07-06",
