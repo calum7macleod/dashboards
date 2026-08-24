@@ -3299,6 +3299,21 @@
    "snoozedUntil": null,
    "order": 4,
    "top3": false
+  },
+  {
+   "id": "dld-history-run",
+   "title": "Run DLD full-history script on droplet (one command, ~20 min)",
+   "area": "Real Estate",
+   "priority": "medium",
+   "difficulty": "easy",
+   "status": "active",
+   "due": "2026-08-25",
+   "created": "2026-08-23",
+   "notes": "ssh droplet -> pip3 install pandas requests -> export GH_TOKEN=<fine-grained token> -> python3 scripts/dld-history-build.py (pull script from repo first: curl -O raw.../scripts/dld-history-build.py). Outputs data/dld/history/*.json. Unlocks YoY all-areas tables + launch-to-today reels. NOTE: verify Dubai Pulse CSV URL in browser first - resource ids change; if 404, grab current link from dubaipulse.gov.ae DLD Transactions dataset and pass --csv or edit CSV_URL.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 12,
+   "top3": false
   }
  ],
  "units": [],
