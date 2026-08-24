@@ -2442,5 +2442,43 @@
     "summary": "Viewed. Hot. Nice cluster, prefer single row, cash buyers, need to be IN before end of year - expecting a baby."
    }
   ]
+ },
+ {
+  "buyer": "Aarya",
+  "status": "Active",
+  "date": "2026-08-24",
+  "source": "Ads",
+  "colleague": "",
+  "area": "Jumeirah Golf Estates",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": null,
+  "relationship": 2,
+  "unitSupply": null,
+  "feeling": 2,
+  "score": 2,
+  "notes": "24 Aug: New JGE ads lead. WhatsApp +971 55 296 2964 (contact saved 'Aarya JGE Ads'). No conversation yet - requirements, budget, beds all TBC.",
+  "id": "aarya-jge",
+  "order": 999,
+  "stage": "New",
+  "heat": 2,
+  "lastContact": "2026-08-24",
+  "nextTouch": "2026-08-25",
+  "touchReason": "First qualification message - JGE interest, budget, beds, timeline",
+  "needSummary": "JGE ads lead, everything TBC",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-24",
+    "channel": "wa",
+    "summary": "Lead captured from JGE ads, contact saved - not yet qualified"
+   }
+  ]
  }
 ]
