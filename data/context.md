@@ -226,3 +226,6 @@ CHAT ARCHIVE: full pre-migration chat history lives at data/chat-archive/ - read
 - Awaiting from Amer via Calum: option pick, UK sale timing, paid-in position + instalment schedules on Terra/Athlon.
 
 - STANDING RULE (25 Aug): every NEW deal logged to deals.json gets order 1 (top of the deals page); all existing orders bump +1. Newest always first.
+
+
+CRM MERGE (26 Aug overnight): crm.html is now THE single real-estate page - tabs Today/Pipeline/People/Sellers/Deals/Offers/Market. Added: Deals tab (full ledger newest-first w/ pay months + paid flags), Offers tab (offers.json), Archived buyers (collapsible, in Offers tab), Closed Won strip at top of Pipeline (newest first from deals ledger). realestate.html = redirect to crm.html. index.html tile updated. Backups: backup/crm-pre-merge.html + backup/realestate-pre-merge.html - DELETE after Calum signs off. Page audit for Calum: hub.html appears superseded by index.html; social.html/trading.html/notes.html are 1-2KB stubs likely unused - candidates to remove pending his confirm.
