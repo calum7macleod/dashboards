@@ -66,6 +66,16 @@ select,input[type=date],input[type=text]{background:#12241b;color:var(--cream);b
 .connect{background:var(--panel);border:1px solid var(--div);border-radius:12px;padding:14px;max-width:560px;margin:0 auto 14px}
 .connect input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--div);background:#12241b;color:var(--cream);margin:8px 0}
 a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;font-weight:bold;text-decoration:none;font-size:13px}
+
+.ticker{position:fixed;bottom:0;left:0;right:0;background:#0f1f16;border-top:1px solid var(--gold);overflow:hidden;z-index:60;height:34px}
+.ticker-inner{display:inline-block;white-space:nowrap;padding-left:100%;animation:tick 55s linear infinite;line-height:34px;font-size:12.5px}
+.ticker-inner:hover{animation-play-state:paused}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.tk{color:var(--muted);margin-right:34px}
+.tk b{color:var(--lgold)}
+.tk .g{color:#7dc98f}.tk .r{color:#d98f8f}
+body{padding-bottom:40px}
+.maxsays{border:1px solid var(--gold)}
 </style>
 </head>
 <body>
@@ -87,6 +97,7 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
     <div id="headStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Money Board — today's highest-value actions</h2><div id="moneyBoard"></div></div>
     <div id="warnBox"></div>
+    <div class="panelbox maxsays"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">◆ Max says</h2><div id="maxSays" style="font-size:13px"></div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Lagoons Market — live DLD feed</h2><div id="marketBox"></div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Today's Touches</h2><div id="touchList"></div></div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
@@ -453,7 +464,7 @@ async function fetchAll(){
   try{DLD=await (await fetch('https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/data/dld/lagoons.json?t='+Date.now())).json();if(!Array.isArray(DLD))DLD=[]}catch(e){DLD=[]}
   syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
-function render(){renderToday();renderMarket();renderMarketTab();renderBoard();renderPeople();renderSellers();renderDeals();renderOffers();renderArch();renderClosedWon();}
+function render(){renderToday();renderMarket();renderMarketTab();renderBoard();renderPeople();renderSellers();renderDeals();renderOffers();renderArch();renderClosedWon();renderInsights();}
 let SCOREF='';
 function scoreFilter(role,s){SCOREF=String(s);if($('p-role'))$('p-role').value=role==='seller'?'seller':'';openTab('people');renderPeople();}
 function renderToday(){
@@ -714,6 +725,60 @@ function renderArch(){
     +'</div>';}).join('')||'<div style="color:var(--muted)">Archive empty</div>';
 }
 
+
+function pct1(a,b){return b?Math.round(a/b*1000)/10:0}
+function buildInsights(){
+  const ds=DEALS.filter(d=>!d.ownUnit);
+  const out=[];
+  const board=x=>+x.myBoard||0, take=x=>+x.myTakeHome||0;
+  // segment economics
+  const seg={};
+  ds.forEach(d=>{const s=d.segment||'Other';(seg[s]=seg[s]||{n:0,b:0,t:0});seg[s].n++;seg[s].b+=board(d);seg[s].t+=take(d)});
+  if(seg.Offplan&&seg.Secondary&&seg.Secondary.n){
+    const op=seg.Offplan.t/seg.Offplan.n, sec=seg.Secondary.t/seg.Secondary.n;
+    out.push({p:9,t:'Off-plan pays you <b>'+fmtB(op)+'</b>/deal in the pocket vs <b>'+fmtB(sec)+'</b> secondary \u2014 <span class="g">'+(op/sec).toFixed(1)+'x</span>. Route buyers there when it fits.'});
+  }
+  // source ranking
+  const src={};
+  ds.forEach(d=>{const s=(d.buyerSource||d.sourceCat||'Unknown').split('+')[0].trim()||'Unknown';(src[s]=src[s]||0);src[s]+=board(d)});
+  const st=Object.entries(src).filter(x=>x[0]!=='Unknown').sort((a,b)=>b[1]-a[1]);
+  if(st.length>1) out.push({p:6,t:'Most board from <b>'+st[0][0]+'</b> ('+fmtB(st[0][1])+') \u00b7 least from <b>'+st[st.length-1][0]+'</b> ('+fmtB(st[st.length-1][1])+').'});
+  // month pace vs 500K
+  const m=new Date().toISOString().slice(0,7);
+  const mb=ds.filter(d=>String(d.date||'').startsWith(m)).reduce((s,d)=>s+board(d),0);
+  const day=new Date().getDate(), pace=Math.round(mb/day*30);
+  out.push({p:8,t:'This month: <b>'+fmtB(mb)+'</b> board \u00b7 run-rate <b>'+fmtB(pace)+'</b> vs \u0110500K target '+(pace>=500000?'<span class="g">ON PACE</span>':'<span class="r">'+pct1(pace,500000)+'% of pace</span>')+'.'});
+  // unpaid pipeline
+  const unpaid=ds.filter(d=>d.paid===false).reduce((s,d)=>s+take(d),0);
+  if(unpaid>0) out.push({p:7,t:'<b>'+fmtB(unpaid)+'</b> take-home earned and not yet paid \u2014 chase the pay dates.'});
+  // hot & stale
+  const today=new Date().toISOString().slice(0,10);
+  const stale=BUYERS.filter(x=>x.status==='Active'&&(+x.score||0)>=5&&x.lastContact&&((new Date(today)-new Date(x.lastContact))/864e5)>=3);
+  if(stale.length) out.push({p:10,t:'<span class="r">'+stale.length+' score-5 buyer'+(stale.length>1?'s':'')+' untouched 3+ days:</span> '+stale.slice(0,4).map(x=>'<b>'+x.buyer+'</b>').join(', ')+'. Hot decays fast.'});
+  // effort vs return
+  const eff=BUYERS.filter(x=>x.status==='Active').map(x=>({n:x.buyer,t:(x.touches||[]).length,s:+x.score||0})).sort((a,b)=>b.t-a.t)[0];
+  if(eff&&eff.t>=6&&eff.s<=3) out.push({p:5,t:'Most effort: <b>'+eff.n+'</b> ('+eff.t+' touches, score '+eff.s+') \u2014 is the return there?'});
+  // cluster demand vs stock
+  const dem=BUYERS.filter(x=>x.status==='Active'&&(+x.budget||0)>=2400000&&(+x.budget||0)<=2800000).length;
+  const sup=(STOCK||[]).filter(s=>(s.status||'')!=='Sold'&&(+s.price||+s.ask||0)>0&&(+s.price||+s.ask)<=2800000).length;
+  if(dem) out.push({p:7,t:'<b>'+dem+'</b> active buyers in \u01102.4\u20132.8M vs <b>'+sup+'</b> matching units in stock '+(dem>sup?'<span class="r">\u2014 stock is the bottleneck. Sourcing = money.</span>':'.')});
+  // biggest deal + averages
+  const big=ds.slice().sort((a,b)=>board(b)-board(a))[0];
+  if(big) out.push({p:4,t:'Biggest board to date: <b>'+(big.buyer||'')+'</b> '+(big.unit||'')+' \u2014 '+fmtB(board(big))+'.'});
+  if(ds.length) out.push({p:3,t:'Career: <b>'+ds.length+'</b> deals \u00b7 '+fmtB(ds.reduce((s,d)=>s+board(d),0))+' board \u00b7 avg take <b>'+fmtB(ds.reduce((s,d)=>s+take(d),0)/ds.length)+'</b>/deal.'});
+  // viewings conversion
+  const vw=(VIEWINGS||[]).length;
+  if(vw&&ds.length) out.push({p:2,t:vw+' viewings logged \u00b7 '+ds.filter(d=>String(d.date||'').startsWith('2026')).length+' deals in 2026 \u2014 every viewing is worth ~'+fmtB(ds.filter(d=>String(d.date||'').startsWith('2026')).reduce((s,d)=>s+take(d),0)/Math.max(vw,1))+' to you.'});
+  return out.sort((a,b)=>b.p-a.p);
+}
+function renderInsights(){
+  const ins=buildInsights();
+  const tk=$('tickerBar');
+  if(tk) tk.innerHTML=ins.map(i=>'<span class="tk">\u25c6 '+i.t+'</span>').join('')+ins.map(i=>'<span class="tk">\u25c6 '+i.t+'</span>').join('');
+  const ms=$('maxSays');
+  if(ms) ms.innerHTML=ins.slice(0,3).map(i=>'<div style="padding:4px 0;border-bottom:1px solid var(--div)">'+i.t+'</div>').join('');
+}
+
 async function init(){
   if(PAT)$('connectBox').classList.add('hidden');
   try{await fetchAll();render();$('syncTxt').textContent=BUYERS.length+' buyers · '+STOCK.length+' units'}
@@ -721,5 +786,6 @@ async function init(){
 }
 init();
 </script>
+<div class="ticker"><div class="ticker-inner" id="tickerBar">Loading insights…</div></div>
 </body>
 </html>
