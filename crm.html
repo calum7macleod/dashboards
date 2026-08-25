@@ -78,6 +78,8 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
   <div class="tab" data-t="pipeline" onclick="tab('pipeline')">Pipeline</div>
   <div class="tab" data-t="people" onclick="tab('people')">People</div>
   <div class="tab" data-t="sellers" onclick="tab('sellers')">Sellers</div>
+  <div class="tab" data-t="deals" onclick="tab('deals')">Deals</div>
+  <div class="tab" data-t="offers" onclick="tab('offers')">Offers</div>
   <div class="tab" data-t="market" onclick="tab('market')">Market</div>
 </div>
 <div class="wrap">
@@ -94,6 +96,7 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Unit ↔ Buyer Matches</h2><div id="matchList"></div></div>
   </div>
   <div id="v-pipeline" class="hidden">
+    <div class="panelbox" style="margin-bottom:10px"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:4px">◆ Closed Won <span style="font-size:11px;color:var(--muted)">(newest first)</span> <button class="btn" style="font-size:11px;padding:2px 8px" onclick="tab(&quot;deals&quot;)">full deals →</button></h2><div id="closedWonStrip" style="font-size:12.5px"></div></div>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px">
       <div id="pipeTotals" style="font-size:13px;color:var(--muted)"></div>
       <button class="btn" onclick="newBuyer()">+ New Buyer</button>
@@ -143,6 +146,15 @@ a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;f
   <div id="v-sellers" class="hidden">
     <div id="sTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
     <div id="sboard"></div>
+  </div>
+  <div id="v-deals" class="hidden">
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Closed Won — every deal, newest first</h2>
+      <div id="dealsTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
+      <div id="dealsList"></div></div>
+  </div>
+  <div id="v-offers" class="hidden">
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Live Offers</h2><div id="offersList"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">Archived buyers <span id="archCount" style="color:var(--muted);font-size:11px"></span> <button class="btn" style="font-size:11px;padding:2px 8px" onclick="toggleArch()">show / hide</button></h2><div id="archList" class="hidden"></div></div>
   </div>
   <div id="v-market" class="hidden">
     <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
@@ -216,7 +228,7 @@ function fillClusterFilter(){const cs=[...new Set([...BUYERS.flatMap(b=>[b.clust
 function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>1.01)b.heat=Math.min(5,Math.max(1,Math.round(b.score)));else if(typeof b.score==='number'&&b.score>0){b.score=Math.min(5,Math.max(1,Math.round(b.score*5)));b.heat=b.score;}});}
 const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
 const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
-let DEALS=[],DLD=[],BOARDPCT=0.02,TIER=0.65; // board 2% (bank-reconciled, Calum 3 Aug); tier: Q3-26 65%, Q4-26 70%
+let DEALS=[],DLD=[],OFFERS=[],ARCH=[],BOARDPCT=0.02,TIER=0.65; // board 2% (bank-reconciled, Calum 3 Aug); tier: Q3-26 65%, Q4-26 70%
 function calcComm(){/* myBoard field = gross deal comm, not Calum's board - do NOT derive from it. 2% confirmed vs take-home. */}
 const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
 const gross2=v=>v?Math.round(v*BOARDPCT):0;
@@ -430,16 +442,18 @@ function heatDrivers(b){
   return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system read: <b>${sug}</b>${Math.abs(sug-(b.score||0))>=2?' — consider updating score':''}`;
 }
 function tab(t){curTab=t;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
-  ['today','pipeline','people','sellers','market'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
+  ['today','pipeline','people','sellers','deals','offers','market'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
 async function fetchAll(){
   BUYERS=await fetchFile('data/buyers.json');
   try{STOCK=await fetchFile('data/stock.json')}catch(e){STOCK=[]}
   try{VIEWINGS=await fetchFile('data/viewings.json')}catch(e){VIEWINGS=[]}
   try{DEALS=await fetchFile('data/deals.json');calcComm()}catch(e){}
+  try{OFFERS=await fetchFile('data/offers.json')}catch(e){OFFERS=[]}
+  try{ARCH=await fetchFile('data/archive-buyers.json')}catch(e){ARCH=[]}
   try{DLD=await (await fetch('https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/data/dld/lagoons.json?t='+Date.now())).json();if(!Array.isArray(DLD))DLD=[]}catch(e){DLD=[]}
   syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
-function render(){renderToday();renderMarket();renderMarketTab();renderBoard();renderPeople();renderSellers();}
+function render(){renderToday();renderMarket();renderMarketTab();renderBoard();renderPeople();renderSellers();renderDeals();renderOffers();renderArch();renderClosedWon();}
 let SCOREF='';
 function scoreFilter(role,s){SCOREF=String(s);if($('p-role'))$('p-role').value=role==='seller'?'seller':'';openTab('people');renderPeople();}
 function renderToday(){
@@ -658,6 +672,48 @@ function newBuyer(){
   BUYERS.push({buyer:name,notes:phone?('Ph: '+phone):'',source:'Manual',date:today(),status:'Active',area:'',cluster1:clu,cluster2:'',cluster3:'',beds,finance:'',budget,stage:'New',heat,lastContact:today(),nextTouch:addDays(today(),CAD[heat]||3),touchReason:'New lead',needSummary:(beds?beds+'bd ':'')+(clu||'')+(budget?(' ~'+fmtB(budget)):''),snoozedUntil:null,touches:[{date:today(),channel:'manual',summary:'Created on dashboard'}],id,order:99});
   render();queueSave('data/buyers.json',BUYERS,'CRM: new buyer '+name);
 }
+
+function dealDate(d){return String(d.date||'')||String(d.month||'');}
+function renderClosedWon(){
+  const el=$('closedWonStrip'); if(!el) return;
+  const ds=DEALS.filter(d=>!d.ownUnit).slice().sort((a,b)=>dealDate(b).localeCompare(dealDate(a))).slice(0,8);
+  el.innerHTML=ds.map(d=>'<span style="display:inline-block;margin:2px 8px 2px 0;padding:3px 8px;background:var(--panel);border:1px solid var(--div);border-radius:8px"><b style="color:var(--cream)">'+(d.buyer||'?')+'</b> <span style="color:var(--muted)">'+(d.unit||'')+' '+dealDate(d)+'</span> <span style="color:var(--lgold)">'+fmtB(+d.myBoard||0)+'</span></span>').join('');
+}
+function renderDeals(){
+  const el=$('dealsList'); if(!el) return;
+  const ds=DEALS.filter(d=>!d.ownUnit).slice().sort((a,b)=>dealDate(b).localeCompare(dealDate(a)));
+  const board=ds.reduce((s,d)=>s+(+d.myBoard||0),0), take=ds.reduce((s,d)=>s+(+d.myTakeHome||0),0);
+  const yr=ds.filter(d=>dealDate(d).startsWith('2026'));
+  $('dealsTotals').innerHTML=ds.length+' deals \u00b7 board <b style="color:var(--lgold)">'+fmtB(board)+'</b> \u00b7 take-home <b style="color:var(--cream)">'+fmtB(take)+'</b> \u00b7 2026: '+yr.length+' deals';
+  el.innerHTML=ds.map(function(d){
+    var pm=d.payMonth?(' \u00b7 pays <b style="color:var(--lgold)">'+d.payMonth+'</b>'):'';
+    var paid=d.paid===true?'<span style="color:#7dc98f">PAID</span>':(d.paid===false?'<span style="color:var(--muted)">unpaid</span>':'');
+    return '<div style="border-bottom:1px solid var(--div);padding:8px 2px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap">'
+      +'<div><b style="color:var(--cream)">'+(d.buyer||'?')+'</b> <span style="color:var(--muted)">'+(d.unit||'')+' \u00b7 '+dealDate(d)+' \u00b7 '+(d.segment||'')+'</span></div>'
+      +'<div style="text-align:right"><span style="color:var(--lgold)">'+fmtB(+d.myBoard||0)+'</span> board \u00b7 '+fmtB(+d.myTakeHome||0)+' take'+pm+' '+paid+'</div></div>';
+  }).join('')||'<div style="color:var(--muted)">No deals yet</div>';
+}
+function renderOffers(){
+  const el=$('offersList'); if(!el) return;
+  const os=(OFFERS||[]).slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+  el.innerHTML=os.length?os.map(function(o){return '<div style="border-bottom:1px solid var(--div);padding:8px 2px">'
+    +'<b style="color:var(--cream)">'+(o.buyer||'?')+'</b> \u2192 '+(o.unit||'')+' <span style="color:var(--muted)">'+(o.seller?('('+o.seller+')'):'')+'</span>'
+    +' \u00b7 <span style="color:var(--lgold)">'+fmtB(+o.amount||+o.price||0)+'</span>'
+    +' \u00b7 <span style="color:var(--muted)">'+(o.status||'open')+' \u00b7 '+(o.date||'')+'</span>'
+    +(o.note?('<div style="font-size:11.5px;color:var(--muted)">'+o.note+'</div>'):'')
+    +'</div>';}).join(''):'<div style="color:var(--muted)">No live offers logged</div>';
+}
+function toggleArch(){$('archList').classList.toggle('hidden');}
+function renderArch(){
+  const el=$('archList'); if(!el) return;
+  const a=(ARCH||[]);
+  if($('archCount'))$('archCount').textContent='('+a.length+')';
+  el.innerHTML=a.map(function(x){return '<div style="border-bottom:1px solid var(--div);padding:6px 2px;font-size:12.5px">'
+    +'<b style="color:var(--cream)">'+(x.buyer||'?')+'</b> <span style="color:var(--muted)">'+(x.cluster1||'')+' '+(x.beds?x.beds+'bd':'')+' '+fmtB(+x.budget||0)+' \u00b7 '+(x.status||'archived')+' \u00b7 '+(x.date||'')+'</span>'
+    +(x.notes?('<div style="color:var(--muted)">'+String(x.notes).slice(0,140)+'</div>'):'')
+    +'</div>';}).join('')||'<div style="color:var(--muted)">Archive empty</div>';
+}
+
 async function init(){
   if(PAT)$('connectBox').classList.add('hidden');
   try{await fetchAll();render();$('syncTxt').textContent=BUYERS.length+' buyers · '+STOCK.length+' units'}
