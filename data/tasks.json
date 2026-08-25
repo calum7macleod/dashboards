@@ -3344,6 +3344,21 @@
    "snoozedUntil": null,
    "order": 2,
    "top3": false
+  },
+  {
+   "order": null,
+   "top3": true,
+   "id": "0f155bc4-7f52-4025-a8b7-ffe53a4b8f51",
+   "title": "Plan next videos",
+   "area": "Real Estate",
+   "priority": "medium",
+   "status": "active",
+   "difficulty": "medium",
+   "due": "2026-08-25",
+   "created": "2026-08-25",
+   "notes": "Content planning - use Max's reel analysis (Fantastic/two-person whiteboard format was ~3x typical) to shape next batch",
+   "completed": null,
+   "snoozedUntil": null
   }
  ],
  "units": [],
