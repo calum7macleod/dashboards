@@ -224,3 +224,5 @@ CHAT ARCHIVE: full pre-migration chat history lives at data/chat-archive/ - read
 - Options: A GBP500K now +100K/yr x3 (=800K) -> D1.76M by 2036, 2M+ 2037 [RECOMMENDED]; B 300+200x3 (=900K) same ladder thin buffer; C 100K/yr x10 -> D1.3-1.5M, misses clock.
 - Delivered 7 Aug: Amer-The-Income-Plan.pdf (5pp) + Amer-Income-Plan-Calculator.xlsx (scenario A/B/C toggle B13, funding-check row goes red when underfunded). Sources in content-assets/amer-income-plan/ + Project claude/assets/.
 - Awaiting from Amer via Calum: option pick, UK sale timing, paid-in position + instalment schedules on Terra/Athlon.
+
+- STANDING RULE (25 Aug): every NEW deal logged to deals.json gets order 1 (top of the deals page); all existing orders bump +1. Newest always first.
