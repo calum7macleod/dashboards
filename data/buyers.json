@@ -2637,5 +2637,43 @@
     "summary": "Asked for a 2M townhouse in JGE - below realistic entry"
    }
   ]
+ },
+ {
+  "buyer": "Jack Fletcher",
+  "status": "Active",
+  "date": "2026-08-24",
+  "source": "Instagram",
+  "colleague": "Laura",
+  "area": "",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 3,
+  "relationship": 2,
+  "unitSupply": null,
+  "feeling": 3,
+  "score": 3,
+  "notes": "24 Aug: Lead passed by Laura (Monday lead drop). UK number +44 7377 809996. UK property investor, never bought UAE but open to it - has family living in Dubai. Said 'definitely mate' to Calum offering insights/areas. Warm, early stage - brief and budget TBC.",
+  "id": "jack-fletcher",
+  "order": 999,
+  "stage": "New",
+  "heat": 3,
+  "lastContact": "2026-08-24",
+  "nextTouch": "2026-08-25",
+  "touchReason": "Send UAE insights + suggested areas as promised; qualify budget and goals",
+  "needSummary": "UK investor open to UAE, family in Dubai, brief/budget TBC",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-24",
+    "channel": "ig",
+    "summary": "Laura handover: UK investor, open to UAE, family in Dubai, agreed to receive insights"
+   }
+  ]
  }
 ]
