@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRM — Calum MacLeod</title>
+<style>
+:root{--bg:#152A1F;--panel:#1E3D2F;--card:#162b20;--gold:#C9A84C;--lgold:#E8C96B;--cream:#F5EDE0;--muted:#8FA898;--div:#2E5A40;--red:#f85149;--green:#3fb950;--amber:#d29922}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--cream);font-family:Calibri,'Segoe UI',sans-serif;min-height:100vh;padding:12px}
+h1,h2,h3{font-family:'Palatino Linotype',Palatino,serif}
+.eyebrow{letter-spacing:4px;font-size:11px;font-weight:bold;color:var(--gold);text-transform:uppercase;text-align:center;margin:4px 0 2px}
+h1{text-align:center;font-size:24px;margin-bottom:10px}
+.tabs{display:flex;gap:8px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.tab{background:var(--panel);border:1px solid var(--div);color:var(--cream);padding:9px 18px;border-radius:20px;cursor:pointer;font-size:14px;font-weight:bold}
+.tab.on{background:var(--gold);color:#152A1F;border-color:var(--gold)}
+.btn{background:var(--gold);color:#152A1F;font-weight:bold;border:none;border-radius:9px;padding:9px 14px;cursor:pointer;font-size:13px}
+.btn.sec{background:transparent;color:var(--lgold);border:1px solid var(--div)}
+.mini{padding:6px 10px;font-size:12px;border-radius:7px}
+.hidden{display:none!important}
+.wrap{max-width:97vw;margin:0 auto}
+.panelbox{background:var(--panel);border:1px solid var(--div);border-radius:14px;padding:12px;margin-bottom:14px}
+.touchrow{display:flex;align-items:center;gap:10px;padding:9px 6px;border-top:1px solid var(--div);flex-wrap:wrap}
+.touchrow:first-of-type{border-top:none}
+.tname{font-weight:bold;min-width:120px;cursor:pointer}
+.treason{color:var(--muted);font-size:13px;flex:1;min-width:150px}
+.due-over{color:var(--red);font-size:12px;font-weight:bold}
+.due-today{color:var(--amber);font-size:12px;font-weight:bold}
+#board,#sboard{display:flex;gap:10px;overflow-x:auto;padding-bottom:16px}
+.col{background:var(--panel);border:1px solid var(--div);border-radius:14px;min-width:150px;flex:1 1 0;padding:8px}
+@media(max-width:1100px){.col{min-width:220px;flex:0 0 auto}}
+.col h3{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between;margin-bottom:4px}
+.colval{font-size:11px;color:var(--muted);margin-bottom:8px}
+.col.dragover{outline:2px dashed var(--lgold)}
+.card{background:var(--card);border:1px solid var(--div);border-radius:11px;padding:9px;margin-bottom:8px;cursor:grab}
+.card .nm{font-weight:bold;font-size:14px}
+.heat{color:var(--lgold);font-size:11.5px;letter-spacing:1px}
+.fsel{background:var(--card);color:var(--cream,#F5EDE0);border:1px solid var(--gold);border-radius:6px;padding:5px 8px;font-size:12px}
+.card .need{color:var(--muted);font-size:11.5px;margin:3px 0}
+.nt{font-size:11.5px}.nt.over{color:var(--red)}.nt.today{color:var(--amber)}.nt.ok{color:var(--muted)}
+.bdg{font-size:11.5px;color:var(--cream)}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding:12px;z-index:50;overflow-y:auto}
+#mbox{background:var(--panel);border:1px solid var(--div);border-radius:16px;max-width:620px;width:100%;padding:16px;margin:10px 0 40px}
+.phead{display:flex;gap:14px;align-items:center;border-bottom:1px solid var(--div);padding-bottom:12px;margin-bottom:10px;flex-wrap:wrap}
+.heatball{width:74px;height:74px;border-radius:50%;background:var(--card);border:3px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto}
+.heatball b{font-size:26px;color:var(--lgold);font-family:'Palatino Linotype',serif}
+.heatball span{font-size:9px;letter-spacing:2px;color:var(--muted)}
+.pmeta{flex:1;min-width:200px}
+.pmeta h2{color:var(--cream);font-size:22px}
+.pmeta .sub{color:var(--muted);font-size:13px;margin-top:2px}
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.pill{background:var(--card);border:1px solid var(--div);border-radius:14px;padding:4px 10px;font-size:12px;color:var(--cream)}
+.drivers{background:var(--card);border:1px solid var(--div);border-radius:10px;padding:9px;margin:10px 0;font-size:12.5px;color:var(--muted)}
+.drivers b{color:var(--lgold)}
+.tl{margin-top:10px}
+.tlrow{display:flex;gap:10px;padding:8px 0;border-top:1px solid var(--div)}
+.tlic{flex:0 0 26px;text-align:center;font-size:15px}
+.tlbody{flex:1}
+.tldate{font-size:11px;color:var(--muted)}
+.tltext{font-size:13px;color:var(--cream)}
+.mrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+select,input[type=date],input[type=text]{background:#12241b;color:var(--cream);border:1px solid var(--div);border-radius:7px;padding:8px;font-size:13px}
+#peopleList .touchrow{cursor:pointer}
+#search{width:100%;max-width:420px;margin:0 auto 12px;display:block}
+#sync{position:fixed;bottom:8px;left:10px;font-size:11.5px;color:var(--muted);background:rgba(21,42,31,.9);padding:4px 8px;border-radius:8px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:5px}
+.connect{background:var(--panel);border:1px solid var(--div);border-radius:12px;padding:14px;max-width:560px;margin:0 auto 14px}
+.connect input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--div);background:#12241b;color:var(--cream);margin:8px 0}
+a.act{color:#152A1F;background:var(--lgold);border-radius:8px;padding:7px 12px;font-weight:bold;text-decoration:none;font-size:13px}
+</style>
+</head>
+<body>
+<div class="eyebrow">White &amp; Co · Calum MacLeod</div>
+<h1>CRM</h1>
+<div class="connect" id="connectBox"><b>🔌 Connect GitHub</b>
+<input id="patIn" placeholder="github_pat_..." /><button class="btn" onclick="savePat()">Connect</button></div>
+<div class="tabs">
+  <div class="tab on" data-t="today" onclick="tab('today')">Today</div>
+  <div class="tab" data-t="pipeline" onclick="tab('pipeline')">Pipeline</div>
+  <div class="tab" data-t="people" onclick="tab('people')">People</div>
+  <div class="tab" data-t="sellers" onclick="tab('sellers')">Sellers</div>
+  <div class="tab" data-t="market" onclick="tab('market')">Market</div>
+</div>
+<div class="wrap">
+  <div id="v-today">
+    <div id="headStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Money Board — today's highest-value actions</h2><div id="moneyBoard"></div></div>
+    <div id="warnBox"></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Lagoons Market — live DLD feed</h2><div id="marketBox"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Today's Touches</h2><div id="touchList"></div></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <div class="panelbox" style="flex:1;min-width:260px"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">Buyers by score <span style="font-size:11px;color:var(--muted)">(tap a bar)</span></h2><div id="scoreChartB"></div></div>
+      <div class="panelbox" style="flex:1;min-width:260px"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">Sellers by score</h2><div id="scoreChartS"></div></div>
+    </div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Unit ↔ Buyer Matches</h2><div id="matchList"></div></div>
+  </div>
+  <div id="v-pipeline" class="hidden">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px">
+      <div id="pipeTotals" style="font-size:13px;color:var(--muted)"></div>
+      <button class="btn" onclick="newBuyer()">+ New Buyer</button>
+    </div>
+    <div id="filtbar" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+      <select id="f-cluster" onchange="setF()" class="fsel"></select>
+      <select id="f-budget" onchange="setF()" class="fsel">
+        <option value="">Any budget</option><option value="2500000">≤ 2.5M</option>
+        <option value="3000000">≤ 3M</option><option value="3500000">≤ 3.5M</option>
+        <option value="99999999">3.5M+</option>
+      </select>
+      <select id="f-beds" onchange="setF()" class="fsel">
+        <option value="">Any beds</option><option>3</option><option>4</option><option>5</option>
+      </select>
+      <select id="f-fin" onchange="setF()" class="fsel">
+        <option value="">Any finance</option><option value="cash">Cash</option><option value="mortgage">Mortgage</option>
+      </select>
+      <select id="f-seg" onchange="setF()" class="fsel">
+        <option value="">Secondary + Offplan</option><option value="Offplan">Offplan only</option><option value="secondary">Secondary only</option>
+      </select>
+      <button class="btn sec mini" onclick="clearF()">Clear</button>
+    </div>
+    <div id="board"></div>
+  </div>
+  <div id="v-people" class="hidden">
+    <input type="text" id="search" placeholder="Search people…" oninput="renderPeople()">
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+      <select id="p-role" onchange="renderPeople()" class="fsel">
+        <option value="">Everyone</option><option value="buyer">Buyers</option>
+        <option value="offplan">Off-plan buyers</option><option value="seller">Sellers</option>
+      </select>
+      <select id="p-cluster" onchange="renderPeople()" class="fsel"></select>
+      <select id="p-budget" onchange="renderPeople()" class="fsel">
+        <option value="">Any budget</option><option value="2500000">≤ 2.5M</option>
+        <option value="3000000">≤ 3M</option><option value="3500000">≤ 3.5M</option>
+        <option value="99999999">3.5M+</option>
+      </select>
+      <select id="p-beds" onchange="renderPeople()" class="fsel">
+        <option value="">Any beds</option><option>3</option><option>4</option><option>5</option>
+      </select>
+      <select id="p-fin" onchange="renderPeople()" class="fsel">
+        <option value="">Any finance</option><option value="cash">Cash</option><option value="mortgage">Mortgage</option>
+      </select>
+    </div>
+    <div class="panelbox" id="peopleList"></div>
+  </div>
+  <div id="v-sellers" class="hidden">
+    <div id="sTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
+    <div id="sboard"></div>
+  </div>
+  <div id="v-market" class="hidden">
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
+      <select id="mkt-days" class="fsel" onchange="renderMarketTab()"><option value="30">Last 30 days</option><option value="60">Last 60 days</option><option value="90">Last 90 days</option></select>
+      <label style="font-size:12px;color:var(--muted);cursor:pointer"><input type="checkbox" id="mkt-incl" onchange="renderMarketTab()"> include Lagoon Views + Valencia</label>
+      <div style="font-size:11px;color:var(--muted)">source: DLD open data · auto-refresh 06:15 daily · phases + Nice/Morocco merged</div>
+    </div>
+    <div id="mktHead" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px"></div>
+    <div class="panelbox"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:4px">
+      <h2 style="color:var(--lgold);font-size:16px">◆ Price Trend — monthly averages</h2>
+      <select id="mkt-mcl" class="fsel" onchange="renderMarketTab()"></select></div>
+      <div id="mktChart"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:8px">◆ By Bedrooms — average price & change</h2>
+      <div id="mktBedsCards" style="display:flex;gap:9px;flex-wrap:wrap"></div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:8px">◆ Clusters — tap one for its full book</h2>
+      <div id="clusterGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:9px"></div></div>
+    <div id="mktDrill"></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Average Price — Cluster × Beds</h2><div id="mktMatrix" style="overflow-x:auto"></div><div style="font-size:10px;color:var(--muted);margin-top:4px">averages for selected period · small number = deal count</div></div>
+    <div class="panelbox"><h2 style="color:var(--lgold);font-size:16px;margin-bottom:6px">◆ Every Transaction — selected period</h2><div id="mktList" style="max-height:480px;overflow-y:auto"></div></div>
+  </div>
+</div>
+<div id="modal" class="hidden" onclick="if(event.target.id==='modal')closeModal()"><div id="mbox"></div></div>
+<div id="sync"><span class="dot"></span><span id="syncTxt">Loading…</span></div>
+<script>
+const OWNER='calum7macleod', REPO='dashboards';
+const STAGES=['Longer Term','New','Qualified','Viewing','Offer','Won','Lost'];
+const SSTAGES=['Longer Term','New','Qualified','Ready','Offer','Won','Lost'];
+const SMIG={'Active':'Qualified','Sold':'Won','Later':'Longer Term'};
+function migSellerStages(){STOCK.forEach(s=>{if(SMIG[s.stage])s.stage=SMIG[s.stage];if(!s.stage||!SSTAGES.includes(s.stage))s.stage=s.stage&&SSTAGES.includes(s.stage)?s.stage:'New';});}
+const CAD={5:1,4:2,3:3,2:4,1:5};
+let BUYERS=[], STOCK=[], VIEWINGS=[], SHAS={}, PAT=localStorage.getItem('crm_pat')||'';
+let showSnoozed=false, curTab='today';
+const $=id=>document.getElementById(id);
+const today=()=>new Date().toISOString().slice(0,10);
+const addDays=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x.toISOString().slice(0,10)};
+function savePat(){PAT=$('patIn').value.trim();if(!PAT)return;localStorage.setItem('crm_pat',PAT);init()}
+async function fetchFile(path){
+  const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}?ref=main&t=${Date.now()}`,{headers:PAT?{Authorization:'Bearer '+PAT}:{}});
+  const j=await r.json(); SHAS[path]=j.sha;
+  return JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
+}
+let saveTimer=null;
+function queueSave(path,data,msg){$('syncTxt').textContent='Saving…';clearTimeout(saveTimer);saveTimer=setTimeout(()=>push(path,data,msg),1000)}
+async function push(path,data,msg){
+  try{
+    const body={message:msg||'CRM update',content:btoa(unescape(encodeURIComponent(JSON.stringify(data,null,1)))),sha:SHAS[path],branch:'main'};
+    const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`,{method:'PUT',headers:{Authorization:'Bearer '+PAT,'Content-Type':'application/json'},body:JSON.stringify(body)});
+    const j=await r.json();
+    if(r.ok){SHAS[path]=j.content.sha;$('syncTxt').textContent='Synced '+new Date().toLocaleTimeString()}
+    else if(r.status===409){await fetchAll();$('syncTxt').textContent='Conflict — refreshed, redo change'}
+    else $('syncTxt').textContent='Save failed ('+r.status+')';
+  }catch(e){$('syncTxt').textContent='Offline — retrying';setTimeout(()=>push(path,data,msg),4000)}
+}
+const heatStr=h=>'';
+const scr=b=>(typeof b.score==='number'&&b.score>0)?String(Math.round(b.score)):'—';
+let FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};
+function setF(){FILT={cluster:$('f-cluster').value,budget:$('f-budget').value,beds:$('f-beds').value,fin:$('f-fin').value,seg:$('f-seg').value};renderBoard();}
+function clearF(){['f-cluster','f-budget','f-beds','f-fin','f-seg'].forEach(i=>$(i).value='');FILT={cluster:'',budget:'',beds:'',fin:'',seg:''};renderBoard();}
+function passF(b){
+  if(FILT.cluster&&![b.cluster1,b.cluster2,b.cluster3].filter(Boolean).some(c=>c===FILT.cluster))return false;
+  if(FILT.budget){const bd=b.budget||0;if(FILT.budget==='99999999'){if(bd<=3500000)return false;}else if(bd>+FILT.budget||!bd)return false;}
+  if(FILT.beds&&String(b.beds||'').indexOf(FILT.beds)===-1)return false;
+  if(FILT.fin&&!(b.finance||'').toLowerCase().includes(FILT.fin))return false;
+  if(FILT.seg==='Offplan'&&b.segment!=='Offplan')return false;
+  if(FILT.seg==='secondary'&&b.segment==='Offplan')return false;
+  return true;}
+function fillClusterFilter(){const cs=[...new Set([...BUYERS.flatMap(b=>[b.cluster1,b.cluster2,b.cluster3]),...STOCK.map(s=>s.cluster)].filter(Boolean))].sort();
+  const opts='<option value="">Any cluster</option>'+cs.map(c=>`<option>${c}</option>`).join('');
+  if($('f-cluster'))$('f-cluster').innerHTML=opts;
+  if($('p-cluster'))$('p-cluster').innerHTML=opts;}
+function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>1.01)b.heat=Math.min(5,Math.max(1,Math.round(b.score)));else if(typeof b.score==='number'&&b.score>0){b.score=Math.min(5,Math.max(1,Math.round(b.score*5)));b.heat=b.score;}});}
+const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
+const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
+let DEALS=[],DLD=[],BOARDPCT=0.02,TIER=0.65; // board 2% (bank-reconciled, Calum 3 Aug); tier: Q3-26 65%, Q4-26 70%
+function calcComm(){/* myBoard field = gross deal comm, not Calum's board - do NOT derive from it. 2% confirmed vs take-home. */}
+const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
+const gross2=v=>v?Math.round(v*BOARDPCT):0;
+const fmtK=v=>v>=1000000?('Đ'+(v/1000000).toFixed(2)+'M'):('Đ'+Math.round(v/1000)+'K');
+const bComm=b=>Math.round((b.budget||0)*(b.commPct||0.02));
+const sComm=s=>Math.round((s.price||0)*(s.commPct||0.02));
+// ---- LAGOONS MARKET PANEL (DLD live feed: data/dld/lagoons.json, no hardcoded data) ----
+const med=a=>{if(!a.length)return 0;const s=[...a].sort((x,y)=>x-y),m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2;};
+const mbox=(l,v)=>`<div style="flex:1;min-width:110px;background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:8px 10px"><div style="font-size:10px;letter-spacing:2px;color:var(--muted)">${l}</div><div style="font-size:16px;color:var(--lgold);font-weight:700">${v}</div></div>`;
+const DLD_EXCL=/lagoon views|valencia/i; // Calum 4 Aug: apartments + Valencia launch noise excluded from all Lagoons market stats
+function dldSales(days,offset){offset=offset||0;const end=addDays(today(),-offset),start=addDays(today(),-(offset+days));
+  return DLD.filter(r=>r.d>start&&r.d<=end&&/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&!DLD_EXCL.test(r.proj||''));}
+function renderMarket(){
+  const el=$('marketBox');if(!el)return;
+  if(!DLD.length){el.innerHTML='<span style="color:var(--muted);font-size:12px">DLD feed loading… (first data lands after the 06:15 collector run)</span>';return;}
+  const cur=dldSales(30),prev=dldSales(30,30);
+  const vals=cur.map(r=>r.v).filter(Boolean);
+  const psf=cur.filter(r=>r.v&&r.sqm).map(r=>r.v/(r.sqm*10.7639));
+  const op=cur.filter(r=>r.op).length;
+  const tr=prev.length?Math.round((cur.length-prev.length)/prev.length*100):null;
+  const clus={};cur.forEach(r=>{const c=(r.proj||r.mp||'').replace(/damac lagoons/i,'').replace(/^[\s-]+/,'')||'—';(clus[c]=clus[c]||[]).push(r);});
+  const top=Object.entries(clus).sort((a,b)=>b[1].length-a[1].length).slice(0,5);
+  const big=cur.length?cur.reduce((a,r)=>(r.v||0)>(a.v||0)?r:a):null;
+  el.innerHTML=`<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px">
+    ${mbox('SALES 30D',cur.length+(tr!==null?` <span style="font-size:11px;color:${tr>=0?'#3fb950':'#f0883e'}">${tr>=0?'▲':'▼'}${Math.abs(tr)}%</span>`:''))}
+    ${mbox('MEDIAN',fmtB(med(vals)))}
+    ${mbox('MED Đ/SQFT',Math.round(med(psf)||0).toLocaleString())}
+    ${mbox('OFF-PLAN',Math.round(op/Math.max(1,cur.length)*100)+'%')}
+  </div>
+  <table style="width:100%;font-size:12px;border-collapse:collapse">${top.map(([c,rs])=>{
+    const p=rs.filter(r=>r.v&&r.sqm).map(r=>r.v/(r.sqm*10.7639));
+    return `<tr style="border-bottom:1px solid var(--div)"><td style="padding:4px 6px;color:var(--cream)">${c}</td><td style="padding:4px;color:var(--muted)">${rs.length} tx</td><td style="padding:4px;color:var(--lgold)">med ${fmtB(med(rs.map(r=>r.v)))}</td><td style="padding:4px;color:var(--muted)">${p.length?Math.round(med(p)).toLocaleString()+'/sqft':''}</td></tr>`;}).join('')}</table>
+  ${big?`<div style="font-size:11.5px;color:var(--muted);margin-top:6px">Biggest 30d: <b style="color:var(--lgold)">${(big.proj||'').replace(/DAMAC LAGOONS[\s-]*/i,'')} ${fmtB(big.v)}</b> (${big.r||big.t||''}, ${big.d}) · source: DLD open data, auto-refreshed 06:15</div>`:''}`;
+}
+// ---- MARKET TAB v3 (price-centric: trend charts, beds breakdown, drill-down) ----
+const MKT={sel:null};
+function dldSalesRange(days,offset,incl){offset=offset||0;const end=addDays(today(),-offset),start=addDays(today(),-(offset+days));
+  return DLD.filter(r=>r.d>start&&r.d<=end&&/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
+function mktAll(incl){return DLD.filter(r=>/sale|sell/i.test(r.proc||'')&&!/grant|lease|mortgage/i.test(r.proc||'')&&(incl||!DLD_EXCL.test(r.proj||'')));}
+const clusName=r=>((r.proj||r.mp||'').replace(/damac lagoons/i,'').replace(/^[\s-]+/,'').replace(/\s*\(\d+\)\s*$/,'').replace(/\s+\d+$/,'').trim())||'—';
+const dldBeds=r=>{const m=/(\d+)\s*B/i.exec(r.r||'');if(m)return +m[1];if(/studio/i.test(r.r||''))return 0;
+  if(/lagoon views/i.test(r.proj||''))return null;const v=r.v||0;if(!v)return null;
+  return v<2500000?3:v<=3200000?4:v<=5000000?5:6;}; // Calum's bands 4-Aug: <2.5=3bd, 2.5-3.2=4bd, 3.2-5=5bd, >5=6bd (DLD omits rooms on villas)
+const psfOf=r=>(r.v&&r.sqm)?r.v/(r.sqm*10.7639):null;
+const avg=a=>a.length?Math.round(a.reduce((x,y)=>x+y,0)/a.length):0;
+const pct=(a,b)=>b?Math.round((a-b)/b*100):null;
+const trChip=t=>t===null?'':` <span style="font-size:11px;color:${t>=0?'#3fb950':'#f0883e'}">${t>=0?'▲':'▼'}${Math.abs(t)}%</span>`;
+function last6Months(){const out=[];const n=new Date(today());for(let i=5;i>=0;i--){const d=new Date(n.getFullYear(),n.getMonth()-i,1);out.push(`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`);}return out;}
+const mLbl=k=>['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+k.slice(5,7)-1];
+const BEDCOL={all:'#F5EDE0',3:'#8FA898',4:'#E8C96B',5:'#C9A84C',6:'#d29922',7:'#f0883e',2:'#7aa88f',0:'#5c7f6d'};
+function monthlyAvg(rows,months,bedFilter){
+  return months.map(k=>{const xs=rows.filter(r=>(r.d||'').slice(0,7)===k&&(bedFilter==null||dldBeds(r)===bedFilter)&&r.v).map(r=>r.v);
+    return xs.length?avg(xs):null;});
+}
+function svgTrend(series,months,h,w){
+  h=h||170;w=w||560;const padL=46,padR=10,padT=8,padB=18;
+  const flat=series.flatMap(s=>s.pts.filter(p=>p!=null));
+  if(!flat.length)return '<div style="color:var(--muted);font-size:12px;padding:8px 0">no price data yet — history deepens daily</div>';
+  let lo=Math.min(...flat),hi=Math.max(...flat);if(lo===hi){lo*=0.95;hi*=1.05;}
+  const m=(hi-lo)*0.12;lo-=m;hi+=m;
+  const X=i=>padL+i*(w-padL-padR)/Math.max(1,months.length-1);
+  const Y=v=>padT+(1-(v-lo)/(hi-lo))*(h-padT-padB);
+  const fmtS=v=>v>=1e6?(v/1e6).toFixed(v>=3e6?1:2).replace(/\.?0+$/,'')+'M':Math.round(v/1e3)+'K';
+  let g='';
+  for(let t=0;t<=2;t++){const v=lo+(hi-lo)*t/2,y=Y(v);
+    g+=`<line x1="${padL}" y1="${y}" x2="${w-padR}" y2="${y}" stroke="#2E5A40" stroke-width="1"/><text x="${padL-6}" y="${y+3.5}" fill="#8FA898" font-size="10" text-anchor="end">${fmtS(v)}</text>`;}
+  months.forEach((k,i)=>{g+=`<text x="${X(i)}" y="${h-5}" fill="#8FA898" font-size="10" text-anchor="middle">${mLbl(k)}</text>`;});
+  series.forEach(s=>{
+    let path='',open=false;
+    s.pts.forEach((p,i)=>{if(p==null){open=false;return;}path+=`${open?' L':' M'}${X(i)},${Y(p)}`;open=true;});
+    g+=`<path d="${path}" fill="none" stroke="${s.color}" stroke-width="${s.bold?2.6:1.8}" ${s.bold?'':'stroke-opacity=".9"'}/>`;
+    s.pts.forEach((p,i)=>{if(p!=null)g+=`<circle cx="${X(i)}" cy="${Y(p)}" r="${s.bold?3:2.4}" fill="${s.color}"/>`;});
+  });
+  return `<svg viewBox="0 0 ${w} ${h}" style="width:100%;height:auto">${g}</svg>`;
+}
+function miniCharts(scopeRows,months){
+  const bs=[...new Set(scopeRows.map(dldBeds).filter(b=>b!==null&&b>=2))].sort((a,b)=>a-b);
+  const defs=[{label:'All',color:BEDCOL.all,f:null}].concat(bs.map(b=>({label:b+' bed',color:BEDCOL[b]||'#8FA898',f:b})));
+  return '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px">'+defs.map(cd=>{
+    const pts=monthlyAvg(scopeRows,months,cd.f);
+    const have=pts.filter(Boolean);
+    if(have.length<2&&cd.f!==null)return '';
+    const ch=have.length>=2?pct(have[have.length-1],have[0]):null;
+    return `<div style="background:var(--card);border:1px solid var(--div);border-radius:10px;padding:8px 10px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:10.5px;letter-spacing:1.5px;color:${cd.color}">${cd.label.toUpperCase()}</span><span style="font-size:11.5px;font-weight:bold;color:${ch===null?'var(--muted)':ch>=0?'#3fb950':'#f0883e'}">${ch===null?'':(ch>=0?'+':'')+ch+'%'}</span></div>
+      ${svgTrend([{label:cd.label,color:cd.color,bold:true,pts}],months,100,250)}
+    </div>`;}).join('')+'</div>';
+}
+function renderMarketTab(){
+  const el=$('mktHead');if(!el)return;
+  if(!DLD.length){el.innerHTML='<span style="color:var(--muted);font-size:12px">DLD feed loading…</span>';return;}
+  const days=+($('mkt-days')?$('mkt-days').value:30), incl=$('mkt-incl')&&$('mkt-incl').checked;
+  const cur=dldSalesRange(days,0,incl), prev=dldSalesRange(days,days,incl), all=mktAll(incl);
+  const vals=cur.map(r=>r.v).filter(Boolean), pvals=prev.map(r=>r.v).filter(Boolean);
+  el.innerHTML=mbox('AVERAGE',fmtB(avg(vals))+trChip(pct(avg(vals),avg(pvals))))
+    +mbox('MEDIAN',fmtB(med(vals))+trChip(pct(med(vals),med(pvals))))
+    +mbox('MED Đ/SQFT',Math.round(med(cur.map(psfOf).filter(Boolean))||0).toLocaleString()+trChip(pct(med(cur.map(psfOf).filter(Boolean)),med(prev.map(psfOf).filter(Boolean)))))
+    +mbox('SALES',cur.length+trChip(pct(cur.length,prev.length)))
+    +mbox('TOTAL VALUE',fmtB(vals.reduce((a,v)=>a+v,0)));
+  // ---- price trend mini-charts (scoped by cluster dropdown)
+  const sel=$('mkt-mcl');const keep=sel.value;
+  const allCl=[...new Set(all.map(clusName))].sort();
+  sel.innerHTML='<option value="">All clusters</option>'+allCl.map(c=>`<option>${c}</option>`).join('');
+  if([...sel.options].some(o=>o.value===keep))sel.value=keep;
+  const scope=sel.value?all.filter(r=>clusName(r)===sel.value):all;
+  const months=last6Months();
+  $('mktChart').innerHTML=miniCharts(scope,months)+`<div style="font-size:9.5px;color:var(--muted);margin-top:6px">monthly average price · % = first-to-last month change · beds estimated from price bands where DLD omits rooms (3bd &lt;2.5M · 4bd 2.5-3.2M · 5bd 3.2-5M · 6bd &gt;5M) · history deepens daily</div>`;
+  // ---- beds breakdown cards (price-first)
+  const bedsSet=[...new Set(cur.map(dldBeds).filter(b=>b!==null))].sort((a,b)=>a-b);
+  $('mktBedsCards').innerHTML=bedsSet.map(b=>{
+    const xs=cur.filter(r=>dldBeds(r)===b),v=xs.map(r=>r.v).filter(Boolean);
+    const pv=prev.filter(r=>dldBeds(r)===b).map(r=>r.v).filter(Boolean);
+    const ps=xs.map(psfOf).filter(Boolean);
+    return `<div style="flex:1;min-width:150px;background:var(--card);border:1px solid var(--div);border-radius:11px;padding:9px 11px">
+      <div style="font-size:10px;letter-spacing:2px;color:${BEDCOL[b]||'var(--muted)'}">${b==0?'STUDIO':b+' BEDROOM'}</div>
+      <div style="font-size:19px;color:var(--lgold);font-family:'Palatino Linotype',serif;font-weight:700;margin-top:2px">${fmtB(avg(v))}${trChip(pct(avg(v),avg(pv)))}</div>
+      <div style="font-size:10.5px;color:var(--muted);margin-top:2px">med ${fmtB(med(v))} · ${ps.length?Math.round(med(ps)).toLocaleString()+'/sqft':''} · ${xs.length} deals</div>
+    </div>`;}).join('')||'<span style="color:var(--muted)">no data</span>';
+  // ---- cluster cards (price trend emphasised)
+  const cl={},clP={};cur.forEach(r=>{(cl[clusName(r)]=cl[clusName(r)]||[]).push(r);});prev.forEach(r=>{(clP[clusName(r)]=clP[clusName(r)]||[]).push(r);});
+  const ordered=Object.entries(cl).sort((a,b)=>b[1].length-a[1].length);
+  const maxN=ordered.length?ordered[0][1].length:1;
+  $('clusterGrid').innerHTML=ordered.map(([c,rs],i)=>{const v=rs.map(r=>r.v).filter(Boolean);
+    const pv=(clP[c]||[]).map(r=>r.v).filter(Boolean);
+    return `<div onclick="mktSel(this.dataset.c)" data-c="${c}" style="cursor:pointer;background:${MKT.sel===c?'rgba(201,168,76,.14)':'var(--card)'};border:1px solid ${MKT.sel===c?'var(--gold)':'var(--div)'};border-radius:11px;padding:9px 10px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:13px;color:var(--cream)">${c}</b>${i===0?'<span style="color:var(--gold);font-size:9px">◆ TOP VOL</span>':''}</div>
+      <div style="font-size:18px;color:var(--lgold);font-family:'Palatino Linotype',serif;font-weight:700;margin-top:1px">${fmtB(avg(v))}${trChip(pct(avg(v),avg(pv)))}</div>
+      <div style="font-size:10.5px;color:var(--muted)">avg price · med ${fmtB(med(v))} · ${rs.length} deals</div>
+      <div style="height:5px;border-radius:3px;background:var(--gold);opacity:.7;width:${Math.max(6,Math.round(rs.length/maxN*100))}%;margin-top:5px"></div>
+    </div>`;}).join('')||'<span style="color:var(--muted)">no sales in period</span>';
+  renderMktDrill(all);
+  // ---- cluster × beds average matrix
+  $('mktMatrix').innerHTML=`<table style="font-size:12px;border-collapse:collapse;width:100%"><tr style="color:var(--muted);font-size:9.5px;letter-spacing:1px"><td style="padding:3px 6px">CLUSTER</td>${bedsSet.map(b=>`<td class="r" style="padding:3px 6px">${b==0?'ST':b+'BR'}</td>`).join('')}</tr>`+
+    ordered.map(([c,rs])=>`<tr style="border-top:1px solid var(--div)"><td style="padding:4px 6px;color:var(--cream)">${c}</td>${bedsSet.map(b=>{const xs=rs.filter(r=>dldBeds(r)===b).map(r=>r.v).filter(Boolean);
+      return `<td class="r" style="padding:4px 6px">${xs.length?`<span style="color:var(--lgold)">${fmtB(avg(xs))}</span> <span style="color:var(--muted);font-size:9px">${xs.length}</span>`:'<span style="color:#3a5c48">—</span>'}</td>`;}).join('')}</tr>`).join('')+'</table>';
+  // ---- full list
+  const list=[...cur].sort((a,b)=>a.d<b.d?1:-1);
+  $('mktList').innerHTML=`<table style="width:100%;font-size:12px;border-collapse:collapse">
+    <tr style="color:var(--muted);font-size:10px;letter-spacing:1px;position:sticky;top:0;background:var(--panel)"><td style="padding:4px 6px">DATE</td><td>CLUSTER</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>`+
+    list.map(r=>{const p=psfOf(r);return `<tr style="border-top:1px solid var(--div)">
+      <td style="padding:4px 6px;color:var(--muted)">${r.d}</td><td style="color:var(--cream)">${clusName(r)}</td>
+      <td>${r.r||''}</td><td style="color:var(--muted);font-size:11px">${r.op?'off-plan':'resale'}</td>
+      <td style="color:var(--muted)">${r.sqm?Math.round(r.sqm*10.7639).toLocaleString():''}</td>
+      <td style="color:var(--lgold)">${fmtB(r.v)}</td><td style="color:var(--muted)">${p?Math.round(p).toLocaleString():''}</td></tr>`;}).join('')+'</table>';
+}
+function mktSel(c){MKT.sel=MKT.sel===c?null:c;renderMarketTab();if(MKT.sel){const d=$('mktDrill');d&&d.scrollIntoView({behavior:'smooth',block:'start'});}}
+function renderMktDrill(all){
+  const box=$('mktDrill');if(!box)return;
+  if(!MKT.sel){box.innerHTML='';return;}
+  const rs=all.filter(r=>clusName(r)===MKT.sel).sort((a,b)=>a.d<b.d?1:-1);
+  if(!rs.length){box.innerHTML='';return;}
+  const v=rs.map(r=>r.v).filter(Boolean), p=rs.map(psfOf).filter(Boolean);
+  const months=last6Months();
+  const bd={};rs.forEach(r=>{const b=dldBeds(r);if(b!==null)(bd[b]=bd[b]||[]).push(r);});
+  box.innerHTML=`<div class="panelbox" style="border-color:var(--gold)">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <h2 style="color:var(--lgold);font-size:17px">◆ ${MKT.sel} — full book (${rs.length} sales on record)</h2>
+      <button class="btn mini sec" onclick="mktSel(MKT.sel)">close ✕</button></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+      ${mbox('AVG',fmtB(avg(v)))}${mbox('MEDIAN',fmtB(med(v)))}${mbox('Đ/SQFT',Math.round(med(p)||0).toLocaleString())}${mbox('LAST SALE',rs[0].d)}
+    </div>
+    <div style="margin-bottom:8px">${miniCharts(rs,months)}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+      ${Object.keys(bd).sort((a,b)=>a-b).map(b=>{const xs=bd[b].map(r=>r.v).filter(Boolean);
+        return `<div style="flex:1;min-width:120px;background:var(--card);border:1px solid var(--div);border-radius:9px;padding:7px 9px">
+        <div style="font-size:9.5px;letter-spacing:1.5px;color:${BEDCOL[b]||'var(--muted)'}">${b==0?'STUDIO':b+' BED'} <span style="color:var(--muted)">(${bd[b].length})</span></div>
+        <div style="font-size:15px;color:var(--lgold);font-weight:700">${fmtB(avg(xs))}</div>
+        <div style="font-size:10px;color:var(--muted)">med ${fmtB(med(xs))}</div></div>`;}).join('')}
+    </div>
+    <div style="max-height:300px;overflow-y:auto"><table style="width:100%;font-size:12px;border-collapse:collapse">
+      <tr style="color:var(--muted);font-size:10px;letter-spacing:1px"><td style="padding:3px 6px">DATE</td><td>BEDS</td><td>TYPE</td><td>SQFT</td><td>PRICE</td><td>Đ/SQFT</td></tr>
+      ${rs.map(r=>{const pp=psfOf(r);return `<tr style="border-top:1px solid var(--div)"><td style="padding:3.5px 6px;color:var(--muted)">${r.d}</td><td>${r.r||''}</td><td style="color:var(--muted);font-size:11px">${r.op?'off-plan':'resale'}</td><td style="color:var(--muted)">${r.sqm?Math.round(r.sqm*10.7639).toLocaleString():''}</td><td style="color:var(--lgold)">${fmtB(r.v)}</td><td style="color:var(--muted)">${pp?Math.round(pp).toLocaleString():''}</td></tr>`;}).join('')}
+    </table></div>
+  </div>`;
+}
+function marketFit(b){
+  if(String(b.segment||'').toLowerCase()==='offplan')return {offplan:true};   // off-plan buyer: secondary book irrelevant
+  if(!b.budget)return null;
+  const cls=[b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(c=>c.toLowerCase());
+  const want=bedsOf(b.beds);
+  const pool=STOCK.filter(s=>{
+    if(['Won','Lost'].includes(sStage(s))||!s.price)return false;
+    if(cls.length&&!cls.some(c=>(s.cluster||'').toLowerCase().includes(c.split(' ')[0])))return false;
+    const ub=bedsOf(s.beds);
+    if(want.length&&ub.length&&!ub.some(x=>want.includes(x)))return false;    // beds strict when both known
+    return true;
+  });
+  if(!pool.length)return {n:0};
+  const sorted=pool.sort((a,x)=>a.price-x.price);
+  const ch=sorted[0], gap=b.budget-ch.price;
+  return {n:pool.length,cheap:ch,gap,within:sorted.filter(s=>s.price<=b.budget).length};
+}
+const fitStr=b=>{const f=marketFit(b);if(!f)return '';if(f.offplan)return '<span style="color:#6e7681;font-size:10px">off-plan buyer · stock fit n/a</span>';if(!f.n)return '<span style="color:#6e7681;font-size:10px">no RELEVANT stock (cluster+beds)</span>';
+  return f.gap>=0?`<span style="color:#3fb950;font-size:10px">✓ ${f.within}/${f.n} in budget</span>`
+  :`<span style="color:#f0883e;font-size:10px">${fmtK(-f.gap)} short of ${f.cheap.unit}</span>`;};
+const commLbl=()=>`${(BOARDPCT*100).toFixed(2)}% board × ${Math.round(TIER*100)}% tier = ${(BOARDPCT*TIER*100).toFixed(2)}%`;
+function suggestedHeat(b){
+  // THE BRAIN v1: recency + stage + momentum
+  let s=3;
+  const lc=b.lastContact||b.date; const days=lc?Math.floor((new Date(today())-new Date(lc))/864e5):99;
+  if(days<=2)s+=1; else if(days>10)s-=1; if(days>21)s-=1;
+  if(['Viewing','Offer'].includes(b.stage))s+=1;
+  const t=(b.touches||[]).filter(x=>x.date>=addDays(today(),-14)).length;
+  if(t>=3)s+=1;
+  return Math.min(5,Math.max(1,s));
+}
+function heatDrivers(b){
+  const lc=b.lastContact||b.date; const days=lc?Math.floor((new Date(today())-new Date(lc))/864e5):'?';
+  const t14=(b.touches||[]).filter(x=>x.date>=addDays(today(),-14)).length;
+  const sug=suggestedHeat(b);
+  return `Last contact <b>${days}d ago</b> · <b>${t14}</b> touches in 14d · stage <b>${b.stage}</b> · system read: <b>${sug}</b>${Math.abs(sug-(b.score||0))>=2?' — consider updating score':''}`;
+}
+function tab(t){curTab=t;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
+  ['today','pipeline','people','sellers','market'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==t));}
+async function fetchAll(){
+  BUYERS=await fetchFile('data/buyers.json');
+  try{STOCK=await fetchFile('data/stock.json')}catch(e){STOCK=[]}
+  try{VIEWINGS=await fetchFile('data/viewings.json')}catch(e){VIEWINGS=[]}
+  try{DEALS=await fetchFile('data/deals.json');calcComm()}catch(e){}
+  try{DLD=await (await fetch('https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/data/dld/lagoons.json?t='+Date.now())).json();if(!Array.isArray(DLD))DLD=[]}catch(e){DLD=[]}
+  syncHeatFromScore();fillClusterFilter();migSellerStages();
+}
+function render(){renderToday();renderMarket();renderMarketTab();renderBoard();renderPeople();renderSellers();}
+let SCOREF='';
+function scoreFilter(role,s){SCOREF=String(s);if($('p-role'))$('p-role').value=role==='seller'?'seller':'';openTab('people');renderPeople();}
+function renderToday(){
+  const liveB=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage));
+  const pv=liveB.reduce((a,b)=>a+(b.budget||0),0);
+  const liveS=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s)));
+  const sv=liveS.reduce((a,s)=>a+(s.price||0),0);
+  const dueN=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).length;
+  const mDeals=DEALS.filter(d=>String(d.date||d.month||'').includes('2026-08')||String(d.month||'').toLowerCase().includes('aug'));
+  const mTH=mDeals.reduce((a,d)=>a+(+d.myTakeHome||0),0);
+  const box=(l,v,s)=>`<div style="flex:1;min-width:150px;background:var(--panel);border:1px solid var(--div);border-radius:12px;padding:10px 12px"><div style="font-size:10.5px;letter-spacing:2px;color:var(--muted)">${l}</div><div style="font-size:19px;color:var(--lgold);font-weight:700">${v}</div><div style="font-size:11px;color:var(--muted)">${s||''}</div></div>`;
+  const pvc=liveB.reduce((a,b)=>a+bComm(b),0), svc=liveS.reduce((a,s)=>a+sComm(s),0);
+  $('headStrip').innerHTML=box('LIVE PIPELINE',fmtB(pv),'gross comms ≈ '+fmtK(pvc))+box('STOCK BOOK',fmtB(sv),liveS.length+' live units · ≈ '+fmtK(svc))+box('TOUCHES DUE',dueN,dueN?'work the list':'clear runway')+box('CLOSED AUG',mDeals.length+' deals',mTH?('take-home Đ'+Math.round(mTH).toLocaleString()):'—');
+  const mb=liveB.filter(b=>(b.score||0)>=4&&b.nextStep).sort((a,b)=>(bComm(b)-bComm(a))).slice(0,6);
+  $('moneyBoard').innerHTML=mb.map(b=>`<div class="touchrow" onclick="openCard('${b.id}')">
+    <span class="tname">${b.buyer}</span><span class="heat"><b>${scr(b)}</b></span>
+    <span class="bdg" style="color:var(--lgold)">${b.budget?fmtK(bComm(b))+((b.commPct&&b.commPct!==0.02)?" @"+(b.commPct*100)+"%":""):'—'}</span>
+    <span class="treason">${b.nextStep}</span></div>`).join('')||'<div style="color:var(--muted);padding:6px">No high-score buyers with next steps — that itself is the warning.</div>';
+  const cold=liveB.filter(b=>(b.score||0)>=4&&(!b.lastContact||b.lastContact<new Date(Date.now()-7*864e5).toISOString().slice(0,10)));
+  const dv=BUYERS.filter(b=>typeof b.maxScore==='number'&&typeof b.score==='number'&&Math.abs(b.maxScore-b.score)>=1);
+  const over=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&b.nextTouch&&b.nextTouch<today());
+  let w='';
+  if(cold.length)w+=`<div class="panelbox" style="border-color:#f85149"><b style="color:#f85149">🔴 Going cold (4+, 7d silent):</b> ${cold.map(b=>`<span style="cursor:pointer;color:var(--lgold)" onclick="openCard('${b.id}')">${b.buyer}</span>`).join(' · ')}</div>`;
+  if(over.length)w+=`<div class="panelbox" style="border-color:#e3b341"><b style="color:#e3b341">🟡 Overdue touches:</b> ${over.map(b=>`<span style="cursor:pointer;color:var(--lgold)" onclick="openCard('${b.id}')">${b.buyer}</span>`).join(' · ')}</div>`;
+  if(dv.length)w+=`<div class="panelbox"><b style="color:var(--muted)">⚪ Calum vs Max ≥1 apart:</b> ${dv.map(b=>`<span style="cursor:pointer;color:var(--lgold)" onclick="openCard('${b.id}')">${b.buyer} (${b.score}/${b.maxScore})</span>`).join(' · ')}</div>`;
+  $('warnBox').innerHTML=w;
+  const bar=(role,s,n,mx)=>`<div style="display:flex;align-items:center;gap:8px;margin:3px 0;cursor:pointer" onclick="scoreFilter('${role}',${s})"><span style="width:14px;color:var(--muted)">${s}</span><div style="flex:1;background:var(--card);border-radius:4px;height:16px"><div style="width:${mx?Math.round(n/mx*100):0}%;background:var(--gold);height:16px;border-radius:4px"></div></div><span style="width:22px;color:var(--lgold);font-weight:700">${n}</span></div>`;
+  const bc={},sc={};
+  liveB.forEach(b=>{const s=Math.round(b.score||0);if(s)bc[s]=(bc[s]||0)+1});
+  liveS.forEach(x=>{const s=Math.round(x.score||0);if(s)sc[s]=(sc[s]||0)+1});
+  const bmax=Math.max(1,...Object.values(bc)), smax=Math.max(1,...Object.values(sc));
+  $('scoreChartB').innerHTML=[5,4,3,2,1].map(s=>bar('buyer',s,bc[s]||0,bmax)).join('');
+  $('scoreChartS').innerHTML=[5,4,3,2,1].map(s=>bar('seller',s,sc[s]||0,smax)).join('');
+  const due=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&b.nextTouch&&b.nextTouch<=today()).sort((a,b)=>(b.score||0)-(a.score||0));
+  const wake=BUYERS.filter(b=>b.stage==='Snoozed'&&b.snoozedUntil&&b.snoozedUntil<=today());
+  $('touchList').innerHTML=[...wake.map(b=>trow(b,true)),...due.map(b=>trow(b,false))].join('')||'<div style="color:var(--muted);padding:6px">Nothing due — clear runway 👌</div>';
+  const M=computeMatches();
+  $('matchList').innerHTML=M.slice(0,10).map(({u,hits})=>`<div class="touchrow"><span class="tname">${u.cluster} ${u.unit}</span><span class="bdg">${fmtB(u.price)}</span>
+   <span class="treason">${hits.slice(0,5).map(h=>`<span style="cursor:pointer" onclick="openCard('${h.id}')">${h.buyer}</span> <b style="color:var(--lgold)">${scr(h)}</b>${h.stage==='Snoozed'?'💤':''}`).join(' · ')}</span></div>`).join('')||'<div style="color:var(--muted);padding:6px">No matches — fill budgets/beds</div>';
+}
+function trow(b,isWake){return `<div class="touchrow"><span class="tname" onclick="openCard('${b.id}')">${b.buyer}</span>
+ <span class="${b.nextTouch<today()?'due-over':'due-today'}">${isWake?'WAKING':(b.nextTouch<today()?'OVERDUE':'DUE TODAY')}</span>
+ <span class="treason">${b.touchReason||b.needSummary||''}</span>
+ <button class="btn mini" onclick="touched('${b.id}')">Touched ✓</button></div>`}
+function renderBoard(){
+  const live=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage)&&passF(b));
+  const pipeVal=live.reduce((a,b)=>a+(b.budget||0),0);
+  const pipeC=live.reduce((a,b)=>a+bComm(b),0);
+  $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · gross ≈ <b style="color:var(--lgold)">${fmtK(pipeC)}</b> · take-home @${Math.round(TIER*100)}% ≈ <b style="color:var(--lgold)">${fmtK(Math.round(pipeC*TIER))}</b> <span style="font-size:11px">(2% secondary · 3-4% off-plan)</span>`;
+  $('board').innerHTML=STAGES.map(st=>{
+    const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>{
+      if(['Won','Lost'].includes(st)){const da=a.closedDate||a.date||'',db=b.closedDate||b.date||'';return da<db?1:da>db?-1:0;}
+      return (b.score||0)-(a.score||0);});
+    const val=cards.reduce((a,b)=>a+(b.budget||0),0);const vc=cards.reduce((a,b)=>a+bComm(b),0);
+    return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','buyer')">
+      <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${val?fmtB(val)+' <span style="color:var(--lgold)">· '+fmtK(vc)+'</span>':''}</div>
+      ${cards.map(cardHtml).join('')}</div>`;
+  }).join('')+snoozedCol();
+}
+function cardHtml(b){return `<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')">
+  <div class="nm">${b.buyer||'?'}</div><div class="heat"><b>${scr(b)}</b> <span class="bdg">${fmtB(b.budget)}</span>${b.budget?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(bComm(b))}${(b.commPct&&b.commPct!==0.02)?" @"+(b.commPct*100)+"%":""}</span>`:``} ${fitStr(b)}</div>
+  <div class="need">${(b.needSummary||'').slice(0,64)}</div>
+  <div class="nt ${ntClass(b.nextTouch)}">⏰ ${b.nextTouch||'—'}</div></div>`}
+function snoozedCol(){
+  const sn=BUYERS.filter(b=>b.stage==='Snoozed').sort((a,b)=>(a.snoozedUntil||'9').localeCompare(b.snoozedUntil||'9'));
+  return `<div class="col" style="opacity:.85" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'Snoozed','buyer')">
+   <h3 onclick="showSnoozed=!showSnoozed;renderBoard()" style="cursor:pointer">💤 Snoozed <span style="color:var(--muted)">${sn.length} ${showSnoozed?'▾':'▸'}</span></h3>
+   ${showSnoozed?sn.map(b=>`<div class="card" draggable="true" ondragstart="drag(event,'${b.id}')" onclick="openCard('${b.id}')"><div class="nm">${b.buyer}</div><div class="nt ok">wakes ${b.snoozedUntil||'?'}</div><div class="need">${(b.touchReason||'').slice(0,55)}</div></div>`).join(''):''}</div>`}
+function renderPeople(){
+  const q=($('search').value||'').toLowerCase();
+  const role=$('p-role')?$('p-role').value:'';
+  const fc=$('p-cluster')?$('p-cluster').value:'', fb=$('p-budget')?$('p-budget').value:'',
+        fd=$('p-beds')?$('p-beds').value:'', ff=$('p-fin')?$('p-fin').value:'';
+  const pf=(cl,bd,beds,fin)=>{
+    if(fc&&!cl.includes(fc))return false;
+    if(fb){if(fb==='99999999'){if((bd||0)<=3500000)return false}else if(!bd||bd>+fb)return false;}
+    if(fd&&String(beds||'').indexOf(fd)===-1)return false;
+    if(ff&&!(fin||'').toLowerCase().includes(ff))return false;
+    return true;};
+  let rows=[];
+  if(SCOREF)rows.push(`<div style="margin-bottom:8px"><span class="bdg" style="cursor:pointer" onclick="SCOREF='';renderPeople()">Score ${SCOREF} ✕ clear</span></div>`);
+  const sfB=x=>!SCOREF||Math.round(x.score||0)===+SCOREF;
+  if(role!=='seller'){
+    BUYERS.filter(b=>{
+      if(role==='offplan'&&b.segment!=='Offplan')return false;
+      if(role==='buyer'&&b.segment==='Offplan')return false;
+      return sfB(b)&&pf([b.cluster1,b.cluster2,b.cluster3].filter(Boolean),b.budget,b.beds,b.finance)
+        &&(!q||JSON.stringify(b).toLowerCase().includes(q));
+    }).sort((a,b)=>(b.score||0)-(a.score||0)).forEach(b=>rows.push(
+      `<div class="touchrow" onclick="openCard('${b.id}')">
+       <span class="tname">${b.buyer}</span><span class="heat"><b>${scr(b)}</b></span>
+       <span class="bdg">${b.segment==='Offplan'?'Off-plan · ':''}${b.stage}${b.stage==='Snoozed'&&b.snoozedUntil?' → '+b.snoozedUntil:''}</span>
+       <span class="treason">${(b.needSummary||b.notes||'').slice(0,70)}</span></div>`));
+  }
+  if(!role||role==='seller'){
+    STOCK.filter(s=>sfB(s)&&pf([s.cluster].filter(Boolean),s.price,s.beds,'')
+      &&(!q||JSON.stringify(s).toLowerCase().includes(q)))
+      .forEach(s=>rows.push(
+      `<div class="touchrow" onclick="openStock('${s.id}')">
+       <span class="tname">${s.seller||s.owner||s.unit||'Seller'}</span><span class="heat" style="color:var(--muted)">SELLER</span>
+       <span class="bdg">${sStage(s)} · ${s.cluster||''} ${s.unit||''} · ${fmtB(s.price)}</span>
+       <span class="treason">${(s.notes||'').slice(0,70)}</span></div>`));
+  }
+  $('peopleList').innerHTML=rows.join('')||'<div style="color:var(--muted)">No matches</div>';
+}
+function renderSellers(){
+  const val=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).reduce((a,s)=>a+(s.price||0),0);
+  $('sTotals').innerHTML=`Stock book: <b style="color:var(--lgold)">${fmtB(val)}</b> across ${STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).length} live units · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(val).toLocaleString()}</b>`;
+  $('sboard').innerHTML=SSTAGES.map(st=>{
+    const cards=STOCK.filter(s=>sStage(s)===st);
+    const v=cards.reduce((a,s)=>a+(s.price||0),0);const vc=cards.reduce((a,s)=>a+sComm(s),0);
+    return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','seller')">
+     <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${v?fmtB(v)+' <span style="color:var(--lgold)">· '+fmtK(vc)+'</span>':''}</div>
+     ${cards.map(s=>`<div class="card" draggable="true" ondragstart="drag(event,'stock:${s.id}')" onclick="openStock('${s.id}')">
+      <div class="nm">${s.cluster||''} ${s.unit||''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.beds?' · '+s.beds+'bd':''}</span>${s.price?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(sComm(s))}</span>`:``}</div>
+      <div class="need">${(s.seller||'')} ${(s.notes||'').slice(0,45)}</div></div>`).join('')}</div>`;
+  }).join('');
+}
+function sStage(s){
+  if(s.stage)return s.stage;
+  const st=(s.status||'').toLowerCase();
+  if(st.includes('sold'))return'Sold'; if(st.includes('offer'))return'Offer';
+  if(st.includes('later')||st.includes('snooze')||st.includes('park'))return'Later';
+  if(st.includes('lost')||st.includes('dead'))return'Lost';
+  return'Active';
+}
+let dragId=null;
+function drag(e,id){dragId=id}
+function dragOver(e){e.preventDefault();e.currentTarget.classList.add('dragover')}
+function drop(e,stage,kind){e.preventDefault();e.currentTarget.classList.remove('dragover');
+  if(kind==='seller'&&dragId.startsWith('stock:')){
+    const s=STOCK.find(x=>String(x.id)===dragId.slice(6));if(!s)return;
+    s.stage=stage;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${stage}`);return;}
+  const b=BUYERS.find(x=>x.id===dragId);if(!b)return;
+  b.stage=stage;if(['Won','Lost'].includes(stage)){b.nextTouch=null;b.closedDate=today();b.status='Closed '+stage;}
+  render();queueSave('data/buyers.json',BUYERS,`CRM: ${b.buyer} → ${stage}`);}
+const byId=id=>BUYERS.find(x=>x.id===id);
+function touched(id){const b=byId(id);if(!b)return;
+  b.lastContact=today();b.nextTouch=addDays(today(),CAD[b.heat||3]||3);
+  if(b.stage==='Snoozed'){b.stage='Qualified';b.snoozedUntil=null}
+  (b.touches=b.touches||[]).push({date:today(),channel:'wa',summary:'Touched (dashboard)'});
+  render();queueSave('data/buyers.json',BUYERS,`CRM: touched ${b.buyer}`);}
+function timeline(b){
+  const items=[...(b.touches||[]).map(t=>({d:t.date,ic:t.channel==='call'?'📞':t.channel==='viewing'?'🏠':t.channel==='manual'?'📝':'💬',x:t.summary})),
+    ...VIEWINGS.filter(v=>v.buyer&&b.buyer&&v.buyer.toLowerCase().includes(b.buyer.split(' ')[0].toLowerCase())).map(v=>({d:v.date,ic:'🏠',x:`Viewing ${v.unit||''} — ${v.outcome||''}`}))]
+    .sort((a,b)=>(b.d||'').localeCompare(a.d||''));
+  return items.map(i=>`<div class="tlrow"><div class="tlic">${i.ic}</div><div class="tlbody"><div class="tldate">${i.d||''}</div><div class="tltext">${i.x||''}</div></div></div>`).join('')||'<div style="color:var(--muted);font-size:13px;padding:8px 0">No history yet — the bridge and history upload will fill this.</div>';
+}
+function phoneOf(b){const m=JSON.stringify(b).match(/\+?\d{10,15}/);return m?m[0].replace(/\D/g,''):null}
+function openCard(id){const b=byId(id);if(!b)return;
+  const ph=phoneOf(b);
+  $('mbox').innerHTML=`<div class="phead">
+    <div class="heatball"><b>${scr(b)}</b><span>SCORE</span></div>${typeof b.maxScore==='number'?`<div style="font-size:11.5px;color:var(--muted);margin:6px 0 2px"><b style="color:var(--lgold)">MAX READ ${b.maxScore.toFixed(1)}</b> — ${b.maxScoreWhy||''}</div>`:''}${(()=>{const f=marketFit(b);if(!f)return '';if(f.offplan)return '<div style="font-size:11.5px;color:var(--muted);margin:2px 0"><b style="color:var(--lgold)">MARKET FIT</b> — off-plan buyer, secondary stock not relevant (launch/developer play)</div>';if(!f.n)return '<div style="font-size:11.5px;color:var(--muted);margin:2px 0"><b style="color:var(--lgold)">MARKET FIT</b> — no relevant stock for his cluster+beds spec</div>';const s=f.gap>=0?`covers ${f.within} of ${f.n} matching units — cheapest ${f.cheap.cluster} ${f.cheap.unit} at ${fmtB(f.cheap.price)}`:`<b style="color:#f0883e">${fmtK(-f.gap)} SHORT</b> of cheapest match ${f.cheap.cluster} ${f.cheap.unit} (${fmtB(f.cheap.price)}) — pool ${f.n} units`;return `<div style="font-size:11.5px;color:var(--muted);margin:2px 0"><b style="color:var(--lgold)">MARKET FIT</b> — budget ${fmtB(b.budget)} ${s}</div>`})()}
+    <div class="pmeta"><h2>${b.buyer}</h2><div class="sub">${b.stage} · ${b.area||''} ${[b.cluster1,b.cluster2].filter(Boolean).join(', ')}</div>${ph?`<div class="sub" style="margin-top:2px">📱 <a href="tel:+${ph}" style="color:var(--lgold)">+${ph}</a> · <a href="https://wa.me/${ph}" target="_blank" style="color:var(--lgold)">WhatsApp</a></div>`:`<div class="sub" style="margin-top:2px;color:#c07">📱 no number — add one (dedupe key)</div>`}
+      <div class="pills">${b.budget?`<span class="pill">💰 ${fmtB(b.budget)}</span>`:''}${b.beds?`<span class="pill">🛏 ${b.beds} bed</span>`:''}${b.finance?`<span class="pill">🏦 ${b.finance}</span>`:''}<span class="pill">⏰ ${b.nextTouch||'no touch set'}</span></div></div>
+    <div style="display:flex;gap:6px;flex-direction:column">${ph?`<a class="act" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a><a class="act" href="tel:+${ph}">📞 Call</a>`:'<span style="font-size:11px;color:var(--muted)">no number on file</span>'}</div>
+  </div>
+  <div class="drivers">${heatDrivers(b)}</div>
+  <div class="mrow">
+    <button class="btn mini" onclick="touched('${b.id}');openCard('${b.id}')">Touched ✓</button>
+    <button class="btn sec mini" onclick="heatCh('${b.id}',1)">Score +</button>
+    <button class="btn sec mini" onclick="heatCh('${b.id}',-1)">Score −</button>
+    <button class="btn sec mini" onclick="addNote('${b.id}')">📝 Note</button>
+    <select onchange="stageSel('${b.id}',this.value)">${STAGES.concat('Snoozed').map(s=>`<option ${s===b.stage?'selected':''}>${s}</option>`).join('')}</select>
+    <input type="date" id="snz"><button class="btn sec mini" onclick="snooze('${b.id}')">💤</button>
+  </div>
+  <div style="margin-top:10px;font-size:13px;color:var(--cream)">${(b.notes||'')}</div>
+  <h3 style="color:var(--lgold);font-size:15px;margin-top:12px">Timeline</h3>
+  <div class="tl">${timeline(b)}</div>
+  <div class="mrow"><button class="btn" onclick="closeModal()">Close</button></div>`;
+  $('modal').classList.remove('hidden');}
+function openStock(id){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;
+  $('mbox').innerHTML=`<div class="phead"><div class="pmeta"><h2>${s.cluster||''} ${s.unit||''}</h2>
+   <div class="sub">${sStage(s)} · seller: ${s.seller||'?'}</div>
+   <div class="pills">${s.price?`<span class="pill">💰 ${fmtB(s.price)}</span>`:''}${s.beds?`<span class="pill">🛏 ${s.beds} bed</span>`:''}</div></div></div>
+  <div style="font-size:13px;white-space:pre-wrap">${s.notes||s.note||''}</div>
+  <div class="mrow"><select onchange="stockStage('${s.id}',this.value)">${SSTAGES.map(x=>`<option ${x===sStage(s)?'selected':''}>${x}</option>`).join('')}</select>
+  <button class="btn" onclick="closeModal()">Close</button></div>`;
+  $('modal').classList.remove('hidden');}
+function stockStage(id,st){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;s.stage=st;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${st}`);closeModal();}
+function heatCh(id,d){const b=byId(id);b.score=Math.min(5,Math.max(1,Math.round((b.score||3)+d)));b.heat=b.score;render();queueSave('data/buyers.json',BUYERS,'CRM: score '+b.buyer);openCard(id)}
+function addNote(id){const n=prompt('Note:');if(!n)return;const b=byId(id);
+  (b.touches=b.touches||[]).push({date:today(),channel:'manual',summary:n});
+  queueSave('data/buyers.json',BUYERS,'CRM: note '+b.buyer);openCard(id);}
+function snooze(id){const v=$('snz').value;if(!v)return;const b=byId(id);b.stage='Snoozed';b.snoozedUntil=v;b.nextTouch=v;b.touchReason='Snoozed — wake '+v;render();queueSave('data/buyers.json',BUYERS,'CRM: snoozed '+b.buyer);closeModal()}
+function stageSel(id,v){const b=byId(id);b.stage=v;render();queueSave('data/buyers.json',BUYERS,'CRM: '+b.buyer+' → '+v);openCard(id)}
+function closeModal(){$('modal').classList.add('hidden')}
+function bedsOf(s){if(!s)return[];return String(s).match(/\d/g)?.map(Number)||[]}
+function clustersOf(b){return[b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(x=>x.toLowerCase())}
+function computeMatches(){
+  const act=STOCK.filter(u=>!['Won','Lost','Longer Term'].includes(sStage(u))&&u.price);
+  const live=BUYERS.filter(b=>!['Won','Lost'].includes(b.stage)&&String(b.segment||'').toLowerCase()!=='offplan');
+  const out=[];
+  for(const u of act){
+    const uB=bedsOf(u.beds),uc=(u.cluster||'').toLowerCase();
+    const hits=live.filter(b=>{
+      const bb=bedsOf(b.beds),bc=clustersOf(b);
+      if(uB.length&&bb.length&&!uB.some(x=>bb.includes(x)))return false;      // beds strict when both known
+      return(!bc.length||bc.some(c=>uc.includes(c)||c.includes(uc)))&&(!b.budget||b.budget>=u.price*0.9);
+    }).sort((a,b)=>(b.score||0)-(a.score||0));
+    if(hits.length)out.push({u,hits});
+  }
+  return out.sort((a,b)=>b.hits.length-a.hits.length);
+}
+const normPh=p=>String(p||'').replace(/\D/g,'').replace(/^00/,'').replace(/^0/,'971');
+function dupeByPhone(p){const n=normPh(p);if(!n)return null;return BUYERS.find(b=>normPh(b.phone)===n||(!b.phone&&phoneOf(b)===n));}
+function newBuyer(){
+  const name=prompt('Name?');if(!name)return;
+  const phone=prompt('Phone (+971…)?')||'';
+  const dup=dupeByPhone(phone);
+  if(dup){alert('That number already belongs to "'+dup.buyer+'" — opening their profile instead. No duplicates.');openCard(dup.id);return;}
+  const budget=parseFloat(prompt('Budget AED?')||'0')||0;
+  const beds=prompt('Beds?')||'';const clu=prompt('Cluster/area?')||'';
+  const heat=Math.min(5,Math.max(1,parseInt(prompt('Heat 1-5?')||'3')||3));
+  const id=name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'-'+Date.now().toString().slice(-4);
+  BUYERS.push({buyer:name,notes:phone?('Ph: '+phone):'',source:'Manual',date:today(),status:'Active',area:'',cluster1:clu,cluster2:'',cluster3:'',beds,finance:'',budget,stage:'New',heat,lastContact:today(),nextTouch:addDays(today(),CAD[heat]||3),touchReason:'New lead',needSummary:(beds?beds+'bd ':'')+(clu||'')+(budget?(' ~'+fmtB(budget)):''),snoozedUntil:null,touches:[{date:today(),channel:'manual',summary:'Created on dashboard'}],id,order:99});
+  render();queueSave('data/buyers.json',BUYERS,'CRM: new buyer '+name);
+}
+async function init(){
+  if(PAT)$('connectBox').classList.add('hidden');
+  try{await fetchAll();render();$('syncTxt').textContent=BUYERS.length+' buyers · '+STOCK.length+' units'}
+  catch(e){$('syncTxt').textContent='Load failed — check token'}
+}
+init();
+</script>
+</body>
+</html>
