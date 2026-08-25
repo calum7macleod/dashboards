@@ -629,7 +629,7 @@
   "phone": "",
   "history": "Off-plan buyer.",
   "maxScore": 3.2,
-  "maxScoreWhy": "10M off-plan at 4% = Đ400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
+  "maxScoreWhy": "10M off-plan at 4% = \u0110400K gross - single biggest comms potential in the book. Score capped by near-zero logged engagement: one qualifying conversation either makes him the #1 priority or exposes a fantasy number. Qualify THIS WEEK.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04,
   "nextStep": "QUALIFY: 10M off-plan - verify funds, timeline, what he has seen"
@@ -1265,7 +1265,7 @@
   "timeline": "3-6mo (Q4, UK sale dependent)",
   "purpose": "Investment - yield",
   "maxScore": 4.4,
-  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = Đ160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
+  "maxScoreWhy": "Elite engagement + budget now known: 4M off-plan at 4% = \u0110160K gross potential, wants 1-2 units. Remaining discount: funds locked in unsold UK house, Q4 earliest. Highest-value lead in the book by comms.",
   "maxScoreDate": "2026-08-03",
   "commPct": 0.04
  },
@@ -1497,7 +1497,15 @@
   "maxScoreDate": "2026-08-05",
   "id": "toufik-8513",
   "order": 34,
-  "budgetText": "D4-4.5M (revised UP from ~2.5M)"
+  "budgetText": "D4-4.5M (revised UP from ~2.5M)",
+  "lastContact": "2026-08-25",
+  "touches": [
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
+   }
+  ]
  },
  {
   "buyer": "Buyer ...1155 (name TBC)",
@@ -1516,13 +1524,13 @@
   "budget": 2750000,
   "segment": "Secondary",
   "phone": "1155 (last-4 only - full number when it surfaces in bridge)",
-  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (Đ733,870 day-one)",
+  "notes": "10 Aug: Calum reaching out now. | NEW 4-Aug, just started speaking | 3-bed Lagoons ~2.75M, mortgage 20% down | Cost-breakdown PDF sent 4 Aug (\u0110733,870 day-one)",
   "nextStep": "Get name + full number + which cluster/unit sparked the conversation; intake call",
   "touches": [
    {
     "date": "2026-08-04",
     "channel": "wa",
-    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one Đ733,870)."
+    "summary": "Cost breakdown requested + branded PDF prepared (2.75M, 20% mortgage, day-one \u0110733,870)."
    }
   ],
   "lastContact": "2026-08-04",
@@ -1698,7 +1706,15 @@
   "id": "nauman-1629",
   "order": 40,
   "heat": 4,
-  "budgetText": "D6.5M"
+  "budgetText": "D6.5M",
+  "lastContact": "2026-08-25",
+  "touches": [
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints; M-row 6.75M offer campaign live)"
+   }
+  ]
  },
  {
   "buyer": "Hatem Khalifa",
@@ -1756,7 +1772,7 @@
   "order": 42,
   "stage": "Qualified",
   "heat": 4,
-  "lastContact": "2026-08-17",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-18",
   "touchReason": "Open the WhatsApp thread on the number he gave, then book the intro call; pencil coffee around 2 Sept",
   "needSummary": "UK investor, 10+ yrs UK property, familiar with region, never bought UAE. Blocker is timing. In UAE from 2 Sept. Budget/area/type all unknown.",
@@ -1766,6 +1782,11 @@
     "date": "2026-08-17",
     "channel": "ig",
     "summary": "Outbound IG DM. 10+ yrs UK property, lived in region 5 yrs, believes he'll buy here eventually - held back by timing not opportunity. Next in UAE 2 Sept, up for coffee. Shared WhatsApp +971 58 570 1146."
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ],
   "phone": "+971 58 570 1146"
@@ -1796,7 +1817,7 @@
   "order": 43,
   "stage": "Qualified",
   "heat": 5,
-  "lastContact": "2026-08-17",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-18",
   "touchReason": "Send more 3-bed options with big living space (Portofino/Costa Brava), get her budget, then book viewings",
   "needSummary": "End user, 3-bed preferred over 4 (bigger living, fewer rooms), DAMAC Lagoons. Move in by end 2026, can wait to June 2027. Budget unknown.",
@@ -1806,6 +1827,11 @@
     "date": "2026-08-17",
     "channel": "wa",
     "summary": "PF lead on Costa Brava 2 4-bed. Looking at Lagoons broadly, wants options/floorplans/videos then viewings. Moving in herself. Prefers 3-bed over 4 for bigger living space. Flexible timing - ideally end 2026, can wait to June 2027. Sent Portofino 3-bed video + 4-bed floorplan."
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ],
   "phone": "+39 346 355 7605"
@@ -1831,15 +1857,15 @@
   "unitSupply": 4,
   "feeling": 5,
   "score": 5,
-  "notes": "Pilot, buying with wife. Viewed 22 Aug - hot, sensible, bumped to 5. Wants slightly bigger plot; on Ronnie's bigger-plot Malta unit. Đ2.5M opening budget, stretch likely. Sits on the single-row/B2B line. Mortgage NOT pre-approved - Calum open to offering before approval.",
+  "notes": "Pilot, buying with wife. Viewed 22 Aug - hot, sensible, bumped to 5. Wants slightly bigger plot; on Ronnie's bigger-plot Malta unit. \u01102.5M opening budget, stretch likely. Sits on the single-row/B2B line. Mortgage NOT pre-approved - Calum open to offering before approval.",
   "id": "jayde-45",
   "order": 44,
   "stage": "Viewing",
   "heat": 5,
-  "lastContact": "2026-08-22",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-24",
   "touchReason": "Push Ronnie's Malta bigger-plot unit; start mortgage pre-approval in parallel; test stretch above 2.5M",
-  "needSummary": "4-bed, bigger plot preferred. Malta (Ronnie listing) front-runner. Đ2.5M can stretch. Pilot + wife. Mortgage not started.",
+  "needSummary": "4-bed, bigger plot preferred. Malta (Ronnie listing) front-runner. \u01102.5M can stretch. Pilot + wife. Mortgage not started.",
   "snoozedUntil": null,
   "touches": [
    {
@@ -1851,14 +1877,23 @@
     "date": "2026-08-22",
     "channel": "viewing",
     "summary": "Viewed. Really good - hot. Wants slightly bigger plot; Ronnie's Malta bigger-plot unit in frame. Budget 2.5M (first number, can extend). Edge single row vs B2B. Pilot. Not pre-approved; may offer anyway."
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug: viewing WITH Calum in Town Square today"
    }
   ],
   "phone": "+971 58 531 3684",
-  "budgetText": "Đ2.5M first number - can likely stretch; edge of single row vs B2B",
+  "budgetText": "\u01102.5M first number - can likely stretch; edge of single row vs B2B",
   "history": [
    {
     "date": "2026-08-22",
     "note": "Viewing debrief: hot buyer, score 0->5. Bigger plot want, Ronnie Malta target, 2.5M stretchable, pilot, mortgage not started, offer-before-approval strategy."
+   },
+   {
+    "date": "2026-08-25",
+    "note": "Second viewing with Calum - Town Square (outside Lagoons; widening search beyond Ronnie Malta unit)."
    }
   ]
  },
@@ -1890,7 +1925,15 @@
   "id": "saumyadeep-8401",
   "order": 45,
   "heat": 5,
-  "budgetText": "D2.8M MAX"
+  "budgetText": "D2.8M MAX",
+  "lastContact": "2026-08-25",
+  "touches": [
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
+   }
+  ]
  },
  {
   "buyer": "Nasreen Shanawaz",
@@ -1956,7 +1999,7 @@
   "order": 999,
   "stage": "Offer",
   "heat": 5,
-  "lastContact": "2026-08-20",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-21",
   "touchReason": "Heat 5 daily cadence - line up 4bed CB options around 2.65M and push to signing",
   "needSummary": "4 bed Costa Brava, ~2.65M, school next to Lagoons, ready to sign soon",
@@ -1966,6 +2009,11 @@
     "date": "2026-08-20",
     "channel": "wa",
     "summary": "Logged as best buyer: 4bed CB at 2.65M, school beside Lagoons, locked in with Calum, signing soon"
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ]
  },
@@ -1991,12 +2039,26 @@
   "score": 4,
   "maxScore": 4,
   "maxScoreWhy": "Calum-set 4, agreed: already at OFFER stage on entry = live money, and split economics with Lewis halve the take but double the coverage. Budget 2.7 sits right on the stock shelf (P156 2.6 net, Q845 2.7 net).",
-  "notes": "20 Aug: NEW via Lewis - SPLIT DEAL. Already at Offer stage. 3 or 4 bed, any cluster, up to 2.7M. Which unit is the offer on? - capture at next touch. Gap-queue adjacent: P156 (2.6 net) and Q845 (2.7 net) both fit if current offer stalls.",
+  "notes": "20 Aug: NEW via Lewis - SPLIT DEAL. Already at Offer stage. 3 or 4 bed, any cluster, up to 2.7M. Which unit is the offer on? - capture at next touch. Gap-queue adjacent: P156 (2.6 net) and Q845 (2.7 net) both fit if current offer stalls. | 25 Aug: cheque SENT.",
   "segment": "",
   "id": "pedro-lewis",
   "order": 1000,
   "heat": 4,
-  "budgetText": "Up to D2.7M"
+  "budgetText": "Up to D2.7M",
+  "lastContact": "2026-08-25",
+  "touches": [
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug: CHEQUE SENT - deal progressing"
+   }
+  ],
+  "history": [
+   {
+    "date": "2026-08-25",
+    "note": "Cheque sent - offer progressing to MOU/transfer."
+   }
+  ]
  },
  {
   "buyer": "Abdulrazak Al-Ahmadi (Abdo)",
@@ -2148,7 +2210,7 @@
   "beds": "4",
   "finance": "",
   "budget": 2750000,
-  "budgetText": "Đ2.75M (voice note also said 2.7 - confirm ceiling)",
+  "budgetText": "\u01102.75M (voice note also said 2.7 - confirm ceiling)",
   "needed": 0,
   "diff": 0,
   "responsiveness": 5,
@@ -2156,7 +2218,7 @@
   "unitSupply": 4,
   "feeling": 5,
   "score": 5,
-  "notes": "Viewed 22 Aug - hot, score 5. CB 4-bed up to ~Đ2.75M. Can close soon. Returning Wed 26 Aug to view ACTUAL available units - sourcing sweep needed before then. Finance method not yet captured.",
+  "notes": "Viewed 22 Aug - hot, score 5. CB 4-bed up to ~\u01102.75M. Can close soon. Returning Wed 26 Aug to view ACTUAL available units - sourcing sweep needed before then. Finance method not yet captured.",
   "id": "mark-2208",
   "order": 47,
   "stage": "Viewing",
@@ -2164,7 +2226,7 @@
   "lastContact": "2026-08-22",
   "nextTouch": "2026-08-26",
   "touchReason": "Wed 26 Aug: tour available CB 4-beds - closable",
-  "needSummary": "CB 4-bed, up to Đ2.75M, close-ready, Wed tour of real availability",
+  "needSummary": "CB 4-bed, up to \u01102.75M, close-ready, Wed tour of real availability",
   "snoozedUntil": null,
   "history": [
    {
@@ -2194,7 +2256,7 @@
   "beds": "",
   "finance": "",
   "budget": 2700000,
-  "budgetText": "OK up to Đ2.7M - likely to offer under",
+  "budgetText": "OK up to \u01102.7M - likely to offer under",
   "needed": 0,
   "diff": 0,
   "responsiveness": 4,
@@ -2202,15 +2264,15 @@
   "unitSupply": 4,
   "feeling": 4,
   "score": 4,
-  "notes": "Viewed 22 Aug - good, score 4. Thinking Costa Brava, comfortable to Đ2.7M but will probably offer below. Beds + finance not yet captured. Feeds off CB 4-bed sourcing sweep.",
+  "notes": "Viewed 22 Aug - good, score 4. Thinking Costa Brava, comfortable to \u01102.7M but will probably offer below. Beds + finance not yet captured. Feeds off CB 4-bed sourcing sweep.",
   "id": "winnie-2208",
   "order": 48,
   "stage": "Viewing",
   "heat": 4,
-  "lastContact": "2026-08-22",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-24",
   "touchReason": "Follow up post-viewing: qualify beds + finance, send CB availability from sweep",
-  "needSummary": "Costa Brava, to Đ2.7M (offers under), post-viewing warm",
+  "needSummary": "Costa Brava, to \u01102.7M (offers under), post-viewing warm",
   "snoozedUntil": null,
   "history": [
    {
@@ -2223,6 +2285,11 @@
     "date": "2026-08-22",
     "channel": "viewing",
     "summary": "Viewed - good. Thinking Costa Brava, okay up to 2.7M, may offer a bit less."
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ]
  },
@@ -2240,7 +2307,7 @@
   "beds": "",
   "finance": "Cash-capable, will probably mortgage",
   "budget": 2750000,
-  "budgetText": "Đ2.75M easy",
+  "budgetText": "\u01102.75M easy",
   "needed": 0,
   "diff": 0,
   "responsiveness": 5,
@@ -2248,15 +2315,15 @@
   "unitSupply": 4,
   "feeling": 5,
   "score": 5,
-  "notes": "Viewed 22 Aug - score 5, ready to buy. Đ2.75M easy. Cash-capable but likely mortgage. Couple: she is South African, he is Turkish. Really sound. Feeds off CB 4-bed sourcing sweep. NAME SPELLING UNCONFIRMED (Ferral/Firel) - fix from WhatsApp.",
+  "notes": "Viewed 22 Aug - score 5, ready to buy. \u01102.75M easy. Cash-capable but likely mortgage. Couple: she is South African, he is Turkish. Really sound. Feeds off CB 4-bed sourcing sweep. NAME SPELLING UNCONFIRMED (Ferral/Firel) - fix from WhatsApp.",
   "id": "firel-2208",
   "order": 49,
   "stage": "Viewing",
   "heat": 5,
-  "lastContact": "2026-08-22",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-24",
   "touchReason": "Post-viewing: shortlist from sweep, confirm name spelling + phone, mortgage intro",
-  "needSummary": "Ready-to-buy couple (SA/Turkish), Đ2.75M easy, cash-capable/likely mortgage, CB direction",
+  "needSummary": "Ready-to-buy couple (SA/Turkish), \u01102.75M easy, cash-capable/likely mortgage, CB direction",
   "snoozedUntil": null,
   "history": [
    {
@@ -2269,6 +2336,11 @@
     "date": "2026-08-22",
     "channel": "viewing",
     "summary": "Viewed - excellent. Ready to buy. 2.75M easy. Cash possible, probably mortgage. She SA, he Turkish. Really sound."
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ]
  },
@@ -2286,7 +2358,7 @@
   "beds": "4",
   "finance": "Hybrid: dad funds cash portion, Cara mortgages the rest. Dad cash-ready.",
   "budget": 2700000,
-  "budgetText": "Want Đ2.6M initially, up to Đ2.7M",
+  "budgetText": "Want \u01102.6M initially, up to \u01102.7M",
   "needed": 0,
   "diff": 0,
   "responsiveness": 5,
@@ -2299,7 +2371,7 @@
   "order": 50,
   "stage": "Viewing",
   "heat": 5,
-  "lastContact": "2026-08-22",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-24",
   "touchReason": "Post-viewing: sweep shortlist at 2.6-2.7; map cash/mortgage split; start Cara pre-approval",
   "needSummary": "CB 4-bed, 2.6-2.7, dad cash + daughter mortgage hybrid, own Golf Place + Arjan, hot",
@@ -2315,6 +2387,11 @@
     "date": "2026-08-22",
     "channel": "viewing",
     "summary": "Viewed with dad - really good. CB 4-bed, 2.6 initial / 2.7 max. Dad moving to Dubai, funds cash part, strong rapport. Cara mortgages rest. Own 2 other Dubai properties."
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ]
  },
@@ -2343,7 +2420,7 @@
   "order": 999,
   "stage": "Qualified",
   "heat": 3,
-  "lastContact": "2026-08-24",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-26",
   "touchReason": "Chase reaction to Mike's Alaya options",
   "needSummary": "JGE - now leaning Alaya (was Cedarwood South V-189), budget/beds TBC, ~12m timeline",
@@ -2363,6 +2440,11 @@
     "date": "2026-08-24",
     "channel": "wa",
     "summary": "Alaya confirmed; sent Mike's Alaya options"
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ]
  },
@@ -2431,7 +2513,7 @@
   "order": 53,
   "stage": "Viewing",
   "heat": 4,
-  "lastContact": "2026-08-21",
+  "lastContact": "2026-08-25",
   "nextTouch": "2026-08-24",
   "touchReason": "Stay-warm touch + capture budget; shortlist single-row Nice with transfer timelines that land them in before Dec 31",
   "needSummary": "Nice single row, cash, MUST be in before end of year (baby). Budget TBC.",
@@ -2447,6 +2529,11 @@
     "date": "2026-08-21",
     "channel": "viewing",
     "summary": "Viewed. Hot. Nice cluster, prefer single row, cash buyers, need to be IN before end of year - expecting a baby."
+   },
+   {
+    "date": "2026-08-25",
+    "channel": "outreach",
+    "summary": "Touch 25 Aug (round of touchpoints)"
    }
   ]
  },
