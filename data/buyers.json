@@ -2675,5 +2675,119 @@
     "summary": "Laura handover: UK investor, open to UAE, family in Dubai, agreed to receive insights"
    }
   ]
+ },
+ {
+  "buyer": "Shaheen",
+  "status": "Active",
+  "date": "2026-08-25",
+  "source": "Ads",
+  "colleague": "",
+  "area": "Jumeirah Golf Estates",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 1,
+  "relationship": 1,
+  "unitSupply": null,
+  "feeling": 2,
+  "score": 2,
+  "notes": "25 Aug: JGE ads lead. +971 50 645 9434. Called - no answer. Next step: send sales offer on WhatsApp.",
+  "id": "shaheen-jge",
+  "order": 999,
+  "stage": "New",
+  "heat": 2,
+  "lastContact": "2026-08-25",
+  "nextTouch": "2026-08-25",
+  "touchReason": "Send JGE sales offer on WhatsApp (call unanswered)",
+  "needSummary": "JGE ads lead, call unanswered, sales offer to send",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-25",
+    "channel": "call",
+    "summary": "Outbound call - no answer; plan: WhatsApp sales offer"
+   }
+  ]
+ },
+ {
+  "buyer": "Deepa",
+  "status": "Active",
+  "date": "2026-08-25",
+  "source": "Ads",
+  "colleague": "",
+  "area": "Jumeirah Golf Estates",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 1,
+  "relationship": 1,
+  "unitSupply": null,
+  "feeling": 2,
+  "score": 2,
+  "notes": "25 Aug: JGE ads lead. +971 50 656 7909. Called - no answer. Next step: send sales offer on WhatsApp.",
+  "id": "deepa-jge",
+  "order": 999,
+  "stage": "New",
+  "heat": 2,
+  "lastContact": "2026-08-25",
+  "nextTouch": "2026-08-25",
+  "touchReason": "Send JGE sales offer on WhatsApp (call unanswered)",
+  "needSummary": "JGE ads lead, call unanswered, sales offer to send",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-25",
+    "channel": "call",
+    "summary": "Outbound call - no answer; plan: WhatsApp sales offer"
+   }
+  ]
+ },
+ {
+  "buyer": "Kay",
+  "status": "Active",
+  "date": "2026-08-25",
+  "source": "Ads",
+  "colleague": "",
+  "area": "Jumeirah Golf Estates",
+  "cluster1": "",
+  "cluster2": "",
+  "cluster3": "",
+  "matchedUnit": "",
+  "beds": "",
+  "finance": "",
+  "budget": null,
+  "needed": "",
+  "responsiveness": 1,
+  "relationship": 1,
+  "unitSupply": null,
+  "feeling": 2,
+  "score": 2,
+  "notes": "25 Aug: JGE ads lead. +971 52 815 7026. Called - no answer. Next step: send sales offer on WhatsApp.",
+  "id": "kay-jge",
+  "order": 999,
+  "stage": "New",
+  "heat": 2,
+  "lastContact": "2026-08-25",
+  "nextTouch": "2026-08-25",
+  "touchReason": "Send JGE sales offer on WhatsApp (call unanswered)",
+  "needSummary": "JGE ads lead, call unanswered, sales offer to send",
+  "snoozedUntil": null,
+  "touches": [
+   {
+    "date": "2026-08-25",
+    "channel": "call",
+    "summary": "Outbound call - no answer; plan: WhatsApp sales offer"
+   }
+  ]
  }
 ]
