@@ -39,10 +39,20 @@ All numbers source-audited 26 Aug (PIX live pulls, ValuStrat AD Q2-26 PDF, Henle
 - DEAD STOP: "One question before you sign anything: when am I allowed to sell this?"
 - Accuracy rails: verified norm 30-40% (some to 50). Saying 40 = inside band. F4 "usually" is load-bearing - do NOT claim prepay-to-unlock about the Tara SPA specifically (unverified clause).
 
+
+## R8 - THE 8-MONTH DOUBLE [LOCKED] (added 26 Aug, films with batch)
+- F1 HOOK: "I just made an investor a 100% return on his money in 8 months."
+- F2: He bought a penthouse off-plan. Sold it 8 months later. Over D750K net profit - and D750K was all the cash he'd put in.
+- F3 RE-HOOK: How? He'd only paid part of the price - but the profit comes off the FULL price. The penthouse only had to rise a fraction for his cash to double. That's off-plan leverage.
+- F4: Now the honest bit: this is NOT normal. Everything lined up - right developer, right payment plan, right project, sold at the right moment. Most deals will never do this.
+- F5 TURN: But those four things aren't luck - they're choices. Choosing them well is literally the job.
+- DEAD STOP: "Comment where you think this was. Nobody will get it."
+- Rails: keep client + project unidentifiable unless client OK'd. Verify exact figures vs deals ledger before adding specifics on camera - "over 750K net" and "100% ROE" only until confirmed. Reply to every wrong guess (algo fuel). Pairs with R5 (he could sell at 8mo = cleared his threshold) - post same week.
+
 ## SHOOT PLAN
 - Desk + screen-record: R1 (chart), R5 (SPA pages)
 - Outdoor/AD if possible, else desk + map zoom: R3, R4
-- Order: R1 -> R5 -> R3 -> R4 (R4 last, needs warm delivery)
+- Order: R1 -> R8 -> R5 -> R3 -> R4 (R8 while energy high - it's a story; R4 last, needs warm delivery)
 - Pre-mortem each before rolling: assume 1,000 views - weakest link = hook or turn?
 
 ## STORED (content bank, ready-to-film)
