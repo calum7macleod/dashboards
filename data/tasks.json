@@ -3142,12 +3142,12 @@
       "title": "SOURCING SWEEP: every genuinely available Costa Brava 4-bed - verified sellers, prices, viewable Wed",
       "area": "Real Estate",
       "priority": "high",
-      "status": "active",
+      "status": "done",
       "difficulty": "intense",
       "due": "2026-08-25",
       "created": "2026-08-22",
       "notes": "Cara (2.6-2.7, dad cash+mortgage hybrid) added. Firel (2.75, ready-to-buy) added. Winnie (2.7) added. Feeds Mark (2.75M, Wed 26 tour, closable) + Hatem 2.65, Anshuman 2.7, Pedro 2.7, Shiri 2.65, Mal 2.65, Ashraf/Misha/Hania/Masoud 2.6. Call every CB lister incl. Viswajith K403/404 (3.4M ask - test flex). Verify: still available, seller motivated, viewable Wednesday, real price not portal bait. Output: ranked list w/ prices in stock.json.",
-      "completed": null,
+      "completed": "2026-08-26",
       "snoozedUntil": null
     },
     {
@@ -3316,34 +3316,34 @@
       "snoozedUntil": null
     },
     {
+      "order": 5,
+      "top3": false,
       "id": "vlog-distribution-2508",
       "title": "Send vlog to lots of people",
       "area": "Content",
       "priority": "medium",
-      "difficulty": "easy",
       "status": "active",
+      "difficulty": "easy",
       "due": "2026-08-25",
       "created": "2026-08-24",
       "notes": "Distribution push. Suggest a target list: hot buyer book (Jayde/Mark/Firel/Cara/Winnie/Charul), recent closes (Syed, Zel, Umer - referral warmers), seller book, Jake/Lewis/team, and the FB leads. Personal one-liner per send beats broadcast.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 5,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 2,
+      "top3": false,
       "id": "full-book-sweep-2508",
       "title": "FULL BOOK SWEEP: touch every active buyer and seller",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "hard",
       "status": "active",
+      "difficulty": "hard",
       "due": "2026-08-25",
       "created": "2026-08-24",
       "notes": "~50 active buyers + seller book. Batch it: (1) hot 6 get calls, (2) score 3-4 get personal WhatsApp w/ vlog or CB availability tease, (3) sellers get \"13 qualified buyers this week\" market update - that line is true and wins price realism + new instructions. Pairs with vlog task: vlog IS the touch for half the list. Log outcomes as voice notes and I update the book live.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 2,
-      "top3": false
+      "snoozedUntil": null
     },
     {
       "order": null,
@@ -3361,34 +3361,34 @@
       "snoozedUntil": null
     },
     {
+      "order": 3,
+      "top3": false,
       "id": "property-index-connect-2608",
       "title": "Property index -> Claude: sort connection, test it, check for Abu Dhabi option",
       "area": "Real Estate",
       "priority": "high",
-      "difficulty": "medium",
       "status": "active",
+      "difficulty": "medium",
       "due": "2026-08-26",
       "created": "2026-08-26",
       "notes": "3 parts: (1) get the property index data source connected so Max can read it, (2) run test queries against live pipeline needs (CB 4-bed comps, Nice M-row), (3) check AD coverage - our DLD registry pipeline is Dubai-only, AD (Reem/Hudayriyat/Saadiyat) is the known data gap and 41% of take-home.",
       "completed": null,
-      "snoozedUntil": null,
-      "order": 3,
-      "top3": false
+      "snoozedUntil": null
     },
     {
+      "order": 4,
+      "top3": false,
       "id": "ad-reels-script-2608",
       "title": "Script 4+ reels and shot plan for Abu Dhabi recording Friday",
       "area": "Content",
       "priority": "high",
-      "difficulty": "hard",
       "status": "done",
+      "difficulty": "hard",
       "due": "2026-08-26",
       "created": "2026-08-26",
       "notes": "Min 4 scripts today, filming Fri in AD. Candidate spine from verified data: (1) ADGM Effect - 47K workforce/+57% AUM/BlackRock-Binance, filmed at Maryah/Reem; (2) Reem-inside-ADGM moat - the fact no brochure leads with; (3) Dubai corrects vs AD climbs +18% - two-market split, on location; (4) Tara Park operator walkthrough - skin in the game at the site; (5) reserve: Marsa 3-numbers script (already written). Pre-mortem each before Friday. Max drafts, Calum edits voice. | 7 scripts delivered 26 Aug -> content-assets/scripts/reels-27aug-scripts.md (filming moved to 27 Aug)",
       "completed": "2026-08-26",
-      "snoozedUntil": null,
-      "order": 4,
-      "top3": false
+      "snoozedUntil": null
     }
   ],
   "units": [],
@@ -3700,25 +3700,31 @@
       "created": "2026-08-22"
     },
     {
+      "id": "a52b5198-05e8-4cd7-bd2a-8b1a035e387c",
       "title": "REEL (ready): Two Emirates Opposite Directions - Dubai falling / AD +17.8%",
-      "status": "Ready to film",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
       "notes": "Full locked script in content-assets/scripts/reels-27aug-scripts.md history + R2 section. Next week's banker.",
-      "created": "2026-08-26",
-      "pillar": "Markets & Maps"
+      "created": "2026-08-26"
     },
     {
+      "id": "e28250fc-8058-4e49-9a7b-31974ab8e47a",
       "title": "REEL (ready): One Townhouse Every Owner - Sama D1.19M 2018 -> D3.15M 2026",
-      "status": "Ready to film",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
       "notes": "Script drafted; needs Sama unit-history screen-record. Strongest share candidate of batch.",
-      "created": "2026-08-26",
-      "pillar": "Receipts"
+      "created": "2026-08-26"
     },
     {
+      "id": "a9eb3be5-760e-42ee-910f-17ac1e40f604",
       "title": "REEL (ready): It's All Public Record - ask for last 3 SOLD prices",
-      "status": "Ready to film",
+      "format": "Reel",
+      "status": "Idea",
+      "priority": "medium",
       "notes": "Script drafted; needs lookup screen-record. Decide DLD vs PropertyIndex on camera.",
-      "created": "2026-08-26",
-      "pillar": "Mechanisms"
+      "created": "2026-08-26"
     }
   ],
   "buildLog": []
