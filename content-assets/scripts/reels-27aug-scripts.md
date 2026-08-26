@@ -1,6 +1,6 @@
 # REEL SCRIPTS - AD/Market batch - filming 27 Aug 2026
 Law: claim in frame one · 45-55s · re-hook every 8-10s · dead stop, no outro.
-All numbers verified against PIX (DLD/Ejari) July 2026 + ValuStrat AD Q2-26 unless noted.
+All numbers verified 26 Aug: PIX (DLD/Ejari) live pulls + ValuStrat AD Q2-26 PDF (repo) + Henley/UBS via ValuStrat + web-verified 30-40% resale norms. Full audit in chat log 26 Aug.
 
 ## R1 - PAYING MORE FOR A PROMISE
 CORRECTED NUMBERS (stronger than the draft hook): off-plan median Đ1,722 psf vs READY Đ1,379 psf (Jul, PIX). Gap = 25%, not 3%.
@@ -11,10 +11,11 @@ CORRECTED NUMBERS (stronger than the draft hook): off-plan median Đ1,722 psf vs
 - 40-52s TURN: Off-plan still works when the payment plan does the heavy lifting or the location is irreplaceable - I own off-plan myself. Paying the premium blind is the mistake.
 - DEAD STOP: "The discount was supposed to be for waiting. Right now you're paying extra for it."
 - B-roll: PIX segment chart screen-record, construction site pan, keys-in-hand ready unit.
+- DEFENCE NOTE: medians across segments aren't perfectly like-for-like (off-plan skews newer/prime stock). If challenged in comments: 'both are DLD-registered medians for July - argue with the register.'
 
 ## R2 - TWO EMIRATES, OPPOSITE DIRECTIONS
 - HOOK: "Dubai property is falling. Abu Dhabi is up 17.8% in a year. Same country. Opposite directions."
-- Beat 1: Dubai: 7 straight monthly declines, July negative YoY - first time since 2022 (PIX).
+- Beat 1: Dubai: 7 straight monthly declines, July negative YoY - first time in FIVE YEARS (last negative print: June 2021, PIX).
 - Beat 2 RE-HOOK (map zoom): AD capital values +17.8% YoY. Reem +22%. Al Reef +41.6% (ValuStrat Q2).
 - Beat 3: Why: supply. Dubai launched everything at once. AD kept it tight - off-plan is 84% of all AD sales and demand still outruns it.
 - TURN: Cycles inside one country don't sync. Money rotates. I work both sides of the E11 - most brokers only see one.
@@ -23,7 +24,7 @@ CORRECTED NUMBERS (stronger than the draft hook): off-plan median Đ1,722 psf vs
 
 ## R3 - MARYAH Đ60BN
 - HOOK: "Đ60 billion is going into ONE Abu Dhabi island. Here's what it does to prices next door."
-- Beat 1: Al Maryah - Aldar + Mubadala expansion, 16 million extra sqft. A financial district becoming a city.
+- Beat 1: Al Maryah - Mubadala + Aldar announced Đ60bn, 16 million extra sqft of mixed-use GFA expanding ADGM. A financial district becoming a city. (ValuStrat Q2-26, verified)
 - Beat 2 RE-HOOK (map zoom): Maryah sits directly between Reem Island and the mainland. Reem already +22% this year.
 - Beat 3: Đ60bn = jobs. Jobs = households. The households live next door.
 - TURN: Maryah itself is priced. The ripple zone - Reem, the Saadiyat corridor - still trades on yesterday's story.
@@ -31,7 +32,8 @@ CORRECTED NUMBERS (stronger than the draft hook): off-plan median Đ1,722 psf vs
 - B-roll: map zoom Maryah→Reem, Galleria/ADGM exteriors if you can get them, crane shots.
 
 ## R4 - THE MILLIONAIRE MIGRATION
-- HOOK: "16,500 millionaires have left the UK. Abu Dhabi's millionaire count is up 75%. I meet them every week."
+- HOOK: "16,500 millionaires are leaving the UK. Abu Dhabi's millionaire count is up 75% since 2013. I meet them every week."
+- SOURCE LINE (say on camera or caption): "Henley & Partners numbers - 16,500 relocating over seven years. UBS says the UK millionaire count drops 17% by 2029."
 - Beat 1: Non-dom changes, CGT, IHT - UK wealth voting with its feet.
 - Beat 2: The destination isn't just Dubai. AD: zero income tax, visa certainty, +75% millionaire growth.
 - Beat 3 RE-HOOK: What do they all do in month one? Rent. Month twelve? Buy. That pipeline isn't priced in yet.
