@@ -1,77 +1,51 @@
-# REEL SCRIPTS - AD/Market batch - filming 27 Aug 2026
-Law: claim in frame one · 45-55s · re-hook every 8-10s · dead stop, no outro.
-All numbers verified 26 Aug: PIX (DLD/Ejari) live pulls + ValuStrat AD Q2-26 PDF (repo) + Henley/UBS via ValuStrat + web-verified 30-40% resale norms. Full audit in chat log 26 Aug.
+# FILMING BATCH - 27 AUG 2026 - FINAL SCRIPTS (Calum-approved 26 Aug)
+Law: claim frame one · 45-55s · re-hook every 8-10s · dead stop, no outro.
+All numbers source-audited 26 Aug (PIX live pulls, ValuStrat AD Q2-26 PDF, Henley/UBS via report, web-verified resale norms).
 
-## R1 - PAYING MORE FOR A PROMISE
-CORRECTED NUMBERS (stronger than the draft hook): off-plan median Đ1,722 psf vs READY Đ1,379 psf (Jul, PIX). Gap = 25%, not 3%.
-- 0-2s HOOK: "You're paying Đ1,722 a square foot for off-plan in Dubai. Ready is Đ1,379. That's 25% extra - for a promise."
-- 2-12s: Last month's registrations: 7,005 off-plan sales at 1,722 median. Ready homes you can touch today: 1,379.
-- 12-24s RE-HOOK (screen-record PIX chart): "And the engine behind that premium has stalled" - off-plan growth +14.9% in Dec, +0.5% now.
-- 24-40s: The bet is: pay 25% more today, hope the market grows into it by handover. In a flat market, that maths belongs to the developer.
-- 40-52s TURN: Off-plan still works when the payment plan does the heavy lifting or the location is irreplaceable - I own off-plan myself. Paying the premium blind is the mistake.
+## R1 - PAYING MORE FOR A PROMISE [LOCKED]
+- F1 HOOK: "Last month people paid 25% more for off-plan than ready in Dubai."
+- F2: Off-plan went for D1,722 a square foot. Ready - D1,379. Same month, same land department register.
+- F3 RE-HOOK (chart on screen): "And the engine behind that premium has stalled. December was 14% up vs last December. July was only 0.5% up from last July."
+- F4: That 25% only pays off if prices keep climbing between now and handover - that's literally what the premium buys, future growth. And the growth just stopped.
+- F5 TURN: Off-plan still works when the payment plan carries it or the location's irreplaceable - I own off-plan myself. Paying the premium blind is the mistake.
 - DEAD STOP: "The discount was supposed to be for waiting. Right now you're paying extra for it."
-- B-roll: PIX segment chart screen-record, construction site pan, keys-in-hand ready unit.
-- DEFENCE NOTE: medians across segments aren't perfectly like-for-like (off-plan skews newer/prime stock). If challenged in comments: 'both are DLD-registered medians for July - argue with the register.'
+- Asset: off-plan YoY bar chart (Aug25 8.9 ... Dec 14.9 ... Jul26 0.5). Branded HTML version on request.
+- Note: figures are medians; say "went for / typical" on camera, never "average median" debates.
 
-## R2 - TWO EMIRATES, OPPOSITE DIRECTIONS
-- HOOK: "Dubai property is falling. Abu Dhabi is up 17.8% in a year. Same country. Opposite directions."
-- Beat 1: Dubai: 7 straight monthly declines, July negative YoY - first time in FIVE YEARS (last negative print: June 2021, PIX).
-- Beat 2 RE-HOOK (map zoom): AD capital values +17.8% YoY. Reem +22%. Al Reef +41.6% (ValuStrat Q2).
-- Beat 3: Why: supply. Dubai launched everything at once. AD kept it tight - off-plan is 84% of all AD sales and demand still outruns it.
-- TURN: Cycles inside one country don't sync. Money rotates. I work both sides of the E11 - most brokers only see one.
-- DEAD STOP: "The bridge is 45 minutes. The cycle gap is two years."
-- B-roll: E11 drive shot, Reem skyline, map zoom Nathan-Mistry style.
+## R3 - MARYAH D60BN [LOCKED]
+- F1 HOOK: "D60 billion is going into one Abu Dhabi island."
+- F2: Al Maryah. Mubadala and Aldar. 16 million extra square feet - offices, homes, retail.
+- F3 RE-HOOK (map zoom): It sits right next to Reem Island. Reem is already up 22% this year.
+- F4: D60 billion means tens of thousands of jobs. Those people need somewhere to live - and the closest front doors are Reem and Saadiyat.
+- F5 TURN: I bought on Reem Island this year. Projects like this are half the reason why.
+- DEAD STOP: "By the time it's built, next door won't be this price."
+- Alt F4 (zero-inference version): "16 million square feet of offices means one thing - people."
 
-## R3 - MARYAH Đ60BN
-- HOOK: "Đ60 billion is going into ONE Abu Dhabi island. Here's what it does to prices next door."
-- Beat 1: Al Maryah - Mubadala + Aldar announced Đ60bn, 16 million extra sqft of mixed-use GFA expanding ADGM. A financial district becoming a city. (ValuStrat Q2-26, verified)
-- Beat 2 RE-HOOK (map zoom): Maryah sits directly between Reem Island and the mainland. Reem already +22% this year.
-- Beat 3: Đ60bn = jobs. Jobs = households. The households live next door.
-- TURN: Maryah itself is priced. The ripple zone - Reem, the Saadiyat corridor - still trades on yesterday's story.
-- DEAD STOP: "Infrastructure announcements are tomorrow's comps."
-- B-roll: map zoom Maryah→Reem, Galleria/ADGM exteriors if you can get them, crane shots.
+## R4 - THE MILLIONAIRE MIGRATION [LOCKED]
+- F1 HOOK: "16,500 millionaires are leaving the UK."
+- F2: Non-dom scrapped. Capital gains up. Inheritance tax reaching into pensions and family farms. VAT on school fees. British money is voting with its feet.
+- F3 RE-HOOK: And it's not all landing in Dubai. Abu Dhabi's millionaire count is up 75% since 2013 - and the UK's is predicted to drop 17% by 2029.
+- F4: Here's the pattern I see: year one they rent. Year two they buy. The buying wave is already loaded.
+- F5 TURN: I'm Scottish. Six years out here. I watched this exact wave hit Dubai in 2021 - Abu Dhabi is at that moment now.
+- DEAD STOP: "The demand is coming. And the supply of quality villas and townhouses will struggle to keep up."
+- Sources: Henley 16,500/7yrs; UBS -17% by 2029; +75% since 2013 (all via ValuStrat Q2-26 PDF). Supply-struggle = ValuStrat's own call. Film LAST - lives on F5 delivery.
 
-## R4 - THE MILLIONAIRE MIGRATION
-- HOOK: "16,500 millionaires are leaving the UK. Abu Dhabi's millionaire count is up 75% since 2013. I meet them every week."
-- SOURCE LINE (say on camera or caption): "Henley & Partners numbers - 16,500 relocating over seven years. UBS says the UK millionaire count drops 17% by 2029."
-- Beat 1: Non-dom changes, CGT, IHT - UK wealth voting with its feet.
-- Beat 2: The destination isn't just Dubai. AD: zero income tax, visa certainty, +75% millionaire growth.
-- Beat 3 RE-HOOK: What do they all do in month one? Rent. Month twelve? Buy. That pipeline isn't priced in yet.
-- TURN: I'm Scottish, six years here - I watched this exact wave hit Dubai in 2021. Abu Dhabi is at its 2021 moment.
-- DEAD STOP: "Wealth migration hits the property register about 18 months later. Start the clock."
-- B-roll: passport/airport stock feel, AD skyline, you to camera.
+## R5 - THE RESALE LOCK [LOCKED]
+- F1 HOOK: "You can't resell your off-plan property in Dubai until you've paid 40 percent of it."
+- F2: What that means: if life changes - job, family, better opportunity - you can't sell. Even if you want to. Even at a loss. You're stuck with it until you hit the number.
+- F3 RE-HOOK (SPA on screen, unit number + price covered): "My developer? 20 percent. That's part of why I signed with them."
+- F4: And here's what almost nobody tells you: you can usually pay AHEAD of your schedule. Get yourself to the threshold early - and your exit unlocks early.
+- F5 TURN: Off-plan's fine - I bought. But the resale rule decides how trapped your money is. Read it before you sign, and pick developers whose terms respect you.
+- DEAD STOP: "Two contracts, same price, same tower. One lets you out at 20 percent. One locks you at 40. That's the difference nobody prices."
+- Accuracy rails: verified norm 30-40% (some to 50). Saying 40 = inside band. F4 "usually" is load-bearing - do NOT claim prepay-to-unlock about the Tara SPA specifically (unverified clause).
 
-## R5 - THE RESALE LOCK
-ACCURACY NOTE: 20% is YOUR contract (Tara Park). Dubai developers commonly 30-40%. Script frames it as "my contract" then widens - do not state 20% as universal.
-- HOOK: "You can't resell your off-plan unit until you've paid 20%. Nobody mentions that at the launch event."
-- Beat 1 (paper on screen, numbers indicative): My own AD contract - resale blocked until 20% paid, PLUS developer NOC, PLUS an admin fee.
-- Beat 2 RE-HOOK: And plenty of Dubai developers set it at 30 or 40%. It's in the SPA - the document nobody reads at the launch.
-- Beat 3: If life changes in year one, you're locked in. Your "liquid investment" isn't.
-- TURN: Not a reason to avoid off-plan - I signed anyway. A reason to read before you sign and price the lock-in in.
-- DEAD STOP: "The launch event sells the render. The SPA sells the reality."
-- B-roll: flicking through SPA pages (cover unit number), highlighter on clause, launch-event stock energy.
+## SHOOT PLAN
+- Desk + screen-record: R1 (chart), R5 (SPA pages)
+- Outdoor/AD if possible, else desk + map zoom: R3, R4
+- Order: R1 -> R5 -> R3 -> R4 (R4 last, needs warm delivery)
+- Pre-mortem each before rolling: assume 1,000 views - weakest link = hook or turn?
 
-## R6 - ONE TOWNHOUSE, EVERY OWNER
-Source: Sama Townhouses, Town Square - 3-bed 2,023 sqft tracked home (DLD/Ejari register via PropertyIndex).
-- HOOK: "One townhouse. Bought for Đ1.19 million in 2018. Just sold for Đ3.15 million. I can show you every owner in between."
-- Beat 1 (screen-record): Owner 1: Đ1.19M off-plan, Nov 2018. Owner 2: Đ1.55M, Sep 2021.
-- Beat 2 RE-HOOK: Then it becomes a landlord machine - tenant rents climb 105K → 125K → 135K over five years. Every contract on the register.
-- Beat 3: Owner 3: Đ2.6M in 2025 - bought WITH the tenant in place. Owner 4: Đ3.15M this April. +164% in eight years.
-- TURN: None of this is a broker's story. It's the government's ledger - DLD sales, Ejari rents, all registered.
-- DEAD STOP: "The register doesn't do marketing. That's why I trust it."
-- B-roll: full screen-record of the unit-history owner chain, Town Square exterior if passing - otherwise pure screen + face.
-
-## R7 - IT'S ALL PUBLIC RECORD
-- HOOK: "Every property sale in Dubai is public record. Some agents hope you never find out."
-- Beat 1: Price, date, size, cash or mortgage, off-plan or ready - all registered with the Dubai Land Department.
-- Beat 2 RE-HOOK (screen-record): Watch. Live community, last three ACTUAL sold prices - not asking prices. Thirty seconds.
-- Beat 3: Asking prices are opinions. Registered prices are facts. The gap between the two is where buyers get hurt.
-- TURN: A good agent shows you the register before you ask. That's the whole test.
-- DEAD STOP: "Ask any agent for the last three SOLD prices. Watch what happens."
-- B-roll: screen-record the lookup flow, split-screen asking vs sold.
-
-## BATCHING FOR THE SHOOT
-- To-camera outdoors (skyline/site): R2, R3, R4
-- Desk + screen-record heavy: R1, R6, R7
-- Props (SPA document): R5
-- Pre-mortem each edit before filming: assume 1,000 views - is the hook the weakest link, or the turn?
+## STORED (content bank, ready-to-film)
+- R2 Two Emirates (finished, next week's banker)
+- R6 One Townhouse Every Owner (needs Sama screen-record)
+- R7 It's All Public Record (needs lookup screen-record)
