@@ -3359,6 +3359,36 @@
    "notes": "Content planning - use Max's reel analysis (Fantastic/two-person whiteboard format was ~3x typical) to shape next batch",
    "completed": null,
    "snoozedUntil": null
+  },
+  {
+   "id": "property-index-connect-2608",
+   "title": "Property index -> Claude: sort connection, test it, check for Abu Dhabi option",
+   "area": "Real Estate",
+   "priority": "high",
+   "difficulty": "medium",
+   "status": "active",
+   "due": "2026-08-26",
+   "created": "2026-08-26",
+   "notes": "3 parts: (1) get the property index data source connected so Max can read it, (2) run test queries against live pipeline needs (CB 4-bed comps, Nice M-row), (3) check AD coverage - our DLD registry pipeline is Dubai-only, AD (Reem/Hudayriyat/Saadiyat) is the known data gap and 41% of take-home.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 3,
+   "top3": false
+  },
+  {
+   "id": "ad-reels-script-2608",
+   "title": "Script 4+ reels and shot plan for Abu Dhabi recording Friday",
+   "area": "Content",
+   "priority": "high",
+   "difficulty": "hard",
+   "status": "active",
+   "due": "2026-08-26",
+   "created": "2026-08-26",
+   "notes": "Min 4 scripts today, filming Fri in AD. Candidate spine from verified data: (1) ADGM Effect - 47K workforce/+57% AUM/BlackRock-Binance, filmed at Maryah/Reem; (2) Reem-inside-ADGM moat - the fact no brochure leads with; (3) Dubai corrects vs AD climbs +18% - two-market split, on location; (4) Tara Park operator walkthrough - skin in the game at the site; (5) reserve: Marsa 3-numbers script (already written). Pre-mortem each before Friday. Max drafts, Calum edits voice.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 4,
+   "top3": false
   }
  ],
  "units": [],
