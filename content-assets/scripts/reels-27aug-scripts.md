@@ -36,7 +36,7 @@ All numbers source-audited 26 Aug (PIX live pulls, ValuStrat AD Q2-26 PDF, Henle
 - F3 RE-HOOK (SPA on screen, unit number + price covered): "My developer? 20 percent. That's part of why I signed with them."
 - F4: And here's what almost nobody tells you: you can usually pay AHEAD of your schedule. Get yourself to the threshold early - and your exit unlocks early.
 - F5 TURN: Off-plan's fine - I bought. But the resale rule decides how trapped your money is. Read it before you sign, and pick developers whose terms respect you.
-- DEAD STOP: "Two contracts, same price, same tower. One lets you out at 20 percent. One locks you at 40. That's the difference nobody prices."
+- DEAD STOP: "One question before you sign anything: when am I allowed to sell this?"
 - Accuracy rails: verified norm 30-40% (some to 50). Saying 40 = inside band. F4 "usually" is load-bearing - do NOT claim prepay-to-unlock about the Tara SPA specifically (unverified clause).
 
 ## SHOOT PLAN
