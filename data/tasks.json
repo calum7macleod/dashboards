@@ -3504,7 +3504,7 @@
       "status": "active",
       "due": "2026-09-01",
       "created": "2026-08-31",
-      "notes": "Calum spec 31 Aug (do overnight, NOT during the day): (1) all board figures in K not M, deals list sorted newest first with K values; (2) target line 250K not 500K (chart + KPI); (3) combine 'Abu Dhabi' + 'Hudayriyat Abu Dhabi' into one area bucket; (4) more graphics - top stats strip, take-home trend, source mix visual, deals-per-month; (5) neaten layout/typography, brand system. Rules: no hardcoded data, node --check, validate against live deals.json before push.",
+      "notes": "Calum spec 31 Aug (do overnight, NOT during the day): (1) all board figures in K not M, deals list sorted newest first with K values; (2) target line 250K not 500K (chart + KPI); (3) combine 'Abu Dhabi' + 'Hudayriyat Abu Dhabi' into one area bucket; (4) more graphics - top stats strip, take-home trend, source mix visual, deals-per-month; (5) neaten layout/typography, brand system. Rules: no hardcoded data, node --check, validate against live deals.json before push. | ADDED: (6) two target lines on the bar chart - 250K floor + 500K stretch. (7) NEW CUMULATIVE LINE GRAPH: x = months of 2026, y = cumulative board; straight target line = 250K x month number (Jan 250K -> Dec 3.0M); actual cumulative line plotted against it - months that hit exactly 250K run parallel, above-target months pull away, below-target months fall behind. Show gap-to-target at latest month as a number. Reads deals.json only.",
       "completed": null,
       "snoozedUntil": null,
       "order": 234,
