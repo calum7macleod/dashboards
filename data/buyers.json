@@ -2019,8 +2019,8 @@
  },
  {
   "buyer": "Pedro",
-  "status": "Active",
-  "stage": "Offer",
+  "status": "Closed Lost",
+  "stage": "Lost",
   "date": "2026-08-20",
   "source": "Lewis (split deal)",
   "colleague": "Lewis",
@@ -2058,7 +2058,9 @@
     "date": "2026-08-25",
     "note": "Cheque sent - offer progressing to MOU/transfer."
    }
-  ]
+  ],
+  "nextTouch": null,
+  "closedDate": "2026-08-31"
  },
  {
   "buyer": "Abdulrazak Al-Ahmadi (Abdo)",
