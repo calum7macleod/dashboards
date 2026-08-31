@@ -216,13 +216,13 @@
     "nextStep": "Send listings: Town Square + Lagoons, 3-bed SR and B2B, EXCLUDE older display-AC units"
   },
   {
-    "id": "vw-aya-bilal-2908",
+    "id": "vw-bilal-2908",
     "date": "2026-08-29",
-    "buyer": "Aya or Bilal (CONFIRM - both 12:00 slot)",
+    "buyer": "Bilal",
     "unit": "4-bed + 5-bed townhouses",
     "cluster": "Lagoons",
-    "outcome": "Family primary home, avoiding ~200K rent. Dislike dark clusters (Monte Carlo/Portofino - sun fading). 4-bed is the candidate; 5-bed +1M is a financing stretch (5-bed B2B ~3.5M, SR ~4.0M). Discussed kitchen relocation reno ~25-30K USD. Told B2B that were 3.0M now ~2.7M. [Plaud 12:23, 27m]",
-    "nextStep": "Calum: confirm which buyer this was, then 4-bed shortlist in light clusters ~2.5-2.7M"
+    "outcome": "Family primary home, avoiding ~200K rent. Dislike dark clusters (Monte Carlo/Portofino - sun fading). 4-bed is the candidate; 5-bed +1M is a financing stretch (5-bed B2B ~3.5M, SR ~4.0M). Discussed kitchen relocation reno ~25-30K USD. Told B2B that were 3.0M now ~2.7M. [Plaud 12:23, 27m; calendar: Bilal confirmed, Aya cancelled]",
+    "nextStep": "4-bed shortlist in light clusters ~2.5-2.7M; confirm budget + finance"
   },
   {
     "id": "vw-hansel-2908",
@@ -248,8 +248,8 @@
     "buyer": "Farrukh",
     "unit": "5 Portofino / 4 CB (calendar 10:00 - clashed with PF)",
     "cluster": "Portofino",
-    "outcome": "No recording. Calum to confirm whether it happened.",
-    "nextStep": "Confirm outcome"
+    "outcome": "CANCELLED (calendar graphite)",
+    "nextStep": "Rebook"
   },
   {
     "id": "vw-usman-2908",
@@ -257,8 +257,8 @@
     "buyer": "Usman",
     "unit": "TBC (calendar 15:00)",
     "cluster": "Lagoons",
-    "outcome": "No recording. Calum to confirm.",
-    "nextStep": "Confirm outcome + needs"
+    "outcome": "Confirmed slot, no recording. Calum to debrief.",
+    "nextStep": "Debrief + needs"
   },
   {
     "id": "vw-emma-2908",
@@ -266,7 +266,7 @@
     "buyer": "Emma",
     "unit": "5 CB / 5 Portofino (calendar 16:00)",
     "cluster": "Costa Brava / Portofino",
-    "outcome": "No recording. Calum to confirm.",
-    "nextStep": "Confirm outcome + needs"
+    "outcome": "CANCELLED (calendar graphite)",
+    "nextStep": "Rebook"
   }
 ]
