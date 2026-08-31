@@ -175,7 +175,7 @@ CHAT ARCHIVE: full pre-migration chat history lives at data/chat-archive/ - read
 ## Segments
 - Buyer segments in play: "Offplan" (Ashna, Muaz...), "Distressed" (NEW 14 Jul - Mukesh, +91 84474 00100, owns Malta, gets ANY distressed deal on sight). When the pipeline-stages build happens, render segment sections on the Buyers tab. Distressed feed sources: call-outs hitting overdue-instalment sellers, deadline sellers (Sameer-type), bank cases.
 
-## Improvement backlog (Max-suggested, Calum-approved direction)
+## Improvement backlog -> MOVED to data/backlog.json (Parking Lot page: backlog.html). RULE: every 'save that for later' goes there, never the task board. Items below migrated 31 Aug.
 1. Buyer pipeline stages on Buyers tab (New/Early > Engaged > Viewing > Negotiating > Closing) + Offplan section - task exists, segment field seeded
 2. Video/posting tracker (where each video is posted: IG/TikTok/YouTube) - task exists
 3. Finance: income line from deals.json -> net per month view (after spend data is current)
