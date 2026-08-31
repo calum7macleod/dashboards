@@ -798,5 +798,32 @@
     "order": 30,
     "id": "suprendo-k345-3108",
     "stage": "Offer"
+  },
+  {
+    "date": "2026-08-29",
+    "status": "Sold",
+    "seller": "Samy Hamraoui",
+    "source": "TBC",
+    "rl": null,
+    "cluster": "Costa Brava",
+    "unit": "K450",
+    "matchedBuyer": "Mahmoud (via Treo / Zac Ashford)",
+    "beds": "4",
+    "note": "SOLD 31 Aug at 2.35M. Seller EID on file (fee letter). Fee 50K inc VAT by cheque - watch clearance; Treo guarantee in place.",
+    "finance": "",
+    "price": 2350000,
+    "needed": 0,
+    "diff": 0,
+    "fees": "50K inc VAT (commission + conveyancing)",
+    "responsiveness": 4,
+    "relationship": 4,
+    "unitDesire": 4,
+    "negotiation": 4,
+    "feeling": 4,
+    "score": 4,
+    "notes": "Created at close 31 Aug.",
+    "order": 31,
+    "id": "samy-k450-3108",
+    "stage": "Won"
   }
 ]
