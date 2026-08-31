@@ -1933,8 +1933,8 @@
  },
  {
   "buyer": "Saumyadeep",
-  "status": "Active",
-  "stage": "Offer",
+  "status": "Closed Lost",
+  "stage": "Lost",
   "date": "2026-08-19",
   "source": "Inbound WhatsApp",
   "colleague": "",
@@ -1967,7 +1967,9 @@
     "channel": "outreach",
     "summary": "Touch 25 Aug (round of touchpoints)"
    }
-  ]
+  ],
+  "nextTouch": null,
+  "closedDate": "2026-08-31"
  },
  {
   "buyer": "Nasreen Shanawaz",
@@ -2358,7 +2360,7 @@
  },
  {
   "buyer": "Mal Lawson",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-20",
   "source": "",
   "colleague": "",
@@ -2379,10 +2381,10 @@
   "notes": "20 Aug: Calum's BEST buyer. WhatsApp +971 58 562 7080 (contact saved 'Mal Lawson Buyer 4 CB'). Wants 4 bed Costa Brava, OK at 2.65M. Son's school is right next to Lagoons (the Stuarts, adjoining Portofino side) - strong location lock-in. Calum's read: they'll lock in with him and sign soon.",
   "id": "mal-lawson",
   "order": 1000,
-  "stage": "Offer",
+  "stage": "Lost",
   "heat": 5,
   "lastContact": "2026-08-25",
-  "nextTouch": "2026-08-21",
+  "nextTouch": null,
   "touchReason": "Heat 5 daily cadence - line up 4bed CB options around 2.65M and push to signing",
   "needSummary": "4 bed Costa Brava, ~2.65M, school next to Lagoons, ready to sign soon",
   "snoozedUntil": null,
@@ -2397,7 +2399,8 @@
     "channel": "outreach",
     "summary": "Touch 25 Aug (round of touchpoints)"
    }
-  ]
+  ],
+  "closedDate": "2026-08-31"
  },
  {
   "buyer": "Pedro",
