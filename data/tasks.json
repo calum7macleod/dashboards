@@ -3510,6 +3510,21 @@
       "order": 234,
       "top3": false,
       "owner": "Max"
+    },
+    {
+      "id": "meta-ads-connect-3108",
+      "title": "Meta ads -> Max: connect analytics + lead feed into CRM (look at later)",
+      "area": "Real Estate",
+      "priority": "low",
+      "difficulty": "medium",
+      "status": "snoozed",
+      "due": "2026-09-07",
+      "snoozedUntil": "2026-09-07",
+      "created": "2026-08-31",
+      "notes": "Two parts. (1) ANALYTICS: no native Meta connector - use Windsor.ai (lighter, Meta core) or Supermetrics via Claude connectors; both paid. First analyses: CPL by campaign, lead->viewing rate per ad (match to viewings.json), cost per closed deal. (2) LEADS INTO CRM: Meta Lead Ads -> Zapier/Make webhook -> data/leads-inbox.json in repo (or WATI once live) -> evening sweep dedupes by phone, creates buyer w/ source 'Meta ad: [campaign]', tasks same-day call. Check if an existing Zap/WATI flow already catches leads before building.",
+      "completed": null,
+      "order": 235,
+      "top3": false
     }
   ],
   "units": [],
