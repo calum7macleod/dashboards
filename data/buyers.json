@@ -1932,8 +1932,8 @@
  },
  {
   "buyer": "Saumyadeep",
-  "status": "Closed Lost",
-  "stage": "Lost",
+  "status": "Active",
+  "stage": "Offer",
   "date": "2026-08-19",
   "source": "Inbound WhatsApp",
   "colleague": "",
@@ -1966,9 +1966,7 @@
     "channel": "outreach",
     "summary": "Touch 25 Aug (round of touchpoints)"
    }
-  ],
-  "nextTouch": null,
-  "closedDate": "2026-08-31"
+  ]
  },
  {
   "buyer": "Nasreen Shanawaz",
@@ -2673,7 +2671,7 @@
   "notes": "24 Aug: JGE ads lead. WhatsApp +971 58 524 8704 (contact 'Clive JGE Ads'). Messaged - no response yet.",
   "id": "clive-jge",
   "order": 1000,
-  "stage": "New",
+  "stage": "Qualified",
   "heat": 2,
   "lastContact": "2026-08-24",
   "nextTouch": "2026-08-26",
