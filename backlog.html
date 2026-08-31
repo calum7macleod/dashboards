@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Parking Lot</title>
+<style>
+:root{--bg:#152A1F;--panel:#1E3D2F;--gold:#C9A84C;--lgold:#E8C96B;--cream:#F5EDE0;--muted:#8FA898;--div:#2E5A40}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:Calibri,Carlito,"Segoe UI",sans-serif;padding:18px;max-width:1100px;margin:auto}
+.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:700}
+h1{font-family:Palatino,"Palatino Linotype",serif;font-weight:400;font-size:28px;margin:4px 0 2px}
+.sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{background:var(--panel);border:1px solid var(--div);color:var(--cream);padding:5px 12px;border-radius:16px;font-size:12.5px;cursor:pointer}
+.chip.on{background:var(--gold);color:#152A1F;border-color:var(--gold)}
+.card{background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:11px 13px;margin-bottom:8px}
+.card h3{margin:0 0 3px;font-size:15px;color:var(--cream);font-weight:700}
+.meta{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.meta b{color:var(--lgold);font-weight:700}
+.row{font-size:13px;line-height:1.45;color:var(--cream)}
+.row span{color:var(--muted)}
+.pill{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11px;background:#12241b;color:var(--lgold);margin-left:6px}
+.status-waiting{color:#e0a94c}.status-done{color:#7dc98f}
+a{color:var(--gold)}
+</style></head><body>
+<div class="eyebrow">◆ &nbsp;Max &middot; Parking Lot &nbsp;◆</div>
+<h1>Ideas, integrations and builds we said "later" to</h1>
+<div class="sub" id="sub">Loading data/backlog.json…</div>
+<div class="filters" id="filters"></div>
+<div id="list"></div>
+<p class="sub" style="margin-top:16px"><a href="hub.html">← hub</a> · nothing here is on the task board until Calum promotes it</p>
+<script>
+let ITEMS=[],CAT='All';
+async function load(){
+  const r=await fetch('data/backlog.json?t='+Date.now()); const j=await r.json(); ITEMS=j.items||[];
+  document.getElementById('sub').textContent=ITEMS.length+' parked · updated '+(j.updated||'');
+  const cats=['All',...new Set(ITEMS.map(i=>i.category))];
+  document.getElementById('filters').innerHTML=cats.map(c=>'<div class="chip'+(c===CAT?' on':'')+'" onclick="CAT=\''+c+'\';draw()">'+c+' <span style="opacity:.7">'+(c==='All'?ITEMS.length:ITEMS.filter(i=>i.category===c).length)+'</span></div>').join('');
+  draw();
+}
+function esc(s){return String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+function draw(){
+  document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x.textContent.trim().startsWith(CAT)));
+  const its=ITEMS.filter(i=>CAT==='All'||i.category===CAT).slice().sort((a,b)=>(a.revisit||'9999').localeCompare(b.revisit||'9999'));
+  document.getElementById('list').innerHTML=its.map(i=>'<div class="card"><div class="meta"><b>'+esc(i.category)+'</b> · '+esc(i.effort||'')+' · <span class="status-'+esc((i.status||'').split(' ')[0])+'">'+esc(i.status||'parked')+'</span>'+(i.revisit?' · revisit '+esc(i.revisit):'')+'</div>'
+    +'<h3>'+esc(i.title)+'</h3>'
+    +(i.why?'<div class="row"><span>Why:</span> '+esc(i.why)+'</div>':'')
+    +(i.plan?'<div class="row"><span>Plan:</span> '+esc(i.plan)+'</div>':'')
+    +'<div class="row" style="font-size:11.5px;margin-top:3px"><span>'+esc(i.source||'')+' · '+esc(i.created||'')+'</span></div></div>').join('')||'<div class="sub">Nothing parked.</div>';
+}
+load();
+</script></body></html>
