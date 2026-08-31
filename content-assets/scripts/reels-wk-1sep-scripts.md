@@ -2,15 +2,15 @@
 Law: number or named place in frame one · re-hook every 8-10s · dead stop, no outro. Evidence from content-log: top sharers run 1:05-1:25 - test longer on whiteboards.
 Order: R2 -> R5 (desk, register on screen) -> R1 off-plan vs ready (whiteboard) -> R4 (printed guide) -> R3 (needs Saadiyat in shot). Rent-vs-buy script parked in content bank.
 
-## R1 - OFF-PLAN OR READY? (100K shot) ~1:15-1:30  [REPLACED rent-vs-buy, Calum 31 Aug]
-F1 "Off-plan or ready in Dubai? Last month off-plan cost 25% more per square foot. Here's when that's still worth it."
-F2 (whiteboard, two columns) Same money: D750K cash. Left: ready 4-bed D2.7M, mortgage on the rest. Right: off-plan, same cluster, payment plan - 750K is 25% of a D3M unit.
-F3 RE-HOOK "Now the bit nobody puts side by side." Ready: rent from day one ~D145K/yr = 5.4% yield, covers most of the mortgage. Off-plan: zero income 2-3 yrs, and you paid D1,722/ft vs D1,379 for the ready one next door.
-F4 Why buy off-plan? Leverage. Control D3M with 750K in. IF the market rises 20% by handover = D600K on a 750K stake = 80% on cash. Ready gets 20%.
-F5 RE-HOOK (chart) "One problem. The market has to rise." Off-plan growth +14.9% Dec -> +0.5% now. Ready still positive. Leverage cuts the same on the way down.
-F6 TURN Flat market: ready wins - you're paid to wait. Off-plan only wins when developer, payment plan, location line up. I bought off-plan this year - all three lined up. Most launches, they don't.
-DEAD STOP "Off-plan is a bet on growth. Ready is a bet on rent. Know which one you're making."
-ON SCREEN: PIX Jul medians off-plan D1,722 / ready D1,379 · CB 4-bed rent D145K = 5.4% gross (PIX) · off-plan YoY Dec +14.9% -> Jul +0.5%. RAIL: 20%-rise example is hypothetical - label "if".
+## R1 - OFF-PLAN OR READY? (broad, two cities, NO clusters) ~1:15-1:30
+F1 "Off-plan or ready? Off-plan costs 25% more a square foot in Dubai - and 46% more in Abu Dhabi. Here's when that's still the right call."
+F2 (whiteboard, two columns) Ready: you see it, rent it from day one, a bank lends on it. Off-plan: today's price for a building that doesn't exist, paid in slices over three years.
+F3 RE-HOOK (registers on screen) "The premium is real and it's official." Dubai last month: off-plan D1,722/ft, ready D1,379. Abu Dhabi: off-plan D2,104, ready D1,442. You pay more for the promise, everywhere.
+F4 Why pay it? Leverage - D750K controls D3M while it's built. New stock - buyers pay up for the building nobody's lived in. Both only work if prices rise before handover.
+F5 RE-HOOK (chart - the twist) "The two cities are giving opposite answers." Dubai off-plan growth +14.9% Dec -> +0.5% now. Abu Dhabi still +17.8% YoY, off-plan = 84% of everything sold.
+F6 TURN Today - Dubai: ready. 25% cheaper per foot, paid rent while you wait. Abu Dhabi: off-plan still has the growth to justify the premium - where I put my own money this year. Same question, two answers, 90 minutes apart.
+DEAD STOP "Off-plan is a bet on growth. Ready is a bet on rent. Don't make the same bet in both cities."
+ON SCREEN: Dubai PIX Jul medians · AD ValuStrat Q2-26 psf (2,104 / 1,442) · off-plan YoY Dec +14.9% -> Jul +0.5% · AD +17.8% YoY, 84% off-plan share. RAIL: leverage line illustrative - label "if".
 ## R2 - THE D442,000 LOSS
 F1 "This villa lost its owner D442,000 in 23 months. The one three doors down made D993,000."
 F2 (register on screen) Lagoons, Malta. 4-bed, 1,550 sqft. Bought 25 Sep 2024 D3,092,000. Sold 21 Aug 2026 D2,650,000.
