@@ -1871,7 +1871,7 @@
  },
  {
   "date": "2026-08-22",
-  "status": "Active",
+  "status": "Closed Won",
   "buyer": "Jayde B",
   "source": "Property Finder",
   "colleague": "Self",
@@ -1893,10 +1893,10 @@
   "notes": "Pilot, buying with wife. Viewed 22 Aug - hot, sensible, bumped to 5. Wants slightly bigger plot; on Ronnie's bigger-plot Malta unit. Đ2.5M opening budget, stretch likely. Sits on the single-row/B2B line. Mortgage NOT pre-approved - Calum open to offering before approval.",
   "id": "jayde-45",
   "order": 45,
-  "stage": "Offer",
+  "stage": "Won",
   "heat": 5,
   "lastContact": "2026-08-25",
-  "nextTouch": "2026-08-24",
+  "nextTouch": null,
   "touchReason": "Push Ronnie's Malta bigger-plot unit; start mortgage pre-approval in parallel; test stretch above 2.5M",
   "needSummary": "4-bed, bigger plot preferred. Malta (Ronnie listing) front-runner. Đ2.5M can stretch. Pilot + wife. Mortgage not started.",
   "snoozedUntil": null,
@@ -1928,7 +1928,8 @@
     "date": "2026-08-25",
     "note": "Second viewing with Calum - Town Square (outside Lagoons; widening search beyond Ronnie Malta unit)."
    }
-  ]
+  ],
+  "closedDate": "2026-08-31"
  },
  {
   "buyer": "Saumyadeep",
