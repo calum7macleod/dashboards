@@ -159,6 +159,14 @@ body{padding-bottom:40px}
     <div id="sboard"></div>
   </div>
   <div id="v-deals" class="hidden">
+    <div class="panelbox" style="margin-bottom:10px"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:8px">◆ The Numbers <span style="font-size:11px;color:var(--muted)">(live from data/deals.json · board = my share · take-home at current tier)</span></h2>
+      <div id="numKpis" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px"></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <div style="flex:2;min-width:300px"><div style="font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:4px">MONTHLY BOARD — 2026</div><div id="numChart"></div></div>
+        <div style="flex:1;min-width:220px"><div style="font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:4px">MONTH BY MONTH</div><div id="numTable" style="font-size:12.5px"></div></div>
+      </div>
+      <div id="numMix" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"></div>
+    </div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Closed Won — every deal, newest first</h2>
       <div id="dealsTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
       <div id="dealsList"></div></div>
@@ -690,7 +698,55 @@ function renderClosedWon(){
   const ds=DEALS.filter(d=>!d.ownUnit).slice().sort((a,b)=>dealDate(b).localeCompare(dealDate(a))).slice(0,8);
   el.innerHTML=ds.map(d=>'<span style="display:inline-block;margin:2px 8px 2px 0;padding:3px 8px;background:var(--panel);border:1px solid var(--div);border-radius:8px"><b style="color:var(--cream)">'+(d.buyer||'?')+'</b> <span style="color:var(--muted)">'+(d.unit||'')+' '+dealDate(d)+'</span> <span style="color:var(--lgold)">'+fmtB(+d.myBoard||0)+'</span></span>').join('');
 }
+const MONTH_TARGET=500000; // board target per month (Calum, Aug 26)
+const MN=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+function dealYM(d){ // -> 'YYYY-MM' from date or month name
+  const dt=String(d.date||''); if(/^\d{4}-\d{2}/.test(dt)) return dt.slice(0,7);
+  const m=String(d.month||'').toLowerCase(); const i=MN.findIndex(x=>m.startsWith(x));
+  const y=(m.match(/\d{2,4}/)||[])[0]; const yy=y?(y.length===2?'20'+y:y):'2026';
+  return i>=0?(yy+'-'+String(i+1).padStart(2,'0')):'';
+}
+function kpi(l,v,sub,c){return '<div style="flex:1;min-width:130px;background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:9px 11px"><div style="font-size:10px;letter-spacing:2px;color:var(--muted)">'+l+'</div><div style="font-size:19px;font-weight:700;color:'+(c||'var(--lgold)')+'">'+v+'</div>'+(sub?'<div style="font-size:11px;color:var(--muted)">'+sub+'</div>':'')+'</div>';}
+function renderNumbers(){
+  if(!$('numKpis')) return;
+  const ds=DEALS.filter(d=>!d.ownUnit), B=d=>+d.myBoard||0, T=d=>+d.myTakeHome||0;
+  const now=today().slice(0,7), yr=now.slice(0,4);
+  const byM={}; ds.forEach(d=>{const k=dealYM(d); if(!k) return; (byM[k]=byM[k]||{n:0,b:0,t:0,d:[]}); byM[k].n++; byM[k].b+=B(d); byM[k].t+=T(d); byM[k].d.push(d);});
+  const cur=byM[now]||{n:0,b:0,t:0,d:[]};
+  const ytd=Object.keys(byM).filter(k=>k.startsWith(yr)).reduce((a,k)=>({n:a.n+byM[k].n,b:a.b+byM[k].b,t:a.t+byM[k].t}),{n:0,b:0,t:0});
+  const months=Object.keys(byM).filter(k=>k.startsWith(yr)).sort();
+  const avg=months.length?ytd.b/months.length:0;
+  const unpaid=ds.filter(d=>d.paid===false).reduce((s,d)=>s+B(d),0);
+  const pct=Math.round(cur.b/MONTH_TARGET*100);
+  $('numKpis').innerHTML=kpi('THIS MONTH BOARD',fmtK(cur.b),cur.n+' deal'+(cur.n===1?'':'s')+' · '+pct+'% of '+fmtK(MONTH_TARGET),pct>=100?'#7dc98f':'var(--lgold)')
+    +kpi('THIS MONTH TAKE-HOME',fmtK(cur.t),'at '+Math.round(TIER*100)+'% tier','var(--cream)')
+    +kpi(yr+' YTD BOARD',fmtK(ytd.b),ytd.n+' deals · avg '+fmtK(avg)+'/mo')
+    +kpi(yr+' YTD TAKE-HOME',fmtK(ytd.t),'','var(--cream)')
+    +kpi('UNPAID BOARD',fmtK(unpaid),'flagged paid:false','#e0a94c');
+  // SVG bar chart, all 12 months of current year
+  const W=560,H=170,pl=44,pb=26,pt=14,bw=(W-pl-10)/12;
+  const vals=[...Array(12)].map((_,i)=>{const k=yr+'-'+String(i+1).padStart(2,'0');return byM[k]?byM[k].b:0;});
+  const mx=Math.max(MONTH_TARGET,...vals)*1.08;
+  const y=v=>pt+(H-pt-pb)*(1-v/mx);
+  let svg='<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-width:'+W+'px;display:block">';
+  [0.25,0.5,0.75,1].forEach(f=>{const v=mx*f/1.08; svg+='<line x1="'+pl+'" x2="'+W+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="var(--div)" stroke-width="1"/><text x="'+(pl-4)+'" y="'+(y(v)+4)+'" font-size="9" fill="var(--muted)" text-anchor="end">'+Math.round(v/1000)+'K</text>';});
+  svg+='<line x1="'+pl+'" x2="'+W+'" y1="'+y(MONTH_TARGET)+'" y2="'+y(MONTH_TARGET)+'" stroke="var(--gold)" stroke-dasharray="4 3" stroke-width="1"/><text x="'+(W-2)+'" y="'+(y(MONTH_TARGET)-3)+'" font-size="9" fill="var(--gold)" text-anchor="end">target '+Math.round(MONTH_TARGET/1000)+'K</text>';
+  vals.forEach((v,i)=>{const x=pl+i*bw+4,w=bw-8,k=yr+'-'+String(i+1).padStart(2,'0'),isCur=k===now,fut=k>now;
+    if(v>0) svg+='<rect x="'+x+'" y="'+y(v)+'" width="'+w+'" height="'+(y(0)-y(v))+'" rx="3" fill="'+(v>=MONTH_TARGET?'#7dc98f':isCur?'var(--lgold)':'var(--gold)')+'" opacity="'+(fut?0.3:1)+'"><title>'+MN[i]+' '+fmtK(v)+'</title></rect>';
+    if(v>0) svg+='<text x="'+(x+w/2)+'" y="'+(y(v)-3)+'" font-size="9" fill="var(--cream)" text-anchor="middle">'+Math.round(v/1000)+'K</text>';
+    svg+='<text x="'+(x+w/2)+'" y="'+(H-8)+'" font-size="10" fill="'+(isCur?'var(--lgold)':'var(--muted)')+'" text-anchor="middle">'+MN[i].toUpperCase()+'</text>';});
+  svg+='</svg>'; $('numChart').innerHTML=svg;
+  // month table (newest first)
+  $('numTable').innerHTML=months.slice().reverse().map(k=>{const m=byM[k];const hit=m.b>=MONTH_TARGET;return '<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--div);padding:5px 2px"><span style="color:var(--cream)">'+MN[+k.slice(5)-1].toUpperCase()+' '+k.slice(2,4)+' <span style="color:var(--muted)">·'+m.n+'</span></span><span><b style="color:'+(hit?'#7dc98f':'var(--lgold)')+'">'+fmtK(m.b)+'</b> <span style="color:var(--muted)">/ '+fmtK(m.t)+'</span></span></div>';}).join('')||'<div style="color:var(--muted)">No deals this year</div>';
+  // mix: by segment / by source / avg deal
+  const agg=(f)=>{const o={};ds.forEach(d=>{const k=f(d)||'Other';o[k]=(o[k]||0)+B(d);});return Object.entries(o).sort((a,b)=>b[1]-a[1]);};
+  const chips=(title,arr)=>'<div style="flex:1;min-width:160px;background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:8px 10px"><div style="font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:4px">'+title+'</div>'+arr.slice(0,5).map(([k,v])=>'<div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:var(--cream)">'+k+'</span><span style="color:var(--lgold)">'+fmtK(v)+'</span></div>').join('')+'</div>';
+  const avgDeal=ds.length?ds.reduce((s,d)=>s+B(d),0)/ds.length:0, avgPrice=ds.length?ds.reduce((s,d)=>s+(+d.price||0),0)/ds.length:0;
+  $('numMix').innerHTML=chips('BY SEGMENT',agg(d=>d.segment))+chips('BY SOURCE',agg(d=>d.sourceCat||d.buyerSource))+chips('BY AREA',agg(d=>d.area||d.cluster))
+    +'<div style="flex:1;min-width:160px;background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:8px 10px"><div style="font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:4px">PER DEAL</div><div style="font-size:12px;color:var(--cream)">avg board <b style="color:var(--lgold)">'+fmtK(avgDeal)+'</b></div><div style="font-size:12px;color:var(--cream)">avg price <b style="color:var(--lgold)">'+fmtK(avgPrice)+'</b></div><div style="font-size:12px;color:var(--cream)">deals to target <b style="color:var(--lgold)">'+(avgDeal?Math.ceil(MONTH_TARGET/avgDeal):'-')+'/mo</b></div></div>';
+}
 function renderDeals(){
+  renderNumbers();
   const el=$('dealsList'); if(!el) return;
   const ds=DEALS.filter(d=>!d.ownUnit).slice().sort((a,b)=>dealDate(b).localeCompare(dealDate(a)));
   const board=ds.reduce((s,d)=>s+(+d.myBoard||0),0), take=ds.reduce((s,d)=>s+(+d.myTakeHome||0),0);
