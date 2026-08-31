@@ -3510,6 +3510,21 @@
       "order": 234,
       "top3": false,
       "owner": "Max"
+    },
+    {
+      "id": "film-wk1sep-3108",
+      "title": "Film wk-1-Sep batch: 442K loss, off-plan vs ready, UK guide, Bilbao (4 reels)",
+      "area": "Content",
+      "priority": "high",
+      "difficulty": "hard",
+      "status": "active",
+      "due": "2026-09-03",
+      "created": "2026-08-31",
+      "notes": "Scripts + hooks locked: content-assets/scripts/reels-wk-1sep-scripts.md. Bilbao needs Saadiyat/Reem in shot. Guide reel promises 5 mistakes - confirm the guide names five.",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 235,
+      "top3": false
     }
   ],
   "units": [],
@@ -3853,6 +3868,13 @@
       "notes": "Full script in git history of content-assets/scripts/reels-wk-1sep-scripts.md (31 Aug). Swapped out for off-plan vs ready. Alt hook: 'Your landlord will take D2.3M off you in ten years.'",
       "created": "2026-08-31",
       "pillar": "Mechanisms"
+    },
+    {
+      "title": "REEL (scripted): Three times I talked buyers out of spending more (Hessa / 5-bed stretch / 3.5M gone Monday)",
+      "status": "Ready to film",
+      "notes": "Cut from wk 1 Sep. Script in git history of reels-wk-1sep-scripts.md.",
+      "created": "2026-08-31",
+      "pillar": "Receipts"
     }
   ],
   "buildLog": []
