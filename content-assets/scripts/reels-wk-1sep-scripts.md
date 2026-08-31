@@ -1,17 +1,16 @@
 # SHOOT DOC - WEEK OF 1 SEP 2026 (5 reels, Calum-approved topics 31 Aug)
 Law: number or named place in frame one · re-hook every 8-10s · dead stop, no outro. Evidence from content-log: top sharers run 1:05-1:25 - test longer on whiteboards.
-Order: R2 -> R5 (desk, register on screen) -> R1 (whiteboard) -> R4 (printed guide) -> R3 (needs Saadiyat in shot).
+Order: R2 -> R5 (desk, register on screen) -> R1 off-plan vs ready (whiteboard) -> R4 (printed guide) -> R3 (needs Saadiyat in shot). Rent-vs-buy script parked in content bank.
 
-## R1 - RENT VS BUY (100K shot) ~1:15-1:30
-F1 "Rent vs buy in Dubai. I ran ten years of real numbers. Here's the year it flips."
-F2 Real buyer this weekend: family, D200K/yr rent for a 4-bed. Same 4-bed to buy: D2.7M.
-F3 RE-HOOK "Everyone stops here - 2.7M sounds impossible. Watch." 20% + fees ~D740K cash in. Mortgage on the rest ~D11,400/mo = D137K/yr. + service charge ~ D155K all in.
-F4 Year one: rent 200 vs own 155 - AND 50 of that is paying down your own loan. Landlord gets 200. You'd keep 50.
-F5 RE-HOOK Ten years, rent +3%/yr (conservative). Rent paid D2.3M, gone. Owning: D1.55M paid, D590K now equity - assuming the house is worth exactly what you paid. Zero growth.
-F6 TURN Add back what the deposit could've earned in a bank: still ~D1M better off buying. Flips in year three. Before the house goes up a dirham.
-DEAD STOP "Rent isn't cheaper. It's just paid in smaller pieces."
-ON SCREEN: 3.99% / 25 yrs / rent +3% pa / 0% price growth / deposit opp cost 4%. Rail: say "around" - it's a model.
-
+## R1 - OFF-PLAN OR READY? (100K shot) ~1:15-1:30  [REPLACED rent-vs-buy, Calum 31 Aug]
+F1 "Off-plan or ready in Dubai? Last month off-plan cost 25% more per square foot. Here's when that's still worth it."
+F2 (whiteboard, two columns) Same money: D750K cash. Left: ready 4-bed D2.7M, mortgage on the rest. Right: off-plan, same cluster, payment plan - 750K is 25% of a D3M unit.
+F3 RE-HOOK "Now the bit nobody puts side by side." Ready: rent from day one ~D145K/yr = 5.4% yield, covers most of the mortgage. Off-plan: zero income 2-3 yrs, and you paid D1,722/ft vs D1,379 for the ready one next door.
+F4 Why buy off-plan? Leverage. Control D3M with 750K in. IF the market rises 20% by handover = D600K on a 750K stake = 80% on cash. Ready gets 20%.
+F5 RE-HOOK (chart) "One problem. The market has to rise." Off-plan growth +14.9% Dec -> +0.5% now. Ready still positive. Leverage cuts the same on the way down.
+F6 TURN Flat market: ready wins - you're paid to wait. Off-plan only wins when developer, payment plan, location line up. I bought off-plan this year - all three lined up. Most launches, they don't.
+DEAD STOP "Off-plan is a bet on growth. Ready is a bet on rent. Know which one you're making."
+ON SCREEN: PIX Jul medians off-plan D1,722 / ready D1,379 · CB 4-bed rent D145K = 5.4% gross (PIX) · off-plan YoY Dec +14.9% -> Jul +0.5%. RAIL: 20%-rise example is hypothetical - label "if".
 ## R2 - THE D442,000 LOSS
 F1 "This villa lost its owner D442,000 in 23 months. The one three doors down made D993,000."
 F2 (register on screen) Lagoons, Malta. 4-bed, 1,550 sqft. Bought 25 Sep 2024 D3,092,000. Sold 21 Aug 2026 D2,650,000.
