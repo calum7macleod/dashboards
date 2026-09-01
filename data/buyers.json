@@ -65,7 +65,7 @@
  },
  {
   "date": "2026-08-01",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Rohan",
   "source": "Bayut",
   "colleague": "Self",
@@ -87,10 +87,10 @@
   "notes": "10 Aug: reached out again - falling away. Dropped to 3. Bin candidate if no response to next touch. | Wants SINGLE ROW (owns B2B in Mudon) | Max 3.5M - offered best CB SR at 3.7M (3.65 achievable) | Said over budget - working it",
   "id": "rohan-27",
   "order": 2,
-  "stage": "Qualified",
+  "stage": "Lost",
   "heat": 3,
   "lastContact": "2026-08-05",
-  "nextTouch": "2026-08-05",
+  "nextTouch": null,
   "touchReason": "Viewing Mon 3 Aug 5pm at DAMAC Lagoons main gate - confirm on the day; also owes him the Malta handover date",
   "needSummary": "5-bed single row, Costa Brava/Malta, budget max 3.5M (may stretch), rejects back-to-back",
   "snoozedUntil": null,
@@ -128,7 +128,8 @@
   "purpose": "End-user",
   "maxScore": 3,
   "maxScoreWhy": "Agreed 3 (was higher): re-contacted 10 Aug, engagement fading. One more revival attempt then archive - do not let him occupy attention at 3.65M phantom value.",
-  "maxScoreDate": "2026-08-03"
+  "maxScoreDate": "2026-08-03",
+  "closedDate": "2026-09-01"
  },
  {
   "date": "2026-07-08",
