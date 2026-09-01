@@ -2816,7 +2816,7 @@
  },
  {
   "buyer": "Sumaira Payel",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-22",
   "source": "Ads",
   "colleague": "",
@@ -2837,10 +2837,10 @@
   "notes": "24 Aug PM: Alaya confirmed - sent her Mike's Alaya options. | 24 Aug: Now thinking ALAYA instead of/alongside Cedarwood South. | 22 Aug: Ads lead (contact saved 'Sumaira Payel JGE 2 Ads 12m' - JGE ads campaign, 12m timeline per contact name). WhatsApp +971 56 478 7788. Calum sent Cedarwood Estates South masterplan page, highlighted plot V12-189 on map, and JGE sales offer PDF for unit V-189 (sales-offer-22082026). Awaiting her reaction.",
   "id": "sumaira-payel",
   "order": 1009,
-  "stage": "Qualified",
+  "stage": "Lost",
   "heat": 3,
   "lastContact": "2026-08-25",
-  "nextTouch": "2026-08-26",
+  "nextTouch": null,
   "touchReason": "Chase reaction to Mike's Alaya options",
   "needSummary": "JGE - now leaning Alaya (was Cedarwood South V-189), budget/beds TBC, ~12m timeline",
   "snoozedUntil": null,
@@ -2865,7 +2865,8 @@
     "channel": "outreach",
     "summary": "Touch 25 Aug (round of touchpoints)"
    }
-  ]
+  ],
+  "closedDate": "2026-09-01"
  },
  {
   "buyer": "Islam Tolba",
