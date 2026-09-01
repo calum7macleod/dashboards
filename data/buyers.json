@@ -1839,8 +1839,8 @@
  },
  {
   "date": "2026-08-05",
-  "status": "Active",
-  "stage": "Qualified",
+  "status": "Closed Lost",
+  "stage": "Lost",
   "buyer": "Toufik & Morgane",
   "phone": "",
   "source": "Unknown - met in person 5 Aug",
@@ -1873,7 +1873,9 @@
     "channel": "outreach",
     "summary": "Touch 25 Aug (round of touchpoints)"
    }
-  ]
+  ],
+  "nextTouch": null,
+  "closedDate": "2026-09-01"
  },
  {
   "date": "2026-08-22",
