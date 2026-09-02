@@ -260,7 +260,7 @@ function fillClusterFilter(){const cs=[...new Set([...BUYERS.flatMap(b=>[b.clust
   if($('p-cluster'))$('p-cluster').innerHTML=opts;}
 function syncHeatFromScore(){BUYERS.forEach(b=>{if(typeof b.score==='number'&&b.score>1.01)b.heat=Math.min(5,Math.max(1,Math.round(b.score)));else if(typeof b.score==='number'&&b.score>0){b.score=Math.min(5,Math.max(1,Math.round(b.score*5)));b.heat=b.score;}});}
 const ntClass=nt=>!nt?'ok':nt<today()?'over':nt===today()?'today':'ok';
-const fmtB=b=>b?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'';
+const fmtB=b=>b?(Math.abs(b)>=1e6?'Đ'+(b/1e6).toFixed(2).replace(/\.?0+$/,'')+'M':'Đ'+Math.round(b/1000).toLocaleString()+'K'):'';
 let DEALS=[],DLD=[],OFFERS=[],ARCH=[],BOARDPCT=0.02,TIER=0.65; // board 2% (bank-reconciled, Calum 3 Aug); tier: Q3-26 65%, Q4-26 70%
 function calcComm(){/* myBoard field = gross deal comm, not Calum's board - do NOT derive from it. 2% confirmed vs take-home. */}
 const commOf=v=>v?Math.round(v*BOARDPCT*TIER):0;
@@ -784,15 +784,26 @@ function renderDeals(){
   const el=$('dealsList'); if(!el) return;
   const ds=DEALS.filter(d=>!d.ownUnit).slice().sort((a,b)=>dealDate(b).localeCompare(dealDate(a)));
   const board=ds.reduce((s,d)=>s+(+d.myBoard||0),0), take=ds.reduce((s,d)=>s+(+d.myTakeHome||0),0);
-  const yr=ds.filter(d=>dealDate(d).startsWith('2026'));
-  $('dealsTotals').innerHTML=ds.length+' deals \u00b7 board <b style="color:var(--lgold)">'+fmtB(board)+'</b> \u00b7 take-home <b style="color:var(--cream)">'+fmtB(take)+'</b> \u00b7 2026: '+yr.length+' deals';
-  el.innerHTML=ds.map(function(d){
+  const yr=ds.filter(d=>dealDate(d).startsWith('2026')), unpaid=ds.filter(d=>d.paid===false);
+  $('dealsTotals').innerHTML=ds.length+' deals \u00b7 board <b style="color:var(--lgold)">'+fmtB(board)+'</b> \u00b7 take-home <b style="color:var(--cream)">'+fmtB(take)+'</b> \u00b7 2026: '+yr.length+' deals \u00b7 <span style="color:#e0a94c">'+unpaid.length+' unpaid ('+fmtB(unpaid.reduce((s,d)=>s+(+d.myBoard||0),0))+')</span>';
+  let lastM='', html='';
+  ds.forEach(function(d){
+    var ym=dealYM(d), mlab=ym?MN[+ym.slice(5)-1].toUpperCase()+' '+ym.slice(2,4):'';
+    if(mlab!==lastM){ if(lastM) html+='</div>'; lastM=mlab;
+      var mm=ds.filter(x=>dealYM(x)===ym), mb=mm.reduce((s,x)=>s+(+x.myBoard||0),0);
+      html+='<div style="margin-top:10px"><div style="display:flex;justify-content:space-between;font-size:10px;letter-spacing:2px;color:var(--gold);padding:4px 2px;border-bottom:1px solid var(--gold)"><span>'+mlab+' \u00b7 '+mm.length+' DEAL'+(mm.length===1?'':'S')+'</span><span>'+fmtB(mb)+'</span></div>'; }
+    var sides=[d.buyerSide&&String(d.buyerSide).toLowerCase().includes('calum')?'B':'',d.sellerSide&&String(d.sellerSide).toLowerCase().includes('calum')?'S':''].filter(Boolean).join('+');
     var pm=d.payMonth?(' \u00b7 pays <b style="color:var(--lgold)">'+d.payMonth+'</b>'):'';
-    var paid=d.paid===true?'<span style="color:#7dc98f">PAID</span>':(d.paid===false?'<span style="color:var(--muted)">unpaid</span>':'');
-    return '<div style="border-bottom:1px solid var(--div);padding:8px 2px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap">'
-      +'<div><b style="color:var(--cream)">'+(d.buyer||'?')+'</b> <span style="color:var(--muted)">'+(d.unit||'')+' \u00b7 '+dealDate(d)+' \u00b7 '+(d.segment||'')+'</span></div>'
-      +'<div style="text-align:right"><span style="color:var(--lgold)">'+fmtB(+d.myBoard||0)+'</span> board \u00b7 '+fmtB(+d.myTakeHome||0)+' take'+pm+' '+paid+'</div></div>';
-  }).join('')||'<div style="color:var(--muted)">No deals yet</div>';
+    var paid=d.paid===true?'<span style="background:#1f4a2c;color:#7dc98f;padding:1px 7px;border-radius:9px;font-size:10px">PAID</span>':(d.paid===false?'<span style="background:#3d2f12;color:#e0a94c;padding:1px 7px;border-radius:9px;font-size:10px">UNPAID</span>':'');
+    var src=(d.sourceCat||d.buyerSource||'')+(d.otherBroker&&d.otherBroker!=='Self'?' \u00b7 w/ '+d.otherBroker:'');
+    html+='<div style="border-bottom:1px solid var(--div);padding:8px 2px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center">'
+      +'<div><b style="color:var(--cream)">'+(d.buyer||'?')+'</b>'+(d.seller?' <span style="color:var(--muted)">/ '+d.seller+'</span>':'')
+      +' <span style="color:var(--muted)">'+(d.unit||'')+(d.cluster?' \u00b7 '+d.cluster:'')+' \u00b7 '+dealDate(d)+'</span>'
+      +'<div style="font-size:11px;color:var(--muted)">'+(d.price?'price '+fmtB(+d.price)+' \u00b7 ':'')+(sides?'sides '+sides+' \u00b7 ':'')+(d.segment||'')+(src?' \u00b7 '+src:'')+'</div></div>'
+      +'<div style="text-align:right;white-space:nowrap"><b style="color:var(--lgold);font-size:15px">'+fmtB(+d.myBoard||0)+'</b> <span style="color:var(--muted);font-size:11px">board</span> \u00b7 <b style="color:var(--cream)">'+fmtB(+d.myTakeHome||0)+'</b> <span style="color:var(--muted);font-size:11px">take</span>'+pm+' '+paid+'</div></div>';
+  });
+  if(lastM) html+='</div>';
+  el.innerHTML=html||'<div style="color:var(--muted)">No deals yet</div>';
 }
 function renderOffers(){
   const el=$('offersList'); if(!el) return;
