@@ -731,7 +731,7 @@ function renderNumbers(){
   const ytd=months.reduce((a,k)=>({n:a.n+byM[k].n,b:a.b+byM[k].b,t:a.t+byM[k].t}),{n:0,b:0,t:0});
   const mIdx=+now.slice(5), dayFrac=Math.min(1,(+today().slice(8,10))/30); const paceLine=TARGET_FLOOR*((mIdx-1)+dayFrac); const gap=ytd.b-paceLine;
   const best=months.slice().sort((x,y)=>byM[y].b-byM[x].b)[0];
-  const unpaid=ds.filter(d=>d.paid===false).reduce((s,d)=>s+B(d),0);
+  const unpaid=ds.filter(d=>d.paid!==true).reduce((s,d)=>s+B(d),0);
   const avgDeal=ds.length?ds.reduce((s,d)=>s+B(d),0)/ds.length:0;
   $('numTop').innerHTML=
     stat('THIS MONTH',K(cur.b),cur.n+' deal'+(cur.n===1?'':'s')+' · '+Math.round(cur.b/TARGET_FLOOR*100)+'% of floor',cur.b>=TARGET_STRETCH?'#7dc98f':cur.b>=TARGET_FLOOR?'var(--lgold)':'var(--cream)')
@@ -740,7 +740,7 @@ function renderNumbers(){
    +stat('vs 250K PACE',(gap>=0?'+':'')+K(gap),(gap>=0?'ahead of the line':'behind the line')+' · pace '+K(paceLine),gap>=0?'#7dc98f':'#f0883e')
    +stat('BEST MONTH',best?K(byM[best].b):'—',best?MN[+best.slice(5)-1].toUpperCase()+' · '+byM[best].n+' deals':'')
    +stat('AVG / DEAL',K(avgDeal),Math.ceil(TARGET_FLOOR/(avgDeal||1))+' deals = floor · '+Math.ceil(TARGET_STRETCH/(avgDeal||1))+' = stretch','var(--cream)')
-   +stat('UNPAID',K(unpaid),'board flagged paid:false','#e0a94c');
+   +stat('UNPAID',K(unpaid),'board not yet received','#e0a94c');
   // ---- monthly bars with two target lines
   const W=600,H=190,pl=46,pb=26,pt=16,bw=(W-pl-10)/12;
   const vals=[...Array(12)].map((_,i)=>{const k=yr+'-'+String(i+1).padStart(2,'0');return byM[k]?byM[k].b:0;});
@@ -784,7 +784,7 @@ function renderDeals(){
   const el=$('dealsList'); if(!el) return;
   const ds=DEALS.filter(d=>!d.ownUnit).slice().sort((a,b)=>dealDate(b).localeCompare(dealDate(a)));
   const board=ds.reduce((s,d)=>s+(+d.myBoard||0),0), take=ds.reduce((s,d)=>s+(+d.myTakeHome||0),0);
-  const yr=ds.filter(d=>dealDate(d).startsWith('2026')), unpaid=ds.filter(d=>d.paid===false);
+  const yr=ds.filter(d=>dealDate(d).startsWith('2026')), unpaid=ds.filter(d=>d.paid!==true);
   $('dealsTotals').innerHTML=ds.length+' deals \u00b7 board <b style="color:var(--lgold)">'+fmtB(board)+'</b> \u00b7 take-home <b style="color:var(--cream)">'+fmtB(take)+'</b> \u00b7 2026: '+yr.length+' deals \u00b7 <span style="color:#e0a94c">'+unpaid.length+' unpaid ('+fmtB(unpaid.reduce((s,d)=>s+(+d.myBoard||0),0))+')</span>';
   let lastM='', html='';
   ds.forEach(function(d){
@@ -794,13 +794,13 @@ function renderDeals(){
       html+='<div style="margin-top:10px"><div style="display:flex;justify-content:space-between;font-size:10px;letter-spacing:2px;color:var(--gold);padding:4px 2px;border-bottom:1px solid var(--gold)"><span>'+mlab+' \u00b7 '+mm.length+' DEAL'+(mm.length===1?'':'S')+'</span><span>'+fmtB(mb)+'</span></div>'; }
     var sides=[d.buyerSide&&String(d.buyerSide).toLowerCase().includes('calum')?'B':'',d.sellerSide&&String(d.sellerSide).toLowerCase().includes('calum')?'S':''].filter(Boolean).join('+');
     var pm=d.payMonth?(' \u00b7 pays <b style="color:var(--lgold)">'+d.payMonth+'</b>'):'';
-    var paid=d.paid===true?'<span style="background:#1f4a2c;color:#7dc98f;padding:1px 7px;border-radius:9px;font-size:10px">PAID</span>':(d.paid===false?'<span style="background:#3d2f12;color:#e0a94c;padding:1px 7px;border-radius:9px;font-size:10px">UNPAID</span>':'');
+    var paid=d.paid===true?'<span style="background:#1f4a2c;color:#7dc98f;padding:1px 7px;border-radius:9px;font-size:10px">PAID'+(d.paidDate?' '+d.paidDate:'')+'</span>':'<span style="background:#3d2f12;color:#e0a94c;padding:1px 7px;border-radius:9px;font-size:10px">UNPAID</span>';
     var src=(d.sourceCat||d.buyerSource||'')+(d.otherBroker&&d.otherBroker!=='Self'?' \u00b7 w/ '+d.otherBroker:'');
     html+='<div style="border-bottom:1px solid var(--div);padding:8px 2px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center">'
       +'<div><b style="color:var(--cream)">'+(d.buyer||'?')+'</b>'+(d.seller?' <span style="color:var(--muted)">/ '+d.seller+'</span>':'')
       +' <span style="color:var(--muted)">'+(d.unit||'')+(d.cluster?' \u00b7 '+d.cluster:'')+' \u00b7 '+dealDate(d)+'</span>'
       +'<div style="font-size:11px;color:var(--muted)">'+(d.price?'price '+fmtB(+d.price)+' \u00b7 ':'')+(sides?'sides '+sides+' \u00b7 ':'')+(d.segment||'')+(src?' \u00b7 '+src:'')+'</div></div>'
-      +'<div style="text-align:right;white-space:nowrap"><b style="color:var(--lgold);font-size:15px">'+fmtB(+d.myBoard||0)+'</b> <span style="color:var(--muted);font-size:11px">board</span> \u00b7 <b style="color:var(--cream)">'+fmtB(+d.myTakeHome||0)+'</b> <span style="color:var(--muted);font-size:11px">take</span>'+pm+' '+paid+'</div></div>';
+      +'<div style="text-align:right;white-space:nowrap"><b style="color:var(--lgold);font-size:15px">'+fmtB(+d.myBoard||0)+'</b> <span style="color:var(--muted);font-size:11px">board</span> \u00b7 <b style="color:var(--cream)">'+fmtB(+d.myTakeHome||0)+'</b> <span style="color:var(--muted);font-size:11px">take-home</span>'+pm+' '+paid+'</div></div>';
   });
   if(lastM) html+='</div>';
   el.innerHTML=html||'<div style="color:var(--muted)">No deals yet</div>';
