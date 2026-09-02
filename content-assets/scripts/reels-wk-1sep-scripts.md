@@ -1,4 +1,5 @@
-# SHOOT DOC - WEEK OF 1 SEP 2026 - FINAL v2 (4 reels, all frames Calum-approved 31 Aug)
+# SHOOT DOC - WEEK OF 1 SEP 2026 - v3 (2 Sep)
+STATUS: R1 442K Loss FILMED · R4 Bilbao FILMED · R2 Off-plan/Ready TO FILM · R3 UK Guide TO FILM · R5 Anti-Pitch ADDED (locked 2 Sep)
 Law: number/place in frame one · re-hook every 8-10s · dead stop. Top sharers on this account run 1:05-1:25.
 Order: R1 (desk, register) -> R2 (whiteboard) -> R3 (printed guide) -> R4 (Saadiyat + Reem in shot, next AD trip)
 
@@ -43,3 +44,14 @@ F6 (cut to Saadiyat) So why will it work here? Count. Louvre - open. Zayed Natio
 F7 TURN (Reem in shot) Bilbao's quiet winners owned the homes nearest the museum. Same rule here. I put my own money on that side of the water this year.
 DEAD STOP "Bilbao had one Guggenheim. Price it accordingly."
 SOURCES: Forbes 2002 / Yale Global (visitors, EUR500M, EUR100M tax, 82%); Vicario & Martinez Monje 2003 Urban Studies (+104% 1997-2002, Abandoibarra >EUR6,000/m2 = EUR557/sqft by mid-1999); Abandoibarra = reclaimed port/shipyard land. RAILS: no Guggenheim AD opening date; Spain had a national boom in the window - say "doubled", let Abandoibarra carry the museum effect.
+
+## R5 - THE ANTI-PITCH: WHO SHOULDN'T BUY DUBAI [LOCKED 2 Sep] (desk/whiteboard, list builds on screen)
+F1 "Everyone's telling UK landlords to buy Dubai. Here's the honest list of who shouldn't."
+F2 One: if you need the money back inside three years. ~7% to get in, 2% to get out. Short holds get eaten alive.
+F3 RE-HOOK Two: if you're buying because of a video. Mine included. A launch pitch is not a location. If you can't say why that street, don't wire anything.
+F4 Three: if a 12-month delay or a 15% dip would hurt. Both happen here. Both survivable - if you planned. If you didn't, you're the seller at the bottom.
+F5 RE-HOOK Four: if you need income from day one but you're looking at off-plan. Off-plan pays nothing for three years. Not a flaw. The product.
+F6 Five: if the only reason is escaping UK tax. Zero tax on a bad investment is still a bad investment. Tax is the bonus, never the reason.
+F7 TURN Who should? Five-year horizon, cash they won't need, a street they can name, a contract they've read. That person does very well here. I work with them every week.
+DEAD STOP "Send this to the friend who's about to buy. It'll either save them, or confirm they're ready."
+RAILS: 7% in (4% DLD + 2% agency + fees), 2% out, 12-month RERA tolerance window - all verified. Share instruction is the dead stop; no separate CTA.
