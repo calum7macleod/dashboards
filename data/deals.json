@@ -23,7 +23,8 @@
     "sellerSide": "External agent",
     "splitType": "External agent + Nathan",
     "sourceCat": "Portals",
-    "segment": "Secondary"
+    "segment": "Secondary",
+    "payMonth": "September"
   },
   {
     "date": "2026-08-05",
@@ -44,7 +45,8 @@
     "id": "umer-bl907",
     "paid": false,
     "sourceCat": "Portals",
-    "segment": "Secondary"
+    "segment": "Secondary",
+    "payMonth": "September"
   },
   {
     "date": "2026-07-27",
@@ -114,7 +116,8 @@
     "splitType": "Internal - Lagoons team",
     "sourceCat": "Callout",
     "segment": "Secondary",
-    "notes": "Seller from CALLING OUT; buyer via Georgia (Lagoons team)."
+    "notes": "Seller from CALLING OUT; buyer via Georgia (Lagoons team).",
+    "payMonth": "September"
   },
   {
     "date": "2026-07-22",
@@ -148,7 +151,8 @@
     "sellerSide": "Calum",
     "splitType": "External agent",
     "sourceCat": "Unknown",
-    "segment": "Secondary"
+    "segment": "Secondary",
+    "payMonth": "September"
   },
   {
     "date": "2026-06-09",
@@ -181,7 +185,8 @@
     "sellerSide": "Calum",
     "splitType": null,
     "sourceCat": "Portals",
-    "segment": "Secondary"
+    "segment": "Secondary",
+    "payMonth": "September"
   },
   {
     "date": "2026-06-08",
@@ -213,7 +218,8 @@
     "sourceCat": "Socials",
     "segment": "Offplan",
     "buyerSide": "Calum",
-    "sellerSide": "Developer"
+    "sellerSide": "Developer",
+    "payMonth": "September"
   },
   {
     "date": "2026-06-08",
@@ -245,7 +251,8 @@
     "buyerSide": "Calum",
     "sellerSide": "Developer",
     "sourceCat": "Own Lagoons listing (converted)",
-    "segment": "Offplan"
+    "segment": "Offplan",
+    "payMonth": "September"
   },
   {
     "date": "2026-05-23",
@@ -1199,7 +1206,8 @@
     "sellerSide": "Calum",
     "sourceCat": "Portals + Calling Out",
     "segment": "Secondary",
-    "note": "Both sides. 3.95M close (ask 4.05 net-basis). Seller fees renegotiated to 25K inc VAT flat to bridge the gap. Buyer 2% = 79,000. Conveyancing 8,500 in board. Board = 79,000 + 23,809.52 + 8,500 = 111,309.52. Syed all-in vs ADIB 4.0 cap - confirm top-up handled."
+    "note": "Both sides. 3.95M close (ask 4.05 net-basis). Seller fees renegotiated to 25K inc VAT flat to bridge the gap. Buyer 2% = 79,000. Conveyancing 8,500 in board. Board = 79,000 + 23,809.52 + 8,500 = 111,309.52. Syed all-in vs ADIB 4.0 cap - confirm top-up handled.",
+    "payMonth": "October"
   },
   {
     "date": "2026-08-31",
@@ -1234,7 +1242,8 @@
     "sellerSide": "",
     "sourceCat": "Lead",
     "segment": "Secondary",
-    "note": "Closed 31 Aug. 505 Noor Townhouses, Town Square, 2.85M. Split with Mark - 61K is Calum's board share."
+    "note": "Closed 31 Aug. 505 Noor Townhouses, Town Square, 2.85M. Split with Mark - 61K is Calum's board share.",
+    "payMonth": "October"
   },
   {
     "date": "2026-08-31",
@@ -1269,6 +1278,7 @@
     "sellerSide": "Calum + Lewis",
     "sourceCat": "Co-broke",
     "segment": "Secondary",
-    "note": "Closed 31 Aug. K450 CB 2.35M. Seller fee 50K inc VAT by cheque (Treo 24,675 guarantee). 26K = Calum's board after Zac external + Lewis internal splits."
+    "note": "Closed 31 Aug. K450 CB 2.35M. Seller fee 50K inc VAT by cheque (Treo 24,675 guarantee). 26K = Calum's board after Zac external + Lewis internal splits.",
+    "payMonth": "September"
   }
 ]
