@@ -181,6 +181,8 @@ body{padding-bottom:40px}
       </div>
       <div id="numMix" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"></div>
     </div>
+    <div class="panelbox" style="margin-bottom:10px"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Money Coming In <span style="font-size:11px;color:var(--muted)">(unpaid board by anticipated pay month · take-home at tier)</span></h2>
+      <div id="payPlan" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Closed Won — every deal, newest first</h2>
       <div id="dealsTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
       <div id="dealsList"></div></div>
@@ -779,8 +781,25 @@ function renderNumbers(){
   const chips=(title,arr)=>'<div style="flex:1;min-width:170px;background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:8px 10px"><div style="font-size:9.5px;letter-spacing:2px;color:var(--muted);margin-bottom:5px">'+title+'</div>'+arr.slice(0,6).map(([k,v])=>'<div style="margin-bottom:4px"><div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:var(--cream)">'+k+'</span><span style="color:var(--lgold)">'+K(v)+'</span></div><div style="height:4px;background:var(--div);border-radius:2px"><div style="height:4px;width:'+Math.round(v/tot*100)+'%;background:var(--gold);border-radius:2px"></div></div></div>').join('')+'</div>';
   $('numMix').innerHTML=chips('BY AREA',agg(areaOf))+chips('BY SEGMENT',agg(d=>d.segment))+chips('BY SOURCE',agg(d=>d.sourceCat||d.buyerSource));
 }
+const PAYORD=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function renderPayPlan(){
+  const el=$('payPlan'); if(!el) return;
+  const u=DEALS.filter(d=>!d.ownUnit&&d.paid!==true);
+  const g={}; u.forEach(d=>{const k=d.payMonth||'Unassigned';(g[k]=g[k]||[]).push(d);});
+  const keys=Object.keys(g).sort((a,b)=>{const ia=PAYORD.indexOf(a),ib=PAYORD.indexOf(b);return (ia<0?99:ia)-(ib<0?99:ib);});
+  const today0=today(), curM=PAYORD[+today0.slice(5,7)-1];
+  el.innerHTML=keys.map(k=>{const arr=g[k].slice().sort((a,b)=>(+b.myBoard||0)-(+a.myBoard||0));
+    const b=arr.reduce((s,d)=>s+(+d.myBoard||0),0), t=arr.reduce((s,d)=>s+(+d.myTakeHome||0),0);
+    const late=k!=='Unassigned'&&PAYORD.indexOf(k)<PAYORD.indexOf(curM);
+    const col=k==='Unassigned'?'#f0883e':late?'#e0a94c':k===curM?'var(--lgold)':'var(--gold)';
+    return '<div style="flex:1;min-width:200px;background:var(--panel);border:1px solid '+(k===curM?'var(--gold)':'var(--div)')+';border-radius:10px;padding:9px 11px">'
+      +'<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:10px;letter-spacing:2px;color:'+col+'">'+k.toUpperCase()+(late?' · OVERDUE':k===curM?' · THIS MONTH':'')+'</span><span style="font-size:10px;color:var(--muted)">'+arr.length+'</span></div>'
+      +'<div style="font-family:Palatino,serif;font-size:21px;font-weight:700;color:'+col+'">'+fmtB(t)+'</div><div style="font-size:11px;color:var(--muted);margin-bottom:6px">take-home · board '+fmtB(b)+'</div>'
+      +arr.map(d=>'<div style="display:flex;justify-content:space-between;font-size:12px;border-top:1px solid var(--div);padding:3px 0"><span style="color:var(--cream)">'+(d.buyer||'?')+' <span style="color:var(--muted)">'+(d.unit||'')+'</span></span><span style="color:var(--lgold)">'+fmtB(+d.myTakeHome||0)+'</span></div>').join('')
+      +'</div>';}).join('')||'<div style="color:var(--muted)">Nothing outstanding</div>';
+}
 function renderDeals(){
-  renderNumbers();
+  renderNumbers(); renderPayPlan();
   const el=$('dealsList'); if(!el) return;
   const ds=DEALS.filter(d=>!d.ownUnit).slice().sort((a,b)=>dealDate(b).localeCompare(dealDate(a)));
   const board=ds.reduce((s,d)=>s+(+d.myBoard||0),0), take=ds.reduce((s,d)=>s+(+d.myTakeHome||0),0);
