@@ -7,7 +7,7 @@
     "viewings": 10,
     "offers": 20,
     "callouts": 5,
-    "referrals": 5,
+    "referrals": 2,
     "leadsSameDay": 100,
     "nextTouchCoverage": 100
   },
@@ -15,9 +15,10 @@
     "viewings": "buyer viewings (calendar/Plaud): Sat 6-7 + midweek 3-4",
     "offers": "offer letters sent - from Mon 8 Sep (multi-unit per buyer counts)",
     "callouts": "1 good hour per working day, sellers first",
-    "referrals": "asks to past clients (37 closed)",
+    "referrals": "nice-to-have, not a focus (Calum 3 Sep)",
     "leadsSameDay": "% new leads first-touched + logged same day",
     "nextTouchCoverage": "% active buyers with a nextTouch date"
   },
-  "log": []
+  "log": [],
+  "review": "Sunday mornings, UFC on - weekly scoreboard + set next week's plan"
 }
