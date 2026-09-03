@@ -1,0 +1,23 @@
+{
+  "name": "September Sprint - last 4 weeks at White & Co",
+  "start": "2026-09-03",
+  "end": "2026-09-30",
+  "weekStartsOn": "Mon",
+  "targets": {
+    "viewings": 10,
+    "offers": 20,
+    "callouts": 5,
+    "referrals": 5,
+    "leadsSameDay": 100,
+    "nextTouchCoverage": 100
+  },
+  "targetNotes": {
+    "viewings": "buyer viewings (calendar/Plaud): Sat 6-7 + midweek 3-4",
+    "offers": "offer letters sent - from Mon 8 Sep (multi-unit per buyer counts)",
+    "callouts": "1 good hour per working day, sellers first",
+    "referrals": "asks to past clients (37 closed)",
+    "leadsSameDay": "% new leads first-touched + logged same day",
+    "nextTouchCoverage": "% active buyers with a nextTouch date"
+  },
+  "log": []
+}
