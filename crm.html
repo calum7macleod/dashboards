@@ -97,6 +97,8 @@ body{padding-bottom:40px}
     <div id="headStrip" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Money Board — today's highest-value actions</h2><div id="moneyBoard"></div></div>
     <div id="warnBox"></div>
+    <div class="panelbox" style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap"><h2 style="color:var(--lgold);font-size:15px;margin:0">◆ September Sprint</h2><span id="sprintSub" style="font-size:10px;letter-spacing:2px;color:var(--muted)"></span></div>
+      <div id="sprintBoard" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"></div></div>
     <div class="panelbox maxsays"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">◆ Max says</h2><div id="maxSays" style="font-size:13px"></div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Lagoons Market — live DLD feed</h2><div id="marketBox"></div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Today's Touches</h2><div id="touchList"></div></div>
@@ -220,7 +222,7 @@ const SSTAGES=['Longer Term','New','Qualified','Ready','Offer','Won','Lost'];
 const SMIG={'Active':'Qualified','Sold':'Won','Later':'Longer Term'};
 function migSellerStages(){STOCK.forEach(s=>{if(SMIG[s.stage])s.stage=SMIG[s.stage];if(!s.stage||!SSTAGES.includes(s.stage))s.stage=s.stage&&SSTAGES.includes(s.stage)?s.stage:'New';});}
 const CAD={5:1,4:2,3:3,2:4,1:5};
-let BUYERS=[], STOCK=[], VIEWINGS=[], SHAS={}, PAT=localStorage.getItem('crm_pat')||'';
+let SPRINT=null,BUYERS=[], STOCK=[], VIEWINGS=[], SHAS={}, PAT=localStorage.getItem('crm_pat')||'';
 let showSnoozed=false, curTab='today';
 const $=id=>document.getElementById(id);
 const today=()=>new Date().toISOString().slice(0,10);
@@ -485,13 +487,39 @@ async function fetchAll(){
   try{DEALS=await fetchFile('data/deals.json');calcComm()}catch(e){}
   try{OFFERS=await fetchFile('data/offers.json')}catch(e){OFFERS=[]}
   try{ARCH=await fetchFile('data/archive-buyers.json')}catch(e){ARCH=[]}
+  try{SPRINT=await fetchFile('data/sprint.json')}catch(e){SPRINT=null}
   try{DLD=await (await fetch('https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/data/dld/lagoons.json?t='+Date.now())).json();if(!Array.isArray(DLD))DLD=[]}catch(e){DLD=[]}
   syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
 function render(){renderToday();renderMarket();renderMarketTab();renderBoard();renderPeople();renderSellers();renderDeals();renderOffers();renderArch();renderClosedWon();renderInsights();}
 let SCOREF='';
 function scoreFilter(role,s){SCOREF=String(s);if($('p-role'))$('p-role').value=role==='seller'?'seller':'';openTab('people');renderPeople();}
+function weekBounds(d){const dt=new Date(d+'T00:00:00');const day=(dt.getDay()+6)%7;const mon=new Date(dt);mon.setDate(dt.getDate()-day);const sun=new Date(mon);sun.setDate(mon.getDate()+6);const f=x=>x.toISOString().slice(0,10);return [f(mon),f(sun)];}
+function renderSprint(){
+  const el=$('sprintBoard'); if(!el||!SPRINT) return;
+  const t0=today(); const [ws,we]=weekBounds(t0); const T=SPRINT.targets||{};
+  const inWk=d=>d&&d>=ws&&d<=we;
+  const vw=(VIEWINGS||[]).filter(v=>inWk(v.date)&&!/cancel/i.test(v.outcome||'')).length;
+  const of=(OFFERS||[]).filter(o=>inWk(o.date)).length;
+  const logs=(SPRINT.log||[]).filter(l=>inWk(l.date));
+  const co=logs.filter(l=>l.type==='callout').reduce((s,l)=>s+(+l.hours||1),0);
+  const rf=logs.filter(l=>l.type==='referral').reduce((s,l)=>s+(+l.count||1),0);
+  const act=(BUYERS||[]).filter(b=>b.status==='Active');
+  const cov=act.length?Math.round(act.filter(b=>b.nextTouch).length/act.length*100):0;
+  const newLeads=act.filter(b=>inWk(b.date)); const sameDay=newLeads.length?Math.round(newLeads.filter(b=>b.lastContact&&b.lastContact<=b.date).length/newLeads.length*100):null;
+  const dayN=Math.min(7,Math.max(1,Math.round((new Date(t0)-new Date(ws))/864e5)+1));
+  const card=(l,v,tg,sub,pct)=>{const p=tg?Math.min(100,Math.round((pct!==undefined?pct:(v/tg*100)))):0;const c=p>=100?'#7dc98f':p>=Math.round(dayN/7*100)-10?'var(--lgold)':'#f0883e';
+    return '<div style="flex:1;min-width:140px;background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:8px 10px"><div style="font-size:9.5px;letter-spacing:2px;color:var(--muted)">'+l+'</div><div style="font-family:Palatino,serif;font-size:22px;font-weight:700;color:'+c+'">'+v+(tg?'<span style="font-size:12px;color:var(--muted);font-family:Calibri,sans-serif"> / '+tg+'</span>':'')+'</div><div style="height:4px;background:var(--div);border-radius:2px;margin:4px 0"><div style="height:4px;width:'+p+'%;background:'+c+';border-radius:2px"></div></div><div style="font-size:10.5px;color:var(--muted)">'+sub+'</div></div>';};
+  $('sprintSub').textContent='WEEK OF '+ws.slice(5)+' · DAY '+dayN+'/7 · ENDS 30 SEP';
+  el.innerHTML=card('VIEWINGS',vw,T.viewings,'buyer viewings this week')
+    +card('OFFER LETTERS',of,T.offers,(t0<'2026-09-08'?'counts from Mon 8 Sep':'letters sent this week'))
+    +card('CALLOUT HOURS',co,T.callouts,'1 good hour / working day')
+    +card('REFERRAL ASKS',rf,T.referrals,'past clients asked')
+    +card('NEXT-TOUCH COVER',cov+'%',100,act.length+' active buyers',cov)
+    +card('LEADS SAME-DAY',sameDay===null?'—':sameDay+'%',100,newLeads.length+' new this week',sameDay===null?100:sameDay);
+}
 function renderToday(){
+  renderSprint();
   const liveB=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage));
   const pv=liveB.reduce((a,b)=>a+(b.budget||0),0);
   const liveS=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s)));
