@@ -160,6 +160,11 @@
           "t": "Cancel old Claude subscription (24h+ before billing), support: unlink phone, delete old account after export confirmed",
           "due": "2026-09-28",
           "done": false
+        },
+        {
+          "t": "Tidy up phone SIMs before the move - which numbers stay, which go, what's on W&Co",
+          "due": "2026-09-18",
+          "done": false
         }
       ]
     }
