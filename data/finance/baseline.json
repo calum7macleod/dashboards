@@ -8,7 +8,7 @@
       "k": "Modon accrual (D125K due Jan; Oct-Jan)",
       "v": 31250,
       "type": "accrual",
-      "note": "CONFIRM: full milestone or Calum's half?"
+      "note": "confirmed full D125K (5 Sep)"
     },
     {
       "k": "Video editors",
@@ -36,8 +36,8 @@
       "type": "living"
     },
     {
-      "k": "UK card minimums (~GBP1,600)",
-      "v": 8000,
+      "k": "UK card minimums (~GBP1,400 est.)",
+      "v": 7000,
       "type": "debt"
     },
     {
@@ -74,6 +74,11 @@
       "k": "Bank fees & OD",
       "v": 226,
       "type": "debt"
+    },
+    {
+      "k": "Claude (via Wise)",
+      "v": 750,
+      "type": "business"
     }
   ],
   "excluded": [
@@ -135,5 +140,31 @@
     "unassigned": 65000,
     "jake_first_pay": "~Dec 2026"
   },
-  "total": 112146
+  "total": 111896,
+  "identified": {
+    "Cara Exclusive FZCO 15,000": "Tal's push present (one-off)",
+    "Kevin Boxall GBP2,000": "debt repayment - last one Sep 2026",
+    "Alex Cash GBP1,400": "friend (personal)",
+    "Seller Network GBP2,500": "callout people (business)",
+    "Cash 10,000 (14 Aug)": "socials team (business)",
+    "Cash 10,000 (27 Aug)": "night out",
+    "aidai.turatowa / wannisa kombub": "removed at Calum's request",
+    "Wise": "Claude only"
+  },
+  "runway": {
+    "payday": 314000,
+    "baseline": 111896,
+    "endOct": 314104,
+    "endNov": 202208,
+    "endDec": 90312,
+    "endJan": -21584,
+    "runsOut": "mid-January 2027 with no new deals and no Jake income",
+    "levers": [
+      "Jan/Feb three D65K -> early Feb",
+      "each D50K board closed in Sep ~ +2 weeks",
+      "Jake first pay Dec",
+      "Meta/editors D25K/mo = 1 month runway per month cut"
+    ],
+    "debt": "ADIB D64.6K + UK GBP55,852 on minimums until Jake income is real"
+  }
 }
