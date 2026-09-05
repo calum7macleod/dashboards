@@ -6,121 +6,119 @@
   "review": "Sunday AM (UFC)",
   "categories": [
     {
-      "id": "board",
-      "name": "Board",
+      "id": "daily",
+      "name": "Daily",
       "items": [
         {
-          "t": "10 buyer viewings / week (Max counts)",
-          "due": "weekly",
-          "done": false
-        },
-        {
-          "t": "20 offer letters / week from 8 Sep (Calum tells Max)",
-          "due": "weekly",
-          "done": false
-        },
-        {
-          "t": "Callout hour every working day (Calum tells Max the count)",
+          "t": "Callout hour - Calum tells Max the count",
           "due": "daily",
           "done": false
         },
         {
-          "t": "Holiday: one 1-2 hr block - go through every buyer and seller (Max puts on calendar)",
-          "due": "2026-09-15",
+          "t": "Buyers current in own CRM",
+          "due": "daily",
+          "done": false
+        },
+        {
+          "t": "One reel to TikTok (from Tue 8)",
+          "due": "daily",
           "done": false
         }
       ]
     },
     {
-      "id": "carry",
-      "name": "Carry-across",
+      "id": "weekly",
+      "name": "Weekly",
       "items": [
         {
-          "t": "26 sellers: who to reach out to + what the touch is (Max drafts, Calum approves Sun)",
+          "t": "10 buyer viewings (Max counts)",
+          "due": "weekly",
+          "done": false
+        },
+        {
+          "t": "20 offer letters (Calum tells Max)",
+          "due": "weekly",
+          "done": false
+        },
+        {
+          "t": "Seller warm-up touches inside callout hour",
+          "due": "weekly",
+          "done": false
+        },
+        {
+          "t": "Sunday AM scoreboard (UFC)",
+          "due": "weekly",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "dated",
+      "name": "Dated",
+      "items": [
+        {
+          "t": "Send statements + balances + UK card mins; budget starts",
+          "due": "2026-09-05",
+          "done": false
+        },
+        {
+          "t": "Approve seller reach-out list (26)",
           "due": "2026-09-06",
           "done": false
         },
         {
-          "t": "Warm-up touches inside the callout hour",
-          "due": "weekly",
+          "t": "Cold data pulled -> Max files",
+          "due": "2026-09-06",
           "done": false
         },
         {
-          "t": "Buyers kept current in own CRM",
-          "due": "daily",
+          "t": "Admin brain-dump -> tick list",
+          "due": "2026-09-06",
           "done": false
         },
         {
-          "t": "Cold data: Calum pulls, Max files",
-          "due": "2026-09-10",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "money",
-      "name": "Money",
-      "items": [
-        {
-          "t": "Statements + balances + UK card mins to Max (one batch)",
-          "due": "2026-09-08",
+          "t": "Budget finished + abnormalities + runway",
+          "due": "2026-09-06",
           "done": false
         },
         {
-          "t": "Baseline budget from statements",
-          "due": "2026-09-10",
-          "done": false
-        },
-        {
-          "t": "Abnormalities this month",
-          "due": "2026-09-10",
-          "done": false
-        },
-        {
-          "t": "Runway",
-          "due": "2026-09-10",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "craft",
-      "name": "Craft",
-      "items": [
-        {
-          "t": "TikTok daily alongside IG",
-          "due": "2026-09-08",
-          "done": false
-        },
-        {
-          "t": "Comment word on every reel, DM every commenter",
-          "due": "2026-09-08",
-          "done": false
-        },
-        {
-          "t": "One lead system: content + portal leads, same-day touch, next-touch date, in own CRM",
-          "due": "2026-09-10",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "admin",
-      "name": "Admin",
-      "items": [
-        {
-          "t": "Emails: folders, rules, inbox clear",
-          "due": "2026-09-18",
-          "done": false
-        },
-        {
-          "t": "Computer folders",
-          "due": "2026-09-18",
-          "done": false
-        },
-        {
-          "t": "Brain-dump of undone admin -> tick list (Calum dumps, Max lists)",
+          "t": "Lead system live in CRM (Max)",
           "due": "2026-09-07",
+          "done": false
+        },
+        {
+          "t": "TikTok daily starts; comment word + DM every reel",
+          "due": "2026-09-08",
+          "done": false
+        },
+        {
+          "t": "Emails: folders, rules, inbox clear (2 hrs)",
+          "due": "2026-09-13",
+          "done": false
+        },
+        {
+          "t": "Craft 1: study pack - 10 accounts (1 hr)",
+          "due": "2026-09-14",
+          "done": false
+        },
+        {
+          "t": "Holiday block: every buyer + seller (1-2 hrs)",
+          "due": "2026-09-15",
+          "done": false
+        },
+        {
+          "t": "Craft 2: how TikTok/IG rank reels in 2026 (1 hr)",
+          "due": "2026-09-16",
+          "done": false
+        },
+        {
+          "t": "Craft 3: computer folders + TikTok week-1 review (1 hr)",
+          "due": "2026-09-17",
+          "done": false
+        },
+        {
+          "t": "TikTok vs IG two-week read-out",
+          "due": "2026-09-21",
           "done": false
         }
       ]
