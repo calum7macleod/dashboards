@@ -12,7 +12,8 @@
     "Gambling",
     "Other",
     "Unaccounted",
-    "Fees"
+    "Fees",
+    "Family"
   ],
   "budgets": {
     "Apr 26": {
@@ -89,6 +90,38 @@
       "Other": 999,
       "Unaccounted": 0,
       "total": 30000
+    },
+    "Aug 26": {
+      "Base Food": 4000,
+      "Deliveries": 500,
+      "Life": 2000,
+      "Business": 7000,
+      "Entertainment": 500,
+      "Investing": 250,
+      "Loan": 10000,
+      "Saving": 250,
+      "Health": 4500,
+      "Gambling": 1,
+      "Other": 999,
+      "Unaccounted": 0,
+      "total": 30000
+    },
+    "Sep 26": {
+      "Base Food": 7300,
+      "Deliveries": 2550,
+      "Life": 8000,
+      "Business": 25794,
+      "Entertainment": 0,
+      "Investing": 0,
+      "Loan": 11231,
+      "Saving": 0,
+      "Health": 1472,
+      "Gambling": 0,
+      "Other": 0,
+      "Unaccounted": 0,
+      "Fees": 226,
+      "Family": 12241,
+      "total": 68814
     }
   },
   "transactions": [
@@ -3595,14 +3628,6 @@
       "category": "Entertainment"
     },
     {
-      "month": "Aug 26",
-      "day": 1,
-      "description": "BOXICA (card *789) 00:04",
-      "account": "ADIB CC",
-      "amount": 949.0,
-      "category": "Other"
-    },
-    {
       "month": "Jul 26",
       "day": 30,
       "description": "CARD PAYMENT IN - credit to card *789 (negative = repayment, not spend)",
@@ -3620,120 +3645,4008 @@
     },
     {
       "month": "Aug 26",
-      "day": 1,
-      "description": "CARD PAYMENT IN - credit to card *789, reported verbally by Calum, no SMS captured",
+      "day": 31,
+      "description": "BOXICA , DUBAI",
       "account": "ADIB CC",
-      "amount": -24000.0,
-      "category": "Loan"
-    },
-    {
-      "month": "Sep 26",
-      "day": 4,
-      "description": "Interest x4 (Sep stmt)",
-      "account": "Tesco Clubcard",
-      "amount": 130.65,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "amount": -949.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
     },
     {
       "month": "Aug 26",
-      "day": 4,
-      "description": "Interest (Aug stmt, partial - 1 line cut off)",
-      "account": "Tesco Clubcard",
-      "amount": 50.21,
-      "category": "Fees",
-      "note": "0.14+18.95+31.12 visible only",
-      "source": "cc app screenshot 05 Sep 26"
+      "day": 31,
+      "description": "Qlub*CQ French Brasser , DUBAI",
+      "account": "ADIB CC",
+      "amount": -488.83,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
     },
     {
-      "month": "Sep 26",
+      "month": "Aug 26",
+      "day": 31,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -245.66,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -245.66,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -245.66,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "PARKONIC PARKING SYSTEMS , Dubai",
+      "account": "ADIB CC",
+      "amount": -10.0,
+      "category": "Life",
+      "sub": "Taxis & parking"
+    },
+    {
+      "month": "Aug 26",
+      "day": 1,
+      "description": "CAREEM , Dubai",
+      "account": "ADIB CC",
+      "amount": -38.59,
+      "category": "Life",
+      "sub": "Taxis & parking"
+    },
+    {
+      "month": "Aug 26",
+      "day": 1,
+      "description": "CARA EXCLUSIVE FZCO , DUBAI [IDENTIFY]",
+      "account": "ADIB CC",
+      "amount": -15000.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - Cara Exclusive FZCO 15,000"
+    },
+    {
+      "month": "Aug 26",
+      "day": 1,
+      "description": "LETO , Dubai",
+      "account": "ADIB CC",
+      "amount": -510.3,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 1,
+      "description": "UFC FIGHT CLUB , UFCFIGHTCLUB. USD 103",
+      "account": "ADIB CC",
+      "amount": -391.45,
+      "category": "Entertainment",
+      "sub": "Entertainment (other)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 2,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -51.45,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 2,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -242.89,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
       "day": 3,
-      "description": "Interest charged x3",
-      "account": "Virgin Money",
-      "amount": 192.99,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -56.7,
+      "category": "Deliveries",
+      "sub": "Food delivery"
     },
     {
       "month": "Aug 26",
       "day": 3,
-      "description": "Interest charged (stmt total)",
-      "account": "Virgin Money",
-      "amount": 200.95,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "description": "DIGITALOCEAN.COM , AMSTERDAM USD 30",
+      "account": "ADIB CC",
+      "amount": -114.01,
+      "category": "Business",
+      "sub": "Business tools"
     },
     {
       "month": "Aug 26",
-      "day": 27,
-      "description": "Transfer balance int 213.51 + purchases int 2.40 + quasi cash 0.20",
-      "account": "Santander Everyday",
-      "amount": 216.11,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "day": 3,
+      "description": "HIGHLEVEL AGENCY SUB , GOHIGHLEVEL.C USD 101.85",
+      "account": "ADIB CC",
+      "amount": -387.09,
+      "category": "Business",
+      "sub": "Business tools"
     },
     {
-      "month": "Jul 26",
-      "day": 27,
-      "description": "Transfer balance int 216.29 + purchases int 14.93 + quasi cash 1.36",
-      "account": "Santander Everyday",
-      "amount": 232.58,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "month": "Aug 26",
+      "day": 4,
+      "description": "Deliveroo , Dubai",
+      "account": "ADIB CC",
+      "amount": -392.9,
+      "category": "Deliveries",
+      "sub": "Food delivery"
     },
     {
-      "month": "Sep 26",
+      "month": "Aug 26",
+      "day": 4,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -82.28,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 4,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -88.49,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 4,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 5,
+      "description": "WWW.FITTMEALS.AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -2262.3,
+      "category": "Base Food",
+      "sub": "Meal prep (Fittmeals)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 5,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -275.85,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 5,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -14.1,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 5,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -15.75,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 5,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -34.12,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
       "day": 6,
-      "description": "Interest (stmt 06 Sep)",
-      "account": "MBNA 1",
-      "amount": 79.08,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "description": "NU.ME BEAUTY , DUBAI",
+      "account": "ADIB CC",
+      "amount": -441.0,
+      "category": "Health",
+      "sub": "Wellness & grooming"
     },
     {
       "month": "Aug 26",
-      "day": 23,
-      "description": "Interest (stmt 23 Aug)",
-      "account": "MBNA 2",
-      "amount": 7.1,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "day": 6,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -199.44,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
     },
     {
       "month": "Aug 26",
-      "day": 27,
-      "description": "Interest 5.34 + 35.92",
-      "account": "M&S",
-      "amount": 41.26,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "day": 6,
+      "description": "FANTASYFOOTBALLFIX.COM , WEST BRIDGFOR GBP 47.4",
+      "account": "ADIB CC",
+      "amount": -243.01,
+      "category": "Entertainment",
+      "sub": "Entertainment (other)"
     },
     {
-      "month": "Jul 26",
-      "day": 27,
-      "description": "Interest 4.89 + 43.13",
-      "account": "M&S",
-      "amount": 48.02,
-      "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "month": "Aug 26",
+      "day": 6,
+      "description": "THETA DOCUMENTS CLEARI , Dubai",
+      "account": "ADIB CC",
+      "amount": -300.0,
+      "category": "Business",
+      "sub": "Business tools"
+    },
+    {
+      "month": "Aug 26",
+      "day": 7,
+      "description": "Deliveroo , Dubai",
+      "account": "ADIB CC",
+      "amount": -174.4,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 7,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -314.23,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 7,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -104.95,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 7,
+      "description": "OURARING , OULU USD 6.99",
+      "account": "ADIB CC",
+      "amount": -26.57,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 8,
+      "description": "SCANDI CANDY , DUBAI",
+      "account": "ADIB CC",
+      "amount": -49.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 8,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -36.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 8,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 8,
+      "description": "AL HOMAIZI NUTS N FOOD , Dubai",
+      "account": "ADIB CC",
+      "amount": -8.22,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 8,
+      "description": "COLDSTONE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -58.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 8,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -89.38,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "SANDCASTLES STARTER , SANDCASTLES.A",
+      "account": "ADIB CC",
+      "amount": -19.0,
+      "category": "Life",
+      "sub": "Subscriptions"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -29.49,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -72.45,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "POWERPOD.AE , ABU DHABI",
+      "account": "ADIB CC",
+      "amount": -10.5,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "Virgin Mobile UAE (EITC) , Dubai",
+      "account": "ADIB CC",
+      "amount": -157.5,
+      "category": "Life",
+      "sub": "Utilities & telecoms"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -71.36,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -10.0,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 9,
+      "description": "HOLIDAY INN N SUITES , DUBAI",
+      "account": "ADIB CC",
+      "amount": -279.0,
+      "category": "Entertainment",
+      "sub": "Hotels & nights out"
     },
     {
       "month": "Aug 26",
       "day": 10,
-      "description": "Interest",
-      "account": "HSBC",
-      "amount": 8.62,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.38,
       "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.02,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -66.15,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "DUBAI ELECTRICITY , DUBAI",
+      "account": "ADIB CC",
+      "amount": -2115.45,
+      "category": "Life",
+      "sub": "Utilities & telecoms"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "QUICK SNACK SELLING COMMO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -3.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 11,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -47.5,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -82.95,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "Virgin Mobile UAE (EITC) , Dubai",
+      "account": "ADIB CC",
+      "amount": -52.5,
+      "category": "Life",
+      "sub": "Utilities & telecoms"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "DIN TAI FUNG RESTAURAN , DUBAI",
+      "account": "ADIB CC",
+      "amount": -387.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "REELLY PERSONAL 49$ , DUBAI",
+      "account": "ADIB CC",
+      "amount": -179.9,
+      "category": "Business",
+      "sub": "Business tools"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "WIDGIT , PETERHEAD",
+      "account": "ADIB CC",
+      "amount": -24.0,
+      "category": "Business",
+      "sub": "Business tools"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.02,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.48,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "COLD STONE CREAMERY , DUBAI",
+      "account": "ADIB CC",
+      "amount": -44.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "QLUB , DUBAI",
+      "account": "ADIB CC",
+      "amount": -197.13,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 12,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -1467.9,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -56.25,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "MamoPay*The Mobile Barber , Dubai",
+      "account": "ADIB CC",
+      "amount": -242.0,
+      "category": "Health",
+      "sub": "Wellness & grooming"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "CARIBOU COFFEE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -60.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "CONRAD HOTEL AUH F&B , ABU DHABI",
+      "account": "ADIB CC",
+      "amount": -21.0,
+      "category": "Entertainment",
+      "sub": "Hotels & nights out"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "CIRCLE K CONTROL TOWER M , Dubai",
+      "account": "ADIB CC",
+      "amount": -54.0,
+      "category": "Life",
+      "sub": "Taxis & parking"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "TOSS AND CO RESTAURANT LL , DUBAI",
+      "account": "ADIB CC",
+      "amount": -21.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "aidai.turatowa , Abu Dhabi [IDENTIFY]",
+      "account": "ADIB CC",
+      "amount": -1575.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - person (aidai.turatowa 1,575)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 13,
+      "description": "K S P LADIES SPA CLUB LLC , Dubai",
+      "account": "ADIB CC",
+      "amount": -765.0,
+      "category": "Health",
+      "sub": "Wellness & grooming"
+    },
+    {
+      "month": "Aug 26",
+      "day": 14,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -137.5,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 14,
+      "description": "CONRAD HOTEL AUH F&B , ABU DHABI",
+      "account": "ADIB CC",
+      "amount": -970.0,
+      "category": "Entertainment",
+      "sub": "Hotels & nights out"
+    },
+    {
+      "month": "Aug 26",
+      "day": 14,
+      "description": "CONRAD HOTEL AUH F&B , ABU DHABI",
+      "account": "ADIB CC",
+      "amount": -56.0,
+      "category": "Entertainment",
+      "sub": "Hotels & nights out"
+    },
+    {
+      "month": "Aug 26",
+      "day": 14,
+      "description": "FIVE LUXE HOTEL LLC , DUBAI",
+      "account": "ADIB CC",
+      "amount": -2000.0,
+      "category": "Entertainment",
+      "sub": "Hotels & nights out"
+    },
+    {
+      "month": "Aug 26",
+      "day": 15,
+      "description": "NATIONAL TAXI , DUBAI",
+      "account": "ADIB CC",
+      "amount": -48.5,
+      "category": "Life",
+      "sub": "Taxis & parking"
+    },
+    {
+      "month": "Aug 26",
+      "day": 15,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -211.95,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 15,
+      "description": "ABBAD ALSHAMS TRANSPORT L , Dubai",
+      "account": "ADIB CC",
+      "amount": -50.0,
+      "category": "Life",
+      "sub": "Taxis & parking"
+    },
+    {
+      "month": "Aug 26",
+      "day": 15,
+      "description": "GOOGLE*YOUTUBEPREMIUM , 650-2530000",
+      "account": "ADIB CC",
+      "amount": -26.99,
+      "category": "Life",
+      "sub": "Subscriptions"
+    },
+    {
+      "month": "Aug 26",
+      "day": 15,
+      "description": "DU Apple Pay , DUBAI",
+      "account": "ADIB CC",
+      "amount": -149.0,
+      "category": "Life",
+      "sub": "Utilities & telecoms"
+    },
+    {
+      "month": "Aug 26",
+      "day": 16,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -173.75,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 16,
+      "description": "FIVE HOTEL JVC , DUBAI",
+      "account": "ADIB CC",
+      "amount": -800.0,
+      "category": "Entertainment",
+      "sub": "Hotels & nights out"
+    },
+    {
+      "month": "Aug 26",
+      "day": 17,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.54,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 17,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 16,
+      "description": "ONE FOR THE ROAD , DUBAI",
+      "account": "ADIB CC",
+      "amount": -34.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 16,
+      "description": "Ticketmaster , Dubai",
+      "account": "ADIB CC",
+      "amount": -6595.0,
+      "category": "Entertainment",
+      "sub": "Entertainment (Ticketmaster)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 16,
+      "description": "REVA WELLNESS DMCC , Dubai",
+      "account": "ADIB CC",
+      "amount": -400.0,
+      "category": "Health",
+      "sub": "Wellness & grooming"
+    },
+    {
+      "month": "Aug 26",
+      "day": 17,
+      "description": "CAFU APP DMCC , Dubai",
+      "account": "ADIB CC",
+      "amount": -165.33,
+      "category": "Life",
+      "sub": "Fuel"
+    },
+    {
+      "month": "Aug 26",
+      "day": 17,
+      "description": "THE SELLER NETWORK LTD , CAMBRIDGE",
+      "account": "ADIB CC",
+      "amount": -2500.0,
+      "category": "Business",
+      "sub": "Business - UNKNOWN (Seller Network \u00a32,500?)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 17,
+      "description": "CAFU APP DMCC , Dubai",
+      "account": "ADIB CC",
+      "amount": -20.95,
+      "category": "Life",
+      "sub": "Fuel"
+    },
+    {
+      "month": "Aug 26",
+      "day": 18,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -20.0,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 18,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -290.0,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 19,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -2.49,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 19,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -49.75,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 19,
+      "description": "CARIBOU COFFEE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -20.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 19,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -123.68,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 19,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -183.08,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 19,
+      "description": "SELFDRIVE AE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -11.5,
+      "category": "Life",
+      "sub": "Car rental (Selfdrive)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -36.75,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -99.69,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -33.0,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "NASH HOT CHICKEN RESTAU , Dubai",
+      "account": "ADIB CC",
+      "amount": -131.25,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -148.95,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "Zofeur , Dubai",
+      "account": "ADIB CC",
+      "amount": -240.0,
+      "category": "Life",
+      "sub": "Chauffeur (Zofeur)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "Amazon Prime Subscript , Dubai",
+      "account": "ADIB CC",
+      "amount": -16.0,
+      "category": "Life",
+      "sub": "Subscriptions"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "FACEBK *ZRXHZ2ANT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -8.4,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "HILI COFFEE HOUSE L.C. , DUBAI",
+      "account": "ADIB CC",
+      "amount": -23.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "FACEBK *LGPCW3ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -11.55,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "FACEBK *UFSPGZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -7.35,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "FACEBK *J2X2X2APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -10.5,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 20,
+      "description": "BINANCE.COM , WWW.BINANCE.C USD 4162",
+      "account": "ADIB CC",
+      "amount": -15817.45,
+      "category": "Investing",
+      "sub": "Crypto (Binance)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -92.41,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "Amazon.ae , Dubai",
+      "account": "ADIB CC",
+      "amount": -56.8,
+      "category": "Life",
+      "sub": "Shopping (Amazon)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -75.6,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *SC9G8ZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -11.55,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -59.34,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.15,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.01,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.23,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.01,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "Cash Withdrawal Fee",
+      "account": "ADIB CC",
+      "amount": -474.52,
+      "category": "Fees",
+      "sub": "Crypto (Binance) fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.23,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.21,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "CashWithdrawal Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -23.73,
+      "category": "Fees",
+      "sub": "Crypto (Binance) fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.01,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.01,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.17,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.01,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "AL HOMAIZI NUTS N FOOD , Dubai",
+      "account": "ADIB CC",
+      "amount": -18.08,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *8C8SJZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -12.6,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "SCANDI CANDY , DUBAI",
+      "account": "ADIB CC",
+      "amount": -59.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *VAXE24ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -30.45,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *AMVD33APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -30.45,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *PH2X43ANT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -24.15,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "HAMLAM TRADING , Dubai",
+      "account": "ADIB CC",
+      "amount": -23.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *ZTCWY3ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -21.0,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *3W6V636PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -28.35,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *TAZVZ3ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -27.3,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *B9C3536PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -19.95,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 21,
+      "description": "FACEBK *X5J7742PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -24.15,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *CTMXEZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -33.6,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *RRSTFZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -34.65,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *79QBB42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -34.65,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "HIGHLEVEL LLC , GOHIGHLEVEL.C USD 21",
+      "account": "ADIB CC",
+      "amount": -79.81,
+      "category": "Business",
+      "sub": "Business tools"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *VH2A44ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -30.45,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *MTANA42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -33.6,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "CAFU APP DMCC , Dubai",
+      "account": "ADIB CC",
+      "amount": -163.9,
+      "category": "Life",
+      "sub": "Fuel"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *FTV9G3WNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -32.55,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "HAMLAM TRADING , Dubai",
+      "account": "ADIB CC",
+      "amount": -76.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *WSMC64ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -35.7,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *JX6K43APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -31.5,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -35.35,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *U9MQ84NNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -32.55,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *24EB43APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -29.4,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *746P43APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -31.5,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *PX7M836PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -22.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *CM7XFZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -33.6,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *EBUGF3WNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -31.5,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *92GX43APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -25.2,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *L8RGEZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -32.55,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *K3LC53APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -30.45,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "CAFU APP DMCC , Dubai",
+      "account": "ADIB CC",
+      "amount": -24.95,
+      "category": "Life",
+      "sub": "Fuel"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *3Y9L94NNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -33.6,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *9MY7FZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -32.55,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *7KAT73ANT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -30.45,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *W7DP33APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -29.4,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 22,
+      "description": "FACEBK *GZX2RZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -36.75,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *TDDPGZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -35.7,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *GD5AGZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -33.6,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -69.3,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *5LSURZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -34.65,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.71,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.63,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.48,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.69,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.67,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.67,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.65,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.59,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.67,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.25,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.02,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.61,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.48,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.02,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.02,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.01,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.42,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.71,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.61,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.54,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.69,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.61,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.61,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.44,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.67,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.56,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.4,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.65,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.63,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.65,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.61,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.5,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.69,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.02,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.59,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.65,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.73,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.02,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.63,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.03,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.67,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *R7WQF42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -45.15,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "M B M NAVI PARKING LLC , Dubai",
+      "account": "ADIB CC",
+      "amount": -10.0,
+      "category": "Life",
+      "sub": "Taxis & parking"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *FG85E42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -39.9,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *JADKD36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -44.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "SUITED AND BOOTED GARM , DUBAI",
+      "account": "ADIB CC",
+      "amount": -3150.0,
+      "category": "Life",
+      "sub": "Clothing"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *FPDHC36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -39.9,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *AV82A3APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -44.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *HMQWSZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -43.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *ES4YTZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -44.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *3MEVC3ANT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -43.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *DCHNK3WNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -43.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *NQ9AHZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -34.65,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *B9H9UZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -43.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *F9PGB4NNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -37.8,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *PR9T83APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -44.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *S99594ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -44.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *6WFDE42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -40.95,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *MBN2SZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -36.75,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *QLWSK3WNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -44.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "ZABEEL SARAY HOTEL , DUBAI",
+      "account": "ADIB CC",
+      "amount": -20.0,
+      "category": "Entertainment",
+      "sub": "Hotels & nights out"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *QGTRE42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -44.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "FACEBK *4RKX94ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -45.15,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *D3SBLZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -42.0,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *CHUYD4NNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -45.15,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "Amazon Grocery , Dubai",
+      "account": "ADIB CC",
+      "amount": -185.0,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -48.95,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *KXCLB3APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -45.15,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "Amazon.ae , Dubai",
+      "account": "ADIB CC",
+      "amount": -52.99,
+      "category": "Life",
+      "sub": "Shopping (Amazon)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.84,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.75,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.73,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.9,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.88,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.86,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.88,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.79,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.86,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.88,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.88,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.86,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.79,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.88,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.88,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.88,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.9,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.69,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.86,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.82,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.9,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.9,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *RJP3G36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -50.4,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *FHT2YZMNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -77.7,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *KHPKG36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -50.4,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *VQGBB4ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -46.2,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *LPWXG3ANT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -85.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *FHHPF3ANT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -90.3,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *SG6RC4ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -84.0,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *C7PPB4ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -46.2,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *LE6KF36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -47.25,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *GCM3D4ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -78.75,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *SDF6N3WNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -43.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *B2MBD4ENT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -86.1,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "FACEBK *TDWTLZVNT2 , Dublin",
+      "account": "ADIB CC",
+      "amount": -47.25,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "FACEBK *6UWYJ36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -85.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -84.09,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.57,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.0,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.71,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.92,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.8,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.08,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.08,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.67,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.94,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.08,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.86,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.55,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.09,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.92,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -0.94,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.09,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.09,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.0,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.09,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.04,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.69,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -1.69,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "FACEBK *WEKPM36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -110.25,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "FACEBK *WTQ4S3WNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -106.05,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "FACEBK *J6T8N4NNT4 , FACEBOOK.COM",
+      "account": "ADIB CC",
+      "amount": -109.41,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 25,
+      "description": "FACEBK *R6HRG3APT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -108.15,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "PROPERTY INDEX , SHARJAH",
+      "account": "ADIB CC",
+      "amount": -500.0,
+      "category": "Business",
+      "sub": "Business tools"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -33.35,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "Instashop , Dubai",
+      "account": "ADIB CC",
+      "amount": -132.13,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
     },
     {
       "month": "Aug 26",
       "day": 27,
-      "description": "Interest on cash balance 1.8075%",
-      "account": "Barclaycard Plat",
-      "amount": 27.51,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.11,
       "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.11,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.15,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.18,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.11,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.19,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.11,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.11,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "FACEBK *DDFRR36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -135.45,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "FACEBK *QFNJ82JNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -153.3,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "FACEBK *CW3DR42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -109.2,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "TAQADO TOWN SQUARE , DUBAI",
+      "account": "ADIB CC",
+      "amount": -79.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 26,
+      "description": "FACEBK *LQN6S42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -103.95,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.15,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.7,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.17,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.14,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -3.05,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.11,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.07,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.1,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "FACEBK *U9XVX42PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -312.9,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "M B M NAVI PARKING LLC , Dubai",
+      "account": "ADIB CC",
+      "amount": -10.0,
+      "category": "Life",
+      "sub": "Taxis & parking"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "ENOC LINK LLC , DXB",
+      "account": "ADIB CC",
+      "amount": -174.78,
+      "category": "Life",
+      "sub": "Fuel"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "FACEBK *KZA7U36PT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -139.65,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -34.65,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -130.95,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -46.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.31,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.14,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -2.78,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -6.23,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "wannisa kombub , Dubai [IDENTIFY]",
+      "account": "ADIB CC",
+      "amount": -525.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - person (wannisa kombub 525)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "FACEBK *GADB72SNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -315.0,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "BOXICA , DUBAI",
+      "account": "ADIB CC",
+      "amount": -18.0,
+      "category": "Health",
+      "sub": "Boxica & fitness"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -78.96,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "CARREFOUR MARKET , DUBAI",
+      "account": "ADIB CC",
+      "amount": -20.0,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "ENOC LINK LLC , DXB",
+      "account": "ADIB CC",
+      "amount": -178.0,
+      "category": "Life",
+      "sub": "Fuel"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -376.99,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "FACEBK *M698B4WNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -315.0,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 29,
+      "description": "www.instashop.com , Dubai",
+      "account": "ADIB CC",
+      "amount": -242.42,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "Amazon Grocery , Dubai",
+      "account": "ADIB CC",
+      "amount": -129.0,
+      "category": "Base Food",
+      "sub": "Groceries (Instashop)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -29.15,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "Deliveroo Plus Subs , Dubai",
+      "account": "ADIB CC",
+      "amount": -29.0,
+      "category": "Life",
+      "sub": "Subscriptions"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "DELIVEROO , DUBAI",
+      "account": "ADIB CC",
+      "amount": -105.95,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "STARBUCKS-D079-3C , DUBAI",
+      "account": "ADIB CC",
+      "amount": -28.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "DU Apple Pay , DUBAI",
+      "account": "ADIB CC",
+      "amount": -367.61,
+      "category": "Life",
+      "sub": "Utilities & telecoms"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "Deliveroo , Dubai",
+      "account": "ADIB CC",
+      "amount": -129.4,
+      "category": "Deliveries",
+      "sub": "Food delivery"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "WWW.BABYGROWFZC.COM , SHARJAH",
+      "account": "ADIB CC",
+      "amount": -109.0,
+      "category": "Life",
+      "sub": "Baby"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "FACEBK *CG8SM2JNT4 , Dublin",
+      "account": "ADIB CC",
+      "amount": -315.0,
+      "category": "Business",
+      "sub": "Meta ads"
+    },
+    {
+      "month": "Aug 26",
+      "day": 30,
+      "description": "STARBUCKS-D079-3C , DUBAI",
+      "account": "ADIB CC",
+      "amount": -29.0,
+      "category": "Base Food",
+      "sub": "Restaurants & coffee"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.31,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.31,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -6.27,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "International Trxn Fee VAT Charges",
+      "account": "ADIB CC",
+      "amount": -0.31,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -6.27,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 31,
+      "description": "International Transaction Fee",
+      "account": "ADIB CC",
+      "amount": -6.27,
+      "category": "Fees",
+      "sub": "Bank fees"
+    },
+    {
+      "month": "Aug 26",
+      "day": 1,
+      "description": "Tallia Flaher - family support",
+      "account": "Mashreq",
+      "amount": -10000,
+      "category": "Family",
+      "sub": "Family support (Tal)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 2,
+      "description": "Marielle Avinante - family support",
+      "account": "Mashreq",
+      "amount": -250,
+      "category": "Family",
+      "sub": "Household help (Marielle)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 5,
+      "description": "Merkz Digital - goods/services",
+      "account": "Mashreq",
+      "amount": -2000,
+      "category": "Business",
+      "sub": "Content/agency (Merkz Digital)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 6,
+      "description": "Merkz Digital - goods/services",
+      "account": "Mashreq",
+      "amount": -3000,
+      "category": "Business",
+      "sub": "Content/agency (Merkz Digital)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "Quwah Al Shakush Technical Services",
+      "account": "Mashreq",
+      "amount": -600,
+      "category": "Life",
+      "sub": "Home maintenance (Quwah)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 11,
+      "description": "Quwah Al Shakush Technical Services",
+      "account": "Mashreq",
+      "amount": -600,
+      "category": "Life",
+      "sub": "Home maintenance (Quwah)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 14,
+      "description": "Cardless cash withdrawal - Five Hotel Jumeirah [IDENTIFY]",
+      "account": "Mashreq",
+      "amount": -10000,
+      "category": "Unaccounted",
+      "sub": "Cash withdrawals"
+    },
+    {
+      "month": "Aug 26",
+      "day": 15,
+      "description": "Falcon Blink - family support",
+      "account": "Mashreq",
+      "amount": -1500,
+      "category": "Family",
+      "sub": "Family support (other)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 19,
+      "description": "Marielle Avinante - family support",
+      "account": "Mashreq",
+      "amount": -100,
+      "category": "Family",
+      "sub": "Household help (Marielle)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "ATM cash withdrawal - BFL Shopping Centre [IDENTIFY]",
+      "account": "Mashreq",
+      "amount": -10000,
+      "category": "Unaccounted",
+      "sub": "Cash withdrawals"
+    },
+    {
+      "month": "Aug 26",
+      "day": 3,
+      "description": "Tallia Flaher",
+      "account": "BoS",
+      "amount": -44820.0,
+      "category": "Family",
+      "sub": "Family support (Tal)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 3,
+      "description": "Mum SO",
+      "account": "BoS",
+      "amount": -1494.0,
+      "category": "Family",
+      "sub": "Family support (Mum)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 3,
+      "description": "Pet Health Club",
+      "account": "BoS",
+      "amount": -140.69,
+      "category": "Life",
+      "sub": "Subscriptions"
+    },
+    {
+      "month": "Aug 26",
+      "day": 4,
+      "description": "HSBC credit card DD",
+      "account": "BoS",
+      "amount": -245.51,
+      "category": "Loan",
+      "sub": "UK debt payments"
+    },
+    {
+      "month": "Aug 26",
+      "day": 4,
+      "description": "Alex Cash [IDENTIFY]",
+      "account": "BoS",
+      "amount": -2490.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - Alex Cash"
+    },
+    {
+      "month": "Aug 26",
+      "day": 7,
+      "description": "Kevin Boxall [IDENTIFY]",
+      "account": "BoS",
+      "amount": -9960.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - Kevin Boxall"
+    },
+    {
+      "month": "Aug 26",
+      "day": 7,
+      "description": "Alex Cash [IDENTIFY]",
+      "account": "BoS",
+      "amount": -2490.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - Alex Cash"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "Alex Cash [IDENTIFY]",
+      "account": "BoS",
+      "amount": -747.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - Alex Cash"
+    },
+    {
+      "month": "Aug 26",
+      "day": 11,
+      "description": "Alex Cash [IDENTIFY]",
+      "account": "BoS",
+      "amount": -1245.0,
+      "category": "Unaccounted",
+      "sub": "UNKNOWN - Alex Cash"
+    },
+    {
+      "month": "Aug 26",
+      "day": 17,
+      "description": "MBNA DD",
+      "account": "BoS",
+      "amount": -363.69,
+      "category": "Loan",
+      "sub": "UK debt payments"
+    },
+    {
+      "month": "Aug 26",
+      "day": 24,
+      "description": "Corrina Flaher SO",
+      "account": "BoS",
+      "amount": -747.0,
+      "category": "Family",
+      "sub": "Family support (other)"
+    },
+    {
+      "month": "Aug 26",
+      "day": 28,
+      "description": "Daily OD interest (Aug total)",
+      "account": "BoS",
+      "amount": -62.35,
+      "category": "Loan",
+      "sub": "UK debt payments"
     }
   ],
   "ccBalances": [
@@ -4036,156 +7949,6 @@
       "available": 69500,
       "limit": null,
       "status": "KILLED 30 Jul-1 Aug: payments 19,993.52 + 30,000 + 24,000 = 73,993.52 cleared full balance (was ~GBP 14.6K equiv). *789 = same card as 'ADIB Emirates VC Sig' record - reconciled. New spend already: ~2,186 AED (SelfDrive/Qlub/Boxica) - designated live daily card, PAY IN FULL monthly rule applies."
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "Tesco Clubcard",
-      "balance": 5727.11,
-      "currency": "GBP",
-      "available": 597.89,
-      "limit": 6325.0,
-      "status": "Interest 130.65 (2.281%/mo ≈ 27.4%/yr). Min 266.00 due 29 Sep 26; DD 279.00 paid 29 Aug. Sep stmt interest 4 lines: 21.62+31.60+77.25+0.18. Aug stmt interest partially visible (0.14+18.95+31.12+1 line cut off)",
-      "interestLatest": 130.65,
-      "interestDate": "04 Sep",
-      "interestPrevMonth": null,
-      "monthlyRatePct": 2.281,
-      "annualisedPct": 27.4
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "Virgin Money",
-      "balance": 9705.64,
-      "currency": "GBP",
-      "available": 294.36,
-      "limit": 10000.0,
-      "status": "Interest 192.99 (1.988%/mo ≈ 23.9%/yr). MISSED PAYMENT 401.90 flagged in app. Sep stmt interest 152.69+7.32+32.98=192.99; Aug stmt interest total 200.95",
-      "interestLatest": 192.99,
-      "interestDate": "03 Sep",
-      "interestPrevMonth": 200.95,
-      "monthlyRatePct": 1.988,
-      "annualisedPct": 23.9
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "Santander Everyday",
-      "balance": 11845.65,
-      "currency": "GBP",
-      "available": 304.35,
-      "limit": 12150.0,
-      "status": "Interest 216.11 (1.824%/mo ≈ 21.9%/yr). 27 Aug: BT int 213.51 + purchases int 2.40 + quasi-cash 0.20. 27 Jul: 216.29+14.93+1.36=232.58. Faster payment 750.00 on 31 Jul",
-      "interestLatest": 216.11,
-      "interestDate": "27 Aug",
-      "interestPrevMonth": 232.58,
-      "monthlyRatePct": 1.824,
-      "annualisedPct": 21.9
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "MBNA 1",
-      "balance": 8159.44,
-      "currency": "GBP",
-      "available": 640.56,
-      "limit": 8800.0,
-      "status": "Interest 79.08 (0.969%/mo ≈ 11.6%/yr). Card *1654. Stmt 06 Sep 26 bal 8,159.44; min 283.07 due 01 Oct 26. Interest 79.08. Being replaced with Visa card",
-      "interestLatest": 79.08,
-      "interestDate": "06 Sep",
-      "interestPrevMonth": null,
-      "monthlyRatePct": 0.969,
-      "annualisedPct": 11.6
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "MBNA 2",
-      "balance": 1931.05,
-      "currency": "GBP",
-      "available": 568.95,
-      "limit": 2500.0,
-      "status": "Interest 7.1 (0.368%/mo ≈ 4.4%/yr). Card *3318. Stmt 23 Aug 26 bal 1,931.05; min 55.38 due 17 Sep 26. Interest 7.10",
-      "interestLatest": 7.1,
-      "interestDate": "23 Aug",
-      "interestPrevMonth": null,
-      "monthlyRatePct": 0.368,
-      "annualisedPct": 4.4
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "M&S",
-      "balance": 7539.64,
-      "currency": "GBP",
-      "available": 460.36,
-      "limit": 8000.0,
-      "status": "Interest 41.26 (0.547%/mo ≈ 6.6%/yr). Card *0340. Last stmt bal 7,539.64; min 188.49 due 21 Sep. 27 Aug interest 5.34+35.92; 27 Jul 4.89+43.13. Payment 550.00 on 31 Jul. Limit confirmed unchanged by Calum",
-      "interestLatest": 41.26,
-      "interestDate": "27 Aug",
-      "interestPrevMonth": 48.02,
-      "monthlyRatePct": 0.547,
-      "annualisedPct": 6.6
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "HSBC",
-      "balance": 1423.17,
-      "currency": "GBP",
-      "available": 576.83,
-      "limit": 2000.0,
-      "status": "Interest 8.62 (0.606%/mo ≈ 7.3%/yr). Card *9345. Stmt bal 1,459.66 due 04 Sep, min 0.00. Interest 8.62 on 10 Aug. DD 36.49 (04 Sep), DD 49.30 (04 Aug), payment 500.00 (31 Jul). Limit confirmed unchanged by Calum",
-      "interestLatest": 8.62,
-      "interestDate": "10 Aug",
-      "interestPrevMonth": null,
-      "monthlyRatePct": 0.606,
-      "annualisedPct": 7.3
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "Barclaycard Plat",
-      "balance": 9520.38,
-      "currency": "GBP",
-      "available": 479.62,
-      "limit": 10000.0,
-      "status": "Interest 27.51 (0.289%/mo ≈ 3.5%/yr). VISA *3001. Min 122.43 due 21/09/26. Interest 27.51 = cash bal 1,441.57 @1.8075%/mo (21.69% simple / 24.0% compound); BT bal 8,078.81 @0% to 29 Jan 2028. Est next month 24.48. Payment 550.00 on 01 Aug",
-      "interestLatest": 27.51,
-      "interestDate": "27 Aug",
-      "interestPrevMonth": null,
-      "monthlyRatePct": 0.289,
-      "annualisedPct": 3.5
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "Amex Gold (charge)",
-      "balance": 0,
-      "currency": "GBP",
-      "available": null,
-      "limit": null,
-      "status": "Calum reports cleared to 0"
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "Amex Black",
-      "balance": 0,
-      "currency": "GBP",
-      "available": null,
-      "limit": null,
-      "status": "Calum reports cleared to 0"
-    },
-    {
-      "date": "2026-09-05",
-      "month": "Sep 26",
-      "card": "Aqua",
-      "balance": 0,
-      "currency": "GBP",
-      "available": null,
-      "limit": null,
-      "status": "Calum reports cleared to 0"
     }
   ],
   "personalDebts": [
@@ -4238,12 +8001,6 @@
       "availableAllCards": 791.9,
       "adibGBP": 14600,
       "totalUnsecuredInclADIB": 81910.45
-    },
-    "2026-09-05": {
-      "totalCards": 55852.08,
-      "note": "8 cards w/ balance; Amex Gold/Black + Aqua at 0 per Calum. Excl ADIB/BoS OD",
-      "availableAllCards": 2885.73,
-      "interestLatestMonthTotal": 703.32
     }
   },
   "paydayPlan": {
@@ -4367,15 +8124,15 @@
       },
       {
         "date": "2026-07-31",
-        "action": "Barclaycard 550 cleared (pending resolved). BoS balance now £855 + OD headroom. ~£4K still inbound for Tal's remainder."
+        "action": "Barclaycard 550 cleared (pending resolved). BoS balance now \u00a3855 + OD headroom. ~\u00a34K still inbound for Tal's remainder."
       },
       {
         "date": "2026-08-01",
-        "action": "+£4,012.04 second FX batch arrived. £750 card payment (card TBC with Calum). HSBC 500 + Vantage 2,000 confirmed on statement."
+        "action": "+\u00a34,012.04 second FX batch arrived. \u00a3750 card payment (card TBC with Calum). HSBC 500 + Vantage 2,000 confirmed on statement."
       },
       {
         "date": "2026-08-03",
-        "action": "TAL PAID IN FULL: £9,000 (Amex 4K + bills + going home). Barclaycard £550 re-sent and cleared (earlier attempt had bounced). BoS balance after pending: £855.91. PENDING: Luca £1,000 status?, the £750 card ID, ADIB tail ~D21K."
+        "action": "TAL PAID IN FULL: \u00a39,000 (Amex 4K + bills + going home). Barclaycard \u00a3550 re-sent and cleared (earlier attempt had bounced). BoS balance after pending: \u00a3855.91. PENDING: Luca \u00a31,000 status?, the \u00a3750 card ID, ADIB tail ~D21K."
       },
       {
         "date": "2026-08-01",
@@ -4457,5 +8214,39 @@
     "ghostDeals": "Q149 (Jan, ~20,100) + Q396 (Feb, ~27,125) + K518 (Feb, ~18,070) = ~65,295 est: never on any slip/SOA. Ask accounts when these invoice.",
     "recentUnpaid": "A5-108, TH-68, P151 (Jun) + P218, K331, Penthouse (Jul) = ~370K est, expect Aug/Sep slips.",
     "totalOutstanding_aed_est": 435765
+  },
+  "septemberPosition": {
+    "asOf": "2026-09-05",
+    "cashStart": 103000,
+    "paid": [
+      {
+        "to": "Tal (rent 37.5K + 10K + bills)",
+        "amount": 50000
+      },
+      {
+        "to": "UK account (Kevin + cards + Mum + Corrina)",
+        "amount": 20000
+      }
+    ],
+    "remaining": {
+      "Editors": 15000,
+      "Meta ads": 10000,
+      "Living (rest of month)": 16000,
+      "Tools": 794
+    },
+    "cashLeft": 33000,
+    "gap": 9000,
+    "lever": "editors paid on 30 Sep payday"
+  },
+  "positions": {
+    "asOf": "2026-08-31",
+    "Mashreq": 1984,
+    "BoS_GBP": -616,
+    "ADIB_card_owed": 64622,
+    "ADIB_cover": 70000,
+    "ADIB_min": 3231,
+    "ADIB_min_due": "2026-09-25",
+    "ADIB_rate_monthly": 0.0333,
+    "since": "D104K Tony landed 5 Sep"
   }
 }
