@@ -313,16 +313,21 @@ a{color:#E8C96B}
   
 
   <div id="tab-runway" class="tab-panel">
-    <div class="grid grid-4" id="rw-stats" style="margin-bottom:20px"></div>
-    <div class="grid grid-2" style="margin-bottom:16px">
-      <div class="card"><div class="card-title">September 2026 - live position</div><div id="rw-sep"></div></div>
-      <div class="card"><div class="card-title">Money coming in</div><div id="rw-income"></div></div>
-    </div>
-    <div class="card" style="margin-bottom:16px"><div class="card-title">Monthly baseline from October - <span id="rw-base-total"></span></div><div class="cat-list" id="rw-base"></div></div>
-    <div class="grid grid-2">
-      <div class="card"><div class="card-title">Runway - months covered from 30 Sep payday</div><div id="rw-months"></div></div>
-      <div class="card"><div class="card-title">August 2026 - where Đ181K went</div><div class="cat-list" id="rw-aug"></div></div>
-    </div>
+    <style>
+      .rw{max-width:760px}
+      .rw-step{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid #21262d}
+      .rw-n{width:34px;height:34px;border-radius:50%;background:#1f6feb;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none;font-size:.9rem}
+      .rw-t{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#6e7681;font-weight:600;margin-bottom:4px}
+      .rw-big{font-size:2rem;font-weight:700;color:#fff;line-height:1.1}
+      .rw-sub{color:#8b949e;font-size:.85rem;margin-top:4px}
+      .rw-row{display:flex;justify-content:space-between;padding:5px 0;font-size:.88rem;border-bottom:1px solid #161b22}
+      .rw-row span:last-child{font-variant-numeric:tabular-nums;font-weight:600}
+      .rw-line{display:flex;gap:6px;align-items:flex-end;height:120px;margin:10px 0 4px}
+      .rw-bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.72rem;color:#8b949e}
+      .rw-bar div{width:100%;border-radius:6px 6px 0 0;min-height:3px}
+      .good{color:#3fb950}.bad{color:#f85149}.warn{color:#e3b341}
+    </style>
+    <div class="rw" id="rw"></div>
   </div>
   <div id="tab-debt" class="tab-panel">
 
@@ -816,42 +821,42 @@ function renderCCBalances() {
 });
 
 
-// ---------- RUNWAY (reads data/finance/baseline.json + data/finance/aug26-transactions.json) ----------
+// ---------- RUNWAY: one column, six steps ----------
 function rwFmt(v){return 'Đ'+Math.round(v).toLocaleString();}
 function renderRunway(){
-  Promise.all([fetch('data/finance/baseline.json?t='+Date.now()).then(r=>r.json()),fetch('data/finance/aug26-transactions.json?t='+Date.now()).then(r=>r.json()).catch(()=>[])]).then(([b,aug])=>{
-    const total=b.total||b.lines.reduce((s,l)=>s+l.v,0), sep=b.september2026||{}, pos=b.positions_31aug||{}, inc=b.incomeExpected||{};
+  fetch('data/finance/baseline.json?t='+Date.now()).then(r=>r.json()).then(b=>{
+    const total=b.total||b.lines.reduce((s,l)=>s+l.v,0), sep=b.september2026||{}, inc=b.incomeExpected||{}, pos=b.positions_31aug||{};
     const payday=inc['2026-09-30']||0, oct=inc['2026-10']||0, unas=inc.unassigned||0;
-    const monthsPay=(payday/total), monthsAll=((payday+oct+unas)/total);
-    const stat=(k,v,sub,cls)=>'<div class="card"><div class="card-title">'+k+'</div><div class="stat-value">'+v+'</div><div class="stat-sub">'+(sub||'')+'</div></div>';
-    document.getElementById('rw-stats').innerHTML=stat('BASELINE / MONTH',rwFmt(total),'from October · accruals included')
-      +stat('PAYDAY 30 SEP',rwFmt(payday),'8 deals if all transfer')
-      +stat('RUNWAY ON PAYDAY',monthsPay.toFixed(1)+' mo','to ~'+(monthsPay>=2.5?'mid-Dec':'Nov')+' · '+monthsAll.toFixed(1)+' mo with Oct + unassigned')
-      +stat('ADIB CARD',rwFmt(pos.ADIB_card_owed||0),'of '+rwFmt(pos.ADIB_cover||0)+' · min '+rwFmt(pos.ADIB_min||0)+' due '+(pos.ADIB_min_due||''));
-    // september
-    const paid=(sep.paid||[]).map(p=>'<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #21262d"><span>✓ '+p.to+'</span><span class="amount" style="color:#3fb950">'+rwFmt(p.amount)+'</span></div>').join('');
-    const rem=Object.entries(sep.remaining||{}).map(([k,v])=>'<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #21262d"><span>'+k+'</span><span class="amount">'+rwFmt(v)+'</span></div>').join('');
-    const remT=Object.values(sep.remaining||{}).reduce((a,c)=>a+c,0);
-    document.getElementById('rw-sep').innerHTML='<div class="text-muted" style="font-size:.78rem;margin-bottom:6px">Cash at start '+rwFmt(sep.cash_start||0)+'</div>'+paid+'<div class="text-muted" style="font-size:.72rem;margin:10px 0 4px;text-transform:uppercase;letter-spacing:.08em">Still to pay</div>'+rem
-      +'<div style="display:flex;justify-content:space-between;padding:10px 0 0;font-weight:700"><span>Cash left '+rwFmt(sep.cash_left||0)+' vs '+rwFmt(remT)+'</span><span style="color:'+((sep.gap||0)>0?'#e3b341':'#3fb950')+'">gap '+rwFmt(sep.gap||0)+'</span></div>'
-      +'<div class="text-muted" style="font-size:.78rem;margin-top:6px">'+((sep.levers||[])[0]||'')+'</div>';
-    document.getElementById('rw-income').innerHTML=Object.entries(inc).map(([k,v])=>'<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #21262d"><span>'+k+'</span><span class="amount">'+(typeof v==='number'?rwFmt(v):v)+'</span></div>').join('');
-    // baseline bars
-    document.getElementById('rw-base-total').textContent=rwFmt(total);
-    const colors={accrual:'#e3b341',business:'#58a6ff',family:'#bc8cff',living:'#3fb950',debt:'#f85149'};
-    document.getElementById('rw-base').innerHTML=b.lines.slice().sort((x,y)=>y.v-x.v).map(l=>'<div><div class="cat-header"><span class="cat-name">'+l.k+(l.note?' <span class="text-muted" style="font-size:.72rem">'+l.note+'</span>':'')+'</span><span class="cat-nums">'+rwFmt(l.v)+' · '+Math.round(l.v/total*100)+'%</span></div><div class="bar-bg"><div class="bar-fill" style="width:'+Math.round(l.v/total*100)+'%;background:'+(colors[l.type]||'#8b949e')+'"></div></div></div>').join('');
-    // runway months table
-    let cash=payday, rows='';
-    const flow=[['Oct 26',oct],['Nov 26',0],['Dec 26',0],['Jan 27',-125000+31250*4],['Feb 27',0]];
-    for(const [m,extra] of flow){ cash=cash-total+extra; rows+='<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #21262d"><span>'+m+(extra?' <span class="text-muted" style="font-size:.72rem">'+(extra>0?'+':'')+rwFmt(extra)+'</span>':'')+'</span><span class="amount" style="color:'+(cash>=0?'#3fb950':'#f85149')+'">'+rwFmt(cash)+'</span></div>'; }
-    document.getElementById('rw-months').innerHTML='<div class="text-muted" style="font-size:.78rem;margin-bottom:6px">Cash after each month · payday Đ'+Math.round(payday/1000)+'K in, baseline out, Oct payout in, Modon accrual already inside baseline</div>'+rows+'<div class="text-muted" style="font-size:.75rem;margin-top:8px">Red = the month Jake\'s income has to be real. No new deals assumed.</div>';
-    // august groups
-    const g={}; (aug||[]).forEach(t=>{ if(t.aed<0&&!t.cat.startsWith('TRANSFER')&&!/nets to 0/.test(t.cat)) g[t.cat]=(g[t.cat]||0)-t.aed; });
-    const at=Object.values(g).reduce((a,c)=>a+c,0);
-    document.getElementById('rw-aug').innerHTML=Object.entries(g).sort((x,y)=>y[1]-x[1]).slice(0,14).map(([k,v])=>'<div><div class="cat-header"><span class="cat-name">'+k+'</span><span class="cat-nums">'+rwFmt(v)+' · '+Math.round(v/at*100)+'%</span></div><div class="bar-bg"><div class="bar-fill" style="width:'+Math.round(v/at*100)+'%;background:'+(/UNKNOWN|Cash/.test(k)?'#f85149':'#58a6ff')+'"></div></div></div>').join('')+'<div class="text-muted" style="font-size:.75rem">Total real outflow '+rwFmt(at)+' · full report: data/finance/aug26-report.md</div>';
+    const remT=Object.values(sep.remaining||{}).reduce((a,c)=>a+c,0), gap=(sep.cash_left||0)-remT;
+    const step=(n,t,big,sub,body)=>'<div class="rw-step"><div class="rw-n">'+n+'</div><div style="flex:1"><div class="rw-t">'+t+'</div><div class="rw-big">'+big+'</div>'+(sub?'<div class="rw-sub">'+sub+'</div>':'')+(body||'')+'</div></div>';
+    // 1 cash today
+    let h=step(1,'Cash today',rwFmt(sep.cash_left||0),'after '+(sep.paid||[]).map(p=>rwFmt(p.amount)+' to '+p.to.split(' (')[0]).join(' and '));
+    // 2 still owed this month
+    h+=step(2,'Still to pay in September',rwFmt(remT),'<span class="'+(gap>=0?'good':'warn')+'">'+(gap>=0?'covered':rwFmt(-gap)+' short')+'</span> · '+((sep.levers||[])[0]||''),
+      '<div style="margin-top:8px">'+Object.entries(sep.remaining||{}).map(([k,v])=>'<div class="rw-row"><span>'+k+'</span><span>'+rwFmt(v)+'</span></div>').join('')+'</div>');
+    // 3 payday
+    h+=step(3,'30 September',rwFmt(payday)+' lands','8 deals · if all transfer before the cut-off');
+    // 4 monthly cost
+    h+=step(4,'What every month costs from October',rwFmt(total),'rent and Modon put away monthly · biggest first',
+      '<div style="margin-top:8px">'+b.lines.slice().sort((x,y)=>y.v-x.v).map(l=>'<div class="rw-row"><span>'+l.k.replace(/\s*\(.*?\)/g,'')+(l.note?' <span class="warn" style="font-size:.72rem">'+l.note+'</span>':'')+'</span><span>'+rwFmt(l.v)+'</span></div>').join('')+'</div>');
+    // 5 how long it lasts
+    let cash=payday, months=[['Oct',oct],['Nov',0],['Dec',0],['Jan',0],['Feb',0]], bars='', firstRed='';
+    const vals=[]; for(const [m,extra] of months){ cash=cash-total+extra; vals.push([m,cash,extra]); if(cash<0&&!firstRed) firstRed=m; }
+    const mx=Math.max(payday,...vals.map(v=>Math.abs(v[1])));
+    bars=vals.map(([m,c,e])=>'<div class="rw-bar"><span style="color:'+(c>=0?'#3fb950':'#f85149')+';font-weight:700">'+(c>=0?'':'-')+'Đ'+Math.round(Math.abs(c)/1000)+'K</span><div style="height:'+Math.max(3,Math.round(Math.abs(c)/mx*80))+'px;background:'+(c>=0?'#3fb950':'#f85149')+'"></div><span>'+m+(e?' +'+Math.round(e/1000)+'K':'')+'</span></div>').join('');
+    h+=step(5,'How long the payday lasts',firstRed?('Runs out in '+firstRed):'Covers to Feb','cash left at the end of each month · October payout included · nothing else assumed','<div class="rw-line">'+bars+'</div>');
+    // 6 what changes it
+    h+=step(6,'What changes the line','',
+      '','<div style="margin-top:4px">'
+      +'<div class="rw-row"><span>October payout (Syed, Jayde)</span><span class="good">+'+rwFmt(oct)+'</span></div>'
+      +'<div class="rw-row"><span>Jan/Feb three, if they pay</span><span class="good">+'+rwFmt(unas)+'</span></div>'
+      +'<div class="rw-row"><span>Every deal closed this month</span><span class="good">+ board</span></div>'
+      +'<div class="rw-row"><span>ADIB card '+rwFmt(pos.ADIB_card_owed||0)+' owed at 3.3%/month</span><span class="bad">bleeds</span></div>'
+      +'<div class="rw-row"><span>Modon Đ125K - full or half?</span><span class="warn">confirm</span></div>'
+      +'</div>');
+    document.getElementById('rw').innerHTML=h;
   }).catch(e=>console.error('runway load failed',e));
 }
-
 renderRunway();
 fetch('data/finance.json?t='+Date.now()).then(r=>r.json()).then(d=>{
   ALL_TRANSACTIONS=d.transactions||[];BUDGETS=d.budgets||{};CC_BALANCES=d.ccBalances||[];CATEGORIES=d.categories||[];window.PERSONAL_DEBTS=d.personalDebts||[];window.DEBT_BASELINE=d.debtBaseline||null;
