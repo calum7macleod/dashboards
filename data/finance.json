@@ -1,4196 +1,4461 @@
 {
- "categories": [
-  "Base Food",
-  "Deliveries",
-  "Life",
-  "Business",
-  "Entertainment",
-  "Investing",
-  "Loan",
-  "Saving",
-  "Health",
-  "Gambling",
-  "Other",
-  "Unaccounted",
-  "Fees"
- ],
- "budgets": {
-  "Apr 26": {
-   "Base Food": 4000,
-   "Deliveries": 500,
-   "Life": 2000,
-   "Business": 7000,
-   "Entertainment": 500,
-   "Investing": 250,
-   "Loan": 10000,
-   "Saving": 250,
-   "Health": 4500,
-   "Gambling": 1,
-   "Other": 999,
-   "Unaccounted": 0,
-   "total": 30000
-  },
-  "Mar 26": {
-   "Base Food": 4000,
-   "Deliveries": 500,
-   "Life": 2000,
-   "Business": 7000,
-   "Entertainment": 500,
-   "Investing": 250,
-   "Loan": 10000,
-   "Saving": 250,
-   "Health": 4500,
-   "Gambling": 1,
-   "Other": 999,
-   "Unaccounted": 0,
-   "total": 30000
-  },
-  "Feb 26": {
-   "Base Food": 4000,
-   "Deliveries": 500,
-   "Life": 2000,
-   "Business": 7000,
-   "Entertainment": 500,
-   "Investing": 250,
-   "Loan": 10000,
-   "Saving": 250,
-   "Health": 4500,
-   "Gambling": 1,
-   "Other": 999,
-   "Unaccounted": 0,
-   "total": 30000
-  },
-  "Jan 26": {
-   "Base Food": 4000,
-   "Deliveries": 500,
-   "Life": 2000,
-   "Business": 7000,
-   "Entertainment": 500,
-   "Investing": 250,
-   "Loan": 10000,
-   "Saving": 250,
-   "Health": 4500,
-   "Gambling": 1,
-   "Other": 999,
-   "Unaccounted": 0,
-   "total": 30000
-  },
-  "Jul 26": {
-   "Base Food": 4000,
-   "Deliveries": 500,
-   "Life": 2000,
-   "Business": 7000,
-   "Entertainment": 500,
-   "Investing": 250,
-   "Loan": 10000,
-   "Saving": 250,
-   "Health": 4500,
-   "Gambling": 1,
-   "Other": 999,
-   "Unaccounted": 0,
-   "total": 30000
-  }
- },
- "transactions": [
-  {
-   "day": 6,
-   "description": "Transfer - Calum",
-   "account": "BoS",
-   "amount": 100,
-   "category": "Other",
-   "month": "Jul 26"
-  },
-  {
-   "day": 6,
-   "description": "Transfer - C L Macleod",
-   "account": "BoS",
-   "amount": 200,
-   "category": "Other",
-   "month": "Jul 26"
-  },
-  {
-   "day": 6,
-   "description": "Daily OD interest",
-   "account": "BoS",
-   "amount": 2.0,
-   "category": "Fees",
-   "month": "Jul 26"
-  },
-  {
-   "day": 6,
-   "description": "HSBC CC min payment",
-   "account": "BoS",
-   "amount": 36.25,
-   "category": "Loan",
-   "month": "Jul 26"
-  },
-  {
-   "day": 6,
-   "description": "Virgin Money payment",
-   "account": "BoS",
-   "amount": 200,
-   "category": "Loan",
-   "month": "Jul 26"
-  },
-  {
-   "month": "Jul 26",
-   "day": 6,
-   "description": "July clean start - tracking live via Max",
-   "account": "-",
-   "amount": 0,
-   "category": "Other"
-  },
-  {
-   "month": "Mar 26",
-   "day": 1,
-   "description": "Futures",
-   "account": "Binance",
-   "amount": 720,
-   "need": "",
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 2,
-   "description": "TESCO BANK",
-   "account": "BoS",
-   "amount": 1500,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 2,
-   "description": "AMEX",
-   "account": "BoS",
-   "amount": 8200,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 2,
-   "description": "PET HEALTH CLUB",
-   "account": "BoS",
-   "amount": 141.25,
-   "need": 4,
-   "category": "Health"
-  },
-  {
-   "month": "Mar 26",
-   "day": 2,
-   "description": "Gambling",
-   "account": "BoS",
-   "amount": 1000,
-   "need": 3,
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 3,
-   "description": "JACKSFLIGHTCLUB",
-   "account": "BoS",
-   "amount": 175,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 3,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 949,
-   "need": 4,
-   "category": "Health"
-  },
-  {
-   "month": "Mar 26",
-   "day": 3,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 3,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 36.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 4,
-   "description": "AGRIA PET INS",
-   "account": "BoS",
-   "amount": 593.1,
-   "need": 4,
-   "category": "Health"
-  },
-  {
-   "month": "Mar 26",
-   "day": 4,
-   "description": "GiffGaff",
-   "account": "Wise",
-   "amount": 100,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 4,
-   "description": "Futures",
-   "account": "Binance",
-   "amount": 327.6,
-   "need": "",
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 4,
-   "description": "Krispy Kreme",
-   "account": "ADIB",
-   "amount": 20,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 4,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 4,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 19.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 5,
-   "description": "MBNA",
-   "account": "BoS",
-   "amount": 1017.15,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 5,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 59.95,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 6,
-   "description": "PhantomBuster",
-   "account": "Wise",
-   "amount": 300,
-   "need": 4,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 6,
-   "description": "ENOC",
-   "account": "ADIB",
-   "amount": 12.5,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 6,
-   "description": "ENOC",
-   "account": "ADIB",
-   "amount": 36.75,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 6,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 7,
-   "description": "Oura Ring",
-   "account": "ADIB",
-   "amount": 6.99,
-   "need": 3,
-   "category": "Health"
-  },
-  {
-   "month": "Mar 26",
-   "day": 8,
-   "description": "Abby (Virtual PA - Philippines)",
-   "account": "Wise",
-   "amount": 700,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 8,
-   "description": "Futures",
-   "account": "Binance",
-   "amount": 590.4,
-   "need": "",
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 8,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 46.7,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 9,
-   "description": "HSBC CREDIT CARD",
-   "account": "BoS",
-   "amount": 200.55,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 9,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 10,
-   "description": "Amazon.ae",
-   "account": "ADIB",
-   "amount": 109,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 10,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 10,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 44.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 10,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 52.83,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 10,
-   "description": "International Fee",
-   "account": "ADIB",
-   "amount": 0.54,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 10,
-   "description": "VAT Charge",
-   "account": "ADIB",
-   "amount": 0.03,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 11,
-   "description": "AQUA CREDIT CARD",
-   "account": "BoS",
-   "amount": 746.6,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 11,
-   "description": "AI Homaizi Foods",
-   "account": "ADIB",
-   "amount": 12.54,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 11,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 12,
-   "description": "WIDGIT",
-   "account": "ADIB",
-   "amount": 24,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 12,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 12,
-   "description": "REELLY PERSONAL",
-   "account": "ADIB",
-   "amount": 179.9,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 12,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 36.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 13,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 59.95,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 13,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 13,
-   "description": "International Fee",
-   "account": "ADIB",
-   "amount": 0.48,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 13,
-   "description": "VAT Charge",
-   "account": "ADIB",
-   "amount": 0.02,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 14,
-   "description": "Futures",
-   "account": "Binance",
-   "amount": 720,
-   "need": "",
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 14,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 30.55,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 14,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 30.55,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 15,
-   "description": "Futures",
-   "account": "Binance",
-   "amount": 72,
-   "need": "",
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 15,
-   "description": "YouTube Premium",
-   "account": "ADIB",
-   "amount": 26.99,
-   "need": 3,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Mar 26",
-   "day": 15,
-   "description": "ADNOC",
-   "account": "ADIB",
-   "amount": 12.75,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 15,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 32.45,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 15,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 53.2,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 15,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 205.9,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "Futures",
-   "account": "Binance",
-   "amount": 601.2,
-   "need": "",
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "FITT Meals",
-   "account": "ADIB",
-   "amount": 721.47,
-   "need": 4,
-   "category": "Base Food"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "ADNOC",
-   "account": "ADIB",
-   "amount": 44.5,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 30.55,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 30.55,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 30.55,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 30.55,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 59.95,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "Amazon.ae",
-   "account": "ADIB",
-   "amount": 109,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 44.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 52.83,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "International Fee",
-   "account": "ADIB",
-   "amount": 0.54,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "VAT Charge",
-   "account": "ADIB",
-   "amount": 0.03,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 18,
-   "description": "AMERICAN EXPRESS",
-   "account": "BoS",
-   "amount": 1047.8,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 18,
-   "description": "tazizi",
-   "account": "ADIB",
-   "amount": 31,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 18,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 18,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 36.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 19,
-   "description": "MBNA",
-   "account": "BoS",
-   "amount": 245.6,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 20,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Mar 26",
-   "day": 31,
-   "description": "OVERDRAFT INTEREST (TOTAL)",
-   "account": "BoS",
-   "amount": 350,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 31,
-   "description": "Ali Vids (Content business)",
-   "account": "Mashreq",
-   "amount": 6000,
-   "need": 4,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 31,
-   "description": "Tal Bills",
-   "account": "BoS",
-   "amount": 5000,
-   "need": 5,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 23,
-   "description": "Barclaycard",
-   "account": "BoS",
-   "amount": 450,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 23,
-   "description": "Santander",
-   "account": "BoS",
-   "amount": 600,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 23,
-   "description": "Virgin",
-   "account": "BoS",
-   "amount": 760,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 24,
-   "description": "Corrina",
-   "account": "BoS",
-   "amount": 750,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 25,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 45,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 25,
-   "description": "Amex",
-   "account": "BoS",
-   "amount": 1100,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 26,
-   "description": "Charger & Dareem",
-   "account": "Tal Card",
-   "amount": 300,
-   "need": 4,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 95.9,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 147.4,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "Hamlam Trading",
-   "account": "ADIB",
-   "amount": 29,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "Boxica Membership",
-   "account": "ADIB",
-   "amount": 949,
-   "need": 4,
-   "category": "Health"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 44.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "Elite Vita Polyclinic",
-   "account": "ADIB",
-   "amount": 3500,
-   "need": 5,
-   "category": "Health"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 241.25,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "MBNA LIMITED",
-   "account": "BoS",
-   "amount": 1024.65,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "PET HEALTH CLUB",
-   "account": "BoS",
-   "amount": 141.25,
-   "need": 4,
-   "category": "Health"
-  },
-  {
-   "month": "Feb 26",
-   "day": 3,
-   "description": "Baskin Robbins",
-   "account": "ADIB",
-   "amount": 26,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 3,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 68.05,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 4,
-   "description": "Zofeur",
-   "account": "ADIB",
-   "amount": 57.93,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 4,
-   "description": "Starbucks",
-   "account": "ADIB",
-   "amount": 7,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 4,
-   "description": "Caribou Coffee",
-   "account": "ADIB",
-   "amount": 30.5,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 5,
-   "description": "Circle K Fuel",
-   "account": "ADIB",
-   "amount": 166,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 5,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 40.15,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 5,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 59.95,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 5,
-   "description": "HSBC CREDIT CARD",
-   "account": "BoS",
-   "amount": 205.7,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 6,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 23.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 7,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 50.45,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 7,
-   "description": "Boxica Coffee",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 7,
-   "description": "Caribou Coffee",
-   "account": "ADIB",
-   "amount": 20,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 7,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 50.05,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 7,
-   "description": "ADNOC Fuel",
-   "account": "ADIB",
-   "amount": 109.37,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 8,
-   "description": "Abby (Virtual PA - Philippines)",
-   "account": "Wise",
-   "amount": 700,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Innovative Beauty",
-   "account": "ADIB",
-   "amount": 300,
-   "need": 3,
-   "category": "Health"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Mangrove Market",
-   "account": "ADIB",
-   "amount": 2.5,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Amusement",
-   "account": "ADIB",
-   "amount": 10,
-   "need": 3,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Oura Ring",
-   "account": "ADIB",
-   "amount": 26.57,
-   "need": 3,
-   "category": "Health"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Starbucks",
-   "account": "ADIB",
-   "amount": 76,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Westin",
-   "account": "ADIB",
-   "amount": 485,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Virgin Mobile",
-   "account": "ADIB",
-   "amount": 105,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Parking",
-   "account": "ADIB",
-   "amount": 30,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Limitless Park",
-   "account": "ADIB",
-   "amount": 70,
-   "need": 3,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "AQUA CREDIT CARD",
-   "account": "BoS",
-   "amount": 140.4,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 10,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 74.25,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 10,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 101.4,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 10,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 65.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 10,
-   "description": "Virgin Mobile",
-   "account": "ADIB",
-   "amount": 157.5,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 11,
-   "description": "Coffee",
-   "account": "Wise",
-   "amount": 40,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 11,
-   "description": "Deliveroo",
-   "account": "Wise",
-   "amount": 85,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 11,
-   "description": "Boxica Coffee",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 11,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 44.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 11,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 92.41,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 12,
-   "description": "Deliveroo",
-   "account": "Wise",
-   "amount": 45,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 12,
-   "description": "Cafu",
-   "account": "Wise",
-   "amount": 120,
-   "need": 5,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 12,
-   "description": "Manychat",
-   "account": "Wise",
-   "amount": 55,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "Coffee",
-   "account": "Wise",
-   "amount": 60,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "OpenAI",
-   "account": "Wise",
-   "amount": 100,
-   "need": 4,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "Tradingview",
-   "account": "Wise",
-   "amount": 55,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "Golf",
-   "account": "Wise",
-   "amount": 200,
-   "need": 3,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "Widgit",
-   "account": "ADIB",
-   "amount": 24,
-   "need": 4,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "International Fee",
-   "account": "ADIB",
-   "amount": 0.48,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "VAT Charge",
-   "account": "ADIB",
-   "amount": 0.02,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 14,
-   "description": "Boxica Coffee",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "Hamlam Trading",
-   "account": "ADIB",
-   "amount": 27,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "Reelly Personal",
-   "account": "ADIB",
-   "amount": 179.9,
-   "need": 4,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "Hamlam Trading",
-   "account": "ADIB",
-   "amount": 29,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 97.4,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 568.7,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 52.15,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "MBNA LIMITED",
-   "account": "BoS",
-   "amount": 251.9,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "Tasheel",
-   "account": "Wise",
-   "amount": 110,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "Hill House",
-   "account": "ADIB",
-   "amount": 245,
-   "need": 3,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "Youtube Premium",
-   "account": "ADIB",
-   "amount": 26.99,
-   "need": 3,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "Tashas",
-   "account": "ADIB",
-   "amount": 29,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 44.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 23.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 74.25,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "International Fee",
-   "account": "ADIB",
-   "amount": 0.54,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 17,
-   "description": "VAT Charge",
-   "account": "ADIB",
-   "amount": 0.03,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 18,
-   "description": "Motor City",
-   "account": "ADIB",
-   "amount": 50,
-   "need": 3,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 18,
-   "description": "Careem",
-   "account": "ADIB",
-   "amount": 38.66,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 18,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 53.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 18,
-   "description": "AMERICAN EXPRESS",
-   "account": "BoS",
-   "amount": 1433.95,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 19,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 128.94,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 19,
-   "description": "Caribou Coffee",
-   "account": "ADIB",
-   "amount": 20,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 19,
-   "description": "Starbucks",
-   "account": "ADIB",
-   "amount": 43,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 19,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 36.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 19,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 114.9,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 20,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 49.05,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 20,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 31.2,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 20,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 19.95,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 20,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 55.85,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 20,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 160.4,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 20,
-   "description": "Boxica Coffee",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 20,
-   "description": "SANTANDER CARDS",
-   "account": "BoS",
-   "amount": 588.3,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 21,
-   "description": "Futures",
-   "account": "Binance",
-   "amount": 687.6,
-   "need": 1,
-   "category": "Gambling"
-  },
-  {
-   "month": "Feb 26",
-   "day": 21,
-   "description": "Caribou Coffee",
-   "account": "ADIB",
-   "amount": 20,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 21,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 70.9,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 21,
-   "description": "InstaShop",
-   "account": "ADIB",
-   "amount": 169.14,
-   "need": 3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 21,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 98.9,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 21,
-   "description": "ADNOC Fuel",
-   "account": "ADIB",
-   "amount": 117.67,
-   "need": 2,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "Deliveroo",
-   "account": "Wise",
-   "amount": 90,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 71.6,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 49.55,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "Boxica Coffee",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 35.35,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 137.4,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "M&S CREDIT CARD",
-   "account": "BoS",
-   "amount": 802.85,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "VIRGIN MONEY",
-   "account": "BoS",
-   "amount": 790.1,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 23,
-   "description": "BARCLAYCARD VISA",
-   "account": "BoS",
-   "amount": 420.5,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 24,
-   "description": "Boxica Coffee",
-   "account": "ADIB",
-   "amount": 18,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 25,
-   "description": "Coffee",
-   "account": "Wise",
-   "amount": 20,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 26,
-   "description": "AGRIA PET INS",
-   "account": "BoS",
-   "amount": 593.1,
-   "need": 4,
-   "category": "Health"
-  },
-  {
-   "month": "Feb 26",
-   "day": 27,
-   "description": "Food",
-   "account": "Wise",
-   "amount": 130,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 28,
-   "description": "Manychat",
-   "account": "Wise",
-   "amount": 55,
-   "need": 1,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 28,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 140.9,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 28,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 93.9,
-   "need": 2,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 28,
-   "description": "OVERDRAFT INTEREST (TOTAL)",
-   "account": "BoS",
-   "amount": 300,
-   "need": 5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 28,
-   "description": "Ali Vids",
-   "account": "Mashreq",
-   "amount": 6000,
-   "need": 4,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 28,
-   "description": "Tal Bills",
-   "account": "BoS",
-   "amount": 5000,
-   "need": 5,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 26,
-   "description": "Claude Subscription",
-   "account": "Wise",
-   "amount": 86.94,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 29,
-   "description": "Anthropic (Max)",
-   "account": "Wise",
-   "amount": 881.57,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 29,
-   "description": "Anthropic (Max)",
-   "account": "Wise",
-   "amount": 263.14,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 29,
-   "description": "Anthropic (Max)",
-   "account": "Wise",
-   "amount": 21.88,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 2,
-   "description": "MBNA LIMITED",
-   "account": "BoS",
-   "amount": 1021.35,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "HSBC CREDIT CARD",
-   "account": "BoS",
-   "amount": 203.83,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 8,
-   "description": "AQUA CREDIT CARD",
-   "account": "BoS",
-   "amount": 136.98,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "MBNA LIMITED",
-   "account": "BoS",
-   "amount": 249.61,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "AMERICAN EXPRESS",
-   "account": "BoS",
-   "amount": 854.14,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 20,
-   "description": "SANTANDER CARDS",
-   "account": "BoS",
-   "amount": 574.05,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 22,
-   "description": "M&S CREDIT CARD",
-   "account": "BoS",
-   "amount": 795.45,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 23,
-   "description": "BARCLAYCARD PLAT VISA",
-   "account": "BoS",
-   "amount": 410.31,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "VIRGIN MONEY",
-   "account": "BoS",
-   "amount": 778.84,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 29,
-   "description": "TESCO BANK",
-   "account": "BoS",
-   "amount": 1178.52,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 2,
-   "description": "PET HEALTH CLUB",
-   "account": "BoS",
-   "amount": 136.45,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "AGRIA PET INS",
-   "account": "BoS",
-   "amount": 572.93,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 6,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 57.91,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 14,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 57.91,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 14,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 57.91,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 43.42,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "JAMES GIBSON",
-   "account": "BoS",
-   "amount": 676.2,
-   "category": "Gambling"
-  },
-  {
-   "month": "Jan 26",
-   "day": 23,
-   "description": "CORRINA FLAHER",
-   "account": "BoS",
-   "amount": 724.5,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 31,
-   "description": "OVERDRAFT INTEREST (TOTAL)",
-   "account": "BoS",
-   "amount": 284.97,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 2,
-   "description": "ALEX CASH",
-   "account": "BoS",
-   "amount": 966,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "MARK KELLY",
-   "account": "BoS",
-   "amount": 483,
-   "category": "Base Food"
-  },
-  {
-   "month": "Feb 26",
-   "day": 25,
-   "description": "CORRINA FLAHER",
-   "account": "BoS",
-   "amount": 724.5,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 13,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 57.91,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 57.91,
-   "category": "Life"
-  },
-  {
-   "month": "Feb 26",
-   "day": 24,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 43.42,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 2,
-   "description": "JAMES GIBSON",
-   "account": "BoS",
-   "amount": 966,
-   "category": "Gambling"
-  },
-  {
-   "month": "Mar 26",
-   "day": 16,
-   "description": "Nationwide (Property)",
-   "account": "BoS",
-   "amount": 241.5,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 24,
-   "description": "Nationwide (Property)",
-   "account": "BoS",
-   "amount": 193.2,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 24,
-   "description": "M&S CREDIT CARD",
-   "account": "BoS",
-   "amount": 756.18,
-   "category": "Loan"
-  },
-  {
-   "month": "Mar 26",
-   "day": 24,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 43.42,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "ENOC",
-   "account": "ADIB CC",
-   "amount": 130.34,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 12,
-   "description": "ADNOC",
-   "account": "ADIB CC",
-   "amount": 116.74,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "ADNOC",
-   "account": "ADIB CC",
-   "amount": 118.29,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 22,
-   "description": "CAFU",
-   "account": "ADIB CC",
-   "amount": 19.95,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 22,
-   "description": "CAFU",
-   "account": "ADIB CC",
-   "amount": 116.39,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 30,
-   "description": "ADNOC",
-   "account": "ADIB CC",
-   "amount": 117.83,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "CAFU",
-   "account": "ADIB CC",
-   "amount": 7.95,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "CAFU (large fill)",
-   "account": "ADIB CC",
-   "amount": 659,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "SPINNEYS",
-   "account": "ADIB CC",
-   "amount": 121,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "Amazon Grocery",
-   "account": "ADIB CC",
-   "amount": 53,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "Amazon Grocery",
-   "account": "ADIB CC",
-   "amount": 48,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 16,
-   "description": "HAMLAM TRADING",
-   "account": "ADIB CC",
-   "amount": 39.95,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 16,
-   "description": "carrefouruae.com",
-   "account": "ADIB CC",
-   "amount": 181.48,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "VALUE BASKET",
-   "account": "ADIB CC",
-   "amount": 45,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "VALUE BASKET",
-   "account": "ADIB CC",
-   "amount": 156,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "FITT MEALS",
-   "account": "ADIB CC",
-   "amount": 2258.94,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 20,
-   "description": "SPINNEYS",
-   "account": "ADIB CC",
-   "amount": 236.75,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 12,
-   "description": "HAMLAM TRADING",
-   "account": "ADIB CC",
-   "amount": 38,
-   "category": "Base Food"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "Groupon",
-   "account": "ADIB CC",
-   "amount": 549,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 92.89,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 76.55,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 64.45,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 180.13,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 81.25,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 3,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 111.4,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 3,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 89.22,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 105.9,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 6,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 73.83,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 6,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 91.86,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 6,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 79.45,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 7,
-   "description": "CARIBOU COFFEE",
-   "account": "ADIB CC",
-   "amount": 20,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 8,
-   "description": "tazizi",
-   "account": "ADIB CC",
-   "amount": 21,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 8,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 65.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 9,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 74.25,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 9,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 112.4,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 10,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 158.9,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 10,
-   "description": "CARIBOU COFFEE",
-   "account": "ADIB CC",
-   "amount": 34,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 12,
-   "description": "BOXICA Coffee",
-   "account": "ADIB CC",
-   "amount": 18,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 12,
-   "description": "STARBUCKS",
-   "account": "ADIB CC",
-   "amount": 19,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 13,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 44.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 14,
-   "description": "tazizi",
-   "account": "ADIB CC",
-   "amount": 38,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 14,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 53.49,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 14,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 74.25,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 14,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 106.09,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "MCDONALDS",
-   "account": "ADIB CC",
-   "amount": 23,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 136.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 100.4,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 158.9,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 16,
-   "description": "CARIBOU COFFEE",
-   "account": "ADIB CC",
-   "amount": 20,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 16,
-   "description": "CARIBOU COFFEE",
-   "account": "ADIB CC",
-   "amount": 20,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 16,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 136.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 17,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 44.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 17,
-   "description": "CARIBOU COFFEE",
-   "account": "ADIB CC",
-   "amount": 20,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 17,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 68.35,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "tazizi",
-   "account": "ADIB CC",
-   "amount": 22,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 66.85,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 177.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "BOXICA Coffee",
-   "account": "ADIB CC",
-   "amount": 53,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 190.9,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 20,
-   "description": "THE LIME TREE CAFE",
-   "account": "ADIB CC",
-   "amount": 168,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 20,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 99.69,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 21,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 25.3,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 21,
-   "description": "BOXICA Coffee",
-   "account": "ADIB CC",
-   "amount": 18,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 21,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 98.9,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 24,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 74.25,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 24,
-   "description": "BOXICA Coffee",
-   "account": "ADIB CC",
-   "amount": 18,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 69.4,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 28.6,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "InstaShop",
-   "account": "ADIB CC",
-   "amount": 61.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 44.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 115.7,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 28,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 44.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 29,
-   "description": "BOXICA Coffee",
-   "account": "ADIB CC",
-   "amount": 18,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 30,
-   "description": "Deliveroo",
-   "account": "ADIB CC",
-   "amount": 44.95,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 31,
-   "description": "CARIBOU COFFEE",
-   "account": "ADIB CC",
-   "amount": 20,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 31,
-   "description": "BOXICA Coffee",
-   "account": "ADIB CC",
-   "amount": 18,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Jan 26",
-   "day": 2,
-   "description": "BOXICA Membership",
-   "account": "ADIB CC",
-   "amount": 949,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "IBN SINA PHARMACY",
-   "account": "ADIB CC",
-   "amount": 21,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 9,
-   "description": "OURA RING",
-   "account": "ADIB CC",
-   "amount": 26.57,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 12,
-   "description": "KINGS COLLEGE HOSPITAL",
-   "account": "ADIB CC",
-   "amount": 30,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 16,
-   "description": "ELITE VITA POLYCLINIC",
-   "account": "ADIB CC",
-   "amount": 3500,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 17,
-   "description": "MEDISOUQ PHARMACY",
-   "account": "ADIB CC",
-   "amount": 1950,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "LIFE PHARMACY",
-   "account": "ADIB CC",
-   "amount": 141.35,
-   "category": "Health"
-  },
-  {
-   "month": "Jan 26",
-   "day": 7,
-   "description": "CAREEM",
-   "account": "ADIB CC",
-   "amount": 40.25,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 12,
-   "description": "Careem Tip",
-   "account": "ADIB CC",
-   "amount": 10,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 14,
-   "description": "Zofeur",
-   "account": "ADIB CC",
-   "amount": 60.86,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 15,
-   "description": "Amazon.ae",
-   "account": "ADIB CC",
-   "amount": 43.9,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "THE BARBERSHOP",
-   "account": "ADIB CC",
-   "amount": 200,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 20,
-   "description": "NEXT DIRECTORY",
-   "account": "ADIB CC",
-   "amount": 509.64,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 20,
-   "description": "UBER",
-   "account": "ADIB CC",
-   "amount": 123.84,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 21,
-   "description": "UBER",
-   "account": "ADIB CC",
-   "amount": 428.06,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 22,
-   "description": "QIAN DRAGON LADIES SALOON",
-   "account": "ADIB CC",
-   "amount": 130,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 23,
-   "description": "Careem Tip",
-   "account": "ADIB CC",
-   "amount": 10,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 23,
-   "description": "CAREEM",
-   "account": "ADIB CC",
-   "amount": 32.96,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 24,
-   "description": "UBER",
-   "account": "ADIB CC",
-   "amount": 18.39,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 26,
-   "description": "CAREEM",
-   "account": "ADIB CC",
-   "amount": 63.63,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 28,
-   "description": "CAREEM",
-   "account": "ADIB CC",
-   "amount": 47.01,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 28,
-   "description": "SUITED BOOTED DUBAI",
-   "account": "ADIB CC",
-   "amount": 997.5,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "Paymob (Phone bill)",
-   "account": "ADIB CC",
-   "amount": 300,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 5,
-   "description": "Montblanc",
-   "account": "ADIB CC",
-   "amount": 240,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 13,
-   "description": "NSHAMA TOWN SQUARE",
-   "account": "ADIB CC",
-   "amount": 190,
-   "category": "Unaccounted"
-  },
-  {
-   "month": "Jan 26",
-   "day": 13,
-   "description": "REELLY PERSONAL",
-   "account": "ADIB CC",
-   "amount": 179.9,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 13,
-   "description": "WIDGIT",
-   "account": "ADIB CC",
-   "amount": 24,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 22,
-   "description": "ALEXANDER BUTLER COACH",
-   "account": "ADIB CC",
-   "amount": 1915.09,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 17,
-   "description": "YouTube Premium",
-   "account": "ADIB CC",
-   "amount": 26.99,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Jan 26",
-   "day": 31,
-   "description": "Monthly Murabaha Payment",
-   "account": "ADIB CC",
-   "amount": 2408.7,
-   "category": "Loan"
-  },
-  {
-   "month": "Jan 26",
-   "day": 22,
-   "description": "Ziina Transfer",
-   "account": "ADIB CC",
-   "amount": 440,
-   "category": "Unaccounted"
-  },
-  {
-   "month": "Jan 26",
-   "day": 31,
-   "description": "PMB Accept",
-   "account": "ADIB CC",
-   "amount": 300,
-   "category": "Unaccounted"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Amusement Park",
-   "account": "ADIB CC",
-   "amount": 10,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Amusement Park",
-   "account": "ADIB CC",
-   "amount": 20,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Amusement Park",
-   "account": "ADIB CC",
-   "amount": 10,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 9,
-   "description": "Amusement Park",
-   "account": "ADIB CC",
-   "amount": 10,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Feb 26",
-   "day": 28,
-   "description": "Monthly Murabaha Payment",
-   "account": "ADIB CC",
-   "amount": 2175.6,
-   "category": "Loan"
-  },
-  {
-   "month": "Feb 26",
-   "day": 5,
-   "description": "ATM Cash Withdrawal",
-   "account": "Mashreq",
-   "amount": 100,
-   "category": "Other"
-  },
-  {
-   "month": "Feb 26",
-   "day": 7,
-   "description": "Emirates Leisure Costa (coffee)",
-   "account": "Mashreq",
-   "amount": 9.5,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 11,
-   "description": "Ganesh Muddam (transfer)",
-   "account": "Mashreq",
-   "amount": 200,
-   "category": "Other"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "ATM Cash Withdrawal",
-   "account": "Mashreq",
-   "amount": 1000,
-   "category": "Other"
-  },
-  {
-   "month": "Mar 26",
-   "day": 17,
-   "description": "Clare Page (Mother's Day gift for Tal)",
-   "account": "Mashreq",
-   "amount": 840,
-   "category": "Life"
-  },
-  {
-   "month": "Mar 26",
-   "day": 4,
-   "description": "Marielle Avinante",
-   "account": "Mashreq",
-   "amount": 200,
-   "category": "Unaccounted"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "One & Only Royal (dinner)",
-   "account": "Wise",
-   "amount": 1469.09,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "Seven S FM (venue/event)",
-   "account": "Wise",
-   "amount": 538.64,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Jan 26",
-   "day": 1,
-   "description": "Seven S FM (venue/event)",
-   "account": "Wise",
-   "amount": 293.81,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Jan 26",
-   "day": 3,
-   "description": "GiffGaff",
-   "account": "Wise",
-   "amount": 38.64,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 7,
-   "description": "Abby (Virtual PA - Philippines)",
-   "account": "Wise",
-   "amount": 366.26,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 7,
-   "description": "Abby (Virtual PA - Philippines)",
-   "account": "Wise",
-   "amount": 32.51,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 13,
-   "description": "OpenAI ChatGPT",
-   "account": "Wise",
-   "amount": 86.36,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 13,
-   "description": "TradingView",
-   "account": "Wise",
-   "amount": 56.46,
-   "category": "Business"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "GiffGaff",
-   "account": "Wise",
-   "amount": 96.6,
-   "category": "Life"
-  },
-  {
-   "month": "Jan 26",
-   "day": 19,
-   "description": "Abby (Virtual PA - Philippines)",
-   "account": "Wise",
-   "amount": 294.73,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 8,
-   "description": "Abby (Virtual PA - Philippines)",
-   "account": "Wise",
-   "amount": 672.92,
-   "category": "Business"
-  },
-  {
-   "month": "Feb 26",
-   "day": 11,
-   "description": "Kings College Hospital",
-   "account": "Wise",
-   "amount": 69.5,
-   "category": "Health"
-  },
-  {
-   "month": "Feb 26",
-   "day": 27,
-   "description": "Kings College Hospital",
-   "account": "Wise",
-   "amount": 54.87,
-   "category": "Health"
-  },
-  {
-   "month": "Mar 26",
-   "day": 13,
-   "description": "OpenAI ChatGPT",
-   "account": "Wise",
-   "amount": 87.23,
-   "category": "Business"
-  },
-  {
-   "month": "Mar 26",
-   "day": 22,
-   "description": "FITT Meals",
-   "account": "Wise",
-   "amount": 3090.62,
-   "category": "Base Food"
-  },
-  {
-   "month": "Mar 26",
-   "day": 25,
-   "description": "InstaShop",
-   "account": "Wise",
-   "amount": 16.18,
-   "category": "Deliveries"
-  },
-  {
-   "month": "Feb 26",
-   "day": 16,
-   "description": "FITT Meals",
-   "account": "Wise",
-   "amount": 2811.74,
-   "category": "Base Food"
-  },
-  {
-   "month": "Mar 26",
-   "day": 27,
-   "description": "DAILY OD INT",
-   "account": "BoS",
-   "amount": 2.72,
-   "category": "Fees"
-  },
-  {
-   "month": "Mar 26",
-   "day": 30,
-   "description": "DAILY OD INT 28/03",
-   "account": "BoS",
-   "amount": 2.72,
-   "category": "Fees"
-  },
-  {
-   "month": "Mar 26",
-   "day": 30,
-   "description": "C L MACLEOD",
-   "account": "BoS",
-   "amount": 33,
-   "category": "Other"
-  },
-  {
-   "month": "Mar 26",
-   "day": 30,
-   "description": "DAILY OD INT 29/03",
-   "account": "BoS",
-   "amount": 2.76,
-   "category": "Fees"
-  },
-  {
-   "month": "Mar 26",
-   "day": 31,
-   "description": "DAILY OD INT",
-   "account": "BoS",
-   "amount": 2.76,
-   "category": "Fees"
-  },
-  {
-   "month": "Apr 26",
-   "day": 1,
-   "description": "DAILY OD INT",
-   "account": "BoS",
-   "amount": 13.39,
-   "category": "Fees"
-  },
-  {
-   "month": "Apr 26",
-   "day": 1,
-   "description": "RETURNED DD",
-   "account": "BoS",
-   "amount": 137.01,
-   "category": "Other"
-  },
-  {
-   "month": "Apr 26",
-   "day": 1,
-   "description": "RETURNED DD",
-   "account": "BoS",
-   "amount": 575.31,
-   "category": "Other"
-  },
-  {
-   "month": "Apr 26",
-   "day": 1,
-   "description": "AGRIA PET INS",
-   "account": "BoS",
-   "amount": 575.31,
-   "category": "Health"
-  },
-  {
-   "month": "Apr 26",
-   "day": 1,
-   "description": "PET HEALTH CLUB",
-   "account": "BoS",
-   "amount": 137.01,
-   "category": "Health"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "DAILY OD INT",
-   "account": "BoS",
-   "amount": 10.14,
-   "category": "Fees"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "TESCO BANK",
-   "account": "BoS",
-   "amount": 1299.8,
-   "category": "Loan"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "FLAHER TV",
-   "account": "BoS",
-   "amount": 4850,
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "NIUM FINTECH LIMIT",
-   "account": "BoS",
-   "amount": 970,
-   "category": "Other"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "MBNA LIMITED",
-   "account": "BoS",
-   "amount": 932.85,
-   "category": "Loan"
-  },
-  {
-   "month": "Apr 26",
-   "day": 7,
-   "description": "DAILY OD INT 03/04",
-   "account": "BoS",
-   "amount": 10.14,
-   "category": "Fees"
-  },
-  {
-   "month": "Apr 26",
-   "day": 7,
-   "description": "DAILY OD INT 04/04",
-   "account": "BoS",
-   "amount": 10.14,
-   "need": "",
-   "category": "Fees"
-  },
-  {
-   "month": "Apr 26",
-   "day": 7,
-   "description": "APPLE.COM/BILL",
-   "account": "BoS",
-   "amount": 58.15,
-   "need": "",
-   "category": "Entertainment"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "Murabaha Payment",
-   "account": "ADIB",
-   "amount": 2408.7,
-   "need": "",
-   "category": "Loan"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "Profit/Bonus from Bank",
-   "account": "ADIB",
-   "amount": 40.53,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 3,
-   "description": "BOXICA",
-   "account": "ADIB",
-   "amount": 949,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 3,
-   "description": "Virgin Mobile UAE",
-   "account": "ADIB",
-   "amount": 210,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "Deliveroo",
-   "account": "ADIB",
-   "amount": 231.4,
-   "need": "",
-   "category": "Deliveries"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "Nandos Club Abu Dhabi",
-   "account": "ADIB",
-   "amount": 191.98,
-   "need": "",
-   "category": "Deliveries"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "TASSHEEL BUSINESS CENT",
-   "account": "ADIB",
-   "amount": 107.15,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "UBER",
-   "account": "ADIB",
-   "amount": 65,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "EPPCO SITE 825",
-   "account": "ADIB",
-   "amount": 270,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "Instashop",
-   "account": "ADIB",
-   "amount": 85.39,
-   "need": "",
-   "category": "Deliveries"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "STARBUCKS ENOC",
-   "account": "ADIB",
-   "amount": 19,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 4,
-   "description": "Instashop",
-   "account": "ADIB",
-   "amount": 73.95,
-   "need": "",
-   "category": "Deliveries"
-  },
-  {
-   "month": "Apr 26",
-   "day": 1,
-   "description": "Deliveroo",
-   "account": "Wise",
-   "amount": 44.95,
-   "need": "",
-   "category": "Deliveries"
-  },
-  {
-   "month": "Apr 26",
-   "day": 1,
-   "description": "Boxica",
-   "account": "Wise",
-   "amount": 18,
-   "need": "",
-   "category": "Deliveries"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "ADNOC",
-   "account": "Wise",
-   "amount": 157.41,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "ADNOC",
-   "account": "Wise",
-   "amount": 76,
-   "need": "",
-   "category": "Life"
-  },
-  {
-   "month": "Apr 26",
-   "day": 2,
-   "description": "Anthropic",
-   "account": "Wise",
-   "amount": 1101,
-   "need": "",
-   "category": "Business"
-  },
-  {
-   "month": "Jul 26",
-   "day": 31,
-   "description": "SELFDRIVE AE (card *789) 14:42",
-   "account": "ADIB CC",
-   "amount": 245.66,
-   "category": "Life"
-  },
-  {
-   "month": "Jul 26",
-   "day": 31,
-   "description": "SELFDRIVE AE (card *789) 14:42",
-   "account": "ADIB CC",
-   "amount": 245.66,
-   "category": "Life"
-  },
-  {
-   "month": "Jul 26",
-   "day": 31,
-   "description": "SELFDRIVE AE (card *789) 14:42",
-   "account": "ADIB CC",
-   "amount": 245.66,
-   "category": "Life"
-  },
-  {
-   "month": "Jul 26",
-   "day": 31,
-   "description": "PARKONIC PARKING SYS (card *789) 20:05",
-   "account": "ADIB CC",
-   "amount": 10.0,
-   "category": "Life"
-  },
-  {
-   "month": "Jul 26",
-   "day": 31,
-   "description": "Qlub*CQ French Brasser (card *789) 21:02",
-   "account": "ADIB CC",
-   "amount": 488.83,
-   "category": "Entertainment"
-  },
-  {
-   "month": "Aug 26",
-   "day": 1,
-   "description": "BOXICA (card *789) 00:04",
-   "account": "ADIB CC",
-   "amount": 949.0,
-   "category": "Other"
-  },
-  {
-   "month": "Jul 26",
-   "day": 30,
-   "description": "CARD PAYMENT IN - credit to card *789 (negative = repayment, not spend)",
-   "account": "ADIB CC",
-   "amount": -19993.52,
-   "category": "Loan"
-  },
-  {
-   "month": "Jul 26",
-   "day": 31,
-   "description": "CARD PAYMENT IN - credit to card *789 (negative = repayment, not spend)",
-   "account": "ADIB CC",
-   "amount": -30000.0,
-   "category": "Loan"
-  },
-  {
-   "month": "Aug 26",
-   "day": 1,
-   "description": "CARD PAYMENT IN - credit to card *789, reported verbally by Calum, no SMS captured",
-   "account": "ADIB CC",
-   "amount": -24000.0,
-   "category": "Loan"
-  }
- ],
- "ccBalances": [
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "Virgin Money",
-   "balance": 9981.5,
-   "currency": "GBP",
-   "available": 18.5,
-   "limit": 10000,
-   "status": "Under limit - paid down 6 Jul"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "Barclaycard Plat",
-   "balance": 9839.1,
-   "currency": "GBP",
-   "available": 160.9,
-   "limit": 10000,
-   "status": "Min 108.94 due 20 Jul",
-   "dueDate": "2026-07-20",
-   "dueAmount": 108.94,
-   "dueNote": "Min payment"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "M&S",
-   "balance": 7987.22,
-   "currency": "GBP",
-   "available": 12.78,
-   "limit": 8000,
-   "status": "Min 199.46 due 23 Jul",
-   "dueDate": "2026-07-23",
-   "dueAmount": 199.46,
-   "dueNote": "Min payment"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "Tesco Clubcard",
-   "balance": 6244.76,
-   "currency": "GBP",
-   "available": 80.24,
-   "limit": 6325,
-   "status": "Min 286 due 29 Jul",
-   "dueDate": "2026-07-29",
-   "dueAmount": 286.0,
-   "dueNote": "Min payment"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "AQUA",
-   "balance": 3499.61,
-   "currency": "GBP",
-   "available": 0.39,
-   "limit": 3500,
-   "status": "DD 9 Jul",
-   "dueDate": "2026-07-09",
-   "dueAmount": null,
-   "dueNote": "Direct debit"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "HSBC",
-   "balance": 1966.41,
-   "currency": "GBP",
-   "available": 33.59,
-   "limit": 2000,
-   "status": "Under limit - min paid 6 Jul"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "AmEx Gold",
-   "balance": 0.0,
-   "currency": "GBP",
-   "available": null,
-   "limit": null,
-   "status": "PAID IN FULL 6 Jul"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "AmEx BA",
-   "balance": 0.0,
-   "currency": "GBP",
-   "available": 800.0,
-   "limit": 800,
-   "status": "PAID IN FULL 6 Jul"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "ADIB Emirates VC Sig",
-   "balance": 14600.0,
-   "currency": "GBP",
-   "available": 400.0,
-   "limit": 15000,
-   "status": "Working card - fluctuates with daily use | CORRECTED 26 Jul: balance is ~GBP 14.6-15K (not AED)",
-   "revolving": true
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "BoS Classic overdraft",
-   "balance": 2514.53,
-   "currency": "GBP",
-   "available": 485.47,
-   "limit": 3000,
-   "status": "Working account - fluctuates. OD interest daily",
-   "revolving": true
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "MBNA Main",
-   "balance": 8496.91,
-   "currency": "GBP",
-   "available": 303.09,
-   "limit": 8800,
-   "status": "DD taken 2 Jul (241.70)"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "MBNA 2",
-   "balance": 2498.74,
-   "currency": "GBP",
-   "available": 1.26,
-   "limit": 2500,
-   "status": "Maxed"
-  },
-  {
-   "date": "2026-07-06",
-   "month": "Jul 26",
-   "card": "Santander Everyday",
-   "balance": 12146.96,
-   "currency": "GBP",
-   "available": 3.04,
-   "limit": 12150,
-   "status": "Paid under limit 6 Jul (exact balance TBC)",
-   "dueDate": "2026-07-21",
-   "dueAmount": 330.96,
-   "dueNote": "Min (DD set)"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "Tesco Clubcard",
-   "balance": 6323.99,
-   "currency": "GBP",
-   "available": 1.01,
-   "limit": 6325,
-   "status": "Cash-advance fees on Wise txns; interest charges on stmt"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "Virgin Money",
-   "balance": 9981.5,
-   "currency": "GBP",
-   "available": 18.5,
-   "limit": 10000,
-   "status": "MISSED PAYMENT 369.80 - DD leaving 27 Jul, verify + call for goodwill removal",
-   "dueDate": "2026-07-27",
-   "dueAmount": 369.8
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "Santander Everyday",
-   "balance": 12146.96,
-   "currency": "GBP",
-   "available": 3.04,
-   "limit": 12150,
-   "status": "Min 330.96 was due 21 Jul - DD active, verify it took"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "MBNA 1",
-   "balance": 8799.49,
-   "currency": "GBP",
-   "available": 0.51,
-   "limit": 8800,
-   "status": "Cash fee 10.13; Wise treated as cash advance"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "MBNA 2",
-   "balance": 2495.21,
-   "currency": "GBP",
-   "available": 4.79,
-   "limit": 2500,
-   "status": "Wise pending 35.44"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "M&S",
-   "balance": 7999.22,
-   "currency": "GBP",
-   "available": 0.78,
-   "limit": 8000,
-   "status": "Min 199.46 was due 23 Jul - verify paid"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "HSBC",
-   "balance": 1972.02,
-   "currency": "GBP",
-   "available": 2.66,
-   "limit": 2000,
-   "status": "Min 49.30 due 4 Aug",
-   "dueDate": "2026-08-04",
-   "dueAmount": 49.3
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "Barclaycard Plat",
-   "balance": 9983.31,
-   "currency": "GBP",
-   "available": 16.69,
-   "limit": 10000,
-   "status": "DD took 108.94 on 20 Jul"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "Aqua",
-   "balance": 3494.08,
-   "currency": "GBP",
-   "available": 5.92,
-   "limit": 3500,
-   "status": "DD due 10 Aug",
-   "dueDate": "2026-08-10"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "BA Amex",
-   "balance": 61.98,
-   "currency": "GBP",
-   "available": 738.0,
-   "limit": 800,
-   "status": "Nothing due; 9,649 Avios"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "Amex Gold (charge)",
-   "balance": 1684.37,
-   "currency": "GBP",
-   "available": null,
-   "limit": null,
-   "status": "Charge card - nothing due shown"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "Classic current acct OVERDRAFT",
-   "balance": 2368.32,
-   "currency": "GBP",
-   "available": 631.68,
-   "limit": 3000,
-   "status": "OD interest 2.75/day (~83/mo); Virgin 369.80 leaving 27 Jul; Flaher TV +1000 in"
-  },
-  {
-   "date": "2026-07-26",
-   "month": "Jul 26",
-   "card": "ADIB Emirates VC Sig",
-   "balance": 14600,
-   "currency": "GBP",
-   "status": "Still maxed (working credit - excluded from killable) | CORRECTED 26 Jul: balance is ~GBP 14.6-15K (not AED)"
-  },
-  {
-   "date": "2026-08-01",
-   "month": "Aug 26",
-   "card": "ADIB *789",
-   "balance": null,
-   "currency": "AED",
-   "available": 45505.9,
-   "limit": null,
-   "status": "Avl bal per SMS after BOXICA 01/08 00:04. Two payments in: 19,993.52 (30 Jul) + 30,000.00 (31 Jul); Calum reports a further 24,000 paid 1 Aug (not yet in this figure). M&S DXBH 51.24 on 30/07 15:42 was REJECTED - insufficient funds - pre-payments. Card identity vs 'ADIB Emirates VC Sig' record not confirmed."
-  },
-  {
-   "date": "2026-08-01",
-   "month": "Aug 26",
-   "card": "ADIB Emirates VC Sig (*789)",
-   "balance": 0,
-   "currency": "AED",
-   "available": 69500,
-   "limit": null,
-   "status": "KILLED 30 Jul-1 Aug: payments 19,993.52 + 30,000 + 24,000 = 73,993.52 cleared full balance (was ~GBP 14.6K equiv). *789 = same card as 'ADIB Emirates VC Sig' record - reconciled. New spend already: ~2,186 AED (SelfDrive/Qlub/Boxica) - designated live daily card, PAY IN FULL monthly rule applies."
-  }
- ],
- "personalDebts": [
-  {
-   "to": "Mum",
-   "amount": 38000,
-   "currency": "GBP",
-   "asOf": "2026-07-02",
-   "note": "3,250 paid 2 Jul",
-   "original": 41250
-  },
-  {
-   "to": "Lewis",
-   "amount": 0,
-   "currency": "GBP",
-   "asOf": "2026-07-26",
-   "note": "Original 17K; 5K paid last month. 12K remaining. 7K allocated from this payday -> will leave 5K.",
-   "original": 22000,
-   "status": "RESOLVED - Lewis declined repayment (30 Jul). Calum sent D10,000 gesture instead."
-  },
-  {
-   "to": "Dad",
-   "amount": 0,
-   "currency": "GBP",
-   "asOf": "2026-07-02",
-   "note": "PAID IN FULL 2 Jul",
-   "original": 500
-  },
-  {
-   "to": "Luca",
-   "amount": 1000,
-   "currency": "GBP",
-   "asOf": "2026-07-26",
-   "note": "To be paid back on the 1st (Aug)",
-   "original": 1000
-  }
- ],
- "debtBaseline": {
-  "date": "2026-07-06",
-  "cardsTotal": 81514.57,
-  "personalTotal": 63750,
-  "grandTotal": 145264.57,
-  "note": "Game counts killable debts only (9 cards + personal). BoS OD + ADIB are working credit, excluded from Destroyed",
-  "killableTotal": 127750.04,
-  "2026-07-26": {
-   "totalCards": 64942.13,
-   "overdraft": 2368.32,
-   "totalUnsecured": 67310.45,
-   "utilisationPct": 98.8,
-   "availableAllCards": 791.9,
-   "adibGBP": 14600,
-   "totalUnsecuredInclADIB": 81910.45
-  }
- },
- "paydayPlan": {
-  "expected": 50000,
-  "currency": "GBP",
-  "created": "2026-07-26",
-  "status": "EXECUTING 30 Jul - final v3",
-  "sequence": "1) BoS 5K 2) verify Virgin/Santander/M&S minimums 3) ADIB full kill 4) headroom 5) family+Amex 6) business 7) fun",
-  "allocations": [
-   {
-    "to": "BoS current account",
-    "amount": 5000,
-    "note": "kills OD, leaves buffer"
-   },
-   {
-    "to": "Holiday",
-    "amount": 5000
-   },
-   {
-    "to": "Push present",
-    "amount": 3000
-   },
-   {
-    "to": "Lewis",
-    "amount": 7000,
-    "note": "12K -> 5K"
-   },
-   {
-    "to": "Luca",
-    "amount": 1000,
-    "note": "cleared, 1 Aug"
-   },
-   {
-    "to": "Tal - bills",
-    "amount": 3000
-   },
-   {
-    "to": "Tal - going home",
-    "amount": 3000
-   },
-   {
-    "to": "Tal - Amex",
-    "amount": 4000
-   },
-   {
-    "to": "Calum Amex Gold",
-    "amount": 2000,
-    "note": "charge card, must clear"
-   },
-   {
-    "to": "Business fund - ads person + spend + content assist",
-    "amount": 5000
-   },
-   {
-    "to": "Headroom 200 x 8 tight cards",
-    "amount": 1600
-   },
-   {
-    "to": "ADIB",
-    "amount": 14600,
-    "note": "FULL KILL - Calum's explicit call"
-   }
+  "categories": [
+    "Base Food",
+    "Deliveries",
+    "Life",
+    "Business",
+    "Entertainment",
+    "Investing",
+    "Loan",
+    "Saving",
+    "Health",
+    "Gambling",
+    "Other",
+    "Unaccounted",
+    "Fees"
   ],
-  "total_allocated": 54200,
-  "gap": -4200,
-  "gapNote": "4,200 short vs 50K expected. TO SOLVE (not today): options - pay actual amount if >50K lands, trim on the day, or short-delay one allocation. Nothing executes blind: gap resolved at execution walkthrough with Max.",
-  "outcome": "Dead: OD, ADIB, Aqua? NO - Aqua untouched per Calum. Dead: OD, ADIB, Luca, Tal Amex, Calum Amex. Headroom on all 8. ~660/mo interest deleted. Business funded.",
-  "actualReceived_aed": 295626.75,
-  "actualReceived_gbp_est": 60950,
-  "spareNote": "Spare ~6-7K: recommend Aqua kill (3,494) + rest to BoS buffer",
-  "finalAllocations": {
-   "UK_wise_single_transfer_gbp": 23494,
-   "UK": {
-    "BoS": 5000,
-    "Headroom_500x8": 4000,
-    "CalumAmexGold": 2000,
-    "TalAmex": 4000,
-    "Luca": 1000,
-    "TalBills": 1000,
-    "TalHome": 3000,
-    "Aqua_KILL": 3494
-   },
-   "AED": {
-    "ADIB_KILL_aed": 71000,
-    "Lewis_gift_aed": 10000,
-    "Holiday_aed": 24250,
-    "Push_aed": 14550,
-    "Business_aed": 24250
-   },
-   "leftover_est_gbp": 7800,
-   "note": "Lewis loan resolved by his own call; D10K gesture. Headroom upgraded 200->500/card. Aqua killed from freed funds."
+  "budgets": {
+    "Apr 26": {
+      "Base Food": 4000,
+      "Deliveries": 500,
+      "Life": 2000,
+      "Business": 7000,
+      "Entertainment": 500,
+      "Investing": 250,
+      "Loan": 10000,
+      "Saving": 250,
+      "Health": 4500,
+      "Gambling": 1,
+      "Other": 999,
+      "Unaccounted": 0,
+      "total": 30000
+    },
+    "Mar 26": {
+      "Base Food": 4000,
+      "Deliveries": 500,
+      "Life": 2000,
+      "Business": 7000,
+      "Entertainment": 500,
+      "Investing": 250,
+      "Loan": 10000,
+      "Saving": 250,
+      "Health": 4500,
+      "Gambling": 1,
+      "Other": 999,
+      "Unaccounted": 0,
+      "total": 30000
+    },
+    "Feb 26": {
+      "Base Food": 4000,
+      "Deliveries": 500,
+      "Life": 2000,
+      "Business": 7000,
+      "Entertainment": 500,
+      "Investing": 250,
+      "Loan": 10000,
+      "Saving": 250,
+      "Health": 4500,
+      "Gambling": 1,
+      "Other": 999,
+      "Unaccounted": 0,
+      "total": 30000
+    },
+    "Jan 26": {
+      "Base Food": 4000,
+      "Deliveries": 500,
+      "Life": 2000,
+      "Business": 7000,
+      "Entertainment": 500,
+      "Investing": 250,
+      "Loan": 10000,
+      "Saving": 250,
+      "Health": 4500,
+      "Gambling": 1,
+      "Other": 999,
+      "Unaccounted": 0,
+      "total": 30000
+    },
+    "Jul 26": {
+      "Base Food": 4000,
+      "Deliveries": 500,
+      "Life": 2000,
+      "Business": 7000,
+      "Entertainment": 500,
+      "Investing": 250,
+      "Loan": 10000,
+      "Saving": 250,
+      "Health": 4500,
+      "Gambling": 1,
+      "Other": 999,
+      "Unaccounted": 0,
+      "total": 30000
+    }
   },
-  "executionLog": [
-   {
-    "date": "2026-07-30",
-    "action": "D130,000 sent (via Tal) to FX for UK leg - covers the 23.5K GBP distribution list"
-   },
-   {
-    "date": "2026-07-30",
-    "action": "D5,000 stays with Tal in her account"
-   },
-   {
-    "date": "2026-07-30",
-    "action": "ADIB: ~D20,000 paid (daily transfer limit hit). Remainder ~D51,000 due TOMORROW MORNING - completes the kill"
-   },
-   {
-    "date": "2026-07-31",
-    "action": "PENDING: ADIB balance ~51K + Lewis 10K gesture + holiday/push/business parks (~63K)"
-   },
-   {
-    "date": "2026-07-30",
-    "action": "HOLIDAY DONE: D24,500 sent to Tal - hotel booked. Pot fully deployed."
-   },
-   {
-    "date": "2026-07-30",
-    "action": "UK distribution: Gold Amex 3,025 CLEARED. BA/Black Amex 61. Tesco 300+min. Virgin 300+min. Santander 700 (200 over-limit from interest + 500). MBNA big: 300 min + 200 = 500. MBNA small: 500. M&S 550 (50 was overdue). Barclaycard 550 (50 over). AQUA 3,500 FULLY PAID - DEAD (interest was ~100/mo, est validated)."
-   },
-   {
-    "date": "2026-07-30",
-    "action": "PENDING: HSBC 500 (payment blocked - retry), Luca 1,000, Tal 506. TOMORROW: ADIB tail ~D21K, Tal remaining 3,494, HSBC retry."
-   },
-   {
-    "date": "2026-07-31",
-    "action": "Barclaycard 550 cleared (pending resolved). BoS balance now \u00a3855 + OD headroom. ~\u00a34K still inbound for Tal's remainder."
-   },
-   {
-    "date": "2026-08-01",
-    "action": "+\u00a34,012.04 second FX batch arrived. \u00a3750 card payment (card TBC with Calum). HSBC 500 + Vantage 2,000 confirmed on statement."
-   },
-   {
-    "date": "2026-08-03",
-    "action": "TAL PAID IN FULL: \u00a39,000 (Amex 4K + bills + going home). Barclaycard \u00a3550 re-sent and cleared (earlier attempt had bounced). BoS balance after pending: \u00a3855.91. PENDING: Luca \u00a31,000 status?, the \u00a3750 card ID, ADIB tail ~D21K."
-   },
-   {
-    "date": "2026-08-01",
-    "action": "ADIB FULLY DEAD: 73,993.52 total payments across 3 days cleared the card. Available ~69.5K. THE most expensive debt eliminated (~470/mo interest gone). Plan now 100% on kills."
-   }
-  ]
- },
- "payslips": [
-  {
-   "date": "2025-11-27",
-   "gross_aed": 42631.75,
-   "deals": 1,
-   "employer": "White & Co",
-   "mode": "WPS"
+  "transactions": [
+    {
+      "day": 6,
+      "description": "Transfer - Calum",
+      "account": "BoS",
+      "amount": 100,
+      "category": "Other",
+      "month": "Jul 26"
+    },
+    {
+      "day": 6,
+      "description": "Transfer - C L Macleod",
+      "account": "BoS",
+      "amount": 200,
+      "category": "Other",
+      "month": "Jul 26"
+    },
+    {
+      "day": 6,
+      "description": "Daily OD interest",
+      "account": "BoS",
+      "amount": 2.0,
+      "category": "Fees",
+      "month": "Jul 26"
+    },
+    {
+      "day": 6,
+      "description": "HSBC CC min payment",
+      "account": "BoS",
+      "amount": 36.25,
+      "category": "Loan",
+      "month": "Jul 26"
+    },
+    {
+      "day": 6,
+      "description": "Virgin Money payment",
+      "account": "BoS",
+      "amount": 200,
+      "category": "Loan",
+      "month": "Jul 26"
+    },
+    {
+      "month": "Jul 26",
+      "day": 6,
+      "description": "July clean start - tracking live via Max",
+      "account": "-",
+      "amount": 0,
+      "category": "Other"
+    },
+    {
+      "month": "Mar 26",
+      "day": 1,
+      "description": "Futures",
+      "account": "Binance",
+      "amount": 720,
+      "need": "",
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 2,
+      "description": "TESCO BANK",
+      "account": "BoS",
+      "amount": 1500,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 2,
+      "description": "AMEX",
+      "account": "BoS",
+      "amount": 8200,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 2,
+      "description": "PET HEALTH CLUB",
+      "account": "BoS",
+      "amount": 141.25,
+      "need": 4,
+      "category": "Health"
+    },
+    {
+      "month": "Mar 26",
+      "day": 2,
+      "description": "Gambling",
+      "account": "BoS",
+      "amount": 1000,
+      "need": 3,
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 3,
+      "description": "JACKSFLIGHTCLUB",
+      "account": "BoS",
+      "amount": 175,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 3,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 949,
+      "need": 4,
+      "category": "Health"
+    },
+    {
+      "month": "Mar 26",
+      "day": 3,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 3,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 36.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 4,
+      "description": "AGRIA PET INS",
+      "account": "BoS",
+      "amount": 593.1,
+      "need": 4,
+      "category": "Health"
+    },
+    {
+      "month": "Mar 26",
+      "day": 4,
+      "description": "GiffGaff",
+      "account": "Wise",
+      "amount": 100,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 4,
+      "description": "Futures",
+      "account": "Binance",
+      "amount": 327.6,
+      "need": "",
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 4,
+      "description": "Krispy Kreme",
+      "account": "ADIB",
+      "amount": 20,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 4,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 4,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 19.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 5,
+      "description": "MBNA",
+      "account": "BoS",
+      "amount": 1017.15,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 5,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 59.95,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 6,
+      "description": "PhantomBuster",
+      "account": "Wise",
+      "amount": 300,
+      "need": 4,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 6,
+      "description": "ENOC",
+      "account": "ADIB",
+      "amount": 12.5,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 6,
+      "description": "ENOC",
+      "account": "ADIB",
+      "amount": 36.75,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 6,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 7,
+      "description": "Oura Ring",
+      "account": "ADIB",
+      "amount": 6.99,
+      "need": 3,
+      "category": "Health"
+    },
+    {
+      "month": "Mar 26",
+      "day": 8,
+      "description": "Abby (Virtual PA - Philippines)",
+      "account": "Wise",
+      "amount": 700,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 8,
+      "description": "Futures",
+      "account": "Binance",
+      "amount": 590.4,
+      "need": "",
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 8,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 46.7,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 9,
+      "description": "HSBC CREDIT CARD",
+      "account": "BoS",
+      "amount": 200.55,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 9,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 10,
+      "description": "Amazon.ae",
+      "account": "ADIB",
+      "amount": 109,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 10,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 10,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 44.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 10,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 52.83,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 10,
+      "description": "International Fee",
+      "account": "ADIB",
+      "amount": 0.54,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 10,
+      "description": "VAT Charge",
+      "account": "ADIB",
+      "amount": 0.03,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 11,
+      "description": "AQUA CREDIT CARD",
+      "account": "BoS",
+      "amount": 746.6,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 11,
+      "description": "AI Homaizi Foods",
+      "account": "ADIB",
+      "amount": 12.54,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 11,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 12,
+      "description": "WIDGIT",
+      "account": "ADIB",
+      "amount": 24,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 12,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 12,
+      "description": "REELLY PERSONAL",
+      "account": "ADIB",
+      "amount": 179.9,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 12,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 36.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 13,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 59.95,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 13,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 13,
+      "description": "International Fee",
+      "account": "ADIB",
+      "amount": 0.48,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 13,
+      "description": "VAT Charge",
+      "account": "ADIB",
+      "amount": 0.02,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 14,
+      "description": "Futures",
+      "account": "Binance",
+      "amount": 720,
+      "need": "",
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 14,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 30.55,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 14,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 30.55,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 15,
+      "description": "Futures",
+      "account": "Binance",
+      "amount": 72,
+      "need": "",
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 15,
+      "description": "YouTube Premium",
+      "account": "ADIB",
+      "amount": 26.99,
+      "need": 3,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Mar 26",
+      "day": 15,
+      "description": "ADNOC",
+      "account": "ADIB",
+      "amount": 12.75,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 15,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 32.45,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 15,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 53.2,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 15,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 205.9,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "Futures",
+      "account": "Binance",
+      "amount": 601.2,
+      "need": "",
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "FITT Meals",
+      "account": "ADIB",
+      "amount": 721.47,
+      "need": 4,
+      "category": "Base Food"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "ADNOC",
+      "account": "ADIB",
+      "amount": 44.5,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 30.55,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 30.55,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 30.55,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 30.55,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 59.95,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "Amazon.ae",
+      "account": "ADIB",
+      "amount": 109,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 44.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 52.83,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "International Fee",
+      "account": "ADIB",
+      "amount": 0.54,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "VAT Charge",
+      "account": "ADIB",
+      "amount": 0.03,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 18,
+      "description": "AMERICAN EXPRESS",
+      "account": "BoS",
+      "amount": 1047.8,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 18,
+      "description": "tazizi",
+      "account": "ADIB",
+      "amount": 31,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 18,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 18,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 36.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 19,
+      "description": "MBNA",
+      "account": "BoS",
+      "amount": 245.6,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 20,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Mar 26",
+      "day": 31,
+      "description": "OVERDRAFT INTEREST (TOTAL)",
+      "account": "BoS",
+      "amount": 350,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 31,
+      "description": "Ali Vids (Content business)",
+      "account": "Mashreq",
+      "amount": 6000,
+      "need": 4,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 31,
+      "description": "Tal Bills",
+      "account": "BoS",
+      "amount": 5000,
+      "need": 5,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 23,
+      "description": "Barclaycard",
+      "account": "BoS",
+      "amount": 450,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 23,
+      "description": "Santander",
+      "account": "BoS",
+      "amount": 600,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 23,
+      "description": "Virgin",
+      "account": "BoS",
+      "amount": 760,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 24,
+      "description": "Corrina",
+      "account": "BoS",
+      "amount": 750,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 25,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 45,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 25,
+      "description": "Amex",
+      "account": "BoS",
+      "amount": 1100,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 26,
+      "description": "Charger & Dareem",
+      "account": "Tal Card",
+      "amount": 300,
+      "need": 4,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 95.9,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 147.4,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "Hamlam Trading",
+      "account": "ADIB",
+      "amount": 29,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "Boxica Membership",
+      "account": "ADIB",
+      "amount": 949,
+      "need": 4,
+      "category": "Health"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 44.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "Elite Vita Polyclinic",
+      "account": "ADIB",
+      "amount": 3500,
+      "need": 5,
+      "category": "Health"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 241.25,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "MBNA LIMITED",
+      "account": "BoS",
+      "amount": 1024.65,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "PET HEALTH CLUB",
+      "account": "BoS",
+      "amount": 141.25,
+      "need": 4,
+      "category": "Health"
+    },
+    {
+      "month": "Feb 26",
+      "day": 3,
+      "description": "Baskin Robbins",
+      "account": "ADIB",
+      "amount": 26,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 3,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 68.05,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 4,
+      "description": "Zofeur",
+      "account": "ADIB",
+      "amount": 57.93,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 4,
+      "description": "Starbucks",
+      "account": "ADIB",
+      "amount": 7,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 4,
+      "description": "Caribou Coffee",
+      "account": "ADIB",
+      "amount": 30.5,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 5,
+      "description": "Circle K Fuel",
+      "account": "ADIB",
+      "amount": 166,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 5,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 40.15,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 5,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 59.95,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 5,
+      "description": "HSBC CREDIT CARD",
+      "account": "BoS",
+      "amount": 205.7,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 6,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 23.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 7,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 50.45,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 7,
+      "description": "Boxica Coffee",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 7,
+      "description": "Caribou Coffee",
+      "account": "ADIB",
+      "amount": 20,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 7,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 50.05,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 7,
+      "description": "ADNOC Fuel",
+      "account": "ADIB",
+      "amount": 109.37,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 8,
+      "description": "Abby (Virtual PA - Philippines)",
+      "account": "Wise",
+      "amount": 700,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Innovative Beauty",
+      "account": "ADIB",
+      "amount": 300,
+      "need": 3,
+      "category": "Health"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Mangrove Market",
+      "account": "ADIB",
+      "amount": 2.5,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Amusement",
+      "account": "ADIB",
+      "amount": 10,
+      "need": 3,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Oura Ring",
+      "account": "ADIB",
+      "amount": 26.57,
+      "need": 3,
+      "category": "Health"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Starbucks",
+      "account": "ADIB",
+      "amount": 76,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Westin",
+      "account": "ADIB",
+      "amount": 485,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Virgin Mobile",
+      "account": "ADIB",
+      "amount": 105,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Parking",
+      "account": "ADIB",
+      "amount": 30,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Limitless Park",
+      "account": "ADIB",
+      "amount": 70,
+      "need": 3,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "AQUA CREDIT CARD",
+      "account": "BoS",
+      "amount": 140.4,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 10,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 74.25,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 10,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 101.4,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 10,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 65.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 10,
+      "description": "Virgin Mobile",
+      "account": "ADIB",
+      "amount": 157.5,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 11,
+      "description": "Coffee",
+      "account": "Wise",
+      "amount": 40,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 11,
+      "description": "Deliveroo",
+      "account": "Wise",
+      "amount": 85,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 11,
+      "description": "Boxica Coffee",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 11,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 44.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 11,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 92.41,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 12,
+      "description": "Deliveroo",
+      "account": "Wise",
+      "amount": 45,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 12,
+      "description": "Cafu",
+      "account": "Wise",
+      "amount": 120,
+      "need": 5,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 12,
+      "description": "Manychat",
+      "account": "Wise",
+      "amount": 55,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "Coffee",
+      "account": "Wise",
+      "amount": 60,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "OpenAI",
+      "account": "Wise",
+      "amount": 100,
+      "need": 4,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "Tradingview",
+      "account": "Wise",
+      "amount": 55,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "Golf",
+      "account": "Wise",
+      "amount": 200,
+      "need": 3,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "Widgit",
+      "account": "ADIB",
+      "amount": 24,
+      "need": 4,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "International Fee",
+      "account": "ADIB",
+      "amount": 0.48,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "VAT Charge",
+      "account": "ADIB",
+      "amount": 0.02,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 14,
+      "description": "Boxica Coffee",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "Hamlam Trading",
+      "account": "ADIB",
+      "amount": 27,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "Reelly Personal",
+      "account": "ADIB",
+      "amount": 179.9,
+      "need": 4,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "Hamlam Trading",
+      "account": "ADIB",
+      "amount": 29,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 97.4,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 568.7,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 52.15,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "MBNA LIMITED",
+      "account": "BoS",
+      "amount": 251.9,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "Tasheel",
+      "account": "Wise",
+      "amount": 110,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "Hill House",
+      "account": "ADIB",
+      "amount": 245,
+      "need": 3,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "Youtube Premium",
+      "account": "ADIB",
+      "amount": 26.99,
+      "need": 3,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "Tashas",
+      "account": "ADIB",
+      "amount": 29,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 44.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 23.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 74.25,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "International Fee",
+      "account": "ADIB",
+      "amount": 0.54,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 17,
+      "description": "VAT Charge",
+      "account": "ADIB",
+      "amount": 0.03,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 18,
+      "description": "Motor City",
+      "account": "ADIB",
+      "amount": 50,
+      "need": 3,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 18,
+      "description": "Careem",
+      "account": "ADIB",
+      "amount": 38.66,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 18,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 53.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 18,
+      "description": "AMERICAN EXPRESS",
+      "account": "BoS",
+      "amount": 1433.95,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 19,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 128.94,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 19,
+      "description": "Caribou Coffee",
+      "account": "ADIB",
+      "amount": 20,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 19,
+      "description": "Starbucks",
+      "account": "ADIB",
+      "amount": 43,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 19,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 36.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 19,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 114.9,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 20,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 49.05,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 20,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 31.2,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 20,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 19.95,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 20,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 55.85,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 20,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 160.4,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 20,
+      "description": "Boxica Coffee",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 20,
+      "description": "SANTANDER CARDS",
+      "account": "BoS",
+      "amount": 588.3,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 21,
+      "description": "Futures",
+      "account": "Binance",
+      "amount": 687.6,
+      "need": 1,
+      "category": "Gambling"
+    },
+    {
+      "month": "Feb 26",
+      "day": 21,
+      "description": "Caribou Coffee",
+      "account": "ADIB",
+      "amount": 20,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 21,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 70.9,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 21,
+      "description": "InstaShop",
+      "account": "ADIB",
+      "amount": 169.14,
+      "need": 3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 21,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 98.9,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 21,
+      "description": "ADNOC Fuel",
+      "account": "ADIB",
+      "amount": 117.67,
+      "need": 2,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "Deliveroo",
+      "account": "Wise",
+      "amount": 90,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 71.6,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 49.55,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "Boxica Coffee",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 35.35,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 137.4,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "M&S CREDIT CARD",
+      "account": "BoS",
+      "amount": 802.85,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "VIRGIN MONEY",
+      "account": "BoS",
+      "amount": 790.1,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 23,
+      "description": "BARCLAYCARD VISA",
+      "account": "BoS",
+      "amount": 420.5,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 24,
+      "description": "Boxica Coffee",
+      "account": "ADIB",
+      "amount": 18,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 25,
+      "description": "Coffee",
+      "account": "Wise",
+      "amount": 20,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 26,
+      "description": "AGRIA PET INS",
+      "account": "BoS",
+      "amount": 593.1,
+      "need": 4,
+      "category": "Health"
+    },
+    {
+      "month": "Feb 26",
+      "day": 27,
+      "description": "Food",
+      "account": "Wise",
+      "amount": 130,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 28,
+      "description": "Manychat",
+      "account": "Wise",
+      "amount": 55,
+      "need": 1,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 28,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 140.9,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 28,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 93.9,
+      "need": 2,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 28,
+      "description": "OVERDRAFT INTEREST (TOTAL)",
+      "account": "BoS",
+      "amount": 300,
+      "need": 5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 28,
+      "description": "Ali Vids",
+      "account": "Mashreq",
+      "amount": 6000,
+      "need": 4,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 28,
+      "description": "Tal Bills",
+      "account": "BoS",
+      "amount": 5000,
+      "need": 5,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 26,
+      "description": "Claude Subscription",
+      "account": "Wise",
+      "amount": 86.94,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 29,
+      "description": "Anthropic (Max)",
+      "account": "Wise",
+      "amount": 881.57,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 29,
+      "description": "Anthropic (Max)",
+      "account": "Wise",
+      "amount": 263.14,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 29,
+      "description": "Anthropic (Max)",
+      "account": "Wise",
+      "amount": 21.88,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 2,
+      "description": "MBNA LIMITED",
+      "account": "BoS",
+      "amount": 1021.35,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "HSBC CREDIT CARD",
+      "account": "BoS",
+      "amount": 203.83,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 8,
+      "description": "AQUA CREDIT CARD",
+      "account": "BoS",
+      "amount": 136.98,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "MBNA LIMITED",
+      "account": "BoS",
+      "amount": 249.61,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "AMERICAN EXPRESS",
+      "account": "BoS",
+      "amount": 854.14,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 20,
+      "description": "SANTANDER CARDS",
+      "account": "BoS",
+      "amount": 574.05,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 22,
+      "description": "M&S CREDIT CARD",
+      "account": "BoS",
+      "amount": 795.45,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 23,
+      "description": "BARCLAYCARD PLAT VISA",
+      "account": "BoS",
+      "amount": 410.31,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "VIRGIN MONEY",
+      "account": "BoS",
+      "amount": 778.84,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 29,
+      "description": "TESCO BANK",
+      "account": "BoS",
+      "amount": 1178.52,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 2,
+      "description": "PET HEALTH CLUB",
+      "account": "BoS",
+      "amount": 136.45,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "AGRIA PET INS",
+      "account": "BoS",
+      "amount": 572.93,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 6,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 57.91,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 14,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 57.91,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 14,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 57.91,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 43.42,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "JAMES GIBSON",
+      "account": "BoS",
+      "amount": 676.2,
+      "category": "Gambling"
+    },
+    {
+      "month": "Jan 26",
+      "day": 23,
+      "description": "CORRINA FLAHER",
+      "account": "BoS",
+      "amount": 724.5,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 31,
+      "description": "OVERDRAFT INTEREST (TOTAL)",
+      "account": "BoS",
+      "amount": 284.97,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "ALEX CASH",
+      "account": "BoS",
+      "amount": 966,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "MARK KELLY",
+      "account": "BoS",
+      "amount": 483,
+      "category": "Base Food"
+    },
+    {
+      "month": "Feb 26",
+      "day": 25,
+      "description": "CORRINA FLAHER",
+      "account": "BoS",
+      "amount": 724.5,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 13,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 57.91,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 57.91,
+      "category": "Life"
+    },
+    {
+      "month": "Feb 26",
+      "day": 24,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 43.42,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 2,
+      "description": "JAMES GIBSON",
+      "account": "BoS",
+      "amount": 966,
+      "category": "Gambling"
+    },
+    {
+      "month": "Mar 26",
+      "day": 16,
+      "description": "Nationwide (Property)",
+      "account": "BoS",
+      "amount": 241.5,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 24,
+      "description": "Nationwide (Property)",
+      "account": "BoS",
+      "amount": 193.2,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 24,
+      "description": "M&S CREDIT CARD",
+      "account": "BoS",
+      "amount": 756.18,
+      "category": "Loan"
+    },
+    {
+      "month": "Mar 26",
+      "day": 24,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 43.42,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "ENOC",
+      "account": "ADIB CC",
+      "amount": 130.34,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 12,
+      "description": "ADNOC",
+      "account": "ADIB CC",
+      "amount": 116.74,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "ADNOC",
+      "account": "ADIB CC",
+      "amount": 118.29,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 22,
+      "description": "CAFU",
+      "account": "ADIB CC",
+      "amount": 19.95,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 22,
+      "description": "CAFU",
+      "account": "ADIB CC",
+      "amount": 116.39,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 30,
+      "description": "ADNOC",
+      "account": "ADIB CC",
+      "amount": 117.83,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "CAFU",
+      "account": "ADIB CC",
+      "amount": 7.95,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "CAFU (large fill)",
+      "account": "ADIB CC",
+      "amount": 659,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "SPINNEYS",
+      "account": "ADIB CC",
+      "amount": 121,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "Amazon Grocery",
+      "account": "ADIB CC",
+      "amount": 53,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "Amazon Grocery",
+      "account": "ADIB CC",
+      "amount": 48,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 16,
+      "description": "HAMLAM TRADING",
+      "account": "ADIB CC",
+      "amount": 39.95,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 16,
+      "description": "carrefouruae.com",
+      "account": "ADIB CC",
+      "amount": 181.48,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "VALUE BASKET",
+      "account": "ADIB CC",
+      "amount": 45,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "VALUE BASKET",
+      "account": "ADIB CC",
+      "amount": 156,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "FITT MEALS",
+      "account": "ADIB CC",
+      "amount": 2258.94,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 20,
+      "description": "SPINNEYS",
+      "account": "ADIB CC",
+      "amount": 236.75,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 12,
+      "description": "HAMLAM TRADING",
+      "account": "ADIB CC",
+      "amount": 38,
+      "category": "Base Food"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "Groupon",
+      "account": "ADIB CC",
+      "amount": 549,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 92.89,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 76.55,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 64.45,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 180.13,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 81.25,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 3,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 111.4,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 3,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 89.22,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 105.9,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 6,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 73.83,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 6,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 91.86,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 6,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 79.45,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 7,
+      "description": "CARIBOU COFFEE",
+      "account": "ADIB CC",
+      "amount": 20,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 8,
+      "description": "tazizi",
+      "account": "ADIB CC",
+      "amount": 21,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 8,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 65.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 9,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 74.25,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 9,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 112.4,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 10,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 158.9,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 10,
+      "description": "CARIBOU COFFEE",
+      "account": "ADIB CC",
+      "amount": 34,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 12,
+      "description": "BOXICA Coffee",
+      "account": "ADIB CC",
+      "amount": 18,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 12,
+      "description": "STARBUCKS",
+      "account": "ADIB CC",
+      "amount": 19,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 13,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 44.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 14,
+      "description": "tazizi",
+      "account": "ADIB CC",
+      "amount": 38,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 14,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 53.49,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 14,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 74.25,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 14,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 106.09,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "MCDONALDS",
+      "account": "ADIB CC",
+      "amount": 23,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 136.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 100.4,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 158.9,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 16,
+      "description": "CARIBOU COFFEE",
+      "account": "ADIB CC",
+      "amount": 20,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 16,
+      "description": "CARIBOU COFFEE",
+      "account": "ADIB CC",
+      "amount": 20,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 16,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 136.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 17,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 44.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 17,
+      "description": "CARIBOU COFFEE",
+      "account": "ADIB CC",
+      "amount": 20,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 17,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 68.35,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "tazizi",
+      "account": "ADIB CC",
+      "amount": 22,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 66.85,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 177.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "BOXICA Coffee",
+      "account": "ADIB CC",
+      "amount": 53,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 190.9,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 20,
+      "description": "THE LIME TREE CAFE",
+      "account": "ADIB CC",
+      "amount": 168,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 20,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 99.69,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 21,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 25.3,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 21,
+      "description": "BOXICA Coffee",
+      "account": "ADIB CC",
+      "amount": 18,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 21,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 98.9,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 24,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 74.25,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 24,
+      "description": "BOXICA Coffee",
+      "account": "ADIB CC",
+      "amount": 18,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 69.4,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 28.6,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "InstaShop",
+      "account": "ADIB CC",
+      "amount": 61.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 44.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 115.7,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 28,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 44.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 29,
+      "description": "BOXICA Coffee",
+      "account": "ADIB CC",
+      "amount": 18,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 30,
+      "description": "Deliveroo",
+      "account": "ADIB CC",
+      "amount": 44.95,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 31,
+      "description": "CARIBOU COFFEE",
+      "account": "ADIB CC",
+      "amount": 20,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 31,
+      "description": "BOXICA Coffee",
+      "account": "ADIB CC",
+      "amount": 18,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Jan 26",
+      "day": 2,
+      "description": "BOXICA Membership",
+      "account": "ADIB CC",
+      "amount": 949,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "IBN SINA PHARMACY",
+      "account": "ADIB CC",
+      "amount": 21,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 9,
+      "description": "OURA RING",
+      "account": "ADIB CC",
+      "amount": 26.57,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 12,
+      "description": "KINGS COLLEGE HOSPITAL",
+      "account": "ADIB CC",
+      "amount": 30,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 16,
+      "description": "ELITE VITA POLYCLINIC",
+      "account": "ADIB CC",
+      "amount": 3500,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 17,
+      "description": "MEDISOUQ PHARMACY",
+      "account": "ADIB CC",
+      "amount": 1950,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "LIFE PHARMACY",
+      "account": "ADIB CC",
+      "amount": 141.35,
+      "category": "Health"
+    },
+    {
+      "month": "Jan 26",
+      "day": 7,
+      "description": "CAREEM",
+      "account": "ADIB CC",
+      "amount": 40.25,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 12,
+      "description": "Careem Tip",
+      "account": "ADIB CC",
+      "amount": 10,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 14,
+      "description": "Zofeur",
+      "account": "ADIB CC",
+      "amount": 60.86,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 15,
+      "description": "Amazon.ae",
+      "account": "ADIB CC",
+      "amount": 43.9,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "THE BARBERSHOP",
+      "account": "ADIB CC",
+      "amount": 200,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 20,
+      "description": "NEXT DIRECTORY",
+      "account": "ADIB CC",
+      "amount": 509.64,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 20,
+      "description": "UBER",
+      "account": "ADIB CC",
+      "amount": 123.84,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 21,
+      "description": "UBER",
+      "account": "ADIB CC",
+      "amount": 428.06,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 22,
+      "description": "QIAN DRAGON LADIES SALOON",
+      "account": "ADIB CC",
+      "amount": 130,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 23,
+      "description": "Careem Tip",
+      "account": "ADIB CC",
+      "amount": 10,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 23,
+      "description": "CAREEM",
+      "account": "ADIB CC",
+      "amount": 32.96,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 24,
+      "description": "UBER",
+      "account": "ADIB CC",
+      "amount": 18.39,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 26,
+      "description": "CAREEM",
+      "account": "ADIB CC",
+      "amount": 63.63,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 28,
+      "description": "CAREEM",
+      "account": "ADIB CC",
+      "amount": 47.01,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 28,
+      "description": "SUITED BOOTED DUBAI",
+      "account": "ADIB CC",
+      "amount": 997.5,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "Paymob (Phone bill)",
+      "account": "ADIB CC",
+      "amount": 300,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "Montblanc",
+      "account": "ADIB CC",
+      "amount": 240,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 13,
+      "description": "NSHAMA TOWN SQUARE",
+      "account": "ADIB CC",
+      "amount": 190,
+      "category": "Unaccounted"
+    },
+    {
+      "month": "Jan 26",
+      "day": 13,
+      "description": "REELLY PERSONAL",
+      "account": "ADIB CC",
+      "amount": 179.9,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 13,
+      "description": "WIDGIT",
+      "account": "ADIB CC",
+      "amount": 24,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 22,
+      "description": "ALEXANDER BUTLER COACH",
+      "account": "ADIB CC",
+      "amount": 1915.09,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 17,
+      "description": "YouTube Premium",
+      "account": "ADIB CC",
+      "amount": 26.99,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Jan 26",
+      "day": 31,
+      "description": "Monthly Murabaha Payment",
+      "account": "ADIB CC",
+      "amount": 2408.7,
+      "category": "Loan"
+    },
+    {
+      "month": "Jan 26",
+      "day": 22,
+      "description": "Ziina Transfer",
+      "account": "ADIB CC",
+      "amount": 440,
+      "category": "Unaccounted"
+    },
+    {
+      "month": "Jan 26",
+      "day": 31,
+      "description": "PMB Accept",
+      "account": "ADIB CC",
+      "amount": 300,
+      "category": "Unaccounted"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Amusement Park",
+      "account": "ADIB CC",
+      "amount": 10,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Amusement Park",
+      "account": "ADIB CC",
+      "amount": 20,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Amusement Park",
+      "account": "ADIB CC",
+      "amount": 10,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 9,
+      "description": "Amusement Park",
+      "account": "ADIB CC",
+      "amount": 10,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Feb 26",
+      "day": 28,
+      "description": "Monthly Murabaha Payment",
+      "account": "ADIB CC",
+      "amount": 2175.6,
+      "category": "Loan"
+    },
+    {
+      "month": "Feb 26",
+      "day": 5,
+      "description": "ATM Cash Withdrawal",
+      "account": "Mashreq",
+      "amount": 100,
+      "category": "Other"
+    },
+    {
+      "month": "Feb 26",
+      "day": 7,
+      "description": "Emirates Leisure Costa (coffee)",
+      "account": "Mashreq",
+      "amount": 9.5,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 11,
+      "description": "Ganesh Muddam (transfer)",
+      "account": "Mashreq",
+      "amount": 200,
+      "category": "Other"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "ATM Cash Withdrawal",
+      "account": "Mashreq",
+      "amount": 1000,
+      "category": "Other"
+    },
+    {
+      "month": "Mar 26",
+      "day": 17,
+      "description": "Clare Page (Mother's Day gift for Tal)",
+      "account": "Mashreq",
+      "amount": 840,
+      "category": "Life"
+    },
+    {
+      "month": "Mar 26",
+      "day": 4,
+      "description": "Marielle Avinante",
+      "account": "Mashreq",
+      "amount": 200,
+      "category": "Unaccounted"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "One & Only Royal (dinner)",
+      "account": "Wise",
+      "amount": 1469.09,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "Seven S FM (venue/event)",
+      "account": "Wise",
+      "amount": 538.64,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Jan 26",
+      "day": 1,
+      "description": "Seven S FM (venue/event)",
+      "account": "Wise",
+      "amount": 293.81,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Jan 26",
+      "day": 3,
+      "description": "GiffGaff",
+      "account": "Wise",
+      "amount": 38.64,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 7,
+      "description": "Abby (Virtual PA - Philippines)",
+      "account": "Wise",
+      "amount": 366.26,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 7,
+      "description": "Abby (Virtual PA - Philippines)",
+      "account": "Wise",
+      "amount": 32.51,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 13,
+      "description": "OpenAI ChatGPT",
+      "account": "Wise",
+      "amount": 86.36,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 13,
+      "description": "TradingView",
+      "account": "Wise",
+      "amount": 56.46,
+      "category": "Business"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "GiffGaff",
+      "account": "Wise",
+      "amount": 96.6,
+      "category": "Life"
+    },
+    {
+      "month": "Jan 26",
+      "day": 19,
+      "description": "Abby (Virtual PA - Philippines)",
+      "account": "Wise",
+      "amount": 294.73,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 8,
+      "description": "Abby (Virtual PA - Philippines)",
+      "account": "Wise",
+      "amount": 672.92,
+      "category": "Business"
+    },
+    {
+      "month": "Feb 26",
+      "day": 11,
+      "description": "Kings College Hospital",
+      "account": "Wise",
+      "amount": 69.5,
+      "category": "Health"
+    },
+    {
+      "month": "Feb 26",
+      "day": 27,
+      "description": "Kings College Hospital",
+      "account": "Wise",
+      "amount": 54.87,
+      "category": "Health"
+    },
+    {
+      "month": "Mar 26",
+      "day": 13,
+      "description": "OpenAI ChatGPT",
+      "account": "Wise",
+      "amount": 87.23,
+      "category": "Business"
+    },
+    {
+      "month": "Mar 26",
+      "day": 22,
+      "description": "FITT Meals",
+      "account": "Wise",
+      "amount": 3090.62,
+      "category": "Base Food"
+    },
+    {
+      "month": "Mar 26",
+      "day": 25,
+      "description": "InstaShop",
+      "account": "Wise",
+      "amount": 16.18,
+      "category": "Deliveries"
+    },
+    {
+      "month": "Feb 26",
+      "day": 16,
+      "description": "FITT Meals",
+      "account": "Wise",
+      "amount": 2811.74,
+      "category": "Base Food"
+    },
+    {
+      "month": "Mar 26",
+      "day": 27,
+      "description": "DAILY OD INT",
+      "account": "BoS",
+      "amount": 2.72,
+      "category": "Fees"
+    },
+    {
+      "month": "Mar 26",
+      "day": 30,
+      "description": "DAILY OD INT 28/03",
+      "account": "BoS",
+      "amount": 2.72,
+      "category": "Fees"
+    },
+    {
+      "month": "Mar 26",
+      "day": 30,
+      "description": "C L MACLEOD",
+      "account": "BoS",
+      "amount": 33,
+      "category": "Other"
+    },
+    {
+      "month": "Mar 26",
+      "day": 30,
+      "description": "DAILY OD INT 29/03",
+      "account": "BoS",
+      "amount": 2.76,
+      "category": "Fees"
+    },
+    {
+      "month": "Mar 26",
+      "day": 31,
+      "description": "DAILY OD INT",
+      "account": "BoS",
+      "amount": 2.76,
+      "category": "Fees"
+    },
+    {
+      "month": "Apr 26",
+      "day": 1,
+      "description": "DAILY OD INT",
+      "account": "BoS",
+      "amount": 13.39,
+      "category": "Fees"
+    },
+    {
+      "month": "Apr 26",
+      "day": 1,
+      "description": "RETURNED DD",
+      "account": "BoS",
+      "amount": 137.01,
+      "category": "Other"
+    },
+    {
+      "month": "Apr 26",
+      "day": 1,
+      "description": "RETURNED DD",
+      "account": "BoS",
+      "amount": 575.31,
+      "category": "Other"
+    },
+    {
+      "month": "Apr 26",
+      "day": 1,
+      "description": "AGRIA PET INS",
+      "account": "BoS",
+      "amount": 575.31,
+      "category": "Health"
+    },
+    {
+      "month": "Apr 26",
+      "day": 1,
+      "description": "PET HEALTH CLUB",
+      "account": "BoS",
+      "amount": 137.01,
+      "category": "Health"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "DAILY OD INT",
+      "account": "BoS",
+      "amount": 10.14,
+      "category": "Fees"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "TESCO BANK",
+      "account": "BoS",
+      "amount": 1299.8,
+      "category": "Loan"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "FLAHER TV",
+      "account": "BoS",
+      "amount": 4850,
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "NIUM FINTECH LIMIT",
+      "account": "BoS",
+      "amount": 970,
+      "category": "Other"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "MBNA LIMITED",
+      "account": "BoS",
+      "amount": 932.85,
+      "category": "Loan"
+    },
+    {
+      "month": "Apr 26",
+      "day": 7,
+      "description": "DAILY OD INT 03/04",
+      "account": "BoS",
+      "amount": 10.14,
+      "category": "Fees"
+    },
+    {
+      "month": "Apr 26",
+      "day": 7,
+      "description": "DAILY OD INT 04/04",
+      "account": "BoS",
+      "amount": 10.14,
+      "need": "",
+      "category": "Fees"
+    },
+    {
+      "month": "Apr 26",
+      "day": 7,
+      "description": "APPLE.COM/BILL",
+      "account": "BoS",
+      "amount": 58.15,
+      "need": "",
+      "category": "Entertainment"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "Murabaha Payment",
+      "account": "ADIB",
+      "amount": 2408.7,
+      "need": "",
+      "category": "Loan"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "Profit/Bonus from Bank",
+      "account": "ADIB",
+      "amount": 40.53,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 3,
+      "description": "BOXICA",
+      "account": "ADIB",
+      "amount": 949,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 3,
+      "description": "Virgin Mobile UAE",
+      "account": "ADIB",
+      "amount": 210,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "Deliveroo",
+      "account": "ADIB",
+      "amount": 231.4,
+      "need": "",
+      "category": "Deliveries"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "Nandos Club Abu Dhabi",
+      "account": "ADIB",
+      "amount": 191.98,
+      "need": "",
+      "category": "Deliveries"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "TASSHEEL BUSINESS CENT",
+      "account": "ADIB",
+      "amount": 107.15,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "UBER",
+      "account": "ADIB",
+      "amount": 65,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "EPPCO SITE 825",
+      "account": "ADIB",
+      "amount": 270,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "Instashop",
+      "account": "ADIB",
+      "amount": 85.39,
+      "need": "",
+      "category": "Deliveries"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "STARBUCKS ENOC",
+      "account": "ADIB",
+      "amount": 19,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 4,
+      "description": "Instashop",
+      "account": "ADIB",
+      "amount": 73.95,
+      "need": "",
+      "category": "Deliveries"
+    },
+    {
+      "month": "Apr 26",
+      "day": 1,
+      "description": "Deliveroo",
+      "account": "Wise",
+      "amount": 44.95,
+      "need": "",
+      "category": "Deliveries"
+    },
+    {
+      "month": "Apr 26",
+      "day": 1,
+      "description": "Boxica",
+      "account": "Wise",
+      "amount": 18,
+      "need": "",
+      "category": "Deliveries"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "ADNOC",
+      "account": "Wise",
+      "amount": 157.41,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "ADNOC",
+      "account": "Wise",
+      "amount": 76,
+      "need": "",
+      "category": "Life"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "Anthropic",
+      "account": "Wise",
+      "amount": 1101,
+      "need": "",
+      "category": "Business"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "SELFDRIVE AE (card *789) 14:42",
+      "account": "ADIB CC",
+      "amount": 245.66,
+      "category": "Life"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "SELFDRIVE AE (card *789) 14:42",
+      "account": "ADIB CC",
+      "amount": 245.66,
+      "category": "Life"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "SELFDRIVE AE (card *789) 14:42",
+      "account": "ADIB CC",
+      "amount": 245.66,
+      "category": "Life"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "PARKONIC PARKING SYS (card *789) 20:05",
+      "account": "ADIB CC",
+      "amount": 10.0,
+      "category": "Life"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "Qlub*CQ French Brasser (card *789) 21:02",
+      "account": "ADIB CC",
+      "amount": 488.83,
+      "category": "Entertainment"
+    },
+    {
+      "month": "Aug 26",
+      "day": 1,
+      "description": "BOXICA (card *789) 00:04",
+      "account": "ADIB CC",
+      "amount": 949.0,
+      "category": "Other"
+    },
+    {
+      "month": "Jul 26",
+      "day": 30,
+      "description": "CARD PAYMENT IN - credit to card *789 (negative = repayment, not spend)",
+      "account": "ADIB CC",
+      "amount": -19993.52,
+      "category": "Loan"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "CARD PAYMENT IN - credit to card *789 (negative = repayment, not spend)",
+      "account": "ADIB CC",
+      "amount": -30000.0,
+      "category": "Loan"
+    },
+    {
+      "month": "Aug 26",
+      "day": 1,
+      "description": "CARD PAYMENT IN - credit to card *789, reported verbally by Calum, no SMS captured",
+      "account": "ADIB CC",
+      "amount": -24000.0,
+      "category": "Loan"
+    },
+    {
+      "month": "Sep 26",
+      "day": 4,
+      "description": "Interest x4 (Sep stmt)",
+      "account": "Tesco Clubcard",
+      "amount": 130.65,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Aug 26",
+      "day": 4,
+      "description": "Interest (Aug stmt, partial - 1 line cut off)",
+      "account": "Tesco Clubcard",
+      "amount": 50.21,
+      "category": "Fees",
+      "note": "0.14+18.95+31.12 visible only",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Sep 26",
+      "day": 3,
+      "description": "Interest charged x3",
+      "account": "Virgin Money",
+      "amount": 192.99,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Aug 26",
+      "day": 3,
+      "description": "Interest charged (stmt total)",
+      "account": "Virgin Money",
+      "amount": 200.95,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "Transfer balance int 213.51 + purchases int 2.40 + quasi cash 0.20",
+      "account": "Santander Everyday",
+      "amount": 216.11,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Jul 26",
+      "day": 27,
+      "description": "Transfer balance int 216.29 + purchases int 14.93 + quasi cash 1.36",
+      "account": "Santander Everyday",
+      "amount": 232.58,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Sep 26",
+      "day": 6,
+      "description": "Interest (stmt 06 Sep)",
+      "account": "MBNA 1",
+      "amount": 79.08,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Aug 26",
+      "day": 23,
+      "description": "Interest (stmt 23 Aug)",
+      "account": "MBNA 2",
+      "amount": 7.1,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "Interest 5.34 + 35.92",
+      "account": "M&S",
+      "amount": 41.26,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Jul 26",
+      "day": 27,
+      "description": "Interest 4.89 + 43.13",
+      "account": "M&S",
+      "amount": 48.02,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Aug 26",
+      "day": 10,
+      "description": "Interest",
+      "account": "HSBC",
+      "amount": 8.62,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    },
+    {
+      "month": "Aug 26",
+      "day": 27,
+      "description": "Interest on cash balance 1.8075%",
+      "account": "Barclaycard Plat",
+      "amount": 27.51,
+      "category": "Fees",
+      "source": "cc app screenshot 05 Sep 26"
+    }
+  ],
+  "ccBalances": [
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "Virgin Money",
+      "balance": 9981.5,
+      "currency": "GBP",
+      "available": 18.5,
+      "limit": 10000,
+      "status": "Under limit - paid down 6 Jul"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "Barclaycard Plat",
+      "balance": 9839.1,
+      "currency": "GBP",
+      "available": 160.9,
+      "limit": 10000,
+      "status": "Min 108.94 due 20 Jul",
+      "dueDate": "2026-07-20",
+      "dueAmount": 108.94,
+      "dueNote": "Min payment"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "M&S",
+      "balance": 7987.22,
+      "currency": "GBP",
+      "available": 12.78,
+      "limit": 8000,
+      "status": "Min 199.46 due 23 Jul",
+      "dueDate": "2026-07-23",
+      "dueAmount": 199.46,
+      "dueNote": "Min payment"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "Tesco Clubcard",
+      "balance": 6244.76,
+      "currency": "GBP",
+      "available": 80.24,
+      "limit": 6325,
+      "status": "Min 286 due 29 Jul",
+      "dueDate": "2026-07-29",
+      "dueAmount": 286.0,
+      "dueNote": "Min payment"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "AQUA",
+      "balance": 3499.61,
+      "currency": "GBP",
+      "available": 0.39,
+      "limit": 3500,
+      "status": "DD 9 Jul",
+      "dueDate": "2026-07-09",
+      "dueAmount": null,
+      "dueNote": "Direct debit"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "HSBC",
+      "balance": 1966.41,
+      "currency": "GBP",
+      "available": 33.59,
+      "limit": 2000,
+      "status": "Under limit - min paid 6 Jul"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "AmEx Gold",
+      "balance": 0.0,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "PAID IN FULL 6 Jul"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "AmEx BA",
+      "balance": 0.0,
+      "currency": "GBP",
+      "available": 800.0,
+      "limit": 800,
+      "status": "PAID IN FULL 6 Jul"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "ADIB Emirates VC Sig",
+      "balance": 14600.0,
+      "currency": "GBP",
+      "available": 400.0,
+      "limit": 15000,
+      "status": "Working card - fluctuates with daily use | CORRECTED 26 Jul: balance is ~GBP 14.6-15K (not AED)",
+      "revolving": true
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "BoS Classic overdraft",
+      "balance": 2514.53,
+      "currency": "GBP",
+      "available": 485.47,
+      "limit": 3000,
+      "status": "Working account - fluctuates. OD interest daily",
+      "revolving": true
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "MBNA Main",
+      "balance": 8496.91,
+      "currency": "GBP",
+      "available": 303.09,
+      "limit": 8800,
+      "status": "DD taken 2 Jul (241.70)"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "MBNA 2",
+      "balance": 2498.74,
+      "currency": "GBP",
+      "available": 1.26,
+      "limit": 2500,
+      "status": "Maxed"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "Santander Everyday",
+      "balance": 12146.96,
+      "currency": "GBP",
+      "available": 3.04,
+      "limit": 12150,
+      "status": "Paid under limit 6 Jul (exact balance TBC)",
+      "dueDate": "2026-07-21",
+      "dueAmount": 330.96,
+      "dueNote": "Min (DD set)"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "Tesco Clubcard",
+      "balance": 6323.99,
+      "currency": "GBP",
+      "available": 1.01,
+      "limit": 6325,
+      "status": "Cash-advance fees on Wise txns; interest charges on stmt"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "Virgin Money",
+      "balance": 9981.5,
+      "currency": "GBP",
+      "available": 18.5,
+      "limit": 10000,
+      "status": "MISSED PAYMENT 369.80 - DD leaving 27 Jul, verify + call for goodwill removal",
+      "dueDate": "2026-07-27",
+      "dueAmount": 369.8
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "Santander Everyday",
+      "balance": 12146.96,
+      "currency": "GBP",
+      "available": 3.04,
+      "limit": 12150,
+      "status": "Min 330.96 was due 21 Jul - DD active, verify it took"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "MBNA 1",
+      "balance": 8799.49,
+      "currency": "GBP",
+      "available": 0.51,
+      "limit": 8800,
+      "status": "Cash fee 10.13; Wise treated as cash advance"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "MBNA 2",
+      "balance": 2495.21,
+      "currency": "GBP",
+      "available": 4.79,
+      "limit": 2500,
+      "status": "Wise pending 35.44"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "M&S",
+      "balance": 7999.22,
+      "currency": "GBP",
+      "available": 0.78,
+      "limit": 8000,
+      "status": "Min 199.46 was due 23 Jul - verify paid"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "HSBC",
+      "balance": 1972.02,
+      "currency": "GBP",
+      "available": 2.66,
+      "limit": 2000,
+      "status": "Min 49.30 due 4 Aug",
+      "dueDate": "2026-08-04",
+      "dueAmount": 49.3
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "Barclaycard Plat",
+      "balance": 9983.31,
+      "currency": "GBP",
+      "available": 16.69,
+      "limit": 10000,
+      "status": "DD took 108.94 on 20 Jul"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "Aqua",
+      "balance": 3494.08,
+      "currency": "GBP",
+      "available": 5.92,
+      "limit": 3500,
+      "status": "DD due 10 Aug",
+      "dueDate": "2026-08-10"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "BA Amex",
+      "balance": 61.98,
+      "currency": "GBP",
+      "available": 738.0,
+      "limit": 800,
+      "status": "Nothing due; 9,649 Avios"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "Amex Gold (charge)",
+      "balance": 1684.37,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Charge card - nothing due shown"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 2368.32,
+      "currency": "GBP",
+      "available": 631.68,
+      "limit": 3000,
+      "status": "OD interest 2.75/day (~83/mo); Virgin 369.80 leaving 27 Jul; Flaher TV +1000 in"
+    },
+    {
+      "date": "2026-07-26",
+      "month": "Jul 26",
+      "card": "ADIB Emirates VC Sig",
+      "balance": 14600,
+      "currency": "GBP",
+      "status": "Still maxed (working credit - excluded from killable) | CORRECTED 26 Jul: balance is ~GBP 14.6-15K (not AED)"
+    },
+    {
+      "date": "2026-08-01",
+      "month": "Aug 26",
+      "card": "ADIB *789",
+      "balance": null,
+      "currency": "AED",
+      "available": 45505.9,
+      "limit": null,
+      "status": "Avl bal per SMS after BOXICA 01/08 00:04. Two payments in: 19,993.52 (30 Jul) + 30,000.00 (31 Jul); Calum reports a further 24,000 paid 1 Aug (not yet in this figure). M&S DXBH 51.24 on 30/07 15:42 was REJECTED - insufficient funds - pre-payments. Card identity vs 'ADIB Emirates VC Sig' record not confirmed."
+    },
+    {
+      "date": "2026-08-01",
+      "month": "Aug 26",
+      "card": "ADIB Emirates VC Sig (*789)",
+      "balance": 0,
+      "currency": "AED",
+      "available": 69500,
+      "limit": null,
+      "status": "KILLED 30 Jul-1 Aug: payments 19,993.52 + 30,000 + 24,000 = 73,993.52 cleared full balance (was ~GBP 14.6K equiv). *789 = same card as 'ADIB Emirates VC Sig' record - reconciled. New spend already: ~2,186 AED (SelfDrive/Qlub/Boxica) - designated live daily card, PAY IN FULL monthly rule applies."
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "Tesco Clubcard",
+      "balance": 5727.11,
+      "currency": "GBP",
+      "available": 597.89,
+      "limit": 6325.0,
+      "status": "Interest 130.65 (2.281%/mo ≈ 27.4%/yr). Min 266.00 due 29 Sep 26; DD 279.00 paid 29 Aug. Sep stmt interest 4 lines: 21.62+31.60+77.25+0.18. Aug stmt interest partially visible (0.14+18.95+31.12+1 line cut off)",
+      "interestLatest": 130.65,
+      "interestDate": "04 Sep",
+      "interestPrevMonth": null,
+      "monthlyRatePct": 2.281,
+      "annualisedPct": 27.4
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "Virgin Money",
+      "balance": 9705.64,
+      "currency": "GBP",
+      "available": 294.36,
+      "limit": 10000.0,
+      "status": "Interest 192.99 (1.988%/mo ≈ 23.9%/yr). MISSED PAYMENT 401.90 flagged in app. Sep stmt interest 152.69+7.32+32.98=192.99; Aug stmt interest total 200.95",
+      "interestLatest": 192.99,
+      "interestDate": "03 Sep",
+      "interestPrevMonth": 200.95,
+      "monthlyRatePct": 1.988,
+      "annualisedPct": 23.9
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "Santander Everyday",
+      "balance": 11845.65,
+      "currency": "GBP",
+      "available": 304.35,
+      "limit": 12150.0,
+      "status": "Interest 216.11 (1.824%/mo ≈ 21.9%/yr). 27 Aug: BT int 213.51 + purchases int 2.40 + quasi-cash 0.20. 27 Jul: 216.29+14.93+1.36=232.58. Faster payment 750.00 on 31 Jul",
+      "interestLatest": 216.11,
+      "interestDate": "27 Aug",
+      "interestPrevMonth": 232.58,
+      "monthlyRatePct": 1.824,
+      "annualisedPct": 21.9
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "MBNA 1",
+      "balance": 8159.44,
+      "currency": "GBP",
+      "available": 640.56,
+      "limit": 8800.0,
+      "status": "Interest 79.08 (0.969%/mo ≈ 11.6%/yr). Card *1654. Stmt 06 Sep 26 bal 8,159.44; min 283.07 due 01 Oct 26. Interest 79.08. Being replaced with Visa card",
+      "interestLatest": 79.08,
+      "interestDate": "06 Sep",
+      "interestPrevMonth": null,
+      "monthlyRatePct": 0.969,
+      "annualisedPct": 11.6
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "MBNA 2",
+      "balance": 1931.05,
+      "currency": "GBP",
+      "available": 568.95,
+      "limit": 2500.0,
+      "status": "Interest 7.1 (0.368%/mo ≈ 4.4%/yr). Card *3318. Stmt 23 Aug 26 bal 1,931.05; min 55.38 due 17 Sep 26. Interest 7.10",
+      "interestLatest": 7.1,
+      "interestDate": "23 Aug",
+      "interestPrevMonth": null,
+      "monthlyRatePct": 0.368,
+      "annualisedPct": 4.4
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "M&S",
+      "balance": 7539.64,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Interest 41.26 (0.547%/mo ≈ 6.6%/yr). Card *0340. Last stmt bal 7,539.64; min 188.49 due 21 Sep. 27 Aug interest 5.34+35.92; 27 Jul 4.89+43.13. Payment 550.00 on 31 Jul. Limit not shown (prev 8000)",
+      "interestLatest": 41.26,
+      "interestDate": "27 Aug",
+      "interestPrevMonth": 48.02,
+      "monthlyRatePct": 0.547,
+      "annualisedPct": 6.6
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "HSBC",
+      "balance": 1423.17,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Interest 8.62 (0.606%/mo ≈ 7.3%/yr). Card *9345. Stmt bal 1,459.66 due 04 Sep, min 0.00. Interest 8.62 on 10 Aug. DD 36.49 (04 Sep), DD 49.30 (04 Aug), payment 500.00 (31 Jul). Limit not shown (prev 2000)",
+      "interestLatest": 8.62,
+      "interestDate": "10 Aug",
+      "interestPrevMonth": null,
+      "monthlyRatePct": 0.606,
+      "annualisedPct": 7.3
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "Barclaycard Plat",
+      "balance": 9520.38,
+      "currency": "GBP",
+      "available": 479.62,
+      "limit": 10000.0,
+      "status": "Interest 27.51 (0.289%/mo ≈ 3.5%/yr). VISA *3001. Min 122.43 due 21/09/26. Interest 27.51 = cash bal 1,441.57 @1.8075%/mo (21.69% simple / 24.0% compound); BT bal 8,078.81 @0% to 29 Jan 2028. Est next month 24.48. Payment 550.00 on 01 Aug",
+      "interestLatest": 27.51,
+      "interestDate": "27 Aug",
+      "interestPrevMonth": null,
+      "monthlyRatePct": 0.289,
+      "annualisedPct": 3.5
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "Amex Gold (charge)",
+      "balance": 0,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Calum reports cleared to 0"
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "Amex Black",
+      "balance": 0,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Calum reports cleared to 0"
+    },
+    {
+      "date": "2026-09-05",
+      "month": "Sep 26",
+      "card": "Aqua",
+      "balance": 0,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Calum reports cleared to 0"
+    }
+  ],
+  "personalDebts": [
+    {
+      "to": "Mum",
+      "amount": 38000,
+      "currency": "GBP",
+      "asOf": "2026-07-02",
+      "note": "3,250 paid 2 Jul",
+      "original": 41250
+    },
+    {
+      "to": "Lewis",
+      "amount": 0,
+      "currency": "GBP",
+      "asOf": "2026-07-26",
+      "note": "Original 17K; 5K paid last month. 12K remaining. 7K allocated from this payday -> will leave 5K.",
+      "original": 22000,
+      "status": "RESOLVED - Lewis declined repayment (30 Jul). Calum sent D10,000 gesture instead."
+    },
+    {
+      "to": "Dad",
+      "amount": 0,
+      "currency": "GBP",
+      "asOf": "2026-07-02",
+      "note": "PAID IN FULL 2 Jul",
+      "original": 500
+    },
+    {
+      "to": "Luca",
+      "amount": 1000,
+      "currency": "GBP",
+      "asOf": "2026-07-26",
+      "note": "To be paid back on the 1st (Aug)",
+      "original": 1000
+    }
+  ],
+  "debtBaseline": {
+    "date": "2026-07-06",
+    "cardsTotal": 81514.57,
+    "personalTotal": 63750,
+    "grandTotal": 145264.57,
+    "note": "Game counts killable debts only (9 cards + personal). BoS OD + ADIB are working credit, excluded from Destroyed",
+    "killableTotal": 127750.04,
+    "2026-07-26": {
+      "totalCards": 64942.13,
+      "overdraft": 2368.32,
+      "totalUnsecured": 67310.45,
+      "utilisationPct": 98.8,
+      "availableAllCards": 791.9,
+      "adibGBP": 14600,
+      "totalUnsecuredInclADIB": 81910.45
+    },
+    "2026-09-05": {
+      "totalCards": 55852.08,
+      "note": "8 cards w/ balance; Amex Gold/Black + Aqua at 0 per Calum. Excl ADIB/BoS OD",
+      "availableAllCards": 2885.73,
+      "interestLatestMonthTotal": 703.32
+    }
   },
-  {
-   "date": "2026-01-14",
-   "gross_aed": 53563.0,
-   "deals": 3,
-   "employer": "White & Co",
-   "mode": "WPS"
+  "paydayPlan": {
+    "expected": 50000,
+    "currency": "GBP",
+    "created": "2026-07-26",
+    "status": "EXECUTING 30 Jul - final v3",
+    "sequence": "1) BoS 5K 2) verify Virgin/Santander/M&S minimums 3) ADIB full kill 4) headroom 5) family+Amex 6) business 7) fun",
+    "allocations": [
+      {
+        "to": "BoS current account",
+        "amount": 5000,
+        "note": "kills OD, leaves buffer"
+      },
+      {
+        "to": "Holiday",
+        "amount": 5000
+      },
+      {
+        "to": "Push present",
+        "amount": 3000
+      },
+      {
+        "to": "Lewis",
+        "amount": 7000,
+        "note": "12K -> 5K"
+      },
+      {
+        "to": "Luca",
+        "amount": 1000,
+        "note": "cleared, 1 Aug"
+      },
+      {
+        "to": "Tal - bills",
+        "amount": 3000
+      },
+      {
+        "to": "Tal - going home",
+        "amount": 3000
+      },
+      {
+        "to": "Tal - Amex",
+        "amount": 4000
+      },
+      {
+        "to": "Calum Amex Gold",
+        "amount": 2000,
+        "note": "charge card, must clear"
+      },
+      {
+        "to": "Business fund - ads person + spend + content assist",
+        "amount": 5000
+      },
+      {
+        "to": "Headroom 200 x 8 tight cards",
+        "amount": 1600
+      },
+      {
+        "to": "ADIB",
+        "amount": 14600,
+        "note": "FULL KILL - Calum's explicit call"
+      }
+    ],
+    "total_allocated": 54200,
+    "gap": -4200,
+    "gapNote": "4,200 short vs 50K expected. TO SOLVE (not today): options - pay actual amount if >50K lands, trim on the day, or short-delay one allocation. Nothing executes blind: gap resolved at execution walkthrough with Max.",
+    "outcome": "Dead: OD, ADIB, Aqua? NO - Aqua untouched per Calum. Dead: OD, ADIB, Luca, Tal Amex, Calum Amex. Headroom on all 8. ~660/mo interest deleted. Business funded.",
+    "actualReceived_aed": 295626.75,
+    "actualReceived_gbp_est": 60950,
+    "spareNote": "Spare ~6-7K: recommend Aqua kill (3,494) + rest to BoS buffer",
+    "finalAllocations": {
+      "UK_wise_single_transfer_gbp": 23494,
+      "UK": {
+        "BoS": 5000,
+        "Headroom_500x8": 4000,
+        "CalumAmexGold": 2000,
+        "TalAmex": 4000,
+        "Luca": 1000,
+        "TalBills": 1000,
+        "TalHome": 3000,
+        "Aqua_KILL": 3494
+      },
+      "AED": {
+        "ADIB_KILL_aed": 71000,
+        "Lewis_gift_aed": 10000,
+        "Holiday_aed": 24250,
+        "Push_aed": 14550,
+        "Business_aed": 24250
+      },
+      "leftover_est_gbp": 7800,
+      "note": "Lewis loan resolved by his own call; D10K gesture. Headroom upgraded 200->500/card. Aqua killed from freed funds."
+    },
+    "executionLog": [
+      {
+        "date": "2026-07-30",
+        "action": "D130,000 sent (via Tal) to FX for UK leg - covers the 23.5K GBP distribution list"
+      },
+      {
+        "date": "2026-07-30",
+        "action": "D5,000 stays with Tal in her account"
+      },
+      {
+        "date": "2026-07-30",
+        "action": "ADIB: ~D20,000 paid (daily transfer limit hit). Remainder ~D51,000 due TOMORROW MORNING - completes the kill"
+      },
+      {
+        "date": "2026-07-31",
+        "action": "PENDING: ADIB balance ~51K + Lewis 10K gesture + holiday/push/business parks (~63K)"
+      },
+      {
+        "date": "2026-07-30",
+        "action": "HOLIDAY DONE: D24,500 sent to Tal - hotel booked. Pot fully deployed."
+      },
+      {
+        "date": "2026-07-30",
+        "action": "UK distribution: Gold Amex 3,025 CLEARED. BA/Black Amex 61. Tesco 300+min. Virgin 300+min. Santander 700 (200 over-limit from interest + 500). MBNA big: 300 min + 200 = 500. MBNA small: 500. M&S 550 (50 was overdue). Barclaycard 550 (50 over). AQUA 3,500 FULLY PAID - DEAD (interest was ~100/mo, est validated)."
+      },
+      {
+        "date": "2026-07-30",
+        "action": "PENDING: HSBC 500 (payment blocked - retry), Luca 1,000, Tal 506. TOMORROW: ADIB tail ~D21K, Tal remaining 3,494, HSBC retry."
+      },
+      {
+        "date": "2026-07-31",
+        "action": "Barclaycard 550 cleared (pending resolved). BoS balance now £855 + OD headroom. ~£4K still inbound for Tal's remainder."
+      },
+      {
+        "date": "2026-08-01",
+        "action": "+£4,012.04 second FX batch arrived. £750 card payment (card TBC with Calum). HSBC 500 + Vantage 2,000 confirmed on statement."
+      },
+      {
+        "date": "2026-08-03",
+        "action": "TAL PAID IN FULL: £9,000 (Amex 4K + bills + going home). Barclaycard £550 re-sent and cleared (earlier attempt had bounced). BoS balance after pending: £855.91. PENDING: Luca £1,000 status?, the £750 card ID, ADIB tail ~D21K."
+      },
+      {
+        "date": "2026-08-01",
+        "action": "ADIB FULLY DEAD: 73,993.52 total payments across 3 days cleared the card. Available ~69.5K. THE most expensive debt eliminated (~470/mo interest gone). Plan now 100% on kills."
+      }
+    ]
   },
-  {
-   "date": "2026-01-29",
-   "gross_aed": 6154.25,
-   "deals": 1,
-   "employer": "White & Co",
-   "mode": "WPS",
-   "note": "FX referral"
-  },
-  {
-   "date": "2026-04-01",
-   "gross_aed": 46048.75,
-   "deals": 1,
-   "employer": "White & Co",
-   "mode": "WPS"
-  },
-  {
-   "date": "2026-04-30",
-   "gross_aed": 50000.0,
-   "deals": 0,
-   "employer": "White & Co",
-   "mode": "WPS",
-   "note": "SOA batch instalment 1"
-  },
-  {
-   "date": "2026-05-21",
-   "gross_aed": 115240.25,
-   "deals": 0,
-   "employer": "White & Co",
-   "mode": "WPS",
-   "note": "SOA batch settled in full (165,240.24 total: incl 107 + K341)"
-  },
-  {
-   "date": "2026-06-30",
-   "gross_aed": 113595.0,
-   "deals": 5,
-   "employer": "White & Co",
-   "mode": "WPS",
-   "note": "Slip said 115,271 - bank received 113,595. 1,676 gap: query with accounts"
-  },
-  {
-   "date": "2026-07-30",
-   "gross_aed": 295626.75,
-   "deals": 8,
-   "employer": "White & Co",
-   "mode": "WPS",
-   "note": "Expected 30 Jul (slip issued)"
+  "payslips": [
+    {
+      "date": "2025-11-27",
+      "gross_aed": 42631.75,
+      "deals": 1,
+      "employer": "White & Co",
+      "mode": "WPS"
+    },
+    {
+      "date": "2026-01-14",
+      "gross_aed": 53563.0,
+      "deals": 3,
+      "employer": "White & Co",
+      "mode": "WPS"
+    },
+    {
+      "date": "2026-01-29",
+      "gross_aed": 6154.25,
+      "deals": 1,
+      "employer": "White & Co",
+      "mode": "WPS",
+      "note": "FX referral"
+    },
+    {
+      "date": "2026-04-01",
+      "gross_aed": 46048.75,
+      "deals": 1,
+      "employer": "White & Co",
+      "mode": "WPS"
+    },
+    {
+      "date": "2026-04-30",
+      "gross_aed": 50000.0,
+      "deals": 0,
+      "employer": "White & Co",
+      "mode": "WPS",
+      "note": "SOA batch instalment 1"
+    },
+    {
+      "date": "2026-05-21",
+      "gross_aed": 115240.25,
+      "deals": 0,
+      "employer": "White & Co",
+      "mode": "WPS",
+      "note": "SOA batch settled in full (165,240.24 total: incl 107 + K341)"
+    },
+    {
+      "date": "2026-06-30",
+      "gross_aed": 113595.0,
+      "deals": 5,
+      "employer": "White & Co",
+      "mode": "WPS",
+      "note": "Slip said 115,271 - bank received 113,595. 1,676 gap: query with accounts"
+    },
+    {
+      "date": "2026-07-30",
+      "gross_aed": 295626.75,
+      "deals": 8,
+      "employer": "White & Co",
+      "mode": "WPS",
+      "note": "Expected 30 Jul (slip issued)"
+    }
+  ],
+  "commissionReconciliation": {
+    "asOf": "2026-07-27",
+    "source": "Mashreq statement Jul25-Jul26 (bank-verified)",
+    "cashReceived_toDate_aed": 427233.0,
+    "expected30Jul_aed": 295626.75,
+    "earnedOnDocuments_aed": 724535.74,
+    "residualGap_aed": 1676.0,
+    "verdict": "PAID PROPERLY. SOA batch fully settled 21 May (50K + 115,240.25). Only discrepancy: June slip 115,271 vs bank 113,595 = 1,676 short - one-line query to accounts.",
+    "ghostDeals": "Q149 (Jan, ~20,100) + Q396 (Feb, ~27,125) + K518 (Feb, ~18,070) = ~65,295 est: never on any slip/SOA. Ask accounts when these invoice.",
+    "recentUnpaid": "A5-108, TH-68, P151 (Jun) + P218, K331, Penthouse (Jul) = ~370K est, expect Aug/Sep slips.",
+    "totalOutstanding_aed_est": 435765
   }
- ],
- "commissionReconciliation": {
-  "asOf": "2026-07-27",
-  "source": "Mashreq statement Jul25-Jul26 (bank-verified)",
-  "cashReceived_toDate_aed": 427233.0,
-  "expected30Jul_aed": 295626.75,
-  "earnedOnDocuments_aed": 724535.74,
-  "residualGap_aed": 1676.0,
-  "verdict": "PAID PROPERLY. SOA batch fully settled 21 May (50K + 115,240.25). Only discrepancy: June slip 115,271 vs bank 113,595 = 1,676 short - one-line query to accounts.",
-  "ghostDeals": "Q149 (Jan, ~20,100) + Q396 (Feb, ~27,125) + K518 (Feb, ~18,070) = ~65,295 est: never on any slip/SOA. Ask accounts when these invoice.",
-  "recentUnpaid": "A5-108, TH-68, P151 (Jun) + P218, K331, Penthouse (Jul) = ~370K est, expect Aug/Sep slips.",
-  "totalOutstanding_aed_est": 435765
- }
 }
