@@ -99,6 +99,8 @@ body{padding-bottom:40px}
     <div id="warnBox"></div>
     <div class="panelbox" style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap"><h2 style="color:var(--lgold);font-size:15px;margin:0">◆ September Sprint</h2><span id="sprintSub" style="font-size:10px;letter-spacing:2px;color:var(--muted)"></span></div>
       <div id="sprintBoard" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"></div></div>
+    <div class="panelbox" style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap"><h2 style="color:var(--lgold);font-size:15px;margin:0">◆ Exit Sprint - the plan</h2><span id="planSub" style="font-size:10px;letter-spacing:2px;color:var(--muted)"></span></div>
+      <div id="planBoard" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"></div></div>
     <div class="panelbox maxsays"><h2 style="color:var(--lgold);font-size:15px;margin-bottom:6px">◆ Max says</h2><div id="maxSays" style="font-size:13px"></div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">◆ Lagoons Market — live DLD feed</h2><div id="marketBox"></div></div>
     <div class="panelbox"><h2 style="color:var(--lgold);font-size:17px;margin-bottom:6px">Today's Touches</h2><div id="touchList"></div></div>
@@ -488,6 +490,7 @@ async function fetchAll(){
   try{OFFERS=await fetchFile('data/offers.json')}catch(e){OFFERS=[]}
   try{ARCH=await fetchFile('data/archive-buyers.json')}catch(e){ARCH=[]}
   try{SPRINT=await fetchFile('data/sprint.json')}catch(e){SPRINT=null}
+  try{PLAN=await fetchFile('data/plan.json')}catch(e){PLAN=null}
   try{DLD=await (await fetch('https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/data/dld/lagoons.json?t='+Date.now())).json();if(!Array.isArray(DLD))DLD=[]}catch(e){DLD=[]}
   syncHeatFromScore();fillClusterFilter();migSellerStages();
 }
@@ -495,6 +498,14 @@ function render(){renderToday();renderMarket();renderMarketTab();renderBoard();r
 let SCOREF='';
 function scoreFilter(role,s){SCOREF=String(s);if($('p-role'))$('p-role').value=role==='seller'?'seller':'';openTab('people');renderPeople();}
 function weekBounds(d){const dt=new Date(d+'T00:00:00');const day=(dt.getDay()+6)%7;const mon=new Date(dt);mon.setDate(dt.getDate()-day);const sun=new Date(mon);sun.setDate(mon.getDate()+6);const f=x=>x.toISOString().slice(0,10);return [f(mon),f(sun)];}
+function renderPlan(){
+  const el=$('planBoard'); if(!el||!PLAN) return; const t0=today();
+  const all=PLAN.categories.flatMap(c=>c.items), done=all.filter(i=>i.done).length;
+  $('planSub').textContent=done+'/'+all.length+' DONE · ENDS 30 SEP · HOLIDAY 13-18';
+  el.innerHTML=PLAN.categories.map(c=>{const d=c.items.filter(i=>i.done).length;
+    return '<div style="flex:1;min-width:210px;background:var(--panel);border:1px solid var(--div);border-radius:10px;padding:8px 10px"><div style="display:flex;justify-content:space-between;font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:5px"><span>'+c.name.toUpperCase()+'</span><span style="color:var(--muted)">'+d+'/'+c.items.length+'</span></div>'
+      +c.items.map(i=>{const late=!i.done&&/^\d{4}-/.test(i.due)&&i.due<t0; return '<div style="display:flex;gap:6px;font-size:12px;padding:3px 0;border-top:1px solid var(--div);color:'+(i.done?'var(--muted)':'var(--cream)')+'"><span style="color:'+(i.done?'#7dc98f':late?'#f0883e':'var(--gold)')+'">'+(i.done?'✓':late?'!':'◆')+'</span><span style="flex:1;'+(i.done?'text-decoration:line-through;':'')+'">'+i.t+'</span><span style="color:'+(late?'#f0883e':'var(--muted)')+';font-size:10px;white-space:nowrap">'+(i.due||'')+'</span></div>';}).join('')+'</div>';}).join('');
+}
 function renderSprint(){
   const el=$('sprintBoard'); if(!el||!SPRINT) return;
   const t0=today(); const [ws,we]=weekBounds(t0); const T=SPRINT.targets||{};
@@ -519,7 +530,7 @@ function renderSprint(){
     +card('LEADS SAME-DAY',sameDay===null?'—':sameDay+'%',100,newLeads.length+' new this week',sameDay===null?100:sameDay);
 }
 function renderToday(){
-  renderSprint();
+  renderSprint(); renderPlan();
   const liveB=BUYERS.filter(b=>!['Won','Lost','Snoozed','Longer Term'].includes(b.stage));
   const pv=liveB.reduce((a,b)=>a+(b.budget||0),0);
   const liveS=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s)));
