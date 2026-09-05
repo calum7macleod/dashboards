@@ -19,6 +19,20 @@
     "leadsSameDay": "% new leads first-touched + logged same day",
     "nextTouchCoverage": "% active buyers with a nextTouch date"
   },
-  "log": [],
-  "review": "Sunday mornings, UFC on - weekly scoreboard + set next week's plan"
+  "log": [
+    {
+      "date": "2026-09-05",
+      "type": "viewings",
+      "count": 5,
+      "note": "Calum: 5 buyer viewings Sat 5 Sep - week total 5/10"
+    }
+  ],
+  "review": "Sunday mornings, UFC on - weekly scoreboard + set next week's plan",
+  "dailyTicks": {
+    "2026-09-05": {
+      "callout": null,
+      "offers": 0,
+      "viewings": 5
+    }
+  }
 }
