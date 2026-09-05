@@ -81,8 +81,10 @@
     "sourceCat": "Referral",
     "segment": "Offplan",
     "notes": "Referral buyer Tony. Co-broke Jake Nazer. 160K board = PRE-SPLIT gross - Calum-side figure TBC (Q1).",
-    "note": " | Confirmed 25 Aug: this IS the Bashayer deal (160K board / 104K take). PAYS AUGUST.",
-    "payMonth": "August"
+    "note": " | Confirmed 25 Aug: this IS the Bashayer deal (160K board / 104K take). PAYS AUGUST. | PAID 5 Sep 2026 - D104K take-home landed.",
+    "payMonth": "August",
+    "paid": true,
+    "paidDate": "2026-09-05"
   },
   {
     "date": "2026-07-24",
