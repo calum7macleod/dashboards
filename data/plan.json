@@ -10,12 +10,7 @@
       "name": "Board",
       "items": [
         {
-          "t": "Convert every live offer to MOU or dead",
-          "due": "2026-09-12",
-          "done": false
-        },
-        {
-          "t": "10 buyer viewings / week (auto)",
+          "t": "10 buyer viewings / week (Max counts)",
           "due": "weekly",
           "done": false
         },
@@ -25,13 +20,13 @@
           "done": false
         },
         {
-          "t": "Callout hour every working day, sellers first (Calum tells Max)",
+          "t": "Callout hour every working day (Calum tells Max the count)",
           "due": "daily",
           "done": false
         },
         {
-          "t": "Holiday week: Max runs follow-ups + sweep; Calum 1 hr/day",
-          "due": "2026-09-13",
+          "t": "Holiday: one 1-2 hr block - go through every buyer and seller (Max puts on calendar)",
+          "due": "2026-09-15",
           "done": false
         }
       ]
@@ -41,38 +36,23 @@
       "name": "Carry-across",
       "items": [
         {
-          "t": "Review W&Co CRM listings under my name -> send Max keepers",
-          "due": "2026-09-08",
+          "t": "26 sellers: who to reach out to + what the touch is (Max drafts, Calum approves Sun)",
+          "due": "2026-09-06",
           "done": false
         },
         {
-          "t": "Form A end dates for all sellers into stock.json",
-          "due": "2026-09-09",
-          "done": false
-        },
-        {
-          "t": "Cold data list",
-          "due": "2026-09-10",
-          "done": false
-        },
-        {
-          "t": "Seller warm-up: 1 service touch / seller / week, inside callout hour",
+          "t": "Warm-up touches inside the callout hour",
           "due": "weekly",
           "done": false
         },
         {
-          "t": "Buyers current daily in own CRM",
+          "t": "Buyers kept current in own CRM",
           "due": "daily",
           "done": false
         },
         {
-          "t": "BRN NOC + re-registration under Jake's; ADREC; new portal profiles",
-          "due": "at notice",
-          "done": false
-        },
-        {
-          "t": "15 sellers re-signed by 15 Oct",
-          "due": "2026-10-15",
+          "t": "Cold data: Calum pulls, Max files",
+          "due": "2026-09-10",
           "done": false
         }
       ]
@@ -82,90 +62,44 @@
       "name": "Money",
       "items": [
         {
-          "t": "D104K: ring-fence living to 30 Sep + holiday; rest waits",
-          "due": "2026-09-07",
-          "done": false
-        },
-        {
-          "t": "Send 3 months statements all accounts + balances + UK card mins",
+          "t": "Statements + balances + UK card mins to Max (one batch)",
           "due": "2026-09-08",
           "done": false
         },
         {
-          "t": "Baseline budget built from statements",
+          "t": "Baseline budget from statements",
           "due": "2026-09-10",
           "done": false
         },
         {
-          "t": "Abnormalities this month listed + sized",
+          "t": "Abnormalities this month",
           "due": "2026-09-10",
           "done": false
         },
         {
-          "t": "Runway: months without new deal, with/without D491K owed",
+          "t": "Runway",
           "due": "2026-09-10",
-          "done": false
-        },
-        {
-          "t": "Confirm transfer dates on all 8 Sep-month deals (D314K)",
-          "due": "2026-09-10",
-          "done": false
-        },
-        {
-          "t": "Payout schedule for owed deals in writing at notice",
-          "due": "at notice",
           "done": false
         }
       ]
     },
     {
       "id": "craft",
-      "name": "Craft - revenue from socials",
+      "name": "Craft",
       "items": [
         {
-          "t": "EYES: study 10 accounts that convert - 1 hr/day on holiday, write down their funnel",
-          "due": "2026-09-18",
-          "done": false
-        },
-        {
-          "t": "EYES: TikTok daily alongside IG",
+          "t": "TikTok daily alongside IG",
           "due": "2026-09-08",
           "done": false
         },
         {
-          "t": "DMs: comment word -> DM -> question on every reel",
+          "t": "Comment word on every reel, DM every commenter",
           "due": "2026-09-08",
           "done": false
         },
         {
-          "t": "LEADS: one system for content + portal leads - same-day touch, next-touch date, source tag",
+          "t": "One lead system: content + portal leads, same-day touch, next-touch date, in own CRM",
           "due": "2026-09-10",
-          "done": false
-        },
-        {
-          "t": "Measure DMs + bench adds per reel (not views)",
-          "due": "weekly",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "runup",
-      "name": "Run-up to Jake's",
-      "items": [
-        {
-          "t": "Terms meeting: what he wants (AD/socials/Lagoons/secondary), split, base/bridge, Modon payout lag",
-          "due": "2026-09-11",
-          "done": false
-        },
-        {
-          "t": "October content batch filmed before 30 Sep",
-          "due": "2026-09-26",
-          "done": false
-        },
-        {
-          "t": "30 AD-ready buyers on the bench",
-          "due": "2026-09-30",
           "done": false
         }
       ]
@@ -175,13 +109,18 @@
       "name": "Admin",
       "items": [
         {
-          "t": "Email tidied: folders, rules, inbox clear",
+          "t": "Emails: folders, rules, inbox clear",
           "due": "2026-09-18",
           "done": false
         },
         {
-          "t": "Computer folders reorganised",
+          "t": "Computer folders",
           "due": "2026-09-18",
+          "done": false
+        },
+        {
+          "t": "Brain-dump of undone admin -> tick list (Calum dumps, Max lists)",
+          "due": "2026-09-07",
           "done": false
         }
       ]
