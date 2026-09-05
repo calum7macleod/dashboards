@@ -41,11 +41,6 @@
       "type": "debt"
     },
     {
-      "k": "Bills here for Tal",
-      "v": 5000,
-      "type": "family"
-    },
-    {
       "k": "Transport",
       "v": 4289,
       "type": "living"
@@ -103,27 +98,27 @@
         "to": "Tal",
         "amount": 50000,
         "covers": "rent 37,500 + Tal 10,000 + bills ~2,500"
+      },
+      {
+        "date": "2026-09-05",
+        "to": "UK account (BoS)",
+        "amount": 20000,
+        "covers": "Kevin GBP2K + UK card mins + Mum + Corrina"
       }
     ],
     "remaining": {
-      "kevin_gbp2000": 9960,
       "editors": 15000,
       "meta": 10000,
-      "uk_card_mins": 8000,
-      "adib_min_25sep": 3231,
-      "mum_corrina": 2241,
-      "tal_bills_remaining": 2500,
       "tools": 794,
       "living_rest_of_month": 16000
     },
-    "cash_left": 53000,
-    "shortfall_before_payday": 15000,
+    "cash_left": 33000,
+    "shortfall_before_payday": 9000,
     "levers": [
-      "editors paid on 30 Sep payday",
-      "Meta capped 5K for Sep",
-      "living squeeze"
+      "editors paid on 30 Sep payday closes the gap"
     ],
-    "card_headroom": 5378
+    "card_headroom": 5378,
+    "notes": "ADIB minimums covered separately (Calum). Tal bills removed."
   },
   "positions_31aug": {
     "mashreq": 1984,
@@ -140,5 +135,5 @@
     "unassigned": 65000,
     "jake_first_pay": "~Dec 2026"
   },
-  "total": 117146
+  "total": 112146
 }
