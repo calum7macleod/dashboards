@@ -1,0 +1,123 @@
+{
+  "agreed": "2026-09-05",
+  "effectiveFrom": "2026-10",
+  "currency": "AED",
+  "gbpRate": 4.98,
+  "lines": [
+    {
+      "k": "Modon accrual (D125K due Jan; Oct-Jan)",
+      "v": 31250,
+      "type": "accrual",
+      "note": "CONFIRM: full milestone or Calum's half?"
+    },
+    {
+      "k": "Video editors",
+      "v": 15000,
+      "type": "business"
+    },
+    {
+      "k": "Rent accrual (D40K quarterly)",
+      "v": 13333,
+      "type": "accrual"
+    },
+    {
+      "k": "Tal",
+      "v": 10000,
+      "type": "family"
+    },
+    {
+      "k": "Meta ads",
+      "v": 10000,
+      "type": "business"
+    },
+    {
+      "k": "Food",
+      "v": 9850,
+      "type": "living"
+    },
+    {
+      "k": "UK card minimums (~GBP1,600)",
+      "v": 8000,
+      "type": "debt"
+    },
+    {
+      "k": "Bills here for Tal",
+      "v": 5000,
+      "type": "family"
+    },
+    {
+      "k": "Transport",
+      "v": 4289,
+      "type": "living"
+    },
+    {
+      "k": "Bills (DEWA, phones, subs, baby)",
+      "v": 3293,
+      "type": "living"
+    },
+    {
+      "k": "ADIB card minimum",
+      "v": 3231,
+      "type": "debt"
+    },
+    {
+      "k": "Mum GBP300 + Corrina GBP150",
+      "v": 2241,
+      "type": "family"
+    },
+    {
+      "k": "Boxica + barber",
+      "v": 1472,
+      "type": "living"
+    },
+    {
+      "k": "Business tools (PropertyIndex, DigitalOcean, Reelly)",
+      "v": 794,
+      "type": "business"
+    },
+    {
+      "k": "Bank fees & OD",
+      "v": 226,
+      "type": "debt"
+    }
+  ],
+  "excluded": [
+    "Ticketmaster",
+    "Five Luxe",
+    "Five JVC",
+    "Conrad",
+    "Holiday Inn",
+    "UFC",
+    "Fantasy football",
+    "Suited & Booted",
+    "Spa/beauty",
+    "Quwah",
+    "Marielle",
+    "HighLevel"
+  ],
+  "september2026": {
+    "cash": 103000,
+    "known": {
+      "baseline_ex_rent_accrual": 51000,
+      "rent_cheque": 40000,
+      "kevin_one_off_gbp2000": 9960
+    },
+    "note": "fully spoken for before 30 Sep payday; abnormality pile must be zero; ADIB card headroom D5,378"
+  },
+  "positions_31aug": {
+    "mashreq": 1984,
+    "bos_gbp": -616,
+    "adib_card_owed": 64622,
+    "adib_cover": 70000,
+    "adib_min": 3231,
+    "adib_min_due": "2026-09-25",
+    "adib_profit_rate_monthly": 0.0333
+  },
+  "incomeExpected": {
+    "2026-09-30": 314000,
+    "2026-10": 112000,
+    "unassigned": 65000,
+    "jake_first_pay": "~Dec 2026"
+  },
+  "total": 117979
+}
