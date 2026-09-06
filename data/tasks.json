@@ -3352,12 +3352,12 @@
       "title": "Property index -> Claude: sort connection, test it, check for Abu Dhabi option",
       "area": "Real Estate",
       "priority": "high",
-      "status": "active",
+      "status": "done",
       "difficulty": "medium",
       "due": "2026-08-26",
       "created": "2026-08-26",
       "notes": "3 parts: (1) get the property index data source connected so Max can read it, (2) run test queries against live pipeline needs (CB 4-bed comps, Nice M-row), (3) check AD coverage - our DLD registry pipeline is Dubai-only, AD (Reem/Hudayriyat/Saadiyat) is the known data gap and 41% of take-home.",
-      "completed": null,
+      "completed": "2026-09-06",
       "snoozedUntil": null
     },
     {
