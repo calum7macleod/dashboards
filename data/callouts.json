@@ -1,50 +1,23 @@
 {
- "target": 1000,
- "start": "2026-07-16",
- "end": "2026-07-31",
- "banks": [
-  {
-   "date": "2026-07-17",
-   "calls": 200,
-   "note": "Costa Brava 1 swept completely (~300 numbers). Numbers heavily worked by other agents."
-  },
-  {
-   "date": "2026-07-20",
-   "calls": 100,
-   "note": "Low traction day - 1 warm lead (detail pending)"
-  },
-  {
-   "date": "2026-07-28",
-   "calls": 50,
-   "note": "V3s (bigger units) - 4 GOOD prospects. Hit rate 1:12.5 vs 1:100 on smaller stock. Signal: big-unit owners answer + engage."
-  },
-  {
-   "date": "2026-07-29",
-   "calls": 75,
-   "note": "Costa Brava V3s. ~3 alright, nothing spectacular - bank heavily worked by other agents already."
-  }
- ],
- "outcomes": [
-  {
-   "date": "2026-07-17",
-   "type": "LISTING",
-   "detail": "J444 Costa Brava - 5 bed single row at 4.05M NET, fees on top. Viewing + NOC to arrange."
-  },
-  {
-   "date": "2026-07-20",
-   "type": "warm lead",
-   "detail": "1 promising contact from 100-call bank - name/unit pending from Calum"
-  },
-  {
-   "date": "2026-07-28",
-   "type": "4 good prospects",
-   "detail": "From 50-call V3 bank - details pending from Calum (names/units). Bigger units = dramatically better traction."
-  },
-  {
-   "date": "2026-07-29",
-   "type": "3 lukewarm",
-   "detail": "CB V3 bank - 3 alright contacts, mostly already being spoken to by others."
-  }
- ],
- "runningTotal": 425
+  "purpose": "Every cold-call unit Calum has touched: unit, owner, stage, who holds it, next step. Max reads this before every callout so no unit is called twice and every thread resumes.",
+  "stages": [
+    "no answer",
+    "not selling",
+    "maybe later",
+    "interested - valuation",
+    "interested - viewing",
+    "listed elsewhere",
+    "own listing",
+    "wrong number"
+  ],
+  "sessions": [
+    {
+      "date": "2026-09-07",
+      "cluster": "Portofino",
+      "target": "5-beds, NE-facing, handed over",
+      "buyerFor": "PF 3.5M firm (also Hansel)",
+      "openerData": "5-bed-size 2,622 sqft sold 25 Aug D3.5M (+27.5% vs Jan 2023); 5-beds renting 180-195K; 353/867 villas resold at least once",
+      "calls": []
+    }
+  ]
 }
