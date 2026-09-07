@@ -23,9 +23,9 @@
           "owner": "Rachel Ghassan Salamani (file) - spoke to 'Matty'",
           "mobile": "+971502677050",
           "size": "299 sqm plot (~3,221 sqft)",
-          "stage": "interested - for sale",
-          "note": "For sale. Recent (bought recently?). Big plot. Calum: 'Matty' - confirm relationship to owner on file.",
-          "next": "Get asking price + facing + handover status; PF match if NE-facing HO",
+          "stage": "listed elsewhere",
+          "note": "Listed with Matty (external agent). Recent listing, big plot (299 sqm).",
+          "next": "Ask Matty for price/facing/HO status if PF fits; otherwise leave",
           "date": "2026-09-07"
         },
         {
@@ -37,8 +37,117 @@
           "note": "For sale with an external agent. Owner difficult ('mad'). Low priority.",
           "next": "Leave. Revisit only if PF needs it and the external listing dies.",
           "date": "2026-09-07"
+        },
+        {
+          "unit": "BL319",
+          "owner": "PERNILLE STAGE BOISEN",
+          "mobile": "+971524075350",
+          "size": "219.6 sqm",
+          "listedWith": "Ronnie (external agent)",
+          "asking": 3900000,
+          "stage": "listed elsewhere",
+          "note": "For sale with Ronnie at 3.9M",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL342",
+          "owner": "NAUREEN AGGARWAL RAMESH KUMAR",
+          "mobile": "+971528911969",
+          "size": "219.6 sqm",
+          "listedWith": "Lewis (White & Co - internal)",
+          "asking": 3700000,
+          "stage": "own listing (Lewis)",
+          "note": "Lewis's listing, seller wants 3.7M. EASIEST SHOW for PF/Hansel",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL358",
+          "owner": "SAAD ASIF MAKLAI MAKLAI ASIF",
+          "mobile": "+971504677247",
+          "size": "219.6 sqm",
+          "listedWith": "Ronnie (external agent)",
+          "asking": 3700000,
+          "stage": "listed elsewhere",
+          "note": "With Ronnie at 3.7M",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL359",
+          "owner": "CHRISTOPHER STEPHEN MORGAN",
+          "mobile": "+971589161720",
+          "size": "219.6 sqm",
+          "listedWith": "Ronnie (external agent)",
+          "asking": 3850000,
+          "stage": "listed elsewhere",
+          "note": "With Ronnie at 3.85M",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL410",
+          "owner": "SAHIL SURI ARUN SURI",
+          "mobile": "+971527243241",
+          "size": "219.6 sqm",
+          "listedWith": "Matty (external agent)",
+          "asking": 3850000,
+          "stage": "listed elsewhere",
+          "note": "With Matty at 3.85M",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL425",
+          "owner": "NAGHMEH MORTEZA SHEIKHOLESLAMI",
+          "mobile": "+971557777203",
+          "size": "219.48 sqm",
+          "listedWith": "Christy (external agent)",
+          "asking": 4000000,
+          "stage": "listed elsewhere",
+          "note": "With Christy at 4M. END CORNER.",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL449",
+          "owner": "SAHIL SURI ARUN SURI",
+          "mobile": "+971527243241",
+          "size": "219.61 sqm",
+          "listedWith": "Matty (external agent)",
+          "asking": 3850000,
+          "stage": "listed elsewhere",
+          "note": "With Matty at 3.85M",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL452",
+          "owner": "VENKATA HARI PRASAD SUNKU MANIKYA RANGAIAH SUNKU",
+          "mobile": "+971585697906",
+          "size": "219.47 sqm",
+          "listedWith": "Christy (external agent)",
+          "asking": null,
+          "stage": "listed elsewhere",
+          "note": "With Christy. Owner bought at 3.8M - 'not looking great' (no room to move)",
+          "next": "",
+          "date": "2026-09-07"
+        },
+        {
+          "unit": "BL482",
+          "owner": "MAKLAI ANNAS ABDUL SATTAR ABDUL GANI MAKLAI",
+          "mobile": "+971504537161",
+          "size": "219.57 sqm",
+          "listedWith": "Calum - own listing (Malakai)",
+          "asking": 3700000,
+          "stage": "own listing",
+          "note": "Malakai, 3.7M ask, PF offer 3.5M in",
+          "next": "",
+          "date": "2026-09-07"
         }
-      ]
+      ],
+      "reviewNote": "7 Sep: Calum reviewed which 5-beds are already listed (and with whom) up to BL498. BL499-BL804 still to review at home tonight."
     }
   ]
 }
