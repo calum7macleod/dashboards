@@ -1,0 +1,25 @@
+{
+  "purpose": "Calum's notepad. He pings Max a line, Max files it under a category. Read before any meeting the category is named for.",
+  "categories": {
+    "Jake": {
+      "desc": "For the next time Calum meets Jake Nazer",
+      "items": [
+        {
+          "date": "2026-09-08",
+          "note": "Is 10% enough? (for the company - does it make sense for me to be doing it at 10%)",
+          "done": false
+        },
+        {
+          "date": "2026-09-08",
+          "note": "The type of listings I need to be doing in Lagoons",
+          "done": false
+        },
+        {
+          "date": "2026-09-08",
+          "note": "A roadshow / event back in the UK - Christmas or just after",
+          "done": false
+        }
+      ]
+    }
+  }
+}
