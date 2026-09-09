@@ -3591,14 +3591,14 @@
       "area": "Real Estate",
       "priority": "high",
       "difficulty": "medium",
-      "status": "active",
+      "status": "done",
       "due": "2026-09-09",
       "created": "2026-09-09",
       "notes": "Wed 9 Sep day list",
-      "completed": null,
+      "completed": "2026-09-09",
       "snoozedUntil": null,
       "order": 240,
-      "top3": true
+      "top3": false
     },
     {
       "id": "wed-0909-3",
@@ -3613,7 +3613,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 241,
-      "top3": false
+      "top3": true
     },
     {
       "id": "wed-0909-4",
