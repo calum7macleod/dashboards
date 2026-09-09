@@ -3567,5 +3567,39 @@
         "summary": "Outbound call - no answer; plan: WhatsApp sales offer"
       }
     ]
+  },
+  {
+    "date": "2026-09-09",
+    "status": "Active",
+    "buyer": "Chirag Virchande",
+    "phone": "+971 58 579 0446",
+    "source": "Instagram DM",
+    "colleague": "Self",
+    "area": "TBC",
+    "cluster1": "",
+    "cluster2": "",
+    "cluster3": "",
+    "matchedUnit": "",
+    "beds": "",
+    "finance": "TBC",
+    "budget": 0,
+    "needed": 0,
+    "diff": 0,
+    "responsiveness": 2,
+    "relationship": 2,
+    "unitSupply": 3,
+    "feeling": 2,
+    "score": 2,
+    "heat": 2,
+    "stage": "New",
+    "lastContact": "2026-09-09",
+    "nextTouch": "2026-09-11",
+    "touchReason": "Qualify: what, where, budget, timing",
+    "needSummary": "Instagram lead - not yet qualified",
+    "notes": "2026-09-09: early-days Instagram DM lead, not qualified. Works at Fluxo Group (FX / international payments). FIRST CONTENT-SOURCED LEAD LOGGED.",
+    "id": "chirag-0909",
+    "order": 1018,
+    "maxScore": 2,
+    "maxScoreReason": "Unqualified DM lead."
   }
 ]
