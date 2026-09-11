@@ -1,3 +1,5 @@
+LAGOONS OWNER DATA: full W&Co owner sheet (8,843 records, 17 cluster tabs, ~7,700 owners, names+mobiles+units) = damac_lagoons_owners_1.json - Calum to upload to PROJECT FILES (private). NEVER into the repo (Pages = public; PII). Use via project_knowledge_search for lookups: unit->owner, cluster call lists, never-reached lists. Notable holders (for in-person colour only, never written): Saudi royals in Ibiza/Morocco blocks (Princess Sahab T808-812; Princess Malkah 16 units), Al Maktoum Malta/Monte Carlo, Al Thani Q427, Emirati merchant families + Lindsay Lohan (BL109) + Niculescu in Portofino, Tate J117 + Assaidi/El Ahmadi/Hanca in CB1, Gana Gueye Venice V137, Shoaib Malik Marbella R291.
+
 SEP BOARD: 1 deal - K217 Zaid 2.75M (Fri 11 Sep), board D32,521 net (41,021 less 8,500 conveyancing), take-home D21,139 at 65%, pays Oct. Running Sep board D32,521 vs April record 413K.
 
 REMIND FRI 11 SEP (first message): message Raja.
