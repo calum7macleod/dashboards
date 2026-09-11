@@ -1282,5 +1282,28 @@
     "segment": "Secondary",
     "note": "Closed 31 Aug. K450 CB 2.35M. Seller fee 50K inc VAT by cheque (Treo 24,675 guarantee). 26K = Calum's board after Zac external + Lewis internal splits.",
     "payMonth": "September"
+  },
+  {
+    "date": "2026-09-11",
+    "buyer": "Zaid",
+    "seller": "via Niamh (Haus & Haus)",
+    "unit": "K217",
+    "cluster": "Costa Brava",
+    "area": "Lagoons",
+    "segment": "Secondary",
+    "price": 2750000,
+    "buyerSide": "Calum",
+    "sellerSide": "Niamh - Haus & Haus (external)",
+    "otherBroker": "Niamh / Haus & Haus (external)",
+    "sourceCat": "Call",
+    "buyerSource": "Call (was 'Call Buyer 4')",
+    "myBoard": 32521,
+    "grossBoard": 41021,
+    "conveyancingDeduction": 8500,
+    "tier": 0.65,
+    "myTakeHome": 21139,
+    "paid": false,
+    "payMonth": "October",
+    "note": "Buyer side only. Board D41,021 gross less D8,500 conveyancing = D32,521 net. 65% tier -> take-home D21,139. ENBD pre-approval 70% LTV expires 30 Sep - transfer must complete by then."
   }
 ]
