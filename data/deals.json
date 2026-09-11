@@ -1297,13 +1297,12 @@
     "otherBroker": "Niamh / Haus & Haus (external)",
     "sourceCat": "Call",
     "buyerSource": "Call (was 'Call Buyer 4')",
-    "myBoard": 32521,
-    "grossBoard": 41021,
+    "myBoard": 41021,
     "conveyancingDeduction": 8500,
     "tier": 0.65,
     "myTakeHome": 21139,
     "paid": false,
     "payMonth": "October",
-    "note": "Buyer side only. Board D41,021 gross less D8,500 conveyancing = D32,521 net. 65% tier -> take-home D21,139. ENBD pre-approval 70% LTV expires 30 Sep - transfer must complete by then."
+    "note": "Buyer side only. Board D41,021. Take-home = (41,021 - 8,500 conveyancing) x 65% = D21,139. ENBD pre-approval 70% LTV expires 30 Sep - transfer must complete by then."
   }
 ]
