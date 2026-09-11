@@ -1,3 +1,5 @@
+SEP BOARD: 1 deal - K217 Zaid 2.75M (Fri 11 Sep), board D32,521 net (41,021 less 8,500 conveyancing), take-home D21,139 at 65%, pays Oct. Running Sep board D32,521 vs April record 413K.
+
 REMIND FRI 11 SEP (first message): message Raja.
 
 STANDING REMINDER - THE FOOTBALLER (7 Sep, Calum: 'remember this, very important'): He watches footballers who don't give 100% and thinks 'why are you like that' - admits he's sometimes like that with work. Reframe he agreed: coasters are the talented ones who never built the standard; the intense ones (Bellingham, Ronaldo at 40, Souness) run on identity - 'I'm the one who runs.' His own line: 'I'm the kind of person who operates really well.' Nobody gives 100% for 90 minutes - give it in the moments that decide the game (callout block 11-15, offers, the viewing) and 70% in between on purpose. USE when journal scores drop or the block slips: 'What's the moment today you'd be embarrassed to watch back at 70%?'
