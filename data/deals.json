@@ -1304,5 +1304,27 @@
     "paid": false,
     "payMonth": "October",
     "note": "Buyer side only. Board D41,021. Take-home = (41,021 - 8,500 conveyancing) x 65% = D21,139. ENBD pre-approval 70% LTV expires 30 Sep - transfer must complete by then."
+  },
+  {
+    "date": "2026-09-11",
+    "buyer": "Anshuman",
+    "seller": "via external agent",
+    "unit": "K303",
+    "cluster": "Costa Brava",
+    "area": "Lagoons",
+    "segment": "Secondary",
+    "price": 2800000,
+    "buyerSide": "Calum",
+    "sellerSide": "External agent",
+    "otherBroker": "External agent (co-broke)",
+    "sourceCat": "Lead",
+    "buyerSource": "Lead",
+    "myBoard": 29450,
+    "conveyancingDeduction": 8500,
+    "tier": 0.65,
+    "myTakeHome": 13618,
+    "paid": false,
+    "payMonth": "October",
+    "note": "Buyer side only, split with external agent. Board D29,450 (buyer commission ex VAT). Take-home = (29,450 - 8,500 conveyancing) x 65% = D13,618. Security deposit 280,000 = 10% of 2.8M. Mortgage buyer (DAMAC/ADIB) - transfer timing TBC."
   }
 ]
