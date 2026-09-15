@@ -1,3 +1,5 @@
+WADEEM GARDENS HANDOVER = 2031 (not 2030 / not 'month 48'). All assets updated 15 Sep.
+
 WADEEM GARDENS official mortgage structure (Modon launch slide 14 Sep): BUYER 5% down + 5% m8 + 5% m14 + 5% m20 + 5% at handover (m48) = 25% cash; ADIB 20% in construction + 55% at m54 = 75%. UAE Nationals 5% Modon rebate (non-transferable). Handover ~month 48. Briefing v4 = content-assets/wadeem/Wadeem-Gardens-Investor-Briefing-v4.pdf. NOTE: the 5/15/80 carousel is WRONG vs official - redo as 25/75 (or 5% down, 20% more from you, 75% ADIB) before posting.
 
 WADEEM (Modon, Hudayriyat, gated villas): EOI OPENS TONIGHT 14 Sep - D50K by card, PRIORITY for ADIB pre-approved. Launch pricing: 4-bed 8.7M, 5-bed 10.2M, 6-bed 11.6M. 40/60 (5% every 6 months expected) or mortgage route 5/15/80 (residents). Briefing v3 = content-assets/wadeem/Wadeem-Investor-Briefing-v3.pdf (12pp). Teaser card built. Buyers to send it to: Jason's friend (4M off-plan spender), Gurav (7-9M), Iniestas (cash 6-10M - but they want walkable/ready), Lamya (hot), Camilla investors, Vinay.
