@@ -3613,7 +3613,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 241,
-      "top3": true
+      "top3": false
     },
     {
       "id": "wed-0909-4",
@@ -3643,7 +3643,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 243,
-      "top3": true
+      "top3": false
     },
     {
       "id": "wed-0909-6",
@@ -3658,7 +3658,7 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 244,
-      "top3": true
+      "top3": false
     },
     {
       "id": "msg-raja-1109",
@@ -3688,6 +3688,66 @@
       "completed": null,
       "snoozedUntil": null,
       "order": 246,
+      "top3": false
+    },
+    {
+      "id": "opts-1909-1",
+      "title": "Edward: send single-row options (Portofino + Malta)",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "easy",
+      "status": "active",
+      "due": "2026-09-19",
+      "created": "2026-09-19",
+      "notes": "From Sat 19 Sep viewings",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 247,
+      "top3": true
+    },
+    {
+      "id": "opts-1909-2",
+      "title": "Nico: send Portofino 3-bed handed-over + Malta 4-bed handed-over-by-Feb options (to 2.6M)",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "easy",
+      "status": "active",
+      "due": "2026-09-20",
+      "created": "2026-09-19",
+      "notes": "From Sat 19 Sep viewings",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 248,
+      "top3": true
+    },
+    {
+      "id": "opts-1909-3",
+      "title": "Marco: send Portofino 5-beds, then qualify exactly what he wants",
+      "area": "Real Estate",
+      "priority": "high",
+      "difficulty": "easy",
+      "status": "active",
+      "due": "2026-09-20",
+      "created": "2026-09-19",
+      "notes": "From Sat 19 Sep viewings",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 249,
+      "top3": true
+    },
+    {
+      "id": "opts-1909-4",
+      "title": "Hasan: send Costa Brava 3-bed options",
+      "area": "Real Estate",
+      "priority": "medium",
+      "difficulty": "easy",
+      "status": "active",
+      "due": "2026-09-20",
+      "created": "2026-09-19",
+      "notes": "From Sat 19 Sep viewings",
+      "completed": null,
+      "snoozedUntil": null,
+      "order": 250,
       "top3": false
     }
   ],
