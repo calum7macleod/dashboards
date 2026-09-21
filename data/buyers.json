@@ -2813,7 +2813,7 @@
  },
  {
   "date": "2026-08-22",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Winnie",
   "source": "",
   "colleague": "Self",
@@ -2836,10 +2836,10 @@
   "notes": "2026-09-02: score 4->2 (Calum). | Viewed 22 Aug - good, score 4. Thinking Costa Brava, comfortable to Đ2.7M but will probably offer below. Beds + finance not yet captured. Feeds off CB 4-bed sourcing sweep.",
   "id": "winnie-2208",
   "order": 71,
-  "stage": "Viewing",
+  "stage": "Lost",
   "heat": 2,
   "lastContact": "2026-08-25",
-  "nextTouch": "2026-08-24",
+  "nextTouch": null,
   "touchReason": "Follow up post-viewing: qualify beds + finance, send CB availability from sweep",
   "needSummary": "Costa Brava, to Đ2.7M (offers under), post-viewing warm",
   "snoozedUntil": null,
@@ -2860,7 +2860,8 @@
     "channel": "outreach",
     "summary": "Touch 25 Aug (round of touchpoints)"
    }
-  ]
+  ],
+  "closedDate": "2026-09-21"
  },
  {
   "date": "2026-08-22",
