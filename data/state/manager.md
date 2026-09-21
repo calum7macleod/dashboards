@@ -7,7 +7,8 @@
 4. Lost/Archived view built for revival.
 5. Plaud direct to profile: recording > transcript > proposed update > one-tap confirm.
 6. Meta lead forms into the Inbox sweep (source TBC: email connector or webhook).
-7. Archive the old data/context.md and journal history into the private repo; core.md is the state now.
+7. Normalise buyer status values (Won vs Closed Won vs Active) and give tools/agentkit.py buyers-index a clean 'live' rule (Uploader finding, 21 Sep).
+8. Archive the old data/context.md and journal history into the private repo; core.md is the state now.
 
 ## System health
 21 Sep: nine agent files written; start packs seeded; log and handoffs seeded. Scheduled tasks not yet created. No receipts yet from any agent other than Max.
