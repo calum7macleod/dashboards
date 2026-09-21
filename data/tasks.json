@@ -3974,6 +3974,21 @@
    "snoozedUntil": null,
    "order": 265,
    "top3": false
+  },
+  {
+   "id": "runin-f1",
+   "title": "F1 Dashboard architecture + task tracking improvement + login (pages not public)",
+   "area": "Tasks",
+   "priority": "high",
+   "difficulty": "hard",
+   "status": "active",
+   "due": "2026-09-28",
+   "created": "2026-09-21",
+   "notes": "Owner on the other end = Claude Manager (Claude Code as hands). Task tracking is the priority. Login = Cloudflare Access or move off public Pages. Calum 21 Sep: 'next week'.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 266,
+   "top3": false
   }
  ],
  "units": [],
