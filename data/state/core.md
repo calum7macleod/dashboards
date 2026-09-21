@@ -27,4 +27,5 @@ Exit conversation with Poppy (notice, payout clause) · written confirmation of 
 Notes for the next meeting: is 10% enough · type of Lagoons listings · UK roadshow at Christmas · what content resources he provides · split/base/Dubai lane. Content plan + 2 weeks scripted due before that meeting. Hit-the-ground-running plan Thu 24.
 
 ## System
+- SWITCH STATUS 21 Sep 15:30: nine agents live on the new account (Fable 5.1 High), six timers created, owner data in private repo (crm-inbox data/owners/). Open: Inbox run hasn't left a triage file yet; Claude Code + phone app Tue; DRY RUN Tue 07:30 = the gate, old Max retires after it. Designer wrote a type specimen despite the hold (own folder, harmless). Finance's first call: written W&Co payout confirmation by Thu 24 (on the board). Mentor's first call: PF first, 09:00 Tue.
 Eight agents (agents/*.md). Repo is the bus. Speed rules in agents/_shared.md. Standing rituals: 07:30 brief with checkpoint, 19:30 scoreboard, match ritual both directions, launch bench on any new launch, day-3 follow-ups, pre-mortem on every script, Lagoons report Mon + Thu.
