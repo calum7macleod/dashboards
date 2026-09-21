@@ -2547,8 +2547,8 @@
  },
  {
   "buyer": "Santosh + family (3 households)",
-  "status": "Active",
-  "stage": "Viewing",
+  "status": "Closed Lost",
+  "stage": "Lost",
   "date": "2026-08-08",
   "source": "Viewing walk-in/booked (Sat stack)",
   "colleague": "",
@@ -2573,7 +2573,9 @@
   "id": "santosh-family-1",
   "order": 61,
   "heat": 3,
-  "budgetText": "~D7.5M total across 3 houses (~2.5M each)"
+  "budgetText": "~D7.5M total across 3 houses (~2.5M each)",
+  "nextTouch": null,
+  "closedDate": "2026-09-21"
  },
  {
   "buyer": "Danny",
