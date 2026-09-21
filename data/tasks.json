@@ -4139,6 +4139,21 @@
    "snoozedUntil": null,
    "order": 276,
    "top3": false
+  },
+  {
+   "id": "exit-payout-confirm",
+   "title": "Get WRITTEN confirmation from White & Co - deal by deal, amount, pay month - that post-exit payouts (Oct ~152K + Tara + stuck Jan/Feb ~65K) pay to Calum",
+   "area": "Finance",
+   "priority": "high",
+   "difficulty": "medium",
+   "status": "active",
+   "due": "2026-09-24",
+   "created": "2026-09-21",
+   "notes": "Finance Sept 26's first call: ~Đ227K has no paper behind it; leverage ends 1 Oct. Part of the exit conversation with Poppy.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 277,
+   "top3": false
   }
  ],
  "units": [],
