@@ -19,7 +19,7 @@ GROUP B CLAUDE (6h): B1 migrate to new account (3h draft) -> B2 Lewis briefing (
 GROUP C CONTENT (12h): post types research 4/5/4/5 -> post types make 2/4/4/5 -> content plan incl 2 wks scripted 6/5/5/5 (before next Jake meeting).
 GROUP D JAKE: hit-the-ground-running plan 6/5/5/5.
 GROUP E SMALL (5h): ADIB app on new phone 1/2/2/2 · email clean 3/3/3/3 · phone apps tidy 1/2/2/2.
-WEEK PLAN (Calum, 21 Sep ~09:30 - one main thing per day): MON 21 = B1 Claude migration · TUE 22 = A1 CRM update then A2 buyers + A3 sellers callout (10h into ~8.5h white - K217 valuation 09:30, coaching 18:00) · WED 23 = C1-C3 content (12h into ~10h) · THU 24 = E small bits + overflow. UNPLACED: B2 Lewis, B3 agents split, A4 listings, D1 hit-the-ground-running plan (in Inbox on the board). All 14 on tasks.json as runin-* (Mission Control).
+WEEK PLAN (Calum, 21 Sep ~09:30 - one main thing per day): MON 21 = B1 Claude migration · TUE 22 = A1 CRM update then A2 buyers + A3 sellers callout (10h into ~8.5h white - K217 valuation 09:30, coaching 18:00) · WED 23 = C1-C3 content (12h into ~10h) · THU 24 = D1 hit-the-ground-running plan (6h) + overflow. E small bits pushed to next week (dated Mon 28) or any spare end-of-day slot. UNPLACED: B2 Lewis, B3 agents split, A4 listings (in Inbox on the board). All 14 on tasks.json as runin-* (Mission Control).
 === END HANDOVER ===
 
 WADEEM GARDENS HANDOVER = 2031 (not 2030 / not 'month 48'). All assets updated 15 Sep.
