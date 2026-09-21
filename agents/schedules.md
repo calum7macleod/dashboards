@@ -1,5 +1,9 @@
 # Scheduled tasks (Cowork > Scheduled). Create each with these prompts. Each runs as its own session with connectors.
 
+A scheduled session does not inherit a Project, so each prompt must carry its own access: add these two lines to the END of every prompt when you create it (the token is typed by hand, never stored in this file):
+  "Fetch https://raw.githubusercontent.com/calum7macleod/dashboards/main/tools/agentkit.py and use it for every read and write. GH_TOKEN=<token> AGENT=<agent name>."
+If the scheduled session cannot reach GitHub, it must still finish: output the full result as its report, and the PA files it from the report in the next brief. A run with no output is a failure - the Manager's Sunday check looks for it.
+
 ## INBOX SWEEP - 06:30 and 18:30 Dubai, daily (runs as the PA)
 Read agents/_shared.md and agents/pa.md from calum7macleod/dashboards. Then: Google Calendar for the next 24h; Plaud recordings since the last sweep (transcripts); Meta lead forms if a source is connected; data/buyers.json next-touch dates due today or overdue; data/tasks.json due today. Write ONE file: data/triage/YYYY-MM-DD-{am|pm}.json with {newLeads, repliesOwed, viewingsToDebrief, touchesDue, expiring, notes}. Do NOT write any other file. Append your receipt to data/log.jsonl. Output a five-line summary.
 
