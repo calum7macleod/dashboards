@@ -1,30 +1,70 @@
 {
-  "purpose": "Calum's notepad. He pings Max a line, Max files it under a category. Read before any meeting the category is named for.",
-  "categories": {
-    "Jake": {
-      "desc": "For the next time Calum meets Jake Nazer",
-      "items": [
-        {
-          "date": "2026-09-08",
-          "note": "Is 10% enough? (for the company - does it make sense for me to be doing it at 10%)",
-          "done": false
-        },
-        {
-          "date": "2026-09-08",
-          "note": "The type of listings I need to be doing in Lagoons",
-          "done": false
-        },
-        {
-          "date": "2026-09-08",
-          "note": "A roadshow / event back in the UK - Christmas or just after",
-          "done": false
-        },
-        {
-          "date": "2026-09-08",
-          "note": "What content people/resources will be available - editors? YouTube? posting/scheduling? - so I know what I need to bring myself",
-          "done": false
-        }
-      ]
+ "purpose": "Calum's notepad. He pings Max a line, Max files it under a category. Read before any meeting the category is named for.",
+ "categories": {
+  "Jake": {
+   "desc": "For the next time Calum meets Jake Nazer",
+   "items": [
+    {
+     "date": "2026-09-08",
+     "note": "Is 10% enough? (for the company - does it make sense for me to be doing it at 10%)",
+     "done": false
+    },
+    {
+     "date": "2026-09-08",
+     "note": "The type of listings I need to be doing in Lagoons",
+     "done": false
+    },
+    {
+     "date": "2026-09-08",
+     "note": "A roadshow / event back in the UK - Christmas or just after",
+     "done": false
+    },
+    {
+     "date": "2026-09-08",
+     "note": "What content people/resources will be available - editors? YouTube? posting/scheduling? - so I know what I need to bring myself",
+     "done": false
     }
+   ]
+  },
+  "CRM": {
+   "desc": "CRM improvement notes (Calum, 21 Sep) - feed the Lewis conversation (B1) and the agent plan (B2/B3)",
+   "items": [
+    {
+     "date": "2026-09-21",
+     "note": "KEEP: the pipeline layout with the tiles - really like it",
+     "done": false
+    },
+    {
+     "date": "2026-09-21",
+     "note": "IMPROVE: matching system, especially off-plan - tag people with budget, timeline etc so any future project can be sent to the right people",
+     "done": false
+    },
+    {
+     "date": "2026-09-21",
+     "note": "IMPROVE: a management system so the CRM is always up to date - I need to manage it better",
+     "done": false
+    },
+    {
+     "date": "2026-09-21",
+     "note": "LONGER TERM: maybe move the CRM to another page as it grows - not today",
+     "done": false
+    },
+    {
+     "date": "2026-09-21",
+     "note": "PROBLEM: all the dates are overdue",
+     "done": false
+    },
+    {
+     "date": "2026-09-21",
+     "note": "IMPROVE: updates into the system quicker and easier",
+     "done": false
+    },
+    {
+     "date": "2026-09-21",
+     "note": "ASK: connect Plaud into the profiles (recording -> transcript -> profile update)",
+     "done": false
+    }
+   ]
   }
+ }
 }
