@@ -3,7 +3,7 @@
 One file per agent. A Claude Project's instructions = `_shared.md` + `<agent>.md` + the PRIVATE block (from the private repo, pasted by hand) + the GitHub token (typed by hand). Nothing secret lives in this folder. This folder is public.
 
 ## Paste order for a new account
-1. Customize > Connectors: connect Google Calendar, Google Drive, Plaud, PropertyIndex, Windsor.ai, Canva, GitHub Integration.
+1. Customize > Connectors: connect Google Calendar, Google Drive, Plaud, PropertyIndex, Canva.
 2. Projects > New project, nine times, named: Claude Manager, PA, Uploader, Content, Designer, Mentor, Market, Finance, Life Coach.
 3. In each project's instructions paste, in this order: `_shared.md`, then the agent's file, then the private block, then the token line: `GITHUB TOKEN: <token>`.
 4. Upload knowledge files the agent's file names under "Knowledge".
