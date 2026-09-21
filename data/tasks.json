@@ -3996,11 +3996,11 @@
    "area": "Tasks",
    "priority": "high",
    "difficulty": "easy",
-   "status": "active",
+   "status": "done",
    "due": "2026-09-21",
    "created": "2026-09-21",
-   "notes": "Backup only - chats can't import to a personal account. Memory CAN import (Settings > Capabilities > Memory > Start import) - Max recommends profile + preferences only, not stale project state.",
-   "completed": null,
+   "notes": "Backup only - chats can't import to a personal account. Memory CAN import (Settings > Capabilities > Memory > Start import) - Max recommends profile + preferences only, not stale project state. DONE 21 Sep ~15:40 - six zips downloaded (conversations, projects, memories, metadata, design chats, frames). Memory import skipped by choice.",
+   "completed": "2026-09-21",
    "snoozedUntil": null,
    "order": 267,
    "top3": false
@@ -4108,6 +4108,21 @@
    "completed": null,
    "snoozedUntil": null,
    "order": 274,
+   "top3": false
+  },
+  {
+   "id": "runin-e5",
+   "title": "E5 Arrange all files into one structure - possibly transition everything to Google Drive (incl. the Claude export zips)",
+   "area": "Tasks",
+   "priority": "medium",
+   "difficulty": "medium",
+   "status": "active",
+   "due": "2026-09-28",
+   "created": "2026-09-21",
+   "notes": "Bits bucket, next week. Calum 21 Sep. Decide: Drive as the home for non-repo files; repo stays the system's truth.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 275,
    "top3": false
   }
  ],
