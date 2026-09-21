@@ -32,7 +32,7 @@ Check: in each project, send the first message "Read your start pack and tell me
 That first message is also the initialisation. Expect: the clock verified, the state file summarised, "no open handoffs" or the list. If an agent asks where the repo is, the paste is missing the shared section.
 
 ## 5. Scheduled tasks (5 min) - Cowork > Scheduled > New task > Create with Claude
-Five tasks from agents/schedules.md: Inbox sweep 06:30 + 18:30 daily, Market daily scan 06:45, Market weekly pulse Sunday 06:45, Content scoreboard Friday 17:00, Sunday meeting prep 07:00. Paste each prompt as written. Run the Inbox one by hand once.
+Five tasks from agents/schedules.md: Inbox sweep 06:30 + 18:30 daily, Market daily scan 06:45, Market weekly pulse Sunday 06:45, Content scoreboard Friday 17:00, Sunday meeting prep 07:00. Paste each prompt as written PLUS the two access lines from the top of schedules.md (token typed in). Run the Inbox one by hand once.
 Check: data/triage/ has a file dated today.
 
 ## 6. Claude Code (5 min)
