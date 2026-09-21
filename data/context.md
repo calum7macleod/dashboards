@@ -15,10 +15,11 @@ PERSONAL: 2,000 cal/day fixed plan (oats/Fage/kefir base 400, plain chicken, fru
 OPEN: Raja messaged? (reminder set 11 Sep); Plaud approval needed to read recordings; W&Co CRM keepers review; cold data list; Claude account migration before 30 Sep; Google Calendar/Drive email; BRN NOC + ADREC registration via Jake; Zaid pre-approval expires 30 Sep (K217 transfer must complete).
 RUN-IN LIST - SCORED BY CALUM (Mon 21 Sep ~09:15) hrs/imp/urg/feel, ~41h total vs ~71 white hours. Grouped, group order = Max draft by his urgency scores, Calum to reshuffle:
 GROUP A PIPELINE (12h): CRM full update 2/5/5/5 (MUST precede callouts) -> call out every buyer with a WhatsApp 5/5/4/5 -> call out every seller 3/5/4/5 -> list potential listings to carry over 2/5/3/4.
-GROUP B CLAUDE (6h, one block): migrate to new account + split Max into agents + Lewis briefing (buyer/seller system + improvements feed the new build) 6/5/5/5.
+GROUP B CLAUDE (6h): B1 migrate to new account (3h draft) -> B2 Lewis briefing (1.5h draft, improvements feed the build) -> B3 split Max into new agents (1.5h draft). Block scored 6/5/5/5; hour split is Max's draft.
 GROUP C CONTENT (12h): post types research 4/5/4/5 -> post types make 2/4/4/5 -> content plan incl 2 wks scripted 6/5/5/5 (before next Jake meeting).
 GROUP D JAKE: hit-the-ground-running plan 6/5/5/5.
 GROUP E SMALL (5h): ADIB app on new phone 1/2/2/2 · email clean 3/3/3/3 · phone apps tidy 1/2/2/2.
+WEEK PLAN (Calum, 21 Sep ~09:30 - one main thing per day): MON 21 = B1 Claude migration · TUE 22 = A1 CRM update then A2 buyers + A3 sellers callout (10h into ~8.5h white - K217 valuation 09:30, coaching 18:00) · WED 23 = C1-C3 content (12h into ~10h) · THU 24 = E small bits + overflow. UNPLACED: B2 Lewis, B3 agents split, A4 listings, D1 hit-the-ground-running plan (in Inbox on the board). All 14 on tasks.json as runin-* (Mission Control).
 === END HANDOVER ===
 
 WADEEM GARDENS HANDOVER = 2031 (not 2030 / not 'month 48'). All assets updated 15 Sep.
