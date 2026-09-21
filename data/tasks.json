@@ -4007,15 +4007,15 @@
   },
   {
    "id": "runin-b3c",
-   "title": "B3c GitHub token: CREATE the new fine-grained token now (dashboards + crm-inbox, Contents R/W) - REVOKE the old one only after the dry run passes",
+   "title": "B3c GitHub token - Calum decided to REUSE the existing token (rotation declined 21 Sep)",
    "area": "Tasks",
    "priority": "high",
    "difficulty": "easy",
-   "status": "active",
+   "status": "done",
    "due": "2026-09-21",
    "created": "2026-09-21",
-   "notes": "Old Max keeps writing until the new PA is proven. Token typed into each Project's instructions by hand, never into a file.",
-   "completed": null,
+   "notes": "Max pushed back once (token exposed in export zips, chat history, on screen; writes to both repos incl. private). Calum's call: keep it. Paste into each Project as GITHUB TOKEN: <token>.",
+   "completed": "2026-09-21",
    "snoozedUntil": null,
    "order": 268,
    "top3": false
@@ -4123,6 +4123,21 @@
    "completed": null,
    "snoozedUntil": null,
    "order": 275,
+   "top3": false
+  },
+  {
+   "id": "runin-e6",
+   "title": "E6 Properly assign all colours in Google Calendar (one colour per category, consistent)",
+   "area": "Tasks",
+   "priority": "medium",
+   "difficulty": "easy",
+   "status": "active",
+   "due": "2026-09-28",
+   "created": "2026-09-21",
+   "notes": "Bits bucket, next week. Calum 21 Sep.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 276,
    "top3": false
   }
  ],
