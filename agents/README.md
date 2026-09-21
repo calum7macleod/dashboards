@@ -4,7 +4,7 @@ One file per agent. A Claude Project's instructions = `_shared.md` + `<agent>.md
 
 ## Paste order for a new account
 1. Customize > Connectors: connect Google Calendar, Google Drive, Plaud, PropertyIndex, Windsor.ai, Canva, GitHub Integration.
-2. Projects > New project, eight times, named: Claude Manager, PA, Content, Designer, Mentor, Market, Finance, Life Coach.
+2. Projects > New project, nine times, named: Claude Manager, PA, Uploader, Content, Designer, Mentor, Market, Finance, Life Coach.
 3. In each project's instructions paste, in this order: `_shared.md`, then the agent's file, then the private block, then the token line: `GITHUB TOKEN: <token>`.
 4. Upload knowledge files the agent's file names under "Knowledge".
 5. Scheduled tasks: `schedules.md` has the prompts. Create them in Cowork > Scheduled.
@@ -14,7 +14,7 @@ One file per agent. A Claude Project's instructions = `_shared.md` + `<agent>.md
 The fine-grained GitHub token (dashboards + crm-inbox only, Contents read/write) is typed into Project instructions by hand. It is never committed to any repo, never pasted in a chat, never on a screen. If it ever appears anywhere, rotate it.
 
 ## State files (start packs)
-Each agent reads ONE small state file at session start. They live in `data/state/` (business) and `personal/state/` in the private repo (personal + money). Under two pages each. History is archived, not carried.
+Each agent reads ONE small state file at session start. They live in `data/state/` (business and money) and `personal/state/` in the private repo (personal). The Manager's build queue lives in data/state/manager.md, not in its instructions. Under two pages each. History is archived, not carried.
 
 ## Changing an agent
 Edit the file here first, then re-paste into the project. The file is the truth; the project is a copy.
