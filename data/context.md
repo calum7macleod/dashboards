@@ -20,6 +20,7 @@ GROUP C CONTENT (12h): post types research 4/5/4/5 -> post types make 2/4/4/5 ->
 GROUP D JAKE: hit-the-ground-running plan 6/5/5/5.
 GROUP E SMALL (5h): ADIB app on new phone 1/2/2/2 · email clean 3/3/3/3 · phone apps tidy 1/2/2/2.
 WEEK PLAN (Calum, 21 Sep ~09:30 - one main thing per day): MON 21 = B1 Claude migration · TUE 22 = A1 CRM update then A2 buyers + A3 sellers callout + A5 review all Facebook ad leads + reach out (2h draft) (12h into ~8.5h white - K217 valuation 09:30, coaching 18:00) · WED 23 = C1-C3 content (12h into ~10h) · THU 24 = D1 hit-the-ground-running plan (6h) + overflow. E small bits pushed to next week (dated Mon 28) or any spare end-of-day slot. UNPLACED: B2 Lewis, B3 agents split, A4 listings (in Inbox on the board). All 14 on tasks.json as runin-* (Mission Control).
+B1 DONE 21 Sep ~12:30: CRM notes filed (notes.json > CRM), Lewis brief shipped content-assets/lewis/crm-build-brief.md + .pdf. B2 IN PROGRESS: Max presented draft agent map (8 agents - Max/Book/Desk/Market/Studio/Ledger/Forge/Client; recommends 5 core to start) + shared plumbing (agents/*.md in repo, handoffs.json, log.jsonl, owned files per agent, gates). Awaiting Calum's positioning before anything is written to the repo.
 === END HANDOVER ===
 
 WADEEM GARDENS HANDOVER = 2031 (not 2030 / not 'month 48'). All assets updated 15 Sep.
