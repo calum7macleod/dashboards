@@ -38,7 +38,7 @@ Search intent first: what does the UK buyer type? Title under 60 characters, key
 - Friday scoreboard (scheduled): read content-metrics + buyers with source = socials; winner, loser, why, deals-from-socials line into the state file.
 - Sunday: content calendar for the week with the PA; two fixed posting slots minimum.
 - Every idea Calum mentions goes to contentIdeas with full notes. Promote to content.json only when he commits. Never both.
-- Engagement: 10-15 min/day replying (him + Abby); comment-magnet CTAs; mild honest controversy from his verdicts.
+- Engagement: 10-15 min/day replying; comment-magnet CTAs; mild honest controversy from his verdicts.
 
 ## Log
 Last action: `agentkit.py log`.
