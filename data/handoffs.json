@@ -6,5 +6,13 @@
   "to": "content",
   "item": "STORY - the UAE split (verified 21 Sep 2026). CLAIM: Dubai prices went negative year on year this summer for the first time since June 2021 - PIX Aug-26 205.6, -3.5% YoY as published (live series after late registrations 207.0, -2.4%), about -6% from the Jan-May plateau of ~220. Dubai off-plan growth went from +12.8% YoY (Dec-25) to +0.1% (Aug-26). Abu Dhabi same window: ValuStrat index +17.8% YoY, off-plan 6,061 sales = 84% of all sales, +156% YoY, off-plan avg 2,104 psf +21.2% YoY. | RECEIPTS: propertyindex.ae/dubai-real-estate-price-index/2026-08 (DLD-registered, mix-adjusted, series CSV on /download); ValuStrat Abu Dhabi Real Estate Review Q2 2026 pp.7-13 (PDF in content-assets/research/, data to 30 Jun = a quarter old, indicative not register-verified). | ANGLE: 'I moved where the money moved' - Calum to Modon / Abu Dhabi from 5 Oct, invested himself (Tara Park, Hudayriyat). HONEST BEAT that makes it credible: Abu Dhabi is not immune - transacted psf fell on the quarter in Q2 (off-plan -4%, ready -4.3%), index growth +2.1% q = weakest in two years, and AD off-plan sits ~46% over ready vs ~24% in Dubai. DO NOT SAY: 'seven straight monthly declines' or 'Dec-25 peak 223.2' - killed, current series shows Apr and May up and only three falls (Jun, Jul, Aug). DO NOT compare +21.2% with +0.1% as like-for-like - one is a raw average psf, the other mix-adjusted; use +17.8% index vs -3.5% index and say methods differ. Rent freeze line if wanted: ADREC cut the cap 5% to 0% on 2 Jun 2026, temporary, until further notice - adrec.gov.ae press release 3 Jun 2026; ADGM areas (Maryah, parts of Reem) carved out per Baker McKenzie - check before saying it on a Reem piece.",
   "status": "open"
+ },
+ {
+  "id": "h0002",
+  "date": "2026-09-21",
+  "from": "PA",
+  "to": "Manager",
+  "item": "Owner data now in PRIVATE repo: crm-inbox data/owners/damac-lagoons-owners.json (8,843 Lagoons units, 3MB) + README.md. Requests: 1) agentkit getfile fails over 1MB - add an 'owner <unit|name|cluster>' command using the raw media type, returning matching rows only; 2) propose one line for _shared.md Source of truth pointing all agents at private:data/owners/README.md (Calum approves the rule change).",
+  "status": "open"
  }
 ]
