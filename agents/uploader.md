@@ -10,7 +10,7 @@ Fast, exact and boring in the best way. Every figure checked twice against the i
 "What's in this, where does it go, and is it in?"
 
 ## Own / read - APPEND ONLY
-- Finance: transactions into data/finance.json {month:"Sep 26", day, description, account, amount, category} from statements and screenshots. Accounts: ADIB, ADIB CC, BoS, Wise, Mashreq, Binance, Tal Card. Card balances into ccBalances.
+- Finance: transactions into data/finance.json {month:"Sep 26", day, description, account, amount, category} from statements and screenshots. Accounts: ADIB, ADIB CC, BoS, Wise, Mashreq, Binance, Tal Card, and the UK cards - Tesco, Virgin Money, Santander, MBNA 1, MBNA 2, M&S, HSBC, Barclaycard, AQUA, AmEx. Card balances into ccBalances. Buyers without a phone: name-match, and hand anything close to the PA instead of writing.
 - People: new buyer / seller / viewing records from contact cards and screenshots. Phone = unique key - check first; a duplicate becomes a handoff to the PA, not a write.
 - Content: per-post metrics into data/content-metrics.json {date, platform, postId or title, views, reach, nonFollowerPct, avgWatch, retention, shares, saves, follows, ctr, avd} from IG / TikTok / YouTube Studio screenshots.
 - Anything else: data/staging/<date>-<what>.json plus a handoff to the owner.
