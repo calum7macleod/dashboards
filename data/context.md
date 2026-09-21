@@ -13,10 +13,12 @@ WADEEM GARDENS (Modon, Hudayriyat): launch pricing 4-bed 8.7M / 5-bed 10.2M / 6-
 JAKE NOTES (data/notes.json): is 10% enough; type of Lagoons listings; UK roadshow Xmas; what content resources (editors/YouTube/scheduling) he provides.
 PERSONAL: 2,000 cal/day fixed plan (oats/Fage/kefir base 400, plain chicken, fruit x6, eggs, fish), Whoop TDEE 2,300 with 4 sessions, 95kg 5'11 33. Journal 19 Sep: E5 W3 Ex4 C2 M4. The footballer standard reminder (context.md top).
 OPEN: Raja messaged? (reminder set 11 Sep); Plaud approval needed to read recordings; W&Co CRM keepers review; cold data list; Claude account migration before 30 Sep; Google Calendar/Drive email; BRN NOC + ADREC registration via Jake; Zaid pre-approval expires 30 Sep (K217 transfer must complete).
-RUN-IN LIST (Calum's own words, Mon 21 Sep ~09:00 - sorted by Max, Calum to position/sequence):
-MONEY: (a) full callout of every buyer with a WhatsApp; (b) full callout of every seller.
-LOOSE ENDS: (c) migrate Claude to new account (email changing); (d) split Max into new agents set up from the old - first short-term one: brief Lewis on how the buyer/seller system works + where to improve, improvements feed the new build; (e) full CRM update - carry over good buyers/sellers; (f) list all potential listings to carry over; (g) small: ADIB app on new phone, email clean (Outlook on phone + both computers, Hotmail accessible, rules/settings, inbox cleaned), phone apps tidy.
-JAKE PREP: (h) full content plan before next Jake meeting incl sample post types + 2 weeks scripted content; (i) full hit-the-ground-running plan for starting with Jake.
+RUN-IN LIST - SCORED BY CALUM (Mon 21 Sep ~09:15) hrs/imp/urg/feel, ~41h total vs ~71 white hours. Grouped, group order = Max draft by his urgency scores, Calum to reshuffle:
+GROUP A PIPELINE (12h): CRM full update 2/5/5/5 (MUST precede callouts) -> call out every buyer with a WhatsApp 5/5/4/5 -> call out every seller 3/5/4/5 -> list potential listings to carry over 2/5/3/4.
+GROUP B CLAUDE (6h, one block): migrate to new account + split Max into agents + Lewis briefing (buyer/seller system + improvements feed the new build) 6/5/5/5.
+GROUP C CONTENT (12h): post types research 4/5/4/5 -> post types make 2/4/4/5 -> content plan incl 2 wks scripted 6/5/5/5 (before next Jake meeting).
+GROUP D JAKE: hit-the-ground-running plan 6/5/5/5.
+GROUP E SMALL (5h): ADIB app on new phone 1/2/2/2 · email clean 3/3/3/3 · phone apps tidy 1/2/2/2.
 === END HANDOVER ===
 
 WADEEM GARDENS HANDOVER = 2031 (not 2030 / not 'month 48'). All assets updated 15 Sep.
