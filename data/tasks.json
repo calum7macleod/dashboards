@@ -4029,7 +4029,7 @@
    "status": "active",
    "due": "2026-09-21",
    "created": "2026-09-21",
-   "notes": "v3 paste files (nine) delivered in chat; SETUP guide = agents/SETUP.md. Token-less copies in crm-inbox/projects/.",
+   "notes": "PA Sept 26 LIVE 21 Sep 14:12 Dubai - token works, read both repos, push confirmed, agentkit runs. Fix needed on new account: Capabilities > Allow network egress ON + api.github.com / raw.githubusercontent.com / github.com in the allowlist, then a NEW chat. Remaining: Uploader, Finance, Mentor, Content, Market, Designer, Life Coach, Claude Manager (same pattern, 'Sept 26' suffix).",
    "completed": null,
    "snoozedUntil": null,
    "order": 269,
