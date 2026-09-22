@@ -2615,8 +2615,8 @@
  },
  {
   "buyer": "Nauman",
-  "status": "Active",
-  "stage": "Viewing",
+  "status": "Closed Lost",
+  "stage": "Lost",
   "date": "2026-08-13",
   "source": "Inbound (multi-agent shopper - acknowledged openly)",
   "colleague": "",
@@ -2650,8 +2650,9 @@
     "summary": "Touch 25 Aug (round of touchpoints; M-row 6.75M offer campaign live)"
    }
   ],
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep"
+  "nextTouch": null,
+  "touchReason": "Follow up after wa only 22 Sep",
+  "closedDate": "2026-09-22"
  },
  {
   "buyer": "Hatem Khalifa",
@@ -3879,7 +3880,7 @@
   "unitSupply": 3,
   "feeling": 4,
   "score": 4,
-  "heat": 3,
+  "heat": 4,
   "stage": "Viewed",
   "lastContact": "2026-09-22",
   "nextTouch": "2026-09-24",
