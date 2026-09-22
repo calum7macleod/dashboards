@@ -14,5 +14,13 @@
   "to": "Manager",
   "item": "Owner data now in PRIVATE repo: crm-inbox data/owners/damac-lagoons-owners.json (8,843 Lagoons units, 3MB) + README.md. Requests: 1) agentkit getfile fails over 1MB - add an 'owner <unit|name|cluster>' command using the raw media type, returning matching rows only; 2) propose one line for _shared.md Source of truth pointing all agents at private:data/owners/README.md (Calum approves the rule change).",
   "status": "open"
+ },
+ {
+  "id": "h0003",
+  "date": "2026-09-22",
+  "from": "PA",
+  "to": "Manager",
+  "item": "Task dashboard: Calum wants it finished. Known gaps from PA audit 21 Sep: difficulty is text (easy/medium/hard) so points never compute (0 done, 0 open) - map to 1/3/5/8 or score numerically; 226 done tasks + 51 active in one file - archive done to data/archive/; overdue items show nothing - surface count + oldest; ids are a mix of UUIDs and slugs; buildLog/units arrays empty; Top 3 flag not enforced to max three. Calum to add what he sees broken. Task task-dashboard-sort-2209 due Mon 28 Sep.",
+  "status": "open"
  }
 ]
