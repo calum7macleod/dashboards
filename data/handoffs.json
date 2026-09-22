@@ -30,5 +30,13 @@
   "to": "Manager",
   "item": "Buyers dashboard: new field closedLost (YYYY-MM-DD) on buyer records set when stage goes to Lost. Calum wants the Lost section sorted by closedLost descending, most recent at the top, always. Older Lost records have no date - sort them to the bottom, do not invent dates.",
   "status": "open"
+ },
+ {
+  "id": "h0005",
+  "date": "2026-09-22",
+  "from": "PA",
+  "to": "Manager",
+  "item": "Buyer card notes render: notes is one string, entries separated by ' | ', newest first, each entry starts with a date ('22 Sep: ...' or '2026-09-02: ...'). Calum wants it readable: split on ' | ', one line per entry, date as gold eyebrow, newest at top, show 3 then 'more'. Same for stock/seller notes. PA will keep writing that format; if you'd rather move to notes[] array + history[], say so and PA migrates the data in one pass.",
+  "status": "open"
  }
 ]
