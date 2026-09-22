@@ -2648,8 +2648,8 @@
  },
  {
   "buyer": "Hatem Khalifa",
-  "status": "Active",
-  "stage": "Negotiating",
+  "status": "Closed Lost",
+  "stage": "Lost",
   "date": "2026-08-13",
   "source": "Inbound WhatsApp (business acct)",
   "colleague": "",
@@ -2669,12 +2669,16 @@
   "score": 5,
   "maxScore": 5,
   "maxScoreWhy": "Pushed to 5 per Calum 20 Aug - 'doing good now': budget confirmed at 2.65M on the CB 4-bed, negotiation progressing well. Finance confirmation still the open item.",
-  "notes": "20 Aug: PUSHED TO 5 - progressing well. 2.65M / 4bed / Costa Brava confirmed. | 13 Aug QUALIFIED per Calum: J-series handed-over CB 4-bed at 2.6M. Unit FOUND same day - K-row (plan circled ~K401-405), 2.65M ask, SNAGGING THIS MONTH, Calum pushing 2.6 ('2.65m - I can try 2.6' sent, thumbs-up received). Business account contact. Confirm cash/mortgage at next touch.",
+  "notes": "22 Sep: Closed lost - No contact since 13 Aug thread (K161/K169), 40 days silent | 20 Aug: PUSHED TO 5 - progressing well. 2.65M / 4bed / Costa Brava confirmed. | 13 Aug QUALIFIED per Calum: J-series handed-over CB 4-bed at 2.6M. Unit FOUND same day - K-row (plan circled ~K401-405), 2.65M ask, SNAGGING THIS MONTH, Calum pushing 2.6 ('2.65m - I can try 2.6' sent, thumbs-up received). Business account contact. Confirm cash/mortgage at next touch.",
   "segment": "",
   "id": "hatem-26",
   "order": 64,
   "heat": 5,
-  "budgetText": "2.65M confirmed"
+  "budgetText": "2.65M confirmed",
+  "lastContact": "2026-09-22",
+  "closedLost": "2026-09-22",
+  "nextTouch": null,
+  "touchReason": null
  },
  {
   "date": "2026-08-17",
