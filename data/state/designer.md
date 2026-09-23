@@ -9,7 +9,7 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 4. YouTube thumbnail template (face + three words + one number).
 
 ## Piece log
-- 23 Sep: Abu Đ4M three-options pack v1 (11pp A4 landscape, Tara Park / Al Ghadeer Parks / Palm Springs), for Abu via Calum - content-assets/abu-4m-options/Abu-4M-Three-Options-Sep26.pdf + .html + build.py. Pagella + Carlito (template placeholders). Confidence marks ◆◆◆/◆◆/◆ on every source line. Open before send: Tara Phase 2 dates, Aldar sheet, Palm Springs pre-launch only (Designer Sept 26).
+- 23 Sep: Abu Đ4M options pack v2 (brief v2, five doors: Tara Park / Al Ghadeer Parks / Ellington Al Yalayis 1 / Palm Springs / The Bristol; 21pp A4 landscape) + a four-door cut without Bristol (18pp) - content-assets/abu-4m-options/Abu-4M-Options-Sep26.pdf, -four-doors.pdf, source + build.py (--no-bristol). v1 (three doors, 11pp) superseded, file left in place. Pagella + Carlito placeholders, ◆ confidence marks. Open before send: Tara Phase 2 dates, Aldar sheet, Ellington all-teaser, Palm Springs pre-launch, Bristol = right project? (Designer Sept 26).
 - 23 Sep: Offer-letter template rebuilt as the card (Calum's pick), + render-offer.py + rules + sample render - design-system/templates/ (Designer Sept 26).
 - 23 Sep: Seema J519 Costa Brava offer Đ2.65M - SUPERSEDED. My freehand 4:5 image (2% + VAT, own fonts) was off-template and wrong; redone from the locked template by Calum, same path content-assets/offers/Seema-J519-Offer-2.65M.pdf/.png (net Đ2,587,050 at 2% flat). Not mine to touch.
 - 21 Sep: Type specimen round 1 (4pp A4 landscape), for Calum - design-system/specimens/2026-09-21-type-specimen.pdf + .html (Designer Sept 26).
