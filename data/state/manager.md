@@ -25,8 +25,8 @@ Agents log faults with `agentkit.py issue <type> "<what>"` the moment they happe
 23 Sep 09:05: receipts from Max, PA, mentor, content, Designer. None from uploader, market, finance, lifecoach, projects, inbox. Ten agents now (Projects added by Max 23 Sep - _shared.md already has its row). Scheduled tasks: none confirmed running (h0006).
 Findings: raw.githubusercontent.com cache serves stale files - rule added to _shared.md 23 Sep. Two closed-date fields (closedDate from crm.html, closedLost from PA) - fixed in spec 1. buyers-index over-counts live by 20 - fixed in spec 1.
 
-## Pending re-paste (Calum, once, after agentkit v2 ships)
-agents/_shared.md changed 23 Sep: Issues section, agentkit-not-raw, owner-data pointer. Re-paste into all ten Projects. Don't re-paste before v2 ships - the rule points at a command that doesn't exist yet (fallback line covers it, but one paste is better than two).
+## Shared rules - Project instructions status
+23 Sep ~10:00: Issues section + agentkit-not-raw/owner pointer pasted into all ten Projects by Calum (as one block at the end of the shared rules). All agents on the Issues rule from now. Fallback (handoff Manager) active until agentkit v2 ships the `issue` command. Next full re-paste only if _shared.md changes again.
 
 ## Schemas
 See agents/_shared.md ownership table. Buyer canonical rule: tools/specs/2026-09-23-agentkit-v2.md section 1. Other record shapes: Lewis brief (content-assets/lewis/crm-build-brief.md) section 3.
