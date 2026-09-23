@@ -4,7 +4,7 @@ Sep 23, 2026 · @Someone
 
 ## Brief
 
-Buyer: Abu, UAE resident, investor, budget Đ4M, wants a townhouse. Pack shows six doors: a corner 3-bed + maid at Tara Park (Reem), Al Ghadeer Parks townhouses (Aldar), Palm Springs off Palm Jebel Ali (Dubai Holding, pre-launch), Ellington's new townhouse launch near Town Square (pre-launch, Calum's best Dubai option), and The Bristol at Emaar Beachfront (branded 1-bed, the lifestyle door). Every number indicative until documents confirm; fact lines carry source | date | confidence. Brand and layout per Designer's system. No Golden Visa content, no reference to Calum's own contract.
+Buyer: Abu, UAE resident, investor, budget Đ4M, wants a townhouse. Pack shows six doors: a corner 3-bed + maid at Tara Park (Reem), Al Ghadeer Parks townhouses (Aldar), Palm Springs off Palm Jebel Ali (Dubai Holding, pre-launch), Ellington's new townhouse launch near Town Square (pre-launch, Calum's best Dubai option), and The Bristol at Ramhan Island (Eagle Hills, hotel-branded island residences - price sheet pending, the lifestyle door). Every number indicative until documents confirm; fact lines carry source | date | confidence. Brand and layout per Designer's system. No Golden Visa content, no reference to Calum's own contract.
 
 **Cover:** Prepared for Abu · Three ways to place Đ4M · September 2026 · Calum MacLeod · @uaecalum · +971 55 350 2699
 
@@ -220,65 +220,70 @@ Nothing to model until the price sheet lands; what is known is the ceiling, the 
 - Exit: pre-handover resale per Dubai Holding's threshold and NOC; or hold for the corridor's build-out.
 - Honest line for the page: pre-launch, name and site not yet public - this page updates the day the sheet exists.
 
-## Page 14 - Option 5 · The Bristol, Emaar Beachfront (Emaar) · the project
+## Page 14 - Option 5 · The Bristol, Ramhan Island (Eagle Hills, Abu Dhabi) · the project
 
-The only "Bristol" on the market is Emaar's Bristol Hotels & Resorts branded tower at Emaar Beachfront, Dubai Harbour - a 1-bed fits Đ4M all-in; nothing larger does, and there are no townhouses. Position it as the beachfront-lifestyle door, not the townhouse door.
+A hotel-branded residence on Abu Dhabi's last natural island, ten minutes from Yas - the lifestyle door in the pack. Price sheet and plan not yet public; island villas start around Đ6.9M, so The Bristol's apartments are the Đ4M route in.
 
 | Fact | Source | Date | Confidence |
 | --- | --- | --- | --- |
-| Bristol Luxury Hotels & Resorts branded residences by Emaar at Emaar Beachfront, Dubai Harbour - a gated private-island community between Palm Jumeirah and Dubai Marina; 1-4 bed apartments and 5-bed penthouses | [Emaar](https://www.emaar.com/en/properties/the-bristol-luxury-hotels-resorts-at-emaar-beachfront) | May 26 | High |
-| One landmark tower with a luxury hotel on the lower floors and branded residences above; 8-storey podium linking hotel amenities, parking and concierge; architecture inspired by the movement of waves | [Elysian](https://elysian.com/en/off-plan-projects/Emaar-Beachfront/the-bristol) | 2026 | Medium (tower height quoted as 44 to 54 storeys across broker sites - confirm) |
-| Limited inventory: 227 residences and 4 penthouses | [Top Ultra Luxury](https://topultraluxury.com/new-projects/the-bristol-luxury-hotels-resorts/) | Jun 26 | Medium |
-| Sizes: 1-bed 825 sqft · 2-bed 1,459 · 3-bed 1,912 · 4-bed 2,501 · 5-bed penthouse 5,828 (another listing quotes 828-6,060) | [Planetprop](https://sales-office-dubai.com/emaar-beachfront-bristol-hotels-resorts/) | updated 22 Sep 26 | Medium |
-| Prices from Đ3.66M (1-bed) to \~Đ34M (5-bed penthouse) - Đ4,436 psf at the 1-bed entry; a 1-bed is the only unit inside Đ4M all-in | Planetprop | Sep 26 | Medium |
-| Plan 80/20: 10% booking, 70% across construction milestones (Emaar links instalments to construction progress, not dates), 20% at handover; handover Q3 / Sep 2029 | Planetprop · [Metropolitan](https://metropolitan.realestate/emaar-beachfront/bristol-emaar-beachfront/) | 2026 | Medium |
-| Amenities: private beach and promenade, infinity pool and pool bar, terrace deck, outdoor gym and yoga terrace, spa, cinema, bowling, kids' play; views to Palm Jumeirah, Atlantis, Marina and Burj Al Arab | [Haus51](https://haus51.com/the-bristol-at-emaar-beachfront-by-emaar) | May 26 | Medium |
-| Registration: Dubai 4% DLD | Dubai conventions | - | High |
+| Eagle Hills. The Bristol at Ramhan Island: a branded hotel and residential tower, the hospitality centrepiece of the Ramhan masterplan - branded apartments beside marina residences, wellness and a retail promenade; large glazed facades, wide terraces, open-plan layouts with sea views | [Top Luxury Property](https://topluxuryproperty.com/ae/abu-dhabi-projects/the-bristol-by-eagle-hills-at-ramhan-island-abu-dhabi/) | Mar 26 | Medium (broker pages, launch coverage) |
+| Private beach access, infinity pool, concierge, sea views from every unit | [Top Luxury Property blog](https://topluxuryproperty.com/blog/abu-dhabi-hottest-off-plan-properties/) | Sep 26 | Medium |
+| Fully managed residences: 24/7 concierge, housekeeping, in-residence dining; private beach, spa and fine dining; designed as a home, a holiday retreat or a managed investment; hotel opening 2027 | [Grand Reve](https://grandreverealty.com/projects/the-bristol-at-ramhan-island-by-eagle-hills/) | 2026 | Med-Low |
+| Prices and the official payment plan not yet announced; expect a booking amount, construction-linked instalments and the balance at handover | [Top Ultra Luxury](https://topultraluxury.com/new-projects/the-bristol/) | Mar 26 | Medium |
+| The island's standard plan on villas: 10% on booking, 40% during construction, 50% on handover | [ramhan.ae](https://ramhan.ae/) | Apr 26 | Medium (villas; The Bristol's to confirm) |
+| Freehold for all nationalities; Abu Dhabi 2% registration | ramhan.ae · Abu Dhabi conventions | Apr 26 | High |
+| The brand's other addresses: Tanja Waterfront (Tangier), Durres, La Gare (Addis Ababa) and The Bristol at Emaar Beachfront, Dubai - a hotel brand, not a one-off | [the-bristol.com](https://the-bristol.com/discover-residences) | Sep 26 | Medium |
+
+What is missing for the pack: unit mix, sizes, from-prices, plan, handover date. Eagle Hills' sheet fills pages 14-16 the day it lands.
 
 ## Page 15 - The Bristol · why here
 
-A hotel-branded home on the last private beach between the Palm and the Marina, built by the developer of Burj Khalifa.
+A naturally formed island between Yas and Saadiyat with supply capped by its own shoreline, a 170-berth marina and a Ritz-Carlton Reserve - and Abu Dhabi's 2% entry.
 
 | Fact | Source | Date | Confidence |
 | --- | --- | --- | --- |
-| Emaar Beachfront: a 10-million-sqft gated island community with 1.5 km of private beach, 27 residential towers, \~10,000 homes and a 13,000 sqm retail mall; Dubai Marina on the doorstep, Sheikh Zayed Road access | [Emaar](https://uae.emaar.com/en/our-communities/emaar-beachfront) | 2026 | High |
-| Dubai Harbour, the UAE's new maritime centre: a 1,400-berth marina, a cruise port and terminal, a 3.5M sqft mall, an events arena and the 135 m Dubai Lighthouse; monorail links planned to the Palm and Bluewaters | [Gulf Business](https://dev.gulfbase.com/news/dubai-s-emaar-unveils-new-island-development/204797) | Jan 2018 | High (old - masterplan intent) |
-| Emaar develops Beachfront in a joint venture with Aldar - the two developers behind Abu Dhabi's islands and Dubai's landmarks on one project | [MEED](https://www.meed.com/emaar-tenders-dubai-harbour-towers-construction/) | 2018 | High |
-| The brand: Bristol Luxury Hotels & Resorts, with residences in Tangier (Tanja Waterfront), Durres, Addis Ababa (La Gare) and Ramhan Island, Abu Dhabi - a hotel on the lower floors means hotel services for residents | [the-bristol.com](https://the-bristol.com/discover-residences) · Elysian | Sep 26 | Medium (brand ownership to confirm before print) |
-| What the island rents for today: 1-beds 765-815 sqft listed at Đ150-170K/yr, 2-beds Đ180-295K, 3-beds Đ320K (Palace Beach, Grand Bleu, Beach Isle, Sunrise Bay) | [Property Finder listings](https://propertyfinder.ae/blog/emaar-beachfront) | Sep 26 | Medium (asks, not signed leases) |
-| Broker sites quote 6-7% rental yield for the project; the island's listed 1-bed rents put a Đ3.66M entry nearer 4-4.6% gross | Top Ultra Luxury · derived | Jun 26 / Sep 26 | Medium |
-| Scarcity line: true private-beach land in Dubai is limited and largely absorbed; Emaar-branded beachfront stock has historically outperformed generic luxury stock | [Building Arabia](https://buildingarabia.com/2026/01/26/the-bristol-emaar-beachfront-branded-luxury-from-aed-3-66m/) | Jan 26 | Med-Low (commentary) |
+| Ramhan Island: a naturally formed island between Saadiyat and Yas on the capital's coastline; \~4 million sqm; 1,800 standalone villas, a 170-berth marina, a 1.7 km retail promenade, private beaches and a Ritz-Carlton Reserve floating-villa cluster; handover of early phases from Q4 2026 | [ramhan.ae](https://ramhan.ae/) | Apr 26 | Medium (developer-affiliated site) |
+| \~400 hectares, \~1,800 villas and \~900 marina residences; built around the island's natural bays, waterways and mangroves | [Primo Capital](https://primocapital.ae/property/villa/ramhan-island-abu-dhabi) | 2026 | Medium |
+| 10 minutes from Yas Island, 15 minutes from the airport; currently reached by boat (\~10 min from Sheikh Khalifa bin Zayed Road) with a bridge to the mainland under construction | [Metropolitan](https://metropolitan.realestate/ramhan-island/ramhan-island-villas-phase-4-eagle-hills-abu-dhabi/) | Aug 26 | Medium |
+| The island's price ladder: villas from \~Đ6.9M (3-bed), Đ9.2M (4-bed), Đ14M (5-bed), Đ16M (6-bed), Đ22M (7-bed); Phase 4 handover Q3 2028, Phase 5 from Đ11M with Q2 2027 delivery - the branded apartments sit below all of it | Primo Capital | 2026 | Medium |
+| Villa spec on the island: private pools, direct beach or lagoon access, 70-100 m of water between residences, natural marble and timber, two design schemes | Metropolitan | Aug 26 | Medium |
+| Eagle Hills: privately held Abu Dhabi developer founded in 2014, led by Mohamed Alabbar, founder of Emaar; also delivering the Bvlgari Resort and Mansions (90 mansions, opening 2030) on a private island off Abu Dhabi | Primo Capital · Ground Floor report | 2026 / Aug 26 | Medium |
+| Supply logic: the island's natural boundaries cap future supply permanently; \~30 minutes from the city centre with a mangrove backdrop | Top Luxury Property blog | Sep 26 | Medium (commentary) |
+| Yield context: Abu Dhabi waterfront luxury villas delivering 5-6% gross; island lifestyle and hotel brand expected to support short-let premiums; short-let is outside the 0% long-let rent cap | ramhan.ae · rules | Apr 26 | Med-Low (claim) |
+
+Positioning line: the island-resort door - a hotel-managed residence with a private beach, in the capital's 2% market, before the price sheet exists.
 
 Positioning line: the beachfront brand door - a Palm-view 1-bed on a private island, hotel-serviced, Emaar delivery record; the lifestyle buy in the pack.
 
-## Page 16 - The Bristol · what you pay, when (80/20)
+## Page 16 - The Bristol · what you pay, when
 
-On the Đ3.66M 1-bed: \~Đ512K day one, \~Đ3.07M before keys, 20% at handover in Sep 2029.
+Nothing to model until Eagle Hills releases The Bristol's sheet; the shape below is the island's standard 10/40/50 on an assumed Đ3.5M unit - an illustration of the plan, not a price.
 
-| Milestone | % | Đ at 3.66M |
+| Milestone | % | Đ at an assumed 3.5M |
 | --- | --- | --- |
-| Booking | 10% | 366,000 |
-| DLD 4% | fee | 146,400 |
-| Construction milestones (progress-linked, not dated) | 70% | 2,562,000 |
-| Handover Sep 2029 | 20% | 732,000 |
-| Cash to handover (80% + DLD) |  | \~3,074,400 |
+| Booking (island standard) | 10% | 350,000 |
+| Registration 2% | fee | 70,000 |
+| Construction instalments | 40% | 1,400,000 |
+| Handover (date TBC; hotel opening 2027) | 50% | 1,750,000 |
+| Cash to handover (50% + fee) |  | \~1,820,000 |
 
-- Indicative rent: island 1-beds list at Đ150-170K/yr today = \~4.1-4.6% gross on Đ3.66M; short-let and hotel-serviced lets can run higher in season, with management cost and occupancy risk.
-- Exit: pre-handover resale per Emaar's paid threshold and NOC; or hold as a beach home with a rental engine.
-- Honest line for the page: Đ4,436 psf is three times Tara Park's Đ1,468, 80% of the price is funded before keys, and Dubai's index has fallen seven months in a row (PIX Jul-26) - a lifestyle buy first, a growth trade second.
+- Indicative income: hotel-managed short-let on a private-beach island; Abu Dhabi waterfront luxury runs 5-6% gross on comparable stock (developer-site claim) - hold until Eagle Hills publishes the rental programme.
+- Exit: pre-handover resale per Eagle Hills' paid threshold and NOC; or hold as a managed asset.
+- Decide the trigger rule now: "if 2-beds open at or below Đ\[X\], I'm in" - island launches allocate on the day.
+- Honest line for the page: it is a branded apartment, not a townhouse; access is by boat until the bridge opens; and the price sheet is not public - this page updates the day it exists.
 
 ## Page 17 - Side by side (indicative, before selling costs)
 
-|  | Tara Park corner | Al Ghadeer 3-bed TH | Al Ghadeer 4-bed villa | Ellington 3-bed TH | Palm Springs 3-bed | The Bristol 1-bed |
+|  | Tara Park corner | Al Ghadeer 3-bed TH | Al Ghadeer 4-bed villa | Ellington 3-bed TH | Palm Springs 3-bed | The Bristol, Ramhan |
 | --- | --- | --- | --- | --- | --- | --- |
-| Price | Đ3.9M | \~Đ2.3M | \~Đ3.3M | \~Đ3.6-4.1M | \~Đ4M or less | Đ3.66M |
-| Product | 3-bed + maid apartment, 2,656 sqft | townhouse | villa | townhouse, 2,100-2,300 sqft | townhouse | 1-bed branded apartment, 825 sqft |
-| Day one | \~Đ274K | \~Đ161K | \~Đ231K | launch deposit + Đ152K DLD | 4% DLD + launch deposit | \~Đ512K (10% + 4% DLD) |
-| Cash to handover | \~Đ1.64M (42%) | \~Đ1.31M (57%) | \~Đ1.88M (57%) | \~Đ2.81M (74%) | at launch | \~Đ3.07M (84%) |
-| Handover | 2030 | Q2 2031 | Q2 2031 | 2030-31 | at launch | Sep 2029 |
-| Registration | 2% | 2% | 2% | 4% | 4% | 4% |
-| Demand driver | ADGM workforce, long-let | family end-users, commuters | family end-users, commuters | family end-users, Al Qudra corridor | Palm Jebel Ali corridor | beachfront short-let, hotel brand |
-| Exit | pre-handover after 20% + NOC, or hold and rent | pre-handover per Aldar rules, or hold | pre-handover per Aldar rules, or hold | pre-handover per Ellington threshold, or hold | at launch | pre-handover per Emaar threshold, or hold |
+| Price | Đ3.9M | \~Đ2.3M | \~Đ3.3M | \~Đ3.6-4.1M | \~Đ4M or less | TBC - not public |
+| Product | 3-bed + maid apartment, 2,656 sqft | townhouse | villa | townhouse, 2,100-2,300 sqft | townhouse | branded apartment, hotel-managed |
+| Day one | \~Đ274K | \~Đ161K | \~Đ231K | launch deposit + Đ152K DLD | 4% DLD + launch deposit | 10% booking + 2% (island standard, TBC) |
+| Cash to handover | \~Đ1.64M (42%) | \~Đ1.31M (57%) | \~Đ1.88M (57%) | \~Đ2.81M (74%) | at launch | \~52% if 10/40/50 |
+| Handover | 2030 | Q2 2031 | Q2 2031 | 2030-31 | at launch | TBC (hotel opening 2027) |
+| Registration | 2% | 2% | 2% | 4% | 4% | 2% |
+| Demand driver | ADGM workforce, long-let | family end-users, commuters | family end-users, commuters | family end-users, Al Qudra corridor | Palm Jebel Ali corridor | island resort short-let, capped supply |
+| Exit | pre-handover after 20% + NOC, or hold and rent | pre-handover per Aldar rules, or hold | pre-handover per Aldar rules, or hold | pre-handover per Ellington threshold, or hold | at launch | pre-handover per Eagle Hills threshold, or hold |
 
 ## Page 18 - Illustrative returns
 
@@ -290,14 +295,14 @@ Same growth assumption applied to every option, exit at handover, 2% agency out,
 | Al Ghadeer 3-bed Đ2.3M, \~4.7 yrs to Q2 2031 | \~Đ3.02M · \~Đ0.66M · \~51% on Đ1.31M | \~Đ3.45M · \~Đ1.08M · \~82% |
 | Al Ghadeer villa Đ3.3M, \~4.7 yrs to Q2 2031 | \~Đ4.34M · \~Đ0.95M · \~51% on Đ1.88M | \~Đ4.95M · \~Đ1.55M · \~82% |
 | Ellington 3-bed TH Đ3.8M, \~4.5 yrs to 2030-31 | \~Đ4.94M · \~Đ1.04M · \~37% on Đ2.81M | \~Đ5.60M · \~Đ1.69M · \~60% |
-| The Bristol 1-bed Đ3.66M, \~3 yrs to Sep 2029 | \~Đ4.36M · \~Đ0.61M · \~20% on Đ3.07M | \~Đ4.74M · \~Đ0.99M · \~32% |
 | Palm Springs | modelled after the price sheet lands |  |
+| The Bristol, Ramhan Island | modelled after Eagle Hills' price sheet lands |  |
 
 Rail line under the table: growth cases are illustrative, not forecasts; Abu Dhabi's last twelve months were +17.8%; the register decides.
 
 ## Page 19 - Next step
 
-Fifteen minutes on a call: which lens - long-let income on Reem, a family home on the corridor, a design-led launch near Town Square, first-phase Palm Jebel Ali, or a beach home on a private island. Then I hold the unit (Tara Park), request Aldar's sheet (Al Ghadeer Parks), lodge the Ellington EOI, register you for Palm Springs the day it opens, and pull Emaar's Bristol availability.
+Fifteen minutes on a call: which lens - long-let income on Reem, a family home on the corridor, a design-led launch near Town Square, first-phase Palm Jebel Ali, or a hotel-managed home on a natural island. Then I hold the unit (Tara Park), request Aldar's sheet (Al Ghadeer Parks), lodge the Ellington EOI, register you for Palm Springs the day it opens, and get Eagle Hills' Bristol price sheet the moment it is released.
 
 CTA: WhatsApp +971 55 350 2699 · @uaecalum · buttons per Designer's standard (WhatsApp + Call).
 
@@ -315,7 +320,7 @@ Sources to print on the last page:
 - Ellington: launch teaser via Calum (23 Sep 2026); Allsopp & Allsopp, Property Finder, WhiteRock, Bayut developer pages (2026)
 - Nakheel / Dubai Holding: Palm Central release (24 Jun 2026); Gulf News masterplan approval (Jun 2023), Aldar-Dubai Holding JV and Select Group announcements (2026)
 - Palm Springs: Dubai Holding, direct conversation with Calum (Sep 2026)
-- Emaar: The Bristol and Emaar Beachfront community pages (2026); Gulf Business on Dubai Harbour (Jan 2018); MEED on the Emaar-Aldar JV (2018); broker listings Planetprop, Metropolitan, Elysian, Haus51, Top Ultra Luxury (2026); Property Finder rental listings (Sep 2026)
+- Eagle Hills / Ramhan Island: ramhan.ae (Apr 2026), Metropolitan Phase 4 listing (Aug 2026), Primo Capital, Top Luxury Property, Top Ultra Luxury and Grand Reve launch coverage of The Bristol (Mar-Sep 2026), the-bristol.com; Bvlgari Ramhan from the Ground Floor report (Aug 2026)
 
 ## Notes for Calum - not for the pack
 
@@ -324,5 +329,5 @@ Sources to print on the last page:
 3. Al Ghadeer prices are aggregator numbers, not Aldar's sheet. Request the sheet in parallel; the pack is marked indicative.
 4. Palm Springs has no public footprint. It stands on your Dubai Holding conversation only - fine for a private pack, not for camera.
 5. HGE TH-68 traded at Đ4.271M in June. If Abu can go 7% over, a Hudayriyat townhouse beats the corridor on every line but price - worth one question before the pack locks.
-6. "Bristol Residences" - the only live project by that name is Emaar's The Bristol at Emaar Beachfront (branded apartments, no townhouses). If you meant something else, tell me and I'll swap it. The Bristol numbers are from a broker site updated 22 Sep; Emaar's price list would settle them. The 80/20 plan is why its return on cash sits far below the Abu Dhabi options - say that plainly if it stays in.
-7. Ellington: every number is the teaser's estimate - name, exact location, booking % and price sheet all TBC. The 3-bed lands Đ3.57-4.14M on the teaser psf, so the top of the range breaks Đ4M; the pitch should say "targeting under Đ4M at launch". Six options is a lot for one pack - if Designer needs to cut, Bristol is the odd one out (not a townhouse, lowest return on cash).
+6. Bristol corrected to The Bristol at Ramhan Island by Eagle Hills (the Emaar Beachfront tower of the same brand is out). No public price sheet, unit mix or plan as of the Mar-Sep 2026 coverage - if Eagle Hills has given you a sheet, drop it in and pages 14-16 get real numbers. It is an apartment, not a townhouse; island villas start \~Đ6.9M; the island is boat-access until the bridge opens.
+7. Ellington: every number is the teaser's estimate - name, exact location, booking % and price sheet all TBC. The 3-bed lands Đ3.57-4.14M on the teaser psf, so the top of the range breaks Đ4M; the pitch should say "targeting under Đ4M at launch". Six options is a lot for one pack - if Designer needs to cut, The Bristol is the odd one out (not a townhouse, no prices yet).
