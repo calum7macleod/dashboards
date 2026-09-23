@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Offer to Purchase</title>
+<style>
+/* OFFER LETTER - the locked template. Change ONLY the FIELDS in double braces. Do not redesign. */
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;background:#152A1F;color:#F5EDE0;font-family:'Carlito','Calibri','DejaVu Sans',sans-serif;font-size:10.8pt;line-height:1.48}
+.page{width:210mm;height:297mm;padding:15mm 17mm 14mm;position:relative;background:#152A1F}
+.eye{font-size:8.5pt;letter-spacing:.32em;color:#C9A84C;text-transform:uppercase}
+h1{font-family:'TeX Gyre Pagella','Palatino Linotype',serif;font-weight:400;font-size:25pt;margin:5mm 0 2mm;color:#F5EDE0;line-height:1.15}
+.sub{font-size:9.5pt;color:#8FA898;margin-bottom:5mm}
+.dia{color:#C9A84C;font-size:9pt;letter-spacing:.9em;margin:2mm 0 6mm}
+p{margin:0 0 3.5mm}
+b{color:#F5EDE0}
+.panel{background:#1E3D2F;border:1px solid #2E5A40;border-radius:3mm;padding:1.5mm 6mm;margin:4mm 0}
+.row{display:flex;padding:2.7mm 0;border-bottom:1px solid #2E5A40}
+.row:last-child{border-bottom:0}
+.row .k{width:52mm;font-size:7.6pt;letter-spacing:.2em;color:#8FA898;text-transform:uppercase;padding-top:1mm}
+.row .v{flex:1;font-size:10.5pt}
+.row .v.b{font-weight:bold}
+.row .v.net{font-family:'TeX Gyre Pagella',serif;font-size:16pt;color:#E8C96B}
+.note{border:1px solid #C9A84C;border-radius:3mm;padding:3.5mm 6mm;margin:4mm 0}
+.sig{margin-top:4mm;line-height:1.55}
+.sig b{display:block}
+.sig .m{color:#8FA898;font-size:10pt}
+.foot{position:absolute;left:17mm;right:17mm;bottom:9mm;display:flex;justify-content:space-between;font-size:7.5pt;color:#8FA898;border-top:1px solid #2E5A40;padding-top:2.5mm}
+.foot .r{color:#C9A84C}
+</style></head><body><div class="page">
+<div class="eye">Offer to Purchase</div>
+<h1>{{CLUSTER}} &middot; Unit {{UNIT}}</h1>
+<div class="sub">{{COMMUNITY}}, Dubai &nbsp;&middot;&nbsp; Presented to the owner, {{OWNER}} &nbsp;&middot;&nbsp; {{DATE}}</div>
+<div class="dia">&#9670;&#9670;&#9670;</div>
+<p>Dear {{OWNER}},</p>
+<p>On behalf of a committed buyer, I am pleased to present the following formal offer for your unit at {{CLUSTER}}, {{COMMUNITY}}. {{BUYER_INTRO}}</p>
+<div class="panel">
+<div class="row"><div class="k">Gross sale price</div><div class="v b">AED {{PRICE}}</div></div>
+<div class="row"><div class="k">Agency fee (2%)</div><div class="v">AED {{AGENCY}}</div></div>
+<div class="row"><div class="k">Conveyancing</div><div class="v">AED {{CONVEY}}</div></div>
+<div class="row"><div class="k">Net to seller</div><div class="v net">AED {{NET}}</div></div>
+</div>
+<div class="panel">
+<div class="row"><div class="k">Buyer position</div><div class="v">{{BUYER_POSITION}}</div></div>
+<div class="row"><div class="k">Transfer timeline</div><div class="v">Completion within 60 days of signed MOU</div></div>
+<div class="row"><div class="k">Security deposit</div><div class="v">10% security cheque lodged on MOU signing, per standard Form F terms</div></div>
+<div class="row"><div class="k">Fees borne by seller</div><div class="v">Agency fee and conveyancing as itemised above; other transfer costs per standard Dubai practice</div></div>
+</div>
+<div class="note">{{NOTE_LEAD}} It is presented in good faith, is non-binding until a Form F / MOU is executed by both parties, and remains open for <b>five (5) days</b> from the date above, after which it lapses unless extended in writing.</div>
+<p>I would welcome the opportunity to discuss this with you directly - a short call is all that is needed to move to MOU.</p>
+<p>Kind regards,</p>
+<div class="sig"><b>Calum MacLeod</b><span class="m">{{BROKERAGE}} &middot; Dubai<br>+971 55 350 2699 &middot; @uaecalum</span></div>
+<div class="foot"><span>Offer To Purchase &middot; {{CLUSTER}} {{UNIT}}</span><span class="r">Private &amp; Confidential</span></div>
+</div></body></html>
