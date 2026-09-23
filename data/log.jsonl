@@ -20,3 +20,4 @@
 {"date": "2026-09-22", "agent": "PA", "did": "Call sheet batch 4: 7 Longer-term buyers WA only, nextTouch Mon 29. Buyer run complete: 60 of 60 - 17 closed lost, 43 touched. A2 done.", "wrote": []}
 {"date": "2026-09-22", "agent": "PA", "did": "Meta leads batch 1 (14): 6 buyers created (Youssef, Annabel, Shaby, Fares, Salem, Zafirah), 8 to tracker only; tracker data/triage/2026-09-22-meta-leads.json created with all 70 pre-categorised.", "wrote": []}
 {"date": "2026-09-22", "agent": "PA", "did": "Meta leads batch 2 (15): 3 buyers created (Murtaza, Karishma, Zaynab), 12 closed lost to tracker.", "wrote": []}
+{"date": "2026-09-23", "agent": "Max", "did": "Tenth agent: Projects (project expert) - agent file, 10-file knowledge base in data/projects/, start pack, paste file", "wrote": ["agents/projects.md", "data/projects/", "data/state/projects.md"]}
