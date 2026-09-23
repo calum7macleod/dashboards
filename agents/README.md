@@ -4,7 +4,7 @@ One file per agent. A Claude Project's instructions = `_shared.md` + `<agent>.md
 
 ## Paste order for a new account
 1. Customize > Connectors: connect Google Calendar, Google Drive, Plaud, PropertyIndex, Canva.
-2. Projects > New project, nine times, named: Claude Manager, PA, Uploader, Content, Designer, Mentor, Market, Finance, Life Coach.
+2. Projects > New project, ten times, named: Claude Manager, PA, Uploader, Content, Designer, Mentor, Market, Finance, Life Coach, Projects.
 3. In each project's instructions paste, in this order: `_shared.md`, then the agent's file, then the private block, then the token line: `GITHUB TOKEN: <token>`.
 4. Upload knowledge files the agent's file names under "Knowledge".
 5. Scheduled tasks: `schedules.md` has the prompts. Create them in Cowork > Scheduled.
