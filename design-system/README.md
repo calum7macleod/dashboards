@@ -10,3 +10,6 @@ Cover: dark, eyebrow top-left, one-line hook, gold rule, sub in muted, meta bott
 
 ## Rules
 One look everywhere. No templates. Every number indicative until documented. Source stays editable (HTML/SVG); output PDF/PNG.
+
+## Templates (locked)
+- templates/offer-letter.html (+ .md rules) - every offer to a seller. Fill fields only.
