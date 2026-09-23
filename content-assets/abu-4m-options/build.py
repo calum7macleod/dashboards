@@ -1,73 +1,63 @@
+import sys,re
+BRISTOL = "--no-bristol" not in sys.argv
+WAYS = "Five" if BRISTOL else "Four"
 D=lambda c="#C9A84C",s=6: f'<svg class="dm" width="{s}" height="{s}" viewBox="0 0 10 10"><path d="M5 0 10 5 5 10 0 5Z" fill="{c}"/></svg>'
 def conf(n,c="#C9A84C"): return '<span class="cf">'+"".join(D(c,4.6) for _ in range(n))+'</span>'
-def eye(t,d=True,c="#C9A84C"): return f'<div class="eye">{D(c) if d else ""}{t}</div>'
-def foot(n,dark=False):
-    return f'<div class="foot"><span>Abu · Three ways to place Đ4M · September 2026</span><span>Indicative until documents confirm · {n:02d} / 11</span></div>'
-def fn(items):
-    return '<div class="fn">'+"".join(f'<div>{conf(c)}<span>{t}</span></div>' for t,c in items)+'</div>'
-P=[]
-# 00 COVER
-P.append(f'''<section class="pg dark cover">
-{eye("Prepared for Abu · September 2026")}
-<div class="cgrid">
- <div class="cl">
-  <h1>Three ways<br>to place <span class="g">Đ4M</span></h1>
-  <div class="rule"></div>
-  <p class="sub">One island the banks are moving to.<br>One community priced for a family.<br>One launch before the price sheet exists.</p>
- </div>
- <div class="cr">
-  <div class="co"><span class="n">01</span><div><b>Tara Park</b><i>Reem Island · Modon · 3-bed + maid, corner</i></div></div>
-  <div class="co"><span class="n">02</span><div><b>Al Ghadeer Parks</b><i>Abu Dhabi-Dubai corridor · Aldar · townhouses and villas</i></div></div>
-  <div class="co"><span class="n">03</span><div><b>Palm Springs</b><i>Off Palm Jebel Ali · Dubai Holding · pre-launch</i></div></div>
- </div>
-</div>
-<div class="meta"><span><b>Calum MacLeod</b> · @uaecalum · +971 55 350 2699</span><span>Private options pack · every figure indicative until documents confirm</span></div>
-</section>''')
-# 01 WHY ABU DHABI
-P.append(f'''<section class="pg">
-{eye("01 · Why Abu Dhabi, why now",c="#9A7B2A")}
-<h2>The earlier-cycle market.</h2>
-<div class="rule"></div>
+def eye(t,c="#C9A84C"): return f'<div class="eye">{D(c)}{t}</div>'
+G="#9A7B2A"
+PAGES=[]; TOTAL=[0]
+def foot(): return '<div class="foot"><span>Abu · '+WAYS+' ways to place Đ4M · September 2026</span><span>Indicative until documents confirm · {PN} / {TOT}</span></div>'
+def fn(items): return '<div class="fn">'+"".join(f'<div>{conf(c)}<span>{t}</span></div>' for t,c in items)+'</div>'
+def calls(cs,cls="calls"): return f'<div class="{cls}">'+"".join(f'<div class="call"><div class="n">{a}</div><div class="l">{b}</div>{"<p>"+p+"</p>" if p else ""}</div>' for a,b,p in cs)+'</div>'
+def facts(fs): return '<div class="facts">'+"".join(f'<div class="f"><div class="k">{k}</div><div class="v">{v}</div></div>' for k,v in fs)+'</div>'
+def pg(cls,body): PAGES.append(f'<section class="pg {cls}">{body}{foot()}</section>')
+def optpage(num,name,where,hero,heroSub,pills,h2,fs,pull,strip,notes):
+    pl="".join(f'<span class="pill">{p}</span>' for p in pills)
+    PAGES.append(f'''<section class="pg split"><div class="ol">{eye(f"Option {num}")}<div class="oname">{name}</div><div class="owhere">{where}</div><div class="rule"></div><div class="ohero">{hero}</div><div class="ohsub">{heroSub}</div><div class="pills">{pl}</div><div class="grow"></div><div class="pull">{pull}</div></div>
+<div class="or"><h2>{h2}</h2>{facts(fs)}<div class="grow"></div>{calls(strip,"strip")}<div class="grow"></div>{notes}</div>{foot()}</section>''')
+def whypage(eyebrow,h2,nums,fs,honest,notes,honest_lab="The honest line"):
+    fcols="".join(f'<div class="f"><div class="k">{k}</div><div class="v">{v}</div></div>' for k,v in fs)
+    pg("",f'''{eye(eyebrow,G)}<h2>{h2}</h2><div class="rule"></div>{calls(nums,"strip top")}<div class="facts two-col">{fcols}</div><div class="grow"></div><div class="honest"><span class="hl">{honest_lab}</span>{honest}</div><div class="grow"></div>{notes}''')
+def paypage(eyebrow,h2,cs,table,three,notes):
+    th="".join(f'<div>{t}</div>' for t in three)
+    pg("",f'''{eye(eyebrow,G)}<h2>{h2}</h2><div class="rule"></div><div class="pay">{calls(cs)}{table}</div><div class="three">{th}</div><div class="grow"></div>{notes}''')
+def pull(q,a): return f'<span class="pq">{q}</span><span class="pa">{a}</span>'
+def tbl(head,rows,cls="",hl=None,colg=""):
+    h="".join(f'<th class="{"n" if i else ""}">{c}</th>' for i,c in enumerate(head))
+    r="".join(f'<tr class="{"hl" if i==hl else ""}">'+"".join(f'<td class="{"n" if j else ""}">{c}</td>' for j,c in enumerate(row))+'</tr>' for i,row in enumerate(rows))
+    return f'<table class="{cls}">{colg}<tr>{h}</tr>{r}</table>'
+
+# ---------- COVER
+doors=[("01","Tara Park","Reem Island · Modon · 3-bed + maid, corner"),("02","Al Ghadeer Parks","Abu Dhabi-Dubai corridor · Aldar · townhouses and villas"),("03","Ellington, Al Yalayis 1","Near Town Square · Ellington · pre-launch townhouses"),("04","Palm Springs","Off Palm Jebel Ali · Dubai Holding · pre-launch")]
+subs=["One island the banks are moving to.","One community priced for a family.","One design-led launch near Town Square.","One launch before the price sheet exists."]
+if BRISTOL: doors.append(("05","The Bristol","Emaar Beachfront · Emaar · branded 1-bed, the lifestyle door")); subs.append("One beach home on a private island.")
+co="".join(f'<div class="co"><span class="n">{n}</span><div><b>{a}</b><i>{b}</i></div></div>' for n,a,b in doors)
+PAGES.append(f'''<section class="pg dark cover">{eye("Prepared for Abu · September 2026")}
+<div class="cgrid"><div class="cl"><h1>{WAYS} ways<br>to place <span class="g">Đ4M</span></h1><div class="rule"></div><p class="sub">{"<br>".join(subs)}</p></div><div class="cr">{co}</div></div>
+<div class="meta"><span><b>Calum MacLeod</b> · @uaecalum · +971 55 350 2699</span><span>Private options pack · every figure indicative until documents confirm</span></div></section>''')
+
+# ---------- WHY NOW
+pg("",f'''{eye("01 · Why now",G)}<h2>Two cities, two moments.</h2><div class="rule"></div>
+<div class="mkt">{eye("Abu Dhabi · the earlier-cycle market",G)}
 <div class="quad why">
  <div><div class="big">+17.8<span>%</span></div><div class="lab">Residential values, past twelve months</div><p>Reem Island +22% over the same period.</p></div>
  <div><div class="big">84<span>%</span></div><div class="lab">Of all Abu Dhabi sales are off-plan</div><p>Up 156% year on year. Buyers have moved to buying the future.</p></div>
  <div><div class="big">~7<span>%</span></div><div class="lab">Cash to own a contract, day one</div><p>5% down + 2% registration. Dubai: ~14% (4% DLD + deposit).</p></div>
  <div><div class="big">6-8<span>%</span></div><div class="lab">Typical Abu Dhabi gross yield</div><p>Long-let, one cheque cycle, before costs.</p></div>
-</div>
+</div></div>
+<div class="mkt dxb">{eye("Dubai · the correcting market",G)}
+<div class="quad why three-up">
+ <div><div class="big">7</div><div class="lab">Straight monthly falls in the residential index</div><p>Peak 223.2 in Dec 2025, 206.0 in Jul 2026, -2.6% year on year. Off-plan still sells at a 25% premium to ready.</p></div>
+ <div><div class="big">124</div><div class="lab">Project launches, H1 2026 · 410 in H1 2025</div><p>Deferred launches now compete on launch pricing, payment plans and unit selection. The buyer holds the cards this autumn.</p></div>
+ <div><div class="big">+53<span>%</span></div><div class="lab">A Costa Brava 6-bed, May 2022 to Mar 2026</div><p>Bought Đ4.74M (987 psf) in the quiet months, resold Đ7.25M. Dubai's own precedent for buying now.</p></div>
+</div></div>
 <div class="grow"></div>
-<div class="quote"><span class="q">ValuStrat's head of research puts it plainly: the capital sits earlier in its cycle than Dubai. The run Dubai has already had is still in front of Abu Dhabi.</span></div>
+<div class="honest"><span class="hl">The read</span>The capital sits earlier in its cycle - the run Dubai has already had is still in front of Abu Dhabi. Dubai is correcting, launches are thin, and the buyer holds the cards this autumn.</div>
 <div class="grow"></div>
-{fn([("ValuStrat Abu Dhabi Real Estate Review Q2-2026 (Aug 26): values, Reem Island, off-plan share, cycle position",3),("Entry costs: Abu Dhabi and Dubai registration conventions",3),("Yields: Tara Park investor deck, Aug 26 - a method, not a promise",2)])}
-{foot(2)}
-</section>''')
-# 02 OPTION 1 TARA PARK
-def optpage(n,num,name,where,hero,heroSub,pills,h2,facts,pull,notes,pn,strip=()):
-    f="".join(f'<div class="f"><div class="k">{k}</div><div class="v">{v}</div></div>' for k,v in facts)
-    st="".join(f'<div class="call"><div class="n">{a}</div><div class="l">{b}</div></div>' for a,b in strip)
-    pl="".join(f'<span class="pill">{p}</span>' for p in pills)
-    return f'''<section class="pg split">
-<div class="ol">
- {eye(f"Option {num}")}
- <div class="oname">{name}</div>
- <div class="owhere">{where}</div>
- <div class="rule"></div>
- <div class="ohero">{hero}</div>
- <div class="ohsub">{heroSub}</div>
- <div class="pills">{pl}</div>
- <div class="grow"></div>
- <div class="pull">{pull}</div>
-</div>
-<div class="or">
- <h2>{h2}</h2>
- <div class="facts">{f}</div>
- <div class="grow"></div>
- <div class="strip">{st}</div>
- <div class="grow"></div>
- {notes}
-</div>
-{foot(pn)}
-</section>'''
-P.append(optpage(2,"01","Tara Park","Reem Island · Modon","Đ3.9<span>M</span>","3-bed + maid · corner · 2,656 sqft BUA",
+{fn([("ValuStrat Abu Dhabi Real Estate Review Q2-2026 (Aug 26): values, Reem Island, off-plan share; entry costs per registration conventions; yields per Tara Park deck (a method, not a promise)",3),("Dubai index: PIX via Market, Jul-26. Launch count: Cavendish Maxwell H1 2026. Costa Brava resale: DLD title deeds, Aug 26",3)])}''')
+
+# ---------- 01 TARA PARK
+optpage("01","Tara Park","Reem Island · Modon","Đ3.9<span>M</span>","3-bed + maid · corner · 2,656 sqft BUA",
  ["Đ1,468 psf","~30% under AD off-plan average","Handover 2030","ADGM jurisdiction"],
  "A corner 3-bed on the financial island, around 30% under the Abu Dhabi off-plan average.",
  [("Developer","Modon - Abu Dhabi's government-backed master developer (Hudayriyat, Reem Island)."),
@@ -76,15 +66,11 @@ P.append(optpage(2,"01","Tara Park","Reem Island · Modon","Đ3.9<span>M</span>"
   ("Position","Directly opposite Reem Mall, with a bridge into it. Five minutes to ADGM and Al Maryah; five minutes to downtown."),
   ("The building","Resort outdoor and indoor pools, park frontage, gym, running track, co-working lounge, kids' club, hotel-grade lobby."),
   ("Handover","Anticipated 2030.")],
- f'<span class="pq">&ldquo;I put my own money into this building.&rdquo;</span><span class="pa">Calum MacLeod</span>',
- fn([("Unit and price: Calum, 23 Sep 26. Off-plan average Đ2,104 psf: ValuStrat Q2-2026 - the average is blended, the unit is on built-up area, so read the gap as indicative",2),("Developer, jurisdiction, position, building: Modon Tara Park deck and scripts, Jul-Aug 26",3),("Handover 2030: Tara Park deck, Aug 26",2)]),3,
- [("Đ1,468<span> psf</span>","On built-up area"),("Đ2,104<span> psf</span>","Abu Dhabi off-plan average"),("5<span> min</span>","To ADGM and Al Maryah")]))
-# 03 ADGM
+ pull("&ldquo;I put my own money into this building.&rdquo;","Calum MacLeod"),
+ [("Đ1,468<span> psf</span>","On built-up area",""),("Đ2,104<span> psf</span>","Abu Dhabi off-plan average",""),("5<span> min</span>","To ADGM and Al Maryah","")],
+ fn([("Unit and price: Calum, 23 Sep 26. Off-plan average Đ2,104 psf: ValuStrat Q2-2026 - the average is blended, the unit is on built-up area, so read the gap as indicative",2),("Developer, jurisdiction, position, building: Modon Tara Park deck and scripts, Jul-Aug 26",3),("Handover 2030: Tara Park deck, Aug 26",2)]))
 names="BlackRock · State Street · PGIM · Nuveen · Capital Group · Man Group · Bain Capital · Barings · Hillhouse · Binance"
-P.append(f'''<section class="pg">
-{eye("01 · The ADGM engine",c="#9A7B2A")}
-<h2>Why Reem rents, and re-rates.</h2>
-<div class="rule"></div>
+pg("",f'''{eye("01 · Tara Park · why here",G)}<h2>The ADGM engine: why Reem rents, and re-rates.</h2><div class="rule"></div>
 <div class="quad">
  <div><div class="big">47,047</div><div class="lab">People now work at ADGM</div><p>Up 44% in a year.</p></div>
  <div><div class="big">13,353</div><div class="lab">Active licences</div><p>Up more than 30% in a year. The largest international financial centre in the Middle East, Africa and South Asia.</p></div>
@@ -92,270 +78,192 @@ P.append(f'''<section class="pg">
  <div><div class="big">2<span>x</span></div><div class="lab">Reem leasing activity this year</div><p>While leasing cooled across most of the emirate, Reem's more than doubled.</p></div>
 </div>
 <div class="grow"></div>
-<div class="names">{eye("Who moved in",c="#9A7B2A")}<div class="nl">{names}</div></div>
-<div class="two">
- <p><b>Where they sit.</b> ADGM's own reporting names its workforce on Al Maryah <i>and</i> Al Reem Islands - the jurisdiction was extended onto Reem.</p>
- <p><b>The tenant.</b> A finance professional ten minutes from the desk. Long-let, one cheque, low turnover. That is the income case for the building on the previous page.</p>
-</div>
+<div class="names">{eye("Who moved in",G)}<div class="nl">{names}</div></div>
+<div class="two"><p><b>Where they sit.</b> ADGM's own reporting names its workforce on Al Maryah <i>and</i> Al Reem Islands - the jurisdiction was extended onto Reem.</p><p><b>The tenant.</b> A finance professional ten minutes from the desk. Long-let, one cheque, low turnover. That is the income case for the unit on the previous page.</p></div>
 <div class="grow"></div>
-{fn([("ADGM releases, Q1 2026, as cited in the Tara Park investor case (Aug 26): headcount, licences, AUM, entrants",2),("Workforce location: ADGM reporting via Tara Park deck, Aug 26",3),("Reem leasing: published 2026 research via Tara Park deck, Aug 26",2),("Tenant profile: Calum's read of the market",1)])}
-{foot(4)}
-</section>''')
-# 04 TARA PAYMENT
+{fn([("ADGM releases, Q1 2026, as cited in the Tara Park investor case (Aug 26): headcount, licences, AUM, entrants",2),("Workforce location: ADGM reporting via Tara Park deck, Aug 26",3),("Reem leasing: published 2026 research via Tara Park deck, Aug 26",2),("Tenant profile: Calum's read of the market",1)])}''')
 rows=[("Booking","5%","195,000"),("Registration 2% + DARI fee","fee","78,000 + 525"),("31 Jan 2027 · Early works","5%","195,000"),("31 Jul 2027 · Main works","5%","195,000"),("31 Jan 2028 · Podium","5%","195,000"),("31 Jul 2028 · Superstructure 50%","5%","195,000"),("31 Jan 2029 · Facade 50%","5%","195,000"),("31 Jul 2029 · Fit-out 50%","5%","195,000"),("31 Jan 2030 · Completion / BCC","5%","195,000"),("Handover","60%","2,340,000")]
-tr="".join(f'<tr class="{"hl" if i==9 else ""}"><td>{a}</td><td class="n">{b}</td><td class="n">Đ{c}</td></tr>' for i,(a,b,c) in enumerate(rows))
-P.append(f'''<section class="pg">
-{eye("01 · Tara Park · what you pay, when",c="#9A7B2A")}
-<h2>Đ3.9M on a 40 / 60 plan.</h2>
-<div class="rule"></div>
-<div class="pay">
- <div class="calls">
-  <div class="call"><div class="n">~Đ273,500</div><div class="l">Day one</div><p>5% booking + 2% registration + DARI fee.</p></div>
-  <div class="call"><div class="n">Đ1.64<span>M</span></div><div class="l">To handover · 42%</div><p>Eight instalments over three years, plus registration.</p></div>
-  <div class="call"><div class="n">Đ195,000</div><div class="l">Largest single payment</div><p>Never more than 5% in one go before handover.</p></div>
- </div>
- <table><tr><th>Milestone</th><th class="n">Share</th><th class="n">Amount</th></tr>{tr}</table>
-</div>
-<div class="three">
- <div><b>The 60%.</b> Mortgageable at handover for a UAE resident, subject to bank approval at the time.</div>
- <div><b>Income.</b> 6.5% gross on value is ~Đ250K a year at today's price - higher on handover value. Abu Dhabi long-let rents are frozen at 0% since June 2026; capital growth is unaffected.</div>
- <div><b>Exit.</b> Sell the contract before handover once 20% is paid, with Modon's NOC. The buyer takes over the 60%. Admin fee to confirm.</div>
-</div>
-<div class="grow"></div>
-{fn([("Modon Phase 2 payment schedule (Jul 26); registration fees per DARI sheet. Dates are Phase 2 - confirmed on the reservation form",3),("Mortgageability at handover and rent method: Tara Park deck, Aug 26",2),("Resale rule: Modon resale rules - high on the rule, admin fee to confirm",3)])}
-{foot(5)}
-</section>''')
-# 05 OPTION 2 AL GHADEER
-gh_tbl='''<table class="mini"><tr><th>At price</th><th class="n">Day one (5% + 2%)</th><th class="n">Through construction (55% + fee)</th><th class="n">At handover (45%)</th></tr>
-<tr><td>3-bed townhouse ~Đ2.3M</td><td class="n">~Đ161K</td><td class="n">~Đ1.31M</td><td class="n">Đ1,035,000</td></tr>
-<tr><td>4-bed villa ~Đ3.3M</td><td class="n">~Đ231K</td><td class="n">~Đ1.88M</td><td class="n">Đ1,485,000</td></tr></table>'''
-P.append(optpage(5,"02","Al Ghadeer Parks","Abu Dhabi-Dubai corridor · Aldar","<small>from</small>~Đ2.3<span>M</span>","3-bed townhouse · 4-bed villa from ~Đ3.3M",
+paypage("01 · Tara Park · what you pay, when","Đ3.9M on a 40 / 60 plan.",
+ [("~Đ273,500","Day one","5% booking + 2% registration + DARI fee."),("Đ1.64<span>M</span>","To handover · 42%","Eight instalments over three years, plus registration."),("Đ195,000","Largest single payment","Never more than 5% in one go before handover.")],
+ tbl(["Milestone","Share","Amount"],[(a,b,"Đ"+c) for a,b,c in rows],hl=9),
+ ["<b>The 60%.</b> Mortgageable at handover for a UAE resident, subject to bank approval at the time.","<b>Income.</b> 6.5% gross on value is ~Đ250K a year at today's price - higher on handover value. Abu Dhabi long-let rents are frozen at 0% since June 2026; capital growth is unaffected.","<b>Exit.</b> Sell the contract before handover once 20% is paid, with Modon's NOC. The buyer takes over the 60%. Admin fee to confirm."],
+ fn([("Modon Phase 2 payment schedule (Jul 26); registration fees per DARI sheet. Dates are Phase 2 - confirmed on the reservation form",3),("Mortgageability at handover and rent method: Tara Park deck, Aug 26",2),("Resale rule: Modon resale rules - high on the rule, admin fee to confirm",3)]))
+
+# ---------- 02 AL GHADEER
+optpage("02","Al Ghadeer Parks","Abu Dhabi-Dubai corridor · Aldar","<small>from</small>~Đ2.3<span>M</span>","3-bed townhouse · 4-bed villa from ~Đ3.3M · 2-bed from Đ1.9M",
  ["55 / 45 · 5% down","Handover Q2 2031","453 homes","2% registration · freehold"],
  "Đ4M buys one 4-bed villa, a 3-bed townhouse with Đ1.7M held back, or two 2-bed townhouses.",
- [("The place","2- and 3-bed townhouses and 4-bed villas across manicured parks and feature lakes. Tree-lined, pedestrian-first streets; private gardens and shaded terraces."),
-  ("Access","Al Maktoum airport 16 min · Zayed airport 30 min · Yas Island 30 min · Abu Dhabi 40 min."),
-  ("Demand","The previous Al Ghadeer phase followed a complete sell-out of its first release within 48 hours."),
-  ("Scale","Aldar's Đ10bn Alghadeer masterplan: 14,000+ homes over 15 years with schools, a hotel and community centres."),
-  ("The money",gh_tbl)],
- '<span class="pq">Phase-one pricing is the argument. A resale track record does not exist yet.</span><span class="pa">The honest line on a 2031 handover</span>',
- fn([("Product, pricing, plan, handover, access: Metropolitan listing, Sep 26 - aggregator numbers, Aldar's sheet requested. Read every price as indicative launch pricing",1),("48-hour sell-out: Metropolitan, 2026",2),("Masterplan scale: Aldar press release, Apr 2018",3)]),6,
- [("48<span> hrs</span>","Previous phase · first release sold out"),("14,000<span>+</span>","Homes in the Alghadeer masterplan"),("16<span> min</span>","To Al Maktoum airport")]))
-# 06 OPTION 3 PALM SPRINGS
-P.append(optpage(6,"03","Palm Springs","Off Palm Jebel Ali · Dubai Holding","~Đ4<span>M</span>","or less · 3-bed · pre-launch · not yet public",
+ [("The place","Aldar. 2- and 3-bed townhouses and 4-bed villas, 453 homes at Seih Al Sedeirah on the Abu Dhabi-Dubai corridor. Manicured parks and feature lakes; tree-lined, pedestrian-first streets; private gardens and shaded terraces."),
+  ("Pricing","From Đ1.9M (2-bed townhouse). 3-bed townhouse from ~Đ2.3M; 4-bed villa from ~Đ3.3M. Two 2-beds land around Đ3.8M."),
+  ("The plan","55 / 45 with 5% down. Handover Q2 2031."),
+  ("The last phase","Al Ghadeer Gardens New Release: 352 homes from Đ1.85M, Q4 2030. 2-bed townhouses in middle and corner configurations, two interior schemes (Light and Dark), smart-living as standard, full-height windows. Pearl 3 and Fitwel 2-star certified."),
+  ("Tenure","Freehold. Registration 2%, against Dubai's 4%.")],
+ pull("A family home now, a rental later.","The Đ4M angle"),
+ [("453","Homes in Al Ghadeer Parks",""),("Q2 2031","Handover",""),("5<span>%</span>","Down on booking","")],
+ fn([("Product, pricing, plan, handover: Metropolitan listing, Sep 26 - aggregator numbers, Aldar's sheet requested. Read every price as indicative launch pricing",1),("Previous phase specification: Metropolitan, 2026",2),("Tenure and registration: Abu Dhabi conventions",3)]))
+whypage("02 · Al Ghadeer Parks · why here","Between two airports, inside a 14,000-home masterplan, after a release that sold out in 48 hours.",
+ [("48<span> hrs</span>","First Al Ghadeer Gardens release sold out",""),("14,408","Homes in Aldar's Đ10bn Alghadeer masterplan",""),("16<span> min</span>","To Al Maktoum airport","")],
+ [("Access","E311, E11 and E611. Al Maktoum airport 16 min, Zayed airport 30 min, Yas Island 30 min, Abu Dhabi city 40 min. Expo City, Dubai Parks and Resorts and the future Palm Jebel Ali around 20 min."),
+  ("The masterplan","Đ10bn over 15 years: 1.3M sqm of residential GFA, a HARVEST community farm, lakes, running and cycling tracks, solar-lit gardens, schools, a hotel, community pools and centres."),
+  ("Established","Alghadeer already had 2,000+ homes and a family base when the masterplan launched - this is an extension, not a field."),
+  ("Aldar's record","Revenue up nearly half last year; three-quarters of UAE sales to foreign buyers; Đ66bn of development contracts awarded in the UAE in 2025."),
+  ("Aldar on the islands","Yas Point Phase 1 sold Đ1.5bn in launch week (Jul 26). Same developer here - corridor pricing instead of island pricing."),
+  ("Yield","5-6% gross per year, per the aggregator. Hold until register comps exist.")],
+ "40 minutes from the city and 14,000 homes to come - this is the value-and-family door, not the scarcity door.",
+ fn([("Access, yield: Metropolitan, 2026 (aggregator)",1),("Masterplan and established community: Aldar press release, Apr 2018 - old, intent-level",3),("Aldar 2025 results: AGBI, Feb 26. Yas Point launch week: Tyron pack, Aug 26",2)]))
+paypage("02 · Al Ghadeer Parks · what you pay, when","55 / 45, with 45% only at keys.",
+ [("~Đ161<span>K</span>","Day one · 3-bed townhouse","5% booking + 2% registration on ~Đ2.3M."),("~Đ231<span>K</span>","Day one · 4-bed villa","On ~Đ3.3M."),("45<span>%</span>","At handover · Q2 2031","Construction instalment dates come with Aldar's sheet.")],
+ tbl(["Milestone","Share","3-bed TH ~Đ2.3M","4-bed villa ~Đ3.3M"],[("Booking","5%","Đ115,000","Đ165,000"),("Registration 2%","fee","Đ46,000","Đ66,000"),("Construction instalments (dates TBC)","50%","Đ1,150,000","Đ1,650,000"),("Handover Q2 2031","45%","Đ1,035,000","Đ1,485,000"),("Cash to handover (55% + fee)","","~Đ1,311,000","~Đ1,881,000")],hl=4),
+ ["<b>Income.</b> 5-6% gross (aggregator claim) is ~Đ115-138K a year on the 3-bed, ~Đ165-198K on the villa. Hold until register comps exist.","<b>Exit.</b> Pre-handover resale per Aldar's paid threshold and NOC - rules not on file, confirm at booking. Or hold and let into a family-commuter market.","<b>The honest line.</b> A 2031 handover on the corridor: phase-one pricing is the argument; a resale track record does not exist yet."],
+ fn([("Plan and prices: Metropolitan listing, Sep 26 - indicative launch pricing until Aldar's sheet lands",1),("Registration: Abu Dhabi conventions",3)]))
+
+# ---------- 03 ELLINGTON
+optpage("03","Ellington<br>Al Yalayis 1","Near Town Square · Ellington","<span class=\"pre\">~</span>Đ1,750<span> psf</span>","3-bed townhouse 2,100-2,300 sqft · targeting under Đ4M at launch",
+ ["70 / 30","EOIs open · launch Q4 2026","Handover 2030-31","4% DLD"],
+ "A design-led Ellington townhouse in the Al Qudra corridor, at launch pricing, before the book opens.",
+ [("The project","Ellington's first full master community - apartments, townhouses and standalone villas with green areas and leisure facilities - in Al Yalayis 1, near Town Square, minutes from Mira Oasis. Access to Al Qudra Road and Emirates Road."),
+  ("The launch","Q4 2026, date TBC; EOIs collected now (it had been expected Q1 2026 and slipped). 70 / 30, Ellington's house plan. Handover 2030-2031."),
+  ("Sizes and psf","Townhouses: 2-bed ~1,900 sqft · 3-bed 2,100-2,300 · 4-bed ~2,700, estimated at Đ1,700-1,800 psf. Villas 3,300-4,800 sqft at Đ1,900-2,000 psf. The teaser's estimate, not a price sheet."),
+  ("The money",tbl(["Derived entry on the teaser psf","Indicative"],[("2-bed townhouse ~1,900 sqft","~Đ3.23-3.42M"),("3-bed townhouse 2,100-2,300 sqft · the Đ4M fit","~Đ3.57-4.14M"),("4-bed townhouse ~2,700 sqft","~Đ4.59-4.86M")],cls="mini"))],
+ pull("Calum&rsquo;s pick as the best Dubai door.","Design-led · low density · launch pricing"),
+ [("Đ2.85-3.7<span>M</span>","Ready townhouses next door, sold",""),("124","Dubai launches H1 2026 · 410 a year earlier",""),("96<span>%</span>","Occupancy across Ellington's delivered projects","")],
+ fn([("Project, launch timing, sizes, psf, plan: Ellington teaser via Calum, 23 Sep 26; WhiteRock, Allsopp & Allsopp - pre-launch, name and exact location TBC",2),("Derived prices: teaser psf × teaser sizes - the top of the 3-bed range breaks Đ4M",2),("Ready comps: Calum's own deals - Mira Oasis 2 #228 Đ3.7M (Dec 25), Town Square 505 Noor Townhouses Đ2.85M (Aug 26). Occupancy: Property Finder, 2026",3)]))
+whypage("03 · Ellington · why here","A design-led developer with a clean handover record, moving into family product where the ready prices are already known.",
+ [("2014","Founded by Robert D. Booth, former managing director of Emaar",""),("3","International Property Awards, Ellington House 2023-24",""),("Đ2.85-3.7<span>M</span>","Whole ready townhouses in the corridor, on Calum's own ledger","")],
+ [("The developer","Dubai residential developer, design-focused. Delivered and launched in Palm Jumeirah, JLT, MBR City, Downtown and Emirates Hills."),
+  ("Delivery","Known for on-time handover, 70/30 and post-handover plans, and a 96% occupancy rate across delivered projects."),
+  ("Design record","Ellington House, Dubai Hills: best kitchen design, best show home interior, best bathroom design at the 2023-24 International Property Awards."),
+  ("The claim","Across 15 recent projects, average capital growth of 50% on studios and up to 69% on 2-beds; Ellington House gross yields of 11.8-13.4%. A broker's claim - verify before it is repeated."),
+  ("The move","The first master-planned townhouse and villa community, after villas at The Sanctuary and The Watercrest in MBR City (from Đ5M, 70/30). Handover timed with RTA upgrades including the Latifa bint Hamdan Street extension."),
+  ("The corridor's prices","Mira Oasis 2, unit 228: sold Đ3.7M (Dec 25). Town Square, 505 Noor Townhouses: sold Đ2.85M (Aug 26). Launches across Dubai fell from 410 to 124 in a year - the deferred ones compete on price, plan and unit selection.")],
+ "~Đ1,750 psf off-plan against ready neighbours trading at Đ2.85-3.7M for a whole townhouse - the entry is a premium to ready, and the launch sheet decides whether 3-beds hold under Đ4M.",
+ fn([("Developer history: off-planproperties.ae, Feb 26. Delivery, occupancy, awards: Property Finder, 2026. The move, infrastructure: Allsopp & Allsopp, Bayut, 2026",2),("Growth and yield claim: Allsopp & Allsopp, 2026 - broker claim, unverified",1),("Ready comps: deals.json, Dec 25 / Aug 26. Launch count: Cavendish Maxwell H1 2026",3)]))
+paypage("03 · Ellington · what you pay, when","A mid-range 3-bed at Đ3.8M on 70 / 30.",
+ [("Đ152<span>K</span>","DLD, day one","Plus the booking deposit - percentage set at launch."),("Đ2.81<span>M</span>","To handover · 74%","70% through construction, plus DLD."),("Đ1.14<span>M</span>","At keys · 30%","Handover 2030-2031.")],
+ tbl(["Milestone","Share","Đ at 3.8M"],[("Booking (percentage set at launch)","TBC","launch deposit"),("DLD 4%","fee","Đ152,000"),("Construction instalments (milestones TBC)","70% incl. booking","Đ2,660,000"),("Handover 2030-31","30%","Đ1,140,000"),("Cash to handover (70% + DLD)","","~Đ2,812,000")],hl=4),
+ ["<b>Income.</b> Dubai ready townhouses pay around 5-7% gross - ~Đ190-266K a year on Đ3.8M. Hold until Town Square and Mira Oasis rental comps are pulled.","<b>Exit.</b> Pre-handover resale once Ellington's paid threshold is met, plus NOC. Dubai developers commonly gate at 30-40% paid - confirm Ellington's at launch. Or hold and let into a family market.","<b>The honest line.</b> The 3-bed lands Đ3.57-4.14M on the teaser psf, so the top of the range breaks Đ4M. Targeting under Đ4M at launch."],
+ fn([("Plan: Ellington teaser via Calum, 23 Sep 26. Booking percentage, milestones and resale threshold all set at launch",2),("Rent rail: Calum's on-camera range for Dubai ready townhouses",1),("DLD: Dubai conventions",3)]))
+
+# ---------- 04 PALM SPRINGS
+optpage("04","Palm Springs","Off Palm Jebel Ali · Dubai Holding","~Đ4<span>M</span>","or less · 3-bed townhouse · pre-launch · not yet public",
  ["Launch in the next couple of months","First phase","4% DLD + launch plan"],
- "A 3-bed beside the Palm, before the price sheet exists.",
- [("The island","Palm Jebel Ali is twice the size of Palm Jumeirah: ~110 km of new coastline, homes for ~35,000 families, and the start of a new growth corridor under the Dubai 2040 Urban Master Plan."),
+ "A 3-bed townhouse beside the Palm, before the price sheet exists.",
+ [("The launch","A Dubai Holding townhouse launch beside Palm Jebel Ali, expected within the next couple of months. 3-beds looking around Đ4M or less. Not yet public."),
+  ("Price context","On the Palm itself, Nakheel's Palm Central runs from Đ2.7M (1-bed), Đ4.3M (2-bed), Đ7.5M (3-bed); townhouses from Đ14.9M; completion Sep 2030."),
+  ("The value entry","A 3-bed townhouse at ~Đ4M beside the Palm is roughly a quarter of the on-Palm townhouse price - the entry ticket to the corridor."),
+  ("Registration","Dubai 4% DLD, plus the developer's plan at launch.")],
+ pull("&ldquo;I&rsquo;ll have you on the list the day it opens.&rdquo;","Calum MacLeod"),
+ [("Đ14.9<span>M</span>","Townhouses on the Palm itself, from",""),("~&frac14;","The on-Palm townhouse price",""),("4<span>%</span>","DLD on registration","")],
+ fn([("Launch timing and pricing: Calum's direct conversation with Dubai Holding, 23 Sep 26 - no price sheet or payment plan exists yet",1),("Palm Central pricing: The National, 24 Jun 26. Value-entry ratio derived from it",3)]))
+whypage("04 · Palm Springs · why here","Dubai's next growth corridor, a government-owned master developer, and first deliveries in 2027.",
+ [("2<span>x</span>","The size of Palm Jumeirah",""),("~110<span> km</span>","New coastline · homes for ~35,000 families",""),("Q1 2027","First Palm Jebel Ali deliveries","")],
+ [("The island","Twice the size of Palm Jumeirah, ~110 km of new coastline, homes for ~35,000 families. Part of the Dubai 2040 Urban Master Plan - the beginning of a new growth corridor in the Jebel Ali area."),
   ("Progress","Construction restarted in 2024; first properties planned for delivery Q1 2027. Nakheel has awarded Đ5bn of infrastructure contracts, including a public access road from Sheikh Zayed Road."),
-  ("Price context","On the Palm itself, Nakheel's Palm Central runs from Đ2.7M (1-bed), Đ4.3M (2-bed), Đ7.5M (3-bed); townhouses from Đ14.9M; completion Sep 2030. A 3-bed at ~Đ4M beside the Palm is the value entry to the corridor."),
-  ("Momentum","The June 2026 release built on the strong market response to the October 2025 release."),
-  ("The position","Launch pricing, first phase, registered before the book opens.")],
- '<span class="pq">&ldquo;I&rsquo;ll have you on the list the day it opens.&rdquo;</span><span class="pa">Calum MacLeod</span>',
- fn([("Launch timing and pricing: Calum's direct conversation with Dubai Holding, 23 Sep 26 - no price sheet or payment plan exists yet",1),("Masterplan: Gulf News, Jun 2023. Palm Central pricing and momentum: The National and Nakheel, 24 Jun 26",3),("Construction restart, delivery timing, infrastructure awards: Wikipedia / Propsearch, 2026",2)]),7,
- [("2<span>x</span>","The size of Palm Jumeirah"),("~110<span> km</span>","New coastline"),("Q1 2027","First Palm Jebel Ali deliveries")]))
-# 07 SIDE BY SIDE
-sb=[("Price","Đ3.9M","~Đ2.3M","~Đ3.3M","~Đ4M or less"),("Product","3-bed + maid apartment · 2,656 sqft","Townhouse","Villa","Townhouse"),("Day one","~Đ274K","~Đ161K","~Đ231K","4% DLD + launch deposit"),("Cash to handover","~Đ1.64M · 42%","~Đ1.31M · 57%","~Đ1.88M · 57%","At launch"),("Handover","2030","Q2 2031","Q2 2031","At launch"),("Registration","2%","2%","2%","4%"),("Demand driver","ADGM workforce · long-let","Family end-users · commuters","Family end-users · commuters","Palm Jebel Ali corridor"),("Exit","Pre-handover after 20% + NOC, or hold and rent","Pre-handover per Aldar rules, or hold","Pre-handover per Aldar rules, or hold","At launch")]
-tr="".join(f'<tr><td class="k">{r[0]}</td>'+"".join(f'<td>{c}</td>' for c in r[1:])+'</tr>' for r in sb)
-P.append(f'''<section class="pg">
-{eye("The three doors · side by side",c="#9A7B2A")}
-<h2>Same Đ4M, four ways to hold it.</h2>
-<div class="rule"></div>
-<table class="wide"><tr><th></th><th>{D("#9A7B2A")}Tara Park corner</th><th>{D("#9A7B2A")}Al Ghadeer 3-bed TH</th><th>{D("#9A7B2A")}Al Ghadeer 4-bed villa</th><th>{D("#9A7B2A")}Palm Springs 3-bed</th></tr>{tr}</table>
-<div class="grow"></div>
-{fn([("All figures indicative and before selling costs. Tara Park on Modon's Phase 2 schedule; Al Ghadeer on aggregator pricing pending Aldar's sheet; Palm Springs on a pre-launch conversation",2)])}
-{foot(8)}
-</section>''')
-# 08 RETURNS
+  ("The developer","Dubai Holding Real Estate is Nakheel's parent - the Palm's master developer is a government-owned group."),
+  ("Proven demand","The June 2026 Palm Central release built on the strong market response to the October 2025 release. Demand on the Palm is proven before this launch opens."),
+  ("Capital stacking up","Aldar and Dubai Holding expanded their joint venture to nearly 14,000 homes worth Đ38bn+, including a luxury waterfront on Palm Jebel Ali with sales from 2027. Dubai Holding has confirmed Select Group as the first private developer on the Palm.")],
+ "Launch pricing, first phase, registered before the book opens.",
+ fn([("Masterplan: Gulf News, Jun 2023. Nakheel parent, Palm Central momentum: The National and Nakheel, 24 Jun 26. JV and Select Group: Gulf News, 2026",3),("Construction restart, delivery timing, infrastructure awards: Wikipedia / Propsearch, 2026",2)]),honest_lab="The position")
+paypage("04 · Palm Springs · what you pay, when","Nothing to model until the sheet lands. What is known:",
+ [("~Đ160<span>K</span>","DLD 4% on a Đ4M ticket","Fixed."),("10-20<span>%</span>","Typical Dubai booking deposit","Plan shape set at launch."),("Q1 2027","First Palm Jebel Ali deliveries","A new launch will hand over later.")],
+ tbl(["Item","Đ","Status"],[("3-bed townhouse target","~Đ4,000,000 or less","Calum / Dubai Holding, pre-launch"),("DLD 4%","~Đ160,000","fixed"),("Booking and construction instalments","set at launch","Dubai launches typically 10-20% on booking; plan shape TBC"),("Handover","TBC","first deliveries on the Palm Q1 2027; this launch will sit later")]),
+ ["<b>Decide the trigger now, on shore.</b> &ldquo;If 3-beds open at or below Đ[X], I&rsquo;m in for one.&rdquo; Launches here are decided in hours.","<b>Exit.</b> Pre-handover resale per Dubai Holding's paid threshold and NOC; or hold for the corridor's build-out.","<b>The honest line.</b> Pre-launch, name and site not yet public. This page updates the day the sheet exists."],
+ fn([("Target price: Calum's conversation with Dubai Holding, 23 Sep 26",1),("DLD and booking conventions: Dubai market practice",3)]))
+
+# ---------- 05 THE BRISTOL
+if BRISTOL:
+    optpage("05","The Bristol","Emaar Beachfront · Dubai Harbour · Emaar","Đ3.66<span>M</span>","1-bed · 825 sqft · Đ4,436 psf · hotel-branded residences",
+     ["80 / 20 · 10% booking","Handover Sep 2029","227 residences + 4 penthouses","4% DLD"],
+     "A hotel-branded 1-bed on a private beach between the Palm and the Marina - the lifestyle door, not the townhouse door.",
+     [("The tower","One landmark tower: a Bristol Luxury Hotels &amp; Resorts hotel on the lower floors, branded residences above, an 8-storey podium linking hotel amenities, parking and concierge. Architecture inspired by the movement of waves."),
+      ("The place","Emaar Beachfront, Dubai Harbour - a gated private-island community between Palm Jumeirah and Dubai Marina. 1-4 bed apartments and 5-bed penthouses."),
+      ("Sizes","1-bed 825 sqft · 2-bed 1,459 · 3-bed 1,912 · 4-bed 2,501 · 5-bed penthouse 5,828."),
+      ("Pricing","From Đ3.66M (1-bed) to ~Đ34M (5-bed penthouse). Đ4,436 psf at the entry. A 1-bed is the only unit inside Đ4M all-in; there are no townhouses."),
+      ("The plan","80 / 20: 10% booking, 70% across construction milestones (Emaar links instalments to progress, not dates), 20% at handover, Q3 2029."),
+      ("Amenities","Private beach and promenade, infinity pool and pool bar, terrace deck, outdoor gym and yoga terrace, spa, cinema, bowling, kids' play. Views to Palm Jumeirah, Atlantis, the Marina and Burj Al Arab.")],
+     pull("A lifestyle buy first, a growth trade second.","The honest line"),
+     [("1.5<span> km</span>","Private beach on the island",""),("Đ4,436<span> psf</span>","Three times Tara Park's Đ1,468",""),("227","Residences, plus 4 penthouses","")],
+     fn([("Community and product: Emaar, May 26",3),("Tower, inventory, sizes, prices, plan, amenities: broker listings - Planetprop (updated 22 Sep 26), Elysian, Metropolitan, Haus51, Top Ultra Luxury. Tower height quoted at 44-54 storeys across sites; Emaar's price list would settle the numbers",2)]))
+    whypage("05 · The Bristol · why here","The last private beach between the Palm and the Marina, built by the developer of Burj Khalifa.",
+     [("1.5<span> km</span>","Private beach · 27 towers · ~10,000 homes",""),("1,400","Berths in the Dubai Harbour marina",""),("Đ150-170<span>K</span>","Asking rents on the island's 1-beds today","")],
+     [("Emaar Beachfront","A 10-million-sqft gated island community with 1.5 km of private beach, 27 residential towers, ~10,000 homes and a 13,000 sqm retail mall. Dubai Marina on the doorstep; Sheikh Zayed Road access."),
+      ("Dubai Harbour","The UAE's new maritime centre: a 1,400-berth marina, a cruise port and terminal, a 3.5M sqft mall, an events arena and the 135 m Dubai Lighthouse. Monorail links planned to the Palm and Bluewaters."),
+      ("The partners","Emaar develops Beachfront in a joint venture with Aldar - the two developers behind Abu Dhabi's islands and Dubai's landmarks, on one project."),
+      ("The brand","Bristol Luxury Hotels &amp; Resorts, with residences in Tangier, Durres, Addis Ababa and Ramhan Island, Abu Dhabi. A hotel on the lower floors means hotel services for residents."),
+      ("What it rents for","Island 1-beds of 765-815 sqft list at Đ150-170K a year; 2-beds Đ180-295K; 3-beds Đ320K (Palace Beach, Grand Bleu, Beach Isle, Sunrise Bay). Asks, not signed leases."),
+      ("Yield","Brokers quote 6-7% for the project. The island's listed 1-bed rents put a Đ3.66M entry nearer 4-4.6% gross.")],
+     "The beachfront brand door - a Palm-view 1-bed on a private island, hotel-serviced, with Emaar's delivery record. The lifestyle buy in the pack.",
+     fn([("Emaar Beachfront: Emaar, 2026. JV: MEED, 2018. Dubai Harbour: Gulf Business, Jan 2018 - masterplan intent",3),("Brand: the-bristol.com, Elysian, Sep 26 - brand ownership to confirm. Rents: Property Finder listings, Sep 26. Yield: Top Ultra Luxury, Jun 26, and derived",2),("Scarcity commentary: Building Arabia, Jan 26",1)]),honest_lab="The position")
+    paypage("05 · The Bristol · what you pay, when","The Đ3.66M 1-bed on 80 / 20.",
+     [("~Đ512<span>K</span>","Day one","10% booking + 4% DLD."),("Đ3.07<span>M</span>","Before keys · 84%","80% of the price plus DLD, funded before handover."),("Đ732<span>K</span>","At handover · 20%","September 2029.")],
+     tbl(["Milestone","Share","Đ at 3.66M"],[("Booking","10%","Đ366,000"),("DLD 4%","fee","Đ146,400"),("Construction milestones (progress-linked, not dated)","70%","Đ2,562,000"),("Handover Sep 2029","20%","Đ732,000"),("Cash to handover (80% + DLD)","","~Đ3,074,400")],hl=4),
+     ["<b>Income.</b> Island 1-beds list at Đ150-170K a year today - ~4.1-4.6% gross on Đ3.66M. Short-let and hotel-serviced lets can run higher in season, with management cost and occupancy risk.","<b>Exit.</b> Pre-handover resale per Emaar's paid threshold and NOC; or hold as a beach home with a rental engine.","<b>The honest line.</b> Đ4,436 psf is three times Tara Park's Đ1,468, 80% of the price is funded before keys, and Dubai's index has fallen seven months in a row. A lifestyle buy first, a growth trade second."],
+     fn([("Plan and price: Planetprop (updated 22 Sep 26), Metropolitan, 2026 - Emaar's price list would settle them",2),("Rents: Property Finder listings, Sep 26 - asks. Index: PIX Jul-26 via Market",3)]))
+
+# ---------- SIDE BY SIDE
+cols=["Tara Park corner","Al Ghadeer 3-bed TH","Al Ghadeer 4-bed villa","Ellington 3-bed TH","Palm Springs 3-bed"]+(["The Bristol 1-bed"] if BRISTOL else [])
+sb=[("Price","Đ3.9M","~Đ2.3M","~Đ3.3M","~Đ3.6-4.1M","~Đ4M or less","Đ3.66M"),
+    ("Product","3-bed + maid apartment · 2,656 sqft","Townhouse","Villa","Townhouse · 2,100-2,300 sqft","Townhouse","1-bed branded apartment · 825 sqft"),
+    ("Day one","~Đ274K","~Đ161K","~Đ231K","Launch deposit + Đ152K DLD","4% DLD + launch deposit","~Đ512K (10% + 4% DLD)"),
+    ("Cash to handover","~Đ1.64M · 42%","~Đ1.31M · 57%","~Đ1.88M · 57%","~Đ2.81M · 74%","At launch","~Đ3.07M · 84%"),
+    ("Handover","2030","Q2 2031","Q2 2031","2030-31","At launch","Sep 2029"),
+    ("Registration","2%","2%","2%","4%","4%","4%"),
+    ("Demand driver","ADGM workforce · long-let","Family end-users · commuters","Family end-users · commuters","Family end-users · Al Qudra corridor","Palm Jebel Ali corridor","Beachfront short-let · hotel brand"),
+    ("Exit","Pre-handover after 20% + NOC, or hold and rent","Pre-handover per Aldar rules, or hold","Pre-handover per Aldar rules, or hold","Pre-handover per Ellington threshold, or hold","At launch","Pre-handover per Emaar threshold, or hold")]
+n=len(cols)+1
+tr="".join(f'<tr><td class="k">{r[0]}</td>'+"".join(f'<td>{c}</td>' for c in r[1:n])+'</tr>' for r in sb)
+th="".join(f'<th>{D(G)}{c}</th>' for c in cols)
+pg("",f'''{eye("The doors · side by side",G)}<h2>Same Đ4M, {"six" if BRISTOL else "five"} ways to hold it.</h2><div class="rule"></div>
+<table class="wide sbs"><colgroup><col style="width:30mm">{"".join("<col>" for _ in cols)}</colgroup><tr><th></th>{th}</tr>{tr}</table><div class="grow"></div>
+{fn([("All figures indicative and before selling costs. Tara Park on Modon's Phase 2 schedule; Al Ghadeer on aggregator pricing pending Aldar's sheet; Ellington on the teaser psf; Palm Springs on a pre-launch conversation"+("; The Bristol on broker listings pending Emaar's price list" if BRISTOL else ""),2)])}''')
+
+# ---------- RETURNS
 rt=[("Tara Park · Đ3.9M","~3.5 yrs to 2030","~Đ4.78M","~Đ0.79M","~48%","~Đ5.27M","~Đ1.27M","~77%","Đ1.64M"),
     ("Al Ghadeer 3-bed · Đ2.3M","~4.7 yrs to Q2 2031","~Đ3.02M","~Đ0.66M","~51%","~Đ3.45M","~Đ1.08M","~82%","Đ1.31M"),
-    ("Al Ghadeer villa · Đ3.3M","~4.7 yrs to Q2 2031","~Đ4.34M","~Đ0.95M","~51%","~Đ4.95M","~Đ1.55M","~82%","Đ1.88M")]
+    ("Al Ghadeer villa · Đ3.3M","~4.7 yrs to Q2 2031","~Đ4.34M","~Đ0.95M","~51%","~Đ4.95M","~Đ1.55M","~82%","Đ1.88M"),
+    ("Ellington 3-bed · Đ3.8M","~4.5 yrs to 2030-31","~Đ4.94M","~Đ1.04M","~37%","~Đ5.60M","~Đ1.69M","~60%","Đ2.81M")]
+if BRISTOL: rt.append(("The Bristol 1-bed · Đ3.66M","~3 yrs to Sep 2029","~Đ4.36M","~Đ0.61M","~20%","~Đ4.74M","~Đ0.99M","~32%","Đ3.07M"))
 tr="".join(f'<tr><td class="k">{r[0]}<span class="s">{r[1]} · cash deployed {r[8]}</span></td><td class="n">{r[2]}</td><td class="n">{r[3]}</td><td class="n b">{r[4]}</td><td class="n sep">{r[5]}</td><td class="n">{r[6]}</td><td class="n b">{r[7]}</td></tr>' for r in rt)
-P.append(f'''<section class="pg">
-{eye("Illustrative returns · exit at handover",c="#9A7B2A")}
-<h2>One growth assumption, applied to every door.</h2>
-<div class="rule"></div>
+pg("",f'''{eye("Illustrative returns · exit at handover",G)}<h2>One growth assumption, applied to every door.</h2><div class="rule"></div>
 <table class="wide ret"><colgroup><col style="width:58mm"><col><col><col><col><col><col></colgroup>
 <tr><th></th><th colspan="3" class="grp">At 6% a year</th><th colspan="3" class="grp sep">At 9% a year · half of Abu Dhabi's recent pace</th></tr>
-<tr><th></th><th class="n">Value</th><th class="n">Gain</th><th class="n">On cash</th><th class="n sep">Value</th><th class="n">Gain</th><th class="n">On cash</th></tr>
-{tr}
-<tr><td class="k">Palm Springs</td><td colspan="6" class="mutd">Modelled after the price sheet lands.</td></tr>
-</table>
-<p class="method">Gain is after 2% agency on exit, before other costs. Return on cash = gain over cash deployed before handover (paid-in plus 2% registration).</p>
+<tr><th></th><th class="n">Value</th><th class="n">Gain</th><th class="n">On cash</th><th class="n sep">Value</th><th class="n">Gain</th><th class="n">On cash</th></tr>{tr}
+<tr><td class="k">Palm Springs</td><td colspan="6" class="mutd">Modelled after the price sheet lands.</td></tr></table>
+<p class="method">Gain is after 2% agency on exit, before other costs. Return on cash = gain over cash deployed before handover (paid-in plus registration). The Dubai doors fund more of the price before keys, which is why their return on cash sits lower at the same growth rate.</p>
+<div class="grow"></div><div class="rail">{D(G)}Growth cases are illustrative, not forecasts. Abu Dhabi's last twelve months were +17.8%. The register decides.</div><div style="height:8mm"></div>''')
+
+# ---------- NEXT STEP
+lens=[("01","Long-let income on Reem","Tara Park · I hold the unit"),("02","A family home on the corridor","Al Ghadeer Parks · I request Aldar's sheet"),("03","A design-led launch near Town Square","Ellington · I lodge the EOI"),("04","First-phase Palm Jebel Ali","Palm Springs · I register you the day it opens")]
+if BRISTOL: lens.append(("05","A beach home on a private island","The Bristol · I pull Emaar's availability"))
+ld="".join(f'<div><span class="ln">{n}</span><b>{a}</b><i>{b}</i></div>' for n,a,b in lens)
+PAGES.append(f'''<section class="pg dark next">{eye("Next step")}<h2 class="xl">Fifteen minutes decides the lens.</h2><div class="rule"></div>
+<div class="lens l{len(lens)}">{ld}</div>
+<p class="then">Then I hold the unit, request Aldar's sheet, lodge the Ellington EOI{", register you for Palm Springs the day it opens, and pull Emaar's Bristol availability." if BRISTOL else ", and register you for Palm Springs the day it opens."}</p>
 <div class="grow"></div>
-<div class="rail">{D("#9A7B2A")}Growth cases are illustrative, not forecasts. Abu Dhabi's last twelve months were +17.8%. The register decides.</div>
-<div style="height:10mm"></div>
-{foot(9)}
-</section>''')
-# 09 NEXT STEP
-P.append(f'''<section class="pg dark next">
-{eye("Next step")}
-<h2 class="xl">Fifteen minutes decides the lens.</h2>
-<div class="rule"></div>
-<div class="lens">
- <div><span class="ln">01</span><b>Long-let income on Reem</b><i>Tara Park · I hold the unit</i></div>
- <div><span class="ln">02</span><b>A family home on the corridor</b><i>Al Ghadeer Parks · I request Aldar's sheet</i></div>
- <div><span class="ln">03</span><b>First-phase Dubai</b><i>Palm Springs · I register you the day it opens</i></div>
-</div>
-<p class="then">Then I hold the unit, request Aldar's sheet, and register you for Palm Springs the day it opens.</p>
-<div class="grow"></div>
-<div class="cta">
- <a class="btn fill" href="https://wa.me/971553502699?text=Calum%20-%20read%20the%20%C4%904M%20pack">WhatsApp Calum</a>
- <a class="btn line" href="tel:+971553502699">Call +971 55 350 2699</a>
- <span class="ig">@uaecalum</span>
-</div>
-<div class="meta"><span><b>Calum MacLeod</b> · Abu Dhabi and Dubai</span><span>Private options pack · September 2026</span></div>
-</section>''')
-# 10 SOURCES
+<div class="cta"><a class="btn fill" href="https://wa.me/971553502699?text=Calum%20-%20read%20the%20%C4%904M%20pack">WhatsApp Calum</a><a class="btn line" href="tel:+971553502699">Call +971 55 350 2699</a><span class="ig">@uaecalum</span></div>
+<div class="meta"><span><b>Calum MacLeod</b> · Abu Dhabi and Dubai</span><span>Private options pack · September 2026</span></div></section>''')
+
+# ---------- SOURCES
 src=[("ValuStrat Abu Dhabi Real Estate Review Q2-2026","on file: content-assets/research/ · Aug 2026"),
+     ("Dubai market","PIX residential index Jul-26 (Market) · Cavendish Maxwell H1 2026 launch count · DLD title deeds (film kit, Aug 26)"),
      ("ADGM releases, Q1 2026","as cited in the Tara Park investor case · Aug 2026"),
      ("Modon Phase 2 payment schedule and DARI fee sheet","Jul 2026"),
-     ("Aldar - Alghadeer masterplan release","Apr 2018 · Al Ghadeer Parks listing via Metropolitan, Sep 2026, indicative"),
-     ("Nakheel / Dubai Holding - Palm Central release","24 Jun 2026 · Gulf News masterplan approval, Jun 2023"),
+     ("Aldar","Alghadeer masterplan release (Apr 2018) · Al Ghadeer Parks and Gardens listings via Metropolitan (2026, indicative) · AGBI on Aldar's 2025 results (Feb 2026)"),
+     ("Ellington","Launch teaser via Calum (23 Sep 2026) · Allsopp &amp; Allsopp, Property Finder, WhiteRock, Bayut developer pages (2026)"),
+     ("Nakheel / Dubai Holding","Palm Central release (24 Jun 2026) · Gulf News masterplan approval (Jun 2023), Aldar-Dubai Holding JV and Select Group announcements (2026)"),
      ("Palm Springs","Dubai Holding, direct conversation with Calum · Sep 2026")]
+if BRISTOL: src.append(("Emaar","The Bristol and Emaar Beachfront community pages (2026) · Gulf Business on Dubai Harbour (Jan 2018) · MEED on the Emaar-Aldar JV (2018) · broker listings Planetprop, Metropolitan, Elysian, Haus51, Top Ultra Luxury (2026) · Property Finder rental listings (Sep 2026)"))
 sl="".join(f'<div class="f"><div class="v"><b>{a}</b><span class="s">{b}</span></div></div>' for a,b in src)
-P.append(f'''<section class="pg">
-{eye("Sources and the small print",c="#9A7B2A")}
-<h2>Where every number came from.</h2>
-<div class="rule"></div>
-<div class="srcgrid">
- <div class="facts src">{sl}</div>
- <div class="key">
-  {eye("How to read the marks",c="#9A7B2A")}
-  <div class="kr">{conf(3)}<span><b>Documented.</b> A published report, a developer sheet, a signed rule.</span></div>
-  <div class="kr">{conf(2)}<span><b>Reported.</b> Developer material or research cited second-hand; a method, not a document.</span></div>
-  <div class="kr">{conf(1)}<span><b>Early.</b> Aggregator pricing, a pre-launch conversation, a market read. Confirm before you rely on it.</span></div>
-  <p class="disc">Figures indicative until reservation documents confirm · before selling costs · growth cases illustrative · not financial advice · E&amp;OE. Prepared privately for Abu by Calum MacLeod, September 2026.</p>
- </div>
-</div>
-<div class="grow"></div>
-{foot(11)}
-</section>''')
-CSS='''
-@page{size:297mm 210mm;margin:0}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{background:#152A1F;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{font-family:Carlito,Calibri,sans-serif;font-size:9.4pt;line-height:1.5;color:#152A1F}
-.pg{--mut:#5d7266;--ln:#d9cfbd;width:297mm;height:210mm;padding:15mm 18mm 13mm;position:relative;overflow:hidden;page-break-after:always;display:flex;flex-direction:column;background:#F5EDE0}
-.pg.dark{--mut:#8FA898;--ln:#2E5A40;background:#152A1F;color:#F5EDE0}
-.dm{display:inline-block;vertical-align:.1em}
-.eye{font-size:7.2pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#C9A84C;line-height:1.4}
-.eye .dm{margin-right:2.6mm;vertical-align:.05em}
-.pg:not(.dark) .eye{color:#9A7B2A}
-h1{font-family:'TeX Gyre Pagella',Palatino,serif;font-weight:400;font-size:58pt;line-height:.96;letter-spacing:-.01em}
-h1 .g{color:#E8C96B}
-h2{font-family:'TeX Gyre Pagella',Palatino,serif;font-weight:400;font-size:24pt;line-height:1.1;letter-spacing:-.005em;margin-top:4mm;max-width:210mm}
-h2.xl{font-size:36pt;max-width:180mm}
-.rule{width:16mm;height:.5mm;background:#C9A84C;margin:5mm 0 6mm}
-.grow{flex:1}
-.foot{position:absolute;left:18mm;right:18mm;bottom:7mm;display:flex;justify-content:space-between;font-size:6.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);border-top:.25mm solid var(--ln);padding-top:2mm;font-weight:700}
-.meta{display:flex;justify-content:space-between;font-size:7.4pt;letter-spacing:.06em;color:#8FA898;border-top:.25mm solid #2E5A40;padding-top:3mm}
-.meta b{color:#F5EDE0;font-weight:700}
-/* cover */
-.cgrid{display:flex;flex:1;align-items:flex-end;gap:14mm;padding-bottom:10mm}
-.cl{flex:1.25}.cr{flex:1;border-left:.25mm solid #2E5A40;padding-left:10mm;padding-bottom:2mm}
-.sub{font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:13.5pt;line-height:1.35;color:#F5EDE0;max-width:140mm}
-.co{display:flex;gap:5mm;align-items:baseline;padding:4mm 0;border-bottom:.2mm solid #2E5A40}
-.co:last-child{border-bottom:0}
-.co .n{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:19pt;color:#C9A84C;width:12mm}
-.co b{display:block;font-size:12.5pt;font-weight:700}.co i{display:block;font-style:normal;font-size:8pt;color:#8FA898;letter-spacing:.03em;margin-top:.5mm}
-.cover h1{margin-top:8mm}
-/* numbers */
-.trio,.quad{display:grid;grid-template-columns:repeat(3,1fr);gap:12mm;margin-top:2mm}
-.quad{grid-template-columns:repeat(4,1fr);gap:9mm}
-.quad.why{margin-top:8mm}.quad.why .big{font-size:56pt}.quad.why .lab{margin-top:5mm}.quad.why p{font-size:10.6pt}
-.big{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:50pt;line-height:1;letter-spacing:-.02em;font-variant-numeric:lining-nums}
-.big span{font-size:.5em;color:#9A7B2A;letter-spacing:0}
-.quad .big{font-size:40pt}
-.lab{font-size:6.8pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9A7B2A;margin:3mm 0 2mm;line-height:1.45}
-.trio p,.quad p{font-size:10pt;line-height:1.5;color:#2b4034}
-.quote{margin-top:0;margin-bottom:6mm;border-left:.6mm solid #C9A84C;padding:2mm 0 2mm 7mm;max-width:232mm}
-.quote .q{font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:19pt;line-height:1.35}
-.line{margin-top:6mm;font-size:9.4pt;color:#2b4034}
-.names{margin-top:9mm}
-.nl{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:13.5pt;line-height:1.5;margin-top:2.5mm;letter-spacing:.005em}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:12mm;margin-top:7mm}
-.two p{font-size:10.2pt;line-height:1.5;color:#2b4034}.two b,.three b{color:#152A1F}
-/* footnotes */
-.fn{margin-top:5mm;font-size:6.4pt;line-height:1.5;color:var(--mut)}
-.fn div{display:flex;gap:2.2mm;align-items:baseline;padding:.6mm 0}
-.cf{white-space:nowrap;width:8mm;flex:none;display:inline-flex;gap:.6mm}
-/* option split */
-.split{padding:0;flex-direction:row}
-.ol{width:96mm;background:#1E3D2F;color:#F5EDE0;padding:15mm 12mm 16mm 18mm;display:flex;flex-direction:column;--mut:#8FA898}
-.or{flex:1;padding:15mm 18mm 16mm 14mm;display:flex;flex-direction:column}
-.split .foot{left:18mm;right:18mm}
-.split .foot span:first-child{color:#8FA898}
-.oname{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:27pt;line-height:1.05;margin-top:5mm}
-.owhere{font-size:8.2pt;letter-spacing:.1em;text-transform:uppercase;color:#8FA898;margin-top:2mm;font-weight:700}
-.ol .rule{margin:5mm 0}
-.ohero{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:44pt;line-height:1;color:#E8C96B;letter-spacing:-.02em}
-.ohero span{font-size:.55em;color:#C9A84C}
-.ohero small{display:block;font-family:Carlito,sans-serif;font-size:8pt;letter-spacing:.24em;text-transform:uppercase;color:#C9A84C;font-weight:700;margin-bottom:2mm;letter-spacing:.24em}
-.ohsub{font-size:9pt;color:#F5EDE0;margin-top:2.5mm;line-height:1.45}
-.pills{margin-top:5mm}
-.pill{display:inline-block;font-size:6.6pt;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#152A1F;background:#C9A84C;padding:1.1mm 3mm .9mm;border-radius:99px;margin:0 1.5mm 1.8mm 0;line-height:1.3}
-.pull{border-top:.25mm solid #2E5A40;padding-top:5mm}
-.pq{display:block;font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:14pt;line-height:1.3;color:#E8C96B}
-.pa{display:block;font-size:6.8pt;letter-spacing:.2em;text-transform:uppercase;color:#8FA898;margin-top:3mm;font-weight:700}
-.or h2{margin-top:0;font-size:22pt;max-width:165mm}
-.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8mm;margin:4mm 0 2mm}
-.strip .call .n{font-size:21pt}
-.strip .call .l{margin-bottom:0}
-.facts{margin-top:6mm}
-.f{display:grid;grid-template-columns:27mm 1fr;gap:4mm;padding:3.4mm 0;border-bottom:.2mm solid var(--ln);align-items:baseline}
-.f:last-child{border-bottom:0}
-.f .k{font-size:6.6pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9A7B2A;padding-top:.6mm}
-.f .v{font-size:10.2pt;line-height:1.45;color:#2b4034}
-/* tables */
-table{width:100%;border-collapse:collapse;font-size:8.6pt;font-variant-numeric:tabular-nums lining-nums}
-th{font-size:6.4pt;letter-spacing:.16em;text-transform:uppercase;text-align:left;color:#9A7B2A;font-weight:700;padding:1.8mm 2mm 1.8mm 0;border-bottom:.4mm solid #C9A84C;vertical-align:bottom;line-height:1.4}
-th .dm{margin-right:1.6mm}
-td{padding:2.1mm 2mm 2.1mm 0;border-bottom:.2mm solid var(--ln);vertical-align:top;color:#2b4034;line-height:1.4}
-td.n,th.n{text-align:right;padding-right:0}
-tr.hl td{font-weight:700;color:#152A1F;border-bottom:none}
-td.k{font-weight:700;color:#152A1F;width:34mm}
-table.mini{margin-top:1mm;font-size:7.6pt}table.mini th{font-size:5.8pt;padding:1mm 1.5mm 1mm 0}table.mini td{padding:1.4mm 1.5mm 1.4mm 0}
-table.wide{margin-top:2mm;font-size:10pt}table.wide td{padding:3.2mm 3mm 3.2mm 0}
-.ret td{padding:4mm 3mm 4mm 0}
-.ret th.grp{text-align:center;font-size:7pt;color:#152A1F}
-.ret .sep{border-left:.25mm solid var(--ln);padding-left:4mm}
-.ret td.b{font-weight:700;color:#9A7B2A;font-size:12.5pt;font-family:'TeX Gyre Pagella',Palatino,serif}
-.ret td.k{width:auto;font-size:10.5pt}
-.ret .s{display:block;font-weight:400;font-size:7pt;color:var(--mut);letter-spacing:.02em}
-.ret .mutd{color:var(--mut);font-style:italic}
-.method{font-size:7.6pt;color:var(--mut);margin-top:4mm;line-height:1.5}
-.rail{margin-top:7mm;font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:12.5pt;line-height:1.35;border-top:.25mm solid var(--ln);border-bottom:.25mm solid var(--ln);padding:4mm 0}
-.rail .dm{margin-right:3mm;vertical-align:.15em}
-/* payment page */
-.pay{display:grid;grid-template-columns:70mm 1fr;gap:16mm;align-items:start}
-.calls{display:flex;flex-direction:column;gap:6mm;padding-top:1mm}
-.call{border-left:.6mm solid #C9A84C;padding-left:5mm}
-.call .n{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:23pt;line-height:1;letter-spacing:-.01em}
-.call .n span{font-size:.55em;color:#9A7B2A}
-.call .l{font-size:6.6pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9A7B2A;margin:1.6mm 0 1mm}
-.call p{font-size:8.4pt;color:#2b4034;line-height:1.4}
-.pay table{font-size:9.2pt}.pay td{padding:1.9mm 2mm 1.9mm 0}
-.three{display:grid;grid-template-columns:repeat(3,1fr);gap:9mm;margin-top:8mm;font-size:9.4pt;line-height:1.45;color:#2b4034}
-/* next */
-.next h2{margin-top:6mm}
-.lens{display:grid;grid-template-columns:repeat(3,1fr);gap:8mm;margin-top:4mm}
-.lens div{border-top:.25mm solid #2E5A40;padding-top:5mm}
-.lens .ln{display:block;font-family:'TeX Gyre Pagella',Palatino,serif;font-size:26pt;color:#C9A84C;line-height:1}
-.then{font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:15pt;line-height:1.4;color:#F5EDE0;margin-top:14mm;max-width:190mm}
-.lens b{display:block;font-size:15pt;font-weight:700;margin-top:2mm;line-height:1.25}
-.lens i{display:block;font-style:normal;font-size:9.4pt;color:#8FA898;margin-top:1.5mm;letter-spacing:.03em}
-.cta{display:flex;align-items:center;gap:6mm;margin-bottom:10mm}
-.btn{display:inline-block;padding:4.2mm 9mm;border:.4mm solid #C9A84C;border-radius:99px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:8pt;text-decoration:none;line-height:1}
-.btn.fill{background:#C9A84C;color:#152A1F}.btn.line{color:#E8C96B}
-.ig{font-size:8pt;letter-spacing:.14em;color:#8FA898;font-weight:700;margin-left:2mm}
-/* sources */
-.srcgrid{display:grid;grid-template-columns:1.15fr 1fr;gap:16mm;margin-top:2mm}
-.facts.src .f{grid-template-columns:1fr}
-.facts.src .s{display:block;font-size:8.2pt;color:var(--mut);margin-top:.4mm}
-.key .kr{display:flex;gap:3mm;align-items:baseline;font-size:9.6pt;line-height:1.45;color:#2b4034;padding:2.4mm 0;border-bottom:.2mm solid var(--ln)}
-.key .cf{width:8mm}
-.key .eye{margin-bottom:2mm}
-.disc{margin-top:6mm;font-size:7.2pt;line-height:1.55;color:var(--mut)}
-'''
-html=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Abu · Three ways to place Đ4M · September 2026</title><!-- Source for content-assets/abu-4m-options/. Fonts: TeX Gyre Pagella + Carlito (the template placeholders until brand fonts are locked). Render: python3 render.py -> A4 landscape PDF + page PNGs. --><style>{CSS}</style></head><body>{"".join(P)}</body></html>'
-open('Abu-4M-Three-Options-Sep26.html','w').write(html)
-print("pages",len(P))
+pg("",f'''{eye("Sources and the small print",G)}<h2>Where every number came from.</h2><div class="rule"></div>
+<div class="srcgrid"><div class="facts src">{sl}</div><div class="key">{eye("How to read the marks",G)}
+<div class="kr">{conf(3)}<span><b>Documented.</b> A published report, a developer sheet, a signed rule, a title deed.</span></div>
+<div class="kr">{conf(2)}<span><b>Reported.</b> Developer material or research cited second-hand; a method, not a document.</span></div>
+<div class="kr">{conf(1)}<span><b>Early.</b> Aggregator pricing, a pre-launch conversation, a broker claim, a market read. Confirm before you rely on it.</span></div>
+<p class="disc">Figures indicative until reservation documents confirm · before selling costs · growth cases illustrative · not financial advice · E&amp;OE. Prepared privately for Abu by Calum MacLeod, September 2026.</p></div></div><div class="grow"></div>''')
+
+CSS=open('style.css').read()
+tot=len(PAGES)
+body="".join(p.replace("{PN}",f"{i+1:02d}").replace("{TOT}",str(tot)) for i,p in enumerate(PAGES))
+name="Abu-4M-Options-Sep26"+("" if BRISTOL else "-four-doors")
+open(name+'.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Abu · {WAYS} ways to place Đ4M · September 2026</title><!-- Source for content-assets/abu-4m-options/. Generated by build.py (flag --no-bristol for the four-door cut). Fonts: TeX Gyre Pagella + Carlito (template placeholders until brand fonts are locked). --><style>{CSS}</style></head><body>{body}</body></html>')
+print(name,"pages",tot)
