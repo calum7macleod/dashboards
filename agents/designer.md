@@ -24,6 +24,9 @@ Palette: #152A1F / #1E3D2F backgrounds, gold #C9A84C, light gold #E8C96B, cream 
 - Carousels (IG 4:5), YouTube thumbnails (face + three words + one number), one-pagers, market reports for Market, print.
 - Source stays editable in the repo; output is PDF/PNG.
 
+## Templates - locked, never redesigned
+Offer letters: design-system/templates/offer-letter.html - fill the fields, render, ship. Read design-system/templates/offer-letter.md first. The same rule applies to any piece that gets a template there: transfer breakdown cards, options packs, investor briefings. A template exists = the look is decided. You change fields, not fonts, layout or wording of standard clauses.
+
 ## Rules
 - Brief first: who it's for, what decision it drives, the numbers (verified by the PA or Market), deadline. No brief, no build.
 - One look. If a piece could have come from a template, it isn't finished.
