@@ -30,7 +30,7 @@ def tbl(head,rows,cls="",hl=None,colg=""):
 # ---------- COVER
 doors=[("01","Tara Park","Reem Island · Modon · 3-bed + maid, corner"),("02","Al Ghadeer Parks","Abu Dhabi-Dubai corridor · Aldar · townhouses and villas"),("03","Ellington, Al Yalayis 1","Near Town Square · Ellington · pre-launch townhouses"),("04","Palm Springs","Off Palm Jebel Ali · Dubai Holding · pre-launch")]
 subs=["One island the banks are moving to.","One community priced for a family.","One design-led launch near Town Square.","One launch before the price sheet exists."]
-if BRISTOL: doors.append(("05","The Bristol","Emaar Beachfront · Emaar · branded 1-bed, the lifestyle door")); subs.append("One beach home on a private island.")
+if BRISTOL: doors.append(("05","The Bristol","Ramhan Island · Eagle Hills · branded apartments, pre-launch")); subs.append("One beach home on a natural island.")
 co="".join(f'<div class="co"><span class="n">{n}</span><div><b>{a}</b><i>{b}</i></div></div>' for n,a,b in doors)
 PAGES.append(f'''<section class="pg dark cover">{eye("Prepared for Abu · September 2026")}
 <div class="cgrid"><div class="cl"><h1>{WAYS} ways<br>to place <span class="g">Đ4M</span></h1><div class="rule"></div><p class="sub">{"<br>".join(subs)}</p></div><div class="cr">{co}</div></div>
@@ -170,75 +170,75 @@ paypage("04 · Palm Springs · what you pay, when","Nothing to model until the s
  ["<b>Decide the trigger now, on shore.</b> &ldquo;If 3-beds open at or below Đ[X], I&rsquo;m in for one.&rdquo; Launches here are decided in hours.","<b>Exit.</b> Pre-handover resale per Dubai Holding's paid threshold and NOC; or hold for the corridor's build-out.","<b>The honest line.</b> Pre-launch, name and site not yet public. This page updates the day the sheet exists."],
  fn([("Target price: Calum's conversation with Dubai Holding, 23 Sep 26",1),("DLD and booking conventions: Dubai market practice",3)]))
 
-# ---------- 05 THE BRISTOL
+# ---------- 05 THE BRISTOL · RAMHAN ISLAND (Eagle Hills)
 if BRISTOL:
-    optpage("05","The Bristol","Emaar Beachfront · Dubai Harbour · Emaar","Đ3.66<span>M</span>","1-bed · 825 sqft · Đ4,436 psf · hotel-branded residences",
-     ["80 / 20 · 10% booking","Handover Sep 2029","227 residences + 4 penthouses","4% DLD"],
-     "A hotel-branded 1-bed on a private beach between the Palm and the Marina - the lifestyle door, not the townhouse door.",
-     [("The tower","One landmark tower: a Bristol Luxury Hotels &amp; Resorts hotel on the lower floors, branded residences above, an 8-storey podium linking hotel amenities, parking and concierge. Architecture inspired by the movement of waves."),
-      ("The place","Emaar Beachfront, Dubai Harbour - a gated private-island community between Palm Jumeirah and Dubai Marina. 1-4 bed apartments and 5-bed penthouses."),
-      ("Sizes","1-bed 825 sqft · 2-bed 1,459 · 3-bed 1,912 · 4-bed 2,501 · 5-bed penthouse 5,828."),
-      ("Pricing","From Đ3.66M (1-bed) to ~Đ34M (5-bed penthouse). Đ4,436 psf at the entry. A 1-bed is the only unit inside Đ4M all-in; there are no townhouses."),
-      ("The plan","80 / 20: 10% booking, 70% across construction milestones (Emaar links instalments to progress, not dates), 20% at handover, Q3 2029."),
-      ("Amenities","Private beach and promenade, infinity pool and pool bar, terrace deck, outdoor gym and yoga terrace, spa, cinema, bowling, kids' play. Views to Palm Jumeirah, Atlantis, the Marina and Burj Al Arab.")],
-     pull("A lifestyle buy first, a growth trade second.","The honest line"),
-     [("1.5<span> km</span>","Private beach on the island",""),("Đ4,436<span> psf</span>","Three times Tara Park's Đ1,468",""),("227","Residences, plus 4 penthouses","")],
-     fn([("Community and product: Emaar, May 26",3),("Tower, inventory, sizes, prices, plan, amenities: broker listings - Planetprop (updated 22 Sep 26), Elysian, Metropolitan, Haus51, Top Ultra Luxury. Tower height quoted at 44-54 storeys across sites; Emaar's price list would settle the numbers",2)]))
-    whypage("05 · The Bristol · why here","The last private beach between the Palm and the Marina, built by the developer of Burj Khalifa.",
-     [("1.5<span> km</span>","Private beach · 27 towers · ~10,000 homes",""),("1,400","Berths in the Dubai Harbour marina",""),("Đ150-170<span>K</span>","Asking rents on the island's 1-beds today","")],
-     [("Emaar Beachfront","A 10-million-sqft gated island community with 1.5 km of private beach, 27 residential towers, ~10,000 homes and a 13,000 sqm retail mall. Dubai Marina on the doorstep; Sheikh Zayed Road access."),
-      ("Dubai Harbour","The UAE's new maritime centre: a 1,400-berth marina, a cruise port and terminal, a 3.5M sqft mall, an events arena and the 135 m Dubai Lighthouse. Monorail links planned to the Palm and Bluewaters."),
-      ("The partners","Emaar develops Beachfront in a joint venture with Aldar - the two developers behind Abu Dhabi's islands and Dubai's landmarks, on one project."),
-      ("The brand","Bristol Luxury Hotels &amp; Resorts, with residences in Tangier, Durres, Addis Ababa and Ramhan Island, Abu Dhabi. A hotel on the lower floors means hotel services for residents."),
-      ("What it rents for","Island 1-beds of 765-815 sqft list at Đ150-170K a year; 2-beds Đ180-295K; 3-beds Đ320K (Palace Beach, Grand Bleu, Beach Isle, Sunrise Bay). Asks, not signed leases."),
-      ("Yield","Brokers quote 6-7% for the project. The island's listed 1-bed rents put a Đ3.66M entry nearer 4-4.6% gross.")],
-     "The beachfront brand door - a Palm-view 1-bed on a private island, hotel-serviced, with Emaar's delivery record. The lifestyle buy in the pack.",
-     fn([("Emaar Beachfront: Emaar, 2026. JV: MEED, 2018. Dubai Harbour: Gulf Business, Jan 2018 - masterplan intent",3),("Brand: the-bristol.com, Elysian, Sep 26 - brand ownership to confirm. Rents: Property Finder listings, Sep 26. Yield: Top Ultra Luxury, Jun 26, and derived",2),("Scarcity commentary: Building Arabia, Jan 26",1)]),honest_lab="The position")
-    paypage("05 · The Bristol · what you pay, when","The Đ3.66M 1-bed on 80 / 20.",
-     [("~Đ512<span>K</span>","Day one","10% booking + 4% DLD."),("Đ3.07<span>M</span>","Before keys · 84%","80% of the price plus DLD, funded before handover."),("Đ732<span>K</span>","At handover · 20%","September 2029.")],
-     tbl(["Milestone","Share","Đ at 3.66M"],[("Booking","10%","Đ366,000"),("DLD 4%","fee","Đ146,400"),("Construction milestones (progress-linked, not dated)","70%","Đ2,562,000"),("Handover Sep 2029","20%","Đ732,000"),("Cash to handover (80% + DLD)","","~Đ3,074,400")],hl=4),
-     ["<b>Income.</b> Island 1-beds list at Đ150-170K a year today - ~4.1-4.6% gross on Đ3.66M. Short-let and hotel-serviced lets can run higher in season, with management cost and occupancy risk.","<b>Exit.</b> Pre-handover resale per Emaar's paid threshold and NOC; or hold as a beach home with a rental engine.","<b>The honest line.</b> Đ4,436 psf is three times Tara Park's Đ1,468, 80% of the price is funded before keys, and Dubai's index has fallen seven months in a row. A lifestyle buy first, a growth trade second."],
-     fn([("Plan and price: Planetprop (updated 22 Sep 26), Metropolitan, 2026 - Emaar's price list would settle them",2),("Rents: Property Finder listings, Sep 26 - asks. Index: PIX Jul-26 via Market",3)]))
+    optpage("05","The Bristol","Ramhan Island · Abu Dhabi · Eagle Hills","<span class=\"h-sm\">10 / 60 / 30</span>","Reported plan · 1-, 2- and 3-bed branded apartments · 3-beds available now · price sheet requested",
+     ["Freehold · 2% registration","Handover Dec 2028","Construction started Apr 2026","Hotel-managed rental pool"],
+     "A hotel-branded apartment on Abu Dhabi's last natural island, ten minutes from Yas - the beach-home door, on the Abu Dhabi fee schedule.",
+     [("The project","Eagle Hills' branded hotel-and-residence tower, the hospitality centrepiece of the Ramhan Island masterplan: branded apartments, marina residences, wellness, a retail promenade and a 170-berth marina."),
+      ("The units","1-, 2- and 3-bed apartments. 3-beds are on sale now; 1- and 2-beds follow. Sizes and prices are not yet published."),
+      ("The plan","10 / 60 / 30 as listed - 10% at launch, 60% through construction, 30% on handover. Eagle Hills has not published the official plan."),
+      ("Timing","Construction started 9 April 2026. Completion December 2028."),
+      ("How you use it","Live in it, keep it as a retreat, or place it in the managed rental pool. Hotel services throughout: concierge, housekeeping, valet, in-residence dining."),
+      ("Tenure","Freehold, all nationalities. Registration 2%.")],
+     pull("The beach-home door - and it&rsquo;s in Abu Dhabi.","The position"),
+     [("10<span> min</span>","To Yas Island · 15 to Saadiyat",""),("2<span>%</span>","Registration, against Dubai's 4%",""),("170","Berths in the island marina","")],
+     fn([("Units, plan, timeline, tenure: Property Finder project page (developer-fed), Sep 26 - the same page says the official plan is unreleased",2),("Marina, rental pool, hotel services: broker pages - Top Ultra Luxury, Grand Reve, Kelt & Co, 2026",1)]))
+    whypage("05 · The Bristol · why here","A natural island between Yas and Saadiyat, Alabbar's developer behind it, and villa prices that start around Đ7M.",
+     [("10<span> min</span>","To Yas · 15 to Saadiyat · 15-20 to Zayed airport",""),("~Đ7-12<span>M</span>","Where the island's villas start, by phase",""),("Đ11.5-45<span>M</span>","The island's 60 resale listings today","")],
+     [("The island","Naturally formed - mangroves, bays, white-sand beaches - between Yas and Saadiyat. Low-density by design: supply is capped by the coastline."),
+      ("Access","A bridge via Al Jubail Island (under construction; boat access today). Yas 10 min, Saadiyat 15, Zayed airport 15-20, downtown 25, Reem 30, Dubai about an hour on the E11."),
+      ("The developer","Eagle Hills, Abu Dhabi-based, led by Mohamed Alabbar. Waterfront masterplans in the UAE, Bahrain, Oman, Morocco, Serbia and Ethiopia; the Bvlgari Resort &amp; Mansions Abu Dhabi announced in 2025."),
+      ("The brand","The Bristol Hotels &amp; Resorts is Eagle Hills' own hospitality brand: Belgrade reopened February 2025, Tangier under construction for 2027, Ramhan next. Residents get the hotel's services."),
+      ("The island's prices","Villas: Phase 4 from ~Đ6.9-12M depending on the source, Phase 5 from Đ11M. Sixty resale listings at Đ11.5-45M. The Bristol's apartments sit below the villas - the entry ticket to the island."),
+      ("Amenities","Private beach and promenades, infinity and indoor pools, spa, gym, yoga, cycle track, golf club and clubhouse, dining and retail, 24/7 concierge.")],
+     "No price sheet, no floor plans, and a bridge still being built. What is priced today is the island - villas from around Đ7M. This door opens when Eagle Hills releases the sheet.",
+     fn([("Eagle Hills and the Bristol brand: Eagle Hills press (Tangier, Apr 26); Wikipedia, 2026",3),("Access, amenities: Property Finder project page, Sep 26",2),("Villa phase pricing and resale range: Metropolitan, Primo Capital, Property Finder listings, 2026 - brokers differ on Phase 4",1)]))
+    paypage("05 · The Bristol · what you pay, when","Nothing to model until the sheet lands. What is known:",
+     [("~Đ80<span>K</span>","Registration 2% on a Đ4M ticket","Fixed."),("10<span>%</span>","At launch, on the reported plan","60% through construction, 30% at keys."),("Dec 2028","Handover","Construction started April 2026.")],
+     tbl(["Item","Đ at a Đ4M ceiling","Status"],[("3-bed branded apartment","price on request","Eagle Hills - sheet requested"),("Registration 2%","~Đ80,000","fixed"),("Booking","~Đ400,000 · 10%","reported plan"),("Construction instalments","~Đ2,400,000 · 60%","reported plan, milestones TBC"),("Handover Dec 2028","~Đ1,200,000 · 30%","reported plan"),("Cash to handover (70% + fee)","~Đ2,880,000 · 72%","")],hl=5),
+     ["<b>Income.</b> A hotel-managed rental pool is offered; no yield data exists for the island yet. Eagle Hills' pool terms decide it.","<b>Exit.</b> Pre-handover resale per Eagle Hills' paid threshold and NOC; or hold as a beach home with the hotel running it.","<b>The honest line.</b> Modelled at the Đ4M ceiling, not a price. 70% before keys on the reported plan puts it nearer the Dubai doors than Tara Park on cash."],
+     fn([("Plan: Property Finder project page, Sep 26 - listed as 10/60/30, official plan unreleased",2),("Registration: Abu Dhabi conventions. Ceiling: Abu's budget, not a price",3)]))
 
 # ---------- SIDE BY SIDE
-cols=["Tara Park corner","Al Ghadeer 3-bed TH","Al Ghadeer 4-bed villa","Ellington 3-bed TH","Palm Springs 3-bed"]+(["The Bristol 1-bed"] if BRISTOL else [])
-sb=[("Price","Đ3.9M","~Đ2.3M","~Đ3.3M","~Đ3.6-4.1M","~Đ4M or less","Đ3.66M"),
-    ("Product","3-bed + maid apartment · 2,656 sqft","Townhouse","Villa","Townhouse · 2,100-2,300 sqft","Townhouse","1-bed branded apartment · 825 sqft"),
-    ("Day one","~Đ274K","~Đ161K","~Đ231K","Launch deposit + Đ152K DLD","4% DLD + launch deposit","~Đ512K (10% + 4% DLD)"),
-    ("Cash to handover","~Đ1.64M · 42%","~Đ1.31M · 57%","~Đ1.88M · 57%","~Đ2.81M · 74%","At launch","~Đ3.07M · 84%"),
-    ("Handover","2030","Q2 2031","Q2 2031","2030-31","At launch","Sep 2029"),
-    ("Registration","2%","2%","2%","4%","4%","4%"),
-    ("Demand driver","ADGM workforce · long-let","Family end-users · commuters","Family end-users · commuters","Family end-users · Al Qudra corridor","Palm Jebel Ali corridor","Beachfront short-let · hotel brand"),
-    ("Exit","Pre-handover after 20% + NOC, or hold and rent","Pre-handover per Aldar rules, or hold","Pre-handover per Aldar rules, or hold","Pre-handover per Ellington threshold, or hold","At launch","Pre-handover per Emaar threshold, or hold")]
+cols=["Tara Park corner","Al Ghadeer 3-bed TH","Al Ghadeer 4-bed villa","Ellington 3-bed TH","Palm Springs 3-bed"]+(["The Bristol, Ramhan"] if BRISTOL else [])
+sb=[("Price","Đ3.9M","~Đ2.3M","~Đ3.3M","~Đ3.6-4.1M","~Đ4M or less","Price on request"),
+    ("Product","3-bed + maid apartment · 2,656 sqft","Townhouse","Villa","Townhouse · 2,100-2,300 sqft","Townhouse","1-3 bed branded apartment · sizes TBC"),
+    ("Day one","~Đ274K","~Đ161K","~Đ231K","Launch deposit + Đ152K DLD","4% DLD + launch deposit","10% + 2% registration"),
+    ("Cash to handover","~Đ1.64M · 42%","~Đ1.31M · 57%","~Đ1.88M · 57%","~Đ2.81M · 74%","At launch","~70% + fee · 10/60/30 reported"),
+    ("Handover","2030","Q2 2031","Q2 2031","2030-31","At launch","Dec 2028"),
+    ("Registration","2%","2%","2%","4%","4%","2%"),
+    ("Demand driver","ADGM workforce · long-let","Family end-users · commuters","Family end-users · commuters","Family end-users · Al Qudra corridor","Palm Jebel Ali corridor","Island scarcity · hotel-managed pool"),
+    ("Exit","Pre-handover after 20% + NOC, or hold and rent","Pre-handover per Aldar rules, or hold","Pre-handover per Aldar rules, or hold","Pre-handover per Ellington threshold, or hold","At launch","Pre-handover per Eagle Hills threshold, or hold")]
 n=len(cols)+1
 tr="".join(f'<tr><td class="k">{r[0]}</td>'+"".join(f'<td>{c}</td>' for c in r[1:n])+'</tr>' for r in sb)
 th="".join(f'<th>{D(G)}{c}</th>' for c in cols)
 pg("",f'''{eye("The doors · side by side",G)}<h2>Same Đ4M, {"six" if BRISTOL else "five"} ways to hold it.</h2><div class="rule"></div>
 <table class="wide sbs"><colgroup><col style="width:30mm">{"".join("<col>" for _ in cols)}</colgroup><tr><th></th>{th}</tr>{tr}</table><div class="grow"></div>
-{fn([("All figures indicative and before selling costs. Tara Park on Modon's Phase 2 schedule; Al Ghadeer on aggregator pricing pending Aldar's sheet; Ellington on the teaser psf; Palm Springs on a pre-launch conversation"+("; The Bristol on broker listings pending Emaar's price list" if BRISTOL else ""),2)])}''')
+{fn([("All figures indicative and before selling costs. Tara Park on Modon's Phase 2 schedule; Al Ghadeer on aggregator pricing pending Aldar's sheet; Ellington on the teaser psf; Palm Springs on a pre-launch conversation"+("; The Bristol on a listed plan pending Eagle Hills' price sheet" if BRISTOL else ""),2)])}''')
 
 # ---------- RETURNS
 rt=[("Tara Park · Đ3.9M","~3.5 yrs to 2030","~Đ4.78M","~Đ0.79M","~48%","~Đ5.27M","~Đ1.27M","~77%","Đ1.64M"),
     ("Al Ghadeer 3-bed · Đ2.3M","~4.7 yrs to Q2 2031","~Đ3.02M","~Đ0.66M","~51%","~Đ3.45M","~Đ1.08M","~82%","Đ1.31M"),
     ("Al Ghadeer villa · Đ3.3M","~4.7 yrs to Q2 2031","~Đ4.34M","~Đ0.95M","~51%","~Đ4.95M","~Đ1.55M","~82%","Đ1.88M"),
     ("Ellington 3-bed · Đ3.8M","~4.5 yrs to 2030-31","~Đ4.94M","~Đ1.04M","~37%","~Đ5.60M","~Đ1.69M","~60%","Đ2.81M")]
-if BRISTOL: rt.append(("The Bristol 1-bed · Đ3.66M","~3 yrs to Sep 2029","~Đ4.36M","~Đ0.61M","~20%","~Đ4.74M","~Đ0.99M","~32%","Đ3.07M"))
+pending=["Palm Springs"]+(["The Bristol, Ramhan"] if BRISTOL else [])
 tr="".join(f'<tr><td class="k">{r[0]}<span class="s">{r[1]} · cash deployed {r[8]}</span></td><td class="n">{r[2]}</td><td class="n">{r[3]}</td><td class="n b">{r[4]}</td><td class="n sep">{r[5]}</td><td class="n">{r[6]}</td><td class="n b">{r[7]}</td></tr>' for r in rt)
 pg("",f'''{eye("Illustrative returns · exit at handover",G)}<h2>One growth assumption, applied to every door.</h2><div class="rule"></div>
 <table class="wide ret"><colgroup><col style="width:58mm"><col><col><col><col><col><col></colgroup>
 <tr><th></th><th colspan="3" class="grp">At 6% a year</th><th colspan="3" class="grp sep">At 9% a year · half of Abu Dhabi's recent pace</th></tr>
 <tr><th></th><th class="n">Value</th><th class="n">Gain</th><th class="n">On cash</th><th class="n sep">Value</th><th class="n">Gain</th><th class="n">On cash</th></tr>{tr}
-<tr><td class="k">Palm Springs</td><td colspan="6" class="mutd">Modelled after the price sheet lands.</td></tr></table>
-<p class="method">Gain is after 2% agency on exit, before other costs. Return on cash = gain over cash deployed before handover (paid-in plus registration). The Dubai doors fund more of the price before keys, which is why their return on cash sits lower at the same growth rate.</p>
+{"".join(f'<tr><td class="k">{p}</td><td colspan="6" class="mutd">Modelled after the price sheet lands.</td></tr>' for p in pending)}</table>
+<p class="method">Gain is after 2% agency on exit, before other costs. Return on cash = gain over cash deployed before handover (paid-in plus registration). The Dubai door funds more of the price before keys, which is why its return on cash sits lower at the same growth rate.</p>
 <div class="grow"></div><div class="rail">{D(G)}Growth cases are illustrative, not forecasts. Abu Dhabi's last twelve months were +17.8%. The register decides.</div><div style="height:8mm"></div>''')
 
 # ---------- NEXT STEP
 lens=[("01","Long-let income on Reem","Tara Park · I hold the unit"),("02","A family home on the corridor","Al Ghadeer Parks · I request Aldar's sheet"),("03","A design-led launch near Town Square","Ellington · I lodge the EOI"),("04","First-phase Palm Jebel Ali","Palm Springs · I register you the day it opens")]
-if BRISTOL: lens.append(("05","A beach home on a private island","The Bristol · I pull Emaar's availability"))
+if BRISTOL: lens.append(("05","A beach home on a natural island","The Bristol, Ramhan · I request Eagle Hills' sheet"))
 ld="".join(f'<div><span class="ln">{n}</span><b>{a}</b><i>{b}</i></div>' for n,a,b in lens)
 PAGES.append(f'''<section class="pg dark next">{eye("Next step")}<h2 class="xl">Fifteen minutes decides the lens.</h2><div class="rule"></div>
 <div class="lens l{len(lens)}">{ld}</div>
-<p class="then">Then I hold the unit, request Aldar's sheet, lodge the Ellington EOI{", register you for Palm Springs the day it opens, and pull Emaar's Bristol availability." if BRISTOL else ", and register you for Palm Springs the day it opens."}</p>
+<p class="then">Then I hold the unit, request Aldar's sheet, lodge the Ellington EOI{", register you for Palm Springs the day it opens, and request Eagle Hills' sheet for The Bristol." if BRISTOL else ", and register you for Palm Springs the day it opens."}</p>
 <div class="grow"></div>
 <div class="cta"><a class="btn fill" href="https://wa.me/971553502699?text=Calum%20-%20read%20the%20%C4%904M%20pack">WhatsApp Calum</a><a class="btn line" href="tel:+971553502699">Call +971 55 350 2699</a><span class="ig">@uaecalum</span></div>
 <div class="meta"><span><b>Calum MacLeod</b> · Abu Dhabi and Dubai</span><span>Private options pack · September 2026</span></div></section>''')
@@ -252,7 +252,7 @@ src=[("ValuStrat Abu Dhabi Real Estate Review Q2-2026","on file: content-assets/
      ("Ellington","Launch teaser via Calum (23 Sep 2026) · Allsopp &amp; Allsopp, Property Finder, WhiteRock, Bayut developer pages (2026)"),
      ("Nakheel / Dubai Holding","Palm Central release (24 Jun 2026) · Gulf News masterplan approval (Jun 2023), Aldar-Dubai Holding JV and Select Group announcements (2026)"),
      ("Palm Springs","Dubai Holding, direct conversation with Calum · Sep 2026")]
-if BRISTOL: src.append(("Emaar","The Bristol and Emaar Beachfront community pages (2026) · Gulf Business on Dubai Harbour (Jan 2018) · MEED on the Emaar-Aldar JV (2018) · broker listings Planetprop, Metropolitan, Elysian, Haus51, Top Ultra Luxury (2026) · Property Finder rental listings (Sep 2026)"))
+if BRISTOL: src.append(("Eagle Hills / The Bristol at Ramhan Island","Property Finder project page (Sep 2026) · Eagle Hills press on The Bristol Hotels &amp; Resorts (Apr 2026) · Wikipedia on Eagle Hills · broker pages Metropolitan, Primo Capital, Kelt &amp; Co, Top Luxury Property, Grand Reve (2026) - no price sheet yet"))
 sl="".join(f'<div class="f"><div class="v"><b>{a}</b><span class="s">{b}</span></div></div>' for a,b in src)
 pg("",f'''{eye("Sources and the small print",G)}<h2>Where every number came from.</h2><div class="rule"></div>
 <div class="srcgrid"><div class="facts src">{sl}</div><div class="key">{eye("How to read the marks",G)}
