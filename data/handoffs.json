@@ -46,5 +46,13 @@
   "to": "Manager",
   "item": "06:30/18:30 Inbox sweep has not produced a triage file on 22 or 23 Sep (data/triage/ only has .keep). Check the scheduled task fired and can write the file; PA opens the brief on it.",
   "status": "open"
+ },
+ {
+  "id": "h0007",
+  "date": "2026-09-23",
+  "from": "manager",
+  "to": "PA",
+  "item": "Buyer data migration (spec tools/specs/2026-09-23-agentkit-v2.md section 1, after Claude Code ships v2): 1) status derived from stage - Won->'Closed Won', Lost->'Closed Lost', else 'Active' (16 Active+Lost, 1 Active+Won, 3 'Won' to fix); 2) stage Viewed->Viewing (3), Qualifying->Qualified (1); 3) closedDate (21) -> closedWon or closedLost per stage, then remove closedDate; never invent a date; 4) archive-buyers: lostReason = old status, stage Lost + status 'Closed Lost' for Inactive/Archived/Bought Elsewhere; the 5 'Bought' - check deals.json, Calum's deal = Won else lostReason Bought Elsewhere; the 2 'Active' in archive - revive to buyers.json or Lost, ask Calum once; 5) acceptance: agentkit.py buyers-check reads '-- 0 violations' on buyers.json. From now on set stage only; status follows.",
+  "status": "open"
  }
 ]
