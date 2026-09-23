@@ -4,7 +4,7 @@
 NOTHING BUILDS until Calum says the dry run (Tue 22 Sep) passed. PA's dry-run write landed 22 Sep; no pass/fail from Calum yet. Specs, rule edits and handoffs are not builds.
 
 ## Build queue (in order) - Calum approved 21 Sep
-1. agentkit v2 - SPEC WRITTEN 23 Sep: tools/specs/2026-09-23-agentkit-v2.md. Covers: buyer status rule (stage is truth, status derived), buyers-check, owner lookup (h0002), issue/issues/fix, safe concurrent appends, crm.html line 665, Claude Code hook + CLAUDE.md. Waiting on: Calum pastes it into Claude Code. Then: PA migration (h0007), close h0002, re-paste shared rules to ten Projects.
+1. agentkit v2 - SPEC WRITTEN 23 Sep: tools/specs/2026-09-23-agentkit-v2.md. Covers: buyer status rule (stage is truth, status derived), buyers-check, owner lookup (h0002), issue/issues/fix, safe concurrent appends, crm.html line 665, Claude Code hook + CLAUDE.md. Gate lifted 23 Sep (Calum asked to proceed). BUILD ROUTE: Claude Code CLOUD session (claude.ai/code or desktop app > Cloud) on calum7macleod/dashboards - Calum's Windows box has no repo, no Git, no Python (Claude Code local reported 23 Sep). GH_TOKEN goes in as a cloud environment variable, never in chat. Watch for: api.github.com blocked by environment network settings. Prompt given to Calum 23 Sep ~10:30. Then: PA migration (h0007), close h0002, re-paste shared rules to ten Projects.
 2. Dashboard architecture v2 - task tracking first (Mission Control), then Today tab: who do I call, what's about to lapse, where's the money this month. (Task F1, Mon 28.) INPUTS collected: h0003 (tasks: difficulty text so points never compute - map easy/medium/hard to 1/3/5/8; archive 226 done tasks to data/archive/; overdue count + oldest; mixed id styles; buildLog/units empty; Top 3 not capped), h0004 (Lost sorted by closedLost desc, undated at bottom), h0005 (notes as ' | ' string, date-first entries - render split, gold eyebrow date, 3 then more; decision needed: keep string or migrate to notes[]).
 3. Login - private repo (GitHub Pro) + Cloudflare Access, or move off public hosting. Finance data stays in main repo on the strength of this.
 4. Matching tags at intake (budget, timeline, finance, purpose, base, what they'd move for). Own workstream.
@@ -23,6 +23,7 @@ Agents log faults with `agentkit.py issue <type> "<what>"` the moment they happe
 
 ## System health
 23 Sep 09:05: receipts from Max, PA, mentor, content, Designer. None from uploader, market, finance, lifecoach, projects, inbox. Ten agents now (Projects added by Max 23 Sep - _shared.md already has its row). Scheduled tasks: none confirmed running (h0006).
+Finding (access): Claude Code on Calum's Windows machine has no Git, no Python, no repo checkout - local builds impossible; all building goes through cloud sessions until that changes. Hooks (.claude/settings.json) still apply in cloud sessions once committed.
 Findings: raw.githubusercontent.com cache serves stale files - rule added to _shared.md 23 Sep. Two closed-date fields (closedDate from crm.html, closedLost from PA) - fixed in spec 1. buyers-index over-counts live by 20 - fixed in spec 1.
 
 ## Shared rules - Project instructions status
