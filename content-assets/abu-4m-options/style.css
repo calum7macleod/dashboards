@@ -1,0 +1,154 @@
+
+@page{size:297mm 210mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#152A1F;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:Carlito,Calibri,sans-serif;font-size:9.4pt;line-height:1.5;color:#152A1F}
+.pg{--mut:#5d7266;--ln:#d9cfbd;width:297mm;height:210mm;padding:15mm 18mm 13mm;position:relative;overflow:hidden;page-break-after:always;display:flex;flex-direction:column;background:#F5EDE0}
+.pg.dark{--mut:#8FA898;--ln:#2E5A40;background:#152A1F;color:#F5EDE0}
+.dm{display:inline-block;vertical-align:.1em}
+.eye{font-size:7.2pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#C9A84C;line-height:1.4}
+.eye .dm{margin-right:2.6mm;vertical-align:.05em}
+.pg:not(.dark) .eye{color:#9A7B2A}
+h1{font-family:'TeX Gyre Pagella',Palatino,serif;font-weight:400;font-size:58pt;line-height:.96;letter-spacing:-.01em}
+h1 .g{color:#E8C96B}
+h2{font-family:'TeX Gyre Pagella',Palatino,serif;font-weight:400;font-size:24pt;line-height:1.1;letter-spacing:-.005em;margin-top:4mm;max-width:210mm}
+h2.xl{font-size:36pt;max-width:180mm}
+.rule{width:16mm;height:.5mm;background:#C9A84C;margin:5mm 0 6mm}
+.grow{flex:1}
+.foot{position:absolute;left:18mm;right:18mm;bottom:7mm;display:flex;justify-content:space-between;font-size:6.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);border-top:.25mm solid var(--ln);padding-top:2mm;font-weight:700}
+.meta{display:flex;justify-content:space-between;font-size:7.4pt;letter-spacing:.06em;color:#8FA898;border-top:.25mm solid #2E5A40;padding-top:3mm}
+.meta b{color:#F5EDE0;font-weight:700}
+/* cover */
+.cgrid{display:flex;flex:1;align-items:flex-end;gap:14mm;padding-bottom:10mm}
+.cl{flex:1.25}.cr{flex:1;border-left:.25mm solid #2E5A40;padding-left:10mm;padding-bottom:2mm}
+.sub{font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:13.5pt;line-height:1.35;color:#F5EDE0;max-width:140mm}
+.co{display:flex;gap:5mm;align-items:baseline;padding:4mm 0;border-bottom:.2mm solid #2E5A40}
+.co:last-child{border-bottom:0}
+.co .n{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:19pt;color:#C9A84C;width:12mm}
+.co b{display:block;font-size:12.5pt;font-weight:700}.co i{display:block;font-style:normal;font-size:8pt;color:#8FA898;letter-spacing:.03em;margin-top:.5mm}
+.cover h1{margin-top:8mm}
+/* numbers */
+.trio,.quad{display:grid;grid-template-columns:repeat(3,1fr);gap:12mm;margin-top:2mm}
+.quad{grid-template-columns:repeat(4,1fr);gap:9mm}
+.quad.why{margin-top:8mm}.quad.why .big{font-size:56pt}.quad.why .lab{margin-top:5mm}.quad.why p{font-size:10.6pt}
+.big{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:50pt;line-height:1;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.big span{font-size:.5em;color:#9A7B2A;letter-spacing:0}
+.quad .big{font-size:40pt}
+.lab{font-size:6.8pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9A7B2A;margin:3mm 0 2mm;line-height:1.45}
+.trio p,.quad p{font-size:10pt;line-height:1.5;color:#2b4034}
+.quote{margin-top:0;margin-bottom:6mm;border-left:.6mm solid #C9A84C;padding:2mm 0 2mm 7mm;max-width:232mm}
+.quote .q{font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:19pt;line-height:1.35}
+.line{margin-top:6mm;font-size:9.4pt;color:#2b4034}
+.names{margin-top:9mm}
+.nl{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:13.5pt;line-height:1.5;margin-top:2.5mm;letter-spacing:.005em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12mm;margin-top:7mm}
+.two p{font-size:10.2pt;line-height:1.5;color:#2b4034}.two b,.three b{color:#152A1F}
+/* footnotes */
+.fn{margin-top:5mm;font-size:6.4pt;line-height:1.5;color:var(--mut)}
+.fn div{display:flex;gap:2.2mm;align-items:baseline;padding:.6mm 0}
+.cf{white-space:nowrap;width:8mm;flex:none;display:inline-flex;gap:.6mm}
+/* option split */
+.split{padding:0;flex-direction:row}
+.ol{width:96mm;background:#1E3D2F;color:#F5EDE0;padding:15mm 12mm 16mm 18mm;display:flex;flex-direction:column;--mut:#8FA898}
+.or{flex:1;padding:15mm 18mm 16mm 14mm;display:flex;flex-direction:column}
+.split .foot{left:18mm;right:18mm}
+.split .foot span:first-child{color:#8FA898}
+.oname{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:27pt;line-height:1.05;margin-top:5mm}
+.owhere{font-size:8.2pt;letter-spacing:.1em;text-transform:uppercase;color:#8FA898;margin-top:2mm;font-weight:700}
+.ol .rule{margin:5mm 0}
+.ohero{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:44pt;line-height:1;color:#E8C96B;letter-spacing:-.02em}
+.ohero span{font-size:.55em;color:#C9A84C}
+.ohero small{display:block;font-family:Carlito,sans-serif;font-size:8pt;letter-spacing:.24em;text-transform:uppercase;color:#C9A84C;font-weight:700;margin-bottom:2mm;letter-spacing:.24em}
+.ohsub{font-size:9pt;color:#F5EDE0;margin-top:2.5mm;line-height:1.45}
+.pills{margin-top:5mm}
+.pill{display:inline-block;font-size:6.6pt;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#152A1F;background:#C9A84C;padding:1.1mm 3mm .9mm;border-radius:99px;margin:0 1.5mm 1.8mm 0;line-height:1.3}
+.pull{border-top:.25mm solid #2E5A40;padding-top:5mm}
+.pq{display:block;font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:14pt;line-height:1.3;color:#E8C96B}
+.pa{display:block;font-size:6.8pt;letter-spacing:.2em;text-transform:uppercase;color:#8FA898;margin-top:3mm;font-weight:700}
+.or h2{margin-top:0;font-size:22pt;max-width:165mm}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8mm;margin:4mm 0 2mm}
+.strip .call .n{font-size:21pt}
+.strip .call .l{margin-bottom:0}
+.facts{margin-top:6mm}
+.f{display:grid;grid-template-columns:27mm 1fr;gap:4mm;padding:3.4mm 0;border-bottom:.2mm solid var(--ln);align-items:baseline}
+.f:last-child{border-bottom:0}
+.f .k{font-size:6.6pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9A7B2A;padding-top:.6mm}
+.f .v{font-size:10.2pt;line-height:1.45;color:#2b4034}
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:8.6pt;font-variant-numeric:tabular-nums lining-nums}
+th{font-size:6.4pt;letter-spacing:.16em;text-transform:uppercase;text-align:left;color:#9A7B2A;font-weight:700;padding:1.8mm 2mm 1.8mm 0;border-bottom:.4mm solid #C9A84C;vertical-align:bottom;line-height:1.4}
+th .dm{margin-right:1.6mm}
+td{padding:2.1mm 2mm 2.1mm 0;border-bottom:.2mm solid var(--ln);vertical-align:top;color:#2b4034;line-height:1.4}
+td.n,th.n{text-align:right;padding-right:0}
+tr.hl td{font-weight:700;color:#152A1F;border-bottom:none}
+td.k{font-weight:700;color:#152A1F;width:34mm}
+table.mini{margin-top:1mm;font-size:7.6pt}table.mini th{font-size:5.8pt;padding:1mm 1.5mm 1mm 0}table.mini td{padding:1.4mm 1.5mm 1.4mm 0}
+table.wide{margin-top:2mm;font-size:10pt}table.wide td{padding:3.2mm 3mm 3.2mm 0}
+.ret td{padding:4mm 3mm 4mm 0}
+.ret th.grp{text-align:center;font-size:7pt;color:#152A1F}
+.ret .sep{border-left:.25mm solid var(--ln);padding-left:4mm}
+.ret td.b{font-weight:700;color:#9A7B2A;font-size:12.5pt;font-family:'TeX Gyre Pagella',Palatino,serif}
+.ret td.k{width:auto;font-size:10.5pt}
+.ret .s{display:block;font-weight:400;font-size:7pt;color:var(--mut);letter-spacing:.02em}
+.ret .mutd{color:var(--mut);font-style:italic}
+.method{font-size:7.6pt;color:var(--mut);margin-top:4mm;line-height:1.5}
+.rail{margin-top:7mm;font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:12.5pt;line-height:1.35;border-top:.25mm solid var(--ln);border-bottom:.25mm solid var(--ln);padding:4mm 0}
+.rail .dm{margin-right:3mm;vertical-align:.15em}
+/* payment page */
+.pay{display:grid;grid-template-columns:70mm 1fr;gap:16mm;align-items:start}
+.calls{display:flex;flex-direction:column;gap:6mm;padding-top:1mm}
+.call{border-left:.6mm solid #C9A84C;padding-left:5mm}
+.call .n{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:23pt;line-height:1;letter-spacing:-.01em}
+.call .n span{font-size:.55em;color:#9A7B2A}
+.call .l{font-size:6.6pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9A7B2A;margin:1.6mm 0 1mm}
+.call p{font-size:8.4pt;color:#2b4034;line-height:1.4}
+.pay table{font-size:9.2pt}.pay td{padding:1.9mm 2mm 1.9mm 0}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:9mm;margin-top:8mm;font-size:9.4pt;line-height:1.45;color:#2b4034}
+/* next */
+.next h2{margin-top:6mm}
+.lens{display:grid;grid-template-columns:repeat(3,1fr);gap:8mm;margin-top:4mm}
+.lens div{border-top:.25mm solid #2E5A40;padding-top:5mm}
+.lens .ln{display:block;font-family:'TeX Gyre Pagella',Palatino,serif;font-size:26pt;color:#C9A84C;line-height:1}
+.then{font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:15pt;line-height:1.4;color:#F5EDE0;margin-top:14mm;max-width:190mm}
+.lens b{display:block;font-size:15pt;font-weight:700;margin-top:2mm;line-height:1.25}
+.lens i{display:block;font-style:normal;font-size:9.4pt;color:#8FA898;margin-top:1.5mm;letter-spacing:.03em}
+.cta{display:flex;align-items:center;gap:6mm;margin-bottom:10mm}
+.btn{display:inline-block;padding:4.2mm 9mm;border:.4mm solid #C9A84C;border-radius:99px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:8pt;text-decoration:none;line-height:1}
+.btn.fill{background:#C9A84C;color:#152A1F}.btn.line{color:#E8C96B}
+.ig{font-size:8pt;letter-spacing:.14em;color:#8FA898;font-weight:700;margin-left:2mm}
+/* sources */
+.srcgrid{display:grid;grid-template-columns:1.15fr 1fr;gap:16mm;margin-top:2mm}
+.facts.src .f{grid-template-columns:1fr}
+.facts.src .s{display:block;font-size:8.2pt;color:var(--mut);margin-top:.4mm}
+.key .kr{display:flex;gap:3mm;align-items:baseline;font-size:9.6pt;line-height:1.45;color:#2b4034;padding:2.4mm 0;border-bottom:.2mm solid var(--ln)}
+.key .cf{width:8mm}
+.key .eye{margin-bottom:2mm}
+.disc{margin-top:6mm;font-size:7.2pt;line-height:1.55;color:var(--mut)}
+
+/* v2 */
+.mkt{margin-top:2mm}.mkt.dxb{margin-top:9mm}
+.quad.why{margin-top:5mm}.quad.why .big{font-size:44pt}.quad.why .lab{margin-top:3.5mm}.quad.why p{font-size:9.4pt}
+.quad.three-up{grid-template-columns:repeat(3,1fr);gap:12mm}
+.strip.top{margin:0 0 7mm}
+.strip.top .call .n{font-size:24pt}
+.facts.two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 12mm;margin-top:0}
+.facts.two-col .f{grid-template-columns:24mm 1fr;padding:2.8mm 0}
+.facts.two-col .f .v{font-size:9.3pt}
+.facts.two-col .f:nth-last-child(-n+2){border-bottom:0}
+.honest{border-left:.6mm solid #C9A84C;padding:1.5mm 0 1.5mm 6mm;font-family:'TeX Gyre Pagella',Palatino,serif;font-style:italic;font-size:13pt;line-height:1.35;max-width:230mm;margin:5mm 0}
+.honest .hl{display:block;font-family:Carlito,sans-serif;font-style:normal;font-size:6.6pt;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9A7B2A;margin-bottom:1.6mm}
+.oname{font-size:25pt}
+.or .f .v table.mini{margin-top:0}
+.f .v table.mini td:first-child{width:auto}
+table.sbs{font-size:8.4pt}table.sbs td{padding:2.5mm 2.5mm 2.5mm 0;line-height:1.35}table.sbs th{font-size:6pt;letter-spacing:.12em}table.sbs td.k{width:26mm}
+.pay table td.n{white-space:nowrap}
+.lens.l5{grid-template-columns:repeat(5,1fr);gap:6mm}.lens.l5 b{font-size:12.5pt}.lens.l5 i{font-size:8.6pt}
+.next h2.xl{font-size:34pt}
+.srcgrid .facts.src .f{padding:2.2mm 0}.facts.src .s{font-size:7.6pt}
+
+.ohero .pre{font-size:.7em;color:#C9A84C;vertical-align:.12em}
+.ol .ohero{font-size:40pt}
+.or .facts{margin-top:4mm}
+.mkt .honest{margin-top:0}
+
+table.sbs{table-layout:fixed;font-size:8.8pt}table.sbs td{padding:3.4mm 3mm 3.4mm 0}table.sbs th{padding-right:3mm}
