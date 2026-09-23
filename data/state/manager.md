@@ -16,7 +16,7 @@ NOTHING BUILDS until Calum says the dry run (Tue 22 Sep) passed. PA's dry-run wr
 ## Open handoffs to Manager
 - h0002 (PA): owner command - in spec item 1. Close when it ships.
 - h0003, h0004, h0005 (PA): dashboard inputs - folded into item 2 above. Close when item 2 is specced.
-- h0006 (PA): Inbox sweep wrote no triage file 22-23 Sep. Diagnosis: no Inbox receipt in the log, ever - the scheduled task never ran (not "ran and couldn't write"). Fix is Calum's: create the scheduled task; add "log a receipt every run, even when empty". Close on first receipt.
+- h0006 (PA): Inbox sweep wrote no triage file 22-23 Sep. REVISED 23 Sep 09:20: Calum's sidebar shows PA · Inbox AM and PA · Inbox PM chats exist (PM unread) - the sweep appears to run but writes nothing. Likely no token/bash in that chat, or it reports a failure nobody reads. Waiting on Calum to paste the last Inbox PM reply. Also Market · Daily scan exists - same check. No Project exists yet for the tenth agent (Projects).
 
 ## Issues protocol (live from 23 Sep)
 Agents log faults with `agentkit.py issue <type> "<what>"` the moment they happen (rule in _shared.md; handoff Manager until the command exists). Manager opens every conversation with the open list + a fix per line. Sunday: patterns by type.
