@@ -154,3 +154,6 @@ table.sbs{font-size:8.4pt}table.sbs td{padding:2.5mm 2.5mm 2.5mm 0;line-height:1
 table.sbs{table-layout:fixed;font-size:8.8pt}table.sbs td{padding:3.4mm 3mm 3.4mm 0}table.sbs th{padding-right:3mm}
 
 .ohero .h-sm{font-size:.64em;white-space:nowrap;color:#E8C96B;letter-spacing:0}
+
+.three.four{grid-template-columns:repeat(4,1fr);gap:7mm;font-size:8.8pt}
+.ohero .h-sm{color:#8FA898}
