@@ -9,7 +9,7 @@ Updated: 2026-09-21 by Max (old account). First lean version - the old data/cont
 ## Money (board counts at signing)
 - Sep board Đ93,611: K303 Anshuman 37,950 · K217 Zaid 41,021 · Tara Park A2-209 Ronnie x Lewis 14,640 (Lewis's deal, Calum assist). Target: 250K happy / 200K good / 150K floor. Record month Đ413K (April).
 - Owed take-home ~Đ546K: Sep payday ~314K (30 Sep) · Oct ~167K (Syed, Jayde, Zaid, Anshuman, Tara - all transfer after exit, written confirmation still open) · Jan/Feb stuck ~65K (Jose, Majid x2 - chase or write off in the exit conversation).
-- K217 Zaid: transfer must complete before his pre-approval expires 30 Sep. Valuation Tue 22 09:30.
+- K217 Zaid: transfer must complete before his pre-approval expires 30 Sep.. | Valuation done 22 Sep. Calum: no more reminders on K217 - he has it.
 
 ## This fortnight (tasks runin-* on the board)
 Mon 21 Claude migration (B1 Lewis brief done, B2 agents done, B3a-h the switch) · Tue 22 CRM update then every buyer + every seller called, Facebook ad leads · Wed 23 content (post types, plan, 2 wks scripted) · Thu 24 hit-the-ground-running plan for Jake + overflow · Mon 28 dashboards v2 + login, W&Co email audit, small bits (email, ADIB app, phone). Weekly: Mentor + Life Coach a few minutes each morning; Sunday meeting chaired by the PA.
