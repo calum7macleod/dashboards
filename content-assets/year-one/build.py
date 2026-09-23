@@ -1,7 +1,7 @@
 import json,sys,os
 SLIDES=[
  dict(n="01",title="One Year Today",big="Đ122,800,000",sub="Sold in my first 12 months in real estate",serif="$33.4M USD  ·  £25.0M GBP",line="23 Sep 2025 - 23 Sep 2026  ·  40 deals",bg="bg3.jpg",pos="70%",bigx=True,topdark=True),
- dict(n="02",title="Best Month",big="Đ21,300,000",sub="April 2026  ·  8 deals",serif="$5.8M USD  ·  £4.3M GBP",line="11 straight months with a signing",bg="bg2.jpg",pos="73%",noav=True),
+ dict(n="02",title="Best Month",big="Đ21,300,000",sub="April 2026  ·  8 deals",serif="$5.8M USD  ·  £4.3M GBP",line="Đ10.2M and 3.3 deals a month, on average",bg="bg2.jpg",pos="73%",noav=True),
  dict(n="03",title="The Shape of It",big="Đ13M  →  Đ37M",sub="First 100 days  →  last 100 days",serif="4 deals became 11",line="Dubai 33  ·  Abu Dhabi 7  ·  29 in DAMAC Lagoons",bg="bg1.jpg",pos="72%",noav=True),
 ]
 TOT=f"{len(SLIDES):02d}"
