@@ -11,9 +11,17 @@
 - damac-lagoons.md - Sep 2026 / HIGH - 23 deals; on-request only from Oct
 - dubai-other.md - MED - Islands, O1NE, Cresswell, Arancia, Greenspoint, Sobha City AD, Jebel Ali Springs, Taraf
 - abu-dhabi-rules.md - the conventions
+- pricepoints.md - 23 Sep 2026 / HIGH - every unit-level price on file: 41 closed deals, 32 asks, 22 offers, medians by cluster
 
 ## In play this fortnight
 Wadeem Gardens EOIs (Jake 6-bed, Ankur 4-bed, plus the pitch list). Tara Park phase pricing for Jason's friend's 4M pack. Michael's Wilds verdict.
+
+## Sources still to mine (the rest of what the old Max knew)
+- data/chat-archive/ (22 files, Jul 2026 pre-migration chats) - grep for project names, psf, launch details
+- content-assets/ - every deck, pack and carousel source (HGE, Modon Pattern, DAMAC-to-Modon, Sobha City, Ankur pack, Patrik report, Cresswell packs, Tyron Yas Point, B4-412, Amer plans, Wadeem briefings, Marsa guide v2)
+- data/dld/lagoons.json - register transactions by cluster
+- the account export zips (conversations, projects) - Calum drops them in; extract PROJECT facts only, nothing personal
+- data/context.md (old, 60KB) - project numbers scattered through it
 
 ## Gaps to close (in order)
 1. Current Tara Park price list + handover by phase.
