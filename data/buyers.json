@@ -299,14 +299,14 @@
   "relationship": 3,
   "unitSupply": 3,
   "feeling": 5,
-  "score": 4,
+  "score": 3,
   "heat": 4,
   "stage": "Qualified",
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after no answer, wa sent 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": "2026-09-25",
+  "touchReason": "Follow up after answered 23 Sep - Was interested, gone a bit quiet",
   "needSummary": "JGE ad lead - very hot per Calum. Budget and spec TBC.",
-  "notes": "22 Sep: No answer, WA sent | 2026-09-14: fourth JGE Meta ad lead. Calum: 'seems very hot for a JGE - stay on'. Budget, beds and timing to capture on the next call.",
+  "notes": "23 Sep: Answered - Was interested, gone a bit quiet | 22 Sep: No answer, WA sent | 2026-09-14: fourth JGE Meta ad lead. Calum: 'seems very hot for a JGE - stay on'. Budget, beds and timing to capture on the next call.",
   "id": "lamya-1409",
   "order": 2,
   "maxScore": 4,
@@ -314,7 +314,7 @@
  },
  {
   "date": "2026-09-07",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Gurav",
   "phone": "+971 58 596 3284",
   "source": "Meta ad - JGE campaign",
@@ -335,17 +335,18 @@
   "unitSupply": 3,
   "feeling": 5,
   "score": 5,
-  "notes": "22 Sep: WA only | 2026-09-07 call: END-USER, moving in. Budget 7M, will go to 9M for the right unit. Wants the BIGGER sizes (corner ~3,037 sqft internal vs mid ~2,679 - plans measured 7 Sep). Needs it fast / sooner handover. Comparables given. Just needs the right unit. Calum: 'very hot, keep on top of him'.",
+  "notes": "23 Sep: Closed lost - Doesn't want to buy - worried about the bombs (regional security) | 22 Sep: WA only | 2026-09-07 call: END-USER, moving in. Budget 7M, will go to 9M for the right unit. Wants the BIGGER sizes (corner ~3,037 sqft internal vs mid ~2,679 - plans measured 7 Sep). Needs it fast / sooner handover. Comparables given. Just needs the right unit. Calum: 'very hot, keep on top of him'.",
   "id": "gurav-jge-0709",
   "order": 3,
   "heat": 5,
-  "stage": "Qualified",
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "stage": "Lost",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE end-user, 7M (9M stretch), bigger townhouse sizes, fast handover, payment plan OK",
   "maxScore": 5,
-  "maxScoreReason": "End-user with stated budget, stretch, urgency and a clear spec. Only risk is unit supply at the size he wants."
+  "maxScoreReason": "End-user with stated budget, stretch, urgency and a clear spec. Only risk is unit supply at the size he wants.",
+  "closedLost": "2026-09-23"
  },
  {
   "date": "2026-09-11",
@@ -3325,7 +3326,7 @@
  },
  {
   "buyer": "Jesper",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-09-01",
   "source": "Ads",
   "colleague": "",
@@ -3343,14 +3344,14 @@
   "unitSupply": null,
   "feeling": 2,
   "score": 2,
-  "notes": "22 Sep: WA only | 1 Sep: JGE ads lead. WhatsApp +971 56 549 3454 (~Jesper). Requirements, budget, beds TBC.",
+  "notes": "23 Sep: Closed lost | 22 Sep: WA only | 1 Sep: JGE ads lead. WhatsApp +971 56 549 3454 (~Jesper). Requirements, budget, beds TBC.",
   "id": "jesper-jge",
   "order": 1010,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE ads lead, everything TBC",
   "snoozedUntil": null,
   "touches": [
@@ -3359,7 +3360,8 @@
     "channel": "wa",
     "summary": "Lead captured from JGE ads - not yet qualified"
    }
-  ]
+  ],
+  "closedLost": "2026-09-23"
  },
  {
   "buyer": "Abdulrazak Al-Ahmadi (Abdo)",
@@ -3440,7 +3442,7 @@
  },
  {
   "buyer": "Aarya",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-24",
   "source": "Ads",
   "colleague": "",
@@ -3458,14 +3460,14 @@
   "unitSupply": null,
   "feeling": 2,
   "score": 2,
-  "notes": "22 Sep: WA only | 24 Aug: New JGE ads lead. WhatsApp +971 55 296 2964 (contact saved 'Aarya JGE Ads'). No conversation yet - requirements, budget, beds all TBC.",
+  "notes": "23 Sep: Closed lost | 22 Sep: WA only | 24 Aug: New JGE ads lead. WhatsApp +971 55 296 2964 (contact saved 'Aarya JGE Ads'). No conversation yet - requirements, budget, beds all TBC.",
   "id": "aarya-jge",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE ads lead, everything TBC",
   "snoozedUntil": null,
   "touches": [
@@ -3474,11 +3476,12 @@
     "channel": "wa",
     "summary": "Lead captured from JGE ads, contact saved - not yet qualified"
    }
-  ]
+  ],
+  "closedLost": "2026-09-23"
  },
  {
   "buyer": "Mahtab",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-24",
   "source": "Ads",
   "colleague": "",
@@ -3496,14 +3499,14 @@
   "unitSupply": null,
   "feeling": 2,
   "score": 2,
-  "notes": "22 Sep: WA only | 24 Aug: JGE ads lead. WhatsApp +971 50 650 0578 (contact 'Mahtab JGE Ads'). Asked what's the BIGGEST we can get in JGE - size-led brief, budget/timeline TBC.",
+  "notes": "23 Sep: Closed lost | 22 Sep: WA only | 24 Aug: JGE ads lead. WhatsApp +971 50 650 0578 (contact 'Mahtab JGE Ads'). Asked what's the BIGGEST we can get in JGE - size-led brief, budget/timeline TBC.",
   "id": "mahtab-jge",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE, wants biggest available, budget TBC",
   "snoozedUntil": null,
   "touches": [
@@ -3512,7 +3515,8 @@
     "channel": "wa",
     "summary": "Asked what's the biggest we can get in JGE"
    }
-  ]
+  ],
+  "closedLost": "2026-09-23"
  },
  {
   "buyer": "Clive",
@@ -3533,15 +3537,15 @@
   "relationship": 1,
   "unitSupply": null,
   "feeling": 2,
-  "score": 2,
-  "notes": "22 Sep: WA only | 24 Aug: JGE ads lead. WhatsApp +971 58 524 8704 (contact 'Clive JGE Ads'). Messaged - no response yet.",
+  "score": 3,
+  "notes": "23 Sep: No answer, WA sent - Wants one to live in - could do Tara Park | 22 Sep: WA only | 24 Aug: JGE ads lead. WhatsApp +971 58 524 8704 (contact 'Clive JGE Ads'). Messaged - no response yet.",
   "id": "clive-jge",
   "order": 1020,
   "stage": "Qualified",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": "2026-09-25",
+  "touchReason": "Follow up after no answer, wa sent 23 Sep - Wants one to live in - could do Tara Park",
   "needSummary": "JGE ads lead, no response yet, everything TBC",
   "snoozedUntil": null,
   "touches": [
@@ -3554,7 +3558,7 @@
  },
  {
   "buyer": "Hashmat",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-24",
   "source": "Ads",
   "colleague": "",
@@ -3572,14 +3576,14 @@
   "unitSupply": null,
   "feeling": 2,
   "score": 2,
-  "notes": "22 Sep: WA only | 24 Aug: JGE ads lead. WhatsApp +971 56 399 2557 (contact 'Hashmat JGE Ads'; WA profile shows Arabian Ocean Insurance Brokers LLC). Messaged - no response yet.",
+  "notes": "23 Sep: Closed lost | 22 Sep: WA only | 24 Aug: JGE ads lead. WhatsApp +971 56 399 2557 (contact 'Hashmat JGE Ads'; WA profile shows Arabian Ocean Insurance Brokers LLC). Messaged - no response yet.",
   "id": "hashmat-jge",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE ads lead, no response yet, everything TBC",
   "snoozedUntil": null,
   "touches": [
@@ -3588,11 +3592,12 @@
     "channel": "wa",
     "summary": "First outreach sent, no response yet"
    }
-  ]
+  ],
+  "closedLost": "2026-09-23"
  },
  {
   "buyer": "Aryia",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-24",
   "source": "Ads",
   "colleague": "",
@@ -3610,14 +3615,14 @@
   "unitSupply": 1,
   "feeling": 1,
   "score": 5,
-  "notes": "22 Sep: WA only | 24 Aug: JGE ads lead (contact 'Aryia JGE Ads', WA Business account ~Enzo Enzo / Eminence Capital Group). Wants a 2M townhouse in JGE - unrealistic for the area, expectation reset needed. PHONE NOT CAPTURED from screenshot - add when available.",
+  "notes": "23 Sep: Closed lost | 22 Sep: WA only | 24 Aug: JGE ads lead (contact 'Aryia JGE Ads', WA Business account ~Enzo Enzo / Eminence Capital Group). Wants a 2M townhouse in JGE - unrealistic for the area, expectation reset needed. PHONE NOT CAPTURED from screenshot - add when available.",
   "id": "aryia-jge",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 5,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE townhouse at 2M (below market) - expectation reset needed",
   "snoozedUntil": null,
   "touches": [
@@ -3626,7 +3631,8 @@
     "channel": "wa",
     "summary": "Asked for a 2M townhouse in JGE - below realistic entry"
    }
-  ]
+  ],
+  "closedLost": "2026-09-23"
  },
  {
   "buyer": "Jack Fletcher",
@@ -3685,15 +3691,15 @@
   "relationship": 1,
   "unitSupply": null,
   "feeling": 2,
-  "score": 2,
-  "notes": "22 Sep: WA only - Owns a place in JGE she wants to sell - seller lead | 25 Aug: JGE ads lead. +971 50 645 9434. Called - no answer. Next step: send sales offer on WhatsApp.",
+  "score": 1,
+  "notes": "23 Sep: No answer, WA sent | 22 Sep: WA only - Owns a place in JGE she wants to sell - seller lead | 25 Aug: JGE ads lead. +971 50 645 9434. Called - no answer. Next step: send sales offer on WhatsApp.",
   "id": "shaheen-jge",
   "order": 1020,
   "stage": "New",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep - Owns a place in JGE she wants to sell - seller lead",
+  "lastContact": "2026-09-23",
+  "nextTouch": "2026-09-25",
+  "touchReason": "Follow up after no answer, wa sent 23 Sep",
   "needSummary": "JGE ads lead, call unanswered, sales offer to send",
   "snoozedUntil": null,
   "touches": [
@@ -3706,7 +3712,7 @@
  },
  {
   "buyer": "Deepa",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-25",
   "source": "Ads",
   "colleague": "",
@@ -3724,14 +3730,14 @@
   "unitSupply": null,
   "feeling": 2,
   "score": 2,
-  "notes": "22 Sep: WA only | 25 Aug: JGE ads lead. +971 50 656 7909. Called - no answer. Next step: send sales offer on WhatsApp.",
+  "notes": "23 Sep: Closed lost | 22 Sep: WA only | 25 Aug: JGE ads lead. +971 50 656 7909. Called - no answer. Next step: send sales offer on WhatsApp.",
   "id": "deepa-jge",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE ads lead, call unanswered, sales offer to send",
   "snoozedUntil": null,
   "touches": [
@@ -3740,11 +3746,12 @@
     "channel": "call",
     "summary": "Outbound call - no answer; plan: WhatsApp sales offer"
    }
-  ]
+  ],
+  "closedLost": "2026-09-23"
  },
  {
   "buyer": "Kay",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-25",
   "source": "Ads",
   "colleague": "",
@@ -3762,14 +3769,14 @@
   "unitSupply": null,
   "feeling": 2,
   "score": 2,
-  "notes": "22 Sep: WA only | 25 Aug: JGE ads lead. +971 52 815 7026. Called - no answer. Next step: send sales offer on WhatsApp.",
+  "notes": "23 Sep: Closed lost | 22 Sep: WA only | 25 Aug: JGE ads lead. +971 52 815 7026. Called - no answer. Next step: send sales offer on WhatsApp.",
   "id": "kay-jge",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 2,
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep",
+  "lastContact": "2026-09-23",
+  "nextTouch": null,
+  "touchReason": null,
   "needSummary": "JGE ads lead, call unanswered, sales offer to send",
   "snoozedUntil": null,
   "touches": [
@@ -3778,7 +3785,8 @@
     "channel": "call",
     "summary": "Outbound call - no answer; plan: WhatsApp sales offer"
    }
-  ]
+  ],
+  "closedLost": "2026-09-23"
  },
  {
   "date": "2026-09-09",
@@ -3870,14 +3878,14 @@
   "relationship": 2,
   "unitSupply": 3,
   "feeling": 3,
-  "score": 3,
+  "score": 2,
   "heat": 3,
-  "stage": "Qualified",
-  "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-24",
-  "touchReason": "Follow up after wa only 22 Sep - Call again soon",
+  "stage": "New",
+  "lastContact": "2026-09-23",
+  "nextTouch": "2026-09-25",
+  "touchReason": "Follow up after no answer, wa sent 23 Sep - Was interested in the ad, going quiet",
   "needSummary": "JGE ad lead - qualified, overseas (Pakistan number)",
-  "notes": "22 Sep: WA only - Call again soon | 2026-09-11: third JGE Meta ad lead. Qualified, not the strongest. Pakistan number - likely buying from abroad. Budget and beds TBC.",
+  "notes": "23 Sep: No answer, WA sent - Was interested in the ad, going quiet | 22 Sep: WA only - Call again soon | 2026-09-11: third JGE Meta ad lead. Qualified, not the strongest. Pakistan number - likely buying from abroad. Budget and beds TBC.",
   "id": "ali-jge-1109",
   "order": 1023,
   "maxScore": 3,
