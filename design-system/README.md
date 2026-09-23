@@ -12,4 +12,4 @@ Cover: dark, eyebrow top-left, one-line hook, gold rule, sub in muted, meta bott
 One look everywhere. No templates. Every number indicative until documented. Source stays editable (HTML/SVG); output PDF/PNG.
 
 ## Templates (locked)
-- templates/offer-letter.html (+ .md rules) - every offer to a seller. Fill fields only.
+- templates/offer-letter.html (+ .md rules, render-offer.py) - every offer to a seller: the 1080x1350 card, PNG 2x + PDF. Fill fields only. Locked 23 Sep 2026.
