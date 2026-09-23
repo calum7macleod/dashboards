@@ -1,21 +1,21 @@
 import json,sys,os
 SLIDES=[
- dict(n="01",title="Year One",big="Đ122,800,000",sub="12 months in real estate",serif="$33.4M USD  ·  £25.0M GBP",line="40 deals  ·  Dubai 33  ·  Abu Dhabi 7",bg="bg1.jpg",pos="72%",noav=True),
+ dict(n="01",title="One Year Today",big="Đ122,800,000",sub="Sold in my first 12 months in real estate",serif="$33.4M USD  ·  £25.0M GBP",line="23 Sep 2025 - 23 Sep 2026  ·  40 deals",bg="bg3.jpg",pos="70%",bigx=True,topdark=True),
  dict(n="02",title="Best Month",big="Đ21,300,000",sub="April 2026  ·  8 deals",serif="$5.8M USD  ·  £4.3M GBP",line="11 straight months with a signing",bg="bg2.jpg",pos="73%",noav=True),
- dict(n="03",title="The Shape of It",big="Đ13M  →  Đ37M",sub="First 100 days  →  last 100 days",serif="4 deals became 11",line="First deal on day 27  ·  29 in DAMAC Lagoons",bg="bg3.jpg",pos="70%"),
+ dict(n="03",title="The Shape of It",big="Đ13M  →  Đ37M",sub="First 100 days  →  last 100 days",serif="4 deals became 11",line="Dubai 33  ·  Abu Dhabi 7  ·  29 in DAMAC Lagoons",bg="bg1.jpg",pos="72%",noav=True),
 ]
 TOT=f"{len(SLIDES):02d}"
 def slide(s):
     bg=f"background-image:url('{s['bg']}');" if s['bg'] else ""
     pos=s.get("pos","50%")
-    return f'''<section class="sl" style="{bg}">
+    return f'''<section class="sl{' topdark' if s.get('topdark') else ''}" style="{bg}">
   <div class="shade"></div>
   <div class="tl"><div class="who">Calum MacLeod<span>·</span>@uaecalum</div><div class="mark"><svg width="12" height="12" viewBox="0 0 10 10"><path d="M5 0 10 5 5 10 0 5Z" fill="#C9A84C"/></svg><i></i></div></div>
   <div class="tr"><div class="pill">Milestone</div><div class="ct">{s['n']} / {TOT}</div></div>
   <div class="mid" style="top:{pos}">
     <div class="t">{s['title']}</div>
     <div class="rule"></div>
-    <div class="big">{s['big']}</div>
+    <div class="big{' bigx' if s.get('bigx') else ''}">{s['big']}</div>
     <div class="sub">{s['sub']}</div>
     {f'<div class="ser">{s["serif"]}</div>' if s['serif'] else ''}
     <div class="ln">{s['line']}</div>
@@ -29,6 +29,7 @@ html,body{background:#152A1F}
 .sl{width:1080px;height:1350px;position:relative;overflow:hidden;color:#F5EDE0;font-family:Carlito,Calibri,sans-serif;background:#1E3D2F center/cover no-repeat;page-break-after:always}
 .sl.ph{background:radial-gradient(ellipse at 50% 40%,#2E5A40 0%,#1E3D2F 45%,#152A1F 100%)}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,42,31,.6) 0%,rgba(21,42,31,.1) 18%,rgba(21,42,31,.06) 44%,rgba(21,42,31,.66) 58%,rgba(21,42,31,.9) 70%,rgba(21,42,31,.96) 100%)}
+.sl.topdark .shade{background:linear-gradient(180deg,rgba(21,42,31,.82) 0%,rgba(21,42,31,.45) 16%,rgba(21,42,31,.1) 30%,rgba(21,42,31,.06) 44%,rgba(21,42,31,.66) 58%,rgba(21,42,31,.9) 70%,rgba(21,42,31,.96) 100%)}
 .tl{position:absolute;left:78px;top:88px}
 .who{font-size:20px;letter-spacing:.32em;text-transform:uppercase;color:#E8C96B;font-weight:600}
 .who span{margin:0 18px;color:#C9A84C}
@@ -40,6 +41,7 @@ html,body{background:#152A1F}
 .mid{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;padding:0 60px}
 .t{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:60px;color:#F5EDE0;letter-spacing:.005em;line-height:1.05;text-shadow:0 2px 24px rgba(0,0,0,.45)}
 .rule{width:150px;height:2px;background:#C9A84C;margin:14px auto 18px}
+.big.bigx{font-size:128px}
 .big{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:108px;line-height:1;color:#E8C96B;letter-spacing:-.01em;text-shadow:0 2px 28px rgba(0,0,0,.5);white-space:nowrap}
 .sub{font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#F5EDE0;margin-top:20px;font-weight:600}
 .ser{font-family:'TeX Gyre Pagella',Palatino,serif;font-size:32px;color:#F5EDE0;margin-top:16px}
