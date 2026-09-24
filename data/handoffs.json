@@ -110,5 +110,13 @@
   "to": "Designer",
   "item": "Project deck brief from Calum 23 Sep: buyer-facing deck for 2-3 Abu Dhabi projects (Hudayriyat/Modon, Tara Park Reem, one more). A throwaway template exists as a Slides artifact in Content's chat - use or bin. Needs: which projects, audience, figures from Market, renders.",
   "status": "open"
+ },
+ {
+  "id": "h0015",
+  "date": "2026-09-24",
+  "from": "content",
+  "to": "Manager",
+  "item": "ASKED (issue - no issue cmd yet): Calum asked how 'the projects agent' can read the Jake brick sheet - no Projects agent in the shared-rules roster. If one exists, its file/ownership isn't in the shared rules; if it's Market, fine. Also: research folder listing via agentkit read fails on directories (404) - a 'ls' command would help.",
+  "status": "open"
  }
 ]
