@@ -1,4 +1,4 @@
-# PROJECTS STATE - start pack. Updated 2026-09-23 by Projects (mining pass 1: pricepoints, chat archive, content-assets, DLD lagoons, context.md).
+# PROJECTS STATE - start pack. Updated 2026-09-24 by Projects (24 Sep: Jake Nazer brick sheet folded in as UNVERIFIED claims; Abu Đ4M pack research filed. 23 Sep: mining pass 1).
 
 ## Index (data/projects/) - last verified / confidence
 - modon.md - NEW · Sep 2026 / MED-HIGH - developer profile: ADQ/ADX claims, Đ23bn H1, launch mechanics, SPA standard clauses, plan shapes
@@ -15,6 +15,12 @@
 - dubai-other.md - MED - Cresswell (107 schedule), Vision 207 (developer unknown), Town Square, Mira Oasis 2, Pinewood/JGE, Emaar Grand Polo / Oasis cases, Ghaf Woods, Golf Hillside, Nikki Beach, Jebel Ali Racecourse estimates, Terra Gardens
 - abu-dhabi-rules.md - conventions; added ADGM 2% + DARI 525 on Reem, service-charge points, Modon gate, LTV (unverified)
 - pricepoints.md - 23 Sep 2026 / HIGH - unit-level ledger (unchanged this pass)
+
+## 24 Sep additions
+- Every project file now carries a "Jake Nazer's claims" block (source: content-assets/research/2026-09-24-jake-nazer-structure-and-bricks.md; his reels Jul-Sep 2026; UNVERIFIED until Market signs). Use with "[v]" discipline: never on camera or in a pack without a receipt.
+- Abu Đ4M pack (Claude Doc "Abu - Đ4M three options - pack input for Designer", 23 Sep, 19 pages): Tara corner 3-bed+maid 2,656 sqft Đ3.9M; Al Ghadeer Parks (Aldar); Ellington Al Yalayis 1; "Palm Springs" (Dubai Holding, Calum's intel); The Bristol at Ramhan Island (Eagle Hills). Product facts filed in aldar-other, abu-dhabi-other, dubai-other, modon-tara-park.
+- New conflicts: 12. Marsa Al Saadiyat first release "Talay" pricing per Jake (4-bed 13.5M / 5-bed 15.5M / 6-bed 17.2M, 5% + 50% construction) vs guide's "no pricing released" (Aug). 13. The Wilds: Dubai (Aldar-Dubai Holding JV, Jake) vs Abu Dhabi (old file). 14. ADGM workforce: 47,047 +44% (deck) / 49,027 +34% (Jake) / 44,000 +51% (Jake). 15. Wadeem 5-bed Đ10M (Jake) vs Đ10.2M (release). 16. Ramhan Island natural (Eagle Hills sites) vs man-made (Jake). 17. Aldar plan shape 50/50 (Jake) vs Yas Point 55/45 (pack). 18. Lulu Island "villas now rising" (Jake) vs developer unannounced (file).
+- New gaps: Marsa "Talay" release sheet (the biggest - Marsa was "no pricing" and Jake is quoting prices); Bashayer sold-out status and "two phases from 7M"; Al Naseem handover Q1 2028 / 5-bed from 10M; The Bristol Ramhan price sheet; Ellington launch sheet (Q4 2026); Palm Springs sheet; Al Ghadeer Parks Aldar sheet; the rail press map source.
 
 ## In play this fortnight
 Wadeem Gardens EOIs (Jake 6-bed, Ankur 4-bed, plus the pitch list) - settle the 40/60 vs 45/55 question before quoting a schedule. Tara Park phase pricing for Jason's friend's 4M pack. Michael's Wilds verdict.
@@ -33,7 +39,8 @@ Wadeem Gardens EOIs (Jake 6-bed, Ankur 4-bed, plus the pitch list) - settle the 
 11. Aldar plan shape: 55/45 with 5% booking (Yas Point) vs "~60/40 with ~10% booking" (Marsa guide assumption).
 
 ## Sources mined
-DONE: data/projects/pricepoints.md · data/chat-archive/ (INDEX, MANIFEST, digest, 18 transcripts - project facts extracted, mostly Bashayer launch deck + Tara Phase 2 sheet) · content-assets/ (wadeem v3/v4 + cards, bashayer-b4-412, tyron, tara-park deck + ad set, marsa guide, amer income plan + ground floor, lagoons ep1/ep2, film kit, owner reports francis/sameer, Chris 107 statement, Seema offer, 100M + Oasis decks, reel scripts 27 Aug-7 Sep) · data/dld/lagoons.json · data/context.md.
+DONE (24 Sep): content-assets/research/2026-09-24-jake-nazer-structure-and-bricks.md (product facts only; macro bricks stay with Content/Market).
+DONE (23 Sep): data/projects/pricepoints.md · data/chat-archive/ (INDEX, MANIFEST, digest, 18 transcripts - project facts extracted, mostly Bashayer launch deck + Tara Phase 2 sheet) · content-assets/ (wadeem v3/v4 + cards, bashayer-b4-412, tyron, tara-park deck + ad set, marsa guide, amer income plan + ground floor, lagoons ep1/ep2, film kit, owner reports francis/sameer, Chris 107 statement, Seema offer, 100M + Oasis decks, reel scripts 27 Aug-7 Sep) · data/dld/lagoons.json · data/context.md.
 NOT mined (low project yield or images only): 100m/ pngs, posts/sold-8m pngs, wadeem carousels (pngs - facts are in the briefing), library/ Honest Guide + Pearl Diver, lewis/ CRM brief, ladder-model.xlsx, amer xlsx calculators, lagoons-mortgage-guide.pdf (Dubai mortgage mechanics - Finance/Market), ValuStrat Q2 pdf (Market's), other data/dld/*.json (non-Lagoons Dubai communities - pull on trigger).
 NEXT: the account export zips (conversations, projects) when Calum drops them - same rules.
 
@@ -49,3 +56,4 @@ NEXT: the account export zips (conversations, projects) when Calum drops them - 
 9. Modon pipeline: what launches next and when (Reem prediction unverified); Al Naseem resale levels.
 10. Vision 207 / Sobha City AD / Taraf / Jebel Ali Springs / Imkan Artery - identify and fill (developer, location, product) or archive.
 Also: Modon ADQ % and ADX listing, Đ23bn H1 source, Wadeem market claims (AD outsold Dubai last week Aug; 160K vs 15.9K off-plan) - Market handoff candidates.
+
