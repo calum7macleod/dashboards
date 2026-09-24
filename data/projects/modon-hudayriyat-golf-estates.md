@@ -24,3 +24,9 @@ Current phase, prices, sizes, handover dates, service charge - all missing. Whet
 
 ## Sources
 deals.json, HGE deck memory (Jul 2026), context.md (Aug 2026), Amer income plan (Aug 2026).
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- Đ13bn, 1,700 properties, sold in days, UAE record - launch dated JULY 2026 by Jake (the file had no launch month). Sold out.
+- One school confirmed in Golf Estates; first beachfront golf course on the island plus two premium courses; third hill with a second golf course under construction ("not confirmed this year").
+- Plan shape per Jake for Modon: 40/60 or 50/50.
