@@ -35,3 +35,12 @@ Current phase price list and handover dates - none since Jul 2026. Supply: more 
 
 ## Sources
 pricepoints.md / deals.json, Tara investor deck (Aug 2026, content-assets/tara-park), Tara Phase 2 payment sheet replica (chat archive, Jul 2026), Tara ad-set sheet (Aug 2026), reel scripts (Jul-Sep 2026), context.md.
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- ADGM workforce: Jake gives +34% in 12 months to 49,027 (12,400 added) in one video and "+51% in 2025 to over 44,000" in another; the Tara deck has 47,047 (+44%, Q1 2026 ADGM release). THREE versions on file - Market to receipt one before the Abu pack or any reel uses it. AUM: +36% / +33% (Jake) vs +57% (deck).
+- Ratio Jake built: one new villa per four new ADGM employees (12,400 / 3,070). Reem-specific ratio not given.
+- ADGM claims: largest financial centre in MENA; English common law; no salary tax; BlackRock, Goldman, Brevan Howard, JP Morgan named (deck names BlackRock, State Street, PGIM, Nuveen, Capital Group, Man, Bain, Barings, Hillhouse, Binance).
+- Reem apartments +15% Jan-Aug 2026 YoY per Jake vs Reem +22% (ValuStrat Q2 via deck) - different windows; pick one with its source.
+- Rail: Reem/ADGM station on the six-station press map (23 Sep) - "confirmed, not built"; 350 km/h, 30 min to Dubai. Source and date needed.
+- Rent cap: ADGM carve-out (Maryah, parts of Reem) from the ADREC 0% cap per Baker McKenzie (Market h0001) - check whether Tara Park sits inside the carve-out before any yield line.
