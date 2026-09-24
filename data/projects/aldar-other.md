@@ -12,3 +12,10 @@ Confidence: low-medium; refresh before pitching any of these · Last touched: 23
 
 ## Sources
 Amer income plan (Aug 2026), Michael's buyer card, golf-community deck memory, Marsa guide (Aug 2026), Tyron pack (Aug 2026).
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- Aldar: incorporated 2004, listed; Mubadala 28%, stake raised four times on the open market since Mar 2026; 20+ schools, 36K students, Cranleigh; King's College Wimbledon on Fahid Island 2028; builds roads, utilities and national housing; Đ66bn contracts 2025 (matches AGBI); 141 active sites; 3,500 homes committed for 2026, 1,075 delivered by end March.
+- THE WILDS - CONFLICT: Jake places The Wilds in DUBAI as an Aldar-Dubai Holding JV. This file has carried it as Abu Dhabi (Michael's question about the March 2026 launch). Resolve before answering Michael: if it is the Dubailand JV community, the unsold-units question is a Dubai-market question (PIX -3.5% YoY Aug-26), not an Abu Dhabi one.
+- Aldar plan shape per Jake: 50/50 (also Eagle Hills, Ohana) - vs Yas Point's documented 55/45. Flag.
+- Al Ghadeer Parks (Aldar, Seih Al Sedeirah, AD-Dubai corridor) - added 23 Sep for the Abu pack, web-sourced: 453 homes, 2-3 bed townhouses and 4-bed villas, from Đ1.9M, 3-bed TH from ~Đ2.3M, 4-bed villa from ~Đ3.3M, 55/45 with 5% down, handover Q2 2031; previous phase Al Ghadeer Gardens New Release 352 homes from Đ1.85M (Q4 2030), first release sold out in 48 hours; Đ10bn masterplan 14,408 homes over 15 years (Aldar, Apr 2018). Source: Metropolitan listings, Sep 2026, MED-LOW - Aldar's sheet not on file. Full workings in the Abu pack doc (Claude Doc, 23 Sep).
