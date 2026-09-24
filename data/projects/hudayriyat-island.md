@@ -23,3 +23,13 @@ Where the focus moves from 5 Oct 2026 with Jake. Modon Abu Dhabi deals on the le
 
 ## Open
 Service charges by project (only Wadeem's provisional Đ8.32/sqft on file); handover waves 2029-2031; psf table by project; which island stats have a Modon document behind them.
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- Scale: larger than Kensington, Chelsea, Mayfair and Westminster combined; low density; one developer; 16 km blue-flag beach; next to the royal palaces; 20 min to ADGM; 20 min to the airport and off the flight path.
+- Three man-made hills; CONTRADICTION in his own videos on elevation per row (15 m vs 10 m); highest homes 50 m+. Third hill under construction with direct beach and a second golf course - "not confirmed this year despite brokers' rumours".
+- Sold out (per Jake): Nawayef Hills, Nawayef Village, Golf Estates, Al Naseem (5-bed from Đ10M; handover Q1 2028, first project to complete), "Bashwiya" two phases (from Đ7M, waterfront Đ20M+ - transcript name, almost certainly Bashayer), six ocean-view buildings. Villas Đ7M-80M; "every project sold out"; all with private beach; plans 40/60 or 50/50.
+- Sport and lifestyle: velodrome; Surf Abu Dhabi 1 km wave pool; first beachfront golf course plus two premium courses; equestrian; hiking hill; running and cycling track; football; skate park; Ilios open and licensed; one 5-star open, two more coming; two schools confirmed at Al Naseem, one in Golf Estates.
+- Coming: apartments 2026; more bridges and tunnels.
+- Not on the press rail map (23 Sep): Hudayriyat has no high-speed rail station on the six-station map (Marsa Al Saadiyat, Reem/ADGM, Yas, Zayed Airport; Al Maktoum, Al Jaddaf). Do not claim rail for Hudayriyat.
+- Market data per Jake, Jan-Aug 2026 YoY: Yas villas +34%, Saadiyat villas +28%, Saadiyat apartments +21%, Reem apartments +15% - no Hudayriyat figure quoted.
