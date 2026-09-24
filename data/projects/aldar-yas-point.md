@@ -22,3 +22,10 @@ Next phase name, pricing, dates. Phase 1 resale premiums (none on file). Did Tyr
 
 ## Sources
 content-assets/tyron/Tyron-Yas-Point-Pack (Aug 2026), final-session digest (Jul 2026), Tara ad-set sheet (Aug 2026).
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- Yas per Jake: closest island to Dubai; F1 finale, drive the track some evenings; Etihad Arena; Yas Links "best course in Abu Dhabi"; Warner Bros and Ferrari World; Disney and Harry Potter coming; 20 min to ADGM.
+- High-speed rail station on Yas (six-station press map, 23 Sep) - source and date needed before use.
+- Market per Jake, Jan-Aug 2026 YoY: Yas villas +34% (no Yas apartment figure quoted).
+- Aldar plan shape per Jake: 50/50 - CONFLICT with the documented Yas Point 55/45 (5% booking). Keep the pack's 55/45.
