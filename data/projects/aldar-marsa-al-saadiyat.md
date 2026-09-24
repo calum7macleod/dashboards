@@ -31,3 +31,12 @@ No price sheet, mix or phasing. 18,000 homes is real supply. Rail is a promise. 
 
 ## Sources
 content-assets/marsa/marsa-guide-src.html (Aug 2026), ValuStrat Q2-26 (content-assets/research/), context.md 21 Aug 2026.
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- FIRST RELEASE PRICING per Jake - "Talay": 4-bed Đ13.5M · 5-bed Đ15.5M · 6-bed Đ17.2M; 5,400-6,825 sqft BUA; 5% booking, 50% during construction (balance at handover - 45%? his wording is ambiguous); Đ1,800-2,000 psf on plot. On BUA that is ~Đ2,500 psf for the 4-bed. CONFLICT with this file's Aug 2026 line "no pricing released" - Jake's videos are Jul-Sep, so a first release may have opened after the guide shipped. Calum's estimate table (villas inner rings Đ2,000-2,700 psf, Đ8-17M) sits inside Jake's numbers. Get the Talay sheet.
+- Masterplan claims consistent with the guide: final phase of the masterplan; 350-berth marina, yachts to 100 m; 1 km promenade; 6,000-seat Gehry theatre; two 5-star hotels; 8 km coastline; new schools and healthcare.
+- Rail: Marsa Al Saadiyat station underground, work started (press map 23 Sep - source and date needed).
+- Saadiyat context per Jake: Guggenheim opens Dec 2026; Natural History Museum in the cultural district; Mamsha 1 km with a Michelin star, open; Saadiyat Grove Q4 2026, 100+ brands (LV, Dior); records - Đ400M off-plan mansion at Faya, Đ200M Four Seasons penthouse; Saadiyat Lagoons sits below Marsa; the empty plot next to the Four Seasons is "the most prime land left"; two rumoured developments between Ramhan and Saadiyat.
+- Market per Jake, Jan-Aug 2026 YoY: Saadiyat villas +28%, Saadiyat apartments +21% (guide used ValuStrat Q2: apartments +18.3%, villas +12% - different windows and sources; do not mix).
+- His statement: "only a government developer gets this plot; first launch = best value, later phases priced up".
