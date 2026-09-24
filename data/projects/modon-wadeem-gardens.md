@@ -44,3 +44,11 @@ Jake Nazer 6-bed · Ankur 4-bed (ADIB) · pitch list above. None booked as of 23
 
 ## Sources
 Modon launch slides via Calum (14 Sep 2026), developer payment-plan graphics (22 Sep 2026), content-assets/wadeem/wadeem.html (briefing v3 source) and v4 pdf, jake/ankur cards (22 Sep 2026), context.md handover 21 Sep 2026.
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- Sizes/prices per Jake: 4-bed 4,620 sqft GSA Đ8.7M · 5-bed 5,500 sqft Đ10M · 6-bed 6,360 sqft Đ11.6M. CONFLICT with the Modon release on file (4,628 / 5,490 / 6,361 sqft; 5-bed Đ10.2M). The release is the better source; Jake's 10M is a rounding or an older sheet.
+- Buyer picks exterior (modern / Arabic) and layout; 5- and 6-beds are single row.
+- Plan per Jake: 75% financing, 25% during construction, 5% deposit; mortgage kicks in after 20% paid - "first time in UAE", ADIB product. Consistent with the ADIB 25/75 route on file (bank draws after the fourth 5%). Jake also states Modon's cash plans as "40/60 or 50/50" - supports version A (40/60) in the plan conflict above, not 45/55.
+- Location claims: tunnel coming = quickest route to Dubai, the airport and the Grand Mosque; 25 min to ADGM; 2 km air-conditioned walkway ("largest in Abu Dhabi"); largest mall in Abu Dhabi coming; schools coming.
+- Content note: Wadeem was Jake's top-performing sell reel (32.9K views, scarcity + "buying with me" hook).
