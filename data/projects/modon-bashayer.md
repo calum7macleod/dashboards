@@ -35,3 +35,8 @@ Ankur (five-property options pack included Bashayer) · HNW cash via Jake's netw
 
 ## Sources
 chat archive 13-17 Jul 2026 (Bashayer deck v1-v8, competitor message, Phase 3 sheet), content-assets/bashayer-b4-412 (Aug 2026, pack 8.25M + breakdown 8.0M), deals.json / pricepoints.md (Tony), context.md, final-session digest (21 Jul 2026).
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- "Bashwiya" (transcript spelling - almost certainly Bashayer): two phases sold out, from Đ7M, waterfront Đ20M+. If right, the Jul 2026 Building 5 release is sold out and the entry was Đ7M - above the competitor message's Đ2.5M 1-bed and near the B4-412 base of Đ7.1M. Confirm the name and the "two phases" with Modon before use.
+- "Six ocean-view buildings" sold out on Hudayriyat - may be Bashayer's buildings; unconfirmed.
