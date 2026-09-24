@@ -1,8 +1,8 @@
 import json,sys,os
 SLIDES=[
- dict(n="01",title="First 365 Days<br>in Real Estate",big="Đ122,800,000",sub="Total sales volume  ·  40 deals",serif="$33.4M USD  ·  £25.0M GBP",line="",foot="",bg="bg3full.jpg",pos="70%",bigx=True,topdark=True,bgx="background-size:auto 100%;background-position:center;background-color:#152A1F;"),
- dict(n="02",title="Best Month",big="Đ21,300,000",sub="April 2026  ·  8 deals",serif="$5.8M USD  ·  £4.3M GBP",line="Đ10.2M and 3.3 deals a month, on average",foot="@uaecalum<span>·</span>+971 55 350 2699",bg="bg2.jpg",pos="73%",cls="up"),
- dict(n="03",title="Where",big="Dubai 33  ·  Abu Dhabi 7",sub="31 ready  ·  9 off-plan",serif="Biggest deal  Đ8,000,000  ·  Hudayriyat penthouse",line="",foot="@uaecalum<span>·</span>+971 55 350 2699",bg="bg1.jpg",pos="72%",wide=True,cls="up big3"),
+ dict(n="01",title="First 365 Days<br>in Real Estate",big="Đ122,800,000",sub="Total sales volume  ·  40 deals",serif="$33.4M USD  ·  £25.0M GBP",line="",foot="",bg="bg3.jpg",pos="70%",bigx=True,topdark=True),
+ dict(n="02",title="Best Month",big="Đ21,300,000",sub="April 2026  ·  8 deals",serif="$5.8M USD  ·  £4.3M GBP",line="Đ10.2M and 3.3 deals a month, on average",foot="",bg="bg2.jpg",pos="73%",cls="up"),
+ dict(n="03",title="Where",big="Dubai 33  ·  Abu Dhabi 7",sub="31 ready  ·  9 off-plan",serif="Biggest deal  Đ8,000,000  ·  Hudayriyat penthouse",line="",foot="",bg="bg1.jpg",pos="72%",wide=True,cls="up big3"),
 ]
 TOT=f"{len(SLIDES):02d}"
 def slide(s):
