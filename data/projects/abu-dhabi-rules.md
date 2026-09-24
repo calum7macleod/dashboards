@@ -14,3 +14,7 @@ Last verified: Sep 2026 · Confidence: high on fees/conventions, medium on finan
 - Launch mechanics (Modon): EOI holders and ADIB pre-approved buyers choose first; dates move; 2-minute unit windows. See modon.md.
 - Register data: ADREC/DARI where available; ValuStrat, CBRE, Cavendish for market colour; DLD feed is Dubai only.
 - Rent freeze: Abu Dhabi 0% since 2 Jun 2026, replacing the 5% cap, temporary (indicative - primary source to confirm before camera). Long-let models flat; short-let and capital-growth unaffected.
+
+- Plan shapes as stated by Jake Nazer (reels Jul-Sep 2026, unverified): Dubai 70-80% during construction, 20-30% at handover, handover usually the only mortgageable part; Abu Dhabi - Modon 40/60 or 50/50; Aldar, Eagle Hills, Ohana 50/50; instalments linked to construction progress by law. Documented exceptions on file: Yas Point 55/45 (Aldar), Ramhan 10/40/50 (Eagle Hills), Wadeem 45/55 graphic (Modon) - his generalisation is a rule of thumb, not a sheet.
+- Freehold for foreigners since 2019 - "a market seven years old" (Jake's framing; the 2019 law amendment is the fact).
+- Rent cap: ADREC 5% cap became 0% on 2 Jun 2026, temporary; ADGM jurisdiction (Al Maryah, parts of Reem) is carved out per Baker McKenzie (Market h0001, 21 Sep) - check a Reem project's jurisdiction before any rent line.
