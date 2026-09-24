@@ -42,3 +42,11 @@ Source: context.md SPA-anxiety playbook (Aug 2026) + Tara investor deck ch.07-08
 
 ## Sources
 Wadeem briefing v3 html / v4 pdf (Sep 2026), Tara investor deck (Aug 2026), reel scripts (Jul-Sep 2026), context.md, chat archive 13-17 Jul 2026 (Bashayer deck build).
+
+
+## Jake Nazer's claims (reels Jul-Sep 2026, via Content brick sheet 24 Sep 2026) - UNVERIFIED until Market signs
+- "Government-owned; outsold every UAE developer in H1 2026; Aldar didn't launch at scale" - consistent with the Đ23bn H1 line above.
+- Modon plan shapes: 40/60 or 50/50; UAE law links instalments to construction progress.
+- Hudayriyat portfolio per Jake, all sold out: Nawayef Hills, Nawayef Village, Golf Estates (Đ13bn, 1,700 homes, days, "UAE record", July 2026), Al Naseem (5-bed from Đ10M, handover Q1 2028, first to complete), Bashayer ("Bashwiya" in transcript) two phases from Đ7M with waterfront Đ20M+, six ocean-view buildings. Villas Đ7M-80M.
+- Pipeline per Jake: apartments 2026; third hill under construction (second golf course, direct beach) - "not confirmed this year".
+- "Land like this goes to who the government trusts, not the highest bidder" (his statement, not a fact).
