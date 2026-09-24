@@ -36,6 +36,9 @@ Formats and lengths
 | Atlas / island guide | 3:30-5:20 | numbered, PDF tease top, keyword CTA | 12.8K |
 | Monthly update (Dubai) | 2:30 | method stated / data by community with % / interpretation labelled feeling / tease tomorrow | 27.6K, top 68.8K |
 
+## 2b. Hook rule (Calum, 24 Sep - agreed)
+A hook is a search phrase that reads on the grid with no context: what a UK buyer would type, six to nine words, definitional not decisional ("what is X", "why is X", "explaining X", "is X or Y better"). The number arrives in line two, never in the title. Search grammar is shared; subject and angle are ours. Too narrow fails ("which villa holds its value"); a swapped-noun copy of his title fails ("who is Modon" after "who is Aldar" - use the door he didn't). Calum's 29-hook set is in tasks.json > contentIdeas tagged "search explainer".
+
 ## 3. Brick sheet - every stat he used. [v] = Market to verify before any use.
 Market age and macro
 - Freehold since 2019 -> "a market seven years old" [v]
