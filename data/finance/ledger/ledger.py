@@ -24,6 +24,7 @@ INCOME_RX = re.compile(r"wps|salary|commission|airbnb|payout|refund|cashback", r
 INVEST_RX = re.compile(r"kraken|coinbase|tara|modon|hudayriyat|reem", re.I)
 # money movers between UAE and UK: the outflow lands on one statement, the inflow on another, days later, other currency, fee eaten in between
 INTERMEDIARY_RX = re.compile(r"wise|transferwise|ziina|al ansari|lulu exch|al fardan|uae exchange|western union|remitly|revolut|payoneer|paypal|careem pay|binance|p2p|xoom|worldremit|ria money|moneygram|sharaf exch|gcc exch|joyalukkas|swift|tt ref|inward remit|outward remit|international transfer|faster payment|fps", re.I)
+CARD_ACCOUNT_RX = re.compile(r"adib cc|tesco|virgin|santander|mbna|m&s|hsbc|barclay|amex|aqua", re.I)   # our card accounts by name
 LARGE_AED = 2000   # any unexplained outflow above this is checked against inflows elsewhere before it is allowed to be "spend"
 
 def load_fx():
@@ -61,8 +62,8 @@ def guess_type(r):
     if r.get("type"): return r["type"]
     if re.search(r"interest|late payment fee|cash advance fee|cash transaction fee|foreign exchange fee|annual fee|wise charges", d, re.I) and a < 0: return "debt_cost"
     if r["account"] in OWN_CARDS or r["account"] == "ADIB CC" or r["account"] in ("Tesco Clubcard", "Virgin Money"):
-        if a > 0 and re.search(r"thank you|payment dd|app payment|faster payment|payment received|card payment in", d, re.I): return "card_repayment"
-        if a < 0 and re.search(r"payment reversal", d, re.I): return "transfer"
+        if a > 0 and re.search(r"thank you|payment dd|app payment|faster payment|payment received|card payment in", d, re.I) and not re.search(r"reversed|reversal", d, re.I): return "card_repayment"
+        if a < 0 and re.search(r"payment revers", d, re.I): return "transfer"
     wt = r.get("wise_type")
     if wt in ("MONEY_ADDED", "CONVERSION", "DEPOSIT"): return "transfer"
     if wt == "TRANSFER":
@@ -77,9 +78,9 @@ def guess_type(r):
     if DEBT_COST_RX.search(d) and a < 0 and not TRANSFER_RX.search(d): return "debt_cost"
     if CARD_RX.search(d) and r["account"] not in OWN_CARDS:  # paying one of our cards from a bank account
         return "card_repayment" if a < 0 else "borrowing"
-    if r["account"] in OWN_CARDS or r["account"] == "ADIB CC" or r["account"] in ("Tesco Clubcard", "Virgin Money"):
+    if CARD_ACCOUNT_RX.search(r["account"]):
         if a > 0 and (TRANSFER_RX.search(d) or re.search(r"thank you|payment dd|app payment|faster payment|payment received", d, re.I)): return "card_repayment"          # credit onto the card = repayment leg
-        if a < 0 and re.search(r"payment reversal", d, re.I): return "transfer"   # the bounced leg, pairs with the bank's RETURNED DD
+        if a < 0 and re.search(r"payment revers", d, re.I): return "transfer"   # the bounced leg, pairs with the bank's RETURNED DD
         if a > 0: return "refund"
     if INVEST_RX.search(d): return "investment"
     if TRANSFER_RX.search(d): return "transfer"
@@ -150,7 +151,7 @@ def match_transfers(rows, days=4, days_intl=7, tol=0.005, tol_intl=0.06):
             intl = a["currency"] != b["currency"] or INTERMEDIARY_RX.search(a["description"] + b["description"])
             if abs((datetime.date.fromisoformat(b["date"]) - da).days) > (days_intl if intl else days): continue
             if a["currency"] == b["currency"]:
-                card_leg = any(x["account"] in ("ADIB CC", "Tesco Clubcard", "Virgin Money") or CARD_RX.search(x["account"]) for x in (a, b))
+                card_leg = any(CARD_ACCOUNT_RX.search(x["account"]) for x in (a, b))
                 ok = abs(abs(a["amount"]) - abs(b["amount"])) <= (0.01 if card_leg else max(0.01, 0.01 * abs(a["amount"])))   # card payments land exact; bank->Wise may lose a flat fee
             else:
                 ok = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) <= tol_intl * max(abs(a["amount_aed"]), abs(b["amount_aed"]))
