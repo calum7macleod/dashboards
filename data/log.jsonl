@@ -83,3 +83,4 @@
 {"date": "2026-09-26", "agent": "uploader", "did": "Appended 18 MBNA 2 statement rows + 8 ccBalances to data/finance.json (Jan-Sep 26); handoff Finance", "wrote": ["data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
 {"date": "2026-09-26", "agent": "uploader", "did": "Appended 37 M&S card rows + 1 ccBalance to data/finance.json (Jan-Sep 26); handoff Finance", "wrote": ["data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
 {"date": "2026-09-26", "agent": "uploader", "did": "Appended 16 HSBC card rows + 2 ccBalances to data/finance.json (Jan-Sep 26); handoff Finance", "wrote": ["data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
+{"date": "2026-09-26", "agent": "uploader", "did": "Appended 26 Barclaycard Plat rows + 1 ccBalance to data/finance.json (Jan-Sep 26); handoff Finance", "wrote": ["data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
