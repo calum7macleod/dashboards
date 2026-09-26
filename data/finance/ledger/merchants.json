@@ -2,6 +2,23 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "foreign exchange conversion charge",
+   "category": "Fees",
+   "sub": "Card fees (late / cash advance / FX)",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "unpaid dd",
+   "category": "Fees",
+   "sub": "Bounced card payment (reversal)",
+   "type": "transfer"
+  },
+  {
+   "rx": "emirates plaisance|emirates air|flydubai|etihad|british airways|easyjet|ryanair",
+   "category": "Entertainment",
+   "sub": "Travel"
+  },
+  {
    "rx": "cash interest charge|interest on cash",
    "category": "Fees",
    "sub": "Card interest",
