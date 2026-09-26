@@ -2,6 +2,17 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "\\bcash fee\\b|non-sterling purchase fee|non sterling|foreign transaction fee",
+   "category": "Fees",
+   "sub": "Card fees (late / cash advance / FX)",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "apple online store|apple store|jumbo|sharaf dg|virgin megastore|emax",
+   "category": "Life",
+   "sub": "Tech / devices"
+  },
+  {
    "rx": "payment reversed|dd rev",
    "category": "Fees",
    "sub": "Bounced card payment (reversal)",
