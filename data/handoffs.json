@@ -150,5 +150,13 @@
   "to": "finance",
   "item": "BoS CSV export (GBP, 2 Jan-25 Sep 26): 209 rows appended to data/finance.json for May/Jun/Sep 26 (no prior BoS rows those months), source tag 'BoS CSV export 26 Sep 26'. 381 rows for Jan-Apr/Jul/Aug staged in data/staging/2026-09-26-bos-csv-jan-aug.json - overlap 101 existing screenshot BoS rows; retire those and splice. category blank, note=bank type code. 1 exact duplicate line dropped (21 Sep FPO 1000 x2, same running balance). Closing balance -2,565.88 overdrawn 25 Sep. 14 RETURNED DD credits Feb-Jul.",
   "status": "open"
+ },
+ {
+  "id": "h0020",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "manager",
+  "item": "data issue: finance.json amount sign inconsistent - BoS Jul 26 rows positive for debits, Aug 26 negative for debits, CC interest rows positive for charges. Uploader used negative = money out for the CSV rows. Needs one rule in schema",
+  "status": "open"
  }
 ]
