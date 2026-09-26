@@ -16,7 +16,7 @@ OWN_ACCOUNTS = ["ADIB", "ADIB CC", "Mashreq", "BoS", "Wise", "Binance", "Tal Car
 MULTI_CCY = ("Wise", "Binance")   # each currency balance is its own sub-ledger: "Wise AED", "Wise GBP", "Binance USDT" - a conversion inside the wallet is a pair like any other
 PERSON_RX = re.compile(r"^[A-Za-z'\-]+ [A-Za-z'\-]+( [A-Za-z'\-]+)?$")
 OWN_CARDS = ["MBNA", "M&S", "HSBC", "Barclaycard", "Santander", "Tesco", "Virgin", "Amex", "American Express", "Aqua", "BA Amex"]
-CARD_RX = re.compile("|".join(re.escape(c) for c in OWN_CARDS), re.I)
+CARD_RX = re.compile(r"mbna|m&s|m s credit|m s master|hsbc (credit card|visa)|b/card|barclaycard|santander ?cards|tesco bank|virgin money|amex|american exp|aqua( credit card)?$|aqua credit card", re.I)
 TRANSFER_RX = re.compile(r"transfer|tfr|ziina|wise|binance|card payment in|payment received|thank you|own account|mashreq|adib|bank of scotland|\bbos\b|c ?l ?macleod|calum", re.I)
 DEBT_COST_RX = re.compile(r"interest|profit|late fee|annual fee|fx fee|conversion fee|markup|overlimit|charge", re.I)
 CASH_RX = re.compile(r"\batm\b|cash withdrawal|cash advance|quasi cash", re.I)
@@ -59,6 +59,15 @@ def guess_type(r):
     """First-pass type. Human confirms one-legged / Unaccounted rows; merchants.json overrides."""
     d = r["description"]; a = r["amount"]
     if r.get("type"): return r["type"]
+    wt = r.get("wise_type")
+    if wt in ("MONEY_ADDED", "CONVERSION", "DEPOSIT"): return "transfer"
+    if wt == "TRANSFER":
+        if re.search(r"calum|macleod", d, re.I) and "Charges" not in d: return "transfer"
+        if d.startswith("Wise Charges"): return "debt_cost"
+        if re.search(r"received money", d, re.I): return "income"
+        return "spend"                                    # paid a person or company from Wise: editor, VA, supplier - merchants.json names it
+    if wt == "CARD" and CARD_RX.search(d): return "card_repayment"
+    if wt == "CARD": return "refund" if a > 0 else "spend"
     if INTERMEDIARY_RX.search(d) or r["account"].split()[0] in MULTI_CCY: return "transfer"   # matched into a chain later; crypto BUYS become investment when the Binance history says so
     if CASH_RX.search(d): return "cash_withdrawal" if a < 0 else "transfer"
     if DEBT_COST_RX.search(d) and a < 0 and not TRANSFER_RX.search(d): return "debt_cost"
@@ -78,6 +87,20 @@ def guess_type(r):
 
 COUNTS_AS_SPEND = {"spend", "refund", "debt_cost", "cash_withdrawal"}
 
+def load_merchants():
+    try: return [(re.compile(m["rx"], re.I), m) for m in json.load(open("merchants.json"))["merchants"]]
+    except Exception: return []
+MERCHANTS = load_merchants()
+def apply_merchant(r):
+    """merchants.json: [{rx, category, sub, type?}] - first match wins; type override only for rows still typed spend/refund/income."""
+    hay = (r.get("merchant") or "") + " | " + r["description"]
+    for rx, m in MERCHANTS:
+        if rx.search(hay):
+            r["category"] = m["category"]; r["sub"] = m.get("sub")
+            if m.get("type") and r["type"] in ("spend", "refund", "income", "transfer"):
+                r["type"] = ("debt_principal" if r["amount"] < 0 else "borrowing") if m["type"] == "auto_debt" else m["type"]
+            return
+
 # ---------- build ----------
 def build(files):
     fx = load_fx()
@@ -90,8 +113,12 @@ def build(files):
     for i, r in enumerate(rows):
         r["id"] = f"L{i+1:05d}"
         r["type"] = guess_type(r)
-        r["amount_aed"] = round(r["amount"] * fx_rate(fx, r["currency"], r["month"]), 2)
+        if r.get("txn_ccy") and r.get("txn_amount") is not None and r["txn_ccy"] != r["currency"] and r["txn_ccy"] in fx:
+            r["amount_aed"] = round(r["txn_amount"] * fx_rate(fx, r["txn_ccy"], r["month"]), 2)   # card spent in AED/USD on a GBP balance: value it in the spent currency
+        else:
+            r["amount_aed"] = round(r["amount"] * fx_rate(fx, r["currency"], r["month"]), 2)
         if r["type"] == "income" and not INCOME_RX.search(r["description"]): r["flags"].append("unexplained_credit")
+        apply_merchant(r)
         if not r.get("category"): r["category"] = "Unaccounted" if r["type"] in COUNTS_AS_SPEND else {"debt_cost": "Fees", "investment": "Investing", "cash_withdrawal": "Other"}.get(r["type"], "Other")
     pairs, one_legged = match_transfers(rows)
     write_ledger(rows)
