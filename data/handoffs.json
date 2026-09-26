@@ -253,7 +253,7 @@
   "from": "uploader",
   "to": "finance",
   "item": "MBNA 2 (Visa *3318, limit 2,500): 9 statements Jan-Sep 26 (latest 21 Sep) from PDF screenshots. 18 rows appended to data/finance.json - your 23 Aug interest 7.10 row matched exactly and was skipped, nothing to retire. 8 ccBalances entries appended (Jan-Jul + 21 Sep; 23 Aug skipped, your 5 Sep entry carries 1,931.05). Jan-Jun statement dates set to the 21st and flagged approximate - page 3 carries no date. Chain verified all 9; your 6 Jul 2,498.74 and 26 Jul 2,495.21 readings both sit on it exactly. 21 Sep stmt: bal 1,878.37, min 49.66 due 16 Oct by DD. Address and card number not recorded.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0033",
