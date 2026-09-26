@@ -13,13 +13,18 @@ import sys, json, csv, hashlib, re, datetime, collections, glob
 USD_AED = 3.6725
 FX_DEFAULT = {"GBP": 4.75, "USD": USD_AED, "EUR": 4.05, "AED": 1.0}   # "around" - overwritten by fx.json (effective rates from our own conversions)
 OWN_ACCOUNTS = ["ADIB", "ADIB CC", "Mashreq", "BoS", "Wise", "Binance", "Tal Card"]
+MULTI_CCY = ("Wise", "Binance")   # each currency balance is its own sub-ledger: "Wise AED", "Wise GBP", "Binance USDT" - a conversion inside the wallet is a pair like any other
+PERSON_RX = re.compile(r"^[A-Za-z'\-]+ [A-Za-z'\-]+( [A-Za-z'\-]+)?$")
 OWN_CARDS = ["MBNA", "M&S", "HSBC", "Barclaycard", "Santander", "Tesco", "Virgin", "Amex", "American Express", "Aqua", "BA Amex"]
 CARD_RX = re.compile("|".join(re.escape(c) for c in OWN_CARDS), re.I)
 TRANSFER_RX = re.compile(r"transfer|tfr|ziina|wise|binance|card payment in|payment received|thank you|own account|mashreq|adib|bank of scotland|\bbos\b|c ?l ?macleod|calum", re.I)
 DEBT_COST_RX = re.compile(r"interest|profit|late fee|annual fee|fx fee|conversion fee|markup|overlimit|charge", re.I)
 CASH_RX = re.compile(r"\batm\b|cash withdrawal|cash advance|quasi cash", re.I)
 INCOME_RX = re.compile(r"wps|salary|commission|airbnb|payout|refund|cashback", re.I)
-INVEST_RX = re.compile(r"binance|kraken|coinbase|tara|modon|hudayriyat|reem", re.I)
+INVEST_RX = re.compile(r"kraken|coinbase|tara|modon|hudayriyat|reem", re.I)
+# money movers between UAE and UK: the outflow lands on one statement, the inflow on another, days later, other currency, fee eaten in between
+INTERMEDIARY_RX = re.compile(r"wise|transferwise|ziina|al ansari|lulu exch|al fardan|uae exchange|western union|remitly|revolut|payoneer|paypal|careem pay|binance|p2p|xoom|worldremit|ria money|moneygram|sharaf exch|gcc exch|joyalukkas|swift|tt ref|inward remit|outward remit|international transfer|faster payment|fps", re.I)
+LARGE_AED = 2000   # any unexplained outflow above this is checked against inflows elsewhere before it is allowed to be "spend"
 
 def load_fx():
     try: return {**FX_DEFAULT, **json.load(open("fx.json"))}
@@ -41,6 +46,7 @@ def month_label(date):  # 'Mon YY'
 def canonical(account, currency, date, amount, description, source, merchant=None, category=None, sub=None, typ=None, extra=None):
     """Build one canonical row. Parsers call this."""
     d = datetime.date.fromisoformat(date)
+    if account in MULTI_CCY: account = f"{account} {currency}"
     r = {"id": None, "date": date, "month": d.strftime("%b %y"), "dow": d.strftime("%a"), "account": account,
          "currency": currency, "amount": round(float(amount), 2), "amount_aed": None, "type": typ, "category": category,
          "sub": sub, "description": str(description).strip(), "merchant": merchant or norm_desc(description)[:40],
@@ -53,7 +59,7 @@ def guess_type(r):
     """First-pass type. Human confirms one-legged / Unaccounted rows; merchants.json overrides."""
     d = r["description"]; a = r["amount"]
     if r.get("type"): return r["type"]
-    if r["account"] in ("Binance",) : return "investment"
+    if INTERMEDIARY_RX.search(d) or r["account"].split()[0] in MULTI_CCY: return "transfer"   # matched into a chain later; crypto BUYS become investment when the Binance history says so
     if CASH_RX.search(d): return "cash_withdrawal" if a < 0 else "transfer"
     if DEBT_COST_RX.search(d) and a < 0 and not TRANSFER_RX.search(d): return "debt_cost"
     if CARD_RX.search(d) and r["account"] not in OWN_CARDS:  # paying one of our cards from a bank account
@@ -63,6 +69,9 @@ def guess_type(r):
         if a > 0: return "refund"
     if INVEST_RX.search(d): return "investment"
     if TRANSFER_RX.search(d): return "transfer"
+    if (PERSON_RX.match(d.strip()) and abs(a) >= 500 and r["account"] in ("ADIB", "Mashreq", "BoS")
+            and not re.search(r"\b(ltd|llc|fzco|fze|mart|store|cafe|restaurant|dubai|abu dhabi|hotel|market|pharmacy|clinic|gym)\b", d, re.I)):
+        return "transfer"   # bare person name on a BANK statement = someone moved money; conduit or external, resolve by hand
     if a > 0 and INCOME_RX.search(d): return "income"
     if a > 0: return "income"   # unexplained credit - flagged below
     return "spend"
@@ -93,8 +102,11 @@ def build(files):
     for m, v in summ["by_month"].items(): print(m, {k: round(x) for k, x in v.items()})
     return rows
 
-def match_transfers(rows, days=4, tol=0.02):
-    cand = [r for r in rows if r["type"] in ("transfer", "card_repayment", "investment", "borrowing") and not r["pair_id"]]
+def match_transfers(rows, days=4, days_intl=7, tol=0.005, tol_intl=0.06):
+    cand = [r for r in rows if r["type"] in ("transfer", "card_repayment", "investment", "borrowing", "cash_withdrawal") and not r["pair_id"]]
+    # large unexplained outflows typed spend get a seat at the table: if they match an inflow elsewhere they were never spend
+    probes = [r for r in rows if r["type"] == "spend" and abs(r["amount_aed"]) >= LARGE_AED and r["category"] in ("Unaccounted", None, "Other") and not r["pair_id"]]
+    probe_ids = {r["id"] for r in probes}; cand += probes
     pairs, used = [], set()
     for a in cand:
         if a["id"] in used: continue
@@ -103,11 +115,12 @@ def match_transfers(rows, days=4, tol=0.02):
         for b in cand:
             if b["id"] in used or b["id"] == a["id"] or b["account"] == a["account"]: continue
             if (a["amount"] > 0) == (b["amount"] > 0): continue
-            if abs((datetime.date.fromisoformat(b["date"]) - da).days) > days: continue
+            intl = a["currency"] != b["currency"] or INTERMEDIARY_RX.search(a["description"] + b["description"])
+            if abs((datetime.date.fromisoformat(b["date"]) - da).days) > (days_intl if intl else days): continue
             if a["currency"] == b["currency"]:
-                ok = abs(abs(a["amount"]) - abs(b["amount"])) < 0.01
+                ok = abs(abs(a["amount"]) - abs(b["amount"])) <= max(0.01, (tol_intl if intl else tol) * abs(a["amount"]))   # flat fees eaten in transit
             else:
-                ok = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) <= tol * max(abs(a["amount_aed"]), abs(b["amount_aed"]))
+                ok = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) <= tol_intl * max(abs(a["amount_aed"]), abs(b["amount_aed"]))
             if ok and (best is None or abs((datetime.date.fromisoformat(b["date"]) - da).days) < best[0]):
                 best = (abs((datetime.date.fromisoformat(b["date"]) - da).days), b)
         if best:
@@ -116,14 +129,32 @@ def match_transfers(rows, days=4, tol=0.02):
             p = {"pair_id": pid, "out": a["id"] if a["amount"] < 0 else b["id"], "in": b["id"] if a["amount"] < 0 else a["id"],
                  "from": (a if a["amount"] < 0 else b)["account"], "to": (b if a["amount"] < 0 else a)["account"],
                  "amount_out": (a if a["amount"] < 0 else b)["amount"], "amount_in": (b if a["amount"] < 0 else a)["amount"]}
+            o, i = (a, b) if a["amount"] < 0 else (b, a)
+            for leg in (a, b):
+                if leg["type"] in ("spend", "cash_withdrawal"): leg["flags"].append(f"retyped_{leg['type']}_to_transfer"); leg["type"] = "transfer"
             if a["currency"] != b["currency"]:  # implied effective rate - the real FX cost
-                o, i = (a, b) if a["amount"] < 0 else (b, a)
                 p["effective_rate"] = round(abs(i["amount"]) / abs(o["amount"]), 4); p["ccy"] = f"{o['currency']}->{i['currency']}"
+            if PERSON_RX.match(o["description"].strip()) or PERSON_RX.match(i["description"].strip()):
+                p["confirm"] = "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+                for leg in (o, i): leg["flags"].append("person_leg_confirm")
+            leak = round(abs(o["amount_aed"]) - abs(i["amount_aed"]), 2)   # what the intermediary ate: recorded ONCE, on the pair, as Fees
+            if abs(leak) > 0.01: p["leakage_aed"] = leak
             pairs.append(p)
     one = [{"id": r["id"], "date": r["date"], "account": r["account"], "amount": r["amount"], "currency": r["currency"], "type": r["type"], "desc": r["description"]}
-           for r in cand if r["id"] not in used]
+           for r in cand if r["id"] not in used and r["id"] not in probe_ids]
+    for r in probes:
+        if r["id"] not in used: r["flags"].append("large_unmatched_check")   # stays spend; Calum eyeballs it
     for r in rows:
         if r["id"] in {o["id"] for o in one}: r["flags"].append("one_legged")
+    # chains: ADIB -> Wise(AED) -> Wise(GBP) -> BoS. Link pairs whose IN account is the next pair's OUT account within the intl window
+    byid = {r["id"]: r for r in rows}
+    for p in pairs:
+        for q in pairs:
+            if p is q or p["to"] != q["from"]: continue
+            din, dout = byid[p["in"]]["date"], byid[q["out"]]["date"]
+            gap = (datetime.date.fromisoformat(dout) - datetime.date.fromisoformat(din)).days
+            if 0 <= gap <= days_intl and abs(abs(byid[p["in"]]["amount_aed"]) - abs(byid[q["out"]]["amount_aed"])) <= tol_intl * abs(byid[p["in"]]["amount_aed"]):
+                p["next"] = q["pair_id"]; q["prev"] = p["pair_id"]
     return pairs, one
 
 def summarise(rows):
@@ -139,6 +170,11 @@ def summarise(rows):
         elif r["type"] == "income": by_month[m]["income"] += a
         elif r["type"] == "investment" and a < 0: by_month[m]["invested"] += -a
         elif r["type"] == "card_repayment" and a < 0 and not r["pair_id"]: by_month[m]["card_repay_unmatched"] += -a
+    try:
+        for p in json.load(open("transfers.json"))["pairs"]:
+            if p.get("leakage_aed", 0) > 0:
+                m = next(r["month"] for r in rows if r["id"] == p["out"]); by_month[m]["transfer_cost"] += p["leakage_aed"]; by_month[m]["spend"] += p["leakage_aed"]; cat[m]["Fees"] += p["leakage_aed"]
+    except Exception: pass
     for m in by_month: by_month[m]["net"] = by_month[m]["income"] - by_month[m]["spend"]
     return {"asOf": datetime.date.today().isoformat(), "fx": load_fx(), "by_month": by_month, "by_category": cat,
             "by_dow": dow, "by_account": acct, "note": "AED. spend = spend+refund+debt_cost+cash_withdrawal. Transfers/repayments/investing excluded."}
