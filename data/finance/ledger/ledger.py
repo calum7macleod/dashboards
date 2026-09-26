@@ -23,7 +23,7 @@ CASH_RX = re.compile(r"\batm\b|cash withdrawal|cash advance|quasi cash", re.I)
 INCOME_RX = re.compile(r"wps|salary|commission|airbnb|payout|refund|cashback", re.I)
 INVEST_RX = re.compile(r"kraken|coinbase|tara|modon|hudayriyat|reem", re.I)
 # money movers between UAE and UK: the outflow lands on one statement, the inflow on another, days later, other currency, fee eaten in between
-INTERMEDIARY_RX = re.compile(r"wise|transferwise|ziina|al ansari|lulu exch|al fardan|uae exchange|western union|remitly|revolut|payoneer|paypal|careem pay|binance|p2p|xoom|worldremit|ria money|moneygram|sharaf exch|gcc exch|joyalukkas|swift|tt ref|inward remit|outward remit|international transfer|faster payment|fps", re.I)
+INTERMEDIARY_RX = re.compile(r"wise|transferwise|nium|quickremit|inward remittance|ziina|al ansari|lulu exch|al fardan|uae exchange|western union|remitly|revolut|payoneer|paypal|careem pay|binance|p2p|xoom|worldremit|ria money|moneygram|sharaf exch|gcc exch|joyalukkas|swift|tt ref|inward remit|outward remit|international transfer|faster payment|fps", re.I)
 CARD_ACCOUNT_RX = re.compile(r"adib cc|tesco|virgin|santander|mbna|m&s|hsbc|barclay|amex|aqua", re.I)   # our card accounts by name
 LARGE_AED = 2000   # any unexplained outflow above this is checked against inflows elsewhere before it is allowed to be "spend"
 
@@ -106,6 +106,8 @@ def apply_merchant(r):
             r["category"] = m["category"]; r["sub"] = m.get("sub")
             if m.get("type") and r["type"] in ("spend", "refund", "income", "transfer"):
                 r["type"] = ("debt_principal" if r["amount"] < 0 else "borrowing") if m["type"] == "auto_debt" else m["type"]
+                if r["type"] == "cash_withdrawal" and r["amount"] > 0: r["type"] = "transfer"      # cash deposit = cash coming back
+                if r["type"] == "borrowing" and r["amount"] < 0: r["type"] = "debt_principal"      # money back to the same person
             return
 
 # ---------- build ----------
@@ -137,7 +139,7 @@ def build(files):
     return rows
 
 def match_transfers(rows, days=4, days_intl=7, tol=0.005, tol_intl=0.06):
-    cand = [r for r in rows if r["type"] in ("transfer", "card_repayment", "investment", "borrowing", "cash_withdrawal") and not r["pair_id"]]
+    cand = [r for r in rows if (r["type"] in ("transfer", "card_repayment", "borrowing", "cash_withdrawal") or (r["type"] == "investment" and r["account"].startswith("Binance"))) and not r["pair_id"]]
     # large unexplained outflows typed spend get a seat at the table: if they match an inflow elsewhere they were never spend
     probes = [r for r in rows if r["type"] == "spend" and abs(r["amount_aed"]) >= LARGE_AED and r["category"] in ("Unaccounted", None, "Other") and not r["pair_id"]]
     probe_ids = {r["id"] for r in probes}; cand += probes
@@ -150,6 +152,8 @@ def match_transfers(rows, days=4, days_intl=7, tol=0.005, tol_intl=0.06):
         for b in cand:
             if b is a or b["amount"] <= 0 or b["account"] == a["account"]: continue
             intl = a["currency"] != b["currency"] or INTERMEDIARY_RX.search(a["description"] + b["description"])
+            if a["currency"] != b["currency"] and not (INTERMEDIARY_RX.search(a["description"] + b["description"]) or any(x["account"].split()[0] in MULTI_CCY for x in (a, b))):
+                continue   # money only changes currency through a wallet or a remittance rail - a plain AED debit never lands as a GBP card payment
             gap = abs((datetime.date.fromisoformat(b["date"]) - da).days)
             if gap > (days_intl if intl else days): continue
             if a["currency"] == b["currency"]:
