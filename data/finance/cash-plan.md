@@ -24,6 +24,30 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
+## v4 - THE PLAN THAT LASTS TO END-FEBRUARY (Calum 26 Sep: ~220K on 30 Sep, ~250K end-Oct, then nothing)
+Money: 470K + Vantage ~22K if withdrawn = ~492K for Oct-Feb, 5 months = Đ94K/mo all-in ceiling. Current repeating ~130K/mo does not fit; ~218K short over 5 months.
+
+| Line | AED/mo | 5 months | Note |
+|---|---|---|---|
+| Rent (separate account) | 15,000 | 75,000 | fixed |
+| Tal - cards, living, bills | 24,600 | 123,000 | GBP5,000; agreed with Tal |
+| UK cards + pets/subs (BoS GBP2,000) | 9,800 | 49,000 | minimums; cannot skip - bounces cost more |
+| ADIB card on minimums (~3.2K) | 3,200 | 16,000 | carried at ~64.6K until Jake income; NOT the living card |
+| Kevin GBP1,000 | 4,900 | 24,500 | keep |
+| Murabaha | 2,400 | 12,000 | confirm what it is |
+| Phone, subs, software | 2,500 | 12,500 | |
+| Coaching | 2,300 | 11,500 | kept |
+| Living (Wise / ADIB debit) | 20,000 | 100,000 | Đ5,000/week - the number you watch |
+| Editors (Oct only) | 6,000 | 6,000 | last month |
+| **Repeating** | **~84,700** | **~429,500** | vs 470K -> ~40K spare, +22K Vantage |
+
+NOT funded from this pot - they need the next income (Jake, or the White & Co money if it ever comes):
+- Tara 31K/mo (155K over 5 months) - if the instalment is dated, that date is the deadline for new income; if it is an accrual, it pauses.
+- Lewis 10K/mo (50K) - pause with a conversation; he was told 10K, tell him the date it restarts.
+- ADIB card clearance (~64.6K) - carried at 40% costs ~1.3K/mo; cheaper than an empty November.
+
+Sequence: 30 Sep 220K in -> Oct out ~91K (84.7 + editors 6) -> hold ~129K. 31 Oct 250K in -> 379K -> Nov-Feb 4 x 84.7 = 339K -> ~40K left on 1 March. One bad month and it is gone.
+
 ## October v3 - payday now expected ~Đ180K, not 314K (Calum 26 Sep: only a few deals paying; the rest slips)
 Fixed: UK cards 7.4K (send GBP2,000 to BoS: minimums 1,500 + Agria/pets/Apple/Giffgaff ~190 + OD interest + margin) · Kevin 4.9K · Lewis 10K · Tal 24.6K · rent 15K · Tara 31K · Murabaha 2.4K (Calum to confirm what it is - ADIB instalment 2,408.70 seen Jan/Feb/Apr) · editors 6K (last month) · subs/software 2.5K · coaching 2.3K · ads 0 = **~106K** (~100K from November: no editors)
 Living: 25K on the ADIB card, paid to zero on payday.
