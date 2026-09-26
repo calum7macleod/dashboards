@@ -2,6 +2,57 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "payer sort code/account masked",
+   "category": "Unaccounted",
+   "sub": "GBP300.04 monthly credit into property account - who pays it?",
+   "type": "income"
+  },
+  {
+   "rx": "ym client account|methil brae",
+   "category": "Other",
+   "sub": "UK rent - 97 Methil Brae (via YM)",
+   "type": "income"
+  },
+  {
+   "rx": "precise mortgages",
+   "category": "Business",
+   "sub": "UK property - mortgage (Methil)"
+  },
+  {
+   "rx": "arranged overdraft interest",
+   "category": "Fees",
+   "sub": "Interest & bank fees"
+  },
+  {
+   "rx": "payment reversal",
+   "category": "Fees",
+   "sub": "Bounced card payment (reversal)",
+   "type": "transfer"
+  },
+  {
+   "rx": "late payment fee|cash advance fee|cash transaction fee|foreign exchange fee",
+   "category": "Fees",
+   "sub": "Card fees (late / cash advance / FX)",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "^interest|interest -|interest charged",
+   "category": "Fees",
+   "sub": "Card interest",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "wise london",
+   "category": "Other",
+   "sub": "Card cash advance -> Wise",
+   "type": "transfer"
+  },
+  {
+   "rx": "theta documents",
+   "category": "Business",
+   "sub": "Licences / admin"
+  },
+  {
    "rx": "deliveroo|talabat|noon food|careem food|zomato",
    "category": "Deliveries",
    "sub": "Food delivery"
@@ -17,7 +68,7 @@
    "sub": "Eating out / coffee"
   },
   {
-   "rx": "boxica|whoop|gym|fitness|pharmacy|kings college|clinic|hospital|medcare|aster|dental",
+   "rx": "boxica|whoop|gym|fitness|pharmacy|kings college|clinic|hospital|medcare|\\baster\\b|dental",
    "category": "Health",
    "sub": "Training / medical"
   },
@@ -47,7 +98,7 @@
    "sub": "Licences / admin"
   },
   {
-   "rx": "giffgaff|du apple pay|du |etisalat|e& ",
+   "rx": "giffgaff|du apple pay|\\bdu\\b etisalat|e& ",
    "category": "Life",
    "sub": "Phone"
   },
