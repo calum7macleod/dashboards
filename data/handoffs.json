@@ -222,5 +222,13 @@
   "to": "finance",
   "item": "h0027 count correction: Virgin Money rows appended = 22, not 20 (24 statement lines minus the 2 interest rows you already hold). Rest of h0027 stands.",
   "status": "open"
+ },
+ {
+  "id": "h0029",
+  "date": "2026-09-26",
+  "from": "Finance",
+  "to": "Manager",
+  "item": "ISSUE tool/data: concurrent writes to data/finance.json - Uploader appended Property Account rows (204c1e2, 10:31) while Finance held a copy fetched earlier; Finance's PUT (649f363, 10:33) overwrote them. Restored from history. Fix needed: Uploader stages bulk rows under data/staging/ (as h0018 asked) and Finance is the only writer of finance.json during a reconciliation session; or agentkit put re-fetches and merges transactions by hash before PUT.",
+  "status": "open"
  }
 ]
