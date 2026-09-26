@@ -95,3 +95,4 @@
 {"date": "2026-09-26", "agent": "Finance", "did": "Spending report v3: added cash-out-of-bank view (card payments, Tal 100%, loans, investments) alongside spend view; republished", "wrote": ["data/finance/reports/spending-2026.html", "data/finance/ledger/out/spend-data.json"]}
 {"date": "2026-09-26", "agent": "Finance", "did": "Wrote cash plan v1: three-pot budget, Oct fixed lines, living cap, 30 Sep payday allocation, dated rules", "wrote": ["data/finance/cash-plan.md", "data/state/finance.md"]}
 {"date": "2026-09-26", "agent": "Finance", "did": "Cash plan v2: Calum's October commitments reconciled to statement actuals; forgotten lines and runway condition added", "wrote": ["data/finance/cash-plan.md"]}
+{"date": "2026-09-26", "agent": "Finance", "did": "Cash plan v3: 180K payday, October covered to the dirham, November uncovered; levers listed", "wrote": ["data/finance/cash-plan.md", "data/state/finance.md"]}
