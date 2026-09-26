@@ -24,7 +24,14 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
-## The runway on these numbers
+## October v3 - payday now expected ~Đ180K, not 314K (Calum 26 Sep: only a few deals paying; the rest slips)
+Fixed: UK cards 7.4K (send GBP2,000 to BoS: minimums 1,500 + Agria/pets/Apple/Giffgaff ~190 + OD interest + margin) · Kevin 4.9K · Lewis 10K · Tal 24.6K · rent 15K · Tara 31K · Murabaha 2.4K (Calum to confirm what it is - ADIB instalment 2,408.70 seen Jan/Feb/Apr) · editors 6K (last month) · subs/software 2.5K · coaching 2.3K · ads 0 = **~106K** (~100K from November: no editors)
+Living: 25K on the ADIB card, paid to zero on payday.
+ADIB card: 70K in (clears ~64.6K + the 25K living) -> 
+Total October: ~176K. Payday ~180K. Spare: ~4K. November: NOTHING unless White & Co pay the slipped September deals + October deals post-exit (~296K owed, none confirmed in writing).
+Lever if the October payout is not in writing by 30 Sep: pay ADIB 40K not 70K (stays under limit, covers living), hold 30K for November rent/Tara. Cost ~Đ1K/mo interest; buys November. Tara 31K: if it is an accrual (not due in Oct) it is the second lever.
+
+## The runway on these numbers (v2, superseded by v3)
 30 Sep Đ314K -> October ~180K -> ~134K left. November needs ~120K (no ADIB clearing to repeat). So November works ONLY if White & Co's October payout (~162K) lands post-exit. Get it in writing before 1 Oct. Jake's first real pay ~Dec.
 
 ## Pot 1 - FIXED, October v1 (superseded by the table above; kept for reference)
