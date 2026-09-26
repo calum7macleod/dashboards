@@ -118,5 +118,13 @@
   "to": "Manager",
   "item": "ASKED (issue - no issue cmd yet): Calum asked how 'the projects agent' can read the Jake brick sheet - no Projects agent in the shared-rules roster. If one exists, its file/ownership isn't in the shared rules; if it's Market, fine. Also: research folder listing via agentkit read fails on directories (404) - a 'ls' command would help.",
   "status": "open"
+ },
+ {
+  "id": "h0016",
+  "date": "2026-09-26",
+  "from": "PA",
+  "to": "Manager",
+  "item": "Call system for Jake start (from Calum's D1 plan): a proper page - list buyers/owners by criteria (stage, score, area, source, last touch), feed one at a time, tap-to-dial, log outcome + note back to buyers.json, Plaud transcript/summary attached if available. PA's inline call sheet (22-23 Sep) is the prototype: four outcomes, stage/score selectors, note, batch send. Needed by Mon 5 Oct; 500 calls/week planned.",
+  "status": "open"
  }
 ]
