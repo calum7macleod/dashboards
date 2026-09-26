@@ -24,10 +24,18 @@ Personal debts (no statements - balances only): Mum, Kevin, Corrina, others in f
 The spend on a card is the line items ON the card statement. The payment TO the card is never spend. If a card statement is missing, its repayment is the only trace and gets typed `card_repayment` with flag `statement_missing` - the spend behind it is invisible until the statement lands.
 
 ## 3. Transfer matching (the double-count killer)
-Candidate = any row whose description names one of our own accounts or cards, or is a bank-to-bank transfer / Ziina / Wise / Binance deposit-withdrawal.
-Match = opposite-sign row on another own account, within +/-4 days, amount equal after FX within 2% (cross-currency) or exact (same currency). Both legs get the same `pair_id`; net zero.
-Unmatched leg = flagged `one_legged`: either the other statement is missing or it is actually external (a friend, a supplier). Each one gets resolved by hand, none silently counted.
-Cross-currency pairs give the true effective FX rate - the fee is the gap between market rate and effective rate, typed `debt_cost` sub `FX fee`.
+Candidate = any row naming one of our own accounts or cards; any money mover (Wise, Ziina, Al Ansari, LuLu, Al Fardan, Western Union, Remitly, Revolut, Binance/P2P, PayPal, SWIFT/TT, Faster Payments); any bare person name on a BANK statement over 500; any cash withdrawal; and any unexplained outflow over D2,000 (a probe - it only changes type if a match is found).
+Match = opposite-sign row on another own account (or another currency balance of the same wallet), same amount after FX. Windows: 4 days same-currency domestic, 7 days international or via an intermediary (UK-UAE takes 1-5 working days). Tolerance: 0.5% domestic, 6% international - the gap is the fee, recorded ONCE on the pair as Fees, never as spend on a leg.
+Both legs get one pair_id, net zero. Unmatched leg = one_legged, resolved by hand, never silently counted.
+
+Intermediary chains (UAE <-> UK). The money leaves one statement and arrives on another days later in another currency, lighter, via something in the middle:
+- via Wise: ADIB CC -5,000 "WISE PAYMENTS" (looks like a card purchase - it is not) -> Wise AED +5,000 -> Wise AED -5,000 / Wise GBP +1,040 (conversion, fee here) -> Wise GBP -1,040 -> BoS +1,040. Five legs, three pairs, one chain, one fee.
+- via an exchange house: ADIB -10,000 "AL ANSARI" -> BoS +2,050 "C L MACLEOD" four days later. Descriptions never match; amount + timing + direction do.
+- via Binance: ADIB -> P2P seller (random name) -> USDT -> sold -> GBP into BoS from another random name. Binance history is the middle statement - without it both bank legs look like a payment to a stranger and a gift from one.
+- via a person: cash out in Dubai, GBP in from Kevin/Tal/Alex in the UK. Matched on amount + timing, then flagged person_leg_confirm: Calum says "own money via them" (transfer) or "theirs" (borrowing / gift / income). Never assumed.
+- via cash: an ATM withdrawal that matches an inflow elsewhere is retyped transfer; one that does not is Cash spend until explained.
+Wise and Binance are sub-ledgered per currency (Wise AED, Wise GBP, Binance USDT) so a conversion inside the wallet is a pair like any other. Chains are linked pair -> pair (in-account of one = out-account of the next, within the window) so the report shows one movement ADIB -> BoS with its total cost, not five rows.
+Cross-currency pairs give the true effective rate; fee = effective vs market mid. These rates also feed fx.json, so GBP spend is converted at what the money actually cost.
 
 ## 4. Dedupe
 Row hash = account + date + amount + normalised description. Same hash from two files = the same statement uploaded twice or overlapping periods; second copy dropped and reported. Legitimate identical rows (two 84.00 Deliveroos same day) survive because the bank reference differs.
