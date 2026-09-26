@@ -1,0 +1,3827 @@
+{
+ "meta": {
+  "account": "BoS",
+  "currency": "GBP",
+  "source": "BoS CSV export 26 Sep 26",
+  "months": "Jan-Apr, Jul, Aug 26",
+  "count": 381,
+  "why": "these months already have 101 BoS rows in data/finance.json entered from screenshots (some aggregated, descriptions rewritten) - not appended to avoid double counting; Finance to retire the screenshot rows and splice these in",
+  "existingMatchedOnDateAmount": 10,
+  "sign": "amount = credit - debit; negative = money out",
+  "closingBalance": "-2565.88 GBP overdrawn at 25 Sep 26",
+  "owner": "Finance",
+  "enteredBy": "Uploader Sept 26"
+ },
+ "transactions": [
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 500,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -400,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -250,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "DAILY OD INT 01/01",
+   "account": "BoS",
+   "amount": -2.66,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "PET HEALTH CLUB",
+   "account": "BoS",
+   "amount": -28.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -211.46,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 2,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.7,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 5,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 90,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 5,
+   "description": "JAMES GIBSON",
+   "account": "BoS",
+   "amount": -140,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 5,
+   "description": "DAILY OD INT 03/01",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 5,
+   "description": "DAILY OD INT 04/01",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 5,
+   "description": "HSBC CREDIT CARD",
+   "account": "BoS",
+   "amount": -42.2,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 5,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 100,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 5,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.7,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 6,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 6,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 7,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 7,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 7,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 8,
+   "description": "AQUA CREDIT CARD",
+   "account": "BoS",
+   "amount": -28.36,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 8,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 9,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 300,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 9,
+   "description": "POD FACTORY LTD",
+   "account": "BoS",
+   "amount": 6000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 12,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -6218.57,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 12,
+   "description": "DAILY OD INT 10/01",
+   "account": "BoS",
+   "amount": -2.67,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 12,
+   "description": "EWEN MACLEOD",
+   "account": "BoS",
+   "amount": 1000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 12,
+   "description": "DAILY OD INT 11/01",
+   "account": "BoS",
+   "amount": -1.76,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 12,
+   "description": "F/FLOW 1/AGILITY F",
+   "account": "BoS",
+   "amount": 306.88,
+   "category": "",
+   "note": "TFR",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 12,
+   "description": "TALLIA FLAHER",
+   "account": "BoS",
+   "amount": -1000,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 12,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.4,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 13,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.4,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 14,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 14,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 14,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.42,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 15,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -51.68,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 15,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.47,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 16,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.47,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 19,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 210,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 19,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 1300,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 19,
+   "description": "DAILY OD INT 17/01",
+   "account": "BoS",
+   "amount": -1.09,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 19,
+   "description": "DAILY OD INT 18/01",
+   "account": "BoS",
+   "amount": -1.09,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 19,
+   "description": "AMERICAN EXPRESS",
+   "account": "BoS",
+   "amount": -176.84,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 19,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.25,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 20,
+   "description": "SANTANDERCARDS LTD",
+   "account": "BoS",
+   "amount": -118.85,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 20,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.36,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 21,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.36,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 22,
+   "description": "M&S CREDIT CARD",
+   "account": "BoS",
+   "amount": -164.69,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 22,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.52,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 23,
+   "description": "B/CARD PLAT VISA",
+   "account": "BoS",
+   "amount": -84.95,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 23,
+   "description": "CORRINA FLAHER",
+   "account": "BoS",
+   "amount": -150,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 23,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 26,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -8.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 26,
+   "description": "DAILY OD INT 24/01",
+   "account": "BoS",
+   "amount": -1.74,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 26,
+   "description": "DAILY OD INT 25/01",
+   "account": "BoS",
+   "amount": -1.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 26,
+   "description": "AGRIA PET INS",
+   "account": "BoS",
+   "amount": -118.62,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 26,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -161.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 26,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 27,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.01,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 28,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.01,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 29,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -244,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 29,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.23,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jan 26",
+   "day": 30,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.24,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 2,
+   "description": "ALEX CASH",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 2,
+   "description": "DAILY OD INT 31/01",
+   "account": "BoS",
+   "amount": -2.42,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 2,
+   "description": "DAILY OD INT 01/02",
+   "account": "BoS",
+   "amount": -2.43,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 2,
+   "description": "PET HEALTH CLUB",
+   "account": "BoS",
+   "amount": -28.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 2,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -204.93,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 2,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 3,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 4,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.65,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 5,
+   "description": "HSBC CREDIT CARD",
+   "account": "BoS",
+   "amount": -41.14,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 5,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 65,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 5,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 5,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 6,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -100,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "MARK KELLY",
+   "account": "BoS",
+   "amount": -100,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "DAILY OD INT 07/02",
+   "account": "BoS",
+   "amount": -2.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 1000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -300,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "DAILY OD INT 08/02",
+   "account": "BoS",
+   "amount": -2,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "AQUA CREDIT CARD",
+   "account": "BoS",
+   "amount": -28.08,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 9,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.03,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 10,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.03,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 11,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.03,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 12,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.03,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 13,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 13,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.05,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 16,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 16,
+   "description": "DAILY OD INT 14/02",
+   "account": "BoS",
+   "amount": -2.06,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 16,
+   "description": "DAILY OD INT 15/02",
+   "account": "BoS",
+   "amount": -2.06,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 16,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -50.38,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 16,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -400,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 16,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -100,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 16,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.57,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 17,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.57,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 18,
+   "description": "AMERICAN EXPRESS",
+   "account": "BoS",
+   "amount": -286.79,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 18,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 100,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 18,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 19,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 19,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.57,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 20,
+   "description": "SANTANDERCARDS LTD",
+   "account": "BoS",
+   "amount": -117.66,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 20,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.68,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "DAILY OD INT 21/02",
+   "account": "BoS",
+   "amount": -2.68,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "DAILY OD INT 22/02",
+   "account": "BoS",
+   "amount": -2.68,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "B/CARD PLAT VISA",
+   "account": "BoS",
+   "amount": -84.1,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -158.02,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "M&S CREDIT CARD",
+   "account": "BoS",
+   "amount": -160.57,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 400,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "S MACLEOD",
+   "account": "BoS",
+   "amount": 2000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 23,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.85,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 24,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -2030,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 24,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -8.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 24,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 25,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 150,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 25,
+   "description": "CORRINA FLAHER",
+   "account": "BoS",
+   "amount": -150,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 25,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 26,
+   "description": "AGRIA PET INS",
+   "account": "BoS",
+   "amount": -118.62,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 26,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 118.62,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 26,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Feb 26",
+   "day": 27,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "DAILY OD INT 28/02",
+   "account": "BoS",
+   "amount": -2.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "JAMES GIBSON",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 2000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -1640,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 400,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "DAILY OD INT 01/03",
+   "account": "BoS",
+   "amount": -2.04,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "PET HEALTH CLUB",
+   "account": "BoS",
+   "amount": -28.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -300,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 2,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.34,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 3,
+   "description": "JACKSFLIGHTCLUB",
+   "account": "BoS",
+   "amount": -35,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 3,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.37,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 4,
+   "description": "AGRIA PET INS",
+   "account": "BoS",
+   "amount": -118.62,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 4,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.49,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 5,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -203.43,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 5,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 5,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.69,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 6,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.69,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 9,
+   "description": "DAILY OD INT 07/03",
+   "account": "BoS",
+   "amount": -2.69,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 9,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 150,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 9,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -140.12,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 9,
+   "description": "DAILY OD INT 08/03",
+   "account": "BoS",
+   "amount": -2.68,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 9,
+   "description": "HSBC CREDIT CARD",
+   "account": "BoS",
+   "amount": -40.11,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 9,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 10,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 11,
+   "description": "AQUA CREDIT CARD",
+   "account": "BoS",
+   "amount": -149.32,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 11,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 150,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 11,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 12,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.73,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 13,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 13,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.74,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 16,
+   "description": "DAILY OD INT 14/03",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 16,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 100,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 16,
+   "description": "PROPERTY ACCOUNT",
+   "account": "BoS",
+   "amount": -50,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 16,
+   "description": "DAILY OD INT 15/03",
+   "account": "BoS",
+   "amount": -2.7,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 16,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.71,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 17,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 17,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 18,
+   "description": "AMERICAN EXPRESS",
+   "account": "BoS",
+   "amount": -209.56,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 18,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 209.56,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 18,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 19,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -49.12,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 19,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 1900,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 19,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 300,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 19,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -1856.73,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 19,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.45,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 20,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.46,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "CASH A P",
+   "account": "BoS",
+   "amount": 1000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "DAILY OD INT 21/03",
+   "account": "BoS",
+   "amount": -1.54,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -800,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "DAILY OD INT 22/03",
+   "account": "BoS",
+   "amount": -2.28,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "B/CARD PLAT VISA",
+   "account": "BoS",
+   "amount": -83.26,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "SANTANDERCARDS LTD",
+   "account": "BoS",
+   "amount": -116.48,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -154.86,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 23,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.6,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 24,
+   "description": "CORRINA FLAHER",
+   "account": "BoS",
+   "amount": -150,
+   "category": "",
+   "note": "SO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 24,
+   "description": "M&S CREDIT CARD",
+   "account": "BoS",
+   "amount": -156.56,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 24,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 24,
+   "description": "PROPERTY ACCOUNT",
+   "account": "BoS",
+   "amount": -40,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 24,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -8.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 24,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 25,
+   "description": "AMERICAN EXPRESS",
+   "account": "BoS",
+   "amount": -209.56,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 25,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 150,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 25,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 100,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 25,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 26,
+   "description": "AGRIA PET INS",
+   "account": "BoS",
+   "amount": -118.62,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 26,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 118.62,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 26,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 27,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 30,
+   "description": "DAILY OD INT 28/03",
+   "account": "BoS",
+   "amount": -2.72,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 30,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -33,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 30,
+   "description": "DAILY OD INT 29/03",
+   "account": "BoS",
+   "amount": -2.76,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 30,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -268,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 30,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 268,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 30,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.76,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Mar 26",
+   "day": 31,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.76,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 1,
+   "description": "PET HEALTH CLUB",
+   "account": "BoS",
+   "amount": -28.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 1,
+   "description": "AGRIA PET INS",
+   "account": "BoS",
+   "amount": -118.62,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 1,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 118.62,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 1,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 28.25,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 1,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.76,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 2,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -192.34,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 2,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 2,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 1000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 2,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -268,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 2,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.09,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "DAILY OD INT 03/04",
+   "account": "BoS",
+   "amount": -2.09,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "DAILY OD INT 04/04",
+   "account": "BoS",
+   "amount": -2.09,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 100,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -460,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "DAILY OD INT 05/04",
+   "account": "BoS",
+   "amount": -2.43,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -250,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "DAILY OD INT 06/04",
+   "account": "BoS",
+   "amount": -2.67,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "HSBC CREDIT CARD",
+   "account": "BoS",
+   "amount": -39.11,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 7,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.7,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 8,
+   "description": "AQUA CREDIT CARD",
+   "account": "BoS",
+   "amount": -197.22,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 8,
+   "description": "CALUM MACLEOD",
+   "account": "BoS",
+   "amount": 150,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 8,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 9,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 10,
+   "description": "PET HEALTH CLUB",
+   "account": "BoS",
+   "amount": -28.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 10,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -268,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 10,
+   "description": "PAGE LJ",
+   "account": "BoS",
+   "amount": 4000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 10,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -1200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 10,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.45,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 13,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -100,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 13,
+   "description": "DAILY OD INT 11/04",
+   "account": "BoS",
+   "amount": -0.54,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 13,
+   "description": "BEN JOHNSON",
+   "account": "BoS",
+   "amount": -30,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 13,
+   "description": "DAILY OD INT 12/04",
+   "account": "BoS",
+   "amount": -0.57,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 13,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 13,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.58,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 14,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 14,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.59,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 15,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.6,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 16,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -47.9,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 16,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 17,
+   "description": "AMERICAN EXPRESS",
+   "account": "BoS",
+   "amount": -329.99,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 17,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.94,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 20,
+   "description": "DAILY OD INT 18/04",
+   "account": "BoS",
+   "amount": -0.94,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 20,
+   "description": "DAILY OD INT 19/04",
+   "account": "BoS",
+   "amount": -0.95,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 20,
+   "description": "B/CARD PLAT VISA",
+   "account": "BoS",
+   "amount": -82.42,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 20,
+   "description": "SANTANDERCARDS LTD",
+   "account": "BoS",
+   "amount": -115.32,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 20,
+   "description": "DPC ACCOUNTANTS",
+   "account": "BoS",
+   "amount": -225,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 20,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.34,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 21,
+   "description": "M&S CREDIT CARD",
+   "account": "BoS",
+   "amount": -152.65,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 21,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.48,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 22,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.48,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 23,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -172.02,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 23,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 24,
+   "description": "CORRINA FLAHER",
+   "account": "BoS",
+   "amount": -150,
+   "category": "",
+   "note": "SO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 24,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -8.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 24,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.79,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 27,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -650,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 27,
+   "description": "DAILY OD INT 25/04",
+   "account": "BoS",
+   "amount": -2.39,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 27,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 27,
+   "description": "DAILY OD INT 26/04",
+   "account": "BoS",
+   "amount": -2.57,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 27,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.57,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 28,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 1000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 28,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.66,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 29,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -314,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 29,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.95,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 30,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -656.86,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Apr 26",
+   "day": 30,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.55,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "PET HEALTH CLUB",
+   "account": "BoS",
+   "amount": -28.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 5000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "MUM",
+   "account": "BoS",
+   "amount": -3250,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "DAD",
+   "account": "BoS",
+   "amount": -500,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "MUM",
+   "account": "BoS",
+   "amount": -380,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 2000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -300,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 1,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.42,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 2,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -241.7,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 2,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 2000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 2,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -2000,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 2,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -263,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 2,
+   "description": "TALLIA FLAHER",
+   "account": "BoS",
+   "amount": -1000,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 2,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.81,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 3,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -1.81,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "DAILY OD INT 04/07",
+   "account": "BoS",
+   "amount": -1.81,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "DAILY OD INT 05/07",
+   "account": "BoS",
+   "amount": -2,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "HSBC CREDIT CARD",
+   "account": "BoS",
+   "amount": -36.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": -100,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 1000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -73.86,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -928.72,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 6,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.31,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 7,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.31,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 8,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -263,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 8,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.56,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 9,
+   "description": "AQUA CREDIT CARD",
+   "account": "BoS",
+   "amount": -215.75,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 9,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 215.75,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 9,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 20,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 9,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 400,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 9,
+   "description": "AQUA",
+   "account": "BoS",
+   "amount": -215.75,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 9,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.37,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 10,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.37,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 13,
+   "description": "DAILY OD INT 11/07",
+   "account": "BoS",
+   "amount": -2.38,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 13,
+   "description": "DAILY OD INT 12/07",
+   "account": "BoS",
+   "amount": -2.38,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 13,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.38,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 14,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 14,
+   "description": "APPLE.COM/BILL",
+   "account": "BoS",
+   "amount": -11.99,
+   "category": "",
+   "note": "DEB",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 14,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.58,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 15,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.58,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 16,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -50.51,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 16,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.63,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 17,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.63,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 20,
+   "description": "DAILY OD INT 18/07",
+   "account": "BoS",
+   "amount": -2.63,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 20,
+   "description": "DAILY OD INT 19/07",
+   "account": "BoS",
+   "amount": -2.64,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 20,
+   "description": "B/CARD PLAT VISA",
+   "account": "BoS",
+   "amount": -108.94,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 20,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.74,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 21,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.74,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 22,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.74,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 23,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -369.8,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 23,
+   "description": "RETURNED DD",
+   "account": "BoS",
+   "amount": 369.8,
+   "category": "",
+   "note": "RET",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 23,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 24,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 27,
+   "description": "DAILY OD INT 25/07",
+   "account": "BoS",
+   "amount": -2.75,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 27,
+   "description": "FLAHER TV",
+   "account": "BoS",
+   "amount": 1000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 27,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -369.8,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 27,
+   "description": "DAILY OD INT 26/07",
+   "account": "BoS",
+   "amount": -2.17,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 27,
+   "description": "CORRINA FLAHER",
+   "account": "BoS",
+   "amount": -150,
+   "category": "",
+   "note": "SO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 27,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.31,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 28,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.32,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 29,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -286,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 29,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.58,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 30,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.58,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -309.73,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "F/FLOW CALUM MACLE",
+   "account": "BoS",
+   "amount": 21206.98,
+   "category": "",
+   "note": "TFR",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -61.98,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "AMERICAN EXP 3773",
+   "account": "BoS",
+   "amount": -3025.98,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "TESCO BANK",
+   "account": "BoS",
+   "amount": -300,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "VIRGIN MONEY",
+   "account": "BoS",
+   "amount": -300,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "MBNA MASTERCARD",
+   "account": "BoS",
+   "amount": -200,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "MBNA MASTERCARD",
+   "account": "BoS",
+   "amount": -500,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "M&S MASTERCARD",
+   "account": "BoS",
+   "amount": -550,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "AQUA",
+   "account": "BoS",
+   "amount": -3499.14,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -2000,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "HSBC VISA",
+   "account": "BoS",
+   "amount": -500,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "F/FLOW CALUM MACLE",
+   "account": "BoS",
+   "amount": 4012.04,
+   "category": "",
+   "note": "TFR",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Jul 26",
+   "day": 31,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": -750,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 3,
+   "description": "TALLIA FLAHER",
+   "account": "BoS",
+   "amount": -9000,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 3,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -550,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 3,
+   "description": "MUM",
+   "account": "BoS",
+   "amount": -300,
+   "category": "",
+   "note": "SO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 3,
+   "description": "PET HEALTH CLUB",
+   "account": "BoS",
+   "amount": -28.25,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 3,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -211.72,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 4,
+   "description": "HSBC CREDIT CARD",
+   "account": "BoS",
+   "amount": -49.3,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 4,
+   "description": "ALEX CASH",
+   "account": "BoS",
+   "amount": -500,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 4,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 750,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 7,
+   "description": "KEVIN BOXALL",
+   "account": "BoS",
+   "amount": -2000,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 7,
+   "description": "ALEX CASH",
+   "account": "BoS",
+   "amount": -500,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 7,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 2200,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 10,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -50,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 10,
+   "description": "ALEX CASH",
+   "account": "BoS",
+   "amount": -150,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 11,
+   "description": "ALEX CASH",
+   "account": "BoS",
+   "amount": -250,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 11,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 300,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 17,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -50,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 17,
+   "description": "MBNA LIMITED",
+   "account": "BoS",
+   "amount": -73.03,
+   "category": "",
+   "note": "DD",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 17,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.05,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 18,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.05,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 19,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -48.48,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 19,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 250,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 20,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -2500,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 20,
+   "description": "NIUM FINTECH LIMIT",
+   "account": "BoS",
+   "amount": 500,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 20,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -500,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 20,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.16,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 21,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -2.16,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 24,
+   "description": "DAILY OD INT 22/08",
+   "account": "BoS",
+   "amount": -2.17,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 24,
+   "description": "DAILY OD INT 23/08",
+   "account": "BoS",
+   "amount": -2.17,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 24,
+   "description": "CORRINA FLAHER",
+   "account": "BoS",
+   "amount": -150,
+   "category": "",
+   "note": "SO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 24,
+   "description": "CALUM LACHLAN MACL",
+   "account": "BoS",
+   "amount": 2000,
+   "category": "",
+   "note": "FPI",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 24,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.47,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 25,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.47,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 26,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.47,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 27,
+   "description": "C L MACLEOD",
+   "account": "BoS",
+   "amount": -100,
+   "category": "",
+   "note": "FPO",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 27,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.56,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  },
+  {
+   "month": "Aug 26",
+   "day": 28,
+   "description": "DAILY OD INT",
+   "account": "BoS",
+   "amount": -0.56,
+   "category": "",
+   "note": "CHG",
+   "source": "BoS CSV export 26 Sep 26 (GBP)"
+  }
+ ]
+}
