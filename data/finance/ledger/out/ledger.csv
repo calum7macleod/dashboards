@@ -1911,7 +1911,7 @@ L01909,2026-07-31,Jul 26,Fri,Wise GBP,GBP,2000.0,9804.0,transfer,Other,,Topped u
 L01910,2026-07-31,Jul 26,Fri,Wise GBP,GBP,-6.91,-33.87,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4130300199,wise charges for card 4130300199,,,wise-csv-2026,bae37c3f07b6
 L01911,2026-07-31,Jul 26,Fri,Wise GBP,GBP,-1974.81,-9732.12,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,"Card transaction of 2,650.00 USD issued by Tcp*Vantage LONDON (fee: 6.91 GBP)",Tcp*Vantage LONDON,,,wise-csv-2026,1b0d1be6382f
 L01912,2026-08-01,Aug 26,Sat,ADIB CC,AED,-38.59,-38.59,investment,Investing,Taxis & parking,"CAREEM , Dubai",careem dubai,,,adib-screens-provisional,99ec9b7e93e6
-L01913,2026-08-01,Aug 26,Sat,ADIB CC,AED,-15000.0,-15000.0,transfer,Family,Tal (one pot - transfer),"CARA EXCLUSIVE FZCO , DUBAI [IDENTIFY]",cara exclusive fzco dubai identify,,one_legged,adib-screens-provisional,926468543866
+L01913,2026-08-01,Aug 26,Sat,ADIB CC,AED,-15000.0,-15000.0,spend,Family,"Gift for Tal (Cara Exclusive, Aug)","CARA EXCLUSIVE FZCO , DUBAI [IDENTIFY]",cara exclusive fzco dubai identify,,,adib-screens-provisional,926468543866
 L01914,2026-08-01,Aug 26,Sat,ADIB CC,AED,-510.3,-510.3,spend,Base Food,Restaurants & coffee,"LETO , Dubai",leto dubai,,,adib-screens-provisional,94e86358ce3c
 L01915,2026-08-01,Aug 26,Sat,ADIB CC,AED,-391.45,-391.45,spend,Entertainment,Entertainment (other),"UFC FIGHT CLUB , UFCFIGHTCLUB. USD 103",ufc fight club ufcfightclub usd 103,,,adib-screens-provisional,f736a7653db1
 L01916,2026-08-01,Aug 26,Sat,Barclaycard Plat,GBP,550.0,2743.4,card_repayment,Other,,"Payment, Thank You",payment thank you,P0159,,barclaycard-app-2026,0a7f7557a20f
