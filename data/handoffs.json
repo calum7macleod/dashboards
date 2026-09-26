@@ -245,6 +245,6 @@
   "from": "uploader",
   "to": "finance",
   "item": "MBNA 1 (card *1654): 8 statements (6 Jan - 6 Aug 26) from PDF page-3 screenshots. 40 rows appended to data/finance.json, 8 statement-end ccBalances entries (Jan-Aug). Chain verified: prev+lines=new, breakdown sums=new, breakdown interest=interest line, all 8. Your 6 Jul 'MBNA Main' 8,496.91 and 26 Jul 8,799.49 readings both sit on my chain exactly - note 'MBNA Main' vs 'MBNA 1' naming on that one entry. Sep stmt (6 Sep): only page 1 supplied - payments 295.68 CR, charges 79.08, new bal 8,159.44 - your 6 Sep 79.08 row and 5 Sep cc entry already cover it, nothing added; page 3 needed for the lines. Address, card number and MBNA's payment account not recorded.",
-  "status": "open"
+  "status": "done"
  }
 ]
