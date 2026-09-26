@@ -1,7 +1,7 @@
 # FINANCE STATE - start pack (private). Updated 2026-09-26 by Finance. All figures "around" until reconciled.
 
 ## Commissions owed (take-home)
-- Sep payday 30 Sep: ~Đ314,100 (Michael, Ankur, Mohamed, Georgia, Zel, Mahmoud, Umer, P218) - reconcile vs payslip.
+- Sep payday 30 Sep: Calum expects ~Đ180K only (26 Sep) - the rest of the ~314K list slips to Oct+. Reconcile vs payslip; which deals paid -> paid flags; rest = owed post-exit.
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
@@ -41,6 +41,6 @@ Tal = one pot (transfers; her accounts not in ledger). Lewis Page D250K = loan t
 ## Deliverables
 1 Spending report v2 DONE 26 Sep (ADIB card = Mashreq payments proxy D278.7K until statements; Tal share 50% own category D147K; income by month earned; cash-advance COST not amount). True spend ~D717K YTD, ~D81K/mo, D88-115K/mo since Apr. Target from Oct: <D65K/mo. data/finance/reports/spending-2026.html (published artifact). 2 Debt report NEXT. 3 Cash flow. 4 P&L. 5 Balance sheet. 6 Dashboard handoff + monthly close.
 ## Budget (26 Sep) - data/finance/cash-plan.md
-Three pots on payday: FIXED ~D86K/mo (+ rent + instalments, both unknown) -> LIVING D25K/mo = D6K/week on one card -> DEBT gets the rest. 30 Sep D314K: Oct fixed 86K, living 25K, ADIB card cleared 64.6K, Nov fixed 86K held (Oct payout unconfirmed), ~52K to Lewis/Aqua. Open: rent amount+date, Modon/Tara schedule, Lewis monthly, ads budget, coaching.
+v3 26 Sep: payday ~180K; Oct out ~176K; spare ~4K; Nov uncovered without the White & Co post-exit payout. Lever: ADIB 40K not 70K if Oct payout not in writing. Three pots on payday: FIXED ~D86K/mo (+ rent + instalments, both unknown) -> LIVING D25K/mo = D6K/week on one card -> DEBT gets the rest. 30 Sep D314K: Oct fixed 86K, living 25K, ADIB card cleared 64.6K, Nov fixed 86K held (Oct payout unconfirmed), ~52K to Lewis/Aqua. Open: rent amount+date, Modon/Tara schedule, Lewis monthly, ads budget, coaching.
 ## Rules
 Budget: LIVING D25K/mo (D6K/wk) from 1 Oct - supersedes the old D30K discretionary; flag hot categories immediately; Deliveries category = eating proxy. No new spend lines without a plan.
