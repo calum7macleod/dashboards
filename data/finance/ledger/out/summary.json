@@ -23,72 +23,71 @@
   "Jan 26": {
    "spend": 8329.09,
    "debt_cost": 816.0100000000001,
-   "card_repay_unmatched": 33491.31,
    "income": 33742.68,
+   "card_repay_unmatched": 32211.649999999998,
    "net": 25413.59
   },
   "Feb 26": {
    "spend": 11299.750000000002,
-   "income": 7708.05,
+   "income": 7114.95,
    "debt_cost": 1124.3000000000002,
-   "card_repay_unmatched": 3255.2999999999997,
-   "net": -3591.7000000000016
+   "card_repay_unmatched": 1994.8500000000001,
+   "net": -4184.800000000002
   },
   "Mar 26": {
-   "income": 29727.31,
+   "income": 26823.91,
    "spend": 13566.530000000004,
    "debt_cost": 1277.7499999999998,
-   "card_repay_unmatched": 21399.87,
+   "card_repay_unmatched": 20202.870000000003,
    "invested": 3650.17,
-   "net": 16160.779999999997
+   "net": 13257.379999999996
   },
   "Apr 26": {
    "spend": 14310.080000000002,
-   "income": 30805.18,
+   "income": 30081.85,
    "debt_cost": 1320.03,
    "invested": 11017.5,
-   "card_repay_unmatched": 6448.26,
-   "net": 16495.1
+   "card_repay_unmatched": 5267.93,
+   "net": 15771.769999999997
   },
   "May 26": {
    "spend": 37402.90000000001,
-   "income": 5340.12,
+   "income": 4043.3199999999997,
    "debt_cost": 2755.140000000001,
-   "card_repay_unmatched": 11059.65,
+   "card_repay_unmatched": 9173.59,
    "invested": 12853.75,
-   "net": -32062.78000000001
+   "net": -33359.58000000001
   },
   "Jun 26": {
-   "spend": 53801.87999999999,
-   "debt_cost": 4620.38,
+   "spend": 55809.069999999985,
+   "debt_cost": 5344.57,
    "invested": 7528.62,
-   "income": 6814.91,
-   "card_repay_unmatched": 2933.84,
-   "transfer_cost": 21.23,
-   "net": -46986.96999999999
+   "income": 2454.68,
+   "card_repay_unmatched": 2940.11,
+   "net": -53354.389999999985
   },
   "Jul 26": {
-   "spend": 11461.359999999999,
-   "debt_cost": 3430.6600000000008,
+   "spend": 11868.619999999997,
+   "debt_cost": 3837.920000000001,
    "invested": 19647.870000000003,
-   "card_repay_unmatched": 45181.15,
-   "income": 2870.37,
-   "net": -8590.989999999998
+   "card_repay_unmatched": 39853.85,
+   "income": 0.0,
+   "net": -11868.619999999997
   },
   "Aug 26": {
-   "card_repay_unmatched": 3353.58,
-   "spend": 7191.420000000001,
-   "debt_cost": 3536.4200000000005,
+   "card_repay_unmatched": 2743.4,
+   "spend": 7231.760000000001,
+   "debt_cost": 3820.64,
    "income": 2743.4,
-   "transfer_cost": 305.83,
-   "net": -4448.02
+   "transfer_cost": 61.95,
+   "net": -4488.360000000001
   },
   "Sep 26": {
-   "spend": 12446.179999999998,
-   "card_repay_unmatched": 9581.48,
-   "debt_cost": 3329.900000000001,
+   "spend": 12936.659999999998,
+   "card_repay_unmatched": 9129.39,
+   "debt_cost": 3418.3800000000015,
    "income": 2464.19,
-   "net": -9981.989999999998
+   "net": -10472.469999999998
   }
  },
  "by_category": {
@@ -141,18 +140,18 @@
    "Family": 739.65
   },
   "Jun 26": {
-   "Life": 3949.7599999999998,
-   "Fees": 4981.229999999999,
-   "Unaccounted": 16778.18,
+   "Life": 4488.0,
+   "Fees": 5684.189999999999,
+   "Unaccounted": 16280.480000000001,
    "Business": 20332.58,
    "Health": 177.1,
    "Deliveries": 1384.52,
-   "Base Food": 550.59,
-   "Entertainment": 5647.92
+   "Base Food": 839.71,
+   "Entertainment": 6622.49
   },
   "Jul 26": {
    "Life": 3070.9699999999993,
-   "Fees": 3778.84,
+   "Fees": 4186.099999999998,
    "Business": 3160.48,
    "Deliveries": 526.6999999999999,
    "Unaccounted": 67.92,
@@ -161,14 +160,14 @@
   },
   "Aug 26": {
    "Life": 2294.04,
-   "Fees": 3898.530000000001,
+   "Fees": 3938.8700000000003,
    "Business": 206.14,
    "Family": 748.2,
    "Unaccounted": 44.51
   },
   "Sep 26": {
-   "Fees": 3492.3800000000015,
-   "Life": 557.1,
+   "Fees": 3580.860000000002,
+   "Life": 959.1,
    "Unaccounted": 2568.75,
    "Business": 2725.91,
    "Entertainment": 1219.2,
@@ -178,13 +177,13 @@
   }
  },
  "by_dow": {
-  "Thu": 23711.769999999997,
-  "Fri": 26900.99000000001,
-  "Sat": 29507.280000000002,
-  "Mon": 30310.479999999992,
-  "Tue": 20374.550000000003,
+  "Thu": 24014.459999999995,
+  "Fri": 27723.63000000001,
+  "Sat": 29777.38,
+  "Mon": 30661.48999999999,
+  "Tue": 20490.17,
   "Wed": 23337.460000000014,
-  "Sun": 15339.600000000006
+  "Sun": 16687.920000000006
  },
  "by_account": {
   "Wise GBP": 105303.82999999997,
@@ -194,7 +193,10 @@
   "MBNA 1": 8162.28,
   "Virgin Money": 4202.85,
   "Santander Everyday": 5242.45,
+  "M&S": 2759.63,
   "Wise AED": -1.4210854715202004e-14,
+  "MBNA 2": 282.73,
+  "HSBC": 168.02,
   "Wise USD": 36.54
  },
  "note": "AED. spend = spend+refund+debt_cost+cash_withdrawal. Transfers/repayments/investing excluded."
