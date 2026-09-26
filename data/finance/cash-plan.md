@@ -6,7 +6,28 @@
 3. DEBT - whatever is left after 1 and 2. Goes to the dearest debt first. Never funds 1 or 2.
 Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 
-## Pot 1 - FIXED, October (monthly)
+## October v2 - Calum's numbers (26 Sep), with what the statements say
+| Line | Calum | AED | Statements Apr-Sep | Verdict |
+|---|---|---|---|---|
+| UK card minimums | GBP1,500 | 7,400 | GBP1,400-1,600/mo | right; falls as cards clear |
+| Kevin | GBP1,000 | 4,900 | GBP2,000 in Aug and Sep | new committed line |
+| Lewis | 10,000 | 10,000 | 44,775 repaid YTD, lumpy | agreed number |
+| Tal - cards, living, bills | GBP5,000 | 24,600 | ~45,000/mo sent | a 45% cut - real if Tal agrees it |
+| Rent - separate account | 15,000 | 15,000 | not visible in any statement | pot made physical - good |
+| Tara - separate account | 31,000 | 31,000 | own instalments not yet separated from co-investors' | good; send the schedule |
+| ADIB card: pay 70K, spend 25K | 70,000 | 70,000 | 279K paid to it YTD | clears ~64.6K + living 25K; card must be at zero every payday or it is 40% again |
+| Murabaha | - | 2,409 | monthly | forgotten |
+| Editors | - | 6,000 | Apr-Sep avg | forgotten - or zero if the brand pauses |
+| Phone, subs, software | - | 2,500 | recurring | forgotten |
+| Coaching GBP460 | - | 2,260 | monthly since Mar | forgotten - keep or cancel |
+| Meta ads | - | 0-10,000 | Jun 10.6K, Jul-Sep 0 | your call |
+| **October cash out** | **163K** | **~176-186K** | | |
+Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
+
+## The runway on these numbers
+30 Sep Đ314K -> October ~180K -> ~134K left. November needs ~120K (no ADIB clearing to repeat). So November works ONLY if White & Co's October payout (~162K) lands post-exit. Get it in writing before 1 Oct. Jake's first real pay ~Dec.
+
+## Pot 1 - FIXED, October v1 (superseded by the table above; kept for reference)
 | Line | AED/mo | Basis |
 |---|---|---|
 | Tal + home + baby | 45,000 | Apr-Sep average of money sent to Tal |
