@@ -24600,6 +24600,182 @@
       "note": "",
       "source": "M&S app screenshots 26 Sep 26 (GBP)",
       "currency": "GBP"
+    },
+    {
+      "month": "Jan 26",
+      "day": 5,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -42.2,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Feb 26",
+      "day": 5,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -41.14,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Mar 26",
+      "day": 9,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -40.11,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Apr 26",
+      "day": 7,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -39.11,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 5,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -38.13,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 4,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -37.18,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 27,
+      "description": "Wise London GB",
+      "account": "HSBC",
+      "amount": 536.68,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 27,
+      "description": "CASH ADVANCE FEE",
+      "account": "HSBC",
+      "amount": 16.05,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 6,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -36.25,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 10,
+      "description": "INTEREST",
+      "account": "HSBC",
+      "amount": 5.61,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 27,
+      "description": "Wise London GB",
+      "account": "HSBC",
+      "amount": 25.32,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 27,
+      "description": "CASH ADVANCE FEE",
+      "account": "HSBC",
+      "amount": 3.0,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -500,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Aug 26",
+      "day": 4,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -49.3,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Sep 26",
+      "day": 4,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "HSBC",
+      "amount": -36.49,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Sep 26",
+      "day": 10,
+      "description": "INTEREST",
+      "account": "HSBC",
+      "amount": 0.84,
+      "category": "",
+      "note": "",
+      "source": "HSBC app screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
     }
   ],
   "ccBalances": [
@@ -25492,6 +25668,35 @@
       "limit": 8000,
       "status": "27 Jul statement close (from 'balance from previous statement' on 27 Aug stmt) - over the 8,000 limit. Min was not paid by DD in Jul (late fee 24 Jul); 550 paid 31 Jul",
       "source": "M&S statement screenshot 26 Sep 26"
+    },
+    {
+      "date": "2026-08-10",
+      "month": "Aug 26",
+      "card": "HSBC",
+      "balance": 1459.66,
+      "currency": "GBP",
+      "available": 540.34,
+      "limit": 2000,
+      "status": "10 Aug statement close (from 'previous balance' on 10 Sep stmt). Interest 8.62",
+      "interestLatest": 8.62,
+      "interestDate": "10 Aug",
+      "source": "HSBC statement screenshot 26 Sep 26"
+    },
+    {
+      "date": "2026-09-10",
+      "month": "Sep 26",
+      "card": "HSBC",
+      "balance": 1424.01,
+      "currency": "GBP",
+      "available": 575.99,
+      "limit": 2000,
+      "status": "10 Sep statement (card *9345). APR 24.9%. Transaction balance 10.33 (rest at 0%). Min 35.60 due 5 Oct by DD",
+      "dueDate": "2026-10-05",
+      "dueAmount": 35.6,
+      "dueNote": "Min payment, DD set",
+      "interestLatest": 0.84,
+      "interestDate": "10 Sep",
+      "source": "HSBC statement screenshot 26 Sep 26"
     }
   ],
   "personalDebts": [
@@ -25803,6 +26008,7 @@
     "Wise_note": "Wise reconciled 26 Sep: 685 rows Jan-Sep in finance.json (currency field, negative = out); 44 screenshot rows retired pending delete"
   }
 }
+
 
 
 
