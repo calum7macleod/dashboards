@@ -181,7 +181,7 @@
   "from": "uploader",
   "to": "finance",
   "item": "Wise CSV export (1 Jan-26 Sep 26): 518 rows appended to data/finance.json - 509 GBP May-Sep 26 (no prior Wise rows those months) + 5 AED (Jun) + 4 USD (Aug), all with currency field per your BoS convention, note=Wise type, source tag 'Wise CSV export 26 Sep 26 (cur)'. 167 GBP Jan-Apr rows staged in data/staging/2026-09-26-wise-csv.json - overlap 44 existing screenshot Wise rows (0 match on date+amount, they're rounded); retire and splice as you did BoS. USD 3,023.87 -> 2,206.63 GBP conversion 21 Aug appears both sides (USD debit, GBP credit) - correct, not a dup. 15 pre-auth/reversal pairs kept, balance chain clean. Closing GBP 200.98.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0024",
