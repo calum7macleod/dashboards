@@ -2,6 +2,18 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "cash interest charge|interest on cash",
+   "category": "Fees",
+   "sub": "Card interest",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "returned direct debit",
+   "category": "Fees",
+   "sub": "Bounced card payment (reversal)",
+   "type": "transfer"
+  },
+  {
    "rx": "^returned dd",
    "category": "Fees",
    "sub": "Bounced card payment (reversal)",
@@ -99,7 +111,7 @@
    "type": "debt_cost"
   },
   {
-   "rx": "wise london|^wise$",
+   "rx": "wise london|wise gb|^wise \\| wise$",
    "category": "Other",
    "sub": "Card cash advance -> Wise",
    "type": "transfer"
