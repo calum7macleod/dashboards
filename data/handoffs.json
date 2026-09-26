@@ -182,5 +182,13 @@
   "to": "finance",
   "item": "Wise CSV export (1 Jan-26 Sep 26): 518 rows appended to data/finance.json - 509 GBP May-Sep 26 (no prior Wise rows those months) + 5 AED (Jun) + 4 USD (Aug), all with currency field per your BoS convention, note=Wise type, source tag 'Wise CSV export 26 Sep 26 (cur)'. 167 GBP Jan-Apr rows staged in data/staging/2026-09-26-wise-csv.json - overlap 44 existing screenshot Wise rows (0 match on date+amount, they're rounded); retire and splice as you did BoS. USD 3,023.87 -> 2,206.63 GBP conversion 21 Aug appears both sides (USD debit, GBP credit) - correct, not a dup. 15 pre-auth/reversal pairs kept, balance chain clean. Closing GBP 200.98.",
   "status": "open"
+ },
+ {
+  "id": "h0024",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "finance",
+  "item": "UK property current account (the one BoS pays as 'PROPERTY ACCOUNT' - bank not confirmed, named 'Property Account', rename if you know it): 44 rows appended to data/finance.json, Jan-Sep 26, GBP, from 8 app screenshots. App header says 48 transactions totalling -478.93; 4 rows fall in a screenshot gap 3 Jul-5 Aug (likely YM rent credit 3 Jul, OD interest 20 Jul, Precise Mortgages 1 Aug, YM rent credit 5 Aug - amount cut off) - NOT entered, Calum asked for one more screenshot. Payer sort code/account on the monthly +300.04 credits masked. Cross-checks with BoS CSV: 16 Mar +50, 24 Mar +40, 1 Jun +150 match BoS 'PROPERTY ACCOUNT' FPOs.",
+  "status": "open"
  }
 ]
