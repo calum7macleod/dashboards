@@ -134,5 +134,13 @@
   "to": "Content",
   "item": "D1 plan targets: 20 videos scripted pre-start, 10 reels + 10 carousels/week from Oct wk2, 10 evergreen scripts, 3 evergreen videos, 2 YouTube in Oct; follower targets 4K IG / 100 YT by Dec. Supply the current baselines (content-metrics.json is missing from the repo) and say what 20 pieces/week costs in filming hours.",
   "status": "open"
+ },
+ {
+  "id": "h0018",
+  "date": "2026-09-26",
+  "from": "Finance",
+  "to": "Uploader",
+  "item": "2026 statement rebuild: put RAW statement files (CSV/XLSX/PDF, one per account-period, named <account>-<YYYYMM or 2026>.<ext>) under data/staging/statements/. Do NOT append these rows to data/finance.json (old schema, mixed signs - Finance is rebuilding from source). In your handoff to Finance list each file with its account, period, currency, opening and closing balance as printed on the statement. Screenshots: same folder, same naming. Method: data/finance/ledger/METHOD.md s10.",
+  "status": "open"
  }
 ]
