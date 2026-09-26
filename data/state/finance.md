@@ -36,5 +36,9 @@ Mashreq ~Đ2K · BoS ~-£616 · ADIB card ~Đ64.6K owed of 70K limit (40% pa). U
 - Calum pulling all 2026 statements (banks, Wise, Binance, 12 UK cards) - checklist in METHOD.md s10.
 Aug unknowns identified (Cara = Tal gift, Kevin = debt, Alex = friend, Seller Network = callouts). Wise statement needed. UK card screenshots outstanding. Sep expected ~Đ103K cash out vs ~101K known.
 
+## Calum's answers 26 Sep (now rules in ledger/merchants.json)
+Tal = one pot (transfers; her accounts not in ledger). Lewis Page D250K = loan to Calum, D44.8K repaid. Abby D119K = her Tara payment via Calum (pass-through). Urquharts D72K + D25K cash + Tal Feb = Verde/Clear Vision collections (pass-through). All Tara/Verde/cheques net zero except own unit (assumed Modon D50,405 - confirm). F/FLOW = Mashreq->BoS FX via Tal (D130K -> GBP25,219 @5.155). Amex Gold Feb block = Pod Factory (Alex used card), repaid GBP6K. Cash: 14 Aug night out, 27 Aug videographer, 6 Feb Vision, UK ATM fun. Vantage: $6K equity (loss ~$5.9K). GBP300.04 into property acct = own mortgage funding. Concerq = flights. Clerwood/Reid/Page LJ = Lewis's Tara piece. Richmond = fantasy football win. James Gibson = gambling. L G Price = IG outreach. Brand costs = business P&L (yes).
+## Deliverables
+1 Spending report DONE 26 Sep: data/finance/reports/spending-2026.html (published artifact). 2 Debt report NEXT. 3 Cash flow. 4 P&L. 5 Balance sheet. 6 Dashboard handoff + monthly close.
 ## Rules
 Budget Đ30K flat discretionary; flag hot categories immediately; Deliveries category = eating proxy. No new spend lines without a plan.
