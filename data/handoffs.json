@@ -165,6 +165,6 @@
   "from": "uploader",
   "to": "finance",
   "item": "CORRECTION to h0019: the '1 exact duplicate dropped' was a real transaction (21 Sep TALLIA FLAHER -1000 FPO, 2nd of two same-day; running balance chains with 0 breaks across all 591 rows). Now appended - BoS CSV rows in finance.json for May/Jun/Sep = 210, not 209. Nothing else changes.",
-  "status": "open"
+  "status": "done"
  }
 ]
