@@ -869,7 +869,8 @@
       "account": "Mashreq",
       "amount": 6000,
       "need": 4,
-      "category": "Business"
+      "category": "Business",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Mar 26",
@@ -1975,7 +1976,8 @@
       "account": "Mashreq",
       "amount": 6000,
       "need": 4,
-      "category": "Business"
+      "category": "Business",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Feb 26",
@@ -3203,7 +3205,8 @@
       "description": "ATM Cash Withdrawal",
       "account": "Mashreq",
       "amount": 100,
-      "category": "Other"
+      "category": "Other",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Feb 26",
@@ -3211,7 +3214,8 @@
       "description": "Emirates Leisure Costa (coffee)",
       "account": "Mashreq",
       "amount": 9.5,
-      "category": "Deliveries"
+      "category": "Deliveries",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Feb 26",
@@ -3219,7 +3223,8 @@
       "description": "Ganesh Muddam (transfer)",
       "account": "Mashreq",
       "amount": 200,
-      "category": "Other"
+      "category": "Other",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Mar 26",
@@ -3227,7 +3232,8 @@
       "description": "ATM Cash Withdrawal",
       "account": "Mashreq",
       "amount": 1000,
-      "category": "Other"
+      "category": "Other",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Mar 26",
@@ -3235,7 +3241,8 @@
       "description": "Clare Page (Mother's Day gift for Tal)",
       "account": "Mashreq",
       "amount": 840,
-      "category": "Life"
+      "category": "Life",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Mar 26",
@@ -3243,7 +3250,8 @@
       "description": "Marielle Avinante",
       "account": "Mashreq",
       "amount": 200,
-      "category": "Unaccounted"
+      "category": "Unaccounted",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Jan 26",
@@ -7590,7 +7598,8 @@
       "account": "Mashreq",
       "amount": -10000,
       "category": "Family",
-      "sub": "Family support (Tal)"
+      "sub": "Family support (Tal)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7599,7 +7608,8 @@
       "account": "Mashreq",
       "amount": -250,
       "category": "Family",
-      "sub": "Household help (Marielle)"
+      "sub": "Household help (Marielle)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7608,7 +7618,8 @@
       "account": "Mashreq",
       "amount": -2000,
       "category": "Business",
-      "sub": "Content/agency (Merkz Digital)"
+      "sub": "Content/agency (Merkz Digital)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7617,7 +7628,8 @@
       "account": "Mashreq",
       "amount": -3000,
       "category": "Business",
-      "sub": "Content/agency (Merkz Digital)"
+      "sub": "Content/agency (Merkz Digital)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7626,7 +7638,8 @@
       "account": "Mashreq",
       "amount": -600,
       "category": "Life",
-      "sub": "Home maintenance (Quwah)"
+      "sub": "Home maintenance (Quwah)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7635,7 +7648,8 @@
       "account": "Mashreq",
       "amount": -600,
       "category": "Life",
-      "sub": "Home maintenance (Quwah)"
+      "sub": "Home maintenance (Quwah)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7644,7 +7658,8 @@
       "account": "Mashreq",
       "amount": -10000,
       "category": "Unaccounted",
-      "sub": "Cash withdrawals"
+      "sub": "Cash withdrawals",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7653,7 +7668,8 @@
       "account": "Mashreq",
       "amount": -1500,
       "category": "Family",
-      "sub": "Family support (other)"
+      "sub": "Family support (other)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7662,7 +7678,8 @@
       "account": "Mashreq",
       "amount": -100,
       "category": "Family",
-      "sub": "Household help (Marielle)"
+      "sub": "Household help (Marielle)",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -7671,7 +7688,8 @@
       "account": "Mashreq",
       "amount": -10000,
       "category": "Unaccounted",
-      "sub": "Cash withdrawals"
+      "sub": "Cash withdrawals",
+      "retired": "superseded by Mashreq Neo statement 26 Sep 26 (statement wins)"
     },
     {
       "month": "Aug 26",
@@ -28928,7 +28946,7 @@
     "BoS_GBP_25Sep": -2565.88,
     "note_BoS": "BoS statement reconciled 26 Sep: 591 rows Jan-Sep in finance.json (currency GBP, negative = out); 101 screenshot rows retired pending delete",
     "Wise_GBP_26Sep": 200.98,
-    "Wise_note": "Wise reconciled 26 Sep: 685 rows Jan-Sep in finance.json (currency field, negative = out); 44 screenshot rows retired pending delete"
+    "Wise_note": "Wise reconciled 26 Sep: 685 rows Jan-Sep in finance.json (currency field, negative = out); 44 screenshot rows retired pending delete",
+    "Mashreq_26Sep": 134.5
   }
 }
-
