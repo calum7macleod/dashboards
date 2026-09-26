@@ -11,39 +11,125 @@
   "Aug 26",
   "Sep 26"
  ],
- "note": "AED. True spend = purchases + refunds + interest/fees + cash spent. Excludes transfers, card repayments, Tal (one pot), pass-through for co-investors, investments.",
+ "cashAdvanceCost": {
+  "totalGBP": 14814,
+  "explicitFeesGBP": 639,
+  "estInterestGBP": 1125,
+  "costSoFarGBP": 1763,
+  "stillOutstandingGBP": 13600,
+  "runningPerMonthGBP": 313,
+  "perCard": [
+   {
+    "card": "Virgin Money",
+    "advancedGBP": 2886,
+    "feesGBP": 56,
+    "estInterestGBP": 316
+   },
+   {
+    "card": "Aqua",
+    "advancedGBP": 2733,
+    "feesGBP": 137,
+    "estInterestGBP": 85
+   },
+   {
+    "card": "Barclaycard Plat",
+    "advancedGBP": 2035,
+    "feesGBP": 175,
+    "estInterestGBP": 174
+   },
+   {
+    "card": "M&S",
+    "advancedGBP": 1964,
+    "feesGBP": 59,
+    "estInterestGBP": 163
+   },
+   {
+    "card": "MBNA 1",
+    "advancedGBP": 1863,
+    "feesGBP": 93,
+    "estInterestGBP": 154
+   },
+   {
+    "card": "Santander Everyday",
+    "advancedGBP": 1110,
+    "feesGBP": 2,
+    "estInterestGBP": 81
+   },
+   {
+    "card": "Tesco Clubcard",
+    "advancedGBP": 937,
+    "feesGBP": 62,
+    "estInterestGBP": 63
+   },
+   {
+    "card": "MBNA 2",
+    "advancedGBP": 724,
+    "feesGBP": 36,
+    "estInterestGBP": 51
+   },
+   {
+    "card": "HSBC",
+    "advancedGBP": 562,
+    "feesGBP": 19,
+    "estInterestGBP": 38
+   }
+  ],
+  "secondOrder": "June drain pushed Virgin, Barclaycard, Santander, Aqua over limit -> overlimit fees, then 9 bounced payments (Jun-Sep) with late fees, plus the ADIB card kept at ceiling. Estimate 2.3%/mo cash rate; Aqua advances counted repaid 31 Jul."
+ },
  "byCategory": {
+  "ADIB card (proxy: payments from Mashreq)": [
+   30500,
+   4500,
+   5000,
+   33000,
+   45000,
+   21000,
+   63924,
+   40500,
+   35300
+  ],
+  "Tal share (50% of money sent)": [
+   13774,
+   0,
+   0,
+   16771,
+   27483,
+   7402,
+   24451,
+   27446,
+   29921
+  ],
   "Business": [
-   17219,
+   15100,
    12769,
    12933,
    14556,
    17842,
    22926,
    5669,
-   26975,
+   17636,
    6793
   ],
   "Entertainment": [
-   2899,
-   660,
+   2350,
+   610,
    1470,
    0,
    2718,
    23124,
-   10722,
-   23232,
+   10233,
+   10000,
    9404
   ],
   "Life": [
-   6793,
+   2327,
    2101,
    2474,
    3199,
    13274,
    5216,
-   4784,
-   16096,
+   4037,
+   4009,
    1401
   ],
   "Fees": [
@@ -54,41 +140,30 @@
    3815,
    6519,
    5037,
-   4668,
+   4162,
    4315
   ],
   "Base Food": [
-   4527,
+   0,
    3324,
    3457,
    3605,
    0,
    840,
    312,
-   6815,
+   0,
    800
   ],
   "Deliveries": [
-   2647,
+   0,
    3775,
    775,
    487,
    1364,
    1385,
    527,
-   2750,
+   0,
    345
-  ],
-  "Health": [
-   6618,
-   472,
-   1172,
-   967,
-   18,
-   177,
-   758,
-   2071,
-   0
   ],
   "Family": [
    742,
@@ -100,6 +175,17 @@
    735,
    748,
    738
+  ],
+  "Health": [
+   0,
+   472,
+   1172,
+   967,
+   18,
+   177,
+   758,
+   0,
+   0
   ],
   "Gambling": [
    693,
@@ -113,14 +199,14 @@
    0
   ],
   "Unaccounted": [
-   127,
+   -363,
    378,
    45,
    -258,
    454,
    766,
    -420,
-   200,
+   45,
    -579
   ],
   "Investing": [
@@ -136,6 +222,38 @@
   ]
  },
  "bySub": [
+  {
+   "category": "ADIB card (proxy: payments from Mashreq)",
+   "sub": "until statements land",
+   "months": [
+    30500,
+    4500,
+    5000,
+    33000,
+    45000,
+    21000,
+    63924,
+    40500,
+    35300
+   ],
+   "total": 278724
+  },
+  {
+   "category": "Tal share (50% of money sent)",
+   "sub": "other 50% = her/pot",
+   "months": [
+    13774,
+    0,
+    0,
+    16771,
+    27483,
+    7402,
+    24451,
+    27446,
+    29921
+   ],
+   "total": 147248
+  },
   {
    "category": "Business",
    "sub": "Editors / VA",
@@ -163,26 +281,10 @@
     23,
     18951,
     0,
-    3867,
+    0,
     7442
    ],
-   "total": 30454
-  },
-  {
-   "category": "Business",
-   "sub": "Ads (Meta/Google)",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    9640,
-    10580,
-    0,
-    5254,
-    0
-   ],
-   "total": 25474
+   "total": 26587
   },
   {
    "category": "Fees",
@@ -217,36 +319,20 @@
    "total": 20616
   },
   {
-   "category": "Base Food",
-   "sub": "Groceries / meal prep",
+   "category": "Business",
+   "sub": "Ads (Meta/Google)",
    "months": [
-    1989,
-    3324,
-    3457,
-    3605,
     0,
-    840,
-    312,
-    4649,
-    800
+    0,
+    0,
+    0,
+    9640,
+    10580,
+    0,
+    0,
+    0
    ],
-   "total": 18975
-  },
-  {
-   "category": "Life",
-   "sub": "Car / fuel / tolls",
-   "months": [
-    1425,
-    378,
-    328,
-    1242,
-    5892,
-    1556,
-    2388,
-    3019,
-    374
-   ],
-   "total": 16601
+   "total": 20220
   },
   {
    "category": "Business",
@@ -265,6 +351,38 @@
    "total": 16080
   },
   {
+   "category": "Life",
+   "sub": "Car / fuel / tolls",
+   "months": [
+    139,
+    378,
+    328,
+    1242,
+    5892,
+    1556,
+    2378,
+    2018,
+    374
+   ],
+   "total": 14304
+  },
+  {
+   "category": "Base Food",
+   "sub": "Groceries / meal prep",
+   "months": [
+    0,
+    3324,
+    3457,
+    3605,
+    0,
+    840,
+    312,
+    0,
+    800
+   ],
+   "total": 12337
+  },
+  {
    "category": "Entertainment",
    "sub": "Eating out / activities / trips",
    "months": [
@@ -275,58 +393,10 @@
     2695,
     2766,
     236,
-    2100,
+    0,
     1962
    ],
-   "total": 12538
-  },
-  {
-   "category": "Deliveries",
-   "sub": "Food delivery",
-   "months": [
-    2079,
-    3199,
-    712,
-    276,
-    1305,
-    1214,
-    527,
-    2569,
-    345
-   ],
-   "total": 12225
-  },
-  {
-   "category": "Entertainment",
-   "sub": "Events",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5036,
-    6595,
-    0
-   ],
-   "total": 11631
-  },
-  {
-   "category": "Health",
-   "sub": "Training / medical",
-   "months": [
-    6591,
-    145,
-    1165,
-    967,
-    18,
-    177,
-    758,
-    1193,
-    0
-   ],
-   "total": 11014
+   "total": 10438
   },
   {
    "category": "Entertainment",
@@ -371,10 +441,10 @@
     1370,
     6340,
     0,
-    300,
+    0,
     0
    ],
-   "total": 9122
+   "total": 8822
   },
   {
    "category": "Business",
@@ -391,6 +461,22 @@
     485
    ],
    "total": 8132
+  },
+  {
+   "category": "Deliveries",
+   "sub": "Food delivery",
+   "months": [
+    0,
+    3199,
+    712,
+    276,
+    1305,
+    1214,
+    527,
+    0,
+    345
+   ],
+   "total": 7577
   },
   {
    "category": "Entertainment",
@@ -419,10 +505,10 @@
     906,
     1369,
     521,
-    428,
+    396,
     512
    ],
-   "total": 6123
+   "total": 6092
   },
   {
    "category": "Business",
@@ -457,6 +543,22 @@
    "total": 5923
   },
   {
+   "category": "Entertainment",
+   "sub": "Events",
+   "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5036,
+    0,
+    0
+   ],
+   "total": 5036
+  },
+  {
    "category": "Life",
    "sub": "Tech / devices",
    "months": [
@@ -471,38 +573,6 @@
     0
    ],
    "total": 4864
-  },
-  {
-   "category": "Fees",
-   "sub": "Card fees (late / cash advance / FX)",
-   "months": [
-    0,
-    1035,
-    182,
-    0,
-    459,
-    1664,
-    258,
-    475,
-    664
-   ],
-   "total": 4736
-  },
-  {
-   "category": "Life",
-   "sub": "Phone",
-   "months": [
-    0,
-    262,
-    0,
-    210,
-    0,
-    1545,
-    1073,
-    727,
-    844
-   ],
-   "total": 4661
   },
   {
    "category": "Life",
@@ -521,20 +591,36 @@
    "total": 4313
   },
   {
-   "category": "Life",
-   "sub": "",
+   "category": "Fees",
+   "sub": "Card fees (late / cash advance / FX)",
    "months": [
-    2678,
-    274,
     0,
-    213,
+    1035,
+    182,
     0,
+    459,
+    1664,
+    258,
     0,
-    737,
-    0,
-    0
+    664
    ],
-   "total": 3902
+   "total": 4262
+  },
+  {
+   "category": "Life",
+   "sub": "Phone",
+   "months": [
+    0,
+    262,
+    0,
+    210,
+    0,
+    1545,
+    1073,
+    0,
+    844
+   ],
+   "total": 3934
   },
   {
    "category": "Life",
@@ -556,33 +642,33 @@
    "category": "Life",
    "sub": "Subscriptions",
    "months": [
-    266,
+    239,
     252,
     246,
     221,
     2079,
     118,
     59,
-    62,
+    0,
     44
    ],
-   "total": 3346
+   "total": 3257
   },
   {
-   "category": "Life",
-   "sub": "Clothing",
+   "category": "Health",
+   "sub": "Training / medical",
    "months": [
     0,
+    145,
+    1165,
+    967,
+    18,
+    177,
+    758,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3150,
     0
    ],
-   "total": 3150
+   "total": 3230
   },
   {
    "category": "Gambling",
@@ -601,90 +687,26 @@
    "total": 3146
   },
   {
-   "category": "Business",
-   "sub": "",
-   "months": [
-    2119,
-    690,
-    205,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "total": 3014
-  },
-  {
    "category": "Life",
    "sub": "Home / shopping",
    "months": [
-    1167,
+    1022,
     0,
     218,
     0,
     0,
     674,
     189,
-    424,
-    0
-   ],
-   "total": 2673
-  },
-  {
-   "category": "Base Food",
-   "sub": "",
-   "months": [
-    2538,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     0
    ],
-   "total": 2538
-  },
-  {
-   "category": "Business",
-   "sub": "Business - UNKNOWN (Seller Network \u00a32,500?)",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2500,
-    0
-   ],
-   "total": 2500
-  },
-  {
-   "category": "Life",
-   "sub": "Car rental (Selfdrive)",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2449,
-    0
-   ],
-   "total": 2449
+   "total": 2104
   },
   {
    "category": "Unaccounted",
    "sub": "Unknown - Calum to name",
    "months": [
-    490,
+    0,
     500,
     438,
     0,
@@ -694,55 +716,7 @@
     0,
     0
    ],
-   "total": 2384
-  },
-  {
-   "category": "Life",
-   "sub": "Personal care",
-   "months": [
-    330,
-    0,
-    0,
-    0,
-    0,
-    985,
-    0,
-    1007,
-    0
-   ],
-   "total": 2322
-  },
-  {
-   "category": "Base Food",
-   "sub": "Restaurants & coffee",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2166,
-    0
-   ],
-   "total": 2166
-  },
-  {
-   "category": "Life",
-   "sub": "Utilities & telecoms",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2115,
-    0
-   ],
-   "total": 2115
+   "total": 1894
   },
   {
    "category": "Entertainment",
@@ -761,84 +735,36 @@
    "total": 1400
   },
   {
-   "category": "Deliveries",
-   "sub": "Eating out / coffee",
+   "category": "Life",
+   "sub": "Personal care",
    "months": [
-    464,
-    434,
     0,
-    19,
-    59,
-    171,
     0,
-    181,
+    0,
+    0,
+    0,
+    985,
+    0,
+    0,
     0
    ],
-   "total": 1328
+   "total": 985
   },
   {
    "category": "Business",
-   "sub": "Business tools",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1285,
-    0
-   ],
-   "total": 1285
-  },
-  {
-   "category": "Entertainment",
    "sub": "",
    "months": [
-    549,
-    130,
+    0,
+    690,
+    205,
     0,
     0,
     0,
     0,
-    489,
     0,
     0
    ],
-   "total": 1168
-  },
-  {
-   "category": "Life",
-   "sub": "Chauffeur (Zofeur)",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    891,
-    0
-   ],
-   "total": 891
-  },
-  {
-   "category": "Health",
-   "sub": "Wellness & grooming",
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    841,
-    0
-   ],
-   "total": 841
+   "total": 895
   },
   {
    "category": "Family",
@@ -858,31 +784,31 @@
   },
   {
    "category": "Deliveries",
-   "sub": "",
+   "sub": "Eating out / coffee",
    "months": [
-    104,
-    142,
-    64,
-    192,
     0,
+    434,
     0,
+    19,
+    59,
+    171,
     0,
     0,
     0
    ],
-   "total": 502
+   "total": 683
   }
  ],
  "total": [
-  43386,
-  27139,
-  27080,
-  25376,
-  41704,
-  60952,
-  28125,
-  83556,
-  23216
+  66244,
+  31589,
+  32080,
+  75147,
+  114186,
+  89354,
+  115264,
+  104545,
+  88437
  ],
  "income": [
   63766,
@@ -892,22 +818,144 @@
   122735,
   116050,
   295627,
-  0,
-  106464
+  104000,
+  2464
+ ],
+ "incomeDetail": [
+  {
+   "date": "2026-01-06",
+   "aed": 2530,
+   "desc": "bank credit ym client account 97 m",
+   "countedIn": "Jan 26"
+  },
+  {
+   "date": "2026-01-12",
+   "aed": 1519,
+   "desc": "f/flow 1/agility f",
+   "countedIn": "Jan 26"
+  },
+  {
+   "date": "2026-01-14",
+   "aed": 53563,
+   "desc": "salary - white and white real esta",
+   "countedIn": "Jan 26"
+  },
+  {
+   "date": "2026-01-29",
+   "aed": 6154,
+   "desc": "salary - white and white real esta",
+   "countedIn": "Jan 26"
+  },
+  {
+   "date": "2026-02-04",
+   "aed": 2540,
+   "desc": "bank credit ym client account 97 m",
+   "countedIn": "Feb 26"
+  },
+  {
+   "date": "2026-03-01",
+   "aed": 19480,
+   "desc": "received money from north coast 50",
+   "countedIn": "Mar 26"
+  },
+  {
+   "date": "2026-03-04",
+   "aed": 2474,
+   "desc": "bank credit ym client account 97 m",
+   "countedIn": "Mar 26"
+  },
+  {
+   "date": "2026-04-01",
+   "aed": 46049,
+   "desc": "salary - white and white real esta",
+   "countedIn": "Apr 26"
+  },
+  {
+   "date": "2026-04-08",
+   "aed": 2502,
+   "desc": "bank credit ym client account 97 m",
+   "countedIn": "Apr 26"
+  },
+  {
+   "date": "2026-04-23",
+   "aed": 24625,
+   "desc": "received money from north coast 50",
+   "countedIn": "Apr 26"
+  },
+  {
+   "date": "2026-04-30",
+   "aed": 50000,
+   "desc": "salary - white and white real esta",
+   "countedIn": "Apr 26"
+  },
+  {
+   "date": "2026-05-06",
+   "aed": 2505,
+   "desc": "bank credit ym client account 97 m",
+   "countedIn": "May 26"
+  },
+  {
+   "date": "2026-05-11",
+   "aed": 59,
+   "desc": "apple.com/bill",
+   "countedIn": "May 26"
+  },
+  {
+   "date": "2026-05-21",
+   "aed": 115240,
+   "desc": "salary - white and white real esta",
+   "countedIn": "May 26"
+  },
+  {
+   "date": "2026-05-26",
+   "aed": 4931,
+   "desc": "richmond rc",
+   "countedIn": "May 26"
+  },
+  {
+   "date": "2026-06-03",
+   "aed": 2455,
+   "desc": "bank credit ym client account 97 m",
+   "countedIn": "Jun 26"
+  },
+  {
+   "date": "2026-06-30",
+   "aed": 113595,
+   "desc": "salary - white and white real esta",
+   "countedIn": "Jun 26"
+  },
+  {
+   "date": "2026-07-30",
+   "aed": 295627,
+   "desc": "salary - white and white real esta",
+   "countedIn": "Jul 26"
+  },
+  {
+   "date": "2026-09-04",
+   "aed": 2464,
+   "desc": "bank credit ym client account 97 m",
+   "countedIn": "Sep 26"
+  },
+  {
+   "date": "2026-09-05",
+   "aed": 104000,
+   "desc": "salary - white and white real esta",
+   "countedIn": "Aug 26"
+  }
  ],
  "region": {
-  "UAE": [
-   27616,
-   12512,
-   11152,
-   8695,
-   300,
-   200,
-   1436,
-   73807,
-   0
+  "AED": [
+   36700,
+   16962,
+   16152,
+   41695,
+   45300,
+   21200,
+   64124,
+   67350,
+   35300
   ],
-  "UK": [
+  "GBP": [
    15770,
    14627,
    15927,
@@ -915,19 +963,8 @@
    41404,
    60752,
    26689,
-   9713,
+   9749,
    23216
-  ],
-  "Other": [
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   37,
-   0
   ]
  },
  "fees": [
@@ -938,60 +975,54 @@
   3815,
   6519,
   5037,
-  4668,
+  4162,
   4315
- ],
- "cashAdvances": [
-  0,
-  0,
-  7397,
-  3740,
-  7085,
-  42321,
-  4641,
-  0,
-  7475
  ],
  "eating": {
   "Deliveries": [
-   2079,
+   0,
    3199,
    712,
    276,
    1305,
    1214,
    527,
-   2569,
+   0,
    345
   ],
   "Eating out": [
-   2918,
+   2350,
    1006,
    64,
    211,
    2754,
    4344,
    5197,
-   2281,
+   0,
    1962
   ],
   "Groceries": [
-   4527,
+   0,
    3324,
    3457,
    3605,
    0,
    840,
    312,
-   6815,
+   0,
    800
   ]
  },
  "topMerchants": [
   {
    "merchant": "contentus",
-   "aed": 18000,
-   "n": 3
+   "aed": 24000,
+   "n": 4
+  },
+  {
+   "merchant": "cash withdrawal",
+   "aed": 21400,
+   "n": 5
   },
   {
    "merchant": "precise mortgages",
@@ -1009,16 +1040,6 @@
    "n": 2
   },
   {
-   "merchant": "cash withdrawal (cardless cash wit",
-   "aed": 10000,
-   "n": 1
-  },
-  {
-   "merchant": "cash withdrawal (atm cash withdraw",
-   "aed": 10000,
-   "n": 1
-  },
-  {
    "merchant": "interest",
    "aed": 7779,
    "n": 30
@@ -1029,23 +1050,13 @@
    "n": 1
   },
   {
-   "merchant": "ticketmaster dubai",
-   "aed": 6595,
-   "n": 1
-  },
-  {
-   "merchant": "Www.fittmeals.ae DUBAI",
+   "merchant": "www.fittmeals.ae dubai",
    "aed": 6249,
    "n": 2
   },
   {
-   "merchant": "White And White Real Esta Dubai",
+   "merchant": "white and white real esta dubai",
    "aed": 6036,
-   "n": 1
-  },
-  {
-   "merchant": "contentus",
-   "aed": 6000,
    "n": 1
   },
   {
@@ -1054,12 +1065,7 @@
    "n": 8
   },
   {
-   "merchant": "deliveroo",
-   "aed": 5851,
-   "n": 67
-  },
-  {
-   "merchant": "Partners On Booking Bv London",
+   "merchant": "partners on booking bv london",
    "aed": 5204,
    "n": 1
   },
@@ -1094,14 +1100,14 @@
    "n": 1
   },
   {
-   "merchant": "Anthropic ANTHROPIC.COM",
+   "merchant": "anthropic anthropic.com",
    "aed": 4307,
    "n": 10
   },
   {
-   "merchant": "abegail m veloso fee 1",
-   "aed": 4071,
-   "n": 5
+   "merchant": "deliveroo",
+   "aed": 3773,
+   "n": 42
   },
   {
    "merchant": "interest money transfers",
@@ -1109,18 +1115,8 @@
    "n": 8
   },
   {
-   "merchant": "elite vita polyclinic",
-   "aed": 3500,
-   "n": 1
-  },
-  {
-   "merchant": "Facebk *P76scrrte2 fb.me/ads",
+   "merchant": "facebk *p76scrrte2 fb.me/ads",
    "aed": 3460,
-   "n": 1
-  },
-  {
-   "merchant": "suited and booted garm dubai",
-   "aed": 3150,
    "n": 1
   },
   {
@@ -1134,8 +1130,38 @@
    "n": 5
   },
   {
-   "merchant": "Www.fittmeals.ae ABU DHABI",
+   "merchant": "deliveroo dubai",
+   "aed": 2860,
+   "n": 28
+  },
+  {
+   "merchant": "www.fittmeals.ae abu dhabi",
    "aed": 2812,
+   "n": 1
+  },
+  {
+   "merchant": "facebk *k24k5v5te2 fb.me/ads",
+   "aed": 2580,
+   "n": 1
+  },
+  {
+   "merchant": "anthropic* claude sub anthropic.co",
+   "aed": 2219,
+   "n": 3
+  },
+  {
+   "merchant": "front office rosewood abu dhabi",
+   "aed": 2154,
+   "n": 3
+  },
+  {
+   "merchant": "boxica",
+   "aed": 2096,
+   "n": 13
+  },
+  {
+   "merchant": "facebk *dksytp9te2 fb.me/ads",
+   "aed": 2000,
    "n": 1
   }
  ],
@@ -1151,28 +1177,21 @@
    "account": "BoS",
    "aed": 500,
    "desc": "MARK KELLY"
-  },
-  {
-   "date": "2026-01-31",
-   "account": "ADIB CC",
-   "aed": 300,
-   "desc": "PMB Accept"
   }
  ],
  "notCounted": {
   "Investments (own): Modon, Binance, Vantage deposits": 110096,
-  "To Tal (one pot, her accounts not in ledger)": 309496,
   "Pass-through for co-investors / Pod Factory (net)": -447412,
-  "Payments to ADIB card from Mashreq (card statement pending)": 278724
+  "Other 50% of money sent to Tal (one pot)": 147248
  },
  "byDow": {
-  "Thu": 69158,
-  "Fri": 68581,
-  "Sat": 50762,
-  "Mon": 55291,
-  "Tue": 39573,
-  "Wed": 36862,
-  "Sun": 44517
+  "Thu": 59449,
+  "Fri": 56662,
+  "Sat": 43329,
+  "Mon": 41144,
+  "Tue": 36219,
+  "Wed": 28137,
+  "Sun": 30145
  },
  "coverage": {
   "ADIB CC": [
@@ -1348,10 +1367,10 @@
   ]
  },
  "coverageNote": {
-  "ADIB CC": "PROVISIONAL from screenshots: Jan + Aug full, Feb/Jul partial, Mar-Jun + Sep MISSING - statements pending",
-  "ADIB": "PROVISIONAL: Feb-Apr only",
-  "Amex Black / BA": "not in - BoS paid Amex GBP17.9K this year",
-  "Tal accounts": "not in (one pot) - her card spend invisible",
+  "ADIB CC": "PROXY: counted as the payments Mashreq made to the card each month. Jan/Aug screenshot detail exists but is not added on top. Statements pending.",
+  "ADIB": "PROVISIONAL: Feb-Apr screenshots only",
+  "Amex Black / BA": "not yet in the ledger",
+  "Tal accounts": "one pot - her card spend invisible; 50% of money sent to her counted as spend",
   "Binance": "ignored per Calum"
  },
  "vantage": {
@@ -1360,8 +1379,5 @@
   "equityUSD": 6000,
   "lossUSD": 5870,
   "lossAED": 21560
- },
- "fxLeak": {
-  "note": "Mashreq -> BoS via Tal 30 Jul: D130,000 became GBP25,219 = 5.155/GBP. Wise same week ~4.90. Cost of the route: ~D6,400."
  }
 }
