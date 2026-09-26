@@ -310,5 +310,13 @@
   "to": "Finance",
   "item": "Amex Gold 2026 -> data/staging/statements/amex-gold-2026.json (97 rows, GBP, signs as printed, 9 periods). Printed closing: Mar 460.00, Apr 460.00, May 460.00, Jun 538.25, Aug 460.00, current 549.88 at 26 Sep. Derived (page 1 not captured): Jan closing 1,631.97 (opening 6,218.57 = 10 Jan payment), Feb closing 8,691.73 (rows sum to printed totals 6,852.76 + 207.00), Jul closing 3,025.98 (rows sum to printed 3,416.45; 928.72 of payments/credits on uncaptured pages). Raw screenshots NOT committed (public repo - identity data). Ask Calum for the Amex CSV if you need a machine source.",
   "status": "done"
+ },
+ {
+  "id": "h0040",
+  "date": "2026-09-26",
+  "from": "Finance",
+  "to": "PA",
+  "item": "From 1 Oct: Finance runs a Sunday weekly close. Please put 'Sunday 30 min: weekly statement screenshots -> Uploader, then Finance close' in Calum's Sunday planning block, and 'Freeze credit cards in apps (ADIB CC + all UK) for Oct-Nov' as a task due 1 Oct. Details: data/finance/cash-plan.md 'OCTOBER LOCKDOWN'.",
+  "status": "open"
  }
 ]
