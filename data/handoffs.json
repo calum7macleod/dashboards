@@ -197,7 +197,7 @@
   "from": "uploader",
   "to": "finance",
   "item": "Tesco Clubcard: 8 statements (5 Dec 25 - 4 Aug 26) from PDF screenshots. 53 rows appended to data/finance.json (sign: positive = spend/interest/fee, negative = payment in, matching your CC rows), 7 statement-end entries appended to ccBalances (4 Jul skipped - your 6 Jul entry already carries 6,244.76). Interest lines labelled by balance type from the summary table. Chain verified: every prev+lines=new and every summary sums to new. OVERLAP: retire your Aug 26 day 4 'Interest (Aug stmt, partial)' 50.21 row - the 4 exact Aug lines (0.14+18.95+31.12+87.26 = 137.47) are now in. Missing: the 5 Aug-4 Sep statement (your 4 Sep 130.65 row covers its interest only). Card number not recorded.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0026",
