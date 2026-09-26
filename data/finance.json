@@ -7874,7 +7874,8 @@
       "account": "M&S",
       "amount": 41.26,
       "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "source": "cc app screenshot 05 Sep 26",
+      "retired": "superseded by M&S app rows (exact interest lines) - h0033"
     },
     {
       "month": "Jul 26",
@@ -7883,7 +7884,8 @@
       "account": "M&S",
       "amount": 48.02,
       "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26"
+      "source": "cc app screenshot 05 Sep 26",
+      "retired": "superseded by M&S app rows (exact interest lines) - h0033"
     },
     {
       "month": "Aug 26",
@@ -26312,8 +26314,3 @@
     "Wise_note": "Wise reconciled 26 Sep: 685 rows Jan-Sep in finance.json (currency field, negative = out); 44 screenshot rows retired pending delete"
   }
 }
-
-
-
-
-
