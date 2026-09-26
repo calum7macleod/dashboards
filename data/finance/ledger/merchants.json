@@ -2,6 +2,12 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "cara exclusive",
+   "category": "Family",
+   "sub": "Gift for Tal (Cara Exclusive, Aug)",
+   "type": "spend"
+  },
+  {
    "rx": "corrina",
    "category": "Family",
    "sub": "Corrina (standing GBP150/mo - confirm what)",
@@ -44,12 +50,6 @@
    "category": "Loan",
    "sub": "ADIB Murabaha instalment (principal+profit, split pending)",
    "type": "debt_principal"
-  },
-  {
-   "rx": "cara exclusive",
-   "category": "Family",
-   "sub": "Tal (one pot - transfer)",
-   "type": "transfer"
   },
   {
    "rx": "tallia|tal flaher|flaher tv",
