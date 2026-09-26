@@ -1,0 +1,19 @@
+{
+ "note": "GBP = effective rate from Calum's own Wise card AED transactions (fee incl), median per month, 26 Sep 26. USD peg.",
+ "GBP": {
+  "Jan 26": 4.949,
+  "Feb 26": 5.0,
+  "Mar 26": 4.87,
+  "Apr 26": 4.925,
+  "May 26": 4.931,
+  "Jun 26": 4.902,
+  "Jul 26": 4.902,
+  "Aug 26": 4.988,
+  "Sep 26": 4.921,
+  "default": 4.92
+ },
+ "USD": 3.6725,
+ "AED": 1.0,
+ "MUR": 0.08,
+ "EUR": 4.05
+}
