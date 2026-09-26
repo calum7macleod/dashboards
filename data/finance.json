@@ -9846,6 +9846,16 @@
       "category": "",
       "note": "CHG",
       "source": "BoS CSV export 26 Sep 26 (GBP)"
+    },
+    {
+      "month": "Sep 26",
+      "day": 21,
+      "description": "TALLIA FLAHER",
+      "account": "BoS",
+      "amount": -1000,
+      "category": "",
+      "note": "FPO",
+      "source": "BoS CSV export 26 Sep 26 (GBP) - 2nd of two same-day payments, balance chain confirms"
     }
   ],
   "ccBalances": [
@@ -10605,3 +10615,4 @@
     "since": "D104K Tony landed 5 Sep"
   }
 }
+
