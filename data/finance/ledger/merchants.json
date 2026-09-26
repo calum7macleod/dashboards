@@ -2,6 +2,78 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "salary - white and white|white and white real estate l",
+   "category": "Other",
+   "sub": "Commission (White & Co, WPS)",
+   "type": "income"
+  },
+  {
+   "rx": "verde by vision|clear vision real estate|modon real es|tara a al ree|tara al reem",
+   "category": "Investing",
+   "sub": "Property instalment (off-plan)",
+   "type": "investment"
+  },
+  {
+   "rx": "quickremit|ipp transfer - calum macleod|fund transfer calum lach|acct to acct transfer",
+   "category": "Other",
+   "sub": "",
+   "type": "transfer"
+  },
+  {
+   "rx": "inward clearing cheque",
+   "category": "Unaccounted",
+   "sub": "Cheque cleared - what for?",
+   "type": "spend"
+  },
+  {
+   "rx": "inward clearing return cheque",
+   "category": "Unaccounted",
+   "sub": "Cheque RETURNED (bounced)",
+   "type": "refund"
+  },
+  {
+   "rx": "tallia|tal flaher|flaher tv",
+   "category": "Family",
+   "sub": "Tal - confirm: one pot (transfer) or hers (support)",
+   "type": "transfer"
+  },
+  {
+   "rx": "lewis (john )?page|page lj|ms abby|eue joshua|hfp pamela|ronnie webb|eleanor mae fox|clerwood|richmond rc|reid lr|cash a p|pod factory",
+   "category": "Unaccounted",
+   "sub": "Money in from a person/co - loan, co-investor, client or gift?",
+   "type": "auto_debt"
+  },
+  {
+   "rx": "contentus|merkz digital|ali vids",
+   "category": "Business",
+   "sub": "Editors / VA",
+   "type": "spend"
+  },
+  {
+   "rx": "marielle avinante|ganesh muddam|zain tariq|chowdlu|falcon blink|quwah al shakush|upto",
+   "category": "Life",
+   "sub": "Helpers / home services",
+   "type": "spend"
+  },
+  {
+   "rx": "clare page",
+   "category": "Family",
+   "sub": "Tal / family",
+   "type": "spend"
+  },
+  {
+   "rx": "correspondent bank charges|value added tax - output|bank charges",
+   "category": "Fees",
+   "sub": "Interest & bank fees",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "cash withdrawal|cash deposit",
+   "category": "Other",
+   "sub": "Cash",
+   "type": "cash_withdrawal"
+  },
+  {
    "rx": "foreign exchange conversion charge",
    "category": "Fees",
    "sub": "Card fees (late / cash advance / FX)",
