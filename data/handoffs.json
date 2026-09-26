@@ -206,5 +206,13 @@
   "to": "finance",
   "item": "h0025 count correction: Tesco rows appended = 51, not 53 (3+4+4+7+5+5+12+11). Everything else in h0025 stands.",
   "status": "open"
+ },
+ {
+  "id": "h0027",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "finance",
+  "item": "Virgin Money CC: 9 statements (4 Dec 25 - 3 Sep 26) from PDF screenshots. 20 rows appended to data/finance.json (positive = spend/interest/fee, negative = payment). Your existing 3 Aug 200.95 and 3 Sep 192.99 interest rows match the statements exactly - I did NOT re-add them, so no retire needed. 8 statement-end entries appended to ccBalances (3 Sep skipped - your 5 Sep entry carries 9,705.64). Chain verified across all 9. Card number and the payment account number in the footer not recorded. Story: promo 0% ended 3 May 26 - interest went 20.66 to ~195/mo; 2,885.91 of Wise cash advances Mar-Jun; 3 Jul balance 10,181.50 was over the 10k limit.",
+  "status": "open"
  }
 ]
