@@ -33,19 +33,30 @@
   },
   {
    "pair_id": "P0004",
-   "out": "L00024",
+   "out": "L00018",
+   "in": "L00021",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -211.46,
+   "amount_in": 211.46,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
+   "prev": "P0005"
+  },
+  {
+   "pair_id": "P0005",
+   "out": "L00025",
    "in": "L00019",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -200.0,
    "amount_in": 200.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "next": "P0008"
+   "next": "P0009"
   },
   {
-   "pair_id": "P0005",
-   "out": "L00026",
-   "in": "L00027",
+   "pair_id": "P0006",
+   "out": "L00027",
+   "in": "L00028",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -90.0,
@@ -53,9 +64,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0006",
-   "out": "L00034",
-   "in": "L00032",
+   "pair_id": "P0007",
+   "out": "L00035",
+   "in": "L00033",
    "from": "Property Account",
    "to": "BoS",
    "amount_out": -100.0,
@@ -63,31 +74,31 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0007",
-   "out": "L00041",
-   "in": "L00038",
+   "pair_id": "P0008",
+   "out": "L00043",
+   "in": "L00040",
    "from": "Property Account",
    "to": "BoS",
    "amount_out": -200.0,
    "amount_in": 200.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "next": "P0008"
+   "next": "P0009"
   },
   {
-   "pair_id": "P0008",
-   "out": "L00039",
-   "in": "L00042",
+   "pair_id": "P0009",
+   "out": "L00041",
+   "in": "L00044",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -200.0,
    "amount_in": 200.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "prev": "P0007"
+   "prev": "P0008"
   },
   {
-   "pair_id": "P0009",
-   "out": "L00051",
-   "in": "L00049",
+   "pair_id": "P0010",
+   "out": "L00053",
+   "in": "L00051",
    "from": "Property Account",
    "to": "BoS",
    "amount_out": -300.0,
@@ -95,9 +106,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0010",
-   "out": "L00074",
-   "in": "L00075",
+   "pair_id": "P0011",
+   "out": "L00076",
+   "in": "L00077",
    "from": "Property Account",
    "to": "BoS",
    "amount_out": -210.0,
@@ -105,9 +116,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0011",
-   "out": "L00084",
-   "in": "L00086",
+   "pair_id": "P0012",
+   "out": "L00086",
+   "in": "L00088",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -118.85,
@@ -115,9 +126,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0012",
-   "out": "L00098",
-   "in": "L00093",
+   "pair_id": "P0013",
+   "out": "L00100",
+   "in": "L00095",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -161.25,
@@ -125,9 +136,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0013",
-   "out": "L00102",
-   "in": "L00104",
+   "pair_id": "P0014",
+   "out": "L00104",
+   "in": "L00106",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -244.0,
@@ -135,9 +146,19 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0014",
-   "out": "L00125",
-   "in": "L00131",
+   "pair_id": "P0015",
+   "out": "L00112",
+   "in": "L00114",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -204.93,
+   "amount_in": 204.93,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0016",
+   "out": "L00128",
+   "in": "L00135",
    "from": "Property Account",
    "to": "BoS",
    "amount_out": -200.0,
@@ -145,9 +166,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0015",
-   "out": "L00130",
-   "in": "L00126",
+   "pair_id": "P0017",
+   "out": "L00134",
+   "in": "L00129",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -155,9 +176,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0016",
-   "out": "L00135",
-   "in": "L00127",
+   "pair_id": "P0018",
+   "out": "L00139",
+   "in": "L00131",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -300.0,
@@ -165,9 +186,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0017",
-   "out": "L00172",
-   "in": "L00175",
+   "pair_id": "P0019",
+   "out": "L00176",
+   "in": "L00179",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -400.0,
@@ -175,9 +196,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0018",
-   "out": "L00173",
-   "in": "L00176",
+   "pair_id": "P0020",
+   "out": "L00177",
+   "in": "L00180",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -185,9 +206,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0019",
-   "out": "L00186",
-   "in": "L00184",
+   "pair_id": "P0021",
+   "out": "L00190",
+   "in": "L00188",
    "from": "Property Account",
    "to": "BoS",
    "amount_out": -100.0,
@@ -195,9 +216,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0020",
-   "out": "L00189",
-   "in": "L00192",
+   "pair_id": "P0022",
+   "out": "L00193",
+   "in": "L00196",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -117.66,
@@ -205,9 +226,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0021",
-   "out": "L00196",
-   "in": "L00201",
+   "pair_id": "P0023",
+   "out": "L00200",
+   "in": "L00205",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -158.02,
@@ -215,34 +236,34 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0022",
-   "out": "L00211",
-   "in": "L00199",
+   "pair_id": "P0024",
+   "out": "L00215",
+   "in": "L00203",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -1990.83,
    "amount_in": 2000.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
    "leakage_aed": -45.85,
-   "next": "P0023",
-   "prev": "P0023"
+   "next": "P0025",
+   "prev": "P0025"
   },
   {
-   "pair_id": "P0023",
-   "out": "L00206",
-   "in": "L00209",
+   "pair_id": "P0025",
+   "out": "L00210",
+   "in": "L00213",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -2030.0,
    "amount_in": 2030.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "prev": "P0022",
-   "next": "P0026"
+   "prev": "P0024",
+   "next": "P0028"
   },
   {
-   "pair_id": "P0024",
-   "out": "L00246",
-   "in": "L00227",
+   "pair_id": "P0026",
+   "out": "L00250",
+   "in": "L00231",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -300.0,
@@ -250,30 +271,31 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0025",
-   "out": "L00229",
-   "in": "L00239",
+   "pair_id": "P0027",
+   "out": "L00233",
+   "in": "L00243",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -200.0,
    "amount_in": 200.0,
-   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
+   "next": "P0030"
   },
   {
-   "pair_id": "P0026",
-   "out": "L00234",
-   "in": "L00241",
+   "pair_id": "P0028",
+   "out": "L00238",
+   "in": "L00245",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -2000.0,
    "amount_in": 2000.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "prev": "P0023"
+   "prev": "P0025"
   },
   {
-   "pair_id": "P0027",
-   "out": "L00235",
-   "in": "L00243",
+   "pair_id": "P0029",
+   "out": "L00239",
+   "in": "L00247",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -400.0,
@@ -281,29 +303,40 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0028",
-   "out": "L00271",
-   "in": "L00266",
-   "from": "Property Account",
-   "to": "BoS",
-   "amount_out": -150.0,
-   "amount_in": 150.0,
-   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
-  },
-  {
-   "pair_id": "P0029",
-   "out": "L00276",
-   "in": "L00274",
-   "from": "Property Account",
-   "to": "BoS",
-   "amount_out": -150.0,
-   "amount_in": 150.0,
-   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
-  },
-  {
    "pair_id": "P0030",
-   "out": "L00305",
-   "in": "L00300",
+   "out": "L00263",
+   "in": "L00266",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -203.43,
+   "amount_in": 203.43,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
+   "prev": "P0027"
+  },
+  {
+   "pair_id": "P0031",
+   "out": "L00277",
+   "in": "L00272",
+   "from": "Property Account",
+   "to": "BoS",
+   "amount_out": -150.0,
+   "amount_in": 150.0,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0032",
+   "out": "L00282",
+   "in": "L00280",
+   "from": "Property Account",
+   "to": "BoS",
+   "amount_out": -150.0,
+   "amount_in": 150.0,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0033",
+   "out": "L00311",
+   "in": "L00306",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -800.0,
@@ -311,9 +344,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0031",
-   "out": "L00308",
-   "in": "L00312",
+   "pair_id": "P0034",
+   "out": "L00314",
+   "in": "L00318",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -116.48,
@@ -321,9 +354,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0032",
-   "out": "L00309",
-   "in": "L00313",
+   "pair_id": "P0035",
+   "out": "L00315",
+   "in": "L00319",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -154.86,
@@ -331,9 +364,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0033",
-   "out": "L00325",
-   "in": "L00322",
+   "pair_id": "P0036",
+   "out": "L00331",
+   "in": "L00328",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -150.0,
@@ -341,9 +374,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0034",
-   "out": "L00331",
-   "in": "L00332",
+   "pair_id": "P0037",
+   "out": "L00337",
+   "in": "L00338",
    "from": "Property Account",
    "to": "Wise GBP",
    "amount_out": -10.0,
@@ -351,39 +384,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0035",
-   "out": "L00358",
-   "in": "L00335",
-   "from": "BoS",
-   "to": "Tesco Clubcard",
-   "amount_out": -268.0,
-   "amount_in": 268.0,
-   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
-  },
-  {
-   "pair_id": "P0036",
-   "out": "L00337",
-   "in": "L00350",
-   "from": "Virgin Money",
-   "to": "Wise GBP",
-   "amount_out": -1012.6,
-   "amount_in": 1012.6,
-   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
-  },
-  {
-   "pair_id": "P0037",
-   "out": "L00356",
-   "in": "L00340",
-   "from": "BoS",
-   "to": "Wise GBP",
-   "amount_out": -33.0,
-   "amount_in": 33.0,
-   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
-  },
-  {
    "pair_id": "P0038",
-   "out": "L00383",
-   "in": "L00385",
+   "out": "L00364",
+   "in": "L00341",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -268.0,
@@ -392,48 +395,38 @@
   },
   {
    "pair_id": "P0039",
-   "out": "L00404",
-   "in": "L00395",
-   "from": "BoS",
+   "out": "L00343",
+   "in": "L00356",
+   "from": "Virgin Money",
    "to": "Wise GBP",
-   "amount_out": -250.0,
-   "amount_in": 250.0,
+   "amount_out": -1012.6,
+   "amount_in": 1012.6,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
    "pair_id": "P0040",
-   "out": "L00408",
-   "in": "L00413",
-   "from": "Virgin Money",
+   "out": "L00362",
+   "in": "L00346",
+   "from": "BoS",
    "to": "Wise GBP",
-   "amount_out": -506.3,
-   "amount_in": 506.3,
+   "amount_out": -33.0,
+   "amount_in": 33.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
    "pair_id": "P0041",
-   "out": "L00409",
-   "in": "L00411",
-   "from": "Virgin Money",
-   "to": "Wise GBP",
-   "amount_out": -253.15,
-   "amount_in": 253.15,
+   "out": "L00386",
+   "in": "L00391",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -192.34,
+   "amount_in": 192.34,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
    "pair_id": "P0042",
-   "out": "L00421",
-   "in": "L00419",
-   "from": "Property Account",
-   "to": "BoS",
-   "amount_out": -150.0,
-   "amount_in": 150.0,
-   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
-  },
-  {
-   "pair_id": "P0043",
-   "out": "L00425",
-   "in": "L00429",
+   "out": "L00389",
+   "in": "L00392",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -268.0,
@@ -441,9 +434,59 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
+   "pair_id": "P0043",
+   "out": "L00412",
+   "in": "L00403",
+   "from": "BoS",
+   "to": "Wise GBP",
+   "amount_out": -250.0,
+   "amount_in": 250.0,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
    "pair_id": "P0044",
-   "out": "L00427",
-   "in": "L00430",
+   "out": "L00416",
+   "in": "L00421",
+   "from": "Virgin Money",
+   "to": "Wise GBP",
+   "amount_out": -506.3,
+   "amount_in": 506.3,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0045",
+   "out": "L00417",
+   "in": "L00419",
+   "from": "Virgin Money",
+   "to": "Wise GBP",
+   "amount_out": -253.15,
+   "amount_in": 253.15,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0046",
+   "out": "L00429",
+   "in": "L00427",
+   "from": "Property Account",
+   "to": "BoS",
+   "amount_out": -150.0,
+   "amount_in": 150.0,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0047",
+   "out": "L00433",
+   "in": "L00437",
+   "from": "BoS",
+   "to": "Tesco Clubcard",
+   "amount_out": -268.0,
+   "amount_in": 268.0,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0048",
+   "out": "L00435",
+   "in": "L00438",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -1200.0,
@@ -451,9 +494,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0045",
-   "out": "L00436",
-   "in": "L00433",
+   "pair_id": "P0049",
+   "out": "L00444",
+   "in": "L00441",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -461,9 +504,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0046",
-   "out": "L00456",
-   "in": "L00461",
+   "pair_id": "P0050",
+   "out": "L00464",
+   "in": "L00469",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -115.32,
@@ -471,9 +514,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0047",
-   "out": "L00465",
-   "in": "L00467",
+   "pair_id": "P0051",
+   "out": "L00473",
+   "in": "L00475",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -172.02,
@@ -481,9 +524,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0048",
-   "out": "L00483",
-   "in": "L00474",
+   "pair_id": "P0052",
+   "out": "L00491",
+   "in": "L00482",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -650.0,
@@ -491,9 +534,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0049",
-   "out": "L00485",
-   "in": "L00477",
+   "pair_id": "P0053",
+   "out": "L00493",
+   "in": "L00485",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -200.0,
@@ -501,9 +544,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0050",
-   "out": "L00490",
-   "in": "L00492",
+   "pair_id": "P0054",
+   "out": "L00498",
+   "in": "L00500",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -314.0,
@@ -511,9 +554,19 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0051",
-   "out": "L00517",
-   "in": "L00503",
+   "pair_id": "P0055",
+   "out": "L00504",
+   "in": "L00507",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -188.63,
+   "amount_in": 188.63,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0056",
+   "out": "L00526",
+   "in": "L00512",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -300.0,
@@ -521,9 +574,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0052",
-   "out": "L00520",
-   "in": "L00507",
+   "pair_id": "P0057",
+   "out": "L00529",
+   "in": "L00516",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -150.0,
@@ -531,9 +584,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0053",
-   "out": "L00521",
-   "in": "L00512",
+   "pair_id": "P0058",
+   "out": "L00530",
+   "in": "L00521",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -30.0,
@@ -541,9 +594,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0054",
-   "out": "L00532",
-   "in": "L00534",
+   "pair_id": "P0059",
+   "out": "L00542",
+   "in": "L00544",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -551,9 +604,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0055",
-   "out": "L00544",
-   "in": "L00538",
+   "pair_id": "P0060",
+   "out": "L00556",
+   "in": "L00550",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -50.0,
@@ -561,9 +614,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0056",
-   "out": "L00547",
-   "in": "L00549",
+   "pair_id": "P0061",
+   "out": "L00559",
+   "in": "L00561",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -571,9 +624,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0057",
-   "out": "L00553",
-   "in": "L00554",
+   "pair_id": "P0062",
+   "out": "L00565",
+   "in": "L00566",
    "from": "Property Account",
    "to": "Wise GBP",
    "amount_out": -300.0,
@@ -581,9 +634,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0058",
-   "out": "L00558",
-   "in": "L00564",
+   "pair_id": "P0063",
+   "out": "L00570",
+   "in": "L00576",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -591,9 +644,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0059",
-   "out": "L00560",
-   "in": "L00566",
+   "pair_id": "P0064",
+   "out": "L00572",
+   "in": "L00578",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -400.0,
@@ -601,9 +654,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0060",
-   "out": "L00587",
-   "in": "L00579",
+   "pair_id": "P0065",
+   "out": "L00599",
+   "in": "L00591",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -500.0,
@@ -611,9 +664,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0061",
-   "out": "L00610",
-   "in": "L00598",
+   "pair_id": "P0066",
+   "out": "L00624",
+   "in": "L00610",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -430.0,
@@ -621,9 +674,39 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0062",
+   "pair_id": "P0067",
+   "out": "L00612",
+   "in": "L00621",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -202.52,
+   "amount_in": 202.52,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0068",
+   "out": "L00628",
+   "in": "L00623",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -202.52,
+   "amount_in": 202.52,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0069",
    "out": "L00630",
-   "in": "L00634",
+   "in": "L00637",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -40.5,
+   "amount_in": 40.5,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0070",
+   "out": "L00648",
+   "in": "L00652",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -114.16,
@@ -631,9 +714,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0063",
-   "out": "L00685",
-   "in": "L00653",
+   "pair_id": "P0071",
+   "out": "L00703",
+   "in": "L00671",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -500.0,
@@ -641,9 +724,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0064",
-   "out": "L00690",
-   "in": "L00663",
+   "pair_id": "P0072",
+   "out": "L00708",
+   "in": "L00681",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -114.16,
@@ -651,9 +734,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0065",
-   "out": "L00692",
-   "in": "L00673",
+   "pair_id": "P0073",
+   "out": "L00710",
+   "in": "L00691",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -1500.0,
@@ -661,9 +744,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0066",
-   "out": "L00697",
-   "in": "L00678",
+   "pair_id": "P0074",
+   "out": "L00715",
+   "in": "L00696",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -1000.0,
@@ -671,9 +754,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0067",
-   "out": "L00698",
-   "in": "L00683",
+   "pair_id": "P0075",
+   "out": "L00716",
+   "in": "L00701",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -1500.0,
@@ -681,9 +764,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0068",
-   "out": "L00701",
-   "in": "L00705",
+   "pair_id": "P0076",
+   "out": "L00719",
+   "in": "L00723",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -184.18,
@@ -691,9 +774,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0069",
-   "out": "L00723",
-   "in": "L00725",
+   "pair_id": "P0077",
+   "out": "L00741",
+   "in": "L00743",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -264.0,
@@ -701,9 +784,19 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0070",
-   "out": "L00746",
-   "in": "L00753",
+   "pair_id": "P0078",
+   "out": "L00765",
+   "in": "L00771",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -184.99,
+   "amount_in": 184.99,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0079",
+   "out": "L00766",
+   "in": "L00776",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -50.0,
@@ -711,43 +804,63 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0071",
-   "out": "L00769",
-   "in": "L00776",
+   "pair_id": "P0080",
+   "out": "L00772",
+   "in": "L00780",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -243.02,
+   "amount_in": 243.02,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0081",
+   "out": "L00795",
+   "in": "L00782",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -243.02,
+   "amount_in": 243.02,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0082",
+   "out": "L00792",
+   "in": "L00801",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
    "amount_in": 100.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "next": "P0073"
+   "next": "P0084"
   },
   {
-   "pair_id": "P0072",
-   "out": "L00770",
-   "in": "L00777",
+   "pair_id": "P0083",
+   "out": "L00793",
+   "in": "L00802",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
    "amount_in": 100.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "next": "P0073"
+   "next": "P0084"
   },
   {
-   "pair_id": "P0073",
-   "out": "L00831",
-   "in": "L00823",
+   "pair_id": "P0084",
+   "out": "L00857",
+   "in": "L00849",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -100.0,
    "amount_in": 100.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "prev": "P0072",
-   "next": "P0079"
+   "prev": "P0083",
+   "next": "P0090"
   },
   {
-   "pair_id": "P0074",
-   "out": "L00834",
-   "in": "L00824",
+   "pair_id": "P0085",
+   "out": "L00860",
+   "in": "L00850",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -500.0,
@@ -755,22 +868,22 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0075",
-   "out": "L00871",
-   "in": "L00835",
+   "pair_id": "P0086",
+   "out": "L00897",
+   "in": "L00861",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -1990.81,
    "amount_in": 2000.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
    "leakage_aed": -45.05,
-   "next": "P0078",
-   "prev": "P0078"
+   "next": "P0089",
+   "prev": "P0089"
   },
   {
-   "pair_id": "P0076",
-   "out": "L00836",
-   "in": "L00841",
+   "pair_id": "P0087",
+   "out": "L00862",
+   "in": "L00867",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -1250.0,
@@ -778,9 +891,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0077",
-   "out": "L00845",
-   "in": "L00854",
+   "pair_id": "P0088",
+   "out": "L00871",
+   "in": "L00880",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -200.0,
@@ -788,32 +901,32 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0078",
-   "out": "L00872",
-   "in": "L00869",
+   "pair_id": "P0089",
+   "out": "L00898",
+   "in": "L00895",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -2000.0,
    "amount_in": 2000.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "prev": "P0075",
-   "next": "P0075"
+   "prev": "P0086",
+   "next": "P0086"
   },
   {
-   "pair_id": "P0079",
-   "out": "L00875",
-   "in": "L00879",
+   "pair_id": "P0090",
+   "out": "L00901",
+   "in": "L00905",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
    "amount_in": 100.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "prev": "P0073"
+   "prev": "P0084"
   },
   {
-   "pair_id": "P0080",
-   "out": "L00889",
-   "in": "L00903",
+   "pair_id": "P0091",
+   "out": "L00915",
+   "in": "L00935",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -600.0,
@@ -821,9 +934,39 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0081",
-   "out": "L00957",
-   "in": "L00902",
+   "pair_id": "P0092",
+   "out": "L00917",
+   "in": "L00924",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -243.02,
+   "amount_in": 243.02,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0093",
+   "out": "L00919",
+   "in": "L00926",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -243.02,
+   "amount_in": 243.02,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0094",
+   "out": "L00921",
+   "in": "L00928",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -243.02,
+   "amount_in": 243.02,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0095",
+   "out": "L00989",
+   "in": "L00934",
    "from": "Santander Everyday",
    "to": "Wise GBP",
    "amount_out": -101.26,
@@ -831,9 +974,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0082",
-   "out": "L00912",
-   "in": "L00917",
+   "pair_id": "P0096",
+   "out": "L00944",
+   "in": "L00949",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -316.13,
@@ -841,9 +984,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0083",
-   "out": "L00913",
-   "in": "L00920",
+   "pair_id": "P0097",
+   "out": "L00945",
+   "in": "L00952",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -851,9 +994,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0084",
-   "out": "L00944",
-   "in": "L00914",
+   "pair_id": "P0098",
+   "out": "L00976",
+   "in": "L00946",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -1000.0,
@@ -861,9 +1004,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0085",
-   "out": "L00915",
-   "in": "L00926",
+   "pair_id": "P0099",
+   "out": "L00947",
+   "in": "L00958",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -1400.0,
@@ -871,9 +1014,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0086",
-   "out": "L00938",
-   "in": "L00943",
+   "pair_id": "P0100",
+   "out": "L00970",
+   "in": "L00975",
    "from": "Santander Everyday",
    "to": "Wise GBP",
    "amount_out": -911.34,
@@ -881,9 +1024,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0087",
-   "out": "L00939",
-   "in": "L00941",
+   "pair_id": "P0101",
+   "out": "L00971",
+   "in": "L00973",
    "from": "Tesco Clubcard",
    "to": "Wise GBP",
    "amount_out": -607.56,
@@ -891,32 +1034,32 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0088",
-   "out": "L00945",
-   "in": "L00948",
+   "pair_id": "P0102",
+   "out": "L00977",
+   "in": "L00980",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -460.0,
    "amount_in": 460.0,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
-   "next": "P0089"
+   "next": "P0103"
   },
   {
-   "pair_id": "P0089",
-   "out": "L00950",
-   "in": "L01016",
+   "pair_id": "P0103",
+   "out": "L00982",
+   "in": "L01048",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -460.0,
    "amount_in": 455.67,
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)",
    "leakage_aed": 21.23,
-   "prev": "P0088"
+   "prev": "P0102"
   },
   {
-   "pair_id": "P0090",
-   "out": "L00973",
-   "in": "L00954",
+   "pair_id": "P0104",
+   "out": "L01005",
+   "in": "L00986",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -110.0,
@@ -924,9 +1067,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0091",
-   "out": "L00963",
-   "in": "L00969",
+   "pair_id": "P0105",
+   "out": "L00995",
+   "in": "L01001",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -395.58,
@@ -934,9 +1077,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0092",
-   "out": "L00967",
-   "in": "L00974",
+   "pair_id": "P0106",
+   "out": "L00999",
+   "in": "L01006",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -500.0,
@@ -944,9 +1087,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0093",
-   "out": "L00993",
-   "in": "L00984",
+   "pair_id": "P0107",
+   "out": "L01025",
+   "in": "L01016",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -30.0,
@@ -954,9 +1097,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0094",
-   "out": "L00985",
-   "in": "L00994",
+   "pair_id": "P0108",
+   "out": "L01017",
+   "in": "L01026",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -50.0,
@@ -964,9 +1107,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0095",
-   "out": "L00986",
-   "in": "L00996",
+   "pair_id": "P0109",
+   "out": "L01018",
+   "in": "L01028",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -40.0,
@@ -974,9 +1117,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0096",
-   "out": "L00987",
-   "in": "L00991",
+   "pair_id": "P0110",
+   "out": "L01019",
+   "in": "L01023",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -395.58,
@@ -984,9 +1127,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0097",
-   "out": "L00992",
-   "in": "L01000",
+   "pair_id": "P0111",
+   "out": "L01024",
+   "in": "L01032",
    "from": "Virgin Money",
    "to": "Wise GBP",
    "amount_out": -1113.86,
@@ -994,9 +1137,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0098",
-   "out": "L01014",
-   "in": "L01004",
+   "pair_id": "P0112",
+   "out": "L01046",
+   "in": "L01036",
    "from": "Wise GBP",
    "to": "Santander Everyday",
    "amount_out": -261.0,
@@ -1004,9 +1147,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0099",
-   "out": "L01030",
-   "in": "L01028",
+   "pair_id": "P0113",
+   "out": "L01062",
+   "in": "L01060",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -510.0,
@@ -1014,9 +1157,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0100",
-   "out": "L01033",
-   "in": "L01041",
+   "pair_id": "P0114",
+   "out": "L01065",
+   "in": "L01073",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -263.0,
@@ -1024,9 +1167,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0101",
-   "out": "L01036",
-   "in": "L01044",
+   "pair_id": "P0115",
+   "out": "L01068",
+   "in": "L01076",
    "from": "Santander Everyday",
    "to": "Wise GBP",
    "amount_out": -30.38,
@@ -1034,9 +1177,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0102",
-   "out": "L01038",
-   "in": "L01046",
+   "pair_id": "P0116",
+   "out": "L01070",
+   "in": "L01078",
    "from": "Santander Everyday",
    "to": "Wise GBP",
    "amount_out": -30.38,
@@ -1044,9 +1187,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0103",
-   "out": "L01040",
-   "in": "L01048",
+   "pair_id": "P0117",
+   "out": "L01072",
+   "in": "L01080",
    "from": "Santander Everyday",
    "to": "Wise GBP",
    "amount_out": -30.38,
@@ -1054,9 +1197,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0104",
-   "out": "L01064",
-   "in": "L01067",
+   "pair_id": "P0118",
+   "out": "L01096",
+   "in": "L01099",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -300.0,
@@ -1064,9 +1207,19 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0105",
-   "out": "L01070",
-   "in": "L01075",
+   "pair_id": "P0119",
+   "out": "L01100",
+   "in": "L01106",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -241.7,
+   "amount_in": 241.7,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0120",
+   "out": "L01102",
+   "in": "L01108",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -2000.0,
@@ -1074,9 +1227,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0106",
-   "out": "L01071",
-   "in": "L01074",
+   "pair_id": "P0121",
+   "out": "L01103",
+   "in": "L01107",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -263.0,
@@ -1084,9 +1237,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0107",
-   "out": "L01095",
-   "in": "L01091",
+   "pair_id": "P0122",
+   "out": "L01128",
+   "in": "L01124",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -200.0,
@@ -1094,9 +1247,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0108",
-   "out": "L01098",
-   "in": "L01105",
+   "pair_id": "P0123",
+   "out": "L01131",
+   "in": "L01139",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -200.0,
@@ -1104,9 +1257,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0109",
-   "out": "L01099",
-   "in": "L01104",
+   "pair_id": "P0124",
+   "out": "L01132",
+   "in": "L01138",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -100.0,
@@ -1114,9 +1267,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0110",
-   "out": "L01109",
-   "in": "L01111",
+   "pair_id": "P0125",
+   "out": "L01143",
+   "in": "L01145",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -263.0,
@@ -1124,9 +1277,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0111",
-   "out": "L01123",
-   "in": "L01114",
+   "pair_id": "P0126",
+   "out": "L01159",
+   "in": "L01148",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -20.0,
@@ -1134,9 +1287,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0112",
-   "out": "L01128",
-   "in": "L01115",
+   "pair_id": "P0127",
+   "out": "L01164",
+   "in": "L01149",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -400.0,
@@ -1144,9 +1297,19 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0113",
-   "out": "L01118",
-   "in": "L01125",
+   "pair_id": "P0128",
+   "out": "L01152",
+   "in": "L01161",
+   "from": "MBNA 1",
+   "to": "Wise GBP",
+   "amount_out": -202.52,
+   "amount_in": 202.52,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0129",
+   "out": "L01154",
+   "in": "L01163",
    "from": "Tesco Clubcard",
    "to": "Wise GBP",
    "amount_out": -202.52,
@@ -1154,9 +1317,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0114",
-   "out": "L01140",
-   "in": "L01143",
+   "pair_id": "P0130",
+   "out": "L01176",
+   "in": "L01179",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -200.0,
@@ -1164,9 +1327,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0115",
-   "out": "L01165",
-   "in": "L01167",
+   "pair_id": "P0131",
+   "out": "L01201",
+   "in": "L01203",
    "from": "Tesco Clubcard",
    "to": "Wise GBP",
    "amount_out": -126.58,
@@ -1174,9 +1337,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0116",
-   "out": "L01170",
-   "in": "L01174",
+   "pair_id": "P0132",
+   "out": "L01206",
+   "in": "L01210",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -369.8,
@@ -1184,9 +1347,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0117",
-   "out": "L01197",
-   "in": "L01181",
+   "pair_id": "P0133",
+   "out": "L01234",
+   "in": "L01218",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -369.8,
@@ -1194,9 +1357,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0118",
-   "out": "L01212",
-   "in": "L01214",
+   "pair_id": "P0134",
+   "out": "L01249",
+   "in": "L01251",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -286.0,
@@ -1204,9 +1367,19 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0119",
-   "out": "L01232",
-   "in": "L01243",
+   "pair_id": "P0135",
+   "out": "L01265",
+   "in": "L01279",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -309.73,
+   "amount_in": 309.73,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0136",
+   "out": "L01269",
+   "in": "L01282",
    "from": "BoS",
    "to": "Tesco Clubcard",
    "amount_out": -300.0,
@@ -1214,9 +1387,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0120",
-   "out": "L01233",
-   "in": "L01244",
+   "pair_id": "P0137",
+   "out": "L01270",
+   "in": "L01283",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -300.0,
@@ -1224,9 +1397,19 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0121",
-   "out": "L01236",
-   "in": "L01248",
+   "pair_id": "P0138",
+   "out": "L01271",
+   "in": "L01280",
+   "from": "BoS",
+   "to": "MBNA 1",
+   "amount_out": -200.0,
+   "amount_in": 200.0,
+   "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+  },
+  {
+   "pair_id": "P0139",
+   "out": "L01273",
+   "in": "L01287",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -550.0,
@@ -1235,9 +1418,9 @@
    "leakage_aed": -47.3
   },
   {
-   "pair_id": "P0122",
-   "out": "L01238",
-   "in": "L01245",
+   "pair_id": "P0140",
+   "out": "L01275",
+   "in": "L01284",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -2000.0,
@@ -1245,9 +1428,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0123",
-   "out": "L01241",
-   "in": "L01242",
+   "pair_id": "P0141",
+   "out": "L01278",
+   "in": "L01281",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -750.0,
@@ -1255,9 +1438,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0124",
-   "out": "L01274",
-   "in": "L01272",
+   "pair_id": "P0142",
+   "out": "L01314",
+   "in": "L01312",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -50.0,
@@ -1265,9 +1448,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0125",
-   "out": "L01282",
-   "in": "L01281",
+   "pair_id": "P0143",
+   "out": "L01322",
+   "in": "L01321",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -50.0,
@@ -1275,9 +1458,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0126",
-   "out": "L01290",
-   "in": "L01295",
+   "pair_id": "P0144",
+   "out": "L01330",
+   "in": "L01335",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -2500.0,
@@ -1285,9 +1468,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0127",
-   "out": "L01292",
-   "in": "L01296",
+   "pair_id": "P0145",
+   "out": "L01332",
+   "in": "L01336",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -500.0,
@@ -1295,9 +1478,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0128",
-   "out": "L01315",
-   "in": "L01299",
+   "pair_id": "P0146",
+   "out": "L01355",
+   "in": "L01339",
    "from": "Wise GBP",
    "to": "Wise USD",
    "amount_out": -2000.0,
@@ -1307,9 +1490,9 @@
    "leakage_aed": 243.88
   },
   {
-   "pair_id": "P0129",
-   "out": "L01304",
-   "in": "L01302",
+   "pair_id": "P0147",
+   "out": "L01344",
+   "in": "L01342",
    "from": "Wise USD",
    "to": "Wise GBP",
    "amount_out": -3013.92,
@@ -1319,9 +1502,9 @@
    "leakage_aed": 61.95
   },
   {
-   "pair_id": "P0130",
-   "out": "L01320",
-   "in": "L01325",
+   "pair_id": "P0148",
+   "out": "L01360",
+   "in": "L01365",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -1329,9 +1512,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0131",
-   "out": "L01355",
-   "in": "L01348",
+   "pair_id": "P0149",
+   "out": "L01396",
+   "in": "L01388",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -1339,9 +1522,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0132",
-   "out": "L01370",
-   "in": "L01372",
+   "pair_id": "P0150",
+   "out": "L01411",
+   "in": "L01413",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -600.0,
@@ -1349,9 +1532,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0133",
-   "out": "L01397",
-   "in": "L01393",
+   "pair_id": "P0151",
+   "out": "L01438",
+   "in": "L01434",
    "from": "BoS",
    "to": "Wise GBP",
    "amount_out": -100.0,
@@ -1359,9 +1542,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0134",
-   "out": "L01401",
-   "in": "L01409",
+   "pair_id": "P0152",
+   "out": "L01442",
+   "in": "L01450",
    "from": "BoS",
    "to": "Santander Everyday",
    "amount_out": -332.41,
@@ -1369,9 +1552,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0135",
-   "out": "L01408",
-   "in": "L01402",
+   "pair_id": "P0153",
+   "out": "L01449",
+   "in": "L01443",
    "from": "Property Account",
    "to": "BoS",
    "amount_out": -650.0,
@@ -1379,9 +1562,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0136",
-   "out": "L01412",
-   "in": "L01403",
+   "pair_id": "P0154",
+   "out": "L01453",
+   "in": "L01444",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -1000.0,
@@ -1389,9 +1572,9 @@
    "confirm": "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
   },
   {
-   "pair_id": "P0137",
-   "out": "L01413",
-   "in": "L01405",
+   "pair_id": "P0155",
+   "out": "L01454",
+   "in": "L01446",
    "from": "Wise GBP",
    "to": "BoS",
    "amount_out": -300.0,
@@ -1419,16 +1602,7 @@
    "desc": "DIRECT DEBIT PAYMENT - THANK YOU"
   },
   {
-   "id": "L00018",
-   "date": "2026-01-02",
-   "account": "BoS",
-   "amount": -211.46,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L00031",
+   "id": "L00032",
    "date": "2026-01-05",
    "account": "BoS",
    "amount": -42.2,
@@ -1437,7 +1611,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L00047",
+   "id": "L00049",
    "date": "2026-01-08",
    "account": "BoS",
    "amount": -28.36,
@@ -1446,7 +1620,7 @@
    "desc": "AQUA CREDIT CARD"
   },
   {
-   "id": "L00056",
+   "id": "L00058",
    "date": "2026-01-12",
    "account": "BoS",
    "amount": -6218.57,
@@ -1455,7 +1629,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L00058",
+   "id": "L00060",
    "date": "2026-01-12",
    "account": "BoS",
    "amount": 1000.0,
@@ -1464,7 +1638,7 @@
    "desc": "EWEN MACLEOD"
   },
   {
-   "id": "L00061",
+   "id": "L00063",
    "date": "2026-01-12",
    "account": "BoS",
    "amount": -1000.0,
@@ -1473,7 +1647,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L00071",
+   "id": "L00073",
    "date": "2026-01-15",
    "account": "BoS",
    "amount": -51.68,
@@ -1482,7 +1656,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L00076",
+   "id": "L00078",
    "date": "2026-01-19",
    "account": "BoS",
    "amount": 1300.0,
@@ -1491,7 +1665,7 @@
    "desc": "FLAHER TV"
   },
   {
-   "id": "L00079",
+   "id": "L00081",
    "date": "2026-01-19",
    "account": "BoS",
    "amount": -176.84,
@@ -1500,7 +1674,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L00088",
+   "id": "L00090",
    "date": "2026-01-22",
    "account": "BoS",
    "amount": -164.69,
@@ -1509,7 +1683,7 @@
    "desc": "M&S CREDIT CARD"
   },
   {
-   "id": "L00090",
+   "id": "L00092",
    "date": "2026-01-23",
    "account": "BoS",
    "amount": -84.95,
@@ -1518,16 +1692,7 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L00110",
-   "date": "2026-02-02",
-   "account": "BoS",
-   "amount": -204.93,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L00120",
+   "id": "L00123",
    "date": "2026-02-05",
    "account": "BoS",
    "amount": -41.14,
@@ -1536,7 +1701,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L00134",
+   "id": "L00138",
    "date": "2026-02-09",
    "account": "BoS",
    "amount": 1000.0,
@@ -1545,7 +1710,7 @@
    "desc": "FLAHER TV"
   },
   {
-   "id": "L00137",
+   "id": "L00141",
    "date": "2026-02-09",
    "account": "BoS",
    "amount": -28.08,
@@ -1554,7 +1719,7 @@
    "desc": "AQUA CREDIT CARD"
   },
   {
-   "id": "L00171",
+   "id": "L00175",
    "date": "2026-02-16",
    "account": "BoS",
    "amount": -50.38,
@@ -1563,7 +1728,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L00183",
+   "id": "L00187",
    "date": "2026-02-18",
    "account": "BoS",
    "amount": -286.79,
@@ -1572,7 +1737,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L00187",
+   "id": "L00191",
    "date": "2026-02-19",
    "account": "BoS",
    "amount": 200.0,
@@ -1581,7 +1746,7 @@
    "desc": "CALUM MACLEOD"
   },
   {
-   "id": "L00195",
+   "id": "L00199",
    "date": "2026-02-23",
    "account": "BoS",
    "amount": -84.1,
@@ -1590,7 +1755,7 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L00197",
+   "id": "L00201",
    "date": "2026-02-23",
    "account": "BoS",
    "amount": -160.57,
@@ -1599,7 +1764,7 @@
    "desc": "M&S CREDIT CARD"
   },
   {
-   "id": "L00231",
+   "id": "L00235",
    "date": "2026-03-01",
    "account": "Wise GBP",
    "amount": -3784.55,
@@ -1608,7 +1773,7 @@
    "desc": "Sent money to Calum Lachlan MacLeod (fee: 15.45 GBP)"
   },
   {
-   "id": "L00233",
+   "id": "L00237",
    "date": "2026-03-01",
    "account": "Wise GBP",
    "amount": 3784.55,
@@ -1617,7 +1782,7 @@
    "desc": "Sent money to Calum Lachlan MacLeod"
   },
   {
-   "id": "L00237",
+   "id": "L00241",
    "date": "2026-03-01",
    "account": "Wise GBP",
    "amount": -1293.27,
@@ -1626,7 +1791,7 @@
    "desc": "Sent money to Calum Lachlan MacLeod (fee: 6.73 GBP)"
   },
   {
-   "id": "L00242",
+   "id": "L00246",
    "date": "2026-03-02",
    "account": "BoS",
    "amount": -1640.0,
@@ -1635,16 +1800,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L00259",
-   "date": "2026-03-05",
-   "account": "BoS",
-   "amount": -203.43,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L00267",
+   "id": "L00273",
    "date": "2026-03-09",
    "account": "BoS",
    "amount": -140.12,
@@ -1653,7 +1809,7 @@
    "desc": "C L MACLEOD"
   },
   {
-   "id": "L00269",
+   "id": "L00275",
    "date": "2026-03-09",
    "account": "BoS",
    "amount": -40.11,
@@ -1662,7 +1818,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L00273",
+   "id": "L00279",
    "date": "2026-03-11",
    "account": "BoS",
    "amount": -149.32,
@@ -1671,7 +1827,7 @@
    "desc": "AQUA CREDIT CARD"
   },
   {
-   "id": "L00287",
+   "id": "L00293",
    "date": "2026-03-16",
    "account": "Property Account",
    "amount": 50.0,
@@ -1680,7 +1836,7 @@
    "desc": "Bank credit C Macleod MONEY"
   },
   {
-   "id": "L00291",
+   "id": "L00297",
    "date": "2026-03-18",
    "account": "BoS",
    "amount": -209.56,
@@ -1689,7 +1845,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L00294",
+   "id": "L00300",
    "date": "2026-03-19",
    "account": "BoS",
    "amount": -49.12,
@@ -1698,7 +1854,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L00295",
+   "id": "L00301",
    "date": "2026-03-19",
    "account": "BoS",
    "amount": 1900.0,
@@ -1707,7 +1863,7 @@
    "desc": "FLAHER TV"
   },
   {
-   "id": "L00297",
+   "id": "L00303",
    "date": "2026-03-19",
    "account": "BoS",
    "amount": -1856.73,
@@ -1716,7 +1872,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L00303",
+   "id": "L00309",
    "date": "2026-03-23",
    "account": "BoS",
    "amount": 1000.0,
@@ -1725,7 +1881,7 @@
    "desc": "CASH A P"
   },
   {
-   "id": "L00307",
+   "id": "L00313",
    "date": "2026-03-23",
    "account": "BoS",
    "amount": -83.26,
@@ -1734,7 +1890,7 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L00315",
+   "id": "L00321",
    "date": "2026-03-24",
    "account": "BoS",
    "amount": -156.56,
@@ -1743,7 +1899,7 @@
    "desc": "M&S CREDIT CARD"
   },
   {
-   "id": "L00320",
+   "id": "L00326",
    "date": "2026-03-24",
    "account": "Property Account",
    "amount": 40.0,
@@ -1752,7 +1908,7 @@
    "desc": "Bank credit C Macleod MONEY"
   },
   {
-   "id": "L00321",
+   "id": "L00327",
    "date": "2026-03-25",
    "account": "BoS",
    "amount": -209.56,
@@ -1761,7 +1917,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L00336",
+   "id": "L00342",
    "date": "2026-03-29",
    "account": "Tesco Clubcard",
    "amount": -268.0,
@@ -1770,7 +1926,7 @@
    "desc": "PAYMENT REVERSAL"
   },
   {
-   "id": "L00342",
+   "id": "L00348",
    "date": "2026-03-29",
    "account": "Wise GBP",
    "amount": 506.3,
@@ -1779,7 +1935,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00352",
+   "id": "L00358",
    "date": "2026-03-29",
    "account": "Wise GBP",
    "amount": -749.48,
@@ -1788,16 +1944,7 @@
    "desc": "Card transaction of 993.92 USD issued by Fusion Markets Sydney (fee: 2.62 GBP)"
   },
   {
-   "id": "L00380",
-   "date": "2026-04-02",
-   "account": "BoS",
-   "amount": -192.34,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L00382",
+   "id": "L00388",
    "date": "2026-04-02",
    "account": "BoS",
    "amount": 1000.0,
@@ -1806,7 +1953,7 @@
    "desc": "FLAHER TV"
   },
   {
-   "id": "L00397",
+   "id": "L00405",
    "date": "2026-04-06",
    "account": "Wise GBP",
    "amount": -378.0,
@@ -1815,7 +1962,7 @@
    "desc": "Card transaction of 500.00 USD issued by Vantage Markets London (fee: 1.32 GBP)"
   },
   {
-   "id": "L00401",
+   "id": "L00409",
    "date": "2026-04-07",
    "account": "BoS",
    "amount": -460.0,
@@ -1824,7 +1971,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L00406",
+   "id": "L00414",
    "date": "2026-04-07",
    "account": "BoS",
    "amount": -39.11,
@@ -1833,7 +1980,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L00415",
+   "id": "L00423",
    "date": "2026-04-07",
    "account": "Wise GBP",
    "amount": -756.43,
@@ -1842,7 +1989,7 @@
    "desc": "Card transaction of 1,000.00 USD issued by Vantage Markets London (fee: 2.65 GBP)"
   },
   {
-   "id": "L00418",
+   "id": "L00426",
    "date": "2026-04-08",
    "account": "BoS",
    "amount": -197.22,
@@ -1851,7 +1998,7 @@
    "desc": "AQUA CREDIT CARD"
   },
   {
-   "id": "L00426",
+   "id": "L00434",
    "date": "2026-04-10",
    "account": "BoS",
    "amount": 4000.0,
@@ -1860,7 +2007,7 @@
    "desc": "PAGE LJ"
   },
   {
-   "id": "L00432",
+   "id": "L00440",
    "date": "2026-04-10",
    "account": "Wise GBP",
    "amount": -1117.36,
@@ -1869,7 +2016,7 @@
    "desc": "Card transaction of 1,500.00 USD issued by Vantage Markets London (fee: 3.91 GBP)"
   },
   {
-   "id": "L00449",
+   "id": "L00457",
    "date": "2026-04-16",
    "account": "BoS",
    "amount": -47.9,
@@ -1878,7 +2025,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L00451",
+   "id": "L00459",
    "date": "2026-04-17",
    "account": "BoS",
    "amount": -329.99,
@@ -1887,7 +2034,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L00455",
+   "id": "L00463",
    "date": "2026-04-20",
    "account": "BoS",
    "amount": -82.42,
@@ -1896,7 +2043,7 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L00462",
+   "id": "L00470",
    "date": "2026-04-21",
    "account": "BoS",
    "amount": -152.65,
@@ -1905,7 +2052,7 @@
    "desc": "M&S CREDIT CARD"
   },
   {
-   "id": "L00470",
+   "id": "L00478",
    "date": "2026-04-23",
    "account": "Wise GBP",
    "amount": -4980.36,
@@ -1914,7 +2061,7 @@
    "desc": "Sent money to Calum Lachlan MacLeod (fee: 19.64 GBP)"
   },
   {
-   "id": "L00488",
+   "id": "L00496",
    "date": "2026-04-28",
    "account": "BoS",
    "amount": 1000.0,
@@ -1923,7 +2070,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00493",
+   "id": "L00501",
    "date": "2026-04-30",
    "account": "BoS",
    "amount": -656.86,
@@ -1932,16 +2079,7 @@
    "desc": "C L MACLEOD"
   },
   {
-   "id": "L00496",
-   "date": "2026-05-01",
-   "account": "BoS",
-   "amount": -188.63,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L00497",
+   "id": "L00505",
    "date": "2026-05-01",
    "account": "BoS",
    "amount": 1000.0,
@@ -1950,7 +2088,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00518",
+   "id": "L00527",
    "date": "2026-05-05",
    "account": "BoS",
    "amount": -500.0,
@@ -1959,7 +2097,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L00525",
+   "id": "L00534",
    "date": "2026-05-05",
    "account": "BoS",
    "amount": -38.13,
@@ -1968,7 +2106,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L00526",
+   "id": "L00535",
    "date": "2026-05-05",
    "account": "BoS",
    "amount": 1000.0,
@@ -1977,7 +2115,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00546",
+   "id": "L00558",
    "date": "2026-05-11",
    "account": "BoS",
    "amount": -259.18,
@@ -1986,7 +2124,7 @@
    "desc": "AQUA CREDIT CARD"
   },
   {
-   "id": "L00559",
+   "id": "L00571",
    "date": "2026-05-13",
    "account": "BoS",
    "amount": 1000.0,
@@ -1995,7 +2133,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00590",
+   "id": "L00602",
    "date": "2026-05-18",
    "account": "BoS",
    "amount": -46.7,
@@ -2004,7 +2142,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L00597",
+   "id": "L00609",
    "date": "2026-05-19",
    "account": "BoS",
    "amount": -480.83,
@@ -2013,7 +2151,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L00601",
+   "id": "L00615",
    "date": "2026-05-19",
    "account": "Wise GBP",
    "amount": 302.77,
@@ -2022,61 +2160,34 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00607",
-   "date": "2026-05-19",
-   "account": "Wise GBP",
-   "amount": 202.52,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00609",
-   "date": "2026-05-19",
-   "account": "Wise GBP",
-   "amount": 202.52,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00617",
-   "date": "2026-05-20",
-   "account": "Wise GBP",
-   "amount": 202.52,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00619",
-   "date": "2026-05-20",
-   "account": "Wise GBP",
-   "amount": 40.5,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00621",
-   "date": "2026-05-20",
-   "account": "Wise GBP",
-   "amount": 243.02,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00623",
-   "date": "2026-05-20",
-   "account": "Wise GBP",
-   "amount": 243.02,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
    "id": "L00635",
+   "date": "2026-05-20",
+   "account": "Wise GBP",
+   "amount": 202.52,
+   "currency": "GBP",
+   "type": "transfer",
+   "desc": "Topped up account"
+  },
+  {
+   "id": "L00639",
+   "date": "2026-05-20",
+   "account": "Wise GBP",
+   "amount": 243.02,
+   "currency": "GBP",
+   "type": "transfer",
+   "desc": "Topped up account"
+  },
+  {
+   "id": "L00641",
+   "date": "2026-05-20",
+   "account": "Wise GBP",
+   "amount": 243.02,
+   "currency": "GBP",
+   "type": "transfer",
+   "desc": "Topped up account"
+  },
+  {
+   "id": "L00653",
    "date": "2026-05-21",
    "account": "Santander Everyday",
    "amount": -114.16,
@@ -2085,7 +2196,7 @@
    "desc": "DD PAYMENT REVERSED DD REV"
   },
   {
-   "id": "L00648",
+   "id": "L00666",
    "date": "2026-05-22",
    "account": "BoS",
    "amount": -148.83,
@@ -2094,7 +2205,7 @@
    "desc": "M&S CREDIT CARD"
   },
   {
-   "id": "L00675",
+   "id": "L00693",
    "date": "2026-05-24",
    "account": "Wise GBP",
    "amount": -1489.09,
@@ -2103,7 +2214,7 @@
    "desc": "Card transaction of 2,000.00 USD issued by Vantage LONDON (fee: 5.21 GBP)"
   },
   {
-   "id": "L00684",
+   "id": "L00702",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": 3000.0,
@@ -2112,7 +2223,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00686",
+   "id": "L00704",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": -295.4,
@@ -2121,7 +2232,7 @@
    "desc": "AQUA"
   },
   {
-   "id": "L00688",
+   "id": "L00706",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": -743.38,
@@ -2130,7 +2241,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L00689",
+   "id": "L00707",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": 2000.0,
@@ -2139,7 +2250,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00691",
+   "id": "L00709",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": -148.83,
@@ -2148,7 +2259,7 @@
    "desc": "M&S MASTERCARD"
   },
   {
-   "id": "L00693",
+   "id": "L00711",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": 1000.0,
@@ -2157,7 +2268,7 @@
    "desc": "RICHMOND RC"
   },
   {
-   "id": "L00700",
+   "id": "L00718",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": -81.6,
@@ -2166,7 +2277,7 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L00702",
+   "id": "L00720",
    "date": "2026-05-26",
    "account": "BoS",
    "amount": 1000.0,
@@ -2175,7 +2286,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00735",
+   "id": "L00753",
    "date": "2026-05-29",
    "account": "Wise GBP",
    "amount": -1115.91,
@@ -2184,7 +2295,7 @@
    "desc": "Card transaction of 1,500.00 USD issued by Vantage LONDON (fee: 3.91 GBP)"
   },
   {
-   "id": "L00742",
+   "id": "L00762",
    "date": "2026-06-01",
    "account": "BoS",
    "amount": 300.0,
@@ -2193,16 +2304,7 @@
    "desc": "S MACLEOD 31MAY26"
   },
   {
-   "id": "L00745",
-   "date": "2026-06-01",
-   "account": "BoS",
-   "amount": -184.99,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L00747",
+   "id": "L00767",
    "date": "2026-06-01",
    "account": "BoS",
    "amount": 500.0,
@@ -2211,7 +2313,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L00748",
+   "id": "L00768",
    "date": "2026-06-01",
    "account": "BoS",
    "amount": -500.0,
@@ -2220,7 +2322,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L00752",
+   "id": "L00775",
    "date": "2026-06-01",
    "account": "Property Account",
    "amount": 150.0,
@@ -2229,7 +2331,7 @@
    "desc": "Bank credit C Macleod MONEY"
   },
   {
-   "id": "L00757",
+   "id": "L00784",
    "date": "2026-06-01",
    "account": "Wise GBP",
    "amount": 243.02,
@@ -2238,25 +2340,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00759",
-   "date": "2026-06-01",
-   "account": "Wise GBP",
-   "amount": 243.02,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00761",
-   "date": "2026-06-01",
-   "account": "Wise GBP",
-   "amount": 243.02,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00763",
+   "id": "L00786",
    "date": "2026-06-01",
    "account": "Wise GBP",
    "amount": -742.58,
@@ -2265,7 +2349,7 @@
    "desc": "Card transaction of 1,000.00 USD issued by Vantage LONDON (fee: 2.60 GBP)"
   },
   {
-   "id": "L00765",
+   "id": "L00788",
    "date": "2026-06-01",
    "account": "Wise GBP",
    "amount": 810.08,
@@ -2274,7 +2358,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00767",
+   "id": "L00790",
    "date": "2026-06-01",
    "account": "Wise GBP",
    "amount": -743.03,
@@ -2283,7 +2367,7 @@
    "desc": "Card transaction of 1,000.00 USD issued by Vantage LONDON (fee: 2.60 GBP)"
   },
   {
-   "id": "L00775",
+   "id": "L00800",
    "date": "2026-06-03",
    "account": "Wise GBP",
    "amount": 243.02,
@@ -2292,7 +2376,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00779",
+   "id": "L00804",
    "date": "2026-06-03",
    "account": "Wise GBP",
    "amount": -37.16,
@@ -2301,7 +2385,7 @@
    "desc": "Card transaction of 50.00 USD issued by Vantage LONDON (fee: 0.13 GBP)"
   },
   {
-   "id": "L00782",
+   "id": "L00807",
    "date": "2026-06-04",
    "account": "BoS",
    "amount": -37.18,
@@ -2310,7 +2394,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L00799",
+   "id": "L00824",
    "date": "2026-06-05",
    "account": "Wise GBP",
    "amount": 1518.9,
@@ -2319,7 +2403,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00825",
+   "id": "L00851",
    "date": "2026-06-09",
    "account": "BoS",
    "amount": -500.0,
@@ -2328,7 +2412,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L00837",
+   "id": "L00863",
    "date": "2026-06-10",
    "account": "BoS",
    "amount": 1000.0,
@@ -2337,7 +2421,7 @@
    "desc": "REID LR"
   },
   {
-   "id": "L00844",
+   "id": "L00870",
    "date": "2026-06-11",
    "account": "BoS",
    "amount": 2000.0,
@@ -2346,7 +2430,7 @@
    "desc": "CASH A P"
   },
   {
-   "id": "L00874",
+   "id": "L00900",
    "date": "2026-06-15",
    "account": "BoS",
    "amount": -45.53,
@@ -2355,7 +2439,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L00885",
+   "id": "L00911",
    "date": "2026-06-17",
    "account": "BoS",
    "amount": -11.99,
@@ -2364,34 +2448,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L00892",
-   "date": "2026-06-18",
-   "account": "Wise GBP",
-   "amount": 243.02,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00894",
-   "date": "2026-06-18",
-   "account": "Wise GBP",
-   "amount": 243.02,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00896",
-   "date": "2026-06-18",
-   "account": "Wise GBP",
-   "amount": 243.02,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00898",
+   "id": "L00930",
    "date": "2026-06-18",
    "account": "Wise GBP",
    "amount": 232.9,
@@ -2400,7 +2457,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00900",
+   "id": "L00932",
    "date": "2026-06-18",
    "account": "Wise GBP",
    "amount": 243.02,
@@ -2409,7 +2466,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00928",
+   "id": "L00960",
    "date": "2026-06-20",
    "account": "Wise GBP",
    "amount": 101.26,
@@ -2418,7 +2475,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00933",
+   "id": "L00965",
    "date": "2026-06-20",
    "account": "Wise GBP",
    "amount": 101.26,
@@ -2427,7 +2484,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L00947",
+   "id": "L00979",
    "date": "2026-06-22",
    "account": "BoS",
    "amount": 1000.0,
@@ -2436,7 +2493,7 @@
    "desc": "CALUM LACHLAN MACL"
   },
   {
-   "id": "L00949",
+   "id": "L00981",
    "date": "2026-06-22",
    "account": "BoS",
    "amount": -1000.0,
@@ -2445,7 +2502,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L00952",
+   "id": "L00984",
    "date": "2026-06-22",
    "account": "BoS",
    "amount": -145.11,
@@ -2454,7 +2511,7 @@
    "desc": "M&S CREDIT CARD"
   },
   {
-   "id": "L00955",
+   "id": "L00987",
    "date": "2026-06-22",
    "account": "BoS",
    "amount": -145.11,
@@ -2463,7 +2520,7 @@
    "desc": "M&S MASTERCARD"
   },
   {
-   "id": "L00962",
+   "id": "L00994",
    "date": "2026-06-23",
    "account": "BoS",
    "amount": -85.79,
@@ -2472,53 +2529,8 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L00966",
+   "id": "L00998",
    "date": "2026-06-23",
-   "account": "BoS",
-   "amount": 500.0,
-   "currency": "GBP",
-   "type": "borrowing",
-   "desc": "S MACLEOD"
-  },
-  {
-   "id": "L00970",
-   "date": "2026-06-23",
-   "account": "Virgin Money",
-   "amount": -395.58,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "PAYMENT REVERSAL"
-  },
-  {
-   "id": "L00972",
-   "date": "2026-06-23",
-   "account": "Wise GBP",
-   "amount": 101.26,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L00983",
-   "date": "2026-06-25",
-   "account": "BoS",
-   "amount": 500.0,
-   "currency": "GBP",
-   "type": "borrowing",
-   "desc": "EWEN MACLEOD"
-  },
-  {
-   "id": "L00995",
-   "date": "2026-06-25",
-   "account": "Wise GBP",
-   "amount": -85.79,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "Card transaction of 85.79 GBP issued by Barclaycard LONDON"
-  },
-  {
-   "id": "L01001",
-   "date": "2026-06-26",
    "account": "BoS",
    "amount": 500.0,
    "currency": "GBP",
@@ -2527,6 +2539,51 @@
   },
   {
    "id": "L01002",
+   "date": "2026-06-23",
+   "account": "Virgin Money",
+   "amount": -395.58,
+   "currency": "GBP",
+   "type": "transfer",
+   "desc": "PAYMENT REVERSAL"
+  },
+  {
+   "id": "L01004",
+   "date": "2026-06-23",
+   "account": "Wise GBP",
+   "amount": 101.26,
+   "currency": "GBP",
+   "type": "transfer",
+   "desc": "Topped up account"
+  },
+  {
+   "id": "L01015",
+   "date": "2026-06-25",
+   "account": "BoS",
+   "amount": 500.0,
+   "currency": "GBP",
+   "type": "borrowing",
+   "desc": "EWEN MACLEOD"
+  },
+  {
+   "id": "L01027",
+   "date": "2026-06-25",
+   "account": "Wise GBP",
+   "amount": -85.79,
+   "currency": "GBP",
+   "type": "card_repayment",
+   "desc": "Card transaction of 85.79 GBP issued by Barclaycard LONDON"
+  },
+  {
+   "id": "L01033",
+   "date": "2026-06-26",
+   "account": "BoS",
+   "amount": 500.0,
+   "currency": "GBP",
+   "type": "borrowing",
+   "desc": "S MACLEOD"
+  },
+  {
+   "id": "L01034",
    "date": "2026-06-26",
    "account": "BoS",
    "amount": -42.0,
@@ -2535,7 +2592,7 @@
    "desc": "AQUA"
   },
   {
-   "id": "L01018",
+   "id": "L01050",
    "date": "2026-06-26",
    "account": "Wise GBP",
    "amount": 536.68,
@@ -2544,7 +2601,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L01037",
+   "id": "L01069",
    "date": "2026-06-29",
    "account": "Santander Everyday",
    "amount": -3.0,
@@ -2553,7 +2610,7 @@
    "desc": "Wise"
   },
   {
-   "id": "L01039",
+   "id": "L01071",
    "date": "2026-06-29",
    "account": "Santander Everyday",
    "amount": -3.0,
@@ -2562,7 +2619,7 @@
    "desc": "Wise"
   },
   {
-   "id": "L01042",
+   "id": "L01074",
    "date": "2026-06-29",
    "account": "Tesco Clubcard",
    "amount": -263.0,
@@ -2571,7 +2628,7 @@
    "desc": "PAYMENT REVERSAL"
   },
   {
-   "id": "L01059",
+   "id": "L01091",
    "date": "2026-07-01",
    "account": "BoS",
    "amount": 5000.0,
@@ -2580,7 +2637,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01063",
+   "id": "L01095",
    "date": "2026-07-01",
    "account": "BoS",
    "amount": 2000.0,
@@ -2589,16 +2646,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01068",
-   "date": "2026-07-02",
-   "account": "BoS",
-   "amount": -241.7,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L01069",
+   "id": "L01101",
    "date": "2026-07-02",
    "account": "BoS",
    "amount": 2000.0,
@@ -2607,7 +2655,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01072",
+   "id": "L01104",
    "date": "2026-07-02",
    "account": "BoS",
    "amount": -1000.0,
@@ -2616,7 +2664,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L01077",
+   "id": "L01110",
    "date": "2026-07-02",
    "account": "Wise GBP",
    "amount": -1881.96,
@@ -2625,7 +2673,7 @@
    "desc": "Card transaction of 2,500.00 USD issued by Tcp*Vantage LONDON (fee: 6.59 GBP)"
   },
   {
-   "id": "L01085",
+   "id": "L01118",
    "date": "2026-07-03",
    "account": "Wise GBP",
    "amount": -149.68,
@@ -2634,7 +2682,7 @@
    "desc": "Card transaction of 200.00 USD issued by Tcp*Vantage LONDON (fee: 0.52 GBP)"
   },
   {
-   "id": "L01097",
+   "id": "L01130",
    "date": "2026-07-06",
    "account": "BoS",
    "amount": -36.25,
@@ -2643,7 +2691,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L01100",
+   "id": "L01133",
    "date": "2026-07-06",
    "account": "BoS",
    "amount": 1000.0,
@@ -2652,7 +2700,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01101",
+   "id": "L01134",
    "date": "2026-07-06",
    "account": "BoS",
    "amount": -73.86,
@@ -2661,7 +2709,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L01102",
+   "id": "L01135",
    "date": "2026-07-06",
    "account": "BoS",
    "amount": -928.72,
@@ -2670,7 +2718,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L01112",
+   "id": "L01146",
    "date": "2026-07-09",
    "account": "BoS",
    "amount": -215.75,
@@ -2679,7 +2727,7 @@
    "desc": "AQUA CREDIT CARD"
   },
   {
-   "id": "L01116",
+   "id": "L01150",
    "date": "2026-07-09",
    "account": "BoS",
    "amount": -215.75,
@@ -2688,16 +2736,7 @@
    "desc": "AQUA"
   },
   {
-   "id": "L01127",
-   "date": "2026-07-09",
-   "account": "Wise GBP",
-   "amount": 202.52,
-   "currency": "GBP",
-   "type": "transfer",
-   "desc": "Topped up account"
-  },
-  {
-   "id": "L01150",
+   "id": "L01186",
    "date": "2026-07-16",
    "account": "BoS",
    "amount": -50.51,
@@ -2706,7 +2745,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L01157",
+   "id": "L01193",
    "date": "2026-07-20",
    "account": "BoS",
    "amount": -108.94,
@@ -2715,7 +2754,7 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L01175",
+   "id": "L01211",
    "date": "2026-07-23",
    "account": "Virgin Money",
    "amount": -369.8,
@@ -2724,7 +2763,16 @@
    "desc": "PAYMENT REVERSAL"
   },
   {
-   "id": "L01183",
+   "id": "L01217",
+   "date": "2026-07-26",
+   "account": "MBNA 1",
+   "amount": 5.0,
+   "currency": "GBP",
+   "type": "card_repayment",
+   "desc": "PAYMENT RECEIVED - THANK YOU"
+  },
+  {
+   "id": "L01220",
    "date": "2026-07-26",
    "account": "Wise GBP",
    "amount": 35.44,
@@ -2733,7 +2781,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L01187",
+   "id": "L01224",
    "date": "2026-07-26",
    "account": "Wise GBP",
    "amount": 25.32,
@@ -2742,7 +2790,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L01189",
+   "id": "L01226",
    "date": "2026-07-26",
    "account": "Wise GBP",
    "amount": 253.15,
@@ -2751,7 +2799,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L01191",
+   "id": "L01228",
    "date": "2026-07-26",
    "account": "Wise GBP",
    "amount": 101.26,
@@ -2760,7 +2808,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L01196",
+   "id": "L01233",
    "date": "2026-07-27",
    "account": "BoS",
    "amount": 1000.0,
@@ -2769,16 +2817,7 @@
    "desc": "FLAHER TV"
   },
   {
-   "id": "L01228",
-   "date": "2026-07-31",
-   "account": "BoS",
-   "amount": -309.73,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA LIMITED"
-  },
-  {
-   "id": "L01229",
+   "id": "L01266",
    "date": "2026-07-31",
    "account": "BoS",
    "amount": 21206.98,
@@ -2787,7 +2826,7 @@
    "desc": "F/FLOW CALUM MACLE"
   },
   {
-   "id": "L01230",
+   "id": "L01267",
    "date": "2026-07-31",
    "account": "BoS",
    "amount": -61.98,
@@ -2796,7 +2835,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L01231",
+   "id": "L01268",
    "date": "2026-07-31",
    "account": "BoS",
    "amount": -3025.98,
@@ -2805,16 +2844,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L01234",
-   "date": "2026-07-31",
-   "account": "BoS",
-   "amount": -200.0,
-   "currency": "GBP",
-   "type": "card_repayment",
-   "desc": "MBNA MASTERCARD"
-  },
-  {
-   "id": "L01235",
+   "id": "L01272",
    "date": "2026-07-31",
    "account": "BoS",
    "amount": -500.0,
@@ -2823,7 +2853,7 @@
    "desc": "MBNA MASTERCARD"
   },
   {
-   "id": "L01237",
+   "id": "L01274",
    "date": "2026-07-31",
    "account": "BoS",
    "amount": -3499.14,
@@ -2832,7 +2862,7 @@
    "desc": "AQUA"
   },
   {
-   "id": "L01239",
+   "id": "L01276",
    "date": "2026-07-31",
    "account": "BoS",
    "amount": -500.0,
@@ -2841,7 +2871,7 @@
    "desc": "HSBC VISA"
   },
   {
-   "id": "L01240",
+   "id": "L01277",
    "date": "2026-07-31",
    "account": "BoS",
    "amount": 4012.04,
@@ -2850,7 +2880,7 @@
    "desc": "F/FLOW CALUM MACLE"
   },
   {
-   "id": "L01247",
+   "id": "L01286",
    "date": "2026-07-31",
    "account": "Wise GBP",
    "amount": -1974.81,
@@ -2859,7 +2889,7 @@
    "desc": "Card transaction of 2,650.00 USD issued by Tcp*Vantage LONDON (fee: 6.91 GBP)"
   },
   {
-   "id": "L01249",
+   "id": "L01288",
    "date": "2026-08-01",
    "account": "Wise GBP",
    "amount": -550.0,
@@ -2868,7 +2898,7 @@
    "desc": "Card transaction of 550.00 GBP issued by Barclaycard LONDON"
   },
   {
-   "id": "L01250",
+   "id": "L01289",
    "date": "2026-08-03",
    "account": "BoS",
    "amount": -9000.0,
@@ -2877,7 +2907,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L01251",
+   "id": "L01290",
    "date": "2026-08-03",
    "account": "BoS",
    "amount": -550.0,
@@ -2886,7 +2916,7 @@
    "desc": "C L MACLEOD"
   },
   {
-   "id": "L01254",
+   "id": "L01293",
    "date": "2026-08-03",
    "account": "BoS",
    "amount": -211.72,
@@ -2895,7 +2925,7 @@
    "desc": "C L MACLEOD"
   },
   {
-   "id": "L01256",
+   "id": "L01295",
    "date": "2026-08-04",
    "account": "BoS",
    "amount": -49.3,
@@ -2904,7 +2934,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L01258",
+   "id": "L01297",
    "date": "2026-08-04",
    "account": "BoS",
    "amount": 750.0,
@@ -2913,7 +2943,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01268",
+   "id": "L01308",
    "date": "2026-08-07",
    "account": "BoS",
    "amount": 2200.0,
@@ -2922,7 +2952,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01283",
+   "id": "L01323",
    "date": "2026-08-17",
    "account": "BoS",
    "amount": -73.03,
@@ -2931,7 +2961,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L01288",
+   "id": "L01328",
    "date": "2026-08-19",
    "account": "BoS",
    "amount": -48.48,
@@ -2940,7 +2970,7 @@
    "desc": "C L MACLEOD"
   },
   {
-   "id": "L01291",
+   "id": "L01331",
    "date": "2026-08-20",
    "account": "BoS",
    "amount": 500.0,
@@ -2949,7 +2979,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01298",
+   "id": "L01338",
    "date": "2026-08-20",
    "account": "Wise GBP",
    "amount": -2987.75,
@@ -2958,7 +2988,7 @@
    "desc": "Sent money to Calum Lachlan MacLeod (fee: 12.25 GBP)"
   },
   {
-   "id": "L01300",
+   "id": "L01340",
    "date": "2026-08-20",
    "account": "Wise USD",
    "amount": 373.87,
@@ -2967,7 +2997,7 @@
    "desc": "Card transaction of -373.87 USD issued by Tcp*Vantage LONDON"
   },
   {
-   "id": "L01310",
+   "id": "L01350",
    "date": "2026-08-24",
    "account": "BoS",
    "amount": 2000.0,
@@ -2976,7 +3006,7 @@
    "desc": "CALUM LACHLAN MACL"
   },
   {
-   "id": "L01333",
+   "id": "L01373",
    "date": "2026-09-01",
    "account": "BoS",
    "amount": -279.0,
@@ -2985,7 +3015,7 @@
    "desc": "TESCO BANK"
   },
   {
-   "id": "L01334",
+   "id": "L01374",
    "date": "2026-09-01",
    "account": "BoS",
    "amount": -295.68,
@@ -2994,7 +3024,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L01342",
+   "id": "L01382",
    "date": "2026-09-04",
    "account": "BoS",
    "amount": -36.49,
@@ -3003,7 +3033,7 @@
    "desc": "HSBC CREDIT CARD"
   },
   {
-   "id": "L01350",
+   "id": "L01391",
    "date": "2026-09-07",
    "account": "BoS",
    "amount": -401.9,
@@ -3012,7 +3042,7 @@
    "desc": "VIRGIN MONEY"
   },
   {
-   "id": "L01351",
+   "id": "L01392",
    "date": "2026-09-07",
    "account": "BoS",
    "amount": -29.6,
@@ -3021,7 +3051,7 @@
    "desc": "AQUA"
   },
   {
-   "id": "L01352",
+   "id": "L01393",
    "date": "2026-09-07",
    "account": "BoS",
    "amount": -11.99,
@@ -3030,7 +3060,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L01353",
+   "id": "L01394",
    "date": "2026-09-07",
    "account": "BoS",
    "amount": -460.0,
@@ -3039,7 +3069,7 @@
    "desc": "AMERICAN EXP 3773"
   },
   {
-   "id": "L01354",
+   "id": "L01395",
    "date": "2026-09-07",
    "account": "BoS",
    "amount": 4000.0,
@@ -3048,7 +3078,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L01356",
+   "id": "L01397",
    "date": "2026-09-09",
    "account": "BoS",
    "amount": -29.6,
@@ -3057,7 +3087,7 @@
    "desc": "AQUA CREDIT CARD"
   },
   {
-   "id": "L01379",
+   "id": "L01420",
    "date": "2026-09-17",
    "account": "BoS",
    "amount": -55.38,
@@ -3066,7 +3096,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L01380",
+   "id": "L01421",
    "date": "2026-09-17",
    "account": "BoS",
    "amount": -224.99,
@@ -3075,7 +3105,7 @@
    "desc": "AMERICAN EXPRESS"
   },
   {
-   "id": "L01400",
+   "id": "L01441",
    "date": "2026-09-21",
    "account": "BoS",
    "amount": -122.43,
@@ -3084,7 +3114,7 @@
    "desc": "B/CARD PLAT VISA"
   },
   {
-   "id": "L01404",
+   "id": "L01445",
    "date": "2026-09-21",
    "account": "BoS",
    "amount": -1000.0,
@@ -3093,7 +3123,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L01407",
+   "id": "L01448",
    "date": "2026-09-21",
    "account": "BoS",
    "amount": -1000.0,
@@ -3102,7 +3132,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L01411",
+   "id": "L01452",
    "date": "2026-09-21",
    "account": "Wise GBP",
    "amount": 1518.9,
@@ -3111,7 +3141,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L01426",
+   "id": "L01467",
    "date": "2026-09-26",
    "account": "Wise GBP",
    "amount": 202.52,
