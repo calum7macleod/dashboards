@@ -238,5 +238,13 @@
   "to": "finance",
   "item": "Santander Everyday CC: 30 rows appended to data/finance.json, full 2026 to 25 Sep, from 5 app screenshots (list is contiguous back to the 2025 boundary). 1 ccBalance entry appended: 25 Sep statement 11,716.17, limit 12,150, min 318.06 due 21 Oct, DD active. Back-chained from the statement balance: 12,146.96 after the 6 Jul payment and 11,845.65 at 5 Sep match your two app readings exactly. RETIRE your 27 Jul 232.58 and 27 Aug 216.11 aggregated interest rows - the 6 exact lines are in. Faster payments 26 Jun 261, 6 Jul 100, 31 Jul 750 did not come from BoS - source unknown (Wise?). Card number not recorded.",
   "status": "done"
+ },
+ {
+  "id": "h0031",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "finance",
+  "item": "MBNA 1 (card *1654): 8 statements (6 Jan - 6 Aug 26) from PDF page-3 screenshots. 40 rows appended to data/finance.json, 8 statement-end ccBalances entries (Jan-Aug). Chain verified: prev+lines=new, breakdown sums=new, breakdown interest=interest line, all 8. Your 6 Jul 'MBNA Main' 8,496.91 and 26 Jul 8,799.49 readings both sit on my chain exactly - note 'MBNA Main' vs 'MBNA 1' naming on that one entry. Sep stmt (6 Sep): only page 1 supplied - payments 295.68 CR, charges 79.08, new bal 8,159.44 - your 6 Sep 79.08 row and 5 Sep cc entry already cover it, nothing added; page 3 needed for the lines. Address, card number and MBNA's payment account not recorded.",
+  "status": "open"
  }
 ]
