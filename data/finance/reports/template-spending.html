@@ -52,6 +52,9 @@ svg{width:100%;height:auto;display:block}.legend{display:flex;flex-wrap:wrap;gap
 <div class="eyebrow">What the cash advances cost</div>
 <div class="card" id="advcost"></div>
 
+<div class="eyebrow">Cash out of the bank accounts - the other view</div>
+<div class="card"><div id="c_cash"></div><div id="l_cash" class="legend"></div><div id="cashnote" class="note"></div></div>
+
 <div class="eyebrow">Paid in dirhams vs paid in pounds</div>
 <div class="card"><div id="c_region"></div><div id="l_region" class="legend"></div><div class="note">By transaction currency. Pounds carry the UK debt service, the coaching, the Amex, the Methil mortgage - and everything bought in Dubai on the Wise card in GBP.</div></div>
 
@@ -96,6 +99,7 @@ s+="</svg>";document.getElementById(id).innerHTML=s;if(lid)document.getElementBy
 const catNames=Object.keys(D.byCategory);stacked("c_month","l_month",catNames.map(c=>D.byCategory[c]),catNames);stacked("c_inc","l_inc",[D.income],["Income landed (commission, rent, management fees) - by month earned"]);
 stacked("c_eat","l_eat",Object.values(D.eating),Object.keys(D.eating));
 stacked("c_fees","l_fees",[D.fees],["Interest & fees (all accounts)"]);
+(function(){const keys=Object.keys(D.cashOut).filter(k=>!k.startsWith("Pass-through"));stacked("c_cash","l_cash",keys.map(k=>D.cashOut[k]),keys);const t=keys.reduce((a,k)=>a+D.cashOut[k].reduce((x,y)=>x+y,0),0);const cards=D.cashOut["Payments to cards"].reduce((a,b)=>a+b,0);document.getElementById("cashnote").innerHTML=`<b>${fmt(t)}</b> left your bank accounts Jan-26 Sep, ${fmt(t/8.85)} a month, before co-investor pass-through. This is the cash view: every payment to a card counts here (${fmt(cards)} - ADIB and all UK cards), so does every dirham to Tal, every loan repayment, every instalment. The spend view above counts what the money <i>bought</i> - card purchases when they happen, payments never (or it would count twice). Same money, two questions: "what did I consume?" and "what went out the door?". The P&amp;L uses the first; the cash flow uses the second; the difference is debt going up or down.`})();
 stacked("c_region","l_region",[D.region.UAE,D.region.UK],["Paid in AED","Paid in GBP"]);
 (function(){const dws=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];const W=440,H=220,L=50,B=30,T=14;const mx=Math.max(...dws.map(d=>D.byDow[d]||0))*1.1;const bw=(W-L-10)/7;let s=`<svg viewBox="0 0 ${W} ${H}">`;dws.forEach((d,i)=>{const v=D.byDow[d]||0,h=(H-T-B)*v/mx;s+=`<rect x="${L+i*bw+6}" y="${H-B-h}" width="${bw-12}" height="${h}" fill="${i>=4?"#E8C96B":"#8FA898"}"><title>${d}: ${fmt(v)}</title></rect><text x="${L+i*bw+bw/2}" y="${H-B+16}" fill="#F5EDE0" font-size="12" text-anchor="middle">${d}</text><text x="${L+i*bw+bw/2}" y="${H-B-h-5}" fill="#E8C96B" font-size="11" text-anchor="middle">${Math.round(v/1000)}K</text>`});s+="</svg><div class='note'>Thu + Fri + Sat = "+Math.round(100*((D.byDow.Thu||0)+(D.byDow.Fri||0)+(D.byDow.Sat||0))/Object.values(D.byDow).reduce((a,b)=>a+b,0))+"% of spend.</div>";document.getElementById("c_dow").innerHTML=s})();
 document.getElementById("t_cat").innerHTML="<tr><th>Category</th>"+M.map(m=>`<th>${m}</th>`).join("")+"<th>YTD</th><th>Avg/mo</th></tr>"+catNames.map(c=>{const v=D.byCategory[c];const t=v.reduce((a,b)=>a+b,0);return `<tr><td>${c}</td>${v.map(x=>`<td>${x?Math.round(x/1000*10)/10+"K":"-"}</td>`).join("")}<td>${fmt(t)}</td><td>${fmt(t/8.85)}</td></tr>`}).join("")+`<tr class="tot"><td>Total</td>${D.total.map(x=>`<td>${Math.round(x/1000)}K</td>`).join("")}<td>${fmt(tot)}</td><td>${fmt(tot/8.85)}</td></tr>`;
