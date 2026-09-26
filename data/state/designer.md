@@ -1,6 +1,8 @@
 # DESIGNER STATE - queue and piece log. Updated 2026-09-23 by Designer Sept 26.
 
 ## Queue
+LEAVING WHITE & CO CAROUSEL (last day Thu 1 Oct): Calum's standing note 26 Sep - slide one carries the line "What's next - see last slide"; the last slide is the announcement. Build in the Milestone standard (year-one look). Brief still to come.
+
 LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer-letter.html = the 1080x1350 card, every offer to a seller. Fields only - no redesign, no new fonts, no layout changes. Agency 2% flat (VAT not itemised), conveyancing 9,950 under Đ10M, PNG 2x + PDF, path content-assets/offers/<Owner>-<Unit>-Offer-<Price>M. Render with templates/render-offer.py fields.json. A4 letter archived as offer-letter-a4-archived.html, not used. Same rule for any future template in design-system/templates/.
 
 1. design-system/ - lock the fonts with Calum (licensed, bespoke), write the tokens and rules. Everything else waits on this. STATUS 21 Sep: Calum's steer = wide geometric sans (said 'Montserrat wide' - no such cut exists). Specimen round 1 out: sans A Montserrat / B Archivo Expanded / C Mona Sans Expanded, serif Newsreader Display vs Libre Caslon Display / Bodoni Moda / Gloock. All OFL, Đ0. Designer rec: B + Newsreader. AWAITING CALUM'S PICK. Assumed Latin only (no Arabic) - unconfirmed. On lock: commit fonts to design-system/fonts/, write tokens.css, update README.
