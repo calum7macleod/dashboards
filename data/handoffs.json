@@ -126,5 +126,13 @@
   "to": "Manager",
   "item": "Call system for Jake start (from Calum's D1 plan): a proper page - list buyers/owners by criteria (stage, score, area, source, last touch), feed one at a time, tap-to-dial, log outcome + note back to buyers.json, Plaud transcript/summary attached if available. PA's inline call sheet (22-23 Sep) is the prototype: four outcomes, stage/score selectors, note, batch send. Needed by Mon 5 Oct; 500 calls/week planned.",
   "status": "open"
+ },
+ {
+  "id": "h0017",
+  "date": "2026-09-26",
+  "from": "PA",
+  "to": "Content",
+  "item": "D1 plan targets: 20 videos scripted pre-start, 10 reels + 10 carousels/week from Oct wk2, 10 evergreen scripts, 3 evergreen videos, 2 YouTube in Oct; follower targets 4K IG / 100 YT by Dec. Supply the current baselines (content-metrics.json is missing from the repo) and say what 20 pieces/week costs in filming hours.",
+  "status": "open"
  }
 ]
