@@ -2,6 +2,24 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "payment reversed|dd rev",
+   "category": "Fees",
+   "sub": "Bounced card payment (reversal)",
+   "type": "transfer"
+  },
+  {
+   "rx": "transfer balance int|purchases interest|quasi cash interest|int charge",
+   "category": "Fees",
+   "sub": "Card interest",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "overlimit fee|over limit fee",
+   "category": "Fees",
+   "sub": "Card fees (late / cash advance / FX)",
+   "type": "debt_cost"
+  },
+  {
    "rx": "payer sort code/account masked",
    "category": "Unaccounted",
    "sub": "GBP300.04 monthly credit into property account - who pays it?",
@@ -42,7 +60,7 @@
    "type": "debt_cost"
   },
   {
-   "rx": "wise london",
+   "rx": "wise london|^wise$",
    "category": "Other",
    "sub": "Card cash advance -> Wise",
    "type": "transfer"
