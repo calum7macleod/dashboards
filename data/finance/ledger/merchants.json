@@ -1,0 +1,130 @@
+{
+ "note": "first match wins. type override optional. Grows with every statement.",
+ "merchants": [
+  {
+   "rx": "deliveroo|talabat|noon food|careem food|zomato",
+   "category": "Deliveries",
+   "sub": "Food delivery"
+  },
+  {
+   "rx": "instashop|spinneys|carrefour|waitrose|lulu hyper|union coop|choithram|kibsons|fittmeals",
+   "category": "Base Food",
+   "sub": "Groceries / meal prep"
+  },
+  {
+   "rx": "caribou|starbucks|costa|cafe|coffee|restaurant|grill|kitchen|bistro|lounge",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "boxica|whoop|gym|fitness|pharmacy|kings college|clinic|hospital|medcare|aster|dental",
+   "category": "Health",
+   "sub": "Training / medical"
+  },
+  {
+   "rx": "cafu|adnoc|enoc|eppco|shell|esso|bp |petrol|salik|rta |parking|mawaqif|darb",
+   "category": "Life",
+   "sub": "Car / fuel / tolls"
+  },
+  {
+   "rx": "facebk|facebook|fb\\.me|meta platforms|google ads|googleads",
+   "category": "Business",
+   "sub": "Ads (Meta/Google)"
+  },
+  {
+   "rx": "openai|chatgpt|anthropic|claude|deepstash|notion|canva|adobe|capcut|segments cloud|algox",
+   "category": "Business",
+   "sub": "Software / AI"
+  },
+  {
+   "rx": "abegail|veloso|anmol garg|darryl ettritch|editor",
+   "category": "Business",
+   "sub": "Editors / VA"
+  },
+  {
+   "rx": "dubai digital|rera|dld|adrec|trade licen|dpc accountants|fedex|aramex|white and white",
+   "category": "Business",
+   "sub": "Licences / admin"
+  },
+  {
+   "rx": "giffgaff|du apple pay|du |etisalat|e& ",
+   "category": "Life",
+   "sub": "Phone"
+  },
+  {
+   "rx": "apple\\.com|icloud|spotify|netflix|youtube|amazon prime",
+   "category": "Life",
+   "sub": "Subscriptions"
+  },
+  {
+   "rx": "amazon\\.ae|amazon|noon\\.com|ikea|home centre",
+   "category": "Life",
+   "sub": "Home / shopping"
+  },
+  {
+   "rx": "agria|pet health|vet",
+   "category": "Life",
+   "sub": "Pets"
+  },
+  {
+   "rx": "heart of midlothian|hearts|ticketmaster|cinema|vox",
+   "category": "Entertainment",
+   "sub": "Events"
+  },
+  {
+   "rx": "hotel|booking bv|booking\\.com|airbnb|flight|airline|emirates air|etihad|alpha flight|expedia|marriott",
+   "category": "Entertainment",
+   "sub": "Travel"
+  },
+  {
+   "rx": "saloon|salon|barber|spa ",
+   "category": "Life",
+   "sub": "Personal care"
+  },
+  {
+   "rx": "vantage|fusion markets|etoro|ig markets|cmc markets|plus500|xtb",
+   "category": "Investing",
+   "sub": "CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity",
+   "type": "investment"
+  },
+  {
+   "rx": "binance|kraken|coinbase",
+   "category": "Investing",
+   "sub": "Crypto",
+   "type": "investment"
+  },
+  {
+   "rx": "od int|overdraft interest|wise charges|interest|late fee|annual fee|charge",
+   "category": "Fees",
+   "sub": "Interest & bank fees"
+  },
+  {
+   "rx": "north coast 500|management fee",
+   "category": "Other",
+   "sub": "UK management fee income",
+   "type": "income"
+  },
+  {
+   "rx": "tallia|corrina|flaher tv",
+   "category": "Family",
+   "sub": "Tal / family"
+  },
+  {
+   "rx": "\\bmum\\b|\\bdad\\b|s macleod|ewen macleod",
+   "category": "Loan",
+   "sub": "Family money - confirm direction (repayment vs borrowing)",
+   "type": "auto_debt"
+  },
+  {
+   "rx": "kevin boxall|alex cash",
+   "category": "Loan",
+   "sub": "Kevin/Alex - confirm (debt vs conduit)",
+   "type": "auto_debt"
+  },
+  {
+   "rx": "concerq",
+   "category": "Unaccounted",
+   "sub": "Concerq LLC - what is it?"
+  }
+ ]
+}
