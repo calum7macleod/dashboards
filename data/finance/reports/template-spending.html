@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spending 2026 - Jan to 26 Sep</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#152A1F;--bg2:#1E3D2F;--gold:#C9A84C;--gold2:#E8C96B;--cream:#F5EDE0;--muted:#8FA898;--line:#2E5A40;--red:#D96C5F}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#152A1F}}
+:root[data-theme="dark"]{--bg:#152A1F}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--cream);font-family:"IBM Plex Sans",-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:15px;line-height:1.45}
+.wrap{max-width:1060px;margin:0 auto;padding:28px 18px 60px}
+h1,h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--cream);margin:0}
+h1{font-size:40px;line-height:1.05}h2{font-size:26px;margin-top:8px}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:34px 0 6px}
+.eyebrow::before{content:"◆ ";color:var(--gold2)}
+.lead{color:var(--muted);max-width:760px;margin:10px 0 0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.kpi{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:14px 14px 12px}
+.kpi .v{font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;color:var(--gold2);line-height:1}
+.kpi .l{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.kpi.bad .v{color:var(--red)}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:16px;margin-top:12px}
+.note{color:var(--muted);font-size:13px;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;white-space:normal}th{color:var(--gold);font-weight:500;letter-spacing:.06em;font-size:11.5px;text-transform:uppercase}
+.tbl{overflow-x:auto}tr.tot td{color:var(--gold2);font-weight:600;border-top:1px solid var(--gold)}
+svg{width:100%;height:auto;display:block}.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px;color:var(--muted);margin-top:8px}.legend i{display:inline-block;width:10px;height:10px;margin-right:6px;border-radius:2px;vertical-align:middle}
+.rules li{margin:6px 0}.pill{display:inline-block;border:1px solid var(--gold);color:var(--gold2);border-radius:20px;padding:1px 9px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-left:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:700px){.two{grid-template-columns:1fr}h1{font-size:32px}}
+.big{font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;color:var(--gold2)}
+</style></head><body><div class="wrap">
+<div class="eyebrow" style="margin-top:0">Finance · Calum MacLeod · 1 Jan to 26 Sep 2026</div>
+<h1>Where the money went</h1>
+<p class="lead">Every figure from bank and card statements, reconciled to the balance. Transfers between your own accounts, card repayments, money to Tal (one pot), pass-through for co-investors and property instalments are matched out. What is left is spend. The ADIB card is counted as the payments Mashreq made to it each month (a proxy until the statements land). Half of every dirham sent to Tal is counted as spend, in its own category. Income sits in its own chart, by the month it was earned.</p>
+<div id="kpis" class="kpis"></div>
+
+<div class="eyebrow">Month by month</div>
+<div class="card"><div id="c_month"></div><div id="l_month" class="legend"></div><div class="note">True spend by category. Sep is to the 26th.</div></div>
+<div class="eyebrow">Income, by the month it was earned</div>
+<div class="card"><div id="c_inc"></div><div id="l_inc" class="legend"></div><div id="incdetail" class="note"></div></div>
+
+<div class="eyebrow">By category</div>
+<div class="card tbl"><table id="t_cat"></table></div>
+
+<div class="eyebrow">June, and August</div>
+<div class="card" id="autopsy"></div>
+
+<div class="eyebrow">Eating - the proxy</div>
+<div class="card"><div id="c_eat"></div><div id="l_eat" class="legend"></div><div class="note">Deliveries = Deliveroo/Talabat. Eating out = restaurants, coffee, hotels. Groceries = Spinneys, InstaShop, fittmeals meal prep. ADIB card months missing understate this badly - Jan alone had 100+ Deliveroo lines on it.</div></div>
+
+<div class="eyebrow">Cost of debt</div>
+<div class="card"><div id="c_fees"></div><div id="l_fees" class="legend"></div><div class="note">Interest, card fees, overdraft interest, FX charges - money that bought nothing.</div></div>
+<div class="eyebrow">What the cash advances cost</div>
+<div class="card" id="advcost"></div>
+
+<div class="eyebrow">Paid in dirhams vs paid in pounds</div>
+<div class="card"><div id="c_region"></div><div id="l_region" class="legend"></div><div class="note">By transaction currency. Pounds carry the UK debt service, the coaching, the Amex, the Methil mortgage - and everything bought in Dubai on the Wise card in GBP.</div></div>
+
+<div class="two">
+<div><div class="eyebrow">Day of the week</div><div class="card"><div id="c_dow"></div></div></div>
+<div><div class="eyebrow">Not counted as spend</div><div class="card tbl"><table id="t_nc"></table><div class="note">Tal: one pot, so transfers - but her card spend is not in this ledger. Pass-through nets to your own share of the property instalments (see balance sheet next).</div></div></div>
+</div>
+
+<div class="eyebrow">Sub-categories</div>
+<div class="card tbl"><table id="t_sub"></table></div>
+
+<div class="eyebrow">Top 30 payees</div>
+<div class="card tbl"><table id="t_top"></table></div>
+
+<div class="eyebrow">Unaccounted - name these</div>
+<div class="card tbl"><table id="t_un"></table><div class="note">Reply with "date - what it was" and they move to a category. Anything still unnamed at month end stays Unaccounted on the dashboard.</div></div>
+
+<div class="eyebrow">Coverage - what this page can and cannot see</div>
+<div class="card tbl"><table id="t_cov"></table></div>
+
+<div class="eyebrow">Rules and the number</div>
+<div class="card"><ol class="rules">
+<li><b>No cash advances.</b> A credit card never funds Wise, ever. Last one: Aqua, 21 Sep, GBP1,519 + GBP76 fee at 42%. <span class="pill">agree</span></li>
+<li><b>Fees are a category with a zero budget.</b> Every bounce, late fee and FX charge is named at month end, with why.</li>
+<li><b>Cash gets a why the same day.</b> Two Đ10K withdrawals in August: a night out and a videographer. Fine - but logged when they happen, not a month later.</li>
+<li><b>Money crosses the border on Wise only.</b> The Tal route on 30 Jul cost ~Đ6,400 against the Wise rate.</li>
+<li><b>The number:</b> baseline burn from October ~Đ118.6K/mo. Spend on this page plus the ADIB card is running above that. Spend on this page is running ~Đ81K/mo, Đ88-115K since April. Target: true spend under <span class="big">Đ65K</span> a month from October, fees under Đ2K, Deliveries under Đ2.5K. Every dirham under that is a dirham off a 24-42% card.</li>
+</ol></div>
+<div class="note" style="margin-top:22px">Built from data/finance/ledger/out/ledger.csv · 2,576 rows · 259 transfer pairs · figures "around" until ADIB statements land. Finance, 26 Sep 2026.</div>
+</div>
+<script>
+const D=__DATA__;const M=D.months.map(m=>m.slice(0,3));
+const cols=["#C9A84C","#E8C96B","#8FA898","#D96C5F","#6FA4B8","#B98CC9","#5E8F6B","#E0B37A","#9CC28F","#A8A8A8","#7F6D5A","#F5EDE0"];
+const fmt=n=>"Đ"+Math.round(n).toLocaleString("en-GB");
+const tot=D.total.reduce((a,b)=>a+b,0),inc=D.income.reduce((a,b)=>a+b,0),fees=D.fees.reduce((a,b)=>a+b,0);
+const K=[["True spend YTD",fmt(tot)],["Per month",fmt(tot/8.85)],["Income landed",fmt(inc)],["Cost of debt",fmt(fees),"bad"],["Cash advances cost",`£${D.cashAdvanceCost.costSoFarGBP.toLocaleString()}`,"bad"],["Worst month",M[D.total.indexOf(Math.max(...D.total))]+" "+fmt(Math.max(...D.total))]];
+document.getElementById("kpis").innerHTML=K.map(k=>`<div class="kpi ${k[2]||""}"><div class="v">${k[1]}</div><div class="l">${k[0]}</div></div>`).join("");
+function stacked(id,lid,series,names,line){const W=920,H=330,L=60,B=34,T=16,R=14;const n=M.length;const bw=(W-L-R)/n;const totals=M.map((_,i)=>series.reduce((a,s)=>a+s[i],0));let mx=Math.max(...totals,line?Math.max(...line):0)*1.08||1;const y=v=>T+(H-T-B)*(1-v/mx);let s=`<svg viewBox="0 0 ${W} ${H}" role="img">`;for(let g=0;g<=4;g++){const v=mx*g/4;s+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="#2E5A40" stroke-width="1"/><text x="${L-6}" y="${y(v)+4}" fill="#8FA898" font-size="11" text-anchor="end">${Math.round(v/1000)}K</text>`}
+M.forEach((m,i)=>{let acc=0;series.forEach((sr,k)=>{const v=sr[i];if(v<=0)return;const y1=y(acc+v),y0=y(acc);s+=`<rect x="${L+i*bw+bw*0.15}" y="${y1}" width="${bw*0.7}" height="${Math.max(0,y0-y1)}" fill="${cols[k%cols.length]}"><title>${m} ${names[k]}: ${fmt(v)}</title></rect>`;acc+=v});s+=`<text x="${L+i*bw+bw/2}" y="${H-B+16}" fill="#F5EDE0" font-size="12" text-anchor="middle">${m}</text><text x="${L+i*bw+bw/2}" y="${y(totals[i])-5}" fill="#E8C96B" font-size="11" text-anchor="middle">${Math.round(totals[i]/1000)}K</text>`});
+if(line){s+=`<polyline fill="none" stroke="#F5EDE0" stroke-width="2" stroke-dasharray="4 3" points="${M.map((_,i)=>`${L+i*bw+bw/2},${y(line[i])}`).join(" ")}"/>`;M.forEach((_,i)=>{s+=`<circle cx="${L+i*bw+bw/2}" cy="${y(line[i])}" r="3.5" fill="#F5EDE0"><title>Income ${M[i]}: ${fmt(line[i])}</title></circle>`})}
+s+="</svg>";document.getElementById(id).innerHTML=s;if(lid)document.getElementById(lid).innerHTML=names.map((nm,k)=>`<span><i style="background:${cols[k%cols.length]}"></i>${nm}</span>`).join("")+(line?`<span><i style="background:#F5EDE0"></i>Income</span>`:"")}
+const catNames=Object.keys(D.byCategory);stacked("c_month","l_month",catNames.map(c=>D.byCategory[c]),catNames);stacked("c_inc","l_inc",[D.income],["Income landed (commission, rent, management fees) - by month earned"]);
+stacked("c_eat","l_eat",Object.values(D.eating),Object.keys(D.eating));
+stacked("c_fees","l_fees",[D.fees],["Interest & fees (all accounts)"]);
+stacked("c_region","l_region",[D.region.UAE,D.region.UK],["Paid in AED","Paid in GBP"]);
+(function(){const dws=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];const W=440,H=220,L=50,B=30,T=14;const mx=Math.max(...dws.map(d=>D.byDow[d]||0))*1.1;const bw=(W-L-10)/7;let s=`<svg viewBox="0 0 ${W} ${H}">`;dws.forEach((d,i)=>{const v=D.byDow[d]||0,h=(H-T-B)*v/mx;s+=`<rect x="${L+i*bw+6}" y="${H-B-h}" width="${bw-12}" height="${h}" fill="${i>=4?"#E8C96B":"#8FA898"}"><title>${d}: ${fmt(v)}</title></rect><text x="${L+i*bw+bw/2}" y="${H-B+16}" fill="#F5EDE0" font-size="12" text-anchor="middle">${d}</text><text x="${L+i*bw+bw/2}" y="${H-B-h-5}" fill="#E8C96B" font-size="11" text-anchor="middle">${Math.round(v/1000)}K</text>`});s+="</svg><div class='note'>Thu + Fri + Sat = "+Math.round(100*((D.byDow.Thu||0)+(D.byDow.Fri||0)+(D.byDow.Sat||0))/Object.values(D.byDow).reduce((a,b)=>a+b,0))+"% of spend.</div>";document.getElementById("c_dow").innerHTML=s})();
+document.getElementById("t_cat").innerHTML="<tr><th>Category</th>"+M.map(m=>`<th>${m}</th>`).join("")+"<th>YTD</th><th>Avg/mo</th></tr>"+catNames.map(c=>{const v=D.byCategory[c];const t=v.reduce((a,b)=>a+b,0);return `<tr><td>${c}</td>${v.map(x=>`<td>${x?Math.round(x/1000*10)/10+"K":"-"}</td>`).join("")}<td>${fmt(t)}</td><td>${fmt(t/8.85)}</td></tr>`}).join("")+`<tr class="tot"><td>Total</td>${D.total.map(x=>`<td>${Math.round(x/1000)}K</td>`).join("")}<td>${fmt(tot)}</td><td>${fmt(tot/8.85)}</td></tr>`;
+document.getElementById("t_sub").innerHTML="<tr><th>Category · sub</th><th>YTD</th><th>Avg/mo</th><th>Last 3 mo</th></tr>"+D.bySub.map(s=>`<tr><td>${s.category} · ${s.sub||"-"}</td><td>${fmt(s.total)}</td><td>${fmt(s.total/8.85)}</td><td>${fmt(s.months.slice(6).reduce((a,b)=>a+b,0))}</td></tr>`).join("");
+document.getElementById("t_top").innerHTML="<tr><th>Payee</th><th>YTD</th><th>Lines</th></tr>"+D.topMerchants.map(t=>`<tr><td>${t.merchant}</td><td>${fmt(t.aed)}</td><td>${t.n}</td></tr>`).join("");
+document.getElementById("t_un").innerHTML="<tr><th>Date · account</th><th>What the statement says</th><th>AED</th></tr>"+D.unaccounted.map(u=>`<tr><td>${u.date} · ${u.account}</td><td style="text-align:left;white-space:normal">${u.desc}</td><td>${fmt(u.aed)}</td></tr>`).join("");
+document.getElementById("t_nc").innerHTML="<tr><th>Flow</th><th>AED</th></tr>"+Object.entries(D.notCounted).map(([k,v])=>`<tr><td style="white-space:normal">${k}</td><td>${fmt(v)}</td></tr>`).join("")+`<tr><td style="white-space:normal">Vantage/Fusion CFD trading: deposits $${D.vantage.depositsUSD.toLocaleString()}, withdrawn $${D.vantage.withdrawalsUSD.toLocaleString()}, $${D.vantage.equityUSD.toLocaleString()} still in the account</td><td class="bad" style="color:#D96C5F">loss ~${fmt(D.vantage.lossAED)}</td></tr>`;
+const acc=Object.keys(D.coverage).sort();document.getElementById("t_cov").innerHTML="<tr><th>Account</th>"+M.map(m=>`<th>${m}</th>`).join("")+"<th>Note</th></tr>"+acc.map(a=>`<tr><td>${a}</td>${D.months.map(m=>`<td>${D.coverage[a].includes(m)?"●":"<span style='color:#D96C5F'>·</span>"}</td>`).join("")}<td style="white-space:normal;text-align:left;color:#8FA898">${D.coverageNote[a]||""}</td></tr>`).join("")+Object.entries(D.coverageNote).filter(([k])=>!acc.includes(k)).map(([k,v])=>`<tr><td>${k}</td>${M.map(()=>"<td><span style='color:#D96C5F'>·</span></td>").join("")}<td style="white-space:normal;text-align:left;color:#8FA898">${v}</td></tr>`).join("");
+(function(){const jun=D.months.indexOf("Jun 26"),aug=D.months.indexOf("Aug 26");const top=i=>D.bySub.map(s=>({n:s.category+" · "+s.sub,v:s.months[i]})).filter(x=>x.v>800).sort((a,b)=>b.v-a.v).slice(0,7);const li=arr=>"<ul style='margin:6px 0 0;padding-left:18px'>"+arr.map(x=>`<li>${x.n}: <b>${fmt(x.v)}</b></li>`).join("")+"</ul>";document.getElementById("autopsy").innerHTML=`<div class="two"><div><div class="big">June ${fmt(D.total[jun])}</div>${li(top(jun))}<div class="note">The month every UK card was drained into Wise (GBP8.6K of advances), the ad spend peaked, and the bounces began.</div></div><div><div class="big">August ${fmt(D.total[aug])}</div>${li(top(aug))}<div class="note">ADIB card counted as Đ40.5K of payments this month - the August screenshots show Đ47K of purchases behind it plus Đ15.8K into Binance, so the proxy is light. Income earned in August: Đ104K, landed 5 Sep.</div></div></div>`})();
+(function(){const c=D.cashAdvanceCost;document.getElementById("advcost").innerHTML=`<div class="kpis" style="margin-top:0"><div class="kpi"><div class="v">£${c.totalGBP.toLocaleString()}</div><div class="l">Advanced (~Đ72K)</div></div><div class="kpi bad"><div class="v">£${c.costSoFarGBP.toLocaleString()}</div><div class="l">Cost so far</div></div><div class="kpi bad"><div class="v">£${c.runningPerMonthGBP}/mo</div><div class="l">Still running</div></div><div class="kpi"><div class="v">£${c.stillOutstandingGBP.toLocaleString()}</div><div class="l">Still on the cards</div></div></div><div class="tbl" style="margin-top:12px"><table><tr><th>Card</th><th>Advanced</th><th>Fees paid</th><th>Interest so far (est)</th></tr>${c.perCard.map(p=>`<tr><td>${p.card}</td><td>£${p.advancedGBP.toLocaleString()}</td><td>£${p.feesGBP}</td><td>£${p.estInterestGBP}</td></tr>`).join("")}</table></div><div class="note">${c.secondOrder} The bounces and overlimit fees that followed are in the Fees line above, not here. Every month the £${c.stillOutstandingGBP.toLocaleString()} stays on the cards it costs another ~£${c.runningPerMonthGBP}.</div>`;
+document.getElementById("incdetail").innerHTML="Landed: "+D.incomeDetail.filter(x=>x.aed>=20000).map(x=>`${x.date.slice(5)} ${fmt(x.aed)} (${x.countedIn.slice(0,3)})`).join(" · ")+". 5 Sep commission counted as August's money. September so far: nothing.";})();
+</script></body></html>
