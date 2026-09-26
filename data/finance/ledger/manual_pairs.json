@@ -1,0 +1,22 @@
+[
+ {
+  "out": {
+   "account": "Mashreq",
+   "date": "2026-07-30",
+   "amount": -130000.0
+  },
+  "in": [
+   {
+    "account": "BoS",
+    "date": "2026-07-31",
+    "amount": 21206.98
+   },
+   {
+    "account": "BoS",
+    "date": "2026-07-31",
+    "amount": 4012.04
+   }
+  ],
+  "why": "Calum 26 Sep: F/FLOW = FX Mashreq->BoS (via Tal); D130,000 -> GBP25,219 = 5.155, ~5% worse than Wise"
+ }
+]
