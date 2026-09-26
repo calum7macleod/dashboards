@@ -60,10 +60,11 @@ def guess_type(r):
     """First-pass type. Human confirms one-legged / Unaccounted rows; merchants.json overrides."""
     d = r["description"]; a = r["amount"]
     if r.get("type"): return r["type"]
-    if re.search(r"interest|late payment fee|cash advance fee|cash transaction fee|foreign exchange fee|annual fee|wise charges", d, re.I) and a < 0: return "debt_cost"
+    if re.search(r"^returned dd", d, re.I): return "transfer"   # the bank side of a bounced card DD - pairs with the card's reversal
+    if re.search(r"interest|late payment (fee|charge)|cash (advance |transaction )?fee|foreign exchange fee|non-sterling|annual fee|overlimit fee|wise charges", d, re.I) and a < 0: return "debt_cost"
     if r["account"] in OWN_CARDS or r["account"] == "ADIB CC" or r["account"] in ("Tesco Clubcard", "Virgin Money"):
         if a > 0 and re.search(r"thank you|payment dd|app payment|faster payment|payment received|card payment in", d, re.I) and not re.search(r"reversed|reversal", d, re.I): return "card_repayment"
-        if a < 0 and re.search(r"payment revers", d, re.I): return "transfer"
+        if a < 0 and re.search(r"payment revers|unpaid direct debit", d, re.I): return "transfer"
     wt = r.get("wise_type")
     if wt in ("MONEY_ADDED", "CONVERSION", "DEPOSIT"): return "transfer"
     if wt == "TRANSFER":
@@ -80,7 +81,7 @@ def guess_type(r):
         return "card_repayment" if a < 0 else "borrowing"
     if CARD_ACCOUNT_RX.search(r["account"]):
         if a > 0 and (TRANSFER_RX.search(d) or re.search(r"thank you|payment dd|app payment|faster payment|payment received", d, re.I)): return "card_repayment"          # credit onto the card = repayment leg
-        if a < 0 and re.search(r"payment revers", d, re.I): return "transfer"   # the bounced leg, pairs with the bank's RETURNED DD
+        if a < 0 and re.search(r"payment revers|unpaid direct debit", d, re.I): return "transfer"   # the bounced leg, pairs with the bank's RETURNED DD
         if a > 0: return "refund"
     if INVEST_RX.search(d): return "investment"
     if TRANSFER_RX.search(d): return "transfer"
@@ -141,41 +142,39 @@ def match_transfers(rows, days=4, days_intl=7, tol=0.005, tol_intl=0.06):
     probes = [r for r in rows if r["type"] == "spend" and abs(r["amount_aed"]) >= LARGE_AED and r["category"] in ("Unaccounted", None, "Other") and not r["pair_id"]]
     probe_ids = {r["id"] for r in probes}; cand += probes
     pairs, used = [], set()
+    # score every admissible (out, in) combination, then assign globally best-first: exact amounts win over near, then nearest date
+    scored = []
     for a in cand:
-        if a["id"] in used: continue
+        if a["amount"] >= 0: continue
         da = datetime.date.fromisoformat(a["date"])
-        best = None
         for b in cand:
-            if b["id"] in used or b["id"] == a["id"] or b["account"] == a["account"]: continue
-            if (a["amount"] > 0) == (b["amount"] > 0): continue
+            if b is a or b["amount"] <= 0 or b["account"] == a["account"]: continue
             intl = a["currency"] != b["currency"] or INTERMEDIARY_RX.search(a["description"] + b["description"])
-            if abs((datetime.date.fromisoformat(b["date"]) - da).days) > (days_intl if intl else days): continue
+            gap = abs((datetime.date.fromisoformat(b["date"]) - da).days)
+            if gap > (days_intl if intl else days): continue
             if a["currency"] == b["currency"]:
                 card_leg = any(CARD_ACCOUNT_RX.search(x["account"]) for x in (a, b))
-                ok = abs(abs(a["amount"]) - abs(b["amount"])) <= (0.01 if card_leg else max(0.01, 0.01 * abs(a["amount"])))   # card payments land exact; bank->Wise may lose a flat fee
+                ok = abs(abs(a["amount"]) - abs(b["amount"])) <= (0.01 if card_leg else max(0.01, 0.01 * abs(a["amount"])))
             else:
                 ok = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) <= tol_intl * max(abs(a["amount_aed"]), abs(b["amount_aed"]))
-            if ok:
-                diff = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) / max(1.0, abs(a["amount_aed"]))
-                key = (round(diff, 4), abs((datetime.date.fromisoformat(b["date"]) - da).days))   # exact amount beats near amount, then nearest date
-                if best is None or key < best[0]: best = (key, b)
-        if best:
-            b = best[1]; pid = f"P{len(pairs)+1:04d}"
-            a["pair_id"] = b["pair_id"] = pid; used.update([a["id"], b["id"]])
-            p = {"pair_id": pid, "out": a["id"] if a["amount"] < 0 else b["id"], "in": b["id"] if a["amount"] < 0 else a["id"],
-                 "from": (a if a["amount"] < 0 else b)["account"], "to": (b if a["amount"] < 0 else a)["account"],
-                 "amount_out": (a if a["amount"] < 0 else b)["amount"], "amount_in": (b if a["amount"] < 0 else a)["amount"]}
-            o, i = (a, b) if a["amount"] < 0 else (b, a)
-            for leg in (a, b):
-                if leg["type"] in ("spend", "cash_withdrawal"): leg["flags"].append(f"retyped_{leg['type']}_to_transfer"); leg["type"] = "transfer"
-            if a["currency"] != b["currency"]:  # implied effective rate - the real FX cost
-                p["effective_rate"] = round(abs(i["amount"]) / abs(o["amount"]), 4); p["ccy"] = f"{o['currency']}->{i['currency']}"
-            if PERSON_RX.match(o["description"].strip()) or PERSON_RX.match(i["description"].strip()):
-                p["confirm"] = "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
-                for leg in (o, i): leg["flags"].append("person_leg_confirm")
-            leak = round(abs(o["amount_aed"]) - abs(i["amount_aed"]), 2)   # what the intermediary ate: recorded ONCE, on the pair, as Fees
-            if abs(leak) > 0.01: p["leakage_aed"] = leak
-            pairs.append(p)
+            if not ok: continue
+            diff = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) / max(1.0, abs(a["amount_aed"]))
+            scored.append(((round(diff, 4), gap), a, b))
+    scored.sort(key=lambda x: x[0])
+    for _, o, i in scored:
+        if o["id"] in used or i["id"] in used: continue
+        pid = f"P{len(pairs)+1:04d}"; o["pair_id"] = i["pair_id"] = pid; used.update([o["id"], i["id"]])
+        p = {"pair_id": pid, "out": o["id"], "in": i["id"], "from": o["account"], "to": i["account"], "amount_out": o["amount"], "amount_in": i["amount"]}
+        for leg in (o, i):
+            if leg["type"] in ("spend", "cash_withdrawal"): leg["flags"].append(f"retyped_{leg['type']}_to_transfer"); leg["type"] = "transfer"
+        if o["currency"] != i["currency"]:
+            p["effective_rate"] = round(abs(i["amount"]) / abs(o["amount"]), 4); p["ccy"] = f"{o['currency']}->{i['currency']}"
+        if PERSON_RX.match(o["description"].strip()) or PERSON_RX.match(i["description"].strip()):
+            p["confirm"] = "person leg - own money via them, or theirs? (transfer vs borrowing/income)"
+            for leg in (o, i): leg["flags"].append("person_leg_confirm")
+        leak = round(abs(o["amount_aed"]) - abs(i["amount_aed"]), 2)
+        if abs(leak) > 0.01: p["leakage_aed"] = leak
+        pairs.append(p)
     one = [{"id": r["id"], "date": r["date"], "account": r["account"], "amount": r["amount"], "currency": r["currency"], "type": r["type"], "desc": r["description"]}
            for r in cand if r["id"] not in used and r["id"] not in probe_ids]
     for r in probes:
