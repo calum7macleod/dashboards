@@ -92,12 +92,25 @@ What is left. Order: ADIB card (40%) -> Aqua (42% cash) -> Tesco (27%) -> Virgin
 | 5. Remainder | ~52,000 | Lewis + Aqua, or held until 4 is released by the October payout |
 Rent and instalments come out of steps 1/4 once the dates are known.
 
+## OCTOBER LOCKDOWN - full visibility, nothing unnecessary (agreed 26 Sep)
+Setup on 1 Oct:
+- ONE living card: ADIB debit (current account), funded Đ20,000 on payday. Not the ADIB credit card, not Wise (FX), not any UK card.
+- Credit cards frozen in the apps for October and November (ADIB CC, all UK). Direct debits still run; nothing else does.
+- Fixed lines leave Mashreq on 1 Oct in one sitting: rent pot, Tal, BoS GBP2,000, Kevin, Murabaha, subs. Then Mashreq is not touched until 31 Oct.
+Visibility:
+- Every Sunday: ADIB current + ADIB CC + Mashreq + Wise + BoS for the week -> Uploader (screenshots or exports). Finance closes the week: living vs 5K, any line not on the fixed list, fees. One message back: kept / broken, and why.
+- Day to day: fire spends as they happen ("Deliveroo 84 ADIB"). The statement is the truth; the messages are the running count.
+- 1 Nov: full October statements, every account, incl. Tal's card (one pot). Finance publishes "October - real spend" by 3 Nov. That number replaces every estimate on the spending page.
+- Still owed from 2026: ADIB CC + ADIB current statements Jan-Sep, so the proxy goes away.
+Not this month, not next (the lines that made this year): flights and hotels · events and tickets · restaurants over Đ300 a head · nights-out cash · Apple/tech · clothes · gifts over Đ500 · ads · editors after October · new subscriptions · Vantage/Binance · any cash advance. Anything over Đ500 not on the fixed list: message Finance BEFORE, not after.
+
 ## Rules (dated)
 - 26 Sep: No cash advances - a credit card never funds Wise or an ATM.
 - 26 Sep: Living spend from one card only, Đ6K a week, checked Sunday.
 - 26 Sep: Payday order is Fixed -> Living -> Debt. Debt never funds the first two.
 - 26 Sep: Money crosses UAE-UK on Wise only.
 - 26 Sep: Every cash withdrawal gets a why the same day.
+- 26 Sep: Oct-Nov lockdown - one living card (ADIB debit, 20K/mo, 5K/wk), credit cards frozen, no-spend list above, weekly Sunday close, full statements 1 Nov.
 
 ## What I check
 Sunday: living vs 6K. Month end: fixed lines vs actual, fees (target < Đ2K), kept/broken on each rule, runway recomputed.
