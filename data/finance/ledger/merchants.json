@@ -2,6 +2,34 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "^returned dd",
+   "category": "Fees",
+   "sub": "Bounced card payment (reversal)",
+   "type": "transfer"
+  },
+  {
+   "rx": "virgin mobile",
+   "category": "Life",
+   "sub": "Phone"
+  },
+  {
+   "rx": "mawgif|mawaqif",
+   "category": "Life",
+   "sub": "Car / fuel / tolls"
+  },
+  {
+   "rx": "late payment charge|non-sterling transaction fee",
+   "category": "Fees",
+   "sub": "Card fees (late / cash advance / FX)",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "unpaid direct debit",
+   "category": "Fees",
+   "sub": "Bounced card payment (reversal)",
+   "type": "transfer"
+  },
+  {
    "rx": "\\bcash fee\\b|non-sterling purchase fee|non sterling|foreign transaction fee",
    "category": "Fees",
    "sub": "Card fees (late / cash advance / FX)",
