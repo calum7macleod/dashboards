@@ -254,5 +254,13 @@
   "to": "finance",
   "item": "MBNA 2 (Visa *3318, limit 2,500): 9 statements Jan-Sep 26 (latest 21 Sep) from PDF screenshots. 18 rows appended to data/finance.json - your 23 Aug interest 7.10 row matched exactly and was skipped, nothing to retire. 8 ccBalances entries appended (Jan-Jul + 21 Sep; 23 Aug skipped, your 5 Sep entry carries 1,931.05). Jan-Jun statement dates set to the 21st and flagged approximate - page 3 carries no date. Chain verified all 9; your 6 Jul 2,498.74 and 26 Jul 2,495.21 readings both sit on it exactly. 21 Sep stmt: bal 1,878.37, min 49.66 due 16 Oct by DD. Address and card number not recorded.",
   "status": "open"
+ },
+ {
+  "id": "h0033",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "finance",
+  "item": "M&S card (*0340, limit 8,000): 37 rows appended to data/finance.json, full 2026 to 22 Sep, from 6 app screenshots (contiguous back to the Dec 25 boundary) + 27 Aug statement page 1. Anchored on the statement's 27 Jul close 8,048.38: chain lands on your 6 Jul 7,987.22, 26 Jul 7,999.22 and the 27 Aug 7,539.64 exactly; Jan-May min payments are 2.5% of the chained balance. RETIRE your 27 Jul 'Interest 4.89 + 43.13' 48.02 row (app shows 3 lines, 49.16 - the 1.14 was missed) and 27 Aug 41.26 row - exact lines now in. 1 ccBalance added: 27 Jul close 8,048.38 (over limit); 27 Aug not added, your 5 Sep entry carries it. 21 Sep min 188.49 NOT paid - late fee 22 Sep, balance now ~7,635.77 before 27 Sep interest. Card number, address, M&S payment account not recorded.",
+  "status": "open"
  }
 ]
