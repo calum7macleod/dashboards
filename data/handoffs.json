@@ -269,7 +269,7 @@
   "from": "uploader",
   "to": "finance",
   "item": "HSBC Visa (*9345, limit 2,000): 16 rows appended to data/finance.json, full 2026 to 10 Sep, from 3 app screenshots (contiguous to the Dec 25 boundary) + 10 Sep statement. Your 10 Aug 8.62 interest row matched exactly, skipped - nothing to retire. 2 ccBalances added: 10 Aug close 1,459.66 and 10 Sep stmt 1,424.01 (min 35.60 due 5 Oct by DD). Chain from the statement lands on your 6 Jul 1,966.41, 26 Jul 1,972.02 and 5 Sep 1,423.17 exactly; every DD is 2.5% of the prior statement balance. Card number and address not recorded.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0035",
