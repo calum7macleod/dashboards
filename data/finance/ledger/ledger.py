@@ -17,7 +17,7 @@ MULTI_CCY = ("Wise", "Binance")   # each currency balance is its own sub-ledger:
 PERSON_RX = re.compile(r"^[A-Za-z'\-]+ [A-Za-z'\-]+( [A-Za-z'\-]+)?$")
 OWN_CARDS = ["MBNA", "M&S", "HSBC", "Barclaycard", "Santander", "Tesco", "Virgin", "Amex", "American Express", "Aqua", "BA Amex"]
 CARD_RX = re.compile(r"mbna|m&s|m s credit|m s master|hsbc (credit card|visa)|b/card|barclaycard|santander ?cards|tesco bank|virgin money|amex|american exp|aqua( credit card)?$|aqua credit card", re.I)
-TRANSFER_RX = re.compile(r"transfer|tfr|ziina|wise|binance|card payment in|payment received|thank you|own account|mashreq|adib|bank of scotland|\bbos\b|c ?l ?macleod|calum", re.I)
+TRANSFER_RX = re.compile(r"transfer|tfr|money$|via wise|ziina|wise|binance|card payment in|payment received|thank you|own account|mashreq|adib|bank of scotland|\bbos\b|c ?l ?macleod|calum", re.I)
 DEBT_COST_RX = re.compile(r"interest|profit|late fee|annual fee|fx fee|conversion fee|markup|overlimit|charge", re.I)
 CASH_RX = re.compile(r"\batm\b|cash withdrawal|cash advance|quasi cash", re.I)
 INCOME_RX = re.compile(r"wps|salary|commission|airbnb|payout|refund|cashback", re.I)
@@ -59,6 +59,10 @@ def guess_type(r):
     """First-pass type. Human confirms one-legged / Unaccounted rows; merchants.json overrides."""
     d = r["description"]; a = r["amount"]
     if r.get("type"): return r["type"]
+    if re.search(r"interest|late payment fee|cash advance fee|cash transaction fee|foreign exchange fee|annual fee|wise charges", d, re.I) and a < 0: return "debt_cost"
+    if r["account"] in OWN_CARDS or r["account"] == "ADIB CC" or r["account"] in ("Tesco Clubcard", "Virgin Money"):
+        if a > 0 and re.search(r"thank you|payment dd|app payment|faster payment|payment received|card payment in", d, re.I): return "card_repayment"
+        if a < 0 and re.search(r"payment reversal", d, re.I): return "transfer"
     wt = r.get("wise_type")
     if wt in ("MONEY_ADDED", "CONVERSION", "DEPOSIT"): return "transfer"
     if wt == "TRANSFER":
@@ -73,8 +77,9 @@ def guess_type(r):
     if DEBT_COST_RX.search(d) and a < 0 and not TRANSFER_RX.search(d): return "debt_cost"
     if CARD_RX.search(d) and r["account"] not in OWN_CARDS:  # paying one of our cards from a bank account
         return "card_repayment" if a < 0 else "borrowing"
-    if r["account"] in OWN_CARDS or r["account"] == "ADIB CC":
-        if a > 0 and TRANSFER_RX.search(d): return "card_repayment"          # credit onto the card = repayment leg
+    if r["account"] in OWN_CARDS or r["account"] == "ADIB CC" or r["account"] in ("Tesco Clubcard", "Virgin Money"):
+        if a > 0 and (TRANSFER_RX.search(d) or re.search(r"thank you|payment dd|app payment|faster payment|payment received", d, re.I)): return "card_repayment"          # credit onto the card = repayment leg
+        if a < 0 and re.search(r"payment reversal", d, re.I): return "transfer"   # the bounced leg, pairs with the bank's RETURNED DD
         if a > 0: return "refund"
     if INVEST_RX.search(d): return "investment"
     if TRANSFER_RX.search(d): return "transfer"
@@ -145,11 +150,14 @@ def match_transfers(rows, days=4, days_intl=7, tol=0.005, tol_intl=0.06):
             intl = a["currency"] != b["currency"] or INTERMEDIARY_RX.search(a["description"] + b["description"])
             if abs((datetime.date.fromisoformat(b["date"]) - da).days) > (days_intl if intl else days): continue
             if a["currency"] == b["currency"]:
-                ok = abs(abs(a["amount"]) - abs(b["amount"])) <= max(0.01, (tol_intl if intl else tol) * abs(a["amount"]))   # flat fees eaten in transit
+                card_leg = any(x["account"] in ("ADIB CC", "Tesco Clubcard", "Virgin Money") or CARD_RX.search(x["account"]) for x in (a, b))
+                ok = abs(abs(a["amount"]) - abs(b["amount"])) <= (0.01 if card_leg else max(0.01, 0.01 * abs(a["amount"])))   # card payments land exact; bank->Wise may lose a flat fee
             else:
                 ok = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) <= tol_intl * max(abs(a["amount_aed"]), abs(b["amount_aed"]))
-            if ok and (best is None or abs((datetime.date.fromisoformat(b["date"]) - da).days) < best[0]):
-                best = (abs((datetime.date.fromisoformat(b["date"]) - da).days), b)
+            if ok:
+                diff = abs(abs(a["amount_aed"]) - abs(b["amount_aed"])) / max(1.0, abs(a["amount_aed"]))
+                key = (round(diff, 4), abs((datetime.date.fromisoformat(b["date"]) - da).days))   # exact amount beats near amount, then nearest date
+                if best is None or key < best[0]: best = (key, b)
         if best:
             b = best[1]; pid = f"P{len(pairs)+1:04d}"
             a["pair_id"] = b["pair_id"] = pid; used.update([a["id"], b["id"]])
