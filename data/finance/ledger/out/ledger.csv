@@ -1229,166 +1229,169 @@ L01227,2026-08-03,Aug 26,Mon,BoS,GBP,-550.0,-2743.4,transfer,Other,,C L MACLEOD,
 L01228,2026-08-03,Aug 26,Mon,BoS,GBP,-300.0,-1496.4,debt_principal,Loan,Family money - confirm direction (repayment vs borrowing),MUM,mum,,,bos-csv-2026,20a29000245a
 L01229,2026-08-03,Aug 26,Mon,BoS,GBP,-28.25,-140.91,spend,Life,Pets,PET HEALTH CLUB,pet health club,,,bos-csv-2026,b6a4eb6f3926
 L01230,2026-08-03,Aug 26,Mon,BoS,GBP,-211.72,-1056.06,transfer,Other,,C L MACLEOD,c l macleod,,one_legged,bos-csv-2026,0f872036e8ca
-L01231,2026-08-04,Aug 26,Tue,BoS,GBP,-49.3,-245.91,card_repayment,Other,,HSBC CREDIT CARD,hsbc credit card,,one_legged,bos-csv-2026,ee9eccb2f58c
-L01232,2026-08-04,Aug 26,Tue,BoS,GBP,-500.0,-2494.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,c8fa3f4c077f
-L01233,2026-08-04,Aug 26,Tue,BoS,GBP,750.0,3741.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,49c434251fca
-L01234,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-0.14,-0.7,debt_cost,Fees,Card interest,INTEREST - Purchases,interest purchases,,,tesco-stmts-2026,a84784352500
-L01235,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-18.95,-94.52,debt_cost,Fees,Card interest,INTEREST - Cash Withdrawals & Cash Transactions,interest cash withdrawals cash transacti,,,tesco-stmts-2026,97258ce3bd0e
-L01236,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-31.12,-155.23,debt_cost,Fees,Card interest,INTEREST - Balance Transfers,interest balance transfers,,,tesco-stmts-2026,f0736c932c52
-L01237,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-87.26,-435.25,debt_cost,Fees,Card interest,INTEREST - Money Transfers,interest money transfers,,,tesco-stmts-2026,f90066cb1a59
-L01238,2026-08-04,Aug 26,Tue,Wise GBP,GBP,-11.99,-59.81,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,147ef01a1610
-L01239,2026-08-05,Aug 26,Wed,Wise GBP,GBP,-21.99,-109.69,spend,Life,Car / fuel / tolls,Card transaction of 21.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,e18b49e1a7e6
-L01240,2026-08-05,Aug 26,Wed,Wise GBP,GBP,-7.59,-37.86,spend,Life,Car / fuel / tolls,Card transaction of 7.59 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,70fa4b04a81e
-L01241,2026-08-07,Aug 26,Fri,BoS,GBP,-2000.0,-9976.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),KEVIN BOXALL,kevin boxall,,,bos-csv-2026,d8971bf458fd
-L01242,2026-08-07,Aug 26,Fri,BoS,GBP,-500.0,-2494.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,e724082eeda3
-L01243,2026-08-07,Aug 26,Fri,BoS,GBP,2200.0,10973.6,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,ce8fdccdcd20
-L01244,2026-08-09,Aug 26,Sun,Wise GBP,GBP,-25.0,-124.7,spend,Life,Car / fuel / tolls,Card transaction of 25.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,34e92b9a8fe3
+L01231,2026-08-03,Aug 26,Mon,Virgin Money,GBP,-200.95,-1002.34,debt_cost,Fees,Card interest,Interest charged (stmt total),interest charged stmt total,,,cc-app-screens-05sep,2eb19874a64b
+L01232,2026-08-04,Aug 26,Tue,BoS,GBP,-49.3,-245.91,card_repayment,Other,,HSBC CREDIT CARD,hsbc credit card,,one_legged,bos-csv-2026,ee9eccb2f58c
+L01233,2026-08-04,Aug 26,Tue,BoS,GBP,-500.0,-2494.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,c8fa3f4c077f
+L01234,2026-08-04,Aug 26,Tue,BoS,GBP,750.0,3741.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,49c434251fca
+L01235,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-0.14,-0.7,debt_cost,Fees,Card interest,INTEREST - Purchases,interest purchases,,,tesco-stmts-2026,a84784352500
+L01236,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-18.95,-94.52,debt_cost,Fees,Card interest,INTEREST - Cash Withdrawals & Cash Transactions,interest cash withdrawals cash transacti,,,tesco-stmts-2026,97258ce3bd0e
+L01237,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-31.12,-155.23,debt_cost,Fees,Card interest,INTEREST - Balance Transfers,interest balance transfers,,,tesco-stmts-2026,f0736c932c52
+L01238,2026-08-04,Aug 26,Tue,Tesco Clubcard,GBP,-87.26,-435.25,debt_cost,Fees,Card interest,INTEREST - Money Transfers,interest money transfers,,,tesco-stmts-2026,f90066cb1a59
+L01239,2026-08-04,Aug 26,Tue,Wise GBP,GBP,-11.99,-59.81,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,147ef01a1610
+L01240,2026-08-05,Aug 26,Wed,Wise GBP,GBP,-21.99,-109.69,spend,Life,Car / fuel / tolls,Card transaction of 21.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,e18b49e1a7e6
+L01241,2026-08-05,Aug 26,Wed,Wise GBP,GBP,-7.59,-37.86,spend,Life,Car / fuel / tolls,Card transaction of 7.59 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,70fa4b04a81e
+L01242,2026-08-07,Aug 26,Fri,BoS,GBP,-2000.0,-9976.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),KEVIN BOXALL,kevin boxall,,,bos-csv-2026,d8971bf458fd
+L01243,2026-08-07,Aug 26,Fri,BoS,GBP,-500.0,-2494.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,e724082eeda3
+L01244,2026-08-07,Aug 26,Fri,BoS,GBP,2200.0,10973.6,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,ce8fdccdcd20
 L01245,2026-08-09,Aug 26,Sun,Wise GBP,GBP,-25.0,-124.7,spend,Life,Car / fuel / tolls,Card transaction of 25.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,34e92b9a8fe3
-L01246,2026-08-09,Aug 26,Sun,Wise GBP,GBP,-10.0,-49.88,spend,Life,Car / fuel / tolls,Card transaction of 10.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,d9a9b959370f
-L01247,2026-08-09,Aug 26,Sun,Wise GBP,GBP,50.0,249.4,transfer,Other,,Topped up account,topped up account,P0109,person_leg_confirm,wise-csv-2026,c8381c754ef2
-L01248,2026-08-09,Aug 26,Sun,Wise GBP,GBP,-25.0,-124.7,spend,Life,Car / fuel / tolls,Card transaction of 25.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,34e92b9a8fe3
-L01249,2026-08-10,Aug 26,Mon,BoS,GBP,-50.0,-249.4,transfer,Other,,C L MACLEOD,c l macleod,P0109,person_leg_confirm,bos-csv-2026,db64d17c0fd6
-L01250,2026-08-10,Aug 26,Mon,BoS,GBP,-150.0,-748.2,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,14ef98431065
-L01251,2026-08-11,Aug 26,Tue,BoS,GBP,-250.0,-1247.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,a31cb6dfce1a
-L01252,2026-08-11,Aug 26,Tue,BoS,GBP,300.0,1496.4,income,Other,,NIUM FINTECH LIMIT,nium fintech limit,,unexplained_credit,bos-csv-2026,4672f68c9527
-L01253,2026-08-13,Aug 26,Thu,Wise GBP,GBP,-0.06,-0.3,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4186557286,wise charges for card 4186557286,,,wise-csv-2026,3a95e3b5565c
-L01254,2026-08-13,Aug 26,Thu,Wise GBP,GBP,-17.79,-88.14,spend,Business,Software / AI,Card transaction of 24.00 USD issued by Openai *Chatgpt Subscr OPENAI.COM (fee: 0.06 GBP),Openai *Chatgpt Subscr OPENAI.COM,,,wise-csv-2026,c9c42b8393f9
-L01255,2026-08-14,Aug 26,Fri,Wise GBP,GBP,-11.99,-59.81,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,cb8e05096d24
-L01256,2026-08-15,Aug 26,Sat,Wise GBP,GBP,50.0,249.4,transfer,Other,,Topped up account,topped up account,P0110,person_leg_confirm,wise-csv-2026,53cd43d9c3b3
-L01257,2026-08-17,Aug 26,Mon,BoS,GBP,-50.0,-249.4,transfer,Other,,C L MACLEOD,c l macleod,P0110,person_leg_confirm,bos-csv-2026,2a6d69eb5a98
-L01258,2026-08-17,Aug 26,Mon,BoS,GBP,-73.03,-364.27,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-csv-2026,facb6be179dd
-L01259,2026-08-17,Aug 26,Mon,BoS,GBP,-0.05,-0.25,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,4f7ef5e4cf36
-L01260,2026-08-18,Aug 26,Tue,BoS,GBP,-0.05,-0.25,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,663830fade06
-L01261,2026-08-18,Aug 26,Tue,Wise GBP,GBP,-0.05,-0.25,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4208458083,wise charges for card 4208458083,,,wise-csv-2026,048b2914f3ed
-L01262,2026-08-18,Aug 26,Tue,Wise GBP,GBP,-14.08,-70.0,spend,Business,Software / AI,Card transaction of 70.00 AED issued by Canva* I04974-11939009 LONDON (fee: 0.05 GBP),Canva* I04974-11939009 LONDON,,,wise-csv-2026,9a483b59eff3
-L01263,2026-08-19,Aug 26,Wed,BoS,GBP,-48.48,-241.82,transfer,Other,,C L MACLEOD,c l macleod,,one_legged,bos-csv-2026,1c5e51c6e904
-L01264,2026-08-19,Aug 26,Wed,BoS,GBP,250.0,1247.0,income,Other,,NIUM FINTECH LIMIT,nium fintech limit,,unexplained_credit,bos-csv-2026,95e9616018b1
-L01265,2026-08-20,Aug 26,Thu,BoS,GBP,-2500.0,-12470.0,transfer,Other,,C L MACLEOD,c l macleod,P0111,person_leg_confirm,bos-csv-2026,702305320060
-L01266,2026-08-20,Aug 26,Thu,BoS,GBP,500.0,2494.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,556d12a050ab
-L01267,2026-08-20,Aug 26,Thu,BoS,GBP,-500.0,-2494.0,transfer,Other,,C L MACLEOD,c l macleod,P0112,person_leg_confirm,bos-csv-2026,cbe7c806763a
-L01268,2026-08-20,Aug 26,Thu,BoS,GBP,-2.16,-10.77,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,4dbc334f3718
-L01269,2026-08-20,Aug 26,Thu,Property Account,GBP,-48.43,-241.57,debt_cost,Fees,Interest & bank fees,Arranged Overdraft Interest,arranged overdraft interest,,,property-screens-2026,0b3c173208e8
-L01270,2026-08-20,Aug 26,Thu,Wise GBP,GBP,2500.0,12470.0,transfer,Other,,Topped up account,topped up account,P0111,person_leg_confirm,wise-csv-2026,6a95858698ae
-L01271,2026-08-20,Aug 26,Thu,Wise GBP,GBP,500.0,2494.0,transfer,Other,,Topped up account,topped up account,P0112,person_leg_confirm,wise-csv-2026,20b3b0baa091
-L01272,2026-08-20,Aug 26,Thu,Wise GBP,GBP,-12.25,-61.1,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2320391528,wise charges for transfer 2320391528,,,wise-csv-2026,12b622e58174
-L01273,2026-08-20,Aug 26,Thu,Wise GBP,GBP,-2987.75,-14902.9,transfer,Other,,Sent money to Calum Lachlan MacLeod (fee: 12.25 GBP),sent money to calum lachlan macleod fee ,,one_legged,wise-csv-2026,fc61c2dea7d9
-L01274,2026-08-20,Aug 26,Thu,Wise USD,USD,2650.0,9732.12,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,"Card transaction of -2,650.00 USD issued by Tcp*Vantage LONDON",Tcp*Vantage LONDON,P0113,,wise-csv-2026,3809b4af3cb9
-L01275,2026-08-20,Aug 26,Thu,Wise USD,USD,373.87,1373.04,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,Card transaction of -373.87 USD issued by Tcp*Vantage LONDON,Tcp*Vantage LONDON,,one_legged,wise-csv-2026,73e8737c921e
-L01276,2026-08-21,Aug 26,Fri,BoS,GBP,-2.16,-10.77,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,c5dcfde0384b
-L01277,2026-08-21,Aug 26,Fri,Wise GBP,GBP,2206.63,11006.67,transfer,Life,Car / fuel / tolls,"Converted 3,023.87 USD to 2,206.63 GBP",converted 3 023 87 usd to 2 206 63 gbp,P0114,,wise-csv-2026,f36e2481b332
-L01278,2026-08-21,Aug 26,Fri,Wise USD,USD,-9.95,-36.54,debt_cost,Fees,Interest & bank fees,Wise Charges for: BALANCE-5914683450,wise charges for balance 5914683450,,,wise-csv-2026,aed262f7a045
-L01279,2026-08-21,Aug 26,Fri,Wise USD,USD,-3013.92,-11068.62,transfer,Life,Car / fuel / tolls,"Converted 3,023.87 USD to 2,206.63 GBP (fee: 9.95 USD)",converted 3 023 87 usd to 2 206 63 gbp f,P0114,,wise-csv-2026,247dcd3c76b5
-L01280,2026-08-22,Aug 26,Sat,Wise GBP,GBP,-27.13,-135.32,spend,Life,Car / fuel / tolls,Card transaction of 27.13 GBP issued by Deepstash App DEEPSTASH.COM,Deepstash App DEEPSTASH.COM,,,wise-csv-2026,e67a191f2519
-L01281,2026-08-23,Aug 26,Sun,Wise GBP,GBP,-64.99,-324.17,spend,Life,Car / fuel / tolls,Card transaction of 64.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,e9c970904ac7
-L01282,2026-08-24,Aug 26,Mon,BoS,GBP,-2.17,-10.82,spend,Fees,Interest & bank fees,DAILY OD INT 22/08,daily od int 22 08,,,bos-csv-2026,5fa7efc082c1
-L01283,2026-08-24,Aug 26,Mon,BoS,GBP,-2.17,-10.82,spend,Fees,Interest & bank fees,DAILY OD INT 23/08,daily od int 23 08,,,bos-csv-2026,37dfc3d73647
-L01284,2026-08-24,Aug 26,Mon,BoS,GBP,-150.0,-748.2,spend,Family,Tal / family,CORRINA FLAHER,corrina flaher,,,bos-csv-2026,94ff119cff49
-L01285,2026-08-24,Aug 26,Mon,BoS,GBP,2000.0,9976.0,transfer,Other,,CALUM LACHLAN MACL,calum lachlan macl,,one_legged,bos-csv-2026,49d82d21aa6e
-L01286,2026-08-24,Aug 26,Mon,BoS,GBP,-0.47,-2.34,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,b5cb09a0d54c
-L01287,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-8.99,-44.84,spend,Life,Car / fuel / tolls,Card transaction of 8.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,66aa95373f25
-L01288,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4235409124,wise charges for card 4235409124,,,wise-csv-2026,2d3aff40694a
-L01289,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-9.59,-48.0,spend,Business,Software / AI,Card transaction of 48.00 AED issued by Canva* I04983-25404758 LONDON (fee: 0.03 GBP),Canva* I04983-25404758 LONDON,,,wise-csv-2026,5b6a69b095eb
-L01290,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-2000.0,-9976.0,transfer,Other,,Sent money to Calum Lachlan MacLeod,sent money to calum lachlan macleod,P0113,,wise-csv-2026,cd5d6de764e6
-L01291,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4237314136,wise charges for card 4237314136,,,wise-csv-2026,1a23d3659eda
-L01292,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-8.89,-44.51,spend,Unaccounted,,Card transaction of 12.12 USD issued by Fmd Analytics ZAGREB (fee: 0.03 GBP),Fmd Analytics ZAGREB,,,wise-csv-2026,10fb416bdfa0
-L01293,2026-08-25,Aug 26,Tue,BoS,GBP,-0.47,-2.34,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,ed3c2f0a2d50
-L01294,2026-08-26,Aug 26,Wed,BoS,GBP,-0.47,-2.34,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,3c9d5e457e3b
-L01295,2026-08-27,Aug 26,Thu,BoS,GBP,-100.0,-498.8,transfer,Other,,C L MACLEOD,c l macleod,P0115,person_leg_confirm,bos-csv-2026,6e3d8c78e534
-L01296,2026-08-27,Aug 26,Thu,BoS,GBP,-0.56,-2.79,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,2215b63ee883
-L01297,2026-08-27,Aug 26,Thu,Wise GBP,GBP,100.0,498.8,transfer,Other,,Topped up account,topped up account,P0115,person_leg_confirm,wise-csv-2026,98b89de383ee
-L01298,2026-08-27,Aug 26,Thu,Wise GBP,GBP,-180.0,-897.84,spend,Life,Car / fuel / tolls,Card transaction of 180.00 GBP issued by Anthropic* Claude Sub ANTHROPIC.COM,Anthropic* Claude Sub ANTHROPIC.COM,,,wise-csv-2026,f55d69c5dd21
-L01299,2026-08-28,Aug 26,Fri,BoS,GBP,-0.56,-2.79,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,83472b49402c
-L01300,2026-08-28,Aug 26,Fri,Wise GBP,GBP,-11.99,-59.81,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,6bda36dcbb4e
-L01301,2026-09-01,Sep 26,Tue,BoS,GBP,-0.56,-2.76,spend,Fees,Interest & bank fees,DAILY OD INT 29/08,daily od int 29 08,,,bos-csv-2026,1b7f615ee2a7
-L01302,2026-09-01,Sep 26,Tue,BoS,GBP,-0.56,-2.76,spend,Fees,Interest & bank fees,DAILY OD INT 30/08,daily od int 30 08,,,bos-csv-2026,3a2fe136f0fb
-L01303,2026-09-01,Sep 26,Tue,BoS,GBP,-0.56,-2.76,spend,Fees,Interest & bank fees,DAILY OD INT 31/08,daily od int 31 08,,,bos-csv-2026,22860946eab8
-L01304,2026-09-01,Sep 26,Tue,BoS,GBP,-28.25,-139.02,spend,Life,Pets,PET HEALTH CLUB,pet health club,,,bos-csv-2026,a9e91da1e760
-L01305,2026-09-01,Sep 26,Tue,BoS,GBP,-279.0,-1372.96,card_repayment,Other,,TESCO BANK,tesco bank,,one_legged,bos-csv-2026,9bff4e242d9a
-L01306,2026-09-01,Sep 26,Tue,BoS,GBP,-295.68,-1455.04,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-csv-2026,c3f06b600914
-L01307,2026-09-01,Sep 26,Tue,BoS,GBP,-300.0,-1476.3,spend,Unaccounted,,L G PRICE,l g price,,,bos-csv-2026,d4b6ae7da6fa
-L01308,2026-09-01,Sep 26,Tue,BoS,GBP,-1.39,-6.84,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,83bfe881e6b2
-L01309,2026-09-01,Sep 26,Tue,Property Account,GBP,-287.8,-1416.26,spend,Business,UK property - mortgage (Methil),PRECISE MORTGAGES,precise mortgages,,,property-screens-2026,f4bd9fea702b
-L01310,2026-09-02,Sep 26,Wed,BoS,GBP,-1.4,-6.89,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,04db80a9b8cd
-L01311,2026-09-03,Sep 26,Thu,BoS,GBP,-300.0,-1476.3,debt_principal,Loan,Family money - confirm direction (repayment vs borrowing),MUM,mum,,,bos-csv-2026,3bac03c5411f
-L01312,2026-09-03,Sep 26,Thu,BoS,GBP,-1.67,-8.22,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,f2eff2efe047
-L01313,2026-09-04,Sep 26,Fri,BoS,GBP,-36.49,-179.57,card_repayment,Other,,HSBC CREDIT CARD,hsbc credit card,,one_legged,bos-csv-2026,790477e4c0ca
-L01314,2026-09-04,Sep 26,Fri,BoS,GBP,-1.71,-8.41,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,339239bde821
-L01315,2026-09-04,Sep 26,Fri,Property Account,GBP,500.75,2464.19,income,Other,UK rent - 97 Methil Brae (via YM),Bank credit YM CLIENT ACCOUNT 97 METHIL BRAE,bank credit ym client account 97 methil ,,unexplained_credit,property-screens-2026,3cbeaa944383
-L01316,2026-09-04,Sep 26,Fri,Wise GBP,GBP,-11.99,-59.0,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill CORK,Apple.com/bill CORK,,,wise-csv-2026,6eac835fb7c9
-L01317,2026-09-05,Sep 26,Sat,Wise GBP,GBP,-21.99,-108.21,spend,Life,Car / fuel / tolls,Card transaction of 21.99 GBP issued by Apple.com/bill 08001076285,Apple.com/bill 08001076285,,,wise-csv-2026,ccf32e9fdedf
-L01318,2026-09-05,Sep 26,Sat,Wise GBP,GBP,100.0,492.1,transfer,Other,,Topped up account,topped up account,P0116,person_leg_confirm,wise-csv-2026,07dbd9f1d8c3
-L01319,2026-09-05,Sep 26,Sat,Wise GBP,GBP,-30.0,-147.63,spend,Life,Car / fuel / tolls,Card transaction of 30.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,28e6c69904ad
-L01320,2026-09-07,Sep 26,Mon,BoS,GBP,-401.9,-1977.75,card_repayment,Other,,VIRGIN MONEY,virgin money,,one_legged,bos-csv-2026,e04a9d0aa722
-L01321,2026-09-07,Sep 26,Mon,BoS,GBP,-29.6,-145.66,card_repayment,Other,,AQUA,aqua,,one_legged,bos-csv-2026,db194f655916
-L01322,2026-09-07,Sep 26,Mon,BoS,GBP,-11.99,-59.0,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,,one_legged,bos-csv-2026,f8ed04197fa3
-L01323,2026-09-07,Sep 26,Mon,BoS,GBP,-460.0,-2263.66,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,,one_legged,bos-csv-2026,a07d40101d47
-L01324,2026-09-07,Sep 26,Mon,BoS,GBP,4000.0,19684.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,b43a13cff307
-L01325,2026-09-07,Sep 26,Mon,BoS,GBP,-100.0,-492.1,transfer,Other,,C L MACLEOD,c l macleod,P0116,person_leg_confirm,bos-csv-2026,9c55c0edc3be
-L01326,2026-09-09,Sep 26,Wed,BoS,GBP,-29.6,-145.66,card_repayment,Other,,AQUA CREDIT CARD,aqua credit card,,one_legged,bos-csv-2026,c87182918b6a
-L01327,2026-09-09,Sep 26,Wed,BoS,GBP,-2000.0,-9842.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),KEVIN BOXALL,kevin boxall,,,bos-csv-2026,5c0f728342dd
-L01328,2026-09-09,Sep 26,Wed,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,4b2ba84d035f
-L01329,2026-09-10,Sep 26,Thu,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,6f248c31f171
-L01330,2026-09-11,Sep 26,Fri,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,efa2ee87bf44
-L01331,2026-09-13,Sep 26,Sun,Wise GBP,GBP,-0.06,-0.3,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4324898909,wise charges for card 4324898909,,,wise-csv-2026,e3f47a830b55
-L01332,2026-09-13,Sep 26,Sun,Wise GBP,GBP,-17.75,-88.14,spend,Business,Software / AI,Card transaction of 24.00 USD issued by Openai *Chatgpt Subscr OPENAI.COM (fee: 0.06 GBP),Openai *Chatgpt Subscr OPENAI.COM,,,wise-csv-2026,dcc2b46e3a83
-L01333,2026-09-14,Sep 26,Mon,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT 12/09,daily od int 12 09,,,bos-csv-2026,fdf510bbd82f
-L01334,2026-09-14,Sep 26,Mon,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT 13/09,daily od int 13 09,,,bos-csv-2026,9bc3a1cac4a3
-L01335,2026-09-14,Sep 26,Mon,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,6e6a9d4003a5
-L01336,2026-09-14,Sep 26,Mon,Wise GBP,GBP,-11.99,-59.0,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill CORK,Apple.com/bill CORK,,,wise-csv-2026,1fcefa5dc372
-L01337,2026-09-15,Sep 26,Tue,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,ca2d0f47c38e
-L01338,2026-09-15,Sep 26,Tue,Wise GBP,GBP,-0.05,-0.25,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4333573641,wise charges for card 4333573641,,,wise-csv-2026,74010247fd27
-L01339,2026-09-15,Sep 26,Tue,Wise GBP,GBP,-14.14,-70.0,spend,Business,Software / AI,Card transaction of 70.00 AED issued by Canva* I05005-13315043 LONDON (fee: 0.05 GBP),Canva* I05005-13315043 LONDON,,,wise-csv-2026,084e4358028f
-L01340,2026-09-16,Sep 26,Wed,BoS,GBP,-600.0,-2952.6,transfer,Other,,C L MACLEOD,c l macleod,P0117,person_leg_confirm,bos-csv-2026,d66b2aa20e7a
-L01341,2026-09-16,Sep 26,Wed,BoS,GBP,-1.38,-6.79,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,8c558a2e7efd
-L01342,2026-09-16,Sep 26,Wed,Wise GBP,GBP,600.0,2952.6,transfer,Other,,Topped up account,topped up account,P0117,person_leg_confirm,wise-csv-2026,41be0be78caf
-L01343,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4337885421,wise charges for card 4337885421,,,wise-csv-2026,f002c02ee891
-L01344,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-4.57,-23.2,spend,Entertainment,Travel,Card transaction of 290.00 MUR issued by Hotel Des Iles Golf > HOTEL DES ILE (fee: 0.03 GBP),Hotel Des Iles Golf > HOTEL DES ILE,,,wise-csv-2026,c5bdc5ca5711
-L01345,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-1.86,-9.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4337888674,wise charges for card 4337888674,,,wise-csv-2026,0fee307e055f
-L01346,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-231.83,-1178.0,spend,Entertainment,Travel,"Card transaction of 14,725.00 MUR issued by Hotel Des Iles Golf > HOTEL DES ILE (fee: 1.86 GBP)",Hotel Des Iles Golf > HOTEL DES ILE,,,wise-csv-2026,e87c5d4d3520
-L01347,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4338147059,wise charges for card 4338147059,,,wise-csv-2026,e47242d96007
-L01348,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-3.53,-18.0,spend,Entertainment,Travel,Card transaction of 225.00 MUR issued by Hotel Des Iles Golf > HOTEL DES ILE (fee: 0.03 GBP),Hotel Des Iles Golf > HOTEL DES ILE,,,wise-csv-2026,04128fd40ba3
-L01349,2026-09-17,Sep 26,Thu,BoS,GBP,-55.38,-272.52,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-csv-2026,f1605d03066a
-L01350,2026-09-17,Sep 26,Thu,BoS,GBP,-224.99,-1107.18,card_repayment,Other,,AMERICAN EXPRESS,american express,,one_legged,bos-csv-2026,42efdc750405
-L01351,2026-09-17,Sep 26,Thu,BoS,GBP,-1.64,-8.07,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,aae88e08932c
-L01352,2026-09-17,Sep 26,Thu,Wise GBP,GBP,-0.23,-1.13,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4344139360,wise charges for card 4344139360,,,wise-csv-2026,9e6fe1a5b350
-L01353,2026-09-17,Sep 26,Thu,Wise GBP,GBP,-66.59,-326.85,spend,Unaccounted,,"Card transaction of 89.00 USD issued by Wpmanageninja, Llc WPMANAGENINJA (fee: 0.23 GBP)","Wpmanageninja, Llc WPMANAGENINJA",,,wise-csv-2026,48f1ae97cb3c
-L01354,2026-09-18,Sep 26,Fri,BoS,GBP,-1.64,-8.07,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,404da70e8cfe
-L01355,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-0.11,-0.54,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4348318077,wise charges for card 4348318077,,,wise-csv-2026,27f3e828e711
-L01356,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-13.52,-68.8,spend,Unaccounted,,Card transaction of 860.00 MUR issued by Le Saint Geran > LE SAINT GERA (fee: 0.11 GBP),Le Saint Geran > LE SAINT GERA,,,wise-csv-2026,d490f1e561b8
-L01357,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-0.75,-3.69,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4348374483,wise charges for card 4348374483,,,wise-csv-2026,5f3d166dae4a
-L01358,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-94.09,-478.8,spend,Unaccounted,,"Card transaction of 5,985.00 MUR issued by Le Saint Geran > LE SAINT GERA (fee: 0.75 GBP)",Le Saint Geran > LE SAINT GERA,,,wise-csv-2026,db8f324ffb5c
-L01359,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-0.01,-0.05,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4352874928,wise charges for card 4352874928,,,wise-csv-2026,746347528fef
-L01360,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-4.67,-23.0,spend,Unaccounted,,Card transaction of 23.00 AED issued by Hamlam Trading Dubai (fee: 0.01 GBP),Hamlam Trading Dubai,,,wise-csv-2026,fd2567d91c1b
-L01361,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-0.14,-0.69,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4353870651,wise charges for card 4353870651,,,wise-csv-2026,a8b3695f6935
-L01362,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-39.63,-195.0,spend,Unaccounted,,Card transaction of 195.00 AED issued by Hill House Brasserie DUBAI (fee: 0.14 GBP),Hill House Brasserie DUBAI,,,wise-csv-2026,f27f80a8d22f
-L01363,2026-09-19,Sep 26,Sat,Wise GBP,GBP,100.0,492.1,transfer,Other,,Topped up account,topped up account,P0118,person_leg_confirm,wise-csv-2026,08785eef0fb7
-L01364,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-0.58,-2.85,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4354144178,wise charges for card 4354144178,,,wise-csv-2026,15367be5a4e4
-L01365,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-162.55,-799.74,spend,Base Food,Groceries / meal prep,Card transaction of 799.74 AED issued by Spinneys Nshama 2 DUBAI (fee: 0.58 GBP),Spinneys Nshama 2 DUBAI,,,wise-csv-2026,c36e9055b962
-L01366,2026-09-20,Sep 26,Sun,Property Account,GBP,-45.5,-223.91,debt_cost,Fees,Interest & bank fees,Arranged Overdraft Interest,arranged overdraft interest,,,property-screens-2026,cb1061f249a7
-L01367,2026-09-21,Sep 26,Mon,BoS,GBP,-100.0,-492.1,transfer,Other,,C L MACLEOD,c l macleod,P0118,person_leg_confirm,bos-csv-2026,cefc1814d3a7
-L01368,2026-09-21,Sep 26,Mon,BoS,GBP,-1.73,-8.51,spend,Fees,Interest & bank fees,DAILY OD INT 19/09,daily od int 19 09,,,bos-csv-2026,4143f864c91e
-L01369,2026-09-21,Sep 26,Mon,BoS,GBP,-1.73,-8.51,spend,Fees,Interest & bank fees,DAILY OD INT 20/09,daily od int 20 09,,,bos-csv-2026,f4d4702902f3
-L01370,2026-09-21,Sep 26,Mon,BoS,GBP,-122.43,-602.48,card_repayment,Other,,B/CARD PLAT VISA,b card plat visa,,one_legged,bos-csv-2026,8f8aa23d6b1c
-L01371,2026-09-21,Sep 26,Mon,BoS,GBP,-332.41,-1635.79,card_repayment,Other,,SANTANDERCARDS LTD,santandercards ltd,,one_legged,bos-csv-2026,4ab446d59c76
-L01372,2026-09-21,Sep 26,Mon,BoS,GBP,650.0,3198.65,transfer,Other,,CALUM MACLEOD,calum macleod,P0119,person_leg_confirm,bos-csv-2026,39bb180203ec
-L01373,2026-09-21,Sep 26,Mon,BoS,GBP,1000.0,4921.0,transfer,Other,,CALUM LACHLAN MACL,calum lachlan macl,P0120,person_leg_confirm,bos-csv-2026,14ad319a57c5
-L01374,2026-09-21,Sep 26,Mon,BoS,GBP,-1000.0,-4921.0,transfer,Family,Tal / family,TALLIA FLAHER,tallia flaher,,one_legged,bos-csv-2026,7eeefd6269c0
-L01375,2026-09-21,Sep 26,Mon,BoS,GBP,300.0,1476.3,transfer,Other,,CALUM LACHLAN MACL,calum lachlan macl,P0121,person_leg_confirm,bos-csv-2026,fb7cda836be2
-L01376,2026-09-21,Sep 26,Mon,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,42a080cdbc0d
+L01246,2026-08-09,Aug 26,Sun,Wise GBP,GBP,-25.0,-124.7,spend,Life,Car / fuel / tolls,Card transaction of 25.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,34e92b9a8fe3
+L01247,2026-08-09,Aug 26,Sun,Wise GBP,GBP,-10.0,-49.88,spend,Life,Car / fuel / tolls,Card transaction of 10.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,d9a9b959370f
+L01248,2026-08-09,Aug 26,Sun,Wise GBP,GBP,50.0,249.4,transfer,Other,,Topped up account,topped up account,P0109,person_leg_confirm,wise-csv-2026,c8381c754ef2
+L01249,2026-08-09,Aug 26,Sun,Wise GBP,GBP,-25.0,-124.7,spend,Life,Car / fuel / tolls,Card transaction of 25.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,34e92b9a8fe3
+L01250,2026-08-10,Aug 26,Mon,BoS,GBP,-50.0,-249.4,transfer,Other,,C L MACLEOD,c l macleod,P0109,person_leg_confirm,bos-csv-2026,db64d17c0fd6
+L01251,2026-08-10,Aug 26,Mon,BoS,GBP,-150.0,-748.2,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,14ef98431065
+L01252,2026-08-11,Aug 26,Tue,BoS,GBP,-250.0,-1247.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),ALEX CASH,alex cash,,,bos-csv-2026,a31cb6dfce1a
+L01253,2026-08-11,Aug 26,Tue,BoS,GBP,300.0,1496.4,income,Other,,NIUM FINTECH LIMIT,nium fintech limit,,unexplained_credit,bos-csv-2026,4672f68c9527
+L01254,2026-08-13,Aug 26,Thu,Wise GBP,GBP,-0.06,-0.3,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4186557286,wise charges for card 4186557286,,,wise-csv-2026,3a95e3b5565c
+L01255,2026-08-13,Aug 26,Thu,Wise GBP,GBP,-17.79,-88.14,spend,Business,Software / AI,Card transaction of 24.00 USD issued by Openai *Chatgpt Subscr OPENAI.COM (fee: 0.06 GBP),Openai *Chatgpt Subscr OPENAI.COM,,,wise-csv-2026,c9c42b8393f9
+L01256,2026-08-14,Aug 26,Fri,Wise GBP,GBP,-11.99,-59.81,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,cb8e05096d24
+L01257,2026-08-15,Aug 26,Sat,Wise GBP,GBP,50.0,249.4,transfer,Other,,Topped up account,topped up account,P0110,person_leg_confirm,wise-csv-2026,53cd43d9c3b3
+L01258,2026-08-17,Aug 26,Mon,BoS,GBP,-50.0,-249.4,transfer,Other,,C L MACLEOD,c l macleod,P0110,person_leg_confirm,bos-csv-2026,2a6d69eb5a98
+L01259,2026-08-17,Aug 26,Mon,BoS,GBP,-73.03,-364.27,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-csv-2026,facb6be179dd
+L01260,2026-08-17,Aug 26,Mon,BoS,GBP,-0.05,-0.25,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,4f7ef5e4cf36
+L01261,2026-08-18,Aug 26,Tue,BoS,GBP,-0.05,-0.25,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,663830fade06
+L01262,2026-08-18,Aug 26,Tue,Wise GBP,GBP,-0.05,-0.25,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4208458083,wise charges for card 4208458083,,,wise-csv-2026,048b2914f3ed
+L01263,2026-08-18,Aug 26,Tue,Wise GBP,GBP,-14.08,-70.0,spend,Business,Software / AI,Card transaction of 70.00 AED issued by Canva* I04974-11939009 LONDON (fee: 0.05 GBP),Canva* I04974-11939009 LONDON,,,wise-csv-2026,9a483b59eff3
+L01264,2026-08-19,Aug 26,Wed,BoS,GBP,-48.48,-241.82,transfer,Other,,C L MACLEOD,c l macleod,,one_legged,bos-csv-2026,1c5e51c6e904
+L01265,2026-08-19,Aug 26,Wed,BoS,GBP,250.0,1247.0,income,Other,,NIUM FINTECH LIMIT,nium fintech limit,,unexplained_credit,bos-csv-2026,95e9616018b1
+L01266,2026-08-20,Aug 26,Thu,BoS,GBP,-2500.0,-12470.0,transfer,Other,,C L MACLEOD,c l macleod,P0111,person_leg_confirm,bos-csv-2026,702305320060
+L01267,2026-08-20,Aug 26,Thu,BoS,GBP,500.0,2494.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,556d12a050ab
+L01268,2026-08-20,Aug 26,Thu,BoS,GBP,-500.0,-2494.0,transfer,Other,,C L MACLEOD,c l macleod,P0112,person_leg_confirm,bos-csv-2026,cbe7c806763a
+L01269,2026-08-20,Aug 26,Thu,BoS,GBP,-2.16,-10.77,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,4dbc334f3718
+L01270,2026-08-20,Aug 26,Thu,Property Account,GBP,-48.43,-241.57,debt_cost,Fees,Interest & bank fees,Arranged Overdraft Interest,arranged overdraft interest,,,property-screens-2026,0b3c173208e8
+L01271,2026-08-20,Aug 26,Thu,Wise GBP,GBP,2500.0,12470.0,transfer,Other,,Topped up account,topped up account,P0111,person_leg_confirm,wise-csv-2026,6a95858698ae
+L01272,2026-08-20,Aug 26,Thu,Wise GBP,GBP,500.0,2494.0,transfer,Other,,Topped up account,topped up account,P0112,person_leg_confirm,wise-csv-2026,20b3b0baa091
+L01273,2026-08-20,Aug 26,Thu,Wise GBP,GBP,-12.25,-61.1,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2320391528,wise charges for transfer 2320391528,,,wise-csv-2026,12b622e58174
+L01274,2026-08-20,Aug 26,Thu,Wise GBP,GBP,-2987.75,-14902.9,transfer,Other,,Sent money to Calum Lachlan MacLeod (fee: 12.25 GBP),sent money to calum lachlan macleod fee ,,one_legged,wise-csv-2026,fc61c2dea7d9
+L01275,2026-08-20,Aug 26,Thu,Wise USD,USD,2650.0,9732.12,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,"Card transaction of -2,650.00 USD issued by Tcp*Vantage LONDON",Tcp*Vantage LONDON,P0113,,wise-csv-2026,3809b4af3cb9
+L01276,2026-08-20,Aug 26,Thu,Wise USD,USD,373.87,1373.04,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,Card transaction of -373.87 USD issued by Tcp*Vantage LONDON,Tcp*Vantage LONDON,,one_legged,wise-csv-2026,73e8737c921e
+L01277,2026-08-21,Aug 26,Fri,BoS,GBP,-2.16,-10.77,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,c5dcfde0384b
+L01278,2026-08-21,Aug 26,Fri,Wise GBP,GBP,2206.63,11006.67,transfer,Life,Car / fuel / tolls,"Converted 3,023.87 USD to 2,206.63 GBP",converted 3 023 87 usd to 2 206 63 gbp,P0114,,wise-csv-2026,f36e2481b332
+L01279,2026-08-21,Aug 26,Fri,Wise USD,USD,-9.95,-36.54,debt_cost,Fees,Interest & bank fees,Wise Charges for: BALANCE-5914683450,wise charges for balance 5914683450,,,wise-csv-2026,aed262f7a045
+L01280,2026-08-21,Aug 26,Fri,Wise USD,USD,-3013.92,-11068.62,transfer,Life,Car / fuel / tolls,"Converted 3,023.87 USD to 2,206.63 GBP (fee: 9.95 USD)",converted 3 023 87 usd to 2 206 63 gbp f,P0114,,wise-csv-2026,247dcd3c76b5
+L01281,2026-08-22,Aug 26,Sat,Wise GBP,GBP,-27.13,-135.32,spend,Life,Car / fuel / tolls,Card transaction of 27.13 GBP issued by Deepstash App DEEPSTASH.COM,Deepstash App DEEPSTASH.COM,,,wise-csv-2026,e67a191f2519
+L01282,2026-08-23,Aug 26,Sun,Wise GBP,GBP,-64.99,-324.17,spend,Life,Car / fuel / tolls,Card transaction of 64.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,e9c970904ac7
+L01283,2026-08-24,Aug 26,Mon,BoS,GBP,-2.17,-10.82,spend,Fees,Interest & bank fees,DAILY OD INT 22/08,daily od int 22 08,,,bos-csv-2026,5fa7efc082c1
+L01284,2026-08-24,Aug 26,Mon,BoS,GBP,-2.17,-10.82,spend,Fees,Interest & bank fees,DAILY OD INT 23/08,daily od int 23 08,,,bos-csv-2026,37dfc3d73647
+L01285,2026-08-24,Aug 26,Mon,BoS,GBP,-150.0,-748.2,spend,Family,Tal / family,CORRINA FLAHER,corrina flaher,,,bos-csv-2026,94ff119cff49
+L01286,2026-08-24,Aug 26,Mon,BoS,GBP,2000.0,9976.0,transfer,Other,,CALUM LACHLAN MACL,calum lachlan macl,,one_legged,bos-csv-2026,49d82d21aa6e
+L01287,2026-08-24,Aug 26,Mon,BoS,GBP,-0.47,-2.34,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,b5cb09a0d54c
+L01288,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-8.99,-44.84,spend,Life,Car / fuel / tolls,Card transaction of 8.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,66aa95373f25
+L01289,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4235409124,wise charges for card 4235409124,,,wise-csv-2026,2d3aff40694a
+L01290,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-9.59,-48.0,spend,Business,Software / AI,Card transaction of 48.00 AED issued by Canva* I04983-25404758 LONDON (fee: 0.03 GBP),Canva* I04983-25404758 LONDON,,,wise-csv-2026,5b6a69b095eb
+L01291,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-2000.0,-9976.0,transfer,Other,,Sent money to Calum Lachlan MacLeod,sent money to calum lachlan macleod,P0113,,wise-csv-2026,cd5d6de764e6
+L01292,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4237314136,wise charges for card 4237314136,,,wise-csv-2026,1a23d3659eda
+L01293,2026-08-24,Aug 26,Mon,Wise GBP,GBP,-8.89,-44.51,spend,Unaccounted,,Card transaction of 12.12 USD issued by Fmd Analytics ZAGREB (fee: 0.03 GBP),Fmd Analytics ZAGREB,,,wise-csv-2026,10fb416bdfa0
+L01294,2026-08-25,Aug 26,Tue,BoS,GBP,-0.47,-2.34,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,ed3c2f0a2d50
+L01295,2026-08-26,Aug 26,Wed,BoS,GBP,-0.47,-2.34,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,3c9d5e457e3b
+L01296,2026-08-27,Aug 26,Thu,BoS,GBP,-100.0,-498.8,transfer,Other,,C L MACLEOD,c l macleod,P0115,person_leg_confirm,bos-csv-2026,6e3d8c78e534
+L01297,2026-08-27,Aug 26,Thu,BoS,GBP,-0.56,-2.79,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,2215b63ee883
+L01298,2026-08-27,Aug 26,Thu,Wise GBP,GBP,100.0,498.8,transfer,Other,,Topped up account,topped up account,P0115,person_leg_confirm,wise-csv-2026,98b89de383ee
+L01299,2026-08-27,Aug 26,Thu,Wise GBP,GBP,-180.0,-897.84,spend,Life,Car / fuel / tolls,Card transaction of 180.00 GBP issued by Anthropic* Claude Sub ANTHROPIC.COM,Anthropic* Claude Sub ANTHROPIC.COM,,,wise-csv-2026,f55d69c5dd21
+L01300,2026-08-28,Aug 26,Fri,BoS,GBP,-0.56,-2.79,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,83472b49402c
+L01301,2026-08-28,Aug 26,Fri,Wise GBP,GBP,-11.99,-59.81,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,6bda36dcbb4e
+L01302,2026-09-01,Sep 26,Tue,BoS,GBP,-0.56,-2.76,spend,Fees,Interest & bank fees,DAILY OD INT 29/08,daily od int 29 08,,,bos-csv-2026,1b7f615ee2a7
+L01303,2026-09-01,Sep 26,Tue,BoS,GBP,-0.56,-2.76,spend,Fees,Interest & bank fees,DAILY OD INT 30/08,daily od int 30 08,,,bos-csv-2026,3a2fe136f0fb
+L01304,2026-09-01,Sep 26,Tue,BoS,GBP,-0.56,-2.76,spend,Fees,Interest & bank fees,DAILY OD INT 31/08,daily od int 31 08,,,bos-csv-2026,22860946eab8
+L01305,2026-09-01,Sep 26,Tue,BoS,GBP,-28.25,-139.02,spend,Life,Pets,PET HEALTH CLUB,pet health club,,,bos-csv-2026,a9e91da1e760
+L01306,2026-09-01,Sep 26,Tue,BoS,GBP,-279.0,-1372.96,card_repayment,Other,,TESCO BANK,tesco bank,,one_legged,bos-csv-2026,9bff4e242d9a
+L01307,2026-09-01,Sep 26,Tue,BoS,GBP,-295.68,-1455.04,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-csv-2026,c3f06b600914
+L01308,2026-09-01,Sep 26,Tue,BoS,GBP,-300.0,-1476.3,spend,Unaccounted,,L G PRICE,l g price,,,bos-csv-2026,d4b6ae7da6fa
+L01309,2026-09-01,Sep 26,Tue,BoS,GBP,-1.39,-6.84,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,83bfe881e6b2
+L01310,2026-09-01,Sep 26,Tue,Property Account,GBP,-287.8,-1416.26,spend,Business,UK property - mortgage (Methil),PRECISE MORTGAGES,precise mortgages,,,property-screens-2026,f4bd9fea702b
+L01311,2026-09-02,Sep 26,Wed,BoS,GBP,-1.4,-6.89,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,04db80a9b8cd
+L01312,2026-09-03,Sep 26,Thu,BoS,GBP,-300.0,-1476.3,debt_principal,Loan,Family money - confirm direction (repayment vs borrowing),MUM,mum,,,bos-csv-2026,3bac03c5411f
+L01313,2026-09-03,Sep 26,Thu,BoS,GBP,-1.67,-8.22,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,f2eff2efe047
+L01314,2026-09-03,Sep 26,Thu,Virgin Money,GBP,-192.99,-949.7,debt_cost,Fees,Card interest,Interest charged x3,interest charged x3,,,cc-app-screens-05sep,aee5486f265c
+L01315,2026-09-04,Sep 26,Fri,BoS,GBP,-36.49,-179.57,card_repayment,Other,,HSBC CREDIT CARD,hsbc credit card,,one_legged,bos-csv-2026,790477e4c0ca
+L01316,2026-09-04,Sep 26,Fri,BoS,GBP,-1.71,-8.41,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,339239bde821
+L01317,2026-09-04,Sep 26,Fri,Property Account,GBP,500.75,2464.19,income,Other,UK rent - 97 Methil Brae (via YM),Bank credit YM CLIENT ACCOUNT 97 METHIL BRAE,bank credit ym client account 97 methil ,,unexplained_credit,property-screens-2026,3cbeaa944383
+L01318,2026-09-04,Sep 26,Fri,Tesco Clubcard,GBP,-130.65,-642.93,debt_cost,Fees,Card interest,Interest x4 (Sep stmt),interest x4 sep stmt,,,cc-app-screens-05sep,09e2a9e665a5
+L01319,2026-09-04,Sep 26,Fri,Wise GBP,GBP,-11.99,-59.0,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill CORK,Apple.com/bill CORK,,,wise-csv-2026,6eac835fb7c9
+L01320,2026-09-05,Sep 26,Sat,Wise GBP,GBP,-21.99,-108.21,spend,Life,Car / fuel / tolls,Card transaction of 21.99 GBP issued by Apple.com/bill 08001076285,Apple.com/bill 08001076285,,,wise-csv-2026,ccf32e9fdedf
+L01321,2026-09-05,Sep 26,Sat,Wise GBP,GBP,100.0,492.1,transfer,Other,,Topped up account,topped up account,P0116,person_leg_confirm,wise-csv-2026,07dbd9f1d8c3
+L01322,2026-09-05,Sep 26,Sat,Wise GBP,GBP,-30.0,-147.63,spend,Life,Car / fuel / tolls,Card transaction of 30.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,28e6c69904ad
+L01323,2026-09-07,Sep 26,Mon,BoS,GBP,-401.9,-1977.75,card_repayment,Other,,VIRGIN MONEY,virgin money,,one_legged,bos-csv-2026,e04a9d0aa722
+L01324,2026-09-07,Sep 26,Mon,BoS,GBP,-29.6,-145.66,card_repayment,Other,,AQUA,aqua,,one_legged,bos-csv-2026,db194f655916
+L01325,2026-09-07,Sep 26,Mon,BoS,GBP,-11.99,-59.0,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,,one_legged,bos-csv-2026,f8ed04197fa3
+L01326,2026-09-07,Sep 26,Mon,BoS,GBP,-460.0,-2263.66,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,,one_legged,bos-csv-2026,a07d40101d47
+L01327,2026-09-07,Sep 26,Mon,BoS,GBP,4000.0,19684.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-csv-2026,b43a13cff307
+L01328,2026-09-07,Sep 26,Mon,BoS,GBP,-100.0,-492.1,transfer,Other,,C L MACLEOD,c l macleod,P0116,person_leg_confirm,bos-csv-2026,9c55c0edc3be
+L01329,2026-09-09,Sep 26,Wed,BoS,GBP,-29.6,-145.66,card_repayment,Other,,AQUA CREDIT CARD,aqua credit card,,one_legged,bos-csv-2026,c87182918b6a
+L01330,2026-09-09,Sep 26,Wed,BoS,GBP,-2000.0,-9842.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),KEVIN BOXALL,kevin boxall,,,bos-csv-2026,5c0f728342dd
+L01331,2026-09-09,Sep 26,Wed,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,4b2ba84d035f
+L01332,2026-09-10,Sep 26,Thu,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,6f248c31f171
+L01333,2026-09-11,Sep 26,Fri,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,efa2ee87bf44
+L01334,2026-09-13,Sep 26,Sun,Wise GBP,GBP,-0.06,-0.3,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4324898909,wise charges for card 4324898909,,,wise-csv-2026,e3f47a830b55
+L01335,2026-09-13,Sep 26,Sun,Wise GBP,GBP,-17.75,-88.14,spend,Business,Software / AI,Card transaction of 24.00 USD issued by Openai *Chatgpt Subscr OPENAI.COM (fee: 0.06 GBP),Openai *Chatgpt Subscr OPENAI.COM,,,wise-csv-2026,dcc2b46e3a83
+L01336,2026-09-14,Sep 26,Mon,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT 12/09,daily od int 12 09,,,bos-csv-2026,fdf510bbd82f
+L01337,2026-09-14,Sep 26,Mon,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT 13/09,daily od int 13 09,,,bos-csv-2026,9bc3a1cac4a3
+L01338,2026-09-14,Sep 26,Mon,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,6e6a9d4003a5
+L01339,2026-09-14,Sep 26,Mon,Wise GBP,GBP,-11.99,-59.0,spend,Life,Car / fuel / tolls,Card transaction of 11.99 GBP issued by Apple.com/bill CORK,Apple.com/bill CORK,,,wise-csv-2026,1fcefa5dc372
+L01340,2026-09-15,Sep 26,Tue,BoS,GBP,-0.82,-4.04,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,ca2d0f47c38e
+L01341,2026-09-15,Sep 26,Tue,Wise GBP,GBP,-0.05,-0.25,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4333573641,wise charges for card 4333573641,,,wise-csv-2026,74010247fd27
+L01342,2026-09-15,Sep 26,Tue,Wise GBP,GBP,-14.14,-70.0,spend,Business,Software / AI,Card transaction of 70.00 AED issued by Canva* I05005-13315043 LONDON (fee: 0.05 GBP),Canva* I05005-13315043 LONDON,,,wise-csv-2026,084e4358028f
+L01343,2026-09-16,Sep 26,Wed,BoS,GBP,-600.0,-2952.6,transfer,Other,,C L MACLEOD,c l macleod,P0117,person_leg_confirm,bos-csv-2026,d66b2aa20e7a
+L01344,2026-09-16,Sep 26,Wed,BoS,GBP,-1.38,-6.79,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,8c558a2e7efd
+L01345,2026-09-16,Sep 26,Wed,Wise GBP,GBP,600.0,2952.6,transfer,Other,,Topped up account,topped up account,P0117,person_leg_confirm,wise-csv-2026,41be0be78caf
+L01346,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4337885421,wise charges for card 4337885421,,,wise-csv-2026,f002c02ee891
+L01347,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-4.57,-23.2,spend,Entertainment,Travel,Card transaction of 290.00 MUR issued by Hotel Des Iles Golf > HOTEL DES ILE (fee: 0.03 GBP),Hotel Des Iles Golf > HOTEL DES ILE,,,wise-csv-2026,c5bdc5ca5711
+L01348,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-1.86,-9.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4337888674,wise charges for card 4337888674,,,wise-csv-2026,0fee307e055f
+L01349,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-231.83,-1178.0,spend,Entertainment,Travel,"Card transaction of 14,725.00 MUR issued by Hotel Des Iles Golf > HOTEL DES ILE (fee: 1.86 GBP)",Hotel Des Iles Golf > HOTEL DES ILE,,,wise-csv-2026,e87c5d4d3520
+L01350,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4338147059,wise charges for card 4338147059,,,wise-csv-2026,e47242d96007
+L01351,2026-09-16,Sep 26,Wed,Wise GBP,GBP,-3.53,-18.0,spend,Entertainment,Travel,Card transaction of 225.00 MUR issued by Hotel Des Iles Golf > HOTEL DES ILE (fee: 0.03 GBP),Hotel Des Iles Golf > HOTEL DES ILE,,,wise-csv-2026,04128fd40ba3
+L01352,2026-09-17,Sep 26,Thu,BoS,GBP,-55.38,-272.52,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-csv-2026,f1605d03066a
+L01353,2026-09-17,Sep 26,Thu,BoS,GBP,-224.99,-1107.18,card_repayment,Other,,AMERICAN EXPRESS,american express,,one_legged,bos-csv-2026,42efdc750405
+L01354,2026-09-17,Sep 26,Thu,BoS,GBP,-1.64,-8.07,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,aae88e08932c
+L01355,2026-09-17,Sep 26,Thu,Wise GBP,GBP,-0.23,-1.13,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4344139360,wise charges for card 4344139360,,,wise-csv-2026,9e6fe1a5b350
+L01356,2026-09-17,Sep 26,Thu,Wise GBP,GBP,-66.59,-326.85,spend,Unaccounted,,"Card transaction of 89.00 USD issued by Wpmanageninja, Llc WPMANAGENINJA (fee: 0.23 GBP)","Wpmanageninja, Llc WPMANAGENINJA",,,wise-csv-2026,48f1ae97cb3c
+L01357,2026-09-18,Sep 26,Fri,BoS,GBP,-1.64,-8.07,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,404da70e8cfe
+L01358,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-0.11,-0.54,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4348318077,wise charges for card 4348318077,,,wise-csv-2026,27f3e828e711
+L01359,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-13.52,-68.8,spend,Unaccounted,,Card transaction of 860.00 MUR issued by Le Saint Geran > LE SAINT GERA (fee: 0.11 GBP),Le Saint Geran > LE SAINT GERA,,,wise-csv-2026,d490f1e561b8
+L01360,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-0.75,-3.69,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4348374483,wise charges for card 4348374483,,,wise-csv-2026,5f3d166dae4a
+L01361,2026-09-18,Sep 26,Fri,Wise GBP,GBP,-94.09,-478.8,spend,Unaccounted,,"Card transaction of 5,985.00 MUR issued by Le Saint Geran > LE SAINT GERA (fee: 0.75 GBP)",Le Saint Geran > LE SAINT GERA,,,wise-csv-2026,db8f324ffb5c
+L01362,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-0.01,-0.05,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4352874928,wise charges for card 4352874928,,,wise-csv-2026,746347528fef
+L01363,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-4.67,-23.0,spend,Unaccounted,,Card transaction of 23.00 AED issued by Hamlam Trading Dubai (fee: 0.01 GBP),Hamlam Trading Dubai,,,wise-csv-2026,fd2567d91c1b
+L01364,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-0.14,-0.69,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4353870651,wise charges for card 4353870651,,,wise-csv-2026,a8b3695f6935
+L01365,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-39.63,-195.0,spend,Unaccounted,,Card transaction of 195.00 AED issued by Hill House Brasserie DUBAI (fee: 0.14 GBP),Hill House Brasserie DUBAI,,,wise-csv-2026,f27f80a8d22f
+L01366,2026-09-19,Sep 26,Sat,Wise GBP,GBP,100.0,492.1,transfer,Other,,Topped up account,topped up account,P0118,person_leg_confirm,wise-csv-2026,08785eef0fb7
+L01367,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-0.58,-2.85,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4354144178,wise charges for card 4354144178,,,wise-csv-2026,15367be5a4e4
+L01368,2026-09-19,Sep 26,Sat,Wise GBP,GBP,-162.55,-799.74,spend,Base Food,Groceries / meal prep,Card transaction of 799.74 AED issued by Spinneys Nshama 2 DUBAI (fee: 0.58 GBP),Spinneys Nshama 2 DUBAI,,,wise-csv-2026,c36e9055b962
+L01369,2026-09-20,Sep 26,Sun,Property Account,GBP,-45.5,-223.91,debt_cost,Fees,Interest & bank fees,Arranged Overdraft Interest,arranged overdraft interest,,,property-screens-2026,cb1061f249a7
+L01370,2026-09-21,Sep 26,Mon,BoS,GBP,-100.0,-492.1,transfer,Other,,C L MACLEOD,c l macleod,P0118,person_leg_confirm,bos-csv-2026,cefc1814d3a7
+L01371,2026-09-21,Sep 26,Mon,BoS,GBP,-1.73,-8.51,spend,Fees,Interest & bank fees,DAILY OD INT 19/09,daily od int 19 09,,,bos-csv-2026,4143f864c91e
+L01372,2026-09-21,Sep 26,Mon,BoS,GBP,-1.73,-8.51,spend,Fees,Interest & bank fees,DAILY OD INT 20/09,daily od int 20 09,,,bos-csv-2026,f4d4702902f3
+L01373,2026-09-21,Sep 26,Mon,BoS,GBP,-122.43,-602.48,card_repayment,Other,,B/CARD PLAT VISA,b card plat visa,,one_legged,bos-csv-2026,8f8aa23d6b1c
+L01374,2026-09-21,Sep 26,Mon,BoS,GBP,-332.41,-1635.79,card_repayment,Other,,SANTANDERCARDS LTD,santandercards ltd,,one_legged,bos-csv-2026,4ab446d59c76
+L01375,2026-09-21,Sep 26,Mon,BoS,GBP,650.0,3198.65,transfer,Other,,CALUM MACLEOD,calum macleod,P0119,person_leg_confirm,bos-csv-2026,39bb180203ec
+L01376,2026-09-21,Sep 26,Mon,BoS,GBP,1000.0,4921.0,transfer,Other,,CALUM LACHLAN MACL,calum lachlan macl,P0120,person_leg_confirm,bos-csv-2026,14ad319a57c5
 L01377,2026-09-21,Sep 26,Mon,BoS,GBP,-1000.0,-4921.0,transfer,Family,Tal / family,TALLIA FLAHER,tallia flaher,,one_legged,bos-csv-2026,7eeefd6269c0
-L01378,2026-09-21,Sep 26,Mon,Property Account,GBP,-650.0,-3198.65,transfer,Other,,CALUM MACLEOD MONEY,calum macleod money,P0119,person_leg_confirm,property-screens-2026,aa6060724d95
-L01379,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-18.9,-93.01,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2383184359,wise charges for transfer 2383184359,,,wise-csv-2026,8e58f2acb5d0
-L01380,2026-09-21,Sep 26,Mon,Wise GBP,GBP,1518.9,7474.51,transfer,Other,,Topped up account,topped up account,,one_legged,wise-csv-2026,0686630e5f75
-L01381,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-1000.0,-4921.0,transfer,Other,,Sent money to Calum Lachlan MacLeod,sent money to calum lachlan macleod,P0120,person_leg_confirm,wise-csv-2026,261d80511ad4
-L01382,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-300.0,-1476.3,transfer,Other,,Sent money to Calum Lachlan MacLeod,sent money to calum lachlan macleod,P0121,person_leg_confirm,wise-csv-2026,528f759d698c
-L01383,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-234.0,-1151.51,spend,Business,Editors / VA,Sent money to Darryl Ettritch,sent money to darryl ettritch,,,wise-csv-2026,a336bbd370dd
-L01384,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-0.25,-1.23,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4362716124,wise charges for card 4362716124,,,wise-csv-2026,c5fc1a68b28e
-L01385,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-70.17,-344.95,spend,Deliveries,Food delivery,Card transaction of 344.95 AED issued by Deliveroo DUBAI (fee: 0.25 GBP),Deliveroo DUBAI,,,wise-csv-2026,31372fa333ce
-L01386,2026-09-22,Sep 26,Tue,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,3b9492b97c86
-L01387,2026-09-23,Sep 26,Wed,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,a961ee41d542
-L01388,2026-09-24,Sep 26,Thu,BoS,GBP,-150.0,-738.15,spend,Family,Tal / family,CORRINA FLAHER,corrina flaher,,,bos-csv-2026,b964ecd713f1
-L01389,2026-09-24,Sep 26,Thu,BoS,GBP,-8.99,-44.24,spend,Life,Subscriptions,APPLE.COM/BILL,apple com bill,,,bos-csv-2026,6e4444096a51
-L01390,2026-09-24,Sep 26,Thu,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,b46a553f258e
-L01391,2026-09-25,Sep 26,Fri,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,55941a0b6d38
-L01392,2026-09-26,Sep 26,Sat,Wise GBP,GBP,-2.52,-12.4,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2393719732,wise charges for transfer 2393719732,,,wise-csv-2026,70c96addd631
-L01393,2026-09-26,Sep 26,Sat,Wise GBP,GBP,202.52,996.6,transfer,Other,,Topped up account,topped up account,,one_legged,wise-csv-2026,2409d56f140e
+L01378,2026-09-21,Sep 26,Mon,BoS,GBP,300.0,1476.3,transfer,Other,,CALUM LACHLAN MACL,calum lachlan macl,P0121,person_leg_confirm,bos-csv-2026,fb7cda836be2
+L01379,2026-09-21,Sep 26,Mon,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,42a080cdbc0d
+L01380,2026-09-21,Sep 26,Mon,BoS,GBP,-1000.0,-4921.0,transfer,Family,Tal / family,TALLIA FLAHER,tallia flaher,,one_legged,bos-csv-2026,7eeefd6269c0
+L01381,2026-09-21,Sep 26,Mon,Property Account,GBP,-650.0,-3198.65,transfer,Other,,CALUM MACLEOD MONEY,calum macleod money,P0119,person_leg_confirm,property-screens-2026,aa6060724d95
+L01382,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-18.9,-93.01,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2383184359,wise charges for transfer 2383184359,,,wise-csv-2026,8e58f2acb5d0
+L01383,2026-09-21,Sep 26,Mon,Wise GBP,GBP,1518.9,7474.51,transfer,Other,,Topped up account,topped up account,,one_legged,wise-csv-2026,0686630e5f75
+L01384,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-1000.0,-4921.0,transfer,Other,,Sent money to Calum Lachlan MacLeod,sent money to calum lachlan macleod,P0120,person_leg_confirm,wise-csv-2026,261d80511ad4
+L01385,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-300.0,-1476.3,transfer,Other,,Sent money to Calum Lachlan MacLeod,sent money to calum lachlan macleod,P0121,person_leg_confirm,wise-csv-2026,528f759d698c
+L01386,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-234.0,-1151.51,spend,Business,Editors / VA,Sent money to Darryl Ettritch,sent money to darryl ettritch,,,wise-csv-2026,a336bbd370dd
+L01387,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-0.25,-1.23,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4362716124,wise charges for card 4362716124,,,wise-csv-2026,c5fc1a68b28e
+L01388,2026-09-21,Sep 26,Mon,Wise GBP,GBP,-70.17,-344.95,spend,Deliveries,Food delivery,Card transaction of 344.95 AED issued by Deliveroo DUBAI (fee: 0.25 GBP),Deliveroo DUBAI,,,wise-csv-2026,31372fa333ce
+L01389,2026-09-22,Sep 26,Tue,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,3b9492b97c86
+L01390,2026-09-23,Sep 26,Wed,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,a961ee41d542
+L01391,2026-09-24,Sep 26,Thu,BoS,GBP,-150.0,-738.15,spend,Family,Tal / family,CORRINA FLAHER,corrina flaher,,,bos-csv-2026,b964ecd713f1
+L01392,2026-09-24,Sep 26,Thu,BoS,GBP,-8.99,-44.24,spend,Life,Subscriptions,APPLE.COM/BILL,apple com bill,,,bos-csv-2026,6e4444096a51
+L01393,2026-09-24,Sep 26,Thu,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,b46a553f258e
+L01394,2026-09-25,Sep 26,Fri,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,55941a0b6d38
+L01395,2026-09-26,Sep 26,Sat,Wise GBP,GBP,-2.52,-12.4,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2393719732,wise charges for transfer 2393719732,,,wise-csv-2026,70c96addd631
+L01396,2026-09-26,Sep 26,Sat,Wise GBP,GBP,202.52,996.6,transfer,Other,,Topped up account,topped up account,,one_legged,wise-csv-2026,2409d56f140e
