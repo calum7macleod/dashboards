@@ -93,6 +93,7 @@ def guess_type(r):
     return "spend"
 
 COUNTS_AS_SPEND = {"spend", "refund", "debt_cost", "cash_withdrawal"}
+# passthrough = money collected for, or paid on behalf of, someone else (co-investors, Pod Factory on the Amex). Nets to zero; never spend, never income.
 
 def load_merchants():
     try: return [(re.compile(m["rx"], re.I), m) for m in json.load(open("merchants.json"))["merchants"]]
@@ -104,7 +105,7 @@ def apply_merchant(r):
     for rx, m in MERCHANTS:
         if rx.search(hay):
             r["category"] = m["category"]; r["sub"] = m.get("sub")
-            if m.get("type") and r["type"] in ("spend", "refund", "income", "transfer"):
+            if m.get("type") and r["type"] in ("spend", "refund", "income", "transfer", "borrowing", "investment", "cash_withdrawal"):
                 r["type"] = ("debt_principal" if r["amount"] < 0 else "borrowing") if m["type"] == "auto_debt" else m["type"]
                 if r["type"] == "cash_withdrawal" and r["amount"] > 0: r["type"] = "transfer"      # cash deposit = cash coming back
                 if r["type"] == "borrowing" and r["amount"] < 0: r["type"] = "debt_principal"      # money back to the same person
@@ -128,7 +129,9 @@ def build(files):
             r["amount_aed"] = round(r["amount"] * fx_rate(fx, r["currency"], r["month"]), 2)
         if r["type"] == "income" and not INCOME_RX.search(r["description"]): r["flags"].append("unexplained_credit")
         apply_merchant(r)
+        if not r.get("category") and r.get("cat_hint") and r["type"] in COUNTS_AS_SPEND: r["category"] = r["cat_hint"]   # provisional rows keep the hand-typed category until the statement lands
         if not r.get("category"): r["category"] = "Unaccounted" if r["type"] in COUNTS_AS_SPEND else {"debt_cost": "Fees", "investment": "Investing", "cash_withdrawal": "Other"}.get(r["type"], "Other")
+    apply_manual_pairs(rows)
     pairs, one_legged = match_transfers(rows)
     write_ledger(rows)
     json.dump({"pairs": pairs, "one_legged": one_legged, "duplicates_dropped": dups}, open("transfers.json", "w"), indent=1)
@@ -137,6 +140,17 @@ def build(files):
     print(f"rows {len(rows)} | dups dropped {len(dups)} | pairs {len(pairs)} | one-legged {len(one_legged)}")
     for m, v in summ["by_month"].items(): print(m, {k: round(x) for k, x in v.items()})
     return rows
+
+def apply_manual_pairs(rows):
+    """manual_pairs.json: [{out:{account,date,amount}, in:[{account,date,amount},...], why}] - legs Calum has explained; matcher leaves them alone."""
+    try: mp = json.load(open("manual_pairs.json"))
+    except Exception: return
+    def find(spec): return next((r for r in rows if r["account"] == spec["account"] and r["date"] == spec["date"] and abs(r["amount"] - spec["amount"]) < 0.01), None)
+    for i, p in enumerate(mp):
+        o = find(p["out"]); ins = [find(s) for s in p["in"]]
+        if not o or any(x is None for x in ins): continue
+        pid = f"M{i+1:03d}"; o["pair_id"] = pid; o["type"] = "transfer"; o["flags"].append("manual:" + p.get("why", ""))
+        for x in ins: x["pair_id"] = pid; x["type"] = "transfer"; x["flags"].append("manual:" + p.get("why", ""))
 
 def match_transfers(rows, days=4, days_intl=7, tol=0.005, tol_intl=0.06):
     cand = [r for r in rows if (r["type"] in ("transfer", "card_repayment", "borrowing", "cash_withdrawal") or (r["type"] == "investment" and r["account"].startswith("Binance"))) and not r["pair_id"]]
@@ -207,6 +221,7 @@ def summarise(rows):
             if r["type"] == "debt_cost": by_month[m]["debt_cost"] += -a
             if r["type"] == "cash_withdrawal": by_month[m]["cash_out"] += -a
         elif r["type"] == "income": by_month[m]["income"] += a
+        elif r["type"] == "passthrough": by_month[m]["passthrough_net"] += a
         elif r["type"] == "investment" and a < 0: by_month[m]["invested"] += -a
         elif r["type"] == "card_repayment" and a < 0 and not r["pair_id"]: by_month[m]["card_repay_unmatched"] += -a
     try:
