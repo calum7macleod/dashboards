@@ -166,5 +166,13 @@
   "to": "finance",
   "item": "CORRECTION to h0019: the '1 exact duplicate dropped' was a real transaction (21 Sep TALLIA FLAHER -1000 FPO, 2nd of two same-day; running balance chains with 0 breaks across all 591 rows). Now appended - BoS CSV rows in finance.json for May/Jun/Sep = 210, not 209. Nothing else changes.",
   "status": "done"
+ },
+ {
+  "id": "h0022",
+  "date": "2026-09-26",
+  "from": "Finance",
+  "to": "Manager",
+  "item": "Dashboard/finance.json rules needed: (1) exclude transactions with a 'retired' field from all sums; (2) transactions now carry 'currency' (GBP on 591 BoS rows) - never add GBP to AED, convert or show separately; (3) proposed single sign convention for transactions going forward = statement style, negative = money out, positive = money in (what statements and the Uploader produce). Old rows are positive = spend - Finance will flip them at the rebuild. Decide and write it into the schema.",
+  "status": "open"
  }
 ]
