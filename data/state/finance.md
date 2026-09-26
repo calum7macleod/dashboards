@@ -6,6 +6,7 @@
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
 ## Burn and runway
+- v4 26 Sep: 220K (30 Sep) + 250K (end Oct), then nothing, must last to end-Feb. Repeating cut to ~84.7K/mo (rent 15, Tal 24.6, UK cards 9.8, ADIB minimums 3.2, Kevin 4.9, Murabaha 2.4, subs 2.5, coaching 2.3, living 20). Unfunded: Tara 31K/mo, Lewis 10K/mo, ADIB clearance - need new income. ~40K spare on 1 Mar if every month is kept.
 Baseline from Oct ~Đ118,600/mo (rent accrual, Modon accrual, editors, Meta, Tal + bills, UK card minimums). 5 Sep model: runway runs out mid-January without new deals or Jake income. Oct/Nov payouts are the bridge, not upside. Jake first real pay ~Dec.
 
 ## Positions (31 Aug)
