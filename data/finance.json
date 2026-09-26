@@ -7838,8 +7838,7 @@
       "account": "Santander Everyday",
       "amount": 216.11,
       "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26",
-      "retired": "superseded by Santander app rows (exact interest lines) - h0030"
+      "source": "cc app screenshot 05 Sep 26"
     },
     {
       "month": "Jul 26",
@@ -7848,8 +7847,7 @@
       "account": "Santander Everyday",
       "amount": 232.58,
       "category": "Fees",
-      "source": "cc app screenshot 05 Sep 26",
-      "retired": "superseded by Santander app rows (exact interest lines) - h0030"
+      "source": "cc app screenshot 05 Sep 26"
     },
     {
       "month": "Sep 26",
@@ -23557,6 +23555,446 @@
       "note": "",
       "source": "Santander app screenshots 26 Sep 26 (GBP)",
       "currency": "GBP"
+    },
+    {
+      "month": "Jan 26",
+      "day": 2,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -211.46,
+      "category": "",
+      "note": "stmt 06 Jan 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jan 26",
+      "day": 6,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 37.32,
+      "category": "",
+      "note": "stmt 06 Jan 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Feb 26",
+      "day": 2,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -204.93,
+      "category": "",
+      "note": "stmt 08 Feb 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Feb 26",
+      "day": 8,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 39.94,
+      "category": "",
+      "note": "stmt 08 Feb 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Mar 26",
+      "day": 5,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -203.43,
+      "category": "",
+      "note": "stmt 08 Mar 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Mar 26",
+      "day": 8,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 33.11,
+      "category": "",
+      "note": "stmt 08 Mar 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Apr 26",
+      "day": 2,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -192.34,
+      "category": "",
+      "note": "stmt 06 Apr 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Apr 26",
+      "day": 6,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 33.37,
+      "category": "",
+      "note": "stmt 06 Apr 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 1,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -188.63,
+      "category": "",
+      "note": "stmt 06 May 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 6,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 33.61,
+      "category": "",
+      "note": "stmt 06 May 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 8,
+      "description": "Apple Online Store - U Dubai ARE - 4918.00 AED @ 4.9855",
+      "account": "MBNA 1",
+      "amount": 986.46,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 8,
+      "description": "NON-STERLING PURCHASE FEE",
+      "account": "MBNA 1",
+      "amount": 29.1,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 19,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 202.52,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 19,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 10.13,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 20,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 202.52,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 20,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 10.13,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 20,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 40.5,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 20,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 2.03,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 31,
+      "description": "DELIVEROO DUBAI DUB - 318.95 AED @ 4.9228",
+      "account": "MBNA 1",
+      "amount": 64.79,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "May 26",
+      "day": 31,
+      "description": "NON-STERLING PURCHASE FEE",
+      "account": "MBNA 1",
+      "amount": 1.91,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 1,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -184.99,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 1,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 243.02,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 1,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 12.15,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 3,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 243.02,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 3,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 12.15,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 7,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 42.37,
+      "category": "",
+      "note": "stmt 07 Jun 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 18,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 243.02,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 18,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 12.15,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 18,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 243.02,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 18,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 12.15,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 18,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 243.02,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jun 26",
+      "day": 18,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 12.15,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 2,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -241.7,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 6,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 94.93,
+      "category": "",
+      "note": "stmt 06 Jul 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 9,
+      "description": "Wise London",
+      "account": "MBNA 1",
+      "amount": 202.52,
+      "category": "",
+      "note": "stmt 06 Aug 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 9,
+      "description": "CASH FEE",
+      "account": "MBNA 1",
+      "amount": 10.13,
+      "category": "",
+      "note": "stmt 06 Aug 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 26,
+      "description": "PAYMENT RECEIVED - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -5,
+      "category": "",
+      "note": "stmt 06 Aug 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -309.73,
+      "category": "",
+      "note": "stmt 06 Aug 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Jul 26",
+      "day": 31,
+      "description": "PAYMENT RECEIVED - THANK YOU",
+      "account": "MBNA 1",
+      "amount": -200,
+      "category": "",
+      "note": "stmt 06 Aug 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
+    },
+    {
+      "month": "Aug 26",
+      "day": 6,
+      "description": "INTEREST",
+      "account": "MBNA 1",
+      "amount": 86.28,
+      "category": "",
+      "note": "stmt 06 Aug 26",
+      "source": "MBNA statement screenshots 26 Sep 26 (GBP)",
+      "currency": "GBP"
     }
   ],
   "ccBalances": [
@@ -24235,6 +24673,110 @@
       "interestDate": "25 Sep",
       "monthlyRatePct": 1.8,
       "source": "Santander app screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-01-06",
+      "month": "Jan 26",
+      "card": "MBNA 1",
+      "balance": 6704.59,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "stmt 06 Jan 26 new balance (card *1654). Interest 37.32: MT promo 5.90% 1.93 on 409.77; MT promo 6.90% 35.39 on 6,294.82. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 37.32,
+      "interestDate": "06 Jan",
+      "source": "MBNA statement screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-02-08",
+      "month": "Feb 26",
+      "card": "MBNA 1",
+      "balance": 6539.6,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "stmt 08 Feb 26 new balance (card *1654). Interest 39.94: MT promo 5.90% 2.13 on 411.90; MT promo 6.90% 37.81 on 6,127.70. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 39.94,
+      "interestDate": "08 Feb",
+      "source": "MBNA statement screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-03-08",
+      "month": "Mar 26",
+      "card": "MBNA 1",
+      "balance": 6369.28,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "stmt 08 Mar 26 new balance (card *1654). Interest 33.11: MT promo 5.90% 1.81 on 413.71; MT promo 6.90% 31.30 on 5,955.57. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 33.11,
+      "interestDate": "08 Mar",
+      "source": "MBNA statement screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-04-06",
+      "month": "Apr 26",
+      "card": "MBNA 1",
+      "balance": 6210.31,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "stmt 06 Apr 26 new balance (card *1654). Interest 33.37: MT promo 5.90% 1.89 on 415.60; MT promo 6.90% 31.48 on 5,794.71. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 33.37,
+      "interestDate": "06 Apr",
+      "source": "MBNA statement screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-05-06",
+      "month": "May 26",
+      "card": "MBNA 1",
+      "balance": 6055.29,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "stmt 06 May 26 new balance (card *1654). Interest 33.61: MT promo 5.90% 1.96 on 417.56; MT promo 6.90% 31.65 on 5,637.73. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 33.61,
+      "interestDate": "06 May",
+      "source": "MBNA statement screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-06-07",
+      "month": "Jun 26",
+      "card": "MBNA 1",
+      "balance": 7973.1,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "stmt 07 Jun 26 new balance (card *1654). Interest 42.37: Cash 25.35% 7.44 on 985.61; Purchases 25.35% 0.00 on 1,082.26; MT promo 5.90% 2.10 on 419.66; MT promo 6.90% 32.83 on 5,485.57. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 42.37,
+      "interestDate": "07 Jun",
+      "source": "MBNA statement screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-07-06",
+      "month": "Jul 26",
+      "card": "MBNA 1",
+      "balance": 8591.84,
+      "currency": "GBP",
+      "available": 208.16,
+      "limit": 8800,
+      "status": "stmt 06 Jul 26 new balance (card *1654). Interest 94.93: Cash 25.35% 26.19 on 1,535.61; Purchases 25.35% 37.67 on 1,119.93; MT promo 5.90% 1.91 on 421.57; MT promo 6.90% 29.16 on 5,514.73. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 94.93,
+      "interestDate": "06 Jul",
+      "source": "MBNA statement screenshots 26 Sep 26"
+    },
+    {
+      "date": "2026-08-06",
+      "month": "Aug 26",
+      "card": "MBNA 1",
+      "balance": 8376.04,
+      "currency": "GBP",
+      "available": 423.96,
+      "limit": 8800,
+      "status": "stmt 06 Aug 26 new balance (card *1654). Interest 86.28: Cash 25.35% 31.20 on 1,264.73; Purchases 25.35% 21.69 on 1,141.62; MT promo 5.90% 2.06 on 423.63; MT promo 6.90% 31.33 on 5,546.06. Promo MTs expire 27 Apr 27 / 19 May 27",
+      "interestLatest": 86.28,
+      "interestDate": "06 Aug",
+      "source": "MBNA statement screenshots 26 Sep 26"
     }
   ],
   "personalDebts": [
@@ -24546,3 +25088,4 @@
     "Wise_note": "Wise reconciled 26 Sep: 685 rows Jan-Sep in finance.json (currency field, negative = out); 44 screenshot rows retired pending delete"
   }
 }
+
