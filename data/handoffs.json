@@ -158,5 +158,13 @@
   "to": "manager",
   "item": "data issue: finance.json amount sign inconsistent - BoS Jul 26 rows positive for debits, Aug 26 negative for debits, CC interest rows positive for charges. Uploader used negative = money out for the CSV rows. Needs one rule in schema",
   "status": "open"
+ },
+ {
+  "id": "h0021",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "finance",
+  "item": "CORRECTION to h0019: the '1 exact duplicate dropped' was a real transaction (21 Sep TALLIA FLAHER -1000 FPO, 2nd of two same-day; running balance chains with 0 breaks across all 591 rows). Now appended - BoS CSV rows in finance.json for May/Jun/Sep = 210, not 209. Nothing else changes.",
+  "status": "open"
  }
 ]
