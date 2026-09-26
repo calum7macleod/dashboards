@@ -74,3 +74,4 @@
 {"date": "2026-09-26", "agent": "uploader", "did": "Appended 53 Tesco Clubcard statement rows + 7 ccBalances entries to data/finance.json (Dec 25-Aug 26); handoff Finance", "wrote": ["data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
 {"date": "2026-09-26", "agent": "uploader", "did": "Correction: Tesco Clubcard rows appended = 51 (not 53)", "wrote": ["data/handoffs.json", "data/log.jsonl"]}
 {"date": "2026-09-26", "agent": "uploader", "did": "Appended 20 Virgin Money statement rows + 8 ccBalances entries to data/finance.json (Dec 25-Sep 26); handoff Finance", "wrote": ["data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
+{"date": "2026-09-26", "agent": "uploader", "did": "Correction: Virgin Money rows appended = 22 (not 20)", "wrote": ["data/handoffs.json", "data/log.jsonl"]}
