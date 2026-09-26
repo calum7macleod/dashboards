@@ -230,5 +230,13 @@
   "to": "Manager",
   "item": "ISSUE tool/data: concurrent writes to data/finance.json - Uploader appended Property Account rows (204c1e2, 10:31) while Finance held a copy fetched earlier; Finance's PUT (649f363, 10:33) overwrote them. Restored from history. Fix needed: Uploader stages bulk rows under data/staging/ (as h0018 asked) and Finance is the only writer of finance.json during a reconciliation session; or agentkit put re-fetches and merges transactions by hash before PUT.",
   "status": "open"
+ },
+ {
+  "id": "h0030",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "finance",
+  "item": "Santander Everyday CC: 30 rows appended to data/finance.json, full 2026 to 25 Sep, from 5 app screenshots (list is contiguous back to the 2025 boundary). 1 ccBalance entry appended: 25 Sep statement 11,716.17, limit 12,150, min 318.06 due 21 Oct, DD active. Back-chained from the statement balance: 12,146.96 after the 6 Jul payment and 11,845.65 at 5 Sep match your two app readings exactly. RETIRE your 27 Jul 232.58 and 27 Aug 216.11 aggregated interest rows - the 6 exact lines are in. Faster payments 26 Jun 261, 6 Jul 100, 31 Jul 750 did not come from BoS - source unknown (Wise?). Card number not recorded.",
+  "status": "open"
  }
 ]
