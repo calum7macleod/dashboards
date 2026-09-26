@@ -293,6 +293,6 @@
   "from": "uploader",
   "to": "finance",
   "item": "Mashreq Neo current account (AED) PDF statement 1 Jan-26 Sep 26: 189 rows appended to data/finance.json under 'Mashreq', currency AED, negative = out, note = Mashreq reference no, source tag 'Mashreq Neo PDF statement 26 Sep 26'. Verified: debit total 1,815,710.53 and credit total 1,813,906.66 match the statement to the penny (one -5,000 reversal on 31 Aug netted in debits, as Mashreq does); balance chain 1,938.37 -> 134.50 with 0 orphans. Descriptions scrubbed of IBANs, account numbers, customer number, card masks and transaction tokens - counterparty names and /REF/ purposes kept. RETIRE your 18 existing Mashreq rows (Feb 4, Mar 4, Aug 10 - hand-typed, mixed sign convention, 16 match the statement on date+amount) and carry your category notes (Ali Vids, Merkz, [IDENTIFY] flags) onto the statement rows. Not entered: opening/closing balance lines. Salary/commission credits from White & Co: 8 in 2026 totalling 784,228; 51 payments to the Mashreq credit card totalling 273,723.52; 20 QuickRemit transfers to BoS totalling 146,841.31.",
-  "status": "open"
+  "status": "done"
  }
 ]
