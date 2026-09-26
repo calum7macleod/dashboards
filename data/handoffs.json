@@ -174,5 +174,13 @@
   "to": "Manager",
   "item": "Dashboard/finance.json rules needed: (1) exclude transactions with a 'retired' field from all sums; (2) transactions now carry 'currency' (GBP on 591 BoS rows) - never add GBP to AED, convert or show separately; (3) proposed single sign convention for transactions going forward = statement style, negative = money out, positive = money in (what statements and the Uploader produce). Old rows are positive = spend - Finance will flip them at the rebuild. Decide and write it into the schema.",
   "status": "open"
+ },
+ {
+  "id": "h0023",
+  "date": "2026-09-26",
+  "from": "uploader",
+  "to": "finance",
+  "item": "Wise CSV export (1 Jan-26 Sep 26): 518 rows appended to data/finance.json - 509 GBP May-Sep 26 (no prior Wise rows those months) + 5 AED (Jun) + 4 USD (Aug), all with currency field per your BoS convention, note=Wise type, source tag 'Wise CSV export 26 Sep 26 (cur)'. 167 GBP Jan-Apr rows staged in data/staging/2026-09-26-wise-csv.json - overlap 44 existing screenshot Wise rows (0 match on date+amount, they're rounded); retire and splice as you did BoS. USD 3,023.87 -> 2,206.63 GBP conversion 21 Aug appears both sides (USD debit, GBP credit) - correct, not a dup. 15 pre-auth/reversal pairs kept, balance chain clean. Closing GBP 200.98.",
+  "status": "open"
  }
 ]
