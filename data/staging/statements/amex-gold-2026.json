@@ -1,0 +1,928 @@
+{
+ "meta": {
+  "account": "Amex Gold",
+  "cardType": "American Express Preferred Rewards Gold",
+  "currency": "GBP",
+  "enteredBy": "Uploader Sept 26 2",
+  "enteredOn": "2026-09-26",
+  "sign": "as printed on the statement: charges positive, payments/credits negative (card-balance convention)",
+  "dates": "app screenshots show transaction date only; PDF statements give transactionDate (date) and processDate",
+  "coverage": "statements 29 Dec 2025 - 26 Sep 2026; Jan closing and Feb/Jul page-1 summaries not captured, balances derived and labelled",
+  "rowCount": 97,
+  "rawImages": "11 screenshots not committed (public repo: name, address, card ending on them) - transcript is the record",
+  "recurring": "SP SHOP PLYMOUTH 460.00 monthly from 17 Mar 26 (7x); ALEXANDERBUTLER.COACH 500.00 Jan, 460.00 Feb"
+ },
+ "statements": [
+  {
+   "period": "2025-12-29 to 2026-01-28",
+   "source": "Amex app screenshot 26 Sep 26 (transaction list; statement balance cut off)",
+   "printedClosingBalance": null,
+   "derivedClosingBalance": 1631.97,
+   "derivedOpeningBalance": 6218.57,
+   "note": "Closing not visible in screenshot. Derived: opening 6,218.57 = payment 10 Jan (paid in full); closing 1,631.97 ties to Feb (Feb closing 8,691.73 = 1,631.97 + 7,059.76) and to Mar payments.",
+   "transactions": [
+    {
+     "date": "2025-12-27",
+     "description": "DELIVEROO DMCC DUBAI DU DUBAI",
+     "amount": 43.5,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-01-06",
+     "description": "ALEXANDERBUTLER.COACH BRIGHTON",
+     "amount": 500.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-01-10",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -6218.57,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-01-21",
+     "description": "AMAZON (PRIME-RECURRING DUBAI",
+     "amount": 3.26,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-01-22",
+     "description": "PAYPAL *DIALMYDATA 4029357733",
+     "amount": 878.61,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-01-27",
+     "description": "FARFETCH.COM 524085 LONDON",
+     "amount": 206.6,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    }
+   ]
+  },
+  {
+   "period": "2026-01-29 to 2026-02-28",
+   "source": "Amex PDF statement pages 2-3 of 5, screenshots 26 Sep 26 (page 1 summary + pages 4-5 not captured)",
+   "printedClosingBalance": null,
+   "derivedClosingBalance": 8691.73,
+   "printedTotals": {
+    "newSpend": 6852.76,
+    "otherAccountTransactions": 207.0
+   },
+   "verified": "transcribed rows sum to printed totals",
+   "note": "No payments listed on pages 2-3 (consistent with 28 Feb late payment fee). Closing derived from Mar: 8,691.73 paid off in full by three March payments.",
+   "transactions": [
+    {
+     "date": "2026-02-02",
+     "description": "SP NATUREWALLGROUP HULL",
+     "amount": 647.93,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "WF* UK4390160624 LONDON",
+     "amount": 48.96,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*SU6LV6315 AMAZON.CO.UK",
+     "amount": 113.97,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*SP6N35CD5 AMAZON.CO.UK",
+     "amount": 41.78,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*AR3DW0UR5 AMAZON.CO.UK",
+     "amount": 50.58,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*BN2075CX5 AMAZON.CO.UK",
+     "amount": 15.98,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*L48WN36P5 AMAZON.CO.UK",
+     "amount": 21.98,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*NR6FU1AW5 AMAZON.CO.UK",
+     "amount": 29.2,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*GK1B03GH5 AMAZON.CO.UK",
+     "amount": 19.98,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*CS9GA70J5 AMAZON.CO.UK",
+     "amount": 38.35,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*N740Q49T5 AMAZON.CO.UK",
+     "amount": 29.95,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*3P6943SQ5 AMAZON.CO.UK",
+     "amount": 127.98,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*Q07A97FW5 AMAZON.CO.UK",
+     "amount": 49.89,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*569WO3RF5 AMAZON.CO.UK",
+     "amount": 24.99,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*XD0GB5HK5 AMAZON.CO.UK",
+     "amount": 30.82,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*SI8EH21U5 AMAZON.CO.UK",
+     "amount": 44.5,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*0A7JX8U75 AMAZON.CO.UK",
+     "amount": 200.59,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*RR7A10QJ5 AMAZON.CO.UK",
+     "amount": 112.4,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*X56MR0VB5 AMAZON.CO.UK",
+     "amount": 54.16,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*TP4A49CF5 AMAZON.CO.UK",
+     "amount": 39.98,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*800000P75 AMAZON.CO.UK",
+     "amount": 43.61,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*TY1G29VU5 AMAZON.CO.UK",
+     "amount": 41.42,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-02",
+     "description": "AMZNMKTPLACE*AU4Z14DW5 AMAZON.CO.UK",
+     "amount": 112.14,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-02"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "SP NATUREWALLGROUP HULL",
+     "amount": 731.89,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "SP NATUREWALLGROUP HULL",
+     "amount": 249.95,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "SP NATUREWALLGROUP HULL",
+     "amount": 249.95,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "AIRBNB * HMHSYRE8BH LONDON",
+     "amount": 212.83,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "SP DAALS.CO.UK 5037 COVENTRY",
+     "amount": 729.99,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "WF* UK4392297644 LONDON",
+     "amount": 287.88,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "INTERIOR GOODS DIRECT D HUDDERSFIELD",
+     "amount": 134.88,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "INTERIOR GOODS DIRECT D HUDDERSFIELD",
+     "amount": 492.57,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "AMZNMKTPLACE*RP7ZV8WW5 AMAZON.CO.UK",
+     "amount": 87.92,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "SP MAJESTIC MATERIALS STOCKPORT",
+     "amount": 4.99,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "CLADDECK LIM* O #10151 PLYMOUTH",
+     "amount": 4.99,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "AMZNMKTPLACE*VF42V7QQ5 AMAZON.CO.UK",
+     "amount": 19.98,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "AMZNBUSINESS*KI1BM2EZ5 AMAZON.CO.UK",
+     "amount": 232.79,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "SCREWFIX DIRECT LTD YEOVIL",
+     "amount": 549.28,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "AMZNMKTPLACE*WR5762EU5 AMAZON.CO.UK",
+     "amount": 7.68,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "AMZNMKTPLACE*0A8T43265 AMAZON.CO.UK",
+     "amount": 63.8,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "WOOD FINISHES DIRECT LI FOLKESTONE",
+     "amount": 173.56,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-03"
+    },
+    {
+     "date": "2026-02-03",
+     "description": "AMZNMKTPLACE*BW4348XH5 AMAZON.CO.UK",
+     "amount": 22.5,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-04"
+    },
+    {
+     "date": "2026-02-04",
+     "description": "TESCO STORES TESCO STOR UNITED KINGDOM",
+     "amount": 38.04,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-04"
+    },
+    {
+     "date": "2026-02-04",
+     "description": "AMZNMKTPLACE*VG2VQ0AC5 AMAZON.CO.UK",
+     "amount": 69.16,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-04"
+    },
+    {
+     "date": "2026-02-04",
+     "description": "AMZNMKTPLACE*4R5XR4X35 AMAZON.CO.UK",
+     "amount": 69.14,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-04"
+    },
+    {
+     "date": "2026-02-05",
+     "description": "ALEXANDERBUTLER.COACH BRIGHTON",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-05"
+    },
+    {
+     "date": "2026-02-06",
+     "description": "AMZNBUSINESS*HK67P4875 AMAZON.CO.UK",
+     "amount": 15.99,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-07"
+    },
+    {
+     "date": "2026-02-09",
+     "description": "AMAZON.CO.UK*OG2QZ5OR5 AMAZON.CO.UK",
+     "amount": 1.86,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-09"
+    },
+    {
+     "date": "2026-02-28",
+     "description": "LATE PAYMENT FEE",
+     "amount": 12.0,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-28"
+    },
+    {
+     "date": "2026-02-28",
+     "description": "CARDMEMBERSHIP FEE",
+     "amount": 195.0,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-02-28"
+    }
+   ]
+  },
+  {
+   "period": "2026-03-01 to 2026-03-28",
+   "source": "Amex app screenshot 26 Sep 26",
+   "printedClosingBalance": 460.0,
+   "transactions": [
+    {
+     "date": "2026-03-01",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -1640.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-03-16",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -5195.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-03-17",
+     "description": "SP SHOP PLYMOUTH",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-03-19",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -1856.73,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    }
+   ]
+  },
+  {
+   "period": "2026-03-29 to 2026-04-28",
+   "source": "Amex app screenshot 26 Sep 26",
+   "printedClosingBalance": 460.0,
+   "transactions": [
+    {
+     "date": "2026-04-05",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-04-20",
+     "description": "SP SHOP PLYMOUTH",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    }
+   ]
+  },
+  {
+   "period": "2026-04-29 to 2026-05-28",
+   "source": "Amex app screenshot 26 Sep 26",
+   "printedClosingBalance": 460.0,
+   "transactions": [
+    {
+     "date": "2026-05-08",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 283.38,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-05-24",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -743.38,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-05-26",
+     "description": "SP SHOP PLYMOUTH",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    }
+   ]
+  },
+  {
+   "period": "2026-05-29 to 2026-06-28",
+   "source": "Amex app screenshot 26 Sep 26",
+   "printedClosingBalance": 538.25,
+   "transactions": [
+    {
+     "date": "2026-06-21",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-06-23",
+     "description": "SP SHOP PLYMOUTH",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-06-26",
+     "description": "SP YPRESETS.COM BRUNSWICK WEST",
+     "amount": 55.67,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-06-27",
+     "description": "TST* LA BIRRA BAR - DOR DORAL",
+     "amount": 19.22,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-06-27",
+     "description": "TST* LA BIRRA BAR - DOR DORAL",
+     "amount": 0.62,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-06-27",
+     "description": "MIA CAFE VERSAILLES SA MIAMI",
+     "amount": 2.74,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    }
+   ]
+  },
+  {
+   "period": "2026-06-29 to 2026-07-28",
+   "source": "Amex PDF statement pages 2-3 of 5, screenshots 26 Sep 26 (page 1 summary + pages 4-5 not captured)",
+   "printedClosingBalance": null,
+   "derivedClosingBalance": 3025.98,
+   "printedTotals": {
+    "newSpend": 3416.45
+   },
+   "verified": "transcribed rows sum to printed total",
+   "note": "GAP: opening 538.25 + spend 3,416.45 = 3,954.70, but Aug opening (from Aug printed closing) is 3,025.98 -> 928.72 of payments/credits in this period are on pages not captured.",
+   "transactions": [
+    {
+     "date": "2026-06-28",
+     "description": "QATAR DUTY FREE HAMAD I DOHA",
+     "amount": 264.58,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-06-29",
+     "foreignAmount": 1235.0,
+     "foreignCurrency": "QAR",
+     "fxRate": 4.8073,
+     "nonSterlingFee": 7.68
+    },
+    {
+     "date": "2026-06-29",
+     "description": "AMAZON (MARKET PLACE-EC DUBAI",
+     "amount": 84.9,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-06-30",
+     "foreignAmount": 400.4,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8568,
+     "nonSterlingFee": 2.46
+    },
+    {
+     "date": "2026-06-29",
+     "description": "ENOC LINK LLC DUBAI",
+     "amount": 40.99,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-06-30",
+     "foreignAmount": 193.27,
+     "foreignCurrency": "AED",
+     "fxRate": 4.856,
+     "nonSterlingFee": 1.19
+    },
+    {
+     "date": "2026-07-16",
+     "description": "TICKETMASTER MIDDLE EAS DUBAI",
+     "amount": 1041.65,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-19",
+     "foreignAmount": 4995.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.9386,
+     "nonSterlingFee": 30.24
+    },
+    {
+     "date": "2026-07-17",
+     "description": "KINGS COLLEGE HOSPITAL DUBAI",
+     "amount": 158.02,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-19",
+     "foreignAmount": 757.75,
+     "foreignCurrency": "AED",
+     "fxRate": 4.9387,
+     "nonSterlingFee": 4.59
+    },
+    {
+     "date": "2026-07-20",
+     "description": "SP SHOP PLYMOUTH",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-20"
+    },
+    {
+     "date": "2026-07-22",
+     "description": "UPWORK DUBLIN",
+     "amount": 24.7,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-22"
+    },
+    {
+     "date": "2026-07-23",
+     "description": "VIRGIN E- COMMERCE (AUT DUBAI",
+     "amount": 189.2,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 899.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8935,
+     "nonSterlingFee": 5.49
+    },
+    {
+     "date": "2026-07-23",
+     "description": "CPAY-NOW-AED DUBAI DUBA DUBAI",
+     "amount": 9.76,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 46.37,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8913,
+     "nonSterlingFee": 0.28
+    },
+    {
+     "date": "2026-07-24",
+     "description": "RASOOL KHOORY - GALLERI ABU DHABI",
+     "amount": 22.5,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 106.95,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8947,
+     "nonSterlingFee": 0.65
+    },
+    {
+     "date": "2026-07-24",
+     "description": "JUMEIRAH GOLF ESTATE DU DUBAI",
+     "amount": 49.67,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 236.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8932,
+     "nonSterlingFee": 1.44
+    },
+    {
+     "date": "2026-07-24",
+     "description": "LADUREE -DUBAI MALL 2 D DUBAI",
+     "amount": 37.67,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 179.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8933,
+     "nonSterlingFee": 1.09
+    },
+    {
+     "date": "2026-07-24",
+     "description": "FRONT OFFICE - ROSEWOOD ABU DHABI",
+     "amount": 19.36,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 92.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8936,
+     "nonSterlingFee": 0.56
+    },
+    {
+     "date": "2026-07-24",
+     "description": "FRONT OFFICE - ROSEWOOD ABU DHABI",
+     "amount": 128.8,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 612.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8936,
+     "nonSterlingFee": 3.74
+    },
+    {
+     "date": "2026-07-24",
+     "description": "SPINNEYS -AL MARYAH CEN ABU DHABI",
+     "amount": 15.31,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 72.75,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8924,
+     "nonSterlingFee": 0.44
+    },
+    {
+     "date": "2026-07-25",
+     "description": "PAUL DUBAI ABU DHABI DUBAI",
+     "amount": 5.46,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 26.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.9056,
+     "nonSterlingFee": 0.16
+    },
+    {
+     "date": "2026-07-25",
+     "description": "NOVIKOV - GALLERIA MALL ABU DHABI",
+     "amount": 153.0,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 727.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8936,
+     "nonSterlingFee": 4.44
+    },
+    {
+     "date": "2026-07-25",
+     "description": "RASOOL KHOORY - GALLERI ABU DHABI",
+     "amount": 18.15,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 86.25,
+     "foreignCurrency": "AED",
+     "fxRate": 4.895,
+     "nonSterlingFee": 0.53
+    },
+    {
+     "date": "2026-07-25",
+     "description": "ETIHAD ARENA - BARS ABU ABU DHABI",
+     "amount": 8.63,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 41.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8926,
+     "nonSterlingFee": 0.25
+    },
+    {
+     "date": "2026-07-25",
+     "description": "SPINNEYS -AL MARYAH CEN ABU DHABI",
+     "amount": 24.94,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-26",
+     "foreignAmount": 118.5,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8926,
+     "nonSterlingFee": 0.72
+    },
+    {
+     "date": "2026-07-25",
+     "description": "FRONT OFFICE - ROSEWOOD ABU DHABI",
+     "amount": 305.17,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-27",
+     "foreignAmount": 1450.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8935,
+     "nonSterlingFee": 8.86
+    },
+    {
+     "date": "2026-07-26",
+     "description": "ROSEWOOD HOTEL ABU DHAB ABU DHABI",
+     "amount": 353.99,
+     "account": "Amex Gold",
+     "currency": "GBP",
+     "processDate": "2026-07-27",
+     "foreignAmount": 1682.0,
+     "foreignCurrency": "AED",
+     "fxRate": 4.8936,
+     "nonSterlingFee": 10.28
+    }
+   ]
+  },
+  {
+   "period": "2026-07-29 to 2026-08-28",
+   "source": "Amex app screenshot 26 Sep 26",
+   "printedClosingBalance": 460.0,
+   "transactions": [
+    {
+     "date": "2026-07-31",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -3025.98,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-08-20",
+     "description": "SP SHOP PLYMOUTH",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    }
+   ]
+  },
+  {
+   "period": "2026-08-29 to 2026-09-26 (open, 'Present')",
+   "source": "Amex app screenshot 26 Sep 26 15:35",
+   "printedClosingBalance": null,
+   "currentBalanceAsAt": "2026-09-26",
+   "currentBalance": 549.88,
+   "transactions": [
+    {
+     "date": "2026-09-05",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-09-20",
+     "description": "SP SHOP PLYMOUTH",
+     "amount": 460.0,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    },
+    {
+     "date": "2026-09-22",
+     "description": "DU BILL PAYMENT - APPLE DUBAI",
+     "amount": 89.88,
+     "account": "Amex Gold",
+     "currency": "GBP"
+    }
+   ]
+  }
+ ]
+}
