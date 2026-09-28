@@ -178,18 +178,20 @@ function renderBand(key, label) {
 }
 function taskRow(t) {
   const today = todayStr(), age = t.bandSince ? daysBetween(t.bandSince, today) : 0;
-  const row = document.createElement('div'); row.className = `row task${state.open.has(t.id) ? ' open' : ''}${state.acts.has(t.id) ? ' acts-open' : ''}`; row.dataset.id = t.id;
+  const row = document.createElement('div'); row.className = `row task${state.open.has(t.id) ? ' open' : ''}${state.acts.has(t.id) ? ' acts-open' : ''}`; row.dataset.id = t.id; row.dataset.key = t.id;
   const moves = BANDS.filter(b => b[0] !== t.band).map(b => `<button class="act" data-move="${b[0]}">${b[1]}</button>`).join('');
   row.innerHTML = `
     <div class="main">
       <button class="tick" aria-label="Done"><span></span></button>
       <div class="title"><span class="dot" style="background:${AREA_COLOUR[t.area] || '#8FA898'};margin-right:8px;vertical-align:1px"></span>${esc(t.title)}</div>
+      ${t.score ? `<span class="badge score">${'◆'.repeat(t.score)}</span>` : ''}
       ${age >= 1 ? `<span class="badge">${age}d</span>` : ''}
       ${t.due ? `<span class="badge due">${shortDate(t.due)}</span>` : ''}
       <button class="more" aria-label="More">⋯</button>
     </div>
     <div class="acts">${moves}<button class="act date" data-pick>Date</button><button class="act kill" data-kill>Delete</button></div>
     <div class="detail">
+      <div class="scorerow"><span>Importance</span>${[1, 2, 3, 4, 5].map(n => `<button class="sc${(t.score || 0) >= n ? ' on' : ''}" data-sc="${n}">◆</button>`).join('')}</div>
       <textarea data-notes placeholder="Notes">${esc(t.notes)}</textarea>
       <div class="meta">
         <select data-area>${AREAS.map(a => `<option${a === t.area ? ' selected' : ''}>${a}</option>`).join('')}</select>
@@ -201,14 +203,16 @@ function taskRow(t) {
 }
 function buyerRow(b) {
   const today = todayStr(), late = daysBetween(b.nextTouch, today);
-  const row = document.createElement('div'); row.className = `row buyer${state.open.has('b:' + b.id) ? ' open' : ''}`; row.dataset.buyer = b.id;
+  const row = document.createElement('div'); row.className = `row buyer${state.open.has('b:' + b.id) ? ' open' : ''}${state.acts.has('b:' + b.id) ? ' acts-open' : ''}`; row.dataset.buyer = b.id; row.dataset.key = 'b:' + b.id;
   row.innerHTML = `
     <div class="main">
       <button class="tick" aria-label="Called"><span></span></button>
       <div class="title">Call ${esc(b.buyer)}${b.touchReason ? ' - ' + esc(b.touchReason) : ''}</div>
       ${late >= 1 ? `<span class="badge">${late}d</span>` : ''}
       <span class="badge due">${b.score ? '★' + b.score : ''}</span>
+      <button class="more" aria-label="More">⋯</button>
     </div>
+    <div class="acts"><button class="act" data-push="1">Tomorrow</button><button class="act" data-push="3">3 days</button><button class="act" data-push="7">Next week</button><button class="act kill" data-drop>Remove</button></div>
     <div class="detail">
       <div>${b.phone ? `<a href="tel:${esc(b.phone.replace(/\s+/g, ''))}">${esc(b.phone)}</a> · ` : ''}${esc(b.stage)} · score ${esc(b.score || '-')}</div>
       ${b.nextStep ? `<div style="margin-top:6px">${esc(b.nextStep)}</div>` : ''}
@@ -265,7 +269,7 @@ function addTask(title) {
     d.tasks.filter(t => t.status === 'active' && t.band === 'today').sort((a, b) => ord(a) - ord(b)).forEach((t, i) => t.order = i + 1); }, 'add ' + title.slice(0, 40));
 }
 let toastTimer = null;
-function toast(text, undo) { $('toast-text').textContent = text; state.undo = undo; $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => { $('toast').classList.remove('show'); state.undo = null; }, 5000); }
+function toast(text, undo) { $('toast-text').textContent = text; state.undo = undo || null; $('toast-undo').style.display = undo ? '' : 'none'; $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => { $('toast').classList.remove('show'); state.undo = null; }, 5000); }
 function openGate() { $('gate').classList.add('show'); sync('token needed'); }
 
 /* ---------- wiring ---------- */
@@ -285,7 +289,10 @@ function wire() {
     const id = row.dataset.id, bid = row.dataset.buyer;
     if (e.target.closest('[data-undone]')) { mutate('tasks', d => { const t = d.tasks.find(x => x.id === id); if (t) { t.status = 'active'; t.completed = null; } }, 'undone'); return; }
     if (e.target.closest('.tick')) { if (bid) tickBuyer(row, bid); else tickTask(row, id); return; }
-    if (e.target.closest('.more')) { toggleActs(id); return; }
+    if (e.target.closest('.more')) { toggleActs(row.dataset.key); return; }
+    if (e.target.closest('[data-sc]')) { const n = +e.target.closest('[data-sc]').dataset.sc; mutate('tasks', d => { const t = d.tasks.find(x => x.id === id); if (t) t.score = t.score === n ? null : n; }, 'score'); return; }
+    if (e.target.closest('[data-push]')) { const n = +e.target.closest('[data-push]').dataset.push, to = addDays(todayStr(), n); state.acts.clear(); row.classList.add('fade'); setTimeout(() => { mutate('buyers', d => { const b = d.find(x => x.id === bid); if (b) b.nextTouch = to; }, 'push call'); toast('Call moved to ' + shortDate(to)); }, 320); return; }
+    if (e.target.closest('[data-drop]')) { const was = state.buyers.find(x => x.id === bid); const prev = was && was.nextTouch; state.acts.clear(); row.classList.add('fade'); setTimeout(() => { mutate('buyers', d => { const b = d.find(x => x.id === bid); if (b) b.nextTouch = null; }, 'call removed'); toast('Removed from calls', () => mutate('buyers', d => { const b = d.find(x => x.id === bid); if (b) b.nextTouch = prev; }, 'undo remove')); }, 320); return; }
     if (e.target.closest('[data-move]')) { moveTask(id, e.target.closest('[data-move]').dataset.move); return; }
     if (e.target.closest('[data-kill]')) { row.classList.add('fade'); setTimeout(() => { mutate('tasks', d => { const t = d.tasks.find(x => x.id === id); if (t) { t.status = 'killed'; t.completed = todayStr(); } }, 'delete'); toast('Deleted', () => mutate('tasks', d => { const t = d.tasks.find(x => x.id === id); if (t) { t.status = 'active'; t.completed = null; } }, 'undo delete')); }, 320); return; }
     if (e.target.closest('[data-pick]')) { state.acts.delete(id); state.open.add(id); render(); const inp = bands.querySelector(`.row[data-id="${id}"] [data-due]`); if (inp && inp.showPicker) inp.showPicker(); return; }
@@ -306,10 +313,10 @@ function wire() {
 
   // swipe on a row (phone) = show the move chips. Same chips the ⋯ button shows on desk.
   let sx = 0, sy = 0, srow = null;
-  bands.addEventListener('touchstart', e => { const m = e.target.closest('.main'); srow = m ? m.parentElement : null; if (!srow || !srow.dataset.id) { srow = null; return; } sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
-  bands.addEventListener('touchend', e => { if (!srow) return; const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; if (Math.abs(dx) > 48 && Math.abs(dy) < 40) toggleActs(srow.dataset.id); srow = null; }, { passive: true });
+  bands.addEventListener('touchstart', e => { const m = e.target.closest('.main'); srow = m ? m.parentElement : null; if (!srow || !srow.dataset.key) { srow = null; return; } sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+  bands.addEventListener('touchend', e => { if (!srow) return; const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; if (Math.abs(dx) > 48 && Math.abs(dy) < 40) toggleActs(srow.dataset.key); srow = null; }, { passive: true });
 }
-function toggleActs(id) { if (state.acts.has(id)) state.acts.delete(id); else { state.acts.clear(); state.acts.add(id); } document.querySelectorAll('.row.task').forEach(r => r.classList.toggle('acts-open', state.acts.has(r.dataset.id))); }
+function toggleActs(key) { if (state.acts.has(key)) state.acts.delete(key); else { state.acts.clear(); state.acts.add(key); } document.querySelectorAll('.row').forEach(r => r.classList.toggle('acts-open', state.acts.has(r.dataset.key))); }
 
 wire();
 if (!getToken()) openGate();
