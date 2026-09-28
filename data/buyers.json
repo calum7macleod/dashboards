@@ -4226,8 +4226,8 @@
     "score": 3,
     "heat": 3,
     "stage": "Qualified",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after replied 22 Sep - Wants Naseem at OP - Wadeem doesn't work",
     "needSummary": "Wants Naseem at OP - Wadeem doesn't work",
     "notes": "22 Sep: Replied - Wants Naseem at OP - Wadeem doesn't work | 2026-09-16: Meta lead, Modon Video 2 Launch, form 'Modon New - UAE', owns UAE property: yes, form text: +962786924903",
@@ -4236,7 +4236,14 @@
     "id": "fares-b-m15",
     "order": 103,
     "maxScore": 3,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-22",
@@ -4341,8 +4348,8 @@
     "score": 3,
     "heat": 3,
     "stage": "New",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after answered 22 Sep - Owned in JGE before - likes it",
     "needSummary": "Owned in JGE before - likes it",
     "notes": "22 Sep: Answered - Owned in JGE before - likes it | 2026-09-13: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: no, form text: 00971509504949",
@@ -4351,7 +4358,14 @@
     "id": "murtaza-gilani-m25",
     "order": 106,
     "maxScore": 3,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-22",
