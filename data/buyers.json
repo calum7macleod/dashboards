@@ -1404,8 +1404,8 @@
     "score": 2,
     "heat": 2,
     "stage": "Viewing",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 22 Sep - Slowing down",
     "needSummary": "4 or 5 bed, Lagoons - viewing Sat 12 Sep, time TBC",
     "maxScore": 3,
@@ -1415,7 +1415,14 @@
     "source": "Call",
     "id": "viral-0909",
     "order": 30,
-    "notes": "22 Sep: No answer, WA sent - Slowing down | 2026-09-09: new, 4 or 5 bed, wants to view Saturday 12 Sep - no time arranged yet."
+    "notes": "22 Sep: No answer, WA sent - Slowing down | 2026-09-09: new, 4 or 5 bed, wants to view Saturday 12 Sep - no time arranged yet.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-09",
@@ -3448,8 +3455,8 @@
     "order": 1020,
     "stage": "New",
     "heat": 2,
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep",
     "needSummary": "Marsa Al Saadiyat interest, guide sent, requirements TBC",
     "snoozedUntil": null,
@@ -3458,6 +3465,11 @@
         "date": "2026-08-21",
         "channel": "wa",
         "summary": "IG->WA: sent Marsa Al Saadiyat guide PDF; he'll come back with questions; Calum asked if he owns there already"
+      },
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
       }
     ]
   },
@@ -3883,15 +3895,22 @@
     "score": 2,
     "heat": 2,
     "stage": "New",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep",
     "needSummary": "Instagram lead - not yet qualified",
     "notes": "22 Sep: WA only | 2026-09-09: early-days Instagram DM lead, not qualified. Works at Fluxo Group (FX / international payments). First content-sourced lead logged.",
     "id": "chirag-0909",
     "order": 1021,
     "maxScore": 2,
-    "maxScoreReason": "Unqualified DM lead."
+    "maxScoreReason": "Unqualified DM lead.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-11",
@@ -4183,8 +4202,8 @@
     "score": 2,
     "heat": 2,
     "stage": "New",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 22 Sep",
     "needSummary": "Modon ad lead - spec and budget TBC",
     "notes": "22 Sep: No answer, WA sent | 2026-09-20: Meta lead, Modon Video 1, form 'Modon New - London & Glasgow', owns UAE property: no, form text: Email",
@@ -4193,7 +4212,14 @@
     "id": "annabel-edwards-daem-m03",
     "order": 101,
     "maxScore": 2,
-    "maxScoreReason": "Set on call 22 Sep - default 2, no score given"
+    "maxScoreReason": "Set on call 22 Sep - default 2, no score given",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-22",
