@@ -4795,8 +4795,8 @@
     "score": 2,
     "heat": 2,
     "stage": "Qualified",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 22 Sep - Owns in Dubai already",
     "needSummary": "Owns in Dubai already",
     "notes": "22 Sep: No answer, WA sent - Owns in Dubai already | 2026-08-30: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: yes, form text: 0521191266",
@@ -4805,7 +4805,14 @@
     "id": "mazen-abdallah-m51",
     "order": 115,
     "maxScore": 2,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-23",
