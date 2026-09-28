@@ -1,5 +1,13 @@
 # W&Co email audit - accounts on calum.macleod@whiteandcogroup.com
-Built by PA from Gmail, Mon 28 Sep 2026 (E4). Address dies Thu 1 Oct. Tick as moved.
+Built by PA from Gmail, Mon 28 Sep 2026 (E4). Address dies Thu 1 Oct.
+
+## CALUM'S DECISION 28 Sep - only three need moving
+- [x] Reelly - done 28 Sep
+- [x] Fitt Meals - done 28 Sep
+- [ ] Modon (own purchase, customer portal) - email sent 28 Sep, awaiting Modon
+- [ ] Tell ESG (Ashleigh) the new address so J444 / K217 deal threads keep reaching Calum after Thu
+Everything below: no action needed - company licences, dead subscriptions or already on personal email.
+
 
 ## 1. Move before Thursday - money, identity, live deals
 - [ ] Google account (accounts.google.com) - the Workspace identity itself. Calendar, Drive, Google Pay all hang off it. Export calendar + Drive first.
