@@ -3703,8 +3703,8 @@
     "order": 1020,
     "stage": "New",
     "heat": 3,
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep - Trying to sort a call",
     "needSummary": "UK investor open to UAE, family in Dubai, brief/budget TBC",
     "snoozedUntil": null,
@@ -3713,6 +3713,11 @@
         "date": "2026-08-24",
         "channel": "ig",
         "summary": "Laura handover: UK investor, open to UAE, family in Dubai, agreed to receive insights"
+      },
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
       }
     ]
   },
@@ -4025,15 +4030,22 @@
     "score": 3,
     "heat": 3,
     "stage": "Viewed",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep - Sent options",
     "needSummary": "5-bed, probably Portofino; needs qualifying",
     "notes": "22 Sep: WA only - Sent options | 2026-09-19 viewing day: 5-bed - exact wants not nailed down yet. Send Portofino 5-beds and qualify on the follow-up Calum: 'all good buyers and sound people, they'll stick with me - it's about getting them options'. Plaud transcript from today to add detail.",
     "id": "marco-1909",
     "order": 1026,
     "maxScore": 3,
-    "maxScoreReason": "Met in person, engaged, brief captured; budget only on Nico."
+    "maxScoreReason": "Met in person, engaged, brief captured; budget only on Nico.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-19",
@@ -4058,15 +4070,22 @@
     "score": 3,
     "heat": 3,
     "stage": "Viewed",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep - Wants a kickback from the mortgage",
     "needSummary": "3-bed Costa Brava; send options, gauge",
     "notes": "22 Sep: WA only - Wants a kickback from the mortgage | 2026-09-19 viewing day: 3-bed Costa Brava options - send and see where he's at Calum: 'all good buyers and sound people, they'll stick with me - it's about getting them options'. Plaud transcript from today to add detail.",
     "id": "hasan-1909",
     "order": 1027,
     "maxScore": 3,
-    "maxScoreReason": "Met in person, engaged, brief captured; budget only on Nico."
+    "maxScoreReason": "Met in person, engaged, brief captured; budget only on Nico.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-22",
