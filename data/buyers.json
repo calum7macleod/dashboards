@@ -309,15 +309,22 @@
     "score": 3,
     "heat": 4,
     "stage": "Qualified",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after answered 23 Sep - Was interested, gone a bit quiet",
     "needSummary": "JGE ad lead - very hot per Calum. Budget and spec TBC.",
     "notes": "23 Sep: Answered - Was interested, gone a bit quiet | 22 Sep: No answer, WA sent | 2026-09-14: fourth JGE Meta ad lead. Calum: 'seems very hot for a JGE - stay on'. Budget, beds and timing to capture on the next call.",
     "id": "lamya-1409",
     "order": 2,
     "maxScore": 4,
-    "maxScoreReason": "Calum reads her as very hot; no budget or spec captured yet. 5 once there's a number and a date."
+    "maxScoreReason": "Calum reads her as very hot; no budget or spec captured yet. 5 once there's a number and a date.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-07",
