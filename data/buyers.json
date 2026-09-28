@@ -4418,8 +4418,8 @@
     "score": 4,
     "heat": 4,
     "stage": "Qualified",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Chat open 23 Sep - interested in Abu Dhabi; qualify budget, timeline, product",
     "needSummary": "Interested in Abu Dhabi, not JGE - came in on the JGE ad",
     "notes": "23 Sep: Replied to WA - interested in Abu Dhabi, chat open | 22 Sep: Answered - Interested in Abu Dhabi, not JGE - came in on the JGE ad | 2026-09-12: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: no, form text: RJNewman1969@gmail.com",
@@ -4428,7 +4428,14 @@
     "id": "rich-newman-richn-m27",
     "order": 109,
     "maxScore": 4,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-23",
