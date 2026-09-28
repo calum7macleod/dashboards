@@ -4267,8 +4267,8 @@
     "score": 4,
     "heat": 4,
     "stage": "Qualified",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after answered 22 Sep - 80M budget (as said - confirm) - Dubai Hills or JGE, ready, 7 family members",
     "needSummary": "80M budget (as said - confirm) - Dubai Hills or JGE, ready, 7 family members",
     "notes": "22 Sep: Answered - 80M budget (as said - confirm) - Dubai Hills or JGE, ready, 7 family members | 2026-09-13: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: yes, form text: Hello I am interested to a luxury house",
@@ -4277,7 +4277,14 @@
     "id": "zafirah-el-k-m23",
     "order": 105,
     "maxScore": 4,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-22",
