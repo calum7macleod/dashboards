@@ -60,8 +60,8 @@
     "score": 4,
     "heat": 4,
     "stage": "Viewing",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep",
     "needSummary": "Hudayriyat buyer, UAE number, 5 media/docs already exchanged on WhatsApp. Spec and budget TBC.",
     "notes": "22 Sep: WA only | 2026-09-21: added from WhatsApp contact card 'Pat Hudayriyat Buyer' (Offplan list). Calum: same as Jake - 'put in good' - scored 4. Existing chat has 5 media/docs - history to capture on intake.",
@@ -70,7 +70,14 @@
     "id": "pat-hudayriyat-2109",
     "order": 5,
     "maxScore": 3,
-    "maxScoreReason": "Named Hudayriyat intent and prior exchange, but no budget, spec or timeline logged yet."
+    "maxScoreReason": "Named Hudayriyat intent and prior exchange, but no budget, spec or timeline logged yet.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-07-27",
@@ -371,15 +378,22 @@
     "score": 4,
     "heat": 4,
     "stage": "Viewing",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 22 Sep - Very interested in Samana Business Hub, also looking at Emaar. Meeting a lot of agents - keep on him",
     "needSummary": "Off-plan investor. Already 3.1M into a DAMAC Islands 4-bed (not great). Was about to spend ~4M on a Business Bay 1-bed. Modon mortgage model is the play.",
     "notes": "22 Sep: No answer, WA sent - Very interested in Samana Business Hub, also looking at Emaar. Meeting a lot of agents - keep on him | 2026-09-11: Jason's friend. Has already spent 3.1M on a DAMAC Islands 4-bed off-plan (Calum: 'not great'). Was looking at ~4M for a 1-bed in Business Bay. Calum thinks the new Modon 5/20/75 model on Hudayriyat suits him far better. Jason to make the intro; contact details to follow. Score 4 now, 'sit right on top of him'.",
     "id": "jason-friend-1109",
     "order": 7,
     "maxScore": 4,
-    "maxScoreReason": "Proven off-plan spender with ~4M ready, no direct contact yet. 5 once the intro's made and he's engaged."
+    "maxScoreReason": "Proven off-plan spender with ~4M ready, no direct contact yet. 5 once the intro's made and he's engaged.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-08",
