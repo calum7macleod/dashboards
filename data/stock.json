@@ -192,7 +192,8 @@
   "order": 7,
   "id": "sameer-m107",
   "stage": "Qualified",
-  "phone": "+91 89287 80621"
+  "phone": "+91 89287 80621",
+  "carry": "Calum"
  },
  {
   "date": "2026-04-06",
@@ -873,7 +874,8 @@
   "order": 32,
   "id": "maklai-bl358",
   "stage": "New",
-  "phone": "+971 50 948 9005"
+  "phone": "+971 50 948 9005",
+  "carry": "Calum"
  },
  {
   "date": "2026-09-28",
@@ -901,6 +903,36 @@
   "order": 33,
   "id": "mohammed-kyke-u403",
   "stage": "New",
-  "phone": "+971 52 167 2921"
+  "phone": "+971 52 167 2921",
+  "carry": "Calum"
+ },
+ {
+  "date": "2026-09-28",
+  "status": "Active",
+  "seller": "TBC",
+  "source": "Inbound",
+  "rl": null,
+  "cluster": "Santorini",
+  "unit": "F211",
+  "matchedBuyer": "",
+  "beds": "",
+  "note": "",
+  "finance": "",
+  "price": 0,
+  "needed": 0,
+  "diff": 0,
+  "fees": "",
+  "responsiveness": null,
+  "relationship": null,
+  "unitDesire": null,
+  "negotiation": null,
+  "feeling": null,
+  "score": null,
+  "notes": "28 Sep: Added by Calum - for Lewis (confirm). Seller, price TBC.",
+  "order": 34,
+  "id": "f211-santorini",
+  "stage": "New",
+  "phone": null,
+  "carry": "Lewis"
  }
 ]
