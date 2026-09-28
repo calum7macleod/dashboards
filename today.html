@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Today</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Today">
+<meta name="theme-color" content="#152A1F">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/today-180.png">
+<link rel="icon" href="icons/today-180.png">
+<style>
+  :root { --deep:#152A1F; --bg:#1E3D2F; --gold:#C9A84C; --gold2:#E8C96B; --cream:#F5EDE0; --muted:#8FA898; --line:#2E5A40;
+          --serif:'Palatino Linotype',Palatino,Georgia,serif; --sans:Calibri,'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;
+          --sat:env(safe-area-inset-top,0px); --sab:env(safe-area-inset-bottom,0px); }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { margin:0; background:var(--deep); color:var(--cream); font-family:var(--sans); font-size:17px; -webkit-text-size-adjust:100%; }
+  body { padding:calc(var(--sat) + 10px) 14px calc(var(--sab) + 40px); max-width:720px; margin:0 auto; }
+  .eyebrow { font-family:var(--sans); font-size:11px; letter-spacing:.25em; text-transform:uppercase; color:var(--gold); }
+  .top { display:flex; align-items:baseline; justify-content:space-between; gap:12px; padding:6px 0 10px; }
+  .top h1 { font-family:var(--serif); font-weight:400; font-size:30px; margin:0; line-height:1.05; }
+  .top .date { color:var(--muted); font-size:14px; }
+  .top a { color:var(--muted); font-size:12px; text-decoration:none; letter-spacing:.1em; text-transform:uppercase; }
+  .sync { font-size:11px; color:var(--muted); letter-spacing:.08em; min-height:14px; }
+
+  .addwrap { display:flex; gap:8px; align-items:center; margin:8px 0 6px; }
+  .add { flex:1; height:48px; background:var(--bg); border:1px solid var(--line); border-radius:12px; color:var(--cream); font:inherit; padding:0 14px; outline:none; }
+  .add:focus { border-color:var(--gold); }
+  .add::placeholder { color:var(--muted); }
+  .areapill { height:48px; padding:0 12px; border-radius:12px; border:1px solid var(--line); background:var(--bg); color:var(--gold2); font:inherit; font-size:13px; white-space:nowrap; cursor:pointer; display:flex; align-items:center; gap:6px; }
+  .chips { display:flex; gap:6px; overflow-x:auto; padding:2px 0 10px; scrollbar-width:none; }
+  .chips::-webkit-scrollbar { display:none; }
+  .chip { flex:0 0 auto; height:30px; padding:0 12px; border-radius:15px; border:1px solid var(--line); background:transparent; color:var(--muted); font:inherit; font-size:13px; cursor:pointer; display:flex; align-items:center; gap:6px; }
+  .chip.on { border-color:var(--gold); color:var(--cream); }
+  .dot { width:8px; height:8px; border-radius:50%; display:inline-block; flex:0 0 8px; }
+
+  .band { margin-top:14px; }
+  .bandhead { display:flex; align-items:center; gap:10px; padding:8px 0; cursor:pointer; user-select:none; border-top:1px solid var(--line); }
+  .band.today .bandhead { border-top:0; }
+  .bandhead .eyebrow { flex:1; }
+  .bandhead .count { color:var(--muted); font-size:13px; }
+  .bandhead .car { color:var(--muted); font-size:12px; transition:transform .15s; }
+  .band.open .bandhead .car { transform:rotate(90deg); }
+  .list { display:none; }
+  .band.open .list { display:block; }
+  .rule { display:flex; align-items:center; gap:10px; padding:6px 0 2px; }
+  .rule .eyebrow { font-size:10px; color:var(--muted); }
+  .rule i { flex:1; height:1px; background:var(--line); }
+
+  .row { position:relative; border-bottom:1px solid rgba(46,90,64,.55); }
+  .row .main { display:flex; align-items:center; gap:10px; min-height:52px; padding:6px 0; touch-action:pan-y; }
+  .tick { width:44px; height:44px; flex:0 0 44px; display:flex; align-items:center; justify-content:center; background:none; border:0; cursor:pointer; padding:0; }
+  .tick span { width:24px; height:24px; border-radius:50%; border:1.5px solid var(--gold); display:block; }
+  .tick:active span, .row.done .tick span { background:var(--gold); }
+  .title { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; cursor:pointer; line-height:1.25; }
+  .row.buyer .title { font-family:var(--serif); }
+  .badge { color:var(--muted); font-size:12px; white-space:nowrap; }
+  .badge.due { color:var(--gold2); }
+  .more { width:36px; height:44px; flex:0 0 36px; background:none; border:0; color:var(--muted); font-size:20px; cursor:pointer; display:none; padding:0; }
+  @media (hover:hover) { .row:hover .more { display:block; } }
+  .acts { display:none; gap:6px; flex-wrap:wrap; padding:0 0 10px 54px; }
+  .row.acts-open .acts { display:flex; }
+  .act { height:34px; padding:0 12px; border-radius:17px; border:1px solid var(--line); background:var(--bg); color:var(--cream); font:inherit; font-size:13px; cursor:pointer; }
+  .act.kill { color:#e0a0a0; margin-left:auto; }
+  .act.date { color:var(--gold2); }
+  .detail { display:none; padding:0 0 12px 54px; font-size:14px; color:var(--muted); }
+  .row.open .detail { display:block; }
+  .detail textarea { width:100%; min-height:64px; background:var(--bg); border:1px solid var(--line); border-radius:10px; color:var(--cream); font:inherit; font-size:14px; padding:8px 10px; resize:vertical; outline:none; }
+  .detail .meta { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:8px; }
+  .detail select, .detail input[type=date] { background:var(--bg); border:1px solid var(--line); border-radius:8px; color:var(--cream); font:inherit; font-size:13px; padding:6px 8px; outline:none; }
+  .detail a { color:var(--gold2); text-decoration:none; }
+  .row.fade { opacity:0; transition:opacity .35s; }
+  .sortable-ghost { opacity:.35; }
+  .sortable-chosen .main { background:rgba(201,168,76,.08); }
+  .empty { color:var(--muted); font-size:14px; padding:10px 0 4px; }
+
+  .toast { position:fixed; left:50%; bottom:calc(var(--sab) + 18px); transform:translateX(-50%); background:var(--bg); border:1px solid var(--gold); color:var(--cream); padding:10px 14px; border-radius:12px; font-size:14px; display:none; align-items:center; gap:14px; z-index:10; max-width:92vw; }
+  .toast.show { display:flex; }
+  .toast button { background:none; border:0; color:var(--gold2); font:inherit; font-weight:700; cursor:pointer; letter-spacing:.06em; }
+
+  .gate { display:none; background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:14px; margin:12px 0; }
+  .gate.show { display:block; }
+  .gate input { width:100%; height:44px; background:var(--deep); border:1px solid var(--line); border-radius:10px; color:var(--cream); font:inherit; padding:0 12px; margin:8px 0; outline:none; }
+  .gate button { height:40px; padding:0 16px; border-radius:10px; border:1px solid var(--gold); background:transparent; color:var(--gold2); font:inherit; cursor:pointer; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div><div class="eyebrow">◆ &nbsp;Today</div><h1 id="h-date">&nbsp;</h1></div>
+    <div style="text-align:right"><a href="tasks.html">Full view</a><div class="sync" id="sync">&nbsp;</div></div>
+  </div>
+
+  <div class="gate" id="gate">
+    <div class="eyebrow">Token</div>
+    <div style="font-size:14px;color:var(--muted);margin-top:6px">Paste the GitHub token once. It stays on this device only.</div>
+    <input type="password" id="gate-token" placeholder="github_pat_..." autocomplete="off">
+    <button id="gate-save">Save</button>
+  </div>
+
+  <div class="addwrap">
+    <input class="add" id="add" placeholder="Add to today and press enter" autocomplete="off" enterkeyhint="done">
+    <button class="areapill" id="areapill" title="Area for new tasks - tap to change"><span class="dot"></span><span></span></button>
+  </div>
+  <div class="chips" id="chips"></div>
+
+  <div id="bands"></div>
+
+  <div class="toast" id="toast"><span id="toast-text"></span><button id="toast-undo">UNDO</button></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+  <script src="js/today.js?v=1"></script>
+</body>
+</html>
