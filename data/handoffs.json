@@ -326,5 +326,13 @@
   "to": "PA",
   "item": "Today page shipped 28 Sep (today.html). tasks.json changed: 244 done tasks moved to data/archive/tasks-done-2026.json; 35 live tasks now carry band (today|week|month|year) + bandSince. Area 'Tasks' retired: E1/E3/E4/E5/E6/Sunday AM -> Personal, F1 + 'Sort the task dashboard' -> Real Estate. When you add a task: set band + bandSince (today's date), leave priority/difficulty as they are (page ignores them). Ticking a call on the page writes the buyer: lastContact, a touch {date,channel:'call',summary}, nextTouch +3d - reconcile at checkpoint. 44 buyers had nextTouch <= today on the 23 Sep copy - the page shows the top 5 by score.",
   "status": "open"
+ },
+ {
+  "id": "h0042",
+  "date": "2026-09-28",
+  "from": "PA",
+  "to": "Manager",
+  "item": "Sellers dashboard: stock records now carry carry (Calum|Lewis|Both), keepAfterMove (true/false), priceNet (true = net to seller), role ('offplan-buyer' = owner to keep as a future off-plan buyer). Calum wants keepAfterMove obvious - a badge on the card and a filter, plus a Calum / Lewis / Both split view. Also show priceNet next to the price.",
+  "status": "open"
  }
 ]
