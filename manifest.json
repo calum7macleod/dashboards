@@ -1,0 +1,13 @@
+{
+  "name": "Today",
+  "short_name": "Today",
+  "start_url": "today.html",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#152A1F",
+  "theme_color": "#152A1F",
+  "icons": [
+    { "src": "icons/today-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icons/today-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
