@@ -318,5 +318,13 @@
   "to": "PA",
   "item": "From 1 Oct: Finance runs a Sunday weekly close. Please put 'Sunday 30 min: weekly statement screenshots -> Uploader, then Finance close' in Calum's Sunday planning block, and 'Freeze credit cards in apps (ADIB CC + all UK) for Oct-Nov' as a task due 1 Oct. Details: data/finance/cash-plan.md 'OCTOBER LOCKDOWN'.",
   "status": "open"
+ },
+ {
+  "id": "h0041",
+  "date": "2026-09-28",
+  "from": "manager",
+  "to": "PA",
+  "item": "Today page shipped 28 Sep (today.html). tasks.json changed: 244 done tasks moved to data/archive/tasks-done-2026.json; 35 live tasks now carry band (today|week|month|year) + bandSince. Area 'Tasks' retired: E1/E3/E4/E5/E6/Sunday AM -> Personal, F1 + 'Sort the task dashboard' -> Real Estate. When you add a task: set band + bandSince (today's date), leave priority/difficulty as they are (page ignores them). Ticking a call on the page writes the buyer: lastContact, a touch {date,channel:'call',summary}, nextTouch +3d - reconcile at checkpoint. 44 buyers had nextTouch <= today on the 23 Sep copy - the page shows the top 5 by score.",
+  "status": "open"
  }
 ]
