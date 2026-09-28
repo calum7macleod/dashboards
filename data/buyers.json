@@ -4709,8 +4709,8 @@
     "score": 1,
     "heat": 1,
     "stage": "New",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 22 Sep - Went cold",
     "needSummary": "Went cold",
     "notes": "22 Sep: No answer, WA sent - Went cold | 2026-09-03: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: yes, form text: Markhwrong@gmail.com",
@@ -4719,7 +4719,14 @@
     "id": "mark-wrong-m43",
     "order": 113,
     "maxScore": 1,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-23",
