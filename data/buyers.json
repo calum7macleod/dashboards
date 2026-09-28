@@ -1470,7 +1470,7 @@
     "heat": 3,
     "stage": "Qualified",
     "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "nextTouch": null,
     "touchReason": "Follow up after wa only 22 Sep - Sent some 4-bed options",
     "needSummary": "5 bed, Lagoons - viewing Sat 12 Sep, time TBC",
     "notes": "22 Sep: WA only - Sent some 4-bed options | 2026-09-09: new, 5 bed, wants to view Saturday 12 Sep - no time arranged yet.",
@@ -4713,8 +4713,8 @@
     "score": 4,
     "heat": 4,
     "stage": "Qualified",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after answered 22 Sep - Very good - 4M budget, wants a townhouse",
     "needSummary": "Very good - 4M budget, wants a townhouse",
     "notes": "22 Sep: Answered - Very good - 4M budget, wants a townhouse | 2026-08-22: Meta lead, Jumeirah Golf estates- Video 2, form 'Jumeirah Golf estates- UAE', owns UAE property: yes, form text: 0558874190",
@@ -4723,7 +4723,14 @@
     "id": "abu-hanoud-m69",
     "order": 117,
     "maxScore": 4,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-23",
