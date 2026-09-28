@@ -4812,8 +4812,8 @@
     "score": 5,
     "heat": 5,
     "stage": "Offer",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Offer live - chase the seller side; unit and number to record",
     "needSummary": "4-bed Costa Brava J519 - offered 2.65M, seller Seema wants 2.7M net",
     "notes": "28 Sep: Unit is J519 (Seema). Gap ~113K net | 23 Sep: Created at Offer, score 5 - 4-bed Costa Brava 2.65M. Unit, phone, source, finance TBC.",
@@ -4822,6 +4822,13 @@
     "id": "janani-2309",
     "order": 121,
     "maxScore": 5,
-    "maxScoreReason": "Set on create 23 Sep - at Offer"
+    "maxScoreReason": "Set on create 23 Sep - at Offer",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   }
 ]
