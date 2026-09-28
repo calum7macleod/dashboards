@@ -334,5 +334,13 @@
   "to": "Manager",
   "item": "Sellers dashboard: stock records now carry carry (Calum|Lewis|Both), keepAfterMove (true/false), priceNet (true = net to seller), role ('offplan-buyer' = owner to keep as a future off-plan buyer). Calum wants keepAfterMove obvious - a badge on the card and a filter, plus a Calum / Lewis / Both split view. Also show priceNet next to the price.",
   "status": "open"
+ },
+ {
+  "id": "h0043",
+  "date": "2026-09-28",
+  "from": "PA",
+  "to": "Manager",
+  "item": "Extend h0004 to sellers: stock.json records moved to Lost now carry closedLost (YYYY-MM-DD) - sort the sellers Lost section by it, newest at top, undated at the bottom. Also: the dashboard's own 'CRM: unit -> Lost' write should stamp closedLost itself so PA doesn't have to backfill.",
+  "status": "open"
  }
 ]
