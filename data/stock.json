@@ -281,7 +281,8 @@
   "notes": "BL698 end corner, 3000 sqft. 3.8M. CALL TODAY.",
   "order": 10,
   "id": "agam-9",
-  "stage": "Lost"
+  "stage": "Lost",
+  "closedLost": "2026-09-28"
  },
  {
   "date": "2026-08-18",
@@ -951,7 +952,8 @@
   "id": "f211-santorini",
   "stage": "Lost",
   "phone": null,
-  "carry": "Lewis"
+  "carry": "Lewis",
+  "closedLost": "2026-09-28"
  },
  {
   "date": "2026-09-28",
@@ -980,7 +982,8 @@
   "id": "darryl-j596",
   "stage": "Lost",
   "phone": null,
-  "carry": "Lewis"
+  "carry": "Lewis",
+  "closedLost": "2026-09-28"
  },
  {
   "date": "2026-09-28",
@@ -1009,7 +1012,8 @@
   "id": "andrew-k341",
   "stage": "Lost",
   "phone": null,
-  "carry": "Lewis"
+  "carry": "Lewis",
+  "closedLost": "2026-09-28"
  },
  {
   "date": "2026-09-28",
@@ -1038,7 +1042,8 @@
   "id": "hasnain-bl656",
   "stage": "Lost",
   "phone": null,
-  "carry": "Both"
+  "carry": "Both",
+  "closedLost": "2026-09-28"
  },
  {
   "date": "2026-07-07",
@@ -1067,7 +1072,8 @@
   "id": "shaun-a154",
   "stage": "Lost",
   "phone": null,
-  "carry": "Both"
+  "carry": "Both",
+  "closedLost": "2026-09-28"
  },
  {
   "id": "lindsay-lohan-bl109",
