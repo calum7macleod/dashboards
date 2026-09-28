@@ -28,6 +28,9 @@ Agents log faults with `agentkit.py issue <type> "<what>"` the moment they happe
 Finding (access): Claude Code on Calum's Windows machine has no Git, no Python, no repo checkout - local builds impossible; all building goes through cloud sessions until that changes. Hooks (.claude/settings.json) still apply in cloud sessions once committed.
 Findings: raw.githubusercontent.com cache serves stale files - rule added to _shared.md 23 Sep. Two closed-date fields (closedDate from crm.html, closedLost from PA) - fixed in spec 1. buyers-index over-counts live by 20 - fixed in spec 1.
 
+## Agent file changes awaiting re-paste
+- agents/pa.md 28 Sep: SCORES FIRST at 07:30 (Calum's ask), tasks rule now bands not dates/priority (matches today.html). Calum re-pastes the PA file into the PA Project. Until then the PA runs on the old text.
+
 ## Shared rules - Project instructions status
 23 Sep ~10:00: Issues section + agentkit-not-raw/owner pointer pasted into all ten Projects by Calum (as one block at the end of the shared rules). All agents on the Issues rule from now. Fallback (handoff Manager) active until agentkit v2 ships the `issue` command. Next full re-paste only if _shared.md changes again.
 
