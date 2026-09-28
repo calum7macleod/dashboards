@@ -117,3 +117,4 @@
 {"date": "2026-09-28", "agent": "PA", "did": "Seller added: M137 Nice, 7M net, seller TBC (stock.json).", "wrote": []}
 {"date": "2026-09-28", "agent": "PA", "did": "E6 done: calendar colour scheme (11 categories) recorded in core.md.", "wrote": []}
 {"date": "2026-09-28", "agent": "Designer", "did": "Wadeem 4-bed ADIB 25/75 payment schedule computed for Naura from the 26 Sep plan; handoff to PA to create her buyer record", "wrote": ["data/handoffs.json"]}
+{"date": "2026-09-28", "agent": "manager", "did": "agents/pa.md: 07:30 opens by collecting missing journal scores for the last 7 days (Calum 28 Sep); tasks rule rewritten for bands/importance/order (aligns PA with today.html); re-paste pending", "wrote": ["agents/pa.md", "data/state/manager.md"]}
