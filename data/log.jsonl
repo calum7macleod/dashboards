@@ -111,3 +111,4 @@
 {"date": "2026-09-28", "agent": "PA", "did": "Stock: closedLost 2026-09-28 stamped on F211, J596, K341, BL656, A154, BL698 (moved to Lost by Calum via the dashboard). Handoff to Manager: sort sellers Lost by closedLost + stamp on CRM write.", "wrote": []}
 {"date": "2026-09-28", "agent": "manager", "did": "Today page: ⋯ actions button now always visible on every row (was hover-only)", "wrote": ["today.html"]}
 {"date": "2026-09-28", "agent": "manager", "did": "Today page v3: importance 1-5 (tap diamonds in the open task, shown on headline); call rows get ⋯ with Tomorrow/3 days/Next week/Remove (moves or clears nextTouch, never deletes the buyer)", "wrote": ["js/today.js", "today.html"]}
+{"date": "2026-09-28", "agent": "manager", "did": "Today page v4: Ctrl/Cmd+Z undo stack for every task change (add, tick, delete, move, reorder, score, notes, area, date), 30 deep, replay-safe; tested in harness", "wrote": ["js/today.js", "today.html"]}
