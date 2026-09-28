@@ -58,6 +58,11 @@
   .row.buyer .title { font-family:var(--serif); }
   .badge { color:var(--muted); font-size:12px; white-space:nowrap; }
   .badge.due { color:var(--gold2); }
+  .badge.score { color:var(--gold); font-size:9px; letter-spacing:1px; }
+  .scorerow { display:flex; align-items:center; gap:2px; margin-bottom:8px; font-size:12px; }
+  .scorerow span { margin-right:8px; }
+  .sc { width:34px; height:34px; background:none; border:0; color:var(--line); font-size:18px; cursor:pointer; padding:0; }
+  .sc.on { color:var(--gold); }
   .more { width:36px; height:44px; flex:0 0 36px; background:none; border:0; color:var(--gold); font-size:22px; cursor:pointer; display:block; padding:0; }
   .row.acts-open .more { color:var(--cream); }
   .acts { display:none; gap:6px; flex-wrap:wrap; padding:0 0 10px 54px; }
@@ -110,6 +115,6 @@
   <div class="toast" id="toast"><span id="toast-text"></span><button id="toast-undo">UNDO</button></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
-  <script src="js/today.js?v=2"></script>
+  <script src="js/today.js?v=3"></script>
 </body>
 </html>
