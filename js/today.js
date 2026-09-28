@@ -12,7 +12,7 @@ const REFRESH_MS = 60000, NEXT_TOUCH_DAYS = 3, CALLS_SHOWN = 5;
 const $ = id => document.getElementById(id);
 const state = { tasks: null, tasksSha: null, buyers: null, buyersSha: null, open: new Set(), acts: new Set(),
                 filter: localStorage.getItem('today_filter') || 'All', newArea: localStorage.getItem('today_area') || 'Real Estate',
-                bandsOpen: JSON.parse(localStorage.getItem('today_bands') || '{"today":true}'), allCalls: false, pending: [], saving: false, undo: null };
+                bandsOpen: JSON.parse(localStorage.getItem('today_bands') || '{"today":true}'), allCalls: false, pending: [], saving: false, undo: null, undoStack: [] };
 
 /* ---------- dates ---------- */
 function todayStr(d) { d = d || new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -49,11 +49,29 @@ async function putFile(path, data, sha, message) {
 }
 
 /* ---------- mutations: applied to state now, replayed on a fresh copy if someone else wrote first ---------- */
-function mutate(file, fn, label) {
-  fn(file === 'tasks' ? state.tasks : state.buyers);
+const UNDO_MAX = 30;
+function mutate(file, fn, label, noUndo) {
+  if (file === 'tasks' && !noUndo) {
+    const before = new Map(state.tasks.tasks.map(t => [t.id, JSON.stringify(t)]));
+    fn(state.tasks);
+    const restore = [], remove = [];
+    for (const t of state.tasks.tasks) { const b = before.get(t.id); if (b === undefined) remove.push(t.id); else if (b !== JSON.stringify(t)) restore.push(JSON.parse(b)); }
+    if (restore.length || remove.length) { state.undoStack.push({ label, restore, remove }); if (state.undoStack.length > UNDO_MAX) state.undoStack.shift(); }
+  } else {
+    fn(file === 'tasks' ? state.tasks : state.buyers);
+  }
   state.pending.push({ file, fn, label });
   render();
   saveSoon();
+}
+function undoLast() {
+  const u = state.undoStack.pop(); if (!u) { toast('Nothing to undo'); return; }
+  mutate('tasks', d => {
+    for (const r of u.restore) { const i = d.tasks.findIndex(t => t.id === r.id); if (i >= 0) d.tasks[i] = r; }
+    if (u.remove.length) d.tasks = d.tasks.filter(t => !u.remove.includes(t.id));
+  }, 'undo ' + u.label, true);
+  $('toast').classList.remove('show'); state.undo = null;
+  toast('Undid: ' + u.label);
 }
 let saveTimer = null;
 function saveSoon() { clearTimeout(saveTimer); saveTimer = setTimeout(save, 400); }
@@ -278,6 +296,7 @@ function wire() {
   $('areapill').addEventListener('click', () => { state.newArea = AREAS[(AREAS.indexOf(state.newArea) + 1) % AREAS.length]; localStorage.setItem('today_area', state.newArea); renderChips(); });
   $('chips').addEventListener('click', e => { const c = e.target.closest('.chip'); if (!c) return; state.filter = c.dataset.area; localStorage.setItem('today_filter', state.filter); render(); });
   $('toast-undo').addEventListener('click', () => { if (state.undo) state.undo(); $('toast').classList.remove('show'); state.undo = null; });
+  document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key.toLowerCase() === 'z') { const tag = (e.target.tagName || '').toLowerCase(); if (tag === 'input' || tag === 'textarea') return; e.preventDefault(); undoLast(); } });
   $('gate-save').addEventListener('click', () => { setToken($('gate-token').value); $('gate').classList.remove('show'); $('gate-token').value = ''; load(true); });
 
   const bands = $('bands');
