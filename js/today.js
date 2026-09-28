@@ -188,7 +188,7 @@ function taskRow(t) {
       ${t.due ? `<span class="badge due">${shortDate(t.due)}</span>` : ''}
       <button class="more" aria-label="More">⋯</button>
     </div>
-    <div class="acts">${moves}<button class="act date" data-pick>Date</button><button class="act kill" data-kill>Kill</button></div>
+    <div class="acts">${moves}<button class="act date" data-pick>Date</button><button class="act kill" data-kill>Delete</button></div>
     <div class="detail">
       <textarea data-notes placeholder="Notes">${esc(t.notes)}</textarea>
       <div class="meta">
@@ -287,7 +287,7 @@ function wire() {
     if (e.target.closest('.tick')) { if (bid) tickBuyer(row, bid); else tickTask(row, id); return; }
     if (e.target.closest('.more')) { toggleActs(id); return; }
     if (e.target.closest('[data-move]')) { moveTask(id, e.target.closest('[data-move]').dataset.move); return; }
-    if (e.target.closest('[data-kill]')) { row.classList.add('fade'); setTimeout(() => mutate('tasks', d => { const t = d.tasks.find(x => x.id === id); if (t) { t.status = 'killed'; t.completed = todayStr(); } }, 'kill'), 320); return; }
+    if (e.target.closest('[data-kill]')) { row.classList.add('fade'); setTimeout(() => { mutate('tasks', d => { const t = d.tasks.find(x => x.id === id); if (t) { t.status = 'killed'; t.completed = todayStr(); } }, 'delete'); toast('Deleted', () => mutate('tasks', d => { const t = d.tasks.find(x => x.id === id); if (t) { t.status = 'active'; t.completed = null; } }, 'undo delete')); }, 320); return; }
     if (e.target.closest('[data-pick]')) { state.acts.delete(id); state.open.add(id); render(); const inp = bands.querySelector(`.row[data-id="${id}"] [data-due]`); if (inp && inp.showPicker) inp.showPicker(); return; }
     if (e.target.closest('.title')) { const key = bid ? 'b:' + bid : id; if (state.open.has(key)) state.open.delete(key); else state.open.add(key); row.classList.toggle('open'); return; }
   });
