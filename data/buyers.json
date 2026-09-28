@@ -2872,8 +2872,8 @@
     "order": 70,
     "stage": "Viewing",
     "heat": 4,
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep - Checked in",
     "needSummary": "CB 4-bed, up to Đ2.75M, close-ready, Wed tour of real availability",
     "snoozedUntil": null,
@@ -2888,6 +2888,11 @@
         "date": "2026-08-22",
         "channel": "viewing",
         "summary": "First viewing. Very strong. Wants CB 4-bed, budget to 2.75M, can close soon. Agreed Wed 26 Aug return to see actually-available units."
+      },
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
       }
     ]
   },
@@ -2970,8 +2975,8 @@
     "order": 72,
     "stage": "Viewing",
     "heat": 4,
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep - Was out of the country - chased now",
     "needSummary": "Ready-to-buy couple (SA/Turkish), Đ2.75M easy, cash-capable/likely mortgage, CB direction",
     "snoozedUntil": null,
@@ -2991,6 +2996,11 @@
         "date": "2026-08-25",
         "channel": "outreach",
         "summary": "Touch 25 Aug (round of touchpoints)"
+      },
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
       }
     ]
   },
@@ -3593,8 +3603,8 @@
     "order": 1020,
     "stage": "Qualified",
     "heat": 2,
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 23 Sep - Wants one to live in - could do Tara Park",
     "needSummary": "JGE ads lead, no response yet, everything TBC",
     "snoozedUntil": null,
@@ -3603,6 +3613,11 @@
         "date": "2026-08-24",
         "channel": "wa",
         "summary": "First outreach sent, no response yet"
+      },
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
       }
     ],
     "segment": "Offplan"
@@ -3970,15 +3985,22 @@
     "score": 4,
     "heat": 4,
     "stage": "Viewed",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 22 Sep - Chased - sent him good options",
     "needSummary": "Single row, Portofino or Malta. Options going over today.",
     "notes": "22 Sep: No answer, WA sent - Chased - sent him good options | 2026-09-19 viewing day: Single-row options in Portofino or Malta - SEND TODAY (Sat 19 Sep) Calum: 'all good buyers and sound people, they'll stick with me - it's about getting them options'. Plaud transcript from today to add detail.",
     "id": "edward-1909",
     "order": 1024,
     "maxScore": 3,
-    "maxScoreReason": "Met in person, engaged, brief captured; budget only on Nico."
+    "maxScoreReason": "Met in person, engaged, brief captured; budget only on Nico.",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-19",
@@ -4118,8 +4140,8 @@
     "score": 3,
     "heat": 3,
     "stage": "Qualified",
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after answered 22 Sep - 2M cash - looking at Modon",
     "needSummary": "2M cash - looking at Modon",
     "notes": "22 Sep: Answered - 2M cash - looking at Modon | 2026-09-20: Meta lead, Modon Video 1, form 'Modon New - London & Glasgow', owns UAE property: yes, form text: WhatsApp +971 50 599 8637",
@@ -4128,7 +4150,14 @@
     "id": "youssef-ghobrial-m02",
     "order": 100,
     "maxScore": 3,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-22",
