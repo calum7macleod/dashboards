@@ -342,5 +342,13 @@
   "to": "Manager",
   "item": "Extend h0004 to sellers: stock.json records moved to Lost now carry closedLost (YYYY-MM-DD) - sort the sellers Lost section by it, newest at top, undated at the bottom. Also: the dashboard's own 'CRM: unit -> Lost' write should stamp closedLost itself so PA doesn't have to backfill.",
   "status": "open"
+ },
+ {
+  "id": "h0044",
+  "date": "2026-09-28",
+  "from": "Designer",
+  "to": "PA",
+  "item": "New buyer not in the index: Naura - considering Wadeem Gardens 4-bed (Đ8.7M) on the ADIB 25/75 plan, schedule sent to Calum 28 Sep. Please create the record (nationality matters: UAE nationals get Modon's 5% rebate)",
+  "status": "open"
  }
 ]
