@@ -1608,7 +1608,7 @@
     "heat": 3,
     "stage": "Qualified",
     "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "nextTouch": null,
     "touchReason": "Follow up after wa only 22 Sep",
     "needSummary": "Up to 4M, near Global Village / DAMAC Hills, buying within ~12 months",
     "maxScore": 3,
@@ -3014,8 +3014,8 @@
     "order": 73,
     "stage": "Viewing",
     "heat": 3,
-    "lastContact": "2026-09-22",
-    "nextTouch": "2026-09-24",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after wa only 22 Sep - Now wants off-plan on a payment plan - sent DAMAC Islands, see what's next",
     "needSummary": "CB 4-bed, 2.6-2.7, dad cash + daughter mortgage hybrid, own Golf Place + Arjan, hot",
     "snoozedUntil": null,
@@ -3035,6 +3035,11 @@
         "date": "2026-08-25",
         "channel": "outreach",
         "summary": "Touch 25 Aug (round of touchpoints)"
+      },
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
       }
     ]
   },
