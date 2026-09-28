@@ -113,3 +113,4 @@
 {"date": "2026-09-28", "agent": "manager", "did": "Today page v3: importance 1-5 (tap diamonds in the open task, shown on headline); call rows get ⋯ with Tomorrow/3 days/Next week/Remove (moves or clears nextTouch, never deletes the buyer)", "wrote": ["js/today.js", "today.html"]}
 {"date": "2026-09-28", "agent": "manager", "did": "Today page v4: Ctrl/Cmd+Z undo stack for every task change (add, tick, delete, move, reorder, score, notes, area, date), 30 deep, replay-safe; tested in harness", "wrote": ["js/today.js", "today.html"]}
 {"date": "2026-09-28", "agent": "PA", "did": "E4: W&Co email audit from Gmail - 40+ services grouped by urgency, written to data/state/wco-email-audit.md.", "wrote": []}
+{"date": "2026-09-28", "agent": "PA", "did": "E4 closed: Reelly + Fitt Meals moved off W&Co email, Modon email sent (awaiting), audit file updated.", "wrote": []}
