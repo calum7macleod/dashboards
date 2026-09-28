@@ -19,7 +19,7 @@ Rules: node --check before every commit; one edit at a time, verify each; NEVER 
 
 ## 2. Decisions
 - NEW page today.html + js/today.js. tasks.html stays as the full view (units, ideas, build log, productivity) and gets one link to Today. Hub links Today first.
-- Bands replace dates as the organising idea. Four bands: today | week | month | someday (labels: Today, This week, This month, Someday). New task fields: band, bandSince (YYYY-MM-DD, set whenever band changes). due stays and means a real deadline only. Today open; the other three collapsed with counts; Someday is the parking lot and sits last.
+- Bands replace dates as the organising idea. Four bands: today | week | month | year (labels: Today, This week, This month, This year). New task fields: band, bandSince (YYYY-MM-DD, set whenever band changes). due stays and means a real deadline only. Today open; the other three collapsed with counts; This year is the parking lot and sits last.
 - Nothing renders as overdue. A Today item not done today stays in Today; the row shows an age badge (days since bandSince) once it's 1d or more. No red.
 - No priority, difficulty, points or top3 anywhere on the page. Fields stay in the file for agents; the page ignores them. Order is the priority: drag within Today, persisted to order.
 - Categories = area, one list, colour dot per area. Add 'Personal' to the area list. Filter chips (All + each area) under the add box; filter is remembered in localStorage.
@@ -27,28 +27,28 @@ Rules: node --check before every commit; one edit at a time, verify each; NEVER 
 - Tick on a buyer row writes buyers.json: lastContact = today; touches gets an entry in the existing touch shape (read one record with touches to match it; type 'call', note ''); nextTouch = today + 3 days (ASSUMPTION - editable in the expanded row; the PA reconciles at checkpoint). Row disappears.
 - Tick on a task: status 'done', completed = today, row fades, 5-second undo toast. Done today is a collapsed band at the bottom ("Done today (4)").
 - MOVE, any direction, same gesture in every band: swipe a row on phone (hover on desk) reveals chips for the other three bands + Kill. One tap moves it (band + bandSince = today, order last in the new band) and the row slides to its new band. Desk also supports drag between bands (Sortable groups). Moving is the core interaction - it must be one gesture and one tap, never a menu inside a menu. Kill = status 'killed', never deleted; the archive job clears it.
-- Roll (client-side on every load and refresh): any band with due <= today -> today; month with due within this ISO week -> week; someday with snoozedUntil <= today -> today; bandSince = today on any roll. Undone today items are never touched.
+- Roll (client-side on every load and refresh): any band with due <= today -> today; month with due within this ISO week -> week; year with snoozedUntil <= today -> today; bandSince = today on any roll. Undone today items are never touched.
 - Always there: manifest.json + apple-mobile-web-app meta + icons so Add to Home Screen opens full-screen; auto-refresh every 60 s while the tab is visible (re-fetch tasks + buyers, re-render, keep expanded rows open, never lose text in the add box). No service worker.
 - Token: read 'dashboards_gh_token' first, fall back to 'crm_pat', write both when the gate is used. One gate for all pages from here.
 - Mobile-first: 380 px, 44 px tap targets, headline row = circle + title + area dot + age badge + due date only if set. Brand: colours and fonts from design-system/ (read it - never the AI defaults).
 
 ## 3. Migration (one-time, tools/migrate-tasks-2026-09-28.py, run once, commit the result)
-- Every active task gets band + bandSince: due <= today -> today; due within this ISO week -> week; due within this month -> month; else someday; no due -> today if created within 7 days else month; snoozedUntil > today -> someday. bandSince = today. top3 true -> order 1-3 in today.
+- Every active task gets band + bandSince: due <= today -> today; due within this ISO week -> week; due within this month -> month; else year; no due -> today if created within 7 days else month; snoozedUntil > today -> year. bandSince = today. top3 true -> order 1-3 in today.
 - area 'Tasks' -> 'Real Estate' unless the title is obviously personal (then 'Personal'); print the mapping for review.
 - 240 done tasks -> data/archive/tasks-done-2026.json (same shape), removed from tasks.json. Print counts before/after. units, contentIdeas, buildLog untouched.
 - Hand the printed mapping to the PA: `python3 tools/agentkit.py handoff PA "Today page migration: <counts>, area mapping in the commit"`.
 
 ## 4. agentkit.py additions (do these AFTER tools/specs/2026-09-23-agentkit-v2.md has landed - same file)
-- `task "<title>" [area] [today|week|month|someday]` - append a task with band/bandSince, order last in band. The PA's fast intake.
+- `task "<title>" [area] [today|week|month|year]` - append a task with band/bandSince, order last in band. The PA's fast intake.
 - `tasks-roll` - same roll rule as the page, for the 07:30 brief.
 - `tasks-archive` - done or killed older than 7 days -> data/archive/tasks-done-<year>.json.
 - `tasks-due` reads band: prints Today (with age), then Week.
 
 ## 5. Acceptance tests
-1. Phone (380 px): opens on Today only; This week, This month and Someday show as collapsed bands with counts; every row is one line.
+1. Phone (380 px): opens on Today only; This week, This month and This year show as collapsed bands with counts; every row is one line.
 2. Type "test task" + Enter: appears at the top of Today; tasks.json gains it with band today, bandSince today, area = the selected chip.
 3. Tick it: row fades, undo toast 5 s, tasks.json status done + completed today; "Done today (1)" band shows it.
-4. Swipe/hover on a Today row -> This week: band week, row moves. Open This week, swipe that row -> Today: it is back, one gesture + one tap each way. Same from This month and Someday. Desk: drag a row from This week into Today, band updates in the file. Then set a week task's due to yesterday in the file, reload: it rolls into Today with bandSince today.
+4. Swipe/hover on a Today row -> This week: band week, row moves. Open This week, swipe that row -> Today: it is back, one gesture + one tap each way. Same from This month and This year. Desk: drag a row from This week into Today, band updates in the file. Then set a week task's due to yesterday in the file, reload: it rolls into Today with bandSince today.
 5. A task moved to Today two days ago shows "2d"; nothing on the page is red.
 6. A live buyer with nextTouch <= today appears as "Call ..." in Today; tick: buyers.json lastContact today, touches +1 in the existing shape, nextTouch = today+3; row gone. crm.html still loads and shows the same buyer.
 7. Leave the tab open; append a task via agentkit; within 60 s it appears with no reload and the add box keeps its text.
