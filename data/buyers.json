@@ -4420,8 +4420,8 @@
     "score": 3,
     "heat": 3,
     "stage": "Qualified",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Chat open 23 Sep - interested in Abu Dhabi; qualify budget, timeline, product",
     "needSummary": "JGE ad lead - spec and budget TBC",
     "notes": "23 Sep: Replied to WA - interested in Abu Dhabi, chat open | 22 Sep: No answer, WA sent | 2026-09-10: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: yes, form text: WhatsApp",
@@ -4430,7 +4430,14 @@
     "id": "karishma-ajwani-m30",
     "order": 107,
     "maxScore": 3,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-22",
@@ -4535,8 +4542,8 @@
     "score": 3,
     "heat": 3,
     "stage": "Qualified",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after answered 22 Sep - Interested in Abu Dhabi - reinstated 23 Sep",
     "needSummary": "Interested in Abu Dhabi - reinstated 23 Sep",
     "notes": "22 Sep: Answered - Interested in Abu Dhabi - reinstated 23 Sep | 2026-09-14: Meta lead, Modon Video 1, form 'Modon New - London & Glasgow', owns UAE property: no, form text: Adla_Toal@hotmail.com",
@@ -4545,7 +4552,14 @@
     "id": "adla-toal-m19",
     "order": 110,
     "maxScore": 3,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-23",
@@ -4902,8 +4916,8 @@
     "score": 3,
     "heat": 3,
     "stage": "Qualified",
-    "lastContact": "2026-09-23",
-    "nextTouch": "2026-09-25",
+    "lastContact": "2026-09-28",
+    "nextTouch": "2026-10-01",
     "touchReason": "Follow up after no answer, wa sent 22 Sep - Wants one to live in - could do Tara Park",
     "needSummary": "Wants one to live in - could do Tara Park",
     "notes": "22 Sep: No answer, WA sent - Wants one to live in - could do Tara Park | 2026-08-23: Meta lead, Taraf Modon- Video 2, form 'Taraf Modon- UAE', owns UAE property: no, form text: Wilkic81@gmail.com",
@@ -4912,7 +4926,14 @@
     "id": "clive-wilkinson-m66",
     "order": 120,
     "maxScore": 3,
-    "maxScoreReason": "Set on call 22 Sep"
+    "maxScoreReason": "Set on call 22 Sep",
+    "touches": [
+      {
+        "date": "2026-09-28",
+        "channel": "call",
+        "summary": "Called (today page)"
+      }
+    ]
   },
   {
     "date": "2026-09-23",
