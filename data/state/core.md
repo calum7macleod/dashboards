@@ -32,4 +32,4 @@ Eight agents (agents/*.md). Repo is the bus. Speed rules in agents/_shared.md. S
 - D1 plan v1: data/state/jake-plan.md (Sat 26). Numbers to confirm Sun 27 - see challenge notes in the file.
 
 ## Calendar colour scheme (Calum, 28 Sep) - every agent reads the day by these
-Work · Goodness (routine: read, ice bath, meditate, sleep) · Sales (calls, outreach) · Video Call · In Person Meeting · Viewing / Call Confirmed · Chill Out · Chill Home · Exercise · Notes · Pending / Block. Use the category names, not the colour names, when describing his day.
+Work · Goodness (routine: read, ice bath, meditate, sleep) · Sales (calls, outreach) · Video Call · In Person Meeting · Video Call Confirmed · Fun Out · Chill Home · Coach Meetings · Exercise · Notes · Pending / Block. Twelve categories. Use the category names, not colour names, when describing his day.
