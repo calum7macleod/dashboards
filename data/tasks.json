@@ -392,7 +392,7 @@
       "bandSince": "2026-09-28"
     },
     {
-      "order": 3,
+      "order": 999,
       "top3": false,
       "id": "runin-e3",
       "title": "E3 Phone apps tidy",
@@ -405,7 +405,7 @@
       "notes": "1h. Score 2/2/2. Pushed to next week - or any spare end-of-day slot this week. | Dated to the calendar slot, Sat 26",
       "completed": null,
       "snoozedUntil": null,
-      "band": "week",
+      "band": "today",
       "bandSince": "2026-09-28"
     },
     {
