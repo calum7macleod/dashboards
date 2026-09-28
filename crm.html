@@ -39,6 +39,7 @@ h1{text-align:center;font-size:24px;margin-bottom:10px}
 .nt{font-size:11.5px}.nt.over{color:var(--red)}.nt.today{color:var(--amber)}.nt.ok{color:var(--muted)}
 .bdg{font-size:11.5px;color:var(--cream)}
 #modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding:12px;z-index:50;overflow-y:auto}
+.notes{margin-top:12px}.notes .ne{padding:7px 0;border-top:1px solid var(--div);font-size:13px;color:var(--cream);line-height:1.4}.notes .ne:first-child{border-top:0}.notes .nd{display:block;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:2px}.notes details summary{cursor:pointer;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:6px 0;list-style:none}.notes details summary::-webkit-details-marker{display:none}
 #mbox{background:var(--panel);border:1px solid var(--div);border-radius:16px;max-width:620px;width:100%;padding:16px;margin:10px 0 40px}
 .phead{display:flex;gap:14px;align-items:center;border-bottom:1px solid var(--div);padding-bottom:12px;margin-bottom:10px;flex-wrap:wrap}
 .heatball{width:74px;height:74px;border-radius:50%;background:var(--card);border:3px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto}
@@ -677,6 +678,12 @@ function timeline(b){
   return items.map(i=>`<div class="tlrow"><div class="tlic">${i.ic}</div><div class="tlbody"><div class="tldate">${i.d||''}</div><div class="tltext">${i.x||''}</div></div></div>`).join('')||'<div style="color:var(--muted);font-size:13px;padding:8px 0">No history yet — the bridge and history upload will fill this.</div>';
 }
 function phoneOf(b){const m=JSON.stringify(b).match(/\+?\d{10,15}/);return m?m[0].replace(/\D/g,''):null}
+function notesHtml(str,shown){shown=shown||3;const esc=t=>String(t).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const parts=String(str||'').split(/\s*\|\s*|\n+/).map(x=>x.trim()).filter(Boolean);if(!parts.length)return '';
+  const one=p=>{const m=p.match(/^((?:\d{1,2}\s+[A-Z][a-z]{2}(?:\s+\d{4})?)|(?:\d{4}-\d{2}-\d{2})(?:\s+\d{2}:\d{2})?)\s*[:\-–—]?\s*(.*)$/s);
+    return m?`<div class="ne"><span class="nd">${esc(m[1])}</span>${esc(m[2])}</div>`:`<div class="ne">${esc(p)}</div>`};
+  const head=parts.slice(0,shown).map(one).join(''),rest=parts.slice(shown);
+  return `<div class="notes"><div class="eyebrow" style="text-align:left;margin:0 0 4px">Notes</div>${head}${rest.length?`<details><summary>${rest.length} more ▾</summary>${rest.map(one).join('')}</details>`:''}</div>`}
 function openCard(id){const b=byId(id);if(!b)return;
   const ph=phoneOf(b);
   $('mbox').innerHTML=`<div class="phead">
@@ -694,7 +701,7 @@ function openCard(id){const b=byId(id);if(!b)return;
     <select onchange="stageSel('${b.id}',this.value)">${STAGES.concat('Snoozed').map(s=>`<option ${s===b.stage?'selected':''}>${s}</option>`).join('')}</select>
     <input type="date" id="snz"><button class="btn sec mini" onclick="snooze('${b.id}')">💤</button>
   </div>
-  <div style="margin-top:10px;font-size:13px;color:var(--cream)">${(b.notes||'')}</div>
+  ${notesHtml(b.notes)}
   <h3 style="color:var(--lgold);font-size:15px;margin-top:12px">Timeline</h3>
   <div class="tl">${timeline(b)}</div>
   <div class="mrow"><button class="btn" onclick="closeModal()">Close</button></div>`;
@@ -703,7 +710,7 @@ function openStock(id){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)re
   $('mbox').innerHTML=`<div class="phead"><div class="pmeta"><h2>${s.cluster||''} ${s.unit||''}</h2>
    <div class="sub">${sStage(s)} · seller: ${s.seller||'?'}</div>
    <div class="pills">${s.price?`<span class="pill">💰 ${fmtB(s.price)}</span>`:''}${s.beds?`<span class="pill">🛏 ${s.beds} bed</span>`:''}</div></div></div>
-  <div style="font-size:13px;white-space:pre-wrap">${s.notes||s.note||''}</div>
+  ${notesHtml(s.notes||s.note)}
   <div class="mrow"><select onchange="stockStage('${s.id}',this.value)">${SSTAGES.map(x=>`<option ${x===sStage(s)?'selected':''}>${x}</option>`).join('')}</select>
   <button class="btn" onclick="closeModal()">Close</button></div>`;
   $('modal').classList.remove('hidden');}
@@ -950,3 +957,4 @@ init();
 <div class="ticker"><div class="ticker-inner" id="tickerBar">Loading insights…</div></div>
 </body>
 </html>
+
