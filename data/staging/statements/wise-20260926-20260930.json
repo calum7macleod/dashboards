@@ -1,0 +1,85 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "GBP",
+  "period": "26-30 Sep 26",
+  "source": "app screenshots 1 Oct 26 (WhatsApp, 08:08-08:24 Dubai)",
+  "sign": "spends negative, additions positive (app prints no minus sign; '+' only on Added)",
+  "order": "chronological",
+  "printed": {
+   "balance": "not shown in screenshots"
+  },
+  "rowCount": 9,
+  "inFinanceJson": "26 Sep top-up only (flagged on row); 27-30 Sep rows are new"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-26",
+   "description": "To GBP - Added (top-up)",
+   "amount": 200.0,
+   "currency": "GBP",
+   "note": "202.52 GBP charged to Aqua card; net 200.00 after 2.52 fee",
+   "inFinanceJson": true,
+   "inFinanceJsonAs": "26 Sep 'Topped up account' 202.52 + 'Wise Charges' -2.52"
+  },
+  {
+   "date": "2026-09-27",
+   "description": "Deepstash",
+   "amount": -27.13,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-09-27",
+   "description": "Amazon",
+   "amount": -40.2,
+   "currency": "GBP",
+   "originalAmount": 195.0,
+   "originalCurrency": "AED"
+  },
+  {
+   "date": "2026-09-27",
+   "description": "Anthropic Claude Subscription",
+   "amount": -18.0,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-09-27",
+   "description": "Canva",
+   "amount": -9.89,
+   "currency": "GBP",
+   "originalAmount": 48.0,
+   "originalCurrency": "AED"
+  },
+  {
+   "date": "2026-09-27",
+   "description": "InstaShop - Card checked",
+   "amount": 0.0,
+   "currency": "GBP",
+   "originalAmount": 0.0,
+   "originalCurrency": "AED",
+   "note": "zero-value card check, not a spend"
+  },
+  {
+   "date": "2026-09-27",
+   "description": "InstaShop",
+   "amount": -9.63,
+   "currency": "GBP",
+   "originalAmount": 46.71,
+   "originalCurrency": "AED"
+  },
+  {
+   "date": "2026-09-28",
+   "description": "Apple",
+   "amount": -11.99,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-09-30",
+   "description": "Fmd Analytics",
+   "amount": -8.94,
+   "currency": "GBP",
+   "originalAmount": 11.78,
+   "originalCurrency": "USD"
+  }
+ ]
+}
