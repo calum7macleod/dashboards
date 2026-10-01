@@ -2,6 +2,39 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "^wise$|wise \\| wise$",
+   "category": "Other",
+   "sub": "Card cash advance -> Wise",
+   "type": "transfer"
+  },
+  {
+   "rx": "katrina sweets|creative garden",
+   "category": "Life",
+   "sub": "Home / services"
+  },
+  {
+   "rx": "deepstash|canva|fmd analytics|anthropic claude|apple\\.com",
+   "category": "Business",
+   "sub": "Software / AI"
+  },
+  {
+   "rx": "pet health club",
+   "category": "Life",
+   "sub": "Pets"
+  },
+  {
+   "rx": "ipp transfer - credit card payment|quickremit - to own uk|acct to acct transfer - from own",
+   "category": "Other",
+   "sub": "",
+   "type": "transfer"
+  },
+  {
+   "rx": "salary - wps",
+   "category": "Other",
+   "sub": "Commission (White & Co, WPS)",
+   "type": "income"
+  },
+  {
    "rx": "nshama town square",
    "category": "Life",
    "sub": "Home / services"
