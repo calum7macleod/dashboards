@@ -12,24 +12,24 @@
   "Sep 26"
  ],
  "cashAdvanceCost": {
-  "totalGBP": 14814,
-  "explicitFeesGBP": 639,
-  "estInterestGBP": 1176,
-  "costSoFarGBP": 1815,
-  "stillOutstandingGBP": 13600,
-  "runningPerMonthGBP": 313,
+  "totalGBP": 15017,
+  "explicitFeesGBP": 649,
+  "estInterestGBP": 1177,
+  "costSoFarGBP": 1826,
+  "stillOutstandingGBP": 13803,
+  "runningPerMonthGBP": 317,
   "perCard": [
+   {
+    "card": "Aqua",
+    "advancedGBP": 2936,
+    "feesGBP": 147,
+    "estInterestGBP": 91
+   },
    {
     "card": "Virgin Money",
     "advancedGBP": 2886,
     "feesGBP": 56,
     "estInterestGBP": 327
-   },
-   {
-    "card": "Aqua",
-    "advancedGBP": 2733,
-    "feesGBP": 137,
-    "estInterestGBP": 91
    },
    {
     "card": "Barclaycard Plat",
@@ -78,15 +78,15 @@
  },
  "byCategory": {
   "Business": [
-   17759,
-   12780,
-   13136,
-   17018,
-   18046,
-   24060,
-   6928,
-   24475,
-   18804
+   17982,
+   13004,
+   13355,
+   17239,
+   20124,
+   24467,
+   7299,
+   25215,
+   19660
   ],
   "Tal share (50% of money sent)": [
    13774,
@@ -111,15 +111,15 @@
    17977
   ],
   "Life": [
-   7203,
-   3568,
-   2880,
-   14740,
-   20779,
-   10402,
-   8623,
-   15515,
-   5531
+   6980,
+   3343,
+   2661,
+   14518,
+   18701,
+   9996,
+   8295,
+   14819,
+   6356
   ],
   "Fees": [
    3252,
@@ -130,7 +130,7 @@
    8805,
    7347,
    4824,
-   7092
+   7290
   ],
   "Base Food": [
    3885,
@@ -141,7 +141,7 @@
    2950,
    5848,
    4963,
-   2246
+   4325
   ],
   "Deliveries": [
    2899,
@@ -152,7 +152,7 @@
    3400,
    4065,
    4574,
-   3587
+   3723
   ],
   "Health": [
    7683,
@@ -194,9 +194,9 @@
    148,
    233,
    310,
-   114,
-   133,
-   0
+   71,
+   88,
+   59
   ],
   "Investing": [
    0,
@@ -255,9 +255,9 @@
     2950,
     5848,
     4963,
-    2246
+    4325
    ],
-   "total": 43117
+   "total": 45196
   },
   {
    "category": "Business",
@@ -303,9 +303,9 @@
     2896,
     2878,
     2569,
-    2244
+    2380
    ],
-   "total": 26623
+   "total": 26759
   },
   {
    "category": "Life",
@@ -319,9 +319,9 @@
     3702,
     4412,
     3488,
-    903
+    1494
    ],
-   "total": 24637
+   "total": 25229
   },
   {
    "category": "Business",
@@ -354,6 +354,22 @@
     3138
    ],
    "total": 21812
+  },
+  {
+   "category": "Business",
+   "sub": "Software / AI",
+   "months": [
+    515,
+    721,
+    2191,
+    2167,
+    4582,
+    2485,
+    1525,
+    1866,
+    2904
+   ],
+   "total": 18956
   },
   {
    "category": "Fees",
@@ -431,41 +447,9 @@
     1054,
     242,
     3260,
-    2324
+    2522
    ],
-   "total": 13718
-  },
-  {
-   "category": "Business",
-   "sub": "Software / AI",
-   "months": [
-    292,
-    496,
-    1972,
-    1946,
-    2503,
-    2078,
-    1154,
-    1126,
-    2048
-   ],
-   "total": 13615
-  },
-  {
-   "category": "Life",
-   "sub": "Car / fuel / tolls",
-   "months": [
-    139,
-    30,
-    185,
-    739,
-    5580,
-    967,
-    2211,
-    2018,
-    374
-   ],
-   "total": 12242
+   "total": 13916
   },
   {
    "category": "Deliveries",
@@ -514,6 +498,22 @@
     117
    ],
    "total": 11269
+  },
+  {
+   "category": "Life",
+   "sub": "Car / fuel / tolls",
+   "months": [
+    139,
+    30,
+    185,
+    739,
+    5580,
+    678,
+    1941,
+    1322,
+    148
+   ],
+   "total": 10761
   },
   {
    "category": "Business",
@@ -596,6 +596,22 @@
    "total": 7775
   },
   {
+   "category": "Life",
+   "sub": "Personal care",
+   "months": [
+    330,
+    600,
+    130,
+    1070,
+    1667,
+    1513,
+    220,
+    1848,
+    203
+   ],
+   "total": 7581
+  },
+  {
    "category": "Entertainment",
    "sub": "Eating out / hotels",
    "months": [
@@ -612,22 +628,6 @@
    "total": 7478
   },
   {
-   "category": "Life",
-   "sub": "Personal care",
-   "months": [
-    330,
-    600,
-    130,
-    1070,
-    1667,
-    1513,
-    220,
-    1848,
-    0
-   ],
-   "total": 7378
-  },
-  {
    "category": "Fees",
    "sub": "Interest & bank fees",
    "months": [
@@ -639,9 +639,9 @@
     1369,
     521,
     420,
-    512
+    572
    ],
-   "total": 6116
+   "total": 6176
   },
   {
    "category": "Business",
@@ -671,9 +671,9 @@
     1695,
     259,
     638,
-    1111
+    1248
    ],
-   "total": 5401
+   "total": 5538
   },
   {
    "category": "Life",
@@ -741,22 +741,6 @@
   },
   {
    "category": "Life",
-   "sub": "Subscriptions",
-   "months": [
-    291,
-    331,
-    306,
-    290,
-    2147,
-    186,
-    127,
-    69,
-    113
-   ],
-   "total": 3860
-  },
-  {
-   "category": "Life",
    "sub": "Helpers / home services",
    "months": [
     200,
@@ -813,11 +797,27 @@
     148,
     233,
     310,
-    114,
-    133,
-    0
+    71,
+    88,
+    59
    ],
-   "total": 1164
+   "total": 1135
+  },
+  {
+   "category": "Life",
+   "sub": "Home / services",
+   "months": [
+    190,
+    50,
+    0,
+    0,
+    378,
+    199,
+    0,
+    0,
+    103
+   ],
+   "total": 921
   },
   {
    "category": "Family",
@@ -837,19 +837,19 @@
   },
   {
    "category": "Life",
-   "sub": "Home / services",
+   "sub": "Subscriptions",
    "months": [
-    190,
-    50,
-    0,
-    0,
-    378,
-    199,
-    0,
-    0,
-    0
+    69,
+    106,
+    87,
+    69,
+    69,
+    69,
+    69,
+    69,
+    69
    ],
-   "total": 818
+   "total": 674
   },
   {
    "category": "Life",
@@ -921,7 +921,7 @@
    46862,
    5512,
    2502,
-   5265
+   5884
   ],
   "Mashreq": [
    6200,
@@ -965,7 +965,7 @@
    596,
    545,
    197,
-   1822
+   1883
   ],
   "Aqua": [
    0,
@@ -976,7 +976,7 @@
    592,
    559,
    148,
-   8056
+   11258
   ],
   "MBNA": [
    185,
@@ -1044,6 +1044,17 @@
    137,
    120
   ],
+  "BA": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   271
+  ],
   "HSBC": [
    0,
    0,
@@ -1065,7 +1076,7 @@
   84043,
   72455,
   120567,
-  85867
+  90020
  ],
  "income": [
   63766,
@@ -1076,7 +1087,7 @@
   116050,
   297627,
   104000,
-  2464
+  223794
  ],
  "incomeDetail": [
   {
@@ -1204,6 +1215,12 @@
    "aed": 104000,
    "desc": "salary - white and white real esta",
    "countedIn": "Aug 26"
+  },
+  {
+   "date": "2026-09-30",
+   "aed": 221330,
+   "desc": "salary - wps white and white real ",
+   "countedIn": "Sep 26"
   }
  ],
  "region": {
@@ -1227,7 +1244,7 @@
    60437,
    26488,
    9001,
-   23081
+   27233
   ]
  },
  "fees": [
@@ -1239,7 +1256,7 @@
   8805,
   7347,
   4824,
-  7092
+  7290
  ],
  "eating": {
   "Deliveries": [
@@ -1251,7 +1268,7 @@
    2896,
    2878,
    2569,
-   2244
+   2380
   ],
   "Eating out": [
    2882,
@@ -1273,7 +1290,7 @@
    2950,
    5848,
    4963,
-   2246
+   4325
   ]
  },
  "topMerchants": [
@@ -1368,6 +1385,11 @@
    "n": 1
   },
   {
+   "merchant": "deliveroo",
+   "aed": 5779,
+   "n": 65
+  },
+  {
    "merchant": "selfdrive ae dubai",
    "aed": 5698,
    "n": 17
@@ -1376,11 +1398,6 @@
    "merchant": "boxica dubai",
    "aed": 5670,
    "n": 41
-  },
-  {
-   "merchant": "deliveroo",
-   "aed": 5643,
-   "n": 62
   },
   {
    "merchant": "partners on booking bv london",
@@ -1435,13 +1452,13 @@
   "Other 50% of money sent to Tal (one pot)": 142248
  },
  "byDow": {
-  "Thu": 88550,
-  "Fri": 91234,
-  "Sat": 91151,
-  "Sun": 86913,
-  "Mon": 63061,
-  "Tue": 61432,
-  "Wed": 57145
+  "Thu": 88922,
+  "Fri": 91593,
+  "Sat": 91863,
+  "Sun": 88669,
+  "Mon": 63414,
+  "Tue": 61445,
+  "Wed": 57732
  },
  "coverage": {
   "ADIB CC": [
@@ -1619,6 +1636,9 @@
   ],
   "Wise USD": [
    "Aug 26"
+  ],
+  "BA Amex": [
+   "Sep 26"
   ]
  },
  "coverageNote": {
