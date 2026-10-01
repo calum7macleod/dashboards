@@ -24,6 +24,20 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
+## UK, OCTOBER - agreed 1 Oct (one transfer, Wise, today)
+| Line | GBP |
+|---|---|
+| BoS overdraft back inside the GBP3,000 limit (it was -3,155 on 1 Oct, Tesco 266 + MBNA 1 283 already taken from it) | 3,000 |
+| October DDs still to come from BoS: Santander 318, Virgin ~400, M&S 188, Barclaycard 118, MBNA 2 49, HSBC 36, Mum 300, Corrina 150, Agria + Pet Health 150 | 1,700 |
+| Virgin missed minimum (Sep) - pay manually | 402 |
+| Amex Gold 549.88 due 11 Oct (coaching 460 + Du) + BA Amex 95.79 | 646 |
+| Kevin | 1,000 |
+| Tal - UK cards | 1,500 |
+| Aqua - cleared in full (38.5% / 42%) | 4,000 |
+| **Total** | **12,248** |
+AED on Wise at ~4.90 incl. fee: ~D60,000. HSBC left on its 0% promo (check end date). M&S fine per Calum. Nationwide: leave the 508 rent in - 16 of headroom after the 1 Oct mortgage.
+Saves from day one: Aqua ~GBP130/mo interest + 10/mo cash-advance fees; BoS OD interest ~GBP75/mo; no bounces, no late fees.
+
 ## v5 - OCTOBER, FROM THE SEPTEMBER CLOSE (1 Oct). Page: data/finance/reports/september-close-october-plan.html
 September real spend D90K (60.1K + Tal share 29.9K). Of the 60.1K: avoidable 30.4K (Mauritius 17.4K, ads 10.4K, clothes 2.5K), interest+fees 7.3K, fixed 10.7K, living 11.8K. A normal September = ~D22.5K + Tal.
 30 Sep landed D221,330. October: FIXED 104K (BoS GBP3,700 = 18.2K incl. minimums, Amex Gold/coaching, Mum, Corrina, Kevin, pets; Lewis 10K; Tal 24.6K; rent pot 15K; Tara pot 31K; phone/subs 2.6K; Boxica+Turtletots 2.1K; baby 0.5K) + LIVING 12K (D3K/week, ADIB debit only) + ADIB card to ZERO ~56K = 172K. Left for Nov ~49K.
