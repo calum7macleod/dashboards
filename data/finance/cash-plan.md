@@ -71,8 +71,9 @@ UK BUDGET OCT 2026 - JAN 2027 (GBP). Base case = Aqua cleared in October, nothin
 | Tal - UK cards | 1,500 | 1,500 | 1,500 | 1,500 |
 | Wise subs (Anthropic, Giffgaff, OpenAI, Deepstash, Canva, FMD, Apple) | 500 | 317 | 317 | 317 |
 | One-offs: overdraft 3,000 / arrears 1,456 / Aqua 4,000 | 8,456 | - | - | - |
-| **Month** | **13,800** | **4,630** | **4,630** | **4,630** |
-| AED at ~4.90 | ~67,600 | ~22,700 | ~22,700 | ~22,700 |
+| UK lawyer (one-off, Calum 1 Oct) | - | 7,000 | - | - |
+| **Month** | **13,800** | **11,630** | **4,630** | **4,630** |
+| AED at ~4.90 | ~67,600 | ~57,000 | ~22,700 | ~22,700 |
 (Nov-Jan: minimums 1,660 + Mum/Corrina/pets 600 + Amex 550 + Tal 1,500 + Wise 317 = 4,627. Kevin done after October.)
 Not in the base case, decide separately: Christmas / a UK trip in December; Amex Gold annual fee GBP195 (charged Mar 26, next Mar 27); Agria pet insurance if it is annual (GBP593 seen Jan-May); any card paid off early - each one removes its minimum: Tesco -266, Virgin -400, Santander -318, M&S -188, MBNA 1 -283.
 Lever: paying Tesco (5,727) and Virgin (9,706) from the end-October money removes 666/mo of minimums and ~325/mo of interest - but costs ~D76K the Nov-Feb runway does not have. Base case stands until Jake's income is real.
