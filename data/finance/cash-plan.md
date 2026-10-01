@@ -24,23 +24,22 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
-## UK BUDGET BLOCK - LOCKED 1 Oct 2026 (Calum: "lock it in and scrutinise me against it")
-Monthly, from BoS, in GBP. Funded from Mashreq on payday, before anything else moves. Finance checks every line on the Sunday close and at month end: KEPT / BROKEN, by name.
-| Line | GBP/mo | Collected |
+## UK BUDGET - LOCKED 1 Oct 2026. Calum's lines. Finance scrutinises every line, every Sunday, KEPT / BROKEN by name.
+OCTOBER (sent 1 Oct: GBP1,000 QuickRemit + GBP12,500 Wise = 13,500)
+| Line | GBP | Check |
 |---|---|---|
-| Card minimums (set to MINIMUM, all by DD): Santander 318 · Virgin ~400 · M&S 188 · MBNA 1 283 · Tesco 266 · Barclaycard 118 · MBNA 2 49 · HSBC 36 · Aqua 35 (0 once cleared) | ~1,690 | 1st-29th per the DD run |
-| Amex Gold (coaching 460 + Du), paid in full | ~550 | 11th |
-| Mum (Avantglamp loan) | 300 | 5th |
-| Corrina (Avantglamp loan) | 150 | SO |
-| Kevin | 1,000 | FPO, Calum |
-| Pets: Agria + Pet Health Club | 150 | DD |
-| Tal - UK cards | 1,500 | FPO, Calum |
-| Nationwide/Methil: rent 508 stays in; mortgage 288 + OD interest come out of it | 0 from BoS | 1st |
-| **UK block** | **~5,340/mo (~D26K)** | |
-Falls as cards clear: Aqua 35 goes now; every cleared card drops its minimum.
-October one-offs on top: overdraft to zero 3,155 · arrears Virgin ~800 / M&S ~376 / MBNA 1 ~280 · Aqua cleared ~4,000.
-RULES (dated 1 Oct): BoS never below -2,000 the day before a DD run. No UK card used for spending, ever - frozen in the apps. Nationwide never swept. Any DD that fails = Finance told the same day, not the month end. Finance reports missed payments, late fees, bounces and FX fees on every Sunday close.
-
+| Overdraft to zero | 3,000 | BoS balance >= 0 after landing |
+| Card minimums incl. Mum, Corrina, pets (all DD, set to MINIMUM) | 1,700 | each DD collected on its date |
+| Virgin arrears | 800 | paid, app shows nothing overdue |
+| M&S arrears | 376 | paid, app shows nothing overdue |
+| MBNA 1 arrears | 280 | paid, app shows nothing overdue |
+| Amex Gold 549.88 + BA 95.79 | 646 | paid before 11 Oct |
+| Kevin | 1,000 | sent |
+| Tal - UK cards | 1,500 | sent |
+| Aqua cleared | 4,000 | balance 0, DD then collects 0 |
+| **October** | **13,300** | sent 13,500 - 200 spare |
+NOVEMBER ONWARDS (no overdraft, arrears or Aqua): minimums 1,700 + Amex ~550 + Kevin 1,000 + Tal 1,500 = ~GBP4,750/mo, falling as cards clear.
+RULES (1 Oct): BoS >= -2,000 before every DD run · no UK card used for spending, frozen in the apps · Nationwide never swept, rent stays in · DDs restarted on Virgin + M&S, confirmed on MBNA 1 / Santander / Tesco · any failed DD reported to Finance the same day.
 ## UK, OCTOBER - IN MOTION 1 Oct: Calum sent GBP1,000 via Mashreq QuickRemit (fast, dearer) + GBP12,500 via Wise. Total GBP13,500 ~ D66K.
 Order when the money lands in BoS: (1) overdraft inside 3,000; (2) arrears Virgin ~800, M&S ~376, MBNA 1 ~280 - exact figures from the apps; (3) restart DDs on Virgin + M&S, confirm MBNA 1 / Santander / Tesco, all set to MINIMUM; (4) Amex Gold 549.88 before 11 Oct; (5) Aqua cleared; (6) Kevin 1,000, Tal 1,500; (7) leave ~1,700 for the rest of the DD run.
 Finance checks each step on the Sunday close - Virgin DD ~3 Oct is the first test.
