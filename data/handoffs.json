@@ -358,5 +358,13 @@
   "to": "Uploader",
   "item": "ADIB September screenshots (CC *789 + current): images overlap on purpose (bottom of one = top of the next). Do NOT merge or dedupe them yourself. Stage per image: data/staging/statements/adib-cc-sep-2026.json with rows grouped by image in the order they appear on screen, each row {date, description, amount as printed, balance if shown, reference if shown, image, position}. Finance removes overlaps by sequence alignment (a run of consecutive identical rows across two images = overlap; a single repeated row with different neighbours = a real second transaction). Include any printed total/outstanding balance on 30 Sep and the 1 Oct statement balance - that is the tie-out. Same for Jan-Aug statements (PDF): per period, signs as printed, opening/closing balances.",
   "status": "open"
+ },
+ {
+  "id": "h0046",
+  "date": "2026-10-01",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "1 Oct app snapshots -> data/staging/statements/ (8 files, date-range names, rows as printed, chronological, running balances where shown, inFinanceJson flags on dup rows): aqua-20260923-20260928 36 rows GBP sums to printed 853.33 incl 21.30 pending (app figure 3,155.91 below list, label cut off, vs staged 22 Sep stmt 3,126.31 - check); bos-20260926-20261001 8 rows chain -2,565.88 -> -3,155.50 at 1 Oct 08:09, OVER 3,000 limit, MUM 300 + HSBC 36.49 leave ~5 Oct; mashreq-20260928-20261001 6 rows AED closing 206,424.84 - SALARY +221,330.25 AED 30 Sep from White and White RE, then 5,000 + 5,000 + 100 card payments and QuickRemit 5,038.81 AED to BoS 1 Oct; wise-20260926-20260930 9 rows (26 Sep top-up already in finance.json); property-account-20260920-20261001 = Nationwide FlexDirect, 3 rows, -2,233.71 vs 2,250 OD limit, 1 Oct Precise Mortgages 287.80 new; barclaycard-plat-20260925 + santander-everyday-20260925 duplicate confirmations only; ba-amex-20260924 1 row, balance 95.79 due 0. Also +3 ccBalances in finance.json (Amex Gold due 549.88 11 Oct, BA Amex, BoS overdraft). Note: Wise top-up via Aqua = cash advance (10.13 fee + 42.08% cash rate). h0045 ADIB screenshots not received yet.",
+  "status": "open"
  }
 ]
