@@ -24,6 +24,13 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
+## v5 - OCTOBER, FROM THE SEPTEMBER CLOSE (1 Oct). Page: data/finance/reports/september-close-october-plan.html
+September real spend D90K (60.1K + Tal share 29.9K). Of the 60.1K: avoidable 30.4K (Mauritius 17.4K, ads 10.4K, clothes 2.5K), interest+fees 7.3K, fixed 10.7K, living 11.8K. A normal September = ~D22.5K + Tal.
+30 Sep landed D221,330. October: FIXED 104K (BoS GBP3,700 = 18.2K incl. minimums, Amex Gold/coaching, Mum, Corrina, Kevin, pets; Lewis 10K; Tal 24.6K; rent pot 15K; Tara pot 31K; phone/subs 2.6K; Boxica+Turtletots 2.1K; baby 0.5K) + LIVING 12K (D3K/week, ADIB debit only) + ADIB card to ZERO ~56K = 172K. Left for Nov ~49K.
+Repeating without Tara/Lewis ~72.9K/mo -> Nov-Feb 292K vs 49K + 250K = 299K: lasts to March, ~7K spare. With Tara+Lewis 113.9K/mo = short ~157K -> those two wait for new income.
+Lever: if the Tara instalment is not due in October, hold the 31K.
+BoS is OVER its GBP3,000 limit (-3,155.50 on 1 Oct); MUM 300 + HSBC 36 leave ~5 Oct - fund today.
+
 ## v4 - THE PLAN THAT LASTS TO END-FEBRUARY (Calum 26 Sep: ~220K on 30 Sep, ~250K end-Oct, then nothing)
 Money: 470K + Vantage ~22K if withdrawn = ~492K for Oct-Feb, 5 months = Đ94K/mo all-in ceiling. Current repeating ~130K/mo does not fit; ~218K short over 5 months.
 
