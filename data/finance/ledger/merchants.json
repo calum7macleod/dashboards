@@ -2,6 +2,16 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "u drive rent a car|rent a car",
+   "category": "Life",
+   "sub": "Car / fuel / tolls"
+  },
+  {
+   "rx": "turtletots|baby|firstcry|mothercare",
+   "category": "Family",
+   "sub": "Baby"
+  },
+  {
    "rx": "monthly murabaha payment",
    "category": "Fees",
    "sub": "ADIB card monthly profit charge (Murabaha) = the card's interest",
