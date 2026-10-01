@@ -4309,7 +4309,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L02802",
+   "id": "L02805",
    "date": "2026-09-26",
    "account": "Wise GBP",
    "amount": 202.52,
@@ -4318,7 +4318,7 @@
    "desc": "Topped up account"
   },
   {
-   "id": "L02804",
+   "id": "L02809",
    "date": "2026-09-29",
    "account": "ADIB CC",
    "amount": 100.0,
@@ -4327,13 +4327,22 @@
    "desc": "T_90a1c4fce4e04fb0aa32e25da1483413 IPP payment in"
   },
   {
-   "id": "L02808",
+   "id": "L02813",
    "date": "2026-09-30",
    "account": "ADIB CC",
    "amount": 5000.0,
    "currency": "AED",
    "type": "card_repayment",
    "desc": "T_2688807a55b348acaf07b8e65b5ce3ee payment in"
+  },
+  {
+   "id": "L02818",
+   "date": "2026-10-01",
+   "account": "ADIB CC",
+   "amount": 5000.0,
+   "currency": "AED",
+   "type": "card_repayment",
+   "desc": "T_6bac5c7f231f4cb6bed02ad12709c9aa payment in"
   }
  ],
  "duplicates_dropped": []
