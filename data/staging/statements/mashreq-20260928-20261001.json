@@ -1,0 +1,62 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "28 Sep - 1 Oct 26",
+  "source": "app screenshots 1 Oct 26 (WhatsApp, 08:08-08:24 Dubai)",
+  "sign": "as printed: debits negative, credits positive",
+  "order": "chronological",
+  "printed": {
+   "currentBalance1Oct0808": 206424.84,
+   "availableBalance": 206424.84
+  },
+  "redacted": "beneficiary IBAN and masked card number removed from descriptions per repo rule",
+  "rowCount": 6,
+  "inFinanceJson": "none (finance.json Mashreq Sep has no rows after 25 Sep)"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-28",
+   "description": "Acct to Acct transfer - from own account (CALUM LACHLAN MACLEOD, mobile banking)",
+   "amount": 98.9,
+   "currency": "AED",
+   "reference": "033AACT26271B4QF"
+  },
+  {
+   "date": "2026-09-29",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -100.0,
+   "currency": "AED",
+   "reference": "033IPPD26272034V"
+  },
+  {
+   "date": "2026-09-30",
+   "description": "Salary - WPS WHITE AND WHITE REAL ESTATE L L C",
+   "amount": 221330.25,
+   "currency": "AED",
+   "reference": "033WPSP26273B53U"
+  },
+  {
+   "date": "2026-09-30",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -5000.0,
+   "currency": "AED",
+   "reference": "033IPPD262731K4N"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -5000.0,
+   "currency": "AED",
+   "reference": "033IPPD2627329IS"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "QuickRemit - to own UK bank account (CALUM MACLEOD)",
+   "amount": -5038.81,
+   "currency": "AED",
+   "reference": "017QGB2262740006"
+  }
+ ]
+}
