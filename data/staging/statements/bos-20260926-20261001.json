@@ -1,0 +1,90 @@
+{
+ "meta": {
+  "account": "BoS",
+  "accountType": "Classic current account",
+  "currency": "GBP",
+  "period": "26 Sep - 1 Oct 26 (as posted 28 Sep - 1 Oct)",
+  "source": "app screenshots 1 Oct 26 (WhatsApp, 08:08-08:24 Dubai)",
+  "sign": "as printed: debits negative",
+  "order": "chronological, running balance as printed after each row",
+  "printed": {
+   "balance1Oct0809": -3155.5,
+   "overdraftLimit": 3000.0,
+   "available": 0.0,
+   "overdrawn": 3155.5
+  },
+  "verified": "running balances chain from 25 Sep close -2,565.88 (finance.json positions.BoS_GBP_25Sep) to -3,155.50",
+  "scheduled": [
+   {
+    "due": "in 4 days from 1 Oct (~5 Oct)",
+    "description": "MUM",
+    "amount": -300.0
+   },
+   {
+    "due": "in 4 days from 1 Oct (~5 Oct)",
+    "description": "HSBC CREDIT CARD",
+    "amount": -36.49
+   }
+  ],
+  "rowCount": 8,
+  "inFinanceJson": "none (finance.json BoS Sep stops at 25 Sep)"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-28",
+   "description": "DAILY OD INT 26/09",
+   "amount": -2.36,
+   "currency": "GBP",
+   "balance": -2568.24
+  },
+  {
+   "date": "2026-09-28",
+   "description": "DAILY OD INT 27/09",
+   "amount": -2.36,
+   "currency": "GBP",
+   "balance": -2570.6
+  },
+  {
+   "date": "2026-09-28",
+   "description": "DAILY OD INT",
+   "amount": -2.36,
+   "currency": "GBP",
+   "balance": -2572.96
+  },
+  {
+   "date": "2026-09-29",
+   "description": "TESCO BANK",
+   "amount": -266.0,
+   "currency": "GBP",
+   "balance": -2838.96
+  },
+  {
+   "date": "2026-09-29",
+   "description": "DAILY OD INT",
+   "amount": -2.61,
+   "currency": "GBP",
+   "balance": -2841.57
+  },
+  {
+   "date": "2026-09-30",
+   "description": "DAILY OD INT",
+   "amount": -2.61,
+   "currency": "GBP",
+   "balance": -2844.18
+  },
+  {
+   "date": "2026-10-01",
+   "description": "PET HEALTH CLUB",
+   "amount": -28.25,
+   "currency": "GBP",
+   "balance": -2872.43
+  },
+  {
+   "date": "2026-10-01",
+   "description": "MBNA LIMITED",
+   "amount": -283.07,
+   "currency": "GBP",
+   "balance": -3155.5
+  }
+ ]
+}
