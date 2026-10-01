@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "account": "Santander Everyday",
+  "cardType": "Everyday Credit Card",
+  "currency": "GBP",
+  "period": "25 Sep 26 - top of list only",
+  "source": "app screenshots 1 Oct 26 (WhatsApp, 08:08-08:24 Dubai)",
+  "sign": "as printed: charges positive",
+  "printed": {
+   "balance": 11716.17,
+   "balanceOnLastStatement": 11716.17,
+   "available": 433.83,
+   "limit": 12150.0,
+   "pending": 0.0,
+   "minPayment": 318.06,
+   "minDue": "2026-10-21",
+   "directDebit": "Yes",
+   "expires": "02/29"
+  },
+  "rowCount": 2,
+  "inFinanceJson": "both rows and the 25 Sep ccBalance already present (staged 26 Sep) - duplicate confirmation only"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-25",
+   "description": "PURCHASES INTEREST CHARGE",
+   "amount": 0.26,
+   "currency": "GBP",
+   "inFinanceJson": true
+  },
+  {
+   "date": "2026-09-25",
+   "description": "TRANSFER BALANCE INT CHARGE",
+   "amount": 202.67,
+   "currency": "GBP",
+   "inFinanceJson": true
+  }
+ ]
+}
