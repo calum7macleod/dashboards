@@ -429,7 +429,7 @@
    "sub": "Car / fuel / tolls"
   },
   {
-   "rx": "facebk|facebook|fb\\.me|meta platforms|google ads|googleads",
+   "rx": "facebk|facebook|fb\\.me|meta platforms|^meta \\| meta$|google ads|googleads",
    "category": "Business",
    "sub": "Ads (Meta/Google)"
   },
