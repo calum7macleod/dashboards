@@ -2428,7 +2428,7 @@ L02426,2026-08-30,Aug 26,Sun,ADIB CC,AED,-105.95,-105.95,spend,Deliveries,Food d
 L02427,2026-08-30,Aug 26,Sun,ADIB CC,AED,-28.0,-28.0,spend,Deliveries,Eating out / coffee,"STARBUCKS-D079-3C , DUBAI",starbucks d079 3c dubai,,,adib-screens-provisional,d06a41d5b5ed
 L02428,2026-08-30,Aug 26,Sun,ADIB CC,AED,-367.61,-367.61,spend,Life,Phone,"DU Apple Pay , DUBAI",du apple pay dubai,,,adib-screens-provisional,357ff5494f6a
 L02429,2026-08-30,Aug 26,Sun,ADIB CC,AED,-129.4,-129.4,spend,Deliveries,Food delivery,"Deliveroo , Dubai",deliveroo dubai,,,adib-screens-provisional,3338b2134c02
-L02430,2026-08-30,Aug 26,Sun,ADIB CC,AED,-109.0,-109.0,spend,Life,Baby,"WWW.BABYGROWFZC.COM , SHARJAH",www babygrowfzc com sharjah,,,adib-screens-provisional,a1e444d110ea
+L02430,2026-08-30,Aug 26,Sun,ADIB CC,AED,-109.0,-109.0,spend,Family,Baby,"WWW.BABYGROWFZC.COM , SHARJAH",www babygrowfzc com sharjah,,,adib-screens-provisional,a1e444d110ea
 L02431,2026-08-30,Aug 26,Sun,ADIB CC,AED,-315.0,-315.0,spend,Business,Ads (Meta/Google),"FACEBK *CG8SM2JNT4 , Dublin",facebk cg8sm2jnt4 dublin,,,adib-screens-provisional,f1b5cbeb3d1b
 L02432,2026-08-30,Aug 26,Sun,ADIB CC,AED,-29.0,-29.0,spend,Deliveries,Eating out / coffee,"STARBUCKS-D079-3C , DUBAI",starbucks d079 3c dubai,,,adib-screens-provisional,c5fb5d41dc96
 L02433,2026-08-31,Aug 26,Mon,ADIB CC,AED,-949.0,-949.0,spend,Health,Training / medical,"BOXICA , DUBAI",boxica dubai,,,adib-screens-provisional,51ce54b04b05
@@ -2529,7 +2529,7 @@ L02527,2026-09-05,Sep 26,Sat,Wise GBP,GBP,-30.0,-147.63,spend,Life,Car / fuel / 
 L02528,2026-09-06,Sep 26,Sun,ADIB CC,AED,-315.0,-315.0,spend,Business,Ads (Meta/Google),Meta,meta,,,adib-cc-app-screens-sep,af8e4e7d9900
 L02529,2026-09-06,Sep 26,Sun,ADIB CC,AED,-129.0,-129.0,spend,Life,Home / shopping,Amazon,amazon,,,adib-cc-app-screens-sep,6e34a8c50006
 L02530,2026-09-06,Sep 26,Sun,ADIB CC,AED,-194.7,-194.7,spend,Life,Home / shopping,Amazon,amazon,,,adib-cc-app-screens-sep,fd0321cf7ffa
-L02531,2026-09-06,Sep 26,Sun,ADIB CC,AED,-410.47,-410.47,spend,Life,Clothes / baby / shopping,FirstCry Retail,firstcry retail,,,adib-cc-app-screens-sep,154739c5b090
+L02531,2026-09-06,Sep 26,Sun,ADIB CC,AED,-410.47,-410.47,spend,Family,Baby,FirstCry Retail,firstcry retail,,,adib-cc-app-screens-sep,154739c5b090
 L02532,2026-09-06,Sep 26,Sun,ADIB CC,AED,-519.34,-519.34,spend,Base Food,Groceries / meal prep,Spinneys,spinneys,,,adib-cc-app-screens-sep,008557e88938
 L02533,2026-09-06,Sep 26,Sun,ADIB CC,AED,-395.0,-395.0,spend,Deliveries,Eating out / coffee,MARA RESTAURANT AND CAFE,mara restaurant and cafe,,,adib-cc-app-screens-sep,718cfd92ad40
 L02534,2026-09-06,Sep 26,Sun,ADIB CC,AED,-45.0,-45.0,spend,Entertainment,Eating out / activities / trips,Dubai Golf,dubai golf,,,adib-cc-app-screens-sep,aaf212fe0918
@@ -2790,21 +2790,30 @@ L02788,2026-09-22,Sep 26,Tue,Amex Gold,GBP,-89.88,-442.3,spend,Life,Phone,DU BIL
 L02789,2026-09-22,Sep 26,Tue,Aqua,GBP,-4.06,-19.98,debt_cost,Fees,Card interest,Interest,interest,,,aqua-stmts-2026,1198a18bd9d3
 L02790,2026-09-22,Sep 26,Tue,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,3b9492b97c86
 L02791,2026-09-22,Sep 26,Tue,M&S,GBP,-12.0,-59.05,debt_cost,Fees,Card fees (late / cash advance / FX),LATE PAYMENT CHARGE,late payment charge,,,M&S-app-2026,f7306182fb6c
-L02792,2026-09-23,Sep 26,Wed,ADIB CC,AED,-18.0,-18.0,spend,Health,Training / medical,BOXICA,boxica,,,adib-cc-app-screens-sep,709713596da7
-L02793,2026-09-23,Sep 26,Wed,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,a961ee41d542
-L02794,2026-09-24,Sep 26,Thu,BoS,GBP,-150.0,-738.15,spend,Family,Corrina (standing GBP150/mo - confirm what),CORRINA FLAHER,corrina flaher,,,bos-csv-2026,b964ecd713f1
-L02795,2026-09-24,Sep 26,Thu,BoS,GBP,-8.99,-44.24,spend,Life,Subscriptions,APPLE.COM/BILL,apple com bill,,,bos-csv-2026,6e4444096a51
-L02796,2026-09-24,Sep 26,Thu,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,b46a553f258e
-L02797,2026-09-25,Sep 26,Fri,Barclaycard Plat,GBP,-24.48,-120.47,debt_cost,Fees,Card interest,Cash Interest Charge,cash interest charge,,,barclaycard-app-2026,25ce44711fb3
-L02798,2026-09-25,Sep 26,Fri,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,55941a0b6d38
-L02799,2026-09-25,Sep 26,Fri,Santander Everyday,GBP,-202.67,-997.34,debt_cost,Fees,Card interest,TRANSFER BALANCE INT CHARGE,transfer balance int charge,,,santander-app-2026,cab263f4d1da
-L02800,2026-09-25,Sep 26,Fri,Santander Everyday,GBP,-0.26,-1.28,debt_cost,Fees,Card interest,PURCHASES INTEREST CHARGE,purchases interest charge,,,santander-app-2026,dcb28ec06f84
-L02801,2026-09-26,Sep 26,Sat,Wise GBP,GBP,-2.52,-12.4,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2393719732,wise charges for transfer 2393719732,,,wise-csv-2026,70c96addd631
-L02802,2026-09-26,Sep 26,Sat,Wise GBP,GBP,202.52,996.6,transfer,Other,,Topped up account,topped up account,,one_legged,wise-csv-2026,2409d56f140e
-L02803,2026-09-29,Sep 26,Tue,ADIB CC,AED,-22.0,-22.0,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-screens-sep,06adbeaab76b
-L02804,2026-09-29,Sep 26,Tue,ADIB CC,AED,100.0,100.0,card_repayment,Other,,T_90a1c4fce4e04fb0aa32e25da1483413 IPP payment in,t 90a1c4fce4e04fb0aa32e25da1483413 ipp p,,one_legged,adib-cc-app-screens-sep,2af78de91cfd
-L02805,2026-09-30,Sep 26,Wed,ADIB CC,AED,-2360.0,-2360.0,spend,Entertainment,Eating out / hotels,LE ROYAL MERIDIEN BEAC (pending),le royal meridien beac pending,,,adib-cc-app-screens-sep,12a5a2503f45
-L02806,2026-09-30,Sep 26,Wed,ADIB CC,AED,-400.0,-400.0,spend,Entertainment,Eating out / hotels,ATMOSPHERE BURJ KHALIFA L (pending),atmosphere burj khalifa l pending,,,adib-cc-app-screens-sep,0879b608a3a7
-L02807,2026-09-30,Sep 26,Wed,ADIB CC,AED,-29.0,-29.0,spend,Life,Subscriptions,Deliveroo Plus Subs (pending),deliveroo plus subs pending,,,adib-cc-app-screens-sep,08a6d20fcf77
-L02808,2026-09-30,Sep 26,Wed,ADIB CC,AED,5000.0,5000.0,card_repayment,Other,,T_2688807a55b348acaf07b8e65b5ce3ee payment in,t 2688807a55b348acaf07b8e65b5ce3ee payme,,one_legged,adib-cc-app-screens-sep,6e36aa7c9f89
-L02809,2026-09-30,Sep 26,Wed,ADIB CC,AED,-2331.0,-2331.0,debt_cost,Fees,ADIB card monthly profit charge (Murabaha) = the card's interest,Monthly Murabaha Payment,monthly murabaha payment,,,adib-cc-app-screens-sep,fe9a44feefd2
+L02792,2026-09-23,Sep 26,Wed,BoS,GBP,-2.2,-10.83,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,a961ee41d542
+L02793,2026-09-24,Sep 26,Wed,ADIB CC,AED,-18.0,-18.0,spend,Health,Training / medical,BOXICA,boxica,,,adib-cc-app-screens-sep,e335e85a4e18
+L02794,2026-09-24,Sep 26,Thu,ADIB CC,AED,-343.0,-343.0,spend,Life,Car / fuel / tolls,U Drive Rent A Car LLC,u drive rent a car llc,,,adib-cc-app-screens-sep,512c0ddee667
+L02795,2026-09-24,Sep 26,Thu,BoS,GBP,-150.0,-738.15,spend,Family,Corrina (standing GBP150/mo - confirm what),CORRINA FLAHER,corrina flaher,,,bos-csv-2026,b964ecd713f1
+L02796,2026-09-24,Sep 26,Thu,BoS,GBP,-8.99,-44.24,spend,Life,Subscriptions,APPLE.COM/BILL,apple com bill,,,bos-csv-2026,6e4444096a51
+L02797,2026-09-24,Sep 26,Thu,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,b46a553f258e
+L02798,2026-09-25,Sep 26,Fri,ADIB CC,AED,260.1,260.1,refund,Life,Home / shopping,Amazon refund,amazon refund,,,adib-cc-app-screens-sep,e3bb18975b48
+L02799,2026-09-25,Sep 26,Fri,Barclaycard Plat,GBP,-24.48,-120.47,debt_cost,Fees,Card interest,Cash Interest Charge,cash interest charge,,,barclaycard-app-2026,25ce44711fb3
+L02800,2026-09-25,Sep 26,Fri,BoS,GBP,-2.35,-11.56,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,55941a0b6d38
+L02801,2026-09-25,Sep 26,Fri,Santander Everyday,GBP,-202.67,-997.34,debt_cost,Fees,Card interest,TRANSFER BALANCE INT CHARGE,transfer balance int charge,,,santander-app-2026,cab263f4d1da
+L02802,2026-09-25,Sep 26,Fri,Santander Everyday,GBP,-0.26,-1.28,debt_cost,Fees,Card interest,PURCHASES INTEREST CHARGE,purchases interest charge,,,santander-app-2026,dcb28ec06f84
+L02803,2026-09-26,Sep 26,Sat,ADIB CC,AED,-20.5,-20.5,spend,Life,Car / fuel / tolls,U Drive Rent A Car LLC,u drive rent a car llc,,,adib-cc-app-screens-sep,80268fdbc5a0
+L02804,2026-09-26,Sep 26,Sat,Wise GBP,GBP,-2.52,-12.4,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-2393719732,wise charges for transfer 2393719732,,,wise-csv-2026,70c96addd631
+L02805,2026-09-26,Sep 26,Sat,Wise GBP,GBP,202.52,996.6,transfer,Other,,Topped up account,topped up account,,one_legged,wise-csv-2026,2409d56f140e
+L02806,2026-09-27,Sep 26,Sun,ADIB CC,AED,-56.0,-56.0,spend,Life,Home / shopping,Amazon,amazon,,,adib-cc-app-screens-sep,1abc316219be
+L02807,2026-09-27,Sep 26,Sun,ADIB CC,AED,-54.55,-54.55,spend,Life,Home / shopping,Amazon,amazon,,,adib-cc-app-screens-sep,7ff45ed56da9
+L02808,2026-09-29,Sep 26,Tue,ADIB CC,AED,-22.0,-22.0,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-screens-sep,06adbeaab76b
+L02809,2026-09-29,Sep 26,Tue,ADIB CC,AED,100.0,100.0,card_repayment,Other,,T_90a1c4fce4e04fb0aa32e25da1483413 IPP payment in,t 90a1c4fce4e04fb0aa32e25da1483413 ipp p,,one_legged,adib-cc-app-screens-sep,2af78de91cfd
+L02810,2026-09-30,Sep 26,Wed,ADIB CC,AED,-2360.0,-2360.0,spend,Entertainment,Eating out / hotels,LE ROYAL MERIDIEN BEAC (pending),le royal meridien beac pending,,,adib-cc-app-screens-sep,12a5a2503f45
+L02811,2026-09-30,Sep 26,Wed,ADIB CC,AED,-400.0,-400.0,spend,Entertainment,Eating out / hotels,ATMOSPHERE BURJ KHALIFA L (pending),atmosphere burj khalifa l pending,,,adib-cc-app-screens-sep,0879b608a3a7
+L02812,2026-09-30,Sep 26,Wed,ADIB CC,AED,-29.0,-29.0,spend,Life,Subscriptions,Deliveroo Plus Subs (pending),deliveroo plus subs pending,,,adib-cc-app-screens-sep,08a6d20fcf77
+L02813,2026-09-30,Sep 26,Wed,ADIB CC,AED,5000.0,5000.0,card_repayment,Other,,T_2688807a55b348acaf07b8e65b5ce3ee payment in,t 2688807a55b348acaf07b8e65b5ce3ee payme,,one_legged,adib-cc-app-screens-sep,6e36aa7c9f89
+L02814,2026-09-30,Sep 26,Wed,ADIB CC,AED,-2331.0,-2331.0,debt_cost,Fees,ADIB card monthly profit charge (Murabaha) = the card's interest,Monthly Murabaha Payment,monthly murabaha payment,,,adib-cc-app-screens-sep,fe9a44feefd2
+L02815,2026-10-01,Oct 26,Thu,ADIB CC,AED,-18.0,-18.0,spend,Health,Training / medical,BOXICA (pending),boxica pending,,,adib-cc-app-screens-sep,d9d0974e0662
+L02816,2026-10-01,Oct 26,Thu,ADIB CC,AED,-949.0,-949.0,spend,Health,Training / medical,BOXICA (pending),boxica pending,,,adib-cc-app-screens-sep,cb666177426d
+L02817,2026-10-01,Oct 26,Thu,ADIB CC,AED,-1039.5,-1039.5,spend,Family,Baby,WWW.TURTLETOTS.COM/AE (pending),www turtletots com ae pending,,,adib-cc-app-screens-sep,378595c0577b
+L02818,2026-10-01,Oct 26,Thu,ADIB CC,AED,5000.0,5000.0,card_repayment,Other,,T_6bac5c7f231f4cb6bed02ad12709c9aa payment in,t 6bac5c7f231f4cb6bed02ad12709c9aa payme,,one_legged,adib-cc-app-screens-sep,745ad178bbb0
