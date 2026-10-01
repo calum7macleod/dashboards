@@ -21,7 +21,7 @@ TRANSFER_RX = re.compile(r"transfer|tfr|money$|via wise|ziina|wise|binance|card 
 DEBT_COST_RX = re.compile(r"interest|profit|late fee|annual fee|fx fee|conversion fee|markup|overlimit|charge", re.I)
 CASH_RX = re.compile(r"\batm\b|cash withdrawal|cash advance|quasi cash", re.I)
 INCOME_RX = re.compile(r"wps|salary|commission|airbnb|payout|refund|cashback", re.I)
-INVEST_RX = re.compile(r"kraken|coinbase|tara|modon|hudayriyat|reem", re.I)
+INVEST_RX = re.compile(r"kraken|coinbase|\btara\b|modon|hudayriyat|al reem", re.I)
 # money movers between UAE and UK: the outflow lands on one statement, the inflow on another, days later, other currency, fee eaten in between
 INTERMEDIARY_RX = re.compile(r"wise|transferwise|nium|quickremit|inward remittance|ziina|al ansari|lulu exch|al fardan|uae exchange|western union|remitly|revolut|payoneer|paypal|careem pay|binance|p2p|xoom|worldremit|ria money|moneygram|sharaf exch|gcc exch|joyalukkas|swift|tt ref|inward remit|outward remit|international transfer|faster payment|fps", re.I)
 CARD_ACCOUNT_RX = re.compile(r"adib cc|tesco|virgin|santander|mbna|m&s|hsbc|barclay|amex|aqua", re.I)   # our card accounts by name
@@ -63,7 +63,7 @@ def guess_type(r):
     if re.search(r"^returned dd", d, re.I): return "transfer"   # the bank side of a bounced card DD - pairs with the card's reversal
     if re.search(r"interest|late payment (fee|charge)|cash (advance |transaction )?fee|foreign exchange (fee|conversion charge)|non-sterling|annual fee|overlimit fee|wise charges", d, re.I) and a < 0: return "debt_cost"
     if r["account"] in OWN_CARDS or r["account"] == "ADIB CC" or r["account"] in ("Tesco Clubcard", "Virgin Money"):
-        if a > 0 and re.search(r"thank you|payment dd|payment by direct debit|app payment|faster payment|payment received|card payment in", d, re.I) and not re.search(r"reversed|reversal|returned", d, re.I): return "card_repayment"
+        if a > 0 and re.search(r"thank you|payment dd|payment by direct debit|app payment|faster payment|payment received|card payment in|payment in$", d, re.I) and not re.search(r"reversed|reversal|returned", d, re.I): return "card_repayment"
         if a < 0 and re.search(r"payment revers|unpaid direct debit|returned direct debit|unpaid dd", d, re.I): return "transfer"
     wt = r.get("wise_type")
     if wt in ("MONEY_ADDED", "CONVERSION", "DEPOSIT"): return "transfer"
