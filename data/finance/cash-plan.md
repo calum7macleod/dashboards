@@ -40,6 +40,23 @@ OCTOBER (sent 1 Oct: GBP1,000 QuickRemit + GBP12,500 Wise = 13,500)
 | Wise subs: Anthropic 180, Giffgaff 50, OpenAI 18, Deepstash 27, Canva 21, FMD 9, Apple 12 (+ Darryl editor ~180 Oct only) - Mashreq -> Wise once a month, never via a card | 500 | funded 1st; no Dubai spend on the Wise card |
 | **October** | **13,800** | sent 13,500 to BoS + 500 to Wise |
 NOVEMBER ONWARDS (no overdraft, arrears or Aqua): minimums 1,700 + Amex ~550 + Kevin 1,000 + Tal 1,500 + Wise subs ~317 = ~GBP5,070/mo, falling as cards clear. Cut: Abegail, Wise Dubai spend, Precise (rent covers).
+UK BUDGET OCT 2026 - JAN 2027 (GBP). Base case = Aqua cleared in October, nothing else paid off early; promos: none end before Jan 2027 (MBNA 1 Apr/May 27, MBNA 2 Oct 27, Barclaycard Jan 28; HSBC + M&S end dates unknown - CHECK).
+| Line | Oct | Nov | Dec | Jan |
+|---|---|---|---|---|
+| Card minimums (Santander 318, Virgin ~400, M&S 188, MBNA 1 283, Tesco 266, Barclaycard 118, MBNA 2 49, HSBC 36, Aqua 35 then 0) | 1,700 | 1,660 | 1,660 | 1,660 |
+| Mum 300 + Corrina 150 + pets 150 | in 1,700 | 600 | 600 | 600 |
+| Amex Gold (coaching 460 + Du) | 646 | 550 | 550 | 550 |
+| Kevin | 1,000 | 1,000 | 1,000 | 1,000 |
+| Tal - UK cards | 1,500 | 1,500 | 1,500 | 1,500 |
+| Wise subs (Anthropic, Giffgaff, OpenAI, Deepstash, Canva, FMD, Apple) | 500 | 317 | 317 | 317 |
+| One-offs: overdraft 3,000 / arrears 1,456 / Aqua 4,000 | 8,456 | - | - | - |
+| **Month** | **13,800** | **5,630** | **5,630** | **5,630** |
+| AED at ~4.90 | ~67,600 | ~27,600 | ~27,600 | ~27,600 |
+(Nov-Jan = 5,070 + the 600 for Mum/Corrina/pets, which October carried inside the 1,700.)
+Not in the base case, decide separately: Christmas / a UK trip in December; Amex Gold annual fee GBP195 (charged Mar 26, next Mar 27); Agria pet insurance if it is annual (GBP593 seen Jan-May); any card paid off early - each one removes its minimum: Tesco -266, Virgin -400, Santander -318, M&S -188, MBNA 1 -283.
+Lever: paying Tesco (5,727) and Virgin (9,706) from the end-October money removes 666/mo of minimums and ~325/mo of interest - but costs ~D76K the Nov-Feb runway does not have. Base case stands until Jake's income is real.
+DD CALENDAR (fund BoS to cover the month on payday): 1 MBNA 1 283 · ~3 Virgin ~400 · 4 HSBC 36 · 5 Mum 300 · 9 Aqua 35 · 11 Amex 646/550 · 16 MBNA 2 49 · 17 Pet Health 28 · 20 Barclaycard 118 · 21 Santander 318 + M&S 188 · ~24 Corrina 150 · 29 Tesco 266.
+
 RULES (1 Oct): BoS >= -2,000 before every DD run · no UK card used for spending, frozen in the apps · Nationwide never swept, rent stays in · DDs restarted on Virgin + M&S, confirmed on MBNA 1 / Santander / Tesco · any failed DD reported to Finance the same day.
 ## UK, OCTOBER - IN MOTION 1 Oct: Calum sent GBP1,000 via Mashreq QuickRemit (fast, dearer) + GBP12,500 via Wise. Total GBP13,500 ~ D66K.
 Order when the money lands in BoS: (1) overdraft inside 3,000; (2) arrears Virgin ~800, M&S ~376, MBNA 1 ~280 - exact figures from the apps; (3) restart DDs on Virgin + M&S, confirm MBNA 1 / Santander / Tesco, all set to MINIMUM; (4) Amex Gold 549.88 before 11 Oct; (5) Aqua cleared; (6) Kevin 1,000, Tal 1,500; (7) leave ~1,700 for the rest of the DD run.
