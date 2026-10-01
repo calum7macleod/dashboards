@@ -366,5 +366,13 @@
   "to": "Finance",
   "item": "1 Oct app snapshots -> data/staging/statements/ (8 files, date-range names, rows as printed, chronological, running balances where shown, inFinanceJson flags on dup rows): aqua-20260923-20260928 36 rows GBP sums to printed 853.33 incl 21.30 pending (app figure 3,155.91 below list, label cut off, vs staged 22 Sep stmt 3,126.31 - check); bos-20260926-20261001 8 rows chain -2,565.88 -> -3,155.50 at 1 Oct 08:09, OVER 3,000 limit, MUM 300 + HSBC 36.49 leave ~5 Oct; mashreq-20260928-20261001 6 rows AED closing 206,424.84 - SALARY +221,330.25 AED 30 Sep from White and White RE, then 5,000 + 5,000 + 100 card payments and QuickRemit 5,038.81 AED to BoS 1 Oct; wise-20260926-20260930 9 rows (26 Sep top-up already in finance.json); property-account-20260920-20261001 = Nationwide FlexDirect, 3 rows, -2,233.71 vs 2,250 OD limit, 1 Oct Precise Mortgages 287.80 new; barclaycard-plat-20260925 + santander-everyday-20260925 duplicate confirmations only; ba-amex-20260924 1 row, balance 95.79 due 0. Also +3 ccBalances in finance.json (Amex Gold due 549.88 11 Oct, BA Amex, BoS overdraft). Note: Wise top-up via Aqua = cash advance (10.13 fee + 42.08% cash rate). h0045 ADIB screenshots not received yet.",
   "status": "done"
+ },
+ {
+  "id": "h0047",
+  "date": "2026-10-01",
+  "from": "content",
+  "to": "Market",
+  "item": "ADD to h0013 verify list (from Calum's first-10 scripts, 1 Oct): Abu Dhabi airport 93k pax/day June 2026; DWC 5 runways / 150m phase 1 2032 / 255-260m later; Atlanta pax; Disney 'seventh' park; 39.3m visitors + 178k jobs by 2030; London avg commute 47 min; UAE nationals 10% / 1.2m; Modon 'highest revenue H1 2026 > Emaar' (receipt is sales value); Quia Emptores 1290 + London 1297 pop; Bilbao 'quadrupled'; Modon 23bn sales; Hudayriyat 16 schools/7 clinics/9 hotels (Modon says plots); 38k sqft mansions; Surf AD 'largest'; Guggenheim Dec / NHM open; Dar al Funoon 2030; Saadiyat beach 8 vs 9 km; Reem Hills handover; Goldman ADGM office open; xAI stake status; Al Naseem handover Q4 2026 vs Q1 2028; Abu Dhabi GFCI rank Sep 2026; Dubai off-plan premium 13% (ValuStrat Q2) vs h0001's 24% - reconcile.",
+  "status": "open"
  }
 ]
