@@ -2,6 +2,142 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "nshama town square",
+   "category": "Life",
+   "sub": "Home / services"
+  },
+  {
+   "rx": "abbad alshams|national taxi",
+   "category": "Life",
+   "sub": "Car / fuel / tolls / taxis"
+  },
+  {
+   "rx": "digitalocean",
+   "category": "Business",
+   "sub": "Software / AI"
+  },
+  {
+   "rx": "din tai fung|nash hot chicken|coldstone|holiday inn",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "ufc fight club|fantasyfootballfix",
+   "category": "Entertainment",
+   "sub": "Events / subscriptions"
+  },
+  {
+   "rx": "nu\\.me beauty|reva wellness",
+   "category": "Life",
+   "sub": "Personal care"
+  },
+  {
+   "rx": "property index",
+   "category": "Business",
+   "sub": "Licences / admin / RERA"
+  },
+  {
+   "rx": "icandy",
+   "category": "Family",
+   "sub": "Baby"
+  },
+  {
+   "rx": "suited and booted|suitedbooted",
+   "category": "Life",
+   "sub": "Clothes / home / shopping"
+  },
+  {
+   "rx": "profit earned and bonus",
+   "category": "Fees",
+   "sub": "ADIB card monthly profit charge (Murabaha) = the card's interest",
+   "type": "refund"
+  },
+  {
+   "rx": "dubai electricity|dewa",
+   "category": "Life",
+   "sub": "DEWA / utilities"
+  },
+  {
+   "rx": "kendamil|mumzworld|spectrababy|mamas and papas|mom store|firstcry|kids wippy|scandi candy",
+   "category": "Family",
+   "sub": "Baby"
+  },
+  {
+   "rx": "kings college|medisouq|life 47 pharmacy|ibn sina|med x pharmacy|life pharmacy|elite vita|yoli hydro|first response|pure peptides|ken food supp",
+   "category": "Health",
+   "sub": "Training / medical"
+  },
+  {
+   "rx": "boxica",
+   "category": "Health",
+   "sub": "Boxica"
+  },
+  {
+   "rx": "emirates\\.co|emirates 17|emirates leis|ezm call|qdf concourse|dubai duty free|hotel|atlantis|westin|il borro|marsa al arab|nusret|mood up gida|istanbul",
+   "category": "Entertainment",
+   "sub": "Travel"
+  },
+  {
+   "rx": "sushi samba|leto|massimos|bateel|hill house|hillhouse|tashas|nandos|joe and the juice|the strand|go greek|taqado|pret dic|lime tree|moishi|yas bay|bakerist|cq french|baskin|krispy|mcdonalds|i coffee|parka coffe|caribou|starbucks|arabica|tazizi|hamlam|al homaizi|mangrove mini|circle k|quick snack|p r o vending|amusement services|limitlesspark",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "deliveroo",
+   "category": "Deliveries",
+   "sub": "Food delivery"
+  },
+  {
+   "rx": "instashop|spinneys|amazon grocery|carrefour|waitrose|value basket|fittmeals",
+   "category": "Base Food",
+   "sub": "Groceries / meal prep"
+  },
+  {
+   "rx": "selfdrive|u drive|cafu|adnoc|enoc|eppco|uber|careem|zofeur|cars taxi|valtrans|the valet|parkonic|green parking|m b m navi|mawaqif|salik",
+   "category": "Life",
+   "sub": "Car / fuel / tolls / taxis"
+  },
+  {
+   "rx": "barbershop|grooming company|fresha|sota hair|stay flawless|qian dragon|innovative beauty",
+   "category": "Life",
+   "sub": "Personal care"
+  },
+  {
+   "rx": "montblanc|groupon|suitedbooted|nike uae|frasers|next directory|nextuae|asos|farfetch|amazon\\.ae|amazon ,|amazon$",
+   "category": "Life",
+   "sub": "Clothes / home / shopping"
+  },
+  {
+   "rx": "theta documents|al rawda typing|tasheel|tassheel|smart dubai|dubai golf llc|dubai polo|emaar , dubai|d p s exhibitions|excel enterprises|arabesq|paymob|pmb\\*accept|ziina",
+   "category": "Business",
+   "sub": "Licences / admin / RERA"
+  },
+  {
+   "rx": "highlevel|reelly|widgit|sandcastles|buzzfy|upwork|onepeakcreative|ffscout",
+   "category": "Business",
+   "sub": "Software / AI"
+  },
+  {
+   "rx": "oura|youtube|amazon prime|deliveroo plus",
+   "category": "Life",
+   "sub": "Subscriptions"
+  },
+  {
+   "rx": "virgin mobile|du apple pay|du telecom",
+   "category": "Life",
+   "sub": "Phone"
+  },
+  {
+   "rx": "alexanderbutler",
+   "category": "Business",
+   "sub": "Life coach (Alexander Butler, GBP460/mo)"
+  },
+  {
+   "rx": "motor city llc|emiratesbulk|justlife|mohamed hamoud alshaya",
+   "category": "Life",
+   "sub": "Home / services"
+  },
+  {
    "rx": "cara exclusive",
    "category": "Family",
    "sub": "Gift for Tal (Cara Exclusive, Aug)",
