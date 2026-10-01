@@ -2,6 +2,42 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "international transaction fee|international trxn fee",
+   "category": "Fees",
+   "sub": "Card fees (late / cash advance / FX)",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "highlevel|reelly|widgit|sandcastles|buzzfy|oura ring",
+   "category": "Business",
+   "sub": "Software / AI"
+  },
+  {
+   "rx": "ezm call ce",
+   "category": "Unaccounted",
+   "sub": "EZM Call ce x3 11 Sep D5,610 - what is it?"
+  },
+  {
+   "rx": "asos|\\bnext\\b|firstcry",
+   "category": "Life",
+   "sub": "Clothes / baby / shopping"
+  },
+  {
+   "rx": "zofeur|careem(?! food)",
+   "category": "Life",
+   "sub": "Car / fuel / tolls"
+  },
+  {
+   "rx": "qlub|tashas|hillhouse|mara restaurant|long island|heal cafe|paul dubai|kids wippy",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "hamlam trading",
+   "category": "Unaccounted",
+   "sub": "Hamlam Trading - what?"
+  },
+  {
    "rx": "cara exclusive",
    "category": "Family",
    "sub": "Gift for Tal (Cara Exclusive, Aug)",
