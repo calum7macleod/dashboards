@@ -47,7 +47,7 @@ Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-
 | **UAE** | **120,189** | **85,500** | **85,500** | **85,500** |
 Not in (decided out, 1 Oct): cash, DEWA (Tal's budget), grooming/hair, medical, visa admin (bar Property Index), Marielle, Theta, Amazon/home, pharmacy, editors bar Merkz, ads.
 Car line removed 1 Oct: Selfdrive sits in Tal's bills; fuel/parking from misc. Tara + rent added 1 Oct (pots, funded monthly). Lewis added 1 Oct: 6,000 Oct then 5,000/mo. STILL TO ADD: ADIB card paydown.
-TOTAL LOCKED Oct-Jan (AED): UK 170,000 + UAE 376,689 = 546,689 vs money 221K + 250K = 471K -> SHORT ~D76K before any ADIB paydown. Jose/Majid written off, Vantage ignored.
+TOTAL LOCKED Oct-Jan (AED): UK 209,200 + UAE 376,689 = 585,889 vs money 221K + 250K = 471K -> SHORT ~D115K before any ADIB paydown/minimums. Missing still: Modon instalment, UK self-assessment 31 Jan, brokerage move costs, ADIB current acct DDs. Jose/Majid written off, Vantage ignored.
 
 ## UK BUDGET - LOCKED 1 Oct 2026. Calum's lines. Finance scrutinises every line, every Sunday, KEPT / BROKEN by name.
 OCTOBER (sent 1 Oct: GBP1,000 QuickRemit + GBP12,500 Wise = 13,500)
@@ -76,8 +76,9 @@ UK BUDGET OCT 2026 - JAN 2027 (GBP). Base case = Aqua cleared in October, nothin
 | Wise subs (Anthropic, Giffgaff, OpenAI, Deepstash, Canva, FMD, Apple) | 500 | 317 | 317 | 317 |
 | One-offs: overdraft 3,000 / arrears 1,456 / Aqua 4,000 | 8,456 | - | - | - |
 | UK lawyer (one-off, Calum 1 Oct) | - | 7,000 | - | - |
-| **Month** | **13,800** | **11,630** | **4,630** | **4,630** |
-| AED at ~4.90 | ~67,600 | ~57,000 | ~22,700 | ~22,700 |
+| UK trip, December (flights, family, Christmas - Calum 1 Oct) | - | - | 8,000 | - |
+| **Month** | **13,800** | **11,630** | **12,630** | **4,630** |
+| AED at ~4.90 | ~67,600 | ~57,000 | ~61,900 | ~22,700 |
 (Nov-Jan: minimums 1,660 + Mum/Corrina/pets 600 + Amex 550 + Tal 1,500 + Wise 317 = 4,627. Kevin done after October.)
 Not in the base case, decide separately: Christmas / a UK trip in December; Amex Gold annual fee GBP195 (charged Mar 26, next Mar 27); Agria pet insurance if it is annual (GBP593 seen Jan-May); any card paid off early - each one removes its minimum: Tesco -266, Virgin -400, Santander -318, M&S -188, MBNA 1 -283.
 Lever: paying Tesco (5,727) and Virgin (9,706) from the end-October money removes 666/mo of minimums and ~325/mo of interest - but costs ~D76K the Nov-Feb runway does not have. Base case stands until Jake's income is real.
