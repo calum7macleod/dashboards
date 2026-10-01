@@ -43,10 +43,11 @@ Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-
 | Tal - her monthly budget | 10,000 | 10,000 | 10,000 | 10,000 |
 | Tara - 116,500 due by end Jan, spread | 29,125 | 29,125 | 29,125 | 29,125 |
 | Rent - 37,500 due by end Jan, spread | 9,375 | 9,375 | 9,375 | 9,375 |
-| **UAE** | **114,189** | **80,500** | **80,500** | **80,500** |
+| Lewis (loan repayment) | 6,000 | 5,000 | 5,000 | 5,000 |
+| **UAE** | **120,189** | **85,500** | **85,500** | **85,500** |
 Not in (decided out, 1 Oct): cash, DEWA (Tal's budget), grooming/hair, medical, visa admin (bar Property Index), Marielle, Theta, Amazon/home, pharmacy, editors bar Merkz, ads.
-Car line removed 1 Oct: Selfdrive sits in Tal's bills; fuel/parking from misc. Tara + rent added 1 Oct (pots, funded monthly). STILL TO ADD: Lewis, ADIB card paydown.
-TOTAL LOCKED Oct-Jan (AED): UK 170,000 + UAE 355,689 = 525,689 vs money 221K landed + 250K due = 471K -> SHORT ~D55K before Lewis or any ADIB paydown.
+Car line removed 1 Oct: Selfdrive sits in Tal's bills; fuel/parking from misc. Tara + rent added 1 Oct (pots, funded monthly). Lewis added 1 Oct: 6,000 Oct then 5,000/mo. STILL TO ADD: ADIB card paydown.
+TOTAL LOCKED Oct-Jan (AED): UK 170,000 + UAE 376,689 = 546,689 vs money 221K + 250K = 471K -> SHORT ~D76K before any ADIB paydown. Jose/Majid written off, Vantage ignored.
 
 ## UK BUDGET - LOCKED 1 Oct 2026. Calum's lines. Finance scrutinises every line, every Sunday, KEPT / BROKEN by name.
 OCTOBER (sent 1 Oct: GBP1,000 QuickRemit + GBP12,500 Wise = 13,500)
