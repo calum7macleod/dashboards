@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-26",
+ "asOf": "2026-10-01",
  "fx": {
   "GBP": {
    "Jan 26": 4.949,
@@ -87,52 +87,53 @@
   },
   "Aug 26": {
    "invested": 15856.04,
-   "spend": 84207.37,
-   "debt_cost": 4611.550000000009,
+   "spend": 99207.36999999978,
+   "debt_cost": 4767.360000000016,
    "transfer_cost": 651.45,
    "income": 0.0,
-   "net": -84207.37
+   "net": -99207.36999999978
   },
   "Sep 26": {
-   "spend": 24081.860000000004,
+   "spend": 20572.060000000016,
+   "debt_cost": 4249.3,
    "card_repay_unmatched": 6574.41,
-   "debt_cost": 4152.160000000001,
    "income": 106464.19,
+   "invested": 93.84,
    "transfer_cost": 865.52,
-   "net": 82382.33
+   "net": 85892.12999999999
   }
  },
  "by_category": {
   "Jan 26": {
    "Life": 6793.199999999999,
-   "Base Food": 4526.54,
+   "Base Food": 4448.589999999999,
    "Fees": 1121.6400000000003,
    "Entertainment": 2899.0,
-   "Health": 6617.92,
-   "Business": 17218.56,
+   "Health": 6591.35,
+   "Business": 17245.13,
    "Deliveries": 2646.6299999999997,
    "Gambling": 692.86,
-   "Unaccounted": 127.23999999999998,
+   "Unaccounted": 205.18999999999994,
    "Family": 742.35
   },
   "Feb 26": {
-   "Deliveries": 3775.15,
+   "Deliveries": 3690.15,
+   "Unaccounted": 463.49,
    "Fees": 2908.55,
    "Life": 2100.6400000000003,
-   "Business": 12768.609999999999,
+   "Business": 12795.179999999998,
    "Base Food": 3324.0299999999997,
    "Entertainment": 660.0,
    "Investing": 2.0,
-   "Health": 471.57,
-   "Unaccounted": 378.49,
+   "Health": 445.0,
    "Family": 750.0
   },
   "Mar 26": {
    "Fees": 2209.3000000000006,
    "Gambling": 974.0,
    "Life": 2474.44,
-   "Business": 12932.53,
-   "Health": 1171.99,
+   "Business": 12939.52,
+   "Health": 1165.0,
    "Deliveries": 775.3000000000001,
    "Entertainment": 1470.45,
    "Base Food": 3456.6,
@@ -151,14 +152,14 @@
    "Investing": 2.0
   },
   "May 26": {
-   "Life": 13273.74,
+   "Life": 13353.999999999998,
    "Fees": 4720.770000000002,
    "Business": 17841.890000000003,
    "Health": 18.0,
    "Gambling": 1479.3,
    "Deliveries": 1364.19,
    "Entertainment": 2717.56,
-   "Unaccounted": 454.15,
+   "Unaccounted": 373.89,
    "Family": 739.65
   },
   "Jun 26": {
@@ -175,46 +176,47 @@
    "Life": 4783.959999999999,
    "Fees": 6390.7199999999975,
    "Business": 5669.469999999999,
-   "Entertainment": 10722.03,
+   "Entertainment": 10207.2,
    "Health": 757.75,
    "Unaccounted": -419.73,
-   "Deliveries": 526.6999999999999,
+   "Deliveries": 1041.53,
    "Base Food": 312.4,
    "Family": 735.3
   },
   "Aug 26": {
-   "Base Food": 6814.95,
+   "Family": 15748.2,
+   "Base Food": 6029.99,
    "Entertainment": 23232.45,
-   "Deliveries": 2750.0,
-   "Life": 16095.94,
-   "Business": 26975.159999999996,
-   "Fees": 5319.280000000011,
+   "Deliveries": 3435.96,
+   "Life": 16076.94,
+   "Business": 26994.159999999996,
+   "Fees": 5475.090000000017,
    "Health": 2071.0699999999997,
-   "Unaccounted": 200.32000000000005,
-   "Family": 748.2
+   "Unaccounted": 143.51
   },
   "Sep 26": {
-   "Fees": 5180.16,
-   "Life": 1401.4,
-   "Business": 6792.719999999999,
-   "Entertainment": 9404.22,
-   "Unaccounted": -579.48,
-   "Base Food": 799.74,
-   "Deliveries": 344.95,
+   "Unaccounted": -12418.43,
+   "Base Food": 1929.69,
+   "Deliveries": 3226.17,
+   "Fees": 5277.299999999999,
+   "Life": 4515.549999999999,
+   "Business": 7606.41,
+   "Health": 248.0,
+   "Entertainment": 9449.22,
    "Family": 738.15
   }
  },
  "by_dow": {
-  "Thu": 69069.57000000005,
-  "Fri": 68378.13000000003,
-  "Sat": 50406.17999999999,
-  "Mon": 52830.88999999995,
-  "Tue": 38669.060000000034,
-  "Wed": 36644.62000000001,
-  "Sun": 44534.74000000002
+  "Thu": 69995.64000000004,
+  "Fri": 74763.87000000001,
+  "Sat": 49124.76999999999,
+  "Mon": 53474.93999999994,
+  "Tue": 39911.72000000002,
+  "Wed": 37718.219999999994,
+  "Sun": 47034.230000000025
  },
  "by_account": {
-  "ADIB CC": 69658.33000000005,
+  "ADIB CC": 81148.52999999984,
   "Wise GBP": 105303.82999999997,
   "BoS": 22272.480000000003,
   "Property Account": 17737.95,
