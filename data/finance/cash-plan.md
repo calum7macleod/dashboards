@@ -24,7 +24,10 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
-## UK, OCTOBER - agreed 1 Oct (one transfer, Wise, today)
+## UK, OCTOBER - IN MOTION 1 Oct: Calum sent GBP1,000 via Mashreq QuickRemit (fast, dearer) + GBP12,500 via Wise. Total GBP13,500 ~ D66K.
+Order when the money lands in BoS: (1) overdraft inside 3,000; (2) arrears Virgin ~800, M&S ~376, MBNA 1 ~280 - exact figures from the apps; (3) restart DDs on Virgin + M&S, confirm MBNA 1 / Santander / Tesco, all set to MINIMUM; (4) Amex Gold 549.88 before 11 Oct; (5) Aqua cleared; (6) Kevin 1,000, Tal 1,500; (7) leave ~1,700 for the rest of the DD run.
+Finance checks each step on the Sunday close - Virgin DD ~3 Oct is the first test.
+
 | Line | GBP |
 |---|---|
 | BoS overdraft back inside the GBP3,000 limit (it was -3,155 on 1 Oct, Tesco 266 + MBNA 1 283 already taken from it) | 3,000 |
