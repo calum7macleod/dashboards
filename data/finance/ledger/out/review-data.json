@@ -1,0 +1,839 @@
+{
+ "sep": {
+  "total": 60099,
+  "talOut": 59842,
+  "talShare": 29921,
+  "buckets": [
+   {
+    "name": "Avoidable - travel, hotels, upgrades",
+    "aed": 17385,
+    "lines": [
+     {
+      "date": "09-18",
+      "acct": "Aqua",
+      "aed": 7442,
+      "desc": "emirates plaisance ssr airport mus 9"
+     },
+     {
+      "date": "09-11",
+      "acct": "ADIB",
+      "aed": 2670,
+      "desc": "ezm call ce 1764223479848"
+     },
+     {
+      "date": "09-11",
+      "acct": "ADIB",
+      "aed": 2670,
+      "desc": "ezm call ce 1764223479847"
+     },
+     {
+      "date": "09-30",
+      "acct": "ADIB",
+      "aed": 2360,
+      "desc": "le royal meridien beac pending"
+     },
+     {
+      "date": "09-16",
+      "acct": "Wise",
+      "aed": 1178,
+      "desc": "Hotel Des Iles Golf > HOTEL DES ILE"
+     },
+     {
+      "date": "09-30",
+      "acct": "ADIB",
+      "aed": 400,
+      "desc": "atmosphere burj khalifa l pending"
+     },
+     {
+      "date": "09-11",
+      "acct": "ADIB",
+      "aed": 270,
+      "desc": "ezm call ce 1764223479849"
+     }
+    ]
+   },
+   {
+    "name": "Avoidable - ads (should be off)",
+    "aed": 10449,
+    "lines": [
+     {
+      "date": "09-17",
+      "acct": "ADIB",
+      "aed": 319,
+      "desc": "meta"
+     },
+     {
+      "date": "09-11",
+      "acct": "ADIB",
+      "aed": 318,
+      "desc": "meta"
+     },
+     {
+      "date": "09-11",
+      "acct": "ADIB",
+      "aed": 318,
+      "desc": "meta"
+     },
+     {
+      "date": "09-12",
+      "acct": "ADIB",
+      "aed": 318,
+      "desc": "meta"
+     },
+     {
+      "date": "09-13",
+      "acct": "ADIB",
+      "aed": 318,
+      "desc": "meta"
+     },
+     {
+      "date": "09-14",
+      "acct": "ADIB",
+      "aed": 318,
+      "desc": "meta"
+     },
+     {
+      "date": "09-14",
+      "acct": "ADIB",
+      "aed": 318,
+      "desc": "meta"
+     },
+     {
+      "date": "09-16",
+      "acct": "ADIB",
+      "aed": 318,
+      "desc": "meta"
+     }
+    ]
+   },
+   {
+    "name": "Interest & fees",
+    "aed": 7290,
+    "lines": [
+     {
+      "date": "09-30",
+      "acct": "ADIB",
+      "aed": 2331,
+      "desc": "monthly murabaha payment"
+     },
+     {
+      "date": "09-25",
+      "acct": "Santander",
+      "aed": 997,
+      "desc": "transfer balance int charge"
+     },
+     {
+      "date": "09-03",
+      "acct": "Virgin",
+      "aed": 950,
+      "desc": "interest charged x3"
+     },
+     {
+      "date": "09-04",
+      "acct": "Tesco",
+      "aed": 643,
+      "desc": "interest x4 sep stmt"
+     },
+     {
+      "date": "09-06",
+      "acct": "MBNA",
+      "aed": 389,
+      "desc": "interest stmt 06 sep"
+     },
+     {
+      "date": "09-21",
+      "acct": "Aqua",
+      "aed": 374,
+      "desc": "cash advance fee"
+     }
+    ]
+   },
+   {
+    "name": "Living - groceries",
+    "aed": 4325,
+    "lines": [
+     {
+      "date": "09-27",
+      "acct": "Aqua",
+      "aed": 1125,
+      "desc": "spinneys"
+     },
+     {
+      "date": "09-19",
+      "acct": "Wise",
+      "aed": 800,
+      "desc": "Spinneys Nshama 2 DUBAI"
+     },
+     {
+      "date": "09-06",
+      "acct": "ADIB",
+      "aed": 519,
+      "desc": "spinneys"
+     },
+     {
+      "date": "09-26",
+      "acct": "Aqua",
+      "aed": 395,
+      "desc": "spinneys"
+     },
+     {
+      "date": "09-23",
+      "acct": "Aqua",
+      "aed": 344,
+      "desc": "instashop"
+     }
+    ]
+   },
+   {
+    "name": "Living - deliveries & eating out",
+    "aed": 3723,
+    "lines": [
+     {
+      "date": "09-06",
+      "acct": "ADIB",
+      "aed": 395,
+      "desc": "mara restaurant and cafe"
+     },
+     {
+      "date": "09-12",
+      "acct": "ADIB",
+      "aed": 380,
+      "desc": "deliveroo"
+     },
+     {
+      "date": "09-21",
+      "acct": "Wise",
+      "aed": 345,
+      "desc": "Deliveroo DUBAI"
+     },
+     {
+      "date": "09-12",
+      "acct": "ADIB",
+      "aed": 258,
+      "desc": "deliveroo"
+     }
+    ]
+   },
+   {
+    "name": "Fixed - software & subs",
+    "aed": 2972,
+    "lines": [
+     {
+      "date": "09-21",
+      "acct": "ADIB",
+      "aed": 775,
+      "desc": "anthropic"
+     },
+     {
+      "date": "09-03",
+      "acct": "ADIB",
+      "aed": 374,
+      "desc": "highlevel agency sub 101 85 usd"
+     },
+     {
+      "date": "09-17",
+      "acct": "Wise",
+      "aed": 327,
+      "desc": "Wpmanageninja, Llc WPMANAGENINJA"
+     },
+     {
+      "date": "09-24",
+      "acct": "BA",
+      "aed": 271,
+      "desc": "apple com bill hollyhill"
+     }
+    ]
+   },
+   {
+    "name": "Brand - editors, outreach",
+    "aed": 2628,
+    "lines": [
+     {
+      "date": "09-01",
+      "acct": "BoS",
+      "aed": 1476,
+      "desc": "l g price"
+     },
+     {
+      "date": "09-21",
+      "acct": "Wise",
+      "aed": 1152,
+      "desc": "sent money to darryl ettritch"
+     }
+    ]
+   },
+   {
+    "name": "Avoidable - clothes & shopping",
+    "aed": 2522,
+    "lines": [
+     {
+      "date": "09-05",
+      "acct": "ADIB",
+      "aed": 994,
+      "desc": "asos com"
+     },
+     {
+      "date": "09-18",
+      "acct": "ADIB",
+      "aed": 260,
+      "desc": "amazon"
+     },
+     {
+      "date": "09-09",
+      "acct": "ADIB",
+      "aed": 253,
+      "desc": "amazon"
+     }
+    ]
+   },
+   {
+    "name": "Fixed - life coach",
+    "aed": 2264,
+    "lines": [
+     {
+      "date": "09-20",
+      "acct": "Amex",
+      "aed": 2264,
+      "desc": "sp shop plymouth"
+     }
+    ]
+   },
+   {
+    "name": "Living - car, fuel, taxis",
+    "aed": 1845,
+    "lines": [
+     {
+      "date": "09-24",
+      "acct": "ADIB",
+      "aed": 343,
+      "desc": "u drive rent a car llc"
+     }
+    ]
+   },
+   {
+    "name": "Fixed - phone",
+    "aed": 1417,
+    "lines": [
+     {
+      "date": "09-22",
+      "acct": "Amex",
+      "aed": 442,
+      "desc": "du bill payment apple dubai"
+     },
+     {
+      "date": "09-18",
+      "acct": "M&S",
+      "aed": 402,
+      "desc": "virgin mobile uae eit dubai dxb 400 "
+     },
+     {
+      "date": "09-20",
+      "acct": "ADIB",
+      "aed": 368,
+      "desc": "du telecom"
+     }
+    ]
+   },
+   {
+    "name": "Fixed - Methil mortgage (covered by rent)",
+    "aed": 1416,
+    "lines": [
+     {
+      "date": "09-01",
+      "acct": "Property",
+      "aed": 1416,
+      "desc": "precise mortgages"
+     }
+    ]
+   },
+   {
+    "name": "Living - home, personal, other",
+    "aed": 1156,
+    "lines": [
+     {
+      "date": "09-18",
+      "acct": "Wise",
+      "aed": 479,
+      "desc": "Le Saint Geran > LE SAINT GERA"
+     },
+     {
+      "date": "09-08",
+      "acct": "ADIB",
+      "aed": 404,
+      "desc": "next"
+     },
+     {
+      "date": "09-25",
+      "acct": "ADIB",
+      "aed": -260,
+      "desc": "amazon refund"
+     }
+    ]
+   },
+   {
+    "name": "Living - baby",
+    "aed": 425,
+    "lines": [
+     {
+      "date": "09-06",
+      "acct": "ADIB",
+      "aed": 410,
+      "desc": "firstcry retail"
+     }
+    ]
+   },
+   {
+    "name": "Living - Boxica, health",
+    "aed": 283,
+    "lines": []
+   }
+  ],
+  "nonSpend": [
+   {
+    "what": "Kevin (loan repayment)",
+    "aed": 9842
+   },
+   {
+    "what": "Mum + Corrina (Avantglamp loans)",
+    "aed": 2214
+   },
+   {
+    "what": "ADIB card paid in",
+    "aed": 35400
+   },
+   {
+    "what": "Mashreq -> BoS (QuickRemit, 1 Oct)",
+    "aed": 5039
+   }
+  ]
+ },
+ "oct": {
+  "income": 221330,
+  "fixed": [
+   [
+    "BoS top-up GBP3,700: UK card minimums ~1,550, Amex Gold 550 (coaching inside), Mum 300, Corrina 150, Kevin 1,000, pets 150 - and it clears the over-limit",
+    18200
+   ],
+   [
+    "Lewis",
+    10000
+   ],
+   [
+    "Tal - cards, living, bills (GBP5,000; Sep actual was 59.8K)",
+    24600
+   ],
+   [
+    "Rent pot",
+    15000
+   ],
+   [
+    "Tara pot",
+    31000
+   ],
+   [
+    "Phone + software + subs (Anthropic, Reelly, HighLevel, Oura, du, Virgin)",
+    2600
+   ],
+   [
+    "Boxica + Turtletots (already charged 1 Oct)",
+    2100
+   ],
+   [
+    "Baby",
+    500
+   ],
+   [
+    "Methil mortgage",
+    0
+   ],
+   [
+    "Ads",
+    0
+   ],
+   [
+    "Editors",
+    0
+   ]
+  ],
+  "living": [
+   [
+    "Groceries (Sep 4.3K)",
+    4500
+   ],
+   [
+    "Deliveries + eating out (Sep 3.7K -> cap)",
+    2500
+   ],
+   [
+    "Car, fuel, taxis",
+    1500
+   ],
+   [
+    "Home, personal, other",
+    1500
+   ],
+   [
+    "Buffer",
+    2000
+   ]
+  ],
+  "debt": [
+   [
+    "ADIB card: ~56K owed today (64.4K at 30 Sep less 10K paid, plus 1 Oct charges). Pay to ZERO = no profit charge, bonus back, card frozen",
+    56000
+   ]
+  ],
+  "fixedTotal": 104000,
+  "livingTotal": 12000,
+  "debtTotal": 56000,
+  "total": 172000,
+  "spare": 49330,
+  "repeatNoTaraLewis": 72900,
+  "repeatWithTaraLewis": 113900
+ },
+ "months": [
+  "Jan 26",
+  "Feb 26",
+  "Mar 26",
+  "Apr 26",
+  "May 26",
+  "Jun 26",
+  "Jul 26",
+  "Aug 26",
+  "Sep 26"
+ ],
+ "byCategory": {
+  "Business": [
+   17982,
+   13004,
+   13355,
+   17239,
+   20124,
+   24467,
+   7299,
+   25215,
+   19660
+  ],
+  "Tal share (50% of money sent)": [
+   13774,
+   0,
+   0,
+   14271,
+   27483,
+   4902,
+   24451,
+   27446,
+   29921
+  ],
+  "Entertainment": [
+   1776,
+   1650,
+   1470,
+   3985,
+   12239,
+   27938,
+   10730,
+   23177,
+   17977
+  ],
+  "Life": [
+   6980,
+   3343,
+   2661,
+   14518,
+   18701,
+   9996,
+   8295,
+   14819,
+   6356
+  ],
+  "Fees": [
+   3252,
+   5028,
+   4579,
+   4238,
+   6155,
+   8805,
+   7347,
+   4824,
+   7290
+  ],
+  "Base Food": [
+   3885,
+   3836,
+   4433,
+   6593,
+   8363,
+   2950,
+   5848,
+   4963,
+   4325
+  ],
+  "Deliveries": [
+   2899,
+   7838,
+   1285,
+   5573,
+   5529,
+   3400,
+   4065,
+   4574,
+   3723
+  ],
+  "Health": [
+   7683,
+   3956,
+   2312,
+   3146,
+   6724,
+   1074,
+   2956,
+   244,
+   283
+  ],
+  "Family": [
+   0,
+   0,
+   840,
+   619,
+   5818,
+   202,
+   1391,
+   15217,
+   425
+  ],
+  "Gambling": [
+   693,
+   0,
+   974,
+   0,
+   1479,
+   0,
+   0,
+   0,
+   0
+  ],
+  "Unaccounted": [
+   58,
+   168,
+   0,
+   148,
+   233,
+   310,
+   71,
+   88,
+   59
+  ],
+  "Investing": [
+   0,
+   2,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "total": [
+  58983,
+  38825,
+  31909,
+  70332,
+  112848,
+  84043,
+  72455,
+  120567,
+  90020
+ ],
+ "income": [
+  63766,
+  2540,
+  21954,
+  123175,
+  122735,
+  116050,
+  297627,
+  104000,
+  223794
+ ],
+ "fees": [
+  3252,
+  5028,
+  4579,
+  4238,
+  6155,
+  8805,
+  7347,
+  4824,
+  7290
+ ],
+ "byAccount": {
+  "ADIB": [
+   23560,
+   18216,
+   8215,
+   33261,
+   43999,
+   18503,
+   21316,
+   57270,
+   32865
+  ],
+  "Wise": [
+   3377,
+   4695,
+   5291,
+   6916,
+   24919,
+   46862,
+   5512,
+   2502,
+   5884
+  ],
+  "Mashreq": [
+   6200,
+   6312,
+   8530,
+   6452,
+   300,
+   200,
+   200,
+   26850,
+   0
+  ],
+  "Amex": [
+   7861,
+   3335,
+   2240,
+   2266,
+   3666,
+   4529,
+   14504,
+   2294,
+   2706
+  ],
+  "Property": [
+   1485,
+   3119,
+   3183,
+   3199,
+   1767,
+   1692,
+   1411,
+   242,
+   1640
+  ],
+  "BoS": [
+   1948,
+   1795,
+   3062,
+   2589,
+   2622,
+   596,
+   545,
+   197,
+   1883
+  ],
+  "Aqua": [
+   0,
+   413,
+   526,
+   511,
+   666,
+   592,
+   559,
+   148,
+   11258
+  ],
+  "MBNA": [
+   185,
+   200,
+   161,
+   164,
+   5612,
+   674,
+   580,
+   466,
+   402
+  ],
+  "Tesco": [
+   592,
+   740,
+   701,
+   703,
+   640,
+   1123,
+   697,
+   686,
+   643
+  ],
+  "Santander": [
+   0,
+   0,
+   0,
+   0,
+   1002,
+   1024,
+   1140,
+   1078,
+   999
+  ],
+  "Virgin": [
+   0,
+   0,
+   0,
+   0,
+   102,
+   1243,
+   906,
+   1002,
+   950
+  ],
+  "M&S": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1781,
+   300,
+   206,
+   473
+  ],
+  "Barclaycard": [
+   0,
+   0,
+   0,
+   0,
+   72,
+   242,
+   292,
+   137,
+   120
+  ],
+  "BA": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   271
+  ],
+  "HSBC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   79,
+   42,
+   43,
+   4
+  ]
+ }
+}
