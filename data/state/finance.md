@@ -1,6 +1,7 @@
 # FINANCE STATE - start pack (private). Updated 2026-09-26 by Finance. All figures "around" until reconciled.
 
-## Commissions owed (take-home)
+## Commissions owed
+- 1 Oct Calum: the stuck Jan/Feb ~D65K (Jose, Majid x2) is NOT coming - write off in the runway; Vantage $6K ignored. Only the 250K end-Oct counts. (take-home)
 - Sep payday 30 Sep: Calum expects ~Đ180K only (26 Sep) - the rest of the ~314K list slips to Oct+. Reconcile vs payslip; which deals paid -> paid flags; rest = owed post-exit.
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
