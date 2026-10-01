@@ -350,5 +350,13 @@
   "to": "PA",
   "item": "New buyer not in the index: Naura - considering Wadeem Gardens 4-bed (Đ8.7M) on the ADIB 25/75 plan, schedule sent to Calum 28 Sep. Please create the record (nationality matters: UAE nationals get Modon's 5% rebate)",
   "status": "done"
+ },
+ {
+  "id": "h0045",
+  "date": "2026-10-01",
+  "from": "Finance",
+  "to": "Uploader",
+  "item": "ADIB September screenshots (CC *789 + current): images overlap on purpose (bottom of one = top of the next). Do NOT merge or dedupe them yourself. Stage per image: data/staging/statements/adib-cc-sep-2026.json with rows grouped by image in the order they appear on screen, each row {date, description, amount as printed, balance if shown, reference if shown, image, position}. Finance removes overlaps by sequence alignment (a run of consecutive identical rows across two images = overlap; a single repeated row with different neighbours = a real second transaction). Include any printed total/outstanding balance on 30 Sep and the 1 Oct statement balance - that is the tie-out. Same for Jan-Aug statements (PDF): per period, signs as printed, opening/closing balances.",
+  "status": "open"
  }
 ]
