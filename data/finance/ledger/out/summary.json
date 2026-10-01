@@ -98,17 +98,18 @@
    "net": -93685.11999999978
   },
   "Sep 26": {
-   "spend": 56811.330000000075,
-   "debt_cost": 6929.62,
-   "card_repay_unmatched": 5971.93,
-   "income": 106464.19,
+   "spend": 60964.06000000008,
+   "debt_cost": 7066.8200000000015,
+   "card_repay_unmatched": 7280.92,
+   "income": 327794.44,
    "transfer_cost": 865.52,
-   "net": 49652.85999999993
+   "net": 266830.37999999995
   },
   "Oct 26": {
-   "spend": 2006.5,
+   "spend": 3561.47,
+   "card_repay_unmatched": 1392.7,
    "income": 0.0,
-   "net": -2006.5
+   "net": -3561.47
   }
  },
  "by_category": {
@@ -122,17 +123,17 @@
    "Fees": 3252.27,
    "Entertainment": 1776.1599999999999,
    "Base Food": 3885.3199999999997,
-   "Business": 17759.35,
-   "Life": 7202.800000000001,
+   "Business": 17981.860000000004,
+   "Life": 6980.29,
    "Gambling": 692.86,
    "Unaccounted": 57.66
   },
   "Feb 26": {
    "Health": 3956.0,
    "Deliveries": 7837.849999999994,
-   "Life": 3567.909999999999,
+   "Life": 3343.109999999999,
    "Fees": 5027.63,
-   "Business": 12779.659999999998,
+   "Business": 13004.46,
    "Base Food": 3836.3199999999993,
    "Entertainment": 1650.0,
    "Investing": 2.0,
@@ -141,8 +142,8 @@
   "Mar 26": {
    "Fees": 4578.54,
    "Gambling": 974.0,
-   "Life": 2879.59,
-   "Business": 13136.43,
+   "Life": 2660.64,
+   "Business": 13355.380000000001,
    "Health": 2312.0,
    "Deliveries": 1285.3200000000002,
    "Entertainment": 1470.45,
@@ -150,9 +151,9 @@
    "Family": 840.0
   },
   "Apr 26": {
-   "Life": 14739.550000000001,
+   "Life": 14518.12,
    "Fees": 4472.629999999999,
-   "Business": 17017.71,
+   "Business": 17239.139999999996,
    "Health": 3146.0,
    "Deliveries": 5572.589999999997,
    "Base Food": 6592.599999999999,
@@ -162,13 +163,13 @@
    "Entertainment": 3985.0
   },
   "May 26": {
-   "Life": 20779.309999999998,
+   "Life": 18700.8,
    "Health": 6724.05,
    "Family": 5818.05,
    "Base Food": 8363.029999999999,
    "Deliveries": 5529.32,
    "Fees": 7542.950000000002,
-   "Business": 18045.79,
+   "Business": 20124.300000000007,
    "Entertainment": 12238.579999999998,
    "Gambling": 1479.3,
    "Unaccounted": 233.48
@@ -176,8 +177,8 @@
   "Jun 26": {
    "Base Food": 2949.64,
    "Fees": 9013.96,
-   "Life": 10402.19,
-   "Business": 24060.160000000003,
+   "Business": 24466.660000000007,
+   "Life": 9995.69,
    "Health": 1073.56,
    "Deliveries": 3400.4299999999994,
    "Family": 201.6,
@@ -186,61 +187,64 @@
   },
   "Jul 26": {
    "Health": 2956.4300000000003,
-   "Life": 8623.4,
-   "Business": 6927.870000000001,
+   "Life": 8295.23,
+   "Business": 7299.45,
    "Fees": 8603.079999999996,
    "Base Food": 5848.139999999999,
    "Deliveries": 4064.9999999999995,
    "Family": 1390.97,
    "Entertainment": 10730.08,
-   "Unaccounted": 114.28999999999999
+   "Unaccounted": 70.88
   },
   "Aug 26": {
-   "Life": 15515.210000000001,
+   "Life": 14819.220000000001,
    "Family": 15217.0,
    "Deliveries": 4573.979999999999,
    "Entertainment": 23176.7,
    "Base Food": 4963.139999999999,
-   "Business": 24474.579999999998,
+   "Business": 25215.079999999998,
    "Fees": 5387.5000000000155,
    "Health": 244.0,
-   "Unaccounted": 133.01
+   "Unaccounted": 88.5
   },
   "Sep 26": {
-   "Business": 18804.26,
-   "Base Food": 2245.83,
-   "Deliveries": 3586.7599999999998,
-   "Fees": 7957.619999999999,
-   "Life": 5530.969999999999,
+   "Business": 19660.07,
+   "Base Food": 4324.920000000001,
+   "Deliveries": 3722.6799999999994,
+   "Fees": 8155.33,
+   "Life": 6356.17,
    "Health": 283.0,
    "Family": 425.47,
-   "Entertainment": 17977.42
+   "Entertainment": 17977.42,
+   "Unaccounted": 59.0
   },
   "Oct 26": {
    "Health": 967.0,
-   "Deliveries": 1039.5
+   "Deliveries": 1039.5,
+   "Life": 138.99,
+   "Business": 1415.98
   }
  },
  "by_dow": {
-  "Tue": 61483.56000000001,
-  "Wed": 57423.090000000004,
-  "Thu": 90238.50000000007,
-  "Fri": 89728.17000000003,
-  "Sat": 90099.32,
-  "Sun": 86860.43,
-  "Mon": 60500.08999999998
+  "Tue": 61496.40000000001,
+  "Wed": 58010.35999999999,
+  "Thu": 92166.24000000008,
+  "Fri": 90087.55000000003,
+  "Sat": 90811.14,
+  "Sun": 88616.39999999998,
+  "Mon": 60852.76999999998
  },
  "by_account": {
   "ADIB CC": 248904.4099999999,
-  "Wise GBP": 105303.82999999997,
-  "BoS": 15175.980000000005,
-  "Property Account": 17737.95,
+  "Wise GBP": 105922.78999999998,
+  "BoS": 15375.480000000007,
+  "Property Account": 19153.93,
   "Tesco Clubcard": 6523.75,
   "Amex Gold": 43400.79000000001,
   "MBNA 1": 8162.28,
   "Mashreq": 55043.5,
   "ADIB": 11054.869999999994,
-  "Aqua": 11470.16,
+  "Aqua": 14672.809999999998,
   "Virgin Money": 4202.85,
   "Barclaycard Plat": 863.4200000000001,
   "Santander Everyday": 5242.45,
@@ -248,7 +252,8 @@
   "Wise AED": -1.4210854715202004e-14,
   "MBNA 2": 282.73,
   "HSBC": 168.02,
-  "Wise USD": 36.54
+  "Wise USD": 36.54,
+  "BA Amex": 270.61
  },
  "note": "AED. spend = spend+refund+debt_cost+cash_withdrawal. Transfers/repayments/investing excluded."
 }
