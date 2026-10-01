@@ -62,8 +62,8 @@ def guess_type(r):
     if r.get("type"): return r["type"]
     if re.search(r"^returned dd", d, re.I): return "transfer"   # the bank side of a bounced card DD - pairs with the card's reversal
     if re.search(r"interest|late payment (fee|charge)|cash (advance |transaction )?fee|foreign exchange (fee|conversion charge)|non-sterling|annual fee|overlimit fee|wise charges", d, re.I) and a < 0: return "debt_cost"
-    if r["account"] in OWN_CARDS or r["account"] == "ADIB CC" or r["account"] in ("Tesco Clubcard", "Virgin Money"):
-        if a > 0 and re.search(r"thank you|payment dd|payment by direct debit|app payment|faster payment|payment received|card payment in|payment in$", d, re.I) and not re.search(r"reversed|reversal|returned", d, re.I): return "card_repayment"
+    if CARD_ACCOUNT_RX.search(r["account"]):
+        if a > 0 and re.search(r"thank you|payment dd|payment by direct debit|app payment|faster payment|payment received|card payment in|payment in$|ipp card payment", d, re.I) and not re.search(r"reversed|reversal|returned", d, re.I): return "card_repayment"
         if a < 0 and re.search(r"payment revers|unpaid direct debit|returned direct debit|unpaid dd", d, re.I): return "transfer"
     wt = r.get("wise_type")
     if wt in ("MONEY_ADDED", "CONVERSION", "DEPOSIT"): return "transfer"
