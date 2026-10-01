@@ -53,5 +53,7 @@ Tal = one pot (transfers; her accounts not in ledger). Lewis Page D250K = loan t
 v3 26 Sep: payday ~180K; Oct out ~176K; spare ~4K; Nov uncovered without the White & Co post-exit payout. Lever: ADIB 40K not 70K if Oct payout not in writing. Three pots on payday: FIXED ~D86K/mo (+ rent + instalments, both unknown) -> LIVING D25K/mo = D6K/week on one card -> DEBT gets the rest. 30 Sep D314K: Oct fixed 86K, living 25K, ADIB card cleared 64.6K, Nov fixed 86K held (Oct payout unconfirmed), ~52K to Lewis/Aqua. Open: rent amount+date, Modon/Tara schedule, Lewis monthly, ads budget, coaching.
 ## Rituals from 1 Oct
 Sunday weekly close (statements via Uploader): living vs 5K, unplanned lines, fees -> kept/broken. 1 Nov full October statements incl. Tal -> 'October real spend' by 3 Nov replaces the proxy. Lockdown no-spend list in cash-plan.md.
+## UK BUDGET BLOCK (locked 1 Oct, see cash-plan.md) - scrutinise every Sunday
+~GBP5,340/mo from BoS: minimums ~1,690 (all DD, set to minimum) + Amex Gold ~550 + Mum 300 + Corrina 150 + Kevin 1,000 + pets 150 + Tal UK 1,500. Nationwide self-funds (rent stays in). Rules: BoS >= -2,000 before every DD run; no UK card spending; Nationwide never swept; failed DD reported same day. October one-offs: OD to zero, arrears Virgin/M&S/MBNA 1, Aqua cleared. GBP13,500 sent 1 Oct (1K QuickRemit + 12.5K Wise).
 ## Rules
 Budget: LIVING D25K/mo (D6K/wk) from 1 Oct - supersedes the old D30K discretionary; flag hot categories immediately; Deliveries category = eating proxy. No new spend lines without a plan.
