@@ -21,83 +21,83 @@
  },
  "by_month": {
   "Jan 26": {
-   "spend": 45998.48999999997,
+   "spend": 45256.13999999997,
    "debt_cost": 3224.71,
    "income": 63765.93,
    "passthrough_net": 24694.0,
    "card_repay_unmatched": 1295.6,
    "transfer_cost": 0.19,
-   "net": 17767.44000000003
+   "net": 18509.79000000003
   },
   "Feb 26": {
-   "spend": 29353.300000000014,
+   "spend": 28603.300000000014,
    "passthrough_net": -212271.66000000003,
    "income": 2539.75,
    "debt_cost": 4749.9,
    "card_repay_unmatched": 1854.45,
-   "net": -26813.550000000014
+   "net": -26063.550000000014
   },
   "Mar 26": {
    "income": 21953.72,
-   "spend": 27079.92999999999,
+   "spend": 25911.12999999999,
    "debt_cost": 1804.0399999999997,
    "card_repay_unmatched": 2446.6,
    "invested": 3650.17,
-   "net": -5126.209999999988
+   "net": -3957.409999999989
   },
   "Apr 26": {
-   "spend": 25684.900000000005,
+   "spend": 24946.150000000005,
    "income": 123175.4,
    "debt_cost": 1873.13,
    "invested": 61422.55,
    "passthrough_net": -274540.05,
    "card_repay_unmatched": 2031.1200000000001,
    "transfer_cost": 309.27,
-   "net": 97490.49999999999
+   "net": 98229.24999999999
   },
   "May 26": {
-   "spend": 42609.25000000002,
+   "spend": 41869.60000000002,
    "debt_cost": 3492.530000000002,
    "income": 122735.07,
    "card_repay_unmatched": 2773.3399999999997,
    "invested": 12853.75,
    "transfer_cost": 905.72,
-   "net": 80125.81999999998
+   "net": 80865.46999999999
   },
   "Jun 26": {
-   "spend": 61062.659999999996,
+   "spend": 60327.35999999999,
    "debt_cost": 6179.09,
    "invested": 7528.62,
    "income": 116049.68,
    "passthrough_net": 14706.0,
    "card_repay_unmatched": 2734.23,
    "transfer_cost": 110.47,
-   "net": 54987.02
+   "net": 55722.32
   },
   "Jul 26": {
-   "spend": 29478.600000000006,
+   "spend": 28743.300000000007,
    "debt_cost": 4688.799999999999,
    "invested": 19647.870000000003,
    "card_repay_unmatched": 5752.5,
-   "income": 295626.75,
+   "income": 297626.75,
    "transfer_cost": 1353.74,
-   "net": 266148.15
+   "net": 268883.45
   },
   "Aug 26": {
-   "spend": 99245.95999999977,
+   "spend": 98497.75999999978,
    "debt_cost": 4767.360000000016,
    "invested": 15817.45,
    "transfer_cost": 651.45,
    "income": 0.0,
-   "net": -99245.95999999977
+   "net": -98497.75999999978
   },
   "Sep 26": {
-   "spend": 56947.00000000007,
+   "spend": 56208.85000000007,
    "debt_cost": 6929.62,
    "card_repay_unmatched": 6574.41,
    "income": 106464.19,
    "transfer_cost": 865.52,
-   "net": 49517.18999999993
+   "net": 50255.33999999993
   },
   "Oct 26": {
    "spend": 2006.5,
@@ -113,22 +113,20 @@
    "Entertainment": 2899.0,
    "Health": 6591.35,
    "Business": 17245.13,
-   "Deliveries": 2646.6299999999997,
+   "Deliveries": 2724.5799999999995,
    "Gambling": 692.86,
-   "Unaccounted": 205.18999999999994,
-   "Family": 742.35
+   "Unaccounted": 127.23999999999998
   },
   "Feb 26": {
-   "Deliveries": 3690.15,
-   "Unaccounted": 463.49,
+   "Deliveries": 3775.15,
    "Fees": 5084.15,
    "Life": 2139.3,
    "Business": 12795.179999999998,
    "Base Food": 3324.0299999999997,
-   "Entertainment": 660.0,
+   "Entertainment": 1160.0,
    "Investing": 2.0,
    "Health": 445.0,
-   "Family": 750.0
+   "Unaccounted": -121.50999999999999
   },
   "Mar 26": {
    "Fees": 2209.3000000000006,
@@ -139,8 +137,8 @@
    "Deliveries": 775.3000000000001,
    "Entertainment": 1470.45,
    "Base Food": 3456.6,
-   "Unaccounted": 44.81999999999999,
-   "Family": 1570.5
+   "Family": 840.0,
+   "Unaccounted": -393.48
   },
   "Apr 26": {
    "Life": 3198.6300000000006,
@@ -150,7 +148,6 @@
    "Deliveries": 487.33000000000004,
    "Base Food": 3604.84,
    "Unaccounted": -258.17,
-   "Family": 738.75,
    "Investing": 2.0
   },
   "May 26": {
@@ -159,19 +156,18 @@
    "Business": 17841.890000000003,
    "Health": 18.0,
    "Gambling": 1479.3,
-   "Deliveries": 1364.19,
+   "Deliveries": 1391.19,
    "Entertainment": 2717.56,
-   "Unaccounted": 373.89,
-   "Family": 739.65
+   "Unaccounted": 346.89
   },
   "Jun 26": {
    "Fees": 6629.179999999999,
    "Life": 5216.47,
-   "Unaccounted": 765.7799999999999,
    "Business": 22925.590000000004,
    "Health": 177.1,
-   "Deliveries": 1384.52,
+   "Deliveries": 1439.52,
    "Base Food": 839.71,
+   "Unaccounted": -24.520000000000017,
    "Entertainment": 23124.310000000005
   },
   "Jul 26": {
@@ -182,30 +178,29 @@
    "Health": 757.75,
    "Unaccounted": -419.73,
    "Deliveries": 1041.53,
-   "Base Food": 312.4,
-   "Family": 735.3
+   "Base Food": 312.4
   },
   "Aug 26": {
    "Life": 15721.53,
-   "Family": 15857.2,
+   "Family": 15109.0,
    "Base Food": 6343.99,
    "Entertainment": 23232.45,
-   "Deliveries": 3406.96,
+   "Deliveries": 3505.96,
    "Business": 26994.159999999996,
    "Fees": 5475.090000000017,
    "Health": 2071.0699999999997,
-   "Unaccounted": 143.51
+   "Unaccounted": 44.51
   },
   "Sep 26": {
    "Business": 18829.93,
    "Base Food": 2245.83,
-   "Deliveries": 3277.62,
+   "Deliveries": 3377.7599999999998,
    "Fees": 7957.619999999999,
    "Life": 5534.299999999999,
    "Health": 283.0,
-   "Family": 1148.62,
-   "Entertainment": 12562.419999999998,
-   "Unaccounted": 5107.66
+   "Family": 410.47,
+   "Entertainment": 18172.42,
+   "Unaccounted": -602.48
   },
   "Oct 26": {
    "Health": 967.0,
@@ -213,18 +208,18 @@
   }
  },
  "by_dow": {
-  "Thu": 73963.86000000007,
-  "Fri": 76160.55000000002,
+  "Thu": 73225.71000000008,
+  "Fri": 74679.45000000001,
   "Sat": 73813.85999999999,
-  "Mon": 56168.45999999998,
-  "Tue": 41173.33000000002,
-  "Wed": 44266.8,
+  "Mon": 53706.15999999998,
+  "Tue": 39508.38000000005,
+  "Wed": 43516.8,
   "Sun": 49723.370000000024
  },
  "by_account": {
   "ADIB CC": 124356.70999999992,
   "Wise GBP": 105303.82999999997,
-  "BoS": 22272.480000000003,
+  "BoS": 15175.980000000005,
   "Property Account": 17737.95,
   "Tesco Clubcard": 6523.75,
   "Amex Gold": 43400.79000000001,
