@@ -2,6 +2,68 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "cara exclusive",
+   "category": "Family",
+   "sub": "Gift for Tal (Cara Exclusive, Aug)",
+   "type": "spend"
+  },
+  {
+   "rx": "ezm call ce",
+   "category": "Entertainment",
+   "sub": "Travel (flight upgrade, 11 Sep)"
+  },
+  {
+   "rx": "hamlam trading",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "alexanderbutler|sp shop plymouth",
+   "category": "Business",
+   "sub": "Life coach (Alexander Butler, GBP460/mo)"
+  },
+  {
+   "rx": "corrina",
+   "category": "Loan",
+   "sub": "Avantglamp loan repayment (Corrina, GBP150/mo)",
+   "type": "debt_principal"
+  },
+  {
+   "rx": "\\bmum\\b",
+   "category": "Loan",
+   "sub": "Avantglamp loan repayment (Mum)",
+   "type": "auto_debt"
+  },
+  {
+   "rx": "tallia|tal flaher|flaher tv|cara exclusive(?!.*gift)",
+   "category": "Family",
+   "sub": "Tal (one pot - transfer)",
+   "type": "transfer"
+  },
+  {
+   "rx": "^property account \\| property account$|property account$",
+   "category": "Other",
+   "sub": "To own Nationwide account (= Property Account)",
+   "type": "transfer"
+  },
+  {
+   "rx": "elite vita",
+   "category": "Health",
+   "sub": "Training / medical"
+  },
+  {
+   "rx": "ronnie webb",
+   "category": "Other",
+   "sub": "Parking space - team member paying",
+   "type": "income"
+  },
+  {
+   "rx": "mark kelly",
+   "category": "Entertainment",
+   "sub": "Gifts / friends (holiday money)",
+   "type": "spend"
+  },
+  {
    "rx": "life pharmacy",
    "category": "Health",
    "sub": "Training / medical"
@@ -59,11 +121,6 @@
    "sub": "Software / AI"
   },
   {
-   "rx": "ezm call ce",
-   "category": "Unaccounted",
-   "sub": "EZM Call ce x3 11 Sep D5,610 - what is it?"
-  },
-  {
    "rx": "asos|\\bnext\\b|firstcry",
    "category": "Life",
    "sub": "Clothes / baby / shopping"
@@ -79,20 +136,9 @@
    "sub": "Eating out / coffee"
   },
   {
-   "rx": "hamlam trading",
-   "category": "Unaccounted",
-   "sub": "Hamlam Trading - what?"
-  },
-  {
    "rx": "cara exclusive",
    "category": "Family",
    "sub": "Gift for Tal (Cara Exclusive, Aug)",
-   "type": "spend"
-  },
-  {
-   "rx": "corrina",
-   "category": "Family",
-   "sub": "Corrina (standing GBP150/mo - confirm what)",
    "type": "spend"
   },
   {
@@ -132,12 +178,6 @@
    "category": "Loan",
    "sub": "ADIB Murabaha instalment (principal+profit, split pending)",
    "type": "debt_principal"
-  },
-  {
-   "rx": "tallia|tal flaher|flaher tv",
-   "category": "Family",
-   "sub": "Tal (one pot - transfer)",
-   "type": "transfer"
   },
   {
    "rx": "lewis (john )?page",
@@ -227,11 +267,6 @@
    "category": "Business",
    "sub": "Marketing / outreach",
    "type": "spend"
-  },
-  {
-   "rx": "alexanderbutler|sp shop plymouth",
-   "category": "Business",
-   "sub": "Coaching (Alexander Butler? GBP460/mo - confirm)"
   },
   {
    "rx": "naturewall|amznmktplace|amznbusiness|amazon\\.co\\.uk|daals|interior goods|screwfix|wood finishes|claddeck|majestic materials|airbnb \\* hmhsyre|wf\\* uk|tesco stores tesco stor",
