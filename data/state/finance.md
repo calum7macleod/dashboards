@@ -6,6 +6,8 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 1 OCT SUMMARY - see cash-plan.md top
+Budget locked Oct-Jan 585,889 vs 471,330 in -> short ~115K; cash out last week Dec; Jan unfunded. Today: ADIB card cleared + frozen, UK GBP13,000 sent, Tal 47,100, living pot 14,000 on ADIB debit, rent pot 12,975, Lewis 6,000, phone 1,000, buffer 5,000. Pot needs 154K by 31 Jan: +64K ~31 Oct, +38.5K Dec, +38.5K Jan. 250K end-Oct = slipped Sep 92.7K + Oct deals 152.3K + Ronnie 9.5K, none in writing.
 ## Burn and runway
 - v4 26 Sep: 220K (30 Sep) + 250K (end Oct), then nothing, must last to end-Feb. Repeating cut to ~84.7K/mo (rent 15, Tal 24.6, UK cards 9.8, ADIB minimums 3.2, Kevin 4.9, Murabaha 2.4, subs 2.5, coaching 2.3, living 20). Unfunded: Tara 31K/mo, Lewis 10K/mo, ADIB clearance - need new income. ~40K spare on 1 Mar if every month is kept.
 Baseline from Oct ~Đ118,600/mo (rent accrual, Modon accrual, editors, Meta, Tal + bills, UK card minimums). 5 Sep model: runway runs out mid-January without new deals or Jake income. Oct/Nov payouts are the bridge, not upside. Jake first real pay ~Dec.
