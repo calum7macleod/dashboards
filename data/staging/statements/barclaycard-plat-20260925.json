@@ -1,0 +1,36 @@
+{
+ "meta": {
+  "account": "Barclaycard Plat",
+  "cardType": "Platinum Visa (Barclays Bank UK PLC)",
+  "currency": "GBP",
+  "period": "statement 25 Sep 26 - top of list only (21 Sep and earlier cut off)",
+  "source": "app screenshots 1 Oct 26 (WhatsApp, 08:08-08:24 Dubai)",
+  "sign": "as printed: charges positive",
+  "printed": {
+   "currentBalance": 9422.43,
+   "lastStatementBalance": 9422.43,
+   "lastStatementDate": "2026-09-25",
+   "minPayment": 118.45,
+   "minDue": "2026-10-20",
+   "availableCredit": 577.57,
+   "creditLimit": 10000.0
+  },
+  "rowCount": 2,
+  "inFinanceJson": "both rows and the 25 Sep ccBalance already present (staged 26 Sep) - duplicate confirmation only"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-25",
+   "description": "Cash Interest Charge",
+   "amount": 24.48,
+   "currency": "GBP",
+   "inFinanceJson": true
+  },
+  {
+   "date": "2026-09-25",
+   "description": "Interest Charge",
+   "amount": 0.0,
+   "currency": "GBP"
+  }
+ ]
+}
