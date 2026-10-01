@@ -1,0 +1,27 @@
+{
+ "meta": {
+  "account": "BA Amex",
+  "cardType": "British Airways American Express",
+  "currency": "GBP",
+  "period": "24 Sep 26 - top of list only (17 Sep and earlier cut off)",
+  "source": "app screenshots 1 Oct 26 (WhatsApp, 08:08-08:24 Dubai)",
+  "sign": "as printed: charges positive",
+  "printed": {
+   "totalBalance": 95.79,
+   "balanceDue": 0.0,
+   "paymentNotRequired": true,
+   "availableCredit": 660.0,
+   "avios": 8123
+  },
+  "rowCount": 1,
+  "inFinanceJson": "no BA Amex transaction rows exist in finance.json"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-24",
+   "description": "APPLE.COM/BILL HOLLYHILL",
+   "amount": 54.99,
+   "currency": "GBP"
+  }
+ ]
+}
