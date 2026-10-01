@@ -24,6 +24,14 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
+## 1 OCT 2026 - TODAY'S PAYMENTS (agreed) and the POT
+Mashreq 206,424 at 08:08. Out today: Wise GBP13,000 (12,500 UK list + 500 subs) ~63,900 · Tal 47,100 (22,000 closure + 15,100 bills + 10,000 budget) · ADIB credit card to ZERO ~56,400 then frozen · ADIB debit living pot 14,000 (food 6,000, baby 1,000, misc 2,000, whatever 5,000) · rent pot 9,375 + ~3,600 extra · Lewis 6,000 · phone 1,000. Buffer left in Mashreq: 5,000.
+POT (Tara + rent, separate account): ~12,975 tonight; needs 154,000 by 31 Jan. Put in ~64,000 from the 250K (~31 Oct), then 38,500 Dec and 38,500 Jan.
+Held for the 250K: Tara Oct 29,125, Merkz up to 10,000, Property Index 500.
+UK when GBP12,500 lands: overdraft to zero -> arrears Virgin/M&S/MBNA 1 (app figures) -> DDs restart Virgin + M&S, confirm MBNA 1/Santander/Tesco, all to MINIMUM -> Amex Gold 549.88 by 11 Oct -> Aqua in full -> Kevin 1,000, Tal 1,500 -> ~1,700 stays for the DD run.
+Today also: freeze every credit card; confirm Meta paused; payslip to Finance; Mashreq 22-27 Sep + ADIB current statements; ask Jake's office re insurance start + visa/RERA costs.
+4-MONTH POSITION: budget 585,889 vs 471,330 -> short ~115K; cash runs out last week of Dec; Jan unfunded. Needs a Jake commission before Christmas or Tara timing / discretionary lines move - decide in November. No number yet: Modon instalment, UK tax 31 Jan, brokerage move, ADIB current DDs.
+
 ## UAE BUDGET - LOCKED 1 Oct 2026 (Calum's lines). AED. Living from ONE card: ADIB debit. Finance scrutinises every line every Sunday.
 | Line | Oct | Nov | Dec | Jan |
 |---|---|---|---|---|
