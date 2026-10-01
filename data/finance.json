@@ -28638,6 +28638,43 @@
       "dueDate": "2026-10-09",
       "dueAmount": 35.32,
       "dueNote": "Min payment, DD 9 Oct"
+    },
+    {
+      "date": "2026-10-01",
+      "month": "Oct 26",
+      "card": "Amex Gold (charge)",
+      "balance": 549.88,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Total balance = balance due 549.88, payment due 11 Oct. Membership Rewards 14,115. Full 2026 transcript in data/staging/statements/amex-gold-2026.json",
+      "dueDate": "2026-10-11",
+      "dueAmount": 549.88,
+      "dueNote": "Full balance (charge card)",
+      "source": "app screenshots 1 Oct 26"
+    },
+    {
+      "date": "2026-10-01",
+      "month": "Oct 26",
+      "card": "BA Amex",
+      "balance": 95.79,
+      "currency": "GBP",
+      "available": 660.0,
+      "limit": null,
+      "status": "Balance due 0.00 - payment not required at this time. Avios 8,123. Last tx 24 Sep APPLE.COM/BILL 54.99",
+      "dueAmount": 0.0,
+      "source": "app screenshots 1 Oct 26"
+    },
+    {
+      "date": "2026-10-01",
+      "month": "Oct 26",
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 3155.5,
+      "currency": "GBP",
+      "available": 0.0,
+      "limit": 3000.0,
+      "status": "OVER LIMIT by 155.50 at 08:09 1 Oct (MBNA 283.07 + Pet Health Club 28.25 posted 1 Oct). MUM 300.00 + HSBC CC 36.49 leave ~5 Oct. Mashreq QuickRemit AED 5,038.81 to this account sent 1 Oct, not yet landed. Rows: data/staging/statements/bos-20260926-20261001.json",
+      "source": "app screenshots 1 Oct 26"
     }
   ],
   "personalDebts": [
