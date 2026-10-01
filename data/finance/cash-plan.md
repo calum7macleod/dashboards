@@ -37,8 +37,9 @@ OCTOBER (sent 1 Oct: GBP1,000 QuickRemit + GBP12,500 Wise = 13,500)
 | Kevin | 1,000 | sent |
 | Tal - UK cards | 1,500 | sent |
 | Aqua cleared | 4,000 | balance 0, DD then collects 0 |
-| **October** | **13,300** | sent 13,500 - 200 spare |
-NOVEMBER ONWARDS (no overdraft, arrears or Aqua): minimums 1,700 + Amex ~550 + Kevin 1,000 + Tal 1,500 = ~GBP4,750/mo, falling as cards clear.
+| Wise subs: Anthropic 180, Giffgaff 50, OpenAI 18, Deepstash 27, Canva 21, FMD 9, Apple 12 (+ Darryl editor ~180 Oct only) - Mashreq -> Wise once a month, never via a card | 500 | funded 1st; no Dubai spend on the Wise card |
+| **October** | **13,800** | sent 13,500 to BoS + 500 to Wise |
+NOVEMBER ONWARDS (no overdraft, arrears or Aqua): minimums 1,700 + Amex ~550 + Kevin 1,000 + Tal 1,500 + Wise subs ~317 = ~GBP5,070/mo, falling as cards clear. Cut: Abegail, Wise Dubai spend, Precise (rent covers).
 RULES (1 Oct): BoS >= -2,000 before every DD run · no UK card used for spending, frozen in the apps · Nationwide never swept, rent stays in · DDs restarted on Virgin + M&S, confirmed on MBNA 1 / Santander / Tesco · any failed DD reported to Finance the same day.
 ## UK, OCTOBER - IN MOTION 1 Oct: Calum sent GBP1,000 via Mashreq QuickRemit (fast, dearer) + GBP12,500 via Wise. Total GBP13,500 ~ D66K.
 Order when the money lands in BoS: (1) overdraft inside 3,000; (2) arrears Virgin ~800, M&S ~376, MBNA 1 ~280 - exact figures from the apps; (3) restart DDs on Virgin + M&S, confirm MBNA 1 / Santander / Tesco, all set to MINIMUM; (4) Amex Gold 549.88 before 11 Oct; (5) Aqua cleared; (6) Kevin 1,000, Tal 1,500; (7) leave ~1,700 for the rest of the DD run.
