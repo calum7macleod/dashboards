@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "account": "Property Account",
+  "accountType": "Nationwide FlexDirect (matches finance.json 'Property Account' rows: PRECISE MORTGAGES, CALUM MACLEOD MONEY)",
+  "currency": "GBP",
+  "period": "20 Sep - 1 Oct 26 (screenshot cut off below 20 Sep)",
+  "source": "app screenshots 1 Oct 26 (WhatsApp, 08:08-08:24 Dubai)",
+  "sign": "as printed: debits negative",
+  "order": "chronological, running balance as printed",
+  "printed": {
+   "available1Oct0812": -2233.71,
+   "overdraftLimit": 2250.0,
+   "headroom": 16.29
+  },
+  "redacted": "sort code and account number not stored",
+  "rowCount": 3,
+  "inFinanceJson": "20 and 21 Sep rows exist (flagged); 1 Oct PRECISE MORTGAGES is new"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-20",
+   "description": "Arranged Overdraft Interest",
+   "amount": -45.5,
+   "currency": "GBP",
+   "balance": -1295.91,
+   "inFinanceJson": true
+  },
+  {
+   "date": "2026-09-21",
+   "description": "CALUM MACLEOD MONEY",
+   "amount": -650.0,
+   "currency": "GBP",
+   "balance": -1945.91,
+   "inFinanceJson": true
+  },
+  {
+   "date": "2026-10-01",
+   "description": "PRECISE MORTGAGES",
+   "amount": -287.8,
+   "currency": "GBP",
+   "balance": -2233.71
+  }
+ ]
+}
