@@ -1,4 +1,4 @@
-# CONTENT STATE - start pack. Updated 2026-09-24 by Content.
+# CONTENT STATE - start pack. Updated 2026-10-01 by Content.
 
 ## Objective
 Deals from socials. Tracked monthly from buyers with source = socials (IG DM, TikTok, YouTube). Sep so far: Chirag (IG DM) - first content lead of the month. Best-performing formats to date: two-person whiteboard (~3x typical), static proof posts (billboard 7.9K, awards 6.2K, penthouse 4.9K) = reach engine; scripted reels = share engine (best 28 shares). Skip rate on generic captions 70-85% - the socials team's untouched reels are the floor.
@@ -23,3 +23,10 @@ Metrics feed: analytics screenshots to the Uploader each Friday - no third-party
 - OPEN: the spine (candidate "Abu Dhabi is where Dubai was in 2010"); our own brick list (12 receipted facts); Jake meeting date; who owns the monthly Dubai update (his, probably). Verify list sent to Market as a handoff.
 - Wed 23 content day: C1 done (research, over the 4h). C2 (types) and C3 (calendar + scripts) did not happen - spill to when the structures are agreed. 100K by 30 Sep stands as stretch; nothing scripted for it.
 - Freeze: Calum held all writes 21 Sep pending a dry run; lifted 24 Sep for the Jake bank. 24 Sep test: Chrome frame-stepping a reel for burned-in captions - untried.
+
+## 1 Oct - blueprint and first-10 banked
+- Calum's one-page blueprint, hook starter pack (Law 3 / explainer 21 / project 6) and first-10 hook plan (5 launches x 5 hooks + 7 general) are in content-assets/scripts/00-blueprint-and-first-10.md with per-script FIX lists. Five scripts drafted by Calum (ADGM, Islands, Rail, Freehold, AI); none filmable until fixes cleared and Market stamps [v]. Nine more to write incl. the personal move script and a Jake collab (talk first).
+- Standing corrections now in force (section 5 of that file): Modon = government via L'imad 84.76%; ADGM 49,027/+34%, AUM +54% no absolute; Dubai off-plan premium 13% not 24%; rail 5 contracted/6 planned, Saadiyat elevated; Hudayriyat 16km beach, hills 45/55m; Yas villas +34% unverified.
+- Research done 30 Sep-1 Oct (chat, receipted): ADGM/DIFC workforce and age, DIFC psf (ValuStrat 2,075), Jumeirah Residences Maryah ~4,400 psf not sold out, island psf set (Knight Frank/ADREC/Bayut), Hudayriyat stats (ADREC 27% of H1 value), Blue Flag, Lulu/Fahid/Ramhan/Bvlgari, sovereign funds (ADIA/Mubadala/ADQ), MGX portfolio and $49bn Fund I, Stargate UAE, data-centre demand (IEA), semiconductors, Al Dhafra 1.35c, Maryah expansion D60bn, Aldar Education 38k/27. All in chat; brick sheet update pending.
+- Dubai ValuStrat Q2 + July VPI received (PDFs) - Dubai bricks for comparisons; Abu Dhabi Q2 PDF still needed (email-gated).
+- Calum's question logged: how does Jake script fast - answer: assembly from a brick sheet, not writing; our sheet exists, scripts should be built from it.
