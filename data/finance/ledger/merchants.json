@@ -2,6 +2,27 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "monthly murabaha payment",
+   "category": "Fees",
+   "sub": "ADIB card monthly profit charge (Murabaha) = the card's interest",
+   "type": "debt_cost"
+  },
+  {
+   "rx": "le royal meridien|atmosphere burj|hotel des iles|paul restaurant - new ssr",
+   "category": "Entertainment",
+   "sub": "Eating out / hotels"
+  },
+  {
+   "rx": "youtube|deliveroo plus subs",
+   "category": "Life",
+   "sub": "Subscriptions"
+  },
+  {
+   "rx": "amazon grocery",
+   "category": "Base Food",
+   "sub": "Groceries / meal prep"
+  },
+  {
    "rx": "international transaction fee|international trxn fee",
    "category": "Fees",
    "sub": "Card fees (late / cash advance / FX)",
@@ -82,7 +103,7 @@
    "type": "investment"
   },
   {
-   "rx": "murabaha",
+   "rx": "murabaha(?! payment)",
    "category": "Loan",
    "sub": "ADIB Murabaha instalment (principal+profit, split pending)",
    "type": "debt_principal"
