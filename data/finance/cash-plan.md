@@ -24,6 +24,25 @@ Budgeting = fill pot 1, cap pot 2, and pot 3 is what's left. Nothing else.
 | **October cash out** | **163K** | **~176-186K** | | |
 Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-140K/mo once the card is at zero.
 
+## UAE BUDGET - LOCKED 1 Oct 2026 (Calum's lines). AED. Living from ONE card: ADIB debit. Finance scrutinises every line every Sunday.
+| Line | Oct | Nov | Dec | Jan |
+|---|---|---|---|---|
+| Phone: Virgin (600 catch-up Oct, ~300 after) + du ~400 | 1,000 | 700 | 700 | 700 |
+| Boxica (949 + the 18s) | 949 paid 1 Oct | 1,100 | 1,100 | 1,100 |
+| Turtletots (one-off) | 1,040 paid 1 Oct | - | - | - |
+| Subs: Anthropic, Oura, YouTube, Prime, Deliveroo Plus | 875 | 875 | 875 | 875 |
+| Business software: Reelly, Widgit, Sandcastles (Buzzfy cancelled if it appears; HighLevel gone) | 225 | 225 | 225 | 225 |
+| Property Index | 500 | - | - | - |
+| Merkz (up to; may be less) | 10,000 | - | - | - |
+| Food: groceries, Deliveroo, eating out, Humantra | 6,000 | 6,000 | 6,000 | 6,000 |
+| Baby | 1,000 | 1,000 | 1,000 | 1,000 |
+| Car incl. any rental | 1,500 | 1,500 | 1,500 | 1,500 |
+| Misc | 2,000 | 2,000 | 2,000 | 2,000 |
+| Whatever we want (one-offs live here) | 5,000 | 5,000 | 5,000 | 5,000 |
+| **UAE** | **30,089** | **18,400** | **18,400** | **18,400** |
+Not in (decided out, 1 Oct): cash, DEWA (Tal's budget), grooming/hair, medical, visa admin (bar Property Index), Marielle, Theta, Amazon/home, pharmacy, editors bar Merkz, ads.
+STILL TO ADD: Tal (UAE amount - coming), rent, Tara, Lewis.
+
 ## UK BUDGET - LOCKED 1 Oct 2026. Calum's lines. Finance scrutinises every line, every Sunday, KEPT / BROKEN by name.
 OCTOBER (sent 1 Oct: GBP1,000 QuickRemit + GBP12,500 Wise = 13,500)
 | Line | GBP | Check |
