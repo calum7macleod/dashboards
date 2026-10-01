@@ -2,6 +2,21 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "life pharmacy",
+   "category": "Health",
+   "sub": "Training / medical"
+  },
+  {
+   "rx": "du telecom",
+   "category": "Life",
+   "sub": "Phone"
+  },
+  {
+   "rx": "amazon prime",
+   "category": "Life",
+   "sub": "Subscriptions"
+  },
+  {
    "rx": "u drive rent a car|rent a car",
    "category": "Life",
    "sub": "Car / fuel / tolls"
