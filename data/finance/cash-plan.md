@@ -41,9 +41,12 @@ Of the 70K to ADIB, 45K is debt paydown, so October's true running cost is ~130-
 | Tal - business closure (one-off, 1 Oct) | 22,000 | - | - | - |
 | Tal - all bills incl. DEWA and the Selfdrive car | 15,100 | 15,100 | 15,100 | 15,100 |
 | Tal - her monthly budget | 10,000 | 10,000 | 10,000 | 10,000 |
-| **UAE** | **75,689** | **42,000** | **42,000** | **42,000** |
+| Tara - 116,500 due by end Jan, spread | 29,125 | 29,125 | 29,125 | 29,125 |
+| Rent - 37,500 due by end Jan, spread | 9,375 | 9,375 | 9,375 | 9,375 |
+| **UAE** | **114,189** | **80,500** | **80,500** | **80,500** |
 Not in (decided out, 1 Oct): cash, DEWA (Tal's budget), grooming/hair, medical, visa admin (bar Property Index), Marielle, Theta, Amazon/home, pharmacy, editors bar Merkz, ads.
-Car line removed 1 Oct: Selfdrive sits in Tal's bills; fuel/parking from misc. STILL TO ADD: rent, Tara, Lewis, ADIB card paydown.
+Car line removed 1 Oct: Selfdrive sits in Tal's bills; fuel/parking from misc. Tara + rent added 1 Oct (pots, funded monthly). STILL TO ADD: Lewis, ADIB card paydown.
+TOTAL LOCKED Oct-Jan (AED): UK 170,000 + UAE 355,689 = 525,689 vs money 221K landed + 250K due = 471K -> SHORT ~D55K before Lewis or any ADIB paydown.
 
 ## UK BUDGET - LOCKED 1 Oct 2026. Calum's lines. Finance scrutinises every line, every Sunday, KEPT / BROKEN by name.
 OCTOBER (sent 1 Oct: GBP1,000 QuickRemit + GBP12,500 Wise = 13,500)
