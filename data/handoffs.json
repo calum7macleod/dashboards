@@ -45,7 +45,7 @@
   "from": "PA",
   "to": "Manager",
   "item": "06:30/18:30 Inbox sweep has not produced a triage file on 22 or 23 Sep (data/triage/ only has .keep). Check the scheduled task fired and can write the file; PA opens the brief on it.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0007",
