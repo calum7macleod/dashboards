@@ -6,6 +6,7 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 5 OCT: Calum paid Aqua GBP3,980 (cleared) and sent Tal GBP1,200 (of 1,500). Left on UK Oct list: Amex Gold 549.88 by 11 Oct, Kevin 1,000, Tal 300 balance, GBP500 to Wise subs; DDs to run: HSBC 36 + Mum 300 (5th), Aqua 0 (9th), MBNA 2 49 (16th), Pet Health 28 (17th), Barclaycard 118 (20th), Santander 318 + M&S 188 (21st), Corrina 150 (~24th), Tesco 266 (29th).
 ## 2 OCT: Calum paid Virgin + M&S arrears and restarted both DDs; MBNA 1 DD collected 1 Oct (Calum says sound - confirm 'nothing overdue' in app). GBP12,500 landed BoS 2 Oct. Still to do from the UK list: Amex Gold 549.88 by 11 Oct, Aqua in full, Kevin 1,000, Tal 1,500, GBP500 to Wise for subs. Sunday 4 Oct close checks: Virgin DD ~3 Oct collected, BoS >= 0, Aqua 0.
 ## 1 OCT SUMMARY - see cash-plan.md top
 Budget locked Oct-Jan 585,889 vs 471,330 in -> short ~115K; cash out last week Dec; Jan unfunded. Today: ADIB card cleared + frozen, UK GBP13,000 sent, Tal 47,100, living pot 14,000 on ADIB debit, rent pot 12,975, Lewis 6,000, phone 1,000, buffer 5,000. Pot needs 154K by 31 Jan: +64K ~31 Oct, +38.5K Dec, +38.5K Jan. 250K end-Oct = slipped Sep 92.7K + Oct deals 152.3K + Ronnie 9.5K, none in writing.
