@@ -21,6 +21,9 @@ NOTHING BUILDS until Calum says the dry run (Tue 22 Sep) passed. PA's dry-run wr
 ## Issues protocol (live from 23 Sep)
 Agents log faults with `agentkit.py issue <type> "<what>"` the moment they happen (rule in _shared.md; handoff Manager until the command exists). Manager opens every conversation with the open list + a fix per line. Sunday: patterns by type.
 
+## Scheduled runs - ROOT CAUSE FOUND 5 Oct (h0006)
+Scheduled chats (Inbox AM/PM, Market daily) run unattended; the sandbox's permission check refuses a bash call that carries the token and calls api.github.com. Calendar via connector works. Fix in progress (Manager, 5 Oct): 1) scheduled prompts read the public repo without the token; 2) they hand their output to the PA as a Gmail DRAFT (never sent); PA's 07:30 reads the draft and writes triage + receipt. Needs: new sweep prompt (Calum pastes into the scheduled tasks), PA rule for draft ingest (re-paste). Long term: move the sweep to an external cron calling the API.
+
 ## System health
 28 Sep 07:50: agentkit v2 (23 Sep spec) NOT shipped - no receipt, no issue command; the cloud session either never ran or failed silently. Asked Calum. 11 handoffs open to Manager: h0002-h0006 (known), h0015 content (Projects agent not in roster - now it is, close), h0016 PA (call system page - next spec after Today), h0020 uploader (finance.json sign inconsistency - Finance's file, route to Finance), h0022 Finance (dashboard rules: exclude 'retired', currency field - dashboard change, queue), h0029 Finance (concurrent write lost 44 finance rows - spec v2 2a addresses; also add rule: fetch sha immediately before PUT), h0038 uploader (no data/state/uploader.md - create it). Issues-via-handoff fallback is working: 4 of the 11 are logged issues.
 
