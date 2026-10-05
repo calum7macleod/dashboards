@@ -1,4 +1,4 @@
-# Scheduled tasks (Cowork > Scheduled). Create each with these prompts. Each runs as its own unattended session with connectors.
+# Scheduled tasks - ALL DELETED 5 Oct 2026. Do not recreate until one of these exists: a per-task permission setting that allows the GitHub call; a Claude Doc relay the owner ingests; an external cron calling the API. Until then the PA sweeps inline at 07:30 and 19:30 (agents/pa.md INBOX) and Market scans when it runs. The prompts below are the relay design, kept for when a route works.
 
 ## How scheduled runs work (rewritten 5 Oct 2026 after two weeks of silent failures)
 Unattended sessions have nobody to approve tool calls, and the sandbox refuses a command that carries a secret and calls an outside API. So scheduled runs follow three rules:
