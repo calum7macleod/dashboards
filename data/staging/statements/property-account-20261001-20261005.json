@@ -1,0 +1,22 @@
+{
+ "meta": {
+  "account": "Property Account",
+  "accountType": "Nationwide FlexDirect",
+  "currency": "GBP",
+  "period": "1-5 Oct 26",
+  "source": "Nationwide app screenshot 6 Oct 26 08:00 Dubai",
+  "sign": "as printed: debits negative, credits positive",
+  "order": "chronological, running balance as printed",
+  "printed": {"available6Oct0800": -1732.96, "overdraftLimit": 2250.00, "headroom": 517.04},
+  "verified": "-2,233.71 + 500.75 = -1,732.96 as printed",
+  "redacted": "sort code and account number not stored",
+  "rowCount": 2,
+  "inFinanceJson": "1 Oct row already in staging property-account-20260920-20261001.json (flagged); 5 Oct row new. Same YM CLIENT ACCOUNT credit 500.75 posted 4 Sep in finance.json - monthly rent remittance",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06"
+ },
+ "transactions": [
+  {"date": "2026-10-01", "description": "PRECISE MORTGAGES", "amount": -287.80, "currency": "GBP", "balance": -2233.71, "alreadyStaged": "property-account-20260920-20261001.json"},
+  {"date": "2026-10-05", "description": "Bank credit YM CLIENT ACCOUNT - YOUR-MOVE.CO.UK LI", "amount": 500.75, "currency": "GBP", "balance": -1732.96}
+ ]
+}
