@@ -1,0 +1,20 @@
+{
+ "meta": {
+  "account": "Mashreq - Tara and Rent",
+  "accountType": "Mashreq Neo savings pot (sub-account of the Neo current), named 'Tara and Rent'",
+  "currency": "AED",
+  "period": "1-6 Oct 26 (opened with one transfer)",
+  "source": "Mashreq app screenshot 6 Oct 26 07:57 Dubai",
+  "sign": "as printed: credits positive",
+  "printed": {"currentBalance6Oct0757": 12975.00, "lifetimeEarnings": 0.00, "indicativeEarningsOct26": 11.26, "currentInterestRatePct": 6.25},
+  "verified": "row is the counter-leg of Mashreq current 1 Oct -12,975.00, same ref 033AACT26274A4DU (staged in mashreq-20261001-20261006.json) - internal transfer, not spend",
+  "redacted": "account identifiers removed per repo rule",
+  "rowCount": 1,
+  "inFinanceJson": "account does not exist in finance.json yet",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06"
+ },
+ "transactions": [
+  {"date": "2026-10-01", "description": "Acct to Acct transfer - from own Mashreq current (CALUM LACHLAN MACLEOD, mobile banking)", "amount": 12975.00, "currency": "AED", "reference": "033AACT26274A4DU", "srn": "MAC0110261236475"}
+ ]
+}
