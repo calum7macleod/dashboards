@@ -414,5 +414,13 @@
   "to": "Finance",
   "item": "BoS 1-6 Oct -> data/staging/statements/bos-20261001-20261006.json (22 rows GBP, chains -2,841.57 -> +861.34 at 6 Oct 07:59, overdraft breach cleared). Key: 1 Oct +1,000 x2 NIUM FINTECH (the Mashreq QuickRemits) + 1,000 PAGE LJ; 2 Oct card DDs Virgin 385.98, M&S 380.42, AMERICAN EXP 3773 549.88 (Amex Gold) + 140.28 (card not identified); 5 Oct +10,493.85 F/FLOW own name (source account not in anything staged - identify), AQUA -3,980.27 (likely clears Aqua - needs confirming screenshot), LEWIS PAGE 1,000, TALLIA 1,200, KEVIN BOXALL 1,000, C L MACLEOD 500 (own, destination?), MUM 300, HSBC 35.60. ccBalance appended: BoS overdraft 0, in credit 861.34.",
   "status": "open"
+ },
+ {
+  "id": "h0053",
+  "date": "2026-10-06",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "Property Account (Nationwide) -> data/staging/statements/property-account-20261001-20261005.json: 5 Oct +500.75 YM CLIENT ACCOUNT (Your Move rent, same as 4 Sep), balance -1,732.96 vs 2,250 OD at 6 Oct 08:00. Chain verified.",
+  "status": "open"
  }
 ]
