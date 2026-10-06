@@ -2,6 +2,44 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "mashreq pot|tara and rent|from own mashreq current",
+   "category": "Other",
+   "sub": "",
+   "type": "transfer"
+  },
+  {
+   "rx": "digitalocean",
+   "category": "Business",
+   "sub": "Software / AI"
+  },
+  {
+   "rx": "dutch oriental|starbucks|quick snack",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "udrive",
+   "category": "Life",
+   "sub": "Car / fuel / tolls / taxis"
+  },
+  {
+   "rx": "page lj",
+   "category": "Loan",
+   "sub": "Lewis short-term GBP1,000 (1 Oct in, 5 Oct out) - net zero",
+   "type": "auto_debt"
+  },
+  {
+   "rx": "lewis page",
+   "category": "Loan",
+   "sub": "Lewis loan repayment",
+   "type": "auto_debt"
+  },
+  {
+   "rx": "mohammed ahmed",
+   "category": "Life",
+   "sub": "Helpers / home services"
+  },
+  {
    "rx": "^wise$|wise \\| wise$",
    "category": "Other",
    "sub": "Card cash advance -> Wise",
