@@ -406,5 +406,13 @@
   "to": "Finance",
   "item": "New account: Mashreq Neo savings pot 'Tara and Rent', 12,975.00 AED at 6 Oct 07:57, 6.25% (indicative Oct earnings 11.26). One row: +12,975 1 Oct, counter-leg of the current account -12,975 same ref 033AACT26274A4DU - internal transfer, not spend. Staged at data/staging/statements/mashreq-tara-and-rent-20261001-20261006.json. Add to accounts; total Mashreq cash = 56,717.27 current + 12,975.00 pot = 69,692.27.",
   "status": "open"
+ },
+ {
+  "id": "h0052",
+  "date": "2026-10-06",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "BoS 1-6 Oct -> data/staging/statements/bos-20261001-20261006.json (22 rows GBP, chains -2,841.57 -> +861.34 at 6 Oct 07:59, overdraft breach cleared). Key: 1 Oct +1,000 x2 NIUM FINTECH (the Mashreq QuickRemits) + 1,000 PAGE LJ; 2 Oct card DDs Virgin 385.98, M&S 380.42, AMERICAN EXP 3773 549.88 (Amex Gold) + 140.28 (card not identified); 5 Oct +10,493.85 F/FLOW own name (source account not in anything staged - identify), AQUA -3,980.27 (likely clears Aqua - needs confirming screenshot), LEWIS PAGE 1,000, TALLIA 1,200, KEVIN BOXALL 1,000, C L MACLEOD 500 (own, destination?), MUM 300, HSBC 35.60. ccBalance appended: BoS overdraft 0, in credit 861.34.",
+  "status": "open"
  }
 ]
