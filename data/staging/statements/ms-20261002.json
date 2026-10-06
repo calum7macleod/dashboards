@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "account": "M&S",
+  "currency": "GBP",
+  "period": "2 Oct 26 (26 Sep and earlier cut off)",
+  "source": "UK card app screenshots 6 Oct 26 08:02-08:08 Dubai",
+  "sign": "as printed on each app (payments are negative on Tesco/Amex/Aqua/Virgin/MBNA and positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "currentBalanceExclPending6Oct0805": 7296.8,
+   "available": 703.2,
+   "creditLimit": 8000.0,
+   "pending": 0.0,
+   "lastStatementBalance": 7677.22,
+   "dueDate": "2026-10-22",
+   "minimumDue": 0.0
+  },
+  "rowCount": 1,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06",
+  "verified": "7,677.22 - 380.42 = 7,296.80"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "PAYMENT - THANK YOU",
+   "amount": 380.42,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "printed +380.42; = BoS 2 Oct M&S MASTERCARD -380.42"
+  }
+ ]
+}
