@@ -1,0 +1,92 @@
+{
+ "meta": {
+  "account": "Tesco Clubcard",
+  "currency": "GBP",
+  "period": "statements 04 Sep 26 and 04 Oct 26 (interest + DD rows only; purchases not visible)",
+  "source": "UK card app screenshots 6 Oct 26 08:02-08:08 Dubai",
+  "sign": "as printed on each app (payments are negative on Tesco/Amex/Aqua/Virgin/MBNA and positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "balance6Oct0802": 5584.54,
+   "availableCredit": 740.46,
+   "impliedLimit": 6325.0
+  },
+  "rowCount": 9,
+  "inFinanceJson": "Sep interest as one combined row; Oct rows new",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06",
+  "verified": "Oct interest 20.76+30.60+72.07 = 123.43; Sep 4 rows = 130.65 matches finance.json combined row"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 21.62,
+   "currency": "GBP",
+   "statement": "04 Sep 2026",
+   "inFinanceJson": "as one combined row 'Interest x4 (Sep stmt) 130.65'"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 31.6,
+   "currency": "GBP",
+   "statement": "04 Sep 2026",
+   "inFinanceJson": "combined"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 77.25,
+   "currency": "GBP",
+   "statement": "04 Sep 2026",
+   "inFinanceJson": "combined"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 0.18,
+   "currency": "GBP",
+   "statement": "04 Sep 2026",
+   "inFinanceJson": "combined"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU (amount cut off)",
+   "amount": null,
+   "currency": "GBP",
+   "statement": "04 Sep 2026",
+   "type": "payment",
+   "partial": true
+  },
+  {
+   "date": "2026-09-29",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+   "amount": -266.0,
+   "currency": "GBP",
+   "statement": "04 Oct 2026",
+   "type": "payment",
+   "note": "= BoS 29 Sep TESCO BANK -266.00"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 20.76,
+   "currency": "GBP",
+   "statement": "04 Oct 2026"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 30.6,
+   "currency": "GBP",
+   "statement": "04 Oct 2026"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 72.07,
+   "currency": "GBP",
+   "statement": "04 Oct 2026"
+  }
+ ]
+}
