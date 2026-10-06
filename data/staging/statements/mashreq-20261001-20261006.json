@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "1-6 Oct 26 (no transactions 3-4 Oct)",
+  "source": "Mashreq app screenshots 6 Oct 26 07:54 Dubai",
+  "sign": "as printed: debits negative, credits positive",
+  "order": "chronological (app shows most recent first; 1 Oct order confirmed by ref timestamps)",
+  "printed": {
+   "currentBalance6Oct0754": 56717.27,
+   "availableBalance": 56717.27
+  },
+  "verified": "1 Oct 08:08 snapshot 206,424.84 (after the first two rows) less rows 3-11 = 56,717.27 as printed",
+  "redacted": "beneficiary IBANs and masked card number removed per repo rule; SRN/transaction refs kept",
+  "rowCount": 11,
+  "inFinanceJson": "none; rows 1-2 already in staging mashreq-20260928-20261001.json (flagged)",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-01",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -5000.0,
+   "currency": "AED",
+   "reference": "033IPPD2627329IS",
+   "alreadyStaged": "mashreq-20260928-20261001.json"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "QuickRemit - to own UK bank account (CALUM MACLEOD)",
+   "amount": -5038.81,
+   "currency": "AED",
+   "reference": "017QGB2262740006",
+   "alreadyStaged": "mashreq-20260928-20261001.json"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "Acct to Acct transfer - to own account (CALUM LACHLAN MACLEOD, mobile banking)",
+   "amount": -12975.0,
+   "currency": "AED",
+   "reference": "033AACT26274A4DU",
+   "srn": "MAC0110261236475"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "Online Local Fund Transfer - TALLIA FLAHER",
+   "amount": -47100.0,
+   "currency": "AED",
+   "reference": "033DBLC262746603",
+   "srn": "MLC0110261226533"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "Online Local Fund Transfer - LEWIS PAGE",
+   "amount": -6000.0,
+   "currency": "AED",
+   "reference": "033DBLC262746195",
+   "srn": "MLC0110261226596"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "Online Local Fund Transfer - TALLIA FLAHER",
+   "amount": -60962.5,
+   "currency": "AED",
+   "reference": "033DBLC262748925",
+   "srn": "MLC0110261434556"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "QuickRemit - to own UK bank account (CALUM MACLEOD)",
+   "amount": -5020.07,
+   "currency": "AED",
+   "reference": "017QGB2262740010",
+   "note": "second QuickRemit on 1 Oct, distinct ref from the 5,038.81"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "IPP TRANSFER - from TALLIA VERITY FLAHER (MP_2_P)",
+   "amount": 10000.0,
+   "currency": "AED",
+   "reference": "033IPPC262750DJQ"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY SUPPORT",
+   "amount": -150.0,
+   "currency": "AED",
+   "reference": "033IPPD26275095P"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -10000.0,
+   "currency": "AED",
+   "reference": "033IPPD262780JLL",
+   "note": "ties ADIB CC 5 Oct +10,000 ref T_D89E8A8FA6C94E8F8E1EEA049EF1E87B"
+  },
+  {
+   "date": "2026-10-06",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -17500.0,
+   "currency": "AED",
+   "reference": "033IPPD2627902I0",
+   "note": "ties ADIB CC 6 Oct +17,500 ref T_DE91B2D8653B4502B0E8CA4BC6169674"
+  }
+ ]
+}
