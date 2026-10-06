@@ -28675,6 +28675,17 @@
       "limit": 3000.0,
       "status": "OVER LIMIT by 155.50 at 08:09 1 Oct (MBNA 283.07 + Pet Health Club 28.25 posted 1 Oct). MUM 300.00 + HSBC CC 36.49 leave ~5 Oct. Mashreq QuickRemit AED 5,038.81 to this account sent 1 Oct, not yet landed. Rows: data/staging/statements/bos-20260926-20261001.json",
       "source": "app screenshots 1 Oct 26"
+    },
+    {
+      "date": "2026-10-06",
+      "month": "Oct 26",
+      "card": "ADIB Emirates VC Sig (*789)",
+      "balance": 27176.34,
+      "currency": "AED",
+      "available": null,
+      "limit": null,
+      "status": "Stated by Calum in chat 6 Oct 07:55 (no screenshot). After payments 5,000 (1 Oct) + 10,000 (5 Oct) + 17,500 (6 Oct). Further payment planned - amount with Finance. 5% monthly DD set",
+      "source": "Calum, chat 6 Oct 26"
     }
   ],
   "personalDebts": [
