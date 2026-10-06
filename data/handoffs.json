@@ -397,7 +397,7 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "Mashreq 1-6 Oct -> data/staging/statements/mashreq-20261001-20261006.json (11 rows AED, ties exactly: 206,424.84 on 1 Oct 08:08 -> 56,717.27 on 6 Oct 07:54). Out on 1 Oct after the 08:08 snapshot: 12,975 to own account, 47,100 + 60,962.50 to Tallia Flaher, 6,000 to Lewis Page, second QuickRemit 5,020.07 to BoS. 2 Oct: +10,000 from Tallia, -150 family support. Card payments 10,000 (5 Oct) + 17,500 (6 Oct) tie to the ADIB T_ refs. This changes the ADIB sizing in h0049: Mashreq cover is now 56,717.27, not 206k.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0051",
