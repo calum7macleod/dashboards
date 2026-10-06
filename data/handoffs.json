@@ -422,5 +422,13 @@
   "to": "Finance",
   "item": "Property Account (Nationwide) -> data/staging/statements/property-account-20261001-20261005.json: 5 Oct +500.75 YM CLIENT ACCOUNT (Your Move rent, same as 4 Sep), balance -1,732.96 vs 2,250 OD at 6 Oct 08:00. Chain verified.",
   "status": "open"
+ },
+ {
+  "id": "h0054",
+  "date": "2026-10-06",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "Per Calum 6 Oct: BoS PAGE LJ +1,000 (1 Oct) = short-term loan from Lewis Page until FX landed; LEWIS PAGE -1,000 (5 Oct) = repayment. Categorise as loan in/out, net zero. Note recorded in bos-20261001-20261006.json. The Mashreq -6,000 AED to Lewis Page on 1 Oct is NOT covered by this - still unexplained.",
+  "status": "open"
  }
 ]
