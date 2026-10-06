@@ -1,0 +1,30 @@
+{
+ "meta": {
+  "account": "Virgin Money",
+  "currency": "GBP",
+  "period": "2 Oct 26 (card *2995; 05 Sep and earlier cut off; list filtered to 'In')",
+  "source": "UK card app screenshots 6 Oct 26 08:02-08:08 Dubai",
+  "sign": "as printed on each app (payments are negative on Tesco/Amex/Aqua/Virgin/MBNA and positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "amountOwedInclPending6Oct0803": 9105.3,
+   "availableToSpend": 894.7,
+   "creditLimit": 10000.0,
+   "paymentDue": 375.08,
+   "dueDate": "2026-10-25"
+  },
+  "rowCount": 1,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "MOBILE APP PAYMENT",
+   "amount": -385.98,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "= BoS 2 Oct VIRGIN MONEY -385.98"
+  }
+ ]
+}
