@@ -382,5 +382,13 @@
   "to": "Finance",
   "item": "ADIB CC *789 -> data/staging/statements/adib-cc-sep-2026.json (h0045 method, 5 image blocks, 38 rows incl overlaps, AED, signs as printed, dates derived from day labels, screenshot 6 Oct 07:50). Covers 6 Oct back to 1 Oct only - Wednesday 30 Sep header visible, no Sep rows yet. NO balance shown in any image: 30 Sep / 1 Oct tie-out still missing. Card payments in: +5,000 1 Oct (ties Mashreq T_6bac), +10,000 5 Oct, +17,500 6 Oct. ASOS.com +474.90 credit 1 Oct. DigitalOcean printed as USD -2.56. Calum says more to come - will append as further blocks, same file.",
   "status": "open"
+ },
+ {
+  "id": "h0049",
+  "date": "2026-10-06",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "Calum 6 Oct 07:55: ADIB CC *789 outstanding 27,176.34 AED (stated in chat, after 32,500 paid in 1-6 Oct). He wants to put more to it and is coming to you for the number - have it ready: Mashreq was 206,424.84 on 1 Oct before the 5,000 + 5,038.81 out and the 10,000 + 17,500 card payments; BoS over its 3,000 limit; UK minimums due 9-21 Oct (Aqua 35.32, Amex Gold 549.88 full, Barclaycard 118.45, Santander 318.06).",
+  "status": "open"
  }
 ]
