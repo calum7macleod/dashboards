@@ -28686,6 +28686,17 @@
       "limit": null,
       "status": "Stated by Calum in chat 6 Oct 07:55 (no screenshot). After payments 5,000 (1 Oct) + 10,000 (5 Oct) + 17,500 (6 Oct). Further payment planned - amount with Finance. 5% monthly DD set",
       "source": "Calum, chat 6 Oct 26"
+    },
+    {
+      "date": "2026-10-06",
+      "month": "Oct 26",
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 861.34 at 07:59 6 Oct - breach cleared. 1 Oct: +3,000 in (2x Nium/Mashreq QuickRemit, Page LJ). 2 Oct card DDs: Virgin 385.98, M&S 380.42, Amex 549.88 + 140.28. 5 Oct: +10,493.85 F/FLOW own name; out Aqua 3,980.27, Lewis Page 1,000, Tallia 1,200, Kevin Boxall 1,000, C L MacLeod 500, Mum 300, HSBC 35.60. Rows: data/staging/statements/bos-20261001-20261006.json",
+      "source": "BoS app screenshots 6 Oct 26"
     }
   ],
   "personalDebts": [
