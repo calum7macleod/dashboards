@@ -430,5 +430,13 @@
   "to": "Finance",
   "item": "Per Calum 6 Oct: BoS PAGE LJ +1,000 (1 Oct) = short-term loan from Lewis Page until FX landed; LEWIS PAGE -1,000 (5 Oct) = repayment. Categorise as loan in/out, net zero. Note recorded in bos-20261001-20261006.json. The Mashreq -6,000 AED to Lewis Page on 1 Oct is NOT covered by this - still unexplained.",
   "status": "open"
+ },
+ {
+  "id": "h0055",
+  "date": "2026-10-06",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "UK cards 6 Oct -> 9 files in data/staging/statements/ (tesco-clubcard, mbna-1, mbna-2, ba-amex, amex-gold, aqua, ms, hsbc, virgin-money; 22 rows, payments marked type=payment, signs as each app prints) + 9 ccBalances in finance.json. Answers: AMERICAN EXP 3773 140.28 = BA Amex (now 0.00); Aqua CLEARED to 0.00 by the 3,980.27 (stmt was 3,126.31 - 3,155.91 query closed). Balances 6 Oct: Tesco 5,584.54, MBNA1 7,876.37, MBNA2 1,878.37, M&S 7,296.80 (0 min due 22 Oct), HSBC 1,388.41 (DD taken), Virgin 9,105.30 (375.08 due 25 Oct), Barclaycard 9,422.43 + Santander 11,716.17 unchanged (no files). Per Calum: Mashreq 1 Oct -6,000 AED to Lewis Page = partial repayment of money owed to Lewis - personalDebts shows Lewis RESOLVED 30 Jul, now contradicted; update it.",
+  "status": "open"
  }
 ]
