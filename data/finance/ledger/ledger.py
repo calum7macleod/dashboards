@@ -12,7 +12,7 @@ import sys, json, csv, hashlib, re, datetime, collections, glob
 # ---------- reference tables ----------
 USD_AED = 3.6725
 FX_DEFAULT = {"GBP": 4.75, "USD": USD_AED, "EUR": 4.05, "AED": 1.0}   # "around" - overwritten by fx.json (effective rates from our own conversions)
-OWN_ACCOUNTS = ["ADIB", "ADIB CC", "Mashreq", "BoS", "Wise", "Binance", "Tal Card"]
+OWN_ACCOUNTS = ["ADIB", "ADIB CC", "Mashreq", "Mashreq Pot", "BoS", "Wise", "Binance", "Tal Card"]
 MULTI_CCY = ("Wise", "Binance")   # each currency balance is its own sub-ledger: "Wise AED", "Wise GBP", "Binance USDT" - a conversion inside the wallet is a pair like any other
 PERSON_RX = re.compile(r"^[A-Za-z'\-]+ [A-Za-z'\-]+( [A-Za-z'\-]+)?$")
 OWN_CARDS = ["MBNA", "M&S", "HSBC", "Barclaycard", "Santander", "Tesco", "Virgin", "Amex", "American Express", "Aqua", "BA Amex"]
