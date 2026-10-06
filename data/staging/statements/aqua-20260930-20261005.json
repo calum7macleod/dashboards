@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "account": "Aqua",
+  "currency": "GBP",
+  "period": "30 Sep - 5 Oct 26 (card *4498)",
+  "source": "UK card app screenshots 6 Oct 26 08:02-08:08 Dubai",
+  "sign": "as printed on each app (payments are negative on Tesco/Amex/Aqua/Virgin/MBNA and positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "balance6Oct0808": 0.0,
+   "available": 5250.0,
+   "creditLimit": 5250.0
+  },
+  "rowCount": 3,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06",
+  "verified": "22 Sep stmt 3,126.31 + 853.33 since (incl pending) + 0.37 + 0.26 = 3,980.27 paid -> 0.00. Resolves the 3,155.91 query in h0046: statement balance was 3,126.31"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-30",
+   "description": "Foreign Exchange Conversion Charge",
+   "amount": 0.37,
+   "currency": "GBP",
+   "note": "2.95% of Zofeur 12.64 (pending in aqua-20260923-20260928.json)"
+  },
+  {
+   "date": "2026-09-30",
+   "description": "Foreign Exchange Conversion Charge",
+   "amount": 0.26,
+   "currency": "GBP",
+   "partial": true,
+   "note": "description cut; 2.95% of Deliveroo 8.66"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "Payment Received - Thank You",
+   "amount": -3980.27,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "= BoS 5 Oct AQUA -3,980.27"
+  }
+ ]
+}
