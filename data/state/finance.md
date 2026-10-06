@@ -6,6 +6,12 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 6 OCT - WEEK 1 CLOSE (uploads h0048-h0055 ingested, 78 rows, 332 pairs)
+Cash: Mashreq 56,717 + pot 12,975 (new 'Tara and Rent' savings, 6.25%) = 69,692. BoS +861 (OD cleared). Wise ~700. Nationwide -1,733 (rent 500.75 in, stayed in).
+Cards 6 Oct: ADIB CC 27,176 outstanding (NOT cleared 1 Oct - paid 5K/10K/17.5K = 32.5K; Oct spend on it 1-5 Oct D7.4K: Spinneys, InstaShop, Deliveroo, Hill House, Udrive, Boxica, Turtletots, Index). Aqua 0, Amex 0, BA 0. Tesco 5,585, MBNA1 7,876, MBNA2 1,878, M&S 7,297, HSBC 1,388, Virgin 9,105, Barclaycard 9,422, Santander 11,716 = GBP54.3K.
+UK list done: OD cleared, Virgin 385.98 + M&S 380.42 collected 2 Oct (arrears via DD), MBNA1 283, HSBC 35.60, Mum 300, Amex 549.88 + BA 140.28, Aqua 3,980.27, Kevin 1,000 (final), Tal 1,200, Wise 500. Lewis GBP1,000 in/out 1-5 Oct = short-term bridge, net zero. Lewis D6,000 1 Oct = Oct budget line (personalDebts 'resolved 30 Jul' is wrong - owes ~D199K).
+RULES WEEK 1: no cash advances KEPT · UK cards not used KEPT · BoS >= -2,000 before DD run KEPT · Nationwide not swept KEPT · ONE LIVING CARD (ADIB debit) BROKEN - credit card used daily 1-5 Oct, living pot never funded · ADIB card to zero on 1 Oct BROKEN (5K paid) · Meta: no charges 1-5 Oct KEPT.
+QUESTIONS: (1) Tal received 47,100 + 60,962.50 on 1 Oct and sent 10,000 back 2 Oct; the 60,962.50 = GBP12,500 via her, BoS got GBP10,493.85 -> ~GBP2,006 still with Tal: what is it? (2) Mohammed Ahmed 150 'family support' - who?
 ## 5 OCT: Calum paid Aqua GBP3,980 (cleared) and sent Tal GBP1,200 (of 1,500). Left on UK Oct list: Amex Gold 549.88 by 11 Oct, Kevin 1,000, Tal 300 balance, GBP500 to Wise subs; DDs to run: HSBC 36 + Mum 300 (5th), Aqua 0 (9th), MBNA 2 49 (16th), Pet Health 28 (17th), Barclaycard 118 (20th), Santander 318 + M&S 188 (21st), Corrina 150 (~24th), Tesco 266 (29th).
 ## 2 OCT: Calum paid Virgin + M&S arrears and restarted both DDs; MBNA 1 DD collected 1 Oct (Calum says sound - confirm 'nothing overdue' in app). GBP12,500 landed BoS 2 Oct. Still to do from the UK list: Amex Gold 549.88 by 11 Oct, Aqua in full, Kevin 1,000, Tal 1,500, GBP500 to Wise for subs. Sunday 4 Oct close checks: Virgin DD ~3 Oct collected, BoS >= 0, Aqua 0.
 ## 1 OCT SUMMARY - see cash-plan.md top
