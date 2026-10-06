@@ -1,0 +1,387 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "card": "ADIB Emirates VC Sig (*789)",
+  "currency": "AED unless stated",
+  "source": "ADIB app screenshots sent 6 Oct 26 07:51 Dubai, status bar 07:50-07:51",
+  "method": "per Finance h0045: one block per image, rows in on-screen order top to bottom, NOT merged or deduped - overlaps left in for sequence alignment",
+  "sign": "as printed: debits negative, credits positive",
+  "dates": "app shows day labels only; date derived from screenshot date Tue 6 Oct 26 (Today=6 Oct ... Wednesday=30 Sep)",
+  "imageOrder": "feed order, most recent first (img1 = top of list)",
+  "coverage": "6 Oct back to 1 Oct; Wednesday 30 Sep header visible but no 30 Sep rows",
+  "balances": "NO outstanding / statement balance shown in any image - 30 Sep and 1 Oct tie-out still missing",
+  "directDebit": "5% monthly payment percentage set",
+  "partialRows": "flagged partial=true where cut off or obscured; amount null where unreadable - never guessed",
+  "status": "ADIB so far - more images expected; later images append as further blocks in this file",
+  "rowCount": 38,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06"
+ },
+ "images": [
+  {
+   "image": "img1",
+   "upload": "WhatsApp_Image_2026-10-06_at_07_51_37 (display Image 5)",
+   "statusBarTime": "07:51",
+   "screenPosition": "top of feed",
+   "headerText": "Direct debit for monthly payment % - 5% monthly payment percentage set.",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Today",
+     "date": "2026-10-06",
+     "description": "T_de91b2d8653b4502b0e8ca4bc616... (reference truncated on screen)",
+     "amount": 17500.0,
+     "currency": "AED",
+     "reference": "T_de91b2d8653b4502b0e8ca4bc616"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-05",
+     "description": "Amazon Grocery",
+     "amount": -457.81,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-05",
+     "description": "T_d89e8a8fa6c94e8f8e1eea049ef1e... (reference truncated on screen)",
+     "amount": 10000.0,
+     "currency": "AED",
+     "reference": "T_d89e8a8fa6c94e8f8e1eea049ef1e"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Sunday",
+     "date": "2026-10-04",
+     "description": "CAFU APP DMCC",
+     "amount": -198.94,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Sunday",
+     "date": "2026-10-04",
+     "description": "Amazon Grocery",
+     "amount": -29.97,
+     "currency": "AED",
+     "status": "obscured by button - Pending in img2",
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "img2",
+   "upload": "WhatsApp_Image_2026-10-06_at_07_51_35 (display Image 4)",
+   "statusBarTime": "07:51",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Sunday",
+     "date": "2026-10-04",
+     "description": "CAFU APP DMCC",
+     "amount": -198.94,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Sunday",
+     "date": "2026-10-04",
+     "description": "Amazon Grocery",
+     "amount": -29.97,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Sunday",
+     "date": "2026-10-04",
+     "description": "DELIVEROO",
+     "amount": -102.95,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Sunday",
+     "date": "2026-10-04",
+     "description": "www.instashop.com",
+     "amount": -348.09,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Sunday",
+     "date": "2026-10-04",
+     "description": "www.instashop.com",
+     "amount": -147.75,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Saturday",
+     "date": "2026-10-03",
+     "description": "CAFU APP DMCC",
+     "amount": -16.95,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Saturday",
+     "date": "2026-10-03",
+     "description": "LE ROYAL MERIDIEN BEACH R",
+     "amount": -56.0,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "(description cut off at screen bottom)",
+     "amount": -318.0,
+     "currency": "AED",
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "img3",
+   "upload": "WhatsApp_Image_2026-10-06_at_07_51_34 (display Image 3)",
+   "statusBarTime": "07:50",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Saturday",
+     "date": "2026-10-03",
+     "description": "LE ROYAL MERIDIEN BEACH R",
+     "amount": -56.0,
+     "currency": "AED",
+     "note": "above Friday header, so Saturday"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "Udrive Rent A Car",
+     "amount": -318.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "DUTCH ORIENTAL RESTAURANT",
+     "amount": -75.0,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "SPINNEYS NSHAMA 2",
+     "amount": -665.36,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "HILL HOUSE BRASSERIE",
+     "amount": -205.0,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "Deliveroo",
+     "amount": -68.25,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "Deliveroo",
+     "amount": -186.95,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "Udrive Rent A Ca(r) - amount hidden behind button",
+     "amount": null,
+     "currency": "AED",
+     "status": "Pending",
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "img4",
+   "upload": "WhatsApp_Image_2026-10-06_at_07_51_32 (display Image 2)",
+   "statusBarTime": "07:50",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Friday",
+     "date": "2026-10-02",
+     "description": "Deliveroo (top row cut off; amount reads -D1xx.xx, matches img3 row 7 -186.95)",
+     "amount": null,
+     "currency": "AED",
+     "partial": true
+    },
+    {
+     "position": 2,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "Udrive Rent A Car",
+     "amount": -11.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "ASOS.com",
+     "amount": 474.9,
+     "currency": "AED",
+     "note": "credit as printed (+)"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "DigitalOcean",
+     "amount": -2.56,
+     "currency": "USD",
+     "note": "printed as -$2.56; AED equivalent not shown"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "Quick Snack",
+     "amount": -3.0,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "PROPERTY INDEX",
+     "amount": -500.0,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "King's College Hospital",
+     "amount": -139.92,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "BOXICA",
+     "amount": -949.0,
+     "currency": "AED"
+    },
+    {
+     "position": 9,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "currency": "AED",
+     "partial": true,
+     "note": "faded behind button"
+    }
+   ]
+  },
+  {
+   "image": "img5",
+   "upload": "WhatsApp_Image_2026-10-06_at_07_51_31 (display Image 1)",
+   "statusBarTime": "07:50",
+   "screenPosition": "bottom of set - Wednesday header visible below last row, no Wednesday rows captured",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "King's College Hospital",
+     "amount": -139.92,
+     "currency": "AED",
+     "note": "no day header visible in this image; Thursday by continuity with img4"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "BOXICA",
+     "amount": -949.0,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "King's College Hospital",
+     "amount": -206.71,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "Starbucks",
+     "amount": -23.0,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "InstaShop",
+     "amount": -129.84,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "T_6bac5c7f231f4cb6bed02ad12709c9a... (reference truncated on screen)",
+     "amount": 5000.0,
+     "currency": "AED",
+     "reference": "T_6bac5c7f231f4cb6bed02ad12709c9a",
+     "note": "matches Mashreq 1 Oct IPP transfer 033IPPD2627329IS -5,000.00 ref T_6BAC5C7F231F4CB6BED02AD12709C9AA"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Thursday",
+     "date": "2026-10-01",
+     "description": "WWW.TURTLETOTS.COM/AE",
+     "amount": -1039.5,
+     "currency": "AED"
+    }
+   ]
+  }
+ ]
+}
