@@ -390,5 +390,13 @@
   "to": "Finance",
   "item": "Calum 6 Oct 07:55: ADIB CC *789 outstanding 27,176.34 AED (stated in chat, after 32,500 paid in 1-6 Oct). He wants to put more to it and is coming to you for the number - have it ready: Mashreq was 206,424.84 on 1 Oct before the 5,000 + 5,038.81 out and the 10,000 + 17,500 card payments; BoS over its 3,000 limit; UK minimums due 9-21 Oct (Aqua 35.32, Amex Gold 549.88 full, Barclaycard 118.45, Santander 318.06).",
   "status": "open"
+ },
+ {
+  "id": "h0050",
+  "date": "2026-10-06",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "Mashreq 1-6 Oct -> data/staging/statements/mashreq-20261001-20261006.json (11 rows AED, ties exactly: 206,424.84 on 1 Oct 08:08 -> 56,717.27 on 6 Oct 07:54). Out on 1 Oct after the 08:08 snapshot: 12,975 to own account, 47,100 + 60,962.50 to Tallia Flaher, 6,000 to Lewis Page, second QuickRemit 5,020.07 to BoS. 2 Oct: +10,000 from Tallia, -150 family support. Card payments 10,000 (5 Oct) + 17,500 (6 Oct) tie to the ADIB T_ refs. This changes the ADIB sizing in h0049: Mashreq cover is now 56,717.27, not 206k.",
+  "status": "open"
  }
 ]
