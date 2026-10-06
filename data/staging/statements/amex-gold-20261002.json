@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "account": "Amex Gold",
+  "currency": "GBP",
+  "period": "2 Oct 26",
+  "source": "UK card app screenshots 6 Oct 26 08:02-08:08 Dubai",
+  "sign": "as printed on each app (payments are negative on Tesco/Amex/Aqua/Virgin/MBNA and positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "totalBalance6Oct0802": 0.0,
+   "balanceDue": 0.0,
+   "membershipRewards": 14115
+  },
+  "rowCount": 1,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06",
+  "note": "append to amex-gold-2026.json transcript"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "PAYMENT RECEIVED - THANK YOU",
+   "amount": -549.88,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "= BoS 2 Oct AMERICAN EXP 3773 -549.88; clears the 549.88 due 11 Oct"
+  }
+ ]
+}
