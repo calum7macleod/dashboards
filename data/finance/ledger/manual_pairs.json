@@ -18,5 +18,20 @@
    }
   ],
   "why": "Calum 26 Sep: F/FLOW = FX Mashreq->BoS (via Tal); D130,000 -> GBP25,219 = 5.155, ~5% worse than Wise"
+ },
+ {
+  "out": {
+   "account": "Mashreq",
+   "date": "2026-10-01",
+   "amount": -60962.5
+  },
+  "in": [
+   {
+    "account": "BoS",
+    "date": "2026-10-05",
+    "amount": 10493.85
+   }
+  ],
+  "why": "1 Oct: D60,962.50 to Tal = the GBP12,500 UK transfer routed via Tal; GBP10,493.85 arrived BoS 5 Oct as F/FLOW; ~GBP2,006 retained by Tal - unexplained, ask"
  }
 ]
