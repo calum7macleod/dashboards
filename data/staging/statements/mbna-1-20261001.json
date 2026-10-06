@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "account": "MBNA 1",
+  "currency": "GBP",
+  "period": "recent 06 Sep - 6 Oct 26 (card *1654)",
+  "source": "UK card app screenshots 6 Oct 26 08:02-08:08 Dubai",
+  "sign": "as printed on each app (payments are negative on Tesco/Amex/Aqua/Virgin/MBNA and positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "spent6Oct0804": 7876.37,
+   "available": 923.63,
+   "impliedLimit": 8800.0
+  },
+  "rowCount": 1,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06",
+  "verified": "only row in period; app says no more transactions"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-01",
+   "description": "DIRECT DEBIT PAYMENT",
+   "amount": -283.07,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "printed '283.07 cr'; = BoS 1 Oct MBNA LIMITED -283.07"
+  }
+ ]
+}
