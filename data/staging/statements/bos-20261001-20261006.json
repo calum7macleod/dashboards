@@ -1,0 +1,188 @@
+{
+ "meta": {
+  "account": "BoS",
+  "accountType": "Classic current account",
+  "currency": "GBP",
+  "period": "30 Sep - 6 Oct 26 (no rows 3-4 Oct; 6 Oct nothing posted by 07:59)",
+  "source": "BoS app screenshots 6 Oct 26 07:59 Dubai",
+  "sign": "as printed: debits negative, credits positive",
+  "order": "chronological, running balance as printed after each row",
+  "printed": {
+   "balance6Oct0759": 861.34,
+   "overdraftLimit": 3000.0
+  },
+  "verified": "running balances chain from 29 Sep close -2,841.57 to +861.34 as printed (22 rows)",
+  "rowCount": 22,
+  "inFinanceJson": "none; first 3 rows already in staging bos-20260926-20261001.json (flagged)",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-06"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-30",
+   "description": "DAILY OD INT",
+   "amount": -2.61,
+   "currency": "GBP",
+   "balance": -2844.18,
+   "alreadyStaged": "bos-20260926-20261001.json",
+   "partial": true
+  },
+  {
+   "date": "2026-10-01",
+   "description": "PET HEALTH CLUB",
+   "amount": -28.25,
+   "currency": "GBP",
+   "balance": -2872.43,
+   "alreadyStaged": "bos-20260926-20261001.json"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "MBNA LIMITED",
+   "amount": -283.07,
+   "currency": "GBP",
+   "balance": -3155.5,
+   "alreadyStaged": "bos-20260926-20261001.json"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "PAGE LJ",
+   "amount": 1000.0,
+   "currency": "GBP",
+   "balance": -2155.5
+  },
+  {
+   "date": "2026-10-01",
+   "description": "NIUM FINTECH LIMIT",
+   "amount": 1000.0,
+   "currency": "GBP",
+   "balance": -1155.5,
+   "note": "Mashreq QuickRemit leg (1 Oct 5,038.81 / 5,020.07 AED) - which is which not shown"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "NIUM FINTECH LIMIT",
+   "amount": 1000.0,
+   "currency": "GBP",
+   "balance": -155.5,
+   "note": "Mashreq QuickRemit leg"
+  },
+  {
+   "date": "2026-10-01",
+   "description": "DAILY OD INT",
+   "amount": -0.14,
+   "currency": "GBP",
+   "balance": -155.64
+  },
+  {
+   "date": "2026-10-02",
+   "description": "VIRGIN MONEY",
+   "amount": -385.98,
+   "currency": "GBP",
+   "balance": -541.62
+  },
+  {
+   "date": "2026-10-02",
+   "description": "M&S MASTERCARD",
+   "amount": -380.42,
+   "currency": "GBP",
+   "balance": -922.04
+  },
+  {
+   "date": "2026-10-02",
+   "description": "AMERICAN EXP 3773",
+   "amount": -140.28,
+   "currency": "GBP",
+   "balance": -1062.32,
+   "note": "card not identified - BA Amex showed 95.79 due 0.00 on 1 Oct"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "AMERICAN EXP 3773",
+   "amount": -549.88,
+   "currency": "GBP",
+   "balance": -1612.2,
+   "note": "= Amex Gold full balance, due 11 Oct"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "DAILY OD INT",
+   "amount": -1.48,
+   "currency": "GBP",
+   "balance": -1613.68
+  },
+  {
+   "date": "2026-10-05",
+   "description": "DAILY OD INT 03/10",
+   "amount": -1.48,
+   "currency": "GBP",
+   "balance": -1615.16
+  },
+  {
+   "date": "2026-10-05",
+   "description": "DAILY OD INT 04/10",
+   "amount": -1.48,
+   "currency": "GBP",
+   "balance": -1616.64
+  },
+  {
+   "date": "2026-10-05",
+   "description": "MUM",
+   "amount": -300.0,
+   "currency": "GBP",
+   "balance": -1916.64
+  },
+  {
+   "date": "2026-10-05",
+   "description": "HSBC CREDIT CARD",
+   "amount": -35.6,
+   "currency": "GBP",
+   "balance": -1952.24,
+   "note": "scheduled showed 36.49 on 1 Oct, posted 35.60"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "F/FLOW CALUM MACLE",
+   "amount": 10493.85,
+   "currency": "GBP",
+   "balance": 8541.61,
+   "note": "faster payment in, own name; source account not identified in anything staged"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "LEWIS PAGE",
+   "amount": -1000.0,
+   "currency": "GBP",
+   "balance": 7541.61
+  },
+  {
+   "date": "2026-10-05",
+   "description": "AQUA",
+   "amount": -3980.27,
+   "currency": "GBP",
+   "balance": 3561.34,
+   "note": "Aqua 22 Sep stmt 3,126.31 + 853.33 since = 3,979.64; likely cleared - confirm with Aqua screenshot"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "TALLIA FLAHER",
+   "amount": -1200.0,
+   "currency": "GBP",
+   "balance": 2361.34
+  },
+  {
+   "date": "2026-10-05",
+   "description": "KEVIN BOXALL",
+   "amount": -1000.0,
+   "currency": "GBP",
+   "balance": 1361.34
+  },
+  {
+   "date": "2026-10-05",
+   "description": "C L MACLEOD",
+   "amount": -500.0,
+   "currency": "GBP",
+   "balance": 861.34,
+   "note": "to own account, destination not shown"
+  }
+ ]
+}
