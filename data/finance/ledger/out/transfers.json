@@ -2218,7 +2218,7 @@
   },
   {
    "pair_id": "P0223",
-   "out": "L03584",
+   "out": "L03580",
    "in": "L03571",
    "from": "Mashreq",
    "to": "ADIB CC",
@@ -2227,8 +2227,8 @@
   },
   {
    "pair_id": "P0224",
-   "out": "L03586",
-   "in": "L03591",
+   "out": "L03582",
+   "in": "L03587",
    "from": "Mashreq",
    "to": "Mashreq Pot",
    "amount_out": -12975.0,
@@ -2236,8 +2236,8 @@
   },
   {
    "pair_id": "P0225",
-   "out": "L03601",
-   "in": "L03612",
+   "out": "L03597",
+   "in": "L03608",
    "from": "BoS",
    "to": "Virgin Money",
    "amount_out": -385.98,
@@ -2246,8 +2246,8 @@
   },
   {
    "pair_id": "P0226",
-   "out": "L03602",
-   "in": "L03606",
+   "out": "L03598",
+   "in": "L03602",
    "from": "BoS",
    "to": "M&S",
    "amount_out": -380.42,
@@ -2255,8 +2255,8 @@
   },
   {
    "pair_id": "P0227",
-   "out": "L03603",
-   "in": "L03600",
+   "out": "L03599",
+   "in": "L03596",
    "from": "BoS",
    "to": "BA Amex",
    "amount_out": -140.28,
@@ -2264,8 +2264,8 @@
   },
   {
    "pair_id": "P0228",
-   "out": "L03604",
-   "in": "L03599",
+   "out": "L03600",
+   "in": "L03595",
    "from": "BoS",
    "to": "Amex Gold",
    "amount_out": -549.88,
@@ -2273,8 +2273,8 @@
   },
   {
    "pair_id": "P0229",
-   "out": "L03626",
-   "in": "L03633",
+   "out": "L03622",
+   "in": "L03629",
    "from": "BoS",
    "to": "HSBC",
    "amount_out": -35.6,
@@ -2283,8 +2283,8 @@
   },
   {
    "pair_id": "P0230",
-   "out": "L03629",
-   "in": "L03622",
+   "out": "L03625",
+   "in": "L03618",
    "from": "BoS",
    "to": "Aqua",
    "amount_out": -3980.27,
@@ -2292,8 +2292,8 @@
   },
   {
    "pair_id": "P0231",
-   "out": "L03634",
-   "in": "L03621",
+   "out": "L03630",
+   "in": "L03617",
    "from": "Mashreq",
    "to": "ADIB CC",
    "amount_out": -10000.0,
@@ -2301,8 +2301,8 @@
   },
   {
    "pair_id": "P0232",
-   "out": "L03637",
-   "in": "L03636",
+   "out": "L03633",
+   "in": "L03632",
    "from": "Mashreq",
    "to": "ADIB CC",
    "amount_out": -17500.0,
@@ -3155,8 +3155,8 @@
   },
   {
    "pair_id": "P0315",
-   "out": "L03590",
-   "in": "L03579",
+   "out": "L03586",
+   "in": "L03575",
    "from": "Mashreq",
    "to": "BoS",
    "amount_out": -5020.07,
@@ -3168,8 +3168,8 @@
   },
   {
    "pair_id": "P0316",
-   "out": "L03585",
-   "in": "L03580",
+   "out": "L03581",
+   "in": "L03576",
    "from": "Mashreq",
    "to": "BoS",
    "amount_out": -5038.81,
@@ -4510,16 +4510,7 @@
    "desc": "Acct to Acct transfer - from own account (CALUM LACHLAN MACLEOD, mobile banking)"
   },
   {
-   "id": "L03576",
-   "date": "2026-10-01",
-   "account": "ADIB CC",
-   "amount": 5000.0,
-   "currency": "AED",
-   "type": "card_repayment",
-   "desc": "T_6bac5c7f231f4cb6bed02ad12709c9aa payment in"
-  },
-  {
-   "id": "L03578",
+   "id": "L03574",
    "date": "2026-10-01",
    "account": "BoS",
    "amount": -283.07,
@@ -4528,7 +4519,7 @@
    "desc": "MBNA LIMITED"
   },
   {
-   "id": "L03581",
+   "id": "L03577",
    "date": "2026-10-01",
    "account": "BoS",
    "amount": 1000.0,
@@ -4537,7 +4528,7 @@
    "desc": "NIUM FINTECH LIMIT"
   },
   {
-   "id": "L03587",
+   "id": "L03583",
    "date": "2026-10-01",
    "account": "Mashreq",
    "amount": -47100.0,
@@ -4546,7 +4537,7 @@
    "desc": "Online Local Fund Transfer - TALLIA FLAHER"
   },
   {
-   "id": "L03607",
+   "id": "L03603",
    "date": "2026-10-02",
    "account": "Mashreq",
    "amount": 10000.0,
@@ -4555,7 +4546,7 @@
    "desc": "IPP TRANSFER - from TALLIA VERITY FLAHER (MP_2_P)"
   },
   {
-   "id": "L03608",
+   "id": "L03604",
    "date": "2026-10-02",
    "account": "Mashreq",
    "amount": -150.0,
@@ -4564,7 +4555,7 @@
    "desc": "IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY SUPPORT"
   },
   {
-   "id": "L03630",
+   "id": "L03626",
    "date": "2026-10-05",
    "account": "BoS",
    "amount": -1200.0,
@@ -4573,7 +4564,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L03632",
+   "id": "L03628",
    "date": "2026-10-05",
    "account": "BoS",
    "amount": -500.0,
