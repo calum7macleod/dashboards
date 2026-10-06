@@ -398,5 +398,13 @@
   "to": "Finance",
   "item": "Mashreq 1-6 Oct -> data/staging/statements/mashreq-20261001-20261006.json (11 rows AED, ties exactly: 206,424.84 on 1 Oct 08:08 -> 56,717.27 on 6 Oct 07:54). Out on 1 Oct after the 08:08 snapshot: 12,975 to own account, 47,100 + 60,962.50 to Tallia Flaher, 6,000 to Lewis Page, second QuickRemit 5,020.07 to BoS. 2 Oct: +10,000 from Tallia, -150 family support. Card payments 10,000 (5 Oct) + 17,500 (6 Oct) tie to the ADIB T_ refs. This changes the ADIB sizing in h0049: Mashreq cover is now 56,717.27, not 206k.",
   "status": "open"
+ },
+ {
+  "id": "h0051",
+  "date": "2026-10-06",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "New account: Mashreq Neo savings pot 'Tara and Rent', 12,975.00 AED at 6 Oct 07:57, 6.25% (indicative Oct earnings 11.26). One row: +12,975 1 Oct, counter-leg of the current account -12,975 same ref 033AACT26274A4DU - internal transfer, not spend. Staged at data/staging/statements/mashreq-tara-and-rent-20261001-20261006.json. Add to accounts; total Mashreq cash = 56,717.27 current + 12,975.00 pot = 69,692.27.",
+  "status": "open"
  }
 ]
