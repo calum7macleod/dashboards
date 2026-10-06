@@ -151,3 +151,4 @@
 {"date": "2026-10-05", "agent": "manager", "did": "Market daily scan kept as read-only scheduled chat; token-free prompt given to Calum", "wrote": ["data/state/manager.md"]}
 {"date": "2026-10-05", "agent": "Finance", "did": "5 Oct: Aqua cleared GBP3,980, Tal UK 1,200 sent; remaining UK list noted", "wrote": ["data/state/finance.md"]}
 {"date": "2026-10-06", "agent": "Uploader", "did": "ADIB CC: 5 screenshots staged per-image (38 rows incl overlaps, no balances) to data/staging/statements/adib-cc-sep-2026.json; handoff Finance", "wrote": ["data/staging/statements/adib-cc-sep-2026.json", "data/handoffs.json", "data/log.jsonl"]}
+{"date": "2026-10-06", "agent": "Uploader", "did": "ADIB CC stated balance 6 Oct recorded (staging file + 1 ccBalance); handoff Finance for payment sizing", "wrote": ["data/staging/statements/adib-cc-sep-2026.json", "data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
