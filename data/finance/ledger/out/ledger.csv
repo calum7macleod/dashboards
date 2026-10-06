@@ -3571,68 +3571,64 @@ L03569,2026-10-01,Oct 26,Thu,ADIB CC,AED,-23.0,-23.0,spend,Deliveries,Eating out
 L03570,2026-10-01,Oct 26,Thu,ADIB CC,AED,-129.84,-129.84,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-oct,844e10179172
 L03571,2026-10-01,Oct 26,Thu,ADIB CC,AED,5000.0,5000.0,card_repayment,Other,,T_6bac5c7f231f4cb6bed02ad12709c9a payment in,t 6bac5c7f231f4cb6bed02ad12709c9a paymen,P0223,,adib-cc-app-oct,ec626c34f3d5
 L03572,2026-10-01,Oct 26,Thu,ADIB CC,AED,-1039.5,-1039.5,spend,Deliveries,Eating out / coffee,WWW.TURTLETOTS.COM/AE,www turtletots com ae,,,adib-cc-app-oct,b34a676bf7aa
-L03573,2026-10-01,Oct 26,Thu,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,BOXICA (pending),boxica pending,,,adib-cc-app-screens-sep,d9d0974e0662
-L03574,2026-10-01,Oct 26,Thu,ADIB CC,AED,-949.0,-949.0,spend,Health,Boxica,BOXICA (pending),boxica pending,,,adib-cc-app-screens-sep,cb666177426d
-L03575,2026-10-01,Oct 26,Thu,ADIB CC,AED,-1039.5,-1039.5,spend,Deliveries,Eating out / coffee,WWW.TURTLETOTS.COM/AE (pending),www turtletots com ae pending,,,adib-cc-app-screens-sep,378595c0577b
-L03576,2026-10-01,Oct 26,Thu,ADIB CC,AED,5000.0,5000.0,card_repayment,Other,,T_6bac5c7f231f4cb6bed02ad12709c9aa payment in,t 6bac5c7f231f4cb6bed02ad12709c9aa payme,,one_legged,adib-cc-app-screens-sep,745ad178bbb0
-L03577,2026-10-01,Oct 26,Thu,BoS,GBP,-28.25,-138.99,spend,Life,Pets,PET HEALTH CLUB,pet health club,,,bos-app-6oct,a0c038e654dc
-L03578,2026-10-01,Oct 26,Thu,BoS,GBP,-283.07,-1392.7,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-app-6oct,34cfd2a67c87
-L03579,2026-10-01,Oct 26,Thu,BoS,GBP,1000.0,4920.0,borrowing,Loan,"Lewis short-term GBP1,000 (1 Oct in, 5 Oct out) - net zero",PAGE LJ,page lj,P0315,person_leg_confirm,bos-app-6oct,97d607acdf4b
-L03580,2026-10-01,Oct 26,Thu,BoS,GBP,1000.0,4920.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,P0316,person_leg_confirm,bos-app-6oct,c74d874e90e0
-L03581,2026-10-01,Oct 26,Thu,BoS,GBP,1000.0,4920.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-app-6oct,c74d874e90e0
-L03582,2026-10-01,Oct 26,Thu,BoS,GBP,-0.14,-0.69,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-app-6oct,eca6f2eec81a
-L03583,2026-10-01,Oct 26,Thu,MBNA 1,GBP,283.07,1392.7,refund,Unaccounted,,DIRECT DEBIT PAYMENT,direct debit payment,,,mbna1-app-6oct,026105ad1edc
-L03584,2026-10-01,Oct 26,Thu,Mashreq,AED,-5000.0,-5000.0,transfer,Other,,IPP TRANSFER - CREDIT CARD PAYMENT (card *6789),ipp transfer credit card payment card 67,P0223,,mashreq-app-6oct,d64b63ec41a4
-L03585,2026-10-01,Oct 26,Thu,Mashreq,AED,-5038.81,-5038.81,transfer,Other,,QuickRemit - to own UK bank account (CALUM MACLEOD),quickremit to own uk bank account calum ,P0316,person_leg_confirm,mashreq-app-6oct,2b1e29844c0b
-L03586,2026-10-01,Oct 26,Thu,Mashreq,AED,-12975.0,-12975.0,transfer,Other,,"Acct to Acct transfer - to own account (CALUM LACHLAN MACLEOD, mobile banking)",acct to acct transfer to own account cal,P0224,,mashreq-app-6oct,8ce842a74b23
-L03587,2026-10-01,Oct 26,Thu,Mashreq,AED,-47100.0,-47100.0,transfer,Family,Tal (one pot - transfer),Online Local Fund Transfer - TALLIA FLAHER,online local fund transfer tallia flaher,,one_legged,mashreq-app-6oct,5e7fd3bd126d
-L03588,2026-10-01,Oct 26,Thu,Mashreq,AED,-6000.0,-6000.0,debt_principal,Loan,Lewis loan repayment,Online Local Fund Transfer - LEWIS PAGE,online local fund transfer lewis page,,,mashreq-app-6oct,af554ad36d67
-L03589,2026-10-01,Oct 26,Thu,Mashreq,AED,-60962.5,-60962.5,transfer,Family,Tal (one pot - transfer),Online Local Fund Transfer - TALLIA FLAHER,online local fund transfer tallia flaher,M002,"manual:1 Oct: D60,962.50 to Tal = the GBP12,500 UK transfer routed via Tal; GBP10,493.85 arrived BoS 5 Oct as F/FLOW; ~GBP2,006 retained by Tal - unexplained, ask",mashreq-app-6oct,1a755b6bd18e
-L03590,2026-10-01,Oct 26,Thu,Mashreq,AED,-5020.07,-5020.07,transfer,Other,,QuickRemit - to own UK bank account (CALUM MACLEOD),quickremit to own uk bank account calum ,P0315,person_leg_confirm,mashreq-app-6oct,b18c832bd201
-L03591,2026-10-01,Oct 26,Thu,Mashreq Pot,AED,12975.0,12975.0,transfer,Other,,"Acct to Acct transfer - from own Mashreq current (CALUM LACHLAN MACLEOD, mobile banking)",acct to acct transfer from own mashreq c,P0224,,mashreq-pot-6oct,f97ad46c3f7c
-L03592,2026-10-01,Oct 26,Thu,Property Account,GBP,-287.8,-1415.98,spend,Business,UK property - mortgage (Methil),PRECISE MORTGAGES,precise mortgages,,,property-app-6oct,b0d3dd0b0418
-L03593,2026-10-02,Oct 26,Fri,ADIB CC,AED,-318.0,-318.0,spend,Life,Car / fuel / tolls / taxis,Udrive Rent A Car,udrive rent a car,,,adib-cc-app-oct,619841d64e93
-L03594,2026-10-02,Oct 26,Fri,ADIB CC,AED,-75.0,-75.0,spend,Deliveries,Eating out / coffee,DUTCH ORIENTAL RESTAURANT,dutch oriental restaurant,,,adib-cc-app-oct,172e6861f468
-L03595,2026-10-02,Oct 26,Fri,ADIB CC,AED,-665.36,-665.36,spend,Base Food,Groceries / meal prep,SPINNEYS NSHAMA 2,spinneys nshama 2,,,adib-cc-app-oct,871fa82a0372
-L03596,2026-10-02,Oct 26,Fri,ADIB CC,AED,-205.0,-205.0,spend,Deliveries,Eating out / coffee,HILL HOUSE BRASSERIE,hill house brasserie,,,adib-cc-app-oct,f62782a40248
-L03597,2026-10-02,Oct 26,Fri,ADIB CC,AED,-68.25,-68.25,spend,Deliveries,Food delivery,Deliveroo,deliveroo,,,adib-cc-app-oct,f3a9b856ab23
-L03598,2026-10-02,Oct 26,Fri,ADIB CC,AED,-186.95,-186.95,spend,Deliveries,Food delivery,Deliveroo,deliveroo,,,adib-cc-app-oct,3dcf13b3ea1e
-L03599,2026-10-02,Oct 26,Fri,Amex Gold,GBP,549.88,2705.41,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0228,,amexgold-app-6oct,7fb016c7a832
-L03600,2026-10-02,Oct 26,Fri,BA Amex,GBP,140.28,690.18,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0227,,baamex-app-6oct,c09fba69a85d
-L03601,2026-10-02,Oct 26,Fri,BoS,GBP,-385.98,-1899.02,card_repayment,Other,,VIRGIN MONEY,virgin money,P0225,person_leg_confirm,bos-app-6oct,edeeb031cfd4
-L03602,2026-10-02,Oct 26,Fri,BoS,GBP,-380.42,-1871.67,card_repayment,Other,,M&S MASTERCARD,m s mastercard,P0226,,bos-app-6oct,056372004bcd
-L03603,2026-10-02,Oct 26,Fri,BoS,GBP,-140.28,-690.18,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0227,,bos-app-6oct,b2bbc5882d60
-L03604,2026-10-02,Oct 26,Fri,BoS,GBP,-549.88,-2705.41,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0228,,bos-app-6oct,f0be57845225
-L03605,2026-10-02,Oct 26,Fri,BoS,GBP,-1.48,-7.28,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-app-6oct,aaee8e736168
-L03606,2026-10-02,Oct 26,Fri,M&S,GBP,380.42,1871.67,card_repayment,Other,,PAYMENT - THANK YOU,payment thank you,P0226,,m&s-app-6oct,a94cc261553a
-L03607,2026-10-02,Oct 26,Fri,Mashreq,AED,10000.0,10000.0,transfer,Family,Tal (one pot - transfer),IPP TRANSFER - from TALLIA VERITY FLAHER (MP_2_P),ipp transfer from tallia verity flaher m,,one_legged,mashreq-app-6oct,bf9916c5e7ed
-L03608,2026-10-02,Oct 26,Fri,Mashreq,AED,-150.0,-150.0,transfer,Life,Helpers / home services,IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY SUPPORT,ipp transfer mohammed ahmed ref family s,,one_legged,mashreq-app-6oct,59f40e431563
-L03609,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-20.76,-102.14,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,a836f77b870e
-L03610,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-30.6,-150.55,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,bccb64ed70d5
-L03611,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-72.07,-354.58,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,69cd75fe6580
-L03612,2026-10-02,Oct 26,Fri,Virgin Money,GBP,385.98,1899.02,card_repayment,Other,,MOBILE APP PAYMENT,mobile app payment,P0225,person_leg_confirm,virginmoney-app-6oct,07ec7174d01d
-L03613,2026-10-03,Oct 26,Sat,ADIB CC,AED,-16.95,-16.95,spend,Life,Car / fuel / tolls / taxis,CAFU APP DMCC,cafu app dmcc,,,adib-cc-app-oct,d0fc548d547c
-L03614,2026-10-03,Oct 26,Sat,ADIB CC,AED,-56.0,-56.0,spend,Entertainment,Eating out / hotels,LE ROYAL MERIDIEN BEACH R,le royal meridien beach r,,,adib-cc-app-oct,685e87de2782
-L03615,2026-10-04,Oct 26,Sun,ADIB CC,AED,-198.94,-198.94,spend,Life,Car / fuel / tolls / taxis,CAFU APP DMCC,cafu app dmcc,,,adib-cc-app-oct,7d3729d10c76
-L03616,2026-10-04,Oct 26,Sun,ADIB CC,AED,-29.97,-29.97,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-oct,7c00536e374a
-L03617,2026-10-04,Oct 26,Sun,ADIB CC,AED,-102.95,-102.95,spend,Deliveries,Food delivery,DELIVEROO,deliveroo,,,adib-cc-app-oct,60f96b67625b
-L03618,2026-10-04,Oct 26,Sun,ADIB CC,AED,-348.09,-348.09,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-oct,f0f7bec016d2
-L03619,2026-10-04,Oct 26,Sun,ADIB CC,AED,-147.75,-147.75,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-oct,1207f400f63b
-L03620,2026-10-05,Oct 26,Mon,ADIB CC,AED,-457.81,-457.81,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-oct,b591b9f7eea1
-L03621,2026-10-05,Oct 26,Mon,ADIB CC,AED,10000.0,10000.0,card_repayment,Other,,T_d89e8a8fa6c94e8f8e1eea049ef1e payment in,t d89e8a8fa6c94e8f8e1eea049ef1e payment ,P0231,,adib-cc-app-oct,d8a13db30b4b
-L03622,2026-10-05,Oct 26,Mon,Aqua,GBP,3980.27,19582.93,card_repayment,Other,,Payment Received - Thank You,payment received thank you,P0230,,aqua-app-6oct,2561fbadb96d
-L03623,2026-10-05,Oct 26,Mon,BoS,GBP,-1.48,-7.28,spend,Fees,Interest & bank fees,DAILY OD INT 03/10,daily od int 03 10,,,bos-app-6oct,86fba993e383
-L03624,2026-10-05,Oct 26,Mon,BoS,GBP,-1.48,-7.28,spend,Fees,Interest & bank fees,DAILY OD INT 04/10,daily od int 04 10,,,bos-app-6oct,a7b710c90bae
-L03625,2026-10-05,Oct 26,Mon,BoS,GBP,-300.0,-1476.0,debt_principal,Loan,Avantglamp loan repayment (Mum),MUM,mum,,,bos-app-6oct,3706d69b21a7
-L03626,2026-10-05,Oct 26,Mon,BoS,GBP,-35.6,-175.15,card_repayment,Other,,HSBC CREDIT CARD,hsbc credit card,P0229,person_leg_confirm,bos-app-6oct,83cba73257fe
-L03627,2026-10-05,Oct 26,Mon,BoS,GBP,10493.85,51629.74,transfer,Other,,F/FLOW CALUM MACLE,f flow calum macle,M002,"manual:1 Oct: D60,962.50 to Tal = the GBP12,500 UK transfer routed via Tal; GBP10,493.85 arrived BoS 5 Oct as F/FLOW; ~GBP2,006 retained by Tal - unexplained, ask",bos-app-6oct,3e1d83965192
-L03628,2026-10-05,Oct 26,Mon,BoS,GBP,-1000.0,-4920.0,debt_principal,Loan,Lewis loan repayment,LEWIS PAGE,lewis page,,,bos-app-6oct,3d96d34d9a16
-L03629,2026-10-05,Oct 26,Mon,BoS,GBP,-3980.27,-19582.93,card_repayment,Other,,AQUA,aqua,P0230,,bos-app-6oct,ab2ddc54ae9e
-L03630,2026-10-05,Oct 26,Mon,BoS,GBP,-1200.0,-5904.0,transfer,Family,Tal (one pot - transfer),TALLIA FLAHER,tallia flaher,,one_legged,bos-app-6oct,3c2406bba685
-L03631,2026-10-05,Oct 26,Mon,BoS,GBP,-1000.0,-4920.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),KEVIN BOXALL,kevin boxall,,,bos-app-6oct,d68154c57d0d
-L03632,2026-10-05,Oct 26,Mon,BoS,GBP,-500.0,-2460.0,transfer,Other,,C L MACLEOD,c l macleod,,one_legged,bos-app-6oct,6688893070aa
-L03633,2026-10-05,Oct 26,Mon,HSBC,GBP,35.6,175.15,card_repayment,Other,,DIRECT DEBIT PAYMENT - THANK YOU,direct debit payment thank you,P0229,person_leg_confirm,hsbc-app-6oct,2bf7067c347a
-L03634,2026-10-05,Oct 26,Mon,Mashreq,AED,-10000.0,-10000.0,transfer,Other,,IPP TRANSFER - CREDIT CARD PAYMENT (card *6789),ipp transfer credit card payment card 67,P0231,,mashreq-app-6oct,c0014ba36e5d
-L03635,2026-10-05,Oct 26,Mon,Property Account,GBP,500.75,2463.69,income,Other,UK rent - 97 Methil Brae (via YM),Bank credit YM CLIENT ACCOUNT - YOUR-MOVE.CO.UK LI,bank credit ym client account your move ,,unexplained_credit,property-app-6oct,0eaca5aa2996
-L03636,2026-10-06,Oct 26,Tue,ADIB CC,AED,17500.0,17500.0,card_repayment,Other,,T_de91b2d8653b4502b0e8ca4bc616 payment in,t de91b2d8653b4502b0e8ca4bc616 payment i,P0232,,adib-cc-app-oct,cddf7783a57a
-L03637,2026-10-06,Oct 26,Tue,Mashreq,AED,-17500.0,-17500.0,transfer,Other,,IPP TRANSFER - CREDIT CARD PAYMENT (card *6789),ipp transfer credit card payment card 67,P0232,,mashreq-app-6oct,bfb5e0321db2
+L03573,2026-10-01,Oct 26,Thu,BoS,GBP,-28.25,-138.99,spend,Life,Pets,PET HEALTH CLUB,pet health club,,,bos-app-6oct,a0c038e654dc
+L03574,2026-10-01,Oct 26,Thu,BoS,GBP,-283.07,-1392.7,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-app-6oct,34cfd2a67c87
+L03575,2026-10-01,Oct 26,Thu,BoS,GBP,1000.0,4920.0,borrowing,Loan,"Lewis short-term GBP1,000 (1 Oct in, 5 Oct out) - net zero",PAGE LJ,page lj,P0315,person_leg_confirm,bos-app-6oct,97d607acdf4b
+L03576,2026-10-01,Oct 26,Thu,BoS,GBP,1000.0,4920.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,P0316,person_leg_confirm,bos-app-6oct,c74d874e90e0
+L03577,2026-10-01,Oct 26,Thu,BoS,GBP,1000.0,4920.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,,one_legged,bos-app-6oct,c74d874e90e0
+L03578,2026-10-01,Oct 26,Thu,BoS,GBP,-0.14,-0.69,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-app-6oct,eca6f2eec81a
+L03579,2026-10-01,Oct 26,Thu,MBNA 1,GBP,283.07,1392.7,refund,Unaccounted,,DIRECT DEBIT PAYMENT,direct debit payment,,,mbna1-app-6oct,026105ad1edc
+L03580,2026-10-01,Oct 26,Thu,Mashreq,AED,-5000.0,-5000.0,transfer,Other,,IPP TRANSFER - CREDIT CARD PAYMENT (card *6789),ipp transfer credit card payment card 67,P0223,,mashreq-app-6oct,d64b63ec41a4
+L03581,2026-10-01,Oct 26,Thu,Mashreq,AED,-5038.81,-5038.81,transfer,Other,,QuickRemit - to own UK bank account (CALUM MACLEOD),quickremit to own uk bank account calum ,P0316,person_leg_confirm,mashreq-app-6oct,2b1e29844c0b
+L03582,2026-10-01,Oct 26,Thu,Mashreq,AED,-12975.0,-12975.0,transfer,Other,,"Acct to Acct transfer - to own account (CALUM LACHLAN MACLEOD, mobile banking)",acct to acct transfer to own account cal,P0224,,mashreq-app-6oct,8ce842a74b23
+L03583,2026-10-01,Oct 26,Thu,Mashreq,AED,-47100.0,-47100.0,transfer,Family,Tal (one pot - transfer),Online Local Fund Transfer - TALLIA FLAHER,online local fund transfer tallia flaher,,one_legged,mashreq-app-6oct,5e7fd3bd126d
+L03584,2026-10-01,Oct 26,Thu,Mashreq,AED,-6000.0,-6000.0,debt_principal,Loan,Lewis loan repayment,Online Local Fund Transfer - LEWIS PAGE,online local fund transfer lewis page,,,mashreq-app-6oct,af554ad36d67
+L03585,2026-10-01,Oct 26,Thu,Mashreq,AED,-60962.5,-60962.5,transfer,Family,Tal (one pot - transfer),Online Local Fund Transfer - TALLIA FLAHER,online local fund transfer tallia flaher,M002,"manual:1 Oct: D60,962.50 to Tal = the GBP12,500 UK transfer routed via Tal; GBP10,493.85 arrived BoS 5 Oct as F/FLOW; ~GBP2,006 retained by Tal - unexplained, ask",mashreq-app-6oct,1a755b6bd18e
+L03586,2026-10-01,Oct 26,Thu,Mashreq,AED,-5020.07,-5020.07,transfer,Other,,QuickRemit - to own UK bank account (CALUM MACLEOD),quickremit to own uk bank account calum ,P0315,person_leg_confirm,mashreq-app-6oct,b18c832bd201
+L03587,2026-10-01,Oct 26,Thu,Mashreq Pot,AED,12975.0,12975.0,transfer,Other,,"Acct to Acct transfer - from own Mashreq current (CALUM LACHLAN MACLEOD, mobile banking)",acct to acct transfer from own mashreq c,P0224,,mashreq-pot-6oct,f97ad46c3f7c
+L03588,2026-10-01,Oct 26,Thu,Property Account,GBP,-287.8,-1415.98,spend,Business,UK property - mortgage (Methil),PRECISE MORTGAGES,precise mortgages,,,property-app-6oct,b0d3dd0b0418
+L03589,2026-10-02,Oct 26,Fri,ADIB CC,AED,-318.0,-318.0,spend,Life,Car / fuel / tolls / taxis,Udrive Rent A Car,udrive rent a car,,,adib-cc-app-oct,619841d64e93
+L03590,2026-10-02,Oct 26,Fri,ADIB CC,AED,-75.0,-75.0,spend,Deliveries,Eating out / coffee,DUTCH ORIENTAL RESTAURANT,dutch oriental restaurant,,,adib-cc-app-oct,172e6861f468
+L03591,2026-10-02,Oct 26,Fri,ADIB CC,AED,-665.36,-665.36,spend,Base Food,Groceries / meal prep,SPINNEYS NSHAMA 2,spinneys nshama 2,,,adib-cc-app-oct,871fa82a0372
+L03592,2026-10-02,Oct 26,Fri,ADIB CC,AED,-205.0,-205.0,spend,Deliveries,Eating out / coffee,HILL HOUSE BRASSERIE,hill house brasserie,,,adib-cc-app-oct,f62782a40248
+L03593,2026-10-02,Oct 26,Fri,ADIB CC,AED,-68.25,-68.25,spend,Deliveries,Food delivery,Deliveroo,deliveroo,,,adib-cc-app-oct,f3a9b856ab23
+L03594,2026-10-02,Oct 26,Fri,ADIB CC,AED,-186.95,-186.95,spend,Deliveries,Food delivery,Deliveroo,deliveroo,,,adib-cc-app-oct,3dcf13b3ea1e
+L03595,2026-10-02,Oct 26,Fri,Amex Gold,GBP,549.88,2705.41,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0228,,amexgold-app-6oct,7fb016c7a832
+L03596,2026-10-02,Oct 26,Fri,BA Amex,GBP,140.28,690.18,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0227,,baamex-app-6oct,c09fba69a85d
+L03597,2026-10-02,Oct 26,Fri,BoS,GBP,-385.98,-1899.02,card_repayment,Other,,VIRGIN MONEY,virgin money,P0225,person_leg_confirm,bos-app-6oct,edeeb031cfd4
+L03598,2026-10-02,Oct 26,Fri,BoS,GBP,-380.42,-1871.67,card_repayment,Other,,M&S MASTERCARD,m s mastercard,P0226,,bos-app-6oct,056372004bcd
+L03599,2026-10-02,Oct 26,Fri,BoS,GBP,-140.28,-690.18,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0227,,bos-app-6oct,b2bbc5882d60
+L03600,2026-10-02,Oct 26,Fri,BoS,GBP,-549.88,-2705.41,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0228,,bos-app-6oct,f0be57845225
+L03601,2026-10-02,Oct 26,Fri,BoS,GBP,-1.48,-7.28,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-app-6oct,aaee8e736168
+L03602,2026-10-02,Oct 26,Fri,M&S,GBP,380.42,1871.67,card_repayment,Other,,PAYMENT - THANK YOU,payment thank you,P0226,,m&s-app-6oct,a94cc261553a
+L03603,2026-10-02,Oct 26,Fri,Mashreq,AED,10000.0,10000.0,transfer,Family,Tal (one pot - transfer),IPP TRANSFER - from TALLIA VERITY FLAHER (MP_2_P),ipp transfer from tallia verity flaher m,,one_legged,mashreq-app-6oct,bf9916c5e7ed
+L03604,2026-10-02,Oct 26,Fri,Mashreq,AED,-150.0,-150.0,transfer,Life,Helpers / home services,IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY SUPPORT,ipp transfer mohammed ahmed ref family s,,one_legged,mashreq-app-6oct,59f40e431563
+L03605,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-20.76,-102.14,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,a836f77b870e
+L03606,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-30.6,-150.55,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,bccb64ed70d5
+L03607,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-72.07,-354.58,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,69cd75fe6580
+L03608,2026-10-02,Oct 26,Fri,Virgin Money,GBP,385.98,1899.02,card_repayment,Other,,MOBILE APP PAYMENT,mobile app payment,P0225,person_leg_confirm,virginmoney-app-6oct,07ec7174d01d
+L03609,2026-10-03,Oct 26,Sat,ADIB CC,AED,-16.95,-16.95,spend,Life,Car / fuel / tolls / taxis,CAFU APP DMCC,cafu app dmcc,,,adib-cc-app-oct,d0fc548d547c
+L03610,2026-10-03,Oct 26,Sat,ADIB CC,AED,-56.0,-56.0,spend,Entertainment,Eating out / hotels,LE ROYAL MERIDIEN BEACH R,le royal meridien beach r,,,adib-cc-app-oct,685e87de2782
+L03611,2026-10-04,Oct 26,Sun,ADIB CC,AED,-198.94,-198.94,spend,Life,Car / fuel / tolls / taxis,CAFU APP DMCC,cafu app dmcc,,,adib-cc-app-oct,7d3729d10c76
+L03612,2026-10-04,Oct 26,Sun,ADIB CC,AED,-29.97,-29.97,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-oct,7c00536e374a
+L03613,2026-10-04,Oct 26,Sun,ADIB CC,AED,-102.95,-102.95,spend,Deliveries,Food delivery,DELIVEROO,deliveroo,,,adib-cc-app-oct,60f96b67625b
+L03614,2026-10-04,Oct 26,Sun,ADIB CC,AED,-348.09,-348.09,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-oct,f0f7bec016d2
+L03615,2026-10-04,Oct 26,Sun,ADIB CC,AED,-147.75,-147.75,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-oct,1207f400f63b
+L03616,2026-10-05,Oct 26,Mon,ADIB CC,AED,-457.81,-457.81,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-oct,b591b9f7eea1
+L03617,2026-10-05,Oct 26,Mon,ADIB CC,AED,10000.0,10000.0,card_repayment,Other,,T_d89e8a8fa6c94e8f8e1eea049ef1e payment in,t d89e8a8fa6c94e8f8e1eea049ef1e payment ,P0231,,adib-cc-app-oct,d8a13db30b4b
+L03618,2026-10-05,Oct 26,Mon,Aqua,GBP,3980.27,19582.93,card_repayment,Other,,Payment Received - Thank You,payment received thank you,P0230,,aqua-app-6oct,2561fbadb96d
+L03619,2026-10-05,Oct 26,Mon,BoS,GBP,-1.48,-7.28,spend,Fees,Interest & bank fees,DAILY OD INT 03/10,daily od int 03 10,,,bos-app-6oct,86fba993e383
+L03620,2026-10-05,Oct 26,Mon,BoS,GBP,-1.48,-7.28,spend,Fees,Interest & bank fees,DAILY OD INT 04/10,daily od int 04 10,,,bos-app-6oct,a7b710c90bae
+L03621,2026-10-05,Oct 26,Mon,BoS,GBP,-300.0,-1476.0,debt_principal,Loan,Avantglamp loan repayment (Mum),MUM,mum,,,bos-app-6oct,3706d69b21a7
+L03622,2026-10-05,Oct 26,Mon,BoS,GBP,-35.6,-175.15,card_repayment,Other,,HSBC CREDIT CARD,hsbc credit card,P0229,person_leg_confirm,bos-app-6oct,83cba73257fe
+L03623,2026-10-05,Oct 26,Mon,BoS,GBP,10493.85,51629.74,transfer,Other,,F/FLOW CALUM MACLE,f flow calum macle,M002,"manual:1 Oct: D60,962.50 to Tal = the GBP12,500 UK transfer routed via Tal; GBP10,493.85 arrived BoS 5 Oct as F/FLOW; ~GBP2,006 retained by Tal - unexplained, ask",bos-app-6oct,3e1d83965192
+L03624,2026-10-05,Oct 26,Mon,BoS,GBP,-1000.0,-4920.0,debt_principal,Loan,Lewis loan repayment,LEWIS PAGE,lewis page,,,bos-app-6oct,3d96d34d9a16
+L03625,2026-10-05,Oct 26,Mon,BoS,GBP,-3980.27,-19582.93,card_repayment,Other,,AQUA,aqua,P0230,,bos-app-6oct,ab2ddc54ae9e
+L03626,2026-10-05,Oct 26,Mon,BoS,GBP,-1200.0,-5904.0,transfer,Family,Tal (one pot - transfer),TALLIA FLAHER,tallia flaher,,one_legged,bos-app-6oct,3c2406bba685
+L03627,2026-10-05,Oct 26,Mon,BoS,GBP,-1000.0,-4920.0,debt_principal,Loan,Kevin/Alex - confirm (debt vs conduit),KEVIN BOXALL,kevin boxall,,,bos-app-6oct,d68154c57d0d
+L03628,2026-10-05,Oct 26,Mon,BoS,GBP,-500.0,-2460.0,transfer,Other,,C L MACLEOD,c l macleod,,one_legged,bos-app-6oct,6688893070aa
+L03629,2026-10-05,Oct 26,Mon,HSBC,GBP,35.6,175.15,card_repayment,Other,,DIRECT DEBIT PAYMENT - THANK YOU,direct debit payment thank you,P0229,person_leg_confirm,hsbc-app-6oct,2bf7067c347a
+L03630,2026-10-05,Oct 26,Mon,Mashreq,AED,-10000.0,-10000.0,transfer,Other,,IPP TRANSFER - CREDIT CARD PAYMENT (card *6789),ipp transfer credit card payment card 67,P0231,,mashreq-app-6oct,c0014ba36e5d
+L03631,2026-10-05,Oct 26,Mon,Property Account,GBP,500.75,2463.69,income,Other,UK rent - 97 Methil Brae (via YM),Bank credit YM CLIENT ACCOUNT - YOUR-MOVE.CO.UK LI,bank credit ym client account your move ,,unexplained_credit,property-app-6oct,0eaca5aa2996
+L03632,2026-10-06,Oct 26,Tue,ADIB CC,AED,17500.0,17500.0,card_repayment,Other,,T_de91b2d8653b4502b0e8ca4bc616 payment in,t de91b2d8653b4502b0e8ca4bc616 payment i,P0232,,adib-cc-app-oct,cddf7783a57a
+L03633,2026-10-06,Oct 26,Tue,Mashreq,AED,-17500.0,-17500.0,transfer,Other,,IPP TRANSFER - CREDIT CARD PAYMENT (card *6789),ipp transfer credit card payment card 67,P0232,,mashreq-app-6oct,bfb5e0321db2
