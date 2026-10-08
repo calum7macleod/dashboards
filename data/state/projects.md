@@ -1,6 +1,7 @@
-# PROJECTS STATE - start pack. Updated 2026-09-24 by Projects (24 Sep: Jake Nazer brick sheet folded in as UNVERIFIED claims; Abu Đ4M pack research filed. 23 Sep: mining pass 1).
+# PROJECTS STATE - start pack. Updated 2026-10-08 (Saadiyat Lagoons filed from the ADREC register; Abu Dhabi register is public - ADREC market data page / TAMM, front doors adinteract.co, ad-transactions.com, trackadrec.com). Previous: 2026-09-24 by Projects (24 Sep: Jake Nazer brick sheet folded in as UNVERIFIED claims; Abu Đ4M pack research filed. 23 Sep: mining pass 1).
 
 ## Index (data/projects/) - last verified / confidence
+- aldar-saadiyat-lagoons.md - NEW · 8 Oct 2026 / HIGH on register (985 ADREC rows: phase structure, 2026 secondary medians by layout, OP-transfer stripping); MED on cluster mapping
 - modon.md - NEW · Sep 2026 / MED-HIGH - developer profile: ADQ/ADX claims, Đ23bn H1, launch mechanics, SPA standard clauses, plan shapes
 - modon-wadeem-gardens.md - 22-23 Sep 2026 / HIGH on prices, sizes, ADIB route; MED on cash plan (40/60 vs 45/55 CONFLICT); service charge Đ8.32/sqft provisional
 - modon-tara-park.md - Sep 2026 / HIGH on Phase 2 plan dates + SPA, MED on prices (2-bed ~2.8M, 3-bed ~3.6M, Jul-Aug 2026); ledger label CONFLICT on two "Reem Island" deals
@@ -56,4 +57,5 @@ NEXT: the account export zips (conversations, projects) when Calum drops them - 
 9. Modon pipeline: what launches next and when (Reem prediction unverified); Al Naseem resale levels.
 10. Vision 207 / Sobha City AD / Taraf / Jebel Ali Springs / Imkan Artery - identify and fill (developer, location, product) or archive.
 Also: Modon ADQ % and ADX listing, Đ23bn H1 source, Wadeem market claims (AD outsold Dubai last week Aug; 160K vs 15.9K off-plan) - Market handoff candidates.
+
 
