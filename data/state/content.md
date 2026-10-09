@@ -30,3 +30,7 @@ Metrics feed: analytics screenshots to the Uploader each Friday - no third-party
 - Research done 30 Sep-1 Oct (chat, receipted): ADGM/DIFC workforce and age, DIFC psf (ValuStrat 2,075), Jumeirah Residences Maryah ~4,400 psf not sold out, island psf set (Knight Frank/ADREC/Bayut), Hudayriyat stats (ADREC 27% of H1 value), Blue Flag, Lulu/Fahid/Ramhan/Bvlgari, sovereign funds (ADIA/Mubadala/ADQ), MGX portfolio and $49bn Fund I, Stargate UAE, data-centre demand (IEA), semiconductors, Al Dhafra 1.35c, Maryah expansion D60bn, Aldar Education 38k/27. All in chat; brick sheet update pending.
 - Dubai ValuStrat Q2 + July VPI received (PDFs) - Dubai bricks for comparisons; Abu Dhabi Q2 PDF still needed (email-gated).
 - Calum's question logged: how does Jake script fast - answer: assembly from a brick sheet, not writing; our sheet exists, scripts should be built from it.
+
+## Pace calibration (9 Oct)
+- Calum measured: 215 words = 85 seconds = ~150 wpm. Time all scripts at 150 wpm (90s = 225 words; 60s = 150). Jake runs ~175.
+- Scripts final 8-9 Oct: four Dubai data reels (c15-c18), "Democracy Is The Reason The UK Is Failing" (215 words, Calum kept the title - Norway counter and the political risk flagged).
