@@ -34,3 +34,6 @@ Metrics feed: analytics screenshots to the Uploader each Friday - no third-party
 ## Pace calibration (9 Oct)
 - Calum measured: 215 words = 85 seconds = ~150 wpm. Time all scripts at 150 wpm (90s = 225 words; 60s = 150). Jake runs ~175.
 - Scripts final 8-9 Oct: four Dubai data reels (c15-c18), "Democracy Is The Reason The UK Is Failing" (215 words, Calum kept the title - Norway counter and the political risk flagged).
+
+## Standing rule (Calum, 9 Oct)
+- Script edits are always shown as his text with cuts struck through and additions in bold - never a rewritten paragraph.
