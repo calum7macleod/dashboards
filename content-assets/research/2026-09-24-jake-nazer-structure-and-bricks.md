@@ -133,3 +133,7 @@ Dubai PIX Aug-26 -3.5% YoY as published (first negative since Jun 2021), ~-6% fr
 - Skeleton agreed: searchable hook / number rehook / optional tease / bricks 5-7 words a point / statement ending, occasional keyword DM.
 - Open: the spine (candidate: "Abu Dhabi is where Dubai was in 2010"), the brick list of our own, the Jake meeting date, who owns the monthly update.
 - 35 hooks banked in tasks.json > contentIdeas, tagged "Jake study".
+
+## Hudayriyat - CURRENT STANDARD (Modon Instagram key-facts post, 30 Sep 2026, instagram.com/p/Dd6kXoGjL1z) - supersedes the 51m sqm / 16 km beach figures from the older masterplan page
+- 165,000+ population; 3,000 hotel keys across 12+ hotels and resorts; two 18-hole championship golf courses; 53m sqm land area; 7 healthcare centres; 22 km of beaches; 16 international schools; 6 regional malls; 5 marinas with 900 berths. All Modon, on the record.
+- Still unreceipted: mansions "up to 45,000 sq ft" (largest published villa 2,700 sqm = 29,000 sq ft); Morgan Stanley in ADGM; per-row hill elevation. Golf Estates launched by June 2026 (in Modon H1 results), i.e. after the 8 Apr ceasefire - not "during the conflict".
