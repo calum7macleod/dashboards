@@ -32,7 +32,7 @@ Metrics feed: analytics screenshots to the Uploader each Friday - no third-party
 - Calum's question logged: how does Jake script fast - answer: assembly from a brick sheet, not writing; our sheet exists, scripts should be built from it.
 
 ## Pace calibration (9 Oct)
-- Calum measured: 215 words = 85 seconds = ~150 wpm. Time all scripts at 150 wpm (90s = 225 words; 60s = 150). Jake runs ~175.
+- CORRECTED 9 Oct: Content's eye-counts were ~35% low. The 85-second script was ~300 words, so Calum's pace is ~210 wpm. Rule: 90s = ~315 words, 60s = ~210. ALWAYS count with wc, never estimate. Word's count runs ~6% high (bullet glyphs).
 - Scripts final 8-9 Oct: four Dubai data reels (c15-c18), "Democracy Is The Reason The UK Is Failing" (215 words, Calum kept the title - Norway counter and the political risk flagged).
 
 ## Standing rule (Calum, 9 Oct)
