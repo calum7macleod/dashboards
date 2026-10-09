@@ -37,3 +37,4 @@ Metrics feed: analytics screenshots to the Uploader each Friday - no third-party
 
 ## Standing rule (Calum, 9 Oct)
 - Script edits are always shown as his text with cuts struck through and additions in bold - never a rewritten paragraph.
+- Tidy rule (Calum, 9 Oct): when cutting words, every line must still read as a full sentence - no fragments. Cut only joining words that leave grammar intact; never collapse "47% lower than 2024" to "47% 2024".
