@@ -6,6 +6,14 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 11 OCT - WEEK 2 CLOSE (h0056-h0064 ingested, 50 rows, 335 pairs)
+Cash: Mashreq ~18,640 (after 30K to card 9 Oct + 8,076.75 to Tal 6 Oct = FX route -> BoS GBP1,650). Pot 12,975. BoS 1,280. Nationwide -1,733.
+ADIB card: outstanding 15,403 at 10 Oct (limit 69,500). Paid 1-9 Oct: 5K+10K+17.5K+30K = 62.5K. 1 Oct statement total was 67,103 (my 64.4K estimate was 2.7K low). CORRECTION: 6 Oct '27,176' was available credit.
+Card spend 1-10 Oct D8,500: food 5,658 (InstaShop x13, Spinneys 2, Kibsons, Amazon Grocery, Deliveroo, Tashas, Hill House) = 94% of the month's 6,000 in 10 days; Ula Beach Club 661.50 (7 Oct, unnamed); Boxica 1,000; car 643; Kings 347; Index 500.
+UK: L G Price 1,050 (Instagram), Gareth Burris 181 (day-trading), Wise round trip 1,050 net zero. Interest landed: Virgin 187.54, M&S 41.45, MBNA1 72.03. Due ladder: 16 Oct MBNA2 49.66, 20 Barclaycard 118.45, 21 Santander 318.06, 25 Virgin 375.08, 2 Nov MBNA1 270.74, 5 Nov HSBC 34.71.
+FX chain resolved: Tal received 108,062.50 + 8,076.75; sent BoS GBP10,493.85 + 1,650 and refunded 10,000 -> her own share ~47.1K as budgeted. Direct leg = the two QuickRemits.
+RULES WEEK 2: ADIB credit card still the living card (debit never funded) - BROKEN again; card not at zero - BROKEN; no cash advances KEPT; UK cards unused KEPT; Nationwide KEPT; BoS funded KEPT; Meta KEPT (no charges).
+Mashreq 18.6K vs plan (buffer 5K + Merkz 10K + phone 1K + living) - 4.4K light because the card was 67K not 56K.
 ## 6 OCT - WEEK 1 CLOSE (uploads h0048-h0055 ingested, 78 rows, 332 pairs)
 Cash: Mashreq 56,717 + pot 12,975 (new 'Tara and Rent' savings, 6.25%) = 69,692. BoS +861 (OD cleared). Wise ~700. Nationwide -1,733 (rent 500.75 in, stayed in).
 Cards 6 Oct: ADIB CC 27,176 outstanding (NOT cleared 1 Oct - paid 5K/10K/17.5K = 32.5K; Oct spend on it 1-5 Oct D7.4K: Spinneys, InstaShop, Deliveroo, Hill House, Udrive, Boxica, Turtletots, Index). Aqua 0, Amex 0, BA 0. Tesco 5,585, MBNA1 7,876, MBNA2 1,878, M&S 7,297, HSBC 1,388, Virgin 9,105, Barclaycard 9,422, Santander 11,716 = GBP54.3K.
