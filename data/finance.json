@@ -28829,6 +28829,45 @@
       "limit": 3000.0,
       "status": "IN CREDIT 1,280.24 after 8 Oct rows (screenshot 11 Oct 06:15). 6 Oct +1,650 F/FLOW own name; 8 Oct L G Price 1,050, Gareth Burris 181.10, 1,050 own-account round trip. Rows: data/staging/statements/bos-20261006-20261008.json",
       "source": "BoS app screenshot 11 Oct 26"
+    },
+    {
+      "card": "HSBC",
+      "balance": 1388.58,
+      "available": 611.42,
+      "limit": 2000.0,
+      "status": "10 Oct statement 1,388.58 (interest 0.17). Min 34.71 due 5 Nov",
+      "dueDate": "2026-11-05",
+      "dueAmount": 34.71,
+      "date": "2026-10-11",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "UK card app screenshots 11 Oct 26"
+    },
+    {
+      "card": "MBNA 1",
+      "balance": 7948.4,
+      "available": 851.6,
+      "limit": 8800.0,
+      "status": "06 Oct statement 7,948.40 (interest 72.03). Min 270.74 due 2 Nov",
+      "dueDate": "2026-11-02",
+      "dueAmount": 270.74,
+      "date": "2026-10-11",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "UK card app screenshots 11 Oct 26"
+    },
+    {
+      "card": "MBNA 2",
+      "balance": 1878.37,
+      "available": 621.63,
+      "limit": 2500.0,
+      "status": "21 Sep statement 1,878.37. Min 49.66 due 16 Oct - DD took 55.38 last cycle",
+      "dueDate": "2026-10-16",
+      "dueAmount": 49.66,
+      "date": "2026-10-11",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "UK card app screenshots 11 Oct 26"
     }
   ],
   "personalDebts": [
