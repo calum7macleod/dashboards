@@ -1,0 +1,43 @@
+{
+ "meta": {
+  "account": "M&S",
+  "currency": "GBP",
+  "period": "26 Sep - 2 Oct 26",
+  "source": "UK card app screenshots 11 Oct 26 06:22-06:25 Dubai",
+  "sign": "as printed (HSBC/M&S/Virgin print interest as charges; payments carry type=payment)",
+  "printed": {
+   "lastStatementBalance": 7677.22,
+   "dueDate": "2026-10-22",
+   "minimumDue": 0.0,
+   "currentBalance6Oct": 7296.8
+  },
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11",
+  "note": "26 Sep interest 41.45 total; statement 7,677.22 presumably dated ~27 Sep"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-26",
+   "description": "INTEREST",
+   "amount": 5.91,
+   "currency": "GBP",
+   "inFinanceJson": false
+  },
+  {
+   "date": "2026-09-26",
+   "description": "INTEREST",
+   "amount": 35.54,
+   "currency": "GBP",
+   "inFinanceJson": false
+  },
+  {
+   "date": "2026-10-02",
+   "description": "PAYMENT - THANK YOU",
+   "amount": 380.42,
+   "currency": "GBP",
+   "type": "payment",
+   "alreadyStaged": "ms-20261002.json"
+  }
+ ]
+}
