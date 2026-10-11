@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "account": "Virgin Money",
+  "currency": "GBP",
+  "period": "2-4 Oct 26 (card *2995)",
+  "source": "UK card app screenshots 11 Oct 26 06:22-06:25 Dubai",
+  "sign": "as printed (HSBC/M&S/Virgin print interest as charges; payments carry type=payment)",
+  "printed": {
+   "balance": "not shown in this screenshot; 9,105.30 incl pending on 6 Oct already includes these",
+   "paymentDue": 375.08,
+   "dueDate": "2026-10-25"
+  },
+  "rowCount": 4,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11",
+  "verified": "4 Oct interest rows sum to the day total 187.54 printed"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "MOBILE APP PAYMENT",
+   "amount": -385.98,
+   "currency": "GBP",
+   "type": "payment",
+   "alreadyStaged": "virgin-money-20261002.json",
+   "partial": true
+  },
+  {
+   "date": "2026-10-04",
+   "description": "INTEREST CHARGED",
+   "amount": 153.69,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-04",
+   "description": "INTEREST CHARGED",
+   "amount": 0.24,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-04",
+   "description": "INTEREST CHARGED",
+   "amount": 33.61,
+   "currency": "GBP"
+  }
+ ]
+}
