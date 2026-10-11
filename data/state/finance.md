@@ -6,6 +6,11 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## ADIB PROFIT TEST - agreed 11 Oct
+30 Sep statement (PDF seen 11 Oct): BF 64,622.10 + purchases 40,511.94 + fees 2,778.15 - payments 40,809.34 (incl the 30 Sep 5,000) = present balance 67,102.85, due 26 Oct, bonus that month 0.00. Paid since statement: 62,500 (5K 1 Oct, 10K 5 Oct, 17.5K 6 Oct, 30K 9 Oct) -> 4,602.85 short of present balance.
+Finance's position: full waiver needs present balance paid in full by 26 Oct (KFS condition + Aug 26 precedent); short -> proportional refund only (~1,500 back, ~800 kept). Calum's position: 55-day grace covers it; full 2,331 back regardless. CALUM DECIDED NOT TO PAY the 4,603 and to test it.
+Read the 31 Oct statement line 'Profit earned and bonus from bank': = 2,331 -> Calum right; < 2,331 -> Finance right. Record the outcome here and set the rule for the card from it.
+Also: Sep card purchases were 40,512 not 32,894 (missed 30-31 Aug postings + 10 Sep purchases) - replace Sep screenshot rows with the statement when the Uploader stages the PDF.
 ## 11 OCT - WEEK 2 CLOSE (h0056-h0064 ingested, 50 rows, 335 pairs)
 Cash: Mashreq ~18,640 (after 30K to card 9 Oct + 8,076.75 to Tal 6 Oct = FX route -> BoS GBP1,650). Pot 12,975. BoS 1,280. Nationwide -1,733.
 ADIB card: outstanding 15,403 at 10 Oct (limit 69,500). Paid 1-9 Oct: 5K+10K+17.5K+30K = 62.5K. 1 Oct statement total was 67,103 (my 64.4K estimate was 2.7K low). CORRECTION: 6 Oct '27,176' was available credit.
