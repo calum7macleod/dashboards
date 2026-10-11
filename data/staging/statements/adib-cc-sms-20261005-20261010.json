@@ -1,0 +1,506 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "card": "ADIB Emirates VC Sig (*789)",
+  "currency": "AED unless stated",
+  "source": "ADIB SMS alert screenshots (iPhone Messages), taken Sun 11 Oct 26 06:14 Dubai, 7 images IMG_3598-3604",
+  "method": "per image, rows in on-screen order top to bottom, overlaps left in (h0045 method); every SMS carries explicit trx date/time and 'Avl. card bal' (available credit) so alignment is by timestamp",
+  "sign": "amounts as printed (charges positive); avlCardBal = AVAILABLE CREDIT after the transaction, NOT outstanding balance",
+  "creditLimit": {
+   "value": 69500.0,
+   "basis": "avl 69,500 at zero balance on 1 Aug 26 (finance.json ccBalances) - outstanding = 69,500 - avlCardBal"
+  },
+  "derived": {
+   "outstanding5Oct2009": 59823.66,
+   "outstanding6Oct0746_after17500": 42323.66,
+   "outstanding10Oct1937": 15402.97
+  },
+  "uniqueTransactions": 22,
+  "paymentsCredited": [
+   {
+    "date": "2026-10-06",
+    "amount": 17500.0,
+    "source": "SMS"
+   },
+   {
+    "date": "between 2026-10-09 18:53 and 2026-10-10 14:31",
+    "amount": 30000.0,
+    "source": "derived from avl jump 25,005.95 -> 55,005.95; no SMS captured"
+   }
+  ],
+  "verified": "avl-balance chain across all 22 transactions holds except two gaps",
+  "unexplainedGaps": [
+   {
+    "before": 25362.55,
+    "amount": 271.94,
+    "expectedAvl": 25090.61,
+    "printedAvl": 25105.61,
+    "unexplained": 15.0
+   },
+   {
+    "before": 25086.51,
+    "amount": 80,
+    "expectedAvl": 25006.51,
+    "printedAvl": 25005.95,
+    "unexplained": -0.56
+   },
+   {
+    "before": 25005.95,
+    "amount": 71.95,
+    "expectedAvl": 24934.0,
+    "printedAvl": 54934.0,
+    "unexplained": 30000.0
+   }
+  ],
+  "miniStatement": {
+   "totalAmountDue": 67102.85,
+   "minDue": 3355.2,
+   "dueDate": "26/?? obscured",
+   "note": "SMS timestamp not visible; sits above the 5 Oct messages. Likely the 1 Oct statement - Finance to confirm against the app"
+  },
+  "CORRECTION": "Calum's 6 Oct 07:55 figure 27,176.34 = AVAILABLE credit (9,676.34 + 17,500 = 27,176.34 exactly), not outstanding. ccBalance dated 2026-10-06 balance 27,176.34 is wrong - outstanding then was 42,323.66. Corrected entry appended.",
+  "rowCount": 35,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11"
+ },
+ "images": [
+  {
+   "image": "IMG_3598",
+   "screenPosition": "oldest",
+   "rows": [
+    {
+     "position": 1,
+     "type": "mini-statement",
+     "text": "ADIB Covered card Mini stmt. Total amount due AED 67102.85 on card ending 678?. Min due AED 3355.2 by 26/??. Please pay before due date.",
+     "totalAmountDue": 67102.85,
+     "minDue": 3355.2,
+     "dueDate": "26/?? - obscured by avatar",
+     "smsTime": "not visible (before Mon 5 Oct 20:09)",
+     "partial": true
+    },
+    {
+     "position": 2,
+     "type": "transaction",
+     "trxDate": "2026-10-05",
+     "trxTime": "20:09",
+     "amount": 457.81,
+     "currency": "AED",
+     "merchant": "Amazon Grocery, UAE",
+     "status": "Approved",
+     "avlCardBal": 9676.34
+    },
+    {
+     "position": 3,
+     "type": "payment-credited",
+     "smsTime": "Tue 6 Oct 07:46",
+     "text": "Dear Customer, your payment of AED17500.00 on 10/6/2026 for card ending with *789 has been credited.",
+     "amount": 17500.0,
+     "currency": "AED",
+     "date": "2026-10-06"
+    },
+    {
+     "position": 4,
+     "type": "transaction",
+     "trxDate": "2026-10-06",
+     "trxTime": "10:30",
+     "amount": 297.14,
+     "currency": "AED",
+     "merchant": "Kibsons International, UAE",
+     "status": "Approved",
+     "avlCardBal": 26879.2
+    },
+    {
+     "position": 5,
+     "type": "transaction",
+     "trxDate": "2026-10-06",
+     "trxTime": "10:38",
+     "amount": 194.69,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 26684.51
+    },
+    {
+     "position": 6,
+     "type": "transaction",
+     "trxDate": "2026-10-06",
+     "trxTime": null,
+     "amount": 172.49,
+     "currency": "AED",
+     "merchant": "www.instashop.com (cut off at bottom)",
+     "status": "Approved",
+     "avlCardBal": null,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "IMG_3599",
+   "rows": [
+    {
+     "position": 1,
+     "type": "transaction",
+     "trxDate": "2026-10-06",
+     "trxTime": "10:49",
+     "amount": 172.49,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 26512.02
+    },
+    {
+     "position": 2,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "06:58",
+     "amount": 33.0,
+     "currency": "AED",
+     "merchant": "BOXICA, UAE",
+     "status": "Approved",
+     "avlCardBal": 26479.02
+    },
+    {
+     "position": 3,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "11:22",
+     "amount": 118.0,
+     "currency": "AED",
+     "merchant": "TASHAS AL WASEL, UAE",
+     "status": "Approved",
+     "avlCardBal": 26361.02
+    },
+    {
+     "position": 4,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "13:45",
+     "amount": 20.0,
+     "currency": "AED",
+     "merchant": "GOLDEN BAY CAR PARK, UAE",
+     "status": "Approved",
+     "avlCardBal": 26341.02,
+     "partial": true,
+     "note": "bottom of screen, avl bal partly cut; full in IMG_3600 faded header"
+    }
+   ]
+  },
+  {
+   "image": "IMG_3600",
+   "rows": [
+    {
+     "position": 1,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "13:45",
+     "amount": 20.0,
+     "currency": "AED",
+     "merchant": "GOLDEN BAY CAR PARK, UAE",
+     "status": "Approved",
+     "avlCardBal": 26341.02,
+     "partial": true,
+     "note": "faded behind header"
+    },
+    {
+     "position": 2,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "13:56",
+     "amount": 6.99,
+     "currency": "USD",
+     "merchant": "Ouraring, FINLAND",
+     "status": "Approved",
+     "avlCardBal": 26314.45,
+     "note": "AED equivalent 26.57 by avl-bal difference"
+    },
+    {
+     "position": 3,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "15:31",
+     "amount": 661.5,
+     "currency": "AED",
+     "merchant": "ULA BEACH CLUB FZE, UAE",
+     "status": "Approved",
+     "avlCardBal": 25652.95
+    },
+    {
+     "position": 4,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "16:34",
+     "amount": 73.25,
+     "currency": "AED",
+     "merchant": "Zofeur, UAE",
+     "status": "Approved",
+     "avlCardBal": 25579.7
+    },
+    {
+     "position": 5,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "17:24",
+     "amount": 59.15,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 25520.55,
+     "note": "time cut here, read from IMG_3601 faded header"
+    }
+   ]
+  },
+  {
+   "image": "IMG_3601",
+   "rows": [
+    {
+     "position": 1,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "17:24",
+     "amount": 59.15,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 25520.55,
+     "partial": true,
+     "note": "faded behind header"
+    },
+    {
+     "position": 2,
+     "type": "transaction",
+     "trxDate": "2026-10-07",
+     "trxTime": "23:37",
+     "amount": 5.25,
+     "currency": "AED",
+     "merchant": "SELFDRIVE AE, UAE",
+     "status": "Approved",
+     "avlCardBal": 25515.3
+    },
+    {
+     "position": 3,
+     "type": "transaction",
+     "trxDate": "2026-10-08",
+     "trxTime": "06:54",
+     "amount": 32.45,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 25482.85
+    },
+    {
+     "position": 4,
+     "type": "transaction",
+     "trxDate": "2026-10-08",
+     "trxTime": "08:06",
+     "amount": 120.3,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 25362.55
+    },
+    {
+     "position": 5,
+     "type": "transaction",
+     "trxDate": "2026-10-09",
+     "trxTime": "08:11",
+     "amount": 271.94,
+     "currency": "AED",
+     "merchant": "www.instashop.com (cut off at bottom)",
+     "status": "Approved",
+     "avlCardBal": null,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "IMG_3602",
+   "rows": [
+    {
+     "position": 1,
+     "type": "transaction",
+     "trxDate": "2026-10-08",
+     "trxTime": "08:06",
+     "amount": 120.3,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 25362.55,
+     "partial": true,
+     "note": "faded behind header"
+    },
+    {
+     "position": 2,
+     "type": "transaction",
+     "trxDate": "2026-10-09",
+     "trxTime": "08:11",
+     "amount": 271.94,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 25105.61
+    },
+    {
+     "position": 3,
+     "type": "transaction",
+     "trxDate": "2026-10-09",
+     "trxTime": "10:59",
+     "amount": 19.1,
+     "currency": "AED",
+     "merchant": "SANDCASTLES STARTER, UNITED STATES",
+     "status": "Approved",
+     "avlCardBal": 25086.51
+    },
+    {
+     "position": 4,
+     "type": "transaction",
+     "trxDate": "2026-10-09",
+     "trxTime": "18:53",
+     "amount": 80.0,
+     "currency": "AED",
+     "merchant": "NSHAMA TOWN SQUARE, UAE",
+     "status": "Approved",
+     "avlCardBal": 25005.95
+    },
+    {
+     "position": 5,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "14:31",
+     "amount": 71.95,
+     "currency": "AED",
+     "merchant": "www.instashop.com (cut off at bottom)",
+     "status": "Approved",
+     "avlCardBal": null,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "IMG_3603",
+   "rows": [
+    {
+     "position": 1,
+     "type": "transaction",
+     "trxDate": "2026-10-09",
+     "trxTime": "18:53",
+     "amount": 80.0,
+     "currency": "AED",
+     "merchant": "NSHAMA TOWN SQUARE, UAE",
+     "status": "Approved",
+     "avlCardBal": 25005.95,
+     "partial": true,
+     "note": "faded behind header"
+    },
+    {
+     "position": 2,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "14:31",
+     "amount": 71.95,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 54934.0
+    },
+    {
+     "position": 3,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "15:43",
+     "amount": 576.5,
+     "currency": "AED",
+     "merchant": "SPINNEYS NSHAMA 2, UAE",
+     "status": "Approved",
+     "avlCardBal": 54357.5
+    },
+    {
+     "position": 4,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "15:46",
+     "amount": 41.2,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 54316.3
+    },
+    {
+     "position": 5,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "15:46",
+     "amount": 98.32,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 54217.98,
+     "partial": true,
+     "note": "avl bal cut at bottom; full in IMG_3604"
+    }
+   ]
+  },
+  {
+   "image": "IMG_3604",
+   "screenPosition": "newest",
+   "rows": [
+    {
+     "position": 1,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "14:31",
+     "amount": 71.95,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 54934.0,
+     "partial": true,
+     "note": "faded behind header"
+    },
+    {
+     "position": 2,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "15:43",
+     "amount": 576.5,
+     "currency": "AED",
+     "merchant": "SPINNEYS NSHAMA 2, UAE",
+     "status": "Approved",
+     "avlCardBal": 54357.5
+    },
+    {
+     "position": 3,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "15:46",
+     "amount": 41.2,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 54316.3
+    },
+    {
+     "position": 4,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "15:46",
+     "amount": 98.32,
+     "currency": "AED",
+     "merchant": "www.instashop.com, UAE",
+     "status": "Approved",
+     "avlCardBal": 54217.98
+    },
+    {
+     "position": 5,
+     "type": "transaction",
+     "trxDate": "2026-10-10",
+     "trxTime": "19:37",
+     "amount": 120.95,
+     "currency": "AED",
+     "merchant": "DELIVEROO, UAE",
+     "status": "Approved",
+     "avlCardBal": 54097.03
+    }
+   ]
+  }
+ ]
+}
