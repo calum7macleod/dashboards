@@ -1,0 +1,22 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "GBP",
+  "period": "4 Oct - c.7 Oct 26 (fills the gap between wise-20260926-20260930 and wise-20261007-20261009; no rows 1-3 Oct)",
+  "source": "Wise app screenshot 11 Oct 26 06:26 Dubai",
+  "sign": "spends negative, additions positive (app prints no minus sign; '+' only on Added)",
+  "order": "chronological",
+  "printed": {"balance": "not shown"},
+  "verified": "5 Oct +500 Added = BoS 5 Oct C L MACLEOD -500 (destination now identified). No Wise outbound to Calum on 5-6 Oct, so the BoS inflows 10,493.85 (5 Oct) and 1,650 (6 Oct) did NOT come from Wise",
+  "rowCount": 4,
+  "inFinanceJson": "none (30 Sep Fmd Analytics at bottom already in wise-20260926-20260930.json)",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11"
+ },
+ "transactions": [
+  {"date": "2026-10-04", "description": "Apple", "amount": -11.99, "currency": "GBP"},
+  {"date": "2026-10-05", "description": "To GBP - Added (top-up)", "amount": 500.00, "currency": "GBP", "note": "funded by BoS 5 Oct C L MACLEOD -500"},
+  {"date": "2026-10-05", "description": "Apple", "amount": -21.99, "currency": "GBP"},
+  {"date": "2026-10-06 or 2026-10-07", "description": "Payment - Meta Pay - Card checked", "amount": 0.00, "currency": "USD", "note": "zero-value card check; date header off screen (sits between 5 Oct and the 7 Oct rows in wise-20261007-20261009)"}
+ ]
+}
