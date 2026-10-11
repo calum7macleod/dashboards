@@ -446,5 +446,13 @@
   "to": "Finance",
   "item": "CORRECTION to h0049: Calum's 27,176.34 on 6 Oct was ADIB AVAILABLE credit, not outstanding (SMS: avl 9,676.34 on 5 Oct + 17,500 credited = 27,176.34 exactly). Outstanding then was 42,323.66 (limit 69,500 per 1 Aug zero-balance SMS). Since: ~30,000 more paid 9-10 Oct (avl jump, no SMS), outstanding now 15,402.97 at 10 Oct 19:37 (avl 54,097.03). Mini stmt SMS: total due 67,102.85, min 3,355.20 by 26/?? (date obscured, SMS undated - likely 1 Oct stmt). ADIB SMS 5-10 Oct staged per image: data/staging/statements/adib-cc-sms-20261005-20261010.json (22 unique trx, avl chain holds except +15.00 gap 8-9 Oct and -0.56 after Nshama 9 Oct). Corrected ccBalance appended dated 10 Oct.",
   "status": "open"
+ },
+ {
+  "id": "h0057",
+  "date": "2026-10-11",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "11 Oct snapshots: Mashreq 5-9 Oct -> mashreq-20261005-20261009.json: 6 Oct -8,076.75 Tallia Flaher (family support), 9 Oct -30,000 card payment (the ADIB credit, ref T_1FE4...); derived balance 18,640.52 (header not shown). BoS 6-8 Oct -> bos-20261006-20261008.json: 6 Oct +1,650 F/FLOW own name (source?), 8 Oct L G Price -1,050, Gareth Burris -181.10, C L Macleod -1,050 out and +1,050 back same day (round trip?); 1,280.24 after 8 Oct. Tara and Rent pot unchanged 12,975.00 (indicative Oct earnings 20.27). Property Account unchanged -1,732.96.",
+  "status": "open"
  }
 ]
