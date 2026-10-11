@@ -1,0 +1,23 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "GBP",
+  "period": "7-9 Oct 26 (list top is 9 Oct; 1-6 Oct and below 7 Oct not on screen)",
+  "source": "Wise app screenshot 11 Oct 26 06:21 Dubai",
+  "sign": "spends negative, additions positive (app prints no minus sign; '+' only on Added)",
+  "order": "chronological",
+  "printed": {"balance": "not shown"},
+  "verified": "8 Oct +1,050 Added / 1,050 Sent to Calum Lachlan MacLeod = the BoS 8 Oct C L MACLEOD -1,050 / CALUM LACHLAN MACL +1,050 round trip (per Calum)",
+  "rowCount": 5,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11"
+ },
+ "transactions": [
+  {"date": "2026-10-07", "description": "Real Mad Honey Main", "amount": -64.94, "currency": "GBP", "originalAmount": 85.46, "originalCurrency": "USD", "partial": true, "note": "bottom of screen; any earlier 7 Oct rows not visible"},
+  {"date": "2026-10-08", "description": "Deepstash", "amount": -8.41, "currency": "GBP", "originalAmount": 11.08, "originalCurrency": "USD"},
+  {"date": "2026-10-08", "description": "To GBP - Added (top-up)", "amount": 1050.00, "currency": "GBP", "note": "funded by BoS 8 Oct C L MACLEOD -1,050"},
+  {"date": "2026-10-08", "description": "Calum Lachlan MacLeod - Sent", "amount": -1050.00, "currency": "GBP", "note": "= BoS 8 Oct CALUM LACHLAN MACL +1,050; round trip, net zero"},
+  {"date": "2026-10-09", "description": "FedEx", "amount": -5.66, "currency": "GBP", "originalAmount": 27.38, "originalCurrency": "AED"}
+ ]
+}
