@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "account": "MBNA 2",
+  "currency": "GBP",
+  "period": "September statement (card *3318)",
+  "source": "UK card app screenshots 11 Oct 26 06:22-06:25 Dubai",
+  "sign": "as printed (HSBC/M&S/Virgin print interest as charges; payments carry type=payment)",
+  "printed": {
+   "statementBalance": 1878.37,
+   "statementDate": "2026-09-21",
+   "minimumPayment": 49.66,
+   "dueDate": "2026-10-16",
+   "creditLimit": 2500.0
+  },
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11",
+  "note": "no new rows - filed for the min/due date, which finance.json ccBalances lacks"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-17",
+   "description": "DIRECT DEBIT PAYMENT",
+   "amount": -55.38,
+   "currency": "GBP",
+   "type": "payment",
+   "inFinanceJson": true
+  },
+  {
+   "date": "2026-09-21",
+   "description": "INTEREST",
+   "amount": 2.7,
+   "currency": "GBP",
+   "inFinanceJson": true
+  }
+ ]
+}
