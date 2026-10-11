@@ -2,6 +2,38 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "l g price",
+   "category": "Business",
+   "sub": "Instagram messaging (L G Price) - GBP1,000 Oct, 600/mo",
+   "type": "spend"
+  },
+  {
+   "rx": "gareth burris",
+   "category": "Business",
+   "sub": "Day-trading manager (Gareth Burris) GBP200/mo",
+   "type": "spend"
+  },
+  {
+   "rx": "real mad honey",
+   "category": "Health",
+   "sub": "Supplements"
+  },
+  {
+   "rx": "golden bay car park",
+   "category": "Life",
+   "sub": "Car / fuel / tolls / taxis"
+  },
+  {
+   "rx": "nshama town square",
+   "category": "Life",
+   "sub": "Home / services"
+  },
+  {
+   "rx": "fedex",
+   "category": "Business",
+   "sub": "Licences / admin / RERA"
+  },
+  {
    "rx": "mashreq pot|tara and rent|from own mashreq current",
    "category": "Other",
    "sub": "",
