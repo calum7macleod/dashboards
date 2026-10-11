@@ -187,3 +187,4 @@
 {"date": "2026-10-11", "agent": "Finance", "did": "ADIB profit-waiver test recorded: Calum not paying the 4,603 shortfall; outcome read from the 31 Oct statement bonus line; Sep statement shows purchases 40,512 (screenshots missed ~7.6K)", "wrote": ["data/state/finance.md"]}
 {"date": "2026-10-11", "agent": "Uploader", "did": "Whoop daily screenshot staged to private staging (1 reading); handoff Life Coach", "wrote": ["private:data/staging/2026-10-11-whoop.json", "data/handoffs.json", "data/log.jsonl"]}
 {"date": "2026-10-11", "agent": "Fitness", "did": "First session: created state file, logged 11 Oct Whoop", "wrote": ["private:personal/state/fitness.md", "private:personal/fitness/whoop.json"]}
+{"date": "2026-10-11", "agent": "Finance", "did": "BvA: unaccounted-in line added - Tal refunding Selfdrive 1,467.90, brunch repayment 350", "wrote": ["data/finance/bva-2026-10.md"]}
