@@ -438,5 +438,13 @@
   "to": "Finance",
   "item": "UK cards 6 Oct -> 9 files in data/staging/statements/ (tesco-clubcard, mbna-1, mbna-2, ba-amex, amex-gold, aqua, ms, hsbc, virgin-money; 22 rows, payments marked type=payment, signs as each app prints) + 9 ccBalances in finance.json. Answers: AMERICAN EXP 3773 140.28 = BA Amex (now 0.00); Aqua CLEARED to 0.00 by the 3,980.27 (stmt was 3,126.31 - 3,155.91 query closed). Balances 6 Oct: Tesco 5,584.54, MBNA1 7,876.37, MBNA2 1,878.37, M&S 7,296.80 (0 min due 22 Oct), HSBC 1,388.41 (DD taken), Virgin 9,105.30 (375.08 due 25 Oct), Barclaycard 9,422.43 + Santander 11,716.17 unchanged (no files). Per Calum: Mashreq 1 Oct -6,000 AED to Lewis Page = partial repayment of money owed to Lewis - personalDebts shows Lewis RESOLVED 30 Jul, now contradicted; update it.",
   "status": "done"
+ },
+ {
+  "id": "h0056",
+  "date": "2026-10-11",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "CORRECTION to h0049: Calum's 27,176.34 on 6 Oct was ADIB AVAILABLE credit, not outstanding (SMS: avl 9,676.34 on 5 Oct + 17,500 credited = 27,176.34 exactly). Outstanding then was 42,323.66 (limit 69,500 per 1 Aug zero-balance SMS). Since: ~30,000 more paid 9-10 Oct (avl jump, no SMS), outstanding now 15,402.97 at 10 Oct 19:37 (avl 54,097.03). Mini stmt SMS: total due 67,102.85, min 3,355.20 by 26/?? (date obscured, SMS undated - likely 1 Oct stmt). ADIB SMS 5-10 Oct staged per image: data/staging/statements/adib-cc-sms-20261005-20261010.json (22 unique trx, avl chain holds except +15.00 gap 8-9 Oct and -0.56 after Nshama 9 Oct). Corrected ccBalance appended dated 10 Oct.",
+  "status": "open"
  }
 ]
