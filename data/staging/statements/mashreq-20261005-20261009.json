@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "5-9 Oct 26 (no rows 7-8 Oct or 10-11 Oct; list top is 9 Oct)",
+  "source": "app screenshots 11 Oct 26 06:15-06:16 Dubai",
+  "sign": "as printed: debits negative",
+  "order": "chronological",
+  "printed": {
+   "balance": "not shown - header scrolled off"
+  },
+  "derived": {
+   "balance_after_9Oct": 18640.52,
+   "basis": "56,717.27 at 6 Oct 07:54 less 8,076.75 and 30,000.00"
+  },
+  "redacted": "IBAN and masked card removed",
+  "rowCount": 4,
+  "inFinanceJson": "none; rows 1-2 already staged (flagged)",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-05",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -10000.0,
+   "currency": "AED",
+   "reference": "033IPPD262780JLL",
+   "alreadyStaged": "mashreq-20261001-20261006.json"
+  },
+  {
+   "date": "2026-10-06",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -17500.0,
+   "currency": "AED",
+   "reference": "033IPPD2627902I0",
+   "alreadyStaged": "mashreq-20261001-20261006.json"
+  },
+  {
+   "date": "2026-10-06",
+   "description": "IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT",
+   "amount": -8076.75,
+   "currency": "AED",
+   "reference": "033IPPD262790K0R",
+   "note": "listed above the 17,500 so after the 6 Oct 07:54 snapshot"
+  },
+  {
+   "date": "2026-10-09",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -30000.0,
+   "currency": "AED",
+   "reference": "033IPPD2628214UF",
+   "note": "= the 30,000 ADIB credit derived from the SMS avl jump 9-10 Oct (adib-cc-sms-20261005-20261010.json)"
+  }
+ ]
+}
