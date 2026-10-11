@@ -174,3 +174,4 @@
 {"date": "2026-10-09", "agent": "content", "did": "AI capital reel final (230 words); twelve finals this week", "wrote": ["data/content.json"]}
 {"date": "2026-10-09", "agent": "content", "did": "Sovereign wealth fund reel final; thirteen finals", "wrote": ["data/content.json"]}
 {"date": "2026-10-09", "agent": "content", "did": "Corrected word-count method and pace calibration (210 wpm, 315 words = 90s)", "wrote": ["data/state/content.md"]}
+{"date": "2026-10-11", "agent": "Uploader", "did": "ADIB CC SMS 5-10 Oct: 7 images staged per image (22 unique trx, chain verified), 30,000 payment derived, 6 Oct balance corrected via new ccBalance; handoff Finance", "wrote": ["data/staging/statements/adib-cc-sms-20261005-20261010.json", "data/finance.json", "data/handoffs.json", "data/log.jsonl"]}
