@@ -1,0 +1,43 @@
+{
+ "meta": {
+  "account": "HSBC",
+  "currency": "GBP",
+  "period": "10 Sep - 10 Oct 26",
+  "source": "UK card app screenshots 11 Oct 26 06:22-06:25 Dubai",
+  "sign": "as printed (HSBC/M&S/Virgin print interest as charges; payments carry type=payment)",
+  "printed": {
+   "statementBalance": 1388.58,
+   "statementDate": "2026-10-10 (implied by 10 Oct interest)",
+   "dueDate": "2026-11-05",
+   "minimumDue": 34.71,
+   "creditLimit": 2000.0
+  },
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-11",
+  "verified": "1,388.41 (6 Oct) + 0.17 = 1,388.58 statement balance"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-10",
+   "description": "INTEREST",
+   "amount": 0.84,
+   "currency": "GBP",
+   "inFinanceJson": true
+  },
+  {
+   "date": "2026-10-05",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+   "amount": 35.6,
+   "currency": "GBP",
+   "type": "payment",
+   "alreadyStaged": "hsbc-20261005.json"
+  },
+  {
+   "date": "2026-10-10",
+   "description": "INTEREST",
+   "amount": 0.17,
+   "currency": "GBP"
+  }
+ ]
+}
