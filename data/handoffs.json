@@ -501,7 +501,7 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "Per Calum 11 Oct, correcting h0062: direct FX leg = the two 1 Oct Mashreq QuickRemits (5,038.81 + 5,020.07 = 10,058.88 AED -> BoS 2x NIUM 1,000). Tallia's 10,000 refund 2 Oct offsets that. Via-Tallia FX = BoS 10,493.85 (5 Oct, from the 1 Oct money) + 1,650 (6 Oct, from 8,076.75). Tallia's own share of 108,062.50 = 98,062.50 net minus AED cost of 10,493.85 (c.46k AED at 4.9-5.0, derived - exact needs the FX rate). Nothing from ADIB needed for this chain.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0064",
