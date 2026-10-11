@@ -28818,6 +28818,17 @@
       "limit": 69500.0,
       "status": "Avl 54,097.03 per SMS after Deliveroo 10 Oct 19:37; outstanding = 69,500 limit - avl. Payments credited: 17,500 (6 Oct) + 30,000 (9-10 Oct, derived from avl jump). CORRECTS 2026-10-06 entry: 27,176.34 was available credit, outstanding was 42,323.66. Mini stmt SMS: total due 67,102.85, min 3,355.20 by 26/?? (obscured). Rows: data/staging/statements/adib-cc-sms-20261005-20261010.json",
       "source": "ADIB SMS screenshots 11 Oct 26"
+    },
+    {
+      "date": "2026-10-08",
+      "month": "Oct 26",
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 1,280.24 after 8 Oct rows (screenshot 11 Oct 06:15). 6 Oct +1,650 F/FLOW own name; 8 Oct L G Price 1,050, Gareth Burris 181.10, 1,050 own-account round trip. Rows: data/staging/statements/bos-20261006-20261008.json",
+      "source": "BoS app screenshot 11 Oct 26"
     }
   ],
   "personalDebts": [
