@@ -28807,6 +28807,17 @@
       "month": "Oct 26",
       "currency": "GBP",
       "source": "UK card app screenshots 6 Oct 26"
+    },
+    {
+      "date": "2026-10-10",
+      "month": "Oct 26",
+      "card": "ADIB Emirates VC Sig (*789)",
+      "balance": 15402.97,
+      "currency": "AED",
+      "available": 54097.03,
+      "limit": 69500.0,
+      "status": "Avl 54,097.03 per SMS after Deliveroo 10 Oct 19:37; outstanding = 69,500 limit - avl. Payments credited: 17,500 (6 Oct) + 30,000 (9-10 Oct, derived from avl jump). CORRECTS 2026-10-06 entry: 27,176.34 was available credit, outstanding was 42,323.66. Mini stmt SMS: total due 67,102.85, min 3,355.20 by 26/?? (obscured). Rows: data/staging/statements/adib-cc-sms-20261005-20261010.json",
+      "source": "ADIB SMS screenshots 11 Oct 26"
     }
   ],
   "personalDebts": [
