@@ -509,6 +509,6 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "11 Oct UK cards -> 5 files in data/staging/statements/ (hsbc, ms, mbna-1, mbna-2-stmt, virgin-money; 8 new rows) + 3 ccBalances. New statements: MBNA 2 min 49.66 DUE 16 OCT (stmt 21 Sep 1,878.37); MBNA 1 stmt 6 Oct 7,948.40 min 270.74 due 2 Nov; HSBC stmt 10 Oct 1,388.58 min 34.71 due 5 Nov. New interest: Virgin 4 Oct 187.54, M&S 26 Sep 41.45, MBNA1 72.03, HSBC 0.17. Calum 11 Oct: both Amex at 0 (unchanged from 6 Oct). Aqua 0, Barclaycard, Tesco, Wise 4-7 Oct re-sent - duplicates, no files. Due ladder: 16 Oct MBNA2 49.66 / 20 Oct Barclaycard 118.45 / 21 Oct Santander 318.06 / 22 Oct M&S 0 / 25 Oct Virgin 375.08 / 2 Nov MBNA1 270.74 / 5 Nov HSBC 34.71.",
-  "status": "open"
+  "status": "done"
  }
 ]
