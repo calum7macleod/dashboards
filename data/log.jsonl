@@ -191,3 +191,4 @@
 {"date": "2026-10-12", "agent": "Finance", "did": "BvA: GBP350 brunch refund landed BoS 12 Oct; Ronnie parking D2,000 and Tal Selfdrive refund expected", "wrote": ["data/finance/bva-2026-10.md"]}
 {"date": "2026-10-12", "agent": "Fitness", "did": "Logged MFP export 20 Sep-11 Oct (22 days), updated state", "wrote": ["private:personal/fitness/nutrition.json", "private:personal/state/fitness.md"]}
 {"date": "2026-10-12", "agent": "Fitness", "did": "Strava connector live; pulled all-time (22 sessions), updated state", "wrote": ["private:personal/fitness/training.json", "private:personal/state/fitness.md"]}
+{"date": "2026-10-12", "agent": "Fitness", "did": "Whoop export logged (640 days), state rebuilt, Block 1 written", "wrote": ["private:personal/fitness/whoop.json", "private:personal/state/fitness.md", "private:personal/fitness/plan.md"]}
