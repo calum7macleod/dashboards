@@ -38,8 +38,8 @@ Today also: freeze every credit card; confirm Meta paused; payslip to Finance; M
 | Phone: Virgin (600 catch-up Oct, ~300 after) + du ~400 | 1,000 | 700 | 700 | 700 |
 | Boxica (949 + the 18s) | 949 paid 1 Oct | 1,100 | 1,100 | 1,100 |
 | Turtletots (one-off) | 1,040 paid 1 Oct | - | - | - |
-| Subs: Anthropic, Oura, YouTube, Prime, Deliveroo Plus | 875 | 875 | 875 | 875 |
-| Business software: Reelly, Widgit, Sandcastles (Buzzfy cancelled if it appears; HighLevel gone) | 225 | 225 | 225 | 225 |
+| Subs: Oura, YouTube, Prime, Deliveroo Plus (Anthropic D775 cancelled 12 Oct - one Claude sub stays, GBP180 on Wise) | 875 | 100 | 100 | 100 |
+| Business software: Reelly only (Widgit, Sandcastles, Buzzfy, HighLevel, HubSpot, Deepstash cancelled 12 Oct) | 225 | 180 | 180 | 180 |
 | Property Index | 500 | - | - | - |
 | Merkz (up to; may be less) | 10,000 | - | - | - |
 | Food: groceries, Deliveroo, eating out, Humantra | 6,000 | 6,000 | 6,000 | 6,000 |
@@ -81,7 +81,7 @@ UK BUDGET OCT 2026 - JAN 2027 (GBP). Base case = Aqua cleared in October, nothin
 | Amex Gold (coaching 460 + Du) | 646 | 550 | 550 | 550 |
 | Kevin (final payment October - Calum 1 Oct) | 1,000 | - | - | - |
 | Tal - UK cards | 1,500 | 1,500 | 1,500 | 1,500 |
-| Wise subs (Anthropic, Giffgaff, OpenAI, Deepstash, Canva, FMD, Apple) | 500 | 317 | 317 | 317 |
+| Wise subs (Anthropic 180, Giffgaff 50, OpenAI 18, Canva ~24, FMD 9, Apple 12; Deepstash cancelled 12 Oct) | 500 | 293 | 293 | 293 |
 | One-offs: overdraft 3,000 / arrears 1,456 / Aqua 4,000 | 8,456 | - | - | - |
 | UK lawyer (one-off, Calum 1 Oct) | - | 7,000 | - | - |
 | UK trip, December (flights, family, Christmas - Calum 1 Oct) | - | - | 8,000 | - |
