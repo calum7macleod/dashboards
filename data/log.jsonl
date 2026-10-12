@@ -192,3 +192,4 @@
 {"date": "2026-10-12", "agent": "Fitness", "did": "Logged MFP export 20 Sep-11 Oct (22 days), updated state", "wrote": ["private:personal/fitness/nutrition.json", "private:personal/state/fitness.md"]}
 {"date": "2026-10-12", "agent": "Fitness", "did": "Strava connector live; pulled all-time (22 sessions), updated state", "wrote": ["private:personal/fitness/training.json", "private:personal/state/fitness.md"]}
 {"date": "2026-10-12", "agent": "Fitness", "did": "Whoop export logged (640 days), state rebuilt, Block 1 written", "wrote": ["private:personal/fitness/whoop.json", "private:personal/state/fitness.md", "private:personal/fitness/plan.md"]}
+{"date": "2026-10-12", "agent": "Fitness", "did": "Scale export logged (291 readings), weight history in state", "wrote": ["private:personal/fitness/nutrition.json", "private:personal/state/fitness.md"]}
