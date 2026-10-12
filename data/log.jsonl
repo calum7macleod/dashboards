@@ -194,3 +194,4 @@
 {"date": "2026-10-12", "agent": "Fitness", "did": "Whoop export logged (640 days), state rebuilt, Block 1 written", "wrote": ["private:personal/fitness/whoop.json", "private:personal/state/fitness.md", "private:personal/fitness/plan.md"]}
 {"date": "2026-10-12", "agent": "Fitness", "did": "Scale export logged (291 readings), weight history in state", "wrote": ["private:personal/fitness/nutrition.json", "private:personal/state/fitness.md"]}
 {"date": "2026-10-12", "agent": "Fitness", "did": "Agreed food rule (log before eating, Fri-Sun 2,400) and 93.0 target 9 Nov; plan + state updated", "wrote": ["private:personal/fitness/plan.md", "private:personal/state/fitness.md"]}
+{"date": "2026-10-12", "agent": "Fitness", "did": "Logged creatine/omega-3 start, 18:30 food cut-off, breathing; checkpoint adjusted for creatine water", "wrote": ["private:personal/state/fitness.md", "private:personal/fitness/plan.md"]}
