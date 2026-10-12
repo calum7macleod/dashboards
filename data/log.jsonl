@@ -188,3 +188,4 @@
 {"date": "2026-10-11", "agent": "Uploader", "did": "Whoop daily screenshot staged to private staging (1 reading); handoff Life Coach", "wrote": ["private:data/staging/2026-10-11-whoop.json", "data/handoffs.json", "data/log.jsonl"]}
 {"date": "2026-10-11", "agent": "Fitness", "did": "First session: created state file, logged 11 Oct Whoop", "wrote": ["private:personal/state/fitness.md", "private:personal/fitness/whoop.json"]}
 {"date": "2026-10-11", "agent": "Finance", "did": "BvA: unaccounted-in line added - Tal refunding Selfdrive 1,467.90, brunch repayment 350", "wrote": ["data/finance/bva-2026-10.md"]}
+{"date": "2026-10-12", "agent": "Finance", "did": "BvA: GBP350 brunch refund landed BoS 12 Oct; Ronnie parking D2,000 and Tal Selfdrive refund expected", "wrote": ["data/finance/bva-2026-10.md"]}
