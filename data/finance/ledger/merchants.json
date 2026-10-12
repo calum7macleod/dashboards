@@ -2,6 +2,11 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "hubspot",
+   "category": "Business",
+   "sub": "HubSpot - annual, ~USD113 each September (Calum 12 Oct)"
+  },
+  {
    "rx": "l g price",
    "category": "Business",
    "sub": "Instagram messaging (L G Price) - GBP1,000 Oct, 600/mo",
