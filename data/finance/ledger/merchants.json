@@ -2,6 +2,17 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "real mad honey",
+   "category": "Health",
+   "sub": "Supplements (one-off, not a sub)"
+  },
+  {
+   "rx": "deepstash|gohighlevel|highlevel|widgit|sandcastles|buzzfy|hubspot",
+   "category": "Business",
+   "sub": "CANCELLED 12 Oct - if this bills again, flag it",
+   "type": "spend"
+  },
+  {
    "rx": "hubspot",
    "category": "Business",
    "sub": "HubSpot - annual, ~USD113 each September (Calum 12 Oct)"
