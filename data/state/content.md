@@ -38,3 +38,11 @@ Metrics feed: analytics screenshots to the Uploader each Friday - no third-party
 ## Standing rule (Calum, 9 Oct)
 - Script edits are always shown as his text with cuts struck through and additions in bold - never a rewritten paragraph.
 - Tidy rule (Calum, 9 Oct): when cutting words, every line must still read as a full sentence - no fragments. Cut only joining words that leave grammar intact; never collapse "47% lower than 2024" to "47% 2024".
+
+## Reel review checklist (Oljas + Jake, agreed 12 Oct)
+Hook: text hook on screen only, never spoken (launches excepted - Jake: say what it is) | intrigue not announcement | against common belief, if true | start from a name people know | show a stake, don't promise an explanation.
+Focus: one reel one idea | cut side facts | explain each thing once, at first mention | not salesy | no overlap with another reel.
+Structure: say how many points ("five reasons") | retention hook before every block | strongest number last, then CTA | explain jargon in a few words.
+Writing: every line a number, a name or a consequence | one number per sentence | dollars | "I believe" on predictions.
+Ending: DM keyword when a document exists; comment question for reach pieces.
+Format of my edits: strike-through + bold, sentences stay whole, word count by wc, Calum ~210 wpm. Fact-check, don't author - keep Calum's voice.
