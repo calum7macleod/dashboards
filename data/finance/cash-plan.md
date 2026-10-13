@@ -49,13 +49,12 @@ Today also: freeze every credit card; confirm Meta paused; payslip to Finance; M
 | Tal - business closure (one-off, 1 Oct) | 22,000 | - | - | - |
 | Tal - all bills incl. DEWA and the Selfdrive car | 15,100 | 15,100 | 15,100 | 15,100 |
 | Tal - her monthly budget | 10,000 | 10,000 | 10,000 | 10,000 |
-| Tara - 116,500 due by end Jan, spread | 29,125 | 29,125 | 29,125 | 29,125 |
+| Tara Park (Modon) - 5% instalment due 31 Jan: Calum's 4.66% = 116,500, Lewis's 0.33% (~8,250) passes through | 29,125 | 29,125 | 29,125 | 29,125 |
 | Rent - 37,500 due by end Jan, spread | 9,375 | 9,375 | 9,375 | 9,375 |
 | Lewis (loan repayment) | 6,000 | 5,000 | 5,000 | 5,000 |
-| Modon Hudayriyat - 5% instalment due 31 Jan (~50,405 if same as April's 5%) | - | - | - | 50,405 |
 | **UAE** | **120,189** | **85,500** | **85,500** | **85,500** |
 Not in (decided out, 1 Oct): cash, DEWA (Tal's budget), grooming/hair, medical, visa admin (bar Property Index), Marielle, Theta, Amazon/home, pharmacy, editors bar Merkz, ads.
-Car line removed 1 Oct: Selfdrive sits in Tal's bills; fuel/parking from misc. Tara + rent added 1 Oct (pots, funded monthly). Lewis added 1 Oct: 6,000 Oct then 5,000/mo. Modon 5% due 31 Jan added 13 Oct (~50,405). STILL TO ADD: UK tax 31 Jan, brokerage move.
+Car line removed 1 Oct: Selfdrive sits in Tal's bills; fuel/parking from misc. Tara + rent added 1 Oct (pots, funded monthly). Lewis added 1 Oct: 6,000 Oct then 5,000/mo. 13 Oct: 'Modon' = the Tara Park instalment already in the budget (5% due 31 Jan; 116,500 is Calum's 4.66%, Lewis pays 0.33%). No separate Modon line. STILL TO ADD: UK tax 31 Jan, brokerage move.
 TOTAL LOCKED Oct-Jan (AED): UK 209,200 + UAE 376,689 = 585,889 vs money 221K + 250K = 471K -> SHORT ~D115K before any ADIB paydown/minimums. Missing still: Modon instalment, UK self-assessment 31 Jan, brokerage move costs, ADIB current acct DDs. Jose/Majid written off, Vantage ignored.
 
 ## UK BUDGET - LOCKED 1 Oct 2026. Calum's lines. Finance scrutinises every line, every Sunday, KEPT / BROKEN by name.
