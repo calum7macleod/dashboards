@@ -6,7 +6,7 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
-## MODON (13 Oct): next instalment 5% due 31 Jan 2027 - ~D50,405 if the unit is ~D1.01M (April's 5% was 50,405). Added to January. Oct-Jan shortfall now ~D165K before UK tax.
+## MODON = TARA (13 Oct): the Tara Park instalment IS the Modon 5% due 31 Jan - 116,500 is Calum's 4.66% share, Lewis pays 0.33% (~8,250, pass-through). Already in the budget. No separate Modon line. Gap stays ~D115K before UK tax.
 ## DECISIONS 12-13 Oct
 Cancelled: Anthropic x2 (one GBP180 Claude on Wise stays), Deepstash, HighLevel, Widgit, Sandcastles, Buzzfy, HubSpot, Property Index. To do: Canva, Oura. KEEP: Amex Gold (buffer card, GBP195 fee stays), day-trading manager GBP200/mo, life coach GBP460/mo. Meta: zero charges in Oct - confirmed. Flag any cancelled sub or unknown recurring charge on every Sunday close. Phone: 4 numbers over 3 cards ~D1,030/mo - Calum to consolidate. Agria lapsed Apr - unresolved. Tal to pay Selfdrive + DEWA from her side.
 ## ADIB PROFIT TEST - agreed 11 Oct
