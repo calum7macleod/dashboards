@@ -2,19 +2,17 @@
 
 0:00 - THE FIRST MINUTE
 
-Britain and Norway found the same oil, in the same sea, in the same decade.
+Abu Dhabi has saved one point seven trillion dollars.
 
-Norway saved it. It's now got two trillion dollars in the bank.
+Britain and Norway found the same oil, in the same sea, in the same decade. Norway saved it - two trillion today. Britain spent it. Nothing.
 
-Britain spent it. It's got nothing.
+Abu Dhabi did what Norway did, with more oil and fewer people.
 
-Abu Dhabi did what Norway did, with more oil and fewer people. One point seven trillion dollars, saved, not spent.
+It owns part of Gatwick. It lends money to the British government. It wrote off a British water company and didn't feel it.
 
-And the company building my apartment is owned by it.
+And it owns the company building my apartment.
 
-So, four things: what the fund actually is, the three pots it's split into, the things it owns that you've used without knowing, and the one reason it matters if you're ever going to buy property in this city.
-
-Why should you care? Because every question you'll have about buying here - will it get finished, will the train come, what happens if there's a crash - ends up at this fund.
+Every question you'll have about buying here - will it get finished, will the train come, what happens if there's a crash - ends up at this fund. So, four things: what it is, how it's split, what it owns, and why it matters to you.
 
 I'll show you how to get the full breakdown as a PDF at the end.
 
