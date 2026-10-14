@@ -46,7 +46,7 @@ That's four years before the United Arab Emirates existed.
 
 The fund is older than the country. And it's older than Norway's by more than twenty years.
 
-Fifty years on, it's one point seven trillion dollars. Only two places on earth have saved more - China, with one point four billion people, and Norway, with one fund and no city of four million to run.
+Fifty years on, it's one point seven trillion dollars. Only two places on earth have saved more. China, with one point four billion people to share it between. And Norway, with five and a half million.
 
 [On screen: 1. CHINA ~$3.5T  2. NORWAY $2.1T  3. ABU DHABI $1.7T]
 
