@@ -25,7 +25,7 @@ And the company building my apartment is owned by it.
 
 [On screen: Calum's apartment render / the Tara Park building, one second]
 
-So in the next eight minutes: what the fund actually is, the three pots it's split into, the things it owns that you've used without knowing, and the one reason it matters if you're ever going to buy a home in this city.
+So, four things: what the fund actually is, the three pots it's split into, the things it owns that you've used without knowing, and the one reason it matters if you're ever going to buy a home in this city.
 
 [On screen, quick: $1 TRILLION / $385 BILLION / $300 BILLION - the three pots flash up as he says "three pots"]
 
