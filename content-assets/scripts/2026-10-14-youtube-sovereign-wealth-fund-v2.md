@@ -2,9 +2,9 @@
 
 0:00 - THE FIRST MINUTE
 
-Abu Dhabi has saved one point seven trillion dollars.
+Abu Dhabi has turned fifty years of oil into one point seven trillion dollars.
 
-Britain and Norway found the same oil, in the same sea, in the same decade. Norway saved it - two trillion today. Britain spent it. Nothing.
+Britain and Norway found the same oil, in the same sea, in the same decade. Norway invested it - two trillion today. Britain spent it. Nothing.
 
 Abu Dhabi did what Norway did, with more oil and fewer people.
 
