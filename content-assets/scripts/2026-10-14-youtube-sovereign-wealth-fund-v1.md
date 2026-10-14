@@ -217,7 +217,7 @@ ADIA bought ten per cent of it in 2011. In 2024 it wrote the whole thing off. Ev
 
 In 2007 it put seven and a half billion dollars into Citigroup. Citigroup lost ninety per cent of its value in two years.
 
-So this isn't a fund that never loses. It's a fund so big it can lose a British water company and not notice.
+So this isn't a fund that never loses. It's a fund so big it can lose a British water company and not feel it.
 
 And two more things I'd want to know if I were watching this.
 
@@ -250,7 +250,7 @@ So when you're buying off-plan here, this is the question that matters: who has 
 
 In Abu Dhabi, the big developers are the funds. Modon is L'imad. Aldar is twenty-eight per cent Mubadala. The money that bailed out Dubai is the money behind the cranes.
 
-And they build in a particular order. The wave pool, the velodrome and the beaches on Hudayriyat opened two years before the first villa hands over. Mubadala and Aldar announced a sixteen billion dollar expansion of the financial district - half a million square metres of offices, three thousand homes - before a single one is sold.
+And they build in a particular order. The wave pool, the velodrome and the beaches on Hudayriyat opened two years before the first villa hands over. Mubadala and Aldar announced a sixteen billion dollar expansion of the financial district - half a million square metres of offices, three thousand homes - and the bridges and roads go in first.
 
 Infrastructure first. Homes second. You can only build in that order if you don't need the deposits to pay for the roads.
 
@@ -267,7 +267,7 @@ Abu Dhabi. Four million people. One point seven trillion. More saved per person 
 
 [On screen: PER RESIDENT - ABU DHABI ~$415,000 / NORWAY ~$370,000]
 
-A city, not a country. Fifty-five years old. Older savings than the flag.
+A city, not a country. A country that's fifty-five years old, with a savings account that's older than it is.
 
 That's who's behind the developer.
 
