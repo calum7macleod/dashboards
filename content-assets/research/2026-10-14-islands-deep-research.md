@@ -4,10 +4,9 @@ For the YouTube "Abu Dhabi's Islands Explained". ✓ = receipted this pass. Earl
 ## Yas - the entertainment island (Miral / Aldar)
 - 25 sq km. Freehold. Over 40% still undeveloped; masterplan runs beyond 2035 ✓
 - 44 million visits in 2025, +63% over the decade (38m in 2024, +10%) ✓. UK park visitors +40% in a year ✓
-- Disneyland Abu Dhabi confirmed Jan 2026, Disney's 7th park, on Yas North, opening window 2030-2033 ✓. Harry Potter land at Warner Bros World ✓. Yas Sphere, Topgolf (2026) ✓
+- Disneyland Abu Dhabi ANNOUNCED May 2025 (Disney + Miral); Bob Iger walked the Yas North site 25 Jan 2026; no official date, 2030-2033 is Disney's build-time estimate ✓. Sphere Abu Dhabi $1.7bn, 20,000 capacity, late 2029 ✓. Man City Yas Residences $4.1bn (Ohana) ✓. Harry Potter land at Warner Bros World ✓. Yas Sphere, Topgolf (2026) ✓
 - Etihad Arena 18,000 seats (UFC, concerts); Yas Mall 370 outlets / 2.5m sq ft; SeaWorld 2023 (first outside Americas); Ferrari World 2010; Yas Waterworld +18 rides expansion ✓
-- Yas Point launched 10 Jul 2026 by Aldar: Đ6bn, 600,000 sqm, 1,600 homes, ~5,000 residents ✓. Yas Acres 1,422 units, deepest resale market; Yas Riva ✓
-- 20% of Abu Dhabi's new office space since 2022 is on Yas ✓
+- Yas Point launched 10 Jul 2026 by Aldar (ADX filing): Đ6bn, 600,000 sqm, 1,600 homes, ~5,000 residents, school for 3,600 pupils; first release The Canopies Đ1.5bn, 592 apts from Đ1.65m, Q3 2030, 84% first-time Aldar buyers ✓. Yas Acres 1,422 units, deepest resale market; Yas Riva ✓
 - Hotel occupancy 85% in Aug 2026; 82% in 2024, 90% peak Aug ✓
 - Prices: apartments +24% in 2025 on the Disney news; +18% year to June 2026 (Knight Frank); 3,097 sales H1 2026, avg Đ2.05m; Yas Acres villas Đ1.8m-30m ✓
 - Rail: high-speed stop ✓. Schools: SABIS, West Yas Academy ✓
@@ -23,8 +22,8 @@ For the YouTube "Abu Dhabi's Islands Explained". ✓ = receipted this pass. Earl
 
 ## Hudayriyat - Modon's island
 - Modon 30 Sep post: 53m sqm, 22km beaches, 165,000 population, 16 international schools, 7 healthcare centres, 12+ hotels/3,000 keys, 2 championship courses, 6 malls, 5 marinas/900 berths ✓
-- Golf Estates launched MAY 2026 (not July): Đ13bn+ in days, ~1,700 homes, UAE record; 95ha Lobb+Partners course; 40/60; handover Q3/Aug 2030; 15% of buyers non-UAE residents, 81% new to Modon ✓. Townhouses from Đ4.25m, golf villas Đ10-13m, mansions Đ18-25m ✓
-- Bashayer final phase sold out in ONE DAY, ~Đ1.25bn (7 Jul 2026) ✓. Wadeem 1,700+ plots sold out in 72 hours ✓. Nawayef Village townhouses Đ2bn in hours ✓
+- Golf Estates launched 7 JULY 2026 (Modon release on ADX): Đ13bn+ in days, 1,700 homes, UAE record; 95ha course; 40/60; handover Q3/Aug 2030; 15% of buyers non-UAE residents, 81% new to Modon ✓. (3 months after the April ceasefire - not 'weeks'.) Townhouses from Đ4.25m, golf villas Đ10-13m, mansions Đ18-25m ✓
+- Bashayer final phase sold out in one day, ~Đ1.25bn (Modon media centre; date ambiguous on listing - [v]). Wadeem 1,700+ plots sold out in 72 hours ✓. Nawayef Village townhouses Đ2bn in hours ✓
 - Q1 2026 Hudayriyat transactions Đ11.97bn ✓. H1: 27% of all Abu Dhabi value (earlier) 
 - Handovers: Al Naseem Q4 2026 (Modon) [other sources Q4 2027]; Nawayef mansions Q4 2026-Q4 2027; Nawayef Parkviews Q1 2028; Nawayef Village Q1 2029; Bashayer Q3 2028; Wadeem Gardens Q2 2031 ✓
 - Nawayef Hilltop mansions from Đ41m, 1,685-2,699 sqm; largest unit 37,807 sq ft (EH-MM001) ✓
@@ -33,13 +32,13 @@ For the YouTube "Abu Dhabi's Islands Explained". ✓ = receipted this pass. Earl
 - Third hill: unannounced. Schools/clinics: plots allocated, none open yet ✓
 
 ## Reem + Al Maryah - ADGM, the financial district (Aldar / Modon / Mubadala)
-- Census: 13,941 residents (2015) → 59,725 (2024). Quadrupled in nine years ✓. 8.8 sq km ✓
+- Census (SCAD): 59,725 residents 2024, 55,225 in 2023 ✓. 2015 figure 13,941 [v] before 'quadrupled'. 8.8 sq km ✓. Abu Dhabi emirate 4.14m (2024, +7.5%) ✓
 - ADGM jurisdiction extended to Reem Apr 2023; property registration via ADGM since 1 Jan 2025; Reem+Maryah 14.38m sqm = one of the world's largest financial districts ✓
 - ADGM workforce 49,027 (+34%); AUM +54% H1 2026 (earlier)
 - Reem Mall opened 2024: ~450 stores, Snow Abu Dhabi (ME's biggest indoor snow park), Đ4.4bn ✓. Sorbonne Abu Dhabi, Repton; Reem Hospital; Cleveland Clinic on Maryah ✓
 - Maryah Đ60bn/$16bn expansion (Aldar 60/Mubadala 40): 450,000 sqm Grade A office, 3,000 homes (earlier)
 - Prices: Reem +38% Q2 2025 YoY; apartments +18-22% year to June 2026; median ~Đ1.9m; Reem+Maryah H1 2026 Đ10.5bn residential sales ✓; 4,731 sales H1 (earlier)
-- Tara Park (Modon): 6 towers, 834 apartments, connected to Reem Mall, from Đ1.68m, 40/60, handover Q4 2029-Q2 2030 ✓ (Calum's apartment). Muheira 475 apts from Đ1.6m, Q2 2029 ✓. Reem Hills villas from Đ10.3m, man-made hill, phase 1 Q4 2026 ✓
+- Tara Park (Modon): 6 towers, 834 apartments, connected to Reem Mall, from Đ1.68m, 40/60, handover Q4 2029-Q2 2030; SOLD OUT, nearly Đ2bn (Modon release) ✓ (Calum's apartment). Muheira 475 apts from Đ1.6m, Q2 2029 ✓. Reem Hills villas from Đ10.3m, man-made hill, phase 1 Q4 2026 ✓
 - Maryah: Jumeirah Residences ~Đ4,425/sq ft (earlier). Rail stop ✓
 
 ## Fahid - Aldar's wellness island
@@ -63,5 +62,7 @@ For the YouTube "Abu Dhabi's Islands Explained". ✓ = receipted this pass. Earl
 - Between Yas and Saadiyat, 15 min from the airport ✓. Low-density villas - the established "nature" option
 
 ## Cross-island
+- Knight Frank Q2 2026 pipeline: Yas 7,700 homes under construction, Fahid 3,550, Saadiyat 3,250; Reem office leasing +148% ✓
+- Q1 2026 ADREC: Hudayriyat Đ11.97bn (#1), Reem Đ9.45bn, Abu Dhabi Đ66bn (+160.7%) ✓
 - High-speed rail stops: ADGM, Saadiyat, Yas, airport (2030/2031). Boring Co study signed 8 Oct (no routes)
 - Abu Dhabi 2026 H1: 17,000+ sales, Đ60bn+ (ADREC); prices +17.8% YoY (ValuStrat Q2)
