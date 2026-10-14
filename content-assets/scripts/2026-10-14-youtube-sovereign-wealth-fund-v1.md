@@ -29,6 +29,8 @@ So, four things: what the fund actually is, the three pots it's split into, the 
 
 [On screen, quick: $1 TRILLION / $385 BILLION / $300 BILLION - the three pots flash up as he says "three pots"]
 
+Why should you care? Because every question you'll have about buying here - will it get finished, will the train come, what happens if there's a crash - ends up at this fund.
+
 I'll show you how to get the full breakdown as a PDF at the end.
 
 ---
@@ -54,6 +56,8 @@ Fifty years on, it's one point seven trillion dollars. Only two places on earth 
 
 Per person, Abu Dhabi has the biggest fund in the world. Around four hundred and fifteen thousand dollars for every resident of Abu Dhabi. Norway, the country everyone holds up as the example, is around three hundred and seventy.
 
+It's also why there's no income tax and no capital gains tax here. A government this rich doesn't need yours.
+
 So who's looking after all that money? This is where it gets interesting.
 
 [On screen: PER RESIDENT - ABU DHABI ~$415,000 / NORWAY ~$370,000 / UK £0]
@@ -76,6 +80,8 @@ Mubadala. Three hundred and eighty-five billion. The investment account. The one
 L'imad. Around three hundred billion. The current account. It owns the things the city runs on - the airline, the airport, the railway, the power station, the hospitals.
 
 Pension. Investment account. Current account. One point seven trillion between them.
+
+Two of the three own the developers you'd buy from. The third is the one that steps in when something breaks.
 
 I'm going to take you through each one, smallest to biggest, and what they own gets more surprising as we go.
 
@@ -123,7 +129,11 @@ Buy a McLaren - L'imad.
 
 And buy property on Hudayriyat Island or Reem - Modon. L'imad paid seven billion dollars for its stake last October.
 
+Eat - Louis Dreyfus, one of the four companies that trade the world's grain, and a fifth of LuLu, the hypermarkets. L'imad.
+
 Twenty-five companies, two hundred and fifty subsidiaries, chaired by the Crown Prince. From landing to handover, one owner.
+
+So the company that has to finish your building also owns the airline, the airport and the railway. The things that make your property worth more are the same owner's job.
 
 [Retention: "That's the small one. The next one owns a piece of the chip inside your phone."]
 
@@ -156,7 +166,11 @@ And, filed with the American regulator every quarter so anyone can read it: abou
 
 [On screen: the 13F line - iShares Bitcoin Trust]
 
+A third of First Abu Dhabi Bank, the biggest bank in the country. Half of Emirates Global Aluminium. A third of Masdar, the renewables company with wind farms off Yorkshire.
+
 In 2024 it was the most active sovereign investor on earth. Fifty-two deals. One a week.
+
+And the other big developer here, Aldar, is twenty-eight per cent owned by the fund that built the financial district - where your tenants work.
 
 [Retention: "And in 2024 it did something else. It started a fund that does nothing but AI."]
 
@@ -177,7 +191,11 @@ Whichever AI wins, Abu Dhabi owns a piece.
 
 Plus SpaceX. Fifteen per cent of TikTok's American business. Two billion into Binance.
 
+With BlackRock and Microsoft it bought Aligned, America's biggest data-centre operator, for forty billion dollars.
+
 And it got the second Stargate on earth built here - a five gigawatt campus outside Abu Dhabi, next to a nuclear plant. The first phase switched on last month.
+
+MGX itself is headquartered in ADGM, the financial district. A mile from my apartment.
 
 [Retention: "That's the money going out. Now the big one - where the money's been sitting for fifty years."]
 
@@ -202,7 +220,11 @@ Hyatt hotels. Half of three Hyatts in Hong Kong. The Port of Brisbane. Sydney's 
 
 [On screen: the list builds]
 
+It only publishes ranges, so these are estimates. Around six hundred and fifty billion in shares. Ninety billion in government bonds - that's Abu Dhabi lending money to other countries, including, almost certainly, Britain. A hundred and forty-six billion in private equity, companies you can't buy shares in. Eighty billion with hedge funds. Nearly forty billion each in property, infrastructure and credit.
+
 Add it up and ADIA alone owns around half a per cent of every listed company on earth. Zero point five per cent of the whole stock market, from one city.
+
+This one doesn't build anything here. It's the backstop - and it means the government never has to sell in a hurry, which is why Abu Dhabi doesn't fire-sale in a downturn.
 
 [Retention: "But it doesn't always win. Here's the one that went wrong."]
 
@@ -242,7 +264,7 @@ January the fourth, 2010. The tallest building in the world opened. It had been 
 
 Nobody has ever said that was the price. Everybody understood it.
 
-That's what the fund is for.
+That's what the fund is for. And for you, it means the market has a floor. In 2009 it was Dubai's. Today it's yours.
 
 Which brings me to the last one. Why any of this matters if you buy here.
 
