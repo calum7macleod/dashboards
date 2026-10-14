@@ -50,7 +50,7 @@ Fifty years on, it's one point seven trillion dollars. Only two places on earth 
 
 [On screen: 1. CHINA ~$3.5T  2. NORWAY $2.1T  3. ABU DHABI $1.7T]
 
-Per person, nobody's close. Around four hundred and fifteen thousand dollars for every resident of Abu Dhabi. Norway, the country everyone holds up as the example, is around three hundred and seventy.
+Per person, Abu Dhabi has the biggest fund in the world. Around four hundred and fifteen thousand dollars for every resident of Abu Dhabi. Norway, the country everyone holds up as the example, is around three hundred and seventy.
 
 [On screen: PER RESIDENT - ABU DHABI ~$415,000 / NORWAY ~$370,000 / UK £0]
 
