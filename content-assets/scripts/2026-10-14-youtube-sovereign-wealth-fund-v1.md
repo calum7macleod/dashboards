@@ -36,6 +36,8 @@ I'll show you how to get the full breakdown as a PDF at the end.
 ## 1:00 - WHAT IT IS, AND HOW IT STARTED
 [Picture change: Abu Dhabi 1960s footage or stills]
 
+First, what it actually is.
+
 A sovereign wealth fund is a country's savings account. You sell something the world wants, you don't spend all the money, you invest the rest.
 
 Abu Dhabi started pumping oil in 1962. Five years later, in 1967, the ruler set up a board to invest what was left over.
@@ -60,6 +62,8 @@ So who's looking after all that money? This is where it gets interesting.
 
 ## 1:45 - THE THREE POTS, FAST
 [Picture change each pot. Keep moving.]
+
+Second, the structure.
 
 It's not one fund. It's three, and they do three different jobs.
 
@@ -98,7 +102,7 @@ So the people who have to finish my building are the same people with one point 
 
 That's a different conversation from "will the developer run out of money".
 
-Hold that thought. Here's what the three funds actually own.
+Hold that thought. Third, and this is the long one - what they actually own.
 
 ---
 
@@ -239,6 +243,8 @@ January the fourth, 2010. The tallest building in the world opened. It had been 
 Nobody has ever said that was the price. Everybody understood it.
 
 That's what the fund is for.
+
+Which brings me to the last one. Why any of this matters if you buy here.
 
 So when you're buying off-plan here, this is the question that matters: who has to finish the building, and what's behind them?
 
