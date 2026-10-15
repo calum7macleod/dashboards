@@ -46,3 +46,9 @@ Structure: say how many points ("five reasons") | retention hook before every bl
 Writing: every line a number, a name or a consequence | one number per sentence | dollars | "I believe" on predictions.
 Ending: DM keyword when a document exists; comment question for reach pieces.
 Format of my edits: strike-through + bold, sentences stay whole, word count by wc, Calum ~210 wpm. Fact-check, don't author - keep Calum's voice.
+
+## YouTube (15 Oct)
+- Two long-form scripts FINAL and For Oljas: $1.7tn Fund (~1,885 words) and Most Desirable Islands (~2,570). Scripts in content-assets/scripts/ (fund v3, islands final).
+- Owed: FUND and ISLAND PDFs; titles/descriptions/chapters/thumbnails for both.
+- Next session: reviews + 30 titles in content-assets/scripts/2026-10-15-youtube-30-titles.md. Recommended next three: How To Buy From The UK; I Moved From Dubai To Abu Dhabi; monthly Dubai data video.
+- Working rules learned: fund-video structure (four parts, short bridges, facts in Calum voice, no spoken labels, dollars, evergreen dates, no "buyer", every island/section has a downside, one CTA). Tracked edits = strike/bold in Word; approved text goes plain.
