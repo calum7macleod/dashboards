@@ -166,7 +166,7 @@ The full island-by-island breakdown - prices, launches, handovers, the rail map 
 
 One last thought.
 
-Ten years ago, Dubai Hills was too far out. Today it's the centre of Dubai, and a Maple townhouse that sold at seven hundred and thirty thousand dollars when it launched sells at one point five million today. That's how fast a place fills here.
+Ten years ago, Dubai Hills was too far out. Today it's the centre of Dubai, and a three-bed Maple townhouse that sold for five hundred and ninety thousand dollars when it launched sells for one point three million today. More than double. That's how fast a place fills here.
 
 Hudayriyat is planned for a hundred and sixty-five thousand, and today nobody lives on it.
 
