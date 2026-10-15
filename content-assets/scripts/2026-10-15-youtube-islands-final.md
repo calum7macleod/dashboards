@@ -162,9 +162,7 @@ Lulu - the most central, and no timeline.
 
 Each one gives you something different and asks something different of you - which is why there's no single best island, only the right one for what you want.
 
-The full island-by-island breakdown - prices, launches, handovers, the rail map - is in a PDF. DM or WhatsApp me the word ISLAND and I'll send it over.
-
-And if you want to talk any of this through, WhatsApp me or book a call - the links are in the description. I'll tell you which island fits what you're after, and which doesn't.
+Everything in this video - prices, launches, handovers, the rail map - is in one PDF. WhatsApp me the word ISLAND and I'll send it. You can also get me there if you'd like to chat anything through in more detail.
 
 One last thought.
 
