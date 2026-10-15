@@ -4,11 +4,11 @@
 
 Abu Dhabi has two hundred and fourteen islands. You've probably heard of three or four. These are the eight that matter most.
 
-Between them they've had the biggest property launch in the history of the UAE, the most expensive apartments in the city, a Louvre, a Guggenheim, a Formula One track, and the seventh Disneyland in the world. One of them has nothing on it at all.
+Between them they've had the biggest property launch in the history of the UAE, the most expensive apartments in the city, a Louvre, a Guggenheim, a Formula One track, forty square kilometres of mangroves, and the seventh Disneyland in the world. One of them has nothing on it at all.
 
 I've got an investment on one of these islands. I'm going to live on another.
 
-So, four things. First, why this is all happening now - it comes down to three things, and they're short. Second, the four islands everyone's heard of. Third, the four most people haven't. And fourth, the whole city in one breath, so you can hold all eight in your head.
+So, four things. First, why it's all happening now. Second, the islands everyone's heard of. Third, the ones most people haven't. And last, the whole city in one breath, so you can hold all eight in your head.
 
 I'll show you how to get the full island-by-island PDF at the end.
 
