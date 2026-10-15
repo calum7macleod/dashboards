@@ -8,7 +8,7 @@ Between them they've had the biggest property launch in the history of the UAE, 
 
 I've got an investment on one of these islands. I'm going to live on another.
 
-So, four things. First, why it's all happening now. Second, the islands everyone's heard of. Third, the ones most people haven't. And last, the whole city in one breath, so you can hold all eight in your head.
+We're going to speak about four things. First, why there's so much interest now, when Dubai has been spoken about for years. Second, the islands everyone's heard of. Third, the ones most people haven't. And last, the whole city in one breath, so you can see how all the islands compare to each other.
 
 I'll show you how to get the full island-by-island PDF at the end.
 
