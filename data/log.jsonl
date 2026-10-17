@@ -227,3 +227,4 @@
 {"date": "2026-10-17", "agent": "Designer", "did": "GV-282 card v3: seller equity and premium merged into one line (Đ1,507,200)", "wrote": ["content-assets/breakdowns/GV-282-Resale-Breakdown.png"]}
 {"date": "2026-10-17", "agent": "Designer", "did": "Handle corrected to @thecalummacleod on the GV-282 card and in the design-system README; correction handoff to Content", "wrote": ["content-assets/breakdowns/GV-282-Resale-Breakdown.png", "design-system/README.md", "data/handoffs.json"]}
 {"date": "2026-10-17", "agent": "Designer", "did": "GV-282 card: fees box and bottom-right disclaimer removed at Calum's request", "wrote": ["content-assets/breakdowns/GV-282-Resale-Breakdown.png"]}
+{"date": "2026-10-17", "agent": "Fitness", "did": "17 Oct Whoop logged, sessions 13-17 Oct from Strava, state updated; 5k moved to Sun", "wrote": ["private:personal/fitness/whoop.json", "private:personal/fitness/training.json", "private:personal/state/fitness.md"]}
