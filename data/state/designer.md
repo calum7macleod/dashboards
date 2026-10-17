@@ -11,6 +11,7 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 4. YouTube thumbnail template (face + three words + one number).
 
 ## Piece log
+- 17 Oct: Costa Brava Đ8.25M lagoon-backing villa milestone post (Milestone standard, lagoon photo) - content-assets/milestones/costa-brava-8-25m/. Deal not yet in deals.json, handoff to PA (Designer Sept 26).
 - 17 Oct: GV-282 Hudayriyat Golf Estates resale breakdown card (1080x1350, offer-card family: day one / balance to Modon / all-in strip) - content-assets/breakdowns/. Figures as given by Calum, all reconciled. No brokerage named on the card - post-W&Co brokerage name not in any file I can read (Designer Sept 26).
 - 23-24 Sep: Year One carousel FINAL (3 x 1080x1350; Calum stripped it to photo + serif title + gold number + two lines, no corners, no footer, no eyebrow - this is now the Milestone standard) - content-assets/year-one/. Numbers as briefed (40 / Đ122.8M); A4-1703 Tara Park (no buyer recorded) may be Calum's own unit - not confirmed (Designer Sept 26).
 - 23 Sep: Đ4M one-page teaser (1080x1350 PNG + PDF, WhatsApp) for Abu, then the same card for Youssef and Mich - content-assets/abu-4m-options/teaser/. NB Youssef's CRM budget is Đ2M, card says Đ4M, flagged to Calum (Designer Sept 26).
