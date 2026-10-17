@@ -1,4 +1,4 @@
-# DESIGNER STATE - queue and piece log. Updated 2026-09-23 by Designer Sept 26.
+# DESIGNER STATE - queue and piece log. Updated 2026-10-17 by Designer Sept 26.
 
 ## Queue
 LEAVING WHITE & CO CAROUSEL (last day Thu 1 Oct): Calum's standing note 26 Sep - slide one carries the line "What's next - see last slide"; the last slide is the announcement. Build in the Milestone standard (year-one look). Brief still to come.
@@ -11,6 +11,7 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 4. YouTube thumbnail template (face + three words + one number).
 
 ## Piece log
+- 17 Oct: GV-282 Hudayriyat Golf Estates resale breakdown card (1080x1350, offer-card family: day one / balance to Modon / all-in strip) - content-assets/breakdowns/. Figures as given by Calum, all reconciled. No brokerage named on the card - post-W&Co brokerage name not in any file I can read (Designer Sept 26).
 - 23-24 Sep: Year One carousel FINAL (3 x 1080x1350; Calum stripped it to photo + serif title + gold number + two lines, no corners, no footer, no eyebrow - this is now the Milestone standard) - content-assets/year-one/. Numbers as briefed (40 / Đ122.8M); A4-1703 Tara Park (no buyer recorded) may be Calum's own unit - not confirmed (Designer Sept 26).
 - 23 Sep: Đ4M one-page teaser (1080x1350 PNG + PDF, WhatsApp) for Abu, then the same card for Youssef and Mich - content-assets/abu-4m-options/teaser/. NB Youssef's CRM budget is Đ2M, card says Đ4M, flagged to Calum (Designer Sept 26).
 - 23 Sep: Abu Đ4M options pack v2 (brief v2, five doors: Tara Park / Al Ghadeer Parks / Ellington Al Yalayis 1 / Palm Springs / The Bristol at Ramhan Island by Eagle Hills - NOT Emaar's, brief v2 named the wrong one, Calum corrected 23 Sep; 21pp A4 landscape) + a four-door cut without Bristol (18pp) - content-assets/abu-4m-options/Abu-4M-Options-Sep26.pdf, -four-doors.pdf, source + build.py (--no-bristol). v1 (three doors, 11pp) superseded, file left in place. Pagella + Carlito placeholders, ◆ confidence marks. Open before send: Tara Phase 2 dates, Aldar sheet, Ellington all-teaser, Palm Springs pre-launch, Ramhan Bristol has no price sheet - modelled at the Đ4M ceiling on a listed 10/60/30, facts from web (PF, Eagle Hills press, brokers), handoff to Market to verify (Designer Sept 26).
