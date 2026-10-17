@@ -9,7 +9,7 @@
 Cover: dark, eyebrow top-left, one-line hook, gold rule, sub in muted, meta bottom. Body pages: cream, dark text, gold section rules, one idea per page. Carousels 4:5, ten slides max, number on slide one. Thumbnails: face + three words + one number.
 
 ## Handle
-Instagram handle is @calum.cloud from 17 Oct 2026 (was @uaecalum). Every new piece carries @calum.cloud; the offer template, Milestone template and card footers all update to it.
+Instagram handle is @thecalummacleod from 17 Oct 2026 (was @uaecalum). Every new piece carries @thecalummacleod; the offer template, Milestone template and card footers all update to it.
 
 ## Rules
 One look everywhere. No templates. Every number indicative until documented. Source stays editable (HTML/SVG); output PDF/PNG.
