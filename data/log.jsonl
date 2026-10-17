@@ -222,3 +222,4 @@
 {"date": "2026-10-16", "agent": "PA", "did": "Read AvantGlamp settlement draft for Calum - key points summarised; handoff to Finance with the three payment dates.", "wrote": []}
 {"date": "2026-10-17", "agent": "Finance", "did": "BvA to 13 Oct issued; AvantGlamp settlement tranches and Virgin prepay noted in cash plan; h0066/h0067 closed", "wrote": ["data/finance/cash-plan.md"]}
 {"date": "2026-10-17", "agent": "PA", "did": "HGE: payment schedule + 20% resale gate recorded via handoff to Projects; GV-282 resale breakdown built for Calum (orig 10.048M, sale 11.0528M).", "wrote": []}
+{"date": "2026-10-17", "agent": "Designer", "did": "GV-282 resale breakdown card built and committed; figures reconciled", "wrote": ["content-assets/breakdowns/GV-282-Resale-Breakdown.png", "content-assets/breakdowns/GV-282-Resale-Breakdown.html", "data/state/designer.md"]}
