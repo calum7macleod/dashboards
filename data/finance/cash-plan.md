@@ -118,6 +118,8 @@ Repeating without Tara/Lewis ~72.9K/mo -> Nov-Feb 292K vs 49K + 250K = 299K: las
 Lever: if the Tara instalment is not due in October, hold the 31K.
 BoS is OVER its GBP3,000 limit (-3,155.50 on 1 Oct); MUM 300 + HSBC 36 leave ~5 Oct - fund today.
 
+## AVANTGLAMP SETTLEMENT (PA h0067, 16 Oct draft): GBP147,490 of loans settled for GBP120,263 - GBP30,593 ~mid-Nov if signed now (~D150K), GBP41,200 at 18 months, GBP48,470 at 24 months. Unsecured; late = acceleration + BoE+5%. Not in the budget until signed. If the first tranche lands by December: cash lasts to ~10 Feb instead of ~Christmas (per 14 Oct run).
+## PHONE (PA h0066 + Calum 13-14 Oct): Virgin 12 months prepaid D3,292 covers all lines from 13 Oct; du final bill ~D131 termination + usage expected; du number to Pay As You Go (free) to keep the WhatsApp number alive.
 ## v4 - THE PLAN THAT LASTS TO END-FEBRUARY (Calum 26 Sep: ~220K on 30 Sep, ~250K end-Oct, then nothing)
 Money: 470K + Vantage ~22K if withdrawn = ~492K for Oct-Feb, 5 months = Đ94K/mo all-in ceiling. Current repeating ~130K/mo does not fit; ~218K short over 5 months.
 
