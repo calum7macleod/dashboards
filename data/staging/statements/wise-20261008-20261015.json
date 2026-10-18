@@ -1,0 +1,62 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "GBP",
+  "period": "8-15 Oct 26 (list top is Thu 15 Oct; balance header scrolled off)",
+  "source": "app screenshots 18 Oct 26 07:50-07:51 Dubai, IMG_3911",
+  "sign": "as printed: debits negative",
+  "order": "chronological; 8-9 Oct rows overlap wise-20261007-20261009.json, left in",
+  "printed": {
+   "balance": "not shown"
+  },
+  "rowCount": 6,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "note": "weekday labels resolved against Sun 18 Oct: Tue=13, Wed=14, Thu=15 Oct; one further row cut at screen bottom"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-08",
+   "description": "Sent to Calum Lachlan MacLeod",
+   "amount": -1050.0,
+   "currency": "GBP",
+   "type": "transfer-out"
+  },
+  {
+   "date": "2026-10-09",
+   "description": "FedEx",
+   "amount": -5.66,
+   "currency": "GBP",
+   "type": "card"
+  },
+  {
+   "date": "2026-10-13",
+   "description": "OpenAI ChatGPT",
+   "amount": -18.21,
+   "currency": "GBP",
+   "type": "card"
+  },
+  {
+   "date": "2026-10-14",
+   "description": "Apple",
+   "amount": -11.99,
+   "currency": "GBP",
+   "type": "card"
+  },
+  {
+   "date": "2026-10-14",
+   "description": "To USD (moved between own Wise balances)",
+   "amount": -20.0,
+   "currency": "GBP",
+   "type": "conversion"
+  },
+  {
+   "date": "2026-10-15",
+   "description": "Canva",
+   "amount": -4.37,
+   "currency": "GBP",
+   "type": "card"
+  }
+ ]
+}
