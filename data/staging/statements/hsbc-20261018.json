@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "account": "HSBC",
+  "currency": "GBP",
+  "period": "10 Oct 26 statement; balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "currentBalanceExclPending18Oct0739": 1388.58,
+   "availableCredit": 611.42,
+   "creditLimit": 2000.0,
+   "pending": 0.0,
+   "statementBalance": 1388.58,
+   "dueDate": "2026-11-05",
+   "minimumDue": 34.71
+  },
+  "rowCount": 3,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "1,424.01 - 35.60 + 0.17 = 1,388.58"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-10",
+   "description": "INTEREST",
+   "amount": 0.84,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "printed -0.84 (HSBC shows charges negative)"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+   "amount": 35.6,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "printed +35.60"
+  },
+  {
+   "date": "2026-10-10",
+   "description": "INTEREST",
+   "amount": 0.17,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "printed -0.17"
+  }
+ ]
+}
