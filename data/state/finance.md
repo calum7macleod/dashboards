@@ -6,6 +6,7 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 18 Oct RULINGS: BA Amex = Calum's UK spending card, paid in full monthly (new rule). Apple Store 3,419 = Tal's phone, 50/50, Calum's half split Oct/Nov misc-whatever. PlayStation GBP185 = whatever (Christmas). Selfdrive 745.95 = speeding fine, misc. Phone: moving to old Virgin number; du to go. 250K: DO NOT raise 'in writing' again.
 ## MODON = TARA (13 Oct): the Tara Park instalment IS the Modon 5% due 31 Jan - 116,500 is Calum's 4.66% share, Lewis pays 0.33% (~8,250, pass-through). Already in the budget. No separate Modon line. Gap stays ~D115K before UK tax.
 ## DECISIONS 12-13 Oct
 Cancelled: Anthropic x2 (one GBP180 Claude on Wise stays), Deepstash, HighLevel, Widgit, Sandcastles, Buzzfy, HubSpot, Property Index. To do: Canva, Oura. KEEP: Amex Gold (buffer card, GBP195 fee stays), day-trading manager GBP200/mo, life coach GBP460/mo. Meta: zero charges in Oct - confirmed. Flag any cancelled sub or unknown recurring charge on every Sunday close. Phone: 4 numbers over 3 cards ~D1,030/mo - Calum to consolidate. Agria lapsed Apr - unresolved. Tal to pay Selfdrive + DEWA from her side.
