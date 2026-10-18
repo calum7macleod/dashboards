@@ -574,5 +574,13 @@
   "to": "finance",
   "item": "Staged data/staging/statements/adib-cc-sms-20261011-20261018.json - ADIB CC *789, AED, SMS screenshots 11-18 Oct 26, 8 images IMG_3872-3879, per-image rows in screen order with overlaps left in (h0045 method), 41 rows = 27 distinct transactions (11,799.94 as printed) + 2 refund notices + overlaps/partials. First avl 54,097.03 (ties to your 10 Oct entry), last avl 45,972.75 at 18 Oct 04:30. Five available-balance chain gaps listed in meta: two explained (Sandcastles 19.10 refund posted, Virgin Mobile 3,292.38 reversed on 16 Oct), one likely HubSpot refund +383.74, two unexplained small (-0.69, -0.87). Nothing appended to finance.json per h0018. Apple Store 3,419 on 16 Oct and Selfdrive 1,467.90 + 745.95 are the big items.",
   "status": "open"
+ },
+ {
+  "id": "h0073",
+  "date": "2026-10-18",
+  "from": "uploader",
+  "to": "finance",
+  "item": "Staged two Mashreq app screenshot files (18 Oct 07:32-07:33): data/staging/statements/mashreq-20261002-20261018.json - Neo current, AED, 7 rows (2-12 Oct, overlaps with your 5-9 Oct file left in), printed balance 20,140.52 at 18 Oct 07:32 = your derived 18,640.52 after 9 Oct + 1,500 from Tal on 12 Oct, ties exactly; nothing moved 13-18 Oct. New since your last file: 12 Oct +1,500 Tallia. Credit card payments to *6789 in Oct so far: 10,000 + 17,500 + 30,000 = 57,500. data/staging/statements/mashreq-tara-and-rent-20261018.json - savings pot, printed balance 12,975.00 at 18 Oct, indicative Oct earnings 40.55, rate 6.25%. Also: Calum confirms the ADIB Virgin Mobile 3,292.38 (13 Oct) was refunded without an SMS - matches the +3,292.38 chain gap in adib-cc-sms-20261011-20261018.json meta.",
+  "status": "open"
  }
 ]
