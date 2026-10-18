@@ -2,6 +2,38 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "apple store",
+   "category": "Life",
+   "sub": "Tech / devices"
+  },
+  {
+   "rx": "playstation",
+   "category": "Entertainment",
+   "sub": "Games (PlayStation) - on BA Amex"
+  },
+  {
+   "rx": "sunberry",
+   "category": "Base Food",
+   "sub": "Groceries / meal prep"
+  },
+  {
+   "rx": "leto",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "virgin mobile uae - 13 oct charge reversed",
+   "category": "Life",
+   "sub": "Phone",
+   "type": "refund"
+  },
+  {
+   "rx": "hubspot refund",
+   "category": "Business",
+   "sub": "CANCELLED 12 Oct - if this bills again, flag it",
+   "type": "refund"
+  },
+  {
    "rx": "property index",
    "category": "Business",
    "sub": "CANCELLED 12 Oct - if this bills again, flag it",
