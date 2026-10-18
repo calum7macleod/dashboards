@@ -1,0 +1,81 @@
+{
+ "meta": {
+  "account": "Tesco Clubcard",
+  "currency": "GBP",
+  "period": "29 Sep - 4 Oct 26 statement lines; balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "balance18Oct0735": 5584.54,
+   "availableCredit": 740.46,
+   "creditLimitDerived": 6325.0,
+   "statement04Oct26": "lines shown, closing balance not printed",
+   "statement04Sep26": "lines shown"
+  },
+  "rowCount": 8,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "5,727.11 (4 Sep stmt) - 266.00 + 123.43 = 5,584.54 = balance shown, so 4 Oct statement = 5,584.54 and no spend since"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 21.62,
+   "currency": "GBP",
+   "type": "interest"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 31.6,
+   "currency": "GBP",
+   "type": "interest"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 77.25,
+   "currency": "GBP",
+   "type": "interest"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 0.18,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "Sep stmt interest total 130.65"
+  },
+  {
+   "date": "2026-09-29",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+   "amount": -266.0,
+   "currency": "GBP",
+   "type": "payment"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 20.76,
+   "currency": "GBP",
+   "type": "interest"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 30.6,
+   "currency": "GBP",
+   "type": "interest"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 72.07,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "Oct stmt interest total 123.43"
+  }
+ ]
+}
