@@ -1,0 +1,35 @@
+{
+ "meta": {
+  "account": "Santander Everyday",
+  "currency": "GBP",
+  "period": "balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "balance18Oct0737": 11716.17,
+   "available": 433.83,
+   "creditLimit": 12150.0,
+   "pending": 0.0,
+   "balanceOnLastStatement": 11716.17,
+   "minimumDue": 318.06,
+   "dueDate": "2026-10-21",
+   "directDebit": "Yes",
+   "cardExpires": "02/29"
+  },
+  "rowCount": 1,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "unchanged since 25 Sep statement; DD 318.06 falls 21 Oct"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-25",
+   "description": "TRANSFER BALANCE INT CHARGE",
+   "amount": 202.67,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "already in santander-everyday-20260925.json; purchases interest row cut off"
+  }
+ ]
+}
