@@ -1,0 +1,45 @@
+{
+ "meta": {
+  "account": "Aqua",
+  "currency": "GBP",
+  "period": "balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "balance18Oct0740": 0.0,
+   "available": 5250.0,
+   "creditLimit": 5250.0,
+   "newMessages": 6
+  },
+  "rowCount": 3,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "3,980.27 paid 5 Oct; balance 0.00; limit 5,250 fully available"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-30",
+   "description": "Foreign Exchange Conversion Charge",
+   "amount": 0.37,
+   "currency": "GBP",
+   "type": "fee"
+  },
+  {
+   "date": "2026-09-30",
+   "description": "Foreign Exchange Conversion Charge",
+   "amount": 0.26,
+   "currency": "GBP",
+   "type": "fee",
+   "note": "further 30 Sep rows cut off"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "Payment Received - Thank You",
+   "amount": -3980.27,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "clears the card to 0.00"
+  }
+ ]
+}
