@@ -2,6 +2,16 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "selfdrive ae",
+   "category": "Life",
+   "sub": "Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc"
+  },
+  {
+   "rx": "apple store r596",
+   "category": "Family",
+   "sub": "Tal's phone - 50/50 with Tal; Calum's half split Oct/Nov misc-whatever"
+  },
+  {
    "rx": "apple store",
    "category": "Life",
    "sub": "Tech / devices"
