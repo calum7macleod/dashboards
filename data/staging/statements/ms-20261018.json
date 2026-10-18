@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "account": "M&S",
+  "currency": "GBP",
+  "period": "27 Sep 26 statement; balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "currentBalanceExclPending18Oct0738": 7296.8,
+   "availableCredit": 703.2,
+   "creditLimit": 8000.0,
+   "pending": 0.0,
+   "lastStatementBalance": 7677.22,
+   "dueDate": "2026-10-22",
+   "minimumDue": 0.0
+  },
+  "rowCount": 1,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "7,677.22 - 380.42 = 7,296.80; 27 Sep stmt implies interest ~41.45 on top of 7,635.77 (derived, not printed)"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "PAYMENT - THANK YOU",
+   "amount": 380.42,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "printed +380.42; 26 Sep rows cut off below"
+  }
+ ]
+}
