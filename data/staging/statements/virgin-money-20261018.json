@@ -1,0 +1,19 @@
+{
+ "meta": {
+  "account": "Virgin Money",
+  "currency": "GBP",
+  "period": "no screenshot - app unavailable 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "lastConfirmed": "9,705.64 at 3 Sep 26 statement (Uploader, from statement PDF)",
+   "printed": "nothing - Calum reports app unavailable"
+  },
+  "rowCount": 0,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "note": "Calum: no spend on this card. Derive balance from BoS -> Virgin movements in the staged BoS files (7 Sep FPO 401.90 known from the BoS CSV) plus the 3 Oct statement interest (~190, Sep was 192.99). Indicatively ~9,490 before any Sep/Oct DD - Finance to settle from the BoS staging"
+ },
+ "transactions": []
+}
