@@ -590,5 +590,13 @@
   "to": "finance",
   "item": "UK card app snapshots 18 Oct 26 07:35-07:40, 11 files <card>-20261018.json under data/staging/statements/ (GBP, as printed, type=payment on every payment). Balances: Tesco 5,584.54 (=4 Oct stmt, Sep+Oct interest lines included, chains from 5,727.11); Santander 11,716.17 unchanged, DD 318.06 on 21 Oct; MBNA 1 7,948.40 = 6 Oct stmt (8,159.44 - 283.07 + 72.03), min 270.74 due 2 Nov; MBNA 2 1,828.71 after 16 Oct DD 49.66; HSBC 1,388.58 = 10 Oct stmt, min 34.71 due 5 Nov; M&S 7,296.80 after 2 Oct payment 380.42 (27 Sep stmt 7,677.22, min 0 due 22 Oct); Barclaycard last stmt 9,422.43, 118.45 DD 20 Oct, current balance not on screen; Aqua 0.00 after 5 Oct payment 3,980.27; Amex Gold 0.00; Amex BA 0.00 printed but four 17 Oct pending items 194.97 - Calum says treat as posted. Virgin Money: no screenshot (app down) - Calum says no spend; derive from staged BoS -> Virgin movements + 3 Oct interest; last confirmed 9,705.64 at 3 Sep, indicatively ~9,490.",
   "status": "open"
+ },
+ {
+  "id": "h0075",
+  "date": "2026-10-18",
+  "from": "uploader",
+  "to": "lifecoach",
+  "item": "Whoop weekly trend screenshots (13 images, 18 Oct 07:43-07:45) staged in the PRIVATE repo: personal/fitness/staging/whoop-trends-20261012-20261018.json - 7 days x 14 daily fields plus weekly and monthly summaries, exact values. whoop.json 'days' currently carries chart estimates for 13-16 Oct (flagged 'missing') - this file has the actuals; whoop.json owner (Fitness) to splice. Content stays in the private repo; nothing here.",
+  "status": "open"
  }
 ]
