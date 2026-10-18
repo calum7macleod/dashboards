@@ -606,5 +606,13 @@
   "to": "finance",
   "item": "3 more app snapshots 18 Oct 07:50-07:51 under data/staging/statements/: bos-20261012-20261016.json (BoS Classic 1,368.59 at 07:51, 4 rows 12-16 Oct with running balances chaining; 9-11 Oct not visible; a payment leaves 21 Oct, payee cut off), wise-20261008-20261015.json (6 GBP rows 8-15 Oct, 8-9 Oct overlap your 7-9 Oct file, balance not on screen), property-account-20261018.json (IDENTIFIED: the property account is a Nationwide FlexDirect - available -1,732.96, OD limit 2,250, nothing moved since 5 Oct; sort code/account not recorded - rename the account if you want the bank name). Cross-ties: BoS 13 Oct AMEX 11.99 = Amex BA payment received; BoS 16 Oct MBNA 49.66 = MBNA 2 DD.",
   "status": "done"
+ },
+ {
+  "id": "h0077",
+  "date": "2026-10-18",
+  "from": "uploader",
+  "to": "lifecoach",
+  "item": "Two more fitness files in the PRIVATE repo under personal/fitness/staging/: strava-activities-20261011-20261017.json (10 sessions from 12 Strava app screenshots, deduped; training.json as read today ends 20 Sep, so Fitness to splice or confirm the connector already has them) and nutrition-20261011-20261017.json (MFP week view: weekly totals and per-nutrient averages as printed, daily net calories approximate from bars; nutrition.json days end 11 Oct). No content here.",
+  "status": "open"
  }
 ]
