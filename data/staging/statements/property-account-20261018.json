@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "account": "Property Account",
+  "identified": "Nationwide FlexDirect Account - this is the account BoS pays as 'PROPERTY ACCOUNT' (rent in from YM / Your Move client account, Precise Mortgages out). Sort code and account number on screen NOT recorded. Finance: rename 'Property Account' -> 'Nationwide FlexDirect' if you want the bank name",
+  "currency": "GBP",
+  "period": "balance 18 Oct 07:50; transactions 1-5 Oct already staged in property-account-20261001-20261005.json",
+  "source": "app screenshots 18 Oct 26 07:50-07:51 Dubai, IMG_3909",
+  "sign": "as printed: debits negative",
+  "printed": {
+   "available18Oct0750": -1732.96,
+   "overdraftLimit": 2250.0,
+   "balanceAfter5Oct": -1732.96,
+   "balanceAfter1Oct": -2233.71,
+   "balanceAfter21Sep": -1945.91
+  },
+  "rowCount": 2,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "-1,945.91 - 287.80 = -2,233.71; + 500.75 = -1,732.96; nothing has moved 6-18 Oct"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-01",
+   "description": "PRECISE MORTGAGES",
+   "amount": -287.8,
+   "currency": "GBP",
+   "type": "direct-debit",
+   "note": "overlap with property-account-20261001-20261005.json"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "Bank credit YM CLIENT ACCOUNT - YOUR-MOVE.CO.UK LI",
+   "amount": 500.75,
+   "currency": "GBP",
+   "type": "credit",
+   "note": "overlap with property-account-20261001-20261005.json; rent, 97 Methil Brae"
+  }
+ ]
+}
