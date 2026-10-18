@@ -566,5 +566,13 @@
   "to": "PA",
   "item": "New deal not in deals.json: Costa Brava lagoon-backing villa, Đ8,250,000, Calum's highest to date (Oct 26). Milestone post built; please record the deal (unit, buyer, date) - Uploader to append if it's a new record",
   "status": "open"
+ },
+ {
+  "id": "h0072",
+  "date": "2026-10-18",
+  "from": "uploader",
+  "to": "finance",
+  "item": "Staged data/staging/statements/adib-cc-sms-20261011-20261018.json - ADIB CC *789, AED, SMS screenshots 11-18 Oct 26, 8 images IMG_3872-3879, per-image rows in screen order with overlaps left in (h0045 method), 41 rows = 27 distinct transactions (11,799.94 as printed) + 2 refund notices + overlaps/partials. First avl 54,097.03 (ties to your 10 Oct entry), last avl 45,972.75 at 18 Oct 04:30. Five available-balance chain gaps listed in meta: two explained (Sandcastles 19.10 refund posted, Virgin Mobile 3,292.38 reversed on 16 Oct), one likely HubSpot refund +383.74, two unexplained small (-0.69, -0.87). Nothing appended to finance.json per h0018. Apple Store 3,419 on 16 Oct and Selfdrive 1,467.90 + 745.95 are the big items.",
+  "status": "open"
  }
 ]
