@@ -1,0 +1,21 @@
+{
+ "meta": {
+  "account": "Amex Gold",
+  "currency": "GBP",
+  "period": "balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "totalBalance18Oct0740": 0.0,
+   "balanceDue": 0.0,
+   "paymentRequired": "not required at this time",
+   "membershipRewards": 14115
+  },
+  "rowCount": 0,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "note": "no transactions visible; a 'PAYMENT RECEIVED' row is cut off at the bottom (the 2 Oct 549.88 already staged)"
+ },
+ "transactions": []
+}
