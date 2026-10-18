@@ -1,0 +1,82 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "2-12 Oct 26 transactions visible; balance printed 18 Oct 07:32 (no rows 13-18 Oct on screen - list top is 12 Oct)",
+  "source": "app screenshots 18 Oct 26 07:32-07:33 Dubai, IMG_3880 (header + 12 Oct, 9 Oct cut) and IMG_3881 (12 Oct header, 9 Oct to 2 Oct cut)",
+  "sign": "as printed: debits negative",
+  "order": "chronological; overlaps between images left in (9 Oct row appears on both)",
+  "printed": {
+   "totalAvailableBalance18Oct0732": 20140.52,
+   "currentBalance18Oct0732": 20140.52
+  },
+  "derived": {
+   "check": "18,640.52 (your derived balance after 9 Oct) + 1,500.00 on 12 Oct = 20,140.52 printed - ties exactly, so nothing moved 13-18 Oct up to 07:32"
+  },
+  "alreadyStagedOverlap": "5, 6 and 9 Oct rows also in mashreq-20261005-20261009.json and mashreq-20261001-20261006.json - left in per method",
+  "privacy": "IBANs, card masks, customer number and T_ tokens stripped from descriptions",
+  "owner": "Finance",
+  "enteredBy": "Uploader (Oct)"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "IPP TRANSFER - to MOHAMMED AHMED - /REF/ FAMILY (cut at screen bottom)",
+   "amount": -150.0,
+   "currency": "AED",
+   "reference": "033IPPD26275095P",
+   "image": "IMG_3881",
+   "partial": true
+  },
+  {
+   "date": "2026-10-05",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -10000.0,
+   "currency": "AED",
+   "reference": "033IPPD262780JLL",
+   "image": "IMG_3881"
+  },
+  {
+   "date": "2026-10-06",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -17500.0,
+   "currency": "AED",
+   "reference": "033IPPD2627902I0",
+   "image": "IMG_3881"
+  },
+  {
+   "date": "2026-10-06",
+   "description": "IPP TRANSFER - to TALLIA FLAHER - /REF/ FAMILY SUPPORT",
+   "amount": -8076.75,
+   "currency": "AED",
+   "reference": "033IPPD262790K0R",
+   "image": "IMG_3881"
+  },
+  {
+   "date": "2026-10-09",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789)",
+   "amount": -30000.0,
+   "currency": "AED",
+   "reference": "033IPPD2628214UF",
+   "image": "IMG_3881"
+  },
+  {
+   "date": "2026-10-09",
+   "description": "IPP TRANSFER - CREDIT CARD PAYMENT (card *6789) - same row, cut at bottom of IMG_3880",
+   "amount": -30000.0,
+   "currency": "AED",
+   "reference": "033IPPD2628214UF",
+   "image": "IMG_3880",
+   "partial": true
+  },
+  {
+   "date": "2026-10-12",
+   "description": "IPP TRANSFER - from TALLIA VERITY FLAHER - MP_2_P",
+   "amount": 1500.0,
+   "currency": "AED",
+   "reference": "033IPPC2628526P5",
+   "image": "IMG_3880"
+  }
+ ]
+}
