@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "account": "BoS",
+  "accountType": "Classic current account",
+  "currency": "GBP",
+  "period": "12-16 Oct 26; balance 18 Oct 07:51",
+  "source": "app screenshots 18 Oct 26 07:50-07:51 Dubai, IMG_3910",
+  "sign": "as printed: debits negative; running balance after each row as printed",
+  "order": "chronological",
+  "printed": {
+   "balance18Oct0751": 1368.59,
+   "paymentsLeavingSoon": "'in 3 days' (21 Oct) - payee cut off"
+  },
+  "rowCount": 4,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "running balances chain: 1,630.24 -> 1,618.25 -> 1,568.59 -> 1,368.59",
+  "gap": "Thu 8 Oct header visible, rows cut; nothing visible for 9-11 Oct - unknown whether empty"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-12",
+   "description": "FLAHER TV",
+   "amount": 350.0,
+   "currency": "GBP",
+   "type": "credit",
+   "balanceAfter": 1630.24
+  },
+  {
+   "date": "2026-10-13",
+   "description": "AMERICAN EXP 3773",
+   "amount": -11.99,
+   "currency": "GBP",
+   "type": "payment",
+   "balanceAfter": 1618.25,
+   "note": "= Amex BA 13 Oct payment received 11.99"
+  },
+  {
+   "date": "2026-10-16",
+   "description": "MBNA LIMITED",
+   "amount": -49.66,
+   "currency": "GBP",
+   "type": "payment",
+   "balanceAfter": 1568.59,
+   "note": "= MBNA 2 DD 16 Oct 49.66"
+  },
+  {
+   "date": "2026-10-16",
+   "description": "TALLIA FLAHER",
+   "amount": -200.0,
+   "currency": "GBP",
+   "type": "transfer-out",
+   "balanceAfter": 1368.59
+  }
+ ]
+}
