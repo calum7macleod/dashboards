@@ -1,0 +1,43 @@
+{
+ "meta": {
+  "account": "Barclaycard Plat",
+  "currency": "GBP",
+  "period": "balance 18 Oct (header scrolled off - last statement figures only)",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "lastStatementBalance": 9422.43,
+   "minimumPayment": 118.45,
+   "paymentDueDate": "2026-10-20",
+   "currentBalance": "not visible in this screenshot"
+  },
+  "rowCount": 3,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "note": "no activity after 25 Sep visible; 118.45 DD falls 20 Oct"
+ },
+ "transactions": [
+  {
+   "date": "2026-09-21",
+   "description": "PAYMENT BY DIRECT DEBIT",
+   "amount": -122.43,
+   "currency": "GBP",
+   "type": "payment"
+  },
+  {
+   "date": "2026-09-25",
+   "description": "CASH INTEREST CHARGE",
+   "amount": 24.48,
+   "currency": "GBP",
+   "type": "interest"
+  },
+  {
+   "date": "2026-09-25",
+   "description": "INTEREST CHARGE",
+   "amount": 0.0,
+   "currency": "GBP",
+   "type": "interest"
+  }
+ ]
+}
