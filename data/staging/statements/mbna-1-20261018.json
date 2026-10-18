@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "account": "MBNA 1",
+  "currency": "GBP",
+  "period": "6 Oct 26 statement; balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "spent18Oct0738": 7948.4,
+   "available": 851.6,
+   "creditLimitDerived": 8800.0,
+   "statementBalance": 7948.4,
+   "minimumPayment": 270.74,
+   "dueDate": "2026-11-02",
+   "statementDate": "2026-10-06"
+  },
+  "rowCount": 1,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "8,159.44 (6 Sep stmt) - 283.07 DD 1 Oct (BoS) + 72.03 = 7,948.40"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-06",
+   "description": "INTEREST",
+   "amount": 72.03,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "row cut at screen bottom; amount readable"
+  }
+ ]
+}
