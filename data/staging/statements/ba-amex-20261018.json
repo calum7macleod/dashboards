@@ -1,0 +1,60 @@
+{
+ "meta": {
+  "account": "Amex BA",
+  "currency": "GBP",
+  "period": "balance 18 Oct",
+  "source": "UK card app screenshots 18 Oct 26 07:35-07:40 Dubai",
+  "sign": "as printed on each app (payments negative on Tesco/Amex/Aqua/MBNA/Barclaycard, positive on M&S/HSBC) - every payment row carries type=payment",
+  "printed": {
+   "totalBalance18Oct0740": 0.0,
+   "balanceDue": 0.0,
+   "availableCredit": 605.0,
+   "totalAvios": 7653,
+   "pendingTotal": 194.97
+  },
+  "rowCount": 5,
+  "inFinanceJson": "none",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-18",
+  "verified": "Calum instructs: treat the four 17 Oct pending items (194.97) as posted - effective balance 194.97 against printed 0.00"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-17",
+   "description": "APPLE.COM/BILL",
+   "amount": 10.0,
+   "currency": "GBP",
+   "type": "pending",
+   "note": "Calum: assume pending posts"
+  },
+  {
+   "date": "2026-10-17",
+   "description": "PLAYSTATION",
+   "amount": 59.99,
+   "currency": "GBP",
+   "type": "pending"
+  },
+  {
+   "date": "2026-10-17",
+   "description": "PLAYSTATION",
+   "amount": 54.99,
+   "currency": "GBP",
+   "type": "pending"
+  },
+  {
+   "date": "2026-10-17",
+   "description": "PLAYSTATION",
+   "amount": 69.99,
+   "currency": "GBP",
+   "type": "pending"
+  },
+  {
+   "date": "2026-10-13",
+   "description": "PAYMENT RECEIVED - THANK YOU",
+   "amount": -11.99,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "12 Oct rows cut off below"
+  }
+ ]
+}
