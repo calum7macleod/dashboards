@@ -245,3 +245,4 @@
 {"date": "2026-10-18", "agent": "Fitness", "did": "Reconciled Uploader MFP + Strava week into nutrition.json / training.json; full week 1 review delivered", "wrote": ["private:personal/fitness/nutrition.json", "private:personal/fitness/training.json", "private:personal/state/fitness.md"]}
 {"date": "2026-10-18", "agent": "Fitness", "did": "Logged Sun 5k 39:56; nasal-breathing Z2 rule into plan", "wrote": ["private:personal/fitness/training.json", "private:personal/state/fitness.md", "private:personal/fitness/plan.md"]}
 {"date": "2026-10-18", "agent": "Fitness", "did": "Corrected block template to Calum's structure: Boxica Mon-Sat x5, run Sunday", "wrote": ["private:personal/fitness/plan.md", "private:personal/state/fitness.md"]}
+{"date": "2026-10-19", "agent": "Fitness", "did": "Mon read: yellow after run+pool day, heat/fluid; logged, rule added", "wrote": ["private:personal/fitness/whoop.json", "private:personal/state/fitness.md"]}
