@@ -26,7 +26,9 @@ Fourth, contract
 
 The most important thing is to plan well and execute - it's the difference between having a property you love and one you regret
 
+I bought Abu Dhabi off-plan myself this year. I'm glad to say I love mine
+
 ## Notes (Content, 20 Oct)
 - Calum's own process (Tara Park, Apr 2026). Typos fixed: "on order" -> "in order", "pick form" -> "pick from", "Forth" -> "Fourth".
 - 2% ADREC registration not in script (Calum's choice - reel is the buying hour). "Under an hour" = buyer's part; counter-sign can take weeks (said in step four).
-- ~215 words, ~1:23 at 155 wpm.
+- ~230 words, ~1:29 at 155 wpm. Personal close added.
