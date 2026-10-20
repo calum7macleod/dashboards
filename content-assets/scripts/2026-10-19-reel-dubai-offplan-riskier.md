@@ -30,7 +30,8 @@ Four. Construction milestones
 
 More investors are choosing Abu Dhabi over Dubai this year, this is why
 
-## Flags (Content, 19 Oct)
+## Flags (Content, 19-20 Oct)
+- 20 Oct: Dubai population REBASED (Dubai Population Now, 1 Jul 2026): end-2025 4.58m, +332k. On the new basis Dubai = 2.3 residents/off-plan sale, ratio ~8x not 13x. Change 'Thirteen times' to 'Eight times' and Dubai line to 'added 332 thousand people... 2.3 per home', or keep old series and cite 'Dubai Statistics Centre 2024 bulletin'.
 - ~245 words, ~1:10 with numbers.
 - "every bitcoin" = ~90% at ~$1.9tn cap; "almost every" safer. Check cap on filming day.
 - "In Dubai I pay on whatever date" - milestone plans exist in Dubai; "most Dubai plans" closes the door.
