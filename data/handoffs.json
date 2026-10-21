@@ -638,5 +638,13 @@
   "to": "Market",
   "item": "Dubai population rebased by Dubai Population Now (4.58m end-2025, +332k). Confirm basis and the matching 2024 figure; residents-per-off-plan ratio moves 13x -> ~8x. Also: any 2026 Palm Jumeirah population figure?",
   "status": "open"
+ },
+ {
+  "id": "h0081",
+  "date": "2026-10-21",
+  "from": "PA",
+  "to": "Finance",
+  "item": "W&Co payslip dated 30 Sep 2026, WPS AED 221,330.25: TH-68 102,504 (60%), A5-108 70,656 (60%), P218 8,412.85 (65%), J221 24,521.25 (65%), K450 15,236.29 (65%). PA has set paid=true + paidDate/paidAmount on these five in deals.json and corrected the board figures on P218, J221, K450 to the payslip commission. Reconcile the 221,330.25 credit in finance.json; note the payslip is issued by 'White and White Real Estate LLC'.",
+  "status": "open"
  }
 ]
