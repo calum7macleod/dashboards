@@ -1,0 +1,60 @@
+{
+ "meta": {
+  "img": "IMG_3996 + IMG_3995",
+  "account": "Amex BA",
+  "currency": "GBP",
+  "period": "balance 21 Oct 11:54; 13-18 Oct activity",
+  "sign": "as printed: payments negative",
+  "printed": {
+   "totalBalance": 194.97,
+   "balanceDue": 0.0,
+   "paymentRequired": "not required at this time",
+   "availableCredit": 605.0,
+   "totalAvios": 7653
+  },
+  "verified": "the four items pending on 18 Oct have posted: 10.00 + 54.99 + 59.99 + 69.99 = 194.97 = total balance",
+  "source": "app screenshots Wed 21 Oct 26 11:52-11:59 Dubai, IMG_3996 + IMG_3995",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-21",
+  "inFinanceJson": "none",
+  "rowCount": 5
+ },
+ "transactions": [
+  {
+   "date": "2026-10-13",
+   "description": "PAYMENT RECEIVED - THANK YOU",
+   "amount": -11.99,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "already staged"
+  },
+  {
+   "date": "2026-10-17",
+   "description": "PLAYSTATION LONDON",
+   "amount": 54.99,
+   "currency": "GBP",
+   "type": "card"
+  },
+  {
+   "date": "2026-10-17",
+   "description": "PLAYSTATION LONDON",
+   "amount": 59.99,
+   "currency": "GBP",
+   "type": "card"
+  },
+  {
+   "date": "2026-10-17",
+   "description": "PLAYSTATION LONDON",
+   "amount": 69.99,
+   "currency": "GBP",
+   "type": "card"
+  },
+  {
+   "date": "2026-10-18",
+   "description": "APPLE.COM/BILL HOLLYHILL",
+   "amount": 10.0,
+   "currency": "GBP",
+   "type": "card"
+  }
+ ]
+}
