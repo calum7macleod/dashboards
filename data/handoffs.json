@@ -646,5 +646,13 @@
   "to": "Finance",
   "item": "W&Co payslip dated 30 Sep 2026, WPS AED 221,330.25: TH-68 102,504 (60%), A5-108 70,656 (60%), P218 8,412.85 (65%), J221 24,521.25 (65%), K450 15,236.29 (65%). PA has set paid=true + paidDate/paidAmount on these five in deals.json and corrected the board figures on P218, J221, K450 to the payslip commission. Reconcile the 221,330.25 credit in finance.json; note the payslip is issued by 'White and White Real Estate LLC'.",
   "status": "open"
+ },
+ {
+  "id": "h0082",
+  "date": "2026-10-21",
+  "from": "PA",
+  "to": "Finance",
+  "item": "New deal 16 Oct: V3 Costa Brava 6-bed 8.5M, cash. 215K total coms split 50/50 external, +4,950 conveyancing extra, then 50/50 with Anto. Calum's share 56,225; board 58,725 (incl 2,500 conveyancing); take-home 70% = 39,357.50. Pay month TBC - first Jake-era deal, confirm how/when Jake's brokerage pays out.",
+  "status": "open"
  }
 ]
