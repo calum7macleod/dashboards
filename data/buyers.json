@@ -936,7 +936,7 @@
  },
  {
   "date": "2026-07-14",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Mukesh",
   "source": "Unknown",
   "colleague": "Self",
@@ -960,9 +960,9 @@
   "id": "mukesh-24",
   "order": 23,
   "heat": 3,
-  "stage": "Longer Term",
+  "stage": "Lost",
   "lastContact": "2026-09-22",
-  "nextTouch": "2026-09-29",
+  "nextTouch": null,
   "touchReason": "Follow up after wa only 22 Sep",
   "needSummary": "DISTRESSED BUYER. Owns in Malta already. Phone +91 84474 00100. STANDING ORDER: send him ANY distressed deal that comes ",
   "snoozedUntil": null,
@@ -974,7 +974,8 @@
   "maxScore": 3.4,
   "maxScoreWhy": "Conditional weapon: owns Malta, moves fast, but ONLY fires on distressed. Score is availability-weighted - a 5 the day a forced sale appears, dormant otherwise.",
   "maxScoreDate": "2026-08-03",
-  "commPct": 0.02
+  "commPct": 0.02,
+  "closedDate": "2026-10-21"
  },
  {
   "date": "2026-07-04",
