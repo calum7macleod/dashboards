@@ -3432,7 +3432,7 @@
  },
  {
   "buyer": "Abdulrazak Al-Ahmadi (Abdo)",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-21",
   "source": "Instagram",
   "colleague": "",
@@ -3453,10 +3453,10 @@
   "notes": "22 Sep: WA only | 21 Aug: IG lead (@abdo_alahmadi, 259 followers) asked for the Marsa Al Saadiyat guide. Moved to WhatsApp +971 55 844 8025, Calum sent 'Marsa Al Saadiyat - All We Know' PDF. He replied 'will reach back out if I have any questions'. Calum asked if he already owns places there - awaiting reply. Requirements/budget unknown.",
   "id": "abdo-alahmadi",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 2,
   "lastContact": "2026-09-28",
-  "nextTouch": "2026-10-01",
+  "nextTouch": null,
   "touchReason": "Follow up after wa only 22 Sep",
   "needSummary": "Marsa Al Saadiyat interest, guide sent, requirements TBC",
   "snoozedUntil": null,
@@ -3471,7 +3471,8 @@
     "channel": "call",
     "summary": "Called (today page)"
    }
-  ]
+  ],
+  "closedDate": "2026-10-21"
  },
  {
   "buyer": "Islam Tolba",
