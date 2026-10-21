@@ -662,5 +662,13 @@
   "to": "Finance",
   "item": "Payout schedule per Calum 21 Oct: October - K331, BL907, A2-209, P141 (take-home ~AED 103.6K per CRM). November - J444, 505 Noor, K217, J122 (V3 Costa Brava, first Jake-era deal) ~AED 172.5K plus 9,010 cash crypto fee. Update the cash plan; payslip actuals have differed from CRM by +-2K per deal.",
   "status": "open"
+ },
+ {
+  "id": "h0084",
+  "date": "2026-10-21",
+  "from": "uploader",
+  "to": "finance",
+  "item": "21 Oct 11:52-11:59 app snapshots, 7 files under data/staging/statements/ (Calum: all other accounts unchanged). BoS 832.08 after 20 Oct DDs Santander 318.06 + Barclaycard 118.45 and 19 Oct Tal 100; Corrina 150 leaves 26 Oct. Santander 11,398.11 (DD 318.06 paid 20 Oct, chains). Barclaycard 9,303.98 (DD 118.45 paid, chains). Amex BA 194.97 - the four pending items posted. MBNA 2 unchanged 1,828.71. Wise all-currency view: 13 Oct +200 USD Vantage refund, 14 Oct 2,339.25 USD sent to 'segments cloud', 15 Oct Canva 70 AED - USD inflows funding that send are not on screen. ADIB CC adib-cc-20261016-20261021.json per image (h0045): utilized limit 26,328.75 printed, 450.73 due 26 Oct, 5% DD set; printed 'last statement balance' 67,102.85 does not reconcile with utilized - yours to interpret. The two small chain gaps in the 11-18 Oct SMS file are international transaction fees + VAT (0.83 + 0.04 posted 17 Oct).",
+  "status": "open"
  }
 ]
