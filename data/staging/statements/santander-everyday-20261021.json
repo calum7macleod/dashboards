@@ -1,0 +1,35 @@
+{
+ "meta": {
+  "img": "IMG_3992",
+  "account": "Santander Everyday",
+  "currency": "GBP",
+  "period": "balance 21 Oct 11:52",
+  "sign": "as printed: payments negative",
+  "printed": {
+   "balance": 11398.11,
+   "available": 751.89,
+   "creditLimit": 12150.0,
+   "pending": 0.0,
+   "balanceOnLastStatement": 11716.17,
+   "minimumDue": 318.06,
+   "dueDate": "2026-10-21",
+   "directDebit": "Yes"
+  },
+  "verified": "11,716.17 - 318.06 = 11,398.11",
+  "source": "app screenshots Wed 21 Oct 26 11:52-11:59 Dubai, IMG_3992",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-21",
+  "inFinanceJson": "none",
+  "rowCount": 1
+ },
+ "transactions": [
+  {
+   "date": "2026-10-20",
+   "description": "DD PAYMENT RECEIVED D/DEBIT",
+   "amount": -318.06,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "= BoS 20 Oct SANTANDERCARDS LTD 318.06"
+  }
+ ]
+}
