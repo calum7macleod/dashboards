@@ -1,0 +1,28 @@
+{
+ "meta": {
+  "img": "IMG_3993",
+  "account": "MBNA 2",
+  "currency": "GBP",
+  "period": "balance 21 Oct 11:53 - unchanged since 18 Oct snapshot",
+  "sign": "as printed",
+  "printed": {
+   "spent": 1828.71,
+   "available": 671.29
+  },
+  "source": "app screenshots Wed 21 Oct 26 11:52-11:59 Dubai, IMG_3993",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-21",
+  "inFinanceJson": "none",
+  "rowCount": 1
+ },
+ "transactions": [
+  {
+   "date": "2026-10-16",
+   "description": "DIRECT DEBIT PAYMENT -",
+   "amount": -49.66,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "printed 49.66 cr; already in mbna-2-20261018.json"
+  }
+ ]
+}
