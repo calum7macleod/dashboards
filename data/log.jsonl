@@ -279,3 +279,4 @@
 {"date": "2026-10-21", "agent": "content", "did": "Why-I-bought reel scripted. Batch 2 complete: eleven reels with bodies", "wrote": ["content-assets/scripts/2026-10-21-reel-why-i-bought.md"]}
 {"date": "2026-10-21", "agent": "Designer", "did": "USDT quote card: 'at 3.66' removed from the labels", "wrote": ["content-assets/breakdowns/USDT-Managers-Cheque-Quote.png"]}
 {"date": "2026-10-21", "agent": "Designer", "did": "USDT quote card: steps 3 and 4 reworded per Calum", "wrote": ["content-assets/breakdowns/USDT-Managers-Cheque-Quote.png"]}
+{"date": "2026-10-21", "agent": "uploader", "did": "Staged 7 app snapshots 21 Oct 26 (BoS, Santander, Barclaycard, Amex BA, MBNA 2, Wise activity, ADIB CC per-image) to data/staging/statements/; handoff Finance", "wrote": ["data/staging/statements/", "data/handoffs.json", "data/log.jsonl"]}
