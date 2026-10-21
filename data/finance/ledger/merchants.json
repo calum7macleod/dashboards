@@ -2,6 +2,21 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "nespresso",
+   "category": "Base Food",
+   "sub": "Groceries / meal prep"
+  },
+  {
+   "rx": "one & only royal",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "facebk|meta",
+   "category": "Ads",
+   "sub": "Meta - should be OFF; flag"
+  },
+  {
    "rx": "selfdrive ae",
    "category": "Life",
    "sub": "Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc"
