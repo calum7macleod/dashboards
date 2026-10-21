@@ -1,0 +1,59 @@
+{
+ "meta": {
+  "img": "IMG_3997",
+  "account": "Wise",
+  "currency": "multi (as printed per row)",
+  "period": "13-15 Oct 26, all-currency activity view ('Includes hidden')",
+  "sign": "as printed: outflows unsigned, refund marked +",
+  "note": "USD side of the 14 Oct '20 GBP to USD' already staged on the GBP side in wise-20261008-20261015.json; this view adds the USD balance movements",
+  "printed": {
+   "balances": "not shown"
+  },
+  "source": "app screenshots Wed 21 Oct 26 11:52-11:59 Dubai, IMG_3997",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-21",
+  "inFinanceJson": "none",
+  "rowCount": 5
+ },
+ "transactions": [
+  {
+   "date": "2026-10-13",
+   "description": "Tcp Vantage - Refunded",
+   "amount": 200.0,
+   "currency": "USD",
+   "type": "refund"
+  },
+  {
+   "date": "2026-10-14",
+   "description": "To USD (moved from GBP 20.00)",
+   "amount": 26.45,
+   "currency": "USD",
+   "type": "conversion-in",
+   "note": "GBP side -20 staged 18 Oct"
+  },
+  {
+   "date": "2026-10-14",
+   "description": "Apple",
+   "amount": -11.99,
+   "currency": "GBP",
+   "type": "card",
+   "note": "already staged"
+  },
+  {
+   "date": "2026-10-14",
+   "description": "segments cloud - Sent",
+   "amount": -2339.25,
+   "currency": "USD",
+   "type": "transfer-out",
+   "note": "printed 2,320.56 USD received by payee, 2,339.25 USD debited incl fee"
+  },
+  {
+   "date": "2026-10-15",
+   "description": "Canva",
+   "amount": -70.0,
+   "currency": "AED",
+   "type": "card",
+   "note": "printed '70 AED - USD, GBP': an AED-priced card charge drawn from USD and GBP balances; the GBP leg 4.37 already staged"
+  }
+ ]
+}
