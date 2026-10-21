@@ -11,6 +11,7 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 4. YouTube thumbnail template (face + three words + one number).
 
 ## Piece log
+- 21 Oct: USDT to manager's cheque quote card (Đ8,753,250 in three cheques, 0.8% desk fee, 4-step process, sales-progression note) - content-assets/breakdowns/. USDT figures at the 3.6725 peg, marked indicative (Designer Sept 26).
 - 17 Oct: Costa Brava Đ8.25M 6-bed lagoon-backing villa milestone post, FINAL = no overlay at all (Calum picked 'pure water' of four options; text shadows carry legibility), SOLD as a gold eyebrow above the title. Milestone standard note: Calum prefers the photo untouched - overlays only when the photo can't carry the text - content-assets/milestones/costa-brava-8-25m/. Deal not yet in deals.json, handoff h0071 (Designer Sept 26).
 - 17 Oct: GV-282 Hudayriyat Golf Estates resale breakdown card (1080x1350, offer-card family: day one / balance to Modon / all-in strip) - content-assets/breakdowns/. Figures as given by Calum, all reconciled. No brokerage named on the card - post-W&Co brokerage name not in any file I can read (Designer Sept 26).
 - 23-24 Sep: Year One carousel FINAL (3 x 1080x1350; Calum stripped it to photo + serif title + gold number + two lines, no corners, no footer, no eyebrow - this is now the Milestone standard) - content-assets/year-one/. Numbers as briefed (40 / Đ122.8M); A4-1703 Tara Park (no buyer recorded) may be Calum's own unit - not confirmed (Designer Sept 26).
