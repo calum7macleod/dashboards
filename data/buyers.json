@@ -4192,7 +4192,7 @@
  },
  {
   "date": "2026-09-22",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Annabel Edwards-Daem",
   "phone": "+447852510307",
   "source": "Meta ad - Modon Video 1 (UK form)",
@@ -4213,9 +4213,9 @@
   "feeling": 2,
   "score": 2,
   "heat": 2,
-  "stage": "New",
+  "stage": "Lost",
   "lastContact": "2026-09-28",
-  "nextTouch": "2026-10-01",
+  "nextTouch": null,
   "touchReason": "Follow up after no answer, wa sent 22 Sep",
   "needSummary": "Modon ad lead - spec and budget TBC",
   "notes": "22 Sep: No answer, WA sent | 2026-09-20: Meta lead, Modon Video 1, form 'Modon New - London & Glasgow', owns UAE property: no, form text: Email",
@@ -4231,11 +4231,12 @@
     "channel": "call",
     "summary": "Called (today page)"
    }
-  ]
+  ],
+  "closedDate": "2026-10-21"
  },
  {
   "date": "2026-09-22",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Shaby",
   "phone": "+34640621946",
   "source": "Meta ad - Modon Video 2 Launch",
@@ -4256,9 +4257,9 @@
   "feeling": 2,
   "score": 2,
   "heat": 2,
-  "stage": "New",
+  "stage": "Lost",
   "lastContact": "2026-09-28",
-  "nextTouch": "2026-10-01",
+  "nextTouch": null,
   "touchReason": "Follow up after no answer, wa sent 22 Sep - Lived in Spain 20 years, just moved to Ajman",
   "needSummary": "Lived in Spain 20 years, just moved to Ajman",
   "notes": "22 Sep: No answer, WA sent - Lived in Spain 20 years, just moved to Ajman | 2026-09-17: Meta lead, Modon Video 2 Launch, form 'Modon New - UAE', owns UAE property: yes, form text: 0034640621946",
@@ -4274,7 +4275,8 @@
     "channel": "call",
     "summary": "Called (today page)"
    }
-  ]
+  ],
+  "closedDate": "2026-10-21"
  },
  {
   "date": "2026-09-22",
