@@ -3757,7 +3757,7 @@
  },
  {
   "buyer": "Shaheen",
-  "status": "Active",
+  "status": "Closed Lost",
   "date": "2026-08-25",
   "source": "Ads",
   "colleague": "",
@@ -3778,10 +3778,10 @@
   "notes": "23 Sep: No answer, WA sent | 22 Sep: WA only - Owns a place in JGE she wants to sell - seller lead | 25 Aug: JGE ads lead. +971 50 645 9434. Called - no answer. Next step: send sales offer on WhatsApp.",
   "id": "shaheen-jge",
   "order": 1020,
-  "stage": "New",
+  "stage": "Lost",
   "heat": 5,
   "lastContact": "2026-09-28",
-  "nextTouch": "2026-10-01",
+  "nextTouch": null,
   "touchReason": "Follow up after no answer, wa sent 23 Sep",
   "needSummary": "JGE ads lead, call unanswered, sales offer to send",
   "snoozedUntil": null,
@@ -3796,7 +3796,8 @@
     "channel": "call",
     "summary": "Called (today page)"
    }
-  ]
+  ],
+  "closedDate": "2026-10-21"
  },
  {
   "buyer": "Deepa",
@@ -4948,7 +4949,7 @@
  },
  {
   "date": "2026-09-23",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Shaheen Ibrahim",
   "phone": "+971506459434",
   "source": "Meta ad - Jumeirah Golf estates- Video 1",
@@ -4969,9 +4970,9 @@
   "feeling": 1,
   "score": 5,
   "heat": 5,
-  "stage": "New",
+  "stage": "Lost",
   "lastContact": "2026-09-28",
-  "nextTouch": "2026-10-01",
+  "nextTouch": null,
   "touchReason": "Follow up after no answer, wa sent 22 Sep",
   "needSummary": "JGE ad lead - spec and budget TBC",
   "notes": "22 Sep: No answer, WA sent | 2026-08-24: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE', owns UAE property: yes, form text: 0506459434",
@@ -4987,7 +4988,8 @@
     "channel": "call",
     "summary": "Called (today page)"
    }
-  ]
+  ],
+  "closedDate": "2026-10-21"
  },
  {
   "date": "2026-09-23",
