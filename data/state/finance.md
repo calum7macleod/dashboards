@@ -6,6 +6,12 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 21 OCT - INCOME SCHEDULE CHANGED (PA h0081-h0083)
+30 Sep payslip D221,330.25 = TH-68 102,504 + A5-108 70,656 + P218 8,413 + J221 24,521 + K450 15,236 (White and White Real Estate LLC). Reconciled.
+PAYOUTS per Calum: 31 Oct ~D103.6K (K331, BL907, A2-209, P141) - NOT 250K. 30 Nov ~D172.5K (J444, 505 Noor, K217, J122 Costa Brava 39,357 at 70%) + 9,010 crypto fee cash. Oct+Nov = ~285K vs 250K assumed (+35K) but back-loaded.
+RUNWAY RE-RUN: 1 Nov ~86K after card cleared -> November commitments ~140K before the Tara catch-up -> ~D54K short until 30 Nov (pot funding and the lawyer 7K wait for the 30th). End Dec ~-43K, end Jan ~-150K without NEC; with NEC GBP30K ~-5K = January just lands.
+ADIB app 21 Oct: utilized 26,329; 'total due 450.73 by 26 Oct', 5% DD set - PAY/ensure the 450.73 collects or it is a missed payment on AECB. Test unchanged (4,603 of statement unpaid).
+FLAGS: Meta charge 35.07 on 20 Oct (ads not fully off). Segments USD2,339.25 sent 14 Oct (D8,590 vs 4,900 budgeted) funded by USD not on screen - ask. Food 8,214 to 21 Oct vs 6,000. One & Only 870 + Nespresso 615 on 18-19 Oct. BoS 832 -> ~GBP40 at month end after Virgin 375, Corrina 150, Tesco 266 - no headroom.
 ## 18 Oct RULINGS: BA Amex = Calum's UK spending card, paid in full monthly (new rule). Apple Store 3,419 = Tal's phone, 50/50, Calum's half split Oct/Nov misc-whatever. PlayStation GBP185 = whatever (Christmas). Selfdrive 745.95 = speeding fine, misc. Phone: moving to old Virgin number; du to go. 250K: DO NOT raise 'in writing' again.
 ## MODON = TARA (13 Oct): the Tara Park instalment IS the Modon 5% due 31 Jan - 116,500 is Calum's 4.66% share, Lewis pays 0.33% (~8,250, pass-through). Already in the budget. No separate Modon line. Gap stays ~D115K before UK tax.
 ## DECISIONS 12-13 Oct
