@@ -4689,7 +4689,7 @@
  },
  {
   "date": "2026-09-23",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Mark Wrong",
   "phone": "+971544466967",
   "source": "Meta ad - Jumeirah Golf estates- Video 1",
@@ -4710,9 +4710,9 @@
   "feeling": 1,
   "score": 5,
   "heat": 5,
-  "stage": "New",
+  "stage": "Lost",
   "lastContact": "2026-09-28",
-  "nextTouch": "2026-10-01",
+  "nextTouch": null,
   "touchReason": "Follow up after no answer, wa sent 22 Sep - Went cold",
   "needSummary": "Went cold",
   "notes": "22 Sep: No answer, WA sent - Went cold | 2026-09-03: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: yes, form text: Markhwrong@gmail.com",
@@ -4728,7 +4728,8 @@
     "channel": "call",
     "summary": "Called (today page)"
    }
-  ]
+  ],
+  "closedDate": "2026-10-21"
  },
  {
   "date": "2026-09-23",
