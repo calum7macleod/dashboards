@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "img": "IMG_3994",
+  "account": "Barclaycard Plat",
+  "currency": "GBP",
+  "period": "balance 21 Oct 11:54",
+  "sign": "as printed: payments negative",
+  "printed": {
+   "currentBalance": 9303.98,
+   "availableCredit": 696.02,
+   "creditLimit": 10000.0,
+   "pctUsed": 93,
+   "lastStatementBalance": 9422.43,
+   "billStatus": "no payment needed yet (per app)"
+  },
+  "verified": "9,422.43 - 118.45 = 9,303.98",
+  "source": "app screenshots Wed 21 Oct 26 11:52-11:59 Dubai, IMG_3994",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-21",
+  "inFinanceJson": "none",
+  "rowCount": 3
+ },
+ "transactions": [
+  {
+   "date": "2026-10-20",
+   "description": "PAYMENT BY DIRECT DEBIT",
+   "amount": -118.45,
+   "currency": "GBP",
+   "type": "payment",
+   "note": "= BoS 20 Oct B/CARD PLAT VISA 118.45"
+  },
+  {
+   "date": "2026-09-25",
+   "description": "INTEREST CHARGE",
+   "amount": 0.0,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "already staged"
+  },
+  {
+   "date": "2026-09-25",
+   "description": "CASH INTEREST CHARGE",
+   "amount": 24.48,
+   "currency": "GBP",
+   "type": "interest",
+   "note": "already staged"
+  }
+ ]
+}
