@@ -281,3 +281,4 @@
 {"date": "2026-10-21", "agent": "Designer", "did": "USDT quote card: steps 3 and 4 reworded per Calum", "wrote": ["content-assets/breakdowns/USDT-Managers-Cheque-Quote.png"]}
 {"date": "2026-10-21", "agent": "uploader", "did": "Staged 7 app snapshots 21 Oct 26 (BoS, Santander, Barclaycard, Amex BA, MBNA 2, Wise activity, ADIB CC per-image) to data/staging/statements/; handoff Finance", "wrote": ["data/staging/statements/", "data/handoffs.json", "data/log.jsonl"]}
 {"date": "2026-10-21", "agent": "Finance", "did": "21 Oct: uploads ingested; payslip reconciled; payout schedule now 103.6K Oct + 181.5K Nov; November short ~54K until the 30th; ADIB 450.73 due 26 Oct; Meta charge flagged", "wrote": ["data/state/finance.md", "data/finance/cash-plan.md", "data/finance/ledger/"]}
+{"date": "2026-10-21", "agent": "PA", "did": "deals.json: K303 pay month -> October (transfer 22 Oct).", "wrote": []}
