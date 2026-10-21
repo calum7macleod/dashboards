@@ -4486,7 +4486,7 @@
  },
  {
   "date": "2026-09-22",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Zaynab",
   "phone": "+971525058983",
   "source": "Meta ad - Jumeirah Golf estates- Video 1",
@@ -4507,7 +4507,7 @@
   "feeling": 1,
   "score": 5,
   "heat": 5,
-  "stage": "New",
+  "stage": "Lost",
   "lastContact": "2026-09-22",
   "nextTouch": null,
   "touchReason": "Follow up after no answer, wa sent 22 Sep",
@@ -4518,7 +4518,8 @@
   "id": "zaynab-m31",
   "order": 108,
   "maxScore": 1,
-  "maxScoreReason": "Set on call 22 Sep"
+  "maxScoreReason": "Set on call 22 Sep",
+  "closedDate": "2026-10-21"
  },
  {
   "date": "2026-09-22",
