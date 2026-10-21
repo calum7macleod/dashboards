@@ -2,8 +2,8 @@
  {
   "date": "2026-10-16",
   "month": "October",
-  "buyer": "TBC (V3 Costa Brava buyer)",
-  "buyerSource": null,
+  "buyer": "Belen & Eric Iniesta",
+  "buyerSource": "TBC",
   "seller": null,
   "sellerSource": null,
   "unit": "Crypto transfer - V3 Costa Brava deal",
@@ -37,12 +37,13 @@
   "beds": null,
   "conveyNote": null,
   "tier": "cash 100%",
-  "notes": "Cash fee for arranging the crypto transfer on the V3 Costa Brava purchase (signed 16 Oct). Recorded as a separate line like the FX commission. Assumed not split with Anto and not tiered - correct if wrong."
+  "notes": "Cash fee for arranging the crypto transfer on the V3 Costa Brava purchase (signed 16 Oct). Recorded as a separate line like the FX commission. Assumed not split with Anto and not tiered - correct if wrong.",
+  "buyerId": "iniesta-0809"
  },
  {
   "date": "2026-10-16",
   "month": "October",
-  "buyer": "TBC",
+  "buyer": "Belen & Eric Iniesta",
   "buyerSource": "TBC",
   "seller": "TBC",
   "sellerSource": "TBC",
@@ -77,7 +78,8 @@
   "beds": 6,
   "conveyNote": "Cash buyer - 9,950 conveyancing, 4,950 of it extra commission; 2,500 counts on the board",
   "tier": "70%",
-  "notes": "Signed Fri 16 Oct 2026 - first deal at Jake's. 215,000 total coms / 2 external = 107,500 + 4,950 conveyancing extra = 112,450 / 2 Anto = 56,225. Board 56,225 + 2,500 conveyancing = 58,725. Take-home 70% of 56,225 = 39,357.50. Seller paid 50K of the 215K. Unit number, buyer and seller names to record."
+  "notes": "Signed Fri 16 Oct 2026 - first deal at Jake's. 215,000 total coms / 2 external = 107,500 + 4,950 conveyancing extra = 112,450 / 2 Anto = 56,225. Board 56,225 + 2,500 conveyancing = 58,725. Take-home 70% of 56,225 = 39,357.50. Seller paid 50K of the 215K. Unit number, buyer and seller names to record.",
+  "buyerId": "iniesta-0809"
  },
  {
   "date": "2026-09-21",
