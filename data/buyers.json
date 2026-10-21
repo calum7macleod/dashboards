@@ -4403,7 +4403,7 @@
  },
  {
   "date": "2026-09-22",
-  "status": "Active",
+  "status": "Closed Lost",
   "buyer": "Murtaza Gilani",
   "phone": "+971509504949",
   "source": "Meta ad - Jumeirah Golf estates- Video 1",
@@ -4424,9 +4424,9 @@
   "feeling": 3,
   "score": 3,
   "heat": 3,
-  "stage": "New",
+  "stage": "Lost",
   "lastContact": "2026-09-28",
-  "nextTouch": "2026-10-01",
+  "nextTouch": null,
   "touchReason": "Follow up after answered 22 Sep - Owned in JGE before - likes it",
   "needSummary": "Owned in JGE before - likes it",
   "notes": "22 Sep: Answered - Owned in JGE before - likes it | 2026-09-13: Meta lead, Jumeirah Golf estates- Video 1, form 'Jumeirah Golf estates- UAE-copy', owns UAE property: no, form text: 00971509504949",
@@ -4442,7 +4442,8 @@
     "channel": "call",
     "summary": "Called (today page)"
    }
-  ]
+  ],
+  "closedDate": "2026-10-21"
  },
  {
   "date": "2026-09-22",
