@@ -1,42 +1,40 @@
-# Why I Bought An Offplan Apartment In Abu Dhabi - reel script (Content draft for Calum, 21 Oct 2026)
+# Why I Bought An Offplan Apartment In Abu Dhabi - reel script (Calum, 21 Oct 2026)
 
 Text: Why I Bought An Offplan Apartment In Abu Dhabi
 Speech: I've only paid fifty thousand dollars on a six hundred and eighty thousand dollar asset - and that's only the start
 
-Five reasons - the last one is the maths
-
 One. Future demand
-- Reem Island went from a handful of towers to 60 thousand people in nine years. Up 8% last year alone
-- Apartment rents in Abu Dhabi rose 17% in the first half of 2026 - the regulator's number, not an agent's
-- 18 new residents for every off-plan home sold. In Dubai it's 2
+- Last year there were 18 new residents for every off-plan property sold in Abu Dhabi - supply isn't keeping up with demand
+- Saadiyat has culture, Yas has entertainment and Hudayriyat has lifestyle
+- I believe more wealthy Europeans will start picking Abu Dhabi when moving
 
 Two. ADGM
-- My apartment is a mile from the financial district - English common law, no income tax, and 12 thousand new jobs last year
+- My apartment is a mile from the financial district - English common law, no income tax, and 12 thousand new jobs last year, a 34% increase
 - BlackRock, Goldman Sachs, Binance are here. Brevan Howard runs more money from Abu Dhabi than anywhere on earth
-- Every one of them rents first. Reem is where they rent
+- But this is the best bit
 
 Three. Payment plan
 - 5% to book, 5% every six months, 60% at handover in 2030 - 40% before I get the keys
 - Every instalment is tied to a construction stage, signed off by an independent engineer. Build's late, payment's late
-- Once 20% is paid I can sell it on. I never have to pay the 60% if I don't want to
 
 Four. Price
 - I paid around 550 dollars a square foot. The new branded towers on Maryah, a mile away, launched at 11 to 12 hundred. Saadiyat is 11 hundred
 - The developer is Modon - 85% owned by the government's fund, the biggest seller in the UAE this year, and the building sold out
+- More on how impressive the fund is now
 
-Five. The maths
-- If it rises 20% by handover - Reem did 38% last year - that's 136 thousand dollars on 272 thousand paid in. Fifty per cent on cash
-- Rent it at 6 to 8%, no income tax. Sell it, no capital gains tax
-- It only needs 6% a year to beat a bond. The city's doing 18
+Five. Sovereign wealth
+- Abu Dhabi has a 1.7 trillion dollar sovereign wealth fund
+- Only China and Norway have bigger
+- This underpins the stability and growth of the city, and my investment
 
-That's why I bought. The apartment's the easy part - the next one's the island.
+I will live in Abu Dhabi by 2030
 
-## Receipts (Content, 21 Oct)
-- Reem census 59,725 (2024, +8%); "handful of towers 2015" [v 13,941]. Rents +17% apts H1 2026 (ADREC). 18 vs 2 = 2025 sales / latest census; Dubai 2.3 on rebased pop (old series 1.4 - keep consistent across batch).
-- ADGM 49,027 workforce +34% (+12.4k); Brevan Howard; English common law; no income tax.
-- Tara Park SPA: 5% booking (+2% admin), 5%/6 months milestone-linked (Appendix F), 60% handover Apr 2030; resale at 20% (Calum).
-- $550/sqft Tara (<Dh2,000); Ritz-Carlton Maryah ~Dh3,600-4,300 ($1,000-1,200); Jumeirah Residences Dh4,425; Saadiyat apts ~Dh4,000 ($1,090).
-- Modon 85% L'imad ($7bn, Oct 2025); H1 2026 $6.3bn > Emaar; Tara Park sold out ~$545m.
-- Maths: $680k x 20% = $136k; 40% paid = $272k -> 50% on cash. Reem off-plan +38% (MERED/Quanta, yr to mid-2025). 6.1% hurdle vs 5% bond (2% transfer + costs). +18% Abu Dhabi prices (Knight Frank yr to Jun 2026).
-- "Every one of them rents first" = Calum's observation.
-- ~265 words, ~1:40 at 155 wpm. Trim to 1:20 available.
+## Receipts / flags (Content, 21 Oct)
+- Stray paste text removed from block two; "secures" -> "underpins" (no guarantee language).
+- 18 residents per off-plan sale: 288k (2024 census) / 15.9k (2025 sales). Dubai comparison not used here.
+- ADGM 49,027 (+34%, +12.4k); Brevan Howard; English common law.
+- Tara Park SPA: 5% booking + 2% admin (~$47.6k), 5%/6 months milestone-linked (Appendix F), 60% Apr 2030.
+- $550/sqft Tara; Ritz-Carlton Maryah ~$1,000-1,200; Jumeirah Residences Dh4,425; Saadiyat apts ~$1,090.
+- Modon 85% L'imad; H1 2026 $6.3bn (#1 UAE); Tara Park sold out ~$545m.
+- $1.7tn; by owner only China (~$3.5tn across funds) and Norway ($2tn) bigger.
+- ~240 words, ~1:33 at 155 wpm.
