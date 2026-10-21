@@ -6,7 +6,7 @@
   "buyerSource": "TBC",
   "seller": null,
   "sellerSource": null,
-  "unit": "Crypto transfer - V3 Costa Brava deal",
+  "unit": "Crypto transfer - J122",
   "cluster": "Costa Brava",
   "area": "Lagoons",
   "otherBroker": null,
@@ -47,7 +47,7 @@
   "buyerSource": "TBC",
   "seller": "TBC",
   "sellerSource": "TBC",
-  "unit": "V3 Costa Brava (unit TBC)",
+  "unit": "J122",
   "cluster": "Costa Brava",
   "area": "Lagoons",
   "otherBroker": "External agent 50/50 on the 215K; then Anto 50/50 internal",
@@ -73,7 +73,7 @@
   "sellerSide": "External",
   "sourceCat": null,
   "segment": "Secondary",
-  "payMonth": "TBC",
+  "payMonth": "November",
   "note": null,
   "beds": 6,
   "conveyNote": "Cash buyer - 9,950 conveyancing, 4,950 of it extra commission; 2,500 counts on the board",
@@ -114,7 +114,7 @@
   "sellerSide": "Developer",
   "sourceCat": "Colleague",
   "segment": "Offplan",
-  "payMonth": "TBC",
+  "payMonth": "October",
   "note": "Lewis's buyer Ronnie, Calum helped. 4% dev commission = 114,640 total: Lewis 100,000 + Calum 14,640. Price 2.866M (Calum said 2.866 or 2.886 - 2.866 reconciles exactly to the 4%). Date assumed 21 Sep - confirm signing date. Pay month TBC (Modon)."
  },
  {
@@ -170,7 +170,7 @@
   "paid": false,
   "sourceCat": "Portals",
   "segment": "Secondary",
-  "payMonth": "September"
+  "payMonth": "October"
  },
  {
   "date": "2026-07-27",
@@ -243,7 +243,7 @@
   "sourceCat": "Callout",
   "segment": "Secondary",
   "notes": "Seller from CALLING OUT; buyer via Georgia (Lagoons team).",
-  "payMonth": "September"
+  "payMonth": "October"
  },
  {
   "date": "2026-07-22",
@@ -319,7 +319,7 @@
   "splitType": null,
   "sourceCat": "Portals",
   "segment": "Secondary",
-  "payMonth": "September"
+  "payMonth": "October"
  },
  {
   "date": "2026-06-08",
@@ -1353,7 +1353,7 @@
   "sourceCat": "Portals + Calling Out",
   "segment": "Secondary",
   "note": "Both sides. 3.95M close (ask 4.05 net-basis). Seller fees renegotiated to 25K inc VAT flat to bridge the gap. Buyer 2% = 79,000. Conveyancing 8,500 in board. Board = 79,000 + 23,809.52 + 8,500 = 111,309.52. Syed all-in vs ADIB 4.0 cap - confirm top-up handled.",
-  "payMonth": "October"
+  "payMonth": "November"
  },
  {
   "date": "2026-08-31",
@@ -1389,7 +1389,7 @@
   "sourceCat": "Lead",
   "segment": "Secondary",
   "note": "Closed 31 Aug. 505 Noor Townhouses, Town Square, 2.85M. Split with Mark - 61K is Calum's board share.",
-  "payMonth": "October"
+  "payMonth": "November"
  },
  {
   "date": "2026-08-31",
@@ -1451,7 +1451,7 @@
   "tier": 0.65,
   "myTakeHome": 21139,
   "paid": false,
-  "payMonth": "October",
+  "payMonth": "November",
   "note": "Buyer side only. Board D41,021. Take-home = (41,021 - 8,500 conveyancing) x 65% = D21,139. ENBD pre-approval 70% LTV expires 30 Sep - transfer must complete by then.",
   "order": 2
  },
