@@ -1,0 +1,230 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "card": "ADIB Emirates VC Sig (*789)",
+  "currency": "AED",
+  "period": "16-21 Oct 26 activity (app list, weekday labels resolved against Wed 21 Oct); card summary 21 Oct 11:58",
+  "source": "app screenshots Wed 21 Oct 26 11:52-11:59 Dubai, IMG_4001-4004",
+  "method": "per image, rows in on-screen order, overlaps left in (h0045)",
+  "sign": "as printed: debits negative (app view) - note the SMS files use unsigned charges",
+  "printed": {
+   "lastStatementBalance": 67102.85,
+   "totalAmountDue": 450.73,
+   "paymentDate": "2026-10-26",
+   "utilizedLimit": 26328.75,
+   "directDebit": "5% monthly payment percentage set"
+  },
+  "derived": "utilized 26,328.75 against the 69,500 limit = available ~43,171.25. The printed 'last statement balance' 67,102.85 does not reconcile with utilized 26,328.75 - Finance to interpret (statement-period debits vs outstanding?)",
+  "resolvesChainGaps": "the -0.87 gap on 16-17 Oct in adib-cc-sms-20261011-20261018.json = International Transaction Fee 0.83 + VAT 0.04 (both posted 17 Oct, no SMS); the -0.69 gap on 12-13 Oct is the same fee type on the US-merchant charges",
+  "newSince18OctSms": "18 Oct One & Only 700 + 170, InstaShop 399.09; 19 Oct Amazon Grocery 54.90, instashop 131.67, Nespresso 615; 20 Oct Amazon Prime 16, instashop 72.75 + 52.69 + 89.40; pending Facebook 35.07, Deliveroo 57.39",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-21"
+ },
+ "images": [
+  {
+   "image": "IMG_4001",
+   "screenNote": "card summary screen - no transaction rows",
+   "rows": []
+  },
+  {
+   "image": "IMG_4004",
+   "screenNote": "Sunday 18 Oct (header cut) then Saturday 17 Oct; Friday 16 Oct cut at bottom",
+   "rows": [
+    {
+     "position": 1,
+     "trxDate": "2026-10-18",
+     "merchant": "Amazon",
+     "amount": -52.0,
+     "currency": "AED",
+     "status": "Posted",
+     "note": "Sunday header above cut; same row as IMG_4003 pos 6"
+    },
+    {
+     "position": 2,
+     "trxDate": "2026-10-18",
+     "merchant": "InstaShop",
+     "amount": -399.09,
+     "currency": "AED",
+     "status": "Posted",
+     "note": "same row as IMG_4003 pos 7"
+    },
+    {
+     "position": 3,
+     "trxDate": "2026-10-17",
+     "merchant": "ENOC",
+     "amount": -51.0,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 4,
+     "trxDate": "2026-10-17",
+     "merchant": "InstaShop",
+     "amount": -78.04,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 5,
+     "trxDate": "2026-10-17",
+     "merchant": "InstaShop",
+     "amount": -47.4,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 6,
+     "trxDate": "2026-10-17",
+     "merchant": "International Transaction Fee",
+     "amount": -0.83,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 7,
+     "trxDate": "2026-10-17",
+     "merchant": "International Trxn Fee VAT Charges",
+     "amount": -0.04,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 8,
+     "trxDate": "2026-10-16",
+     "merchant": "M B M NAVI PARKING LLC",
+     "amount": -20.0,
+     "currency": "AED",
+     "status": "Posted",
+     "partial": true,
+     "note": "faded, bottom edge"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4003",
+   "screenNote": "Monday 19 Oct, Sunday 18 Oct; Saturday header at bottom",
+   "rows": [
+    {
+     "position": 1,
+     "trxDate": "2026-10-19",
+     "merchant": "Amazon Grocery",
+     "amount": -54.9,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 2,
+     "trxDate": "2026-10-19",
+     "merchant": "www.instashop.com",
+     "amount": -131.67,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 3,
+     "trxDate": "2026-10-19",
+     "merchant": "Nespresso",
+     "amount": -615.0,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 4,
+     "trxDate": "2026-10-18",
+     "merchant": "ONE & ONLY ROYAL F & B",
+     "amount": -700.0,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 5,
+     "trxDate": "2026-10-18",
+     "merchant": "ONE & ONLY ROYAL F & B",
+     "amount": -170.0,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 6,
+     "trxDate": "2026-10-18",
+     "merchant": "Amazon",
+     "amount": -52.0,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 7,
+     "trxDate": "2026-10-18",
+     "merchant": "InstaShop",
+     "amount": -399.09,
+     "currency": "AED",
+     "status": "Posted"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4002",
+   "screenNote": "Today 21 Oct, Yesterday 20 Oct; Monday 19 Oct cut at bottom",
+   "rows": [
+    {
+     "position": 1,
+     "trxDate": "2026-10-21",
+     "merchant": "DELIVEROO",
+     "amount": -57.39,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 2,
+     "trxDate": "2026-10-20",
+     "merchant": "Amazon Prime Subscript",
+     "amount": -16.0,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 3,
+     "trxDate": "2026-10-20",
+     "merchant": "www.instashop.com",
+     "amount": -72.75,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 4,
+     "trxDate": "2026-10-20",
+     "merchant": "www.instashop.com",
+     "amount": -52.69,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 5,
+     "trxDate": "2026-10-20",
+     "merchant": "www.instashop.com",
+     "amount": -89.4,
+     "currency": "AED",
+     "status": "Posted"
+    },
+    {
+     "position": 6,
+     "trxDate": "2026-10-20",
+     "merchant": "FACEBK *GCQM99SNT4",
+     "amount": -35.07,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 7,
+     "trxDate": "2026-10-19",
+     "merchant": "Amazon Grocery",
+     "amount": -54.9,
+     "currency": "AED",
+     "status": "Posted",
+     "partial": true,
+     "note": "faded, bottom edge; same as IMG_4003 pos 1"
+    }
+   ]
+  }
+ ]
+}
