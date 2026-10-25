@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "account": "BA Amex",
+  "currency": "GBP",
+  "period": "18-23 Oct 26 (17 Oct and earlier cut off)",
+  "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai",
+  "sign": "as printed: charges positive",
+  "printed": {
+   "totalBalance": 229.96,
+   "balanceDue": 0.0,
+   "paymentNotRequired": true,
+   "availableCredit": 570.0,
+   "avios": 7653
+  },
+  "note": "visible rows sum to 44.99; 184.97 of charges since the 2 Oct zero sit on 17 Oct and earlier, not on screen",
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-18",
+   "description": "APPLE.COM/BILL HOLLYHILL",
+   "amount": 10.0,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-22",
+   "description": "PLAYSTATION LONDON",
+   "amount": 24.99,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-23",
+   "description": "APPLE.COM/BILL HOLLYHILL",
+   "amount": 10.0,
+   "currency": "GBP"
+  }
+ ]
+}
