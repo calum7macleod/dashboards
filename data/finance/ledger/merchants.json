@@ -2,6 +2,21 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "kumayl merchant",
+   "category": "Business",
+   "sub": "Merkz (Kumayl) - editor, Oct budget 10,000"
+  },
+  {
+   "rx": "yas bay arena|sofitel abu dhabi",
+   "category": "Entertainment",
+   "sub": "Eating out / hotels"
+  },
+  {
+   "rx": "p bh technical",
+   "category": "Unaccounted",
+   "sub": "p bh technical 757 (25 Oct) - what?"
+  },
+  {
    "rx": "nespresso",
    "category": "Base Food",
    "sub": "Groceries / meal prep"
