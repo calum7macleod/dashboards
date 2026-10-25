@@ -1,0 +1,30 @@
+{
+ "meta": {
+  "account": "Barclaycard Plat",
+  "currency": "GBP",
+  "period": "20 Oct 26",
+  "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai (new Barclaycard app layout)",
+  "sign": "as printed",
+  "printed": {
+   "currentBalance": 9303.98,
+   "availableCredit": 696.02,
+   "pctUsed": 93,
+   "creditLimit": 10000.0,
+   "lastStatementBalance": 9422.43,
+   "billStatus": "no payment needed yet"
+  },
+  "verified": "9,422.43 - 118.45 = 9,303.98",
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-20",
+   "description": "PAYMENT BY DIRECT DEBIT",
+   "amount": -118.45,
+   "currency": "GBP",
+   "type": "payment"
+  }
+ ]
+}
