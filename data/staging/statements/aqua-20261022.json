@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "account": "Aqua",
+  "currency": "GBP",
+  "period": "22 Oct statement + pending (card *4498)",
+  "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai",
+  "sign": "as printed: charges positive, payments/credits negative",
+  "printed": {
+   "balance": 24.3,
+   "available": 5225.7,
+   "creditLimit": 5250.0,
+   "statementPeriod": "23 Sep - 22 Oct",
+   "statementSpend": 878.26,
+   "nextDirectDebit": "2026-11-09"
+  },
+  "verified": "878.26 = 853.96 spend 23-30 Sep + 24.30 interest; 3,126.31 + 878.26 - 3,980.27 = 24.30 balance. Pending credit -24.30 takes it to 0",
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-22",
+   "description": "Interest",
+   "amount": 24.3,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-25",
+   "description": "Credit",
+   "amount": -24.3,
+   "currency": "GBP",
+   "status": "pending",
+   "note": "date = screenshot date; app shows no posting date"
+  }
+ ]
+}
