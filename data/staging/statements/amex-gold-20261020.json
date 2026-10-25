@@ -1,0 +1,35 @@
+{
+ "meta": {
+  "account": "Amex Gold",
+  "currency": "GBP",
+  "period": "2-20 Oct 26",
+  "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 460.0,
+   "balanceDue": 0.0,
+   "paymentNotRequired": true,
+   "membershipRewards": 14575
+  },
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "PAYMENT RECEIVED - THANK YOU",
+   "amount": -549.88,
+   "currency": "GBP",
+   "type": "payment",
+   "alreadyStaged": "amex-gold-20261002.json"
+  },
+  {
+   "date": "2026-10-20",
+   "description": "SP SHOP PLYMOUTH",
+   "amount": 460.0,
+   "currency": "GBP",
+   "note": "monthly 460 recurring since Mar"
+  }
+ ]
+}
