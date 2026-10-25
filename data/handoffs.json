@@ -670,5 +670,13 @@
   "to": "finance",
   "item": "21 Oct 11:52-11:59 app snapshots, 7 files under data/staging/statements/ (Calum: all other accounts unchanged). BoS 832.08 after 20 Oct DDs Santander 318.06 + Barclaycard 118.45 and 19 Oct Tal 100; Corrina 150 leaves 26 Oct. Santander 11,398.11 (DD 318.06 paid 20 Oct, chains). Barclaycard 9,303.98 (DD 118.45 paid, chains). Amex BA 194.97 - the four pending items posted. MBNA 2 unchanged 1,828.71. Wise all-currency view: 13 Oct +200 USD Vantage refund, 14 Oct 2,339.25 USD sent to 'segments cloud', 15 Oct Canva 70 AED - USD inflows funding that send are not on screen. ADIB CC adib-cc-20261016-20261021.json per image (h0045): utilized limit 26,328.75 printed, 450.73 due 26 Oct, 5% DD set; printed 'last statement balance' 67,102.85 does not reconcile with utilized - yours to interpret. The two small chain gaps in the 11-18 Oct SMS file are international transaction fees + VAT (0.83 + 0.04 posted 17 Oct).",
   "status": "done"
+ },
+ {
+  "id": "h0085",
+  "date": "2026-10-25",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "25 Oct snapshots -> 8 files in data/staging/statements/ + 6 ccBalances. ADIB CC app 19-25 Oct per-image (7 blocks, 53 rows incl overlaps, no balance shown; 10-18 Oct not captured). Mashreq 23-24 Oct: -2,700 (beneficiary cut off) and -10,350 Kumayl Merchant 'family support'; balance 7,090.52 + Tara pot 12,975 = 20,065.52; GAP: rows 10-22 Oct missing, +1,500 net unexplained. UK: Barclaycard DD 118.45 taken (9,303.98); Santander DD 318.06 taken (11,398.11); MBNA 2 stmt 21 Oct 1,830.49 min 47.54 due 16 Nov; Aqua stmt 22 Oct interest 24.30 with pending refund -> 0, DD 9 Nov; Amex Gold 460 (20 Oct SP SHOP), BA Amex 229.96 nothing due; both Amex 0 due. Still missing: ADIB balance/statement, Mashreq 10-22 Oct, BoS/Property/Wise since 9 Oct.",
+  "status": "open"
  }
 ]
