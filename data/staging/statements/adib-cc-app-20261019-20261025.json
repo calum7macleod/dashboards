@@ -1,0 +1,495 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "card": "ADIB Emirates VC Sig (*789)",
+  "currency": "AED",
+  "source": "ADIB app 'All transactions' screenshots 25 Oct 26 10:38 Dubai, 7 images",
+  "method": "per Finance h0045: one block per image, on-screen order, NOT merged or deduped - overlaps left in (two SOFITEL -28.00 on 24 Oct are as printed in separate rows)",
+  "sign": "as printed: debits negative",
+  "dates": "day labels only; derived from screenshot date Sun 25 Oct 26",
+  "coverage": "25 Oct back to 19 Oct; '18 Oct 2026' header visible with no rows. 10-18 Oct not captured",
+  "balances": "NO outstanding or available balance shown in any image",
+  "rowCount": 53,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "images": [
+  {
+   "image": "IMG_4304",
+   "screenPosition": "top of feed",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Today",
+     "date": "2026-10-25",
+     "description": "SOFITEL ABU DHABI FB",
+     "amount": -56.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Today",
+     "date": "2026-10-25",
+     "description": "p bh technical",
+     "amount": -757.05,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "YAS BAY ARENA BARIN HO",
+     "amount": -10.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "YAS BAY ARENA CATERING",
+     "amount": -35.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "YAS BAY ARENA BARIN HO",
+     "amount": -32.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "SOFITEL ABU DHABI FB",
+     "amount": -28.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "SOFITEL ABU DHABI FB",
+     "amount": -390.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "(cut off at screen bottom)",
+     "amount": -70.0,
+     "currency": "AED",
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "IMG_4305",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "SOFITEL ABU DHABI FB (amount hidden under header)",
+     "amount": null,
+     "currency": "AED",
+     "status": "Pending",
+     "partial": true
+    },
+    {
+     "position": 2,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "SOFITEL ABU DHABI FB",
+     "amount": -70.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "SOFITEL ABU DHABI FB",
+     "amount": -28.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-24",
+     "description": "SOFITEL ABU DHABI FB",
+     "amount": -54.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "emirates.com",
+     "amount": -1695.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "Zofeur",
+     "amount": -49.5,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "CAREEM RIDE",
+     "amount": -32.0,
+     "currency": "AED"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4306",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "(row cut off under header)",
+     "amount": null,
+     "currency": "AED",
+     "partial": true
+    },
+    {
+     "position": 2,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "Zofeur",
+     "amount": -49.5,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "CAREEM RIDE",
+     "amount": -32.0,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "CAREEM RIDE",
+     "amount": -0.94,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "EMARAT - HASSA",
+     "amount": -89.75,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "International Transaction Fee",
+     "amount": -21.31,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "International Trxn Fee VAT Charges",
+     "amount": -1.07,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "currency": "AED"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4307",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "CAREEM RIDE",
+     "amount": -32.0,
+     "currency": "AED"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "CAREEM RIDE",
+     "amount": -0.94,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "EMARAT - HASSA",
+     "amount": -89.75,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "International Transaction Fee",
+     "amount": -21.31,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Friday",
+     "date": "2026-10-23",
+     "description": "International Trxn Fee VAT Charges",
+     "amount": -1.07,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "Amazon",
+     "amount": -157.33,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "InstaShop",
+     "amount": -107.12,
+     "currency": "AED"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4308",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "currency": "AED"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "Amazon",
+     "amount": -157.33,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "InstaShop",
+     "amount": -107.12,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "International Transaction Fee",
+     "amount": -0.96,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Thursday",
+     "date": "2026-10-22",
+     "description": "International Trxn Fee VAT Charges",
+     "amount": -0.05,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Wednesday",
+     "date": "2026-10-21",
+     "description": "Anthropic",
+     "amount": -775.01,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Wednesday",
+     "date": "2026-10-21",
+     "description": "Selfdrive.ae",
+     "amount": -5.25,
+     "currency": "AED"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4309",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Wednesday",
+     "date": "2026-10-21",
+     "description": "Anthropic",
+     "amount": -775.01,
+     "currency": "AED"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Wednesday",
+     "date": "2026-10-21",
+     "description": "Selfdrive.ae",
+     "amount": -5.25,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Wednesday",
+     "date": "2026-10-21",
+     "description": "Deliveroo",
+     "amount": -57.39,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "Meta",
+     "amount": -35.07,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "Amazon Prime",
+     "amount": -16.0,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "InstaShop",
+     "amount": -72.75,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "InstaShop",
+     "amount": -52.69,
+     "currency": "AED"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4310",
+   "screenPosition": "bottom of set - '18 Oct 2026' header visible, no rows",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "Amazon Prime",
+     "amount": -16.0,
+     "currency": "AED",
+     "note": "no header on screen; Tuesday by continuity with IMG_4309"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "InstaShop",
+     "amount": -72.75,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "InstaShop",
+     "amount": -52.69,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Tuesday",
+     "date": "2026-10-20",
+     "description": "InstaShop",
+     "amount": -89.4,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Monday",
+     "date": "2026-10-19",
+     "description": "Amazon",
+     "amount": -54.9,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Monday",
+     "date": "2026-10-19",
+     "description": "InstaShop",
+     "amount": -131.67,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Monday",
+     "date": "2026-10-19",
+     "description": "Nespresso",
+     "amount": -615.0,
+     "currency": "AED"
+    }
+   ]
+  }
+ ]
+}
