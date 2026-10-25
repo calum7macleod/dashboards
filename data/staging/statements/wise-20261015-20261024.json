@@ -1,0 +1,61 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "GBP",
+  "period": "15-24 Oct 26 (list shows 24, 22, 15 Oct only; 10-14 Oct below screen)",
+  "source": "app screenshots Sun 25 Oct 26 10:39-10:41 Dubai",
+  "sign": "spends negative",
+  "printed": {
+   "totalBalance": 352.99,
+   "GBP": 352.99,
+   "AED": 0.0,
+   "CAD": 0.0,
+   "EUR": 0.0,
+   "note": "6 currencies, 2 not on screen"
+  },
+  "rowCount": 5,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-15",
+   "description": "Canva",
+   "amount": null,
+   "currency": "GBP",
+   "originalAmount": 70.0,
+   "originalCurrency": "AED",
+   "note": "GBP amount not shown - row says 'USD, GBP' (split across balances)",
+   "partial": true
+  },
+  {
+   "date": "2026-10-22",
+   "description": "Deepstash",
+   "amount": -27.13,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-24",
+   "description": "Apple",
+   "amount": -8.99,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-24",
+   "description": "Canva",
+   "amount": -9.8,
+   "currency": "GBP",
+   "originalAmount": 48.0,
+   "originalCurrency": "AED"
+  },
+  {
+   "date": "2026-10-24",
+   "description": "Fmd Analytics",
+   "amount": -8.73,
+   "currency": "GBP",
+   "originalAmount": 11.64,
+   "originalCurrency": "USD",
+   "status": "pending"
+  }
+ ]
+}
