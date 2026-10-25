@@ -678,5 +678,13 @@
   "to": "Finance",
   "item": "25 Oct snapshots -> 8 files in data/staging/statements/ + 6 ccBalances. ADIB CC app 19-25 Oct per-image (7 blocks, 53 rows incl overlaps, no balance shown; 10-18 Oct not captured). Mashreq 23-24 Oct: -2,700 (beneficiary cut off) and -10,350 Kumayl Merchant 'family support'; balance 7,090.52 + Tara pot 12,975 = 20,065.52; GAP: rows 10-22 Oct missing, +1,500 net unexplained. UK: Barclaycard DD 118.45 taken (9,303.98); Santander DD 318.06 taken (11,398.11); MBNA 2 stmt 21 Oct 1,830.49 min 47.54 due 16 Nov; Aqua stmt 22 Oct interest 24.30 with pending refund -> 0, DD 9 Nov; Amex Gold 460 (20 Oct SP SHOP), BA Amex 229.96 nothing due; both Amex 0 due. Still missing: ADIB balance/statement, Mashreq 10-22 Oct, BoS/Property/Wise since 9 Oct.",
   "status": "open"
+ },
+ {
+  "id": "h0086",
+  "date": "2026-10-25",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "25 Oct part 2 -> 4 files. Mashreq 9-24 Oct CLOSES the gap: 12 Oct +1,500 from Tallia, 23 Oct -2,700 to Tallia (family support) - ties to 7,090.52 exactly. BoS 16-26 Oct: Tallia 200 (16th) + 100 (19th), MBNA 49.66, Santander 318.06, Barclaycard 118.45, Aqua 24.30 forward-dated 26 Oct; 807.78 at 25 Oct; Corrina 150 (26th) + Tesco 266 (~29th) leaving. GAP: BoS 9-15 Oct rows not captured, +338.01 net. Wise 352.99: Deepstash 27.13, Apple 8.99, Canva 9.80, Fmd 8.73 pending, Canva 15 Oct GBP not shown. Property Account: 21 Oct OD interest 41.35 -> -1,774.31. CORRECTION: Aqua pending -24.30 is the BoS DD, not an interest refund (ccBalance appended). Calum: all other cards unchanged.",
+  "status": "open"
  }
 ]
