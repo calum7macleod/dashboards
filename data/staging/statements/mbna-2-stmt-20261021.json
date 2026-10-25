@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "account": "MBNA 2",
+  "currency": "GBP",
+  "period": "October statement (card *3318)",
+  "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai",
+  "sign": "as printed",
+  "printed": {
+   "statementBalance": 1830.49,
+   "statementDate": "2026-10-21",
+   "minimumPayment": 47.54,
+   "dueDate": "2026-11-16",
+   "available": 669.51,
+   "creditLimit": 2500.0
+  },
+  "derived": "1,878.37 - 49.66 (Sep min, DD ~16 Oct, row not on screen) + 1.78 = 1,830.49",
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-21",
+   "description": "INTEREST",
+   "amount": 1.78,
+   "currency": "GBP"
+  }
+ ]
+}
