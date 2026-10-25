@@ -2472,7 +2472,7 @@ L02470,2026-07-25,Jul 26,Sat,ADIB CC,AED,-97.35,-97.35,spend,Life,Car / fuel / t
 L02471,2026-07-25,Jul 26,Sat,ADIB CC,AED,-745.95,-745.95,spend,Life,"Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc","SELFDRIVE AE , DUBAI",selfdrive ae dubai,,,adib-cc-stmt-2026,f6842735874f
 L02472,2026-07-25,Jul 26,Sat,ADIB CC,AED,-8.0,-8.0,spend,Deliveries,Eating out / coffee,"MOISHI , DUBAI",moishi dubai,,,adib-cc-stmt-2026,51f34ac9e9ae
 L02473,2026-07-25,Jul 26,Sat,ADIB CC,AED,-66.0,-66.0,spend,Deliveries,Eating out / coffee,"MOISHI , DUBAI",moishi dubai,,,adib-cc-stmt-2026,d20621713ef5
-L02474,2026-07-25,Jul 26,Sat,ADIB CC,AED,-10.0,-10.0,spend,Deliveries,Eating out / coffee,"YAS BAY ARENA CATERING , ABU DHABI",yas bay arena catering abu dhabi,,,adib-cc-stmt-2026,391d80d9649d
+L02474,2026-07-25,Jul 26,Sat,ADIB CC,AED,-10.0,-10.0,spend,Entertainment,Eating out / hotels,"YAS BAY ARENA CATERING , ABU DHABI",yas bay arena catering abu dhabi,,,adib-cc-stmt-2026,391d80d9649d
 L02475,2026-07-25,Jul 26,Sat,Amex Gold,GBP,-5.46,-26.0,spend,Deliveries,Eating out / coffee,PAUL DUBAI ABU DHABI DUBAI,paul dubai abu dhabi dubai,,,amex-gold-screens-2026,aa69a06764b7
 L02476,2026-07-25,Jul 26,Sat,Amex Gold,GBP,-153.0,-727.0,spend,Entertainment,Eating out / hotels,NOVIKOV - GALLERIA MALL ABU DHABI,novikov galleria mall abu dhabi,,,amex-gold-screens-2026,ac3bb9d0c3b0
 L02477,2026-07-25,Jul 26,Sat,Amex Gold,GBP,-18.15,-86.25,spend,Entertainment,Eating out / hotels,RASOOL KHOORY - GALLERI ABU DHABI,rasool khoory galleri abu dhabi,,,amex-gold-screens-2026,0195d6cb5f21
@@ -3743,3 +3743,29 @@ L03741,2026-10-20,Oct 26,Tue,BoS,GBP,-118.45,-582.77,card_repayment,Other,,B/CAR
 L03742,2026-10-20,Oct 26,Tue,BoS,GBP,-318.06,-1564.86,card_repayment,Other,,SANTANDERCARDS LTD,santandercards ltd,P0239,person_leg_confirm,bos-app-21oct,4ac4f2c349af
 L03743,2026-10-20,Oct 26,Tue,Santander Everyday,GBP,318.06,1564.86,card_repayment,Other,,DD PAYMENT RECEIVED D/DEBIT,dd payment received d debit,P0239,person_leg_confirm,santandereveryday-app-21oct,a8424f9f59ec
 L03744,2026-10-21,Oct 26,Wed,ADIB CC,AED,-57.39,-57.39,spend,Deliveries,Food delivery,DELIVEROO,deliveroo,,,adib-cc-app-21oct,b5e7e8e18df8
+L03745,2026-10-22,Oct 26,Thu,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,BOXICA,boxica,,,adib-cc-app-25oct,b693f2063fe6
+L03746,2026-10-22,Oct 26,Thu,ADIB CC,AED,-157.33,-157.33,spend,Life,Clothes / home / shopping,Amazon,amazon,,,adib-cc-app-25oct,2f0fc7044770
+L03747,2026-10-22,Oct 26,Thu,ADIB CC,AED,-107.12,-107.12,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-25oct,0748dac6e551
+L03748,2026-10-22,Oct 26,Thu,ADIB CC,AED,-0.96,-0.96,debt_cost,Fees,Card fees (late / cash advance / FX),International Transaction Fee,international transaction fee,,,adib-cc-app-25oct,ed4330617576
+L03749,2026-10-22,Oct 26,Thu,ADIB CC,AED,-0.05,-0.05,debt_cost,Fees,Card fees (late / cash advance / FX),International Trxn Fee VAT Charges,international trxn fee vat charges,,,adib-cc-app-25oct,2be86a2791f9
+L03750,2026-10-23,Oct 26,Fri,ADIB CC,AED,-1695.0,-1695.0,spend,Entertainment,Travel,emirates.com,emirates com,,,adib-cc-app-25oct,73e81f1b6044
+L03751,2026-10-23,Oct 26,Fri,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,BOXICA,boxica,,,adib-cc-app-25oct,8d64f19ea80f
+L03752,2026-10-23,Oct 26,Fri,ADIB CC,AED,-49.5,-49.5,spend,Life,Car / fuel / tolls / taxis,Zofeur,zofeur,,,adib-cc-app-25oct,609139d77c86
+L03753,2026-10-23,Oct 26,Fri,ADIB CC,AED,-32.0,-32.0,spend,Life,Car / fuel / tolls / taxis,CAREEM RIDE,careem ride,,,adib-cc-app-25oct,5c5b89433d11
+L03754,2026-10-23,Oct 26,Fri,ADIB CC,AED,-0.94,-0.94,spend,Life,Car / fuel / tolls / taxis,CAREEM RIDE,careem ride,,,adib-cc-app-25oct,2d9278940e38
+L03755,2026-10-23,Oct 26,Fri,ADIB CC,AED,-89.75,-89.75,spend,Unaccounted,,EMARAT - HASSA,emarat hassa,,,adib-cc-app-25oct,d6984de5e310
+L03756,2026-10-23,Oct 26,Fri,ADIB CC,AED,-21.31,-21.31,debt_cost,Fees,Card fees (late / cash advance / FX),International Transaction Fee,international transaction fee,,,adib-cc-app-25oct,73d1aca497ee
+L03757,2026-10-23,Oct 26,Fri,ADIB CC,AED,-1.07,-1.07,debt_cost,Fees,Card fees (late / cash advance / FX),International Trxn Fee VAT Charges,international trxn fee vat charges,,,adib-cc-app-25oct,4ddd61781cc4
+L03758,2026-10-23,Oct 26,Fri,Mashreq,AED,-2700.0,-2700.0,transfer,Family,Tal (one pot - transfer),IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-25oct,8e06fbd7e9e2
+L03759,2026-10-24,Oct 26,Sat,ADIB CC,AED,-10.0,-10.0,spend,Entertainment,Eating out / hotels,YAS BAY ARENA BARIN HO,yas bay arena barin ho,,,adib-cc-app-25oct,c68b8686417e
+L03760,2026-10-24,Oct 26,Sat,ADIB CC,AED,-35.0,-35.0,spend,Entertainment,Eating out / hotels,YAS BAY ARENA CATERING,yas bay arena catering,,,adib-cc-app-25oct,1c5769c01aba
+L03761,2026-10-24,Oct 26,Sat,ADIB CC,AED,-32.0,-32.0,spend,Entertainment,Eating out / hotels,YAS BAY ARENA BARIN HO,yas bay arena barin ho,,,adib-cc-app-25oct,b3e00209c827
+L03762,2026-10-24,Oct 26,Sat,ADIB CC,AED,-28.0,-28.0,spend,Entertainment,Eating out / hotels,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,f404b5e27a16
+L03763,2026-10-24,Oct 26,Sat,ADIB CC,AED,-390.0,-390.0,spend,Entertainment,Eating out / hotels,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,ee2f5c3f3371
+L03764,2026-10-24,Oct 26,Sat,ADIB CC,AED,-70.0,-70.0,spend,Unaccounted,,(cut off at screen bottom),cut off at screen bottom,,,adib-cc-app-25oct,a0f282f0b77b
+L03765,2026-10-24,Oct 26,Sat,ADIB CC,AED,-70.0,-70.0,spend,Entertainment,Eating out / hotels,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,1413d7c83f6b
+L03766,2026-10-24,Oct 26,Sat,ADIB CC,AED,-54.0,-54.0,spend,Entertainment,Eating out / hotels,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,429ea858a88d
+L03767,2026-10-24,Oct 26,Sat,Mashreq,AED,-10350.0,-10350.0,transfer,Business,"Merkz (Kumayl) - editor, Oct budget 10,000",IPP TRANSFER - KUMAYL MERCHANT /REF/ FAMILY SUPPORT,ipp transfer kumayl merchant ref family ,,one_legged,mashreq-app-25oct,d51f2106a8c6
+L03768,2026-10-25,Oct 26,Sun,ADIB CC,AED,-56.0,-56.0,spend,Entertainment,Eating out / hotels,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,934d6e3c3d1f
+L03769,2026-10-25,Oct 26,Sun,ADIB CC,AED,-757.05,-757.05,spend,Unaccounted,p bh technical 757 (25 Oct) - what?,p bh technical,p bh technical,,,adib-cc-app-25oct,fac97ef7c374
+L03770,2026-10-26,Oct 26,Mon,BoS,GBP,-24.3,-119.56,card_repayment,Other,,AQUA,aqua,,one_legged,bos-app-25oct,06e7742c7716
