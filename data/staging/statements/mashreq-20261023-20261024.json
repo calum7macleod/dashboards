@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "23-24 Oct 26 (list top is 24 Oct)",
+  "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai",
+  "sign": "as printed: debits negative",
+  "printed": {
+   "currentBalance25Oct1039": 7090.52,
+   "availableBalance": 7090.52,
+   "neoPlusTotal2Accounts": 20065.52,
+   "taraAndRentPot": 12975.0,
+   "taraIndicativeOctEarnings": 56.32
+  },
+  "gap": "derived balance after 9 Oct was 18,640.52; 18,640.52 - 10,350 - 2,700 = 5,590.52 vs printed 7,090.52 -> +1,500.00 net of rows between 10 and 22 Oct not captured",
+  "redacted": "beneficiary IBAN removed",
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-23",
+   "description": "IPP TRANSFER - beneficiary cut off at screen bottom",
+   "amount": -2700.0,
+   "currency": "AED",
+   "reference": "033IPPD2629602WI",
+   "partial": true
+  },
+  {
+   "date": "2026-10-24",
+   "description": "IPP TRANSFER - KUMAYL MERCHANT /REF/ FAMILY SUPPORT",
+   "amount": -10350.0,
+   "currency": "AED",
+   "reference": "033IPPD262970PWY"
+  }
+ ]
+}
