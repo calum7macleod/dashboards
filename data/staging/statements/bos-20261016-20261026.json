@@ -1,0 +1,79 @@
+{
+ "meta": {
+  "account": "BoS",
+  "accountType": "Classic current account",
+  "currency": "GBP",
+  "period": "16-26 Oct 26 ('Tue 13 October' header visible, rows cut off)",
+  "source": "app screenshots Sun 25 Oct 26 10:39-10:41 Dubai",
+  "sign": "as printed",
+  "order": "chronological, running balance as printed",
+  "printed": {
+   "balance25Oct1041": 807.78,
+   "overdraftLimit": 3000.0
+  },
+  "verified": "chains from a derived 1,618.25 (before 16 Oct) to 807.78",
+  "gap": "last staged balance 1,280.24 after 8 Oct; 1,618.25 before 16 Oct -> +338.01 net in 9-15 Oct rows not captured (13 Oct at least)",
+  "scheduled": [
+   {
+    "due": "2026-10-26",
+    "description": "CORRINA FLAHER",
+    "amount": -150.0
+   },
+   {
+    "due": "~2026-10-29",
+    "description": "TESCO BANK",
+    "amount": -266.0,
+    "note": "'Previously' - amount from last cycle"
+   }
+  ],
+  "rowCount": 6,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-16",
+   "description": "MBNA LIMITED",
+   "amount": -49.66,
+   "currency": "GBP",
+   "balance": 1568.59,
+   "note": "= MBNA 2 Sep min, confirms the DD derived in mbna-2-stmt-20261021.json"
+  },
+  {
+   "date": "2026-10-16",
+   "description": "TALLIA FLAHER",
+   "amount": -200.0,
+   "currency": "GBP",
+   "balance": 1368.59
+  },
+  {
+   "date": "2026-10-19",
+   "description": "TALLIA FLAHER",
+   "amount": -100.0,
+   "currency": "GBP",
+   "balance": 1268.59
+  },
+  {
+   "date": "2026-10-20",
+   "description": "B/CARD PLAT VISA",
+   "amount": -118.45,
+   "currency": "GBP",
+   "balance": 1150.14
+  },
+  {
+   "date": "2026-10-20",
+   "description": "SANTANDERCARDS LTD",
+   "amount": -318.06,
+   "currency": "GBP",
+   "balance": 832.08
+  },
+  {
+   "date": "2026-10-26",
+   "description": "AQUA",
+   "amount": -24.3,
+   "currency": "GBP",
+   "balance": 807.78,
+   "note": "forward-dated DD shown on 25 Oct; = the Aqua 'pending credit' - a payment, not an interest refund"
+  }
+ ]
+}
