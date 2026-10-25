@@ -28939,6 +28939,28 @@
       "month": "Oct 26",
       "currency": "GBP",
       "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai"
+    },
+    {
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 807.78 at 10:41 25 Oct (after forward-dated Aqua DD 24.30 on 26 Oct). Leaving: Corrina Flaher 150 (26 Oct), Tesco Bank 266 (~29 Oct). Card DDs 20 Oct: Santander 318.06, Barclaycard 118.45; MBNA 49.66 on 16 Oct",
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:39-10:41 Dubai"
+    },
+    {
+      "card": "Aqua",
+      "balance": 0.0,
+      "available": 5250.0,
+      "limit": 5250.0,
+      "status": "CORRECTION to 25 Oct entry: the pending -24.30 'Credit' is the DD from BoS dated 26 Oct (not a refund). Clears the 22 Oct interest to 0",
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:39-10:41 Dubai"
     }
   ],
   "personalDebts": [
