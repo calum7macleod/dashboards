@@ -2,6 +2,21 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "^emirates\\.com$|emirates\\.com, dubai",
+   "category": "Family",
+   "sub": "UK trip / Christmas (Tal's flight home, 23 Oct)"
+  },
+  {
+   "rx": "sofitel abu dhabi|yas bay arena",
+   "category": "Entertainment",
+   "sub": "Whatever we want - trip away"
+  },
+  {
+   "rx": "p bh technical",
+   "category": "Unaccounted",
+   "sub": "p bh technical 757 (25 Oct) - Calum doesn't recognise it; check ADIB / dispute if it posts"
+  },
+  {
    "rx": "kumayl merchant",
    "category": "Business",
    "sub": "Merkz (Kumayl) - editor, Oct budget 10,000"
