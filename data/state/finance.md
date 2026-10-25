@@ -6,6 +6,11 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 25 OCT - WEEK 4 CLOSE (h0085-h0086)
+Cash: Mashreq 7,090 (Merkz 10,350 paid 24 Oct as 'Kumayl Merchant'; 2,700 to Tal 23 Oct - unbudgeted, ask) + pot 12,975. BoS 808 -> ~260 after Corrina/Virgin/Aqua; Tesco 266 on 4 Nov. Wise 353. Nationwide -1,774. ADIB card ~D30K owed (26,329 at 21 Oct + ~3.7K since).
+October card gross 27,045 (refunds 4,170). Over the card budget by ~7K: emirates.com 1,695 (23 Oct - FLIGHT, no-spend list), p bh technical 757 (25 Oct - unknown), Sofitel Abu Dhabi + Yas Bay Arena ~730 (24-25 Oct), food ~8,130 vs 6,000, One & Only 870 (whatever).
+Rules week 4: no cash advances KEPT; Nationwide KEPT; BoS funded KEPT; UK card spend - BA Amex only, allowed; Meta 35.07 (20 Oct) BROKEN-ish; no flights BROKEN (1,695); Deepstash REBILLED 27.13 on Wise despite cancellation - flag; subs otherwise silent.
+October lands ~D132K UAE vs 125K budget; UK on budget (~GBP14.6K vs 15K).
 ## 21 OCT - INCOME SCHEDULE CHANGED (PA h0081-h0083)
 30 Sep payslip D221,330.25 = TH-68 102,504 + A5-108 70,656 + P218 8,413 + J221 24,521 + K450 15,236 (White and White Real Estate LLC). Reconciled.
 PAYOUTS per Calum: 31 Oct ~D103.6K (K331, BL907, A2-209, P141) - NOT 250K. 30 Nov ~D172.5K (J444, 505 Noor, K217, J122 Costa Brava 39,357 at 70%) + 9,010 crypto fee cash. Oct+Nov = ~285K vs 250K assumed (+35K) but back-loaded.
