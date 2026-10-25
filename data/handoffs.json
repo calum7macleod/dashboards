@@ -677,7 +677,7 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "25 Oct snapshots -> 8 files in data/staging/statements/ + 6 ccBalances. ADIB CC app 19-25 Oct per-image (7 blocks, 53 rows incl overlaps, no balance shown; 10-18 Oct not captured). Mashreq 23-24 Oct: -2,700 (beneficiary cut off) and -10,350 Kumayl Merchant 'family support'; balance 7,090.52 + Tara pot 12,975 = 20,065.52; GAP: rows 10-22 Oct missing, +1,500 net unexplained. UK: Barclaycard DD 118.45 taken (9,303.98); Santander DD 318.06 taken (11,398.11); MBNA 2 stmt 21 Oct 1,830.49 min 47.54 due 16 Nov; Aqua stmt 22 Oct interest 24.30 with pending refund -> 0, DD 9 Nov; Amex Gold 460 (20 Oct SP SHOP), BA Amex 229.96 nothing due; both Amex 0 due. Still missing: ADIB balance/statement, Mashreq 10-22 Oct, BoS/Property/Wise since 9 Oct.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0086",
