@@ -4698,6 +4698,33 @@
    "currency": "GBP",
    "type": "transfer",
    "desc": "TALLIA FLAHER"
+  },
+  {
+   "id": "L03758",
+   "date": "2026-10-23",
+   "account": "Mashreq",
+   "amount": -2700.0,
+   "currency": "AED",
+   "type": "transfer",
+   "desc": "IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT"
+  },
+  {
+   "id": "L03767",
+   "date": "2026-10-24",
+   "account": "Mashreq",
+   "amount": -10350.0,
+   "currency": "AED",
+   "type": "transfer",
+   "desc": "IPP TRANSFER - KUMAYL MERCHANT /REF/ FAMILY SUPPORT"
+  },
+  {
+   "id": "L03770",
+   "date": "2026-10-26",
+   "account": "BoS",
+   "amount": -24.3,
+   "currency": "GBP",
+   "type": "card_repayment",
+   "desc": "AQUA"
   }
  ],
  "duplicates_dropped": [
