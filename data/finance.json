@@ -28868,6 +28868,77 @@
       "month": "Oct 26",
       "currency": "GBP",
       "source": "UK card app screenshots 11 Oct 26"
+    },
+    {
+      "card": "BA Amex",
+      "balance": 229.96,
+      "available": 570.0,
+      "limit": null,
+      "status": "Nothing due. Avios 7,653. 184.97 of the charges not visible on screen",
+      "dueAmount": 0.0,
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai"
+    },
+    {
+      "card": "Amex Gold (charge)",
+      "balance": 460.0,
+      "available": null,
+      "limit": null,
+      "status": "20 Oct SP SHOP 460. Nothing due yet (charge card, next stmt). MR 14,575",
+      "dueAmount": 0.0,
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai"
+    },
+    {
+      "card": "Barclaycard Plat",
+      "balance": 9303.98,
+      "available": 696.02,
+      "limit": 10000.0,
+      "status": "DD 118.45 taken 20 Oct. 93% used. No payment needed yet",
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai"
+    },
+    {
+      "card": "MBNA 2",
+      "balance": 1830.49,
+      "available": 669.51,
+      "limit": 2500.0,
+      "status": "21 Oct stmt 1,830.49 (interest 1.78). Min 47.54 due 16 Nov",
+      "dueDate": "2026-11-16",
+      "dueAmount": 47.54,
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai"
+    },
+    {
+      "card": "Santander Everyday",
+      "balance": 11398.11,
+      "available": 751.89,
+      "limit": 12150.0,
+      "status": "DD 318.06 taken 20 Oct. Next min not shown",
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai"
+    },
+    {
+      "card": "Aqua",
+      "balance": 24.3,
+      "available": 5225.7,
+      "limit": 5250.0,
+      "status": "22 Oct stmt interest 24.30, pending credit -24.30 -> 0. DD scheduled 9 Nov",
+      "dueDate": "2026-11-09",
+      "date": "2026-10-25",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "app screenshots Sun 25 Oct 26 10:32-10:39 Dubai"
     }
   ],
   "personalDebts": [
