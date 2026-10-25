@@ -1,0 +1,45 @@
+{
+ "meta": {
+  "account": "Property Account",
+  "accountType": "Nationwide FlexDirect",
+  "currency": "GBP",
+  "period": "1-21 Oct 26",
+  "source": "app screenshots Sun 25 Oct 26 10:39-10:41 Dubai",
+  "sign": "as printed",
+  "printed": {
+   "available25Oct1040": -1774.31,
+   "overdraftLimit": 2250.0,
+   "headroom": 475.69
+  },
+  "verified": "-1,732.96 - 41.35 = -1,774.31",
+  "redacted": "sort code and account number not stored",
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-25"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-01",
+   "description": "PRECISE MORTGAGES",
+   "amount": -287.8,
+   "currency": "GBP",
+   "balance": -2233.71,
+   "alreadyStaged": "property-account-20261001-20261005.json"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "Bank credit YM CLIENT ACCOUNT - YOUR-MOVE.CO.UK LI",
+   "amount": 500.75,
+   "currency": "GBP",
+   "balance": -1732.96,
+   "alreadyStaged": "property-account-20261001-20261005.json"
+  },
+  {
+   "date": "2026-10-21",
+   "description": "Arranged Overdraft Interest",
+   "amount": -41.35,
+   "currency": "GBP",
+   "balance": -1774.31
+  }
+ ]
+}
