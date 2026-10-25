@@ -6,6 +6,7 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## 25 OCT ASSIGNMENTS: emirates.com 1,695 = Tal's flight home -> UK trip/Christmas line (Dec GBP8,000 budget, 1,695 drawn early). p bh technical 757 = UNKNOWN to Calum - watch whether it posts; dispute if unrecognised. Tal 2,700 = ice bath repair 2,200 (Calum's misc) + 500 Tal. Sofitel/Yas = whatever. Nespresso = food. Kumayl Merchant = Merkz (paid).
 ## 25 OCT - WEEK 4 CLOSE (h0085-h0086)
 Cash: Mashreq 7,090 (Merkz 10,350 paid 24 Oct as 'Kumayl Merchant'; 2,700 to Tal 23 Oct - unbudgeted, ask) + pot 12,975. BoS 808 -> ~260 after Corrina/Virgin/Aqua; Tesco 266 on 4 Nov. Wise 353. Nationwide -1,774. ADIB card ~D30K owed (26,329 at 21 Oct + ~3.7K since).
 October card gross 27,045 (refunds 4,170). Over the card budget by ~7K: emirates.com 1,695 (23 Oct - FLIGHT, no-spend list), p bh technical 757 (25 Oct - unknown), Sofitel Abu Dhabi + Yas Bay Arena ~730 (24-25 Oct), food ~8,130 vs 6,000, One & Only 870 (whatever).
