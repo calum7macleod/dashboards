@@ -10,3 +10,11 @@ Library five now; sixth (How To Book) + prices/plan repost when Modon publishes.
 Repost: "What Is..." -> Hudayriyat Island's Third Hill Prices And Payment Plan | Villas from [X]m, mansions from [Y], [40/60], ~[Z]/sqft
 
 Rules: 4 and 5 on different weeks; speech hooks are options - Calum picks on scripting. Bricks: 735 on Nawayef E+W (Modon 19 Dec 2025); ~500 hand count; application-only on first hills (Calum); Golf Estates $3.5bn in days, 15% overseas; Nawayef mansions from ~$11m; no rail stop; handovers 2028-31.
+
+## Calum's locked hooks (26 Oct)
+1. What is Hudayriyat Island's Third Hill in Abu Dhabi | Twice as big as the first 2 sold-out hills combined, with less villas. Here's everything you need to know  [flag: size claim unverified - Calum's map measurement]
+2. Why Hudayriyat Island's Third Hill in Abu Dhabi Can Never Be Replicated | Abu Dhabi has 214 islands, this is the only one that will have hills with villas. Here's how it's impossible to replicate
+3. Is Hudayriyat Island's Third Hill Abu Dhabi's Most Exclusive Launch of 2026 | You had to apply to buy on the last 2 hills. Here's what makes this one more exclusive
+4. Why Not To Buy Hudayriyat Island's Third Hill | This will sell out but there are downsides. Here's 5 reasons to look somewhere else
+5. Is Hudayriyat Island's Third Hill in Abu Dhabi a Bad Investment | Hudayriyat owners are already profiting at resale but will it last. Here's the truth  [flag: 'profiting' = portal asking prices above launch; no registered resale yet]
+6. How To Book - at launch
