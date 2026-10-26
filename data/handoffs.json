@@ -694,5 +694,13 @@
   "to": "Life Coach",
   "item": "Whoop Trend View set (week 20-26 Oct + month 27 Sep-26 Oct, 18 screens, every metric per day) extracted to private:data/staging/2026-10-26-whoop-trends.json.",
   "status": "open"
+ },
+ {
+  "id": "h0088",
+  "date": "2026-10-26",
+  "from": "Uploader",
+  "to": "Life Coach",
+  "item": "Three more health files in private:data/staging/ dated 2026-10-26: -whoop-6m.json (6-month WHOOP Age, Pace of Aging, stress split), -scale.json (latest body-composition reading), -myfitnesspal-week.json (19-25 Oct calories, nutrients, macros, top foods).",
+  "status": "open"
  }
 ]
