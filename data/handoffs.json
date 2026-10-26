@@ -686,5 +686,13 @@
   "to": "Finance",
   "item": "25 Oct part 2 -> 4 files. Mashreq 9-24 Oct CLOSES the gap: 12 Oct +1,500 from Tallia, 23 Oct -2,700 to Tallia (family support) - ties to 7,090.52 exactly. BoS 16-26 Oct: Tallia 200 (16th) + 100 (19th), MBNA 49.66, Santander 318.06, Barclaycard 118.45, Aqua 24.30 forward-dated 26 Oct; 807.78 at 25 Oct; Corrina 150 (26th) + Tesco 266 (~29th) leaving. GAP: BoS 9-15 Oct rows not captured, +338.01 net. Wise 352.99: Deepstash 27.13, Apple 8.99, Canva 9.80, Fmd 8.73 pending, Canva 15 Oct GBP not shown. Property Account: 21 Oct OD interest 41.35 -> -1,774.31. CORRECTION: Aqua pending -24.30 is the BoS DD, not an interest refund (ccBalance appended). Calum: all other cards unchanged.",
   "status": "done"
+ },
+ {
+  "id": "h0087",
+  "date": "2026-10-26",
+  "from": "Uploader",
+  "to": "Life Coach",
+  "item": "Whoop Trend View set (week 20-26 Oct + month 27 Sep-26 Oct, 18 screens, every metric per day) extracted to private:data/staging/2026-10-26-whoop-trends.json.",
+  "status": "open"
  }
 ]
