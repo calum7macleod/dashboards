@@ -305,3 +305,4 @@
 {"date": "2026-10-28", "agent": "Finance", "did": "HSBC Business account removed from the ledger per Calum - not relevant", "wrote": ["data/finance/ledger/"]}
 {"date": "2026-10-28", "agent": "PA", "did": "YouTube channel @UAECalum moved to a Brand Account (28 Oct); owner invites to three personal addresses; task set for 5 Nov primary-owner transfer + W&Co removal.", "wrote": []}
 {"date": "2026-10-28", "agent": "content", "did": "First Metricool pull: 140 IG reels + 23 TikToks analysed; scoreboard written to state; field IDs saved for repeat pulls", "wrote": ["data/state/content.md"]}
+{"date": "2026-10-28", "agent": "Finance", "did": "29 Oct payslip 122,800 reconciled (5 deals incl BL907), paid flags set; final payday plan recorded with 20K hold and UK on overdraft", "wrote": ["data/deals.json", "data/state/finance.md"]}
