@@ -28997,6 +28997,56 @@
       "date": "2026-10-28",
       "month": "Oct 26",
       "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai"
+    },
+    {
+      "card": "Santander Everyday",
+      "balance": 11619.12,
+      "available": 530.88,
+      "limit": 12150.0,
+      "status": "27 Oct stmt 11,619.12 (BT interest 221.01). Min 334.99 due 21 Nov, DD set",
+      "dueDate": "2026-11-21",
+      "dueAmount": 334.99,
+      "date": "2026-10-28",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai"
+    },
+    {
+      "card": "M&S",
+      "balance": 7331.73,
+      "available": null,
+      "limit": 8000.0,
+      "status": "27 Oct stmt 7,331.73 (interest 34.93). Min 183.29 due 21 Nov",
+      "dueDate": "2026-11-21",
+      "dueAmount": 183.29,
+      "date": "2026-10-28",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai"
+    },
+    {
+      "card": "Barclaycard Plat",
+      "balance": 9328.97,
+      "available": null,
+      "limit": 10000.0,
+      "status": "27 Oct stmt 9,328.97 (cash interest 24.99). Min 118.02 due 23 Nov",
+      "dueDate": "2026-11-23",
+      "dueAmount": 118.02,
+      "date": "2026-10-28",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai"
+    },
+    {
+      "card": "Aqua",
+      "balance": 0.0,
+      "available": 5250.0,
+      "limit": 5250.0,
+      "status": "0.00 confirmed 28 Oct; 24.30 payment posted 25 Oct",
+      "date": "2026-10-28",
+      "month": "Oct 26",
+      "currency": "GBP",
+      "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai"
     }
   ],
   "personalDebts": [
