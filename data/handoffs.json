@@ -710,5 +710,13 @@
   "to": "Finance",
   "item": "28 Oct -> 6 files + 3 ccBalances. NEW ACCOUNT: HSBC Business C/A (UK) 149,669.77 GBP at 28 Oct, in 572,640 / out 435,366 since 1 May - not in finance.json at all; staged hsbc-business-20261023-20261026.json (5 rows 23 Oct; two identical TB Construction 2,333.28 BPs - possible double pay). Virgin Money MISSED the 25 Oct 375.08 - Calum paid it manually from BoS 28 Oct; expect late fee. BoS 282.70 with 594.25 leaving by ~3 Nov -> goes c.-311 overdrawn unless topped up. ADIB outstanding c.38,483 (avail 31,017.20; app 'total amount due 450.73' unclear); 24-27 Oct rows per image. Mashreq 6,910.52 (-180 Mohammed Ahmed 26 Oct). Wise: Vantage UK refunds +975 +30 USD on 26 Oct. Calum: nothing else changed.",
   "status": "open"
+ },
+ {
+  "id": "h0090",
+  "date": "2026-10-28",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "28 Oct part 2: three 27 Oct statements -> santander-everyday-20261027, ms-20261027, barclaycard-plat-20261027 (5 new rows, all tie) + 4 ccBalances. Santander 11,619.12 min 334.99 due 21 Nov; M&S 7,331.73 min 183.29 due 21 Nov; Barclaycard 9,328.97 min 118.02 due 23 Nov; Aqua 0.00. Nov ladder: 2 Nov MBNA1 270.74 / 5 Nov HSBC 34.71 / 16 Nov MBNA2 47.54 / 21 Nov Santander 334.99 + M&S 183.29 / 23 Nov Barclaycard 118.02 / ~25 Nov Virgin. Interest this cycle on the three: 280.93.",
+  "status": "open"
  }
 ]
