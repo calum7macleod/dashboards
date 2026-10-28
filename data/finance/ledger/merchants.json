@@ -2,6 +2,26 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "eppco enoc",
+   "category": "Life",
+   "sub": "Car repair (ENOC) - Calum misc"
+  },
+  {
+   "rx": "shiny surface",
+   "category": "Life",
+   "sub": "Home repair (washing machine) - misc"
+  },
+  {
+   "rx": "p bh technical",
+   "category": "Life",
+   "sub": "AC repair - misc"
+  },
+  {
+   "rx": "^virgin mobile$|virgin mobile uae",
+   "category": "Life",
+   "sub": "Phone"
+  },
+  {
    "rx": "^emirates\\.com$|emirates\\.com, dubai",
    "category": "Family",
    "sub": "UK trip / Christmas (Tal's flight home, 23 Oct)"
@@ -12,11 +32,6 @@
    "sub": "Whatever we want - trip away"
   },
   {
-   "rx": "p bh technical",
-   "category": "Unaccounted",
-   "sub": "p bh technical 757 (25 Oct) - Calum doesn't recognise it; check ADIB / dispute if it posts"
-  },
-  {
    "rx": "kumayl merchant",
    "category": "Business",
    "sub": "Merkz (Kumayl) - editor, Oct budget 10,000"
@@ -25,11 +40,6 @@
    "rx": "yas bay arena|sofitel abu dhabi",
    "category": "Entertainment",
    "sub": "Eating out / hotels"
-  },
-  {
-   "rx": "p bh technical",
-   "category": "Unaccounted",
-   "sub": "p bh technical 757 (25 Oct) - what?"
   },
   {
    "rx": "nespresso",
