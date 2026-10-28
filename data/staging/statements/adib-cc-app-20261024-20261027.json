@@ -1,0 +1,262 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "card": "ADIB Emirates VC Sig (*6789 on card face; *789 in SMS)",
+  "currency": "AED",
+  "source": "ADIB app screenshots 28 Oct 26 07:43 Dubai, 4 images",
+  "method": "per Finance h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "dates": "day labels derived from screenshot date Wed 28 Oct 26",
+  "derived": {
+   "creditLimit": 69500.0,
+   "outstanding28Oct": 38482.8,
+   "basis": "69,500 - available cover limit 31,017.20"
+  },
+  "note": "25 Oct rows now posted and much fuller than the 25 Oct capture showed (that view had only Sofitel 56 + p bh technical 757.05 pending for the day). 'Total amount due 450.73' meaning unclear - last statement balance hidden; Finance to read against the statement",
+  "rowCount": 26,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "images": [
+  {
+   "image": "IMG_4582",
+   "type": "card summary - no rows",
+   "printed": {
+    "availableCoverLimit": 31017.2,
+    "totalAmountDue": 450.73,
+    "lastStatementBalance": "hidden behind 'What's changed?' button",
+    "status": "Active"
+   }
+  },
+  {
+   "image": "IMG_4580",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-27",
+     "description": "www.instashop.com",
+     "amount": -104.02,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-27",
+     "description": "THE COFFEE CLUB",
+     "amount": -21.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Yesterday",
+     "date": "2026-10-27",
+     "description": "EMIRATES LEIS MARINA P",
+     "amount": -20.0,
+     "currency": "AED",
+     "status": "Pending"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Monday",
+     "date": "2026-10-26",
+     "description": "KINGS COLLEGE HOSPITAL",
+     "amount": -50.0,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Monday",
+     "date": "2026-10-26",
+     "description": "www.instashop.com",
+     "amount": -42.45,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Monday",
+     "date": "2026-10-26",
+     "description": "Amazon Grocery",
+     "amount": -60.72,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Monday",
+     "date": "2026-10-26",
+     "description": "www.instashop.com",
+     "amount": -40.32,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "TRIO CAFE (cut off at bottom)",
+     "amount": -59.0,
+     "currency": "AED",
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "IMG_4581",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Monday",
+     "date": "2026-10-26",
+     "description": "www.instashop.com (cut off at top)",
+     "amount": -40.32,
+     "currency": "AED",
+     "partial": true
+    },
+    {
+     "position": 2,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "TRIO CAFE",
+     "amount": -59.0,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "SPINNEYS NSHAMA 2",
+     "amount": -341.6,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "SHINY SURFACE CLEANING",
+     "amount": -550.0,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "EPPCO ENOC",
+     "amount": -2053.0,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "SOFITEL ABU DHABI FB",
+     "amount": -56.0,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "GLB FOOD-MUSEUM CAFE-1",
+     "amount": -328.3,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "LOUVRE AD CULTURE DIST",
+     "amount": -140.0,
+     "currency": "AED"
+    },
+    {
+     "position": 9,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "SUNBERRY VEGETABLE (faded behind button)",
+     "amount": -347.65,
+     "currency": "AED",
+     "partial": true
+    }
+   ]
+  },
+  {
+   "image": "IMG_4579",
+   "rows": [
+    {
+     "position": 1,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "GLB FOOD-MUSEUM CAFE-1",
+     "amount": -328.3,
+     "currency": "AED"
+    },
+    {
+     "position": 2,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "LOUVRE AD CULTURE DIST",
+     "amount": -140.0,
+     "currency": "AED"
+    },
+    {
+     "position": 3,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "SUNBERRY VEGETABLE",
+     "amount": -347.65,
+     "currency": "AED"
+    },
+    {
+     "position": 4,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "ADNOC",
+     "amount": -165.12,
+     "currency": "AED"
+    },
+    {
+     "position": 5,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "InstaShop",
+     "amount": -72.75,
+     "currency": "AED"
+    },
+    {
+     "position": 6,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "p bh technical",
+     "amount": -757.05,
+     "currency": "AED"
+    },
+    {
+     "position": 7,
+     "dayLabel": "Sunday",
+     "date": "2026-10-25",
+     "description": "Zofeur",
+     "amount": -49.5,
+     "currency": "AED"
+    },
+    {
+     "position": 8,
+     "dayLabel": "Saturday",
+     "date": "2026-10-24",
+     "description": "Virgin Mobile",
+     "amount": -315.0,
+     "currency": "AED"
+    },
+    {
+     "position": 9,
+     "dayLabel": "Saturday",
+     "date": "2026-10-24",
+     "description": "INHERITED CAFE (faded behind button)",
+     "amount": -25.0,
+     "currency": "AED",
+     "partial": true
+    }
+   ]
+  }
+ ]
+}
