@@ -709,7 +709,7 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "28 Oct -> 6 files + 3 ccBalances. NEW ACCOUNT: HSBC Business C/A (UK) 149,669.77 GBP at 28 Oct, in 572,640 / out 435,366 since 1 May - not in finance.json at all; staged hsbc-business-20261023-20261026.json (5 rows 23 Oct; two identical TB Construction 2,333.28 BPs - possible double pay). Virgin Money MISSED the 25 Oct 375.08 - Calum paid it manually from BoS 28 Oct; expect late fee. BoS 282.70 with 594.25 leaving by ~3 Nov -> goes c.-311 overdrawn unless topped up. ADIB outstanding c.38,483 (avail 31,017.20; app 'total amount due 450.73' unclear); 24-27 Oct rows per image. Mashreq 6,910.52 (-180 Mohammed Ahmed 26 Oct). Wise: Vantage UK refunds +975 +30 USD on 26 Oct. Calum: nothing else changed.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0090",
