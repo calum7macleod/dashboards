@@ -1,0 +1,59 @@
+{
+ "meta": {
+  "account": "HSBC Business C/A",
+  "accountType": "HSBC UK business current account - NEW to the system; presumed the UK lettings/Airbnb business account",
+  "currency": "GBP",
+  "period": "23-26 Oct 26 (23 Oct rows visible; 26 Oct rows collapsed, day-end balance only)",
+  "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai",
+  "sign": "as printed: BP/DD negative, CR positive",
+  "printed": {
+   "balance28Oct0740": 149669.77,
+   "dayEnd26Oct": 153017.68,
+   "dayEnd23Oct": 140975.75,
+   "inSince1May2026": 572640.01,
+   "outSince1May2026": 435366.46,
+   "activityNote": "since 01 May 2026, up to 500 transactions"
+  },
+  "gaps": "26 Oct rows not shown (+12,041.93 day net); 27-28 Oct net -3,347.91 not shown",
+  "flag": "two identical TB Construction BP rows on 23 Oct (2,333.28 each) - as printed, possible double payment",
+  "redacted": "sort code and account number not stored",
+  "rowCount": 5,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-23",
+   "description": "TB Construction To 1... (BP)",
+   "amount": -2333.28,
+   "currency": "GBP",
+   "type": "bill payment"
+  },
+  {
+   "date": "2026-10-23",
+   "description": "TB Construction To 1... (BP)",
+   "amount": -2333.28,
+   "currency": "GBP",
+   "type": "bill payment"
+  },
+  {
+   "date": "2026-10-23",
+   "description": "Stripe Payments UKST... (CR)",
+   "amount": 137.58,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-23",
+   "description": "TELECOMS WORLD (DD)",
+   "amount": -7.51,
+   "currency": "GBP",
+   "type": "direct debit"
+  },
+  {
+   "date": "2026-10-23",
+   "description": "CITIBANK IRE FIN S (CR)",
+   "amount": 305.24,
+   "currency": "GBP"
+  }
+ ]
+}
