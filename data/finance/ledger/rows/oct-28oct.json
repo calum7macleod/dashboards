@@ -612,5 +612,24 @@
 "flags": [],
 "source": "santandereveryday-app-28oct",
 "hash": "b4dd71560b8b"
+},
+{
+"id": null,
+"date": "2026-10-22",
+"month": "Oct 26",
+"dow": "Thu",
+"account": "ADIB CC",
+"currency": "AED",
+"amount": -1000.0,
+"amount_aed": null,
+"type": null,
+"category": null,
+"sub": null,
+"description": "EPPCO ENOC - car repair (Calum: not in screenshots)",
+"merchant": "eppco enoc car repair calum not in scree",
+"pair_id": null,
+"flags": [],
+"source": "adib-cc-calum-28oct",
+"hash": "8333a99a4875"
 }
 ]
