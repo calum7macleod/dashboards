@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "account": "Santander Everyday",
+  "currency": "GBP",
+  "period": "20-27 Oct 26 (statement 27 Oct)",
+  "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai",
+  "sign": "as printed: charges positive, payments carry type=payment",
+  "printed": {
+   "balance": 11619.12,
+   "balanceOnLastStatement": 11619.12,
+   "available": 530.88,
+   "limit": 12150.0,
+   "pending": 0.0,
+   "minPayment": 334.99,
+   "minDue": "2026-11-21",
+   "directDebit": "Yes"
+  },
+  "verified": "11,398.11 + 221.01 = 11,619.12",
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-20",
+   "description": "DD PAYMENT RECEIVED D/DEBIT",
+   "amount": -318.06,
+   "currency": "GBP",
+   "type": "payment",
+   "alreadyStaged": "santander-everyday-20261020.json"
+  },
+  {
+   "date": "2026-10-27",
+   "description": "TRANSFER BALANCE INT CHARGE",
+   "amount": 221.01,
+   "currency": "GBP"
+  }
+ ]
+}
