@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "GBP",
+  "period": "26-28 Oct 26",
+  "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai",
+  "sign": "spends negative, refunds/additions positive",
+  "printed": {
+   "balance": "not shown"
+  },
+  "note": "Vantage UK refunds are in USD; GBP equivalent not shown (likely landed in the USD balance)",
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-26",
+   "description": "Vantage UK - Refunded",
+   "amount": 30.0,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-10-26",
+   "description": "Vantage UK - Refunded",
+   "amount": 975.0,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-10-28",
+   "description": "Apple",
+   "amount": -11.99,
+   "currency": "GBP",
+   "status": "pending"
+  }
+ ]
+}
