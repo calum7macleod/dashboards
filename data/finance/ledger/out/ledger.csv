@@ -3756,50 +3756,45 @@ L03754,2026-10-23,Oct 26,Fri,ADIB CC,AED,-0.94,-0.94,spend,Life,Car / fuel / tol
 L03755,2026-10-23,Oct 26,Fri,ADIB CC,AED,-89.75,-89.75,spend,Unaccounted,,EMARAT - HASSA,emarat hassa,,,adib-cc-app-25oct,d6984de5e310
 L03756,2026-10-23,Oct 26,Fri,ADIB CC,AED,-21.31,-21.31,debt_cost,Fees,Card fees (late / cash advance / FX),International Transaction Fee,international transaction fee,,,adib-cc-app-25oct,73d1aca497ee
 L03757,2026-10-23,Oct 26,Fri,ADIB CC,AED,-1.07,-1.07,debt_cost,Fees,Card fees (late / cash advance / FX),International Trxn Fee VAT Charges,international trxn fee vat charges,,,adib-cc-app-25oct,4ddd61781cc4
-L03758,2026-10-23,Oct 26,Fri,HSBC Business,GBP,-2333.28,-11479.74,spend,Life,Car / fuel / tolls,TB Construction To 1... (BP),tb construction to 1 bp,,,hsbc-business-28oct,927fd8ad4f9b
-L03759,2026-10-23,Oct 26,Fri,HSBC Business,GBP,-2333.28,-11479.74,spend,Life,Car / fuel / tolls,TB Construction To 1... (BP),tb construction to 1 bp,,,hsbc-business-28oct,927fd8ad4f9b
-L03760,2026-10-23,Oct 26,Fri,HSBC Business,GBP,137.58,676.89,refund,Unaccounted,,Stripe Payments UKST... (CR),stripe payments ukst cr,,,hsbc-business-28oct,4c9adfffbe9d
-L03761,2026-10-23,Oct 26,Fri,HSBC Business,GBP,-7.51,-36.95,spend,Unaccounted,,TELECOMS WORLD (DD),telecoms world dd,,,hsbc-business-28oct,9079c2108ba1
-L03762,2026-10-23,Oct 26,Fri,HSBC Business,GBP,305.24,1501.78,refund,Unaccounted,,CITIBANK IRE FIN S (CR),citibank ire fin s cr,,,hsbc-business-28oct,9666200827e4
-L03763,2026-10-23,Oct 26,Fri,Mashreq,AED,-2700.0,-2700.0,transfer,Family,Tal (one pot - transfer),IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-25oct,8e06fbd7e9e2
-L03764,2026-10-24,Oct 26,Sat,ADIB CC,AED,-315.0,-315.0,spend,Life,Phone,Virgin Mobile,virgin mobile,,,adib-cc-app-28oct,1f2710687463
-L03765,2026-10-24,Oct 26,Sat,ADIB CC,AED,-25.0,-25.0,spend,Deliveries,Eating out / coffee,INHERITED CAFE,inherited cafe,,,adib-cc-app-28oct,c28a905e99f8
-L03766,2026-10-24,Oct 26,Sat,ADIB CC,AED,-10.0,-10.0,spend,Entertainment,Whatever we want - trip away,YAS BAY ARENA BARIN HO,yas bay arena barin ho,,,adib-cc-app-25oct,c68b8686417e
-L03767,2026-10-24,Oct 26,Sat,ADIB CC,AED,-35.0,-35.0,spend,Entertainment,Whatever we want - trip away,YAS BAY ARENA CATERING,yas bay arena catering,,,adib-cc-app-25oct,1c5769c01aba
-L03768,2026-10-24,Oct 26,Sat,ADIB CC,AED,-32.0,-32.0,spend,Entertainment,Whatever we want - trip away,YAS BAY ARENA BARIN HO,yas bay arena barin ho,,,adib-cc-app-25oct,b3e00209c827
-L03769,2026-10-24,Oct 26,Sat,ADIB CC,AED,-28.0,-28.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,f404b5e27a16
-L03770,2026-10-24,Oct 26,Sat,ADIB CC,AED,-390.0,-390.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,ee2f5c3f3371
-L03771,2026-10-24,Oct 26,Sat,ADIB CC,AED,-70.0,-70.0,spend,Unaccounted,,(cut off at screen bottom),cut off at screen bottom,,,adib-cc-app-25oct,a0f282f0b77b
-L03772,2026-10-24,Oct 26,Sat,ADIB CC,AED,-70.0,-70.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,1413d7c83f6b
-L03773,2026-10-24,Oct 26,Sat,ADIB CC,AED,-54.0,-54.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,429ea858a88d
-L03774,2026-10-24,Oct 26,Sat,Mashreq,AED,-10350.0,-10350.0,transfer,Business,"Merkz (Kumayl) - editor, Oct budget 10,000",IPP TRANSFER - KUMAYL MERCHANT /REF/ FAMILY SUPPORT,ipp transfer kumayl merchant ref family ,,one_legged,mashreq-app-25oct,d51f2106a8c6
-L03775,2026-10-25,Oct 26,Sun,ADIB CC,AED,-59.0,-59.0,spend,Deliveries,Eating out / coffee,TRIO CAFE,trio cafe,,,adib-cc-app-28oct,afa7ada0213d
-L03776,2026-10-25,Oct 26,Sun,ADIB CC,AED,-341.6,-341.6,spend,Base Food,Groceries / meal prep,SPINNEYS NSHAMA 2,spinneys nshama 2,,,adib-cc-app-28oct,fc988f70e809
-L03777,2026-10-25,Oct 26,Sun,ADIB CC,AED,-550.0,-550.0,spend,Unaccounted,,SHINY SURFACE CLEANING,shiny surface cleaning,,,adib-cc-app-28oct,82da9ea2ec9c
-L03778,2026-10-25,Oct 26,Sun,ADIB CC,AED,-2053.0,-2053.0,spend,Life,Car / fuel / tolls / taxis,EPPCO ENOC,eppco enoc,,,adib-cc-app-28oct,893419780cff
-L03779,2026-10-25,Oct 26,Sun,ADIB CC,AED,-56.0,-56.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-28oct,934d6e3c3d1f
-L03780,2026-10-25,Oct 26,Sun,ADIB CC,AED,-328.3,-328.3,spend,Deliveries,Eating out / coffee,GLB FOOD-MUSEUM CAFE-1,glb food museum cafe 1,,,adib-cc-app-28oct,5192c45809d6
-L03781,2026-10-25,Oct 26,Sun,ADIB CC,AED,-140.0,-140.0,spend,Unaccounted,,LOUVRE AD CULTURE DIST,louvre ad culture dist,,,adib-cc-app-28oct,b96efa8542ec
-L03782,2026-10-25,Oct 26,Sun,ADIB CC,AED,-347.65,-347.65,spend,Base Food,Groceries / meal prep,SUNBERRY VEGETABLE,sunberry vegetable,,,adib-cc-app-28oct,b730830b03b6
-L03783,2026-10-25,Oct 26,Sun,ADIB CC,AED,-165.12,-165.12,spend,Life,Car / fuel / tolls / taxis,ADNOC,adnoc,,,adib-cc-app-28oct,90bca7643196
-L03784,2026-10-25,Oct 26,Sun,ADIB CC,AED,-72.75,-72.75,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-28oct,efee5555f9bf
-L03785,2026-10-25,Oct 26,Sun,ADIB CC,AED,-757.05,-757.05,spend,Unaccounted,p bh technical 757 (25 Oct) - Calum doesn't recognise it; check ADIB / dispute if it posts,p bh technical,p bh technical,,,adib-cc-app-28oct,fac97ef7c374
-L03786,2026-10-25,Oct 26,Sun,ADIB CC,AED,-49.5,-49.5,spend,Life,Car / fuel / tolls / taxis,Zofeur,zofeur,,,adib-cc-app-28oct,f7095a54056a
-L03787,2026-10-26,Oct 26,Mon,ADIB CC,AED,-50.0,-50.0,spend,Health,Training / medical,KINGS COLLEGE HOSPITAL,kings college hospital,,,adib-cc-app-28oct,5deafb6a6d9d
-L03788,2026-10-26,Oct 26,Mon,ADIB CC,AED,-42.45,-42.45,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-28oct,8d4173055122
-L03789,2026-10-26,Oct 26,Mon,ADIB CC,AED,-60.72,-60.72,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-28oct,17f3c3a0a90c
-L03790,2026-10-26,Oct 26,Mon,ADIB CC,AED,-40.32,-40.32,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-28oct,eb72e6ee0fb1
-L03791,2026-10-26,Oct 26,Mon,BoS,GBP,-24.3,-119.56,card_repayment,Other,,AQUA,aqua,,one_legged,bos-app-28oct,06e7742c7716
-L03792,2026-10-26,Oct 26,Mon,BoS,GBP,-150.0,-738.0,debt_principal,Loan,"Avantglamp loan repayment (Corrina, GBP150/mo)",CORRINA FLAHER,corrina flaher,,,bos-app-28oct,5f4760aa3152
-L03793,2026-10-26,Oct 26,Mon,Mashreq,AED,-180.0,-180.0,transfer,Life,Helpers / home services,IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY S,ipp transfer mohammed ahmed ref family s,,one_legged,mashreq-app-28oct,ba455133425c
-L03794,2026-10-26,Oct 26,Mon,Wise USD,USD,30.0,110.17,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,Vantage UK - Refunded,vantage uk - refunded,,,wise-app-28oct,145f9487a034
-L03795,2026-10-26,Oct 26,Mon,Wise USD,USD,975.0,3580.69,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,Vantage UK - Refunded,vantage uk - refunded,,,wise-app-28oct,f02d25936ddf
-L03796,2026-10-27,Oct 26,Tue,ADIB CC,AED,-104.02,-104.02,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-28oct,8a2a21851225
-L03797,2026-10-27,Oct 26,Tue,ADIB CC,AED,-21.0,-21.0,spend,Deliveries,Eating out / coffee,THE COFFEE CLUB,the coffee club,,,adib-cc-app-28oct,fb0bd898323e
-L03798,2026-10-27,Oct 26,Tue,ADIB CC,AED,-20.0,-20.0,spend,Entertainment,Travel,EMIRATES LEIS MARINA P,emirates leis marina p,,,adib-cc-app-28oct,fb4c673a1cbd
-L03799,2026-10-27,Oct 26,Tue,Barclaycard Plat,GBP,-24.99,-122.95,debt_cost,Fees,Card interest,CASH INTEREST CHARGE,cash interest charge,,,barclaycardplat-app-28oct,0e40b275062f
-L03800,2026-10-27,Oct 26,Tue,M&S,GBP,-28.0,-137.76,debt_cost,Fees,Card interest,INTEREST,interest,,,m&s-app-28oct,f3d4d0cc6bb9
-L03801,2026-10-27,Oct 26,Tue,M&S,GBP,-6.93,-34.1,debt_cost,Fees,Card interest,INTEREST,interest,,,m&s-app-28oct,37b260c45055
-L03802,2026-10-27,Oct 26,Tue,Santander Everyday,GBP,-221.01,-1087.37,debt_cost,Fees,Card interest,TRANSFER BALANCE INT CHARGE,transfer balance int charge,,,santandereveryday-app-28oct,b4dd71560b8b
-L03803,2026-10-28,Oct 26,Wed,BoS,GBP,-375.08,-1845.39,card_repayment,Other,,VIRGIN MONEY,virgin money,,one_legged,bos-app-28oct,a11ea9775e4d
-L03804,2026-10-28,Oct 26,Wed,Wise GBP,GBP,-11.99,-58.99,spend,Unaccounted,,Apple,apple,,,wise-app-28oct,9175d8e7bd82
+L03758,2026-10-23,Oct 26,Fri,Mashreq,AED,-2700.0,-2700.0,transfer,Family,Tal (one pot - transfer),IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-25oct,8e06fbd7e9e2
+L03759,2026-10-24,Oct 26,Sat,ADIB CC,AED,-315.0,-315.0,spend,Life,Phone,Virgin Mobile,virgin mobile,,,adib-cc-app-28oct,1f2710687463
+L03760,2026-10-24,Oct 26,Sat,ADIB CC,AED,-25.0,-25.0,spend,Deliveries,Eating out / coffee,INHERITED CAFE,inherited cafe,,,adib-cc-app-28oct,c28a905e99f8
+L03761,2026-10-24,Oct 26,Sat,ADIB CC,AED,-10.0,-10.0,spend,Entertainment,Whatever we want - trip away,YAS BAY ARENA BARIN HO,yas bay arena barin ho,,,adib-cc-app-25oct,c68b8686417e
+L03762,2026-10-24,Oct 26,Sat,ADIB CC,AED,-35.0,-35.0,spend,Entertainment,Whatever we want - trip away,YAS BAY ARENA CATERING,yas bay arena catering,,,adib-cc-app-25oct,1c5769c01aba
+L03763,2026-10-24,Oct 26,Sat,ADIB CC,AED,-32.0,-32.0,spend,Entertainment,Whatever we want - trip away,YAS BAY ARENA BARIN HO,yas bay arena barin ho,,,adib-cc-app-25oct,b3e00209c827
+L03764,2026-10-24,Oct 26,Sat,ADIB CC,AED,-28.0,-28.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,f404b5e27a16
+L03765,2026-10-24,Oct 26,Sat,ADIB CC,AED,-390.0,-390.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,ee2f5c3f3371
+L03766,2026-10-24,Oct 26,Sat,ADIB CC,AED,-70.0,-70.0,spend,Unaccounted,,(cut off at screen bottom),cut off at screen bottom,,,adib-cc-app-25oct,a0f282f0b77b
+L03767,2026-10-24,Oct 26,Sat,ADIB CC,AED,-70.0,-70.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,1413d7c83f6b
+L03768,2026-10-24,Oct 26,Sat,ADIB CC,AED,-54.0,-54.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-25oct,429ea858a88d
+L03769,2026-10-24,Oct 26,Sat,Mashreq,AED,-10350.0,-10350.0,transfer,Business,"Merkz (Kumayl) - editor, Oct budget 10,000",IPP TRANSFER - KUMAYL MERCHANT /REF/ FAMILY SUPPORT,ipp transfer kumayl merchant ref family ,,one_legged,mashreq-app-25oct,d51f2106a8c6
+L03770,2026-10-25,Oct 26,Sun,ADIB CC,AED,-59.0,-59.0,spend,Deliveries,Eating out / coffee,TRIO CAFE,trio cafe,,,adib-cc-app-28oct,afa7ada0213d
+L03771,2026-10-25,Oct 26,Sun,ADIB CC,AED,-341.6,-341.6,spend,Base Food,Groceries / meal prep,SPINNEYS NSHAMA 2,spinneys nshama 2,,,adib-cc-app-28oct,fc988f70e809
+L03772,2026-10-25,Oct 26,Sun,ADIB CC,AED,-550.0,-550.0,spend,Unaccounted,,SHINY SURFACE CLEANING,shiny surface cleaning,,,adib-cc-app-28oct,82da9ea2ec9c
+L03773,2026-10-25,Oct 26,Sun,ADIB CC,AED,-2053.0,-2053.0,spend,Life,Car / fuel / tolls / taxis,EPPCO ENOC,eppco enoc,,,adib-cc-app-28oct,893419780cff
+L03774,2026-10-25,Oct 26,Sun,ADIB CC,AED,-56.0,-56.0,spend,Entertainment,Whatever we want - trip away,SOFITEL ABU DHABI FB,sofitel abu dhabi fb,,,adib-cc-app-28oct,934d6e3c3d1f
+L03775,2026-10-25,Oct 26,Sun,ADIB CC,AED,-328.3,-328.3,spend,Deliveries,Eating out / coffee,GLB FOOD-MUSEUM CAFE-1,glb food museum cafe 1,,,adib-cc-app-28oct,5192c45809d6
+L03776,2026-10-25,Oct 26,Sun,ADIB CC,AED,-140.0,-140.0,spend,Unaccounted,,LOUVRE AD CULTURE DIST,louvre ad culture dist,,,adib-cc-app-28oct,b96efa8542ec
+L03777,2026-10-25,Oct 26,Sun,ADIB CC,AED,-347.65,-347.65,spend,Base Food,Groceries / meal prep,SUNBERRY VEGETABLE,sunberry vegetable,,,adib-cc-app-28oct,b730830b03b6
+L03778,2026-10-25,Oct 26,Sun,ADIB CC,AED,-165.12,-165.12,spend,Life,Car / fuel / tolls / taxis,ADNOC,adnoc,,,adib-cc-app-28oct,90bca7643196
+L03779,2026-10-25,Oct 26,Sun,ADIB CC,AED,-72.75,-72.75,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-28oct,efee5555f9bf
+L03780,2026-10-25,Oct 26,Sun,ADIB CC,AED,-757.05,-757.05,spend,Unaccounted,p bh technical 757 (25 Oct) - Calum doesn't recognise it; check ADIB / dispute if it posts,p bh technical,p bh technical,,,adib-cc-app-28oct,fac97ef7c374
+L03781,2026-10-25,Oct 26,Sun,ADIB CC,AED,-49.5,-49.5,spend,Life,Car / fuel / tolls / taxis,Zofeur,zofeur,,,adib-cc-app-28oct,f7095a54056a
+L03782,2026-10-26,Oct 26,Mon,ADIB CC,AED,-50.0,-50.0,spend,Health,Training / medical,KINGS COLLEGE HOSPITAL,kings college hospital,,,adib-cc-app-28oct,5deafb6a6d9d
+L03783,2026-10-26,Oct 26,Mon,ADIB CC,AED,-42.45,-42.45,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-28oct,8d4173055122
+L03784,2026-10-26,Oct 26,Mon,ADIB CC,AED,-60.72,-60.72,spend,Base Food,Groceries / meal prep,Amazon Grocery,amazon grocery,,,adib-cc-app-28oct,17f3c3a0a90c
+L03785,2026-10-26,Oct 26,Mon,ADIB CC,AED,-40.32,-40.32,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-28oct,eb72e6ee0fb1
+L03786,2026-10-26,Oct 26,Mon,BoS,GBP,-24.3,-119.56,card_repayment,Other,,AQUA,aqua,,one_legged,bos-app-28oct,06e7742c7716
+L03787,2026-10-26,Oct 26,Mon,BoS,GBP,-150.0,-738.0,debt_principal,Loan,"Avantglamp loan repayment (Corrina, GBP150/mo)",CORRINA FLAHER,corrina flaher,,,bos-app-28oct,5f4760aa3152
+L03788,2026-10-26,Oct 26,Mon,Mashreq,AED,-180.0,-180.0,transfer,Life,Helpers / home services,IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY S,ipp transfer mohammed ahmed ref family s,,one_legged,mashreq-app-28oct,ba455133425c
+L03789,2026-10-26,Oct 26,Mon,Wise USD,USD,30.0,110.17,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,Vantage UK - Refunded,vantage uk - refunded,,,wise-app-28oct,145f9487a034
+L03790,2026-10-26,Oct 26,Mon,Wise USD,USD,975.0,3580.69,investment,Investing,CFD / FX trading (Vantage) - deposits minus withdrawals = loss until statement shows equity,Vantage UK - Refunded,vantage uk - refunded,,,wise-app-28oct,f02d25936ddf
+L03791,2026-10-27,Oct 26,Tue,ADIB CC,AED,-104.02,-104.02,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-28oct,8a2a21851225
+L03792,2026-10-27,Oct 26,Tue,ADIB CC,AED,-21.0,-21.0,spend,Deliveries,Eating out / coffee,THE COFFEE CLUB,the coffee club,,,adib-cc-app-28oct,fb0bd898323e
+L03793,2026-10-27,Oct 26,Tue,ADIB CC,AED,-20.0,-20.0,spend,Entertainment,Travel,EMIRATES LEIS MARINA P,emirates leis marina p,,,adib-cc-app-28oct,fb4c673a1cbd
+L03794,2026-10-27,Oct 26,Tue,Barclaycard Plat,GBP,-24.99,-122.95,debt_cost,Fees,Card interest,CASH INTEREST CHARGE,cash interest charge,,,barclaycardplat-app-28oct,0e40b275062f
+L03795,2026-10-27,Oct 26,Tue,M&S,GBP,-28.0,-137.76,debt_cost,Fees,Card interest,INTEREST,interest,,,m&s-app-28oct,f3d4d0cc6bb9
+L03796,2026-10-27,Oct 26,Tue,M&S,GBP,-6.93,-34.1,debt_cost,Fees,Card interest,INTEREST,interest,,,m&s-app-28oct,37b260c45055
+L03797,2026-10-27,Oct 26,Tue,Santander Everyday,GBP,-221.01,-1087.37,debt_cost,Fees,Card interest,TRANSFER BALANCE INT CHARGE,transfer balance int charge,,,santandereveryday-app-28oct,b4dd71560b8b
+L03798,2026-10-28,Oct 26,Wed,BoS,GBP,-375.08,-1845.39,card_repayment,Other,,VIRGIN MONEY,virgin money,,one_legged,bos-app-28oct,a11ea9775e4d
+L03799,2026-10-28,Oct 26,Wed,Wise GBP,GBP,-11.99,-58.99,spend,Unaccounted,,Apple,apple,,,wise-app-28oct,9175d8e7bd82
