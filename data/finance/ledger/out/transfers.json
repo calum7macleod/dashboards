@@ -4700,7 +4700,7 @@
    "desc": "TALLIA FLAHER"
   },
   {
-   "id": "L03758",
+   "id": "L03763",
    "date": "2026-10-23",
    "account": "Mashreq",
    "amount": -2700.0,
@@ -4709,7 +4709,7 @@
    "desc": "IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT"
   },
   {
-   "id": "L03767",
+   "id": "L03774",
    "date": "2026-10-24",
    "account": "Mashreq",
    "amount": -10350.0,
@@ -4718,13 +4718,31 @@
    "desc": "IPP TRANSFER - KUMAYL MERCHANT /REF/ FAMILY SUPPORT"
   },
   {
-   "id": "L03770",
+   "id": "L03791",
    "date": "2026-10-26",
    "account": "BoS",
    "amount": -24.3,
    "currency": "GBP",
    "type": "card_repayment",
    "desc": "AQUA"
+  },
+  {
+   "id": "L03793",
+   "date": "2026-10-26",
+   "account": "Mashreq",
+   "amount": -180.0,
+   "currency": "AED",
+   "type": "transfer",
+   "desc": "IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY S"
+  },
+  {
+   "id": "L03803",
+   "date": "2026-10-28",
+   "account": "BoS",
+   "amount": -375.08,
+   "currency": "GBP",
+   "type": "card_repayment",
+   "desc": "VIRGIN MONEY"
   }
  ],
  "duplicates_dropped": [
@@ -4832,6 +4850,27 @@
    "dup": "rows/sep-tail-1oct.json",
    "desc": "PRECISE MORTGAGES",
    "amount": -287.8
+  },
+  {
+   "hash": "934d6e3c3d1f",
+   "first": "rows/oct-28oct.json",
+   "dup": "rows/oct-25oct.json",
+   "desc": "SOFITEL ABU DHABI FB",
+   "amount": -56.0
+  },
+  {
+   "hash": "fac97ef7c374",
+   "first": "rows/oct-28oct.json",
+   "dup": "rows/oct-25oct.json",
+   "desc": "p bh technical",
+   "amount": -757.05
+  },
+  {
+   "hash": "06e7742c7716",
+   "first": "rows/oct-28oct.json",
+   "dup": "rows/oct-25oct.json",
+   "desc": "AQUA",
+   "amount": -24.3
   },
   {
    "hash": "7d5c4be35dac",
