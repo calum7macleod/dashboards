@@ -626,6 +626,23 @@
    "top3": false,
    "band": "week",
    "bandSince": "2026-09-29"
+  },
+  {
+   "id": "youtube-primary-owner-0511",
+   "title": "YouTube: make calum@calummacleod.com primary owner of the Brand Account, remove the W&Co account",
+   "area": "Admin",
+   "priority": "high",
+   "difficulty": "easy",
+   "status": "active",
+   "due": "2026-11-05",
+   "created": "2026-10-28",
+   "notes": "Channel moved to Brand Account 28 Oct. Owner invites sent to calum93@hotmail.com, calum@raphael.ae, calum@calummacleod.com - accept all three today. YouTube's 7-day rule: earliest primary transfer 4 Nov. Path: myaccount.google.com/brandaccounts > Calum MacLeod > Manage permissions > role > Primary owner. Then re-link AdSense in YouTube Studio > Earn. W&Co to keep calum.macleod@whiteandcogroup.com alive or suspended (not deleted) until then.",
+   "completed": null,
+   "snoozedUntil": null,
+   "order": 1002,
+   "top3": false,
+   "band": "week",
+   "bandSince": "2026-10-28"
   }
  ],
  "units": [],
