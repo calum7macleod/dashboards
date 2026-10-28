@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "account": "Barclaycard Plat",
+  "currency": "GBP",
+  "period": "20-27 Oct 26 (statement 27 Oct)",
+  "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai",
+  "sign": "as printed: charges positive, payments carry type=payment",
+  "printed": {
+   "lastStatementBalance": 9328.97,
+   "paymentDueDate": "2026-11-23",
+   "minimumPayment": 118.02
+  },
+  "verified": "9,303.98 + 24.99 = 9,328.97",
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-20",
+   "description": "PAYMENT BY DIRECT DEBIT",
+   "amount": -118.45,
+   "currency": "GBP",
+   "type": "payment",
+   "alreadyStaged": "barclaycard-plat-20261020.json"
+  },
+  {
+   "date": "2026-10-27",
+   "description": "CASH INTEREST CHARGE",
+   "amount": 24.99,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-27",
+   "description": "INTEREST CHARGE",
+   "amount": 0.0,
+   "currency": "GBP"
+  }
+ ]
+}
