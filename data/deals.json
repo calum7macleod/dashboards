@@ -107,15 +107,17 @@
   "annualAcc": null,
   "order": 3,
   "id": "ronnie-lewis-tara-a2-209",
-  "paid": false,
-  "paidDate": null,
+  "paid": true,
+  "paidDate": "2026-10-29",
   "takeHomeSource": "estimate - 65% Q3 tier, verify vs payslip",
   "buyerSide": "Lewis (Calum assist)",
   "sellerSide": "Developer",
   "sourceCat": "Colleague",
   "segment": "Offplan",
   "payMonth": "October",
-  "note": "Lewis's buyer Ronnie, Calum helped. 4% dev commission = 114,640 total: Lewis 100,000 + Calum 14,640. Price 2.866M (Calum said 2.866 or 2.886 - 2.866 reconciles exactly to the 4%). Date assumed 21 Sep - confirm signing date. Pay month TBC (Modon)."
+  "note": "Lewis's buyer Ronnie, Calum helped. 4% dev commission = 114,640 total: Lewis 100,000 + Calum 14,640. Price 2.866M (Calum said 2.866 or 2.886 - 2.866 reconciles exactly to the 4%). Date assumed 21 Sep - confirm signing date. Pay month TBC (Modon).",
+  "paidAmount": 9516.07,
+  "paySlip": "White & Co 29-10-2026 WPS 122,800.00"
  },
  {
   "date": "2026-08-11",
@@ -167,10 +169,13 @@
   "notes": "Split deal with Elliot & Christie - Calum buyer-side slice. TakeHome = 12,150 x 65%.",
   "order": 37,
   "id": "umer-bl907",
-  "paid": false,
+  "paid": true,
   "sourceCat": "Portals",
   "segment": "Secondary",
-  "payMonth": "October"
+  "payMonth": "October",
+  "paidDate": "2026-10-29",
+  "paidAmount": 7981.19,
+  "paySlip": "White & Co 29-10-2026 WPS 122,800.00"
  },
  {
   "date": "2026-07-27",
@@ -243,7 +248,11 @@
   "sourceCat": "Callout",
   "segment": "Secondary",
   "notes": "Seller from CALLING OUT; buyer via Georgia (Lagoons team).",
-  "payMonth": "October"
+  "payMonth": "October",
+  "paid": true,
+  "paidDate": "2026-10-29",
+  "paidAmount": 46320.24,
+  "paySlip": "White & Co 29-10-2026 WPS 122,800.00"
  },
  {
   "date": "2026-07-22",
@@ -319,7 +328,11 @@
   "splitType": null,
   "sourceCat": "Portals",
   "segment": "Secondary",
-  "payMonth": "October"
+  "payMonth": "October",
+  "paid": true,
+  "paidDate": "2026-10-29",
+  "paidAmount": 39840.0,
+  "paySlip": "White & Co 29-10-2026 WPS 122,800.00"
  },
  {
   "date": "2026-06-08",
@@ -1473,10 +1486,13 @@
   "conveyancingDeduction": 8500,
   "tier": 0.65,
   "myTakeHome": 19142,
-  "paid": false,
+  "paid": true,
   "payMonth": "October",
   "note": "Buyer side only, split with external agent. Board D37,950 = buyer commission 29,450 + conveyancing 8,500. Take-home = 29,450 x 65% = D19,143. Deposit 280,000 = 10% of 2.8M. Mortgage buyer - transfer timing TBC.",
   "order": 2,
-  "notes": " | Transfer 22 Oct, paid October (Calum 21 Oct)"
+  "notes": " | Transfer 22 Oct, paid October (Calum 21 Oct)",
+  "paidDate": "2026-10-29",
+  "paidAmount": 19142.5,
+  "paySlip": "White & Co 29-10-2026 WPS 122,800.00"
  }
 ]
