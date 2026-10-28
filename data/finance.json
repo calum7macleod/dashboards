@@ -28961,6 +28961,42 @@
       "month": "Oct 26",
       "currency": "GBP",
       "source": "app screenshots Sun 25 Oct 26 10:39-10:41 Dubai"
+    },
+    {
+      "card": "ADIB Emirates VC Sig (*789)",
+      "balance": 38482.8,
+      "currency": "AED",
+      "available": 31017.2,
+      "limit": 69500.0,
+      "status": "Derived: 69,500 - available cover 31,017.20. App shows 'Total amount due 450.73' (last stmt balance hidden). Up from 15,402.97 on 10 Oct - heavy late-Oct spend (EPPCO ENOC 2,053, emirates.com 1,695, Anthropic 775, p bh technical 757)",
+      "date": "2026-10-28",
+      "month": "Oct 26",
+      "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai"
+    },
+    {
+      "card": "Virgin Money",
+      "balance": 9105.3,
+      "currency": "GBP",
+      "available": 894.7,
+      "limit": 10000.0,
+      "status": "MISSED PAYMENT notice (375.08 due 25 Oct). Paid 375.08 from BoS 28 Oct. Expect late fee next stmt",
+      "dueAmount": 375.08,
+      "dueDate": "2026-10-25",
+      "dueNote": "paid 3 days late",
+      "date": "2026-10-28",
+      "month": "Oct 26",
+      "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai"
+    },
+    {
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 282.70 at 07:47 28 Oct after Virgin 375.08, Corrina 150, Aqua 24.30. Leaving: Tesco 266 (29 Oct), Pet Health 28.25 (~2 Nov), Mum 300 (~3 Nov) = 594.25 -> projected -311.55",
+      "date": "2026-10-28",
+      "month": "Oct 26",
+      "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai"
     }
   ],
   "personalDebts": [
