@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "24-26 Oct 26",
+  "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai",
+  "sign": "as printed",
+  "verified": "7,090.52 - 180.00 = 6,910.52 printed",
+  "redacted": "IBAN removed",
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-24",
+   "description": "IPP TRANSFER - KUMAYL MERCHANT /REF/ FAMILY SUPPORT",
+   "amount": -10350.0,
+   "currency": "AED",
+   "reference": "033IPPD262970PWY",
+   "alreadyStaged": "mashreq-20261023-20261024.json"
+  },
+  {
+   "date": "2026-10-26",
+   "description": "IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY SUPPORT",
+   "amount": -180.0,
+   "currency": "AED",
+   "reference": "033IPPD262990MCW"
+  }
+ ]
+}
