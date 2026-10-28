@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "account": "M&S",
+  "currency": "GBP",
+  "period": "2-27 Oct 26 (statement 27 Oct)",
+  "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai",
+  "sign": "as printed: charges positive, payments carry type=payment",
+  "printed": {
+   "lastStatementBalance": 7331.73,
+   "dueDate": "2026-11-21",
+   "minimumDue": 183.29
+  },
+  "verified": "7,296.80 + 28.00 + 6.93 = 7,331.73",
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-02",
+   "description": "PAYMENT - THANK YOU",
+   "amount": 380.42,
+   "currency": "GBP",
+   "type": "payment",
+   "alreadyStaged": "ms-20261002.json"
+  },
+  {
+   "date": "2026-10-27",
+   "description": "INTEREST",
+   "amount": 28.0,
+   "currency": "GBP"
+  },
+  {
+   "date": "2026-10-27",
+   "description": "INTEREST",
+   "amount": 6.93,
+   "currency": "GBP"
+  }
+ ]
+}
