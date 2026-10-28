@@ -1,0 +1,19 @@
+{
+ "meta": {
+  "account": "Virgin Money",
+  "currency": "GBP",
+  "period": "28 Oct 26 (card *2995)",
+  "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai",
+  "printed": {
+   "notice": "You've missed a payment of 375.08",
+   "amountOwedInclPending": 9105.3,
+   "availableToSpend": 894.7,
+   "creditLimit": 10000.0
+  },
+  "note": "due 25 Oct; paid 375.08 from BoS 28 Oct (bos-20261026-20261028.json). Late payment fee / marker likely on next statement",
+  "rowCount": 0,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": []
+}
