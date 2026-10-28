@@ -106,12 +106,12 @@
    "net": 266623.30999999994
   },
   "Oct 26": {
-   "spend": 32759.920000000016,
-   "card_repay_unmatched": 1756.59,
-   "debt_cost": 1909.4499999999996,
+   "spend": 59804.28000000001,
+   "card_repay_unmatched": 3601.98,
+   "debt_cost": 3291.6299999999997,
    "income": 2463.69,
    "transfer_cost": 218.88,
-   "net": -30296.230000000018
+   "net": -57340.59000000001
   }
  },
  "by_category": {
@@ -226,30 +226,30 @@
    "Unaccounted": 59.0
   },
   "Oct 26": {
-   "Life": 3377.89,
+   "Life": 28919.989999999998,
    "Business": 8032.070000000001,
-   "Deliveries": 3197.19,
-   "Health": 1720.13,
-   "Base Food": 6706.069999999999,
-   "Fees": 2150.859999999999,
-   "Unaccounted": 785.5899999999999,
-   "Entertainment": 3336.05,
+   "Deliveries": 3630.4900000000002,
+   "Health": 1770.13,
+   "Base Food": 7715.579999999999,
+   "Fees": 3533.0399999999995,
+   "Unaccounted": -607.1399999999999,
+   "Entertainment": 3356.05,
    "Family": 3419.0,
    "Ads": 35.07
   }
  },
  "by_dow": {
-  "Tue": 66217.99,
-  "Wed": 60463.319999999985,
+  "Tue": 67745.19,
+  "Wed": 60522.30999999998,
   "Thu": 97899.83000000009,
-  "Fri": 95304.57000000004,
-  "Sat": 93999.81999999996,
-  "Sun": 94173.31999999996,
-  "Mon": 63168.64999999998
+  "Fri": 116122.33000000005,
+  "Sat": 94339.81999999996,
+  "Sun": 98280.23999999996,
+  "Mon": 63362.13999999998
  },
  "by_account": {
-  "ADIB CC": 269772.64000000013,
-  "Wise GBP": 106747.18,
+  "ADIB CC": 274558.0700000001,
+  "Wise GBP": 106806.17,
   "BoS": 21455.020000000008,
   "Property Account": 19153.93,
   "Tesco Clubcard": 7131.02,
@@ -259,14 +259,15 @@
   "ADIB": 11054.869999999994,
   "Aqua": 14675.909999999998,
   "Virgin Money": 5125.54,
-  "Barclaycard Plat": 863.4200000000001,
-  "Santander Everyday": 5242.45,
-  "M&S": 2963.6,
+  "Barclaycard Plat": 986.3700000000001,
+  "Santander Everyday": 6329.82,
+  "M&S": 3135.4599999999996,
   "Wise AED": -1.4210854715202004e-14,
   "MBNA 2": 38.400000000000006,
   "HSBC": 168.86,
   "Wise USD": 36.54,
-  "BA Amex": 1229.8600000000001
+  "BA Amex": 1229.8600000000001,
+  "HSBC Business": 20817.760000000002
  },
  "note": "AED. spend = spend+refund+debt_cost+cash_withdrawal. Transfers/repayments/investing excluded."
 }
