@@ -58,3 +58,11 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Reels batch 2: ten hooks locked (content-assets/scripts/2026-10-19-reel-batch-2-hooks.md). Two bodies scripted: Dubai offplan riskier (v3, ~245w) and UK income tax (v3, ~245w) - flags on each file (bitcoin "every" ~90%; "In Dubai I pay" -> most plans; 90% is tax share not people share ~77%; interest year; ICD net). Eight bodies to go.
 - Bricks: residents-per-off-plan recomputed with receipts (2024 both: 30 vs 1.7 = 18x; 2025 sales/2024 pop: 18 vs 1.4 = 13x) - content-assets/research/2026-10-19-brick-residents-per-offplan.md; handoff to Market. Tara Park SPA proves milestone-linked instalments (Appendix F, cl.7d). Dubai downturns: 2008-11 -53%, 2014-19 -25/33%. Miral = govt-owned direct (2011), chair = DCT chair; not in a fund. Abu Dhabi 2009 support = $20bn loan, "stepped in" not "bailout" (Dubai disputed the word).
 - Working rules: Jake-shape hooks (searchable text, number speech); trim to ~80% words keeping all numbers; dollars; every absolute claim gets a receipt or a hedge.
+
+## Metricool scoreboard - 28 Oct (first pull; brand 7682850 thecalummacleod; IG+TikTok+FB connected 27 Oct)
+- IG 1 Sep-21 Oct: 140 reels. Typical property reel 800-2,000 views / 550-1,400 reach; personal 2,000-4,200. Top property: Al Naseem first look 3,689 (47 comments, 18 saves). Most shared property: August transactions 9 shares, 15.5s avg watch. Trial-reel duplicates at 110-170 views = unpushed variant (system works).
+- A/B pairs: plain hook wins - "First ever look at Al Naseem" 3,689 vs "Honoured to be invited" 2,192; "Who owns that..." 1,746 vs 565; "Pretty unnecessary for a 1 hour flight" 3,818 vs 1,814.
+- Hold: 3-sec view rate 22-40% on property explainers vs 55-77% personal. Text hook on screen is the fix (Oljas rule).
+- TikTok 23 videos: 200-1,000 typical; Wadeem one-shot tour 17,912 (98% For You). Avg watch 3-8s. Rule: every site visit = one-take video same day; burn text hook into frame one.
+- None of the 20 recorded batch-1 reels posted by 21 Oct - no Jake-structure numbers yet.
+- Field IDs for next pull: IG reels IGRE01,03,23(views),11(reach),21(shares),12(saves),07,10,24(avg watch),28(3s rate),06; TikTok TKPO01,05,07,11,10,09,08,15,13,16,06.
