@@ -1,0 +1,62 @@
+{
+ "meta": {
+  "account": "BoS",
+  "accountType": "Classic current account",
+  "currency": "GBP",
+  "period": "26-28 Oct 26",
+  "source": "app screenshots Wed 28 Oct 26 07:38-07:47 Dubai (two captures: 07:41 at 657.78, 07:47 at 282.70 after the Virgin payment)",
+  "sign": "as printed",
+  "order": "chronological, running balance as printed",
+  "printed": {
+   "balance28Oct0747": 282.7,
+   "overdraftLimit": 3000.0
+  },
+  "verified": "807.78 - 150 = 657.78; - 375.08 = 282.70",
+  "scheduled": [
+   {
+    "due": "2026-10-29",
+    "description": "TESCO BANK",
+    "amount": -266.0
+   },
+   {
+    "due": "~2026-11-02",
+    "description": "PET HEALTH CLUB",
+    "amount": -28.25
+   },
+   {
+    "due": "~2026-11-03",
+    "description": "MUM",
+    "amount": -300.0
+   }
+  ],
+  "projected": "282.70 - 594.25 scheduled = -311.55 by ~3 Nov unless topped up (within 3,000 limit)",
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-10-28"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-26",
+   "description": "AQUA",
+   "amount": -24.3,
+   "currency": "GBP",
+   "balance": 807.78,
+   "alreadyStaged": "bos-20261016-20261026.json (forward-dated then, posted now)"
+  },
+  {
+   "date": "2026-10-26",
+   "description": "CORRINA FLAHER",
+   "amount": -150.0,
+   "currency": "GBP",
+   "balance": 657.78
+  },
+  {
+   "date": "2026-10-28",
+   "description": "VIRGIN MONEY",
+   "amount": -375.08,
+   "currency": "GBP",
+   "balance": 282.7,
+   "note": "Calum paid manually 28 Oct on seeing Virgin's missed-payment notice"
+  }
+ ]
+}
