@@ -306,3 +306,4 @@
 {"date": "2026-10-28", "agent": "PA", "did": "YouTube channel @UAECalum moved to a Brand Account (28 Oct); owner invites to three personal addresses; task set for 5 Nov primary-owner transfer + W&Co removal.", "wrote": []}
 {"date": "2026-10-28", "agent": "content", "did": "First Metricool pull: 140 IG reels + 23 TikToks analysed; scoreboard written to state; field IDs saved for repeat pulls", "wrote": ["data/state/content.md"]}
 {"date": "2026-10-28", "agent": "Finance", "did": "29 Oct payslip 122,800 reconciled (5 deals incl BL907), paid flags set; final payday plan recorded with 20K hold and UK on overdraft", "wrote": ["data/deals.json", "data/state/finance.md"]}
+{"date": "2026-10-29", "agent": "Designer", "did": "Honest Guide v3: layout filled, page 5 chart fixed, £ at 4.9, handle updated; committed PDF + source", "wrote": ["content-assets/library/The-Honest-Guide-UAE-Off-Plan.pdf", "content-assets/library/offplan-guide-src.html", "data/state/designer.md"]}
