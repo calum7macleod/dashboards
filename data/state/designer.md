@@ -8,9 +8,10 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 1. design-system/ - lock the fonts with Calum (licensed, bespoke), write the tokens and rules. Everything else waits on this. STATUS 21 Sep: Calum's steer = wide geometric sans (said 'Montserrat wide' - no such cut exists). Specimen round 1 out: sans A Montserrat / B Archivo Expanded / C Mona Sans Expanded, serif Newsreader Display vs Libre Caslon Display / Bodoni Moda / Gloock. All OFL, Đ0. Designer rec: B + Newsreader. AWAITING CALUM'S PICK. Assumed Latin only (no Arabic) - unconfirmed. On lock: commit fonts to design-system/fonts/, write tokens.css, update README.
 2. Fix or bin the Wadeem 5/15/80 mortgage carousel (wrong vs official 25/75).
 3. Options pack template (Bashayer standard) ready for Tuesday's buyer callouts - the Abu pack (23 Sep) is the first cut of it; templatise once Calum signs it off.
-4. YouTube thumbnail template (face + three words + one number).
+4. YouTube thumbnail template (face + three words + one number) - headshot now on file at content-assets/youtube/head.jpg.
 
 ## Piece log
+- 29 Oct: YouTube channel banner 2048x1152 (face inside the 1235x338 safe area, brand green, headshot blended) + 150x150 CM watermark, handle @calumlmacleod - content-assets/youtube/ (h0092 from Content) (Designer Sept 26).
 - 29 Oct: The Honest Guide to UAE Off-Plan v3 (14pp A4) - review of the 13 Aug v2: content scaled to fill the pages (was half-empty), page 5 cash chart labels no longer overlap the bars, every £ figure recomputed at ~£1 = Đ4.9, handle @thecalummacleod, still signed White & Co at Calum's request. Content untouched - content-assets/library/ (Designer Sept 26).
 - 21 Oct: USDT to manager's cheque quote card (Đ8,753,250 in three cheques, 0.8% desk fee, 4-step process, sales-progression note) - content-assets/breakdowns/. USDT figures at the 3.6725 peg, marked indicative (Designer Sept 26).
 - 17 Oct: Costa Brava Đ8.25M 6-bed lagoon-backing villa milestone post, FINAL = no overlay at all (Calum picked 'pure water' of four options; text shadows carry legibility), SOLD as a gold eyebrow above the title. Milestone standard note: Calum prefers the photo untouched - overlays only when the photo can't carry the text - content-assets/milestones/costa-brava-8-25m/. Deal not yet in deals.json, handoff h0071 (Designer Sept 26).
