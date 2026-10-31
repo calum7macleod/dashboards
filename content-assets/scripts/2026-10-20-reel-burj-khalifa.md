@@ -15,7 +15,7 @@ Four key dates - the most important is opening night
 14th December 2009
 - Abu Dhabi provided ten billion dollars to Dubai - reported as a loan - to cover a bond due that day
 - Abu Dhabi could do that because it had been saving its oil money since 1967
-- Today those funds hold around 1.9 trillion dollars, including around 0.5% of the entire world's stock market
+- Today those funds hold 1.7 trillion dollars, including around 0.5% of the entire world's stock market
 
 4th January 2010
 - The tallest building in the world opened. Three weeks after the money, Sheikh Mohammed announced its name: the Burj Khalifa, in honour of Sheikh Khalifa - the President of the UAE and the ruler of Abu Dhabi
