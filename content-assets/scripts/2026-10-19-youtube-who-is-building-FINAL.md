@@ -24,7 +24,7 @@ And the rest of that opening list? The railway - Etihad Rail - is owned outright
 
 So every project you saw in the first minute leads back to the same place - the government of Abu Dhabi, and the money it has saved.
 
-So follow the chain on my apartment. My flat is built by Modon. Modon is owned by L'imad. L'imad is owned by the government of Abu Dhabi, which has one point seven trillion dollars behind it.
+So follow the chain on my apartment. My flat is built by Modon. Modon is owned by L'imad. L'imad is owned by the government of Abu Dhabi, which has around one point nine trillion dollars behind it.
 
 That's who's behind the developments. Now where the money comes from.
 
@@ -34,7 +34,7 @@ Second, the money - in plain English, and what it actually owns.
 
 A sovereign wealth fund is a country's savings account. You sell something the world wants, you don't spend it all, you invest the rest.
 
-Abu Dhabi started pumping oil in 1962. In 1967 - four years before the UAE existed - it started saving the profits. Nearly sixty years on, that's one point seven trillion dollars, in three pots that do three different jobs.
+Abu Dhabi started pumping oil in 1962. In 1967 - four years before the UAE existed - it started saving the profits. Nearly sixty years on, that's around one point nine trillion dollars, in three pots that do three different jobs.
 
 ADIA, around one point one trillion. The pension. It invests abroad and compounds - around six hundred and fifty billion in shares, ninety billion lent to governments, a hundred and forty-six billion in private companies. Fifteen per cent of Gatwick. Around half a per cent of every listed company on earth. It doesn't build anything at home.
 
@@ -86,7 +86,7 @@ The developer matters for delivery, quality and profit. Who owns the developer m
 
 The full breakdown - every fund, every developer, the ownership chain, the sources - is in a PDF. DM or WhatsApp me the word FUND and I'll send it. You can also get me there if you'd like to chat anything through in more detail.
 
-My apartment. Modon. L'imad. The government of Abu Dhabi. One point seven trillion dollars.
+My apartment. Modon. L'imad. The government of Abu Dhabi. Around one point nine trillion dollars.
 
 That's the chain on mine - and it's the chain on most of what you saw in the first minute.
 
