@@ -18,7 +18,7 @@ FIRST, WHY NOW
 
 Three things explain why Abu Dhabi is happening now. The money, the law, and the train.
 
-Start with the money. Abu Dhabi's government has around one point nine trillion dollars in sovereign wealth funds - more per person than any country on earth. Those funds own the developers. Modon, the company building Hudayriyat, is eighty-five per cent owned by one of them. Aldar, the company building Saadiyat and Yas, is twenty-eight per cent owned by another. So when you hear a developer's name in this video, there's a government fund behind it.
+Start with the money. Abu Dhabi's government has one point seven trillion dollars in sovereign wealth funds - more per person than any country on earth. Those funds own the developers. Modon, the company building Hudayriyat, is eighty-five per cent owned by one of them. Aldar, the company building Saadiyat and Yas, is twenty-eight per cent owned by another. So when you hear a developer's name in this video, there's a government fund behind it.
 
 The money works from one place - ADGM, Abu Dhabi Global Market, the financial district on Al Maryah Island. It runs on English law. BlackRock, Goldman Sachs and Binance are there. Brevan Howard moved in 2023 and now runs more money from Abu Dhabi than from anywhere in the world. The workforce grew thirty-four per cent in a year, to forty-nine thousand people, and every one of them needs somewhere to live. That's why I'll tell you how far each island is from ADGM - it's the number that decides who wants to rent there.
 
