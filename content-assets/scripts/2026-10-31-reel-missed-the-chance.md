@@ -1,4 +1,4 @@
-# Have We Missed The Chance To Invest In Abu Dhabi - reel (31 Oct 2026) - for 5 Nov recording
+# Have We Missed The Chance To Invest In Abu Dhabi - reel (31 Oct 2026, v2 - Calum's) - for 5 Nov recording
 
 Hook options (Calum's):
 - Is it Too Early to Invest in Abu Dhabi | 13 times more new residents per off-plan property sold than Dubai  [13x = pre-rebase; script uses 18 vs ~2]
@@ -8,35 +8,34 @@ Content's pick: Have We Missed The Chance... | The best time was January. Here's
 
 Five things - the last one's what I'd do now
 
-One. Was there a better time?
-- Yes. Reem off-plan rose 38% to last summer. Golf Estates sold out in days, resales already list above launch. First-quarter sales up 160% on the year before
-- Buy in January, you're up. Nobody selling you a property will say that
-- But better and too late aren't the same thing - here's the clock
+First. Was there a better time?
+- Yes. Reem off-plan rose 38% to last summer. Golf Estates sold out in days, resales already listing above launch. First-quarter sales up 160% on the year before
+- Buy in January, you're up. Buy before that, you're up even more
+- But better and too late aren't the same thing - here's the lifecycle
 
-Two. Where Abu Dhabi is on the clock
-- Foreigners could buy freehold in Dubai from 2002. Abu Dhabi, 2019 - seven years old
-- Dubai at seven was 2009. Everyone who bought after it is glad they did
+Second. Where Abu Dhabi is on the calendar
+- Foreigners could buy freehold in Dubai from 2002. Abu Dhabi, 2019 - the market is only seven years old
+- Dubai at seven was 2009. Like-for-like properties are up around 80% since then
 - Bitcoin at seven was 430 dollars
-- Early isn't a feeling, it's a date. The demand says the same
+- But who will buy all these properties?
 
-Three. Demand hasn't caught up
-- 18 new residents for every off-plan home sold. Dubai, around 2
-- Rents up 17% this year - people, not investors
-- ADGM's workforce up 34% to 49 thousand, every one needs somewhere to live
-- That's today. Here's what hasn't happened yet
+Third. Demand hasn't caught up
+- Abu Dhabi has 18 new residents for every off-plan home sold. Dubai, around 2
+- Rents up 17% this year
+- ADGM's workforce up 34% to 49 thousand - every one of these high-paid workers needs somewhere to live
+- But there's so much more to come
 
-Four. What's still ahead
-- High-speed train - Dubai in 30 minutes - 2031
-- Disney on Yas, 2030. First villas on Hudayriyat this year. The third hill, unannounced
-- ADGM likely overtakes DIFC this year
-- Every one dated, every date still in front of us. So what would I do?
+Fourth. What's still ahead
+- High-speed rail - Dubai in 30 minutes from 2031
+- Disney on Yas in 2030 - Disneyland Paris accounts for 6% of France's tourism income
+- Hudayriyat's first ever handover is this year. I know this market, and it's where I'll live
+- ADGM's workforce likely overtakes DIFC this year
+- But what would I do with all this info?
 
-Five. What I'd do now
-- I bought on Reem in April. I'd buy again today
-- The best time was January. The next is before the next launch sells out - the big ones sell out in days
-- Know what you want before it's announced - by booking day it's gone
-
-DM OFFPLAN for info on what's launching.
+Fifth. What I'd do now
+- We all missed the best time to invest in Abu Dhabi - but it would probably have been too high risk for any of us then, just like Bitcoin at seven
+- Today it's still the best property investment in the world for me, and will be for many years to come
+- I'll continue to invest, and will move here within 3 years
 
 ## Receipts / flags
 - Reem off-plan +38% yr to mid-2025 (MERED/Quanta). Golf Estates 7 Jul 2026, Dh13bn in days; resales asking above launch (portals). Q1 2026 Abu Dhabi Dh66bn +160.7% (ADREC via Christie's).
@@ -44,4 +43,4 @@ DM OFFPLAN for info on what's launching.
 - 18 per home = 288k (2024 census) / 15.9k (2025 off-plan). Dubai ~2 = rebased 332k / 146k = 2.3 (old series 1.4 -> 13x). Match across batch.
 - Rents +17% apts H1 2026 (ADREC). ADGM 49,027 +34%.
 - Rail 2031 / 30 min; Disney ~2030-33; Al Naseem first handover Q4 2026 (Modon); ADGM vs DIFC 49k vs 50k.
-- ~215 words, ~1:23 at 155 wpm.
+- v2 ~250 words, ~1:37 at 155 wpm. Fixed: 'selling above' -> 'listing above'; Disney 6% = of France's TOURISM income (Disney study), not economy; Hudayriyat line split; 'Forth' -> Fourth. 'Like-for-like up ~80%' = ValuStrat/REIDIN index inference [v exact].
