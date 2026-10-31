@@ -18,7 +18,7 @@ Two. Supply vs Demand
 - Abu Dhabi has the demand, but the next bit is even more impressive
 
 Three. Finances
-- Abu Dhabi has a around 1.9 trillion dollar sovereign wealth fund, they could buy every bitcoin on earth
+- Abu Dhabi has a 1.7 trillion dollar sovereign wealth fund, they could buy every bitcoin on earth
 - Dubai's closest equivalent, the Investment Corporation of Dubai, has 80 billion dollars net wealth - 20 times smaller
 - Those funds are the biggest shareholders in Modon and Aldar - they've got the balance sheet to finish what they start
 - Abu Dhabi stepped in to financially help Dubai in 2009 with twenty billion dollars
@@ -33,7 +33,7 @@ More investors are choosing Abu Dhabi over Dubai this year, this is why
 ## Flags (Content, 19-20 Oct)
 - 20 Oct: Dubai population REBASED (Dubai Population Now, 1 Jul 2026): end-2025 4.58m, +332k. On the new basis Dubai = 2.3 residents/off-plan sale, ratio ~8x not 13x. Change 'Thirteen times' to 'Eight times' and Dubai line to 'added 332 thousand people... 2.3 per home', or keep old series and cite 'Dubai Statistics Centre 2024 bulletin'.
 - ~245 words, ~1:10 with numbers.
-- "every bitcoin" = ~90% at ~$1.9tn cap; "almost every" safer. Check cap on filming day.
+- "every bitcoin" = ~90% at $1.7tn cap; "almost every" safer. Check cap on filming day.
 - "In Dubai I pay on whatever date" - milestone plans exist in Dubai; "most Dubai plans" closes the door.
 - ICD $80bn net (gross $457bn incl. Emirates NBD) [v Market].
 - Population = 2024 census (latest); sales = 2025. Dubai 146k - Calum's source; register 150,866.
