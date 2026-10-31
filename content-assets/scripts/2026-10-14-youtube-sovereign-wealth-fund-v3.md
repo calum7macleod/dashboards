@@ -1,8 +1,8 @@
-# Abu Dhabi's $1.7 Trillion Fund Explained - script
+# Abu Dhabi's $1.9 Trillion Fund Explained - script
 
 0:00 - THE FIRST MINUTE
 
-Abu Dhabi has turned fifty years of oil into one point seven trillion dollars.
+Abu Dhabi has turned fifty years of oil into around one point nine trillion dollars.
 
 Britain and Norway found the same oil, in the same sea, in the same decade. Norway invested it - two trillion today. Britain spent it. Nothing.
 
@@ -28,7 +28,7 @@ That's four years before the United Arab Emirates existed.
 
 The fund is older than the country. And it's older than Norway's by more than twenty years.
 
-Nearly sixty years on, it's one point seven trillion dollars. Only two places on earth have saved more. China, with one point four billion people to share it between. And Norway, with five and a half million.
+Nearly sixty years on, it's around one point nine trillion dollars. Only two places on earth have saved more. China, with one point four billion people to share it between. And Norway, with five and a half million.
 
 And it's why there's no income tax and no capital gains tax here. A government this rich can afford not to.
 
@@ -46,7 +46,7 @@ Mubadala. Three hundred and eighty-five billion. The investment account. The one
 
 L'imad. Around three hundred billion. The current account. It owns the things the city runs on - the airline, the airport, the railway, the power station, the hospitals.
 
-Pension. Investment account. Current account. One point seven trillion between them.
+Pension. Investment account. Current account. Around one point nine trillion between them.
 
 Two of the three own the developers you'd buy from. The third is the one that steps in when something breaks.
 
@@ -62,7 +62,7 @@ Modon is eighty-five per cent owned by L'imad.
 
 L'imad is owned by the government of Abu Dhabi.
 
-So the people who have to finish my building are the same people with one point seven trillion dollars behind them.
+So the people who have to finish my building are the same people with around one point nine trillion dollars behind them.
 
 That's a different conversation from "will the developer run out of money".
 
@@ -178,7 +178,7 @@ So this isn't a fund that never loses. It's a fund so big that losing a British 
 
 And two more things I'd want to know if I were watching this.
 
-One. Every number I've given you for ADIA is an estimate. It has never published its size. The one point seven trillion is the best public figure, not a filing.
+One. Every number I've given you for ADIA is an estimate. It has never published its size. The around one point nine trillion is the best public figure, not a filing.
 
 Two. Government-owned isn't the protection. Dubai World was government-owned in 2009, and it still had to ask for time on twenty-six billion dirhams of debt. The protection is the balance sheet behind the owner.
 
@@ -202,7 +202,7 @@ One more number before you go.
 
 Norway. Five and a half million people. Two trillion dollars. The country every economist uses as the example of doing it right. That's around three hundred and seventy thousand dollars for every Norwegian.
 
-Abu Dhabi. Four million people. One point seven trillion. Around four hundred and fifteen thousand for every resident.
+Abu Dhabi. Four million people. Around one point nine trillion. Around four hundred and fifty thousand for every resident.
 
 Per person, Abu Dhabi has the biggest sovereign fund in the world. A city, not a country - in a country that's fifty-five years old, with a savings account older than it is.
 
