@@ -14,7 +14,7 @@ First, where it comes from
 Second, why the UK needs yours
 - The UK spends 44% of its economy and collects 40% - it borrows the difference every single year
 - No surplus this century, the interest on the debt is now 150 billion dollars, more than defence
-- The UAE collects 28% and spends 23% - a surplus every year, and a 1.7 trillion dollar fund
+- The UAE collects 28% and spends 23% - a surplus every year, and a around 1.9 trillion dollar fund
 - The UK needs your income tax because it's already spent it - the UAE doesn't because it saved
 
 Third, what it means for your salary
