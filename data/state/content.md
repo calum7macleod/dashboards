@@ -77,3 +77,8 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Files: 2026-10-31-batch3-six-drafts.md, 2026-10-31-batch3-additions.md + individual reel files.
 - Flags to settle: Dubai ratio 13x (old) vs ~2 per home/8x (rebased); "no train" lines = say HIGH-SPEED; dirhams vs dollars (Al Naseem best buy is dirhams); 1.9tn forward only.
 - Market handoffs: AD homes under construction total; Al Khail/Dubai Hills effect; UAE revenue split; rail status.
+
+## 31 Oct close
+- Batch 3 for 5 Nov: 14 scripted by Calum (islands x2, Yas, Saadiyat, Bvlgari, Apollo, missed-chance, Al Naseem best buy, Al Naseem hands-over-first, tunnels, ADGM parkway, Etihad, no-income-tax) + Content drafts awaiting markup: supply vs demand, Al Naseem value, train reel. Templates: Al Naseem construction, mysterious amenities (Calum eyes).
+- Small fixes still in Calum doc: Etihad close missing "where"; hands-over-first "cheaper than anywhere in Dubai" -> "than any villa in Dubai"; Al Naseem best buy "garden"/"rogue brokers"; Yas hook 2 "quietest"; ADGM hook "20 min" (15); supply reel 13x vs rebased.
+- Next: Calum marks up the 3 drafts; fills 2 templates; Oljas round; tracker to batch 3; FUND/ISLAND PDFs still owed; YouTube titles/descriptions for fund + islands videos.
