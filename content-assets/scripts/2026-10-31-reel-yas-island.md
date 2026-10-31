@@ -13,7 +13,7 @@ One. What's there
 - The island's bigger than Richmond Park three times over, and 40% of it is still empty land. Here's what's going on it
 
 Two. What's coming
-- Disneyland Abu Dhabi, the seventh in the world, around 2030. Disney says Disneyland Paris has put 84 billion euros into France - 6% of its economy
+- Disneyland Abu Dhabi, the seventh in the world, around 2030. Disney says Disneyland Paris has put 84 billion euros into France, and is 6% of its tourism income
 - A Sphere - the second on earth after Las Vegas - Harry Potter at Warner Bros, and a high-speed rail stop that puts Dubai 30 minutes away from 2031
 - Which is why the prices did this
 
@@ -33,7 +33,7 @@ Five. The catch
 Yas is the holiday island - apartments here rent to tourists. Next time I'll speak about Saadiyat, it's a bit different. DM ISLAND for the PDF.
 
 ## Receipts / flags
-- 44m visits 2025 (Miral); Etihad Arena 18k vs O2 20k; 85% Aug 2026 occupancy; Yas 25 sq km vs Richmond Park 9.6; 40% undeveloped (Miral). Disney announced May 2025, ~2030-33; Disneyland Paris EUR84bn/6% = Disney 2017 study (attributed). Sphere 2029. Rail 2031, 30 min.
+- 44m visits 2025 (Miral); Etihad Arena 18k vs O2 20k; 85% Aug 2026 occupancy; Yas 25 sq km vs Richmond Park 9.6; 40% undeveloped (Miral). Disney announced May 2025, ~2030-33; Disneyland Paris EUR84.5bn cumulative + ~6% of French TOURISM income (Disney study) - 'of its economy' was wrong, corrected 31 Oct. Sphere 2029. Rail 2031, 30 min.
 - +24% 2025, +18% yr to Jun 2026 (Knight Frank); avg sale ~$560k (Dh2.05m, H1 2026); Surrey 3-bed semi ~GBP430k [v]; yield ~6% (Bayut projected) [v]; UK BTL ~3% after higher-rate tax = generalisation.
 - Yas Point $400m first release (Dh1.5bn), 84% new to Aldar (ADX). 7,700 under construction (Knight Frank Q2 2026).
 - ~255 words, ~1:38 at 155 wpm.
