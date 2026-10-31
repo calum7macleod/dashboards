@@ -57,7 +57,7 @@ Four. Bvlgari - the one you can't just buy
 - Bvlgari's Dubai island, Jumeirah Bay, holds Dubai's record sale - a penthouse at 112 million dollars
 - Eagle Hills again, opening 2030. The most expensive address in Abu Dhabi, without anyone knowing much about it
 
-Four islands - under 2% of Abu Dhabi's 214. Nature made them, and a 1.7 trillion dollar fund is building them. I believe this will be one of the best places in the world to live, which is why I'm moving here. DM ISLAND for the PDF.
+Four islands - under 2% of Abu Dhabi's 214. Nature made them, and a around 1.9 trillion dollar fund is building them. I believe this will be one of the best places in the world to live, which is why I'm moving here. DM ISLAND for the PDF.
 
 ## Receipts / flags
 - Calum's doc (31 Oct) had: '42' (-> 4%/2%), '1.8 trillion' (-> 1.7), 'villas out the ground' on Lulu (-> show villas). Corrected here; fix in his doc before Oljas.
