@@ -5,7 +5,7 @@ Hook options (Calum's):
 - It's Not Possible to Buy on Abu Dhabi's Most Exclusive Island | You need an invite to buy one of the 90 mansions, here's how it works
 - Bvlgari Island Explained | Abu Dhabi's most exclusive island, here's all you need to know
 
-Three things, the last one's how to get invited  [FLAG: block three doesn't answer 'how' - add the line or revert to 'the last one's the money']
+Three things, the last one's how to get invited
 
 One. What it is
 - A private island, next to Emirates Palace, with the Presidential Palace across the water
@@ -21,7 +21,6 @@ Two. What's on it
 
 Three. The money
 - Nobody knows. No price list, no brochure, no booking day. Sold the way Hermes sells a Birkin - you don't apply, you're offered
-- [suggested: How do you get one? You don't ask. You're already known to Eagle Hills or Bvlgari - or your broker is]
 - The only guide is Bvlgari's Dubai island, where a penthouse sold for 112 million dollars - Dubai's record
 - This one's bigger, quieter, and looks at a palace
 
