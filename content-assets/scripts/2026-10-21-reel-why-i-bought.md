@@ -23,7 +23,7 @@ Four. Price
 - This next bit is even more impressive
 
 Five. Sovereign wealth
-- Abu Dhabi has a around 1.9 trillion dollar sovereign wealth fund
+- Abu Dhabi has a 1.7 trillion dollar sovereign wealth fund
 - Only China and Norway have bigger
 - This secures the stability and growth of the city, and my investment
 
@@ -36,5 +36,5 @@ I will live in Abu Dhabi by 2030
 - Tara Park SPA: 5% booking + 2% admin (~$47.6k), 5%/6 months milestone-linked (Appendix F), 60% Apr 2030.
 - $550/sqft Tara; Ritz-Carlton Maryah ~$1,000-1,200; Jumeirah Residences Dh4,425; Saadiyat apts ~$1,090.
 - Modon 85% L'imad; H1 2026 $6.3bn (#1 UAE); Tara Park sold out ~$545m.
-- ~$1.9tn; by owner only China (~$3.5tn across funds) and Norway ($2tn) bigger.
+- $1.7tn; by owner only China (~$3.5tn across funds) and Norway ($2tn) bigger.
 - v2 ~215 words, ~1:23 at 155 wpm. Calum kept 'secures' (flag: guarantee language - 'underpins' offered). Stray 'plan' after 'earth' in his paste removed.
