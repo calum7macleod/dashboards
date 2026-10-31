@@ -21,7 +21,7 @@ Three. Island and hills
 - And certainly none with luxury villas and mansions looking out to sea
 
 Four. Funding
-- Modon is owned by L'imad, part of Abu Dhabi's around 1.9 trillion dollar sovereign wealth fund
+- Modon is owned by L'imad, part of Abu Dhabi's 1.7 trillion dollar sovereign wealth fund
 - They have the balance sheet to deliver world-class developments whilst only taking a 5% initial deposit from owners
 
 Five. Freehold
@@ -34,7 +34,7 @@ I believe we'll never see anything like this in my life again
 - Typo fixed: "designed before any building started".
 - "Yas 30 minutes or less": Yas ~40 min from Hudayriyat; Saadiyat/Corniche <30.
 - "An hour to Dubai when new tunnels are open": tunnels connect to mainland; the hour is rail from ADGM (2031). Road ~1:15 either way.
-- "L'imad part of the SWF": L'imad is one of three funds totalling ~$1.9tn (ADIA, Mubadala, L'imad). Modon 85% L'imad.
+- "L'imad part of the SWF": L'imad is one of three funds totalling $1.7tn (ADIA, Mubadala, L'imad). Modon 85% L'imad.
 - "Natural island": Hudayriyat is natural with reclamation [v].
 - Hills: Nawayef 45m/55m (ADX); "can't find another island" = agreed safe form.
 - 1290 Quia Emptores -> 2019 = 729 yrs ("730" fine). Bitcoin Jan 2009; Jan 2016 ~$430.
