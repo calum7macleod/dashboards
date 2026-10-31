@@ -69,3 +69,11 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 
 ## Number standard - 31 Oct
 - Abu Dhabi sovereign wealth: say "around 1.9 trillion dollars" (Global SWF Dec 2025: ADIA $1.187tn est + Mubadala $385bn + L'imad $300bn = $1.87tn; Aletihad Jan 2026 reported $1.808tn with L'imad at 263). ADIA never publishes - always "around". Per resident ~$450k vs Norway ~$370k. Applies to scripts written from 31 Oct onward (islands pair first). Recorded scripts keep 1.7 as filmed - do not update.
+
+## 31 Oct - batch 3 status (for Calum, who is away)
+- Scripted by Calum (10): islands x2, Yas, Saadiyat, Bvlgari, Apollo, missed-the-chance, Al Naseem best buy, Al Naseem hands-over-first, third-hill set earlier.
+- Content drafts awaiting markup (7): Hudayriyat tunnels (to Mussafah/E11, NOT Dubai), ADGM Mid-Island Parkway (Saadiyat-Reem 25->10 min, 2027), Etihad (25m pax now, 37m by 2030), no-income-tax, supply vs demand, Al Naseem value, NEW train reel (Etihad Rail passenger service live 30 Sep: 57-64 min, Dh39, 10/day, stations MBZ City + Al Yalayis).
+- Templates needing Calum eyes (2): Al Naseem construction, mysterious amenities.
+- Files: 2026-10-31-batch3-six-drafts.md, 2026-10-31-batch3-additions.md + individual reel files.
+- Flags to settle: Dubai ratio 13x (old) vs ~2 per home/8x (rebased); "no train" lines = say HIGH-SPEED; dirhams vs dollars (Al Naseem best buy is dirhams); 1.9tn forward only.
+- Market handoffs: AD homes under construction total; Al Khail/Dubai Hills effect; UAE revenue split; rail status.
