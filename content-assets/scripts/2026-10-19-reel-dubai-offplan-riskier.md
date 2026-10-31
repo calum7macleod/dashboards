@@ -18,7 +18,7 @@ Two. Supply vs Demand
 - Abu Dhabi has the demand, but the next bit is even more impressive
 
 Three. Finances
-- Abu Dhabi has a 1.7 trillion dollar sovereign wealth fund, they could buy every bitcoin on earth
+- Abu Dhabi has a around 1.9 trillion dollar sovereign wealth fund, they could buy every bitcoin on earth
 - Dubai's closest equivalent, the Investment Corporation of Dubai, has 80 billion dollars net wealth - 20 times smaller
 - Those funds are the biggest shareholders in Modon and Aldar - they've got the balance sheet to finish what they start
 - Abu Dhabi stepped in to financially help Dubai in 2009 with twenty billion dollars
