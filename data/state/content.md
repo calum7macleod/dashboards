@@ -68,4 +68,4 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Field IDs for next pull: IG reels IGRE01,03,23(views),11(reach),21(shares),12(saves),07,10,24(avg watch),28(3s rate),06; TikTok TKPO01,05,07,11,10,09,08,15,13,16,06.
 
 ## Number standard - 31 Oct
-- Abu Dhabi sovereign wealth: say "around 1.9 trillion dollars" (Global SWF Dec 2025: ADIA $1.187tn est + Mubadala $385bn + L'imad $300bn = $1.87tn; Aletihad Jan 2026 reported $1.808tn with L'imad at 263). ADIA never publishes - always "around". Per resident ~$450k vs Norway ~$370k. All scripts updated 31 Oct.
+- Abu Dhabi sovereign wealth: say "around 1.9 trillion dollars" (Global SWF Dec 2025: ADIA $1.187tn est + Mubadala $385bn + L'imad $300bn = $1.87tn; Aletihad Jan 2026 reported $1.808tn with L'imad at 263). ADIA never publishes - always "around". Per resident ~$450k vs Norway ~$370k. Applies to scripts written from 31 Oct onward (islands pair first). Recorded scripts keep 1.7 as filmed - do not update.
