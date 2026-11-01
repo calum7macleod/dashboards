@@ -1,0 +1,43 @@
+{
+ "meta": {
+  "account": "Barclaycard Plat",
+  "currency": "GBP",
+  "period": "27 Oct 26 (VISA 3001)",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4702"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "balance": 9328.97,
+   "availableCredit": 671.03,
+   "usedPct": 93,
+   "creditLimit": 10000.0,
+   "lastStatementBalance": 9328.97,
+   "minimumPayment": 118.02,
+   "dueDate": "2026-11-23"
+  },
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-27",
+   "description": "INTEREST CHARGE",
+   "amount": 0.0,
+   "image": "IMG_4702",
+   "position": 1,
+   "alreadyStaged": "barclaycard-plat-20261027.json"
+  },
+  {
+   "date": "2026-10-27",
+   "description": "CASH INTEREST CHARGE",
+   "amount": 24.99,
+   "image": "IMG_4702",
+   "position": 2,
+   "alreadyStaged": "barclaycard-plat-20261027.json"
+  }
+ ]
+}
