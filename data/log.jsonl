@@ -341,3 +341,4 @@
 {"date": "2026-11-01", "agent": "Uploader", "did": "Staged 1 WHOOP trends file (18 screenshots, 17 metrics) to private repo; handoff to Life Coach", "wrote": ["private:data/staging/2026-11-01-whoop-trends.json", "data/handoffs.json"]}
 {"date": "2026-11-01", "agent": "Uploader", "did": "Correction to previous receipt: 18 metrics, not 17", "wrote": []}
 {"date": "2026-11-01", "agent": "Fitness", "did": "Sunday review wk3: Uploader Whoop week reconciled, Strava pulled, state updated", "wrote": ["private:personal/fitness/whoop.json", "private:personal/state/fitness.md"]}
+{"date": "2026-11-01", "agent": "Uploader", "did": "Staged 1 MyFitnessPal week file (4 screenshots) to private repo; handoff to Life Coach", "wrote": ["private:data/staging/2026-11-01-myfitnesspal-week.json", "data/handoffs.json"]}
