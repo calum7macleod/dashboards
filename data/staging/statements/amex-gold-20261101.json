@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "account": "Amex Gold (charge)",
+  "currency": "GBP",
+  "period": "2-20 Oct 26",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4710"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 460.0,
+   "balanceDue": 460.0,
+   "paymentDue": "2026-11-10",
+   "membershipRewards": 14575
+  },
+  "flags": [
+   "2 Oct row hidden under nav bar - amount not visible; likely the -549.88 payment already staged"
+  ],
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-20",
+   "description": "SP SHOP PLYMOUTH",
+   "amount": 460.0,
+   "image": "IMG_4710",
+   "position": 1,
+   "alreadyStaged": "amex-gold-20261020.json"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "...RECEIVED - THANK YOU (cut off)",
+   "amount": null,
+   "unreadable": "hidden under nav bar - amount not visible",
+   "image": "IMG_4710",
+   "position": 2,
+   "alreadyStaged": "amex-gold-20261002.json (possible - PAYMENT RECEIVED - THANK YOU -549.88 on 2 Oct)"
+  }
+ ]
+}
