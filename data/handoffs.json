@@ -797,7 +797,7 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "1 Nov 05:34-05:41 app screenshots (19 images) staged raw, per image, signs as printed, overlaps left in, alreadyStaged flagged per row. 13 files in data/staging/statements/ (all GBP unless stated; closing = balance printed 1 Nov; opening not printed unless stated): tesco-clubcard-20261101 (8 rows, bal 5,333.54); virgin-money-20261101 (1, owed 8,730.22); santander-everyday-20261101 (1, 11,619.12); mbna-1-20261101 (1, 7,948.40, min 270.74 DUE MON 2 NOV - no payment visible, not in BoS leaving-soon list); mbna-2-20261101 (1, 1,830.49); hsbc-20261101 (2, 1,388.58); ms-20261101 (2, 7,331.73); barclaycard-plat-20261101 (2, 9,328.97); aqua-20261101 (1, 0.00); amex-gold-20261101 (2, 460.00 due 10 Nov); ba-amex-20261101 (2, 229.96); bos-20261020-20261102 (14 rows, chain ties: opening derived 1,268.59 on 20 Oct -> closing 931.70 printed; 3 upcoming in meta); adib-cc-app-20261027-20261101 (AED, 36 rows over 5 overlapping images, ~22 unique, no balance shown). Check ADIB: view includes Monthly Murabaha Payment, Profit earned credit and 3 T_ inward transfers - staged as ADIB CC per 27 Oct row match, confirm it isn't the current account. 4 ccBalances rows appended to finance.json (Tesco Clubcard, Virgin Money, Amex Gold, BoS overdraft); unchanged cards skipped.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0101",
