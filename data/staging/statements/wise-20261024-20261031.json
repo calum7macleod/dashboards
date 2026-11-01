@@ -1,0 +1,213 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "multi (GBP/USD/AED)",
+  "period": "24-31 Oct 26",
+  "source": "app screenshots Sun 1 Nov 26 05:41-05:43 Dubai",
+  "images": [
+   "IMG_4720",
+   "IMG_4721",
+   "IMG_4722"
+  ],
+  "method": "per image, on-screen order, overlaps left in",
+  "sign": "Wise prints outgoing unsigned: amount signed by direction (sent/spent negative, added/refunded positive) as in earlier Wise files; asPrinted kept",
+  "dates": "'Yesterday' resolved from Sun 1 Nov 26",
+  "printed": {
+   "balance": "not shown"
+  },
+  "flags": [
+   "2 Binance card payments DECLINED on 31 Oct (302.55 and 295.29 USD) - not settled",
+   "IMG_4722 top Apple 11.99 GBP: date header cropped (27 or 28 Oct)"
+  ],
+  "rowCount": 17,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "images": [
+  {
+   "image": "IMG_4720",
+   "rows": [
+    {
+     "date": "2026-10-31",
+     "description": "Ediane de Jesus Santana - Sent",
+     "amount": -213.06,
+     "currency": "GBP",
+     "asPrinted": "213.06 GBP",
+     "dayLabel": "Yesterday",
+     "image": "IMG_4720",
+     "position": 1
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Binance - Declined",
+     "amount": -302.55,
+     "currency": "USD",
+     "asPrinted": "302.55 USD",
+     "dayLabel": "Yesterday",
+     "status": "Declined",
+     "image": "IMG_4720",
+     "position": 2
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Binance - Declined",
+     "amount": -295.29,
+     "currency": "USD",
+     "asPrinted": "295.29 USD",
+     "dayLabel": "Yesterday",
+     "status": "Declined",
+     "image": "IMG_4720",
+     "position": 3
+    },
+    {
+     "date": "2026-10-31",
+     "description": "GiffGaff",
+     "amount": -25.0,
+     "currency": "GBP",
+     "asPrinted": "25 GBP",
+     "dayLabel": "Yesterday",
+     "image": "IMG_4720",
+     "position": 4
+    },
+    {
+     "date": "2026-10-30",
+     "description": "To GBP - Added",
+     "amount": 172.15,
+     "currency": "GBP",
+     "asPrinted": "+ 172.15 GBP",
+     "image": "IMG_4720",
+     "position": 5
+    },
+    {
+     "date": "2026-10-30",
+     "description": "IBKR - Sent",
+     "amount": -283.0,
+     "currency": "GBP",
+     "asPrinted": "283 GBP",
+     "image": "IMG_4720",
+     "position": 6
+    }
+   ]
+  },
+  {
+   "image": "IMG_4721",
+   "rows": [
+    {
+     "date": "2026-10-30",
+     "description": "To GBP - Added",
+     "amount": 172.15,
+     "currency": "GBP",
+     "asPrinted": "+ 172.15 GBP",
+     "image": "IMG_4721",
+     "position": 1
+    },
+    {
+     "date": "2026-10-30",
+     "description": "IBKR - Sent",
+     "amount": -283.0,
+     "currency": "GBP",
+     "asPrinted": "283 GBP",
+     "image": "IMG_4721",
+     "position": 2
+    },
+    {
+     "date": "2026-10-29",
+     "description": "Simply Business",
+     "amount": -172.15,
+     "currency": "GBP",
+     "asPrinted": "172.15 GBP",
+     "image": "IMG_4721",
+     "position": 3
+    },
+    {
+     "date": "2026-10-28",
+     "description": "To GBP - Moved (USD to GBP conversion)",
+     "amount": 380.0,
+     "currency": "GBP",
+     "asPrinted": "380 GBP / 506.79 USD",
+     "fromAmount": -506.79,
+     "fromCurrency": "USD",
+     "image": "IMG_4721",
+     "position": 4
+    },
+    {
+     "date": "2026-10-28",
+     "description": "IBKR - Sent",
+     "amount": -100.0,
+     "currency": "GBP",
+     "asPrinted": "100 GBP",
+     "image": "IMG_4721",
+     "position": 5
+    }
+   ]
+  },
+  {
+   "image": "IMG_4722",
+   "rows": [
+    {
+     "date": null,
+     "description": "Apple",
+     "amount": -11.99,
+     "currency": "GBP",
+     "asPrinted": "11.99 GBP",
+     "dateAsPrinted": "header cropped (27 or 28 Oct)",
+     "image": "IMG_4722",
+     "position": 1,
+     "alreadyStaged": "wise-20260926-20260930.json (possible - date cropped here)"
+    },
+    {
+     "date": "2026-10-26",
+     "description": "Vantage UK - Refunded",
+     "amount": 30.0,
+     "currency": "USD",
+     "asPrinted": "+ 30 USD",
+     "image": "IMG_4722",
+     "position": 2,
+     "alreadyStaged": "wise-20261026-20261028.json"
+    },
+    {
+     "date": "2026-10-26",
+     "description": "Vantage UK - Refunded",
+     "amount": 975.0,
+     "currency": "USD",
+     "asPrinted": "+ 975 USD",
+     "image": "IMG_4722",
+     "position": 3,
+     "alreadyStaged": "wise-20261026-20261028.json"
+    },
+    {
+     "date": "2026-10-24",
+     "description": "Fmd Analytics",
+     "amount": -11.64,
+     "currency": "USD",
+     "asPrinted": "11.64 USD / 8.73 GBP",
+     "gbpEquivalent": 8.73,
+     "image": "IMG_4722",
+     "position": 4,
+     "alreadyStaged": "wise-20261015-20261024.json"
+    },
+    {
+     "date": "2026-10-24",
+     "description": "Canva",
+     "amount": -48.0,
+     "currency": "AED",
+     "asPrinted": "48 AED / 9.80 GBP",
+     "gbpEquivalent": 9.8,
+     "image": "IMG_4722",
+     "position": 5,
+     "alreadyStaged": "wise-20261015-20261024.json"
+    },
+    {
+     "date": "2026-10-24",
+     "description": "Apple",
+     "amount": -8.99,
+     "currency": "GBP",
+     "asPrinted": "8.99 GBP",
+     "image": "IMG_4722",
+     "position": 6,
+     "alreadyStaged": "wise-20261015-20261024.json"
+    }
+   ]
+  }
+ ]
+}
