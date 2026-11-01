@@ -1,0 +1,43 @@
+{
+ "meta": {
+  "account": "M&S",
+  "currency": "GBP",
+  "period": "27 Oct 26",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4700"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "currentBalanceExclPending": -7331.73,
+   "availableCredit": 668.27,
+   "pending": 0.0,
+   "creditLimit": 8000.0,
+   "lastStatementBalance": 7331.73,
+   "minimumDue": 183.29,
+   "dueDate": "2026-11-21"
+  },
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-27",
+   "description": "INTEREST",
+   "amount": -6.93,
+   "image": "IMG_4700",
+   "position": 1,
+   "alreadyStaged": "ms-20261027.json"
+  },
+  {
+   "date": "2026-10-27",
+   "description": "INTEREST",
+   "amount": -28.0,
+   "image": "IMG_4700",
+   "position": 2,
+   "alreadyStaged": "ms-20261027.json"
+  }
+ ]
+}
