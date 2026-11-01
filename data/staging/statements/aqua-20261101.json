@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "account": "Aqua",
+  "currency": "GBP",
+  "period": "25 Oct 26 (card *4498)",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4703"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "balance": 0.0,
+   "available": 5250.0,
+   "creditLimit": 5250.0,
+   "inboxMessages": 6
+  },
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-25",
+   "description": "Payment Received - Thank You",
+   "amount": -24.3,
+   "image": "IMG_4703",
+   "position": 1,
+   "alreadyStaged": "aqua-20261022.json"
+  }
+ ]
+}
