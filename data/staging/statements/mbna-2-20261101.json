@@ -1,0 +1,38 @@
+{
+ "meta": {
+  "account": "MBNA 2",
+  "currency": "GBP",
+  "period": "21 Oct 26 statement; balance 1 Nov",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4699"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "spent": 1830.49,
+   "available": 669.51,
+   "statementBalance": 1830.49,
+   "minimumPayment": 47.54,
+   "dueDate": "2026-11-16",
+   "statementDate": "2026-10-21"
+  },
+  "flags": [
+   "Unchanged since 25 Oct capture"
+  ],
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-21",
+   "description": "INTEREST",
+   "amount": 1.78,
+   "note": "row partly cut, figure legible",
+   "image": "IMG_4699",
+   "position": 1,
+   "alreadyStaged": "mbna-2-stmt-20261021.json"
+  }
+ ]
+}
