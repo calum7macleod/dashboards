@@ -29047,6 +29047,56 @@
       "month": "Oct 26",
       "currency": "GBP",
       "source": "UK card app screenshots Wed 28 Oct 26 07:49-07:52 Dubai"
+    },
+    {
+      "card": "Tesco Clubcard",
+      "balance": 5333.54,
+      "currency": "GBP",
+      "available": 991.46,
+      "limit": 6325.0,
+      "status": "Only row since 4 Oct stmt: DD 251.00 paid 29 Oct (BoS). Limit derived (balance + available)",
+      "date": "2026-11-01",
+      "month": "Nov 26",
+      "source": "UK card app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+      "rows": "data/staging/statements/tesco-clubcard-20261101.json"
+    },
+    {
+      "card": "Virgin Money",
+      "balance": 8730.22,
+      "currency": "GBP",
+      "available": 1269.78,
+      "limit": 10000.0,
+      "status": "Owed incl pending. 375.08 payment posted 28 Oct",
+      "date": "2026-11-01",
+      "month": "Nov 26",
+      "source": "UK card app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+      "rows": "data/staging/statements/virgin-money-20261101.json"
+    },
+    {
+      "card": "Amex Gold (charge)",
+      "balance": 460.0,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Balance due 460.00 by 10 Nov (SP SHOP PLYMOUTH 20 Oct). MR 14,575",
+      "dueDate": "2026-11-10",
+      "dueAmount": 460.0,
+      "date": "2026-11-01",
+      "month": "Nov 26",
+      "source": "UK card app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+      "rows": "data/staging/statements/amex-gold-20261101.json"
+    },
+    {
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 931.70 at 05:41 1 Nov. 29 Oct Tesco 251.00. 30 Oct: +10,500 F/FLOW own name; out Eventus Law 6,000, Tallia 3,500; 2 Nov Tallia 100. Leaving: Pet Health 28.25 (2 Nov), Mum 300 (3 Nov), HSBC CC 35.60 (5 Nov)",
+      "date": "2026-11-01",
+      "month": "Nov 26",
+      "source": "BoS app screenshots Sun 1 Nov 26 05:41 Dubai",
+      "rows": "data/staging/statements/bos-20261020-20261102.json"
     }
   ],
   "personalDebts": [
