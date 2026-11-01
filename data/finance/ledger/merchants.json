@@ -2,6 +2,48 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "metricool",
+   "category": "Business",
+   "sub": "NEW SUB 29 Oct (Metricool) - rogue? flag"
+  },
+  {
+   "rx": "aims health care",
+   "category": "Unaccounted",
+   "sub": "AIMS Health Care 550 (30 Oct) - what?"
+  },
+  {
+   "rx": "aldharis specialized",
+   "category": "Unaccounted",
+   "sub": "Aldharis Specialized 226 (29 Oct) - what?"
+  },
+  {
+   "rx": "eventus law",
+   "category": "Business",
+   "sub": "Lawyer (Eventus Law) - Nov budget GBP6,000"
+  },
+  {
+   "rx": "simply business",
+   "category": "Property",
+   "sub": "Methil insurance (Simply Business) via Nationwide"
+  },
+  {
+   "rx": "raman goyal|webi",
+   "category": "Income",
+   "sub": "Webi sales commission (unbudgeted, 30 Oct)",
+   "type": "income"
+  },
+  {
+   "rx": "ediane de jesus",
+   "category": "Unaccounted",
+   "sub": "Ediane de Jesus Santana GBP213 (31 Oct) - who?"
+  },
+  {
+   "rx": "ibkr",
+   "category": "Investment",
+   "sub": "IBKR funding",
+   "type": "transfer"
+  },
+  {
    "rx": "eppco enoc",
    "category": "Life",
    "sub": "Car repair (ENOC) - Calum misc"
