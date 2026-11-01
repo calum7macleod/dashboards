@@ -1,0 +1,31 @@
+{
+ "meta": {
+  "account": "Virgin Money",
+  "currency": "GBP",
+  "period": "since 4 Oct 26 statement (card *2995)",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4696"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "amountOwedInclPending": 8730.22,
+   "availableToSpend": 1269.78,
+   "creditLimit": 10000.0,
+   "lastStatementDate": "2026-10-04"
+  },
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-28",
+   "description": "MOBILE APP PAYMENT",
+   "amount": -375.08,
+   "image": "IMG_4696",
+   "position": 1
+  }
+ ]
+}
