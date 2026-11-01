@@ -337,3 +337,4 @@
 {"date": "2026-11-01", "agent": "Fitness", "did": "Corrected Fri 30 (Boxica, not rest) + Sat walk; deload marked done per Calum, wk4 normal", "wrote": ["private:personal/fitness/training.json", "private:personal/state/fitness.md", "private:personal/fitness/plan.md"]}
 {"date": "2026-11-01", "agent": "Finance", "did": "1 Nov rulings applied; ADIB waiver mechanics recorded (avg balance x rate ties to 1,201); Webi intro fee recommended to pot", "wrote": ["data/state/finance.md", "data/finance/ledger/merchants.json"]}
 {"date": "2026-11-01", "agent": "Finance", "did": "ADIB 31 Oct statement (3,393.33, due 25 Nov) paid in full 1 Nov (3,400) - November waiver locked in", "wrote": ["data/state/finance.md"]}
+{"date": "2026-11-01", "agent": "Finance", "did": "October final BvA written: UK under ~GBP450, UAE over ~6.8K like-for-like, total over ~4.6K (2.3%)", "wrote": ["data/finance/bva-2026-10.md"]}
