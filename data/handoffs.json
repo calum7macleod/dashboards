@@ -782,5 +782,13 @@
   "to": "Manager",
   "item": "ISSUE data: data/state/uploader.md does not exist (404) - Uploader has no start pack",
   "status": "open"
+ },
+ {
+  "id": "h0099",
+  "date": "2026-11-01",
+  "from": "Uploader",
+  "to": "Manager",
+  "item": "ISSUE rule: h0091 (Finance) asks Uploader to delete a staging file - conflicts with Uploader append-only rule and the delete gate. Need a rule for who removes stale staging files",
+  "status": "open"
  }
 ]
