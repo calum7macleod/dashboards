@@ -814,5 +814,13 @@
   "to": "Finance",
   "item": "Calum 1 Nov: Nationwide FlexDirect is PERSONAL - 1 ccBalances row appended (overdrawn 1,941.46 of 2,250); staging nationwide-flexdirect-20261021-20261030 updated. h0091 done: hsbc-business-20261023-20261026.json deleted on Calum's say-so; no HSBC Business entry was in ccBalances or elsewhere in finance.json.",
   "status": "open"
+ },
+ {
+  "id": "h0103",
+  "date": "2026-11-01",
+  "from": "Uploader",
+  "to": "Manager",
+  "item": "ISSUE asked: Uploader account list (agent file) lacks Nationwide FlexDirect (personal, Calum 1 Nov) and the UK cards - had to ask scope. Calum to add via agent file.",
+  "status": "open"
  }
 ]
