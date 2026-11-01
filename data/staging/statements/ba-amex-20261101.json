@@ -1,0 +1,46 @@
+{
+ "meta": {
+  "account": "BA Amex",
+  "currency": "GBP",
+  "period": "Oct 26",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4709"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 229.96,
+   "balanceDue": 0.0,
+   "paymentStatus": "Payment not required at this time",
+   "availableCredit": 570.0,
+   "avios": 8023
+  },
+  "flags": [
+   "PLAYSTATION LONDON row: date header obscured ('2? Oct'), text faint behind nav bar"
+  ],
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-23",
+   "description": "APPLE.COM/BILL HOLLYHILL",
+   "amount": 10.0,
+   "image": "IMG_4709",
+   "position": 1,
+   "alreadyStaged": "ba-amex-20261018-20261023.json"
+  },
+  {
+   "date": null,
+   "description": "PLAYSTATION LONDON",
+   "amount": 24.99,
+   "dateAsPrinted": "2? Oct (obscured)",
+   "confidence": "low - faint behind nav bar",
+   "image": "IMG_4709",
+   "position": 2,
+   "alreadyStaged": "ba-amex-20261018-20261023.json"
+  }
+ ]
+}
