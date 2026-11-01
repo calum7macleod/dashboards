@@ -29097,6 +29097,18 @@
       "month": "Nov 26",
       "source": "BoS app screenshots Sun 1 Nov 26 05:41 Dubai",
       "rows": "data/staging/statements/bos-20261020-20261102.json"
+    },
+    {
+      "card": "Nationwide FlexDirect OVERDRAFT",
+      "balance": 1941.46,
+      "currency": "GBP",
+      "available": 308.54,
+      "limit": 2250.0,
+      "status": "OVERDRAWN 1,941.46 of 2,250 at 05:43 1 Nov (app labels it 'Available -1,941.46'; headroom 308.54 derived). Arranged OD interest 41.35 on 21 Oct. Personal - Calum confirmed 1 Nov",
+      "date": "2026-11-01",
+      "month": "Nov 26",
+      "source": "Nationwide app screenshot Sun 1 Nov 26 05:43 Dubai",
+      "rows": "data/staging/statements/nationwide-flexdirect-20261021-20261030.json"
     }
   ],
   "personalDebts": [
