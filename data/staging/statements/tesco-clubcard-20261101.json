@@ -1,0 +1,99 @@
+{
+ "meta": {
+  "account": "Tesco Clubcard",
+  "currency": "GBP",
+  "period": "4 Sep - 29 Oct 26 (card *8916)",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4695"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "balance": 5333.54,
+   "availableCredit": 991.46,
+   "creditLimitDerived": 6325.0,
+   "lastStatementDate": "2026-10-04"
+  },
+  "flags": [
+   "3rd 04 Sep interest row cut off - amount not visible; covered by tesco-clubcard-20260904-20261004.json"
+  ],
+  "rowCount": 8,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-29",
+   "description": "DIRECT DEBIT PAYMENT - THANK Y...",
+   "amount": -251.0,
+   "section": "Since last statement",
+   "image": "IMG_4695",
+   "position": 1
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 20.76,
+   "section": "04 Oct 2026 Statement",
+   "image": "IMG_4695",
+   "position": 2,
+   "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 30.6,
+   "section": "04 Oct 2026 Statement",
+   "image": "IMG_4695",
+   "position": 3,
+   "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+  },
+  {
+   "date": "2026-10-02",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 72.07,
+   "section": "04 Oct 2026 Statement",
+   "image": "IMG_4695",
+   "position": 4,
+   "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+  },
+  {
+   "date": "2026-09-29",
+   "description": "DIRECT DEBIT PAYMENT - THANK...",
+   "amount": -266.0,
+   "section": "04 Oct 2026 Statement",
+   "image": "IMG_4695",
+   "position": 5,
+   "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 21.62,
+   "section": "04 Sep 2026 Statement",
+   "image": "IMG_4695",
+   "position": 6,
+   "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+  },
+  {
+   "date": "2026-09-04",
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": 31.6,
+   "section": "04 Sep 2026 Statement",
+   "image": "IMG_4695",
+   "position": 7,
+   "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+  },
+  {
+   "date": null,
+   "description": "INTEREST - SEE SUMMARY",
+   "amount": null,
+   "section": "04 Sep 2026 Statement",
+   "unreadable": "cut off - date and amount not visible",
+   "image": "IMG_4695",
+   "position": 8,
+   "alreadyStaged": "tesco-clubcard-20260904-20261004.json (possible - that file has 4 interest rows on 4 Sep: 21.62, 31.60, 77.25, 0.18)"
+  }
+ ]
+}
