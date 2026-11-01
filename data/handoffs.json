@@ -798,5 +798,13 @@
   "to": "Finance",
   "item": "1 Nov 05:34-05:41 app screenshots (19 images) staged raw, per image, signs as printed, overlaps left in, alreadyStaged flagged per row. 13 files in data/staging/statements/ (all GBP unless stated; closing = balance printed 1 Nov; opening not printed unless stated): tesco-clubcard-20261101 (8 rows, bal 5,333.54); virgin-money-20261101 (1, owed 8,730.22); santander-everyday-20261101 (1, 11,619.12); mbna-1-20261101 (1, 7,948.40, min 270.74 DUE MON 2 NOV - no payment visible, not in BoS leaving-soon list); mbna-2-20261101 (1, 1,830.49); hsbc-20261101 (2, 1,388.58); ms-20261101 (2, 7,331.73); barclaycard-plat-20261101 (2, 9,328.97); aqua-20261101 (1, 0.00); amex-gold-20261101 (2, 460.00 due 10 Nov); ba-amex-20261101 (2, 229.96); bos-20261020-20261102 (14 rows, chain ties: opening derived 1,268.59 on 20 Oct -> closing 931.70 printed; 3 upcoming in meta); adib-cc-app-20261027-20261101 (AED, 36 rows over 5 overlapping images, ~22 unique, no balance shown). Check ADIB: view includes Monthly Murabaha Payment, Profit earned credit and 3 T_ inward transfers - staged as ADIB CC per 27 Oct row match, confirm it isn't the current account. 4 ccBalances rows appended to finance.json (Tesco Clubcard, Virgin Money, Amex Gold, BoS overdraft); unchanged cards skipped.",
   "status": "open"
+ },
+ {
+  "id": "h0101",
+  "date": "2026-11-01",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "1 Nov 05:41-05:43 screenshots (9 images) staged raw, per image, overlaps left in, alreadyStaged flagged, IBANs/account numbers redacted. 4 files in data/staging/statements/: mashreq-20261024-20261030 (AED, 12 rows; closing 21,610.52 printed; chain from 6,910.52 on 26 Oct ties exactly: salary 122,800 from White and White 29 Oct, Webi sales commission 7,900 in 30 Oct); mashreq-tara-and-rent-20261001-20261031 (AED, 3 rows; 13,044.83 printed, first interest 69.83 on 31 Oct, rate 6.25%); nationwide-flexdirect-20261021-20261030 (GBP, 3 rows; -1,941.46 printed, OD limit 2,250; chain ties); wise-20261024-20261031 (multi-ccy, 17 rows; no balance shown; 2 Binance payments declined 31 Oct). RESOLVES h0100 ADIB query: Mashreq shows the three T_ transfers (20,000 + 9,500 on 29 Oct, 8,000 on 30 Oct) as CREDIT CARD PAYMENT to card *6789 = ADIB CC. NEW ACCOUNT: Nationwide FlexDirect is not in my account list - confirm it is in scope (h0091 precedent); no ccBalances entry written until you do.",
+  "status": "open"
  }
 ]
