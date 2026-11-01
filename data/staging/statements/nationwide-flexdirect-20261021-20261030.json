@@ -23,7 +23,7 @@
   "verified": "-1,732.96 - 41.35 = -1,774.31; -1,774.31 - 172.15 + 5.00 = -1,941.46 printed",
   "redacted": "sort code and account number",
   "flags": [
-   "NEW ACCOUNT - not in the Uploader account list (older finance.json rows say 'Nationwide (Property)'). Finance to confirm it is in scope (h0091 precedent) - no ccBalances entry until then",
+   "Personal account - Calum confirmed 1 Nov 26. Not yet in the Uploader account list (raised to Manager)",
    "30 Oct -172.15 to CALUM MACLEOD matches BoS +172.15 / -172.15 on 30 Oct and Wise +172.15 'To GBP Added' on 30 Oct (Simply Business 172.15 on 29 Oct)"
   ],
   "rowCount": 3,
