@@ -1,0 +1,368 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "currency": "AED",
+  "period": "27 Oct - 1 Nov 26 (no 28 Oct rows)",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4708",
+   "IMG_4707",
+   "IMG_4706",
+   "IMG_4705",
+   "IMG_4704"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "balances": "none shown in any image"
+  },
+  "dates": "day labels resolved from screenshot date Sun 1 Nov 26",
+  "flags": [
+   "Staged as ADIB CC (same 'All transactions' view; 27 Oct rows match adib-cc-app-20261024-20261027). View also shows Monthly Murabaha Payment, Profit earned and bonus from bank, and three T_ inward transfers - Finance to confirm account",
+   "27 Oct: Costa Coffee -20.00 posted where earlier capture had EMIRATES LEIS MARINA P -20.00 pending - possible same row renamed",
+   "Monday 26 Oct header visible at bottom, rows not captured"
+  ],
+  "rowCount": 36,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "images": [
+  {
+   "image": "IMG_4708",
+   "rows": [
+    {
+     "date": "2026-11-01",
+     "description": "BOXICA",
+     "amount": -949.0,
+     "dayLabel": "Today",
+     "status": "Pending",
+     "image": "IMG_4708",
+     "position": 1
+    },
+    {
+     "date": "2026-10-31",
+     "description": "SUNBERRY VEGETABLE",
+     "amount": -422.35,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4708",
+     "position": 2
+    },
+    {
+     "date": "2026-10-31",
+     "description": "DELIVEROO",
+     "amount": -92.4,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4708",
+     "position": 3
+    },
+    {
+     "date": "2026-10-31",
+     "description": "CAFU APP DMCC",
+     "amount": -191.6,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4708",
+     "position": 4
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Monthly Murabaha Payment",
+     "amount": -2408.7,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4708",
+     "position": 5
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Profit earned and bonus from bank",
+     "amount": 1207.33,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4708",
+     "position": 6
+    },
+    {
+     "date": "2026-10-30",
+     "description": "AIMS HEALTH CARE LLC",
+     "amount": -550.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4708",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4707",
+   "rows": [
+    {
+     "date": "2026-11-01",
+     "description": "BOXICA",
+     "amount": -949.0,
+     "dayLabel": "Today",
+     "note": "Today header cut",
+     "status": "Pending",
+     "image": "IMG_4707",
+     "position": 1
+    },
+    {
+     "date": "2026-10-31",
+     "description": "SUNBERRY VEGETABLE",
+     "amount": -422.35,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4707",
+     "position": 2
+    },
+    {
+     "date": "2026-10-31",
+     "description": "DELIVEROO",
+     "amount": -92.4,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4707",
+     "position": 3
+    },
+    {
+     "date": "2026-10-31",
+     "description": "CAFU APP DMCC",
+     "amount": -191.6,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4707",
+     "position": 4
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Monthly Murabaha Payment",
+     "amount": -2408.7,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4707",
+     "position": 5
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Profit earned and bonus from bank",
+     "amount": 1207.33,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4707",
+     "position": 6
+    },
+    {
+     "date": "2026-10-30",
+     "description": "AIMS HEALTH CARE LLC",
+     "amount": -550.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4707",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4706",
+   "rows": [
+    {
+     "date": "2026-10-31",
+     "description": "Profit earned and bonus from bank",
+     "amount": 1207.33,
+     "dayLabel": "Yesterday",
+     "note": "cut at top",
+     "image": "IMG_4706",
+     "position": 1
+    },
+    {
+     "date": "2026-10-30",
+     "description": "AIMS HEALTH CARE LLC",
+     "amount": -550.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4706",
+     "position": 2
+    },
+    {
+     "date": "2026-10-30",
+     "description": "CAFU APP DMCC",
+     "amount": -16.95,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4706",
+     "position": 3
+    },
+    {
+     "date": "2026-10-30",
+     "description": "DUBAI GOLF LLC",
+     "amount": -149.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4706",
+     "position": 4
+    },
+    {
+     "date": "2026-10-30",
+     "description": "Qlub*Nandos Nshama Tow",
+     "amount": -93.5,
+     "dayLabel": "Friday",
+     "image": "IMG_4706",
+     "position": 5
+    },
+    {
+     "date": "2026-10-30",
+     "description": "www.instashop.com",
+     "amount": -130.93,
+     "dayLabel": "Friday",
+     "image": "IMG_4706",
+     "position": 6
+    },
+    {
+     "date": "2026-10-30",
+     "description": "www.instashop.com",
+     "amount": -7.5,
+     "dayLabel": "Friday",
+     "image": "IMG_4706",
+     "position": 7
+    },
+    {
+     "date": "2026-10-30",
+     "description": "Deliveroo",
+     "amount": -29.0,
+     "dayLabel": "Friday",
+     "image": "IMG_4706",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_4705",
+   "rows": [
+    {
+     "date": "2026-10-30",
+     "description": "DUBAI GOLF LLC (cut at top)",
+     "amount": null,
+     "dayLabel": "Friday",
+     "note": "amount hidden; same as IMG_4706 pos 4",
+     "status": "Pending",
+     "image": "IMG_4705",
+     "position": 1
+    },
+    {
+     "date": "2026-10-30",
+     "description": "Qlub*Nandos Nshama Tow",
+     "amount": -93.5,
+     "dayLabel": "Friday",
+     "image": "IMG_4705",
+     "position": 2
+    },
+    {
+     "date": "2026-10-30",
+     "description": "www.instashop.com",
+     "amount": -130.93,
+     "dayLabel": "Friday",
+     "image": "IMG_4705",
+     "position": 3
+    },
+    {
+     "date": "2026-10-30",
+     "description": "www.instashop.com",
+     "amount": -7.5,
+     "dayLabel": "Friday",
+     "image": "IMG_4705",
+     "position": 4
+    },
+    {
+     "date": "2026-10-30",
+     "description": "Deliveroo",
+     "amount": -29.0,
+     "dayLabel": "Friday",
+     "image": "IMG_4705",
+     "position": 5
+    },
+    {
+     "date": "2026-10-30",
+     "description": "T_4848c10f0e9049048d9954d81053c629...",
+     "amount": 9500.0,
+     "dayLabel": "Friday",
+     "reference": "T_4848c10f0e9049048d9954d81053c629... (truncated)",
+     "image": "IMG_4705",
+     "position": 6
+    },
+    {
+     "date": "2026-10-30",
+     "description": "T_1180a0bad160432d8461f4ecef9c442...",
+     "amount": 20000.0,
+     "dayLabel": "Friday",
+     "reference": "T_1180a0bad160432d8461f4ecef9c442... (truncated)",
+     "image": "IMG_4705",
+     "position": 7
+    },
+    {
+     "date": "2026-10-30",
+     "description": "T_696f80d0f4934ca9a7771b235afdc576:-...",
+     "amount": 8000.0,
+     "dayLabel": "Friday",
+     "reference": "T_696f80d0f4934ca9a7771b235afdc576:-... (truncated)",
+     "image": "IMG_4705",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_4704",
+   "rows": [
+    {
+     "date": "2026-10-29",
+     "description": "ALDHARIS SPECIALIZED P",
+     "amount": -226.0,
+     "dayLabel": "Thursday",
+     "image": "IMG_4704",
+     "position": 1
+    },
+    {
+     "date": "2026-10-29",
+     "description": "METRICOOL.COM",
+     "amount": -25.0,
+     "dayLabel": "Thursday",
+     "currency": "USD",
+     "image": "IMG_4704",
+     "position": 2
+    },
+    {
+     "date": "2026-10-29",
+     "description": "Deliveroo",
+     "amount": -127.22,
+     "dayLabel": "Thursday",
+     "image": "IMG_4704",
+     "position": 3
+    },
+    {
+     "date": "2026-10-27",
+     "description": "The Coffee Club",
+     "amount": -21.0,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4704",
+     "position": 4,
+     "alreadyStaged": "adib-cc-app-20261024-20261027.json"
+    },
+    {
+     "date": "2026-10-27",
+     "description": "Costa Coffee",
+     "amount": -20.0,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4704",
+     "position": 5,
+     "alreadyStaged": "adib-cc-app-20261024-20261027.json"
+    },
+    {
+     "date": "2026-10-27",
+     "description": "InstaShop",
+     "amount": -104.02,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4704",
+     "position": 6,
+     "alreadyStaged": "adib-cc-app-20261024-20261027.json"
+    }
+   ]
+  }
+ ]
+}
