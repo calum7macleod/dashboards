@@ -1,0 +1,46 @@
+{
+ "meta": {
+  "account": "HSBC",
+  "currency": "GBP",
+  "period": "5-10 Oct 26 (personal credit card)",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4701"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "currentBalanceExclPending": -1388.58,
+   "availableCredit": 611.42,
+   "pending": 0.0,
+   "creditLimit": 2000.0,
+   "statementBalance": 1388.58,
+   "minimumDue": 34.71,
+   "dueDate": "2026-11-05"
+  },
+  "flags": [
+   "No activity since 10 Oct. BoS lists HSBC DD at 35.60 ('Previously') in 4 days vs 34.71 min due"
+  ],
+  "rowCount": 2,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-10",
+   "description": "INTEREST",
+   "amount": -0.17,
+   "image": "IMG_4701",
+   "position": 1,
+   "alreadyStaged": "hsbc-20260910-20261010.json"
+  },
+  {
+   "date": "2026-10-05",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+   "amount": 35.6,
+   "image": "IMG_4701",
+   "position": 2,
+   "alreadyStaged": "hsbc-20260910-20261010.json"
+  }
+ ]
+}
