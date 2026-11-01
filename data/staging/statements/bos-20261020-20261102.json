@@ -1,0 +1,188 @@
+{
+ "meta": {
+  "account": "BoS",
+  "currency": "GBP",
+  "period": "20 Oct - 2 Nov 26",
+  "source": "UK + ADIB app screenshots Sun 1 Nov 26 05:34-05:41 Dubai",
+  "images": [
+   "IMG_4711",
+   "IMG_4712",
+   "IMG_4713"
+  ],
+  "method": "per Finance h0018/h0045: raw, per image, on-screen order, overlaps left in, signs as printed",
+  "sign": "as printed",
+  "printed": {
+   "balance": 931.7,
+   "overdraftLimit": 3000.0,
+   "closingBalancePrinted": 931.7,
+   "openingBalanceDerived": 1268.59,
+   "upcoming": [
+    {
+     "description": "PET HEALTH CLUB",
+     "amount": -28.25,
+     "when": "Tomorrow",
+     "date": "2026-11-02",
+     "note": "Previously"
+    },
+    {
+     "description": "MUM",
+     "amount": -300.0,
+     "when": "In 2 days",
+     "date": "2026-11-03"
+    },
+    {
+     "description": "HSBC CREDIT CARD",
+     "amount": -35.6,
+     "when": "In 4 days",
+     "date": "2026-11-05",
+     "note": "Previously"
+    }
+   ]
+  },
+  "accountType": "Classic current account",
+  "dates": "explicit dates as printed; 'Tomorrow/In N days' resolved from Sun 1 Nov",
+  "flags": [
+   "Running-balance chain ties 1,150.14 (20 Oct) to 931.70 (2 Nov). openingBalanceDerived = 1,150.14 + 118.45",
+   "Mon 19 Oct header visible, rows not captured",
+   "2 Nov row is forward-dated by the bank (captured Sun 1 Nov)"
+  ],
+  "rowCount": 14,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "images": [
+  {
+   "image": "IMG_4711",
+   "rows": [
+    {
+     "date": "2026-11-02",
+     "description": "TALLIA FLAHER",
+     "amount": -100.0,
+     "balance": 931.7,
+     "image": "IMG_4711",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "image": "IMG_4712",
+   "rows": [
+    {
+     "date": "2026-11-02",
+     "description": "TALLIA FLAHER (cut off at top)",
+     "amount": null,
+     "balance": 931.7,
+     "note": "amount hidden; same row as IMG_4711 pos 1",
+     "image": "IMG_4712",
+     "position": 1
+    },
+    {
+     "date": "2026-10-30",
+     "description": "TALLIA FLAHER",
+     "amount": -3500.0,
+     "balance": 1031.7,
+     "image": "IMG_4712",
+     "position": 2
+    },
+    {
+     "date": "2026-10-30",
+     "description": "EVENTUS LAW",
+     "amount": -6000.0,
+     "balance": 4531.7,
+     "image": "IMG_4712",
+     "position": 3
+    },
+    {
+     "date": "2026-10-30",
+     "description": "C L MACLEOD",
+     "amount": -172.15,
+     "balance": 10531.7,
+     "image": "IMG_4712",
+     "position": 4
+    },
+    {
+     "date": "2026-10-30",
+     "description": "CALUM MACLEOD",
+     "amount": 172.15,
+     "balance": 10703.85,
+     "image": "IMG_4712",
+     "position": 5
+    },
+    {
+     "date": "2026-10-30",
+     "description": "F/FLOW CALUM MACLE",
+     "amount": 10500.0,
+     "balance": 10531.7,
+     "image": "IMG_4712",
+     "position": 6
+    },
+    {
+     "date": "2026-10-29",
+     "description": "TESCO BANK",
+     "amount": -251.0,
+     "balance": 31.7,
+     "image": "IMG_4712",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4713",
+   "rows": [
+    {
+     "date": "2026-10-29",
+     "description": "(row hidden under header)",
+     "amount": null,
+     "note": "same as IMG_4712 pos 7",
+     "image": "IMG_4713",
+     "position": 1
+    },
+    {
+     "date": "2026-10-28",
+     "description": "VIRGIN MONEY",
+     "amount": -375.08,
+     "balance": 282.7,
+     "image": "IMG_4713",
+     "position": 2,
+     "alreadyStaged": "bos-20261026-20261028.json"
+    },
+    {
+     "date": "2026-10-26",
+     "description": "CORRINA FLAHER",
+     "amount": -150.0,
+     "balance": 657.78,
+     "image": "IMG_4713",
+     "position": 3,
+     "alreadyStaged": "bos-20261026-20261028.json"
+    },
+    {
+     "date": "2026-10-26",
+     "description": "AQUA",
+     "amount": -24.3,
+     "balance": 807.78,
+     "image": "IMG_4713",
+     "position": 4,
+     "alreadyStaged": "bos-20261016-20261026.json"
+    },
+    {
+     "date": "2026-10-20",
+     "description": "SANTANDERCARDS LTD",
+     "amount": -318.06,
+     "balance": 832.08,
+     "image": "IMG_4713",
+     "position": 5,
+     "alreadyStaged": "bos-20261013-20261020.json"
+    },
+    {
+     "date": "2026-10-20",
+     "description": "B/CARD PLAT VISA",
+     "amount": -118.45,
+     "balance": 1150.14,
+     "image": "IMG_4713",
+     "position": 6,
+     "alreadyStaged": "bos-20261013-20261020.json"
+    }
+   ]
+  }
+ ]
+}
