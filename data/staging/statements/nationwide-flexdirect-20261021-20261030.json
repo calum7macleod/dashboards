@@ -1,0 +1,56 @@
+{
+ "meta": {
+  "account": "Nationwide FlexDirect",
+  "accountType": "current account with overdraft",
+  "currency": "GBP",
+  "period": "21-30 Oct 26 (Mon 5 Oct header, rows not captured)",
+  "source": "app screenshots Sun 1 Nov 26 05:41-05:43 Dubai",
+  "images": [
+   "IMG_4719"
+  ],
+  "method": "on-screen order",
+  "sign": "as printed",
+  "printed": {
+   "balanceShown": -1941.46,
+   "balanceLabel": "Available",
+   "overdraftLimit": 2250.0,
+   "dayBalances": {
+    "2026-10-30": -1941.46,
+    "2026-10-21": -1774.31,
+    "2026-10-05": -1732.96
+   }
+  },
+  "verified": "-1,732.96 - 41.35 = -1,774.31; -1,774.31 - 172.15 + 5.00 = -1,941.46 printed",
+  "redacted": "sort code and account number",
+  "flags": [
+   "NEW ACCOUNT - not in the Uploader account list (older finance.json rows say 'Nationwide (Property)'). Finance to confirm it is in scope (h0091 precedent) - no ccBalances entry until then",
+   "30 Oct -172.15 to CALUM MACLEOD matches BoS +172.15 / -172.15 on 30 Oct and Wise +172.15 'To GBP Added' on 30 Oct (Simply Business 172.15 on 29 Oct)"
+  ],
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "transactions": [
+  {
+   "date": "2026-10-30",
+   "description": "CALUM MACLEOD - MONEY",
+   "amount": -172.15,
+   "image": "IMG_4719",
+   "position": 1
+  },
+  {
+   "date": "2026-10-30",
+   "description": "Bank credit E.ON NEXT LTD - A-6CDE8D38-001",
+   "amount": 5.0,
+   "image": "IMG_4719",
+   "position": 2
+  },
+  {
+   "date": "2026-10-21",
+   "description": "Arranged Overdraft Interest",
+   "amount": -41.35,
+   "image": "IMG_4719",
+   "position": 3
+  }
+ ]
+}
