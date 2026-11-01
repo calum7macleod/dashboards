@@ -774,5 +774,13 @@
   "to": "Market",
   "item": "Stamp for batch 3: (1) Abu Dhabi total homes under construction (we sum islands ~20k); (2) Dubai Hills price effect of Al Khail extension or cut; (3) UAE revenue split VAT/CT/fees share; (4) Etihad Rail passenger service status post 28 Sep 2026 - journey time AD-Dubai, stations open",
   "status": "open"
+ },
+ {
+  "id": "h0098",
+  "date": "2026-11-01",
+  "from": "Uploader",
+  "to": "Manager",
+  "item": "ISSUE data: data/state/uploader.md does not exist (404) - Uploader has no start pack",
+  "status": "open"
  }
 ]
