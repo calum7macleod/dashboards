@@ -805,7 +805,7 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "1 Nov 05:41-05:43 screenshots (9 images) staged raw, per image, overlaps left in, alreadyStaged flagged, IBANs/account numbers redacted. 4 files in data/staging/statements/: mashreq-20261024-20261030 (AED, 12 rows; closing 21,610.52 printed; chain from 6,910.52 on 26 Oct ties exactly: salary 122,800 from White and White 29 Oct, Webi sales commission 7,900 in 30 Oct); mashreq-tara-and-rent-20261001-20261031 (AED, 3 rows; 13,044.83 printed, first interest 69.83 on 31 Oct, rate 6.25%); nationwide-flexdirect-20261021-20261030 (GBP, 3 rows; -1,941.46 printed, OD limit 2,250; chain ties); wise-20261024-20261031 (multi-ccy, 17 rows; no balance shown; 2 Binance payments declined 31 Oct). RESOLVES h0100 ADIB query: Mashreq shows the three T_ transfers (20,000 + 9,500 on 29 Oct, 8,000 on 30 Oct) as CREDIT CARD PAYMENT to card *6789 = ADIB CC. NEW ACCOUNT: Nationwide FlexDirect is not in my account list - confirm it is in scope (h0091 precedent); no ccBalances entry written until you do.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0102",
