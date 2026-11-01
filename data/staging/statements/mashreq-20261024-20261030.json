@@ -1,0 +1,160 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "24-30 Oct 26 (salary banner dated 31 Oct)",
+  "source": "app screenshots Sun 1 Nov 26 05:41-05:43 Dubai",
+  "images": [
+   "IMG_4714",
+   "IMG_4715",
+   "IMG_4716"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalAvailableBalance": 21610.52,
+   "currentBalance": 21610.52,
+   "banner": "31 Oct 2026 Salary Deposit SALARY AED 122,800 (29 Oct 2026)"
+  },
+  "verified": "6,910.52 (26 Oct, mashreq-20261026) + 122,800 - 22,000 - 51,500 - 5,000 - 9,500 - 20,000 + 7,900 - 8,000 = 21,610.52 printed: chain ties, nothing missing 27 Oct - 1 Nov",
+  "redacted": "IBANs, masked card (kept *6789), customer id in TOC-MAE refs",
+  "flags": [
+   "3 CREDIT CARD PAYMENT transfers to card *6789 (ADIB CC): 20,000 + 9,500 on 29 Oct, 8,000 on 30 Oct. T_ refs match the three ADIB CC credits in adib-cc-app-20261027-20261101 (ADIB dated all three 30 Oct)",
+   "IMG_4714 shows balance and banner only, no rows"
+  ],
+  "rowCount": 12,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-01"
+ },
+ "images": [
+  {
+   "image": "IMG_4714",
+   "rows": []
+  },
+  {
+   "image": "IMG_4715",
+   "rows": [
+    {
+     "date": "2026-10-30",
+     "description": "IPP TRANSFER - *6789 - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT",
+     "amount": -8000.0,
+     "reference": "033IPPD2630307GF",
+     "detailRef": "T_696F80D0F4934CA9A7771B235AFDC576",
+     "image": "IMG_4715",
+     "position": 1
+    },
+    {
+     "date": "2026-10-30",
+     "description": "IPP TRANSFER - RAMAN GOYAL - WEBI - SALES COMMISSION",
+     "amount": 7900.0,
+     "reference": "033IPPC2630302L1",
+     "detailRef": "FT263036J8HN",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_4715",
+     "position": 2
+    },
+    {
+     "date": "2026-10-29",
+     "description": "IPP TRANSFER - *6789 - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT",
+     "amount": -20000.0,
+     "reference": "033IPPD263021B8T",
+     "detailRef": "T_1180A0BAD160432D8461F4ECEF9C442F",
+     "image": "IMG_4715",
+     "position": 3
+    },
+    {
+     "date": "2026-10-29",
+     "description": "IPP TRANSFER - *6789 - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT",
+     "amount": -9500.0,
+     "reference": "033IPPD263021AZ4",
+     "detailRef": "T_4848C10F0E9049048D9954D81053C629",
+     "image": "IMG_4715",
+     "position": 4
+    },
+    {
+     "date": "2026-10-29",
+     "description": "IPP TRANSFER - LEWIS PAGE - /REF/ FAMILY SUPPORT",
+     "amount": -5000.0,
+     "reference": "033IPPD263021AMF",
+     "detailRef": "T_10562AB32DE346BD8991D23103F01F9A",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_4715",
+     "position": 5
+    },
+    {
+     "date": "2026-10-29",
+     "description": "Online Local Fund Transfer - TOC-MAE-[id redacted]-261029184725 FUND TRANSFER-MOBILE... (cut)",
+     "amount": -51500.0,
+     "reference": "033DBLC263022038",
+     "image": "IMG_4715",
+     "position": 6
+    }
+   ]
+  },
+  {
+   "image": "IMG_4716",
+   "rows": [
+    {
+     "date": "2026-10-29",
+     "description": "(cut at top) LEWIS PAGE - /REF/ FAMILY SUPPORT",
+     "amount": null,
+     "detailRef": "T_10562AB32DE346BD8991D23103F01F9A",
+     "note": "amount hidden; same as IMG_4715 pos 5",
+     "image": "IMG_4716",
+     "position": 1
+    },
+    {
+     "date": "2026-10-29",
+     "description": "Online Local Fund Transfer - TOC-MAE-[id redacted]-261029184725 FUND TRANSFER-MOBILE BANKING / [IBAN redacted] TALLIA FLAHER EBILAEADXXX",
+     "amount": -51500.0,
+     "reference": "033DBLC263022038",
+     "detailRef": "SRN: MLC2910261834213",
+     "image": "IMG_4716",
+     "position": 2
+    },
+    {
+     "date": "2026-10-29",
+     "description": "IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT",
+     "amount": -22000.0,
+     "reference": "033IPPD263021AK0",
+     "detailRef": "T_F249C8C356414674A83FF19E960B0DD0",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_4716",
+     "position": 3
+    },
+    {
+     "date": "2026-10-29",
+     "description": "Salary - WHITE AND WHITE REAL ESTATE L L C",
+     "amount": 122800.0,
+     "reference": "033WPSP26302A4HN",
+     "detailRef": "WPS26102915404966",
+     "image": "IMG_4716",
+     "position": 4
+    },
+    {
+     "date": "2026-10-26",
+     "description": "IPP TRANSFER - MOHAMMED AHMED - /REF/ FAMILY SUPPORT",
+     "amount": -180.0,
+     "reference": "033IPPD262990MCW",
+     "detailRef": "T_E239BA4D073E4A8EAD009F7B2FB06925",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_4716",
+     "position": 5,
+     "alreadyStaged": "mashreq-20261026.json"
+    },
+    {
+     "date": "2026-10-24",
+     "description": "IPP TRANSFER - KUMAYL MERCHANT - /REF/ FAMILY SUPPORT",
+     "amount": -10350.0,
+     "reference": "033IPPD262970PWY",
+     "detailRef": "T_E05E74C502B244F4B28DDF50EF83B66C",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_4716",
+     "position": 6,
+     "alreadyStaged": "mashreq-20261009-20261024.json"
+    }
+   ]
+  }
+ ]
+}
