@@ -6,6 +6,15 @@
 - Oct: ~Đ152,300 (Syed, Jayde, Zaid, Anshuman) + Tara A2-209 ~9,500 - all transfer after the 1 Oct exit; written confirmation they pay to Calum still OPEN.
 - Stuck Jan/Feb: ~Đ65,300 (Jose, Majid x2) - chase or write off in the exit conversation.
 
+## ADIB TEST - RESULT (31 Oct statement lines, seen 1 Nov)
+Monthly Murabaha 2,408.70 charged; 'Profit earned and bonus' 1,207.33 credited. PARTIAL refund -> net cost 1,201.37. 30 Sep present balance 67,102.85 was paid 4,602.85 short by the 26 Oct due date. Finance's reading confirmed: full waiver requires the statement total paid by the due date; short = proportional refund on unused limit. RULE (now settled): pay the statement total by the due date every month - in practice, card to zero on payday before the statement date.
+## 1 NOV - OCTOBER CLOSED (h0100-h0102)
+Payday executed: Wise 51,500 (GBP10,500), ADIB 37,500 (20,000+9,500 29 Oct, 8,000 30 Oct), Tal 22,000, Lewis 5,000. UNBUDGETED IN: Webi sales commission (Raman Goyal) 7,900 on 30 Oct. Mashreq 21,610.52. Pot 13,044.83 (first interest 69.83).
+BoS: +10,500 30 Oct; out Eventus Law 6,000 (lawyer), TAL 3,500 (30 Oct) + 100 (2 Nov) vs 1,500 budgeted (+2,100), Tesco 251. Closing 931.70. Nov DDs still to run ~2,532 + BA Amex 229.96 -> ~-1,830 by month end (inside GBP3,000 OD). MBNA 1 min 270.74 due 2 Nov - no DD visible -> pay by hand.
+ADIB now: ~D4,300 owed (983 left of Oct + 29-31 Oct spend ~2,060 + net Murabaha 1,201 + Boxica 949 1 Nov). New: Metricool 25 (29 Oct) - NEW SUB, flag; AIMS Health Care 550 (30 Oct) ?; Aldharis Specialized 226 (29 Oct) ?; Dubai Golf 149.
+Wise: IBKR funded GBP383 (100 + 283) from the Vantage USD; Ediane de Jesus Santana GBP213 (31 Oct) ?; Binance declined twice (USD 302.55, 295.29). Simply Business 172.15 = Methil insurance via Nationwide.
+Nationwide -1,941.46 of 2,250 - mortgage 287.80 on 1 Nov leaves ~GBP21 headroom until the rent lands ~5th.
+UK cards GBP53,511 (Tesco 5,334 · Virgin 8,730 · Santander 11,619 · MBNA1 7,948 · MBNA2 1,830 · HSBC 1,389 · M&S 7,332 · Barclaycard 9,329 · Aqua 0) + Amex Gold 460 due 10 Nov + BA 230.
 ## 29 OCT - EXECUTED PLAN (Calum, 29 Oct 07:xx)
 122,800 in (WPS). Out: Wise GBP10,500 to UK (lawyer 6,000 whole bill · BoS 2,659 for Nov DDs + Amex Gold 550 · Tal UK 1,500 · Wise subs 293; BA Amex ~195 'in the wash') ~D51,500 · ADIB card to zero ~38,500 · Tal 22,000 (bills 13,600 - Selfdrive now on Calum's card - + budget 8,400 less her phone half) · Lewis 5,000. Total ~117,000. Mashreq keeps ~5,800 + 6,910 = ~12,700. Instagram 600 + trading 200 parked until NEC. Pots (64,025) from NEC money or the 30th. Living + Boxica/subs/Reelly on the card, cleared 30 Nov before the statement. RULE: pay the card to zero on payday, before the statement date, every month.
 ## 29 OCT PAYSLIP (final): D122,800.00 WPS - P141 39,840 · K331 46,320.24 · K303 19,142.50 · A2-209 9,516.07 · BL907 7,981.19 (first version omitted BL907; corrected). vs CRM 122,716 = +84. Paid flags set. 6.25% pot rate qualifies (WPS >10K).
