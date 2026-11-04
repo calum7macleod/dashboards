@@ -1,0 +1,118 @@
+{
+ "meta": {
+  "account": "Nationwide FlexDirect",
+  "currency": "GBP",
+  "period": "21 Oct - 4 Nov 26",
+  "source": "app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+  "images": [
+   "IMG_4848",
+   "IMG_4847"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balanceShown": 393.49,
+   "balanceLabel": "Available",
+   "overdraftLimit": 2250.0,
+   "dayBalances": {
+    "2026-11-04": 393.49,
+    "2026-11-03": 0.74,
+    "2026-11-02": -2229.26,
+    "2026-10-30": -1941.46,
+    "2026-10-21": -1774.31
+   }
+  },
+  "accountType": "current account with overdraft (personal - Calum 1 Nov)",
+  "redacted": "sort code and account number",
+  "dates": "'Today' = Wed 4 Nov, 'Yesterday' = Tue 3 Nov",
+  "flags": [
+   "-1,941.46 - 287.80 = -2,229.26; + 2,230.00 = 0.74; + 392.75 = 393.49 printed",
+   "3 Nov +2,230.00 = BoS PROPERTY ACCOUNT -2,230.00 on 3 Nov"
+  ],
+  "rowCount": 9,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-04"
+ },
+ "images": [
+  {
+   "image": "IMG_4848",
+   "rows": [
+    {
+     "date": "2026-11-04",
+     "description": "Bank credit YM CLIENT ACCOUNT - YOUR-MOVE.CO.UK LI",
+     "amount": 392.75,
+     "dayLabel": "Today",
+     "image": "IMG_4848",
+     "position": 1
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Bank credit C Macleod - MONEY",
+     "amount": 2230.0,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4848",
+     "position": 2
+    },
+    {
+     "date": "2026-11-02",
+     "description": "PRECISE MORTGAGES",
+     "amount": -287.8,
+     "image": "IMG_4848",
+     "position": 3
+    }
+   ]
+  },
+  {
+   "image": "IMG_4847",
+   "rows": [
+    {
+     "date": "2026-11-04",
+     "description": "Bank credit YM CLIENT ACCOUNT - YOUR-MOVE.CO.UK LI",
+     "amount": 392.75,
+     "dayLabel": "Today",
+     "image": "IMG_4847",
+     "position": 1
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Bank credit C Macleod - MONEY",
+     "amount": 2230.0,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4847",
+     "position": 2
+    },
+    {
+     "date": "2026-11-02",
+     "description": "PRECISE MORTGAGES",
+     "amount": -287.8,
+     "image": "IMG_4847",
+     "position": 3
+    },
+    {
+     "date": "2026-10-30",
+     "description": "CALUM MACLEOD - MONEY",
+     "amount": -172.15,
+     "image": "IMG_4847",
+     "position": 4,
+     "alreadyStaged": "nationwide-flexdirect-20261021-20261030.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "Bank credit E.ON NEXT LTD - A-6CDE8D38-001",
+     "amount": 5.0,
+     "image": "IMG_4847",
+     "position": 5,
+     "alreadyStaged": "nationwide-flexdirect-20261021-20261030.json"
+    },
+    {
+     "date": "2026-10-21",
+     "description": "Arranged Overdraft Interest",
+     "amount": -41.35,
+     "image": "IMG_4847",
+     "position": 6,
+     "alreadyStaged": "nationwide-flexdirect-20261021-20261030.json"
+    }
+   ]
+  }
+ ]
+}
