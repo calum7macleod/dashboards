@@ -862,5 +862,13 @@
   "to": "Market",
   "item": "Calum exported every ADREC transaction 2019-2026 (126,867 rows). Staged gzipped at data/staging/adrec-transactions-2019-2026.csv.gz with README. Adopt into data/dld/ (or data/adrec/), build the Abu Dhabi series from it (volume, off-plan share, psm by district, Hudayriyat by project) and refresh quarterly from the ADREC open-data export. This replaces the stale PIX line for Abu Dhabi in the brief.",
   "status": "open"
+ },
+ {
+  "id": "h0109",
+  "date": "2026-11-04",
+  "from": "content",
+  "to": "Market",
+  "item": "Stamp for National Day reel: Jebel Ali 2024 TEU vs total UK port TEU; UAE population 1971 (180k-280k range)",
+  "status": "open"
  }
 ]
