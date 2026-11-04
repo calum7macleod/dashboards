@@ -2,6 +2,34 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "gift for poppy",
+   "category": "Entertainment",
+   "sub": "Whatever we want - gifts for Poppy (Calum 2 Nov)"
+  },
+  {
+   "rx": "mellex group",
+   "category": "Income",
+   "sub": "AvantGlamp settlement tranche 1 (Mellex Group) GBP30,593 - the 'NEC money'",
+   "type": "income"
+  },
+  {
+   "rx": "ym client account|your-move",
+   "category": "Property",
+   "sub": "Methil rent (YM)",
+   "type": "income"
+  },
+  {
+   "rx": "property account",
+   "category": "Other",
+   "sub": "BoS -> Nationwide (overdraft cleared 3 Nov)",
+   "type": "transfer"
+  },
+  {
+   "rx": "apple\\.com/bill",
+   "category": "Life",
+   "sub": "Apple subscriptions (BA Amex) - which ones?"
+  },
+  {
    "rx": "metricool",
    "category": "Business",
    "sub": "Software - Metricool (posting), keep (Calum 1 Nov)"
