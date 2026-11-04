@@ -1,0 +1,320 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "currency": "AED",
+  "period": "30 Oct - 3 Nov 26 (EMIRATES VC SIG)",
+  "source": "app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+  "images": [
+   "IMG_4835",
+   "IMG_4836",
+   "IMG_4837",
+   "IMG_4838"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balances": "none shown"
+  },
+  "dates": "day labels resolved from screenshot date Wed 4 Nov 26",
+  "flags": [
+   "BOXICA -949.00 now posted under Saturday 31 Oct (was pending 'Today' 1 Nov in adib-cc-app-20261027-20261101)",
+   "T_448cb144... +3,400.00 on 2 Nov = Mashreq CREDIT CARD PAYMENT 3,400 on 2 Nov (mashreq-20261030-20261102)",
+   "faded rows behind 'View all' recorded with note"
+  ],
+  "rowCount": 31,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-04"
+ },
+ "images": [
+  {
+   "image": "IMG_4835",
+   "rows": [
+    {
+     "date": "2026-11-03",
+     "description": "www.instashop.com",
+     "amount": -79.7,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4835",
+     "position": 1
+    },
+    {
+     "date": "2026-11-03",
+     "description": "CAREEM RIDE",
+     "amount": -46.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4835",
+     "position": 2
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Amazon Grocery",
+     "amount": -37.99,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4835",
+     "position": 3
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Amazon Grocery",
+     "amount": -272.58,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4835",
+     "position": 4
+    },
+    {
+     "date": "2026-11-03",
+     "description": "CARIBOU COFFEE",
+     "amount": -42.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4835",
+     "position": 5
+    },
+    {
+     "date": "2026-11-02",
+     "description": "DELIVEROO",
+     "amount": -159.95,
+     "dayLabel": "Monday",
+     "image": "IMG_4835",
+     "position": 6
+    },
+    {
+     "date": "2026-11-02",
+     "description": "DELIVEROO",
+     "amount": -254.15,
+     "dayLabel": "Monday",
+     "note": "faded behind View all",
+     "image": "IMG_4835",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4836",
+   "rows": [
+    {
+     "date": "2026-11-02",
+     "description": "DELIVEROO",
+     "amount": -159.95,
+     "dayLabel": "Monday",
+     "image": "IMG_4836",
+     "position": 1
+    },
+    {
+     "date": "2026-11-02",
+     "description": "DELIVEROO",
+     "amount": -254.15,
+     "dayLabel": "Monday",
+     "image": "IMG_4836",
+     "position": 2
+    },
+    {
+     "date": "2026-11-02",
+     "description": "DU Apple Pay",
+     "amount": -169.01,
+     "dayLabel": "Monday",
+     "image": "IMG_4836",
+     "position": 3
+    },
+    {
+     "date": "2026-11-02",
+     "description": "www.instashop.com",
+     "amount": -35.5,
+     "dayLabel": "Monday",
+     "image": "IMG_4836",
+     "position": 4
+    },
+    {
+     "date": "2026-11-02",
+     "description": "www.instashop.com",
+     "amount": -45.45,
+     "dayLabel": "Monday",
+     "image": "IMG_4836",
+     "position": 5
+    },
+    {
+     "date": "2026-11-02",
+     "description": "www.instashop.com",
+     "amount": -70.95,
+     "dayLabel": "Monday",
+     "image": "IMG_4836",
+     "position": 6
+    },
+    {
+     "date": "2026-11-02",
+     "description": "Deliveroo",
+     "amount": -51.18,
+     "dayLabel": "Monday",
+     "image": "IMG_4836",
+     "position": 7
+    },
+    {
+     "date": "2026-11-02",
+     "description": "T_448cb144754e4137b3154b4c4a55c0...",
+     "amount": 3400.0,
+     "dayLabel": "Monday",
+     "reference": "T_448cb144754e4137b3154b4c4a55c0... (truncated)",
+     "note": "faded",
+     "image": "IMG_4836",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_4837",
+   "rows": [
+    {
+     "date": "2026-11-01",
+     "description": "DIGITALOCEAN.COM",
+     "amount": -18.9,
+     "dayLabel": "Sunday",
+     "currency": "USD",
+     "image": "IMG_4837",
+     "position": 1
+    },
+    {
+     "date": "2026-11-01",
+     "description": "SPINNEYS NSHAMA 2",
+     "amount": -255.15,
+     "dayLabel": "Sunday",
+     "image": "IMG_4837",
+     "position": 2
+    },
+    {
+     "date": "2026-11-01",
+     "description": "InstaShop",
+     "amount": -115.4,
+     "dayLabel": "Sunday",
+     "image": "IMG_4837",
+     "position": 3
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Deliveroo",
+     "amount": -92.4,
+     "dayLabel": "Saturday",
+     "image": "IMG_4837",
+     "position": 4,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-31",
+     "description": "BOXICA",
+     "amount": -949.0,
+     "dayLabel": "Saturday",
+     "image": "IMG_4837",
+     "position": 5
+    },
+    {
+     "date": "2026-10-31",
+     "description": "CAFU",
+     "amount": -191.6,
+     "dayLabel": "Saturday",
+     "image": "IMG_4837",
+     "position": 6,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-31",
+     "description": "SUNBERRY VEGETABLE",
+     "amount": -422.35,
+     "dayLabel": "Saturday",
+     "image": "IMG_4837",
+     "position": 7,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Monthly Murabaha Payment",
+     "amount": -2408.7,
+     "dayLabel": "Saturday",
+     "note": "faded behind View all",
+     "image": "IMG_4837",
+     "position": 8,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4838",
+   "rows": [
+    {
+     "date": "2026-10-31",
+     "description": "SUNBERRY VEGETABLE",
+     "amount": -422.35,
+     "dayLabel": "Saturday",
+     "image": "IMG_4838",
+     "position": 1,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Monthly Murabaha Payment",
+     "amount": -2408.7,
+     "dayLabel": "Saturday",
+     "image": "IMG_4838",
+     "position": 2,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Profit earned and bonus from bank",
+     "amount": 1207.33,
+     "dayLabel": "Saturday",
+     "image": "IMG_4838",
+     "position": 3,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "AIMS HEALTH CARE LLC",
+     "amount": -550.0,
+     "dayLabel": "Friday",
+     "image": "IMG_4838",
+     "position": 4,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "Dubai Golf",
+     "amount": -149.0,
+     "dayLabel": "Friday",
+     "image": "IMG_4838",
+     "position": 5,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "CAFU",
+     "amount": -16.95,
+     "dayLabel": "Friday",
+     "image": "IMG_4838",
+     "position": 6,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "Qlub",
+     "amount": -93.5,
+     "dayLabel": "Friday",
+     "image": "IMG_4838",
+     "position": 7,
+     "alreadyStaged": "adib-cc-app-20261027-20261101.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "InstaShop (faded)",
+     "amount": null,
+     "dayLabel": "Friday",
+     "note": "amount hidden behind View all",
+     "image": "IMG_4838",
+     "position": 8
+    }
+   ]
+  }
+ ]
+}
