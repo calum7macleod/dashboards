@@ -63,7 +63,7 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - IG 1 Sep-21 Oct: 140 reels. Typical property reel 800-2,000 views / 550-1,400 reach; personal 2,000-4,200. Top property: Al Naseem first look 3,689 (47 comments, 18 saves). Most shared property: August transactions 9 shares, 15.5s avg watch. Trial-reel duplicates at 110-170 views = unpushed variant (system works).
 - A/B pairs: plain hook wins - "First ever look at Al Naseem" 3,689 vs "Honoured to be invited" 2,192; "Who owns that..." 1,746 vs 565; "Pretty unnecessary for a 1 hour flight" 3,818 vs 1,814.
 - Hold: 3-sec view rate 22-40% on property explainers vs 55-77% personal. Text hook on screen is the fix (Oljas rule).
-- TikTok 23 videos: 200-1,000 typical; Wadeem one-shot tour 17,912 (98% For You). Avg watch 3-8s. Rule: every site visit = one-take video same day; burn text hook into frame one.
+- TikTok 23 videos: 200-1,000 typical; Wadeem one-shot tour 17,912 (98% For You). CORRECTION 4 Nov: TikTok columns return in REQUESTED order, not index order - earlier 'shares' readings were LIKES. Mortgage reel 28 Oct = 1,808 views, 11 likes, 2 shares (not 11 shares).. Avg watch 3-8s. Rule: every site visit = one-take video same day; burn text hook into frame one.
 - None of the 20 recorded batch-1 reels posted by 21 Oct - no Jake-structure numbers yet.
 - Field IDs for next pull: IG reels IGRE01,03,23(views),11(reach),21(shares),12(saves),07,10,24(avg watch),28(3s rate),06; TikTok TKPO01,05,07,11,10,09,08,15,13,16,06.
 
@@ -82,3 +82,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Batch 3 for 5 Nov: 14 scripted by Calum (islands x2, Yas, Saadiyat, Bvlgari, Apollo, missed-chance, Al Naseem best buy, Al Naseem hands-over-first, tunnels, ADGM parkway, Etihad, no-income-tax) + Content drafts awaiting markup: supply vs demand, Al Naseem value, train reel. Templates: Al Naseem construction, mysterious amenities (Calum eyes).
 - Small fixes still in Calum doc: Etihad close missing "where"; hands-over-first "cheaper than anywhere in Dubai" -> "than any villa in Dubai"; Al Naseem best buy "garden"/"rogue brokers"; Yas hook 2 "quietest"; ADGM hook "20 min" (15); supply reel 13x vs rebased.
 - Next: Calum marks up the 3 drafts; fills 2 templates; Oljas round; tracker to batch 3; FUND/ISLAND PDFs still owed; YouTube titles/descriptions for fund + islands videos.
+
+## 4 Nov - first Jake-structure reel posted (3 Nov 17:30, 'Abu Dhabi is wealthier than Dubai')
+- IG day 1: 1,094 views, 654 reach, 3 shares, 3 saves, 5 comments, avg watch 12.4s, 3-sec hold 41.9% (best property-reel hold on record; mortgage reel day 1 was 654 / 5.4s / 26.6%).
+- TikTok day 1: 734 views, 19 likes, 5 shares, 3 comments, 10s avg watch, 98% For You.
+- Metricool TikTok pull: request order [TKPO01,05,07,11,10,09,08,15,13,16] returns [date,text,views,reach,shares,comments,likes,avgTime,fullWatch,forYou] - columns follow REQUEST order. Read accordingly.
+- Caption style now Jake's: title / 2-4 fact lines / open loop; no hashtags; share line as first comment. Posting order: rail first was planned; wealthier went first.
