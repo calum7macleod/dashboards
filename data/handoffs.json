@@ -854,5 +854,13 @@
   "to": "Finance",
   "item": "4 Nov 07:40-07:50 screenshots (19 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 8 files in data/staging/statements/: virgin-money-20261104 (3 rows, owed 8,906.45, DD 352.46 on 23 Nov); mbna-1-20261104 (1, 7,677.66 - 2 Nov min paid by DD); adib-cc-app-20261030-20261103 (AED, 31 rows over 4 images, no balance shown); ba-amex-20261104 (10, 268.90); bos-20261026-20261103 (18, chain ties to 28,696.71 printed); mashreq-20261030-20261102 (AED 4, 10,310.52, ties); mashreq-tara-and-rent-20261102 (AED 1, 20,944.83, ties); nationwide-flexdirect-20261021-20261104 (9, 393.49, ties). Tesco Clubcard identical to 1 Nov - no file. Calum: every card/account not in this batch is unchanged as of 4 Nov. CHECK: BoS +30,593.00 from MELLEX GROUP LIMIT on 3 Nov (+1.00 on 2 Nov) - new payer, classify; Tara indicative Nov earnings 10.91 vs about 109 at 6.25% on 20,944.83; Mashreq banner says 7,970 deposit vs 7,900 transfer. 5 ccBalances rows appended (Virgin, MBNA 1, BA Amex, BoS OD, Nationwide OD).",
   "status": "done"
+ },
+ {
+  "id": "h0108",
+  "date": "2026-11-04",
+  "from": "PA",
+  "to": "Market",
+  "item": "Calum exported every ADREC transaction 2019-2026 (126,867 rows). Staged gzipped at data/staging/adrec-transactions-2019-2026.csv.gz with README. Adopt into data/dld/ (or data/adrec/), build the Abu Dhabi series from it (volume, off-plan share, psm by district, Hudayriyat by project) and refresh quarterly from the ADREC open-data export. This replaces the stale PIX line for Abu Dhabi in the brief.",
+  "status": "open"
  }
 ]
