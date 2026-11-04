@@ -1,6 +1,6 @@
 # Islands pair - two reels (31 Oct 2026, v2 - Calum's rehooks in)
 
-## Reel 1 - Abu Dhabi's Most Popular Islands (v3, Calum 4 Nov)
+## Reel 1 - Abu Dhabi's Most Popular Islands (v3, Calum 4 Nov - rehook second-last, buy-line last: Calum's retention test)
 Text: Abu Dhabi's Most Popular Islands
 Speech: 214 islands in Abu Dhabi - these are the best known
 
@@ -8,24 +8,23 @@ One. Yas - the entertainment island
 - 44 million visitors in 2025, the F1 finale, and the closest island to Dubai
 - Disneyland and Harry Potter are coming - Disneyland Paris has put 100 billion dollars into France's economy since it opened
 - Apartments up 24% last year, hotels 85% full in August - the month the UAE is meant to be quiet
-- Buy on Yas if you want high-yield short-term rentals
 - The next one is the most expensive
+- Buy on Yas if you want high-yield short-term rentals
 
 Two. Saadiyat - the cultural island
 - The Louvre, the Zayed National Museum and the Natural History Museum open; the Guggenheim opens December 2026
 - When Bilbao got its Guggenheim it improved the city's finances so much economists created the term: the Bilbao effect
 - The most expensive island - around 1,100 dollars a square foot for apartments
-- Buy on Saadiyat if you want long-term capital appreciation
 - The next one is where I bought myself, and why
+- Buy on Saadiyat if you want long-term capital appreciation
 
 Three. Reem and Al Maryah - the financial district
 - ADGM, the Wall Street of the Middle East - BlackRock, Goldman Sachs, Binance
 - ADGM applies English common law directly - DIFC wrote its own version of it  [Calum had 'nowhere else... DIFC indirectly' - corrected]
 - Workforce up 34% to 49 thousand this year. DIFC has 50 thousand and is 11 years older
 - A 16 billion dollar expansion announced in December 2025
-- I bought an apartment here in April. Every bit of news since has made me happier
+- I bought an apartment here in April. Every bit of news since has made me happier - the next is the biggest of them all
 - Buy in ADGM if you like the idea of 34% demand growth in a year
-- The next is the biggest of them all
 
 Four. Hudayriyat - the Beverly Hills of the Middle East
 - 53 million square metres - 7,000 football pitches in size - 22 kilometres of beach, three man-made hills
