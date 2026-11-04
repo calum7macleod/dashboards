@@ -1,35 +1,40 @@
 # Islands pair - two reels (31 Oct 2026, v2 - Calum's rehooks in)
 
-## Reel 1 - The 4 Abu Dhabi Islands Everyone's Heard Of
-Text: The 4 Abu Dhabi Islands Everyone's Heard Of
-Speech: 214 islands - these four took 71% of every dollar spent on homes in Abu Dhabi this year
-Here's each one in a sentence, and the number that matters
+## Reel 1 - Abu Dhabi's Most Popular Islands (v3, Calum 4 Nov)
+Text: Abu Dhabi's Most Popular Islands
+Speech: 214 islands in Abu Dhabi - these are the best known
 
-Yas - the entertainment island
+One. Yas - the entertainment island
 - 44 million visitors in 2025, the F1 finale, and the closest island to Dubai
-- Disneyland and Harry Potter are coming - Disney says Disneyland Paris has put 84 billion euros into France's economy since it opened
+- Disneyland and Harry Potter are coming - Disneyland Paris has put 100 billion dollars into France's economy since it opened
 - Apartments up 24% last year, hotels 85% full in August - the month the UAE is meant to be quiet
-- The island for short-term rentals - the next one is the most expensive
+- Buy on Yas if you want high-yield short-term rentals
+- The next one is the most expensive
 
-Saadiyat - the cultural island
+Two. Saadiyat - the cultural island
 - The Louvre, the Zayed National Museum and the Natural History Museum open; the Guggenheim opens December 2026
-- When Bilbao got its Guggenheim, property nearby rose 30% in five years
+- When Bilbao got its Guggenheim it improved the city's finances so much economists created the term: the Bilbao effect
 - The most expensive island - around 1,100 dollars a square foot for apartments
-- The island you hold - the next one is where I bought myself
+- Buy on Saadiyat if you want long-term capital appreciation
+- The next one is where I bought myself, and why
 
-Reem and Al Maryah - the financial district
-- ADGM, the Wall Street of the Middle East - BlackRock, Goldman Sachs, Binance, English common law
+Three. Reem and Al Maryah - the financial district
+- ADGM, the Wall Street of the Middle East - BlackRock, Goldman Sachs, Binance
+- ADGM applies English common law directly - DIFC wrote its own version of it  [Calum had 'nowhere else... DIFC indirectly' - corrected]
 - Workforce up 34% to 49 thousand this year. DIFC has 50 thousand and is 11 years older
 - A 16 billion dollar expansion announced in December 2025
-- I bought an apartment here in April. Every bit of news since has made me happier - the next is the biggest of them all
+- I bought an apartment here in April. Every bit of news since has made me happier
+- Buy in ADGM if you like the idea of 34% demand growth in a year
+- The next is the biggest of them all
 
-Hudayriyat - the Beverly Hills of the Middle East
-- 53 million square metres - 7,000 football pitches - 22 kilometres of beach, three man-made hills
+Four. Hudayriyat - the Beverly Hills of the Middle East
+- 53 million square metres - 7,000 football pitches in size - 22 kilometres of beach, three man-made hills
 - Home of the biggest launch in UAE history: 3.5 billion dollars in days
 - Surf Abu Dhabi open, two golf courses, 16 schools and 12 hotels coming
 - This is where I'll live
+- Buy on Hudayriyat if you want to be my neighbour
 
-Those four are the ones everyone talks about. The next four are the ones nobody does - that's the next reel. DM ISLAND for the full PDF on all of them.
+Those four are the ones everyone talks about. The next four are the ones nobody does - see them in my next video. DM ISLAND for my full PDF on all of them.
 
 ## Reel 2 - The 4 Abu Dhabi Islands Most People Haven't Heard Of
 Text: The 4 Abu Dhabi Islands Most People Haven't Heard Of
@@ -57,7 +62,7 @@ Four. Bvlgari - the one you can't just buy
 - Bvlgari's Dubai island, Jumeirah Bay, holds Dubai's record sale - a penthouse at 112 million dollars
 - Eagle Hills again, opening 2030. The most expensive address in Abu Dhabi, without anyone knowing much about it
 
-Four islands - under 2% of Abu Dhabi's 214. Nature made them, and a around 1.9 trillion dollar fund is building them. I believe this will be one of the best places in the world to live, which is why I'm moving here. DM ISLAND for the PDF.
+Four islands - under 2% of Abu Dhabi's 214. Nature made them, and a 1.7 trillion dollar fund is building them. I believe this will be one of the best places in the world to live, which is why I'm moving here. DM ISLAND for the PDF.
 
 ## Receipts / flags
 - Calum's doc (31 Oct) had: '42' (-> 4%/2%), '1.8 trillion' (-> 1.7), 'villas out the ground' on Lulu (-> show villas). Corrected here; fix in his doc before Oljas.
