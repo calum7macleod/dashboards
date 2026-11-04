@@ -1,0 +1,217 @@
+{
+ "meta": {
+  "account": "BoS",
+  "currency": "GBP",
+  "period": "26 Oct - 3 Nov 26",
+  "source": "app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+  "images": [
+   "IMG_4841",
+   "IMG_4842",
+   "IMG_4843"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balance": 28696.71,
+   "overdraftLimit": 3000.0,
+   "closingBalancePrinted": 28696.71,
+   "upcoming": [
+    {
+     "description": "HSBC CREDIT CARD",
+     "amount": -35.6,
+     "when": "Tomorrow",
+     "date": "2026-11-05",
+     "note": "Previously"
+    }
+   ]
+  },
+  "accountType": "Classic current account",
+  "dates": "'Yesterday' = Tue 3 Nov; 'Tomorrow' = Thu 5 Nov",
+  "flags": [
+   "Chain ties 931.70 (2 Nov, Tallia) -> 903.45 -> 632.71 -> 633.71 -> 333.71 -> 30,926.71 -> 28,696.71 printed",
+   "MELLEX GROUP LIMIT +1.00 on 2 Nov and +30,593.00 on 3 Nov - new payer, Finance to classify",
+   "PROPERTY ACCOUNT -2,230.00 on 3 Nov = Nationwide 'Bank credit C Macleod +2,230.00' on 3 Nov"
+  ],
+  "rowCount": 18,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-04"
+ },
+ "images": [
+  {
+   "image": "IMG_4841",
+   "rows": [
+    {
+     "date": "2026-11-03",
+     "description": "PROPERTY ACCOUNT",
+     "amount": -2230.0,
+     "balance": 28696.71,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4841",
+     "position": 1
+    },
+    {
+     "date": "2026-11-03",
+     "description": "MELLEX GROUP LIMIT",
+     "amount": 30593.0,
+     "balance": 30926.71,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4841",
+     "position": 2
+    },
+    {
+     "date": "2026-11-03",
+     "description": "MUM",
+     "amount": -300.0,
+     "balance": 333.71,
+     "dayLabel": "Yesterday",
+     "image": "IMG_4841",
+     "position": 3,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4842",
+   "rows": [
+    {
+     "date": "2026-11-02",
+     "description": "MELLEX GROUP LIMIT",
+     "amount": 1.0,
+     "balance": 633.71,
+     "image": "IMG_4842",
+     "position": 1
+    },
+    {
+     "date": "2026-11-02",
+     "description": "MBNA LIMITED",
+     "amount": -270.74,
+     "balance": 632.71,
+     "image": "IMG_4842",
+     "position": 2
+    },
+    {
+     "date": "2026-11-02",
+     "description": "PET HEALTH CLUB",
+     "amount": -28.25,
+     "balance": 903.45,
+     "image": "IMG_4842",
+     "position": 3,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "TALLIA FLAHER",
+     "amount": -100.0,
+     "balance": 931.7,
+     "image": "IMG_4842",
+     "position": 4,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "TALLIA FLAHER",
+     "amount": -3500.0,
+     "balance": 1031.7,
+     "image": "IMG_4842",
+     "position": 5,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "EVENTUS LAW",
+     "amount": -6000.0,
+     "balance": 4531.7,
+     "image": "IMG_4842",
+     "position": 6,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "C L MACLEOD",
+     "amount": -172.15,
+     "balance": 10531.7,
+     "image": "IMG_4842",
+     "position": 7,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "(cut at bottom)",
+     "amount": 172.15,
+     "note": "name hidden; same as IMG_4843 pos 2",
+     "image": "IMG_4842",
+     "position": 8,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4843",
+   "rows": [
+    {
+     "date": "2026-10-30",
+     "description": "C L MACLEOD",
+     "amount": -172.15,
+     "balance": 10531.7,
+     "image": "IMG_4843",
+     "position": 1,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "CALUM MACLEOD",
+     "amount": 172.15,
+     "balance": 10703.85,
+     "image": "IMG_4843",
+     "position": 2,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-30",
+     "description": "F/FLOW CALUM MACLE",
+     "amount": 10500.0,
+     "balance": 10531.7,
+     "image": "IMG_4843",
+     "position": 3,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-29",
+     "description": "TESCO BANK",
+     "amount": -251.0,
+     "balance": 31.7,
+     "image": "IMG_4843",
+     "position": 4,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-28",
+     "description": "VIRGIN MONEY",
+     "amount": -375.08,
+     "balance": 282.7,
+     "image": "IMG_4843",
+     "position": 5,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-26",
+     "description": "CORRINA FLAHER",
+     "amount": -150.0,
+     "balance": 657.78,
+     "image": "IMG_4843",
+     "position": 6,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-10-26",
+     "description": "(cut at bottom)",
+     "amount": -24.3,
+     "note": "name hidden; AQUA in bos-20261020-20261102",
+     "image": "IMG_4843",
+     "position": 7,
+     "alreadyStaged": "bos-20261016-20261026.json"
+    }
+   ]
+  }
+ ]
+}
