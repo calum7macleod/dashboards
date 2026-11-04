@@ -1,4 +1,4 @@
-# Yas Island reel (Calum, v3 4 Nov 2026) - for 5 Nov recording
+# Yas Island reel (Calum, FINAL 4 Nov 2026) - for 5 Nov recording
 
 Hook (Calum, 4 Nov): Is Yas Island Overhyped | I don't think it's premium living next to Disney
 
@@ -7,7 +7,7 @@ Five things, the last one's a potential problem
 One. What's there
 - Ferrari World, SeaWorld, Warner Bros, an arena the size of the O2, and the F1 season finale - Silverstone with a yacht marina
 - Hotels were 85% full in August - the month the Gulf's meant to be empty
-- The island's about the size of the Palm, Dubai Hills, the Marina, Downtown and DIFC combined  [Calum had 'bigger than' - 25 vs ~24 sq km]
+- The island's bigger than the Palm, Dubai Hills, Marina, Downtown and DIFC combined  [25 vs ~24 sq km - true, close]
 - Here's what's going on it
 
 Two. What's coming
@@ -28,7 +28,7 @@ Five. The catch
 - 7,700 properties under construction on Yas - more than any island in Abu Dhabi
 - 44 million visitors on one side, 7,700 new homes on the other. Whether that balances is the question for the next five years
 
-Yas is the holiday island - apartments here rent to tourists. [suggested: It's not premium living. It's the best holiday-rental island in the country - and that's a different thing to buy.] Next time I'll speak about Saadiyat, it's different. DM ISLAND for the full PDF explaining all Abu Dhabi Islands.
+Yas is the holiday island - apartments here rent to tourists. It's not that premium. Next time I'll speak about Saadiyat, which is. DM ISLAND for the full PDF explaining all Abu Dhabi islands.
 
 ## Receipts / flags
 - 44m visits 2025 (Miral); Etihad Arena 18k vs O2 20k; 85% Aug 2026 occupancy; Yas 25 sq km vs Richmond Park 9.6; 40% undeveloped (Miral). Disney announced May 2025, ~2030-33; Disneyland Paris EUR84.5bn cumulative + ~6% of French TOURISM income (Disney study) - 'of its economy' was wrong, corrected 31 Oct. Sphere 2029. Rail 2031, 30 min.
