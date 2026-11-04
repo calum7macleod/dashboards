@@ -1,0 +1,68 @@
+{
+ "meta": {
+  "account": "Virgin Money",
+  "currency": "GBP",
+  "period": "28 Oct - 3 Nov 26 (card *2995)",
+  "source": "app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+  "images": [
+   "IMG_4833",
+   "IMG_4832"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "amountOwedInclPending": 8906.45,
+   "availableToSpend": 1093.55,
+   "creditLimit": 10000.0,
+   "nextPayment": {
+    "amount": 352.46,
+    "date": "2026-11-23",
+    "text": "We'll take your payment of £352.46 on 23 Nov 2026"
+   },
+   "dayTotals": {
+    "2026-11-03": 176.23,
+    "2026-10-04": 187.54
+   }
+  },
+  "flags": [
+   "8,730.22 (1 Nov) + 143.09 + 33.14 = 8,906.45 printed",
+   "04 Oct rows cut off"
+  ],
+  "rowCount": 3,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-04"
+ },
+ "images": [
+  {
+   "image": "IMG_4833",
+   "rows": []
+  },
+  {
+   "image": "IMG_4832",
+   "rows": [
+    {
+     "date": "2026-11-03",
+     "description": "INTEREST CHARGED",
+     "amount": 143.09,
+     "image": "IMG_4832",
+     "position": 1
+    },
+    {
+     "date": "2026-11-03",
+     "description": "INTEREST CHARGED",
+     "amount": 33.14,
+     "image": "IMG_4832",
+     "position": 2
+    },
+    {
+     "date": "2026-10-28",
+     "description": "MOBILE APP PAYMENT",
+     "amount": -375.08,
+     "image": "IMG_4832",
+     "position": 3,
+     "alreadyStaged": "virgin-money-20261101.json"
+    }
+   ]
+  }
+ ]
+}
