@@ -1,19 +1,17 @@
-# 55 Years Ago Two Men Met In A Tent And Started A Country - UAE National Day reel (FINAL 4 Nov 2026 - Calum's, for 2 Dec)
+# 55 Years Ago Two Men Met In A Tent And Started A Country - UAE National Day reel (FINAL v2 4 Nov 2026 - Calum's, for 2 Dec)
 
 Text: 55 Years Ago Two Men Met In A Tent And Started A Country
-Speech: The world's tallest building and busiest international airport are now in that country
+Speech: Happy birthday today to the United Arab Emirates - here's the story of its life
 
-Happy birthday to the UAE - here's the story of its life
+In 1930 this coast lived on pearls, sold to India and Europe. Then a Japanese farmer called Mikimoto learned to grow them, the price collapsed, and the Gulf became one of the poorest places on earth. No roads, no schools, for thirty years
 
-In 1930 this coast lived on pearls. Then a Japanese farmer called Mikimoto learned to grow them, the price collapsed, and the Gulf became one of the poorest places on earth. No roads, no schools, for thirty years
-
-In 1958 something called oil was found off the coast of Abu Dhabi. The first tanker exporting it left in 1962 - from a town of 25,000 people with one bank and no paved road, run by a ruler who kept the cash in a drawer. Which is why what came next mattered
+In 1958 something called oil was found off the coast of Abu Dhabi. The first tanker exporting it left in 1962 - from a town of 25,000 people with one bank and no paved road, run by a ruler who kept the cash in a drawer
 
 In 1966 Sheikh Zayed became ruler of Abu Dhabi. He spent the oil money on roads, hospitals and schools, and saved the rest
 
 In 1968 Britain announced it was leaving the Gulf. Zayed and Sheikh Rashid of Dubai - rivals for decades - met in a tent on the border between their emirates. One had oil and no port. One had a port and no oil. They agreed to build a country
 
-In 1971 six rulers met in a villa on Jumeirah beach and signed to unite their Arab emirates - Abu Dhabi, Dubai, Ajman, Sharjah, Umm Al Quwain and Fujairah. Ten weeks later Ras Al Khaimah joined them. The flag was designed by a nineteen-year-old who won a competition in a newspaper. The United Arab Emirates was formed with a population of around 280 thousand. The dirham didn't exist until 1973
+On the 2nd of December 1971 six rulers met in a villa on Jumeirah beach and signed to unite their Arab emirates - Abu Dhabi, Dubai, Ajman, Sharjah, Umm Al Quwain and Fujairah. Ten weeks later Ras Al Khaimah joined them. The flag was designed by a nineteen-year-old who won a competition in a newspaper. The United Arab Emirates was formed with a population of 280 thousand. The dirham didn't exist until 1973
 
 In 1979 Rashid built a port, miles from anything. Bankers called it a folly in the sand - meaning it was pointless
 
@@ -23,9 +21,11 @@ In 2002 foreigners could buy property in Dubai for the first time. The Palm star
 
 In 2009 the crash came and Dubai couldn't pay its bills. Abu Dhabi stepped in with 20 billion dollars. The Burj Dubai - its name for six years - opened three weeks later as the Burj Khalifa, after Abu Dhabi's ruler
 
-In 2026 that 280 thousand people have become 11 million. That drawer of cash has become a 1.9 trillion dollar sovereign wealth fund. That folly in the sand moves more containers than the entirety of the UK. And that airline became Emirates
+In 2019 foreigners could buy property in Abu Dhabi for the first time
 
-Thank you Sheikh Zayed, thank you Sheikh Rashid, and thank you United Arab Emirates. You welcomed me and millions like me into your country, and our lives are so much better for it
+In 2026 that 280 thousand people have become 11 million. That drawer of cash has become a 1.9 trillion dollar sovereign wealth fund. That folly in the sand moves more containers than the entirety of the UK. That airline became Emirates - and the United Arab Emirates became home for me and millions like me
+
+Thank you Sheikh Zayed, thank you Sheikh Rashid, and thank you United Arab Emirates. You welcomed us, and our lives are so much better for it
 
 Happy birthday
 
