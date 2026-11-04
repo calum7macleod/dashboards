@@ -88,3 +88,10 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - TikTok day 1: 734 views, 19 likes, 5 shares, 3 comments, 10s avg watch, 98% For You.
 - Metricool TikTok pull: request order [TKPO01,05,07,11,10,09,08,15,13,16] returns [date,text,views,reach,shares,comments,likes,avgTime,fullWatch,forYou] - columns follow REQUEST order. Read accordingly.
 - Caption style now Jake's: title / 2-4 fact lines / open loop; no hashtags; share line as first comment. Posting order: rail first was planned; wealthier went first.
+
+## 4 Nov close
+- Batch 3 for 5 Nov recording: 16 reels final in Calum doc (index: content-assets/scripts/2026-11-05-batch3-final-index.md). Seven small fixes listed there. National Day reel (16) posts 1 Dec.
+- Posted 3 Nov: "Abu Dhabi is wealthier than Dubai" - IG day 1 1,094 views / 41.9% hold / 12.4s; TikTok 734 views, 5 shares, 4 saves. First Jake-structure reel. Metricool TikTok columns = request order (corrected).
+- Captions now Jake style; first comment = share line; no hashtags; 17:30 post; one a day. 10 batch-1 reels drafted in Metricool with captions; scripts doc sent to JC for carousels.
+- Research filed: Hudayriyat handover order; UAE govt revenue makeup (AED 581bn 2025; oil 45 / fees 20 / taxes 18 / sovereign 4 / other 12 / fines 1).
+- Owed: FUND + ISLAND + HUDAYRIYAT PDFs behind the keywords; YouTube titles/descriptions for fund + islands videos; 48h reads on each post.
