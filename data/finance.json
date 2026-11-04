@@ -29109,6 +29109,68 @@
       "month": "Nov 26",
       "source": "Nationwide app screenshot Sun 1 Nov 26 05:43 Dubai",
       "rows": "data/staging/statements/nationwide-flexdirect-20261021-20261030.json"
+    },
+    {
+      "card": "Virgin Money",
+      "balance": 8906.45,
+      "currency": "GBP",
+      "available": 1093.55,
+      "limit": 10000.0,
+      "status": "Owed incl pending. Interest 143.09 + 33.14 charged 3 Nov. App: payment of 352.46 to be taken 23 Nov",
+      "dueDate": "2026-11-23",
+      "dueAmount": 352.46,
+      "date": "2026-11-04",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+      "rows": "data/staging/statements/virgin-money-20261104.json"
+    },
+    {
+      "card": "MBNA 1",
+      "balance": 7677.66,
+      "currency": "GBP",
+      "available": 1122.34,
+      "limit": 8800.0,
+      "status": "Min 270.74 paid by DD 2 Nov (BoS MBNA LIMITED)",
+      "date": "2026-11-04",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+      "rows": "data/staging/statements/mbna-1-20261104.json"
+    },
+    {
+      "card": "BA Amex",
+      "balance": 268.9,
+      "currency": "GBP",
+      "available": 509.0,
+      "limit": null,
+      "status": "6 Apple charges posted 1 Nov (38.94); 2 Apple pending 2 Nov (14.99 + 6.99) not in balance. Balance due 0.00",
+      "date": "2026-11-04",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+      "rows": "data/staging/statements/ba-amex-20261104.json"
+    },
+    {
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 28,696.71 at 07:47 4 Nov. 3 Nov: +30,593.00 MELLEX GROUP LIMIT (+1.00 on 2 Nov); out Property Account 2,230, Mum 300. 2 Nov: MBNA 270.74, Pet Health 28.25. Leaving: HSBC CC 35.60 (5 Nov)",
+      "date": "2026-11-04",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+      "rows": "data/staging/statements/bos-20261026-20261103.json"
+    },
+    {
+      "card": "Nationwide FlexDirect OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 2250.0,
+      "limit": 2250.0,
+      "status": "IN CREDIT 393.49 at 07:49 4 Nov. 2 Nov Precise Mortgages 287.80; 3 Nov +2,230 from BoS; 4 Nov +392.75 YM Client Account (Your Move)",
+      "date": "2026-11-04",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+      "rows": "data/staging/statements/nationwide-flexdirect-20261021-20261104.json"
     }
   ],
   "personalDebts": [
