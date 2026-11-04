@@ -1,11 +1,8 @@
-# Bvlgari Island reel (31 Oct 2026, v3 - Calum's) - for 5 Nov recording
+# Bvlgari Island reel (31 Oct 2026, FINAL 4 Nov - Calum's) - for 5 Nov recording
 
-Hook options (Calum's):
-- You've Probably Never Heard of Abu Dhabi's Most Exclusive Island | 90 invite-only mansions just off the Corniche, here's everything you need to know
-- It's Not Possible to Buy on Abu Dhabi's Most Exclusive Island | You need an invite to buy one of the 90 mansions, here's how it works
-- Bvlgari Island Explained | Abu Dhabi's most exclusive island, here's all you need to know
+Hook (Calum, 4 Nov): Will Bvlgari Be Abu Dhabi's Most Exclusive Island | 90 invite-only mansions just off the Corniche - here's everything you need to know
 
-Three things, the last one's how to get invited
+Three things, the last one's what it costs and how to get invited
 
 One. What it is
 - A private island, next to Emirates Palace, with the Presidential Palace across the water
@@ -19,12 +16,12 @@ Two. What's on it
 - 90 mansions for the world's elite to own - up to 27,000 square feet, eight with a private beach, some with a dock for a 25-metre yacht
 - Opening 2030. So what does one cost, and how do you get an invite?
 
-Three. The money
-- Nobody knows. No price list, no brochure, no booking day. Sold the way Hermes sells a Birkin - you don't apply, you're offered
+Three. The money and the invite
+- Nobody knows what one costs. No price list, no brochure, no booking day  [re-added - the 'what it costs' payoff]
+- They're sold the way Hermes sells a Birkin - you don't apply, you're offered
 - The only guide is Bvlgari's Dubai island, where a penthouse sold for 112 million dollars - Dubai's record
-- This one's bigger, quieter, and looks at a palace
 
-The most expensive address in Abu Dhabi, and nobody's heard of it. DM ISLAND for the full PDF explaining all Abu Dhabi islands.
+The most expensive address in Abu Dhabi, and few people know of it. DM ISLAND for the full PDF explaining all Abu Dhabi islands.
 
 ## Receipts
 - Bulgari/Eagle Hills announcement 19 Jun 2025; ACPV project page: horseshoe private island off the Corniche, views of Qasr Al Watan/sea/skyline, boat or bridge; 60 rooms (2 Bulgari Suites + penthouse), 30 villas w/ pools; Bulgari Villa 1,200 sqm (12,917 sqft), 20m pool, private beach + park; 90 mansions 1,650-2,500 sqm (17,760-26,910 sqft); 8 estates w/ private beach; docks for 25m boats; 40-berth marina; 2,000 sqm spa; opening 2030. Bulgari hotels open: Rome, Milan, Paris, London, Dubai, Bali, Tokyo, Beijing, Shanghai.
