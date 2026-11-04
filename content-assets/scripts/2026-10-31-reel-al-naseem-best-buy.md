@@ -1,12 +1,13 @@
-# Al Naseem Is Still The Best Buy In The UAE - reel (31 Oct 2026, v3 - Calum's, dirhams) - for 5 Nov recording
+# Al Naseem Is Still The Best Buy In The UAE - reel (31 Oct 2026, v4 FINAL 4 Nov - ROI hook, dollars) - for 5 Nov recording
 
-Hook options (Calum's):
-- Does 1000 Dirhams A Foot Still Exist in Abu Dhabi | There are options, here's how to find them
-- Al Naseem is Still the Best Buy in the UAE | Under 2.5 million dollars for a villa on an island, here's the details
-- Al Naseem in Abu Dhabi has Been Forgotten About | The most in-demand project at the start of the year, now you can buy for a low price
-Content's pick: Al Naseem Is Still The Best Buy In The UAE | Under 2.5 million dollars for a villa on an island - close to 1,000 dirhams a foot. Here's the details
+Hook (Calum, 4 Nov): This Beachfront Island Costs 300 Dollars A Square Foot | We could see 100% ROI on cash invested in 18 months
 
 Five things - the last one is a problem
+Before that, here's how we get such good ROI
+- To get to handover only 40% cash is needed
+- If buying resale at original price, you only need 40% appreciation to make 100% ROI  [~90-95% after 2% fee/premium - 'around 100%']
+- That's 420 dollars a foot for a beachfront villa on an island. Possible?
+- Here's how this is likely
 
 One. Al Naseem
 - A 4, 5 or 6 bed standalone villa with a 10 thousand square foot garden, on an island, for the same price as a terraced house in Clapham - I'll tell you the price in a sec
@@ -14,7 +15,7 @@ One. Al Naseem
 - Here's the island it sits on
 
 Two. Hudayriyat Island
-- 53 million square metres - nearly the size of Manhattan with a ninth of the population density - with 22 kilometres of beach
+- 53 million square metres, nearly the size of Manhattan with a ninth of the population density, and 22 kilometres of beach
 - The world's biggest wave pool, an Olympic velodrome and the beach clubs are already open
 - Two championship golf courses, sixteen schools and twelve hotels coming
 - The city adds to the value
@@ -25,10 +26,10 @@ Three. Abu Dhabi
 - It's slower than Dubai, on purpose. Why so cheap right now?
 
 Four. Price
-- It sold out in January, then every broker moved on to the next launch and the spring conflict broke the thread
+- It sold out in January, then every broker moved on to the next launch and the Iran conflict halted appreciation
 - Some were sold as a quick flip from rogue brokers - the instalment they never planned on paying was due recently
-- You can now buy them for close to original price - 8.5 to 11 million dirhams
-- Just over 1,000 per square foot. Recent launches have been 1,800 dirhams a foot
+- You can now buy them for close to original price - 2.5 to 3 million dollars
+- Just over 300 per square foot. Recent launches have been 550 dollars a foot  [Golf Estates ~490, Nawayef ~585 - 'around 500-550']
 - But here's the problem
 
 Five. The catch
@@ -46,3 +47,5 @@ A property with a garden, by the sea, twenty minutes from your desk, with no inc
 - "Conflict broke the thread" = Calum's read. "Two-bed on Saadiyat" = ~1,900 sqft at $1,100/sqft.
 - v3 ~235 words, ~1:30. Hook now 'Under 9 million dirhams'. Flags: 'garden' = plot (house on 7,200 of ~9,700 sqft); 'rogue brokers' = accusation; currency switched to dirhams vs batch in dollars (Calum's call).
 - v2 ~300 words, ~1:55 at 155 wpm. Fixed: 'garden' -> 'plot'; 'rogue brokers' -> 'brokers who sold it as a quick flip'. Handover-2028 line dropped by Calum; 'earlier handover' still true vs Wadeem Gardens (2031) / Golf Estates (2030). Wadeem plots Jul 2025 Dh3.7m+ (Dh5.5bn in 72h); Wadeem Gardens 4-bed Dh8.7m, 25/75, Q2 2031. Clapham terrace GBP1.5-2m ~ $2-2.6m. 2% buyer agency fee on resale = AD practice.
+
+- v4: Al Naseem plan = 10/30/60 (= 40/60) per Projectory/Cresco/mpinv - instalment cadence between 10% and 60% not published; Calum/SPA to confirm. ROI maths: 40% cash, 40% appreciation = 100% on cash before 2% fee/premium. Handover ~summer 2028 = Calum.
