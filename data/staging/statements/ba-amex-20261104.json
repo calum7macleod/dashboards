@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "account": "BA Amex",
+  "currency": "GBP",
+  "period": "1-2 Nov 26",
+  "source": "app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+  "images": [
+   "IMG_4840",
+   "IMG_4839"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 268.9,
+   "balanceDue": 0.0,
+   "paymentStatus": "Payment not required at this time",
+   "availableCredit": 509.0,
+   "avios": 8023
+  },
+  "flags": [
+   "229.96 (1 Nov) + 2.99 + 4.99 + 6.99 + 6.99 + 6.99 + 9.99 = 268.90 printed; 2 Nov pending 14.99 + 6.99 not in balance",
+   "8 Apple charges 1-2 Nov"
+  ],
+  "rowCount": 10,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-04"
+ },
+ "images": [
+  {
+   "image": "IMG_4840",
+   "rows": [
+    {
+     "date": "2026-11-02",
+     "description": "APPLE.COM/BILL",
+     "amount": 14.99,
+     "status": "Pending",
+     "image": "IMG_4840",
+     "position": 1
+    },
+    {
+     "date": "2026-11-02",
+     "description": "APPLE.COM/BILL",
+     "amount": 6.99,
+     "status": "Pending",
+     "image": "IMG_4840",
+     "position": 2
+    },
+    {
+     "date": "2026-11-01",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 2.99,
+     "note": "faded behind nav bar",
+     "image": "IMG_4840",
+     "position": 3
+    }
+   ]
+  },
+  {
+   "image": "IMG_4839",
+   "rows": [
+    {
+     "date": "2026-11-02",
+     "description": "APPLE.COM/BILL",
+     "amount": 6.99,
+     "status": "Pending",
+     "note": "top cut; same as IMG_4840 pos 2",
+     "image": "IMG_4839",
+     "position": 1
+    },
+    {
+     "date": "2026-11-01",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 2.99,
+     "image": "IMG_4839",
+     "position": 2
+    },
+    {
+     "date": "2026-11-01",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 4.99,
+     "image": "IMG_4839",
+     "position": 3
+    },
+    {
+     "date": "2026-11-01",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "image": "IMG_4839",
+     "position": 4
+    },
+    {
+     "date": "2026-11-01",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "image": "IMG_4839",
+     "position": 5
+    },
+    {
+     "date": "2026-11-01",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "image": "IMG_4839",
+     "position": 6
+    },
+    {
+     "date": "2026-11-01",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 9.99,
+     "image": "IMG_4839",
+     "position": 7
+    }
+   ]
+  }
+ ]
+}
