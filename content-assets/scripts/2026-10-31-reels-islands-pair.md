@@ -13,14 +13,14 @@ One. Yas - the entertainment island
 
 Two. Saadiyat - the cultural island
 - The Louvre, the Zayed National Museum and the Natural History Museum open; the Guggenheim opens December 2026
-- When Bilbao got its Guggenheim it improved the city's finances so much economists created the term: the Bilbao effect
+- When Bilbao got its Guggenheim it improved finances so much economists created the term: the Bilbao effect
 - The most expensive island - around 1,100 dollars a square foot for apartments
 - The next one is where I bought myself, and why
 - Buy on Saadiyat if you want long-term capital appreciation
 
 Three. Reem and Al Maryah - the financial district
 - ADGM, the Wall Street of the Middle East - BlackRock, Goldman Sachs, Binance
-- ADGM applies English common law directly - DIFC wrote its own version of it  [Calum had 'nowhere else... DIFC indirectly' - corrected]
+- English common law makes it easy for worldwide corporates to set up - nowhere else in the UAE does this directly, only DIFC wrote its own version
 - Workforce up 34% to 49 thousand this year. DIFC has 50 thousand and is 11 years older
 - A 16 billion dollar expansion announced in December 2025
 - I bought an apartment here in April. Every bit of news since has made me happier - the next is the biggest of them all
