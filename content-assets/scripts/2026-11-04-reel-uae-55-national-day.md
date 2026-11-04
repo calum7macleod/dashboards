@@ -1,39 +1,29 @@
-# 55 Years Ago Two Men Met In A Tent And Started A Country - UAE National Day reel (4 Nov 2026, for 2 Dec)
+# 55 Years Ago Two Men Met In A Tent And Started A Country - UAE National Day reel (v2 4 Nov 2026 - spoken-date form, for 2 Dec)
 
 Text: 55 Years Ago Two Men Met In A Tent And Started A Country
 Speech: That country now has the world's tallest building, its busiest international airport, and 1.9 trillion dollars in the bank
 
 Happy birthday to the UAE. Most people who live here and love it don't know this story. Ten dates
 
-1930s - the end of the pearl trade
-- For centuries this coast lived on pearls. Then a Japanese farmer called Mikimoto learned to grow them, the price collapsed, and the Gulf became one of the poorest places on earth. No roads, no schools, for thirty years
+In 1930 this coast lived on pearls. Then a Japanese farmer called Mikimoto learned to grow them, the price collapsed, and the Gulf became one of the poorest places on earth. No roads, no schools, for thirty years
 
-1958 - oil
-- A rig off Abu Dhabi found it. The first tanker left in 1962 - from a town of 25,000 people with one bank and no paved road, run by a ruler who kept the cash in a drawer. Which is why what came next mattered
+In 1958 something called oil was found off the coast of Abu Dhabi. The first tanker exporting it left in 1962 - from a town of 25,000 people with one bank and no paved road, run by a ruler who kept the cash in a drawer. Which is why what came next mattered
 
-1966 - Zayed
-- Sheikh Zayed became ruler of Abu Dhabi. He spent the oil on roads, hospitals and schools, and saved the rest. The savings are now ADIA - around 1.2 trillion dollars
+In 1966 Sheikh Zayed became ruler of Abu Dhabi. He spent the oil on roads, hospitals and schools, and saved the rest. The savings are now ADIA - around 1.2 trillion dollars
 
-1968 - the tent
-- Britain announced it was leaving the Gulf. Zayed and Sheikh Rashid of Dubai - rivals for decades - met in a tent on the border between their emirates. One had oil and no port. One had a port and no oil. They agreed to build a country
+In 1968 Britain announced it was leaving the Gulf. Zayed and Sheikh Rashid of Dubai - rivals for decades - met in a tent on the border between their emirates. One had oil and no port. One had a port and no oil. They agreed to build a country
 
-1971 - the signature
-- The plan was nine states. Bahrain and Qatar walked. Six rulers signed in a villa on Jumeirah beach; Ras Al Khaimah joined ten weeks later. The flag was designed by a nineteen-year-old. The dirham didn't exist until 1973
+In 1971 the plan was nine states. Bahrain and Qatar walked. Six rulers signed in a villa on Jumeirah beach, and Ras Al Khaimah joined ten weeks later. The flag was designed by a nineteen-year-old. The dirham didn't exist until 1973
 
-1979 - the folly in the sand
-- Rashid built the largest man-made harbour on earth at Jebel Ali, miles from anything. Bankers called it a folly. It's the biggest port in the Middle East
+In 1979 Rashid built the largest man-made harbour on earth at Jebel Ali, miles from anything. Bankers called it a folly in the sand. It's now the biggest port in the Middle East
 
-1985 - ten million dollars
-- Dubai started an airline with 10 million dollars and two leased planes. It became Emirates
+In 1985 Dubai started an airline with 10 million dollars and two leased planes. It became Emirates
 
-2002 - the doors open
-- Foreigners could buy property in Dubai. The Palm started the same year
+In 2002 foreigners could buy property in Dubai for the first time. The Palm started the same year
 
-2009 - the bill
-- The crash. Dubai couldn't pay. Abu Dhabi stepped in with 20 billion dollars, and the tallest building on earth opened three weeks later as the Burj Khalifa - named after Abu Dhabi's ruler
+In 2009 the crash came and Dubai couldn't pay. Abu Dhabi stepped in with 20 billion dollars, and the tallest building on earth opened three weeks later as the Burj Khalifa - named after Abu Dhabi's ruler
 
-2026 - today
-- 11 million people from 200 countries - 280,000 in 1971. A Louvre, a Mars probe, a train between the two cities, no income tax, a surplus every year, and 1.9 trillion dollars in the funds
+In 2026 there are 11 million people here from 200 countries - there were 280,000 in 1971. A Louvre, a Mars probe, a train between the two cities, no income tax, a surplus every year, and 1.9 trillion dollars in the funds
 
 Britain took three hundred years to build an empire. This took one lifetime - and the men who built it never saw most of it. If you live here and didn't know this, send it to someone who loves this place. Happy birthday.
 
