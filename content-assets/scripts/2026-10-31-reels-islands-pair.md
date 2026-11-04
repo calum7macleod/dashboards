@@ -35,33 +35,37 @@ Four. Hudayriyat - the Beverly Hills of the Middle East
 
 Those four are the ones everyone talks about. The next four are the ones nobody does - see them in my next video. DM ISLAND for my full PDF on all of them.
 
-## Reel 2 - The 4 Abu Dhabi Islands Most People Haven't Heard Of
-Text: The 4 Abu Dhabi Islands Most People Haven't Heard Of
-Speech: 90 invite-only mansions, an island that's been empty for 34 years, and the first wellness island in the world
-These are the four I believe investors make their money on next
+## Reel 2 - You Don't Know Every Abu Dhabi Island (v3, Calum 4 Nov)
+Text: You Don't Know Every Abu Dhabi Island
+Speech: You know Yas and Saadiyat, but let's test your knowledge
 
 One. Lulu - the empty island
 - 4.2 million square metres - Palm Jumeirah-sized - 500 metres off the Corniche
-- Abu Dhabi's own 2030 plan calls it the most important element of the capital. Nothing's launched yet, but I was at the Corniche recently - show villas are already out of the ground
-- Eagle Hills confirmed it in August 2026 - founded by the man who founded EMAAR, which built the Burj Khalifa
+- Abu Dhabi's own 2030 plan calls it the most important element of the capital
+- Nothing's launched yet, but I was at the Corniche recently - villas are already out of the ground
+- Eagle Hills is developing it - founded by the man who founded EMAAR, which built the Burj Khalifa
 - I believe this is the next big thing - the next is the world's healthiest
+- Buy Lulu if you like EMAAR but want Abu Dhabi
 
 Two. Fahid - the wellness island
 - Between Yas and Saadiyat, surrounded by mangroves which purify the water - around 11 billion dollars of development, 6,000 properties
 - The first island in the world certified as a healthy place to live
 - King's College Wimbledon opens a school here in 2028. First handovers 2029 - the next you can move into very soon
+- Buy Fahid if you like healthy living
 
 Three. Ramhan - the beach villas
 - A natural island between Yas and Saadiyat - 4 million square metres, beach villas from 1.75 million dollars, show villas open now
 - Launched at around 550 dollars a square foot. Resales are already listed at 700 to over 1,000
 - Eagle Hills' first Abu Dhabi island, first handovers 2027 - and from above, the most impressive island in the city. The next you need an invite to buy
+- Buy Ramhan if you want the keys soon
 
 Four. Bvlgari - the one you can't just buy
 - Off the Corniche, next to the Emirates Palace - a 60-room hotel, 30 beach villas, 90 mansions by invitation
 - Bvlgari's Dubai island, Jumeirah Bay, holds Dubai's record sale - a penthouse at 112 million dollars
 - Eagle Hills again, opening 2030. The most expensive address in Abu Dhabi, without anyone knowing much about it
+- Buy Bvlgari if you get an invite
 
-Four islands - under 2% of Abu Dhabi's 214. Nature made them, and a 1.7 trillion dollar fund is building them. I believe this will be one of the best places in the world to live, which is why I'm moving here. DM ISLAND for the PDF.
+Four islands - less than 2% of Abu Dhabi's 214. Nature made them, and a 1.9 trillion dollar fund is building them. I believe this will be one of the best places in the world to live, which is why I'm moving here. DM ISLAND for the PDF.
 
 ## Receipts / flags
 - Calum's doc (31 Oct) had: '42' (-> 4%/2%), '1.8 trillion' (-> 1.7), 'villas out the ground' on Lulu (-> show villas). Corrected here; fix in his doc before Oljas.
