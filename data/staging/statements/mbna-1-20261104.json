@@ -1,0 +1,35 @@
+{
+ "meta": {
+  "account": "MBNA 1",
+  "currency": "GBP",
+  "period": "6 Oct - 4 Nov 26",
+  "source": "app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
+  "images": [
+   "IMG_4834"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "spent": 7677.66,
+   "available": 1122.34,
+   "view": "Recent: 06 October 2026 - Today",
+   "note": "There are no more transactions to display for this period"
+  },
+  "flags": [
+   "7,948.40 - 270.74 = 7,677.66 printed. Min due 2 Nov paid by DD (BoS MBNA LIMITED -270.74 on 2 Nov)"
+  ],
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-04"
+ },
+ "transactions": [
+  {
+   "date": "2026-11-02",
+   "description": "DIRECT DEBIT PAYMENT -",
+   "amount": -270.74,
+   "asPrinted": "£270.74 cr",
+   "image": "IMG_4834",
+   "position": 1
+  }
+ ]
+}
