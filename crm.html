@@ -39,6 +39,7 @@ h1{text-align:center;font-size:24px;margin-bottom:10px}
 .nt{font-size:11.5px}.nt.over{color:var(--red)}.nt.today{color:var(--amber)}.nt.ok{color:var(--muted)}
 .bdg{font-size:11.5px;color:var(--cream)}
 #modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding:12px;z-index:50;overflow-y:auto}
+.sfbtn{height:28px;padding:0 12px;border-radius:14px;border:1px solid var(--div);background:transparent;color:var(--muted);font:inherit;font-size:12px;cursor:pointer}.sfbtn.on{border-color:var(--gold);color:var(--cream)}.kbdg{font-size:9.5px;letter-spacing:2px;color:#152A1F;background:var(--gold);border-radius:4px;padding:1px 5px;vertical-align:1px}.nbdg{font-size:9.5px;letter-spacing:2px;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:0 4px;vertical-align:1px}.cbdg{font-size:10px;color:var(--muted);border:1px solid var(--div);border-radius:4px;padding:0 5px}
 .notes{margin-top:12px}.notes .ne{padding:7px 0;border-top:1px solid var(--div);font-size:13px;color:var(--cream);line-height:1.4}.notes .ne:first-child{border-top:0}.notes .nd{display:block;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:2px}.notes details summary{cursor:pointer;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:6px 0;list-style:none}.notes details summary::-webkit-details-marker{display:none}
 #mbox{background:var(--panel);border:1px solid var(--div);border-radius:16px;max-width:620px;width:100%;padding:16px;margin:10px 0 40px}
 .phead{display:flex;gap:14px;align-items:center;border-bottom:1px solid var(--div);padding-bottom:12px;margin-bottom:10px;flex-wrap:wrap}
@@ -161,6 +162,7 @@ body{padding-bottom:40px}
   </div>
   <div id="v-sellers" class="hidden">
     <div id="sTotals" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
+    <div id="sfilter" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px"></div>
     <div id="sboard"></div>
   </div>
   <div id="v-deals" class="hidden">
@@ -580,7 +582,7 @@ function renderBoard(){
   $('pipeTotals').innerHTML=`Pipeline: <b style="color:var(--lgold)">${fmtB(pipeVal)}</b> · gross ≈ <b style="color:var(--lgold)">${fmtK(pipeC)}</b> · take-home @${Math.round(TIER*100)}% ≈ <b style="color:var(--lgold)">${fmtK(Math.round(pipeC*TIER))}</b> <span style="font-size:11px">(2% secondary · 3-4% off-plan)</span>`;
   $('board').innerHTML=STAGES.map(st=>{
     const cards=BUYERS.filter(b=>b.stage===st&&passF(b)).sort((a,b)=>{
-      if(['Won','Lost'].includes(st)){const da=a.closedDate||a.date||'',db=b.closedDate||b.date||'';return da<db?1:da>db?-1:0;}
+      if(['Won','Lost'].includes(st)){const cd=x=>x.closedLost||x.closedWon||x.closedDate||'';const da=cd(a),db=cd(b);if(!da&&db)return 1;if(da&&!db)return -1;return da<db?1:da>db?-1:0;}
       return (b.score||0)-(a.score||0);});
     const val=cards.reduce((a,b)=>a+(b.budget||0),0);const vc=cards.reduce((a,b)=>a+bComm(b),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','buyer')">
@@ -637,13 +639,17 @@ function renderPeople(){
 function renderSellers(){
   const val=STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).reduce((a,s)=>a+(s.price||0),0);
   $('sTotals').innerHTML=`Stock book: <b style="color:var(--lgold)">${fmtB(val)}</b> across ${STOCK.filter(s=>!['Won','Lost','Longer Term'].includes(sStage(s))).length} live units · projected commission ≈ <b style="color:var(--lgold)">Đ${commOf(val).toLocaleString()}</b>`;
+  const sf=window.SFILTER||'All';
+  const keep=s=>sf==='All'||(sf==='Keep'?!!s.keepAfterMove:(s.carry||'Calum')===sf);
+  $('sfilter').innerHTML=['All','Calum','Lewis','Both','Keep'].map(f=>`<button class="sfbtn${sf===f?' on':''}" onclick="window.SFILTER='${f}';renderSellers()">${f==='Keep'?'Keep after move':f}${f!=='All'?` <span style="color:var(--muted)">${STOCK.filter(s=>f==='Keep'?!!s.keepAfterMove:(s.carry||'Calum')===f).length}</span>`:''}</button>`).join('');
   $('sboard').innerHTML=SSTAGES.map(st=>{
-    const cards=STOCK.filter(s=>sStage(s)===st);
+    let cards=STOCK.filter(s=>sStage(s)===st&&keep(s));
+    if(['Won','Lost'].includes(st)){const cd=x=>x.closedLost||x.closedWon||'';cards=cards.slice().sort((a,b)=>{const da=cd(a),db=cd(b);if(!da&&db)return 1;if(da&&!db)return -1;return da<db?1:da>db?-1:0;});}
     const v=cards.reduce((a,s)=>a+(s.price||0),0);const vc=cards.reduce((a,s)=>a+sComm(s),0);
     return `<div class="col" ondragover="dragOver(event)" ondragleave="this.classList.remove('dragover')" ondrop="drop(event,'${st}','seller')">
      <h3>${st} <span style="color:var(--muted)">${cards.length}</span></h3><div class="colval">${v?fmtB(v)+' <span style="color:var(--lgold)">· '+fmtK(vc)+'</span>':''}</div>
      ${cards.map(s=>`<div class="card" draggable="true" ondragstart="drag(event,'stock:${s.id}')" onclick="openStock('${s.id}')">
-      <div class="nm">${s.cluster||''} ${s.unit||''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.beds?' · '+s.beds+'bd':''}</span>${s.price?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(sComm(s))}</span>`:``}</div>
+      <div class="nm">${s.cluster||''} ${s.unit||''}${s.keepAfterMove?' <span class="kbdg">KEEP</span>':''}${s.carry&&s.carry!=='Calum'?` <span class="cbdg">${s.carry}</span>`:''}</div><div class="heat"><span class="bdg">${fmtB(s.price)}${s.priceNet?' <span class="nbdg">NET</span>':''}${s.beds?' · '+s.beds+'bd':''}</span>${s.price?` <span style="color:var(--lgold);font-size:10.5px">${fmtK(sComm(s))}</span>`:``}</div>
       <div class="need">${(s.seller||'')} ${(s.notes||'').slice(0,45)}</div></div>`).join('')}</div>`;
   }).join('');
 }
@@ -661,10 +667,10 @@ function dragOver(e){e.preventDefault();e.currentTarget.classList.add('dragover'
 function drop(e,stage,kind){e.preventDefault();e.currentTarget.classList.remove('dragover');
   if(kind==='seller'&&dragId.startsWith('stock:')){
     const s=STOCK.find(x=>String(x.id)===dragId.slice(6));if(!s)return;
-    s.stage=stage;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${stage}`);return;}
+    setStockStage(s,stage);renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${stage}`);return;}
   const b=BUYERS.find(x=>x.id===dragId);if(!b)return;
-  b.stage=stage;if(['Won','Lost'].includes(stage)){b.nextTouch=null;b.closedDate=today();b.status='Closed '+stage;}
-  render();queueSave('data/buyers.json',BUYERS,`CRM: ${b.buyer} → ${stage}`);}
+  setBuyerStage(b,stage);render();queueSave('data/buyers.json',BUYERS,`CRM: ${b.buyer} → ${stage}`);}
+function setBuyerStage(b,stage){b.stage=stage;if(stage==='Won'){b.nextTouch=null;b.closedWon=b.closedWon||today();b.status='Closed Won';}else if(stage==='Lost'){b.nextTouch=null;b.closedLost=b.closedLost||today();b.status='Closed Lost';}else{b.status='Active';}}
 const byId=id=>BUYERS.find(x=>x.id===id);
 function touched(id){const b=byId(id);if(!b)return;
   b.lastContact=today();b.nextTouch=addDays(today(),CAD[b.heat||3]||3);
@@ -709,18 +715,19 @@ function openCard(id){const b=byId(id);if(!b)return;
 function openStock(id){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;
   $('mbox').innerHTML=`<div class="phead"><div class="pmeta"><h2>${s.cluster||''} ${s.unit||''}</h2>
    <div class="sub">${sStage(s)} · seller: ${s.seller||'?'}</div>
-   <div class="pills">${s.price?`<span class="pill">💰 ${fmtB(s.price)}</span>`:''}${s.beds?`<span class="pill">🛏 ${s.beds} bed</span>`:''}</div></div></div>
+   <div class="pills">${s.price?`<span class="pill">💰 ${fmtB(s.price)}${s.priceNet?' <span class="nbdg">NET</span>':''}</span>`:''}${s.beds?`<span class="pill">🛏 ${s.beds} bed</span>`:''}${s.keepAfterMove?'<span class="pill"><span class="kbdg">KEEP AFTER MOVE</span></span>':''}${s.carry?`<span class="pill">carry: ${s.carry}</span>`:''}${s.role==='offplan-buyer'?'<span class="pill">future off-plan buyer</span>':''}${s.closedLost?`<span class="pill">lost ${s.closedLost}</span>`:''}</div></div></div>
   ${notesHtml(s.notes||s.note)}
   <div class="mrow"><select onchange="stockStage('${s.id}',this.value)">${SSTAGES.map(x=>`<option ${x===sStage(s)?'selected':''}>${x}</option>`).join('')}</select>
   <button class="btn" onclick="closeModal()">Close</button></div>`;
   $('modal').classList.remove('hidden');}
-function stockStage(id,st){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;s.stage=st;renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${st}`);closeModal();}
+function setStockStage(s,st){s.stage=st;if(st==='Lost')s.closedLost=s.closedLost||today();if(st==='Won')s.closedWon=s.closedWon||today();}
+function stockStage(id,st){const s=STOCK.find(x=>String(x.id)===String(id));if(!s)return;setStockStage(s,st);renderSellers();queueSave('data/stock.json',STOCK,`CRM: ${s.unit} → ${st}`);closeModal();}
 function heatCh(id,d){const b=byId(id);b.score=Math.min(5,Math.max(1,Math.round((b.score||3)+d)));b.heat=b.score;render();queueSave('data/buyers.json',BUYERS,'CRM: score '+b.buyer);openCard(id)}
 function addNote(id){const n=prompt('Note:');if(!n)return;const b=byId(id);
   (b.touches=b.touches||[]).push({date:today(),channel:'manual',summary:n});
   queueSave('data/buyers.json',BUYERS,'CRM: note '+b.buyer);openCard(id);}
 function snooze(id){const v=$('snz').value;if(!v)return;const b=byId(id);b.stage='Snoozed';b.snoozedUntil=v;b.nextTouch=v;b.touchReason='Snoozed — wake '+v;render();queueSave('data/buyers.json',BUYERS,'CRM: snoozed '+b.buyer);closeModal()}
-function stageSel(id,v){const b=byId(id);b.stage=v;render();queueSave('data/buyers.json',BUYERS,'CRM: '+b.buyer+' → '+v);openCard(id)}
+function stageSel(id,v){const b=byId(id);setBuyerStage(b,v);render();queueSave('data/buyers.json',BUYERS,'CRM: '+b.buyer+' → '+v);openCard(id)}
 function closeModal(){$('modal').classList.add('hidden')}
 function bedsOf(s){if(!s)return[];return String(s).match(/\d/g)?.map(Number)||[]}
 function clustersOf(b){return[b.cluster1,b.cluster2,b.cluster3].filter(Boolean).map(x=>x.toLowerCase())}
