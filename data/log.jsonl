@@ -368,3 +368,4 @@
 {"date": "2026-11-05", "agent": "content", "did": "Board migrated: 44 cards moved to real stages (26 filmed, 6 edited, 1 posted, 13 idea); 19 cards awaiting 'card add' command", "wrote": ["data/content.json"]}
 {"date": "2026-11-05", "agent": "manager", "did": "Board v3: drag-and-drop order within a column persisted as boardOrder (Calum's order wins, new arrivals on top); agentkit board/stage aligned; tested", "wrote": ["js/board.js", "board.html", "tools/agentkit.py"]}
 {"date": "2026-11-05", "agent": "manager", "did": "Board v4: bin button on every card (status superseded + binned date, undo); live", "wrote": ["js/board.js", "board.html"]}
+{"date": "2026-11-05", "agent": "manager", "did": "agentkit: card add + card edit shipped for Content (h0116 closed); board v4 bin awaiting Pages deploy", "wrote": ["tools/agentkit.py", "data/handoffs.json"]}
