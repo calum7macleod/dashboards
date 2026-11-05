@@ -495,11 +495,13 @@ function renderOverview() {
   const topCat = CATEGORIES.reduce((a, c) => catSum(txs, c) > catSum(txs, a) ? c : a, CATEGORIES[0]);
   const topCatAmt = catSum(txs, topCat);
 
+  const other=(window.OTHER_CCY||[]).filter(t=>t.month===curMonth);const byCcy={};other.forEach(t=>{byCcy[t.currency]=(byCcy[t.currency]||0)+(t.amount||0);});
+  const otherLine=Object.keys(byCcy).length?`<div class="stat-sub" style="margin-top:4px">${Object.entries(byCcy).map(([c,v])=>`${c} ${fmtD(v)} (${other.filter(t=>t.currency===c).length} rows, not added)`).join(' · ')}</div>`:'';
   document.getElementById('ov-stats').innerHTML =
     `<div class="card">
-      <div class="card-title">Total Spent</div>
+      <div class="card-title">Total Spent (AED only)</div>
       <div class="stat-value">AED ${fmt(total)}</div>
-      <div class="stat-sub">${txs.length} transactions</div>
+      <div class="stat-sub">${txs.length} transactions</div>${otherLine}
       <div class="stat-badge ${over > 0 ? 'badge-red' : 'badge-green'}">${over > 0 ? '▲ AED '+fmt(over)+' over' : '▼ AED '+fmt(-over)+' under'} budget</div>
     </div>
     <div class="card">
@@ -859,7 +861,13 @@ function renderRunway(){
 }
 renderRunway();
 fetch('data/finance.json?t='+Date.now()).then(r=>r.json()).then(d=>{
-  ALL_TRANSACTIONS=d.transactions||[];BUDGETS=d.budgets||{};CC_BALANCES=d.ccBalances||[];CATEGORIES=d.categories||[];window.PERSONAL_DEBTS=d.personalDebts||[];window.DEBT_BASELINE=d.debtBaseline||null;
+  // Rules (data/schemas/finance.md, 5 Nov 2026): retired rows never count; amounts are 'spend positive' here -
+  // if the file says signConvention:'statement' (negative = money out) they are flipped on load; only AED feeds the sums,
+  // other currencies are shown aside and never added.
+  const stmt=(d.signConvention||'')==='statement';
+  const live=(d.transactions||[]).filter(t=>!t.retired).map(t=>stmt?Object.assign({},t,{amount:-(t.amount||0)}):t);
+  window.OTHER_CCY=live.filter(t=>t.currency&&t.currency!=='AED');
+  ALL_TRANSACTIONS=live.filter(t=>!t.currency||t.currency==='AED');BUDGETS=d.budgets||{};CC_BALANCES=d.ccBalances||[];CATEGORIES=d.categories||[];window.PERSONAL_DEBTS=d.personalDebts||[];window.DEBT_BASELINE=d.debtBaseline||null;
   computeDerived();
   curMonth=ALL_MONTHS[0];
   renderOverview();renderTransactions();renderSummary();renderCCBalances();renderDebt();
