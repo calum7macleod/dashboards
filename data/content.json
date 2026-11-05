@@ -722,14 +722,15 @@
       "id": "c61",
       "title": "The Abu Dhabi To Dubai Train Is Running",
       "series": "News",
-      "status": "drafted",
+      "status": "superseded",
       "priority": "high",
       "created": "2026-10-31",
       "postDate": null,
       "hook": "Etihad Rail passenger service live 30 Sep: 57-64 min, Dh39, 10/day - Content draft on repo; news with shelf life",
       "notes": "Script: content-assets/scripts/2026-10-31-batch3-additions.md. Train reel = news (Etihad Rail passenger service 30 Sep 2026). Construction + amenities need Calum's observations in the brackets.",
       "stage": "idea",
-      "stageDate": "2026-11-05"
+      "stageDate": "2026-11-05",
+      "binned": "2026-11-05"
     },
     {
       "id": "c62",
