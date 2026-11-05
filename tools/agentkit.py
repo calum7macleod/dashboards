@@ -16,6 +16,8 @@ Commands:
   close-handoff <id>              mark a handoff done
   log "<did>" [file1,file2]       append receipt to data/log.jsonl
   state [agent]                   print data/state/<agent>.md (default $AGENT)
+  board [stage]                   content board: count per stage, then cards (id|title|series|stageDate|postDate); one stage or all
+  stage <id> <stage> [postDate]   move a content card: sets stage + stageDate=today; posted also sets status/postDate
 """
 import sys, os, json, base64, urllib.request, datetime
 TOKEN=os.environ.get("GH_TOKEN"); AGENT=os.environ.get("AGENT","unknown")
@@ -81,6 +83,26 @@ elif c=="log":
     t,s=getfile("data/log.jsonl")
     line=json.dumps({"date":today(),"agent":AGENT,"did":a[1],"wrote":(a[2].split(",") if len(a)>2 else [])},ensure_ascii=False)
     print("Done - receipt",putfile("data/log.jsonl",t.rstrip("\n")+"\n"+line+"\n",f"{AGENT}: receipt"))
+elif c=="board":
+    d=jload("data/content.json"); st=d.get("stages") or ["idea","hooked","scripted","filmed","edited","scheduled","posted","measured"]
+    pipe=[x for x in d.get("pipeline",[]) if x.get("status")!="superseded"]
+    only=a[1].lower() if len(a)>1 else None
+    if only and only not in st: sys.exit(f"stage must be one of: {' | '.join(st)}")
+    print(" ".join(f"{k}:{sum(1 for x in pipe if (x.get('stage') or 'idea')==k)}" for k in st))
+    for k in st:
+        if only and k!=only: continue
+        rows=sorted([x for x in pipe if (x.get("stage") or "idea")==k],key=lambda x:str(x.get("stageDate") or x.get("created") or ""),reverse=True)
+        if rows: print(f"-- {k} ({len(rows)})")
+        for x in rows: print(f"{x.get('id')}|{str(x.get('title',''))[:60]}|{x.get('series','')}|{x.get('stageDate') or x.get('created') or ''}|{x.get('postDate') or ''}")
+elif c=="stage":
+    t,sha=getfile("data/content.json"); d=json.loads(t); st=d.get("stages") or ["idea","hooked","scripted","filmed","edited","scheduled","posted","measured"]
+    if len(a)<3 or a[2].lower() not in st: sys.exit(f"usage: stage <id> <stage> [postDate]  - stage is one of: {' | '.join(st)}")
+    x=next((y for y in d.get("pipeline",[]) if y.get("id")==a[1]),None)
+    if not x: sys.exit(f"no card with id {a[1]} - run: agentkit.py board")
+    was=x.get("stage"); x["stage"]=a[2].lower(); x["stageDate"]=today()
+    if len(a)>3: x["postDate"]=a[3]
+    if x["stage"]=="posted": x["status"]="posted"; x["postDate"]=x.get("postDate") or today()
+    print("Done -",a[1],f"{was} -> {x['stage']}",putfile("data/content.json",json.dumps(d,indent=2,ensure_ascii=False)+"\n",f"{AGENT}: {a[1]} -> {a[2].lower()}"))
 elif c=="state":
     ag=(a[1] if len(a)>1 else AGENT).lower().replace(" ","")
     names={"pa":"core","personalassistant":"core","max":"core","claudemanager":"manager","lifecoach":"private:personal/state/lifecoach.md"}
