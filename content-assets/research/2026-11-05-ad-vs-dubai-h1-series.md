@@ -19,3 +19,12 @@ Units: AD H1 2025 8,000 -> H1 2026 15,900 (ADREC); Dubai 91,900-95,000 -> 79,200
 
 Spoken line (safe): "H1 property sales in Abu Dhabi went from around ten times smaller than Dubai to three times smaller in a year."
 Stamps for Market: (1) ADREC H1 2026 PDF - confirm residential 70.4 and sales 86; (2) DMT H1 2024 sales value; (3) ADREC H1 2025 sales vs mortgage split.
+
+## SINGLE-SOURCE SERIES - Cavendish Maxwell, residential sales, H1 (USE THIS ON CAMERA)
+| | H1 2025 | H1 2026 | Change |
+| Abu Dhabi | AED 24.4bn | AED 67.8bn | +177.9% |
+| Dubai | AED 262.1bn | AED 221.3bn | -15.7% |
+| Dubai/AD | 10.7x | 3.3x | |
+Transactions: AD 7,600 -> 15,500 (+103.6%); Dubai 91,900 -> 79,200 (-13.9%). AD off-plan AED 60.3bn = 89% of value. AD Q1 2026 alone AED 38.1bn (record).
+Sources: Cavendish Maxwell Abu Dhabi Residential H1 2026 (26 Aug 2026, Aletihad/TradeArabia); Cavendish Maxwell Dubai Residential H1 2026 (6 Jul 2026, Zawya). Note: Cavendish 2025 AD report (AED 8.9bn) was Abu Dhabi City only; 2026 report is emirate-wide and restates H1 2025 at 24.4 - use the 2026 pair.
+Title on one source: "Property Sales: Dubai Down 16%, Abu Dhabi Up 178%". Line: "from around ten times smaller to three times smaller in a year."
