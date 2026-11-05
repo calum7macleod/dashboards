@@ -75,7 +75,7 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 /* ---------- derived ---------- */
 function stages() { return Array.isArray(state.data.stages) && state.data.stages.length ? state.data.stages : DEFAULT_STAGES; }
 function stageOf(c) { if (c.stage) return c.stage; const s = STATUS_TO_STAGE[c.status]; return s === undefined ? 'idea' : s; }
-function pipeline() { return (state.data.pipeline || []).filter(c => stageOf(c) !== null); }
+function pipeline() { return (state.data.pipeline || []).filter(c => c.status !== 'superseded' && stageOf(c) !== null); }
 function seriesList() { const n = {}; pipeline().forEach(c => { const s = c.series || 'No series'; n[s] = (n[s] || 0) + 1; }); return Object.entries(n).sort((a, b) => b[1] - a[1]); }
 function cardsIn(stage) {
   return pipeline().filter(c => stageOf(c) === stage && (state.filter === 'All' || (c.series || 'No series') === state.filter))
