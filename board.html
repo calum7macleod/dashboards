@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Content Board</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Board">
+<meta name="theme-color" content="#152A1F">
+<link rel="apple-touch-icon" href="icons/today-180.png">
+<link rel="icon" href="icons/today-180.png">
+<style>
+  :root { --deep:#152A1F; --bg:#1E3D2F; --gold:#C9A84C; --gold2:#E8C96B; --cream:#F5EDE0; --muted:#8FA898; --line:#2E5A40;
+          --serif:'Palatino Linotype',Palatino,Georgia,serif; --sans:Calibri,'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;
+          --sat:env(safe-area-inset-top,0px); --sab:env(safe-area-inset-bottom,0px); --col:86vw; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { margin:0; height:100%; background:var(--deep); color:var(--cream); font-family:var(--sans); font-size:16px; -webkit-text-size-adjust:100%; }
+  body { display:flex; flex-direction:column; padding:calc(var(--sat) + 10px) 0 var(--sab); }
+  .eyebrow { font-size:11px; letter-spacing:.25em; text-transform:uppercase; color:var(--gold); }
+  .top { display:flex; align-items:baseline; justify-content:space-between; gap:12px; padding:4px 14px 8px; }
+  .top h1 { font-family:var(--serif); font-weight:400; font-size:28px; margin:0; line-height:1.05; }
+  .top a { color:var(--muted); font-size:12px; text-decoration:none; letter-spacing:.1em; text-transform:uppercase; }
+  .sync { font-size:11px; color:var(--muted); letter-spacing:.08em; min-height:14px; text-align:right; }
+  .chips { display:flex; gap:6px; overflow-x:auto; padding:2px 14px 10px; scrollbar-width:none; flex:0 0 auto; }
+  .chips::-webkit-scrollbar { display:none; }
+  .chip { flex:0 0 auto; height:30px; padding:0 12px; border-radius:15px; border:1px solid var(--line); background:transparent; color:var(--muted); font:inherit; font-size:13px; cursor:pointer; white-space:nowrap; }
+  .chip.on { border-color:var(--gold); color:var(--cream); }
+  .chip .n { color:var(--gold); margin-left:6px; font-size:11px; }
+
+  .board { flex:1; display:flex; gap:10px; overflow-x:auto; overflow-y:hidden; padding:0 14px 14px; scroll-snap-type:x mandatory; scrollbar-width:thin; }
+  .col { flex:0 0 var(--col); max-width:360px; scroll-snap-align:start; display:flex; flex-direction:column; min-height:0; }
+  .colhead { display:flex; align-items:center; gap:8px; padding:6px 2px 8px; border-bottom:1px solid var(--line); }
+  .colhead .eyebrow { flex:1; }
+  .colhead .count { color:var(--muted); font-size:13px; }
+  .cards { flex:1; overflow-y:auto; padding:8px 0 20px; min-height:60px; }
+  .card { background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin-bottom:8px; cursor:pointer; }
+  .card.open { border-color:var(--gold); }
+  .card .t { font-family:var(--serif); font-size:16px; line-height:1.25; }
+  .card .h { color:var(--muted); font-size:13px; margin-top:4px; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .card.open .h { display:block; }
+  .card .m { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:8px; font-size:11px; color:var(--muted); letter-spacing:.04em; }
+  .card .m .s { color:var(--gold2); }
+  .card .m .p { color:var(--gold); }
+  .card .m .pl { border:1px solid var(--line); border-radius:9px; padding:1px 7px; }
+  .card .detail { display:none; margin-top:10px; font-size:13px; color:var(--muted); line-height:1.4; }
+  .card.open .detail { display:block; }
+  .acts { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+  .act { height:34px; padding:0 12px; border-radius:17px; border:1px solid var(--line); background:var(--deep); color:var(--cream); font:inherit; font-size:13px; cursor:pointer; }
+  .act.next { border-color:var(--gold); color:var(--gold2); }
+  .acts select, .acts input[type=date] { height:34px; background:var(--deep); border:1px solid var(--line); border-radius:8px; color:var(--cream); font:inherit; font-size:13px; padding:0 8px; outline:none; }
+  .sortable-ghost { opacity:.35; }
+  .empty { color:var(--muted); font-size:13px; padding:8px 2px; }
+  .card.fade { opacity:0; transition:opacity .3s; }
+
+  .toast { position:fixed; left:50%; bottom:calc(var(--sab) + 18px); transform:translateX(-50%); background:var(--bg); border:1px solid var(--gold); color:var(--cream); padding:10px 14px; border-radius:12px; font-size:14px; display:none; align-items:center; gap:14px; z-index:10; max-width:92vw; }
+  .toast.show { display:flex; }
+  .toast button { background:none; border:0; color:var(--gold2); font:inherit; font-weight:700; cursor:pointer; letter-spacing:.06em; }
+  .gate { display:none; background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:14px; margin:0 14px 12px; }
+  .gate.show { display:block; }
+  .gate input { width:100%; height:44px; background:var(--deep); border:1px solid var(--line); border-radius:10px; color:var(--cream); font:inherit; padding:0 12px; margin:8px 0; outline:none; }
+  .gate button { height:40px; padding:0 16px; border-radius:10px; border:1px solid var(--gold); background:transparent; color:var(--gold2); font:inherit; cursor:pointer; }
+  @media (min-width:900px) { :root { --col:300px; } .board { scroll-snap-type:none; } }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div><div class="eyebrow">◆ &nbsp;Content</div><h1>Production board</h1></div>
+    <div><a href="content.html">Content HQ</a><div class="sync" id="sync">&nbsp;</div></div>
+  </div>
+  <div class="gate" id="gate">
+    <div class="eyebrow">Token</div>
+    <div style="font-size:14px;color:var(--muted);margin-top:6px">Paste the GitHub token once. It stays on this device only.</div>
+    <input type="password" id="gate-token" placeholder="github_pat_..." autocomplete="off">
+    <button id="gate-save">Save</button>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="board" id="board"></div>
+  <div class="toast" id="toast"><span id="toast-text"></span><button id="toast-undo">UNDO</button></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+  <script src="js/board.js?v=1"></script>
+</body>
+</html>
