@@ -157,7 +157,7 @@
   "from": "uploader",
   "to": "manager",
   "item": "data issue: finance.json amount sign inconsistent - BoS Jul 26 rows positive for debits, Aug 26 negative for debits, CC interest rows positive for charges. Uploader used negative = money out for the CSV rows. Needs one rule in schema",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0021",
