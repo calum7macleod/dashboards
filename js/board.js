@@ -78,8 +78,10 @@ function stageOf(c) { if (c.stage) return c.stage; const s = STATUS_TO_STAGE[c.s
 function pipeline() { return (state.data.pipeline || []).filter(c => c.status !== 'superseded' && stageOf(c) !== null); }
 function seriesList() { const n = {}; pipeline().forEach(c => { const s = c.series || 'No series'; n[s] = (n[s] || 0) + 1; }); return Object.entries(n).sort((a, b) => b[1] - a[1]); }
 function cardsIn(stage) {
+  // Calum's drag order wins (boardOrder); cards without one are new arrivals and sit on top, newest first
+  const ord = c => Number.isFinite(c.boardOrder) ? c.boardOrder : -1;
   return pipeline().filter(c => stageOf(c) === stage && (state.filter === 'All' || (c.series || 'No series') === state.filter))
-    .sort((a, b) => String(b.stageDate || b.created || '').localeCompare(String(a.stageDate || a.created || '')));
+    .sort((a, b) => (ord(a) - ord(b)) || String(b.stageDate || b.created || '').localeCompare(String(a.stageDate || a.created || '')));
 }
 
 /* ---------- render ---------- */
@@ -128,14 +130,28 @@ function cardEl(c, st) {
 function initSortables() {
   if (!window.Sortable) return;
   document.querySelectorAll('.cards').forEach(el => new Sortable(el, { group: 'cards', animation: 150, delay: 200, delayOnTouchOnly: true, ghostClass: 'sortable-ghost', filter: 'button,select,input', preventOnFilter: false,
-    onEnd: ev => { const id = ev.item.dataset.id, to = ev.to.dataset.stage; if (to && to !== stageOf(find(id))) moveCard(id, to); else render(); } }));
+    onEnd: ev => dropped(ev.item.dataset.id, ev.to.dataset.stage, [...ev.to.querySelectorAll('.card')].map(x => x.dataset.id)) }));
 }
 
 /* ---------- actions ---------- */
+function dropped(id, toStage, idsInColumn) {
+  const c = find(id); if (!c || !toStage) { render(); return; }
+  const from = stageOf(c), today = todayStr(), prev = { stage: c.stage, stageDate: c.stageDate, status: c.status, orders: {} };
+  idsInColumn.forEach(i => { const x = find(i); if (x) prev.orders[i] = x.boardOrder; });
+  mutate(d => {
+    const x = d.pipeline.find(y => y.id === id); if (!x) return;
+    if (toStage !== from) { x.stage = toStage; x.stageDate = today; if (toStage === 'posted') { x.status = 'posted'; x.postDate = x.postDate || today; } }
+    idsInColumn.forEach((i, n) => { const y = d.pipeline.find(z => z.id === i); if (y) y.boardOrder = n + 1; });
+  }, toStage !== from ? `${c.title.slice(0, 40)} -> ${toStage}` : `reorder ${toStage}`);
+  toast(toStage !== from ? cap(toStage) : 'Reordered', () => mutate(d => {
+    const x = d.pipeline.find(y => y.id === id); if (x) { x.stage = prev.stage; x.stageDate = prev.stageDate; x.status = prev.status; }
+    Object.entries(prev.orders).forEach(([i, o]) => { const y = d.pipeline.find(z => z.id === i); if (y) { if (o === undefined) delete y.boardOrder; else y.boardOrder = o; } });
+  }, 'undo'));
+}
 function find(id) { return (state.data.pipeline || []).find(c => c.id === id); }
 function moveCard(id, to) {
   const c = find(id); if (!c) return; const from = stageOf(c), prevDate = c.stageDate, prevStatus = c.status, today = todayStr();
-  mutate(d => { const x = d.pipeline.find(y => y.id === id); if (!x) return; x.stage = to; x.stageDate = today; if (to === 'posted' && !x.postDate) x.postDate = today; if (to === 'posted') x.status = 'posted'; }, `${c.title.slice(0, 40)} -> ${to}`);
+  mutate(d => { const x = d.pipeline.find(y => y.id === id); if (!x) return; x.stage = to; x.stageDate = today; delete x.boardOrder; if (to === 'posted' && !x.postDate) x.postDate = today; if (to === 'posted') x.status = 'posted'; }, `${c.title.slice(0, 40)} -> ${to}`);
   toast(`${cap(to)}`, () => mutate(d => { const x = d.pipeline.find(y => y.id === id); if (!x) return; x.stage = from; x.stageDate = prevDate; x.status = prevStatus; }, 'undo move'));
 }
 let toastTimer = null;
