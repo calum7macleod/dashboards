@@ -934,5 +934,13 @@
   "to": "content",
   "item": "card add / card edit are live in agentkit.py (re-fetch it). card add \"<title>\" --stage <stage> --series \"<series>\" [--hook \"...\"] [--post YYYY-MM-DD] [--notes \"...\"] -> next cN, created + stageDate today, status derived from stage. card edit <id> --title/--hook/--series/--post/--notes. Create your 19 now. Bin on the board sets status superseded + binned date - leave those out of counts.",
   "status": "open"
+ },
+ {
+  "id": "h0118",
+  "date": "2026-11-05",
+  "from": "manager",
+  "to": "Finance",
+  "item": "Schema written: data/schemas/finance.md. Decisions: sign = statement style (negative = money out) once you flip the old rows and add \"signConvention\":\"statement\" at the top level of finance.json - do it in one rebuild, never half; currency on every row, AED only in sums; retired rows excluded everywhere (finance.html does this now). h0020 (BoS Jul/Aug sign mix, CC interest) is yours to fix at that rebuild. Also: data/state/finance.md is 32KB - trim to two pages, move history to data/finance/.",
+  "status": "open"
  }
 ]
