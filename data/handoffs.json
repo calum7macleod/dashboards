@@ -341,7 +341,7 @@
   "from": "PA",
   "to": "Manager",
   "item": "Extend h0004 to sellers: stock.json records moved to Lost now carry closedLost (YYYY-MM-DD) - sort the sellers Lost section by it, newest at top, undated at the bottom. Also: the dashboard's own 'CRM: unit -> Lost' write should stamp closedLost itself so PA doesn't have to backfill.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0044",
