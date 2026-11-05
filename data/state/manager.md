@@ -1,7 +1,7 @@
-# MANAGER STATE - start pack. Updated 2026-09-23 09:05 by Claude Manager.
+# MANAGER STATE - start pack. Updated 2026-11-05 14:05 by Claude Manager.
 
 ## Gate
-NOTHING BUILDS until Calum says the dry run (Tue 22 Sep) passed. PA's dry-run write landed 22 Sep; no pass/fail from Calum yet. Specs, rule edits and handoffs are not builds.
+None. Claude Code unavailable (no local toolchain, cloud never delivered) - Manager builds directly, tests in jsdom, Calum tests on device.
 
 ## Build queue (in order) - Calum approved 21 Sep
 1. agentkit v2 - SPEC WRITTEN 23 Sep: tools/specs/2026-09-23-agentkit-v2.md. Covers: buyer status rule (stage is truth, status derived), buyers-check, owner lookup (h0002), issue/issues/fix, safe concurrent appends, crm.html line 665, Claude Code hook + CLAUDE.md. Gate lifted 23 Sep (Calum asked to proceed). BUILD ROUTE: Claude Code CLOUD session (claude.ai/code or desktop app > Cloud) on calum7macleod/dashboards - Calum's Windows box has no repo, no Git, no Python (Claude Code local reported 23 Sep). GH_TOKEN goes in as a cloud environment variable, never in chat. Watch for: api.github.com blocked by environment network settings. Prompt given to Calum 23 Sep ~10:30. Then: PA migration (h0007), close h0002, re-paste shared rules to ten Projects.
@@ -23,6 +23,9 @@ Agents log faults with `agentkit.py issue <type> "<what>"` the moment they happe
 
 ## Scheduled runs - DELETED 5 Oct (h0006 closed by removal)
 Root cause: unattended sandbox refuses token-bearing GitHub calls; Gmail relay rejected (Calum loses that Gmail soon). Calum deleted the PA scheduled tasks 5 Oct; kept Market daily scan as a read-only morning news chat (token-free prompt, no writes, output visible only to Calum in that chat). PA now sweeps inline at 07:30/19:30 (agents/pa.md). Market scans when it runs. Reinstate only via: a per-task permission setting (unverified), a Claude Doc relay, or an external cron calling the API (queue it after Login). Also: the Google Calendar connector is on the account Calum is losing - reconnect on the new one or the brief goes blind.
+
+## 5 Nov session - triage of 17 open handoffs
+Closed: h0003 (Today page), h0005 (notes render), h0015 (Projects agent exists). Proposed to Calum y/n: uploader start pack (h0038/h0098), staging delete rule (h0099), uploader account names (h0103), PIX plan decision (h0096), ship agentkit v2 myself (h0002/h0029), content board (h0113), CRM Lost sort + seller badges (h0004/h0042/h0043), finance rules (h0020 -> Finance, h0022 build). Findings: Market zero receipts since 5 Oct; undocumented 'Fitness' agent (19 receipts, no file); calls.html exists - h0016 status unknown; data/state/finance.md 32KB (trim, monthly ritual).
 
 ## System health
 28 Sep 07:50: agentkit v2 (23 Sep spec) NOT shipped - no receipt, no issue command; the cloud session either never ran or failed silently. Asked Calum. 11 handoffs open to Manager: h0002-h0006 (known), h0015 content (Projects agent not in roster - now it is, close), h0016 PA (call system page - next spec after Today), h0020 uploader (finance.json sign inconsistency - Finance's file, route to Finance), h0022 Finance (dashboard rules: exclude 'retired', currency field - dashboard change, queue), h0029 Finance (concurrent write lost 44 finance rows - spec v2 2a addresses; also add rule: fetch sha immediately before PUT), h0038 uploader (no data/state/uploader.md - create it). Issues-via-handoff fallback is working: 4 of the 11 are logged issues.
