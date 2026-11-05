@@ -13,7 +13,7 @@ START: 1) verify the real date and time (never infer it from the conversation); 
 END of any topic where something changed: write it (state file and your data files), then append your receipt to data/log.jsonl. Confirm every write in one line: "Done - [what], [where]."
 
 ## Source of truth
-The GitHub repo `calum7macleod/dashboards` (branch main, public) + `calum7macleod/crm-inbox` (private: personal context, phone lists). Chat is never the store. Read and write through the GitHub Contents API (GET file + sha, edit, PUT with sha) - `tools/agentkit.py` in the repo wraps this: fetch it, `export GH_TOKEN=<your token line>`, then `python3 agentkit.py <command>`. Live dashboards: calum7macleod.github.io/dashboards/ (deploys lag ~10 min; hard-refresh before debugging a "missing" change). Read through agentkit (the API), never raw.githubusercontent.com - it caches ~5 min and will show you stale handoffs and state. Owner data (DAMAC Lagoons, 8,843 units, extracted 7 Sep): private:data/owners/ - read the README first, query with `agentkit.py owner "<unit|name|cluster>"`, never load the whole file.
+The GitHub repo `calum7macleod/dashboards` (branch main, public) + `calum7macleod/crm-inbox` (private: personal context, phone lists). Chat is never the store. Read and write through the GitHub Contents API (GET file + sha, edit, PUT with sha) - `tools/agentkit.py` in the repo wraps this: fetch it fresh every session, `export GH_TOKEN=<your token line>`, then `python3 agentkit.py <command>`. Whole-file edits: `get`, edit the local copy, `put` - if the file changed since your get, put refuses; re-get, redo, put again. Never fetch a sha and write over a newer file. Live dashboards: calum7macleod.github.io/dashboards/ (deploys lag ~10 min; hard-refresh before debugging a "missing" change). Read through agentkit (the API), never raw.githubusercontent.com - it caches ~5 min and will show you stale handoffs and state. Owner data (DAMAC Lagoons, 8,843 units, extracted 7 Sep): private:data/owners/ - read the README first, query with `agentkit.py owner "<unit|name|cluster>"`, never load the whole file.
 
 ## Speed rules
 - ONE start pack at session start. Nothing else until a trigger.
@@ -27,7 +27,7 @@ The GitHub repo `calum7macleod/dashboards` (branch main, public) + `calum7macleo
 |---|---|---|
 | Claude Manager | agents/*, tools/*, dashboards HTML/JS/feeds, schemas, data/state/manager.md | everything |
 | PA | data/state/core.md, buyers, archive-buyers, prebuyers, stock, offers, deals, viewings, tasks, notes, backlog, journal, data/triage/*, handoffs (closes them) | everything |
-| Uploader | APPEND ONLY: data/finance.json transactions, new buyer / seller / viewing records, data/content-metrics.json, data/staging/* | the file being appended to |
+| Uploader | APPEND ONLY: data/finance.json transactions, new buyer / seller / viewing records, data/content-metrics.json, data/staging/*; plus its own data/state/uploader.md | the file being appended to |
 | Content | data/content.json, tasks.json > contentIdeas, content-assets/scripts/, data/state/content.md | market state, content-metrics |
 | Designer | design-system/, content-assets/<piece>/, data/state/designer.md | buyers, market, content |
 | Mentor | data/state/mentor.md (advice log) | the book, deals, market |
@@ -35,13 +35,13 @@ The GitHub repo `calum7macleod/dashboards` (branch main, public) + `calum7macleo
 | Finance | data/finance.json (reconcile), data/finance/*, deals.json paid flags only, data/state/finance.md | deals, statements, uploads |
 | Life Coach | private repo personal/state/lifecoach.md | journal, calendar |
 | Projects | data/projects/*.md (the project knowledge base), data/state/projects.md | market state, developer releases, content-assets, buyers on trigger |
-Two agents writing the same file is how data disappears. The Uploader appends, never edits or deletes; the owner reconciles. Need a change in a file you don't own? Write a handoff. Precedence if instructions conflict: this file, then your agent file, then your state file.
+Two agents writing the same file is how data disappears. The Uploader appends, never edits or deletes; the owner reconciles. Staging files (data/staging/*) are transient, not records: the agent that ingests one deletes it, no gate needed; the Uploader never deletes. Need a change in a file you don't own? Write a handoff. Precedence if instructions conflict: this file, then your agent file, then your state file.
 
 ## Handoffs
 `data/handoffs.json`, one object per item: {"id","date","from","to","item","status":"open|done"}. `agentkit.py handoff <to> "<item>"` writes one. The PA clears the open list in the 07:30 brief. Examples: Inbox to PA (new lead), PA to Mentor (deal to talk through), Market to Content (story with receipt), Content to Market (verify this number), anyone to Manager (build request), Uploader to owner (rows appended).
 
 ## Issues - the system's fault log (Manager reads it, you write it)
-Something doesn't work: a command fails, a file is missing or wrong, two sources disagree, a rule contradicts another, or you had to ask Calum something the system should have known. Right then, before you carry on: `agentkit.py issue <type> "<what>"` - type is tool | data | rule | access | asked. One line, no essay, no personal-life detail (it's a public file - Life Coach describes the fault, never the content). Scheduled chats log too - same rule. Not a handoff (that's work for a person), not a question to Calum. `data/issues.jsonl`. The Manager reads the open list every session, brings a fix per item, and closes it with `fix`. Until the `issue` command exists in tools/agentkit.py, use `handoff Manager "<what>"` instead.
+Something doesn't work: a command fails, a file is missing or wrong, two sources disagree, a rule contradicts another, or you had to ask Calum something the system should have known. Right then, before you carry on: `agentkit.py issue <type> "<what>"` - type is tool | data | rule | access | asked. One line, no essay, no personal-life detail (it's a public file - Life Coach describes the fault, never the content). Scheduled chats log too - same rule. Not a handoff (that's work for a person), not a question to Calum. `data/issues.jsonl`. The Manager reads the open list every session, brings a fix per item, and closes it with `fix`.
 
 ## Receipts
 Every session, last action: `agentkit.py log "<what you did>"` appends {"date","agent","did","wrote":[files]} to data/log.jsonl. The PA's scoreboard, the Manager's audit and the Sunday meeting read the log. No receipt = it didn't happen.
