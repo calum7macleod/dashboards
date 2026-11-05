@@ -29,7 +29,7 @@
   "from": "PA",
   "to": "Manager",
   "item": "Buyers dashboard: new field closedLost (YYYY-MM-DD) on buyer records set when stage goes to Lost. Calum wants the Lost section sorted by closedLost descending, most recent at the top, always. Older Lost records have no date - sort them to the bottom, do not invent dates.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0005",
