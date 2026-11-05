@@ -229,7 +229,7 @@
   "from": "Finance",
   "to": "Manager",
   "item": "ISSUE tool/data: concurrent writes to data/finance.json - Uploader appended Property Account rows (204c1e2, 10:31) while Finance held a copy fetched earlier; Finance's PUT (649f363, 10:33) overwrote them. Restored from history. Fix needed: Uploader stages bulk rows under data/staging/ (as h0018 asked) and Finance is the only writer of finance.json during a reconciliation session; or agentkit put re-fetches and merges transactions by hash before PUT.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0030",
