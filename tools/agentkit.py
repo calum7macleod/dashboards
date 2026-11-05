@@ -18,6 +18,8 @@ Commands:
   state [agent]                   print data/state/<agent>.md (default $AGENT)
   board [stage]                   content board: count per stage, then cards (id|title|series|stageDate|postDate); one stage or all
   stage <id> <stage> [postDate]   move a content card: sets stage + stageDate=today; posted also sets status/postDate
+  card add "<title>" --stage <stage> --series "<series>" [--hook "..."] [--post YYYY-MM-DD] [--notes "..."]   new card, next cN
+  card edit <id> [--title "..."] [--hook "..."] [--series "..."] [--post YYYY-MM-DD] [--notes "..."]        change fields
 """
 import sys, os, json, base64, urllib.request, datetime
 TOKEN=os.environ.get("GH_TOKEN"); AGENT=os.environ.get("AGENT","unknown")
@@ -103,6 +105,36 @@ elif c=="stage":
     if len(a)>3: x["postDate"]=a[3]
     if x["stage"]=="posted": x["status"]="posted"; x["postDate"]=x.get("postDate") or today()
     print("Done -",a[1],f"{was} -> {x['stage']}",putfile("data/content.json",json.dumps(d,indent=2,ensure_ascii=False)+"\n",f"{AGENT}: {a[1]} -> {a[2].lower()}"))
+elif c=="card":
+    import re
+    def flags(args):
+        f={}; i=0
+        while i<len(args):
+            if args[i].startswith("--") and i+1<len(args): f[args[i][2:]]=args[i+1]; i+=2
+            else: i+=1
+        return f
+    t,sha=getfile("data/content.json"); d=json.loads(t); st=d.get("stages") or ["idea","hooked","scripted","filmed","edited","scheduled","posted","measured"]
+    STATUS={"idea":"template","hooked":"drafted","posted":"posted"}
+    sub=a[1] if len(a)>1 else ""
+    if sub=="add":
+        if len(a)<3: sys.exit('usage: card add "<title>" --stage <stage> --series "<series>" [--hook "..."] [--post YYYY-MM-DD] [--notes "..."]')
+        f=flags(a[3:]); stg=f.get("stage","idea").lower()
+        if stg not in st: sys.exit(f"stage must be one of: {' | '.join(st)}")
+        n=max([int(re.sub(r"\D","",x.get("id","")) or 0) for x in d.get("pipeline",[])]+[0])+1
+        x={"id":f"c{n}","title":a[2],"series":f.get("series",""),"status":STATUS.get(stg,"scripted"),"priority":"medium","created":today(),"postDate":f.get("post") or None,"hook":f.get("hook",""),"notes":f.get("notes",""),"stage":stg,"stageDate":today()}
+        if stg=="posted" and not x["postDate"]: x["postDate"]=today()
+        d.setdefault("pipeline",[]).append(x)
+        print("Done -",x["id"],stg,putfile("data/content.json",json.dumps(d,indent=2,ensure_ascii=False)+"\n",f"{AGENT}: card add {x['id']}"))
+    elif sub=="edit":
+        if len(a)<3: sys.exit('usage: card edit <id> [--title "..."] [--hook "..."] [--series "..."] [--post YYYY-MM-DD] [--notes "..."]')
+        x=next((y for y in d.get("pipeline",[]) if y.get("id")==a[2]),None)
+        if not x: sys.exit(f"no card with id {a[2]} - run: agentkit.py board")
+        f=flags(a[3:]); ch=[]
+        for k,fld in (("title","title"),("hook","hook"),("series","series"),("post","postDate"),("notes","notes")):
+            if k in f: x[fld]=f[k]; ch.append(fld)
+        if not ch: sys.exit("nothing to change - pass --title/--hook/--series/--post/--notes")
+        print("Done -",a[2],"edited",",".join(ch),putfile("data/content.json",json.dumps(d,indent=2,ensure_ascii=False)+"\n",f"{AGENT}: card edit {a[2]}"))
+    else: sys.exit("usage: card add ... | card edit <id> ...")
 elif c=="state":
     ag=(a[1] if len(a)>1 else AGENT).lower().replace(" ","")
     names={"pa":"core","personalassistant":"core","max":"core","claudemanager":"manager","lifecoach":"private:personal/state/lifecoach.md"}
