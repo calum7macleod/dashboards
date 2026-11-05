@@ -95,3 +95,10 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Captions now Jake style; first comment = share line; no hashtags; 17:30 post; one a day. 10 batch-1 reels drafted in Metricool with captions; scripts doc sent to JC for carousels.
 - Research filed: Hudayriyat handover order; UAE govt revenue makeup (AED 581bn 2025; oil 45 / fees 20 / taxes 18 / sovereign 4 / other 12 / fines 1).
 - Owed: FUND + ISLAND + HUDAYRIYAT PDFs behind the keywords; YouTube titles/descriptions for fund + islands videos; 48h reads on each post.
+
+## 5 Nov
+- Posted: wealthier (3 Nov) IG 1,763 @48h / TT 801; transactions (4 Nov) IG ~574-800 / TT 691; apartments Sep posts today 17:30. Projections table in chat; IG tracking bands, TikTok under.
+- Hook rule settled with Calum: text = plain searchable claim; speech = consequence + number, no restating title, no personalising, ~15 words; loop = the gap between result and cause. Claim vs question is a wash in big data; contrarian claim + specific number wins; 30-60s reels get highest reach rate (Socialinsider) - our 1:20-1:50 is the lever not pulled.
+- Batch 4: 14 hook pairs locked (content-assets/scripts/2026-11-05-batch4-hooks-locked.md) + 2 Calum-own + 2 pending Oct data. Research: 2026-11-05-batch4-research.md, 2026-11-05-ad-vs-dubai-h1-series.md (single-source Cavendish: AD 24.4->67.8, Dubai 262.1->221.3).
+- Market stamps outstanding: UAE consolidated spend total ($130bn) for "more than"; ADREC H1 2026 PDF 70.4/86; DMT H1 2024 sales; 2nd Fujairah pipeline capacity; UK speeding fines; Dubai Hills/Al Khail.
+- Owed: PDFs (ISLAND/FUND/HUDAYRIYAT/OFFPLAN); scripts for batch 4; October Dubai data reels.
