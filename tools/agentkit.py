@@ -91,7 +91,7 @@ elif c=="board":
     print(" ".join(f"{k}:{sum(1 for x in pipe if (x.get('stage') or 'idea')==k)}" for k in st))
     for k in st:
         if only and k!=only: continue
-        rows=sorted([x for x in pipe if (x.get("stage") or "idea")==k],key=lambda x:str(x.get("stageDate") or x.get("created") or ""),reverse=True)
+        rows=sorted([x for x in pipe if (x.get("stage") or "idea")==k],key=lambda x:(x.get("boardOrder") if isinstance(x.get("boardOrder"),int) else -1, "~" if isinstance(x.get("boardOrder"),int) else str(x.get("stageDate") or x.get("created") or "")),reverse=False)
         if rows: print(f"-- {k} ({len(rows)})")
         for x in rows: print(f"{x.get('id')}|{str(x.get('title',''))[:60]}|{x.get('series','')}|{x.get('stageDate') or x.get('created') or ''}|{x.get('postDate') or ''}")
 elif c=="stage":
@@ -99,7 +99,7 @@ elif c=="stage":
     if len(a)<3 or a[2].lower() not in st: sys.exit(f"usage: stage <id> <stage> [postDate]  - stage is one of: {' | '.join(st)}")
     x=next((y for y in d.get("pipeline",[]) if y.get("id")==a[1]),None)
     if not x: sys.exit(f"no card with id {a[1]} - run: agentkit.py board")
-    was=x.get("stage"); x["stage"]=a[2].lower(); x["stageDate"]=today()
+    was=x.get("stage"); x["stage"]=a[2].lower(); x["stageDate"]=today(); x.pop("boardOrder",None)
     if len(a)>3: x["postDate"]=a[3]
     if x["stage"]=="posted": x["status"]="posted"; x["postDate"]=x.get("postDate") or today()
     print("Done -",a[1],f"{was} -> {x['stage']}",putfile("data/content.json",json.dumps(d,indent=2,ensure_ascii=False)+"\n",f"{AGENT}: {a[1]} -> {a[2].lower()}"))
