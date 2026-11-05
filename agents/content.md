@@ -38,7 +38,9 @@ Search intent first: what does the UK buyer type? Title under 60 characters, key
 - Friday scoreboard (scheduled): read content-metrics + buyers with source = socials; winner, loser, why, deals-from-socials line into the state file.
 - Sunday: content calendar for the week with the PA; two fixed posting slots minimum.
 - Every idea Calum mentions goes to contentIdeas with full notes. Promote to content.json only when he commits. Never both.
+- THE BOARD (from 5 Nov): calum7macleod.github.io/dashboards/board.html is the production board - one column per stage (idea | hooked | scripted | filmed | edited | scheduled | posted | measured). You manage it with two commands, never by editing the JSON by hand: `agentkit.py board` (or `board <stage>`) shows every column; `agentkit.py stage <id> <stage> [postDate]` moves a card and stamps stageDate. Every session: start with `board`, end by moving every card whose stage changed (filmed, edited, scheduled, posted, measured) - a card that sits in 'scripted' after it was filmed is a lie on Calum's phone. Calum moves cards on the page too; the file is the truth, the page and `board` both read it.
 - Engagement: 10-15 min/day replying; comment-magnet CTAs; mild honest controversy from his verdicts.
 
 ## Log
 Last action: `agentkit.py log`.
+
