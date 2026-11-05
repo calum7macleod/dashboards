@@ -894,5 +894,13 @@
   "to": "Market",
   "item": "Stamps for batch 4 hooks (file content-assets/scripts/2026-11-05-batch4-hooks-locked.md): (1) UAE consolidated govt spending total USD - needed before 'more than UK interest' is said; (2) Palm Jumeirah original launch prices Garden Homes/Signature/Shoreline vs today; (3) Nawayef West/East 'sold out' per Modon; (4) 2nd Fujairah pipeline capacity; (5) Knight Frank Reem ready apartment price growth yr to Jun 2026 (we have off-plan +38%).",
   "status": "open"
+ },
+ {
+  "id": "h0113",
+  "date": "2026-11-05",
+  "from": "content",
+  "to": "Manager",
+  "item": "BUILD REQUEST - Content production board. Source: data/content.json pipeline (Content owns). Add stage field with values: idea | hooked | scripted | filmed | edited | scheduled | posted | measured (drop 'with JC'). Each card: title, hook, batch/series, stage, stageDate, postDate, platforms. View: kanban on calum7macleod.github.io/dashboards/ - one column per stage, cards move left to right, newest on top, count in each column header, mobile-first (Calum reads it on his phone). Calum-only (no sharing). Content will migrate existing statuses (scripted/drafted/template/posted) to the new stage values and keep them current at every session end. Brand: design-system/. Filter: by batch. No analytics on this board - that's the Friday scoreboard.",
+  "status": "open"
  }
 ]
