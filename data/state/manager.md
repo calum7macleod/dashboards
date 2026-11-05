@@ -24,6 +24,9 @@ Agents log faults with `agentkit.py issue <type> "<what>"` the moment they happe
 ## Scheduled runs - DELETED 5 Oct (h0006 closed by removal)
 Root cause: unattended sandbox refuses token-bearing GitHub calls; Gmail relay rejected (Calum loses that Gmail soon). Calum deleted the PA scheduled tasks 5 Oct; kept Market daily scan as a read-only morning news chat (token-free prompt, no writes, output visible only to Calum in that chat). PA now sweeps inline at 07:30/19:30 (agents/pa.md). Market scans when it runs. Reinstate only via: a per-task permission setting (unverified), a Claude Doc relay, or an external cron calling the API (queue it after Login). Also: the Google Calendar connector is on the account Calum is losing - reconnect on the new one or the brief goes blind.
 
+## Content board - SHIPPED 5 Nov (h0113 closed)
+board.html + js/board.js?v=1: columns from content.json stages, cards newest on top, series filter chips, tap-to-move (prev/next/jump), post date, undo + Ctrl+Z, 60s refresh, 409 replay. jsdom-tested on the live file. Calum tests on phone. Handoff to Content: stageDate + platforms[] from their side.
+
 ## 5 Nov session - triage of 17 open handoffs
 Closed: h0003 (Today page), h0005 (notes render), h0015 (Projects agent exists). Proposed to Calum y/n: uploader start pack (h0038/h0098), staging delete rule (h0099), uploader account names (h0103), PIX plan decision (h0096), ship agentkit v2 myself (h0002/h0029), content board (h0113), CRM Lost sort + seller badges (h0004/h0042/h0043), finance rules (h0020 -> Finance, h0022 build). Findings: Market zero receipts since 5 Oct; undocumented 'Fitness' agent (19 receipts, no file); calls.html exists - h0016 status unknown; data/state/finance.md 32KB (trim, monthly ritual).
 
