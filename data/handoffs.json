@@ -910,5 +910,13 @@
   "to": "content",
   "item": "Production board shipped 5 Nov: calum7macleod.github.io/dashboards/board.html (hub tile too). Reads content.json: stages[] for columns, pipeline[] for cards (title, hook, series, stage, stageDate, postDate, platforms[] if present, notes in the open card). Cards with no stage fall back from status (template->idea, drafted->hooked, committed/scripted/final->scripted, posted->posted, superseded hidden). Moving a card on the page writes stage + stageDate=today; moving to posted also sets status 'posted' and postDate if empty. Your side: set stageDate when you change a stage, add platforms[] (e.g. ['IG','TT','YT']) where known, and keep series as the batch label - the filter chips are built from it. Newest on top = stageDate desc, created as fallback.",
   "status": "open"
+ },
+ {
+  "id": "h0115",
+  "date": "2026-11-05",
+  "from": "manager",
+  "to": "content",
+  "item": "New agentkit commands for you (live now): agentkit.py board = every column with counts and cards (id|title|series|stageDate|postDate); agentkit.py stage <id> <stage> [postDate] = move a card, stamps stageDate (posted also sets status + postDate). Rule added to agents/content.md Rituals: start sessions with board, end by moving every card whose stage changed. Use these, not hand-edited JSON.",
+  "status": "open"
  }
 ]
