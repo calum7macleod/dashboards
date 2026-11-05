@@ -108,6 +108,7 @@ function cardEl(c, st) {
   const el = document.createElement('div'); el.className = `card${state.open.has(c.id) ? ' open' : ''}`; el.dataset.id = c.id;
   const platforms = Array.isArray(c.platforms) ? c.platforms : (c.platforms ? String(c.platforms).split(/[,/ ]+/) : []);
   el.innerHTML = `
+    <button class="bin" data-bin aria-label="Bin">🗑</button>
     <div class="t">${esc(c.title)}</div>
     ${c.hook ? `<div class="h">${esc(c.hook)}</div>` : ''}
     <div class="m">
@@ -154,6 +155,14 @@ function moveCard(id, to) {
   mutate(d => { const x = d.pipeline.find(y => y.id === id); if (!x) return; x.stage = to; x.stageDate = today; delete x.boardOrder; if (to === 'posted' && !x.postDate) x.postDate = today; if (to === 'posted') x.status = 'posted'; }, `${c.title.slice(0, 40)} -> ${to}`);
   toast(`${cap(to)}`, () => mutate(d => { const x = d.pipeline.find(y => y.id === id); if (!x) return; x.stage = from; x.stageDate = prevDate; x.status = prevStatus; }, 'undo move'));
 }
+function binCard(card, id) {
+  const c = find(id); if (!c) return; const prevStatus = c.status;
+  card.classList.add('fade');
+  setTimeout(() => {
+    mutate(d => { const x = d.pipeline.find(y => y.id === id); if (x) { x.status = 'superseded'; x.binned = todayStr(); } }, `bin ${c.title.slice(0, 40)}`);
+    toast('Binned', () => mutate(d => { const x = d.pipeline.find(y => y.id === id); if (x) { x.status = prevStatus; delete x.binned; } }, 'undo bin'));
+  }, 280);
+}
 let toastTimer = null;
 function toast(text, undo) { $('toast-text').textContent = text; state.undo = undo || null; $('toast-undo').style.display = undo ? '' : 'none'; $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => { $('toast').classList.remove('show'); state.undo = null; }, 5000); }
 function openGate() { $('gate').classList.add('show'); sync('token needed'); }
@@ -165,6 +174,7 @@ $('gate-save').addEventListener('click', () => { setToken($('gate-token').value)
 $('board').addEventListener('click', e => {
   const card = e.target.closest('.card'); if (!card) return; const id = card.dataset.id;
   const mv = e.target.closest('[data-move]'); if (mv) { moveCard(id, mv.dataset.move); return; }
+  if (e.target.closest('[data-bin]')) { binCard(card, id); return; }
   if (e.target.closest('select, input')) return;
   if (state.open.has(id)) state.open.delete(id); else state.open.add(id); card.classList.toggle('open');
 });
