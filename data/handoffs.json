@@ -13,7 +13,7 @@
   "from": "PA",
   "to": "Manager",
   "item": "Owner data now in PRIVATE repo: crm-inbox data/owners/damac-lagoons-owners.json (8,843 Lagoons units, 3MB) + README.md. Requests: 1) agentkit getfile fails over 1MB - add an 'owner <unit|name|cluster>' command using the raw media type, returning matching rows only; 2) propose one line for _shared.md Source of truth pointing all agents at private:data/owners/README.md (Calum approves the rule change).",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0003",
