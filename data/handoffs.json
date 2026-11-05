@@ -173,7 +173,7 @@
   "from": "Finance",
   "to": "Manager",
   "item": "Dashboard/finance.json rules needed: (1) exclude transactions with a 'retired' field from all sums; (2) transactions now carry 'currency' (GBP on 591 BoS rows) - never add GBP to AED, convert or show separately; (3) proposed single sign convention for transactions going forward = statement style, negative = money out, positive = money in (what statements and the Uploader produce). Old rows are positive = spend - Finance will flip them at the rebuild. Decide and write it into the schema.",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0023",
