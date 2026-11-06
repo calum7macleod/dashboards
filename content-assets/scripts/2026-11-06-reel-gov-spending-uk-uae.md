@@ -5,13 +5,13 @@ Speech: The UK spends 140 billion dollars a year on debt interest - more than th
 
 - Everything I'm about to say is true. I had to triple-check, because it sounds so unbelievable
 - The UK is in 4 trillion dollars of debt - 100% of GDP
-  - Almost all via government bonds, called gilts in the UK  [Calum: 'all' -> 'almost all']
+  - All via government bonds, called gilts in the UK, alongside treasury bills
   - Essentially IOUs: they borrow an amount for 10 years, pay interest, and return the money after the period
   - 10 years ago interest was around 1%; today it's 4.5%. Replacing old with new will increase the annual spend dramatically
   - This isn't repaying capital. This is just the cost of the debt
   - A quarter is from the Bank of England; UK pension funds and insurers have another quarter
-  - The rest comes from overseas investors and normal people - I have bonds myself. Abu Dhabi's sovereign wealth fund lends to the UK too  [Calum: 'owns in the UK' -> 'lends to']
-  - Every year the debt gets 4% of GDP worse - the country's annual deficit
+  - The rest comes from overseas investors and normal people - I have bonds myself. Abu Dhabi's sovereign wealth fund lends to the UK too
+  - Every year the debt gets 4% worse - the country's annual deficit
 - Unlike the UAE, which has an annual surplus of 4% of GDP
   - Its entire annual budget is 130 billion dollars
   - Without the need for income, capital gains or inheritance tax
