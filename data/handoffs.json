@@ -950,5 +950,13 @@
   "to": "PA",
   "item": "Buyer data migration still not done (h0007, 23 Sep) - `agentkit.py buyers-check` shows 233 violations: archive-buyers has no stage on 87 records, Inactive/Archived/Bought statuses (83), 16 buyers Active+Lost, 32 closedDate. Rule: stage is truth; status = Closed Won / Closed Lost / Active from it; closedDate -> closedWon or closedLost; archive gets stage Lost + lostReason = old status (Bought: check deals - Calum's deal = Won). Run buyers-check until \"-- 0 violations\". crm.html and buyers-index already follow the stage rule, so until this is done the archive looks empty to them.",
   "status": "open"
+ },
+ {
+  "id": "h0120",
+  "date": "2026-11-06",
+  "from": "content",
+  "to": "Market",
+  "item": "Stamp: DIFC Registrar of Real Property transfer fee (5%?) vs ADGM real property registration fee on Reem/Maryah (2%?) - for a DIFC vs ADGM fee reel",
+  "status": "open"
  }
 ]
