@@ -958,5 +958,13 @@
   "to": "Market",
   "item": "Stamp: DIFC Registrar of Real Property transfer fee (5%?) vs ADGM real property registration fee on Reem/Maryah (2%?) - for a DIFC vs ADGM fee reel",
   "status": "open"
+ },
+ {
+  "id": "h0121",
+  "date": "2026-11-06",
+  "from": "content",
+  "to": "Manager",
+  "item": "Board: add 'carousel' field per card (none|briefed|built|posted) - one carousel per reel from JC, posted 09:00 Dubai day after the reel. Also add follows/nonfollower%/profilevisits/keywordDMs fields to content-metrics.json schema for the Friday scorecard.",
+  "status": "open"
  }
 ]
