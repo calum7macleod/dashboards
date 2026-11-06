@@ -109,3 +109,12 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Edited lengths (JC): hedge 1:49, AI race 1:09; others est 0:48-1:27 from word counts. Friday read: wealthier 1,847 IG / 812 TT / 603 LI impressions; transactions 822/717/204; Sep apts 759/651/127 (day 1).
 - Trial reels decision: use for hook/length variants (3 hooks, share winner), not duplicate stacking. Repost test of wealthier ~Tue 10 per Jake (1 week later) - measure vs original.
 - Board sorted against Calum docs: filmed 16, scripted 20, hooked 20, 7 scheduled with dates.
+
+## 6 Nov (pm) - growth model agreed with Calum
+- Research (Virev 126k accounts Oct 2026; SocialHipper 2k creators; creator timelines): median IG growth ~1%/mo; 1-10K accounts posting 3-7/wk ~2.7%/mo; 7-14/wk ~9%/mo (one bucket - no evidence 14 beats 7). Follows per reel for small accounts ~0.1-0.5% of views (1-5 per 1,000 views). 0->10K typically 10-24 months. Growth is step-shaped: flat months then breakout reels.
+- Phases from 3 Nov daily start: 1 to Feb (flat, 800-2k, 0-5 follows/reel); 2 Feb-May (first breakouts, baseline 2-4k, first keyword DMs); 3 May-Nov 2027 (compounding, 5-10k median); 4 yr 2 (Jake: 17k median).
+- Per-reel scorecard at 48h (IG panel order = reach weight): skip/3s hold (bar 60%; ours 33-42%), watch/length (bar 50%; ours ~17%), shares/1k (2-5 fine, 5+ good), saves/1k (3-10 fine, 10+ good), non-follower % (60%+ good), follows/1k (1-5). Views = batch size, not quality.
+- Two levers from the scorecard: first frame (number first, text at 0.0s) and length (edits <1:20).
+- Cadence: one reel 16:00 Dubai + one carousel (same script, receipts) 09:00 Dubai, daily. Second reel slot = trials (3 hooks, share winner), not duplicate posts. Twice-daily reels = untested theory, not adopted.
+- Content mix: explainers are the backbone (Jake); on-site/data optional accelerants.
+- Owed by Content: ISLAND/FUND/ADGM/HUDAYRIYAT/OFFPLAN PDFs this week; Friday read adds follows, non-follower share, profile visits, keyword DMs.
