@@ -102,3 +102,10 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Batch 4: 14 hook pairs locked (content-assets/scripts/2026-11-05-batch4-hooks-locked.md) + 2 Calum-own + 2 pending Oct data. Research: 2026-11-05-batch4-research.md, 2026-11-05-ad-vs-dubai-h1-series.md (single-source Cavendish: AD 24.4->67.8, Dubai 262.1->221.3).
 - Market stamps outstanding: UAE consolidated spend total ($130bn) for "more than"; ADREC H1 2026 PDF 70.4/86; DMT H1 2024 sales; 2nd Fujairah pipeline capacity; UK speeding fines; Dubai Hills/Al Khail.
 - Owed: PDFs (ISLAND/FUND/HUDAYRIYAT/OFFPLAN); scripts for batch 4; October Dubai data reels.
+
+## 6 Nov
+- Posting slot changed to ~16:00 Dubai (12:00 UK) - audience is UK-heavy plus Dubai; Metricool best-times agrees. 17:30 superseded.
+- Week set: AI race Fri 6, rail Sat 7, 0.5% Sun 8, EMAAR Mon 9, villas Tue 10, Lulu Wed 11, hedge funds Thu 12 (hedge is 1:49 - longest; length test).
+- Edited lengths (JC): hedge 1:49, AI race 1:09; others est 0:48-1:27 from word counts. Friday read: wealthier 1,847 IG / 812 TT / 603 LI impressions; transactions 822/717/204; Sep apts 759/651/127 (day 1).
+- Trial reels decision: use for hook/length variants (3 hooks, share winner), not duplicate stacking. Repost test of wealthier ~Tue 10 per Jake (1 week later) - measure vs original.
+- Board sorted against Calum docs: filmed 16, scripted 20, hooked 20, 7 scheduled with dates.
