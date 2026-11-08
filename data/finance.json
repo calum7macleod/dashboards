@@ -29223,6 +29223,32 @@
       "month": "Nov 26",
       "source": "UK/UAE app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
       "rows": "data/staging/statements/ba-amex-20261108.json"
+    },
+    {
+      "card": "Amex Gold (charge)",
+      "balance": 0.0,
+      "currency": "GBP",
+      "available": null,
+      "limit": null,
+      "status": "Paid 460.00 on 5 Nov (BoS AMERICAN EXP 3773). Payment not required. MR 14,575",
+      "dueDate": null,
+      "dueAmount": 0.0,
+      "date": "2026-11-08",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
+      "rows": "data/staging/statements/amex-gold-20261108.json"
+    },
+    {
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 16,511.12 at 07:04 8 Nov. 4 Nov: 11,400 to Wise (sent on as AED 56,197.38 to Mashreq). 5 Nov: Amex 460.00 + 290.88, HSBC CC 34.71",
+      "date": "2026-11-08",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
+      "rows": "data/staging/statements/bos-20261102-20261105.json"
     }
   ],
   "personalDebts": [
