@@ -1,0 +1,81 @@
+{
+ "meta": {
+  "account": "BA Amex",
+  "currency": "GBP",
+  "period": "2-7 Nov 26",
+  "source": "app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+  "images": [
+   "IMG_4949",
+   "IMG_4948"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 6.99,
+   "balanceDue": 6.99,
+   "directDebit": "Direct Debit scheduled for £6.99 on 17 Nov 2026",
+   "minimumPayment": {
+    "amount": 6.99,
+    "dueDate": "2026-11-30"
+   },
+   "availableCredit": 786.0,
+   "avios": 8023
+  },
+  "flags": [
+   "268.90 (4 Nov) + 6.99 + 14.99 + 6.99 - 290.88 = 6.99 printed. 290.88 payment = 268.90 + the two 2 Nov charges",
+   "1 Nov rows faded under nav bar - not re-read"
+  ],
+  "rowCount": 5,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4949",
+   "rows": []
+  },
+  {
+   "image": "IMG_4948",
+   "rows": [
+    {
+     "date": "2026-11-07",
+     "description": "APPLE.COM/BILL",
+     "amount": 6.99,
+     "status": "Pending",
+     "image": "IMG_4948",
+     "position": 1
+    },
+    {
+     "date": "2026-11-05",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "image": "IMG_4948",
+     "position": 2
+    },
+    {
+     "date": "2026-11-05",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -290.88,
+     "image": "IMG_4948",
+     "position": 3
+    },
+    {
+     "date": "2026-11-02",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "image": "IMG_4948",
+     "position": 4,
+     "alreadyStaged": "ba-amex-20261104.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 14.99,
+     "image": "IMG_4948",
+     "position": 5,
+     "alreadyStaged": "ba-amex-20261104.json"
+    }
+   ]
+  }
+ ]
+}
