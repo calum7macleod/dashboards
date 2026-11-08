@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "account": "Mashreq - Tara and Rent",
+  "currency": "AED",
+  "period": "31 Oct - 4 Nov 26",
+  "source": "app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
+  "images": [
+   "IMG_4954",
+   "IMG_4953"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalAvailableBalance": 77069.83,
+   "currentBalance": 77069.83,
+   "lifetimeEarnings": 69.83,
+   "indicativeEarningsNov26": 99.25,
+   "currentInterestRate": "6.25%"
+  },
+  "accountType": "Mashreq Neo savings pot (NEO PLUS Saver)",
+  "redacted": "account numbers, IBAN, customer id in TOC-MAE refs",
+  "flags": [
+   "20,944.83 (4 Nov read) + 56,125.00 = 77,069.83 printed",
+   "Indicative Nov earnings 99.25 vs about 401 for a full month at 6.25% on 77,069.83 - behaves like interest accrued to date, not the month estimate the app's info sheet describes"
+  ],
+  "rowCount": 4,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4954",
+   "rows": [
+    {
+     "date": "2026-11-04",
+     "description": "Acct to Acct transfer - FUND TRANSFER - [acct redacted] - CALUM LACHLAN MACLEOD TOC-MAE-[id redacted]-261104112042 FUND TRANSFER-MOBILE... (cut)",
+     "amount": 56125.0,
+     "reference": "033AACT263086236",
+     "image": "IMG_4954",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "image": "IMG_4953",
+   "rows": [
+    {
+     "date": "2026-11-04",
+     "description": "Acct to Acct transfer - FUND TRANSFER - [acct redacted] - CALUM LACHLAN MACLEOD TOC-MAE-[id redacted]-261104112042 FUND TRANSFER-MOBILE BANKING / [IBAN redacted]",
+     "amount": 56125.0,
+     "reference": "033AACT263086236",
+     "detailRef": "SRN: MAC0411261131727",
+     "image": "IMG_4953",
+     "position": 1
+    },
+    {
+     "date": "2026-11-02",
+     "description": "Acct to Acct transfer - FUND TRANSFER - [acct redacted] - CALUM LACHLAN MACLEOD TOC-MAE-[id redacted]-261101062114 FUND TRANSFER-MOBILE BANKING / [IBAN redacted]",
+     "amount": 7900.0,
+     "reference": "033AACT263060349",
+     "detailRef": "SRN: MAC0111260686007",
+     "image": "IMG_4953",
+     "position": 2,
+     "alreadyStaged": "mashreq-tara-and-rent-20261102.json"
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Interest",
+     "amount": 69.83,
+     "reference": "017MCITAED 00001",
+     "image": "IMG_4953",
+     "position": 3,
+     "alreadyStaged": "mashreq-tara-and-rent-20261001-20261031.json"
+    }
+   ]
+  }
+ ]
+}
