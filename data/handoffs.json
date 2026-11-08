@@ -990,5 +990,13 @@
   "to": "Finance",
   "item": "CRYPTO MINING - Calum 8 Nov: keep as a SEPARATE section, NOT in monthly budget vs actual (he will speak to you; dashboard section = Manager build). Staged in data/staging/mining/: (1) segments-cloud-SCH-2026-00956.json - Segments Cloud Oct hosting invoice, UNPAID, USD 934.34 / AED 3,431.37 incl 5% VAT, Net 14 from 31 Oct (due 14 Nov derived), plus uptime detail for 7 miners (6x Antminer S21+ 235TH live 14 Oct, 1x L9 16G live 15 Oct; avg uptime 56%, 11,123.1 kWh at USD 0.08). Vendor IBAN and pay-link token not stored. (2) wallet-receipts-20261015-20261107.json - 64 rows over 10 overlapping images; unique receipts 24 BTC / 9 LTC / 15 DOGE, derived totals in meta. FLAG: no LTC/DOGE receipts after 1 Nov while BTC continues daily. Existing finance.json row 'Sent money to segments cloud (fee 19.35 GBP)' looks related.",
   "status": "open"
+ },
+ {
+  "id": "h0125",
+  "date": "2026-11-08",
+  "from": "PA",
+  "to": "Finance",
+  "item": "Segments Cloud Hash (ASIC hosting, 7 miners) invoice SCH-2026-00956 for Oct 2026: 11,123.1 kWh at USD 0.08 = USD 889.85 + 5% VAT = USD 934.34 / AED 3,431.37, Net 14 so due 14 Nov. Recurring monthly cost - add to the cash plan. Segments' published standard rate is USD 0.06/kWh (would be ~USD 667/month); Calum to query the rate. Invoice TRN (100580710000003) differs from the TRN on segments.ae (104918439100003) - verify before paying, pay only via the logged-in portal.",
+  "status": "open"
  }
 ]
