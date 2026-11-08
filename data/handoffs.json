@@ -974,5 +974,13 @@
   "to": "Finance",
   "item": "8 Nov 06:53-07:03 screenshots (19 images) staged raw per image, alreadyStaged flagged. 5 files in data/staging/statements/: tesco-clubcard-20261108 (12 rows incl 5 Oct-4 Nov statement page; full card number on the PDF NOT stored; ties to 5,457.81); mbna-1-20261108 (4, stmt 8 Nov 7,752.08, min 268.22 due 3 Dec); hsbc-20261108 (1, DD 34.71 on 5 Nov, 1,353.87); adib-cc-app-20261102-20261107 (AED 29 rows over 4 images, no balance); ba-amex-20261108 (5, paid 290.88 on 5 Nov, balance 6.99). No file - unchanged/all rows already staged: Virgin, M&S, Santander, MBNA 2, Aqua, Barclaycard. CHECK: ADIB two identical SELFDRIVE AE -245.66 on 4 Nov (possible double charge, 30-day dispute window); Careem 3 Nov posted 44.14 vs 46.00 pending; BA Amex 290.88 payment source not in this batch (BoS?). 4 ccBalances rows appended (Tesco, MBNA 1, HSBC, BA Amex).",
   "status": "open"
+ },
+ {
+  "id": "h0123",
+  "date": "2026-11-08",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "8 Nov 07:03-07:06 screenshots (9 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 5 files in data/staging/statements/: amex-gold-20261108 (1 row, 460.00 paid 5 Nov, balance 0.00); bos-20261102-20261105 (11, ties to 16,511.12); mashreq-20261102-20261106 (AED 5, ties to 9,782.90); mashreq-tara-and-rent-20261031-20261104 (AED 4, ties to 77,069.83); wise-20261031-20261105 (5). Nationwide identical to 4 Nov - no file. Money trail 4 Nov: BoS -11,400 GBP -> Wise -> AED 56,197.38 into Mashreq -> 56,125 to Tara and Rent. Tara indicative Nov earnings now 99.25 on 77,069.83 (full month at 6.25% would be about 401) - looks like accrued-to-date. 2 ccBalances rows appended (Amex Gold, BoS OD).",
+  "status": "open"
  }
 ]
