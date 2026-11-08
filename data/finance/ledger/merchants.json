@@ -2,6 +2,32 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "grooming",
+   "category": "Life",
+   "sub": "Barber / grooming"
+  },
+  {
+   "rx": "^bota",
+   "category": "Deliveries",
+   "sub": "Eating out / coffee"
+  },
+  {
+   "rx": "car wash",
+   "category": "Life",
+   "sub": "Car wash (IPP from Mashreq)"
+  },
+  {
+   "rx": "^apple \\(wise\\)|^apple$",
+   "category": "Life",
+   "sub": "Apple subscriptions (Wise)"
+  },
+  {
+   "rx": "inward remittance",
+   "category": "Other",
+   "sub": "Wise GBP->AED (BoS 11,400)",
+   "type": "transfer"
+  },
+  {
    "rx": "gift for poppy",
    "category": "Entertainment",
    "sub": "Whatever we want - gifts for Poppy (Calum 2 Nov)"
