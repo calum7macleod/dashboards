@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "multi (GBP/AED)",
+  "period": "31 Oct - 5 Nov 26",
+  "source": "app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
+  "images": [
+   "IMG_4957"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "Wise prints outgoing unsigned: amount signed by direction (sent/spent negative) as in earlier Wise files; asPrinted kept",
+  "printed": {
+   "balance": "not shown"
+  },
+  "flags": [
+   "4 Nov send 11,400 GBP -> 56,197.38 AED (about 4.93 AED/GBP) = Mashreq Inward Remittance 4 Nov; funded by BoS C L MACLEOD -11,400 on 4 Nov"
+  ],
+  "rowCount": 5,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4957",
+   "rows": [
+    {
+     "date": "2026-11-05",
+     "description": "Apple",
+     "amount": -0.29,
+     "currency": "GBP",
+     "asPrinted": "0.29 GBP",
+     "image": "IMG_4957",
+     "position": 1
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Apple",
+     "amount": -11.99,
+     "currency": "GBP",
+     "asPrinted": "11.99 GBP",
+     "image": "IMG_4957",
+     "position": 2
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Calum Lachlan MacLe... - Sent",
+     "amount": -56197.38,
+     "currency": "AED",
+     "asPrinted": "56,197.38 AED / 11,400 GBP",
+     "sourceAmount": -11400.0,
+     "sourceCurrency": "GBP",
+     "image": "IMG_4957",
+     "position": 3
+    },
+    {
+     "date": "2026-10-31",
+     "description": "Ediane de Jesus Santana - Sent",
+     "amount": -213.06,
+     "currency": "GBP",
+     "asPrinted": "213.06 GBP",
+     "image": "IMG_4957",
+     "position": 4,
+     "alreadyStaged": "wise-20261024-20261031.json"
+    },
+    {
+     "date": "2026-10-31",
+     "description": "GiffGaff",
+     "amount": -25.0,
+     "currency": "GBP",
+     "asPrinted": "25 GBP",
+     "image": "IMG_4957",
+     "position": 5,
+     "alreadyStaged": "wise-20261024-20261031.json"
+    }
+   ]
+  }
+ ]
+}
