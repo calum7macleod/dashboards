@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "account": "BoS",
+  "currency": "GBP",
+  "period": "2-5 Nov 26",
+  "source": "app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
+  "images": [
+   "IMG_4952",
+   "IMG_4951"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balance": 16511.12,
+   "overdraftLimit": 3000.0,
+   "closingBalancePrinted": 16511.12
+  },
+  "accountType": "Classic current account",
+  "flags": [
+   "Chain ties 28,696.71 (3 Nov) - 11,400.00 = 17,296.71 - 34.71 = 17,262.00 - 460.00 = 16,802.00 - 290.88 = 16,511.12 printed",
+   "4 Nov C L MACLEOD -11,400.00 = Wise 'Calum Lachlan MacLe... Sent 56,197.38 AED / 11,400 GBP' = Mashreq Inward Remittance +56,197.38 = Tara and Rent +56,125.00",
+   "5 Nov AMERICAN EXP 3773 -290.88 = BA Amex payment; -460.00 = Amex Gold payment"
+  ],
+  "rowCount": 11,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4952",
+   "rows": [
+    {
+     "date": "2026-11-05",
+     "description": "AMERICAN EXP 3773",
+     "amount": -290.88,
+     "balance": 16511.12,
+     "image": "IMG_4952",
+     "position": 1
+    },
+    {
+     "date": "2026-11-05",
+     "description": "AMERICAN EXP 3773",
+     "amount": -460.0,
+     "balance": 16802.0,
+     "image": "IMG_4952",
+     "position": 2
+    },
+    {
+     "date": "2026-11-05",
+     "description": "HSBC CREDIT CARD",
+     "amount": -34.71,
+     "balance": 17262.0,
+     "image": "IMG_4952",
+     "position": 3
+    },
+    {
+     "date": "2026-11-04",
+     "description": "C L MACLEOD",
+     "amount": -11400.0,
+     "balance": 17296.71,
+     "image": "IMG_4952",
+     "position": 4
+    }
+   ]
+  },
+  {
+   "image": "IMG_4951",
+   "rows": [
+    {
+     "date": "2026-11-03",
+     "description": "PROPERTY ACCOUNT",
+     "amount": -2230.0,
+     "balance": 28696.71,
+     "image": "IMG_4951",
+     "position": 1,
+     "alreadyStaged": "bos-20261026-20261103.json"
+    },
+    {
+     "date": "2026-11-03",
+     "description": "MELLEX GROUP LIMIT",
+     "amount": 30593.0,
+     "balance": 30926.71,
+     "image": "IMG_4951",
+     "position": 2,
+     "alreadyStaged": "bos-20261026-20261103.json"
+    },
+    {
+     "date": "2026-11-03",
+     "description": "MUM",
+     "amount": -300.0,
+     "balance": 333.71,
+     "image": "IMG_4951",
+     "position": 3,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "MELLEX GROUP LIMIT",
+     "amount": 1.0,
+     "balance": 633.71,
+     "image": "IMG_4951",
+     "position": 4,
+     "alreadyStaged": "bos-20261026-20261103.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "MBNA LIMITED",
+     "amount": -270.74,
+     "balance": 632.71,
+     "image": "IMG_4951",
+     "position": 5,
+     "alreadyStaged": "bos-20261026-20261103.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "PET HEALTH CLUB",
+     "amount": -28.25,
+     "balance": 903.45,
+     "image": "IMG_4951",
+     "position": 6,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "TALLIA FLAHER",
+     "amount": -100.0,
+     "balance": 931.7,
+     "image": "IMG_4951",
+     "position": 7,
+     "alreadyStaged": "bos-20261020-20261102.json"
+    }
+   ]
+  }
+ ]
+}
