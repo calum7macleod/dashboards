@@ -3879,9 +3879,9 @@ L03877,2026-11-03,Nov 26,Tue,BoS,GBP,30593.0,150517.56,income,Income,"AvantGlamp
 L03878,2026-11-03,Nov 26,Tue,Property Account,GBP,2230.0,10971.6,transfer,Other,,Bank credit C Macleod - MONEY,bank credit c macleod money,P0245,person_leg_confirm,nationwide-app-4nov,de621d9423dc
 L03879,2026-11-03,Nov 26,Tue,Virgin Money,GBP,-143.09,-704.0,debt_cost,Fees,Card interest,INTEREST CHARGED,interest charged,,,virgin-4nov,c0427a573282
 L03880,2026-11-03,Nov 26,Tue,Virgin Money,GBP,-33.14,-163.05,debt_cost,Fees,Card interest,INTEREST CHARGED,interest charged,,,virgin-4nov,c910776d8d2a
-L03881,2026-11-04,Nov 26,Wed,ADIB CC,AED,-245.66,-245.66,debt_cost,Life,"Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc",SELFDRIVE AE 245.66 - one of TWO identical on 4 Nov (double charge?),selfdrive ae 245 66 one of two identical,,,adib-cc-app-8nov,ebdbec264384
+L03881,2026-11-04,Nov 26,Wed,ADIB CC,AED,-245.66,-245.66,transfer,Life,Misc - speeding fine (via Selfdrive),SELFDRIVE AE - speeding fine (245.66) - Calum 8 Nov,selfdrive ae 245 66 one of two identical,,one_legged,adib-cc-app-8nov,ebdbec264384
 L03882,2026-11-04,Nov 26,Wed,ADIB CC,AED,-305.04,-305.04,spend,Life,Clothes / home / shopping,Amazon,amazon,,,adib-cc-app-8nov,8ede4c721ec6
-L03883,2026-11-04,Nov 26,Wed,ADIB CC,AED,-245.66,-245.66,debt_cost,Life,"Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc",SELFDRIVE AE 245.66 - second of TWO identical on 4 Nov (double charge?),selfdrive ae 245 66 second of two identi,,,adib-cc-app-8nov-b,3e50149fbb45
+L03883,2026-11-04,Nov 26,Wed,ADIB CC,AED,-245.66,-245.66,transfer,Life,Misc - speeding fine (via Selfdrive),SELFDRIVE AE - speeding fine (245.66) - Calum 8 Nov,selfdrive ae 245 66 second of two identi,,one_legged,adib-cc-app-8nov-b,3e50149fbb45
 L03884,2026-11-04,Nov 26,Wed,BoS,GBP,-11400.0,-56088.0,transfer,Other,,C L MACLEOD,c l macleod,P0324,person_leg_confirm,bos-app-8nov,19a4d7af577c
 L03885,2026-11-04,Nov 26,Wed,Mashreq,AED,-56125.0,-56125.0,transfer,Other,,Acct to Acct transfer - FUND TRANSFER - [acct redacted] - CALUM LACHLAN MACLEOD TOC-MAE-[id redacted]-261104112042 FUND TRANSFER-MOBILE BANKING / [IBAN redacted],acct to acct transfer fund transfer acct,P0246,,mashreq-app-8nov,b18145eda6b5
 L03886,2026-11-04,Nov 26,Wed,Mashreq,AED,56197.38,56197.38,transfer,Other,"Wise GBP->AED (BoS 11,400)",Inward Remittance - FUND TRANSFER /P3489006 CALUM LACHLAN MACLEOD /REF/CALUM LACHLAN MACLEOD,inward remittance fund transfer p3489006,P0324,person_leg_confirm,mashreq-app-8nov,4c4d0e421fc7
@@ -3895,7 +3895,7 @@ L03893,2026-11-04,Nov 26,Wed,Tesco Clubcard,GBP,-21.43,-105.44,debt_cost,Fees,Ca
 L03894,2026-11-04,Nov 26,Wed,Tesco Clubcard,GBP,-31.59,-155.42,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tesco-8nov,909a1279f618
 L03895,2026-11-04,Nov 26,Wed,Tesco Clubcard,GBP,-71.25,-350.55,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tesco-8nov,ecbee8a7d75e
 L03896,2026-11-04,Nov 26,Wed,Wise GBP,GBP,-11.99,-58.99,transfer,Other,,Apple (Wise),apple wise,,one_legged,wise-8nov,2f2349861bb5
-L03897,2026-11-05,Nov 26,Thu,ADIB CC,AED,-10.5,-10.5,spend,Life,"Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc",SELFDRIVE AE,selfdrive ae,,,adib-cc-app-8nov,0b175d873e4f
+L03897,2026-11-05,Nov 26,Thu,ADIB CC,AED,-10.5,-10.5,transfer,Life,Misc - speeding fine (via Selfdrive),SELFDRIVE AE - speeding fine (10.50) - Calum 8 Nov,selfdrive ae,,one_legged,adib-cc-app-8nov,0b175d873e4f
 L03898,2026-11-05,Nov 26,Thu,ADIB CC,AED,-153.39,-153.39,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-8nov,c6498daa7bed
 L03899,2026-11-05,Nov 26,Thu,Amex Gold,GBP,460.0,2263.2,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0248,,amexgold-8nov,b3ef6e9faf55
 L03900,2026-11-05,Nov 26,Thu,BA Amex,GBP,-6.99,-34.39,spend,Life,Apple subscriptions (BA Amex) - which ones?,APPLE.COM/BILL HOLLYHILL,apple com bill hollyhill,,,baamex-8nov,564c236712c4
@@ -3912,7 +3912,7 @@ L03910,2026-11-06,Nov 26,Fri,ADIB CC,AED,-50.0,-50.0,spend,Health,Training / med
 L03911,2026-11-06,Nov 26,Fri,ADIB CC,AED,-152.21,-152.21,spend,Life,Barber / grooming,Qlub*1847 Grooming for (barber),qlub 1847 grooming for barber,,,adib-cc-app-8nov,648afdfa3c83
 L03912,2026-11-06,Nov 26,Fri,ADIB CC,AED,-650.0,-650.0,spend,Entertainment,Eating out / activities / trips,Ultimate Wake (wakeboarding),ultimate wake wakeboarding,,,adib-cc-app-8nov,6b2d369f9889
 L03913,2026-11-06,Nov 26,Fri,ADIB CC,AED,-87.46,-87.46,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-8nov,70cd83950495
-L03914,2026-11-06,Nov 26,Fri,Mashreq,AED,-600.0,-600.0,transfer,Life,Car wash (IPP from Mashreq),IPP TRANSFER - CAR WASH - /REF/ FAMILY SUPPORT,ipp transfer car wash ref family support,,one_legged,mashreq-app-8nov,954e7353a3b0
+L03914,2026-11-06,Nov 26,Fri,Mashreq,AED,-600.0,-600.0,transfer,Life,"Car wash man - D200/mo, paid in lumps (600 on 6 Nov = 3 months)",IPP TRANSFER - CAR WASH - /REF/ FAMILY SUPPORT,ipp transfer car wash ref family support,,one_legged,mashreq-app-8nov,954e7353a3b0
 L03915,2026-11-07,Nov 26,Sat,ADIB CC,AED,-52.45,-52.45,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-8nov,4eaf8fad8a58
 L03916,2026-11-07,Nov 26,Sat,ADIB CC,AED,-105.95,-105.95,spend,Deliveries,Food delivery,DELIVEROO,deliveroo,,,adib-cc-app-8nov,a3f622b2190a
 L03917,2026-11-07,Nov 26,Sat,ADIB CC,AED,-44.1,-44.1,spend,Deliveries,Food delivery,DELIVEROO,deliveroo,,,adib-cc-app-8nov,58a87e58867a
