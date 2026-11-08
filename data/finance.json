@@ -29171,6 +29171,58 @@
       "month": "Nov 26",
       "source": "UK/UAE app screenshots Wed 4 Nov 26 07:40-07:50 Dubai",
       "rows": "data/staging/statements/nationwide-flexdirect-20261021-20261104.json"
+    },
+    {
+      "card": "Tesco Clubcard",
+      "balance": 5457.81,
+      "currency": "GBP",
+      "available": 867.19,
+      "limit": 6325.0,
+      "status": "Stmt 4 Nov: interest 124.27 (21.43 + 31.59 + 71.25), 2.207% monthly on all balances. Split: cash 958.77, BT 1,412.24, MT 3,086.28, fees 0.52. Min/due not captured",
+      "date": "2026-11-08",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+      "rows": "data/staging/statements/tesco-clubcard-20261108.json"
+    },
+    {
+      "card": "MBNA 1",
+      "balance": 7752.08,
+      "currency": "GBP",
+      "available": 1047.92,
+      "limit": 8800.0,
+      "status": "Stmt 8 Nov: interest 74.42",
+      "dueDate": "2026-12-03",
+      "dueAmount": 268.22,
+      "date": "2026-11-08",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+      "rows": "data/staging/statements/mbna-1-20261108.json"
+    },
+    {
+      "card": "HSBC",
+      "balance": 1353.87,
+      "currency": "GBP",
+      "available": 646.13,
+      "limit": 2000.0,
+      "status": "DD 34.71 paid 5 Nov; min due now 0.00",
+      "date": "2026-11-08",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+      "rows": "data/staging/statements/hsbc-20261108.json"
+    },
+    {
+      "card": "BA Amex",
+      "balance": 6.99,
+      "currency": "GBP",
+      "available": 786.0,
+      "limit": null,
+      "status": "Paid 290.88 on 5 Nov (cleared 268.90 + 2 Nov charges). DD 6.99 scheduled 17 Nov",
+      "dueDate": "2026-11-30",
+      "dueAmount": 6.99,
+      "date": "2026-11-08",
+      "month": "Nov 26",
+      "source": "UK/UAE app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+      "rows": "data/staging/statements/ba-amex-20261108.json"
     }
   ],
   "personalDebts": [
