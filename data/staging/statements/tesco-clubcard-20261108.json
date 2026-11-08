@@ -1,0 +1,183 @@
+{
+ "meta": {
+  "account": "Tesco Clubcard",
+  "currency": "GBP",
+  "period": "5 Oct - 4 Nov 26 statement (card *8916)",
+  "source": "app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+  "images": [
+   "IMG_4931",
+   "IMG_4932",
+   "IMG_4933"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balance": 5457.81,
+   "availableCredit": 867.19,
+   "statement": {
+    "period": "2026-10-05 to 2026-11-04",
+    "balanceFromPrevious": 5584.54,
+    "newBalance": 5457.81,
+    "summaryOfBalances": {
+     "purchases": {
+      "monthlyRate": "2.207%",
+      "interest": 0.0,
+      "outstanding": 0.0
+     },
+     "cashWithdrawalsAndCashTransactions": {
+      "monthlyRate": "2.207%",
+      "interest": 21.43,
+      "outstanding": 958.77
+     },
+     "balanceTransfers": {
+      "monthlyRate": "2.207%",
+      "interest": 31.59,
+      "outstanding": 1412.24
+     },
+     "moneyTransfers": {
+      "monthlyRate": "2.207%",
+      "interest": 71.25,
+      "outstanding": 3086.28
+     },
+     "otherFees": {
+      "monthlyRate": "2.207%",
+      "interest": 0.0,
+      "outstanding": 0.52
+     }
+    }
+   }
+  },
+  "redacted": "full card number",
+  "flags": [
+   "IMG_4931 = 'Account information currently unavailable' (no data)",
+   "Statement ties: 5,584.54 - 251.00 + 21.43 + 31.59 + 71.25 = 5,457.81; split 958.77 + 1,412.24 + 3,086.28 + 0.52 = 5,457.81",
+   "Statement page shows the full card number - NOT stored",
+   "Minimum payment and due date not on the captured page"
+  ],
+  "rowCount": 12,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4931",
+   "rows": []
+  },
+  {
+   "image": "IMG_4932",
+   "rows": [
+    {
+     "date": "2026-11-04",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 21.43,
+     "section": "04 Nov 2026 Statement",
+     "image": "IMG_4932",
+     "position": 1
+    },
+    {
+     "date": "2026-11-04",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 31.59,
+     "section": "04 Nov 2026 Statement",
+     "image": "IMG_4932",
+     "position": 2
+    },
+    {
+     "date": "2026-11-04",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 71.25,
+     "section": "04 Nov 2026 Statement",
+     "image": "IMG_4932",
+     "position": 3
+    },
+    {
+     "date": "2026-10-29",
+     "description": "DIRECT DEBIT PAYMENT - THANK Y...",
+     "amount": -251.0,
+     "section": "04 Nov 2026 Statement",
+     "image": "IMG_4932",
+     "position": 4,
+     "alreadyStaged": "tesco-clubcard-20261101.json"
+    },
+    {
+     "date": "2026-10-02",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 20.76,
+     "section": "04 Oct 2026 Statement",
+     "image": "IMG_4932",
+     "position": 5,
+     "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+    },
+    {
+     "date": "2026-10-02",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 30.6,
+     "section": "04 Oct 2026 Statement",
+     "image": "IMG_4932",
+     "position": 6,
+     "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+    },
+    {
+     "date": "2026-10-02",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 72.07,
+     "section": "04 Oct 2026 Statement",
+     "image": "IMG_4932",
+     "position": 7,
+     "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+    },
+    {
+     "date": "2026-09-29",
+     "description": "DIRECT DEBIT PAYMENT - THANK...",
+     "amount": -266.0,
+     "section": "04 Oct 2026 Statement",
+     "image": "IMG_4932",
+     "position": 8,
+     "alreadyStaged": "tesco-clubcard-20260904-20261004.json"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4933",
+   "rows": [
+    {
+     "date": "2026-10-29",
+     "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+     "amount": -251.0,
+     "postDate": "2026-10-29",
+     "section": "statement 5 Oct - 4 Nov",
+     "image": "IMG_4933",
+     "position": 1,
+     "alreadyStaged": "tesco-clubcard-20261101.json"
+    },
+    {
+     "date": "2026-11-04",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 21.43,
+     "postDate": "2026-11-04",
+     "section": "statement 5 Oct - 4 Nov",
+     "image": "IMG_4933",
+     "position": 2
+    },
+    {
+     "date": "2026-11-04",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 31.59,
+     "postDate": "2026-11-04",
+     "section": "statement 5 Oct - 4 Nov",
+     "image": "IMG_4933",
+     "position": 3
+    },
+    {
+     "date": "2026-11-04",
+     "description": "INTEREST - SEE SUMMARY",
+     "amount": 71.25,
+     "postDate": "2026-11-04",
+     "section": "statement 5 Oct - 4 Nov",
+     "image": "IMG_4933",
+     "position": 4
+    }
+   ]
+  }
+ ]
+}
