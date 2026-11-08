@@ -1,0 +1,299 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "currency": "AED",
+  "period": "2-7 Nov 26",
+  "source": "app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+  "images": [
+   "IMG_4947",
+   "IMG_4946",
+   "IMG_4945",
+   "IMG_4944"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balances": "none shown"
+  },
+  "dates": "day labels resolved from screenshot date Sun 8 Nov 26",
+  "flags": [
+   "Two identical SELFDRIVE AE -245.66 on Wed 4 Nov - possible double charge (30-day dispute window per app)",
+   "Tue 3 Nov Careem -44.14 posted; was CAREEM RIDE -46.00 pending in adib-cc-app-20261030-20261103 - likely same, amount changed on posting",
+   "Tue 3 Nov rows now posted with clean names (InstaShop 79.70, Amazon 37.99 / 272.58, Caribou Coffee 42.00)"
+  ],
+  "rowCount": 29,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4947",
+   "rows": [
+    {
+     "date": "2026-11-07",
+     "description": "www.instashop.com",
+     "amount": -52.45,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4947",
+     "position": 1
+    },
+    {
+     "date": "2026-11-07",
+     "description": "DELIVEROO",
+     "amount": -105.95,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4947",
+     "position": 2
+    },
+    {
+     "date": "2026-11-07",
+     "description": "DELIVEROO",
+     "amount": -44.1,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4947",
+     "position": 3
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Ouraring",
+     "amount": -6.99,
+     "dayLabel": "Yesterday",
+     "currency": "USD",
+     "status": "Pending",
+     "image": "IMG_4947",
+     "position": 4
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Amazon.ae",
+     "amount": -105.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4947",
+     "position": 5
+    },
+    {
+     "date": "2026-11-07",
+     "description": "www.instashop.com",
+     "amount": -26.75,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4947",
+     "position": 6
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Bota 2",
+     "amount": -131.5,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_4947",
+     "position": 7
+    },
+    {
+     "date": "2026-11-06",
+     "description": "(cut at bottom)",
+     "amount": -222.0,
+     "dayLabel": "Friday",
+     "note": "same as IMG_4946 pos 1",
+     "image": "IMG_4947",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_4946",
+   "rows": [
+    {
+     "date": "2026-11-06",
+     "description": "STRETCH HEALTH FITNESS",
+     "amount": -222.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4946",
+     "position": 1
+    },
+    {
+     "date": "2026-11-06",
+     "description": "TASHAS MARINA MALL",
+     "amount": -166.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4946",
+     "position": 2
+    },
+    {
+     "date": "2026-11-06",
+     "description": "Amazon Grocery",
+     "amount": -314.06,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_4946",
+     "position": 3
+    },
+    {
+     "date": "2026-11-06",
+     "description": "KINGS COLLEGE HOSPITAL",
+     "amount": -50.0,
+     "dayLabel": "Friday",
+     "image": "IMG_4946",
+     "position": 4
+    },
+    {
+     "date": "2026-11-06",
+     "description": "Qlub*1847 Grooming for",
+     "amount": -152.21,
+     "dayLabel": "Friday",
+     "image": "IMG_4946",
+     "position": 5
+    },
+    {
+     "date": "2026-11-06",
+     "description": "ultimate wake",
+     "amount": -650.0,
+     "dayLabel": "Friday",
+     "image": "IMG_4946",
+     "position": 6
+    },
+    {
+     "date": "2026-11-06",
+     "description": "www.instashop.com",
+     "amount": -87.46,
+     "dayLabel": "Friday",
+     "image": "IMG_4946",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4945",
+   "rows": [
+    {
+     "date": "2026-11-06",
+     "description": "www.instashop.com",
+     "amount": -87.46,
+     "dayLabel": "Friday",
+     "image": "IMG_4945",
+     "position": 1
+    },
+    {
+     "date": "2026-11-05",
+     "description": "SELFDRIVE AE",
+     "amount": -10.5,
+     "dayLabel": "Thursday",
+     "image": "IMG_4945",
+     "position": 2
+    },
+    {
+     "date": "2026-11-05",
+     "description": "InstaShop",
+     "amount": -153.39,
+     "dayLabel": "Thursday",
+     "image": "IMG_4945",
+     "position": 3
+    },
+    {
+     "date": "2026-11-04",
+     "description": "SELFDRIVE AE",
+     "amount": -245.66,
+     "dayLabel": "Wednesday",
+     "image": "IMG_4945",
+     "position": 4
+    },
+    {
+     "date": "2026-11-04",
+     "description": "SELFDRIVE AE",
+     "amount": -245.66,
+     "dayLabel": "Wednesday",
+     "image": "IMG_4945",
+     "position": 5
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Amazon",
+     "amount": -305.04,
+     "dayLabel": "Wednesday",
+     "image": "IMG_4945",
+     "position": 6
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Careem",
+     "amount": -44.14,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4945",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4944",
+   "rows": [
+    {
+     "date": "2026-11-04",
+     "description": "Amazon",
+     "amount": -305.04,
+     "dayLabel": "Wednesday",
+     "image": "IMG_4944",
+     "position": 1
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Careem",
+     "amount": -44.14,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4944",
+     "position": 2
+    },
+    {
+     "date": "2026-11-03",
+     "description": "InstaShop",
+     "amount": -79.7,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4944",
+     "position": 3,
+     "alreadyStaged": "adib-cc-app-20261030-20261103.json"
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Amazon",
+     "amount": -37.99,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4944",
+     "position": 4,
+     "alreadyStaged": "adib-cc-app-20261030-20261103.json"
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Amazon",
+     "amount": -272.58,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4944",
+     "position": 5,
+     "alreadyStaged": "adib-cc-app-20261030-20261103.json"
+    },
+    {
+     "date": "2026-11-03",
+     "description": "Caribou Coffee",
+     "amount": -42.0,
+     "dayLabel": "Tuesday",
+     "image": "IMG_4944",
+     "position": 6,
+     "alreadyStaged": "adib-cc-app-20261030-20261103.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "Deliveroo",
+     "amount": -51.18,
+     "dayLabel": "Monday",
+     "image": "IMG_4944",
+     "position": 7,
+     "alreadyStaged": "adib-cc-app-20261030-20261103.json"
+    }
+   ]
+  }
+ ]
+}
