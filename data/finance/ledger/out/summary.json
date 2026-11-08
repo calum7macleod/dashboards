@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-04",
+ "asOf": "2026-11-08",
  "fx": {
   "GBP": {
    "Jan 26": 4.949,
@@ -36,7 +36,7 @@
   },
   "Feb 26": {
    "spend": 38825.21000000002,
-   "passthrough_net": -212271.66000000003,
+   "passthrough_net": -284643.9,
    "income": 2539.75,
    "debt_cost": 4750.97,
    "card_repay_unmatched": 1433.95,
@@ -56,7 +56,7 @@
    "debt_cost": 4209.75,
    "invested": 61422.55,
    "card_repay_unmatched": 1625.2,
-   "passthrough_net": -294240.05,
+   "passthrough_net": -413240.05,
    "transfer_cost": 234.26999999999998,
    "net": 66880.56999999998
   },
@@ -114,11 +114,11 @@
    "net": 90686.13
   },
   "Nov 26": {
-   "spend": 3835.9399999999996,
+   "spend": 8952.109999999999,
    "income": 152454.81,
    "card_repay_unmatched": 1332.04,
-   "debt_cost": 867.05,
-   "net": 148618.87
+   "debt_cost": 3313.4900000000007,
+   "net": 143502.7
   }
  },
  "by_category": {
@@ -246,33 +246,33 @@
    "Property": 846.98
   },
   "Nov 26": {
-   "Health": 949.0,
+   "Health": 1221.0,
    "Business": 1485.98,
-   "Base Food": 912.72,
-   "Life": 445.95,
-   "Entertainment": 414.1,
-   "Deliveries": 93.18,
+   "Base Food": 1546.8300000000002,
+   "Life": 1603.3400000000004,
+   "Entertainment": 1064.1,
+   "Deliveries": 540.73,
    "Unaccounted": -1332.04,
-   "Fees": 867.05
+   "Fees": 2822.1700000000005
   }
  },
  "by_dow": {
-  "Tue": 69090.51000000001,
-  "Wed": 58856.14999999999,
-  "Thu": 99125.03000000009,
-  "Fri": 96281.45000000003,
-  "Sat": 97319.53999999996,
-  "Sun": 99792.58999999995,
+  "Tue": 69088.65000000001,
+  "Wed": 60875.33,
+  "Thu": 99323.31000000008,
+  "Fri": 97923.18000000004,
+  "Sat": 97846.07999999996,
+  "Sun": 100524.88999999994,
   "Mon": 64340.409999999974
  },
  "by_account": {
-  "ADIB CC": 281423.9000000002,
+  "ADIB CC": 284516.1700000002,
   "Wise GBP": 105906.54999999999,
   "BoS": 21455.020000000008,
   "Property Account": 20773.35,
-  "Tesco Clubcard": 7131.02,
+  "Tesco Clubcard": 8353.84,
   "Amex Gold": 43400.79000000001,
-  "MBNA 1": 5791.93,
+  "MBNA 1": 6524.23,
   "Mashreq": 55043.5,
   "ADIB": 11054.869999999994,
   "Aqua": 14675.909999999998,
@@ -284,7 +284,7 @@
   "MBNA 2": 38.400000000000006,
   "HSBC": 168.86,
   "Wise USD": 36.54,
-  "BA Amex": 1460.8000000000004
+  "BA Amex": 1529.5800000000006
  },
  "note": "AED. spend = spend+refund+debt_cost+cash_withdrawal. Transfers/repayments/investing excluded."
 }
