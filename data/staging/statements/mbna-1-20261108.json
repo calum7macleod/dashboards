@@ -1,0 +1,74 @@
+{
+ "meta": {
+  "account": "MBNA 1",
+  "currency": "GBP",
+  "period": "2-8 Nov 26 (November statement)",
+  "source": "app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+  "images": [
+   "IMG_4938",
+   "IMG_4937"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "spent": 7752.08,
+   "available": 1047.92,
+   "statementBalance": 7752.08,
+   "minimumPayment": 268.22,
+   "dueDate": "2026-12-03",
+   "statementDate": "2026-11-08"
+  },
+  "flags": [
+   "7,677.66 (4 Nov) + 74.42 = 7,752.08 printed"
+  ],
+  "rowCount": 4,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4938",
+   "rows": [
+    {
+     "date": "2026-11-08",
+     "description": "INTEREST",
+     "amount": 74.42,
+     "dayLabel": "Today",
+     "image": "IMG_4938",
+     "position": 1
+    },
+    {
+     "date": "2026-11-02",
+     "description": "DIRECT DEBIT PAYMENT -",
+     "amount": -270.74,
+     "asPrinted": "£270.74 cr",
+     "image": "IMG_4938",
+     "position": 2,
+     "alreadyStaged": "mbna-1-20261104.json"
+    }
+   ]
+  },
+  {
+   "image": "IMG_4937",
+   "rows": [
+    {
+     "date": "2026-11-08",
+     "description": "INTEREST",
+     "amount": 74.42,
+     "dayLabel": "Today",
+     "image": "IMG_4937",
+     "position": 1
+    },
+    {
+     "date": "2026-11-02",
+     "description": "DIRECT DEBIT PAYMENT -",
+     "amount": -270.74,
+     "asPrinted": "£270.74 cr",
+     "image": "IMG_4937",
+     "position": 2,
+     "alreadyStaged": "mbna-1-20261104.json"
+    }
+   ]
+  }
+ ]
+}
