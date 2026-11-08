@@ -1,0 +1,86 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "currency": "AED",
+  "period": "2-6 Nov 26",
+  "source": "app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
+  "images": [
+   "IMG_4956",
+   "IMG_4955"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalAvailableBalance": 9782.9,
+   "currentBalance": 9782.9,
+   "banner": "06 Nov 2026 Way to Save! ... Your AED 64,025 deposit is a great start!"
+  },
+  "accountType": "Neo current",
+  "redacted": "IBANs, account numbers, masked card (kept *6789), customer id in TOC-MAE refs",
+  "flags": [
+   "10,310.52 (4 Nov read) + 56,197.38 - 56,125.00 - 600.00 = 9,782.90 printed",
+   "Banner 64,025 = 7,900 + 56,125 transfers to Tara and Rent"
+  ],
+  "rowCount": 5,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "images": [
+  {
+   "image": "IMG_4956",
+   "rows": []
+  },
+  {
+   "image": "IMG_4955",
+   "rows": [
+    {
+     "date": "2026-11-06",
+     "description": "IPP TRANSFER - CAR WASH - /REF/ FAMILY SUPPORT",
+     "amount": -600.0,
+     "reference": "033IPPD263100589",
+     "detailRef": "T_6AA0717FA64240729E23E5A2B7C518D7",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_4955",
+     "position": 1
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Acct to Acct transfer - FUND TRANSFER - [acct redacted] - CALUM LACHLAN MACLEOD TOC-MAE-[id redacted]-261104112042 FUND TRANSFER-MOBILE BANKING / [IBAN redacted]",
+     "amount": -56125.0,
+     "reference": "033AACT263086236",
+     "detailRef": "SRN: MAC0411261131727",
+     "image": "IMG_4955",
+     "position": 2
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Inward Remittance - FUND TRANSFER /P3489006 CALUM LACHLAN MACLEOD /REF/CALUM LACHLAN MACLEOD",
+     "amount": 56197.38,
+     "reference": "033IWRT263084180",
+     "detailRef": "SRN:AE1RCXT2630805VK //REC/1032611042101353000001 /OUR",
+     "image": "IMG_4955",
+     "position": 3
+    },
+    {
+     "date": "2026-11-02",
+     "description": "IPP TRANSFER - *6789 - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT",
+     "amount": -3400.0,
+     "reference": "033IPPD26306011K",
+     "detailRef": "T_448CB144754E4137B3154B4C4A55C0F6",
+     "image": "IMG_4955",
+     "position": 4,
+     "alreadyStaged": "mashreq-20261030-20261102.json"
+    },
+    {
+     "date": "2026-11-02",
+     "description": "Acct to Acct transfer (cut at bottom)",
+     "amount": -7900.0,
+     "reference": "033AACT263060349",
+     "image": "IMG_4955",
+     "position": 5,
+     "alreadyStaged": "mashreq-20261030-20261102.json"
+    }
+   ]
+  }
+ ]
+}
