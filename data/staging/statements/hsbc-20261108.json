@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "account": "HSBC",
+  "currency": "GBP",
+  "period": "5 Nov 26 (personal credit card)",
+  "source": "app screenshots Sun 8 Nov 26 06:53-07:03 Dubai",
+  "images": [
+   "IMG_4940"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "currentBalanceExclPending": -1353.87,
+   "availableCredit": 646.13,
+   "pending": 0.0,
+   "creditLimit": 2000.0,
+   "statementBalance": 1388.58,
+   "minimumDue": 0.0,
+   "dueDate": "2026-11-05"
+  },
+  "flags": [
+   "1,388.58 - 34.71 = 1,353.87 printed. DD taken was 34.71 (BoS showed 35.60 'Previously')"
+  ],
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "transactions": [
+  {
+   "date": "2026-11-05",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+   "amount": 34.71,
+   "image": "IMG_4940",
+   "position": 1
+  }
+ ]
+}
