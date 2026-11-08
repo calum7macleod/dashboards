@@ -981,6 +981,6 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "8 Nov 07:03-07:06 screenshots (9 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 5 files in data/staging/statements/: amex-gold-20261108 (1 row, 460.00 paid 5 Nov, balance 0.00); bos-20261102-20261105 (11, ties to 16,511.12); mashreq-20261102-20261106 (AED 5, ties to 9,782.90); mashreq-tara-and-rent-20261031-20261104 (AED 4, ties to 77,069.83); wise-20261031-20261105 (5). Nationwide identical to 4 Nov - no file. Money trail 4 Nov: BoS -11,400 GBP -> Wise -> AED 56,197.38 into Mashreq -> 56,125 to Tara and Rent. Tara indicative Nov earnings now 99.25 on 77,069.83 (full month at 6.25% would be about 401) - looks like accrued-to-date. 2 ccBalances rows appended (Amex Gold, BoS OD).",
-  "status": "open"
+  "status": "done"
  }
 ]
