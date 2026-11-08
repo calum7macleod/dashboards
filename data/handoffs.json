@@ -982,5 +982,13 @@
   "to": "Finance",
   "item": "8 Nov 07:03-07:06 screenshots (9 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 5 files in data/staging/statements/: amex-gold-20261108 (1 row, 460.00 paid 5 Nov, balance 0.00); bos-20261102-20261105 (11, ties to 16,511.12); mashreq-20261102-20261106 (AED 5, ties to 9,782.90); mashreq-tara-and-rent-20261031-20261104 (AED 4, ties to 77,069.83); wise-20261031-20261105 (5). Nationwide identical to 4 Nov - no file. Money trail 4 Nov: BoS -11,400 GBP -> Wise -> AED 56,197.38 into Mashreq -> 56,125 to Tara and Rent. Tara indicative Nov earnings now 99.25 on 77,069.83 (full month at 6.25% would be about 401) - looks like accrued-to-date. 2 ccBalances rows appended (Amex Gold, BoS OD).",
   "status": "done"
+ },
+ {
+  "id": "h0124",
+  "date": "2026-11-08",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "CRYPTO MINING - Calum 8 Nov: keep as a SEPARATE section, NOT in monthly budget vs actual (he will speak to you; dashboard section = Manager build). Staged in data/staging/mining/: (1) segments-cloud-SCH-2026-00956.json - Segments Cloud Oct hosting invoice, UNPAID, USD 934.34 / AED 3,431.37 incl 5% VAT, Net 14 from 31 Oct (due 14 Nov derived), plus uptime detail for 7 miners (6x Antminer S21+ 235TH live 14 Oct, 1x L9 16G live 15 Oct; avg uptime 56%, 11,123.1 kWh at USD 0.08). Vendor IBAN and pay-link token not stored. (2) wallet-receipts-20261015-20261107.json - 64 rows over 10 overlapping images; unique receipts 24 BTC / 9 LTC / 15 DOGE, derived totals in meta. FLAG: no LTC/DOGE receipts after 1 Nov while BTC continues daily. Existing finance.json row 'Sent money to segments cloud (fee 19.35 GBP)' looks related.",
+  "status": "open"
  }
 ]
