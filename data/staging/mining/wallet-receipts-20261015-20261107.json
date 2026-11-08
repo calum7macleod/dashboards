@@ -1,0 +1,678 @@
+{
+ "meta": {
+  "type": "mining-wallet-receipts",
+  "note": "Calum 8 Nov: crypto mining rigs - keep as a SEPARATE section, not in monthly budget vs actual",
+  "source": "phone screenshots Sun 8 Nov 26 07:42-07:44 Dubai - self-custody wallet app 'History', My Wallet, All Networks",
+  "images": [
+   "IMG_4963",
+   "IMG_4964",
+   "IMG_4965",
+   "IMG_4966",
+   "IMG_4967",
+   "IMG_4968",
+   "IMG_4969",
+   "IMG_4970",
+   "IMG_4971",
+   "IMG_4972"
+  ],
+  "method": "per image, on-screen order (newest first), overlaps left in; amounts as printed (strings, full precision)",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08",
+  "period": "2026-10-15 to 2026-11-07",
+  "uniqueReceiptsDerived": {
+   "BTC": 24,
+   "LTC": 9,
+   "DOGE": 15
+  },
+  "uniqueTotalsDerived": {
+   "BTC": "0.01375770",
+   "LTC": "0.289054",
+   "DOGE": "996.388546"
+  },
+  "novemberTotalsDerived": {
+   "BTC": "0.00393858",
+   "LTC": "0.020867",
+   "DOGE": "0"
+  },
+  "flags": [
+   "No LTC or DOGE receipts after 1 Nov; BTC continues daily to 7 Nov",
+   "Gaps: group between 1 Nov and 30 Oct has its date header cropped (likely 31 Oct) and may have rows above the crop; 29 Oct group may continue below the crop",
+   "Older date header cut at the bottom of IMG_4972 - history before 15 Oct not captured",
+   "Sender addresses truncated as printed; '--' = no sender shown",
+   "First BTC 15 Oct (part day) matches uptime file: S21+ x6 live from 14 Oct, L9 from 15 Oct"
+  ]
+ },
+ "images": [
+  {
+   "image": "IMG_4963",
+   "rows": [
+    {
+     "date": "2026-11-07",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056717",
+     "from": "--",
+     "image": "IMG_4963",
+     "position": 1
+    },
+    {
+     "date": "2026-11-06",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00053594",
+     "from": "bc1q72...7djn33",
+     "image": "IMG_4963",
+     "position": 2
+    },
+    {
+     "date": "2026-11-05",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056699",
+     "from": "bc1qjm...yd4zga",
+     "image": "IMG_4963",
+     "position": 3
+    },
+    {
+     "date": "2026-11-04",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056875",
+     "from": "bc1quf...pwzxlr",
+     "image": "IMG_4963",
+     "position": 4
+    },
+    {
+     "date": "2026-11-03",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056641",
+     "from": "bc1q7s...wslx6l",
+     "image": "IMG_4963",
+     "position": 5
+    }
+   ]
+  },
+  {
+   "image": "IMG_4964",
+   "rows": [
+    {
+     "date": "2026-11-05",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": null,
+     "from": "bc1qjm...yd4zga",
+     "note": "cut at top; same as IMG_4963 pos 3",
+     "image": "IMG_4964",
+     "position": 1
+    },
+    {
+     "date": "2026-11-04",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056875",
+     "from": "bc1quf...pwzxlr",
+     "image": "IMG_4964",
+     "position": 2
+    },
+    {
+     "date": "2026-11-03",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056641",
+     "from": "bc1q7s...wslx6l",
+     "image": "IMG_4964",
+     "position": 3
+    },
+    {
+     "date": "2026-11-02",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056644",
+     "from": "bc1q0p...22wx8g",
+     "image": "IMG_4964",
+     "position": 4
+    },
+    {
+     "date": "2026-11-01",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.020867",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4964",
+     "position": 5
+    },
+    {
+     "date": "2026-11-01",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056688",
+     "from": "--",
+     "image": "IMG_4964",
+     "position": 6
+    }
+   ]
+  },
+  {
+   "image": "IMG_4965",
+   "rows": [
+    {
+     "date": null,
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00056697",
+     "from": "bc1quf...pwzxlr",
+     "dateNote": "header cropped - group sits between 1 Nov and 30 Oct (likely 31 Oct); rows above may be missing",
+     "image": "IMG_4965",
+     "position": 1
+    },
+    {
+     "date": null,
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "62.84004",
+     "from": "DMCPho...sQJnLW",
+     "dateNote": "same cropped group",
+     "image": "IMG_4965",
+     "position": 2
+    },
+    {
+     "date": "2026-10-30",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00057864",
+     "from": "bc1qtn...vpedjm",
+     "image": "IMG_4965",
+     "position": 3
+    },
+    {
+     "date": "2026-10-30",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.036568",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4965",
+     "position": 4
+    },
+    {
+     "date": "2026-10-30",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "64.18581",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4965",
+     "position": 5
+    },
+    {
+     "date": "2026-10-29",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.0005857",
+     "from": "bc1qky...xg8f2f",
+     "image": "IMG_4965",
+     "position": 6
+    },
+    {
+     "date": "2026-10-29",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "66.029506",
+     "from": "DMCPho...sQJnLW",
+     "note": "coin label truncated 'DO...'; 10-29 group may continue below crop",
+     "image": "IMG_4965",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4966",
+   "rows": [
+    {
+     "date": "2026-10-28",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058604",
+     "from": "--",
+     "image": "IMG_4966",
+     "position": 1
+    },
+    {
+     "date": "2026-10-28",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.037613",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4966",
+     "position": 2
+    },
+    {
+     "date": "2026-10-28",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "67.27139",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4966",
+     "position": 3
+    },
+    {
+     "date": "2026-10-27",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058639",
+     "from": "bc1quf...pwzxlr",
+     "image": "IMG_4966",
+     "position": 4
+    },
+    {
+     "date": "2026-10-27",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "67.98185",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4966",
+     "position": 5
+    },
+    {
+     "date": "2026-10-26",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058663",
+     "from": "--",
+     "image": "IMG_4966",
+     "position": 6
+    },
+    {
+     "date": "2026-10-26",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.034296",
+     "from": "(cut)",
+     "image": "IMG_4966",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4967",
+   "rows": [
+    {
+     "date": "2026-10-26",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058663",
+     "from": "--",
+     "image": "IMG_4967",
+     "position": 1
+    },
+    {
+     "date": "2026-10-26",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.034296",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4967",
+     "position": 2
+    },
+    {
+     "date": "2026-10-26",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "65.7511",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4967",
+     "position": 3
+    },
+    {
+     "date": "2026-10-25",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058702",
+     "from": "bc1q80...0pn6nn",
+     "image": "IMG_4967",
+     "position": 4
+    },
+    {
+     "date": "2026-10-25",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "57.15283",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4967",
+     "position": 5
+    },
+    {
+     "date": "2026-10-24",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058462",
+     "from": "bc1qyf...04zm03",
+     "image": "IMG_4967",
+     "position": 6
+    }
+   ]
+  },
+  {
+   "image": "IMG_4968",
+   "rows": [
+    {
+     "date": "2026-10-24",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058462",
+     "from": "bc1qyf...04zm03",
+     "image": "IMG_4968",
+     "position": 1
+    },
+    {
+     "date": "2026-10-23",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058829",
+     "from": "bc1quf...pwzxlr",
+     "image": "IMG_4968",
+     "position": 2
+    },
+    {
+     "date": "2026-10-23",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.038163",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4968",
+     "position": 3
+    },
+    {
+     "date": "2026-10-23",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "75.3651",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4968",
+     "position": 4
+    },
+    {
+     "date": "2026-10-22",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058606",
+     "from": "bc1qq8...9cl4w9",
+     "image": "IMG_4968",
+     "position": 5
+    },
+    {
+     "date": "2026-10-22",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "79.50375",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4968",
+     "position": 6
+    }
+   ]
+  },
+  {
+   "image": "IMG_4969",
+   "rows": [
+    {
+     "date": "2026-10-21",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058611",
+     "from": "bc1qav...ylgxdp",
+     "image": "IMG_4969",
+     "position": 1
+    },
+    {
+     "date": "2026-10-21",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.038966",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4969",
+     "position": 2
+    },
+    {
+     "date": "2026-10-21",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "70.27525",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4969",
+     "position": 3
+    },
+    {
+     "date": "2026-10-20",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058589",
+     "from": "--",
+     "image": "IMG_4969",
+     "position": 4
+    },
+    {
+     "date": "2026-10-20",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "71.96032",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4969",
+     "position": 5
+    },
+    {
+     "date": "2026-10-19",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058535",
+     "from": "bc1quf...pwzxlr",
+     "image": "IMG_4969",
+     "position": 6
+    }
+   ]
+  },
+  {
+   "image": "IMG_4970",
+   "rows": [
+    {
+     "date": "2026-10-19",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058535",
+     "from": "bc1quf...pwzxlr",
+     "image": "IMG_4970",
+     "position": 1
+    },
+    {
+     "date": "2026-10-19",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.033728",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4970",
+     "position": 2
+    },
+    {
+     "date": "2026-10-19",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "47.43917",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4970",
+     "position": 3
+    },
+    {
+     "date": "2026-10-18",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00058699",
+     "from": "bc1qda...7ydpcs",
+     "image": "IMG_4970",
+     "position": 4
+    },
+    {
+     "date": "2026-10-18",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "72.35583",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4970",
+     "position": 5
+    },
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00060817",
+     "from": "bc1qqa...vh04f6",
+     "image": "IMG_4970",
+     "position": 6
+    },
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.020329",
+     "from": "(cut)",
+     "image": "IMG_4970",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4971",
+   "rows": [
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00060817",
+     "from": "bc1qqa...vh04f6",
+     "image": "IMG_4971",
+     "position": 1
+    },
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.020329",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4971",
+     "position": 2
+    },
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "72.86348",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4971",
+     "position": 3
+    },
+    {
+     "date": "2026-10-16",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00062524",
+     "from": "1q7mbj...N3Mz5d",
+     "image": "IMG_4971",
+     "position": 4
+    },
+    {
+     "date": "2026-10-16",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.028524",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4971",
+     "position": 5
+    },
+    {
+     "date": "2026-10-16",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "55.41312",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4971",
+     "position": 6
+    },
+    {
+     "date": "2026-10-15",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00040501",
+     "from": "(cut)",
+     "image": "IMG_4971",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_4972",
+   "rows": [
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": null,
+     "from": "bc1qqa...vh04f6",
+     "note": "cut at top; same as IMG_4971 pos 1",
+     "image": "IMG_4972",
+     "position": 1
+    },
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.020329",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4972",
+     "position": 2
+    },
+    {
+     "date": "2026-10-17",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "72.86348",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4972",
+     "position": 3
+    },
+    {
+     "date": "2026-10-16",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00062524",
+     "from": "1q7mbj...N3Mz5d",
+     "image": "IMG_4972",
+     "position": 4
+    },
+    {
+     "date": "2026-10-16",
+     "type": "Receive",
+     "coin": "LTC",
+     "amount": "0.028524",
+     "from": "LUnYgf...rZrfvE",
+     "image": "IMG_4972",
+     "position": 5
+    },
+    {
+     "date": "2026-10-16",
+     "type": "Receive",
+     "coin": "DOGE",
+     "amount": "55.41312",
+     "from": "DMCPho...sQJnLW",
+     "image": "IMG_4972",
+     "position": 6
+    },
+    {
+     "date": "2026-10-15",
+     "type": "Receive",
+     "coin": "BTC",
+     "amount": "0.00040501",
+     "from": "bc1quf...pwzxlr",
+     "image": "IMG_4972",
+     "position": 7
+    }
+   ]
+  }
+ ]
+}
