@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "account": "Amex Gold (charge)",
+  "currency": "GBP",
+  "period": "5 Nov 26",
+  "source": "app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
+  "images": [
+   "IMG_4950"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 0.0,
+   "balanceDue": 0.0,
+   "paymentStatus": "Payment not required at this time",
+   "membershipRewards": 14575
+  },
+  "flags": [
+   "460.00 paid 5 Nov = BoS AMERICAN EXP 3773 -460.00 on 5 Nov"
+  ],
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-08"
+ },
+ "transactions": [
+  {
+   "date": "2026-11-05",
+   "description": "PAYMENT RECEIVED - THANK YOU",
+   "amount": -460.0,
+   "image": "IMG_4950",
+   "position": 1
+  }
+ ]
+}
