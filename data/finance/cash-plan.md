@@ -37,6 +37,7 @@ Today also: freeze every credit card; confirm Meta paused; payslip to Finance; M
 |---|---|---|---|---|
 | Phone: Virgin (600 catch-up Oct, ~300 after) + du ~400 | 1,000 | 700 | 700 | 700 |
 | Boxica (949 + the 18s) | 949 paid 1 Oct | 1,100 | 1,100 | 1,100 |
+| Car wash man (D200/mo, paid in lumps - 600 on 6 Nov covered 3 months; added 8 Nov) | | 200 | 200 | 200 |
 | Turtletots (one-off) | 1,040 paid 1 Oct | - | - | - |
 | Subs: Oura, YouTube, Prime, Deliveroo Plus (Anthropic D775 cancelled 12 Oct - one Claude sub stays, GBP180 on Wise) | 875 | 100 | 100 | 100 |
 | Business software: Reelly only (Widgit, Sandcastles, Buzzfy, HighLevel, HubSpot, Deepstash cancelled 12 Oct) | 225 | 180 | 180 | 180 |
