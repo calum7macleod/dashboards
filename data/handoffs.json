@@ -973,7 +973,7 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "8 Nov 06:53-07:03 screenshots (19 images) staged raw per image, alreadyStaged flagged. 5 files in data/staging/statements/: tesco-clubcard-20261108 (12 rows incl 5 Oct-4 Nov statement page; full card number on the PDF NOT stored; ties to 5,457.81); mbna-1-20261108 (4, stmt 8 Nov 7,752.08, min 268.22 due 3 Dec); hsbc-20261108 (1, DD 34.71 on 5 Nov, 1,353.87); adib-cc-app-20261102-20261107 (AED 29 rows over 4 images, no balance); ba-amex-20261108 (5, paid 290.88 on 5 Nov, balance 6.99). No file - unchanged/all rows already staged: Virgin, M&S, Santander, MBNA 2, Aqua, Barclaycard. CHECK: ADIB two identical SELFDRIVE AE -245.66 on 4 Nov (possible double charge, 30-day dispute window); Careem 3 Nov posted 44.14 vs 46.00 pending; BA Amex 290.88 payment source not in this batch (BoS?). 4 ccBalances rows appended (Tesco, MBNA 1, HSBC, BA Amex).",
-  "status": "open"
+  "status": "done"
  },
  {
   "id": "h0123",
