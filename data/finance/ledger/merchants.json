@@ -2,6 +2,16 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "selfdrive.*speeding fine",
+   "category": "Life",
+   "sub": "Misc - speeding fine (via Selfdrive)"
+  },
+  {
+   "rx": "car wash",
+   "category": "Life",
+   "sub": "Car wash man - D200/mo, paid in lumps (600 on 6 Nov = 3 months)"
+  },
+  {
    "rx": "grooming",
    "category": "Life",
    "sub": "Barber / grooming"
@@ -10,11 +20,6 @@
    "rx": "^bota",
    "category": "Deliveries",
    "sub": "Eating out / coffee"
-  },
-  {
-   "rx": "car wash",
-   "category": "Life",
-   "sub": "Car wash (IPP from Mashreq)"
   },
   {
    "rx": "^apple \\(wise\\)|^apple$",
