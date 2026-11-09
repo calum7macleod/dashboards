@@ -118,3 +118,12 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Cadence: one reel 16:00 Dubai + one carousel (same script, receipts) 09:00 Dubai, daily. Second reel slot = trials (3 hooks, share winner), not duplicate posts. Twice-daily reels = untested theory, not adopted.
 - Content mix: explainers are the backbone (Jake); on-site/data optional accelerants.
 - Owed by Content: ISLAND/FUND/ADGM/HUDAYRIYAT/OFFPLAN PDFs this week; Friday read adds follows, non-follower share, profile visits, keyword DMs.
+
+## 8-9 Nov read (Metricool)
+- IG: wealthier 1,968 / transactions 919 / Sep apts 1,144 / AI race 2,005 / rail 2,526 (18.0s, 52% hold, 22 saves, 6 follows - best ever) / 0.5% 1,706 day 1 (19 shares = 11/1k, record). Last 3 claim reels hold >50% at 3s; claims avg ~2.1k vs explainers ~1.0k.
+- Pattern: reels start below typical (follower batch mismatch), cross above at 6-12h when non-follower rounds take over (AI skip 65%->48.7%). Judge at 24h.
+- Retention curves all same shape; rail had the shallowest early drop. Opening template: number first word, count promised, names everyone knows.
+- TikTok: rail first off the 700 floor (959, 44 likes, 15 comments, 16s).
+- LinkedIn: rail 14,678 impressions / 6,817 video views (18x next best). Business-news reels win on LinkedIn; property-data reels ~200. Give pipeline, ADNOC-OpenAI, English law, UK vs UAE spending, Etihad proper LinkedIn text posts.
+- Decision pending Calum: EMAAR (Mon) + Lulu (Wed) as trial reels (explainers, auto-share on); transactions = control.
+- Re-hooks section: c102 (transactions -> Dubai sells 9x more homes), c105 (0.5% -> 1 in every 200 dollars). Trials ~early Dec.
