@@ -41,7 +41,7 @@ Prices "around", project files dated Jul-Sep 2026; availability confirmed with J
 | Villa 8M+ | Wadeem 4/5/6-bed 8.7 / 10.2 / 11.6M + 2% ADM - in stock | Naseem secondary | Marsa Al Saadiyat (registration / launch) |
 | Liked nothing | Hudayriyat launches (several coming) | Reem apartment launch | sent-info tag with their trigger written down |
 Not on the shelf: Hudayriyat Golf Estates new (sold out), Lagoons (removed from this list's conversations).
-Because bank (verify before pinning): Wadeem in stock - last villa product on Hudayriyat for now · Golf Estates gone · Tara Park Phase 2, Calum owns one · Artery 1-beds + Muheira on Reem · launches coming on Hudayriyat (beachfront apartments first) and Reem.
+Because bank: Wadeem in stock - last villa product on Hudayriyat for now · Golf Estates gone · Tara Park Phase 2, Calum owns one · Artery 1-beds + Muheira on Reem · launches coming on Hudayriyat (beachfront apartments first) and Reem.
 Gap to expect: the list is heavy on villa/townhouse <=5M; many calls become a type-or-budget conversation - test flex to apartment or to 8M+.
 
 ## 4. Openers and messages
@@ -56,7 +56,8 @@ Voice notes: never as first contact; after any conversation yes - 30-60s, recap,
 
 ## 5. System
 - Record: Jake's CRM for all 200 - bucket word, one line, next step. Meetings + hot sent-infos -> buyers.json via the PA, with the matched shelf row.
-- PA before 13:00: a card per name due today - CRM fields, enquiry month, shelf row (three options), WhatsApp skeleton pre-filled. PA after 17:00: log good ones, count the day, write the 19:30 line.
+- PA after 17:00: log good ones to buyers.json, build tomorrow's re-call list, write the 19:30 line. No pre-call cards - Calum works from the CRM.
+- Calum, end of day: summary of the day to Mentor - what moved, what didn't, what he'd change.
 - 19:30 line format: "Tue: 50 dialled · 14 spoke · 2 meetings · 6 info · 4 webinar · 5 not interested · 29 no answer". Numbers that matter: meetings booked, meetings held.
 - Re-calls: PA builds the no-answer re-call list (two over the following fortnight) into the day's 50.
 - Fri 17:00 with Mentor: reached %, meetings booked/held vs indicative yield (60% reached, 12-18 meetings). One change a week.
