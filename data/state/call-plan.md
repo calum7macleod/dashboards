@@ -17,3 +17,12 @@ Rules:
 - Outcome goes on the record in the bucket's words, same day. Calum dictates, the PA logs.
 - Containment: dial 09:30-11:30 and 16:00-17:00; WhatsApp replies batched 12:00 and 17:00.
 - Webinar is a tag, not a stage - anyone in any bucket can carry it.
+
+## 2. The list
+- 198 names in Jake's CRM, enquired Jan-Oct 2026 (mostly Jan-Jun), source "Imported (pre-CRM)", status new, owner Calum. Fields: budget band, emirate (mostly Abu Dhabi, some "open to both"), off-plan/ready, type, areas (mostly blank), WhatsApp number, created date, previous-client flag. Not all complete - call 1 fills them.
+- By country: UAE 112 · UK 25 · USA 10 / Canada 6 · India 6 · Saudi 5 · Italy 4 · Netherlands 4 · 2 each Ireland, Australia, France, Qatar, Pakistan · 16 singles. GCC 120.
+- ~6 junk rows (message text as name, a test number, a malformed +7) - mark Not interested on sight.
+- Pace: 50 a day, 13:00-17:00 UAE, Mon-Fri; 200 done by Fri, catch-up Sat if short. Quality over volume - one by one, no ordering, every name gets real effort.
+- North American numbers: WhatsApp first, call the ones who reply (1-5 UAE is their small hours).
+- Record: log every outcome in Jake's CRM (the brokerage's record). Good buyers only come back to buyers.json for tracking - PA adds them from Calum's dictation.
+- Indicative yield, cold list this age: ~60% reached after three attempts (~120); meetings 10-15% of those (12-18); sent info ~40%; webinar yes ~30%; not interested ~40%. At 1 in 4-5 meetings closing, 3-4 deals across Q4/Q1.
