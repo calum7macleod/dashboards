@@ -1,1 +1,2 @@
 {"id": "i0001", "date": "2026-11-08", "agent": "Finance", "type": "tool", "what": "agentkit put prints 'no sha from a get for this path' on existing files (finance.md, ledger.csv) since 8 Nov - writes land, but the sha check may be bypassed", "status": "open"}
+{"id": "i0002", "date": "2026-11-09", "agent": "mentor", "type": "data", "what": "mentor.md and core.md last written 21 Sep; nothing recorded through October (job start slipped 5 Oct to ~2 Nov, Iniesta J122 closed 16 Oct) - start packs were six weeks stale on 9 Nov", "status": "open"}
