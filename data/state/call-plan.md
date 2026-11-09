@@ -43,3 +43,21 @@ Prices "around", project files dated Jul-Sep 2026; availability confirmed with J
 Not on the shelf: Hudayriyat Golf Estates new (sold out), Lagoons (removed from this list's conversations).
 Because bank (verify before pinning): Wadeem in stock - last villa product on Hudayriyat for now · Golf Estates gone · Tara Park Phase 2, Calum owns one · Artery 1-beds + Muheira on Reem · launches coming on Hudayriyat (beachfront apartments first) and Reem.
 Gap to expect: the list is heavy on villa/townhouse <=5M; many calls become a type-or-budget conversation - test flex to apartment or to 8M+.
+
+## 4. Openers and messages
+Jake's list, call 1: "Hi [name], it's Calum from Jake Nazer's office in Abu Dhabi. You spoke to Jake back in [month] about [what they enquired about]. I've joined him on the Abu Dhabi side and he's asked me to pick up with everyone he spoke to earlier in the year - have you got two minutes? ... I'm just trying to work out where you're at with it: still looking, parked it, or bought something?"
+Branches, one question deep: still looking -> "what's changed - budget, timing, what you'd actually buy?" -> two options -> meeting or sent-info with trigger · parked -> "what would bring it back - a project, a price, a date?" -> sent-info or webinar · bought -> "where did you land?" -> not interested unless they'd buy again.
+Webinar ask (any branch): "short one on what's launching in Abu Dhabi and what it actually costs, [date] - want the link?"
+Warm book (46): "[Name], Calum. Quick one - [the because]. Where are you at with it? ... Tuesday or Thursday?"
+No-answer WhatsApp, sent straight after the dial (skeleton + one bespoke line): "Hi [name], Calum from Jake Nazer's office - you spoke to Jake in [month] about Abu Dhabi. I've taken over his Abu Dhabi buyers and wanted to see where you're at. Still looking, or has it moved on? [bespoke line]"
+Sent-info trigger message: "[Name] - you asked me to shout when [trigger] came up. [what, price, plan]. Want the details?"
+Meeting confirmation, day before: "[Name], confirming tomorrow [time], [place/video]. I'll have [the two options] ready - anything you want me to bring?"
+Voice notes: never as first contact; after any conversation yes - 30-60s, recap, next step, date.
+
+## 5. System
+- Record: Jake's CRM for all 200 - bucket word, one line, next step. Meetings + hot sent-infos -> buyers.json via the PA, with the matched shelf row.
+- PA before 13:00: a card per name due today - CRM fields, enquiry month, shelf row (three options), WhatsApp skeleton pre-filled. PA after 17:00: log good ones, count the day, write the 19:30 line.
+- 19:30 line format: "Tue: 50 dialled · 14 spoke · 2 meetings · 6 info · 4 webinar · 5 not interested · 29 no answer". Numbers that matter: meetings booked, meetings held.
+- Re-calls: PA builds the no-answer re-call list (two over the following fortnight) into the day's 50.
+- Fri 17:00 with Mentor: reached %, meetings booked/held vs indicative yield (60% reached, 12-18 meetings). One change a week.
+- Timing: weeks 1-2 meetings; weeks 2-4 EOIs/bookings; first signing from this list late Nov-Dec.
