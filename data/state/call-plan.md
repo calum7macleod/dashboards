@@ -38,8 +38,8 @@ Prices "around", project files dated Jul-Sep 2026; availability confirmed with J
 | Apartment, Hudayriyat / waterfront | Bashayer 2-3 bed if stock | Hudayriyat beachfront launch | Tara Park or Muheira on Reem |
 | Townhouse / villa <=5M | honest conversation (no Hudayriyat TH under 5M this year), then Wadeem 4-bed 8.7M if they stretch | Al Ghadeer 3-bed standalone ~3.5M (further out) | HGE secondary (large down payment) |
 | Villa 5-8M | Wadeem 4-bed 8.7M | HGE secondary | hold for the Hudayriyat launches |
-| Villa 8M+ | Wadeem 4/5/6-bed 8.7 / 10.2 / 11.6M + 2% ADM - in stock | HGE secondary, larger unit | hold for the Hudayriyat launches |
+| Villa 8M+ | Wadeem 4/5/6-bed 8.7 / 10.2 / 11.6M + 2% ADM - in stock | Naseem secondary | Marsa Al Saadiyat (registration / launch) |
 | Liked nothing | Hudayriyat launches (several coming) | Reem apartment launch | sent-info tag with their trigger written down |
-Not on the shelf: Hudayriyat Golf Estates new (sold out), Lagoons (removed from this list's conversations), Saadiyat (not raised).
+Not on the shelf: Hudayriyat Golf Estates new (sold out), Lagoons (removed from this list's conversations).
 Because bank (verify before pinning): Wadeem in stock - last villa product on Hudayriyat for now · Golf Estates gone · Tara Park Phase 2, Calum owns one · Artery 1-beds + Muheira on Reem · launches coming on Hudayriyat (beachfront apartments first) and Reem.
 Gap to expect: the list is heavy on villa/townhouse <=5M; many calls become a type-or-budget conversation - test flex to apartment or to 8M+.
