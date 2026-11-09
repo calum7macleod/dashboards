@@ -21,6 +21,7 @@ Rules:
 ## 2. The list
 - 198 names in Jake's CRM, enquired Jan-Oct 2026 (mostly Jan-Jun), source "Imported (pre-CRM)", status new, owner Calum. Fields: budget band, emirate (mostly Abu Dhabi, some "open to both"), off-plan/ready, type, areas (mostly blank), WhatsApp number, created date, previous-client flag. Not all complete - call 1 fills them.
 - By country: UAE 112 · UK 25 · USA 10 / Canada 6 · India 6 · Saudi 5 · Italy 4 · Netherlands 4 · 2 each Ireland, Australia, France, Qatar, Pakistan · 16 singles. GCC 120.
+- By origin (name-based, +/-5 pts): South Asian 28% · Arab 21% (Emirati surnames ~5) · Anglo 20% · Continental European 16% · Turkish 3% · East Asian 3% · Persian 2% · other 2% · unknown 5%. Half the list is South Asian or Arab on UAE numbers - resident buyers. Of 25 UK numbers ~11 are British-Asian.
 - ~6 junk rows (message text as name, a test number, a malformed +7) - mark Not interested on sight.
 - Pace: 50 a day, 13:00-17:00 UAE, Mon-Fri; 200 done by Fri, catch-up Sat if short. Quality over volume - one by one, no ordering, every name gets real effort.
 - North American numbers: WhatsApp first, call the ones who reply (1-5 UAE is their small hours).
