@@ -61,3 +61,4 @@ Voice notes: never as first contact; after any conversation yes - 30-60s, recap,
 - Re-calls: PA builds the no-answer re-call list (two over the following fortnight) into the day's 50.
 - Fri 17:00 with Mentor: reached %, meetings booked/held vs indicative yield (60% reached, 12-18 meetings). One change a week.
 - Timing: weeks 1-2 meetings; weeks 2-4 EOIs/bookings; first signing from this list late Nov-Dec.
+- Logging, 20 seconds a call: status dropdown = bucket (ask Jake to rename statuses to the five words; webinar as a tag) · one line, fixed shape "9/11 SI | 3bd Reem <3.5 | parked till Jan bonus | trig: Tara 3bd" (codes M / SI / W / NI / NA) · next-touch date only for meetings; PA sets re-call dates · anything longer than a line = 15-second voice note to the PA, written up after 17:00 (CRM too if she gets a login - ask Jake) · no-answer WhatsApp via WhatsApp Business quick reply /jake + one bespoke line.
