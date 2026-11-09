@@ -27,3 +27,19 @@ Rules:
 - North American numbers: WhatsApp first, call the ones who reply (1-5 UAE is their small hours).
 - Record: log every outcome in Jake's CRM (the brokerage's record). Good buyers only come back to buyers.json for tracking - PA adds them from Calum's dictation.
 - Indicative yield, cold list this age: ~60% reached after three attempts (~120); meetings 10-15% of those (12-18); sent info ~40%; webinar yes ~30%; not interested ~40%. At 1 in 4-5 meetings closing, 3-4 deals across Q4/Q1.
+
+## 3. The shelf - what to offer whom (Abu Dhabi only; Lagoons off this list)
+Prices "around", project files dated Jul-Sep 2026; availability confirmed with Jake week of 9 Nov. Two options per buyer, never seven. Lead with what Calum owns or has sold (Tara Park, Bashayer).
+| They said | Option 1 | Option 2 |
+|---|---|---|
+| Apartment, 1-bed | Artery (Reem) | hold for the Reem apartment launch |
+| Apartment, 2-bed | Tara Park ~2.8M | Muheira (Reem) |
+| Apartment, 3-bed | Tara Park ~3.6-3.8M | Muheira |
+| Apartment, Hudayriyat / waterfront | Bashayer 2-3 bed if stock remains | hold for the Hudayriyat beachfront launch |
+| Townhouse / villa ≤5M | honest conversation (no Hudayriyat TH under 5M this year), then Wadeem 4-bed 8.7M if they can stretch | Al Ghadeer 3-bed standalone ~3.5M (further out) · HGE secondary (large down payment) |
+| Villa 5-8M | Wadeem 4-bed 8.7M | HGE secondary |
+| Villa 8M+ | Wadeem 4/5/6-bed 8.7 / 10.2 / 11.6M + 2% ADM | - |
+| Liked nothing | the two coming launches: Hudayriyat beachfront apartments, Reem apartments | - |
+Not on the shelf: Hudayriyat Golf Estates (sold out), Lagoons (removed from this list's conversations), Saadiyat (not raised).
+Because bank (verify before pinning): Wadeem has stock - last villa product on Hudayriyat · Golf Estates gone · Tara Park Phase 2, Calum owns one · Artery 1-beds + Muheira on Reem · two launches coming (Hudayriyat beachfront, Reem apartments).
+Gap to expect: the list is heavy on villa/townhouse ≤5M; many calls become a type-or-budget conversation - test flex to apartment or to 8M+.
