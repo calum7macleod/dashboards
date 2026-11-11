@@ -127,3 +127,8 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - LinkedIn: rail 14,678 impressions / 6,817 video views (18x next best). Business-news reels win on LinkedIn; property-data reels ~200. Give pipeline, ADNOC-OpenAI, English law, UK vs UAE spending, Etihad proper LinkedIn text posts.
 - Decision pending Calum: EMAAR (Mon) + Lulu (Wed) as trial reels (explainers, auto-share on); transactions = control.
 - Re-hooks section: c102 (transactions -> Dubai sells 9x more homes), c105 (0.5% -> 1 in every 200 dollars). Trials ~early Dec.
+
+## Posting times (Calum, current)
+- Reels: 18:00 Dubai (14:00 UK winter). Supersedes 16:00.
+- Carousels: 11:00-12:00 Dubai (07:00-08:00 UK). Supersedes 09:00 (= 05:00 UK - wrong).
+- Dubai is UTC+4; UK GMT in winter = 4 hrs behind, BST in summer = 3 hrs.
