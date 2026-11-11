@@ -11,6 +11,7 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 4. YouTube thumbnail template - DONE 29 Oct: content-assets/youtube/thumbs/hudayriyat/build.py + the face cut-out (face-cut.png). Reuse for every video.
 
 ## Piece log
+- 11 Nov: Marina AED 5M guide (3pp A4 portrait: markets compared / five Abu Dhabi options / Palm Springs + side by side + where I'd start), built verbatim from the brief, figures as briefed and cross-checked - content-assets/marina-5m-guide/ (Designer Sept 26).
 - 29 Oct: Hudayriyat video thumbnails x3 (1280x720, face cut-out from the headshot via rembg u2netp, face 1/3 frame, 3-5 words, brand green/gold) - content-assets/youtube/thumbs/hudayriyat/ (h0094, Content). Thumb 1 uses the Hudayriyat townhouse render as a stand-in for a sales-centre photo; thumb 3 uses the smiling headshot, no surprised shot on file. Thumbnail template = build.py there (Designer Sept 26).
 - 29 Oct: YouTube channel banner 2048x1152 (face inside the 1235x338 safe area, brand green, headshot blended) + 150x150 CM watermark, handle @calumlmacleod - content-assets/youtube/ (h0092 from Content) (Designer Sept 26).
 - 29 Oct: The Honest Guide to UAE Off-Plan v3 (14pp A4) - review of the 13 Aug v2: content scaled to fill the pages (was half-empty), page 5 cash chart labels no longer overlap the bars, every £ figure recomputed at ~£1 = Đ4.9, handle @thecalummacleod, still signed White & Co at Calum's request. Content untouched - content-assets/library/ (Designer Sept 26).
