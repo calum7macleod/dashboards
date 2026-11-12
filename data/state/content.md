@@ -138,3 +138,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Top row permanent: Abu Dhabi Map (Google satellite embed, top strip cropped), Modon World, Aldar World (open directly - iframes stall on the TV).
 - Below: THIS BATCH cards per video (01-08 maps live; 09 tunnels, 10 parkway, 11 tax pie, 12 supply graph to build). Each batch: Content swaps the cards.
 - Files in content-assets/scripts/screens/ (Content path, Designer notified).
+
+## Reel screens - batch complete (12 Nov)
+- All 12 screens live + 3 permanent tiles. 09 Hudayriyat routes (OSM standard, tags, key; coastal road as planned corridor - alignment unpublished; Halat Al Bahrani = Al Halah island 24.383,54.233), 10 Mid-Island Parkway (+ existing Umm Yifeenah Bridge into Reem, opened Feb 2023), 11 income pie + surplus/deficit (dark theme), 12 supply pictogram (dark theme, 18 vs 2; 4 years x 8 figures, 1 lit per year; "property" not "home").
+- Theme for charts: dark bg #0B0F14, cyan = Abu Dhabi, gold = Dubai, white, Montserrat Black caps.
+- Flag: Is It Too Late script uses Dubai 1.4 / 13x (old pop series) - change to ~2 / ~8x before filming to match supply reel.
+- Source files: /home/claude chart11.py, chart12.py, tvmap.py (container resets - rebuild from repo images if needed).
