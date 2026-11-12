@@ -132,3 +132,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Reels: 18:00 Dubai (14:00 UK winter). Supersedes 16:00.
 - Carousels: 11:00-12:00 Dubai (07:00-08:00 UK). Supersedes 09:00 (= 05:00 UK - wrong).
 - Dubai is UTC+4; UK GMT in winter = 4 hrs behind, BST in summer = 3 hrs.
+
+## Reel screens app (TV)
+- Live: calum7macleod.github.io/dashboards/content-assets/scripts/screens/ - installable full-screen app (manifest, display fullscreen) on the 86in Samsung interactive display, Chrome.
+- Top row permanent: Abu Dhabi Map (Google satellite embed, top strip cropped), Modon World, Aldar World (open directly - iframes stall on the TV).
+- Below: THIS BATCH cards per video (01-08 maps live; 09 tunnels, 10 parkway, 11 tax pie, 12 supply graph to build). Each batch: Content swaps the cards.
+- Files in content-assets/scripts/screens/ (Content path, Designer notified).
