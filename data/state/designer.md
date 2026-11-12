@@ -11,6 +11,7 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 4. YouTube thumbnail template - DONE 29 Oct: content-assets/youtube/thumbs/hudayriyat/build.py + the face cut-out (face-cut.png). Reuse for every video.
 
 ## Piece log
+- 12 Nov: UK starter's guide video thumbnails x3 (UK→UAE flags, Buying in the UAE / Start here; What UK buyers get wrong; UK to Dubai property explained) - content-assets/youtube/thumbs/uk-starters-guide/ (Designer Sept 26).
 - 11 Nov: Jorge AED 2M guide (3pp, same system as Marina's; Valia vs The Artery vs Tara Park) - content-assets/jorge-2m-guide/. The two guides share one build.py structure - the buyer-guide template (Designer Sept 26).
 - 11 Nov: Marina AED 5M guide (3pp A4 portrait: markets compared / five Abu Dhabi options / Palm Springs + side by side + where I'd start), built verbatim from the brief, figures as briefed and cross-checked - content-assets/marina-5m-guide/ (Designer Sept 26).
 - 29 Oct: Hudayriyat video thumbnails x3 (1280x720, face cut-out from the headshot via rembg u2netp, face 1/3 frame, 3-5 words, brand green/gold) - content-assets/youtube/thumbs/hudayriyat/ (h0094, Content). Thumb 1 uses the Hudayriyat townhouse render as a stand-in for a sales-centre photo; thumb 3 uses the smiling headshot, no surprised shot on file. Thumbnail template = build.py there (Designer Sept 26).
