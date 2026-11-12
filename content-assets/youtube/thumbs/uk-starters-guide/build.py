@@ -24,8 +24,8 @@ T=[
       body=f'<div class="txt">{flags(170,85)}<div class="w">Buying in</div><div class="w g">the UAE</div><div class="pill">START HERE</div></div>'),
  dict(name="uk-thumb-2-uk-buyers-get-wrong", bg="", shade="",
       body=f'<div class="tag">Starter\'s guide · from the UK</div><div class="txt" style="gap:0"><div class="w md">What UK</div><div class="w md">buyers get</div><div class="w g">WRONG</div></div>'),
- dict(name="uk-thumb-3-uk-to-dubai", bg="bg-aerial.jpg", shade="linear-gradient(90deg,rgba(21,42,31,.95) 0%,rgba(21,42,31,.82) 50%,rgba(21,42,31,.3) 100%)",
-      body=f'<div class="txt" style="gap:2px">{flags(150,75)}<div class="w md">UK to Dubai</div><div class="w g md">property</div><div class="w md">explained</div></div>'),
+ dict(name="uk-thumb-3-live-uk-own-dubai", bg="bg-aerial.jpg", shade="linear-gradient(90deg,rgba(21,42,31,.95) 0%,rgba(21,42,31,.82) 50%,rgba(21,42,31,.3) 100%)",
+      body=f'<div class="txt" style="gap:2px">{flags(150,75)}<div class="w md">Live in the UK</div><div class="w g">Own in Dubai</div><div class="pill">BUYING OFF-PLAN FROM ABROAD</div></div>'),
 ]
 for t in T:
     bg=f'<div class="bg" style="background-image:url({t["bg"]})"></div>' if t['bg'] else '<svg style="position:absolute;right:-160px;top:-140px;opacity:.12" width="760" height="760" viewBox="0 0 10 10"><path d="M5 0 10 5 5 10 0 5Z" fill="none" stroke="#C9A84C" stroke-width=".3"/></svg>'
