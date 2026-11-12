@@ -25,7 +25,7 @@ const D={"01": {"t": "Abu Dhabi's Most Popular Islands", "src": "https://www.goo
 const view=document.getElementById('view'),start=document.getElementById('start');
 function fs(){const e=document.documentElement;if(!document.fullscreenElement&&e.requestFullscreen)e.requestFullscreen({navigationUI:'hide'}).catch(()=>{});}
 function show(id){const v=D[id];if(!v)return;if(v.kind==='link'){location.href=v.src;return;}[...view.querySelectorAll('iframe,img')].forEach(x=>x.remove());
- let el;if(v.kind==='img'){el=document.createElement('img');el.src=v.src;}else{el=document.createElement('iframe');el.src=v.src;el.allow='fullscreen; geolocation; accelerometer; gyroscope; xr-spatial-tracking; autoplay';el.referrerPolicy='no-referrer-when-downgrade';}
+ let el;if(v.kind==='img'){el=document.createElement('img');el.src=v.src;}else{el=document.createElement('iframe');el.src=v.src;el.allow='fullscreen; geolocation; accelerometer; gyroscope; xr-spatial-tracking; autoplay';el.referrerPolicy='no-referrer-when-downgrade';el.style.top='-90px';el.style.height='calc(100% + 90px)';}
  view.insertBefore(el,view.firstChild);view.classList.add('on');history.replaceState(null,'','#'+id);}
 function hub(){view.classList.remove('on');[...view.querySelectorAll('iframe,img')].forEach(x=>x.remove());history.replaceState(null,'',location.pathname);}
 document.querySelectorAll('button.card').forEach(b=>b.addEventListener('click',()=>{fs();show(b.dataset.id);}));
