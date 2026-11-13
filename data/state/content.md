@@ -148,3 +148,4 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 ## Disney/Yas report (13 Nov)
 - Claude Doc: https://claude.ai/artifact/3kRMzU9bLR9F3GocrHDXVe - "Disney Is Coming To Yas Island". Text + 4 charts (Orlando, Shanghai, Paris, Yas vs islands) + Aldar table, yields, Canopies Sanctuary table. Research: content-assets/scripts/2026-11-13-research-disney-effect.md.
 - Open: map left out (Disney plot unpublished) - Designer to use Aldar masterplan image; rail opening year not stated (unverified); Designer layout pass for Canopies Sanctuary launch 25-26 Nov.
+- Screens rule (13 Nov): all filmed screens on LIGHT backgrounds (Calum films in a black top; editors key graphics). 11 and 12 switched to white bg, navy text, cyan = Abu Dhabi, gold = Dubai. Viewer letterbox now white.
