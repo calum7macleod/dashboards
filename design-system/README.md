@@ -16,3 +16,7 @@ One look everywhere. No templates. Every number indicative until documented. Sou
 
 ## Templates (locked)
 - templates/offer-letter.html (+ .md rules, render-offer.py) - every offer to a seller: the 1080x1350 card, PNG 2x + PDF. Fill fields only. Locked 23 Sep 2026.
+
+
+## Video and report style (from 13 Nov 2026 - Calum's call)
+Matches the reels: near-black background #05080C with a cyan glow, white Montserrat ExtraBold (800) uppercase, highlight words in cyan #38D8F8 and gold #F8B048, face cut-out bottom-right. Used for YouTube/IG covers, video-led reports (first piece: the Disney/Yas report cover). Montserrat is in design-system/fonts/ (OFL). The green/gold Pagella system stays for client packs, offers and breakdowns unless Calum says otherwise.
