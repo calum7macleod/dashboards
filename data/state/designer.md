@@ -11,7 +11,7 @@ LOCKED 23 Sep (Calum's call, the 9 Sep J519 card): design-system/templates/offer
 4. YouTube thumbnail template - DONE 29 Oct: content-assets/youtube/thumbs/hudayriyat/build.py + the face cut-out (face-cut.png). Reuse for every video.
 
 ## Piece log
-- 13 Nov: Disney/Yas Island report cover (A4, Calum's new reel style: black, cyan #38D8F8, gold #F8B048, Montserrat 800, face cut-out) - content-assets/disney-yas/. Report body still being written in the Claude Doc; cover only for the video (Designer Sept 26).
+- 13 Nov: Disney/Yas Island report v1 (8pp A4: dark cover + Word-style white body, Montserrat headings, Carlito body, five charts redrawn from the doc's data in grey + cyan, tables, sources) built from the Claude Doc at handover - content-assets/disney-yas/Disney-Yas-Island-Report.pdf + report-build.py. Map image is a JPEG the doc tools can't export - placeholder slot, Calum to send the file (Designer Sept 26).
 - 12 Nov: UK starter's guide video thumbnails x3 (UK→UAE flags, Buying in the UAE / Start here; What UK buyers get wrong; UK to Dubai property explained) - content-assets/youtube/thumbs/uk-starters-guide/ (Designer Sept 26).
 - 11 Nov: Jorge AED 2M guide (3pp, same system as Marina's; Valia vs The Artery vs Tara Park) - content-assets/jorge-2m-guide/. The two guides share one build.py structure - the buyer-guide template (Designer Sept 26).
 - 11 Nov: Marina AED 5M guide (3pp A4 portrait: markets compared / five Abu Dhabi options / Palm Springs + side by side + where I'd start), built verbatim from the brief, figures as briefed and cross-checked - content-assets/marina-5m-guide/ (Designer Sept 26).
