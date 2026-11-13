@@ -18,3 +18,14 @@
 - ANAHEIM: post-war Southern California boom also drove growth - say Disney accelerated it.
 - HONG KONG: sources say small and isolated; "no property boom story found" (absence of evidence - phrase as such).
 - PARIS EUR 120bn and Val d'Europe 54,000 are Disney's own figures (fact sheet / SETEC study it commissioned) - attribute "Disney says".
+
+## ROUND 2 (13 Nov) - before/after prices + Yas top-quality data (Calum's ADREC CSV, 126k sales 2019-Oct 2026)
+- SHANGHAI before/after: Chuansha homes 2,000-3,000 yuan/m2 -> 13,000+ in the 2-3 years to approval (DTZ via Shanghai Daily, Nov 2009); some projects 50,000 by 2016 (China Daily). +162% vs city +101% 2009-15 (SCMP).
+- PARIS today: apartments Chessy EUR 4,676/m2, Serris EUR 4,856 vs Seine-et-Marne avg EUR 3,312 (PAP/DVF, Jul 2026) = +41-47%. Chessy -0.7% over 5 yrs (premium mature). SeLoger: new builds <2km can exceed EUR 5,500; 10-15km away ~25% cheaper. Caveat: newer stock.
+- ORLANDO: Osceola County pop 25,267 (1970) -> 388,656 (2020); Orange 344,311 -> 1,429,908 (US Census).
+- HONG KONG: announced 1999, opened 2005; no property premium found; HK market fell 1997-2003.
+- YAS (CSV): all Yas resale apartments, last 12m median $489/sqft. Same-project resale change, 12m before announcement vs last 12m: Yas +33%, Reem +39%, Al Raha +38%, Saadiyat +28% -> Yas rose WITH the market, not ahead of it; no Shanghai-style premium yet.
+- YAS premium launch $/sqft (median, first 120 days): Gardenia Bay Sep-23 $482; Sea La Vie Dec-23 $477; Sama Yas Mar-24 $590; Yas Links Luxury Jun-25 $835; Yas Living Oct-25 $621; Yas Riva Residences Dec-25 $690; Yas Park Place Apr-26 $695; Canopies Sep-26 $797.
+- Resale vs launch (last 6m): Gardenia Bay +11%, Sea La Vie +14%, Ansam Golf +9%; older cheaper stock bigger (Water's Edge +71-80%, Ansam 1 +60%, Sustainable City +54%).
+- CANOPIES SANCTUARY (launch 25-26 Nov 2026, Calum brief): 388 units, 3 buildings; 55/45, 5% down; handover Q1 2031. $/sqft: studio ~$934, 1BR ~$718, 2BR ~$755, 2BR+M ~$731, 3BR+M ~$727. Yas Point AED 6bn ($1.63bn), 600,000 sqm, ~1,600 homes, 700m promenade, public beach, marina, 5* hotel.
+- YIELDS: Dubai apartments avg ~6.9% gross (Cavendish H1 26); Palm 4.9%, Marina 5.1-5.6%, Downtown ~5.2% (E&V / Ejari-based). Yas ~6-8% gross (Bayut, others) -> above Dubai's leisure hubs, in line with Dubai avg.
