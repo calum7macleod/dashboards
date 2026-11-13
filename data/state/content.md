@@ -144,3 +144,7 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Theme for charts: dark bg #0B0F14, cyan = Abu Dhabi, gold = Dubai, white, Montserrat Black caps.
 - Flag: Is It Too Late script uses Dubai 1.4 / 13x (old pop series) - change to ~2 / ~8x before filming to match supply reel.
 - Source files: /home/claude chart11.py, chart12.py, tvmap.py (container resets - rebuild from repo images if needed).
+
+## Disney/Yas report (13 Nov)
+- Claude Doc: https://claude.ai/artifact/3kRMzU9bLR9F3GocrHDXVe - "Disney Is Coming To Yas Island". Text + 4 charts (Orlando, Shanghai, Paris, Yas vs islands) + Aldar table, yields, Canopies Sanctuary table. Research: content-assets/scripts/2026-11-13-research-disney-effect.md.
+- Open: map left out (Disney plot unpublished) - Designer to use Aldar masterplan image; rail opening year not stated (unverified); Designer layout pass for Canopies Sanctuary launch 25-26 Nov.
