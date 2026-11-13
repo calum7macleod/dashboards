@@ -8,3 +8,13 @@
 - HONG KONG (2005) - the catch: smallest Disney, isolated on Lantau; losses in 8 of first 11 years (Attractions Mgmt/SCMP); no comparable property story found.
 - YAS ISLAND: Disneyland Abu Dhabi announced May 2025 (Miral). Yas apartments +24% in 2025, +18% to June 2026 [v - restamp source before filming].
 - PATTERN: the jump comes at the announcement and during construction, not at opening (Orlando 1965 vs 1971; Shanghai 2009 vs 2016). Yas is in that window now.
+
+## VERIFICATION PASS (13 Nov) - corrections
+- There are SIX open Disney resorts + Abu Dhabi as the seventh (Disney/Miral, 7 May 2025): Anaheim 1955, Orlando 1971, Tokyo 1983, Paris 1992, Hong Kong 2005, Shanghai 2016. TOKYO WAS MISSING.
+- TOKYO (1983): built on land reclaimed from the sea by Oriental Land Co (reclamation 1964-75; OLC history). Urayasu pop 21,880 (1970) -> 64,673 (1980) -> 115,675 (1990) -> ~171,000 (2020) (census via Wikipedia). Caveat: 1970s growth driven by reclamation + Tozai subway before Disney; 1980-90 (Disney decade) +79%. Owned/operated by Oriental Land Co under licence - SAME MODEL as Abu Dhabi (Miral builds and operates, Disney designs/licenses).
+- YAS OPENING: no date announced. Disney's own estimate: 1-2 yrs design + 4-6 yrs build -> 2030-2033 (The National, Reuters quote of Josh D'Amaro). Say "early 2030s", not "around 2030".
+- YAS PRICES: +24% 2025 / +18% to June 2026 NOT verified in this pass (only Cushman & Wakefield: Yas +14% in 2024, before the announcement). Hold for Market stamp.
+- SHANGHAI: "264% of its premium" = starting/reserve price, not asking price.
+- ANAHEIM: post-war Southern California boom also drove growth - say Disney accelerated it.
+- HONG KONG: sources say small and isolated; "no property boom story found" (absence of evidence - phrase as such).
+- PARIS EUR 120bn and Val d'Europe 54,000 are Disney's own figures (fact sheet / SETEC study it commissioned) - attribute "Disney says".
