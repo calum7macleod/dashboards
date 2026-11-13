@@ -19,4 +19,4 @@ One look everywhere. No templates. Every number indicative until documented. Sou
 
 
 ## Video and report style (from 13 Nov 2026 - Calum's call)
-Matches the reels: pure black background #000 (no glow - a glow reads purple on some screens), white Montserrat ExtraBold (800) uppercase, highlight words in cyan #38D8F8 and gold #F8B048, face cut-out bottom-right. Used for YouTube/IG covers, video-led reports (first piece: the Disney/Yas report cover). Montserrat is in design-system/fonts/ (OFL). The green/gold Pagella system stays for client packs, offers and breakdowns unless Calum says otherwise.
+Matches the reels: near-black background #05080C with a soft cyan glow fading in at the corners (the approved Disney cover), white Montserrat ExtraBold (800) uppercase, highlight words in cyan #38D8F8 and gold #F8B048, face cut-out bottom-right. Used for YouTube/IG covers, video-led reports (first piece: the Disney/Yas report cover). Montserrat is in design-system/fonts/ (OFL). The green/gold Pagella system stays for client packs, offers and breakdowns unless Calum says otherwise.
