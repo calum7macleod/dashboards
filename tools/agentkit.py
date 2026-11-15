@@ -2,7 +2,7 @@
 """agentkit - tiny GitHub Contents API toolkit for Calum's agents.
 Setup in a session:
   curl -s https://raw.githubusercontent.com/calum7macleod/dashboards/main/tools/agentkit.py -o agentkit.py
-  export GH_TOKEN=<token>   export AGENT=<your agent name>
+  export AGENT=<your agent name>   (no token - see ACCESS below)
 Commands:
   read <path>                     print a file (dashboards repo; prefix private: for crm-inbox; files over 1MB handled)
   get <path>                      save file to ./<basename> + ./<basename>.sha (the sha guards your later put)
@@ -28,48 +28,88 @@ Commands:
   stage <id> <stage> [postDate]   move a content card: sets stage + stageDate=today; posted also sets status/postDate
   card add "<title>" --stage <stage> --series "<series>" [--hook "..."] [--post YYYY-MM-DD] [--notes "..."]   new card, next cN
   card edit <id> [--title "..."] [--hook "..."] [--series "..."] [--post YYYY-MM-DD] [--notes "..."]        change fields
-Writes that read-modify-write (handoff, log, issue, stage, card, task...) retry automatically if another agent wrote first.
+Writes go through git (the proxy blocks Contents API writes) and retry automatically if another agent wrote first.
+ACCESS: no token. At session start ask Claude to attach calum7macleod/dashboards and calum7macleod/crm-inbox (push access); every command fails with a clear message until it has.
 """
 import sys, os, json, base64, urllib.request, urllib.error, datetime, time, re
-TOKEN=os.environ.get("GH_TOKEN"); AGENT=os.environ.get("AGENT","unknown")
-if not TOKEN: sys.exit("set GH_TOKEN first")
-H={"Authorization":"Bearer "+TOKEN,"Accept":"application/vnd.github+json","Content-Type":"application/json"}
+# Access (from 15 Nov 2026): the sandbox proxy injects GitHub credentials for repositories ATTACHED to the session -
+# the agent asks Claude to attach calum7macleod/dashboards and calum7macleod/crm-inbox (push) at session start.
+# No token needed; GH_TOKEN is accepted but ignored. Reads go through the Contents API; writes go through git
+# (the proxy blocks Contents API writes), via a hidden clone under ~/.agentkit/<repo>.
+AGENT=os.environ.get("AGENT","unknown")
+H={"Accept":"application/vnd.github+json","Content-Type":"application/json"}
+NOT_ATTACHED="GitHub not reachable from this session - ask Claude to attach calum7macleod/dashboards and calum7macleod/crm-inbox (push access) first, then retry."
 def repo_path(p):
     return ("crm-inbox",p[8:]) if p.startswith("private:") else ("dashboards",p)
 def api(repo,p): return f"https://api.github.com/repos/calum7macleod/{repo}/contents/{p}"
 class Conflict(Exception): pass
 def getfile(p):
     repo,pp=repo_path(p)
-    m=json.load(urllib.request.urlopen(urllib.request.Request(api(repo,pp)+"?ref=main",headers=H)))
+    try: m=json.load(urllib.request.urlopen(urllib.request.Request(api(repo,pp)+"?ref=main",headers=H)))
+    except urllib.error.HTTPError as e:
+        if e.code==403: sys.exit(NOT_ATTACHED)
+        raise
     if m.get("encoding")=="none" or m.get("size",0)>1000000:
         raw=urllib.request.urlopen(urllib.request.Request(api(repo,pp)+"?ref=main",headers=dict(H,Accept="application/vnd.github.raw+json"))).read().decode()
         return raw, m["sha"]
     return base64.b64decode(m["content"]).decode(), m["sha"]
+import subprocess, fcntl, hashlib
+GITROOT=os.path.join(os.path.expanduser("~"),".agentkit")
+def _git(repo,*args,check=True,**kw):
+    r=subprocess.run(["git","-C",os.path.join(GITROOT,repo),*args],capture_output=True,text=True,**kw)
+    if check and r.returncode: raise RuntimeError(f"git {' '.join(args[:2])}: {(r.stderr or r.stdout).strip()[:300]}")
+    return r
+def _sync(repo):
+    """A fresh, shallow working clone of main (never the user's own checkout). Serialised per process via a lock."""
+    os.makedirs(GITROOT,exist_ok=True); d=os.path.join(GITROOT,repo)
+    if not os.path.isdir(os.path.join(d,".git")):
+        r=subprocess.run(["git","clone","-q","--depth","1","--branch","main",f"https://github.com/calum7macleod/{repo}",d],capture_output=True,text=True)
+        if r.returncode:
+            if "403" in r.stderr or "not permitted" in r.stderr or "Authentication" in r.stderr: sys.exit(NOT_ATTACHED)
+            raise RuntimeError("clone failed: "+r.stderr.strip()[:300])
+        _git(repo,"config","user.name",f"{AGENT} (agent)"); _git(repo,"config","user.email","agents@calummacleod.com")
+    _git(repo,"fetch","-q","--depth","1","origin","main"); _git(repo,"reset","-q","--hard","origin/main")
+def blob_sha(text):
+    b=text.encode(); return hashlib.sha1(b"blob %d\0"%len(b)+b).hexdigest()
+class Conflict(Exception): pass
+def _lock(repo):
+    os.makedirs(GITROOT,exist_ok=True); f=open(os.path.join(GITROOT,f".{repo}.lock"),"w"); fcntl.flock(f,fcntl.LOCK_EX); return f
+def _commit_push(repo,pp,text,msg):
+    d=os.path.join(GITROOT,repo); fp=os.path.join(d,pp); os.makedirs(os.path.dirname(fp),exist_ok=True)
+    open(fp,"w").write(text); _git(repo,"add","--",pp)
+    if not _git(repo,"diff","--cached","--quiet",check=False).returncode: return None   # nothing changed
+    _git(repo,"commit","-q","-m",msg+"\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>")
+    r=_git(repo,"-c","push.negotiate=true","push","-q","origin","HEAD:main",check=False)
+    if r.returncode:
+        err=(r.stderr or r.stdout)
+        if "rejected" in err or "fetch first" in err or "non-fast-forward" in err or "stale info" in err: raise Conflict(pp)
+        if "403" in err or "not permitted" in err: sys.exit(NOT_ATTACHED)
+        raise RuntimeError("push failed: "+err.strip()[:300])
+    return _git(repo,"rev-parse","--short","HEAD").stdout.strip()
 def putfile(p,text,msg,sha=None):
-    """PUT with the sha the caller read. No sha = fresh sha (new file or caller accepts last-write-wins). 409 -> Conflict."""
-    repo,pp=repo_path(p)
-    if sha is None:
-        try: sha=getfile(p)[1]
-        except Exception: pass
-    body={"message":msg,"content":base64.b64encode(text.encode()).decode(),"branch":"main"}
-    if sha: body["sha"]=sha
+    """Write a whole file. sha = the blob sha from your get: if the file changed since, Conflict (nothing written). sha None = write over."""
+    repo,pp=repo_path(p); lk=_lock(repo)
     try:
-        r=json.load(urllib.request.urlopen(urllib.request.Request(api(repo,pp),data=json.dumps(body).encode(),method="PUT",headers=H)))
-    except urllib.error.HTTPError as e:
-        if e.code==409: raise Conflict(p)
-        raise
-    return r["commit"]["sha"][:7]
+        for i in range(4):
+            _sync(repo); fp=os.path.join(GITROOT,repo,pp)
+            if sha and os.path.exists(fp) and blob_sha(open(fp).read())!=sha: raise Conflict(pp)
+            try: return _commit_push(repo,pp,text,msg) or "no-change"
+            except Conflict:
+                if sha or i==3: raise
+                time.sleep(0.5*(i+1))
+    finally: lk.close()
 def modify(p,fn,msg,tries=4):
-    """read -> fn(text)->newtext -> write with that sha; if someone wrote in between, re-read and redo. Never clobbers."""
-    for i in range(tries):
-        try: text,sha=getfile(p)
-        except urllib.error.HTTPError as e:
-            if e.code!=404: raise
-            text,sha="",None
-        try: return putfile(p,fn(text),msg,sha)
-        except Conflict:
-            if i==tries-1: raise
-            time.sleep(0.4*(i+1))
+    """read -> fn(text)->newtext -> commit -> push; if someone pushed first, re-read and redo. Never clobbers."""
+    repo,pp=repo_path(p); lk=_lock(repo)
+    try:
+        for i in range(tries):
+            _sync(repo); fp=os.path.join(GITROOT,repo,pp)
+            text=open(fp).read() if os.path.exists(fp) else ""
+            try: return _commit_push(repo,pp,fn(text),msg) or "no-change"
+            except Conflict:
+                if i==tries-1: raise
+                time.sleep(0.5*(i+1))
+    finally: lk.close()
 def jmodify(p,fn,msg,indent=1):
     return modify(p,lambda t:json.dumps(fn(json.loads(t) if t.strip() else []),indent=indent,ensure_ascii=False)+"\n",msg)
 def jload(p): return json.loads(getfile(p)[0])
