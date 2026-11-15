@@ -1,0 +1,422 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "currency": "AED",
+  "period": "7-14 Nov 26",
+  "source": "app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
+  "images": [
+   "IMG_5190",
+   "IMG_5189",
+   "IMG_5188",
+   "IMG_5187",
+   "IMG_5186",
+   "IMG_5185"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balances": "none shown"
+  },
+  "dates": "day labels resolved from screenshot date Sun 15 Nov 26; 08/07 Nov dates printed",
+  "flags": [
+   "11 Nov 24 SEVEN GOVERNMENT TRANS -5,788.55 - largest item, Finance to classify",
+   "9 Nov InstaShop -87.46 is the same amount as 6 Nov www.instashop.com -87.46 (adib-cc-app-20261102-20261107) - possible repeat charge",
+   "10 Nov Selfdrive.ae -1,467.90 (follows the two SELFDRIVE AE -245.66 on 4 Nov)",
+   "BOXICA -18.00 on both 10 Nov (posted) and 14 Nov (pending) - separate dates",
+   "7 Nov rows now posted with clean names (were pending on 8 Nov)",
+   "Headers 'Monday' and 'Yesterday' not visible on IMG_5186 / IMG_5189 - day taken from the overlapping image",
+   "'06 Nov 2026' header at bottom of IMG_5185, rows not captured"
+  ],
+  "rowCount": 43,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-15"
+ },
+ "images": [
+  {
+   "image": "IMG_5190",
+   "rows": [
+    {
+     "date": "2026-11-14",
+     "description": "Crafty Fox 4",
+     "amount": -110.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5190",
+     "position": 1
+    },
+    {
+     "date": "2026-11-14",
+     "description": "Meat marhaba butchery l",
+     "amount": -219.43,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5190",
+     "position": 2
+    },
+    {
+     "date": "2026-11-14",
+     "description": "CARREFOUR MARKET",
+     "amount": -38.74,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5190",
+     "position": 3
+    },
+    {
+     "date": "2026-11-14",
+     "description": "TASHAS MARINA MALL",
+     "amount": -257.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5190",
+     "position": 4
+    },
+    {
+     "date": "2026-11-14",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5190",
+     "position": 5
+    },
+    {
+     "date": "2026-11-13",
+     "description": "JUST RELAX FOOT SPA",
+     "amount": -420.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5190",
+     "position": 6
+    },
+    {
+     "date": "2026-11-13",
+     "description": "JUST RELAX FOOT SPA",
+     "amount": -300.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5190",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_5189",
+   "rows": [
+    {
+     "date": "2026-11-14",
+     "description": "(cut at top)",
+     "amount": null,
+     "dayLabel": "Yesterday",
+     "note": "amount hidden; same as IMG_5190 pos 2",
+     "status": "Pending",
+     "image": "IMG_5189",
+     "position": 1
+    },
+    {
+     "date": "2026-11-14",
+     "description": "CARREFOUR MARKET",
+     "amount": -38.74,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5189",
+     "position": 2
+    },
+    {
+     "date": "2026-11-14",
+     "description": "TASHAS MARINA MALL",
+     "amount": -257.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5189",
+     "position": 3
+    },
+    {
+     "date": "2026-11-14",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5189",
+     "position": 4
+    },
+    {
+     "date": "2026-11-13",
+     "description": "JUST RELAX FOOT SPA",
+     "amount": -420.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5189",
+     "position": 5
+    },
+    {
+     "date": "2026-11-13",
+     "description": "JUST RELAX FOOT SPA",
+     "amount": -300.0,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5189",
+     "position": 6
+    },
+    {
+     "date": "2026-11-13",
+     "description": "DELIVEROO",
+     "amount": -131.95,
+     "dayLabel": "Friday",
+     "image": "IMG_5189",
+     "position": 7
+    },
+    {
+     "date": "2026-11-13",
+     "description": "www.instashop.com",
+     "amount": -114.37,
+     "dayLabel": "Friday",
+     "image": "IMG_5189",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_5188",
+   "rows": [
+    {
+     "date": "2026-11-13",
+     "description": "www.instashop.com",
+     "amount": -114.37,
+     "dayLabel": "Friday",
+     "note": "cut at top",
+     "image": "IMG_5188",
+     "position": 1
+    },
+    {
+     "date": "2026-11-12",
+     "description": "REELLY PERSONAL 49$",
+     "amount": -179.9,
+     "dayLabel": "Thursday",
+     "image": "IMG_5188",
+     "position": 2
+    },
+    {
+     "date": "2026-11-12",
+     "description": "InstaShop",
+     "amount": -157.94,
+     "dayLabel": "Thursday",
+     "image": "IMG_5188",
+     "position": 3
+    },
+    {
+     "date": "2026-11-11",
+     "description": "24 SEVEN GOVERNMENT TRANS",
+     "amount": -5788.55,
+     "dayLabel": "Wednesday",
+     "image": "IMG_5188",
+     "position": 4
+    },
+    {
+     "date": "2026-11-11",
+     "description": "SUNBERRY VEGETABLE",
+     "amount": -355.55,
+     "dayLabel": "Wednesday",
+     "image": "IMG_5188",
+     "position": 5
+    },
+    {
+     "date": "2026-11-11",
+     "description": "InstaShop",
+     "amount": -29.0,
+     "dayLabel": "Wednesday",
+     "image": "IMG_5188",
+     "position": 6
+    },
+    {
+     "date": "2026-11-11",
+     "description": "InstaShop",
+     "amount": -111.21,
+     "dayLabel": "Wednesday",
+     "image": "IMG_5188",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_5187",
+   "rows": [
+    {
+     "date": "2026-11-10",
+     "description": "Selfdrive.ae",
+     "amount": -1467.9,
+     "dayLabel": "Tuesday",
+     "image": "IMG_5187",
+     "position": 1
+    },
+    {
+     "date": "2026-11-10",
+     "description": "CAFU",
+     "amount": -353.21,
+     "dayLabel": "Tuesday",
+     "image": "IMG_5187",
+     "position": 2
+    },
+    {
+     "date": "2026-11-10",
+     "description": "BOXICA",
+     "amount": -18.0,
+     "dayLabel": "Tuesday",
+     "image": "IMG_5187",
+     "position": 3
+    },
+    {
+     "date": "2026-11-10",
+     "description": "InstaShop",
+     "amount": -122.65,
+     "dayLabel": "Tuesday",
+     "image": "IMG_5187",
+     "position": 4
+    },
+    {
+     "date": "2026-11-10",
+     "description": "InstaShop",
+     "amount": -131.67,
+     "dayLabel": "Tuesday",
+     "image": "IMG_5187",
+     "position": 5
+    },
+    {
+     "date": "2026-11-09",
+     "description": "Humntra",
+     "amount": -462.0,
+     "dayLabel": "Monday",
+     "image": "IMG_5187",
+     "position": 6
+    },
+    {
+     "date": "2026-11-09",
+     "description": "InstaShop",
+     "amount": -87.46,
+     "dayLabel": "Monday",
+     "image": "IMG_5187",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_5186",
+   "rows": [
+    {
+     "date": "2026-11-09",
+     "description": "Humntra",
+     "amount": -462.0,
+     "dayLabel": "Monday",
+     "image": "IMG_5186",
+     "position": 1
+    },
+    {
+     "date": "2026-11-09",
+     "description": "InstaShop",
+     "amount": -87.46,
+     "dayLabel": "Monday",
+     "image": "IMG_5186",
+     "position": 2
+    },
+    {
+     "date": "2026-11-08",
+     "description": "Spinneys",
+     "amount": -339.5,
+     "image": "IMG_5186",
+     "position": 3
+    },
+    {
+     "date": "2026-11-08",
+     "description": "Amazon",
+     "amount": -135.0,
+     "image": "IMG_5186",
+     "position": 4
+    },
+    {
+     "date": "2026-11-08",
+     "description": "Deliveroo",
+     "amount": -55.65,
+     "image": "IMG_5186",
+     "position": 5
+    },
+    {
+     "date": "2026-11-08",
+     "description": "Qlub",
+     "amount": -289.3,
+     "image": "IMG_5186",
+     "position": 6
+    },
+    {
+     "date": "2026-11-07",
+     "description": "InstaShop",
+     "amount": -52.45,
+     "image": "IMG_5186",
+     "position": 7,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    }
+   ]
+  },
+  {
+   "image": "IMG_5185",
+   "rows": [
+    {
+     "date": "2026-11-07",
+     "description": "InstaShop",
+     "amount": -52.45,
+     "image": "IMG_5185",
+     "position": 1,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Oura Ring",
+     "amount": -6.99,
+     "currency": "USD",
+     "image": "IMG_5185",
+     "position": 2,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Amazon",
+     "amount": -105.0,
+     "image": "IMG_5185",
+     "position": 3,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Bota",
+     "amount": -131.5,
+     "image": "IMG_5185",
+     "position": 4,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Deliveroo",
+     "amount": -105.95,
+     "image": "IMG_5185",
+     "position": 5,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    },
+    {
+     "date": "2026-11-07",
+     "description": "Deliveroo",
+     "amount": -44.1,
+     "image": "IMG_5185",
+     "position": 6,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    },
+    {
+     "date": "2026-11-07",
+     "description": "InstaShop",
+     "amount": -26.75,
+     "image": "IMG_5185",
+     "position": 7,
+     "alreadyStaged": "adib-cc-app-20261102-20261107.json"
+    }
+   ]
+  }
+ ]
+}
