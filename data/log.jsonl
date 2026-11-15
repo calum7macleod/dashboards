@@ -426,3 +426,4 @@
 {"date": "2026-11-15", "agent": "Finance", "did": "15 Nov ingest (h0141): ledger rebuilt, November vs budget, unbudgeted items flagged, mining handoffs noted, weekend agenda saved", "wrote": ["data/state/finance.md", "data/finance/ledger/", "data/handoffs.json"]}
 {"date": "2026-11-15", "agent": "Finance", "did": "Reimbursed pass-through excluded from all budgets and reports at Calum's instruction", "wrote": ["data/state/finance.md", "data/finance/ledger/"]}
 {"date": "2026-11-15", "agent": "Finance", "did": "15 Nov unknowns classified: visa deposit and fee, Christmas present, final Instagram payment, Humantra to food", "wrote": ["data/state/finance.md", "data/finance/ledger/"]}
+{"date": "2026-11-15", "agent": "Finance", "did": "Recorded cash fee received and handed to Tal as a prepayment of December's budget", "wrote": ["data/state/finance.md"]}
