@@ -1118,5 +1118,13 @@
   "to": "PA",
   "item": "Issue i0002 (mentor): core.md last written 21 Sep - six weeks stale start packs. core.md is yours: bring it current this session (job start ~2 Nov, Iniesta J122 closed 16 Oct, current targets), and keep the 'END of any topic' rule. Manager closes i0002 when core.md carries a November date.",
   "status": "open"
+ },
+ {
+  "id": "h0141",
+  "date": "2026-11-15",
+  "from": "Uploader",
+  "to": "Finance",
+  "item": "15 Nov 07:04-07:12 screenshots (25 images, 3 sent twice) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 7 files in data/staging/statements/: hsbc-20261115 (new stmt 1,353.87, no interest, min 33.85 due 7 Dec); ba-amex-20261115 (5 rows, 11.99, paid 13.98 on 12 Nov); bos-20261105-20261112 (8 rows, ties to 15,435.61); adib-cc-app-20261107-20261114 (AED 43 rows over 6 images, 26 new 8-14 Nov = 11,693.98, no balance shown); mashreq-20261104-20261109 (AED 4, ties to 7,112.90); mashreq-tara-and-rent-20261115 (77,069.83 unchanged; indicative Nov 186.09 is interest accrued to date - closes the h0123 query); wise-20261104-20261114 (8 rows). MINING: Segments Cloud SCH-2026-00956 PAID 9 Nov via Wise 934.34 USD / 716.29 GBP, funded by BoS CALUM WISE 716.53 - data/staging/mining/segments-cloud-SCH-2026-00956-payment-20261109.json; the invoice file still says UNPAID. CHECK: ADIB 24 SEVEN GOVERNMENT TRANS 5,788.55 on 11 Nov; ADIB InstaShop 87.46 on 9 Nov same amount as 6 Nov; BoS L G PRICE 345.00 on 12 Nov (new payee); Apple 11.99 on Wise 4 and 14 Nov plus BA Amex 12 Nov; BoS upcoming DDs show prior amounts (MBNA 49.66 vs MBNA 2 min 47.54 due 16 Nov; Santander 318.06 vs 334.99; Barclaycard 118.45 vs 118.02); M&S 183.29 due 21 Nov - no DD seen. Unchanged, no file: Tesco, Virgin, Santander, M&S, MBNA 1, Barclaycard, Amex Gold, Nationwide. 3 ccBalances rows appended (HSBC, BA Amex, BoS OD).",
+  "status": "open"
  }
 ]
