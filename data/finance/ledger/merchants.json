@@ -2,6 +2,12 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "pass-through - reimbursed in cash",
+   "category": "Other",
+   "sub": "Pass-through (reimbursed in cash) - excluded from budgets",
+   "type": "transfer"
+  },
+  {
    "rx": "24 seven government",
    "category": "Life",
    "sub": "Government transaction 5,788.55 (11 Nov) - WHAT? ask Calum"
@@ -10,11 +16,6 @@
    "rx": "humntra",
    "category": "Life",
    "sub": "Humntra 462 - unknown, ask"
-  },
-  {
-   "rx": "just relax foot spa",
-   "category": "Entertainment",
-   "sub": "Whatever we want - foot spa"
   },
   {
    "rx": "sunberry|meat marhaba|carrefour",
