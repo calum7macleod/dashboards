@@ -2,20 +2,36 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "visa deposit for lucas",
+   "category": "Other",
+   "sub": "Deposit held - Lucas visa (refundable? date TBC)",
+   "type": "transfer"
+  },
+  {
+   "rx": "lucas visa transfer fee",
+   "category": "Life",
+   "sub": "One-off - Lucas visa transfer fee (unbudgeted)"
+  },
+  {
+   "rx": "humntra",
+   "category": "Base Food",
+   "sub": "Humantra (food - Calum 15 Nov)"
+  },
+  {
+   "rx": "l g price",
+   "category": "Business",
+   "sub": "L G Price Instagram outreach - FINAL payment 12 Nov 2026"
+  },
+  {
+   "rx": "tallia.*family support|tallia verity",
+   "category": "Entertainment",
+   "sub": "Whatever we want - Tal's Christmas present (9 Nov)"
+  },
+  {
    "rx": "pass-through - reimbursed in cash",
    "category": "Other",
    "sub": "Pass-through (reimbursed in cash) - excluded from budgets",
    "type": "transfer"
-  },
-  {
-   "rx": "24 seven government",
-   "category": "Life",
-   "sub": "Government transaction 5,788.55 (11 Nov) - WHAT? ask Calum"
-  },
-  {
-   "rx": "humntra",
-   "category": "Life",
-   "sub": "Humntra 462 - unknown, ask"
   },
   {
    "rx": "sunberry|meat marhaba|carrefour",
@@ -31,16 +47,6 @@
    "rx": "^cafu",
    "category": "Life",
    "sub": "Car / fuel (Cafu)"
-  },
-  {
-   "rx": "l g price",
-   "category": "Business",
-   "sub": "L G Price (Instagram outreach) - 345 on 12 Nov AFTER 'stopped' 4 Nov - ask"
-  },
-  {
-   "rx": "tallia.*family support|tallia verity",
-   "category": "Tal",
-   "sub": "Tal - extra transfer (unbudgeted, 9 Nov) - ask"
   },
   {
    "rx": "selfdrive.*speeding fine",
@@ -269,12 +275,6 @@
    "rx": "hubspot",
    "category": "Business",
    "sub": "HubSpot - annual, ~USD113 each September (Calum 12 Oct)"
-  },
-  {
-   "rx": "l g price",
-   "category": "Business",
-   "sub": "Instagram messaging (L G Price) - GBP1,000 Oct, 600/mo",
-   "type": "spend"
   },
   {
    "rx": "gareth burris",
@@ -762,12 +762,6 @@
    "rx": "james gibson",
    "category": "Gambling",
    "sub": "Gambling",
-   "type": "spend"
-  },
-  {
-   "rx": "l g price",
-   "category": "Business",
-   "sub": "Marketing / outreach",
    "type": "spend"
   },
   {
