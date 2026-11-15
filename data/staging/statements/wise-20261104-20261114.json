@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "multi (GBP/USD/AED)",
+  "period": "4-14 Nov 26",
+  "source": "app screenshots Sun 15 Nov 26 07:11-07:12 Dubai",
+  "images": [
+   "IMG_5200",
+   "IMG_5201"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "Wise prints outgoing unsigned: amount signed by direction (sent/spent negative, added positive) as in earlier Wise files; asPrinted kept",
+  "dates": "'Yesterday' = Sat 14 Nov",
+  "printed": {
+   "balance": "not shown"
+  },
+  "flags": [
+   "9 Nov segments cloud 934.34 USD = Segments Cloud invoice SCH-2026-00956 total (USD 934.34 incl VAT) - mining, separate section; payment staged in data/staging/mining/",
+   "8 Nov C Macleod +716.53 GBP = BoS CALUM WISE -716.53 (BoS dated 9 Nov)",
+   "Apple 11.99 GBP on Wise 4 Nov and 14 Nov, plus BA Amex 12 Nov - possible duplicate subscription"
+  ],
+  "rowCount": 8,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-15"
+ },
+ "images": [
+  {
+   "image": "IMG_5200",
+   "rows": [
+    {
+     "date": "2026-11-14",
+     "description": "Apple",
+     "amount": -11.99,
+     "currency": "GBP",
+     "asPrinted": "11.99 GBP",
+     "dayLabel": "Yesterday",
+     "image": "IMG_5200",
+     "position": 1
+    },
+    {
+     "date": "2026-11-13",
+     "description": "OpenAI ChatGPT",
+     "amount": -24.0,
+     "currency": "USD",
+     "asPrinted": "24 USD",
+     "image": "IMG_5200",
+     "position": 2
+    },
+    {
+     "date": "2026-11-09",
+     "description": "segments cloud - Sent",
+     "amount": -934.34,
+     "currency": "USD",
+     "asPrinted": "934.34 USD / 716.29 GBP",
+     "sourceAmount": -716.29,
+     "sourceCurrency": "GBP",
+     "segment": "mining",
+     "image": "IMG_5200",
+     "position": 3
+    },
+    {
+     "date": "2026-11-08",
+     "description": "C Macleod",
+     "amount": 716.53,
+     "currency": "GBP",
+     "asPrinted": "+ 716.53 GBP",
+     "image": "IMG_5200",
+     "position": 4
+    }
+   ]
+  },
+  {
+   "image": "IMG_5201",
+   "rows": [
+    {
+     "date": "2026-11-08",
+     "description": "C Macleod",
+     "amount": 716.53,
+     "currency": "GBP",
+     "asPrinted": "+ 716.53 GBP",
+     "image": "IMG_5201",
+     "position": 1
+    },
+    {
+     "date": "2026-11-05",
+     "description": "Apple",
+     "amount": -0.29,
+     "currency": "GBP",
+     "asPrinted": "0.29 GBP",
+     "image": "IMG_5201",
+     "position": 2,
+     "alreadyStaged": "wise-20261031-20261105.json"
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Apple",
+     "amount": -11.99,
+     "currency": "GBP",
+     "asPrinted": "11.99 GBP",
+     "image": "IMG_5201",
+     "position": 3,
+     "alreadyStaged": "wise-20261031-20261105.json"
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Calum Lachlan MacLe... - Sent",
+     "amount": -56197.38,
+     "currency": "AED",
+     "asPrinted": "56,197.38 AED / 11,400 GBP",
+     "sourceAmount": -11400.0,
+     "sourceCurrency": "GBP",
+     "image": "IMG_5201",
+     "position": 4,
+     "alreadyStaged": "wise-20261031-20261105.json"
+    }
+   ]
+  }
+ ]
+}
