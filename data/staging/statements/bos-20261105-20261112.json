@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "account": "BoS",
+  "currency": "GBP",
+  "period": "5-12 Nov 26",
+  "source": "app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
+  "images": [
+   "IMG_5195",
+   "IMG_5194"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balance": 15435.61,
+   "overdraftLimit": 3000.0,
+   "closingBalancePrinted": 15435.61,
+   "upcoming": [
+    {
+     "description": "MBNA LIMITED",
+     "amount": -49.66,
+     "when": "Tomorrow",
+     "date": "2026-11-16",
+     "note": "Previously - prior amount; MBNA 2 min now 47.54 due 16 Nov"
+    },
+    {
+     "description": "SANTANDERCARDS LTD",
+     "amount": -318.06,
+     "when": "In 5 days",
+     "date": "2026-11-20",
+     "note": "Previously - prior amount; Santander min now 334.99 due 21 Nov"
+    },
+    {
+     "description": "B/CARD PLAT VISA",
+     "amount": -118.45,
+     "when": "In 5 days",
+     "date": "2026-11-20",
+     "note": "Previously - prior amount; Barclaycard min now 118.02 due 23 Nov"
+    }
+   ]
+  },
+  "accountType": "Classic current account",
+  "dates": "'Tomorrow' = Mon 16 Nov; 'In 5 days' = Fri 20 Nov",
+  "flags": [
+   "Chain ties 16,511.12 (5 Nov) - 716.53 = 15,794.59 - 345.00 = 15,449.59 - 13.98 = 15,435.61 printed",
+   "9 Nov CALUM WISE -716.53 = Wise 'C Macleod +716.53' (Wise dated 8 Nov) - funded the Segments Cloud mining invoice (Wise, 9 Nov, 934.34 USD / 716.29 GBP)",
+   "12 Nov L G PRICE -345.00 - new payee, Finance to classify",
+   "12 Nov AMERICAN EXP 3773 -13.98 = BA Amex payment",
+   "Only the next 3 upcoming payments shown ('View all' not opened)",
+   "'Wed 04 November' header at bottom, rows not captured"
+  ],
+  "rowCount": 8,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-15"
+ },
+ "images": [
+  {
+   "image": "IMG_5195",
+   "rows": [
+    {
+     "date": "2026-11-12",
+     "description": "AMERICAN EXP 3773",
+     "amount": -13.98,
+     "balance": 15435.61,
+     "image": "IMG_5195",
+     "position": 1
+    },
+    {
+     "date": "2026-11-12",
+     "description": "L G PRICE",
+     "amount": -345.0,
+     "balance": 15449.59,
+     "note": "cut at bottom",
+     "image": "IMG_5195",
+     "position": 2
+    }
+   ]
+  },
+  {
+   "image": "IMG_5194",
+   "rows": [
+    {
+     "date": "2026-11-12",
+     "description": "AMERICAN EXP 3773",
+     "amount": -13.98,
+     "balance": 15435.61,
+     "image": "IMG_5194",
+     "position": 1
+    },
+    {
+     "date": "2026-11-12",
+     "description": "L G PRICE",
+     "amount": -345.0,
+     "balance": 15449.59,
+     "image": "IMG_5194",
+     "position": 2
+    },
+    {
+     "date": "2026-11-09",
+     "description": "CALUM WISE",
+     "amount": -716.53,
+     "balance": 15794.59,
+     "image": "IMG_5194",
+     "position": 3
+    },
+    {
+     "date": "2026-11-05",
+     "description": "AMERICAN EXP 3773",
+     "amount": -290.88,
+     "balance": 16511.12,
+     "image": "IMG_5194",
+     "position": 4,
+     "alreadyStaged": "bos-20261102-20261105.json"
+    },
+    {
+     "date": "2026-11-05",
+     "description": "AMERICAN EXP 3773",
+     "amount": -460.0,
+     "balance": 16802.0,
+     "image": "IMG_5194",
+     "position": 5,
+     "alreadyStaged": "bos-20261102-20261105.json"
+    },
+    {
+     "date": "2026-11-05",
+     "description": "HSBC CREDIT CARD",
+     "amount": -34.71,
+     "balance": 17262.0,
+     "image": "IMG_5194",
+     "position": 6,
+     "alreadyStaged": "bos-20261102-20261105.json"
+    }
+   ]
+  }
+ ]
+}
