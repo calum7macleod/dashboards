@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "account": "HSBC",
+  "currency": "GBP",
+  "period": "Nov 26 statement (personal credit card)",
+  "source": "app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
+  "images": [
+   "IMG_5183"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "currentBalanceExclPending": -1353.87,
+   "availableCredit": 646.13,
+   "pending": 0.0,
+   "creditLimit": 2000.0,
+   "statementBalance": 1353.87,
+   "minimumDue": 33.85,
+   "dueDate": "2026-12-07"
+  },
+  "flags": [
+   "New statement: balance 1,353.87 = 1,388.58 - 34.71 DD (5 Nov) - no interest charged this cycle",
+   "Statement date not printed (HSBC cycle is the 10th)",
+   "'Saturday, 10 Oct 2026' header at bottom, rows not captured"
+  ],
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-15"
+ },
+ "transactions": [
+  {
+   "date": "2026-11-05",
+   "description": "DIRECT DEBIT PAYMENT - THANK YOU",
+   "amount": 34.71,
+   "image": "IMG_5183",
+   "position": 1,
+   "alreadyStaged": "hsbc-20261108.json"
+  }
+ ]
+}
