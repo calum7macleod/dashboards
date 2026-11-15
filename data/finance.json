@@ -29249,6 +29249,45 @@
       "month": "Nov 26",
       "source": "UK/UAE app screenshots Sun 8 Nov 26 07:03-07:06 Dubai",
       "rows": "data/staging/statements/bos-20261102-20261105.json"
+    },
+    {
+      "card": "HSBC",
+      "balance": 1353.87,
+      "currency": "GBP",
+      "available": 646.13,
+      "limit": 2000.0,
+      "status": "New stmt 1,353.87 (no interest this cycle). Min 33.85 due 7 Dec",
+      "dueDate": "2026-12-07",
+      "dueAmount": 33.85,
+      "date": "2026-11-15",
+      "month": "Nov 26",
+      "source": "UK app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
+      "rows": "data/staging/statements/hsbc-20261115.json"
+    },
+    {
+      "card": "BA Amex",
+      "balance": 11.99,
+      "currency": "GBP",
+      "available": 788.0,
+      "limit": null,
+      "status": "Paid 13.98 on 12 Nov (BoS). Apple 11.99 on 12 Nov. Balance due 0.00",
+      "dueAmount": 0.0,
+      "date": "2026-11-15",
+      "month": "Nov 26",
+      "source": "UK app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
+      "rows": "data/staging/statements/ba-amex-20261115.json"
+    },
+    {
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 15,435.61 at 07:11 15 Nov. 9 Nov 716.53 to Wise (paid Segments Cloud mining invoice). 12 Nov L G Price 345.00, Amex 13.98. Leaving (prior amounts shown): MBNA 49.66 (16 Nov), Santander 318.06 + Barclaycard 118.45 (20 Nov)",
+      "date": "2026-11-15",
+      "month": "Nov 26",
+      "source": "UK app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
+      "rows": "data/staging/statements/bos-20261105-20261112.json"
     }
   ],
   "personalDebts": [
