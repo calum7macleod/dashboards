@@ -1,0 +1,80 @@
+{
+ "meta": {
+  "account": "BA Amex",
+  "currency": "GBP",
+  "period": "5-12 Nov 26",
+  "source": "app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
+  "images": [
+   "IMG_5192",
+   "IMG_5191"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 11.99,
+   "balanceDue": 0.0,
+   "paymentStatus": "Payment not required at this time",
+   "availableCredit": 788.0,
+   "avios": 8023
+  },
+  "redacted": "card digits not stored",
+  "flags": [
+   "6.99 (8 Nov) + 6.99 (7 Nov posted) - 13.98 + 11.99 = 11.99 printed",
+   "13.98 payment 12 Nov = BoS AMERICAN EXP 3773 -13.98 on 12 Nov (covers the two 6.99 charges; the 6.99 DD scheduled 17 Nov may no longer run)",
+   "5 Nov payment row faded behind nav bar"
+  ],
+  "rowCount": 5,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-15"
+ },
+ "images": [
+  {
+   "image": "IMG_5192",
+   "rows": []
+  },
+  {
+   "image": "IMG_5191",
+   "rows": [
+    {
+     "date": "2026-11-12",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 11.99,
+     "image": "IMG_5191",
+     "position": 1
+    },
+    {
+     "date": "2026-11-12",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -13.98,
+     "image": "IMG_5191",
+     "position": 2
+    },
+    {
+     "date": "2026-11-07",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "image": "IMG_5191",
+     "position": 3,
+     "alreadyStaged": "ba-amex-20261108.json"
+    },
+    {
+     "date": "2026-11-05",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "image": "IMG_5191",
+     "position": 4,
+     "alreadyStaged": "ba-amex-20261108.json"
+    },
+    {
+     "date": "2026-11-05",
+     "description": "PAYMENT RECEIVED - THANK YOU (faded behind nav bar)",
+     "amount": -290.88,
+     "confidence": "low - faded",
+     "image": "IMG_5191",
+     "position": 5,
+     "alreadyStaged": "ba-amex-20261108.json"
+    }
+   ]
+  }
+ ]
+}
