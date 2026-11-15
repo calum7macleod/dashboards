@@ -2,9 +2,50 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "24 seven government",
+   "category": "Life",
+   "sub": "Government transaction 5,788.55 (11 Nov) - WHAT? ask Calum"
+  },
+  {
+   "rx": "humntra",
+   "category": "Life",
+   "sub": "Humntra 462 - unknown, ask"
+  },
+  {
+   "rx": "just relax foot spa",
+   "category": "Entertainment",
+   "sub": "Whatever we want - foot spa"
+  },
+  {
+   "rx": "sunberry|meat marhaba|carrefour",
+   "category": "Base Food",
+   "sub": "Groceries"
+  },
+  {
+   "rx": "crafty fox|^qlub$",
+   "category": "Deliveries",
+   "sub": "Eating out"
+  },
+  {
+   "rx": "^cafu",
+   "category": "Life",
+   "sub": "Car / fuel (Cafu)"
+  },
+  {
+   "rx": "l g price",
+   "category": "Business",
+   "sub": "L G Price (Instagram outreach) - 345 on 12 Nov AFTER 'stopped' 4 Nov - ask"
+  },
+  {
+   "rx": "tallia.*family support|tallia verity",
+   "category": "Tal",
+   "sub": "Tal - extra transfer (unbudgeted, 9 Nov) - ask"
+  },
+  {
    "rx": "selfdrive.*speeding fine",
    "category": "Entertainment",
-   "sub": "Whatever we want - fines (RULE 8 Nov: fines come out of whatever)"
+   "sub": "Whatever we want - fines (RULE 8 Nov: fines come out of whatever)",
+   "type": "spend"
   },
   {
    "rx": "car wash",
