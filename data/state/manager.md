@@ -1,4 +1,7 @@
-# MANAGER STATE - start pack. Updated 2026-11-05 16:40 by Claude Manager.
+# MANAGER STATE - start pack. Updated 2026-11-15 07:45 by Claude Manager.
+
+## ACCESS MODEL CHANGED 8-15 Nov 2026 (every agent)
+The sandbox proxy no longer honours a pasted token: GitHub works only for repos ATTACHED to the session (add_repo tool) through Calum's linked GitHub account + the Claude GitHub app (both done 15 Nov, both repos). Contents API writes are blocked by the proxy ('Write access to this GitHub API path is not permitted') - agentkit v3 (15 Nov) writes through a hidden git clone (~/.agentkit/<repo>) with push; reads stay on the API. First write in a session takes ~9s (shallow clone 108MB), later ones ~3s. Shared rules step 0 added. Token line to be deleted from all ten Projects. Unattended runs: retest one before recreating any.
 
 ## Gate
 None. Claude Code is not usable (no local toolchain; cloud route never delivered). Manager builds directly, tests in jsdom/node, Calum tests on device.
@@ -24,6 +27,7 @@ None. Claude Code is not usable (no local toolchain; cloud route never delivered
 - h0016 call system - see queue 2. h0096 PIX locked (free plan) - Calum decides pay or stop quoting psf. h0103 Uploader account names - needs card names from Calum.
 
 ## Awaiting Calum (re-pastes)
+- 15 Nov: agents/_shared.md (step 0 attach repos, no token) into all ten Projects AND delete the 'GITHUB TOKEN:' line from each. Revoke the old PAT on GitHub once done.
 - agents/_shared.md (5 Nov) into all ten Projects: issue command live (fallback line removed), staging rule, uploader state file, get/put rule.
 - agents/pa.md: scores first, tasks rule, inline sweep (Oct) + tasks-roll/task command (5 Nov).
 - agents/content.md: THE BOARD ritual.
