@@ -13,7 +13,7 @@ L00011,2026-01-01,Jan 26,Thu,ADIB CC,AED,2000.0,2000.0,card_repayment,Other,,T_4
 L00012,2026-01-01,Jan 26,Thu,ADIB CC,AED,-949.0,-949.0,spend,Health,Boxica,"BOXICA , ABU DHABI",boxica abu dhabi,,,adib-cc-stmt-2026,343ec1b994e1
 L00013,2026-01-01,Jan 26,Thu,ADIB CC,AED,-111.4,-111.4,spend,Deliveries,Food delivery,"Deliveroo , Dubai",deliveroo dubai,,,adib-cc-stmt-2026,f0d3e09b3aaa
 L00014,2026-01-01,Jan 26,Thu,Mashreq,AED,-1500.0,-1500.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0001,,mashreq-neo-pdf-2026,689577bf2707
-L00015,2026-01-01,Jan 26,Thu,Mashreq,AED,2500.0,2500.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,1159cdf2c404
+L00015,2026-01-01,Jan 26,Thu,Mashreq,AED,2500.0,2500.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,1159cdf2c404
 L00016,2026-01-01,Jan 26,Thu,Mashreq,AED,-2000.0,-2000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0002,,mashreq-neo-pdf-2026,e3f25dbf749c
 L00017,2026-01-01,Jan 26,Thu,Wise GBP,GBP,-3.95,-19.55,debt_cost,Fees,Interest & bank fees,Wise Charges for: TRANSFER-1898388799,wise charges for transfer 1898388799,,,wise-csv-2026,8c4a5fe56461
 L00018,2026-01-01,Jan 26,Thu,Wise GBP,GBP,-496.05,-2454.95,transfer,Other,,Sent money to Calum Lachlan MacLeod (fee: 3.95 GBP),sent money to calum lachlan macleod fee ,P0325,,wise-csv-2026,8deb9149bb7f
@@ -50,7 +50,7 @@ L00048,2026-01-03,Jan 26,Sat,ADIB CC,AED,-48.0,-48.0,spend,Base Food,Groceries /
 L00049,2026-01-03,Jan 26,Sat,Wise GBP,GBP,-8.0,-39.59,spend,Life,Car / fuel / tolls,Card transaction of 8.00 GBP issued by Giffgaff London,Giffgaff London,,,wise-csv-2026,5ac79db58c92
 L00050,2026-01-03,Jan 26,Sat,Wise GBP,GBP,-90.0,-445.41,transfer,Other,,Sent money to Calum Lachlan MacLeod,sent money to calum lachlan macleod,P0297,person_leg_confirm,wise-csv-2026,f35a9d175a38
 L00051,2026-01-04,Jan 26,Sun,ADIB CC,AED,-105.9,-105.9,spend,Deliveries,Food delivery,"Deliveroo , Dubai",deliveroo dubai,,,adib-cc-stmt-2026,5a69da75b2ca
-L00052,2026-01-04,Jan 26,Sun,Mashreq,AED,5000.0,5000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,f83b9dab64b1
+L00052,2026-01-04,Jan 26,Sun,Mashreq,AED,5000.0,5000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,f83b9dab64b1
 L00053,2026-01-05,Jan 26,Mon,ADIB CC,AED,-10.93,-10.93,debt_cost,Fees,Card fees (late / cash advance / FX),International Transaction Fee,international transaction fee,,,adib-cc-stmt-2026,4a0f33db9c2e
 L00054,2026-01-05,Jan 26,Mon,ADIB CC,AED,-0.55,-0.55,debt_cost,Fees,Card fees (late / cash advance / FX),International Trxn Fee VAT Charges,international trxn fee vat charges,,,adib-cc-stmt-2026,2d3cc0f9e3c6
 L00055,2026-01-05,Jan 26,Mon,ADIB CC,AED,-73.83,-73.83,spend,Deliveries,Food delivery,"Deliveroo , Dubai",deliveroo dubai,,,adib-cc-stmt-2026,4f9974da78f4
@@ -80,7 +80,7 @@ L00078,2026-01-07,Jan 26,Wed,ADIB CC,AED,-26.57,-25.67,spend,Life,Subscriptions,
 L00079,2026-01-07,Jan 26,Wed,BoS,GBP,200.0,989.8,transfer,Other,,CALUM MACLEOD,calum macleod,P0009,person_leg_confirm,bos-csv-2026,aa5d5905cb15
 L00080,2026-01-07,Jan 26,Wed,BoS,GBP,-200.0,-989.8,transfer,Other,,C L MACLEOD,c l macleod,P0007,person_leg_confirm,bos-csv-2026,ad91cb41c184
 L00081,2026-01-07,Jan 26,Wed,BoS,GBP,-2.72,-13.46,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,55c3a33c6450
-L00082,2026-01-07,Jan 26,Wed,Mashreq,AED,-5000.0,-5000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,43f4bacd2c41
+L00082,2026-01-07,Jan 26,Wed,Mashreq,AED,-5000.0,-5000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,43f4bacd2c41
 L00083,2026-01-07,Jan 26,Wed,Mashreq,AED,-2000.0,-2000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0008,,mashreq-neo-pdf-2026,5c8778a7ce1a
 L00084,2026-01-07,Jan 26,Wed,Property Account,GBP,-200.0,-989.8,transfer,Other,,CALUM MACLEOD MONEY,calum macleod money,P0009,person_leg_confirm,property-screens-2026,130e36f138bd
 L00085,2026-01-07,Jan 26,Wed,Wise GBP,GBP,200.0,989.8,transfer,Other,,Topped up account,topped up account,P0007,person_leg_confirm,wise-csv-2026,9f1029227b7f
@@ -107,8 +107,8 @@ L00105,2026-01-10,Jan 26,Sat,Amex Gold,GBP,6218.57,30775.7,card_repayment,Other,
 L00106,2026-01-11,Jan 26,Sun,ADIB CC,AED,-19.0,-19.0,spend,Deliveries,Eating out / coffee,"D833-STARBUCKS-LAST 3C , DUBAI",d833 starbucks last 3c dubai,,,adib-cc-stmt-2026,e7cde792a88b
 L00107,2026-01-11,Jan 26,Sun,ADIB CC,AED,-30.0,-30.0,spend,Health,Training / medical,"KINGS COLLEGE HOSPITAL , DUBAI",kings college hospital dubai,,,adib-cc-stmt-2026,38c76799d8ef
 L00108,2026-01-11,Jan 26,Sun,ADIB CC,AED,-190.0,-190.0,spend,Life,Home / services,"NSHAMA TOWN SQUARE , DUBAI",nshama town square dubai,,,adib-cc-stmt-2026,63af1874e9ef
-L00109,2026-01-11,Jan 26,Sun,Mashreq,AED,-100.0,-100.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,bd64d89f9175
-L00110,2026-01-11,Jan 26,Sun,Mashreq,AED,5000.0,5000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,781f3ac0d016
+L00109,2026-01-11,Jan 26,Sun,Mashreq,AED,-100.0,-100.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,bd64d89f9175
+L00110,2026-01-11,Jan 26,Sun,Mashreq,AED,5000.0,5000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,781f3ac0d016
 L00111,2026-01-11,Jan 26,Sun,Mashreq,AED,-5000.0,-5000.0,passthrough,Investing,Property instalment paid for co-investors (net zero) - own unit flagged separately,IPP TRANSFER - CLEAR VISION REAL ESTATE DEVELOPMEN - /REF/ FAMILY SUPPORT,ipp transfer clear vision real estate de,,,mashreq-neo-pdf-2026,8c78f00df557
 L00112,2026-01-11,Jan 26,Sun,Wise GBP,GBP,-0.21,-1.0,spend,Business,Licences / admin / RERA,Card transaction of 1.00 AED issued by Fedex Intl 97146026307,Fedex Intl 97146026307,,,wise-csv-2026,e98807ea5f4d
 L00113,2026-01-11,Jan 26,Sun,Wise GBP,GBP,0.21,-1.0,refund,Business,Licences / admin / RERA,Card transaction of 1.00 AED issued by Fedex Intl 97146026307,Fedex Intl 97146026307,,,wise-csv-2026,6306898f2ae4
@@ -150,7 +150,7 @@ L00148,2026-01-14,Jan 26,Wed,BoS,GBP,-11.99,-59.34,spend,Life,Apple subscription
 L00149,2026-01-14,Jan 26,Wed,BoS,GBP,-2.42,-11.98,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,654b651c9208
 L00150,2026-01-14,Jan 26,Wed,Mashreq,AED,53563.0,53563.0,income,Other,"Commission (White & Co, WPS)",Salary - WHITE AND WHITE REAL ESTATE L.L.C,salary white and white real estate l l c,,,mashreq-neo-pdf-2026,8ae8b5421597
 L00151,2026-01-14,Jan 26,Wed,Mashreq,AED,-25000.0,-25000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0012,,mashreq-neo-pdf-2026,e4f9eebb615b
-L00152,2026-01-14,Jan 26,Wed,Mashreq,AED,-10000.0,-10000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,8f2967934dd3
+L00152,2026-01-14,Jan 26,Wed,Mashreq,AED,-10000.0,-10000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,8f2967934dd3
 L00153,2026-01-15,Jan 26,Thu,ADIB CC,AED,-20.0,-20.0,spend,Deliveries,Eating out / coffee,"CARIBOU COFFEE , DUBAI",caribou coffee dubai,,,adib-cc-stmt-2026,a72622deb0ff
 L00154,2026-01-15,Jan 26,Thu,ADIB CC,AED,-20.0,-20.0,spend,Deliveries,Eating out / coffee,"CARIBOU COFFEE , DUBAI",caribou coffee dubai,,,adib-cc-stmt-2026,a72622deb0ff
 L00155,2026-01-15,Jan 26,Thu,ADIB CC,AED,-136.95,-136.95,spend,Base Food,Groceries / meal prep,"www.instashop.com , Dubai",www instashop com dubai,,,adib-cc-stmt-2026,4c1a3ca1560a
@@ -184,7 +184,7 @@ L00182,2026-01-18,Jan 26,Sun,ADIB CC,AED,-509.64,-494.65,spend,Life,Clothes / ho
 L00183,2026-01-18,Jan 26,Sun,ADIB CC,AED,-123.84,-123.84,spend,Life,Car / fuel / tolls / taxis,"UBER *TRIP HELP.UBER.COM , Dubai",uber trip help uber com dubai,,,adib-cc-stmt-2026,716e4d3c4788
 L00184,2026-01-18,Jan 26,Sun,ADIB CC,AED,-168.0,-168.0,spend,Deliveries,Eating out / coffee,"THE LIME TREE CAFE LLC , DUBAI",the lime tree cafe llc dubai,,,adib-cc-stmt-2026,efb80d60c7a8
 L00185,2026-01-18,Jan 26,Sun,ADIB CC,AED,-236.75,-236.75,spend,Base Food,Groceries / meal prep,"SPINNEYS NSHAMA 2 , DUBAI",spinneys nshama 2 dubai,,,adib-cc-stmt-2026,c01cb8549a31
-L00186,2026-01-18,Jan 26,Sun,Mashreq,AED,-7500.0,-7500.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,6b3d30f3492b
+L00186,2026-01-18,Jan 26,Sun,Mashreq,AED,-7500.0,-7500.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,6b3d30f3492b
 L00187,2026-01-19,Jan 26,Mon,ADIB CC,AED,-99.69,-99.69,spend,Base Food,Groceries / meal prep,"www.instashop.com , Dubai",www instashop com dubai,,,adib-cc-stmt-2026,d56d4391fff3
 L00188,2026-01-19,Jan 26,Mon,ADIB CC,AED,-428.06,-415.47,spend,Life,Car / fuel / tolls / taxis,"UBER *TRIP , HELP.UBER.COM",uber trip help uber com,,,adib-cc-stmt-2026,c28967f255c5
 L00189,2026-01-19,Jan 26,Mon,ADIB CC,AED,-19.95,-19.95,spend,Life,Car / fuel (Cafu),"CAFU APP DMCC , Dubai",cafu app dmcc dubai,,,adib-cc-stmt-2026,1eb4096eefc4
@@ -552,7 +552,7 @@ L00550,2026-02-20,Feb 26,Fri,ADIB CC,AED,-98.9,-98.9,spend,Deliveries,Food deliv
 L00551,2026-02-20,Feb 26,Fri,ADIB CC,AED,-117.67,-117.67,spend,Life,Car / fuel / tolls / taxis,"ADNOC DXB STUDIO CITY , DUBAI",adnoc dxb studio city dubai,,,adib-cc-stmt-2026,850d8d945ac8
 L00552,2026-02-20,Feb 26,Fri,BoS,GBP,-117.66,-588.3,card_repayment,Other,,SANTANDERCARDS LTD,santandercards ltd,P0026,person_leg_confirm,bos-csv-2026,27a4a4a07e16
 L00553,2026-02-20,Feb 26,Fri,BoS,GBP,-2.68,-13.4,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,f8c19b4ba41e
-L00554,2026-02-20,Feb 26,Fri,Mashreq,AED,6000.0,6000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,6c235ea1187a
+L00554,2026-02-20,Feb 26,Fri,Mashreq,AED,6000.0,6000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,6c235ea1187a
 L00555,2026-02-20,Feb 26,Fri,Mashreq,AED,-25000.0,-25000.0,passthrough,Investing,Property instalment paid for co-investors (net zero) - own unit flagged separately,IPP TRANSFER - VERDE BY VISION - /REF/ GOODS OR SERVICES BOUGHT,ipp transfer verde by vision ref goods o,,,mashreq-neo-pdf-2026,0c60beb0885e
 L00556,2026-02-20,Feb 26,Fri,Mashreq,AED,-6000.0,-6000.0,spend,Business,Editors / VA,IPP TRANSFER - CONTENTUS - /REF/ GOODS OR SERVICES SOLD,ipp transfer contentus ref goods or serv,,,mashreq-neo-pdf-2026,752aa440a4b9
 L00557,2026-02-20,Feb 26,Fri,Property Account,GBP,-23.78,-118.9,debt_cost,Fees,Interest & bank fees,Arranged Overdraft Interest,arranged overdraft interest,,,property-screens-2026,8e17c2e7449d
@@ -584,11 +584,11 @@ L00582,2026-02-23,Feb 26,Mon,BoS,GBP,-160.57,-802.85,card_repayment,Other,,M&S C
 L00583,2026-02-23,Feb 26,Mon,BoS,GBP,400.0,2000.0,transfer,Family,Tal (one pot - transfer),FLAHER TV,flaher tv,,unexplained_credit;one_legged,bos-csv-2026,2eb7e35e5ac5
 L00584,2026-02-23,Feb 26,Mon,BoS,GBP,2000.0,10000.0,borrowing,Loan,Family money - confirm direction (repayment vs borrowing),S MACLEOD,s macleod,P0329,person_leg_confirm,bos-csv-2026,96dec0bf606f
 L00585,2026-02-23,Feb 26,Mon,BoS,GBP,-0.85,-4.25,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,8eff0f7b134a
-L00586,2026-02-23,Feb 26,Mon,Mashreq,AED,100000.0,100000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",Inward Remittance - FUND TRANSFER / TALLIA VERITY FLAHER /REF/,inward remittance fund transfer tallia v,,one_legged,mashreq-neo-pdf-2026,bad7b340a31a
+L00586,2026-02-23,Feb 26,Mon,Mashreq,AED,100000.0,100000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),Inward Remittance - FUND TRANSFER / TALLIA VERITY FLAHER /REF/,inward remittance fund transfer tallia v,,one_legged,mashreq-neo-pdf-2026,bad7b340a31a
 L00587,2026-02-23,Feb 26,Mon,Mashreq,AED,-0.05,-0.05,passthrough,Investing,Property instalment paid for co-investors (net zero) - own unit flagged separately,Value Added Tax - Output - / VERDE BY VISION NBFUAEAFXXX,value added tax output verde by vision n,,,mashreq-neo-pdf-2026,a5feac26d1f1
 L00588,2026-02-23,Feb 26,Mon,Mashreq,AED,-100000.0,-100000.0,passthrough,Investing,Property instalment paid for co-investors (net zero) - own unit flagged separately,Online Local Fund Transfer - / VERDE BY VISION NBFUAEAFXXX AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,online local fund transfer verde by visi,,,mashreq-neo-pdf-2026,71b997caeba2
 L00589,2026-02-23,Feb 26,Mon,Mashreq,AED,-1.0,-1.0,debt_cost,Investing,Property instalment paid for co-investors (net zero) - own unit flagged separately,Correspondent Bank Charges - / VERDE BY VISION NBFUAEAFXXX,correspondent bank charges verde by visi,,,mashreq-neo-pdf-2026,1bbb9cdac4b6
-L00590,2026-02-23,Feb 26,Mon,Mashreq,AED,67550.0,67550.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",Inward Remittance - FUND TRANSFER / TALLIA VERITY FLAHER /REF/,inward remittance fund transfer tallia v,,one_legged,mashreq-neo-pdf-2026,a86d2e9fc5f7
+L00590,2026-02-23,Feb 26,Mon,Mashreq,AED,67550.0,67550.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),Inward Remittance - FUND TRANSFER / TALLIA VERITY FLAHER /REF/,inward remittance fund transfer tallia v,,one_legged,mashreq-neo-pdf-2026,a86d2e9fc5f7
 L00591,2026-02-23,Feb 26,Mon,Virgin Money,GBP,158.02,790.1,card_repayment,Other,,PAYMENT DD - THANK YOU,payment dd thank you,P0028,person_leg_confirm,virgin-stmts-2026,f9b257c6e697
 L00592,2026-02-23,Feb 26,Mon,Wise GBP,GBP,-0.01,-0.05,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-3486333202,wise charges for card 3486333202,,,wise-csv-2026,590ae6012955
 L00593,2026-02-23,Feb 26,Mon,Wise GBP,GBP,-4.84,-24.0,spend,Deliveries,Eating out / coffee,Card transaction of 24.00 AED issued by Tazizi DUBAI (fee: 0.01 GBP),Tazizi DUBAI,,,wise-csv-2026,51fffe65aa7b
@@ -814,7 +814,7 @@ L00812,2026-03-19,Mar 26,Thu,BoS,GBP,300.0,1461.0,transfer,Family,Tal (one pot -
 L00813,2026-03-19,Mar 26,Thu,BoS,GBP,-1856.73,-9042.28,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0039,,bos-csv-2026,4dca5f0404fa
 L00814,2026-03-19,Mar 26,Thu,BoS,GBP,-2.45,-11.93,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,491a3e0ee79c
 L00815,2026-03-19,Mar 26,Thu,MBNA 2,GBP,49.12,239.21,card_repayment,Other,,DIRECT DEBIT PAYMENT - THANK YOU,direct debit payment thank you,P0038,person_leg_confirm,MBNA 2-app-2026,bb3f4da0e589
-L00816,2026-03-19,Mar 26,Thu,Mashreq,AED,6000.0,6000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,5529d4b3dcb4
+L00816,2026-03-19,Mar 26,Thu,Mashreq,AED,6000.0,6000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,5529d4b3dcb4
 L00817,2026-03-19,Mar 26,Thu,Mashreq,AED,-6000.0,-6000.0,spend,Business,Editors / VA,IPP TRANSFER - CONTENTUS - /REF/ GOODS OR SERVICES BOUGHT,ipp transfer contentus ref goods or serv,,,mashreq-neo-pdf-2026,6c5f69879508
 L00818,2026-03-20,Mar 26,Fri,ADIB,AED,-18.0,-18.0,spend,Health,Boxica,BOXICA,boxica,,,adib-screens-provisional,662c27a04a0d
 L00819,2026-03-20,Mar 26,Fri,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,"BOXICA , ABU DHABI",boxica abu dhabi,,,adib-cc-stmt-2026,f8bd2bd7b4d3
@@ -886,7 +886,7 @@ L00884,2026-03-30,Mar 26,Mon,BoS,GBP,-2.76,-13.44,spend,Fees,Interest & bank fee
 L00885,2026-03-30,Mar 26,Mon,BoS,GBP,-268.0,-1305.16,card_repayment,Other,,TESCO BANK,tesco bank,P0263,person_leg_confirm,bos-csv-2026,a2cafa796b24
 L00886,2026-03-30,Mar 26,Mon,BoS,GBP,268.0,1305.16,transfer,Fees,Bounced card payment (reversal),RETURNED DD,returned dd,P0261,person_leg_confirm,bos-csv-2026,af523891a756
 L00887,2026-03-30,Mar 26,Mon,BoS,GBP,-2.76,-13.44,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,0faa645e0a94
-L00888,2026-03-30,Mar 26,Mon,Mashreq,AED,200.0,200.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,9dc152f338ab
+L00888,2026-03-30,Mar 26,Mon,Mashreq,AED,200.0,200.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,9dc152f338ab
 L00889,2026-03-30,Mar 26,Mon,Mashreq,AED,-190.0,-190.0,spend,Life,Helpers / home services,IPP TRANSFER - MUHAMMAD SINAN CHOWDLU MOIDEEN - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer muhammad sinan chowdlu moid,,,mashreq-neo-pdf-2026,8b029d974099
 L00890,2026-03-30,Mar 26,Mon,Mashreq,AED,-300.0,-300.0,spend,Entertainment,Cash - fun,ATM Cash Withdrawal - EMIRATES BANK INTL DUBAI D AE AED ATM CASH WITHDRAWAL 30 - MAR - 26,atm cash withdrawal emirates bank intl d,,,mashreq-neo-pdf-2026,94f40651bea5
 L00891,2026-03-30,Mar 26,Mon,Wise GBP,GBP,-0.02,-0.1,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-3613911298,wise charges for card 3613911298,,,wise-csv-2026,5540b1e33be2
@@ -922,7 +922,7 @@ L00920,2026-04-02,Apr 26,Thu,BoS,GBP,-2.09,-10.29,spend,Fees,Interest & bank fee
 L00921,2026-04-02,Apr 26,Thu,MBNA 1,GBP,192.34,947.27,card_repayment,Other,,DIRECT DEBIT PAYMENT - THANK YOU,direct debit payment thank you,P0049,person_leg_confirm,mbna1-stmts-2026,6f53246572b4
 L00922,2026-04-02,Apr 26,Thu,Mashreq,AED,-10000.0,-10000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0051,,mashreq-neo-pdf-2026,cbd28703cec2
 L00923,2026-04-02,Apr 26,Thu,Mashreq,AED,-1012.57,-1012.57,transfer,Other,,QuickRemit - TO A/C - CALUM MACLEOD WITH TRANSACTION,quickremit to a c calum macleod with tra,P0340,person_leg_confirm,mashreq-neo-pdf-2026,12a340ed2964
-L00924,2026-04-02,Apr 26,Thu,Mashreq,AED,-5000.0,-5000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,d5da5fd29c8f
+L00924,2026-04-02,Apr 26,Thu,Mashreq,AED,-5000.0,-5000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,d5da5fd29c8f
 L00925,2026-04-02,Apr 26,Thu,Mashreq,AED,-100.0,-100.0,spend,Life,Helpers / home services,IPP TRANSFER - GANESH MUDDAM - /REF/ FAMILY SUPPORT,ipp transfer ganesh muddam ref family su,,,mashreq-neo-pdf-2026,692356e83bc0
 L00926,2026-04-02,Apr 26,Thu,Tesco Clubcard,GBP,268.0,1319.9,card_repayment,Other,,FASTER PAYMENT - THANK YOU,faster payment thank you,P0050,person_leg_confirm,tesco-stmts-2026,af45027ff93a
 L00927,2026-04-02,Apr 26,Thu,Wise GBP,GBP,-0.79,-3.89,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-3623198168,wise charges for card 3623198168,,,wise-csv-2026,fb90e60a4f48
@@ -935,7 +935,7 @@ L00933,2026-04-03,Apr 26,Fri,ADIB,AED,-949.0,-949.0,spend,Health,Boxica,BOXICA,b
 L00934,2026-04-03,Apr 26,Fri,ADIB,AED,-210.0,-210.0,spend,Life,Phone,Virgin Mobile UAE,virgin mobile uae,,,adib-screens-provisional,bbbac9c60544
 L00935,2026-04-03,Apr 26,Fri,ADIB CC,AED,-210.0,-210.0,spend,Life,Phone,"Virgin Mobile UAE (EITC) , Dubai",virgin mobile uae eitc dubai,,,adib-cc-stmt-2026,80923ad672c2
 L00936,2026-04-03,Apr 26,Fri,ADIB CC,AED,-949.0,-949.0,spend,Health,Boxica,"BOXICA , DUBAI",boxica dubai,,,adib-cc-stmt-2026,758c03fa3deb
-L00937,2026-04-03,Apr 26,Fri,Mashreq,AED,-5000.0,-5000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,5861aced679e
+L00937,2026-04-03,Apr 26,Fri,Mashreq,AED,-5000.0,-5000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,5861aced679e
 L00938,2026-04-03,Apr 26,Fri,Tesco Clubcard,GBP,-16.35,-80.52,debt_cost,Fees,Card interest,INTEREST - Purchases,interest purchases,,,tesco-stmts-2026,ff089059633f
 L00939,2026-04-03,Apr 26,Fri,Tesco Clubcard,GBP,-31.64,-155.83,debt_cost,Fees,Card interest,INTEREST - Balance Transfers,interest balance transfers,,,tesco-stmts-2026,64b447f08c00
 L00940,2026-04-03,Apr 26,Fri,Tesco Clubcard,GBP,-94.7,-466.4,debt_cost,Fees,Card interest,INTEREST - Money Transfers,interest money transfers,,,tesco-stmts-2026,a95d32677188
@@ -961,7 +961,7 @@ L00959,2026-04-05,Apr 26,Sun,ADIB CC,AED,-59.0,-59.0,spend,Family,Baby,"MAMAS AN
 L00960,2026-04-05,Apr 26,Sun,ADIB CC,AED,-298.88,-298.88,spend,Base Food,Groceries / meal prep,"SPINNEYS NSHAMA 2 , DUBAI",spinneys nshama 2 dubai,,,adib-cc-stmt-2026,b2a345953e8c
 L00961,2026-04-05,Apr 26,Sun,ADIB CC,AED,-59.0,-59.0,spend,Deliveries,Eating out / coffee,"% ARABICA , DUBAI",arabica dubai,,,adib-cc-stmt-2026,f266ff90ce56
 L00962,2026-04-05,Apr 26,Sun,Amex Gold,GBP,460.0,2265.5,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0303,,amex-gold-screens-2026,61ac1af43860
-L00963,2026-04-05,Apr 26,Sun,Mashreq,AED,-5000.0,-5000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0264,,mashreq-neo-pdf-2026,7e8985253ad9
+L00963,2026-04-05,Apr 26,Sun,Mashreq,AED,-5000.0,-5000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0264,,mashreq-neo-pdf-2026,7e8985253ad9
 L00964,2026-04-05,Apr 26,Sun,Mashreq,AED,-5000.0,-5000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,,one_legged,mashreq-neo-pdf-2026,20cc495682a5
 L00965,2026-04-06,Apr 26,Mon,ADIB CC,AED,5000.0,5000.0,card_repayment,Other,,T_4419e7956dcd48f08b0cab9fb555c3e4:-IPP Card Payment6789,t 4419e7956dcd48f08b0cab9fb555c3e4 ipp c,P0264,,adib-cc-stmt-2026,a019c1826347
 L00966,2026-04-06,Apr 26,Mon,ADIB CC,AED,-210.0,-210.0,spend,Life,Phone,"Virgin Mobile UAE (EITC) , Dubai",virgin mobile uae eitc dubai,,,adib-cc-stmt-2026,129e425653a2
@@ -1009,7 +1009,7 @@ L01007,2026-04-09,Apr 26,Thu,ADIB CC,AED,-61.5,-61.5,spend,Base Food,Groceries /
 L01008,2026-04-09,Apr 26,Thu,ADIB CC,AED,-80.0,-80.0,spend,Family,Baby,"SCANDI CANDY , DUBAI",scandi candy dubai,,,adib-cc-stmt-2026,03337c144a1c
 L01009,2026-04-09,Apr 26,Thu,ADIB CC,AED,-239.0,-239.0,spend,Base Food,Groceries / meal prep,"Amazon Grocery , Dubai",amazon grocery dubai,,,adib-cc-stmt-2026,dd25396a26a4
 L01010,2026-04-09,Apr 26,Thu,BoS,GBP,-2.75,-13.54,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,50eda90229a7
-L01011,2026-04-09,Apr 26,Thu,Mashreq,AED,-500.0,-500.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0334,person_leg_confirm,mashreq-neo-pdf-2026,0429ce88c7c1
+L01011,2026-04-09,Apr 26,Thu,Mashreq,AED,-500.0,-500.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0334,person_leg_confirm,mashreq-neo-pdf-2026,0429ce88c7c1
 L01012,2026-04-10,Apr 26,Fri,ADIB CC,AED,-42.0,-42.0,spend,Deliveries,Eating out / coffee,"HAMLAM TRADING , Dubai",hamlam trading dubai,,,adib-cc-stmt-2026,035a45ddf51c
 L01013,2026-04-10,Apr 26,Fri,ADIB CC,AED,-244.78,-244.78,spend,Life,Phone,"DU Apple Pay , DUBAI",du apple pay dubai,,,adib-cc-stmt-2026,81b40513155d
 L01014,2026-04-10,Apr 26,Fri,ADIB CC,AED,-20.0,-20.0,spend,Health,Boxica,"BOXICA , DUBAI",boxica dubai,,,adib-cc-stmt-2026,d9c7f00ef1a3
@@ -1123,7 +1123,7 @@ L01121,2026-04-20,Apr 26,Mon,BoS,GBP,-115.32,-567.95,card_repayment,Other,,SANTA
 L01122,2026-04-20,Apr 26,Mon,BoS,GBP,-225.0,-1108.12,spend,Business,Licences / admin,DPC ACCOUNTANTS,dpc accountants,,,bos-csv-2026,a3047d1dbaf8
 L01123,2026-04-20,Apr 26,Mon,BoS,GBP,-1.34,-6.6,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,34b9a22444af
 L01124,2026-04-20,Apr 26,Mon,Mashreq,AED,-10000.0,-10000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0062,,mashreq-neo-pdf-2026,39f862072b97
-L01125,2026-04-20,Apr 26,Mon,Mashreq,AED,-900.0,-900.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,b47383b94595
+L01125,2026-04-20,Apr 26,Mon,Mashreq,AED,-900.0,-900.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,b47383b94595
 L01126,2026-04-20,Apr 26,Mon,Property Account,GBP,-49.5,-243.79,debt_cost,Fees,Interest & bank fees,Arranged Overdraft Interest,arranged overdraft interest,,,property-screens-2026,d9ca6e782f7f
 L01127,2026-04-20,Apr 26,Mon,Property Account,GBP,-300.04,-1477.7,spend,Business,UK property - mortgage (Methil),PRECISE MORTGAGES,precise mortgages,,,property-screens-2026,8ddb1af44ac5
 L01128,2026-04-20,Apr 26,Mon,Santander Everyday,GBP,115.32,567.95,card_repayment,Other,,DD PAYMENT RECEIVED D/DEBIT,dd payment received d debit,P0061,person_leg_confirm,santander-app-2026,0988d8e9aa55
@@ -1152,8 +1152,8 @@ L01150,2026-04-23,Apr 26,Thu,ADIB CC,AED,-198.15,-198.15,spend,Deliveries,Food d
 L01151,2026-04-23,Apr 26,Thu,ADIB CC,AED,-295.75,-295.75,spend,Life,Car / fuel (Cafu),"CAFU APP DMCC , Dubai",cafu app dmcc dubai,,,adib-cc-stmt-2026,f8e63c28ac35
 L01152,2026-04-23,Apr 26,Thu,BoS,GBP,-172.02,-847.2,card_repayment,Other,,VIRGIN MONEY,virgin money,P0064,person_leg_confirm,bos-csv-2026,79144a2f073d
 L01153,2026-04-23,Apr 26,Thu,BoS,GBP,-1.64,-8.08,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,de8bdb0c267f
-L01154,2026-04-23,Apr 26,Thu,Mashreq,AED,23000.0,23000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,b28fcb133f0c
-L01155,2026-04-23,Apr 26,Thu,Mashreq,AED,100000.0,100000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",Inward Remittance - FUND TRANSFER / TALLIA VERITY FLAHER /REF/,inward remittance fund transfer tallia v,,one_legged,mashreq-neo-pdf-2026,2900f035c9fb
+L01154,2026-04-23,Apr 26,Thu,Mashreq,AED,23000.0,23000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,b28fcb133f0c
+L01155,2026-04-23,Apr 26,Thu,Mashreq,AED,100000.0,100000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),Inward Remittance - FUND TRANSFER / TALLIA VERITY FLAHER /REF/,inward remittance fund transfer tallia v,,one_legged,mashreq-neo-pdf-2026,2900f035c9fb
 L01156,2026-04-23,Apr 26,Thu,Mashreq,AED,19000.0,19000.0,transfer,Other,"Wise GBP->AED (BoS 11,400)",Inward Remittance - FUND TRANSFER / MS ABBY MCPHILLIPS GDS,inward remittance fund transfer ms abby ,,one_legged,mashreq-neo-pdf-2026,d15f5a46774c
 L01157,2026-04-23,Apr 26,Thu,Mashreq,AED,24691.48,24691.48,transfer,Other,"Wise GBP->AED (BoS 11,400)",Inward Remittance - FUND TRANSFER CALUM LACHLAN MACLEOD LACHLAN MACLEOD,inward remittance fund transfer calum la,P0332,,mashreq-neo-pdf-2026,40e2badd6f64
 L01158,2026-04-23,Apr 26,Thu,Virgin Money,GBP,172.02,847.2,card_repayment,Other,,PAYMENT DD - THANK YOU,payment dd thank you,P0064,person_leg_confirm,virgin-stmts-2026,b228d4b1190d
@@ -1216,7 +1216,7 @@ L01214,2026-04-27,Apr 26,Mon,BoS,GBP,-2.39,-11.77,spend,Fees,Interest & bank fee
 L01215,2026-04-27,Apr 26,Mon,BoS,GBP,-200.0,-985.0,transfer,Other,,C L MACLEOD,c l macleod,P0266,person_leg_confirm,bos-csv-2026,56d46498ec0a
 L01216,2026-04-27,Apr 26,Mon,BoS,GBP,-2.57,-12.66,spend,Fees,Interest & bank fees,DAILY OD INT 26/04,daily od int 26 04,,,bos-csv-2026,47471e5e2745
 L01217,2026-04-27,Apr 26,Mon,BoS,GBP,-2.57,-12.66,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,54b838e96ee8
-L01218,2026-04-27,Apr 26,Mon,Mashreq,AED,-8000.0,-8000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,de3cd63854ac
+L01218,2026-04-27,Apr 26,Mon,Mashreq,AED,-8000.0,-8000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,de3cd63854ac
 L01219,2026-04-27,Apr 26,Mon,Mashreq,AED,-3000.0,-3000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0065,,mashreq-neo-pdf-2026,58628858b30b
 L01220,2026-04-28,Apr 26,Tue,ADIB CC,AED,-30.0,-30.0,spend,Health,Training / medical,"KINGS COLLEGE HOSPITAL , DUBAI",kings college hospital dubai,,,adib-cc-stmt-2026,188d21dcedf4
 L01221,2026-04-28,Apr 26,Tue,ADIB CC,AED,-135.55,-135.55,spend,Base Food,Groceries / meal prep,"www.instashop.com , Dubai",www instashop com dubai,,,adib-cc-stmt-2026,f7132f3d46ca
@@ -1226,7 +1226,7 @@ L01224,2026-04-28,Apr 26,Tue,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,"BOXICA
 L01225,2026-04-28,Apr 26,Tue,ADIB CC,AED,-520.0,-520.0,spend,Business,Licences / admin / RERA,"Smart Dubai Government , DUBAI",smart dubai government dubai,,,adib-cc-stmt-2026,f004fb3e1f76
 L01226,2026-04-28,Apr 26,Tue,BoS,GBP,1000.0,4925.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,P0352,person_leg_confirm,bos-csv-2026,4c5bf7568190
 L01227,2026-04-28,Apr 26,Tue,BoS,GBP,-1.66,-8.18,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,428be2f8cb9c
-L01228,2026-04-28,Apr 26,Tue,Mashreq,AED,-9642.0,-9642.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,47b2f5ad6b10
+L01228,2026-04-28,Apr 26,Tue,Mashreq,AED,-9642.0,-9642.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,47b2f5ad6b10
 L01229,2026-04-28,Apr 26,Tue,Mashreq,AED,-5130.2,-5130.2,transfer,Other,,QuickRemit - TO A/C - CALUM MACLEOD WITH TRANSACTION,quickremit to a c calum macleod with tra,P0349,person_leg_confirm,mashreq-neo-pdf-2026,ffabfc6e2888
 L01230,2026-04-29,Apr 26,Wed,ADIB CC,AED,-92.9,-92.9,spend,Deliveries,Food delivery,"DELIVEROO , DUBAI",deliveroo dubai,,,adib-cc-stmt-2026,16ba33259a12
 L01231,2026-04-29,Apr 26,Wed,ADIB CC,AED,-57.0,-57.0,spend,Health,Training / medical,"KINGS COLLEGE HOSPITAL , DUBAI",kings college hospital dubai,,,adib-cc-stmt-2026,ab27c013708a
@@ -1323,7 +1323,7 @@ L01321,2026-05-04,May 26,Mon,ADIB CC,AED,-300.0,-300.0,spend,Family,Baby,"FIRSTC
 L01322,2026-05-04,May 26,Mon,ADIB CC,AED,-219.26,-219.26,spend,Family,Baby,"FIRSTCRY RETAIL DWC LLC , DUBAI",firstcry retail dwc llc dubai,,,adib-cc-stmt-2026,b6ee3540bf0a
 L01323,2026-05-04,May 26,Mon,ADIB CC,AED,-375.0,-375.0,spend,Family,Baby,"SPECTRABABY , DUBAI",spectrababy dubai,,,adib-cc-stmt-2026,35870f40228a
 L01324,2026-05-04,May 26,Mon,Mashreq,AED,-200.0,-200.0,spend,Life,Helpers / home services,IPP TRANSFER - MARIELLE AVINANTE - /REF/ GOODS OR SERVICES BOUGHT,ipp transfer marielle avinante ref goods,,,mashreq-neo-pdf-2026,82a7490b7265
-L01325,2026-05-04,May 26,Mon,Mashreq,AED,-10000.0,-10000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,e158e281f0bc
+L01325,2026-05-04,May 26,Mon,Mashreq,AED,-10000.0,-10000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,e158e281f0bc
 L01326,2026-05-04,May 26,Mon,Tesco Clubcard,GBP,-9.22,-45.46,debt_cost,Fees,Card interest,INTEREST - Purchases,interest purchases,,,tesco-stmts-2026,b2147c521b6d
 L01327,2026-05-04,May 26,Mon,Tesco Clubcard,GBP,-30.17,-148.77,debt_cost,Fees,Card interest,INTEREST - Balance Transfers,interest balance transfers,,,tesco-stmts-2026,74fb0ef11ce1
 L01328,2026-05-04,May 26,Mon,Tesco Clubcard,GBP,-90.31,-445.32,debt_cost,Fees,Card interest,INTEREST - Money Transfers,interest money transfers,,,tesco-stmts-2026,314e2de3187b
@@ -1395,7 +1395,7 @@ L01393,2026-05-10,May 26,Sun,ADIB CC,AED,-3645.0,-3645.0,spend,Entertainment,Tra
 L01394,2026-05-10,May 26,Sun,Mashreq,AED,-5000.0,-5000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0269,,mashreq-neo-pdf-2026,f7fd998b2bb7
 L01395,2026-05-10,May 26,Sun,Mashreq,AED,-2000.0,-2000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer calum macleod ref credit ca,P0270,,mashreq-neo-pdf-2026,67289fe201d7
 L01396,2026-05-10,May 26,Sun,Mashreq,AED,-3000.0,-3000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0271,,mashreq-neo-pdf-2026,45071b3f7920
-L01397,2026-05-10,May 26,Sun,Mashreq,AED,-2500.0,-2500.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,e73b1b526f9d
+L01397,2026-05-10,May 26,Sun,Mashreq,AED,-2500.0,-2500.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,e73b1b526f9d
 L01398,2026-05-10,May 26,Sun,Wise GBP,GBP,50.0,246.55,transfer,Other,,Topped up account,topped up account,P0272,person_leg_confirm,wise-csv-2026,663fef62600f
 L01399,2026-05-10,May 26,Sun,Wise GBP,GBP,-0.3,-1.48,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-3774620678,wise charges for card 3774620678,,,wise-csv-2026,af7aa80f6068
 L01400,2026-05-10,May 26,Sun,Wise GBP,GBP,-88.02,-440.7,spend,Business,Software / AI,Card transaction of 120.00 USD issued by Anthropic ANTHROPIC.COM (fee: 0.30 GBP),Anthropic ANTHROPIC.COM,,,wise-csv-2026,e35a5fd42335
@@ -1658,7 +1658,7 @@ L01656,2026-05-26,May 26,Tue,BoS,GBP,-184.18,-908.19,card_repayment,Other,,VIRGI
 L01657,2026-05-26,May 26,Tue,BoS,GBP,1000.0,4931.0,transfer,Other,,NIUM FINTECH LIMIT,nium fintech limit,P0351,person_leg_confirm,bos-csv-2026,42b5301ac384
 L01658,2026-05-26,May 26,Tue,BoS,GBP,-150.0,-739.65,debt_principal,Loan,"Avantglamp loan repayment (Corrina, GBP150/mo)",CORRINA FLAHER,corrina flaher,,,bos-csv-2026,c5ec25d511d6
 L01659,2026-05-26,May 26,Tue,BoS,GBP,-2.13,-10.5,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,c7bdf3e23c7f
-L01660,2026-05-26,May 26,Tue,Mashreq,AED,-40000.0,-40000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,570a66b5e087
+L01660,2026-05-26,May 26,Tue,Mashreq,AED,-40000.0,-40000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,570a66b5e087
 L01661,2026-05-26,May 26,Tue,Mashreq,AED,-5134.57,-5134.57,transfer,Other,,QuickRemit - TO A/C - CALUM MACLEOD WITH TRANSACTION,quickremit to a c calum macleod with tra,P0351,person_leg_confirm,mashreq-neo-pdf-2026,6cdf990e231d
 L01662,2026-05-26,May 26,Tue,Virgin Money,GBP,184.18,908.19,card_repayment,Other,,PAYMENT DD - THANK YOU,payment dd thank you,P0095,person_leg_confirm,virgin-stmts-2026,7e9ffb11fc35
 L01663,2026-05-26,May 26,Tue,Wise GBP,GBP,-0.31,-1.53,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-3839196280,wise charges for card 3839196280,,,wise-csv-2026,e5749ac8e43b
@@ -1682,7 +1682,7 @@ L01680,2026-05-27,May 26,Wed,Wise GBP,GBP,-0.05,-0.25,debt_cost,Fees,Interest & 
 L01681,2026-05-27,May 26,Wed,Wise GBP,GBP,-13.79,-68.0,spend,Unaccounted,,Card transaction of 68.00 AED issued by Ben Mosstm RAS AL KHAIMA (fee: 0.05 GBP),Ben Mosstm RAS AL KHAIMA,,,wise-csv-2026,9850f7bf1ba6
 L01682,2026-05-28,May 26,Thu,ADIB CC,AED,-510.0,-510.0,spend,Entertainment,Travel,"IL BORRO TUSCAN , DUBAI",il borro tuscan dubai,,,adib-cc-stmt-2026,e54ff0b6cac0
 L01683,2026-05-28,May 26,Thu,BoS,GBP,-2.14,-10.55,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,79b9cb25a6ac
-L01684,2026-05-28,May 26,Thu,Mashreq,AED,-15000.0,-15000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0333,person_leg_confirm,mashreq-neo-pdf-2026,7c1479470c9f
+L01684,2026-05-28,May 26,Thu,Mashreq,AED,-15000.0,-15000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0333,person_leg_confirm,mashreq-neo-pdf-2026,7c1479470c9f
 L01685,2026-05-28,May 26,Thu,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-3848883696,wise charges for card 3848883696,,,wise-csv-2026,a3bc37d3d1b8
 L01686,2026-05-28,May 26,Thu,Wise GBP,GBP,-8.54,-42.0,spend,Deliveries,Food delivery,Card transaction of 42.00 AED issued by Deliveroo DUBAI (fee: 0.03 GBP),Deliveroo DUBAI,,,wise-csv-2026,e9866bd21cc1
 L01687,2026-05-29,May 26,Fri,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,"BOXICA , DUBAI",boxica dubai,,,adib-cc-stmt-2026,b8985d3283f2
@@ -2196,7 +2196,7 @@ L02194,2026-06-30,Jun 26,Tue,ADIB CC,AED,-210.0,-210.0,spend,Business,Licences /
 L02195,2026-06-30,Jun 26,Tue,ADIB CC,AED,-245.66,-245.66,spend,Life,"Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc","SELFDRIVE AE , DUBAI",selfdrive ae dubai,,,adib-cc-stmt-2026,5ee865db1849
 L02196,2026-06-30,Jun 26,Tue,BoS,GBP,-2.76,-13.53,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,269871c133e4
 L02197,2026-06-30,Jun 26,Tue,Mashreq,AED,113595.0,113595.0,income,Other,"Commission (White & Co, WPS)",Salary - WHITE AND WHITE REAL ESTATE L L C,salary white and white real estate l l c,,,mashreq-neo-pdf-2026,2d157f1960cb
-L02198,2026-06-30,Jun 26,Tue,Mashreq,AED,-5000.0,-5000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0286,,mashreq-neo-pdf-2026,5c192565733d
+L02198,2026-06-30,Jun 26,Tue,Mashreq,AED,-5000.0,-5000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,P0286,,mashreq-neo-pdf-2026,5c192565733d
 L02199,2026-06-30,Jun 26,Tue,Mashreq,AED,-5000.0,-5000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0336,person_leg_confirm,mashreq-neo-pdf-2026,b03d142f120e
 L02200,2026-06-30,Jun 26,Tue,Tesco Clubcard,GBP,-12.0,-58.82,debt_cost,Fees,Card fees (late / cash advance / FX),LATE PAYMENT FEE,late payment fee,,,tesco-stmts-2026,7cb6729bb945
 L02201,2026-06-30,Jun 26,Tue,Tesco Clubcard,GBP,-61.98,-303.83,spend,Business,Licences / admin / RERA,THETA DOCUMENTS CLEARI Dubai DXB - 300.00 AED @ 4.840,theta documents cleari dubai dxb 300 00 ,,,tesco-stmts-2026,ee2c066cd58d
@@ -2231,7 +2231,7 @@ L02229,2026-07-02,Jul 26,Thu,BoS,GBP,-263.0,-1289.23,card_repayment,Other,,TESCO
 L02230,2026-07-02,Jul 26,Thu,BoS,GBP,-1000.0,-4902.0,transfer,Family,Tal (one pot - transfer),TALLIA FLAHER,tallia flaher,,one_legged,bos-csv-2026,866fe10229a7
 L02231,2026-07-02,Jul 26,Thu,BoS,GBP,-1.81,-8.87,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,f80d3d081191
 L02232,2026-07-02,Jul 26,Thu,MBNA 1,GBP,241.7,1184.81,card_repayment,Other,,DIRECT DEBIT PAYMENT - THANK YOU,direct debit payment thank you,P0150,person_leg_confirm,mbna1-stmts-2026,aa469927c6fb
-L02233,2026-07-02,Jul 26,Thu,Mashreq,AED,-15000.0,-15000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,7da270e0024c
+L02233,2026-07-02,Jul 26,Thu,Mashreq,AED,-15000.0,-15000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,7da270e0024c
 L02234,2026-07-02,Jul 26,Thu,Mashreq,AED,-10100.74,-10100.74,transfer,Other,,QuickRemit - TO A/C - CALUM MACLEOD WITH TRANSACTION,quickremit to a c calum macleod with tra,P0345,person_leg_confirm,mashreq-neo-pdf-2026,2de34a934daa
 L02235,2026-07-02,Jul 26,Thu,Mashreq,AED,-200.0,-200.0,spend,Life,Helpers / home services,IPP TRANSFER - MARIELLE AVINANTE - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer marielle avinante ref famil,,,mashreq-neo-pdf-2026,df7fc03aac4a
 L02236,2026-07-02,Jul 26,Thu,Tesco Clubcard,GBP,263.0,1289.23,card_repayment,Other,,FASTER PAYMENT - THANK YOU,faster payment thank you,P0152,person_leg_confirm,tesco-stmts-2026,4804addfc76e
@@ -2264,7 +2264,7 @@ L02262,2026-07-04,Jul 26,Sat,Wise GBP,GBP,-11.99,-58.77,spend,Life,Apple subscri
 L02263,2026-07-05,Jul 26,Sun,ADIB CC,AED,-3031.96,-3031.96,spend,Base Food,Groceries / meal prep,"WWW.FITTMEALS.AE , DUBAI",www fittmeals ae dubai,,,adib-cc-stmt-2026,5139c56f24ae
 L02264,2026-07-05,Jul 26,Sun,ADIB CC,AED,-26.0,-26.0,spend,Deliveries,Eating out / coffee,"I COFFEE BR OF GRAND STOR , DUBAI",i coffee br of grand stor dubai,,,adib-cc-stmt-2026,ddec1d59c716
 L02265,2026-07-05,Jul 26,Sun,ADIB CC,AED,-366.45,-366.45,spend,Deliveries,Eating out / coffee,"LETO , Dubai",leto dubai,,,adib-cc-stmt-2026,48c390eaca36
-L02266,2026-07-05,Jul 26,Sun,Mashreq,AED,-4500.0,-4500.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,c09ed96d4e37
+L02266,2026-07-05,Jul 26,Sun,Mashreq,AED,-4500.0,-4500.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,c09ed96d4e37
 L02267,2026-07-05,Jul 26,Sun,Mashreq,AED,-2000.0,-2000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0287,,mashreq-neo-pdf-2026,39f9fb11c440
 L02268,2026-07-05,Jul 26,Sun,Wise GBP,GBP,-21.99,-107.79,spend,Life,Apple subscriptions (BA Amex) - which ones?,Card transaction of 21.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,2979f3be8518
 L02269,2026-07-05,Jul 26,Sun,Wise GBP,GBP,-17.94,-87.94,spend,Ads,Meta - should be OFF; flag,Card transaction of 1.42 GBP issued by Facebk *Yyhuw2nhq4 DUBLIN 2,Facebk *Yyhuw2nhq4 DUBLIN 2,,,wise-csv-2026,bca621102a46
@@ -2361,7 +2361,7 @@ L02359,2026-07-13,Jul 26,Mon,ADIB CC,AED,-1467.9,-1467.9,spend,Life,Car / fuel /
 L02360,2026-07-13,Jul 26,Mon,BoS,GBP,-2.38,-11.67,spend,Fees,Interest & bank fees,DAILY OD INT 11/07,daily od int 11 07,,,bos-csv-2026,a5bfafa3d3ae
 L02361,2026-07-13,Jul 26,Mon,BoS,GBP,-2.38,-11.67,spend,Fees,Interest & bank fees,DAILY OD INT 12/07,daily od int 12 07,,,bos-csv-2026,bb66099092da
 L02362,2026-07-13,Jul 26,Mon,BoS,GBP,-2.38,-11.67,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,043d3a6df13d
-L02363,2026-07-13,Jul 26,Mon,Mashreq,AED,1500.0,1500.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,5255571b1bb6
+L02363,2026-07-13,Jul 26,Mon,Mashreq,AED,1500.0,1500.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,5255571b1bb6
 L02364,2026-07-13,Jul 26,Mon,Mashreq,AED,-2200.0,-2200.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0166,,mashreq-neo-pdf-2026,de5668e94ef8
 L02365,2026-07-13,Jul 26,Mon,Wise GBP,GBP,14.08,69.02,refund,Ads,Meta - should be OFF; flag,Card transaction of 3.86 GBP issued by Facebk *K5d6vw5jq2 DUBLIN 2,Facebk *K5d6vw5jq2 DUBLIN 2,,,wise-csv-2026,bdf14b20414b
 L02366,2026-07-13,Jul 26,Mon,Wise GBP,GBP,-17.94,-87.94,spend,Ads,Meta - should be OFF; flag,Card transaction of 17.94 GBP issued by Facebk *27a6sx9hq2 DUBLIN 2,Facebk *27a6sx9hq2 DUBLIN 2,,,wise-csv-2026,60155b2d846b
@@ -2460,7 +2460,7 @@ L02458,2026-07-24,Jul 26,Fri,Amex Gold,GBP,-128.8,-612.0,spend,Entertainment,Eat
 L02459,2026-07-24,Jul 26,Fri,Amex Gold,GBP,-15.31,-72.75,spend,Base Food,Groceries / meal prep,SPINNEYS -AL MARYAH CEN ABU DHABI,spinneys al maryah cen abu dhabi,,,amex-gold-screens-2026,596bd8fe4056
 L02460,2026-07-24,Jul 26,Fri,BoS,GBP,-2.75,-13.48,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,1b1990fee03d
 L02461,2026-07-24,Jul 26,Fri,M&S,GBP,-12.0,-58.82,debt_cost,Fees,Card fees (late / cash advance / FX),LATE PAYMENT CHARGE,late payment charge,,,M&S-app-2026,458827db2c15
-L02462,2026-07-24,Jul 26,Fri,Mashreq,AED,1000.0,1000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,69878fe47ae1
+L02462,2026-07-24,Jul 26,Fri,Mashreq,AED,1000.0,1000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER,ipp transfer tallia verity flaher,,one_legged,mashreq-neo-pdf-2026,69878fe47ae1
 L02463,2026-07-24,Jul 26,Fri,Mashreq,AED,-1000.0,-1000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0289,,mashreq-neo-pdf-2026,cada6f0c5412
 L02464,2026-07-24,Jul 26,Fri,Wise GBP,GBP,-8.99,-44.07,spend,Life,Apple subscriptions (BA Amex) - which ones?,Card transaction of 8.99 GBP issued by Apple.com/bill APPLE.COM/BIL,Apple.com/bill APPLE.COM/BIL,,,wise-csv-2026,2cf59be7d349
 L02465,2026-07-24,Jul 26,Fri,Wise GBP,GBP,-0.03,-0.15,debt_cost,Fees,Interest & bank fees,Wise Charges for: CARD-4099186643,wise charges for card 4099186643,,,wise-csv-2026,2d10a141f71d
@@ -2578,7 +2578,7 @@ L02576,2026-07-31,Jul 26,Fri,M&S,GBP,550.0,2696.1,card_repayment,Other,,PAYMENT 
 L02577,2026-07-31,Jul 26,Fri,MBNA 1,GBP,309.73,1518.3,card_repayment,Other,,DIRECT DEBIT PAYMENT - THANK YOU,direct debit payment thank you,P0181,person_leg_confirm,mbna1-stmts-2026,11c8b3ca9e6f
 L02578,2026-07-31,Jul 26,Fri,MBNA 1,GBP,200.0,980.4,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0185,person_leg_confirm,mbna1-stmts-2026,911cc1962aff
 L02579,2026-07-31,Jul 26,Fri,MBNA 2,GBP,500.0,2451.0,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0190,person_leg_confirm,MBNA 2-app-2026,cdba5868d209
-L02580,2026-07-31,Jul 26,Fri,Mashreq,AED,-24500.0,-24500.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,19150566546b
+L02580,2026-07-31,Jul 26,Fri,Mashreq,AED,-24500.0,-24500.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,19150566546b
 L02581,2026-07-31,Jul 26,Fri,Mashreq,AED,-30000.0,-30000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0192,,mashreq-neo-pdf-2026,2b0e5969032d
 L02582,2026-07-31,Jul 26,Fri,Santander Everyday,GBP,750.0,3676.5,card_repayment,Other,,FASTER PAYMENT,faster payment,P0191,person_leg_confirm,santander-app-2026,2f13de862475
 L02583,2026-07-31,Jul 26,Fri,Tesco Clubcard,GBP,300.0,1470.6,card_repayment,Other,,FASTER PAYMENT - THANK YOU,faster payment thank you,P0183,person_leg_confirm,tesco-stmts-2026,f01ed597fe8c
@@ -2593,7 +2593,7 @@ L02591,2026-08-01,Aug 26,Sat,ADIB CC,AED,-510.3,-510.3,spend,Deliveries,Eating o
 L02592,2026-08-01,Aug 26,Sat,ADIB CC,AED,-391.45,-378.27,spend,Entertainment,Events / subscriptions,"UFC FIGHT CLUB , UFCFIGHTCLUB.",ufc fight club ufcfightclub,,,adib-cc-stmt-2026,d06e13c22e18
 L02593,2026-08-01,Aug 26,Sat,Barclaycard Plat,GBP,550.0,2743.4,card_repayment,Other,,"Payment, Thank You",payment thank you,P0194,,barclaycard-app-2026,0a7f7557a20f
 L02594,2026-08-01,Aug 26,Sat,Mashreq,AED,-24000.0,-24000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0193,,mashreq-neo-pdf-2026,2d8b51c3d761
-L02595,2026-08-01,Aug 26,Sat,Mashreq,AED,-10000.0,-10000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,62297fe80d93
+L02595,2026-08-01,Aug 26,Sat,Mashreq,AED,-10000.0,-10000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,62297fe80d93
 L02596,2026-08-01,Aug 26,Sat,Wise GBP,GBP,550.0,2743.4,transfer,Other,,Topped up account,topped up account,P0316,person_leg_confirm,wise-csv-2026,29b78792ae3a
 L02597,2026-08-01,Aug 26,Sat,Wise GBP,GBP,-550.0,-2743.4,card_repayment,Life,Car / fuel / tolls,Card transaction of 550.00 GBP issued by Barclaycard LONDON,Barclaycard LONDON,P0194,,wise-csv-2026,214ad1c19764
 L02598,2026-08-02,Aug 26,Sun,ADIB CC,AED,-51.45,-51.45,spend,Deliveries,Food delivery,"DELIVEROO , DUBAI",deliveroo dubai,,,adib-cc-stmt-2026,d5ee358dab49
@@ -3132,7 +3132,7 @@ L03130,2026-09-01,Sep 26,Tue,BoS,GBP,-0.56,-2.76,spend,Fees,Interest & bank fees
 L03131,2026-09-01,Sep 26,Tue,BoS,GBP,-28.25,-139.02,spend,Life,Pets,PET HEALTH CLUB,pet health club,,,bos-csv-2026,a9e91da1e760
 L03132,2026-09-01,Sep 26,Tue,BoS,GBP,-279.0,-1372.96,card_repayment,Other,,TESCO BANK,tesco bank,,one_legged,bos-csv-2026,9bff4e242d9a
 L03133,2026-09-01,Sep 26,Tue,BoS,GBP,-295.68,-1455.04,card_repayment,Other,,MBNA LIMITED,mbna limited,,one_legged,bos-csv-2026,c3f06b600914
-L03134,2026-09-01,Sep 26,Tue,BoS,GBP,-300.0,-1476.3,spend,Business,L G Price (Instagram outreach) - 345 on 12 Nov AFTER 'stopped' 4 Nov - ask,L G PRICE,l g price,,,bos-csv-2026,d4b6ae7da6fa
+L03134,2026-09-01,Sep 26,Tue,BoS,GBP,-300.0,-1476.3,spend,Business,L G Price Instagram outreach - FINAL payment 12 Nov 2026,L G PRICE,l g price,,,bos-csv-2026,d4b6ae7da6fa
 L03135,2026-09-01,Sep 26,Tue,BoS,GBP,-1.39,-6.84,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-csv-2026,83bfe881e6b2
 L03136,2026-09-01,Sep 26,Tue,Property Account,GBP,-287.8,-1416.26,spend,Business,UK property - mortgage (Methil),PRECISE MORTGAGES,precise mortgages,,,property-screens-2026,f4bd9fea702b
 L03137,2026-09-02,Sep 26,Wed,ADIB CC,AED,-315.0,-315.0,spend,Ads,Meta - should be OFF; flag,Meta,meta,,,adib-cc-app-screens-sep,76af1cdf39e9
@@ -3195,7 +3195,7 @@ L03193,2026-09-05,Sep 26,Sat,Amex Gold,GBP,460.0,2263.66,card_repayment,Other,,P
 L03194,2026-09-05,Sep 26,Sat,Aqua,GBP,29.6,145.66,card_repayment,Other,,Payment Received - Thank You,payment received thank you,P0318,,aqua-stmts-2026,9d9532572d73
 L03195,2026-09-05,Sep 26,Sat,Mashreq,AED,104000.0,104000.0,income,Other,"Commission (White & Co, WPS)",Salary - WHITE AND WHITE REAL ESTATE L L C,salary white and white real estate l l c,,,mashreq-neo-pdf-2026,038e62785812
 L03196,2026-09-05,Sep 26,Sat,Mashreq,AED,-5000.0,-5000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0204,,mashreq-neo-pdf-2026,fd5a32369988
-L03197,2026-09-05,Sep 26,Sat,Mashreq,AED,-50000.0,-50000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,490031640dd2
+L03197,2026-09-05,Sep 26,Sat,Mashreq,AED,-50000.0,-50000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT - AE ‫ ﺗﺤﺖ ﺭﻗﺎﺑﺔ ﺍﻟﻤﺼﺮﻑ ﺍﻟﻤﺮﻛﺰﻱ ﻟﺪﻭﻟﺔ ﺍﻹﻣﺎﺭﺍﺕ ﺍﻟﻌﺮﺑﻴﺔ ﺍﻟﻤﺘﺤﺪﺓ‬ - ‫ﻉ‬.‫ﻡ‬.‫ ﺵ‬ - ‫ﻳﺨﻀﻊ ﺑﻨﻚ ﺍﻟﻤﺸﺮﻕ‬,ipp transfer tallia flaher ref family su,,one_legged,mashreq-neo-pdf-2026,490031640dd2
 L03198,2026-09-05,Sep 26,Sat,Mashreq,AED,-20549.52,-20549.52,transfer,Other,,QuickRemit - TO A/C - CALUM MACLEOD WITH TRANSACTION,quickremit to a c calum macleod with tra,P0353,person_leg_confirm,mashreq-neo-pdf-2026,db36acc83a81
 L03199,2026-09-05,Sep 26,Sat,Mashreq,AED,-10000.0,-10000.0,transfer,Other,,IPP TRANSFER - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer calum macleod ref credit ca,P0205,,mashreq-neo-pdf-2026,fe8c0163a60d
 L03200,2026-09-05,Sep 26,Sat,Wise GBP,GBP,-21.99,-108.21,spend,Life,Apple subscriptions (BA Amex) - which ones?,Card transaction of 21.99 GBP issued by Apple.com/bill 08001076285,Apple.com/bill 08001076285,,,wise-csv-2026,ccf32e9fdedf
@@ -3603,7 +3603,7 @@ L03601,2026-10-02,Oct 26,Fri,BoS,GBP,-140.28,-690.18,card_repayment,Other,,AMERI
 L03602,2026-10-02,Oct 26,Fri,BoS,GBP,-549.88,-2705.41,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0228,,bos-app-6oct,f0be57845225
 L03603,2026-10-02,Oct 26,Fri,BoS,GBP,-1.48,-7.28,spend,Fees,Interest & bank fees,DAILY OD INT,daily od int,,,bos-app-6oct,aaee8e736168
 L03604,2026-10-02,Oct 26,Fri,M&S,GBP,380.42,1871.67,card_repayment,Other,,PAYMENT - THANK YOU,payment thank you,P0226,,m&s-app-6oct,a94cc261553a
-L03605,2026-10-02,Oct 26,Fri,Mashreq,AED,10000.0,10000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - from TALLIA VERITY FLAHER (MP_2_P),ipp transfer from tallia verity flaher m,,one_legged,mashreq-app-6oct,bf9916c5e7ed
+L03605,2026-10-02,Oct 26,Fri,Mashreq,AED,10000.0,10000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - from TALLIA VERITY FLAHER (MP_2_P),ipp transfer from tallia verity flaher m,,one_legged,mashreq-app-6oct,bf9916c5e7ed
 L03606,2026-10-02,Oct 26,Fri,Mashreq,AED,-150.0,-150.0,transfer,Life,Helpers / home services,IPP TRANSFER - MOHAMMED AHMED /REF/ FAMILY SUPPORT,ipp transfer mohammed ahmed ref family s,,one_legged,mashreq-app-6oct,59f40e431563
 L03607,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-20.76,-102.14,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,a836f77b870e
 L03608,2026-10-02,Oct 26,Fri,Tesco Clubcard,GBP,-30.6,-150.55,debt_cost,Fees,Card interest,INTEREST - SEE SUMMARY,interest see summary,,,tescoclubcard-app-6oct,bccb64ed70d5
@@ -3645,7 +3645,7 @@ L03643,2026-10-06,Oct 26,Tue,ADIB CC,AED,-172.49,-172.49,spend,Base Food,Groceri
 L03644,2026-10-06,Oct 26,Tue,BoS,GBP,1650.0,8118.0,transfer,Other,,F/FLOW CALUM MACLE,f flow calum macle,,one_legged,bos-app-11oct,3746977769ea
 L03645,2026-10-06,Oct 26,Tue,MBNA 1,GBP,-72.03,-354.39,debt_cost,Fees,Card interest,INTEREST,interest,,,mbna1-app-11oct,a47de4cd0849
 L03646,2026-10-06,Oct 26,Tue,Mashreq,AED,-17500.0,-17500.0,transfer,Other,,IPP TRANSFER - CREDIT CARD PAYMENT (card *6789),ipp transfer credit card payment card 67,P0233,,mashreq-app-6oct,bfb5e0321db2
-L03647,2026-10-06,Oct 26,Tue,Mashreq,AED,-8076.75,-8076.75,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-11oct,276878269046
+L03647,2026-10-06,Oct 26,Tue,Mashreq,AED,-8076.75,-8076.75,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-11oct,276878269046
 L03648,2026-10-07,Oct 26,Wed,ADIB CC,AED,-33.0,-33.0,spend,Health,Boxica,BOXICA,boxica,,,adib-cc-sms-oct,2d78d7140177
 L03649,2026-10-07,Oct 26,Wed,ADIB CC,AED,-118.0,-118.0,spend,Deliveries,Eating out / coffee,TASHAS AL WASEL,tashas al wasel,,,adib-cc-sms-oct,139722f3c9a5
 L03650,2026-10-07,Oct 26,Wed,ADIB CC,AED,-20.0,-20.0,spend,Life,Car / fuel / tolls / taxis,GOLDEN BAY CAR PARK,golden bay car park,,,adib-cc-sms-oct,717ba231d0ca
@@ -3658,7 +3658,7 @@ L03656,2026-10-07,Oct 26,Wed,Wise GBP,GBP,-64.94,-319.5,spend,Health,"Supplement
 L03657,2026-10-08,Oct 26,Thu,ADIB CC,AED,-32.45,-32.45,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-sms-oct,a3a441c06b31
 L03658,2026-10-08,Oct 26,Thu,ADIB CC,AED,-120.3,-120.3,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-sms-oct,27c034611667
 L03659,2026-10-08,Oct 26,Thu,BoS,GBP,-1050.0,-5166.0,transfer,Other,,C L MACLEOD,c l macleod,P0234,person_leg_confirm,bos-app-11oct,78cef92b6cd0
-L03660,2026-10-08,Oct 26,Thu,BoS,GBP,-1050.0,-5166.0,transfer,Business,L G Price (Instagram outreach) - 345 on 12 Nov AFTER 'stopped' 4 Nov - ask,L G PRICE,l g price,,one_legged,bos-app-11oct,eb8b46d290b3
+L03660,2026-10-08,Oct 26,Thu,BoS,GBP,-1050.0,-5166.0,transfer,Business,L G Price Instagram outreach - FINAL payment 12 Nov 2026,L G PRICE,l g price,,one_legged,bos-app-11oct,eb8b46d290b3
 L03661,2026-10-08,Oct 26,Thu,BoS,GBP,1050.0,5166.0,transfer,Other,,CALUM LACHLAN MACL,calum lachlan macl,P0235,person_leg_confirm,bos-app-11oct,ee799c71edff
 L03662,2026-10-08,Oct 26,Thu,BoS,GBP,-181.1,-891.01,spend,Business,Day-trading manager (Gareth Burris) GBP200/mo,GARETH BURRIS,gareth burris,,,bos-app-11oct,9bffa0df8f9c
 L03663,2026-10-08,Oct 26,Thu,Wise GBP,GBP,-8.41,-41.38,spend,Business,"CANCELLED 12 Oct - if this bills again, flag it",Deepstash,deepstash,,,wise-app-11oct,1518772dc73a
@@ -3758,7 +3758,7 @@ L03756,2026-10-23,Oct 26,Fri,ADIB CC,AED,-0.94,-0.94,spend,Life,Car / fuel / tol
 L03757,2026-10-23,Oct 26,Fri,ADIB CC,AED,-89.75,-89.75,spend,Unaccounted,,EMARAT - HASSA,emarat hassa,,,adib-cc-app-25oct,d6984de5e310
 L03758,2026-10-23,Oct 26,Fri,ADIB CC,AED,-21.31,-21.31,debt_cost,Fees,Card fees (late / cash advance / FX),International Transaction Fee,international transaction fee,,,adib-cc-app-25oct,73d1aca497ee
 L03759,2026-10-23,Oct 26,Fri,ADIB CC,AED,-1.07,-1.07,debt_cost,Fees,Card fees (late / cash advance / FX),International Trxn Fee VAT Charges,international trxn fee vat charges,,,adib-cc-app-25oct,4ddd61781cc4
-L03760,2026-10-23,Oct 26,Fri,Mashreq,AED,-2700.0,-2700.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-25oct,8e06fbd7e9e2
+L03760,2026-10-23,Oct 26,Fri,Mashreq,AED,-2700.0,-2700.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-25oct,8e06fbd7e9e2
 L03761,2026-10-24,Oct 26,Sat,ADIB CC,AED,-315.0,-315.0,spend,Life,Phone,Virgin Mobile,virgin mobile,,,adib-cc-app-28oct,1f2710687463
 L03762,2026-10-24,Oct 26,Sat,ADIB CC,AED,-25.0,-25.0,spend,Deliveries,Eating out / coffee,INHERITED CAFE,inherited cafe,,,adib-cc-app-28oct,c28a905e99f8
 L03763,2026-10-24,Oct 26,Sat,ADIB CC,AED,-10.0,-10.0,spend,Entertainment,Whatever we want - trip away,YAS BAY ARENA BARIN HO,yas bay arena barin ho,,,adib-cc-app-25oct,c68b8686417e
@@ -3810,7 +3810,7 @@ L03808,2026-10-29,Oct 26,Thu,Mashreq,AED,-20000.0,-20000.0,transfer,Other,,IPP T
 L03809,2026-10-29,Oct 26,Thu,Mashreq,AED,-9500.0,-9500.0,transfer,Other,,IPP TRANSFER - *6789 - CALUM MACLEOD - /REF/ CREDIT CARD PAYMENT,ipp transfer 6789 calum macleod ref cred,P0295,,mashreq-app-1nov,05c742bca9ce
 L03810,2026-10-29,Oct 26,Thu,Mashreq,AED,-5000.0,-5000.0,debt_principal,Loan,Lewis loan repayment,IPP TRANSFER - LEWIS PAGE - /REF/ FAMILY SUPPORT,ipp transfer lewis page ref family suppo,,,mashreq-app-1nov,e6423c1d9307
 L03811,2026-10-29,Oct 26,Thu,Mashreq,AED,-51500.0,-51500.0,transfer,Other,,Online Local Fund Transfer - TOC-MAE-[id redacted]-261029184725 FUND TRANSFER-MOBILE... (cut),online local fund transfer toc mae id re,,one_legged,mashreq-app-1nov,a0adaa9e7259
-L03812,2026-10-29,Oct 26,Thu,Mashreq,AED,-22000.0,-22000.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-1nov,bfb42e0aee8c
+L03812,2026-10-29,Oct 26,Thu,Mashreq,AED,-22000.0,-22000.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-1nov,bfb42e0aee8c
 L03813,2026-10-29,Oct 26,Thu,Mashreq,AED,122800.0,122800.0,income,Other,"Commission (White & Co, WPS)",Salary - WHITE AND WHITE REAL ESTATE L L C,salary white and white real estate l l c,,,mashreq-app-1nov,fd7e32b3e249
 L03814,2026-10-29,Oct 26,Thu,Wise GBP,GBP,-172.15,-846.98,spend,Property,Methil insurance (Simply Business) via Nationwide,Simply Business,simply business,,,wise-app-1nov,adb57d356667
 L03815,2026-10-30,Oct 26,Fri,ADIB CC,AED,-550.0,-550.0,spend,Entertainment,Whatever we want - health drip,AIMS HEALTH CARE LLC,aims health care llc,,,adib-cc-app-1nov,5e4737f3c3c5
@@ -3928,35 +3928,36 @@ L03926,2026-11-08,Nov 26,Sun,ADIB CC,AED,-289.3,-289.3,spend,Deliveries,Eating o
 L03927,2026-11-08,Nov 26,Sun,MBNA 1,GBP,-74.42,-366.15,debt_cost,Fees,Card interest,INTEREST,interest,,,mbna1-8nov,346d4789fce6
 L03928,2026-11-08,Nov 26,Sun,MBNA 1,GBP,-74.42,-366.15,debt_cost,Fees,Card interest,INTEREST,interest,,,mbna1-8nov,346d4789fce6
 L03929,2026-11-08,Nov 26,Sun,Wise GBP,GBP,716.53,3525.33,transfer,Other,,C Macleod (Wise),c macleod wise,P0296,,wise-15nov,78128f024562
-L03930,2026-11-09,Nov 26,Mon,ADIB CC,AED,-462.0,-462.0,spend,Life,"Humntra 462 - unknown, ask",Humntra,humntra,,,adib-cc-app-15nov,b62d92ad4bec
+L03930,2026-11-09,Nov 26,Mon,ADIB CC,AED,-462.0,-462.0,spend,Base Food,Humantra (food - Calum 15 Nov),Humntra,humntra,,,adib-cc-app-15nov,b62d92ad4bec
 L03931,2026-11-09,Nov 26,Mon,ADIB CC,AED,-87.46,-87.46,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,ca6f269b6e79
 L03932,2026-11-09,Nov 26,Mon,BoS,GBP,-716.53,-3525.33,transfer,Other,,CALUM WISE (to Wise for Segments mining invoice),calum wise to wise for segments mining i,P0296,,bos-app-15nov,4d0da1cab5d1
-L03933,2026-11-09,Nov 26,Mon,Mashreq,AED,130.0,130.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA VERITY FLAHER - MP_2_P - 202611080006B98111834867208,ipp transfer tallia verity flaher mp 2 p,,one_legged,mashreq-app-15nov,388e42f14323
-L03934,2026-11-09,Nov 26,Mon,Mashreq,AED,-2800.0,-2800.0,transfer,Tal,"Tal - extra transfer (unbudgeted, 9 Nov) - ask",IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-15nov,1f6979865654
+L03933,2026-11-09,Nov 26,Mon,Mashreq,AED,130.0,130.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA VERITY FLAHER - MP_2_P - 202611080006B98111834867208,ipp transfer tallia verity flaher mp 2 p,,one_legged,mashreq-app-15nov,388e42f14323
+L03934,2026-11-09,Nov 26,Mon,Mashreq,AED,-2800.0,-2800.0,transfer,Entertainment,Whatever we want - Tal's Christmas present (9 Nov),IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT,ipp transfer tallia flaher ref family su,,one_legged,mashreq-app-15nov,1f6979865654
 L03935,2026-11-09,Nov 26,Mon,Wise GBP,GBP,-716.29,-3524.15,transfer,Business,Software / AI,"Segments Cloud mining hosting Oct (USD 934.34, inv SCH-2026-00956)",segments cloud mining hosting oct usd 93,,one_legged,wise-15nov,5b59f11e0c8d
 L03936,2026-11-10,Nov 26,Tue,ADIB CC,AED,-1467.9,-1467.9,spend,Life,"Selfdrive: 1,467.90 = Tal's rental (refunded); 745.95 (14 Oct) = speeding fine, Calum misc",Selfdrive.ae,selfdrive ae,,,adib-cc-app-15nov,57645c5e0cc0
 L03937,2026-11-10,Nov 26,Tue,ADIB CC,AED,-353.21,-353.21,spend,Life,Car / fuel (Cafu),CAFU,cafu,,,adib-cc-app-15nov,7e9c6e01c21c
 L03938,2026-11-10,Nov 26,Tue,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,BOXICA,boxica,,,adib-cc-app-15nov,d0efdc9578fb
 L03939,2026-11-10,Nov 26,Tue,ADIB CC,AED,-122.65,-122.65,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,a10b3560ac50
 L03940,2026-11-10,Nov 26,Tue,ADIB CC,AED,-131.67,-131.67,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,7a7b61e8920c
-L03941,2026-11-11,Nov 26,Wed,ADIB CC,AED,-5788.55,-5788.55,spend,Life,"Government transaction 5,788.55 (11 Nov) - WHAT? ask Calum",24 SEVEN GOVERNMENT TRANS,24 seven government trans,,,adib-cc-app-15nov,8a64a3825ecc
-L03942,2026-11-11,Nov 26,Wed,ADIB CC,AED,-355.55,-355.55,spend,Base Food,Groceries,SUNBERRY VEGETABLE,sunberry vegetable,,,adib-cc-app-15nov,76e6a975b2e2
-L03943,2026-11-11,Nov 26,Wed,ADIB CC,AED,-29.0,-29.0,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,1ca6f2f98c91
-L03944,2026-11-11,Nov 26,Wed,ADIB CC,AED,-111.21,-111.21,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,4f4e06703631
-L03945,2026-11-12,Nov 26,Thu,ADIB CC,AED,-179.9,-179.9,spend,Business,Software / AI,REELLY PERSONAL 49$,reelly personal 49,,,adib-cc-app-15nov,5451418e3209
-L03946,2026-11-12,Nov 26,Thu,ADIB CC,AED,-157.94,-157.94,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,5a56b11a0265
-L03947,2026-11-12,Nov 26,Thu,BA Amex,GBP,-11.99,-58.99,spend,Life,Apple subscriptions (BA Amex) - which ones?,APPLE.COM/BILL HOLLYHILL,apple com bill hollyhill,,,baamex-15nov,fb6c9d4be4f0
-L03948,2026-11-12,Nov 26,Thu,BA Amex,GBP,13.98,68.78,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0250,,baamex-15nov,d94a548a1bb3
-L03949,2026-11-12,Nov 26,Thu,BoS,GBP,-13.98,-68.78,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0250,,bos-app-15nov,922c3479524d
-L03950,2026-11-12,Nov 26,Thu,BoS,GBP,-345.0,-1697.4,spend,Business,L G Price (Instagram outreach) - 345 on 12 Nov AFTER 'stopped' 4 Nov - ask,L G PRICE,l g price,,,bos-app-15nov,d1d4b9926dab
-L03951,2026-11-13,Nov 26,Fri,ADIB CC,AED,-420.0,-420.0,transfer,Other,Pass-through (reimbursed in cash) - excluded from budgets,"Pass-through - reimbursed in cash, not Calum's spend","pass-through - reimbursed in cash, not Calum's spend",,one_legged,adib-cc-app-15nov,dc2e6232a488
-L03952,2026-11-13,Nov 26,Fri,ADIB CC,AED,-300.0,-300.0,transfer,Other,Pass-through (reimbursed in cash) - excluded from budgets,"Pass-through - reimbursed in cash, not Calum's spend","pass-through - reimbursed in cash, not Calum's spend",,one_legged,adib-cc-app-15nov,a4ab002cc866
-L03953,2026-11-13,Nov 26,Fri,ADIB CC,AED,-131.95,-131.95,spend,Deliveries,Food delivery,DELIVEROO,deliveroo,,,adib-cc-app-15nov,e52ebaf35305
-L03954,2026-11-13,Nov 26,Fri,ADIB CC,AED,-114.37,-114.37,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-15nov,e3d44ea70f50
-L03955,2026-11-13,Nov 26,Fri,Wise GBP,GBP,-18.0,-88.56,transfer,Life,Car / fuel / tolls,"OpenAI ChatGPT (USD 24.00, GBP approx)",openai chatgpt usd 24 00 gbp approx,,one_legged,wise-15nov,36c6d8545a7f
-L03956,2026-11-14,Nov 26,Sat,ADIB CC,AED,-110.0,-110.0,spend,Deliveries,Eating out,Crafty Fox 4,crafty fox 4,,,adib-cc-app-15nov,9fa0cf9a28b5
-L03957,2026-11-14,Nov 26,Sat,ADIB CC,AED,-219.43,-219.43,spend,Base Food,Groceries,Meat marhaba butchery l,meat marhaba butchery l,,,adib-cc-app-15nov,e965c3347e9e
-L03958,2026-11-14,Nov 26,Sat,ADIB CC,AED,-38.74,-38.74,spend,Base Food,Groceries,CARREFOUR MARKET,carrefour market,,,adib-cc-app-15nov,7f69bcb695b6
-L03959,2026-11-14,Nov 26,Sat,ADIB CC,AED,-257.0,-257.0,spend,Deliveries,Eating out / coffee,TASHAS MARINA MALL,tashas marina mall,,,adib-cc-app-15nov,0e0593a550af
-L03960,2026-11-14,Nov 26,Sat,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,BOXICA,boxica,,,adib-cc-app-15nov,fddba0ca38d1
-L03961,2026-11-14,Nov 26,Sat,Wise GBP,GBP,-11.99,-58.99,transfer,Other,,Apple (Wise),apple wise,,one_legged,wise-15nov,c21eb422b491
+L03941,2026-11-11,Nov 26,Wed,ADIB CC,AED,-5000.0,-5000.0,transfer,Other,Deposit held - Lucas visa (refundable? date TBC),"24 Seven Government Trans - visa DEPOSIT for Lucas (held, part of 5,788.55)",24 seven government trans visa deposit f,,one_legged,adib-cc-app-15nov,9e7a942fb603
+L03942,2026-11-11,Nov 26,Wed,ADIB CC,AED,-788.55,-788.55,transfer,Life,One-off - Lucas visa transfer fee (unbudgeted),"24 Seven Government Trans - Lucas visa transfer FEE (part of 5,788.55)",24 seven government trans lucas visa tra,,one_legged,adib-cc-app-15nov,2f1639bceb9c
+L03943,2026-11-11,Nov 26,Wed,ADIB CC,AED,-355.55,-355.55,spend,Base Food,Groceries,SUNBERRY VEGETABLE,sunberry vegetable,,,adib-cc-app-15nov,76e6a975b2e2
+L03944,2026-11-11,Nov 26,Wed,ADIB CC,AED,-29.0,-29.0,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,1ca6f2f98c91
+L03945,2026-11-11,Nov 26,Wed,ADIB CC,AED,-111.21,-111.21,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,4f4e06703631
+L03946,2026-11-12,Nov 26,Thu,ADIB CC,AED,-179.9,-179.9,spend,Business,Software / AI,REELLY PERSONAL 49$,reelly personal 49,,,adib-cc-app-15nov,5451418e3209
+L03947,2026-11-12,Nov 26,Thu,ADIB CC,AED,-157.94,-157.94,spend,Base Food,Groceries / meal prep,InstaShop,instashop,,,adib-cc-app-15nov,5a56b11a0265
+L03948,2026-11-12,Nov 26,Thu,BA Amex,GBP,-11.99,-58.99,spend,Life,Apple subscriptions (BA Amex) - which ones?,APPLE.COM/BILL HOLLYHILL,apple com bill hollyhill,,,baamex-15nov,fb6c9d4be4f0
+L03949,2026-11-12,Nov 26,Thu,BA Amex,GBP,13.98,68.78,card_repayment,Other,,PAYMENT RECEIVED - THANK YOU,payment received thank you,P0250,,baamex-15nov,d94a548a1bb3
+L03950,2026-11-12,Nov 26,Thu,BoS,GBP,-13.98,-68.78,card_repayment,Other,,AMERICAN EXP 3773,american exp 3773,P0250,,bos-app-15nov,922c3479524d
+L03951,2026-11-12,Nov 26,Thu,BoS,GBP,-345.0,-1697.4,spend,Business,L G Price Instagram outreach - FINAL payment 12 Nov 2026,L G PRICE,l g price,,,bos-app-15nov,d1d4b9926dab
+L03952,2026-11-13,Nov 26,Fri,ADIB CC,AED,-420.0,-420.0,transfer,Other,Pass-through (reimbursed in cash) - excluded from budgets,"Pass-through - reimbursed in cash, not Calum's spend","pass-through - reimbursed in cash, not Calum's spend",,one_legged,adib-cc-app-15nov,dc2e6232a488
+L03953,2026-11-13,Nov 26,Fri,ADIB CC,AED,-300.0,-300.0,transfer,Other,Pass-through (reimbursed in cash) - excluded from budgets,"Pass-through - reimbursed in cash, not Calum's spend","pass-through - reimbursed in cash, not Calum's spend",,one_legged,adib-cc-app-15nov,a4ab002cc866
+L03954,2026-11-13,Nov 26,Fri,ADIB CC,AED,-131.95,-131.95,spend,Deliveries,Food delivery,DELIVEROO,deliveroo,,,adib-cc-app-15nov,e52ebaf35305
+L03955,2026-11-13,Nov 26,Fri,ADIB CC,AED,-114.37,-114.37,spend,Base Food,Groceries / meal prep,www.instashop.com,www instashop com,,,adib-cc-app-15nov,e3d44ea70f50
+L03956,2026-11-13,Nov 26,Fri,Wise GBP,GBP,-18.0,-88.56,transfer,Life,Car / fuel / tolls,"OpenAI ChatGPT (USD 24.00, GBP approx)",openai chatgpt usd 24 00 gbp approx,,one_legged,wise-15nov,36c6d8545a7f
+L03957,2026-11-14,Nov 26,Sat,ADIB CC,AED,-110.0,-110.0,spend,Deliveries,Eating out,Crafty Fox 4,crafty fox 4,,,adib-cc-app-15nov,9fa0cf9a28b5
+L03958,2026-11-14,Nov 26,Sat,ADIB CC,AED,-219.43,-219.43,spend,Base Food,Groceries,Meat marhaba butchery l,meat marhaba butchery l,,,adib-cc-app-15nov,e965c3347e9e
+L03959,2026-11-14,Nov 26,Sat,ADIB CC,AED,-38.74,-38.74,spend,Base Food,Groceries,CARREFOUR MARKET,carrefour market,,,adib-cc-app-15nov,7f69bcb695b6
+L03960,2026-11-14,Nov 26,Sat,ADIB CC,AED,-257.0,-257.0,spend,Deliveries,Eating out / coffee,TASHAS MARINA MALL,tashas marina mall,,,adib-cc-app-15nov,0e0593a550af
+L03961,2026-11-14,Nov 26,Sat,ADIB CC,AED,-18.0,-18.0,spend,Health,Boxica,BOXICA,boxica,,,adib-cc-app-15nov,fddba0ca38d1
+L03962,2026-11-14,Nov 26,Sat,Wise GBP,GBP,-11.99,-58.99,transfer,Other,,Apple (Wise),apple wise,,one_legged,wise-15nov,c21eb422b491
