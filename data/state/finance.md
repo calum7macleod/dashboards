@@ -8,6 +8,7 @@
 
 ## ADIB TEST - RESULT (31 Oct statement lines, seen 1 Nov)
 Monthly Murabaha 2,408.70 charged; 'Profit earned and bonus' 1,207.33 credited. PARTIAL refund -> net cost 1,201.37. 30 Sep present balance 67,102.85 was paid 4,602.85 short by the 26 Oct due date. Finance's reading confirmed: full waiver requires the statement total paid by the due date; short = proportional refund on unused limit. RULE (now settled): pay the statement total by the due date every month - in practice, card to zero on payday before the statement date.
+## 15 NOV CASH (Calum, verbal - not in any bank): received ~D8,000 CASH for the FX/crypto exchange fee (J122 crypto fee; plan had 9,010 on 30 Nov - confirm exact amount and whether 1,010 is still owed; deals.json paid flag NOT set until confirmed). Handed straight to Tal as a PREPAYMENT of December's budget -> Tal due on 1 Dec = 23,600 - 8,000 = 15,600. 30 Nov expected now ~172,500 (181,508 - 9,010). Net effect on the plan: ~-1,010 if the fee was 8,000 not 9,010.
 ## 15 NOV (h0141) - SUNDAY CLOSE. Data to 14 Nov (ADIB), 12 Nov (BoS), 9 Nov (Mashreq), 14 Nov (Wise).
 Balances: BoS 15,435.61 | Mashreq 7,112.90 | Pot 77,069.83 (indicative 186.09 = accrued to date, ~12.4/day) | HSBC 1,353.87 (no interest; min 33.85 due 7 Dec) | BA Amex 11.99.
 Nov UAE to 14 Nov (47% of month): food 4,014/9,000 OK | baby 625/1,000 | misc 1,829/2,000 HOT (Cafu 353, Humntra 462 unknown, Amazon 135) | whatever 1,566/5,000 (fines 502, wake 650, Poppy 414) | fixed 1,261/1,254 | Selfdrive 1,468 paid | car wash 600.
