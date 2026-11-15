@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "type": "mining-hosting-payment",
+  "note": "Calum 8 Nov: crypto mining rigs - keep as a SEPARATE section, not in monthly budget vs actual",
+  "source": "Wise app screenshot Sun 15 Nov 26 07:12 Dubai (IMG_5200); BoS IMG_5194",
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-15",
+  "flags": [
+   "Invoice file segments-cloud-SCH-2026-00956.json still reads UNPAID - append-only, Finance to mark paid",
+   "Paid 9 Nov, ahead of the 14 Nov due date (derived)",
+   "Implied rate 934.34 / 716.29 = 1.3044 USD per GBP (Wise, fee inside the rate)"
+  ]
+ },
+ "payment": {
+  "invoice": "SCH-2026-00956",
+  "date": "2026-11-09",
+  "from": "Wise",
+  "payeeAsPrinted": "segments cloud",
+  "amountUSD": 934.34,
+  "amountGBP": 716.29,
+  "matchesInvoiceTotalUSD": 934.34,
+  "fundedBy": [
+   {
+    "account": "BoS",
+    "date": "2026-11-09",
+    "description": "CALUM WISE",
+    "amount": -716.53,
+    "currency": "GBP"
+   },
+   {
+    "account": "Wise",
+    "date": "2026-11-08",
+    "description": "C Macleod",
+    "amount": 716.53,
+    "currency": "GBP"
+   }
+  ]
+ }
+}
