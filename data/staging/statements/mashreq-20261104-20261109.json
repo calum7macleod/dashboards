@@ -1,0 +1,79 @@
+{
+ "meta": {
+  "account": "Mashreq",
+  "accountType": "Neo current",
+  "currency": "AED",
+  "period": "4-9 Nov 26",
+  "source": "app screenshots Sun 15 Nov 26 07:11-07:12 Dubai",
+  "images": [
+   "IMG_5198",
+   "IMG_5197"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalAvailableBalance": 7112.9,
+   "currentBalance": 7112.9,
+   "banner": "06 Nov 2026 Way to Save! ... Your AED 64,025 deposit is a great start!"
+  },
+  "verified": "9,782.90 (8 Nov read) + 130.00 - 2,800.00 = 7,112.90 printed",
+  "redacted": "IBANs, account numbers, customer id in TOC-MAE refs",
+  "flags": [
+   "IMG_5198 shows balance and banner only, no rows",
+   "4 Nov row cut at bottom"
+  ],
+  "rowCount": 4,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-15"
+ },
+ "images": [
+  {
+   "image": "IMG_5198",
+   "rows": []
+  },
+  {
+   "image": "IMG_5197",
+   "rows": [
+    {
+     "date": "2026-11-09",
+     "description": "IPP TRANSFER - TALLIA VERITY FLAHER - MP_2_P - 202611080006B98111834867208",
+     "amount": 130.0,
+     "reference": "033IPPC263130TYD",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_5197",
+     "position": 1
+    },
+    {
+     "date": "2026-11-09",
+     "description": "IPP TRANSFER - TALLIA FLAHER - /REF/ FAMILY SUPPORT",
+     "amount": -2800.0,
+     "reference": "033IPPD263130F95",
+     "detailRef": "T_1BB245688CEB46D09FD47CED5563A8BD",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_5197",
+     "position": 2
+    },
+    {
+     "date": "2026-11-06",
+     "description": "IPP TRANSFER - CAR WASH - /REF/ FAMILY SUPPORT",
+     "amount": -600.0,
+     "reference": "033IPPD263100589",
+     "detailRef": "T_6AA0717FA64240729E23E5A2B7C518D7",
+     "counterpartyIban": "[IBAN redacted]",
+     "image": "IMG_5197",
+     "position": 3,
+     "alreadyStaged": "mashreq-20261102-20261106.json"
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Acct to Acct transfer - FUND TRANSFER - [acct redacted] - CALUM LACHLAN MACLEOD (cut at bottom)",
+     "amount": -56125.0,
+     "reference": "033AACT263086236",
+     "image": "IMG_5197",
+     "position": 4,
+     "alreadyStaged": "mashreq-20261102-20261106.json"
+    }
+   ]
+  }
+ ]
+}
