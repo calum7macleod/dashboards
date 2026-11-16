@@ -1,4 +1,4 @@
-# CONTENT STATE - start pack. Updated 2026-10-01 by Content.
+# CONTENT STATE - start pack. Updated 2026-11-16 by Content.
 
 ## Objective
 Deals from socials. Tracked monthly from buyers with source = socials (IG DM, TikTok, YouTube). Sep so far: Chirag (IG DM) - first content lead of the month. Best-performing formats to date: two-person whiteboard (~3x typical), static proof posts (billboard 7.9K, awards 6.2K, penthouse 4.9K) = reach engine; scripted reels = share engine (best 28 shares). Skip rate on generic captions 70-85% - the socials team's untouched reels are the floor.
@@ -149,3 +149,16 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Claude Doc: https://claude.ai/artifact/3kRMzU9bLR9F3GocrHDXVe - "Disney Is Coming To Yas Island". Text + 4 charts (Orlando, Shanghai, Paris, Yas vs islands) + Aldar table, yields, Canopies Sanctuary table. Research: content-assets/scripts/2026-11-13-research-disney-effect.md.
 - Open: map left out (Disney plot unpublished) - Designer to use Aldar masterplan image; rail opening year not stated (unverified); Designer layout pass for Canopies Sanctuary launch 25-26 Nov.
 - Screens rule (13 Nov): all filmed screens on LIGHT backgrounds (Calum films in a black top; editors key graphics). 11 and 12 switched to white bg, navy text, cyan = Abu Dhabi, gold = Dubai. Viewer letterbox now white.
+
+## 14-16 Nov - hooks, board sync, week scheduled
+- 14 Nov hooks session: 15 hooks locked (series "Hooks 14 Nov" / "Personal (14 Nov)" on the board, c114-c121 + existing idea cards). Calum's format from now: big contrarian claim as text, speech retains; 5 bare text options, then 5 bare speech options, no commentary. He keeps his own wording on #2 (same population / growing faster) and films Too Late as written (13x / 1.4) - flagged, his call.
+- Metricool read 2-15 Nov: IG 3,423 -> 3,514. Leave Dubai 11,079 views / 88 shares (winner; skip 46%, avg watch 23.9s). Under 52% skip = 2,000+ views; over 60% = under 1,700. Weekend double-posting (5 reels in 2 days) averaged ~1,100 - back to one a day. "How to" / "what is" titles are the weakest.
+- Board synced 16 Nov (GitHub relinked; API writes blocked by the session proxy - write via git clone + push). Binned: c84 10 Terms, c78 Burj Al Arab, c15 Dubai villa September. c17/c18 Iran reels back to idea. New idea c130 Democracy/UK (brand-risk flag given).
+- Filmed Fri 13 Nov (with editor): c46 c47 c28 c48 c49 c50 c94 c65.
+- Calum's working docs (his Word folder): 26.11.16 Board (7: screens 09-15), 26.11.16 Studio (8 reels + YouTube off-plan safe), 26.11.06 Scripts (10 to write), 26.11.14 Hooks (15).
+- TV app now: tiles + screens 09-15. New 16 Nov: 13 Roads to Nowhere map, 14 UK vs UAE spending chart, 15 pipeline map. RULE: titles top-left as normal, all other content clear of the left fifth of the screen (Calum stands there). Screens 11 and 12 still start at the left edge - offered, not yet shifted. Screen 09's "existing bridge" is drawn in the wrong place (real bridge is correct on 13) - offered, not fixed. Surplus is +4% on 14, +5% on 11 - Calum to pick.
+- Week in Metricool (all 18:07, set by Calum): Mon 16 Who Is Going To Live, Tue 17 World Class Leisure, Wed 18 Lulu, Thu 19 empty for Anthropic IPO reel (to record by Wed; safe line: bought in at $380bn in Feb, lists at $1.4tn - no profit figure, stake undisclosed), Fri 20 Dolphins, Sat 21 UK vs UAE Income Tax, Sun 22 What Happens Next.
+- HELD - all four unposted Third Hill reels (c42 c43 c44 c45). Edited and ready. Do not schedule until Calum says; raise when the launch firms up.
+- Rule (Calum): reels over 90s go to Facebook as Post, not Reel. Don't flag it.
+- Audio: editor's exports are all -12 to -13 LUFS (measured, fine). Metricool's stored copy of two files measured -25 but Instagram plays them normally. No action.
+- Open: first comments missing on 4 scheduled posts; covers missing on Dolphins and What Happens Next; October Dubai data pair (c91 c92) script this week or bin; keyword DM counts (HILL / OFFPLAN / DISNEY) not known - deals-from-socials line still blank.
