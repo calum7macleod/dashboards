@@ -1158,5 +1158,21 @@
   "to": "Life Coach",
   "item": "MyFitnessPal calories 8-14 Nov (7 screenshots) staged in private:data/staging/2026-11-16-myfitnesspal-calories.json - pairs with the 15 Nov nutrients file.",
   "status": "open"
+ },
+ {
+  "id": "h0146",
+  "from": "mentor",
+  "to": "pa",
+  "date": "2026-11-16",
+  "status": "open",
+  "item": "Jake's list is fully called (196/198). Mirror private:data/calls/jake-list.md into Jake's CRM pots - every row has an outcome code (M/CB/WR/SI/W/NI/WN/NA/TEST) and a line. Build the re-call list: 82 no-answers, two attempts each over the fortnight, Marc 17 and Sofiane 41 first. Add the will-buy and good-quality names (Tina, Ahmad, Nada, Summy, Marina, Hazem) to buyers.json."
+ },
+ {
+  "id": "h0147",
+  "from": "mentor",
+  "to": "market",
+  "date": "2026-11-16",
+  "status": "open",
+  "item": "Two reports for Calum's live buyers: (1) Wadeem vs Palm Springs (Dubai) head-to-head for Tina Hirani ~10M - price, plan, handover, resale depth, what phase-1 Hudayriyat has done; (2) Abu Dhabi vs Dubai at ~5M, investor cut - yields and capital growth side by side (Jumeirah Park / Dubai apartments vs Reem / Hudayriyat) - serves Marina, Summy Natha, Hans Van Calster. Plus a launch calendar (Hudayriyat + Reem, timing) for Hazem. content-assets/research/, numbers with ages."
  }
 ]

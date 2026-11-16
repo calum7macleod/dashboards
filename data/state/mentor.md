@@ -9,6 +9,7 @@ At Jake Nazer's brokerage since ~2 Nov (a month later than the 5 Oct plan) - Abu
 - 21 Sep: PF-first call - outcome never recorded; PF offers K411/BL482 presumed dead.
 
 ## Call-through, running
+- 16 Nov: Jake's list complete - 196 dialled Mon-Sat (26/34/50/44/42). Reached ~49%. Agreed categories: will buy 2 (Tina ~10M, Ahmad + brother ADGM) · good quality 4 (Nada, Summy, Marina, Hazem) · send updates 18 · call backs 7 · no answer 82 · bought 13 (12 with other agents) · agents 24 · not interested 38 · dead 10. Per-name record and actions in private:data/calls/jake-list.md. Mentor's calls this week: Tina's EOI (Wadeem vs Palm Springs) is the one deal; the AD-vs-Dubai comparison serves Marina, Summy and Hans; the 82 re-calls at two each. Repo was unreachable Wed 11 - Mon 16 (session proxy) - outcomes held in chat and written back 16 Nov.
 - 12 Nov: 110 dialled in three days (26 / 34 / 50). Reached ~45%. Live: Tina Hirani ~10M (Palm Springs EOI to turn - Wadeem), Summy Natha (Christmas AD tour), Marina (Sun 15 Nov 16:00, ~5M), Gurmit (Dubai), Xavier (Marsa trigger), call-backs Nadim / Felipe / Kiran / Abdulla. Ten agents on the list, five already-bought, three Golf Estates owners (secondary stock). Mentor's read: the list's lesson is follow-up speed - three Modon buyers were lost to other agents. Calum hit 50 in a day for the first time at Jake's - identity win, not a results day.
 
 ## Live deals worth a conversation
