@@ -429,3 +429,4 @@
 {"date": "2026-11-15", "agent": "Finance", "did": "Recorded cash fee received and handed to Tal as a prepayment of December's budget", "wrote": ["data/state/finance.md"]}
 {"date": "2026-11-15", "agent": "Fitness", "did": "Supplement review: Mg to Thorne caps, creatine CGN, L-theanine 2-wk trial, beta-alanine; blood test timing; state updated", "wrote": ["private:personal/state/fitness.md"]}
 {"date": "2026-11-16", "agent": "Fitness", "did": "Fatigue episode 3 worked through: Strava 11-16 Nov logged, state updated, blood test handoff to PA", "wrote": ["private:personal/fitness/training.json", "private:personal/state/fitness.md", "data/handoffs.json"]}
+{"date": "2026-11-16", "agent": "Fitness", "did": "Whoop upload not found - token 403 handoff to Manager; second deload declined by Calum; state updated", "wrote": ["private:personal/state/fitness.md", "data/handoffs.json"]}

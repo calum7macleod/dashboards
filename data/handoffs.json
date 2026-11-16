@@ -1134,5 +1134,13 @@
     "to": "PA",
     "item": "Book Calum a blood test THIS WEEK (Dubai, any DHA lab/clinic, morning, fasted): 25-OH vitamin D, ferritin + full iron panel, B12, folate, full thyroid (TSH, free T4, free T3), total + free testosterone, SHBG, HbA1c, lipids, full blood count, CRP. ~Đ300-500 indicative. Reason: 3rd episode of unexplained fatigue. Results to Fitness.",
     "status": "open"
+  },
+  {
+    "id": "h0143",
+    "date": "2026-11-16",
+    "from": "Fitness",
+    "to": "Manager",
+    "item": "GitHub token in Project instructions returns HTTP 403 since 15 Nov (Fitness hit it on a Contents API GET). Calum says he uploaded Whoop data but nothing is in crm-inbox staging after 1 Nov - Uploader writes likely failing silently. Check Uploader access and any agent still on the token.",
+    "status": "open"
   }
 ]
