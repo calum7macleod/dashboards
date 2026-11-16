@@ -154,8 +154,9 @@
       "created": "2026-10-08",
       "postDate": null,
       "hook": "How The Iran Conflict Impacted Dubai's Real Estate Market",
-      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Q3 2026 residential 73.9bn vs 140.0 (-47%), 118.5 (-38%), 91.2 (-19%); last lower Q3 2022 (54.2); avg ticket 2.13m lowest Q3 since 2020 (mix: off-plan apts 65% of sales, their avg -23%); split 65/23/6/6; Covid 2020 last Q3 fall, 2021 12.2 -> 32.8; 199bn if repeated. Verified 8 Oct. FIX: 'lowest for a Q3'; 'I think' on AD taking investors; 'first half' not 'this year'. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md.",
-      "stage": "scripted"
+      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Q3 2026 residential 73.9bn vs 140.0 (-47%), 118.5 (-38%), 91.2 (-19%); last lower Q3 2022 (54.2); avg ticket 2.13m lowest Q3 since 2020 (mix: off-plan apts 65% of sales, their avg -23%); split 65/23/6/6; Covid 2020 last Q3 fall, 2021 12.2 -> 32.8; 199bn if repeated. Verified 8 Oct. FIX: 'lowest for a Q3'; 'I think' on AD taking investors; 'first half' not 'this year'. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md. | 16 Nov: Calum re-raised as an idea - back to idea. 8 Oct script uses Q3 numbers, refresh before use.",
+      "stage": "idea",
+      "stageDate": "2026-11-16"
     },
     {
       "id": "c18",
@@ -166,8 +167,9 @@
       "created": "2026-10-08",
       "postDate": null,
       "hook": "Covid Or The Iran Conflict What Was Worse For Dubai Real Estate",
-      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Covid Q3 2020: vol -19%, value -15% (14.3 -> 12.2), off-plan -47%, ready +19%, ready apts -16%, villas -9%. Conflict Q3 2026: vol -38%, value -47% (140 -> 73.9), off-plan -37%, ready -40%, ready apts 1.66m +2%, villas 6.46m -2%. Drop 66bn > whole Q3 2022. 2021 2.69x. Q3 2025 highest Q3 by value (Q2 2025 152.7 higher). All verified 8 Oct against DLD files. Add 'residential' once; last line (AD skin) recommended. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md.",
-      "stage": "scripted"
+      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Covid Q3 2020: vol -19%, value -15% (14.3 -> 12.2), off-plan -47%, ready +19%, ready apts -16%, villas -9%. Conflict Q3 2026: vol -38%, value -47% (140 -> 73.9), off-plan -37%, ready -40%, ready apts 1.66m +2%, villas 6.46m -2%. Drop 66bn > whole Q3 2022. 2021 2.69x. Q3 2025 highest Q3 by value (Q2 2025 152.7 higher). All verified 8 Oct against DLD files. Add 'residential' once; last line (AD skin) recommended. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md. | 16 Nov: Calum re-raised as an idea - back to idea. 8 Oct script uses Q3 numbers, refresh before use.",
+      "stage": "idea",
+      "stageDate": "2026-11-16"
     },
     {
       "id": "c19",
@@ -1617,6 +1619,19 @@
       "postDate": null,
       "hook": "",
       "notes": "On site.",
+      "stage": "idea",
+      "stageDate": "2026-11-16"
+    },
+    {
+      "id": "c130",
+      "title": "Democracy Is The Reason The UK Is Failing",
+      "series": "UK vs UAE",
+      "status": "template",
+      "priority": "medium",
+      "created": "2026-11-16",
+      "postDate": null,
+      "hook": "",
+      "notes": "Calum idea 16 Nov.",
       "stage": "idea",
       "stageDate": "2026-11-16"
     }
