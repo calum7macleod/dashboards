@@ -1,1130 +1,1138 @@
 [
- {
-  "id": "h0001",
-  "date": "2026-09-21",
-  "from": "market",
-  "to": "content",
-  "item": "STORY - the UAE split (verified 21 Sep 2026). CLAIM: Dubai prices went negative year on year this summer for the first time since June 2021 - PIX Aug-26 205.6, -3.5% YoY as published (live series after late registrations 207.0, -2.4%), about -6% from the Jan-May plateau of ~220. Dubai off-plan growth went from +12.8% YoY (Dec-25) to +0.1% (Aug-26). Abu Dhabi same window: ValuStrat index +17.8% YoY, off-plan 6,061 sales = 84% of all sales, +156% YoY, off-plan avg 2,104 psf +21.2% YoY. | RECEIPTS: propertyindex.ae/dubai-real-estate-price-index/2026-08 (DLD-registered, mix-adjusted, series CSV on /download); ValuStrat Abu Dhabi Real Estate Review Q2 2026 pp.7-13 (PDF in content-assets/research/, data to 30 Jun = a quarter old, indicative not register-verified). | ANGLE: 'I moved where the money moved' - Calum to Modon / Abu Dhabi from 5 Oct, invested himself (Tara Park, Hudayriyat). HONEST BEAT that makes it credible: Abu Dhabi is not immune - transacted psf fell on the quarter in Q2 (off-plan -4%, ready -4.3%), index growth +2.1% q = weakest in two years, and AD off-plan sits ~46% over ready vs ~24% in Dubai. DO NOT SAY: 'seven straight monthly declines' or 'Dec-25 peak 223.2' - killed, current series shows Apr and May up and only three falls (Jun, Jul, Aug). DO NOT compare +21.2% with +0.1% as like-for-like - one is a raw average psf, the other mix-adjusted; use +17.8% index vs -3.5% index and say methods differ. Rent freeze line if wanted: ADREC cut the cap 5% to 0% on 2 Jun 2026, temporary, until further notice - adrec.gov.ae press release 3 Jun 2026; ADGM areas (Maryah, parts of Reem) carved out per Baker McKenzie - check before saying it on a Reem piece.",
-  "status": "open"
- },
- {
-  "id": "h0002",
-  "date": "2026-09-21",
-  "from": "PA",
-  "to": "Manager",
-  "item": "Owner data now in PRIVATE repo: crm-inbox data/owners/damac-lagoons-owners.json (8,843 Lagoons units, 3MB) + README.md. Requests: 1) agentkit getfile fails over 1MB - add an 'owner <unit|name|cluster>' command using the raw media type, returning matching rows only; 2) propose one line for _shared.md Source of truth pointing all agents at private:data/owners/README.md (Calum approves the rule change).",
-  "status": "done"
- },
- {
-  "id": "h0003",
-  "date": "2026-09-22",
-  "from": "PA",
-  "to": "Manager",
-  "item": "Task dashboard: Calum wants it finished. Known gaps from PA audit 21 Sep: difficulty is text (easy/medium/hard) so points never compute (0 done, 0 open) - map to 1/3/5/8 or score numerically; 226 done tasks + 51 active in one file - archive done to data/archive/; overdue items show nothing - surface count + oldest; ids are a mix of UUIDs and slugs; buildLog/units arrays empty; Top 3 flag not enforced to max three. Calum to add what he sees broken. Task task-dashboard-sort-2209 due Mon 28 Sep.",
-  "status": "done"
- },
- {
-  "id": "h0004",
-  "date": "2026-09-22",
-  "from": "PA",
-  "to": "Manager",
-  "item": "Buyers dashboard: new field closedLost (YYYY-MM-DD) on buyer records set when stage goes to Lost. Calum wants the Lost section sorted by closedLost descending, most recent at the top, always. Older Lost records have no date - sort them to the bottom, do not invent dates.",
-  "status": "done"
- },
- {
-  "id": "h0005",
-  "date": "2026-09-22",
-  "from": "PA",
-  "to": "Manager",
-  "item": "Buyer card notes render: notes is one string, entries separated by ' | ', newest first, each entry starts with a date ('22 Sep: ...' or '2026-09-02: ...'). Calum wants it readable: split on ' | ', one line per entry, date as gold eyebrow, newest at top, show 3 then 'more'. Same for stock/seller notes. PA will keep writing that format; if you'd rather move to notes[] array + history[], say so and PA migrates the data in one pass.",
-  "status": "done"
- },
- {
-  "id": "h0006",
-  "date": "2026-09-23",
-  "from": "PA",
-  "to": "Manager",
-  "item": "06:30/18:30 Inbox sweep has not produced a triage file on 22 or 23 Sep (data/triage/ only has .keep). Check the scheduled task fired and can write the file; PA opens the brief on it.",
-  "status": "done"
- },
- {
-  "id": "h0007",
-  "date": "2026-09-23",
-  "from": "manager",
-  "to": "PA",
-  "item": "Buyer data migration (spec tools/specs/2026-09-23-agentkit-v2.md section 1, after Claude Code ships v2): 1) status derived from stage - Won->'Closed Won', Lost->'Closed Lost', else 'Active' (16 Active+Lost, 1 Active+Won, 3 'Won' to fix); 2) stage Viewed->Viewing (3), Qualifying->Qualified (1); 3) closedDate (21) -> closedWon or closedLost per stage, then remove closedDate; never invent a date; 4) archive-buyers: lostReason = old status, stage Lost + status 'Closed Lost' for Inactive/Archived/Bought Elsewhere; the 5 'Bought' - check deals.json, Calum's deal = Won else lostReason Bought Elsewhere; the 2 'Active' in archive - revive to buyers.json or Lost, ask Calum once; 5) acceptance: agentkit.py buyers-check reads '-- 0 violations' on buyers.json. From now on set stage only; status follows.",
-  "status": "done"
- },
- {
-  "id": "h0008",
-  "date": "2026-09-23",
-  "from": "Designer",
-  "to": "PA",
-  "item": "Seema J519 Costa Brava: offer image issued 23 Sep at Đ2.65M (net to seller Đ2,584,400, open to 28 Sep) - update data/offers.json (existing row shows 2.7M dated 9 Sep) and add buyer name once Calum confirms",
-  "status": "done"
- },
- {
-  "id": "h0009",
-  "date": "2026-09-23",
-  "from": "Designer",
-  "to": "PA",
-  "item": "Correction to h0008 (Seema J519): letter redone from the locked template - net to seller is Đ2,587,050 (2% flat + Đ9,950), not Đ2,584,400. Record from content-assets/offers/Seema-J519-Offer-2.65M.pdf.",
-  "status": "done"
- },
- {
-  "id": "h0010",
-  "date": "2026-09-23",
-  "from": "uploader",
-  "to": "pa",
-  "item": "1 buyer row appended to data/buyers.json from WA contact card - Edenchizxx +971563097960, Lagoons 4-bed handed-over, 2.6m vs 2.7m, Viewing, s4. Set nextTouch; confirm Santorini/Nice reading and real name",
-  "status": "done"
- },
- {
-  "id": "h0011",
-  "date": "2026-09-23",
-  "from": "Designer",
-  "to": "Market",
-  "item": "Abu Đ4M pack: brief v2 named Emaar's Bristol (Beachfront); Calum means The Bristol at Ramhan Island by Eagle Hills. Designer built pages 15-17 from web (PF project page Sep 26: 1/2/3-bed apts, 3-beds on sale, 10/60/30 listed but official plan unreleased, construction started 9 Apr 26, completion Dec 2028, freehold 2%). Please verify and get the 3-bed price + official plan from Eagle Hills so the returns page can model it",
-  "status": "open"
- },
- {
-  "id": "h0012",
-  "date": "2026-09-23",
-  "from": "uploader",
-  "to": "content",
-  "item": "51 rows staged in data/staging/2026-09-23-jake-nazer-reels-hooks.json - @jake_nazer IG reels grid, hook + views, newest first, from 6 screenshots 23 Sep. Move to content-assets/research or content.json as you see fit",
-  "status": "open"
- },
- {
-  "id": "h0013",
-  "date": "2026-09-24",
-  "from": "content",
-  "to": "Market",
-  "item": "VERIFY before filming - Jake-study brick sheet content-assets/research/2026-09-24-jake-nazer-structure-and-bricks.md section 3: every [v] line. Priority: freehold 2019 / Dubai 2002; villa totals (11,464 vs 11,900 contradiction); ADGM workforce (+34% to 49,027 vs +51% to 44,000) and AUM (+33/36%); $1.7t sovereign total; 4m bpd; rail 350km/h 30min + station list/source; Modon and Aldar ownership; Wadeem D13b/1,700; ADIB 5%/20% terms; Hudayriyat elevation 15m vs 10m; Talay prices/psf; Cranleigh + King's Wimbledon status. Land verified bricks in data/market/ so Content and others can read them.",
-  "status": "open"
- },
- {
-  "id": "h0014",
-  "date": "2026-09-24",
-  "from": "content",
-  "to": "Designer",
-  "item": "Project deck brief from Calum 23 Sep: buyer-facing deck for 2-3 Abu Dhabi projects (Hudayriyat/Modon, Tara Park Reem, one more). A throwaway template exists as a Slides artifact in Content's chat - use or bin. Needs: which projects, audience, figures from Market, renders.",
-  "status": "open"
- },
- {
-  "id": "h0015",
-  "date": "2026-09-24",
-  "from": "content",
-  "to": "Manager",
-  "item": "ASKED (issue - no issue cmd yet): Calum asked how 'the projects agent' can read the Jake brick sheet - no Projects agent in the shared-rules roster. If one exists, its file/ownership isn't in the shared rules; if it's Market, fine. Also: research folder listing via agentkit read fails on directories (404) - a 'ls' command would help.",
-  "status": "done"
- },
- {
-  "id": "h0016",
-  "date": "2026-09-26",
-  "from": "PA",
-  "to": "Manager",
-  "item": "Call system for Jake start (from Calum's D1 plan): a proper page - list buyers/owners by criteria (stage, score, area, source, last touch), feed one at a time, tap-to-dial, log outcome + note back to buyers.json, Plaud transcript/summary attached if available. PA's inline call sheet (22-23 Sep) is the prototype: four outcomes, stage/score selectors, note, batch send. Needed by Mon 5 Oct; 500 calls/week planned.",
-  "status": "open"
- },
- {
-  "id": "h0017",
-  "date": "2026-09-26",
-  "from": "PA",
-  "to": "Content",
-  "item": "D1 plan targets: 20 videos scripted pre-start, 10 reels + 10 carousels/week from Oct wk2, 10 evergreen scripts, 3 evergreen videos, 2 YouTube in Oct; follower targets 4K IG / 100 YT by Dec. Supply the current baselines (content-metrics.json is missing from the repo) and say what 20 pieces/week costs in filming hours.",
-  "status": "open"
- },
- {
-  "id": "h0018",
-  "date": "2026-09-26",
-  "from": "Finance",
-  "to": "Uploader",
-  "item": "2026 statement rebuild: put RAW statement files (CSV/XLSX/PDF, one per account-period, named <account>-<YYYYMM or 2026>.<ext>) under data/staging/statements/. Do NOT append these rows to data/finance.json (old schema, mixed signs - Finance is rebuilding from source). In your handoff to Finance list each file with its account, period, currency, opening and closing balance as printed on the statement. Screenshots: same folder, same naming. Method: data/finance/ledger/METHOD.md s10.",
-  "status": "open"
- },
- {
-  "id": "h0019",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "BoS CSV export (GBP, 2 Jan-25 Sep 26): 209 rows appended to data/finance.json for May/Jun/Sep 26 (no prior BoS rows those months), source tag 'BoS CSV export 26 Sep 26'. 381 rows for Jan-Apr/Jul/Aug staged in data/staging/2026-09-26-bos-csv-jan-aug.json - overlap 101 existing screenshot BoS rows; retire those and splice. category blank, note=bank type code. 1 exact duplicate line dropped (21 Sep FPO 1000 x2, same running balance). Closing balance -2,565.88 overdrawn 25 Sep. 14 RETURNED DD credits Feb-Jul.",
-  "status": "done"
- },
- {
-  "id": "h0020",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "manager",
-  "item": "data issue: finance.json amount sign inconsistent - BoS Jul 26 rows positive for debits, Aug 26 negative for debits, CC interest rows positive for charges. Uploader used negative = money out for the CSV rows. Needs one rule in schema",
-  "status": "done"
- },
- {
-  "id": "h0021",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "CORRECTION to h0019: the '1 exact duplicate dropped' was a real transaction (21 Sep TALLIA FLAHER -1000 FPO, 2nd of two same-day; running balance chains with 0 breaks across all 591 rows). Now appended - BoS CSV rows in finance.json for May/Jun/Sep = 210, not 209. Nothing else changes.",
-  "status": "done"
- },
- {
-  "id": "h0022",
-  "date": "2026-09-26",
-  "from": "Finance",
-  "to": "Manager",
-  "item": "Dashboard/finance.json rules needed: (1) exclude transactions with a 'retired' field from all sums; (2) transactions now carry 'currency' (GBP on 591 BoS rows) - never add GBP to AED, convert or show separately; (3) proposed single sign convention for transactions going forward = statement style, negative = money out, positive = money in (what statements and the Uploader produce). Old rows are positive = spend - Finance will flip them at the rebuild. Decide and write it into the schema.",
-  "status": "done"
- },
- {
-  "id": "h0023",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Wise CSV export (1 Jan-26 Sep 26): 518 rows appended to data/finance.json - 509 GBP May-Sep 26 (no prior Wise rows those months) + 5 AED (Jun) + 4 USD (Aug), all with currency field per your BoS convention, note=Wise type, source tag 'Wise CSV export 26 Sep 26 (cur)'. 167 GBP Jan-Apr rows staged in data/staging/2026-09-26-wise-csv.json - overlap 44 existing screenshot Wise rows (0 match on date+amount, they're rounded); retire and splice as you did BoS. USD 3,023.87 -> 2,206.63 GBP conversion 21 Aug appears both sides (USD debit, GBP credit) - correct, not a dup. 15 pre-auth/reversal pairs kept, balance chain clean. Closing GBP 200.98.",
-  "status": "done"
- },
- {
-  "id": "h0024",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "UK property current account (the one BoS pays as 'PROPERTY ACCOUNT' - bank not confirmed, named 'Property Account', rename if you know it): 44 rows appended to data/finance.json, Jan-Sep 26, GBP, from 8 app screenshots. App header says 48 transactions totalling -478.93; 4 rows fall in a screenshot gap 3 Jul-5 Aug (likely YM rent credit 3 Jul, OD interest 20 Jul, Precise Mortgages 1 Aug, YM rent credit 5 Aug - amount cut off) - NOT entered, Calum asked for one more screenshot. Payer sort code/account on the monthly +300.04 credits masked. Cross-checks with BoS CSV: 16 Mar +50, 24 Mar +40, 1 Jun +150 match BoS 'PROPERTY ACCOUNT' FPOs.",
-  "status": "done"
- },
- {
-  "id": "h0025",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Tesco Clubcard: 8 statements (5 Dec 25 - 4 Aug 26) from PDF screenshots. 53 rows appended to data/finance.json (sign: positive = spend/interest/fee, negative = payment in, matching your CC rows), 7 statement-end entries appended to ccBalances (4 Jul skipped - your 6 Jul entry already carries 6,244.76). Interest lines labelled by balance type from the summary table. Chain verified: every prev+lines=new and every summary sums to new. OVERLAP: retire your Aug 26 day 4 'Interest (Aug stmt, partial)' 50.21 row - the 4 exact Aug lines (0.14+18.95+31.12+87.26 = 137.47) are now in. Missing: the 5 Aug-4 Sep statement (your 4 Sep 130.65 row covers its interest only). Card number not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0026",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "h0025 count correction: Tesco rows appended = 51, not 53 (3+4+4+7+5+5+12+11). Everything else in h0025 stands.",
-  "status": "done"
- },
- {
-  "id": "h0027",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Virgin Money CC: 9 statements (4 Dec 25 - 3 Sep 26) from PDF screenshots. 20 rows appended to data/finance.json (positive = spend/interest/fee, negative = payment). Your existing 3 Aug 200.95 and 3 Sep 192.99 interest rows match the statements exactly - I did NOT re-add them, so no retire needed. 8 statement-end entries appended to ccBalances (3 Sep skipped - your 5 Sep entry carries 9,705.64). Chain verified across all 9. Card number and the payment account number in the footer not recorded. Story: promo 0% ended 3 May 26 - interest went 20.66 to ~195/mo; 2,885.91 of Wise cash advances Mar-Jun; 3 Jul balance 10,181.50 was over the 10k limit.",
-  "status": "done"
- },
- {
-  "id": "h0028",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "h0027 count correction: Virgin Money rows appended = 22, not 20 (24 statement lines minus the 2 interest rows you already hold). Rest of h0027 stands.",
-  "status": "done"
- },
- {
-  "id": "h0029",
-  "date": "2026-09-26",
-  "from": "Finance",
-  "to": "Manager",
-  "item": "ISSUE tool/data: concurrent writes to data/finance.json - Uploader appended Property Account rows (204c1e2, 10:31) while Finance held a copy fetched earlier; Finance's PUT (649f363, 10:33) overwrote them. Restored from history. Fix needed: Uploader stages bulk rows under data/staging/ (as h0018 asked) and Finance is the only writer of finance.json during a reconciliation session; or agentkit put re-fetches and merges transactions by hash before PUT.",
-  "status": "done"
- },
- {
-  "id": "h0030",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Santander Everyday CC: 30 rows appended to data/finance.json, full 2026 to 25 Sep, from 5 app screenshots (list is contiguous back to the 2025 boundary). 1 ccBalance entry appended: 25 Sep statement 11,716.17, limit 12,150, min 318.06 due 21 Oct, DD active. Back-chained from the statement balance: 12,146.96 after the 6 Jul payment and 11,845.65 at 5 Sep match your two app readings exactly. RETIRE your 27 Jul 232.58 and 27 Aug 216.11 aggregated interest rows - the 6 exact lines are in. Faster payments 26 Jun 261, 6 Jul 100, 31 Jul 750 did not come from BoS - source unknown (Wise?). Card number not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0031",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "MBNA 1 (card *1654): 8 statements (6 Jan - 6 Aug 26) from PDF page-3 screenshots. 40 rows appended to data/finance.json, 8 statement-end ccBalances entries (Jan-Aug). Chain verified: prev+lines=new, breakdown sums=new, breakdown interest=interest line, all 8. Your 6 Jul 'MBNA Main' 8,496.91 and 26 Jul 8,799.49 readings both sit on my chain exactly - note 'MBNA Main' vs 'MBNA 1' naming on that one entry. Sep stmt (6 Sep): only page 1 supplied - payments 295.68 CR, charges 79.08, new bal 8,159.44 - your 6 Sep 79.08 row and 5 Sep cc entry already cover it, nothing added; page 3 needed for the lines. Address, card number and MBNA's payment account not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0032",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "MBNA 2 (Visa *3318, limit 2,500): 9 statements Jan-Sep 26 (latest 21 Sep) from PDF screenshots. 18 rows appended to data/finance.json - your 23 Aug interest 7.10 row matched exactly and was skipped, nothing to retire. 8 ccBalances entries appended (Jan-Jul + 21 Sep; 23 Aug skipped, your 5 Sep entry carries 1,931.05). Jan-Jun statement dates set to the 21st and flagged approximate - page 3 carries no date. Chain verified all 9; your 6 Jul 2,498.74 and 26 Jul 2,495.21 readings both sit on it exactly. 21 Sep stmt: bal 1,878.37, min 49.66 due 16 Oct by DD. Address and card number not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0033",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "M&S card (*0340, limit 8,000): 37 rows appended to data/finance.json, full 2026 to 22 Sep, from 6 app screenshots (contiguous back to the Dec 25 boundary) + 27 Aug statement page 1. Anchored on the statement's 27 Jul close 8,048.38: chain lands on your 6 Jul 7,987.22, 26 Jul 7,999.22 and the 27 Aug 7,539.64 exactly; Jan-May min payments are 2.5% of the chained balance. RETIRE your 27 Jul 'Interest 4.89 + 43.13' 48.02 row (app shows 3 lines, 49.16 - the 1.14 was missed) and 27 Aug 41.26 row - exact lines now in. 1 ccBalance added: 27 Jul close 8,048.38 (over limit); 27 Aug not added, your 5 Sep entry carries it. 21 Sep min 188.49 NOT paid - late fee 22 Sep, balance now ~7,635.77 before 27 Sep interest. Card number, address, M&S payment account not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0034",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "HSBC Visa (*9345, limit 2,000): 16 rows appended to data/finance.json, full 2026 to 10 Sep, from 3 app screenshots (contiguous to the Dec 25 boundary) + 10 Sep statement. Your 10 Aug 8.62 interest row matched exactly, skipped - nothing to retire. 2 ccBalances added: 10 Aug close 1,459.66 and 10 Sep stmt 1,424.01 (min 35.60 due 5 Oct by DD). Chain from the statement lands on your 6 Jul 1,966.41, 26 Jul 1,972.02 and 5 Sep 1,423.17 exactly; every DD is 2.5% of the prior statement balance. Card number and address not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0035",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Barclaycard Plat (Visa *3001, limit 10,000): 26 rows appended to data/finance.json, full 2026 to 25 Sep, from 9 app screenshots (contiguous) + 25 Sep statement. Your 27 Aug 27.51 interest row matched exactly, skipped - nothing to retire. 1 ccBalance added: 25 Sep stmt 9,422.43, min 118.45 due 20 Oct by DD (27 Aug close = your 5 Sep entry, not duplicated). Chained from the statement: lands on your 6 Jul 9,839.10, 26 Jul 9,983.31 and 5 Sep 9,520.38 exactly; every DD equals prior interest + 1% of the statement balance. 27 Jul close was 10,042.87 - over limit. Monthly 0.00 'Interest Charge' lines not entered. 1 Aug 550 and 25 Jun 85.79 payments did not come from BoS - source unknown. Card number, address, Barclaycard payment account not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0036",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Aqua (NewDay, limit 5,250): 9 statements Jan-22 Sep 26 from PDF screenshots. 38 rows appended to data/finance.json under new account 'Aqua' (no prior tx rows), 9 statement-end ccBalances (Jan date approximate). Chain verified all 9, every plan table sums to the new balance; your 26 Jul 3,494.08 reading sits on it exactly. IMPORTANT: your 5 Sep 'cleared to 0' entry is stale - 31 Jul paid 3,499.14 and cleared it to 29.60, but 18 Sep Emirates Plaisance Mauritius 1,512.38 (+44.62 FX) and 21 Sep Wise 1,518.90 (+75.95 fee) reloaded it to 3,126.31 at 22 Sep. Min 35.32 due 9 Oct. Rates 38.54% purchases/BT, 42.08% cash - the most expensive card. Promo 0% BT ended between the Jan and Feb statements. Account number, address, Aqua payment account not recorded.",
-  "status": "done"
- },
- {
-  "id": "h0037",
-  "date": "2026-09-26",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Mashreq Neo current account (AED) PDF statement 1 Jan-26 Sep 26: 189 rows appended to data/finance.json under 'Mashreq', currency AED, negative = out, note = Mashreq reference no, source tag 'Mashreq Neo PDF statement 26 Sep 26'. Verified: debit total 1,815,710.53 and credit total 1,813,906.66 match the statement to the penny (one -5,000 reversal on 31 Aug netted in debits, as Mashreq does); balance chain 1,938.37 -> 134.50 with 0 orphans. Descriptions scrubbed of IBANs, account numbers, customer number, card masks and transaction tokens - counterparty names and /REF/ purposes kept. RETIRE your 18 existing Mashreq rows (Feb 4, Mar 4, Aug 10 - hand-typed, mixed sign convention, 16 match the statement on date+amount) and carry your category notes (Ali Vids, Merkz, [IDENTIFY] flags) onto the statement rows. Not entered: opening/closing balance lines. Salary/commission credits from White & Co: 8 in 2026 totalling 784,228; 51 payments to the Mashreq credit card totalling 273,723.52; 20 QuickRemit transfers to BoS totalling 146,841.31.",
-  "status": "done"
- },
- {
-  "id": "h0038",
-  "date": "2026-09-26",
-  "from": "Uploader",
-  "to": "Manager",
-  "item": "ISSUE data: data/state/uploader.md does not exist (404) - Uploader has no start pack. Also no 'issue' command in agentkit.py yet.",
-  "status": "done"
- },
- {
-  "id": "h0039",
-  "date": "2026-09-26",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Amex Gold 2026 -> data/staging/statements/amex-gold-2026.json (97 rows, GBP, signs as printed, 9 periods). Printed closing: Mar 460.00, Apr 460.00, May 460.00, Jun 538.25, Aug 460.00, current 549.88 at 26 Sep. Derived (page 1 not captured): Jan closing 1,631.97 (opening 6,218.57 = 10 Jan payment), Feb closing 8,691.73 (rows sum to printed totals 6,852.76 + 207.00), Jul closing 3,025.98 (rows sum to printed 3,416.45; 928.72 of payments/credits on uncaptured pages). Raw screenshots NOT committed (public repo - identity data). Ask Calum for the Amex CSV if you need a machine source.",
-  "status": "done"
- },
- {
-  "id": "h0040",
-  "date": "2026-09-26",
-  "from": "Finance",
-  "to": "PA",
-  "item": "From 1 Oct: Finance runs a Sunday weekly close. Please put 'Sunday 30 min: weekly statement screenshots -> Uploader, then Finance close' in Calum's Sunday planning block, and 'Freeze credit cards in apps (ADIB CC + all UK) for Oct-Nov' as a task due 1 Oct. Details: data/finance/cash-plan.md 'OCTOBER LOCKDOWN'.",
-  "status": "done"
- },
- {
-  "id": "h0041",
-  "date": "2026-09-28",
-  "from": "manager",
-  "to": "PA",
-  "item": "Today page shipped 28 Sep (today.html). tasks.json changed: 244 done tasks moved to data/archive/tasks-done-2026.json; 35 live tasks now carry band (today|week|month|year) + bandSince. Area 'Tasks' retired: E1/E3/E4/E5/E6/Sunday AM -> Personal, F1 + 'Sort the task dashboard' -> Real Estate. When you add a task: set band + bandSince (today's date), leave priority/difficulty as they are (page ignores them). Ticking a call on the page writes the buyer: lastContact, a touch {date,channel:'call',summary}, nextTouch +3d - reconcile at checkpoint. 44 buyers had nextTouch <= today on the 23 Sep copy - the page shows the top 5 by score.",
-  "status": "open"
- },
- {
-  "id": "h0042",
-  "date": "2026-09-28",
-  "from": "PA",
-  "to": "Manager",
-  "item": "Sellers dashboard: stock records now carry carry (Calum|Lewis|Both), keepAfterMove (true/false), priceNet (true = net to seller), role ('offplan-buyer' = owner to keep as a future off-plan buyer). Calum wants keepAfterMove obvious - a badge on the card and a filter, plus a Calum / Lewis / Both split view. Also show priceNet next to the price.",
-  "status": "done"
- },
- {
-  "id": "h0043",
-  "date": "2026-09-28",
-  "from": "PA",
-  "to": "Manager",
-  "item": "Extend h0004 to sellers: stock.json records moved to Lost now carry closedLost (YYYY-MM-DD) - sort the sellers Lost section by it, newest at top, undated at the bottom. Also: the dashboard's own 'CRM: unit -> Lost' write should stamp closedLost itself so PA doesn't have to backfill.",
-  "status": "done"
- },
- {
-  "id": "h0044",
-  "date": "2026-09-28",
-  "from": "Designer",
-  "to": "PA",
-  "item": "New buyer not in the index: Naura - considering Wadeem Gardens 4-bed (Đ8.7M) on the ADIB 25/75 plan, schedule sent to Calum 28 Sep. Please create the record (nationality matters: UAE nationals get Modon's 5% rebate)",
-  "status": "done"
- },
- {
-  "id": "h0045",
-  "date": "2026-10-01",
-  "from": "Finance",
-  "to": "Uploader",
-  "item": "ADIB September screenshots (CC *789 + current): images overlap on purpose (bottom of one = top of the next). Do NOT merge or dedupe them yourself. Stage per image: data/staging/statements/adib-cc-sep-2026.json with rows grouped by image in the order they appear on screen, each row {date, description, amount as printed, balance if shown, reference if shown, image, position}. Finance removes overlaps by sequence alignment (a run of consecutive identical rows across two images = overlap; a single repeated row with different neighbours = a real second transaction). Include any printed total/outstanding balance on 30 Sep and the 1 Oct statement balance - that is the tie-out. Same for Jan-Aug statements (PDF): per period, signs as printed, opening/closing balances.",
-  "status": "open"
- },
- {
-  "id": "h0046",
-  "date": "2026-10-01",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "1 Oct app snapshots -> data/staging/statements/ (8 files, date-range names, rows as printed, chronological, running balances where shown, inFinanceJson flags on dup rows): aqua-20260923-20260928 36 rows GBP sums to printed 853.33 incl 21.30 pending (app figure 3,155.91 below list, label cut off, vs staged 22 Sep stmt 3,126.31 - check); bos-20260926-20261001 8 rows chain -2,565.88 -> -3,155.50 at 1 Oct 08:09, OVER 3,000 limit, MUM 300 + HSBC 36.49 leave ~5 Oct; mashreq-20260928-20261001 6 rows AED closing 206,424.84 - SALARY +221,330.25 AED 30 Sep from White and White RE, then 5,000 + 5,000 + 100 card payments and QuickRemit 5,038.81 AED to BoS 1 Oct; wise-20260926-20260930 9 rows (26 Sep top-up already in finance.json); property-account-20260920-20261001 = Nationwide FlexDirect, 3 rows, -2,233.71 vs 2,250 OD limit, 1 Oct Precise Mortgages 287.80 new; barclaycard-plat-20260925 + santander-everyday-20260925 duplicate confirmations only; ba-amex-20260924 1 row, balance 95.79 due 0. Also +3 ccBalances in finance.json (Amex Gold due 549.88 11 Oct, BA Amex, BoS overdraft). Note: Wise top-up via Aqua = cash advance (10.13 fee + 42.08% cash rate). h0045 ADIB screenshots not received yet.",
-  "status": "done"
- },
- {
-  "id": "h0047",
-  "date": "2026-10-01",
-  "from": "content",
-  "to": "Market",
-  "item": "ADD to h0013 verify list (from Calum's first-10 scripts, 1 Oct): Abu Dhabi airport 93k pax/day June 2026; DWC 5 runways / 150m phase 1 2032 / 255-260m later; Atlanta pax; Disney 'seventh' park; 39.3m visitors + 178k jobs by 2030; London avg commute 47 min; UAE nationals 10% / 1.2m; Modon 'highest revenue H1 2026 > Emaar' (receipt is sales value); Quia Emptores 1290 + London 1297 pop; Bilbao 'quadrupled'; Modon 23bn sales; Hudayriyat 16 schools/7 clinics/9 hotels (Modon says plots); 38k sqft mansions; Surf AD 'largest'; Guggenheim Dec / NHM open; Dar al Funoon 2030; Saadiyat beach 8 vs 9 km; Reem Hills handover; Goldman ADGM office open; xAI stake status; Al Naseem handover Q4 2026 vs Q1 2028; Abu Dhabi GFCI rank Sep 2026; Dubai off-plan premium 13% (ValuStrat Q2) vs h0001's 24% - reconcile.",
-  "status": "open"
- },
- {
-  "id": "h0048",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "ADIB CC *789 -> data/staging/statements/adib-cc-sep-2026.json (h0045 method, 5 image blocks, 38 rows incl overlaps, AED, signs as printed, dates derived from day labels, screenshot 6 Oct 07:50). Covers 6 Oct back to 1 Oct only - Wednesday 30 Sep header visible, no Sep rows yet. NO balance shown in any image: 30 Sep / 1 Oct tie-out still missing. Card payments in: +5,000 1 Oct (ties Mashreq T_6bac), +10,000 5 Oct, +17,500 6 Oct. ASOS.com +474.90 credit 1 Oct. DigitalOcean printed as USD -2.56. Calum says more to come - will append as further blocks, same file.",
-  "status": "done"
- },
- {
-  "id": "h0049",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Calum 6 Oct 07:55: ADIB CC *789 outstanding 27,176.34 AED (stated in chat, after 32,500 paid in 1-6 Oct). He wants to put more to it and is coming to you for the number - have it ready: Mashreq was 206,424.84 on 1 Oct before the 5,000 + 5,038.81 out and the 10,000 + 17,500 card payments; BoS over its 3,000 limit; UK minimums due 9-21 Oct (Aqua 35.32, Amex Gold 549.88 full, Barclaycard 118.45, Santander 318.06).",
-  "status": "done"
- },
- {
-  "id": "h0050",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Mashreq 1-6 Oct -> data/staging/statements/mashreq-20261001-20261006.json (11 rows AED, ties exactly: 206,424.84 on 1 Oct 08:08 -> 56,717.27 on 6 Oct 07:54). Out on 1 Oct after the 08:08 snapshot: 12,975 to own account, 47,100 + 60,962.50 to Tallia Flaher, 6,000 to Lewis Page, second QuickRemit 5,020.07 to BoS. 2 Oct: +10,000 from Tallia, -150 family support. Card payments 10,000 (5 Oct) + 17,500 (6 Oct) tie to the ADIB T_ refs. This changes the ADIB sizing in h0049: Mashreq cover is now 56,717.27, not 206k.",
-  "status": "done"
- },
- {
-  "id": "h0051",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "New account: Mashreq Neo savings pot 'Tara and Rent', 12,975.00 AED at 6 Oct 07:57, 6.25% (indicative Oct earnings 11.26). One row: +12,975 1 Oct, counter-leg of the current account -12,975 same ref 033AACT26274A4DU - internal transfer, not spend. Staged at data/staging/statements/mashreq-tara-and-rent-20261001-20261006.json. Add to accounts; total Mashreq cash = 56,717.27 current + 12,975.00 pot = 69,692.27.",
-  "status": "done"
- },
- {
-  "id": "h0052",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "BoS 1-6 Oct -> data/staging/statements/bos-20261001-20261006.json (22 rows GBP, chains -2,841.57 -> +861.34 at 6 Oct 07:59, overdraft breach cleared). Key: 1 Oct +1,000 x2 NIUM FINTECH (the Mashreq QuickRemits) + 1,000 PAGE LJ; 2 Oct card DDs Virgin 385.98, M&S 380.42, AMERICAN EXP 3773 549.88 (Amex Gold) + 140.28 (card not identified); 5 Oct +10,493.85 F/FLOW own name (source account not in anything staged - identify), AQUA -3,980.27 (likely clears Aqua - needs confirming screenshot), LEWIS PAGE 1,000, TALLIA 1,200, KEVIN BOXALL 1,000, C L MACLEOD 500 (own, destination?), MUM 300, HSBC 35.60. ccBalance appended: BoS overdraft 0, in credit 861.34.",
-  "status": "done"
- },
- {
-  "id": "h0053",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Property Account (Nationwide) -> data/staging/statements/property-account-20261001-20261005.json: 5 Oct +500.75 YM CLIENT ACCOUNT (Your Move rent, same as 4 Sep), balance -1,732.96 vs 2,250 OD at 6 Oct 08:00. Chain verified.",
-  "status": "done"
- },
- {
-  "id": "h0054",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Per Calum 6 Oct: BoS PAGE LJ +1,000 (1 Oct) = short-term loan from Lewis Page until FX landed; LEWIS PAGE -1,000 (5 Oct) = repayment. Categorise as loan in/out, net zero. Note recorded in bos-20261001-20261006.json. The Mashreq -6,000 AED to Lewis Page on 1 Oct is NOT covered by this - still unexplained.",
-  "status": "done"
- },
- {
-  "id": "h0055",
-  "date": "2026-10-06",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "UK cards 6 Oct -> 9 files in data/staging/statements/ (tesco-clubcard, mbna-1, mbna-2, ba-amex, amex-gold, aqua, ms, hsbc, virgin-money; 22 rows, payments marked type=payment, signs as each app prints) + 9 ccBalances in finance.json. Answers: AMERICAN EXP 3773 140.28 = BA Amex (now 0.00); Aqua CLEARED to 0.00 by the 3,980.27 (stmt was 3,126.31 - 3,155.91 query closed). Balances 6 Oct: Tesco 5,584.54, MBNA1 7,876.37, MBNA2 1,878.37, M&S 7,296.80 (0 min due 22 Oct), HSBC 1,388.41 (DD taken), Virgin 9,105.30 (375.08 due 25 Oct), Barclaycard 9,422.43 + Santander 11,716.17 unchanged (no files). Per Calum: Mashreq 1 Oct -6,000 AED to Lewis Page = partial repayment of money owed to Lewis - personalDebts shows Lewis RESOLVED 30 Jul, now contradicted; update it.",
-  "status": "done"
- },
- {
-  "id": "h0056",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "CORRECTION to h0049: Calum's 27,176.34 on 6 Oct was ADIB AVAILABLE credit, not outstanding (SMS: avl 9,676.34 on 5 Oct + 17,500 credited = 27,176.34 exactly). Outstanding then was 42,323.66 (limit 69,500 per 1 Aug zero-balance SMS). Since: ~30,000 more paid 9-10 Oct (avl jump, no SMS), outstanding now 15,402.97 at 10 Oct 19:37 (avl 54,097.03). Mini stmt SMS: total due 67,102.85, min 3,355.20 by 26/?? (date obscured, SMS undated - likely 1 Oct stmt). ADIB SMS 5-10 Oct staged per image: data/staging/statements/adib-cc-sms-20261005-20261010.json (22 unique trx, avl chain holds except +15.00 gap 8-9 Oct and -0.56 after Nshama 9 Oct). Corrected ccBalance appended dated 10 Oct.",
-  "status": "done"
- },
- {
-  "id": "h0057",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "11 Oct snapshots: Mashreq 5-9 Oct -> mashreq-20261005-20261009.json: 6 Oct -8,076.75 Tallia Flaher (family support), 9 Oct -30,000 card payment (the ADIB credit, ref T_1FE4...); derived balance 18,640.52 (header not shown). BoS 6-8 Oct -> bos-20261006-20261008.json: 6 Oct +1,650 F/FLOW own name (source?), 8 Oct L G Price -1,050, Gareth Burris -181.10, C L Macleod -1,050 out and +1,050 back same day (round trip?); 1,280.24 after 8 Oct. Tara and Rent pot unchanged 12,975.00 (indicative Oct earnings 20.27). Property Account unchanged -1,732.96.",
-  "status": "done"
- },
- {
-  "id": "h0058",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Per Calum 11 Oct on BoS 8 Oct rows: C L MACLEOD -1,050 / CALUM LACHLAN MACL +1,050 = Wise round trip, net zero, ignore; L G PRICE -1,050 = the Instagram messenger service (brand/content cost); GARETH BURRIS -181.10 = the AI trading. Noted in bos-20261006-20261008.json.",
-  "status": "done"
- },
- {
-  "id": "h0059",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Wise 7-9 Oct -> wise-20261007-20261009.json (5 rows GBP): confirms the BoS 8 Oct 1,050 round trip (Added +1,050 / Sent 1,050, net zero). Real spend: Real Mad Honey 64.94 (7 Oct), Deepstash 8.41 (8 Oct), FedEx 5.66 (9 Oct). Wise 1-6 Oct not captured.",
-  "status": "done"
- },
- {
-  "id": "h0060",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Wise 4-7 Oct -> wise-20261004-20261007.json (4 rows): 5 Oct +500 Added = BoS C L MACLEOD -500 (closes that one). Apple 11.99 + 21.99. NOT from Wise: the BoS inflows 10,493.85 (5 Oct) and 1,650 (6 Oct) - no Wise outbound those days. Source still unidentified; asked Calum.",
-  "status": "done"
- },
- {
-  "id": "h0061",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Per Calum 11 Oct: BoS F/FLOW inflows 10,493.85 (5 Oct) + 1,650 (6 Oct) = Mashreq -> Tallia -> FX company -> BoS. Mashreq legs: 1 Oct 47,100 + 60,962.50 to Tallia, 2 Oct +10,000 back, 6 Oct 8,076.75 to Tallia (8,076.75/1,650 = 4.895 fits). Net to Tallia ~106k AED vs ~60k AED landed in BoS - 10,493.85 matches no single leg. Tie out with Calum: how much of the 1 Oct 108,062.50 was FX-route money vs Tallia's own.",
-  "status": "done"
- },
- {
-  "id": "h0062",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Per Calum 11 Oct: 1 Oct 108,062.50 to Tallia = her money + FX-route money; he also paid the FX company DIRECT from his own account (not Mashreq - no row; likely ADIB current, still unstaged), hence her 10,000 refund 2 Oct. No split figures given. Asked Calum for the FX company confirmations (AED in / GBP out) - that document ties both the Tallia share and the direct leg. ADIB current screenshots (h0045) would show the direct leg.",
-  "status": "done"
- },
- {
-  "id": "h0063",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Per Calum 11 Oct, correcting h0062: direct FX leg = the two 1 Oct Mashreq QuickRemits (5,038.81 + 5,020.07 = 10,058.88 AED -> BoS 2x NIUM 1,000). Tallia's 10,000 refund 2 Oct offsets that. Via-Tallia FX = BoS 10,493.85 (5 Oct, from the 1 Oct money) + 1,650 (6 Oct, from 8,076.75). Tallia's own share of 108,062.50 = 98,062.50 net minus AED cost of 10,493.85 (c.46k AED at 4.9-5.0, derived - exact needs the FX rate). Nothing from ADIB needed for this chain.",
-  "status": "done"
- },
- {
-  "id": "h0064",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "11 Oct UK cards -> 5 files in data/staging/statements/ (hsbc, ms, mbna-1, mbna-2-stmt, virgin-money; 8 new rows) + 3 ccBalances. New statements: MBNA 2 min 49.66 DUE 16 OCT (stmt 21 Sep 1,878.37); MBNA 1 stmt 6 Oct 7,948.40 min 270.74 due 2 Nov; HSBC stmt 10 Oct 1,388.58 min 34.71 due 5 Nov. New interest: Virgin 4 Oct 187.54, M&S 26 Sep 41.45, MBNA1 72.03, HSBC 0.17. Calum 11 Oct: both Amex at 0 (unchanged from 6 Oct). Aqua 0, Barclaycard, Tesco, Wise 4-7 Oct re-sent - duplicates, no files. Due ladder: 16 Oct MBNA2 49.66 / 20 Oct Barclaycard 118.45 / 21 Oct Santander 318.06 / 22 Oct M&S 0 / 25 Oct Virgin 375.08 / 2 Nov MBNA1 270.74 / 5 Nov HSBC 34.71.",
-  "status": "done"
- },
- {
-  "id": "h0065",
-  "date": "2026-10-11",
-  "from": "Uploader",
-  "to": "Life Coach",
-  "item": "Whoop daily screenshot (11 Oct) extracted to private:data/staging/2026-10-11-whoop.json - yours to fold into the journal.",
-  "status": "open"
- },
- {
-  "id": "h0066",
-  "date": "2026-10-13",
-  "from": "PA",
-  "to": "Finance",
-  "item": "Calum paid Virgin Mobile 12 months upfront today 13 Oct - approx AED 3,292 incl VAT (plan: 1,250 local, 60GB, 300 intl, number 055 350 2699 ported from du). Expect a du final bill in the next two weeks: AED 131.25 early termination + any out-of-bundle usage. Monthly phone cost from November: zero on Virgin (prepaid), du AED 350 line stops. Update the cash plan.",
-  "status": "done"
- },
- {
-  "id": "h0067",
-  "date": "2026-10-16",
-  "from": "PA",
-  "to": "Finance",
-  "item": "AvantGlamp settlement (draft 16 Oct, Eventus Law): GBP 147,490 of Calum's loans settled for GBP 120,263 in three payments from Mellex - GBP 30,593 20 business days after signing (~mid-Nov if signed now, ~AED 150K), GBP 41,200 at 18 months, GBP 48,470 at 24 months. Late payment: 5 business days then whole balance accelerates, interest BoE +5%. Unsecured. Model into the cash plan once signed; the first tranche lands inside the January runway window.",
-  "status": "done"
- },
- {
-  "id": "h0068",
-  "date": "2026-10-17",
-  "from": "PA",
-  "to": "Projects",
-  "item": "HGE payment plan now on file (Calum, 17 Oct, via a dubaihaus.com listing - indicative, SPA governs): 5% booking 2026 · 5% Mar 2027 · 5% Sep 2027 · 5% Mar 2028 · 5% Sep 2028 · 5% Mar 2029 · 5% Sep 2029 · 5% Mar 2030 · 60% handover Aug 2030 (40/60). Resale gate confirmed by Calum: 20% paid to Modon before NOC - seller tops up to 20%, which covers booking + instalments 1-3. Worked resale: GV-282 villa, original Đ10,048,000, resale at +10% = Đ11,052,800. Add to modon-hudayriyat-golf-estates.md payment plan section + pricepoints.",
-  "status": "open"
- },
- {
-  "id": "h0069",
-  "date": "2026-10-17",
-  "from": "Designer",
-  "to": "Content",
-  "item": "Calum's Instagram handle is now @calum.cloud (was @uaecalum) - update content.json profile lines, scripts and any scheduled captions",
-  "status": "open"
- },
- {
-  "id": "h0070",
-  "date": "2026-10-17",
-  "from": "Designer",
-  "to": "Content",
-  "item": "CORRECTION to h0069: Calum's Instagram handle is @thecalummacleod, not @calum.cloud. Use @thecalummacleod everywhere",
-  "status": "open"
- },
- {
-  "id": "h0071",
-  "date": "2026-10-17",
-  "from": "Designer",
-  "to": "PA",
-  "item": "New deal not in deals.json: Costa Brava lagoon-backing villa, Đ8,250,000, Calum's highest to date (Oct 26). Milestone post built; please record the deal (unit, buyer, date) - Uploader to append if it's a new record",
-  "status": "open"
- },
- {
-  "id": "h0072",
-  "date": "2026-10-18",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Staged data/staging/statements/adib-cc-sms-20261011-20261018.json - ADIB CC *789, AED, SMS screenshots 11-18 Oct 26, 8 images IMG_3872-3879, per-image rows in screen order with overlaps left in (h0045 method), 41 rows = 27 distinct transactions (11,799.94 as printed) + 2 refund notices + overlaps/partials. First avl 54,097.03 (ties to your 10 Oct entry), last avl 45,972.75 at 18 Oct 04:30. Five available-balance chain gaps listed in meta: two explained (Sandcastles 19.10 refund posted, Virgin Mobile 3,292.38 reversed on 16 Oct), one likely HubSpot refund +383.74, two unexplained small (-0.69, -0.87). Nothing appended to finance.json per h0018. Apple Store 3,419 on 16 Oct and Selfdrive 1,467.90 + 745.95 are the big items.",
-  "status": "done"
- },
- {
-  "id": "h0073",
-  "date": "2026-10-18",
-  "from": "uploader",
-  "to": "finance",
-  "item": "Staged two Mashreq app screenshot files (18 Oct 07:32-07:33): data/staging/statements/mashreq-20261002-20261018.json - Neo current, AED, 7 rows (2-12 Oct, overlaps with your 5-9 Oct file left in), printed balance 20,140.52 at 18 Oct 07:32 = your derived 18,640.52 after 9 Oct + 1,500 from Tal on 12 Oct, ties exactly; nothing moved 13-18 Oct. New since your last file: 12 Oct +1,500 Tallia. Credit card payments to *6789 in Oct so far: 10,000 + 17,500 + 30,000 = 57,500. data/staging/statements/mashreq-tara-and-rent-20261018.json - savings pot, printed balance 12,975.00 at 18 Oct, indicative Oct earnings 40.55, rate 6.25%. Also: Calum confirms the ADIB Virgin Mobile 3,292.38 (13 Oct) was refunded without an SMS - matches the +3,292.38 chain gap in adib-cc-sms-20261011-20261018.json meta.",
-  "status": "done"
- },
- {
-  "id": "h0074",
-  "date": "2026-10-18",
-  "from": "uploader",
-  "to": "finance",
-  "item": "UK card app snapshots 18 Oct 26 07:35-07:40, 11 files <card>-20261018.json under data/staging/statements/ (GBP, as printed, type=payment on every payment). Balances: Tesco 5,584.54 (=4 Oct stmt, Sep+Oct interest lines included, chains from 5,727.11); Santander 11,716.17 unchanged, DD 318.06 on 21 Oct; MBNA 1 7,948.40 = 6 Oct stmt (8,159.44 - 283.07 + 72.03), min 270.74 due 2 Nov; MBNA 2 1,828.71 after 16 Oct DD 49.66; HSBC 1,388.58 = 10 Oct stmt, min 34.71 due 5 Nov; M&S 7,296.80 after 2 Oct payment 380.42 (27 Sep stmt 7,677.22, min 0 due 22 Oct); Barclaycard last stmt 9,422.43, 118.45 DD 20 Oct, current balance not on screen; Aqua 0.00 after 5 Oct payment 3,980.27; Amex Gold 0.00; Amex BA 0.00 printed but four 17 Oct pending items 194.97 - Calum says treat as posted. Virgin Money: no screenshot (app down) - Calum says no spend; derive from staged BoS -> Virgin movements + 3 Oct interest; last confirmed 9,705.64 at 3 Sep, indicatively ~9,490.",
-  "status": "done"
- },
- {
-  "id": "h0075",
-  "date": "2026-10-18",
-  "from": "uploader",
-  "to": "lifecoach",
-  "item": "Whoop weekly trend screenshots (13 images, 18 Oct 07:43-07:45) staged in the PRIVATE repo: personal/fitness/staging/whoop-trends-20261012-20261018.json - 7 days x 14 daily fields plus weekly and monthly summaries, exact values. whoop.json 'days' currently carries chart estimates for 13-16 Oct (flagged 'missing') - this file has the actuals; whoop.json owner (Fitness) to splice. Content stays in the private repo; nothing here.",
-  "status": "open"
- },
- {
-  "id": "h0076",
-  "date": "2026-10-18",
-  "from": "uploader",
-  "to": "finance",
-  "item": "3 more app snapshots 18 Oct 07:50-07:51 under data/staging/statements/: bos-20261012-20261016.json (BoS Classic 1,368.59 at 07:51, 4 rows 12-16 Oct with running balances chaining; 9-11 Oct not visible; a payment leaves 21 Oct, payee cut off), wise-20261008-20261015.json (6 GBP rows 8-15 Oct, 8-9 Oct overlap your 7-9 Oct file, balance not on screen), property-account-20261018.json (IDENTIFIED: the property account is a Nationwide FlexDirect - available -1,732.96, OD limit 2,250, nothing moved since 5 Oct; sort code/account not recorded - rename the account if you want the bank name). Cross-ties: BoS 13 Oct AMEX 11.99 = Amex BA payment received; BoS 16 Oct MBNA 49.66 = MBNA 2 DD.",
-  "status": "done"
- },
- {
-  "id": "h0077",
-  "date": "2026-10-18",
-  "from": "uploader",
-  "to": "lifecoach",
-  "item": "Two more fitness files in the PRIVATE repo under personal/fitness/staging/: strava-activities-20261011-20261017.json (10 sessions from 12 Strava app screenshots, deduped; training.json as read today ends 20 Sep, so Fitness to splice or confirm the connector already has them) and nutrition-20261011-20261017.json (MFP week view: weekly totals and per-nutrient averages as printed, daily net calories approximate from bars; nutrition.json days end 11 Oct). No content here.",
-  "status": "open"
- },
- {
-  "id": "h0078",
-  "date": "2026-10-19",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamp the residents-per-off-plan brick (content-assets/research/2026-10-19-brick-residents-per-offplan.md): confirm Abu Dhabi 2025 population growth (SCAD) and the 9,500 / 15,900 off-plan counts against ADREC",
-  "status": "open"
- },
- {
-  "id": "h0079",
-  "date": "2026-10-19",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamp the UK tax reel numbers (content-assets/scripts/2026-10-19-reel-uk-income-tax.md): GBP/USD rate, UK 90% from people split, UAE VAT share, GBP100k take-home 2026/27, last UK surplus year",
-  "status": "open"
- },
- {
-  "id": "h0080",
-  "date": "2026-10-20",
-  "from": "content",
-  "to": "Market",
-  "item": "Dubai population rebased by Dubai Population Now (4.58m end-2025, +332k). Confirm basis and the matching 2024 figure; residents-per-off-plan ratio moves 13x -> ~8x. Also: any 2026 Palm Jumeirah population figure?",
-  "status": "open"
- },
- {
-  "id": "h0081",
-  "date": "2026-10-21",
-  "from": "PA",
-  "to": "Finance",
-  "item": "W&Co payslip dated 30 Sep 2026, WPS AED 221,330.25: TH-68 102,504 (60%), A5-108 70,656 (60%), P218 8,412.85 (65%), J221 24,521.25 (65%), K450 15,236.29 (65%). PA has set paid=true + paidDate/paidAmount on these five in deals.json and corrected the board figures on P218, J221, K450 to the payslip commission. Reconcile the 221,330.25 credit in finance.json; note the payslip is issued by 'White and White Real Estate LLC'.",
-  "status": "done"
- },
- {
-  "id": "h0082",
-  "date": "2026-10-21",
-  "from": "PA",
-  "to": "Finance",
-  "item": "New deal 16 Oct: V3 Costa Brava 6-bed 8.5M, cash. 215K total coms split 50/50 external, +4,950 conveyancing extra, then 50/50 with Anto. Calum's share 56,225; board 58,725 (incl 2,500 conveyancing); take-home 70% = 39,357.50. Pay month TBC - first Jake-era deal, confirm how/when Jake's brokerage pays out.",
-  "status": "done"
- },
- {
-  "id": "h0083",
-  "date": "2026-10-21",
-  "from": "PA",
-  "to": "Finance",
-  "item": "Payout schedule per Calum 21 Oct: October - K331, BL907, A2-209, P141 (take-home ~AED 103.6K per CRM). November - J444, 505 Noor, K217, J122 (V3 Costa Brava, first Jake-era deal) ~AED 172.5K plus 9,010 cash crypto fee. Update the cash plan; payslip actuals have differed from CRM by +-2K per deal.",
-  "status": "done"
- },
- {
-  "id": "h0084",
-  "date": "2026-10-21",
-  "from": "uploader",
-  "to": "finance",
-  "item": "21 Oct 11:52-11:59 app snapshots, 7 files under data/staging/statements/ (Calum: all other accounts unchanged). BoS 832.08 after 20 Oct DDs Santander 318.06 + Barclaycard 118.45 and 19 Oct Tal 100; Corrina 150 leaves 26 Oct. Santander 11,398.11 (DD 318.06 paid 20 Oct, chains). Barclaycard 9,303.98 (DD 118.45 paid, chains). Amex BA 194.97 - the four pending items posted. MBNA 2 unchanged 1,828.71. Wise all-currency view: 13 Oct +200 USD Vantage refund, 14 Oct 2,339.25 USD sent to 'segments cloud', 15 Oct Canva 70 AED - USD inflows funding that send are not on screen. ADIB CC adib-cc-20261016-20261021.json per image (h0045): utilized limit 26,328.75 printed, 450.73 due 26 Oct, 5% DD set; printed 'last statement balance' 67,102.85 does not reconcile with utilized - yours to interpret. The two small chain gaps in the 11-18 Oct SMS file are international transaction fees + VAT (0.83 + 0.04 posted 17 Oct).",
-  "status": "done"
- },
- {
-  "id": "h0085",
-  "date": "2026-10-25",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "25 Oct snapshots -> 8 files in data/staging/statements/ + 6 ccBalances. ADIB CC app 19-25 Oct per-image (7 blocks, 53 rows incl overlaps, no balance shown; 10-18 Oct not captured). Mashreq 23-24 Oct: -2,700 (beneficiary cut off) and -10,350 Kumayl Merchant 'family support'; balance 7,090.52 + Tara pot 12,975 = 20,065.52; GAP: rows 10-22 Oct missing, +1,500 net unexplained. UK: Barclaycard DD 118.45 taken (9,303.98); Santander DD 318.06 taken (11,398.11); MBNA 2 stmt 21 Oct 1,830.49 min 47.54 due 16 Nov; Aqua stmt 22 Oct interest 24.30 with pending refund -> 0, DD 9 Nov; Amex Gold 460 (20 Oct SP SHOP), BA Amex 229.96 nothing due; both Amex 0 due. Still missing: ADIB balance/statement, Mashreq 10-22 Oct, BoS/Property/Wise since 9 Oct.",
-  "status": "done"
- },
- {
-  "id": "h0086",
-  "date": "2026-10-25",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "25 Oct part 2 -> 4 files. Mashreq 9-24 Oct CLOSES the gap: 12 Oct +1,500 from Tallia, 23 Oct -2,700 to Tallia (family support) - ties to 7,090.52 exactly. BoS 16-26 Oct: Tallia 200 (16th) + 100 (19th), MBNA 49.66, Santander 318.06, Barclaycard 118.45, Aqua 24.30 forward-dated 26 Oct; 807.78 at 25 Oct; Corrina 150 (26th) + Tesco 266 (~29th) leaving. GAP: BoS 9-15 Oct rows not captured, +338.01 net. Wise 352.99: Deepstash 27.13, Apple 8.99, Canva 9.80, Fmd 8.73 pending, Canva 15 Oct GBP not shown. Property Account: 21 Oct OD interest 41.35 -> -1,774.31. CORRECTION: Aqua pending -24.30 is the BoS DD, not an interest refund (ccBalance appended). Calum: all other cards unchanged.",
-  "status": "done"
- },
- {
-  "id": "h0087",
-  "date": "2026-10-26",
-  "from": "Uploader",
-  "to": "Life Coach",
-  "item": "Whoop Trend View set (week 20-26 Oct + month 27 Sep-26 Oct, 18 screens, every metric per day) extracted to private:data/staging/2026-10-26-whoop-trends.json.",
-  "status": "open"
- },
- {
-  "id": "h0088",
-  "date": "2026-10-26",
-  "from": "Uploader",
-  "to": "Life Coach",
-  "item": "Three more health files in private:data/staging/ dated 2026-10-26: -whoop-6m.json (6-month WHOOP Age, Pace of Aging, stress split), -scale.json (latest body-composition reading), -myfitnesspal-week.json (19-25 Oct calories, nutrients, macros, top foods).",
-  "status": "open"
- },
- {
-  "id": "h0089",
-  "date": "2026-10-28",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "28 Oct -> 6 files + 3 ccBalances. NEW ACCOUNT: HSBC Business C/A (UK) 149,669.77 GBP at 28 Oct, in 572,640 / out 435,366 since 1 May - not in finance.json at all; staged hsbc-business-20261023-20261026.json (5 rows 23 Oct; two identical TB Construction 2,333.28 BPs - possible double pay). Virgin Money MISSED the 25 Oct 375.08 - Calum paid it manually from BoS 28 Oct; expect late fee. BoS 282.70 with 594.25 leaving by ~3 Nov -> goes c.-311 overdrawn unless topped up. ADIB outstanding c.38,483 (avail 31,017.20; app 'total amount due 450.73' unclear); 24-27 Oct rows per image. Mashreq 6,910.52 (-180 Mohammed Ahmed 26 Oct). Wise: Vantage UK refunds +975 +30 USD on 26 Oct. Calum: nothing else changed.",
-  "status": "done"
- },
- {
-  "id": "h0090",
-  "date": "2026-10-28",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "28 Oct part 2: three 27 Oct statements -> santander-everyday-20261027, ms-20261027, barclaycard-plat-20261027 (5 new rows, all tie) + 4 ccBalances. Santander 11,619.12 min 334.99 due 21 Nov; M&S 7,331.73 min 183.29 due 21 Nov; Barclaycard 9,328.97 min 118.02 due 23 Nov; Aqua 0.00. Nov ladder: 2 Nov MBNA1 270.74 / 5 Nov HSBC 34.71 / 16 Nov MBNA2 47.54 / 21 Nov Santander 334.99 + M&S 183.29 / 23 Nov Barclaycard 118.02 / ~25 Nov Virgin. Interest this cycle on the three: 280.93.",
-  "status": "done"
- },
- {
-  "id": "h0091",
-  "date": "2026-10-28",
-  "from": "Finance",
-  "to": "Uploader",
-  "item": "HSBC Business C/A is NOT part of Calum's personal finances - do not stage or add it to finance.json / ccBalances (Calum 28 Oct). Remove hsbc-business-20261023-20261026.json and its ccBalances entry.",
-  "status": "open"
- },
- {
-  "id": "h0092",
-  "date": "2026-10-29",
-  "from": "content",
-  "to": "Designer",
-  "item": "YouTube channel banner for @calumlmacleod: 2048x1152, safe area 1235x338 centred. Brand green/gold, Calum's face, same type as reel titles. Line: 'Abu Dhabi & Dubai real estate - with my own money in it'. Plus 'New video every week' and WhatsApp +971 55 350 2699. Also a 150x150 video watermark (logo mark or Subscribe).",
-  "status": "open"
- },
- {
-  "id": "h0093",
-  "date": "2026-10-29",
-  "from": "Designer",
-  "to": "Content",
-  "item": "h0092 done: YouTube banner (2048x1152, safe-area checked) and 150x150 CM watermark at content-assets/youtube/. Handle @calumlmacleod confirmed by Calum. PA please close h0092",
-  "status": "open"
- },
- {
-  "id": "h0094",
-  "date": "2026-10-29",
-  "from": "content",
-  "to": "Designer",
-  "item": "URGENT: 3 YouTube thumbnails (1280x720) for the Hudayriyat Island video, for Test & Compare. (1) Calum's face, sales-centre bg, text NOBODY LIVES HERE + small gold $3.5BN. (2) island aerial/render, face in corner, text ABU DHABI'S $3.5BN ISLAND. (3) face surprised, text THE ISLAND EVERYONE'S TALKING ABOUT. Brand green/gold, face = 1/3 frame, eyes toward text, 3-5 words, readable at stamp size.",
-  "status": "open"
- },
- {
-  "id": "h0095",
-  "date": "2026-10-29",
-  "from": "Designer",
-  "to": "Content",
-  "item": "h0094 done: three Hudayriyat thumbnails at content-assets/youtube/thumbs/hudayriyat/ (1 nobody-lives-here, 2 3.5bn-island, 3 everyone-talking). Caveats: no sales-centre photo on file so thumb 1 sits on the Hudayriyat townhouse render; no surprised-face shot so thumb 3 uses the smiling headshot - send either and I re-render in minutes. PA please close h0094",
-  "status": "open"
- },
- {
-  "id": "h0096",
-  "date": "2026-10-31",
-  "from": "content",
-  "to": "Manager",
-  "item": "access: PropertyIndex MCP now returns counts only - median_sale_psf/sale_price locked (free plan). Worked on Pro earlier this month. Check the PIX subscription; Content and Market both depend on it.",
-  "status": "open"
- },
- {
-  "id": "h0097",
-  "date": "2026-10-31",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamp for batch 3: (1) Abu Dhabi total homes under construction (we sum islands ~20k); (2) Dubai Hills price effect of Al Khail extension or cut; (3) UAE revenue split VAT/CT/fees share; (4) Etihad Rail passenger service status post 28 Sep 2026 - journey time AD-Dubai, stations open",
-  "status": "open"
- },
- {
-  "id": "h0098",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Manager",
-  "item": "ISSUE data: data/state/uploader.md does not exist (404) - Uploader has no start pack",
-  "status": "done"
- },
- {
-  "id": "h0099",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Manager",
-  "item": "ISSUE rule: h0091 (Finance) asks Uploader to delete a staging file - conflicts with Uploader append-only rule and the delete gate. Need a rule for who removes stale staging files",
-  "status": "done"
- },
- {
-  "id": "h0100",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "1 Nov 05:34-05:41 app screenshots (19 images) staged raw, per image, signs as printed, overlaps left in, alreadyStaged flagged per row. 13 files in data/staging/statements/ (all GBP unless stated; closing = balance printed 1 Nov; opening not printed unless stated): tesco-clubcard-20261101 (8 rows, bal 5,333.54); virgin-money-20261101 (1, owed 8,730.22); santander-everyday-20261101 (1, 11,619.12); mbna-1-20261101 (1, 7,948.40, min 270.74 DUE MON 2 NOV - no payment visible, not in BoS leaving-soon list); mbna-2-20261101 (1, 1,830.49); hsbc-20261101 (2, 1,388.58); ms-20261101 (2, 7,331.73); barclaycard-plat-20261101 (2, 9,328.97); aqua-20261101 (1, 0.00); amex-gold-20261101 (2, 460.00 due 10 Nov); ba-amex-20261101 (2, 229.96); bos-20261020-20261102 (14 rows, chain ties: opening derived 1,268.59 on 20 Oct -> closing 931.70 printed; 3 upcoming in meta); adib-cc-app-20261027-20261101 (AED, 36 rows over 5 overlapping images, ~22 unique, no balance shown). Check ADIB: view includes Monthly Murabaha Payment, Profit earned credit and 3 T_ inward transfers - staged as ADIB CC per 27 Oct row match, confirm it isn't the current account. 4 ccBalances rows appended to finance.json (Tesco Clubcard, Virgin Money, Amex Gold, BoS overdraft); unchanged cards skipped.",
-  "status": "done"
- },
- {
-  "id": "h0101",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "1 Nov 05:41-05:43 screenshots (9 images) staged raw, per image, overlaps left in, alreadyStaged flagged, IBANs/account numbers redacted. 4 files in data/staging/statements/: mashreq-20261024-20261030 (AED, 12 rows; closing 21,610.52 printed; chain from 6,910.52 on 26 Oct ties exactly: salary 122,800 from White and White 29 Oct, Webi sales commission 7,900 in 30 Oct); mashreq-tara-and-rent-20261001-20261031 (AED, 3 rows; 13,044.83 printed, first interest 69.83 on 31 Oct, rate 6.25%); nationwide-flexdirect-20261021-20261030 (GBP, 3 rows; -1,941.46 printed, OD limit 2,250; chain ties); wise-20261024-20261031 (multi-ccy, 17 rows; no balance shown; 2 Binance payments declined 31 Oct). RESOLVES h0100 ADIB query: Mashreq shows the three T_ transfers (20,000 + 9,500 on 29 Oct, 8,000 on 30 Oct) as CREDIT CARD PAYMENT to card *6789 = ADIB CC. NEW ACCOUNT: Nationwide FlexDirect is not in my account list - confirm it is in scope (h0091 precedent); no ccBalances entry written until you do.",
-  "status": "done"
- },
- {
-  "id": "h0102",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "Calum 1 Nov: Nationwide FlexDirect is PERSONAL - 1 ccBalances row appended (overdrawn 1,941.46 of 2,250); staging nationwide-flexdirect-20261021-20261030 updated. h0091 done: hsbc-business-20261023-20261026.json deleted on Calum's say-so; no HSBC Business entry was in ccBalances or elsewhere in finance.json.",
-  "status": "done"
- },
- {
-  "id": "h0103",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Manager",
-  "item": "ISSUE asked: Uploader account list (agent file) lacks Nationwide FlexDirect (personal, Calum 1 Nov) and the UK cards - had to ask scope. Calum to add via agent file.",
-  "status": "open"
- },
- {
-  "id": "h0104",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Life Coach",
-  "item": "WHOOP trends week 26 Oct - 1 Nov (18 screenshots) staged in private:data/staging/2026-11-01-whoop-trends.json. Strava pull for the same week pending.",
-  "status": "open"
- },
- {
-  "id": "h0105",
-  "date": "2026-11-01",
-  "from": "Uploader",
-  "to": "Life Coach",
-  "item": "MyFitnessPal week 25-31 Oct (4 screenshots) staged in private:data/staging/2026-11-01-myfitnesspal-week.json.",
-  "status": "open"
- },
- {
-  "id": "h0106",
-  "date": "2026-11-03",
-  "from": "content",
-  "to": "Designer",
-  "item": "Calum has chosen the reel cover palette: cyan (#00C2FF-ish) + white title text on the dark studio background, title in the upper third - see the '350 km/h New Rail Line Changes The UAE' cover (3 Nov). Use this for reel covers, YouTube thumbnails and the channel banner rather than gold/cream. Pin the exact hex from the editor's file.",
-  "status": "open"
- },
- {
-  "id": "h0107",
-  "date": "2026-11-04",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "4 Nov 07:40-07:50 screenshots (19 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 8 files in data/staging/statements/: virgin-money-20261104 (3 rows, owed 8,906.45, DD 352.46 on 23 Nov); mbna-1-20261104 (1, 7,677.66 - 2 Nov min paid by DD); adib-cc-app-20261030-20261103 (AED, 31 rows over 4 images, no balance shown); ba-amex-20261104 (10, 268.90); bos-20261026-20261103 (18, chain ties to 28,696.71 printed); mashreq-20261030-20261102 (AED 4, 10,310.52, ties); mashreq-tara-and-rent-20261102 (AED 1, 20,944.83, ties); nationwide-flexdirect-20261021-20261104 (9, 393.49, ties). Tesco Clubcard identical to 1 Nov - no file. Calum: every card/account not in this batch is unchanged as of 4 Nov. CHECK: BoS +30,593.00 from MELLEX GROUP LIMIT on 3 Nov (+1.00 on 2 Nov) - new payer, classify; Tara indicative Nov earnings 10.91 vs about 109 at 6.25% on 20,944.83; Mashreq banner says 7,970 deposit vs 7,900 transfer. 5 ccBalances rows appended (Virgin, MBNA 1, BA Amex, BoS OD, Nationwide OD).",
-  "status": "done"
- },
- {
-  "id": "h0108",
-  "date": "2026-11-04",
-  "from": "PA",
-  "to": "Market",
-  "item": "Calum exported every ADREC transaction 2019-2026 (126,867 rows). Staged gzipped at data/staging/adrec-transactions-2019-2026.csv.gz with README. Adopt into data/dld/ (or data/adrec/), build the Abu Dhabi series from it (volume, off-plan share, psm by district, Hudayriyat by project) and refresh quarterly from the ADREC open-data export. This replaces the stale PIX line for Abu Dhabi in the brief.",
-  "status": "open"
- },
- {
-  "id": "h0109",
-  "date": "2026-11-04",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamp for National Day reel: Jebel Ali 2024 TEU vs total UK port TEU; UAE population 1971 (180k-280k range)",
-  "status": "open"
- },
- {
-  "id": "h0110",
-  "date": "2026-11-05",
-  "from": "content",
-  "to": "Market",
-  "item": "URGENT stamp: is 15,900 (a) Abu Dhabi off-plan sales full-year 2025 (Cavendish Maxwell) or (b) ADREC H1 2026 residential units sold? Both appear in our files. The 18-residents-per-home ratio in three reels depends on it.",
-  "status": "open"
- },
- {
-  "id": "h0111",
-  "date": "2026-11-05",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamp for 'Dubai down 18%, Abu Dhabi up 178%' reel: (1) open ADREC H1 2026 PDF - confirm residential sales AED 70.4bn and total sales AED 86bn; (2) DMT H1 2024 Abu Dhabi sales value (ex-mortgage); (3) ADREC H1 2025 sales/mortgage split. Sheet: content-assets/research/2026-11-05-ad-vs-dubai-h1-series.md. Also: 15,900 question resolved - Cavendish 2025 off-plan 15,900 and ADREC H1 2026 units 15,900 are both real (Cavendish full-year 2025 = 22,400 sales).",
-  "status": "open"
- },
- {
-  "id": "h0112",
-  "date": "2026-11-05",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamps for batch 4 hooks (file content-assets/scripts/2026-11-05-batch4-hooks-locked.md): (1) UAE consolidated govt spending total USD - needed before 'more than UK interest' is said; (2) Palm Jumeirah original launch prices Garden Homes/Signature/Shoreline vs today; (3) Nawayef West/East 'sold out' per Modon; (4) 2nd Fujairah pipeline capacity; (5) Knight Frank Reem ready apartment price growth yr to Jun 2026 (we have off-plan +38%).",
-  "status": "open"
- },
- {
-  "id": "h0113",
-  "date": "2026-11-05",
-  "from": "content",
-  "to": "Manager",
-  "item": "BUILD REQUEST - Content production board. Source: data/content.json pipeline (Content owns). Add stage field with values: idea | hooked | scripted | filmed | edited | scheduled | posted | measured (drop 'with JC'). Each card: title, hook, batch/series, stage, stageDate, postDate, platforms. View: kanban on calum7macleod.github.io/dashboards/ - one column per stage, cards move left to right, newest on top, count in each column header, mobile-first (Calum reads it on his phone). Calum-only (no sharing). Content will migrate existing statuses (scripted/drafted/template/posted) to the new stage values and keep them current at every session end. Brand: design-system/. Filter: by batch. No analytics on this board - that's the Friday scoreboard.",
-  "status": "done"
- },
- {
-  "id": "h0114",
-  "date": "2026-11-05",
-  "from": "manager",
-  "to": "content",
-  "item": "Production board shipped 5 Nov: calum7macleod.github.io/dashboards/board.html (hub tile too). Reads content.json: stages[] for columns, pipeline[] for cards (title, hook, series, stage, stageDate, postDate, platforms[] if present, notes in the open card). Cards with no stage fall back from status (template->idea, drafted->hooked, committed/scripted/final->scripted, posted->posted, superseded hidden). Moving a card on the page writes stage + stageDate=today; moving to posted also sets status 'posted' and postDate if empty. Your side: set stageDate when you change a stage, add platforms[] (e.g. ['IG','TT','YT']) where known, and keep series as the batch label - the filter chips are built from it. Newest on top = stageDate desc, created as fallback.",
-  "status": "open"
- },
- {
-  "id": "h0115",
-  "date": "2026-11-05",
-  "from": "manager",
-  "to": "content",
-  "item": "New agentkit commands for you (live now): agentkit.py board = every column with counts and cards (id|title|series|stageDate|postDate); agentkit.py stage <id> <stage> [postDate] = move a card, stamps stageDate (posted also sets status + postDate). Rule added to agents/content.md Rituals: start sessions with board, end by moving every card whose stage changed. Use these, not hand-edited JSON.",
-  "status": "open"
- },
- {
-  "id": "h0116",
-  "date": "2026-11-05",
-  "from": "content",
-  "to": "Manager",
-  "item": "Board: need 'agentkit.py card add \"<title>\" --stage <stage> --series <series> [--hook \"...\"]' (assigns next cN, stamps created/stageDate). 19 cards to create now: 3 recorded batch-1 reels missing from pipeline (Why are there fewer property transactions in Abu Dhabi than Dubai - POSTED 4 Nov; The best located island in Abu Dhabi has nothing built on it; Why doesn't EMAAR build anything in Abu Dhabi) + 16 batch-4 hook pairs at 'hooked' (content-assets/scripts/2026-11-05-batch4-hooks-locked.md). Also a 'card edit' for title/hook/postDate would avoid hand-editing JSON.",
-  "status": "done"
- },
- {
-  "id": "h0117",
-  "date": "2026-11-05",
-  "from": "manager",
-  "to": "content",
-  "item": "card add / card edit are live in agentkit.py (re-fetch it). card add \"<title>\" --stage <stage> --series \"<series>\" [--hook \"...\"] [--post YYYY-MM-DD] [--notes \"...\"] -> next cN, created + stageDate today, status derived from stage. card edit <id> --title/--hook/--series/--post/--notes. Create your 19 now. Bin on the board sets status superseded + binned date - leave those out of counts.",
-  "status": "open"
- },
- {
-  "id": "h0118",
-  "date": "2026-11-05",
-  "from": "manager",
-  "to": "Finance",
-  "item": "Schema written: data/schemas/finance.md. Decisions: sign = statement style (negative = money out) once you flip the old rows and add \"signConvention\":\"statement\" at the top level of finance.json - do it in one rebuild, never half; currency on every row, AED only in sums; retired rows excluded everywhere (finance.html does this now). h0020 (BoS Jul/Aug sign mix, CC interest) is yours to fix at that rebuild. Also: data/state/finance.md is 32KB - trim to two pages, move history to data/finance/.",
-  "status": "open"
- },
- {
-  "id": "h0119",
-  "date": "2026-11-05",
-  "from": "manager",
-  "to": "PA",
-  "item": "Buyer data migration still not done (h0007, 23 Sep) - `agentkit.py buyers-check` shows 233 violations: archive-buyers has no stage on 87 records, Inactive/Archived/Bought statuses (83), 16 buyers Active+Lost, 32 closedDate. Rule: stage is truth; status = Closed Won / Closed Lost / Active from it; closedDate -> closedWon or closedLost; archive gets stage Lost + lostReason = old status (Bought: check deals - Calum's deal = Won). Run buyers-check until \"-- 0 violations\". crm.html and buyers-index already follow the stage rule, so until this is done the archive looks empty to them.",
-  "status": "open"
- },
- {
-  "id": "h0120",
-  "date": "2026-11-06",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamp: DIFC Registrar of Real Property transfer fee (5%?) vs ADGM real property registration fee on Reem/Maryah (2%?) - for a DIFC vs ADGM fee reel",
-  "status": "open"
- },
- {
-  "id": "h0121",
-  "date": "2026-11-06",
-  "from": "content",
-  "to": "Manager",
-  "item": "Board: add 'carousel' field per card (none|briefed|built|posted) - one carousel per reel from JC, posted 09:00 Dubai day after the reel. Also add follows/nonfollower%/profilevisits/keywordDMs fields to content-metrics.json schema for the Friday scorecard.",
-  "status": "open"
- },
- {
-  "id": "h0122",
-  "date": "2026-11-08",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "8 Nov 06:53-07:03 screenshots (19 images) staged raw per image, alreadyStaged flagged. 5 files in data/staging/statements/: tesco-clubcard-20261108 (12 rows incl 5 Oct-4 Nov statement page; full card number on the PDF NOT stored; ties to 5,457.81); mbna-1-20261108 (4, stmt 8 Nov 7,752.08, min 268.22 due 3 Dec); hsbc-20261108 (1, DD 34.71 on 5 Nov, 1,353.87); adib-cc-app-20261102-20261107 (AED 29 rows over 4 images, no balance); ba-amex-20261108 (5, paid 290.88 on 5 Nov, balance 6.99). No file - unchanged/all rows already staged: Virgin, M&S, Santander, MBNA 2, Aqua, Barclaycard. CHECK: ADIB two identical SELFDRIVE AE -245.66 on 4 Nov (possible double charge, 30-day dispute window); Careem 3 Nov posted 44.14 vs 46.00 pending; BA Amex 290.88 payment source not in this batch (BoS?). 4 ccBalances rows appended (Tesco, MBNA 1, HSBC, BA Amex).",
-  "status": "done"
- },
- {
-  "id": "h0123",
-  "date": "2026-11-08",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "8 Nov 07:03-07:06 screenshots (9 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 5 files in data/staging/statements/: amex-gold-20261108 (1 row, 460.00 paid 5 Nov, balance 0.00); bos-20261102-20261105 (11, ties to 16,511.12); mashreq-20261102-20261106 (AED 5, ties to 9,782.90); mashreq-tara-and-rent-20261031-20261104 (AED 4, ties to 77,069.83); wise-20261031-20261105 (5). Nationwide identical to 4 Nov - no file. Money trail 4 Nov: BoS -11,400 GBP -> Wise -> AED 56,197.38 into Mashreq -> 56,125 to Tara and Rent. Tara indicative Nov earnings now 99.25 on 77,069.83 (full month at 6.25% would be about 401) - looks like accrued-to-date. 2 ccBalances rows appended (Amex Gold, BoS OD).",
-  "status": "done"
- },
- {
-  "id": "h0124",
-  "date": "2026-11-08",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "CRYPTO MINING - Calum 8 Nov: keep as a SEPARATE section, NOT in monthly budget vs actual (he will speak to you; dashboard section = Manager build). Staged in data/staging/mining/: (1) segments-cloud-SCH-2026-00956.json - Segments Cloud Oct hosting invoice, UNPAID, USD 934.34 / AED 3,431.37 incl 5% VAT, Net 14 from 31 Oct (due 14 Nov derived), plus uptime detail for 7 miners (6x Antminer S21+ 235TH live 14 Oct, 1x L9 16G live 15 Oct; avg uptime 56%, 11,123.1 kWh at USD 0.08). Vendor IBAN and pay-link token not stored. (2) wallet-receipts-20261015-20261107.json - 64 rows over 10 overlapping images; unique receipts 24 BTC / 9 LTC / 15 DOGE, derived totals in meta. FLAG: no LTC/DOGE receipts after 1 Nov while BTC continues daily. Existing finance.json row 'Sent money to segments cloud (fee 19.35 GBP)' looks related.",
-  "status": "done"
- },
- {
-  "id": "h0125",
-  "date": "2026-11-08",
-  "from": "PA",
-  "to": "Finance",
-  "item": "Segments Cloud Hash (ASIC hosting, 7 miners) invoice SCH-2026-00956 for Oct 2026: 11,123.1 kWh at USD 0.08 = USD 889.85 + 5% VAT = USD 934.34 / AED 3,431.37, Net 14 so due 14 Nov. Recurring monthly cost - add to the cash plan. Segments' published standard rate is USD 0.06/kWh (would be ~USD 667/month); Calum to query the rate. Invoice TRN (100580710000003) differs from the TRN on segments.ae (104918439100003) - verify before paying, pay only via the logged-in portal.",
-  "status": "done"
- },
- {
-  "id": "h0126",
-  "date": "2026-11-08",
-  "from": "content",
-  "to": "Market",
-  "item": "Stamp: Abu Dhabi robotaxi timeline - TXAI launch date (Yas, 2021?), Uber+WeRide Abu Dhabi launch and fully-driverless dates - for 'Dubai Future Ride vs Abu Dhabi' idea (c104).",
-  "status": "open"
- },
- {
-  "id": "h0127",
-  "date": "2026-11-08",
-  "from": "content",
-  "to": "Manager",
-  "item": "Board: add a RE-HOOKS lane/section (or filter chip) - cards with series 'RE-HOOKS (trial)' = existing filmed/posted reels getting a new hook + cover for a trial reel. Currently c102 and c105. Should show original card id, new hook, and trial date.",
-  "status": "open"
- },
- {
-  "id": "h0128",
-  "date": "2026-11-09",
-  "from": "mentor",
-  "to": "pa",
-  "item": "Run data/state/call-plan.md from tomorrow's 07:30 brief: before 13:00 a card per name due today (CRM fields, enquiry month, shelf row with three options, WhatsApp skeleton); after 17:00 log meetings + hot sent-infos into buyers.json, build the no-answer re-call list (two over the fortnight), write the 19:30 line. Also: warm book (46) untouched since 1-2 Oct - Jason, Harshan, Pat, Lamya, Muaz first.",
-  "status": "done"
- },
- {
-  "id": "h0129",
-  "date": "2026-11-09",
-  "from": "mentor",
-  "to": "market",
-  "item": "Project files needed for the call-plan shelf: Artery (Reem, 1-beds), Muheira (Reem, 2-3 beds), Al Ghadeer (3-bed standalone ~3.5M), Naseem (secondary). Confirm current Wadeem and Bashayer B5 stock with Jake/Modon, and the two coming launches (Hudayriyat beachfront apartments, Reem apartments). Refresh the Abu Dhabi off-plan psf line (ValuStrat Q2 is stale). Lagoons off this list.",
-  "status": "open"
- },
- {
-  "id": "h0130",
-  "date": "2026-11-09",
-  "from": "mentor",
-  "to": "pa",
-  "item": "Run data/state/call-plan.md from tomorrow's 07:30 brief. After 17:00 daily: log meetings + hot sent-infos from Calum's dictation into buyers.json, build the no-answer re-call list (two over the fortnight), write the 19:30 line (dialled / spoke / meetings / info / webinar / not interested / no answer). No pre-call cards - he works from Jake's CRM. Also: warm book (46) untouched since 1-2 Oct - Jason, Harshan, Pat, Lamya, Muaz first.",
-  "status": "open"
- },
- {
-  "id": "h0131",
-  "date": "2026-11-09",
-  "from": "mentor",
-  "to": "manager",
-  "item": "Calum authorised 9 Nov: Mentor writes private:data/calls/jake-list.md (call-through checklist, names + outcomes, no phones). Add it to Mentor's write list in agents/mentor.md and shared ownership table.",
-  "status": "open"
- },
- {
-  "id": "h0132",
-  "date": "2026-11-10",
-  "from": "mentor",
-  "to": "market",
-  "item": "Draft for Calum by Wed 11 Nov 07:30: Abu Dhabi vs Dubai at a ~5M budget for buyer Marina (meeting Sun 15 Nov 16:00). What 5M buys in each - Reem (Tara Park 3-bed, Muheira), Hudayriyat (Bashayer) vs Dubai equivalents; yields, service charges, payment plans, 2030 handover vs ready; the honest trade-offs. content-assets/research/, one page, numbers with their ages.",
-  "status": "open"
- },
- {
-  "id": "h0133",
-  "date": "2026-11-11",
-  "from": "content",
-  "to": "Market",
-  "item": "Earth Tower (Eagle Hills x BROAD, Zayed City, 16 floors, modular): find whether units are for sale or rent, prices/rents, status (occupied?), and any next towers announced (15-30 floors). For reel c110.",
-  "status": "open"
- },
- {
-  "id": "h0134",
-  "date": "2026-11-11",
-  "from": "Designer",
-  "to": "PA",
-  "item": "Tina - Wadeem Gardens 4-bed (Đ8.7M) on the ADIB 25/75 plan, bespoke schedule issued 11 Nov, November booking. Please check she has a buyer record",
-  "status": "open"
- },
- {
-  "id": "h0135",
-  "date": "2026-11-12",
-  "from": "content",
-  "to": "Designer",
-  "item": "Reel screens hub built by Content at content-assets/scripts/screens/ (index.html + 01-08 + bvlgari-map.jpg) for filming on the 86in Samsung interactive display (16:9, 4K, touch). Placed in Content's path for speed; move/re-brand if you want. Next: 09 Hudayriyat tunnels route, 10 Mid-Island Parkway (PNG exists), 11 tax pie, 12 supply graph - Content building after Calum's screen test.",
-  "status": "open"
- },
- {
-  "id": "h0136",
-  "date": "2026-11-13",
-  "from": "content",
-  "to": "Market",
-  "item": "Restamp for Disney reel: Yas Island apartment price growth 2025 (+24%?) and to June 2026 (+18%?) with source; Disneyland Abu Dhabi announcement date (May 2025) and expected opening.",
-  "status": "open"
- },
- {
-  "id": "h0137",
-  "date": "2026-11-13",
-  "from": "content",
-  "to": "Designer",
-  "item": "Disney/Yas report ready for layout (Canopies Sanctuary launch 25-26 Nov): https://claude.ai/artifact/3kRMzU9bLR9F3GocrHDXVe - numbers final, do not change figures; add Aldar Yas Point masterplan/location image; brand pass.",
-  "status": "open"
- },
- {
-  "id": "h0138",
-  "date": "2026-11-13",
-  "from": "Designer",
-  "to": "Content",
-  "item": "Calum's Instagram handle is now @calumlmacleod (was @thecalummacleod) - same as YouTube. Update captions, scripts and the year-one/milestone templates on next use",
-  "status": "open"
- },
- {
-  "id": "h0139",
-  "date": "2026-11-13",
-  "from": "content",
-  "to": "Designer",
-  "item": "Disney/Yas report FINAL for layout: https://claude.ai/artifact/3kRMzU9bLR9F3GocrHDXVe - numbers and wording locked. Add Aldar Canopies Sanctuary renders (Calum's Aldar SharePoint folder: Marketing material/UAE/Abu Dhabi/YAS Island/The Canopies/The Canopies Sanctuary - Calum to download). Charts can be restyled to brand but values must not change. For the 25-26 Nov launch.",
-  "status": "open"
- },
- {
-  "id": "h0140",
-  "date": "2026-11-15",
-  "from": "manager",
-  "to": "PA",
-  "item": "Issue i0002 (mentor): core.md last written 21 Sep - six weeks stale start packs. core.md is yours: bring it current this session (job start ~2 Nov, Iniesta J122 closed 16 Oct, current targets), and keep the 'END of any topic' rule. Manager closes i0002 when core.md carries a November date.",
-  "status": "open"
- },
- {
-  "id": "h0141",
-  "date": "2026-11-15",
-  "from": "Uploader",
-  "to": "Finance",
-  "item": "15 Nov 07:04-07:12 screenshots (25 images, 3 sent twice) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 7 files in data/staging/statements/: hsbc-20261115 (new stmt 1,353.87, no interest, min 33.85 due 7 Dec); ba-amex-20261115 (5 rows, 11.99, paid 13.98 on 12 Nov); bos-20261105-20261112 (8 rows, ties to 15,435.61); adib-cc-app-20261107-20261114 (AED 43 rows over 6 images, 26 new 8-14 Nov = 11,693.98, no balance shown); mashreq-20261104-20261109 (AED 4, ties to 7,112.90); mashreq-tara-and-rent-20261115 (77,069.83 unchanged; indicative Nov 186.09 is interest accrued to date - closes the h0123 query); wise-20261104-20261114 (8 rows). MINING: Segments Cloud SCH-2026-00956 PAID 9 Nov via Wise 934.34 USD / 716.29 GBP, funded by BoS CALUM WISE 716.53 - data/staging/mining/segments-cloud-SCH-2026-00956-payment-20261109.json; the invoice file still says UNPAID. CHECK: ADIB 24 SEVEN GOVERNMENT TRANS 5,788.55 on 11 Nov; ADIB InstaShop 87.46 on 9 Nov same amount as 6 Nov; BoS L G PRICE 345.00 on 12 Nov (new payee); Apple 11.99 on Wise 4 and 14 Nov plus BA Amex 12 Nov; BoS upcoming DDs show prior amounts (MBNA 49.66 vs MBNA 2 min 47.54 due 16 Nov; Santander 318.06 vs 334.99; Barclaycard 118.45 vs 118.02); M&S 183.29 due 21 Nov - no DD seen. Unchanged, no file: Tesco, Virgin, Santander, M&S, MBNA 1, Barclaycard, Amex Gold, Nationwide. 3 ccBalances rows appended (HSBC, BA Amex, BoS OD).",
-  "status": "done"
- }
+  {
+    "id": "h0001",
+    "date": "2026-09-21",
+    "from": "market",
+    "to": "content",
+    "item": "STORY - the UAE split (verified 21 Sep 2026). CLAIM: Dubai prices went negative year on year this summer for the first time since June 2021 - PIX Aug-26 205.6, -3.5% YoY as published (live series after late registrations 207.0, -2.4%), about -6% from the Jan-May plateau of ~220. Dubai off-plan growth went from +12.8% YoY (Dec-25) to +0.1% (Aug-26). Abu Dhabi same window: ValuStrat index +17.8% YoY, off-plan 6,061 sales = 84% of all sales, +156% YoY, off-plan avg 2,104 psf +21.2% YoY. | RECEIPTS: propertyindex.ae/dubai-real-estate-price-index/2026-08 (DLD-registered, mix-adjusted, series CSV on /download); ValuStrat Abu Dhabi Real Estate Review Q2 2026 pp.7-13 (PDF in content-assets/research/, data to 30 Jun = a quarter old, indicative not register-verified). | ANGLE: 'I moved where the money moved' - Calum to Modon / Abu Dhabi from 5 Oct, invested himself (Tara Park, Hudayriyat). HONEST BEAT that makes it credible: Abu Dhabi is not immune - transacted psf fell on the quarter in Q2 (off-plan -4%, ready -4.3%), index growth +2.1% q = weakest in two years, and AD off-plan sits ~46% over ready vs ~24% in Dubai. DO NOT SAY: 'seven straight monthly declines' or 'Dec-25 peak 223.2' - killed, current series shows Apr and May up and only three falls (Jun, Jul, Aug). DO NOT compare +21.2% with +0.1% as like-for-like - one is a raw average psf, the other mix-adjusted; use +17.8% index vs -3.5% index and say methods differ. Rent freeze line if wanted: ADREC cut the cap 5% to 0% on 2 Jun 2026, temporary, until further notice - adrec.gov.ae press release 3 Jun 2026; ADGM areas (Maryah, parts of Reem) carved out per Baker McKenzie - check before saying it on a Reem piece.",
+    "status": "open"
+  },
+  {
+    "id": "h0002",
+    "date": "2026-09-21",
+    "from": "PA",
+    "to": "Manager",
+    "item": "Owner data now in PRIVATE repo: crm-inbox data/owners/damac-lagoons-owners.json (8,843 Lagoons units, 3MB) + README.md. Requests: 1) agentkit getfile fails over 1MB - add an 'owner <unit|name|cluster>' command using the raw media type, returning matching rows only; 2) propose one line for _shared.md Source of truth pointing all agents at private:data/owners/README.md (Calum approves the rule change).",
+    "status": "done"
+  },
+  {
+    "id": "h0003",
+    "date": "2026-09-22",
+    "from": "PA",
+    "to": "Manager",
+    "item": "Task dashboard: Calum wants it finished. Known gaps from PA audit 21 Sep: difficulty is text (easy/medium/hard) so points never compute (0 done, 0 open) - map to 1/3/5/8 or score numerically; 226 done tasks + 51 active in one file - archive done to data/archive/; overdue items show nothing - surface count + oldest; ids are a mix of UUIDs and slugs; buildLog/units arrays empty; Top 3 flag not enforced to max three. Calum to add what he sees broken. Task task-dashboard-sort-2209 due Mon 28 Sep.",
+    "status": "done"
+  },
+  {
+    "id": "h0004",
+    "date": "2026-09-22",
+    "from": "PA",
+    "to": "Manager",
+    "item": "Buyers dashboard: new field closedLost (YYYY-MM-DD) on buyer records set when stage goes to Lost. Calum wants the Lost section sorted by closedLost descending, most recent at the top, always. Older Lost records have no date - sort them to the bottom, do not invent dates.",
+    "status": "done"
+  },
+  {
+    "id": "h0005",
+    "date": "2026-09-22",
+    "from": "PA",
+    "to": "Manager",
+    "item": "Buyer card notes render: notes is one string, entries separated by ' | ', newest first, each entry starts with a date ('22 Sep: ...' or '2026-09-02: ...'). Calum wants it readable: split on ' | ', one line per entry, date as gold eyebrow, newest at top, show 3 then 'more'. Same for stock/seller notes. PA will keep writing that format; if you'd rather move to notes[] array + history[], say so and PA migrates the data in one pass.",
+    "status": "done"
+  },
+  {
+    "id": "h0006",
+    "date": "2026-09-23",
+    "from": "PA",
+    "to": "Manager",
+    "item": "06:30/18:30 Inbox sweep has not produced a triage file on 22 or 23 Sep (data/triage/ only has .keep). Check the scheduled task fired and can write the file; PA opens the brief on it.",
+    "status": "done"
+  },
+  {
+    "id": "h0007",
+    "date": "2026-09-23",
+    "from": "manager",
+    "to": "PA",
+    "item": "Buyer data migration (spec tools/specs/2026-09-23-agentkit-v2.md section 1, after Claude Code ships v2): 1) status derived from stage - Won->'Closed Won', Lost->'Closed Lost', else 'Active' (16 Active+Lost, 1 Active+Won, 3 'Won' to fix); 2) stage Viewed->Viewing (3), Qualifying->Qualified (1); 3) closedDate (21) -> closedWon or closedLost per stage, then remove closedDate; never invent a date; 4) archive-buyers: lostReason = old status, stage Lost + status 'Closed Lost' for Inactive/Archived/Bought Elsewhere; the 5 'Bought' - check deals.json, Calum's deal = Won else lostReason Bought Elsewhere; the 2 'Active' in archive - revive to buyers.json or Lost, ask Calum once; 5) acceptance: agentkit.py buyers-check reads '-- 0 violations' on buyers.json. From now on set stage only; status follows.",
+    "status": "done"
+  },
+  {
+    "id": "h0008",
+    "date": "2026-09-23",
+    "from": "Designer",
+    "to": "PA",
+    "item": "Seema J519 Costa Brava: offer image issued 23 Sep at Đ2.65M (net to seller Đ2,584,400, open to 28 Sep) - update data/offers.json (existing row shows 2.7M dated 9 Sep) and add buyer name once Calum confirms",
+    "status": "done"
+  },
+  {
+    "id": "h0009",
+    "date": "2026-09-23",
+    "from": "Designer",
+    "to": "PA",
+    "item": "Correction to h0008 (Seema J519): letter redone from the locked template - net to seller is Đ2,587,050 (2% flat + Đ9,950), not Đ2,584,400. Record from content-assets/offers/Seema-J519-Offer-2.65M.pdf.",
+    "status": "done"
+  },
+  {
+    "id": "h0010",
+    "date": "2026-09-23",
+    "from": "uploader",
+    "to": "pa",
+    "item": "1 buyer row appended to data/buyers.json from WA contact card - Edenchizxx +971563097960, Lagoons 4-bed handed-over, 2.6m vs 2.7m, Viewing, s4. Set nextTouch; confirm Santorini/Nice reading and real name",
+    "status": "done"
+  },
+  {
+    "id": "h0011",
+    "date": "2026-09-23",
+    "from": "Designer",
+    "to": "Market",
+    "item": "Abu Đ4M pack: brief v2 named Emaar's Bristol (Beachfront); Calum means The Bristol at Ramhan Island by Eagle Hills. Designer built pages 15-17 from web (PF project page Sep 26: 1/2/3-bed apts, 3-beds on sale, 10/60/30 listed but official plan unreleased, construction started 9 Apr 26, completion Dec 2028, freehold 2%). Please verify and get the 3-bed price + official plan from Eagle Hills so the returns page can model it",
+    "status": "open"
+  },
+  {
+    "id": "h0012",
+    "date": "2026-09-23",
+    "from": "uploader",
+    "to": "content",
+    "item": "51 rows staged in data/staging/2026-09-23-jake-nazer-reels-hooks.json - @jake_nazer IG reels grid, hook + views, newest first, from 6 screenshots 23 Sep. Move to content-assets/research or content.json as you see fit",
+    "status": "open"
+  },
+  {
+    "id": "h0013",
+    "date": "2026-09-24",
+    "from": "content",
+    "to": "Market",
+    "item": "VERIFY before filming - Jake-study brick sheet content-assets/research/2026-09-24-jake-nazer-structure-and-bricks.md section 3: every [v] line. Priority: freehold 2019 / Dubai 2002; villa totals (11,464 vs 11,900 contradiction); ADGM workforce (+34% to 49,027 vs +51% to 44,000) and AUM (+33/36%); $1.7t sovereign total; 4m bpd; rail 350km/h 30min + station list/source; Modon and Aldar ownership; Wadeem D13b/1,700; ADIB 5%/20% terms; Hudayriyat elevation 15m vs 10m; Talay prices/psf; Cranleigh + King's Wimbledon status. Land verified bricks in data/market/ so Content and others can read them.",
+    "status": "open"
+  },
+  {
+    "id": "h0014",
+    "date": "2026-09-24",
+    "from": "content",
+    "to": "Designer",
+    "item": "Project deck brief from Calum 23 Sep: buyer-facing deck for 2-3 Abu Dhabi projects (Hudayriyat/Modon, Tara Park Reem, one more). A throwaway template exists as a Slides artifact in Content's chat - use or bin. Needs: which projects, audience, figures from Market, renders.",
+    "status": "open"
+  },
+  {
+    "id": "h0015",
+    "date": "2026-09-24",
+    "from": "content",
+    "to": "Manager",
+    "item": "ASKED (issue - no issue cmd yet): Calum asked how 'the projects agent' can read the Jake brick sheet - no Projects agent in the shared-rules roster. If one exists, its file/ownership isn't in the shared rules; if it's Market, fine. Also: research folder listing via agentkit read fails on directories (404) - a 'ls' command would help.",
+    "status": "done"
+  },
+  {
+    "id": "h0016",
+    "date": "2026-09-26",
+    "from": "PA",
+    "to": "Manager",
+    "item": "Call system for Jake start (from Calum's D1 plan): a proper page - list buyers/owners by criteria (stage, score, area, source, last touch), feed one at a time, tap-to-dial, log outcome + note back to buyers.json, Plaud transcript/summary attached if available. PA's inline call sheet (22-23 Sep) is the prototype: four outcomes, stage/score selectors, note, batch send. Needed by Mon 5 Oct; 500 calls/week planned.",
+    "status": "open"
+  },
+  {
+    "id": "h0017",
+    "date": "2026-09-26",
+    "from": "PA",
+    "to": "Content",
+    "item": "D1 plan targets: 20 videos scripted pre-start, 10 reels + 10 carousels/week from Oct wk2, 10 evergreen scripts, 3 evergreen videos, 2 YouTube in Oct; follower targets 4K IG / 100 YT by Dec. Supply the current baselines (content-metrics.json is missing from the repo) and say what 20 pieces/week costs in filming hours.",
+    "status": "open"
+  },
+  {
+    "id": "h0018",
+    "date": "2026-09-26",
+    "from": "Finance",
+    "to": "Uploader",
+    "item": "2026 statement rebuild: put RAW statement files (CSV/XLSX/PDF, one per account-period, named <account>-<YYYYMM or 2026>.<ext>) under data/staging/statements/. Do NOT append these rows to data/finance.json (old schema, mixed signs - Finance is rebuilding from source). In your handoff to Finance list each file with its account, period, currency, opening and closing balance as printed on the statement. Screenshots: same folder, same naming. Method: data/finance/ledger/METHOD.md s10.",
+    "status": "open"
+  },
+  {
+    "id": "h0019",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "BoS CSV export (GBP, 2 Jan-25 Sep 26): 209 rows appended to data/finance.json for May/Jun/Sep 26 (no prior BoS rows those months), source tag 'BoS CSV export 26 Sep 26'. 381 rows for Jan-Apr/Jul/Aug staged in data/staging/2026-09-26-bos-csv-jan-aug.json - overlap 101 existing screenshot BoS rows; retire those and splice. category blank, note=bank type code. 1 exact duplicate line dropped (21 Sep FPO 1000 x2, same running balance). Closing balance -2,565.88 overdrawn 25 Sep. 14 RETURNED DD credits Feb-Jul.",
+    "status": "done"
+  },
+  {
+    "id": "h0020",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "manager",
+    "item": "data issue: finance.json amount sign inconsistent - BoS Jul 26 rows positive for debits, Aug 26 negative for debits, CC interest rows positive for charges. Uploader used negative = money out for the CSV rows. Needs one rule in schema",
+    "status": "done"
+  },
+  {
+    "id": "h0021",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "CORRECTION to h0019: the '1 exact duplicate dropped' was a real transaction (21 Sep TALLIA FLAHER -1000 FPO, 2nd of two same-day; running balance chains with 0 breaks across all 591 rows). Now appended - BoS CSV rows in finance.json for May/Jun/Sep = 210, not 209. Nothing else changes.",
+    "status": "done"
+  },
+  {
+    "id": "h0022",
+    "date": "2026-09-26",
+    "from": "Finance",
+    "to": "Manager",
+    "item": "Dashboard/finance.json rules needed: (1) exclude transactions with a 'retired' field from all sums; (2) transactions now carry 'currency' (GBP on 591 BoS rows) - never add GBP to AED, convert or show separately; (3) proposed single sign convention for transactions going forward = statement style, negative = money out, positive = money in (what statements and the Uploader produce). Old rows are positive = spend - Finance will flip them at the rebuild. Decide and write it into the schema.",
+    "status": "done"
+  },
+  {
+    "id": "h0023",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Wise CSV export (1 Jan-26 Sep 26): 518 rows appended to data/finance.json - 509 GBP May-Sep 26 (no prior Wise rows those months) + 5 AED (Jun) + 4 USD (Aug), all with currency field per your BoS convention, note=Wise type, source tag 'Wise CSV export 26 Sep 26 (cur)'. 167 GBP Jan-Apr rows staged in data/staging/2026-09-26-wise-csv.json - overlap 44 existing screenshot Wise rows (0 match on date+amount, they're rounded); retire and splice as you did BoS. USD 3,023.87 -> 2,206.63 GBP conversion 21 Aug appears both sides (USD debit, GBP credit) - correct, not a dup. 15 pre-auth/reversal pairs kept, balance chain clean. Closing GBP 200.98.",
+    "status": "done"
+  },
+  {
+    "id": "h0024",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "UK property current account (the one BoS pays as 'PROPERTY ACCOUNT' - bank not confirmed, named 'Property Account', rename if you know it): 44 rows appended to data/finance.json, Jan-Sep 26, GBP, from 8 app screenshots. App header says 48 transactions totalling -478.93; 4 rows fall in a screenshot gap 3 Jul-5 Aug (likely YM rent credit 3 Jul, OD interest 20 Jul, Precise Mortgages 1 Aug, YM rent credit 5 Aug - amount cut off) - NOT entered, Calum asked for one more screenshot. Payer sort code/account on the monthly +300.04 credits masked. Cross-checks with BoS CSV: 16 Mar +50, 24 Mar +40, 1 Jun +150 match BoS 'PROPERTY ACCOUNT' FPOs.",
+    "status": "done"
+  },
+  {
+    "id": "h0025",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Tesco Clubcard: 8 statements (5 Dec 25 - 4 Aug 26) from PDF screenshots. 53 rows appended to data/finance.json (sign: positive = spend/interest/fee, negative = payment in, matching your CC rows), 7 statement-end entries appended to ccBalances (4 Jul skipped - your 6 Jul entry already carries 6,244.76). Interest lines labelled by balance type from the summary table. Chain verified: every prev+lines=new and every summary sums to new. OVERLAP: retire your Aug 26 day 4 'Interest (Aug stmt, partial)' 50.21 row - the 4 exact Aug lines (0.14+18.95+31.12+87.26 = 137.47) are now in. Missing: the 5 Aug-4 Sep statement (your 4 Sep 130.65 row covers its interest only). Card number not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0026",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "h0025 count correction: Tesco rows appended = 51, not 53 (3+4+4+7+5+5+12+11). Everything else in h0025 stands.",
+    "status": "done"
+  },
+  {
+    "id": "h0027",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Virgin Money CC: 9 statements (4 Dec 25 - 3 Sep 26) from PDF screenshots. 20 rows appended to data/finance.json (positive = spend/interest/fee, negative = payment). Your existing 3 Aug 200.95 and 3 Sep 192.99 interest rows match the statements exactly - I did NOT re-add them, so no retire needed. 8 statement-end entries appended to ccBalances (3 Sep skipped - your 5 Sep entry carries 9,705.64). Chain verified across all 9. Card number and the payment account number in the footer not recorded. Story: promo 0% ended 3 May 26 - interest went 20.66 to ~195/mo; 2,885.91 of Wise cash advances Mar-Jun; 3 Jul balance 10,181.50 was over the 10k limit.",
+    "status": "done"
+  },
+  {
+    "id": "h0028",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "h0027 count correction: Virgin Money rows appended = 22, not 20 (24 statement lines minus the 2 interest rows you already hold). Rest of h0027 stands.",
+    "status": "done"
+  },
+  {
+    "id": "h0029",
+    "date": "2026-09-26",
+    "from": "Finance",
+    "to": "Manager",
+    "item": "ISSUE tool/data: concurrent writes to data/finance.json - Uploader appended Property Account rows (204c1e2, 10:31) while Finance held a copy fetched earlier; Finance's PUT (649f363, 10:33) overwrote them. Restored from history. Fix needed: Uploader stages bulk rows under data/staging/ (as h0018 asked) and Finance is the only writer of finance.json during a reconciliation session; or agentkit put re-fetches and merges transactions by hash before PUT.",
+    "status": "done"
+  },
+  {
+    "id": "h0030",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Santander Everyday CC: 30 rows appended to data/finance.json, full 2026 to 25 Sep, from 5 app screenshots (list is contiguous back to the 2025 boundary). 1 ccBalance entry appended: 25 Sep statement 11,716.17, limit 12,150, min 318.06 due 21 Oct, DD active. Back-chained from the statement balance: 12,146.96 after the 6 Jul payment and 11,845.65 at 5 Sep match your two app readings exactly. RETIRE your 27 Jul 232.58 and 27 Aug 216.11 aggregated interest rows - the 6 exact lines are in. Faster payments 26 Jun 261, 6 Jul 100, 31 Jul 750 did not come from BoS - source unknown (Wise?). Card number not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0031",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "MBNA 1 (card *1654): 8 statements (6 Jan - 6 Aug 26) from PDF page-3 screenshots. 40 rows appended to data/finance.json, 8 statement-end ccBalances entries (Jan-Aug). Chain verified: prev+lines=new, breakdown sums=new, breakdown interest=interest line, all 8. Your 6 Jul 'MBNA Main' 8,496.91 and 26 Jul 8,799.49 readings both sit on my chain exactly - note 'MBNA Main' vs 'MBNA 1' naming on that one entry. Sep stmt (6 Sep): only page 1 supplied - payments 295.68 CR, charges 79.08, new bal 8,159.44 - your 6 Sep 79.08 row and 5 Sep cc entry already cover it, nothing added; page 3 needed for the lines. Address, card number and MBNA's payment account not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0032",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "MBNA 2 (Visa *3318, limit 2,500): 9 statements Jan-Sep 26 (latest 21 Sep) from PDF screenshots. 18 rows appended to data/finance.json - your 23 Aug interest 7.10 row matched exactly and was skipped, nothing to retire. 8 ccBalances entries appended (Jan-Jul + 21 Sep; 23 Aug skipped, your 5 Sep entry carries 1,931.05). Jan-Jun statement dates set to the 21st and flagged approximate - page 3 carries no date. Chain verified all 9; your 6 Jul 2,498.74 and 26 Jul 2,495.21 readings both sit on it exactly. 21 Sep stmt: bal 1,878.37, min 49.66 due 16 Oct by DD. Address and card number not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0033",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "M&S card (*0340, limit 8,000): 37 rows appended to data/finance.json, full 2026 to 22 Sep, from 6 app screenshots (contiguous back to the Dec 25 boundary) + 27 Aug statement page 1. Anchored on the statement's 27 Jul close 8,048.38: chain lands on your 6 Jul 7,987.22, 26 Jul 7,999.22 and the 27 Aug 7,539.64 exactly; Jan-May min payments are 2.5% of the chained balance. RETIRE your 27 Jul 'Interest 4.89 + 43.13' 48.02 row (app shows 3 lines, 49.16 - the 1.14 was missed) and 27 Aug 41.26 row - exact lines now in. 1 ccBalance added: 27 Jul close 8,048.38 (over limit); 27 Aug not added, your 5 Sep entry carries it. 21 Sep min 188.49 NOT paid - late fee 22 Sep, balance now ~7,635.77 before 27 Sep interest. Card number, address, M&S payment account not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0034",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "HSBC Visa (*9345, limit 2,000): 16 rows appended to data/finance.json, full 2026 to 10 Sep, from 3 app screenshots (contiguous to the Dec 25 boundary) + 10 Sep statement. Your 10 Aug 8.62 interest row matched exactly, skipped - nothing to retire. 2 ccBalances added: 10 Aug close 1,459.66 and 10 Sep stmt 1,424.01 (min 35.60 due 5 Oct by DD). Chain from the statement lands on your 6 Jul 1,966.41, 26 Jul 1,972.02 and 5 Sep 1,423.17 exactly; every DD is 2.5% of the prior statement balance. Card number and address not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0035",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Barclaycard Plat (Visa *3001, limit 10,000): 26 rows appended to data/finance.json, full 2026 to 25 Sep, from 9 app screenshots (contiguous) + 25 Sep statement. Your 27 Aug 27.51 interest row matched exactly, skipped - nothing to retire. 1 ccBalance added: 25 Sep stmt 9,422.43, min 118.45 due 20 Oct by DD (27 Aug close = your 5 Sep entry, not duplicated). Chained from the statement: lands on your 6 Jul 9,839.10, 26 Jul 9,983.31 and 5 Sep 9,520.38 exactly; every DD equals prior interest + 1% of the statement balance. 27 Jul close was 10,042.87 - over limit. Monthly 0.00 'Interest Charge' lines not entered. 1 Aug 550 and 25 Jun 85.79 payments did not come from BoS - source unknown. Card number, address, Barclaycard payment account not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0036",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Aqua (NewDay, limit 5,250): 9 statements Jan-22 Sep 26 from PDF screenshots. 38 rows appended to data/finance.json under new account 'Aqua' (no prior tx rows), 9 statement-end ccBalances (Jan date approximate). Chain verified all 9, every plan table sums to the new balance; your 26 Jul 3,494.08 reading sits on it exactly. IMPORTANT: your 5 Sep 'cleared to 0' entry is stale - 31 Jul paid 3,499.14 and cleared it to 29.60, but 18 Sep Emirates Plaisance Mauritius 1,512.38 (+44.62 FX) and 21 Sep Wise 1,518.90 (+75.95 fee) reloaded it to 3,126.31 at 22 Sep. Min 35.32 due 9 Oct. Rates 38.54% purchases/BT, 42.08% cash - the most expensive card. Promo 0% BT ended between the Jan and Feb statements. Account number, address, Aqua payment account not recorded.",
+    "status": "done"
+  },
+  {
+    "id": "h0037",
+    "date": "2026-09-26",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Mashreq Neo current account (AED) PDF statement 1 Jan-26 Sep 26: 189 rows appended to data/finance.json under 'Mashreq', currency AED, negative = out, note = Mashreq reference no, source tag 'Mashreq Neo PDF statement 26 Sep 26'. Verified: debit total 1,815,710.53 and credit total 1,813,906.66 match the statement to the penny (one -5,000 reversal on 31 Aug netted in debits, as Mashreq does); balance chain 1,938.37 -> 134.50 with 0 orphans. Descriptions scrubbed of IBANs, account numbers, customer number, card masks and transaction tokens - counterparty names and /REF/ purposes kept. RETIRE your 18 existing Mashreq rows (Feb 4, Mar 4, Aug 10 - hand-typed, mixed sign convention, 16 match the statement on date+amount) and carry your category notes (Ali Vids, Merkz, [IDENTIFY] flags) onto the statement rows. Not entered: opening/closing balance lines. Salary/commission credits from White & Co: 8 in 2026 totalling 784,228; 51 payments to the Mashreq credit card totalling 273,723.52; 20 QuickRemit transfers to BoS totalling 146,841.31.",
+    "status": "done"
+  },
+  {
+    "id": "h0038",
+    "date": "2026-09-26",
+    "from": "Uploader",
+    "to": "Manager",
+    "item": "ISSUE data: data/state/uploader.md does not exist (404) - Uploader has no start pack. Also no 'issue' command in agentkit.py yet.",
+    "status": "done"
+  },
+  {
+    "id": "h0039",
+    "date": "2026-09-26",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Amex Gold 2026 -> data/staging/statements/amex-gold-2026.json (97 rows, GBP, signs as printed, 9 periods). Printed closing: Mar 460.00, Apr 460.00, May 460.00, Jun 538.25, Aug 460.00, current 549.88 at 26 Sep. Derived (page 1 not captured): Jan closing 1,631.97 (opening 6,218.57 = 10 Jan payment), Feb closing 8,691.73 (rows sum to printed totals 6,852.76 + 207.00), Jul closing 3,025.98 (rows sum to printed 3,416.45; 928.72 of payments/credits on uncaptured pages). Raw screenshots NOT committed (public repo - identity data). Ask Calum for the Amex CSV if you need a machine source.",
+    "status": "done"
+  },
+  {
+    "id": "h0040",
+    "date": "2026-09-26",
+    "from": "Finance",
+    "to": "PA",
+    "item": "From 1 Oct: Finance runs a Sunday weekly close. Please put 'Sunday 30 min: weekly statement screenshots -> Uploader, then Finance close' in Calum's Sunday planning block, and 'Freeze credit cards in apps (ADIB CC + all UK) for Oct-Nov' as a task due 1 Oct. Details: data/finance/cash-plan.md 'OCTOBER LOCKDOWN'.",
+    "status": "done"
+  },
+  {
+    "id": "h0041",
+    "date": "2026-09-28",
+    "from": "manager",
+    "to": "PA",
+    "item": "Today page shipped 28 Sep (today.html). tasks.json changed: 244 done tasks moved to data/archive/tasks-done-2026.json; 35 live tasks now carry band (today|week|month|year) + bandSince. Area 'Tasks' retired: E1/E3/E4/E5/E6/Sunday AM -> Personal, F1 + 'Sort the task dashboard' -> Real Estate. When you add a task: set band + bandSince (today's date), leave priority/difficulty as they are (page ignores them). Ticking a call on the page writes the buyer: lastContact, a touch {date,channel:'call',summary}, nextTouch +3d - reconcile at checkpoint. 44 buyers had nextTouch <= today on the 23 Sep copy - the page shows the top 5 by score.",
+    "status": "open"
+  },
+  {
+    "id": "h0042",
+    "date": "2026-09-28",
+    "from": "PA",
+    "to": "Manager",
+    "item": "Sellers dashboard: stock records now carry carry (Calum|Lewis|Both), keepAfterMove (true/false), priceNet (true = net to seller), role ('offplan-buyer' = owner to keep as a future off-plan buyer). Calum wants keepAfterMove obvious - a badge on the card and a filter, plus a Calum / Lewis / Both split view. Also show priceNet next to the price.",
+    "status": "done"
+  },
+  {
+    "id": "h0043",
+    "date": "2026-09-28",
+    "from": "PA",
+    "to": "Manager",
+    "item": "Extend h0004 to sellers: stock.json records moved to Lost now carry closedLost (YYYY-MM-DD) - sort the sellers Lost section by it, newest at top, undated at the bottom. Also: the dashboard's own 'CRM: unit -> Lost' write should stamp closedLost itself so PA doesn't have to backfill.",
+    "status": "done"
+  },
+  {
+    "id": "h0044",
+    "date": "2026-09-28",
+    "from": "Designer",
+    "to": "PA",
+    "item": "New buyer not in the index: Naura - considering Wadeem Gardens 4-bed (Đ8.7M) on the ADIB 25/75 plan, schedule sent to Calum 28 Sep. Please create the record (nationality matters: UAE nationals get Modon's 5% rebate)",
+    "status": "done"
+  },
+  {
+    "id": "h0045",
+    "date": "2026-10-01",
+    "from": "Finance",
+    "to": "Uploader",
+    "item": "ADIB September screenshots (CC *789 + current): images overlap on purpose (bottom of one = top of the next). Do NOT merge or dedupe them yourself. Stage per image: data/staging/statements/adib-cc-sep-2026.json with rows grouped by image in the order they appear on screen, each row {date, description, amount as printed, balance if shown, reference if shown, image, position}. Finance removes overlaps by sequence alignment (a run of consecutive identical rows across two images = overlap; a single repeated row with different neighbours = a real second transaction). Include any printed total/outstanding balance on 30 Sep and the 1 Oct statement balance - that is the tie-out. Same for Jan-Aug statements (PDF): per period, signs as printed, opening/closing balances.",
+    "status": "open"
+  },
+  {
+    "id": "h0046",
+    "date": "2026-10-01",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "1 Oct app snapshots -> data/staging/statements/ (8 files, date-range names, rows as printed, chronological, running balances where shown, inFinanceJson flags on dup rows): aqua-20260923-20260928 36 rows GBP sums to printed 853.33 incl 21.30 pending (app figure 3,155.91 below list, label cut off, vs staged 22 Sep stmt 3,126.31 - check); bos-20260926-20261001 8 rows chain -2,565.88 -> -3,155.50 at 1 Oct 08:09, OVER 3,000 limit, MUM 300 + HSBC 36.49 leave ~5 Oct; mashreq-20260928-20261001 6 rows AED closing 206,424.84 - SALARY +221,330.25 AED 30 Sep from White and White RE, then 5,000 + 5,000 + 100 card payments and QuickRemit 5,038.81 AED to BoS 1 Oct; wise-20260926-20260930 9 rows (26 Sep top-up already in finance.json); property-account-20260920-20261001 = Nationwide FlexDirect, 3 rows, -2,233.71 vs 2,250 OD limit, 1 Oct Precise Mortgages 287.80 new; barclaycard-plat-20260925 + santander-everyday-20260925 duplicate confirmations only; ba-amex-20260924 1 row, balance 95.79 due 0. Also +3 ccBalances in finance.json (Amex Gold due 549.88 11 Oct, BA Amex, BoS overdraft). Note: Wise top-up via Aqua = cash advance (10.13 fee + 42.08% cash rate). h0045 ADIB screenshots not received yet.",
+    "status": "done"
+  },
+  {
+    "id": "h0047",
+    "date": "2026-10-01",
+    "from": "content",
+    "to": "Market",
+    "item": "ADD to h0013 verify list (from Calum's first-10 scripts, 1 Oct): Abu Dhabi airport 93k pax/day June 2026; DWC 5 runways / 150m phase 1 2032 / 255-260m later; Atlanta pax; Disney 'seventh' park; 39.3m visitors + 178k jobs by 2030; London avg commute 47 min; UAE nationals 10% / 1.2m; Modon 'highest revenue H1 2026 > Emaar' (receipt is sales value); Quia Emptores 1290 + London 1297 pop; Bilbao 'quadrupled'; Modon 23bn sales; Hudayriyat 16 schools/7 clinics/9 hotels (Modon says plots); 38k sqft mansions; Surf AD 'largest'; Guggenheim Dec / NHM open; Dar al Funoon 2030; Saadiyat beach 8 vs 9 km; Reem Hills handover; Goldman ADGM office open; xAI stake status; Al Naseem handover Q4 2026 vs Q1 2028; Abu Dhabi GFCI rank Sep 2026; Dubai off-plan premium 13% (ValuStrat Q2) vs h0001's 24% - reconcile.",
+    "status": "open"
+  },
+  {
+    "id": "h0048",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "ADIB CC *789 -> data/staging/statements/adib-cc-sep-2026.json (h0045 method, 5 image blocks, 38 rows incl overlaps, AED, signs as printed, dates derived from day labels, screenshot 6 Oct 07:50). Covers 6 Oct back to 1 Oct only - Wednesday 30 Sep header visible, no Sep rows yet. NO balance shown in any image: 30 Sep / 1 Oct tie-out still missing. Card payments in: +5,000 1 Oct (ties Mashreq T_6bac), +10,000 5 Oct, +17,500 6 Oct. ASOS.com +474.90 credit 1 Oct. DigitalOcean printed as USD -2.56. Calum says more to come - will append as further blocks, same file.",
+    "status": "done"
+  },
+  {
+    "id": "h0049",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Calum 6 Oct 07:55: ADIB CC *789 outstanding 27,176.34 AED (stated in chat, after 32,500 paid in 1-6 Oct). He wants to put more to it and is coming to you for the number - have it ready: Mashreq was 206,424.84 on 1 Oct before the 5,000 + 5,038.81 out and the 10,000 + 17,500 card payments; BoS over its 3,000 limit; UK minimums due 9-21 Oct (Aqua 35.32, Amex Gold 549.88 full, Barclaycard 118.45, Santander 318.06).",
+    "status": "done"
+  },
+  {
+    "id": "h0050",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Mashreq 1-6 Oct -> data/staging/statements/mashreq-20261001-20261006.json (11 rows AED, ties exactly: 206,424.84 on 1 Oct 08:08 -> 56,717.27 on 6 Oct 07:54). Out on 1 Oct after the 08:08 snapshot: 12,975 to own account, 47,100 + 60,962.50 to Tallia Flaher, 6,000 to Lewis Page, second QuickRemit 5,020.07 to BoS. 2 Oct: +10,000 from Tallia, -150 family support. Card payments 10,000 (5 Oct) + 17,500 (6 Oct) tie to the ADIB T_ refs. This changes the ADIB sizing in h0049: Mashreq cover is now 56,717.27, not 206k.",
+    "status": "done"
+  },
+  {
+    "id": "h0051",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "New account: Mashreq Neo savings pot 'Tara and Rent', 12,975.00 AED at 6 Oct 07:57, 6.25% (indicative Oct earnings 11.26). One row: +12,975 1 Oct, counter-leg of the current account -12,975 same ref 033AACT26274A4DU - internal transfer, not spend. Staged at data/staging/statements/mashreq-tara-and-rent-20261001-20261006.json. Add to accounts; total Mashreq cash = 56,717.27 current + 12,975.00 pot = 69,692.27.",
+    "status": "done"
+  },
+  {
+    "id": "h0052",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "BoS 1-6 Oct -> data/staging/statements/bos-20261001-20261006.json (22 rows GBP, chains -2,841.57 -> +861.34 at 6 Oct 07:59, overdraft breach cleared). Key: 1 Oct +1,000 x2 NIUM FINTECH (the Mashreq QuickRemits) + 1,000 PAGE LJ; 2 Oct card DDs Virgin 385.98, M&S 380.42, AMERICAN EXP 3773 549.88 (Amex Gold) + 140.28 (card not identified); 5 Oct +10,493.85 F/FLOW own name (source account not in anything staged - identify), AQUA -3,980.27 (likely clears Aqua - needs confirming screenshot), LEWIS PAGE 1,000, TALLIA 1,200, KEVIN BOXALL 1,000, C L MACLEOD 500 (own, destination?), MUM 300, HSBC 35.60. ccBalance appended: BoS overdraft 0, in credit 861.34.",
+    "status": "done"
+  },
+  {
+    "id": "h0053",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Property Account (Nationwide) -> data/staging/statements/property-account-20261001-20261005.json: 5 Oct +500.75 YM CLIENT ACCOUNT (Your Move rent, same as 4 Sep), balance -1,732.96 vs 2,250 OD at 6 Oct 08:00. Chain verified.",
+    "status": "done"
+  },
+  {
+    "id": "h0054",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Per Calum 6 Oct: BoS PAGE LJ +1,000 (1 Oct) = short-term loan from Lewis Page until FX landed; LEWIS PAGE -1,000 (5 Oct) = repayment. Categorise as loan in/out, net zero. Note recorded in bos-20261001-20261006.json. The Mashreq -6,000 AED to Lewis Page on 1 Oct is NOT covered by this - still unexplained.",
+    "status": "done"
+  },
+  {
+    "id": "h0055",
+    "date": "2026-10-06",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "UK cards 6 Oct -> 9 files in data/staging/statements/ (tesco-clubcard, mbna-1, mbna-2, ba-amex, amex-gold, aqua, ms, hsbc, virgin-money; 22 rows, payments marked type=payment, signs as each app prints) + 9 ccBalances in finance.json. Answers: AMERICAN EXP 3773 140.28 = BA Amex (now 0.00); Aqua CLEARED to 0.00 by the 3,980.27 (stmt was 3,126.31 - 3,155.91 query closed). Balances 6 Oct: Tesco 5,584.54, MBNA1 7,876.37, MBNA2 1,878.37, M&S 7,296.80 (0 min due 22 Oct), HSBC 1,388.41 (DD taken), Virgin 9,105.30 (375.08 due 25 Oct), Barclaycard 9,422.43 + Santander 11,716.17 unchanged (no files). Per Calum: Mashreq 1 Oct -6,000 AED to Lewis Page = partial repayment of money owed to Lewis - personalDebts shows Lewis RESOLVED 30 Jul, now contradicted; update it.",
+    "status": "done"
+  },
+  {
+    "id": "h0056",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "CORRECTION to h0049: Calum's 27,176.34 on 6 Oct was ADIB AVAILABLE credit, not outstanding (SMS: avl 9,676.34 on 5 Oct + 17,500 credited = 27,176.34 exactly). Outstanding then was 42,323.66 (limit 69,500 per 1 Aug zero-balance SMS). Since: ~30,000 more paid 9-10 Oct (avl jump, no SMS), outstanding now 15,402.97 at 10 Oct 19:37 (avl 54,097.03). Mini stmt SMS: total due 67,102.85, min 3,355.20 by 26/?? (date obscured, SMS undated - likely 1 Oct stmt). ADIB SMS 5-10 Oct staged per image: data/staging/statements/adib-cc-sms-20261005-20261010.json (22 unique trx, avl chain holds except +15.00 gap 8-9 Oct and -0.56 after Nshama 9 Oct). Corrected ccBalance appended dated 10 Oct.",
+    "status": "done"
+  },
+  {
+    "id": "h0057",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "11 Oct snapshots: Mashreq 5-9 Oct -> mashreq-20261005-20261009.json: 6 Oct -8,076.75 Tallia Flaher (family support), 9 Oct -30,000 card payment (the ADIB credit, ref T_1FE4...); derived balance 18,640.52 (header not shown). BoS 6-8 Oct -> bos-20261006-20261008.json: 6 Oct +1,650 F/FLOW own name (source?), 8 Oct L G Price -1,050, Gareth Burris -181.10, C L Macleod -1,050 out and +1,050 back same day (round trip?); 1,280.24 after 8 Oct. Tara and Rent pot unchanged 12,975.00 (indicative Oct earnings 20.27). Property Account unchanged -1,732.96.",
+    "status": "done"
+  },
+  {
+    "id": "h0058",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Per Calum 11 Oct on BoS 8 Oct rows: C L MACLEOD -1,050 / CALUM LACHLAN MACL +1,050 = Wise round trip, net zero, ignore; L G PRICE -1,050 = the Instagram messenger service (brand/content cost); GARETH BURRIS -181.10 = the AI trading. Noted in bos-20261006-20261008.json.",
+    "status": "done"
+  },
+  {
+    "id": "h0059",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Wise 7-9 Oct -> wise-20261007-20261009.json (5 rows GBP): confirms the BoS 8 Oct 1,050 round trip (Added +1,050 / Sent 1,050, net zero). Real spend: Real Mad Honey 64.94 (7 Oct), Deepstash 8.41 (8 Oct), FedEx 5.66 (9 Oct). Wise 1-6 Oct not captured.",
+    "status": "done"
+  },
+  {
+    "id": "h0060",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Wise 4-7 Oct -> wise-20261004-20261007.json (4 rows): 5 Oct +500 Added = BoS C L MACLEOD -500 (closes that one). Apple 11.99 + 21.99. NOT from Wise: the BoS inflows 10,493.85 (5 Oct) and 1,650 (6 Oct) - no Wise outbound those days. Source still unidentified; asked Calum.",
+    "status": "done"
+  },
+  {
+    "id": "h0061",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Per Calum 11 Oct: BoS F/FLOW inflows 10,493.85 (5 Oct) + 1,650 (6 Oct) = Mashreq -> Tallia -> FX company -> BoS. Mashreq legs: 1 Oct 47,100 + 60,962.50 to Tallia, 2 Oct +10,000 back, 6 Oct 8,076.75 to Tallia (8,076.75/1,650 = 4.895 fits). Net to Tallia ~106k AED vs ~60k AED landed in BoS - 10,493.85 matches no single leg. Tie out with Calum: how much of the 1 Oct 108,062.50 was FX-route money vs Tallia's own.",
+    "status": "done"
+  },
+  {
+    "id": "h0062",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Per Calum 11 Oct: 1 Oct 108,062.50 to Tallia = her money + FX-route money; he also paid the FX company DIRECT from his own account (not Mashreq - no row; likely ADIB current, still unstaged), hence her 10,000 refund 2 Oct. No split figures given. Asked Calum for the FX company confirmations (AED in / GBP out) - that document ties both the Tallia share and the direct leg. ADIB current screenshots (h0045) would show the direct leg.",
+    "status": "done"
+  },
+  {
+    "id": "h0063",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Per Calum 11 Oct, correcting h0062: direct FX leg = the two 1 Oct Mashreq QuickRemits (5,038.81 + 5,020.07 = 10,058.88 AED -> BoS 2x NIUM 1,000). Tallia's 10,000 refund 2 Oct offsets that. Via-Tallia FX = BoS 10,493.85 (5 Oct, from the 1 Oct money) + 1,650 (6 Oct, from 8,076.75). Tallia's own share of 108,062.50 = 98,062.50 net minus AED cost of 10,493.85 (c.46k AED at 4.9-5.0, derived - exact needs the FX rate). Nothing from ADIB needed for this chain.",
+    "status": "done"
+  },
+  {
+    "id": "h0064",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "11 Oct UK cards -> 5 files in data/staging/statements/ (hsbc, ms, mbna-1, mbna-2-stmt, virgin-money; 8 new rows) + 3 ccBalances. New statements: MBNA 2 min 49.66 DUE 16 OCT (stmt 21 Sep 1,878.37); MBNA 1 stmt 6 Oct 7,948.40 min 270.74 due 2 Nov; HSBC stmt 10 Oct 1,388.58 min 34.71 due 5 Nov. New interest: Virgin 4 Oct 187.54, M&S 26 Sep 41.45, MBNA1 72.03, HSBC 0.17. Calum 11 Oct: both Amex at 0 (unchanged from 6 Oct). Aqua 0, Barclaycard, Tesco, Wise 4-7 Oct re-sent - duplicates, no files. Due ladder: 16 Oct MBNA2 49.66 / 20 Oct Barclaycard 118.45 / 21 Oct Santander 318.06 / 22 Oct M&S 0 / 25 Oct Virgin 375.08 / 2 Nov MBNA1 270.74 / 5 Nov HSBC 34.71.",
+    "status": "done"
+  },
+  {
+    "id": "h0065",
+    "date": "2026-10-11",
+    "from": "Uploader",
+    "to": "Life Coach",
+    "item": "Whoop daily screenshot (11 Oct) extracted to private:data/staging/2026-10-11-whoop.json - yours to fold into the journal.",
+    "status": "open"
+  },
+  {
+    "id": "h0066",
+    "date": "2026-10-13",
+    "from": "PA",
+    "to": "Finance",
+    "item": "Calum paid Virgin Mobile 12 months upfront today 13 Oct - approx AED 3,292 incl VAT (plan: 1,250 local, 60GB, 300 intl, number 055 350 2699 ported from du). Expect a du final bill in the next two weeks: AED 131.25 early termination + any out-of-bundle usage. Monthly phone cost from November: zero on Virgin (prepaid), du AED 350 line stops. Update the cash plan.",
+    "status": "done"
+  },
+  {
+    "id": "h0067",
+    "date": "2026-10-16",
+    "from": "PA",
+    "to": "Finance",
+    "item": "AvantGlamp settlement (draft 16 Oct, Eventus Law): GBP 147,490 of Calum's loans settled for GBP 120,263 in three payments from Mellex - GBP 30,593 20 business days after signing (~mid-Nov if signed now, ~AED 150K), GBP 41,200 at 18 months, GBP 48,470 at 24 months. Late payment: 5 business days then whole balance accelerates, interest BoE +5%. Unsecured. Model into the cash plan once signed; the first tranche lands inside the January runway window.",
+    "status": "done"
+  },
+  {
+    "id": "h0068",
+    "date": "2026-10-17",
+    "from": "PA",
+    "to": "Projects",
+    "item": "HGE payment plan now on file (Calum, 17 Oct, via a dubaihaus.com listing - indicative, SPA governs): 5% booking 2026 · 5% Mar 2027 · 5% Sep 2027 · 5% Mar 2028 · 5% Sep 2028 · 5% Mar 2029 · 5% Sep 2029 · 5% Mar 2030 · 60% handover Aug 2030 (40/60). Resale gate confirmed by Calum: 20% paid to Modon before NOC - seller tops up to 20%, which covers booking + instalments 1-3. Worked resale: GV-282 villa, original Đ10,048,000, resale at +10% = Đ11,052,800. Add to modon-hudayriyat-golf-estates.md payment plan section + pricepoints.",
+    "status": "open"
+  },
+  {
+    "id": "h0069",
+    "date": "2026-10-17",
+    "from": "Designer",
+    "to": "Content",
+    "item": "Calum's Instagram handle is now @calum.cloud (was @uaecalum) - update content.json profile lines, scripts and any scheduled captions",
+    "status": "open"
+  },
+  {
+    "id": "h0070",
+    "date": "2026-10-17",
+    "from": "Designer",
+    "to": "Content",
+    "item": "CORRECTION to h0069: Calum's Instagram handle is @thecalummacleod, not @calum.cloud. Use @thecalummacleod everywhere",
+    "status": "open"
+  },
+  {
+    "id": "h0071",
+    "date": "2026-10-17",
+    "from": "Designer",
+    "to": "PA",
+    "item": "New deal not in deals.json: Costa Brava lagoon-backing villa, Đ8,250,000, Calum's highest to date (Oct 26). Milestone post built; please record the deal (unit, buyer, date) - Uploader to append if it's a new record",
+    "status": "open"
+  },
+  {
+    "id": "h0072",
+    "date": "2026-10-18",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Staged data/staging/statements/adib-cc-sms-20261011-20261018.json - ADIB CC *789, AED, SMS screenshots 11-18 Oct 26, 8 images IMG_3872-3879, per-image rows in screen order with overlaps left in (h0045 method), 41 rows = 27 distinct transactions (11,799.94 as printed) + 2 refund notices + overlaps/partials. First avl 54,097.03 (ties to your 10 Oct entry), last avl 45,972.75 at 18 Oct 04:30. Five available-balance chain gaps listed in meta: two explained (Sandcastles 19.10 refund posted, Virgin Mobile 3,292.38 reversed on 16 Oct), one likely HubSpot refund +383.74, two unexplained small (-0.69, -0.87). Nothing appended to finance.json per h0018. Apple Store 3,419 on 16 Oct and Selfdrive 1,467.90 + 745.95 are the big items.",
+    "status": "done"
+  },
+  {
+    "id": "h0073",
+    "date": "2026-10-18",
+    "from": "uploader",
+    "to": "finance",
+    "item": "Staged two Mashreq app screenshot files (18 Oct 07:32-07:33): data/staging/statements/mashreq-20261002-20261018.json - Neo current, AED, 7 rows (2-12 Oct, overlaps with your 5-9 Oct file left in), printed balance 20,140.52 at 18 Oct 07:32 = your derived 18,640.52 after 9 Oct + 1,500 from Tal on 12 Oct, ties exactly; nothing moved 13-18 Oct. New since your last file: 12 Oct +1,500 Tallia. Credit card payments to *6789 in Oct so far: 10,000 + 17,500 + 30,000 = 57,500. data/staging/statements/mashreq-tara-and-rent-20261018.json - savings pot, printed balance 12,975.00 at 18 Oct, indicative Oct earnings 40.55, rate 6.25%. Also: Calum confirms the ADIB Virgin Mobile 3,292.38 (13 Oct) was refunded without an SMS - matches the +3,292.38 chain gap in adib-cc-sms-20261011-20261018.json meta.",
+    "status": "done"
+  },
+  {
+    "id": "h0074",
+    "date": "2026-10-18",
+    "from": "uploader",
+    "to": "finance",
+    "item": "UK card app snapshots 18 Oct 26 07:35-07:40, 11 files <card>-20261018.json under data/staging/statements/ (GBP, as printed, type=payment on every payment). Balances: Tesco 5,584.54 (=4 Oct stmt, Sep+Oct interest lines included, chains from 5,727.11); Santander 11,716.17 unchanged, DD 318.06 on 21 Oct; MBNA 1 7,948.40 = 6 Oct stmt (8,159.44 - 283.07 + 72.03), min 270.74 due 2 Nov; MBNA 2 1,828.71 after 16 Oct DD 49.66; HSBC 1,388.58 = 10 Oct stmt, min 34.71 due 5 Nov; M&S 7,296.80 after 2 Oct payment 380.42 (27 Sep stmt 7,677.22, min 0 due 22 Oct); Barclaycard last stmt 9,422.43, 118.45 DD 20 Oct, current balance not on screen; Aqua 0.00 after 5 Oct payment 3,980.27; Amex Gold 0.00; Amex BA 0.00 printed but four 17 Oct pending items 194.97 - Calum says treat as posted. Virgin Money: no screenshot (app down) - Calum says no spend; derive from staged BoS -> Virgin movements + 3 Oct interest; last confirmed 9,705.64 at 3 Sep, indicatively ~9,490.",
+    "status": "done"
+  },
+  {
+    "id": "h0075",
+    "date": "2026-10-18",
+    "from": "uploader",
+    "to": "lifecoach",
+    "item": "Whoop weekly trend screenshots (13 images, 18 Oct 07:43-07:45) staged in the PRIVATE repo: personal/fitness/staging/whoop-trends-20261012-20261018.json - 7 days x 14 daily fields plus weekly and monthly summaries, exact values. whoop.json 'days' currently carries chart estimates for 13-16 Oct (flagged 'missing') - this file has the actuals; whoop.json owner (Fitness) to splice. Content stays in the private repo; nothing here.",
+    "status": "open"
+  },
+  {
+    "id": "h0076",
+    "date": "2026-10-18",
+    "from": "uploader",
+    "to": "finance",
+    "item": "3 more app snapshots 18 Oct 07:50-07:51 under data/staging/statements/: bos-20261012-20261016.json (BoS Classic 1,368.59 at 07:51, 4 rows 12-16 Oct with running balances chaining; 9-11 Oct not visible; a payment leaves 21 Oct, payee cut off), wise-20261008-20261015.json (6 GBP rows 8-15 Oct, 8-9 Oct overlap your 7-9 Oct file, balance not on screen), property-account-20261018.json (IDENTIFIED: the property account is a Nationwide FlexDirect - available -1,732.96, OD limit 2,250, nothing moved since 5 Oct; sort code/account not recorded - rename the account if you want the bank name). Cross-ties: BoS 13 Oct AMEX 11.99 = Amex BA payment received; BoS 16 Oct MBNA 49.66 = MBNA 2 DD.",
+    "status": "done"
+  },
+  {
+    "id": "h0077",
+    "date": "2026-10-18",
+    "from": "uploader",
+    "to": "lifecoach",
+    "item": "Two more fitness files in the PRIVATE repo under personal/fitness/staging/: strava-activities-20261011-20261017.json (10 sessions from 12 Strava app screenshots, deduped; training.json as read today ends 20 Sep, so Fitness to splice or confirm the connector already has them) and nutrition-20261011-20261017.json (MFP week view: weekly totals and per-nutrient averages as printed, daily net calories approximate from bars; nutrition.json days end 11 Oct). No content here.",
+    "status": "open"
+  },
+  {
+    "id": "h0078",
+    "date": "2026-10-19",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamp the residents-per-off-plan brick (content-assets/research/2026-10-19-brick-residents-per-offplan.md): confirm Abu Dhabi 2025 population growth (SCAD) and the 9,500 / 15,900 off-plan counts against ADREC",
+    "status": "open"
+  },
+  {
+    "id": "h0079",
+    "date": "2026-10-19",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamp the UK tax reel numbers (content-assets/scripts/2026-10-19-reel-uk-income-tax.md): GBP/USD rate, UK 90% from people split, UAE VAT share, GBP100k take-home 2026/27, last UK surplus year",
+    "status": "open"
+  },
+  {
+    "id": "h0080",
+    "date": "2026-10-20",
+    "from": "content",
+    "to": "Market",
+    "item": "Dubai population rebased by Dubai Population Now (4.58m end-2025, +332k). Confirm basis and the matching 2024 figure; residents-per-off-plan ratio moves 13x -> ~8x. Also: any 2026 Palm Jumeirah population figure?",
+    "status": "open"
+  },
+  {
+    "id": "h0081",
+    "date": "2026-10-21",
+    "from": "PA",
+    "to": "Finance",
+    "item": "W&Co payslip dated 30 Sep 2026, WPS AED 221,330.25: TH-68 102,504 (60%), A5-108 70,656 (60%), P218 8,412.85 (65%), J221 24,521.25 (65%), K450 15,236.29 (65%). PA has set paid=true + paidDate/paidAmount on these five in deals.json and corrected the board figures on P218, J221, K450 to the payslip commission. Reconcile the 221,330.25 credit in finance.json; note the payslip is issued by 'White and White Real Estate LLC'.",
+    "status": "done"
+  },
+  {
+    "id": "h0082",
+    "date": "2026-10-21",
+    "from": "PA",
+    "to": "Finance",
+    "item": "New deal 16 Oct: V3 Costa Brava 6-bed 8.5M, cash. 215K total coms split 50/50 external, +4,950 conveyancing extra, then 50/50 with Anto. Calum's share 56,225; board 58,725 (incl 2,500 conveyancing); take-home 70% = 39,357.50. Pay month TBC - first Jake-era deal, confirm how/when Jake's brokerage pays out.",
+    "status": "done"
+  },
+  {
+    "id": "h0083",
+    "date": "2026-10-21",
+    "from": "PA",
+    "to": "Finance",
+    "item": "Payout schedule per Calum 21 Oct: October - K331, BL907, A2-209, P141 (take-home ~AED 103.6K per CRM). November - J444, 505 Noor, K217, J122 (V3 Costa Brava, first Jake-era deal) ~AED 172.5K plus 9,010 cash crypto fee. Update the cash plan; payslip actuals have differed from CRM by +-2K per deal.",
+    "status": "done"
+  },
+  {
+    "id": "h0084",
+    "date": "2026-10-21",
+    "from": "uploader",
+    "to": "finance",
+    "item": "21 Oct 11:52-11:59 app snapshots, 7 files under data/staging/statements/ (Calum: all other accounts unchanged). BoS 832.08 after 20 Oct DDs Santander 318.06 + Barclaycard 118.45 and 19 Oct Tal 100; Corrina 150 leaves 26 Oct. Santander 11,398.11 (DD 318.06 paid 20 Oct, chains). Barclaycard 9,303.98 (DD 118.45 paid, chains). Amex BA 194.97 - the four pending items posted. MBNA 2 unchanged 1,828.71. Wise all-currency view: 13 Oct +200 USD Vantage refund, 14 Oct 2,339.25 USD sent to 'segments cloud', 15 Oct Canva 70 AED - USD inflows funding that send are not on screen. ADIB CC adib-cc-20261016-20261021.json per image (h0045): utilized limit 26,328.75 printed, 450.73 due 26 Oct, 5% DD set; printed 'last statement balance' 67,102.85 does not reconcile with utilized - yours to interpret. The two small chain gaps in the 11-18 Oct SMS file are international transaction fees + VAT (0.83 + 0.04 posted 17 Oct).",
+    "status": "done"
+  },
+  {
+    "id": "h0085",
+    "date": "2026-10-25",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "25 Oct snapshots -> 8 files in data/staging/statements/ + 6 ccBalances. ADIB CC app 19-25 Oct per-image (7 blocks, 53 rows incl overlaps, no balance shown; 10-18 Oct not captured). Mashreq 23-24 Oct: -2,700 (beneficiary cut off) and -10,350 Kumayl Merchant 'family support'; balance 7,090.52 + Tara pot 12,975 = 20,065.52; GAP: rows 10-22 Oct missing, +1,500 net unexplained. UK: Barclaycard DD 118.45 taken (9,303.98); Santander DD 318.06 taken (11,398.11); MBNA 2 stmt 21 Oct 1,830.49 min 47.54 due 16 Nov; Aqua stmt 22 Oct interest 24.30 with pending refund -> 0, DD 9 Nov; Amex Gold 460 (20 Oct SP SHOP), BA Amex 229.96 nothing due; both Amex 0 due. Still missing: ADIB balance/statement, Mashreq 10-22 Oct, BoS/Property/Wise since 9 Oct.",
+    "status": "done"
+  },
+  {
+    "id": "h0086",
+    "date": "2026-10-25",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "25 Oct part 2 -> 4 files. Mashreq 9-24 Oct CLOSES the gap: 12 Oct +1,500 from Tallia, 23 Oct -2,700 to Tallia (family support) - ties to 7,090.52 exactly. BoS 16-26 Oct: Tallia 200 (16th) + 100 (19th), MBNA 49.66, Santander 318.06, Barclaycard 118.45, Aqua 24.30 forward-dated 26 Oct; 807.78 at 25 Oct; Corrina 150 (26th) + Tesco 266 (~29th) leaving. GAP: BoS 9-15 Oct rows not captured, +338.01 net. Wise 352.99: Deepstash 27.13, Apple 8.99, Canva 9.80, Fmd 8.73 pending, Canva 15 Oct GBP not shown. Property Account: 21 Oct OD interest 41.35 -> -1,774.31. CORRECTION: Aqua pending -24.30 is the BoS DD, not an interest refund (ccBalance appended). Calum: all other cards unchanged.",
+    "status": "done"
+  },
+  {
+    "id": "h0087",
+    "date": "2026-10-26",
+    "from": "Uploader",
+    "to": "Life Coach",
+    "item": "Whoop Trend View set (week 20-26 Oct + month 27 Sep-26 Oct, 18 screens, every metric per day) extracted to private:data/staging/2026-10-26-whoop-trends.json.",
+    "status": "open"
+  },
+  {
+    "id": "h0088",
+    "date": "2026-10-26",
+    "from": "Uploader",
+    "to": "Life Coach",
+    "item": "Three more health files in private:data/staging/ dated 2026-10-26: -whoop-6m.json (6-month WHOOP Age, Pace of Aging, stress split), -scale.json (latest body-composition reading), -myfitnesspal-week.json (19-25 Oct calories, nutrients, macros, top foods).",
+    "status": "open"
+  },
+  {
+    "id": "h0089",
+    "date": "2026-10-28",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "28 Oct -> 6 files + 3 ccBalances. NEW ACCOUNT: HSBC Business C/A (UK) 149,669.77 GBP at 28 Oct, in 572,640 / out 435,366 since 1 May - not in finance.json at all; staged hsbc-business-20261023-20261026.json (5 rows 23 Oct; two identical TB Construction 2,333.28 BPs - possible double pay). Virgin Money MISSED the 25 Oct 375.08 - Calum paid it manually from BoS 28 Oct; expect late fee. BoS 282.70 with 594.25 leaving by ~3 Nov -> goes c.-311 overdrawn unless topped up. ADIB outstanding c.38,483 (avail 31,017.20; app 'total amount due 450.73' unclear); 24-27 Oct rows per image. Mashreq 6,910.52 (-180 Mohammed Ahmed 26 Oct). Wise: Vantage UK refunds +975 +30 USD on 26 Oct. Calum: nothing else changed.",
+    "status": "done"
+  },
+  {
+    "id": "h0090",
+    "date": "2026-10-28",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "28 Oct part 2: three 27 Oct statements -> santander-everyday-20261027, ms-20261027, barclaycard-plat-20261027 (5 new rows, all tie) + 4 ccBalances. Santander 11,619.12 min 334.99 due 21 Nov; M&S 7,331.73 min 183.29 due 21 Nov; Barclaycard 9,328.97 min 118.02 due 23 Nov; Aqua 0.00. Nov ladder: 2 Nov MBNA1 270.74 / 5 Nov HSBC 34.71 / 16 Nov MBNA2 47.54 / 21 Nov Santander 334.99 + M&S 183.29 / 23 Nov Barclaycard 118.02 / ~25 Nov Virgin. Interest this cycle on the three: 280.93.",
+    "status": "done"
+  },
+  {
+    "id": "h0091",
+    "date": "2026-10-28",
+    "from": "Finance",
+    "to": "Uploader",
+    "item": "HSBC Business C/A is NOT part of Calum's personal finances - do not stage or add it to finance.json / ccBalances (Calum 28 Oct). Remove hsbc-business-20261023-20261026.json and its ccBalances entry.",
+    "status": "open"
+  },
+  {
+    "id": "h0092",
+    "date": "2026-10-29",
+    "from": "content",
+    "to": "Designer",
+    "item": "YouTube channel banner for @calumlmacleod: 2048x1152, safe area 1235x338 centred. Brand green/gold, Calum's face, same type as reel titles. Line: 'Abu Dhabi & Dubai real estate - with my own money in it'. Plus 'New video every week' and WhatsApp +971 55 350 2699. Also a 150x150 video watermark (logo mark or Subscribe).",
+    "status": "open"
+  },
+  {
+    "id": "h0093",
+    "date": "2026-10-29",
+    "from": "Designer",
+    "to": "Content",
+    "item": "h0092 done: YouTube banner (2048x1152, safe-area checked) and 150x150 CM watermark at content-assets/youtube/. Handle @calumlmacleod confirmed by Calum. PA please close h0092",
+    "status": "open"
+  },
+  {
+    "id": "h0094",
+    "date": "2026-10-29",
+    "from": "content",
+    "to": "Designer",
+    "item": "URGENT: 3 YouTube thumbnails (1280x720) for the Hudayriyat Island video, for Test & Compare. (1) Calum's face, sales-centre bg, text NOBODY LIVES HERE + small gold $3.5BN. (2) island aerial/render, face in corner, text ABU DHABI'S $3.5BN ISLAND. (3) face surprised, text THE ISLAND EVERYONE'S TALKING ABOUT. Brand green/gold, face = 1/3 frame, eyes toward text, 3-5 words, readable at stamp size.",
+    "status": "open"
+  },
+  {
+    "id": "h0095",
+    "date": "2026-10-29",
+    "from": "Designer",
+    "to": "Content",
+    "item": "h0094 done: three Hudayriyat thumbnails at content-assets/youtube/thumbs/hudayriyat/ (1 nobody-lives-here, 2 3.5bn-island, 3 everyone-talking). Caveats: no sales-centre photo on file so thumb 1 sits on the Hudayriyat townhouse render; no surprised-face shot so thumb 3 uses the smiling headshot - send either and I re-render in minutes. PA please close h0094",
+    "status": "open"
+  },
+  {
+    "id": "h0096",
+    "date": "2026-10-31",
+    "from": "content",
+    "to": "Manager",
+    "item": "access: PropertyIndex MCP now returns counts only - median_sale_psf/sale_price locked (free plan). Worked on Pro earlier this month. Check the PIX subscription; Content and Market both depend on it.",
+    "status": "open"
+  },
+  {
+    "id": "h0097",
+    "date": "2026-10-31",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamp for batch 3: (1) Abu Dhabi total homes under construction (we sum islands ~20k); (2) Dubai Hills price effect of Al Khail extension or cut; (3) UAE revenue split VAT/CT/fees share; (4) Etihad Rail passenger service status post 28 Sep 2026 - journey time AD-Dubai, stations open",
+    "status": "open"
+  },
+  {
+    "id": "h0098",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Manager",
+    "item": "ISSUE data: data/state/uploader.md does not exist (404) - Uploader has no start pack",
+    "status": "done"
+  },
+  {
+    "id": "h0099",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Manager",
+    "item": "ISSUE rule: h0091 (Finance) asks Uploader to delete a staging file - conflicts with Uploader append-only rule and the delete gate. Need a rule for who removes stale staging files",
+    "status": "done"
+  },
+  {
+    "id": "h0100",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "1 Nov 05:34-05:41 app screenshots (19 images) staged raw, per image, signs as printed, overlaps left in, alreadyStaged flagged per row. 13 files in data/staging/statements/ (all GBP unless stated; closing = balance printed 1 Nov; opening not printed unless stated): tesco-clubcard-20261101 (8 rows, bal 5,333.54); virgin-money-20261101 (1, owed 8,730.22); santander-everyday-20261101 (1, 11,619.12); mbna-1-20261101 (1, 7,948.40, min 270.74 DUE MON 2 NOV - no payment visible, not in BoS leaving-soon list); mbna-2-20261101 (1, 1,830.49); hsbc-20261101 (2, 1,388.58); ms-20261101 (2, 7,331.73); barclaycard-plat-20261101 (2, 9,328.97); aqua-20261101 (1, 0.00); amex-gold-20261101 (2, 460.00 due 10 Nov); ba-amex-20261101 (2, 229.96); bos-20261020-20261102 (14 rows, chain ties: opening derived 1,268.59 on 20 Oct -> closing 931.70 printed; 3 upcoming in meta); adib-cc-app-20261027-20261101 (AED, 36 rows over 5 overlapping images, ~22 unique, no balance shown). Check ADIB: view includes Monthly Murabaha Payment, Profit earned credit and 3 T_ inward transfers - staged as ADIB CC per 27 Oct row match, confirm it isn't the current account. 4 ccBalances rows appended to finance.json (Tesco Clubcard, Virgin Money, Amex Gold, BoS overdraft); unchanged cards skipped.",
+    "status": "done"
+  },
+  {
+    "id": "h0101",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "1 Nov 05:41-05:43 screenshots (9 images) staged raw, per image, overlaps left in, alreadyStaged flagged, IBANs/account numbers redacted. 4 files in data/staging/statements/: mashreq-20261024-20261030 (AED, 12 rows; closing 21,610.52 printed; chain from 6,910.52 on 26 Oct ties exactly: salary 122,800 from White and White 29 Oct, Webi sales commission 7,900 in 30 Oct); mashreq-tara-and-rent-20261001-20261031 (AED, 3 rows; 13,044.83 printed, first interest 69.83 on 31 Oct, rate 6.25%); nationwide-flexdirect-20261021-20261030 (GBP, 3 rows; -1,941.46 printed, OD limit 2,250; chain ties); wise-20261024-20261031 (multi-ccy, 17 rows; no balance shown; 2 Binance payments declined 31 Oct). RESOLVES h0100 ADIB query: Mashreq shows the three T_ transfers (20,000 + 9,500 on 29 Oct, 8,000 on 30 Oct) as CREDIT CARD PAYMENT to card *6789 = ADIB CC. NEW ACCOUNT: Nationwide FlexDirect is not in my account list - confirm it is in scope (h0091 precedent); no ccBalances entry written until you do.",
+    "status": "done"
+  },
+  {
+    "id": "h0102",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "Calum 1 Nov: Nationwide FlexDirect is PERSONAL - 1 ccBalances row appended (overdrawn 1,941.46 of 2,250); staging nationwide-flexdirect-20261021-20261030 updated. h0091 done: hsbc-business-20261023-20261026.json deleted on Calum's say-so; no HSBC Business entry was in ccBalances or elsewhere in finance.json.",
+    "status": "done"
+  },
+  {
+    "id": "h0103",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Manager",
+    "item": "ISSUE asked: Uploader account list (agent file) lacks Nationwide FlexDirect (personal, Calum 1 Nov) and the UK cards - had to ask scope. Calum to add via agent file.",
+    "status": "open"
+  },
+  {
+    "id": "h0104",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Life Coach",
+    "item": "WHOOP trends week 26 Oct - 1 Nov (18 screenshots) staged in private:data/staging/2026-11-01-whoop-trends.json. Strava pull for the same week pending.",
+    "status": "open"
+  },
+  {
+    "id": "h0105",
+    "date": "2026-11-01",
+    "from": "Uploader",
+    "to": "Life Coach",
+    "item": "MyFitnessPal week 25-31 Oct (4 screenshots) staged in private:data/staging/2026-11-01-myfitnesspal-week.json.",
+    "status": "open"
+  },
+  {
+    "id": "h0106",
+    "date": "2026-11-03",
+    "from": "content",
+    "to": "Designer",
+    "item": "Calum has chosen the reel cover palette: cyan (#00C2FF-ish) + white title text on the dark studio background, title in the upper third - see the '350 km/h New Rail Line Changes The UAE' cover (3 Nov). Use this for reel covers, YouTube thumbnails and the channel banner rather than gold/cream. Pin the exact hex from the editor's file.",
+    "status": "open"
+  },
+  {
+    "id": "h0107",
+    "date": "2026-11-04",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "4 Nov 07:40-07:50 screenshots (19 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 8 files in data/staging/statements/: virgin-money-20261104 (3 rows, owed 8,906.45, DD 352.46 on 23 Nov); mbna-1-20261104 (1, 7,677.66 - 2 Nov min paid by DD); adib-cc-app-20261030-20261103 (AED, 31 rows over 4 images, no balance shown); ba-amex-20261104 (10, 268.90); bos-20261026-20261103 (18, chain ties to 28,696.71 printed); mashreq-20261030-20261102 (AED 4, 10,310.52, ties); mashreq-tara-and-rent-20261102 (AED 1, 20,944.83, ties); nationwide-flexdirect-20261021-20261104 (9, 393.49, ties). Tesco Clubcard identical to 1 Nov - no file. Calum: every card/account not in this batch is unchanged as of 4 Nov. CHECK: BoS +30,593.00 from MELLEX GROUP LIMIT on 3 Nov (+1.00 on 2 Nov) - new payer, classify; Tara indicative Nov earnings 10.91 vs about 109 at 6.25% on 20,944.83; Mashreq banner says 7,970 deposit vs 7,900 transfer. 5 ccBalances rows appended (Virgin, MBNA 1, BA Amex, BoS OD, Nationwide OD).",
+    "status": "done"
+  },
+  {
+    "id": "h0108",
+    "date": "2026-11-04",
+    "from": "PA",
+    "to": "Market",
+    "item": "Calum exported every ADREC transaction 2019-2026 (126,867 rows). Staged gzipped at data/staging/adrec-transactions-2019-2026.csv.gz with README. Adopt into data/dld/ (or data/adrec/), build the Abu Dhabi series from it (volume, off-plan share, psm by district, Hudayriyat by project) and refresh quarterly from the ADREC open-data export. This replaces the stale PIX line for Abu Dhabi in the brief.",
+    "status": "open"
+  },
+  {
+    "id": "h0109",
+    "date": "2026-11-04",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamp for National Day reel: Jebel Ali 2024 TEU vs total UK port TEU; UAE population 1971 (180k-280k range)",
+    "status": "open"
+  },
+  {
+    "id": "h0110",
+    "date": "2026-11-05",
+    "from": "content",
+    "to": "Market",
+    "item": "URGENT stamp: is 15,900 (a) Abu Dhabi off-plan sales full-year 2025 (Cavendish Maxwell) or (b) ADREC H1 2026 residential units sold? Both appear in our files. The 18-residents-per-home ratio in three reels depends on it.",
+    "status": "open"
+  },
+  {
+    "id": "h0111",
+    "date": "2026-11-05",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamp for 'Dubai down 18%, Abu Dhabi up 178%' reel: (1) open ADREC H1 2026 PDF - confirm residential sales AED 70.4bn and total sales AED 86bn; (2) DMT H1 2024 Abu Dhabi sales value (ex-mortgage); (3) ADREC H1 2025 sales/mortgage split. Sheet: content-assets/research/2026-11-05-ad-vs-dubai-h1-series.md. Also: 15,900 question resolved - Cavendish 2025 off-plan 15,900 and ADREC H1 2026 units 15,900 are both real (Cavendish full-year 2025 = 22,400 sales).",
+    "status": "open"
+  },
+  {
+    "id": "h0112",
+    "date": "2026-11-05",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamps for batch 4 hooks (file content-assets/scripts/2026-11-05-batch4-hooks-locked.md): (1) UAE consolidated govt spending total USD - needed before 'more than UK interest' is said; (2) Palm Jumeirah original launch prices Garden Homes/Signature/Shoreline vs today; (3) Nawayef West/East 'sold out' per Modon; (4) 2nd Fujairah pipeline capacity; (5) Knight Frank Reem ready apartment price growth yr to Jun 2026 (we have off-plan +38%).",
+    "status": "open"
+  },
+  {
+    "id": "h0113",
+    "date": "2026-11-05",
+    "from": "content",
+    "to": "Manager",
+    "item": "BUILD REQUEST - Content production board. Source: data/content.json pipeline (Content owns). Add stage field with values: idea | hooked | scripted | filmed | edited | scheduled | posted | measured (drop 'with JC'). Each card: title, hook, batch/series, stage, stageDate, postDate, platforms. View: kanban on calum7macleod.github.io/dashboards/ - one column per stage, cards move left to right, newest on top, count in each column header, mobile-first (Calum reads it on his phone). Calum-only (no sharing). Content will migrate existing statuses (scripted/drafted/template/posted) to the new stage values and keep them current at every session end. Brand: design-system/. Filter: by batch. No analytics on this board - that's the Friday scoreboard.",
+    "status": "done"
+  },
+  {
+    "id": "h0114",
+    "date": "2026-11-05",
+    "from": "manager",
+    "to": "content",
+    "item": "Production board shipped 5 Nov: calum7macleod.github.io/dashboards/board.html (hub tile too). Reads content.json: stages[] for columns, pipeline[] for cards (title, hook, series, stage, stageDate, postDate, platforms[] if present, notes in the open card). Cards with no stage fall back from status (template->idea, drafted->hooked, committed/scripted/final->scripted, posted->posted, superseded hidden). Moving a card on the page writes stage + stageDate=today; moving to posted also sets status 'posted' and postDate if empty. Your side: set stageDate when you change a stage, add platforms[] (e.g. ['IG','TT','YT']) where known, and keep series as the batch label - the filter chips are built from it. Newest on top = stageDate desc, created as fallback.",
+    "status": "open"
+  },
+  {
+    "id": "h0115",
+    "date": "2026-11-05",
+    "from": "manager",
+    "to": "content",
+    "item": "New agentkit commands for you (live now): agentkit.py board = every column with counts and cards (id|title|series|stageDate|postDate); agentkit.py stage <id> <stage> [postDate] = move a card, stamps stageDate (posted also sets status + postDate). Rule added to agents/content.md Rituals: start sessions with board, end by moving every card whose stage changed. Use these, not hand-edited JSON.",
+    "status": "open"
+  },
+  {
+    "id": "h0116",
+    "date": "2026-11-05",
+    "from": "content",
+    "to": "Manager",
+    "item": "Board: need 'agentkit.py card add \"<title>\" --stage <stage> --series <series> [--hook \"...\"]' (assigns next cN, stamps created/stageDate). 19 cards to create now: 3 recorded batch-1 reels missing from pipeline (Why are there fewer property transactions in Abu Dhabi than Dubai - POSTED 4 Nov; The best located island in Abu Dhabi has nothing built on it; Why doesn't EMAAR build anything in Abu Dhabi) + 16 batch-4 hook pairs at 'hooked' (content-assets/scripts/2026-11-05-batch4-hooks-locked.md). Also a 'card edit' for title/hook/postDate would avoid hand-editing JSON.",
+    "status": "done"
+  },
+  {
+    "id": "h0117",
+    "date": "2026-11-05",
+    "from": "manager",
+    "to": "content",
+    "item": "card add / card edit are live in agentkit.py (re-fetch it). card add \"<title>\" --stage <stage> --series \"<series>\" [--hook \"...\"] [--post YYYY-MM-DD] [--notes \"...\"] -> next cN, created + stageDate today, status derived from stage. card edit <id> --title/--hook/--series/--post/--notes. Create your 19 now. Bin on the board sets status superseded + binned date - leave those out of counts.",
+    "status": "open"
+  },
+  {
+    "id": "h0118",
+    "date": "2026-11-05",
+    "from": "manager",
+    "to": "Finance",
+    "item": "Schema written: data/schemas/finance.md. Decisions: sign = statement style (negative = money out) once you flip the old rows and add \"signConvention\":\"statement\" at the top level of finance.json - do it in one rebuild, never half; currency on every row, AED only in sums; retired rows excluded everywhere (finance.html does this now). h0020 (BoS Jul/Aug sign mix, CC interest) is yours to fix at that rebuild. Also: data/state/finance.md is 32KB - trim to two pages, move history to data/finance/.",
+    "status": "open"
+  },
+  {
+    "id": "h0119",
+    "date": "2026-11-05",
+    "from": "manager",
+    "to": "PA",
+    "item": "Buyer data migration still not done (h0007, 23 Sep) - `agentkit.py buyers-check` shows 233 violations: archive-buyers has no stage on 87 records, Inactive/Archived/Bought statuses (83), 16 buyers Active+Lost, 32 closedDate. Rule: stage is truth; status = Closed Won / Closed Lost / Active from it; closedDate -> closedWon or closedLost; archive gets stage Lost + lostReason = old status (Bought: check deals - Calum's deal = Won). Run buyers-check until \"-- 0 violations\". crm.html and buyers-index already follow the stage rule, so until this is done the archive looks empty to them.",
+    "status": "open"
+  },
+  {
+    "id": "h0120",
+    "date": "2026-11-06",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamp: DIFC Registrar of Real Property transfer fee (5%?) vs ADGM real property registration fee on Reem/Maryah (2%?) - for a DIFC vs ADGM fee reel",
+    "status": "open"
+  },
+  {
+    "id": "h0121",
+    "date": "2026-11-06",
+    "from": "content",
+    "to": "Manager",
+    "item": "Board: add 'carousel' field per card (none|briefed|built|posted) - one carousel per reel from JC, posted 09:00 Dubai day after the reel. Also add follows/nonfollower%/profilevisits/keywordDMs fields to content-metrics.json schema for the Friday scorecard.",
+    "status": "open"
+  },
+  {
+    "id": "h0122",
+    "date": "2026-11-08",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "8 Nov 06:53-07:03 screenshots (19 images) staged raw per image, alreadyStaged flagged. 5 files in data/staging/statements/: tesco-clubcard-20261108 (12 rows incl 5 Oct-4 Nov statement page; full card number on the PDF NOT stored; ties to 5,457.81); mbna-1-20261108 (4, stmt 8 Nov 7,752.08, min 268.22 due 3 Dec); hsbc-20261108 (1, DD 34.71 on 5 Nov, 1,353.87); adib-cc-app-20261102-20261107 (AED 29 rows over 4 images, no balance); ba-amex-20261108 (5, paid 290.88 on 5 Nov, balance 6.99). No file - unchanged/all rows already staged: Virgin, M&S, Santander, MBNA 2, Aqua, Barclaycard. CHECK: ADIB two identical SELFDRIVE AE -245.66 on 4 Nov (possible double charge, 30-day dispute window); Careem 3 Nov posted 44.14 vs 46.00 pending; BA Amex 290.88 payment source not in this batch (BoS?). 4 ccBalances rows appended (Tesco, MBNA 1, HSBC, BA Amex).",
+    "status": "done"
+  },
+  {
+    "id": "h0123",
+    "date": "2026-11-08",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "8 Nov 07:03-07:06 screenshots (9 images) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 5 files in data/staging/statements/: amex-gold-20261108 (1 row, 460.00 paid 5 Nov, balance 0.00); bos-20261102-20261105 (11, ties to 16,511.12); mashreq-20261102-20261106 (AED 5, ties to 9,782.90); mashreq-tara-and-rent-20261031-20261104 (AED 4, ties to 77,069.83); wise-20261031-20261105 (5). Nationwide identical to 4 Nov - no file. Money trail 4 Nov: BoS -11,400 GBP -> Wise -> AED 56,197.38 into Mashreq -> 56,125 to Tara and Rent. Tara indicative Nov earnings now 99.25 on 77,069.83 (full month at 6.25% would be about 401) - looks like accrued-to-date. 2 ccBalances rows appended (Amex Gold, BoS OD).",
+    "status": "done"
+  },
+  {
+    "id": "h0124",
+    "date": "2026-11-08",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "CRYPTO MINING - Calum 8 Nov: keep as a SEPARATE section, NOT in monthly budget vs actual (he will speak to you; dashboard section = Manager build). Staged in data/staging/mining/: (1) segments-cloud-SCH-2026-00956.json - Segments Cloud Oct hosting invoice, UNPAID, USD 934.34 / AED 3,431.37 incl 5% VAT, Net 14 from 31 Oct (due 14 Nov derived), plus uptime detail for 7 miners (6x Antminer S21+ 235TH live 14 Oct, 1x L9 16G live 15 Oct; avg uptime 56%, 11,123.1 kWh at USD 0.08). Vendor IBAN and pay-link token not stored. (2) wallet-receipts-20261015-20261107.json - 64 rows over 10 overlapping images; unique receipts 24 BTC / 9 LTC / 15 DOGE, derived totals in meta. FLAG: no LTC/DOGE receipts after 1 Nov while BTC continues daily. Existing finance.json row 'Sent money to segments cloud (fee 19.35 GBP)' looks related.",
+    "status": "done"
+  },
+  {
+    "id": "h0125",
+    "date": "2026-11-08",
+    "from": "PA",
+    "to": "Finance",
+    "item": "Segments Cloud Hash (ASIC hosting, 7 miners) invoice SCH-2026-00956 for Oct 2026: 11,123.1 kWh at USD 0.08 = USD 889.85 + 5% VAT = USD 934.34 / AED 3,431.37, Net 14 so due 14 Nov. Recurring monthly cost - add to the cash plan. Segments' published standard rate is USD 0.06/kWh (would be ~USD 667/month); Calum to query the rate. Invoice TRN (100580710000003) differs from the TRN on segments.ae (104918439100003) - verify before paying, pay only via the logged-in portal.",
+    "status": "done"
+  },
+  {
+    "id": "h0126",
+    "date": "2026-11-08",
+    "from": "content",
+    "to": "Market",
+    "item": "Stamp: Abu Dhabi robotaxi timeline - TXAI launch date (Yas, 2021?), Uber+WeRide Abu Dhabi launch and fully-driverless dates - for 'Dubai Future Ride vs Abu Dhabi' idea (c104).",
+    "status": "open"
+  },
+  {
+    "id": "h0127",
+    "date": "2026-11-08",
+    "from": "content",
+    "to": "Manager",
+    "item": "Board: add a RE-HOOKS lane/section (or filter chip) - cards with series 'RE-HOOKS (trial)' = existing filmed/posted reels getting a new hook + cover for a trial reel. Currently c102 and c105. Should show original card id, new hook, and trial date.",
+    "status": "open"
+  },
+  {
+    "id": "h0128",
+    "date": "2026-11-09",
+    "from": "mentor",
+    "to": "pa",
+    "item": "Run data/state/call-plan.md from tomorrow's 07:30 brief: before 13:00 a card per name due today (CRM fields, enquiry month, shelf row with three options, WhatsApp skeleton); after 17:00 log meetings + hot sent-infos into buyers.json, build the no-answer re-call list (two over the fortnight), write the 19:30 line. Also: warm book (46) untouched since 1-2 Oct - Jason, Harshan, Pat, Lamya, Muaz first.",
+    "status": "done"
+  },
+  {
+    "id": "h0129",
+    "date": "2026-11-09",
+    "from": "mentor",
+    "to": "market",
+    "item": "Project files needed for the call-plan shelf: Artery (Reem, 1-beds), Muheira (Reem, 2-3 beds), Al Ghadeer (3-bed standalone ~3.5M), Naseem (secondary). Confirm current Wadeem and Bashayer B5 stock with Jake/Modon, and the two coming launches (Hudayriyat beachfront apartments, Reem apartments). Refresh the Abu Dhabi off-plan psf line (ValuStrat Q2 is stale). Lagoons off this list.",
+    "status": "open"
+  },
+  {
+    "id": "h0130",
+    "date": "2026-11-09",
+    "from": "mentor",
+    "to": "pa",
+    "item": "Run data/state/call-plan.md from tomorrow's 07:30 brief. After 17:00 daily: log meetings + hot sent-infos from Calum's dictation into buyers.json, build the no-answer re-call list (two over the fortnight), write the 19:30 line (dialled / spoke / meetings / info / webinar / not interested / no answer). No pre-call cards - he works from Jake's CRM. Also: warm book (46) untouched since 1-2 Oct - Jason, Harshan, Pat, Lamya, Muaz first.",
+    "status": "open"
+  },
+  {
+    "id": "h0131",
+    "date": "2026-11-09",
+    "from": "mentor",
+    "to": "manager",
+    "item": "Calum authorised 9 Nov: Mentor writes private:data/calls/jake-list.md (call-through checklist, names + outcomes, no phones). Add it to Mentor's write list in agents/mentor.md and shared ownership table.",
+    "status": "open"
+  },
+  {
+    "id": "h0132",
+    "date": "2026-11-10",
+    "from": "mentor",
+    "to": "market",
+    "item": "Draft for Calum by Wed 11 Nov 07:30: Abu Dhabi vs Dubai at a ~5M budget for buyer Marina (meeting Sun 15 Nov 16:00). What 5M buys in each - Reem (Tara Park 3-bed, Muheira), Hudayriyat (Bashayer) vs Dubai equivalents; yields, service charges, payment plans, 2030 handover vs ready; the honest trade-offs. content-assets/research/, one page, numbers with their ages.",
+    "status": "open"
+  },
+  {
+    "id": "h0133",
+    "date": "2026-11-11",
+    "from": "content",
+    "to": "Market",
+    "item": "Earth Tower (Eagle Hills x BROAD, Zayed City, 16 floors, modular): find whether units are for sale or rent, prices/rents, status (occupied?), and any next towers announced (15-30 floors). For reel c110.",
+    "status": "open"
+  },
+  {
+    "id": "h0134",
+    "date": "2026-11-11",
+    "from": "Designer",
+    "to": "PA",
+    "item": "Tina - Wadeem Gardens 4-bed (Đ8.7M) on the ADIB 25/75 plan, bespoke schedule issued 11 Nov, November booking. Please check she has a buyer record",
+    "status": "open"
+  },
+  {
+    "id": "h0135",
+    "date": "2026-11-12",
+    "from": "content",
+    "to": "Designer",
+    "item": "Reel screens hub built by Content at content-assets/scripts/screens/ (index.html + 01-08 + bvlgari-map.jpg) for filming on the 86in Samsung interactive display (16:9, 4K, touch). Placed in Content's path for speed; move/re-brand if you want. Next: 09 Hudayriyat tunnels route, 10 Mid-Island Parkway (PNG exists), 11 tax pie, 12 supply graph - Content building after Calum's screen test.",
+    "status": "open"
+  },
+  {
+    "id": "h0136",
+    "date": "2026-11-13",
+    "from": "content",
+    "to": "Market",
+    "item": "Restamp for Disney reel: Yas Island apartment price growth 2025 (+24%?) and to June 2026 (+18%?) with source; Disneyland Abu Dhabi announcement date (May 2025) and expected opening.",
+    "status": "open"
+  },
+  {
+    "id": "h0137",
+    "date": "2026-11-13",
+    "from": "content",
+    "to": "Designer",
+    "item": "Disney/Yas report ready for layout (Canopies Sanctuary launch 25-26 Nov): https://claude.ai/artifact/3kRMzU9bLR9F3GocrHDXVe - numbers final, do not change figures; add Aldar Yas Point masterplan/location image; brand pass.",
+    "status": "open"
+  },
+  {
+    "id": "h0138",
+    "date": "2026-11-13",
+    "from": "Designer",
+    "to": "Content",
+    "item": "Calum's Instagram handle is now @calumlmacleod (was @thecalummacleod) - same as YouTube. Update captions, scripts and the year-one/milestone templates on next use",
+    "status": "open"
+  },
+  {
+    "id": "h0139",
+    "date": "2026-11-13",
+    "from": "content",
+    "to": "Designer",
+    "item": "Disney/Yas report FINAL for layout: https://claude.ai/artifact/3kRMzU9bLR9F3GocrHDXVe - numbers and wording locked. Add Aldar Canopies Sanctuary renders (Calum's Aldar SharePoint folder: Marketing material/UAE/Abu Dhabi/YAS Island/The Canopies/The Canopies Sanctuary - Calum to download). Charts can be restyled to brand but values must not change. For the 25-26 Nov launch.",
+    "status": "open"
+  },
+  {
+    "id": "h0140",
+    "date": "2026-11-15",
+    "from": "manager",
+    "to": "PA",
+    "item": "Issue i0002 (mentor): core.md last written 21 Sep - six weeks stale start packs. core.md is yours: bring it current this session (job start ~2 Nov, Iniesta J122 closed 16 Oct, current targets), and keep the 'END of any topic' rule. Manager closes i0002 when core.md carries a November date.",
+    "status": "open"
+  },
+  {
+    "id": "h0141",
+    "date": "2026-11-15",
+    "from": "Uploader",
+    "to": "Finance",
+    "item": "15 Nov 07:04-07:12 screenshots (25 images, 3 sent twice) staged raw per image, alreadyStaged flagged, IBANs/account numbers redacted. 7 files in data/staging/statements/: hsbc-20261115 (new stmt 1,353.87, no interest, min 33.85 due 7 Dec); ba-amex-20261115 (5 rows, 11.99, paid 13.98 on 12 Nov); bos-20261105-20261112 (8 rows, ties to 15,435.61); adib-cc-app-20261107-20261114 (AED 43 rows over 6 images, 26 new 8-14 Nov = 11,693.98, no balance shown); mashreq-20261104-20261109 (AED 4, ties to 7,112.90); mashreq-tara-and-rent-20261115 (77,069.83 unchanged; indicative Nov 186.09 is interest accrued to date - closes the h0123 query); wise-20261104-20261114 (8 rows). MINING: Segments Cloud SCH-2026-00956 PAID 9 Nov via Wise 934.34 USD / 716.29 GBP, funded by BoS CALUM WISE 716.53 - data/staging/mining/segments-cloud-SCH-2026-00956-payment-20261109.json; the invoice file still says UNPAID. CHECK: ADIB 24 SEVEN GOVERNMENT TRANS 5,788.55 on 11 Nov; ADIB InstaShop 87.46 on 9 Nov same amount as 6 Nov; BoS L G PRICE 345.00 on 12 Nov (new payee); Apple 11.99 on Wise 4 and 14 Nov plus BA Amex 12 Nov; BoS upcoming DDs show prior amounts (MBNA 49.66 vs MBNA 2 min 47.54 due 16 Nov; Santander 318.06 vs 334.99; Barclaycard 118.45 vs 118.02); M&S 183.29 due 21 Nov - no DD seen. Unchanged, no file: Tesco, Virgin, Santander, M&S, MBNA 1, Barclaycard, Amex Gold, Nationwide. 3 ccBalances rows appended (HSBC, BA Amex, BoS OD).",
+    "status": "done"
+  },
+  {
+    "id": "h0142",
+    "date": "2026-11-16",
+    "from": "Fitness",
+    "to": "PA",
+    "item": "Book Calum a blood test THIS WEEK (Dubai, any DHA lab/clinic, morning, fasted): 25-OH vitamin D, ferritin + full iron panel, B12, folate, full thyroid (TSH, free T4, free T3), total + free testosterone, SHBG, HbA1c, lipids, full blood count, CRP. ~Đ300-500 indicative. Reason: 3rd episode of unexplained fatigue. Results to Fitness.",
+    "status": "open"
+  }
 ]
