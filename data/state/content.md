@@ -162,3 +162,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Rule (Calum): reels over 90s go to Facebook as Post, not Reel. Don't flag it.
 - Audio: editor's exports are all -12 to -13 LUFS (measured, fine). Metricool's stored copy of two files measured -25 but Instagram plays them normally. No action.
 - Open: first comments missing on 4 scheduled posts; covers missing on Dolphins and What Happens Next; October Dubai data pair (c91 c92) script this week or bin; keyword DM counts (HILL / OFFPLAN / DISNEY) not known - deals-from-socials line still blank.
+
+## Deals from socials - scoreboard (started 17 Nov)
+- November so far: 4 leads, 1 engaged (near booking, 1-bed Yas), 0 viewings, 0 deals. Anonymised refs S-001..S-004 on the reel cards in content.json; identities with the PA (private).
+- By reel: Disney 2 (pack sent, neither replied), Third Hill 1 (no reply), Why I Bought 1 (near booking). Two attributions are assumed - Calum to confirm which Third Hill reel and which off-plan reel.
+- Read: the personal reel (Why I Bought, 1,653 views) produced the only warm lead; Disney (1,652 views, 0 shares) produced 2 enquiries because it had a lead magnet. Leave Dubai (11,525 views) produced none recorded - no keyword CTA on it.
+- Who Will Live (16 Nov): 2,321 views / 19 shares / skip 50% at 14h (IG). Trial reel test 17 Nov: Rail re-run, check 18 Nov.
