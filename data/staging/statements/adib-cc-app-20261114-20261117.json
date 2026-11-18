@@ -1,0 +1,173 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "currency": "AED",
+  "period": "15-17 Nov 26 (EMIRATES VC SIG)",
+  "source": "app screenshots Wed 18 Nov 26 07:40-07:48 Dubai",
+  "images": [
+   "IMG_5352",
+   "IMG_5349"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balances": "none shown"
+  },
+  "flags": [
+   "Intl fees 17 Nov: 8.16 = 2.75% of IHERB 296.57; 0.83 = 2.75% of YouTube Premium 29.99; VAT 0.41 and 0.04 = 5% of each fee (derived match)",
+   "No Monday 16 Nov group shown between 'Yesterday' and 'Sunday'",
+   "Top row of IMG_5349 cut - only 'Pending' visible; sits where IMG_5352 pos 6 is",
+   "Saturday Crafty Fox 4 -110.00 faded at bottom - already staged"
+  ],
+  "rowCount": 16,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-18",
+  "dates": "day labels resolved from screenshot date Wed 18 Nov 26"
+ },
+ "images": [
+  {
+   "image": "IMG_5352",
+   "rows": [
+    {
+     "date": "2026-11-17",
+     "description": "International Transaction Fee",
+     "amount": -8.16,
+     "dayLabel": "Yesterday",
+     "image": "IMG_5352",
+     "position": 1
+    },
+    {
+     "date": "2026-11-17",
+     "description": "International Transaction Fee",
+     "amount": -0.83,
+     "dayLabel": "Yesterday",
+     "image": "IMG_5352",
+     "position": 2
+    },
+    {
+     "date": "2026-11-17",
+     "description": "International Trxn Fee VAT Charges",
+     "amount": -0.41,
+     "dayLabel": "Yesterday",
+     "image": "IMG_5352",
+     "position": 3
+    },
+    {
+     "date": "2026-11-17",
+     "description": "International Trxn Fee VAT Charges",
+     "amount": -0.04,
+     "dayLabel": "Yesterday",
+     "image": "IMG_5352",
+     "position": 4
+    },
+    {
+     "date": "2026-11-17",
+     "description": "www.instashop.com",
+     "amount": -36.81,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5352",
+     "position": 5
+    },
+    {
+     "date": "2026-11-17",
+     "description": "www.instashop.com",
+     "amount": -88.7,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5352",
+     "position": 6
+    },
+    {
+     "date": "2026-11-15",
+     "description": "IHERB IHERB.COM (faded)",
+     "amount": null,
+     "dayLabel": "Sunday",
+     "note": "amount hidden; same as IMG_5349 pos 2",
+     "image": "IMG_5352",
+     "position": 7
+    }
+   ]
+  },
+  {
+   "image": "IMG_5349",
+   "rows": [
+    {
+     "date": "2026-11-17",
+     "description": "(cut at top)",
+     "amount": null,
+     "note": "only 'Pending' visible",
+     "status": "Pending",
+     "image": "IMG_5349",
+     "position": 1
+    },
+    {
+     "date": "2026-11-15",
+     "description": "IHERB IHERB.COM",
+     "amount": -296.57,
+     "dayLabel": "Sunday",
+     "image": "IMG_5349",
+     "position": 2
+    },
+    {
+     "date": "2026-11-15",
+     "description": "GOOGLE*YOUTUBEPREMIUM",
+     "amount": -29.99,
+     "dayLabel": "Sunday",
+     "image": "IMG_5349",
+     "position": 3
+    },
+    {
+     "date": "2026-11-15",
+     "description": "Holiday Inn",
+     "amount": -320.0,
+     "dayLabel": "Sunday",
+     "image": "IMG_5349",
+     "position": 4
+    },
+    {
+     "date": "2026-11-15",
+     "description": "Deliveroo",
+     "amount": -61.95,
+     "dayLabel": "Sunday",
+     "image": "IMG_5349",
+     "position": 5
+    },
+    {
+     "date": "2026-11-15",
+     "description": "InstaShop",
+     "amount": -167.74,
+     "dayLabel": "Sunday",
+     "image": "IMG_5349",
+     "position": 6
+    },
+    {
+     "date": "2026-11-15",
+     "description": "InstaShop",
+     "amount": -254.74,
+     "dayLabel": "Sunday",
+     "image": "IMG_5349",
+     "position": 7
+    },
+    {
+     "date": "2026-11-15",
+     "description": "Virgin Mobile",
+     "amount": -299.25,
+     "dayLabel": "Sunday",
+     "image": "IMG_5349",
+     "position": 8
+    },
+    {
+     "date": "2026-11-14",
+     "description": "Crafty Fox 4 (faded)",
+     "amount": -110.0,
+     "dayLabel": "Saturday",
+     "alreadyStaged": "adib-cc-app-20261107-20261114.json",
+     "confidence": "low - faded",
+     "image": "IMG_5349",
+     "position": 9
+    }
+   ]
+  }
+ ]
+}
