@@ -29288,6 +29288,30 @@
       "month": "Nov 26",
       "source": "UK app screenshots Sun 15 Nov 26 07:04-07:11 Dubai",
       "rows": "data/staging/statements/bos-20261105-20261112.json"
+    },
+    {
+      "card": "MBNA 2",
+      "balance": 1782.95,
+      "currency": "GBP",
+      "available": 717.05,
+      "limit": 2500.0,
+      "status": "Min 47.54 paid by DD 16 Nov (BoS MBNA LIMITED)",
+      "date": "2026-11-18",
+      "month": "Nov 26",
+      "source": "UK app screenshots Wed 18 Nov 26 07:40-07:45 Dubai",
+      "rows": "data/staging/statements/mbna-2-20261118.json"
+    },
+    {
+      "card": "Classic current acct OVERDRAFT",
+      "balance": 0,
+      "currency": "GBP",
+      "available": 3000.0,
+      "limit": 3000.0,
+      "status": "IN CREDIT 15,388.07 at 07:45 18 Nov after MBNA 47.54 (16 Nov). Leaving (prior amounts shown): Santander 318.06 + Barclaycard 118.45 (20 Nov), Corrina Flaher 150.00 (24 Nov)",
+      "date": "2026-11-18",
+      "month": "Nov 26",
+      "source": "UK app screenshots Wed 18 Nov 26 07:40-07:45 Dubai",
+      "rows": "data/staging/statements/bos-20261116.json"
     }
   ],
   "personalDebts": [
