@@ -168,3 +168,12 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - By reel: Disney 2 (pack sent, neither replied), Third Hill 1 (no reply), Why I Bought 1 (near booking). Two attributions are assumed - Calum to confirm which Third Hill reel and which off-plan reel.
 - Read: the personal reel (Why I Bought, 1,653 views) produced the only warm lead; Disney (1,652 views, 0 shares) produced 2 enquiries because it had a lead magnet. Leave Dubai (11,525 views) produced none recorded - no keyword CTA on it.
 - Who Will Live (16 Nov): 2,321 views / 19 shares / skip 50% at 14h (IG). Trial reel test 17 Nov: Rail re-run, check 18 Nov.
+
+## QUALITY KPI - standing rule (Calum, 18 Nov)
+- Drop lower-quality reels at every stage now there is volume. Target: 30% or more of reels dropped between hook and posted; about 50% of ideas dropped.
+- Dropped cards go to the new Dropped column on the board (stage "dropped", with droppedFrom and date). Never deleted - may be recovered.
+- When Calum messages "drop X", move it there. Report the two drop rates in the Friday scoreboard.
+- 18 Nov: dropped Hudayriyat Hills Won't Be Replicated, UAE's Highest Selling Developer, DIFC 2.5x. This week's earlier bins (10 Terms, Burj Al Arab, September villa data) moved into the same column.
+- Back to idea, hooks already locked (do not re-hook): I Quit Every UK Business I Owned Except One; I Spent 6 Years On My Life's Work, Then Quit - held so personal reels are not written all at once.
+- 18 Nov ratings of all 23 upcoming hooks given (idea/hook/viral/leads/followers). Film-first: 3m Tax, Next Property Crisis, 7% Yield, Holiday to Dubai, Convincing My Partner, Islands vs Mountains, Half of Hudayriyat.
+- Trial reel test passed 17-18 Nov: Rail re-run 2,205 views / 43.1% skip in 17h, not throttled.

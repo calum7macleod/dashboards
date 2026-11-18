@@ -122,15 +122,16 @@
       "id": "c15",
       "title": "Did Dubai Villa and Townhouse Demand Return In September As Expected",
       "series": "Dubai data (Jake-shape monthly update)",
-      "status": "scripted",
+      "status": "drafted",
       "priority": "high",
       "created": "2026-10-08",
       "postDate": "2026-11-19",
       "hook": "Did Dubai Villa and Townhouse Demand Return In September As Expected",
-      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Sep ready villas 5.05bn (last lower: Sep 2021, 4.21bn); Sep 2025 11.32bn; drop 6.27bn > Burj Khalifa build cost; 1,740 -> 740 sales; avg 6.50m -> 6.83m (+5%); Sep 2021 4.21m (+62%). DLD residential series, verified by Content 8 Oct. FIX: '2025/this year/2021' = Septembers, say so. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md. | Binned by Calum 16 Nov - September data stale. Metricool draft for 19 Nov left for Calum to delete.",
-      "stage": "scheduled",
-      "stageDate": "2026-11-12",
-      "binned": "2026-11-16"
+      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Sep ready villas 5.05bn (last lower: Sep 2021, 4.21bn); Sep 2025 11.32bn; drop 6.27bn > Burj Khalifa build cost; 1,740 -> 740 sales; avg 6.50m -> 6.83m (+5%); Sep 2021 4.21m (+62%). DLD residential series, verified by Content 8 Oct. FIX: '2025/this year/2021' = Septembers, say so. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md. | Binned by Calum 16 Nov - September data stale. Metricool draft for 19 Nov left for Calum to delete. | Moved from binned to the Dropped column 2026-11-18.",
+      "stage": "dropped",
+      "stageDate": "2026-11-18",
+      "droppedFrom": "scheduled",
+      "droppedDate": "2026-11-16"
     },
     {
       "id": "c16",
@@ -975,10 +976,11 @@
       "created": "2026-11-05",
       "postDate": null,
       "hook": "200 million dollar refurb six weeks into a conflict - the UAE doesn't let a good crisis go to waste",
-      "notes": " | Binned by Calum 16 Nov.",
-      "stage": "hooked",
-      "stageDate": "2026-11-05",
-      "binned": "2026-11-16"
+      "notes": " | Binned by Calum 16 Nov. | Moved from binned to the Dropped column 2026-11-18.",
+      "stage": "dropped",
+      "stageDate": "2026-11-18",
+      "droppedFrom": "hooked",
+      "droppedDate": "2026-11-16"
     },
     {
       "id": "c79",
@@ -1054,10 +1056,11 @@
       "created": "2026-11-05",
       "postDate": null,
       "hook": "Real estate not property - here's what else might confuse you",
-      "notes": " | Binned by Calum 16 Nov.",
-      "stage": "hooked",
-      "stageDate": "2026-11-05",
-      "binned": "2026-11-16"
+      "notes": " | Binned by Calum 16 Nov. | Moved from binned to the Dropped column 2026-11-18.",
+      "stage": "dropped",
+      "stageDate": "2026-11-18",
+      "droppedFrom": "hooked",
+      "droppedDate": "2026-11-16"
     },
     {
       "id": "c85",
@@ -1094,9 +1097,11 @@
       "created": "2026-11-05",
       "postDate": null,
       "hook": "You can copy a tower, but can you copy a hill on an island with world-class villas on top? Let's find out",
-      "notes": "",
-      "stage": "hooked",
-      "stageDate": "2026-11-05"
+      "notes": " | DROPPED 2026-11-18 from hooked: Calum - lower quality; duplicates the held 'Third Hill Never Replicated'. Recoverable.",
+      "stage": "dropped",
+      "stageDate": "2026-11-18",
+      "droppedFrom": "hooked",
+      "droppedDate": "2026-11-18"
     },
     {
       "id": "c88",
@@ -1172,9 +1177,11 @@
       "created": "2026-11-05",
       "postDate": null,
       "hook": "Text: The UAE's Highest Selling Developer Isn't In Dubai | Speech: They sold 6.3 billion dollars in half a year, almost nobody had heard of them before",
-      "notes": "Was: Abu Dhabi's Biggest Developer Outsold Dubai's This Year.  | H1 2026 UAE sales Modon AED 23bn vs Emaar 22.4bn (Reuters/Al Ittihad). Always say 'in the UAE'.",
-      "stage": "hooked",
-      "stageDate": "2026-11-16"
+      "notes": "Was: Abu Dhabi's Biggest Developer Outsold Dubai's This Year.  | H1 2026 UAE sales Modon AED 23bn vs Emaar 22.4bn (Reuters/Al Ittihad). Always say 'in the UAE'. | DROPPED 2026-11-18 from hooked: Calum - dropped (his retitle 'UAE's Biggest Developer Isn't In Dubai'). Recoverable.",
+      "stage": "dropped",
+      "stageDate": "2026-11-18",
+      "droppedFrom": "hooked",
+      "droppedDate": "2026-11-18"
     },
     {
       "id": "c94",
@@ -1198,33 +1205,35 @@
       "created": "2026-11-06",
       "postDate": null,
       "hook": "Text: Dubai's Financial District Costs 2.5x Abu Dhabi's | Speech: DIFC has 5% fees, more than anywhere in Dubai. ADGM only has 2%",
-      "notes": "Was: DIFC Charges 5% To Transfer A Flat. ADGM Charges 2%.  | Market to stamp DIFC 5 / Dubai 4 / ADGM 2.",
-      "stage": "hooked",
-      "stageDate": "2026-11-16"
+      "notes": "Was: DIFC Charges 5% To Transfer A Flat. ADGM Charges 2%.  | Market to stamp DIFC 5 / Dubai 4 / ADGM 2. | DROPPED 2026-11-18 from hooked: Calum - lower quality. Recoverable.",
+      "stage": "dropped",
+      "stageDate": "2026-11-18",
+      "droppedFrom": "hooked",
+      "droppedDate": "2026-11-18"
     },
     {
       "id": "c96",
-      "title": "It's Never Been Harder To Make A Good Investment",
+      "title": "It's Never Been Harder To Make A Good Property Investment",
       "series": "Hooks 14 Nov",
       "status": "drafted",
       "priority": "medium",
       "created": "2026-11-06",
       "postDate": null,
-      "hook": "Text: It's Never Been Harder To Make A Good Investment | Speech: Doing nothing now pays over 5% - so everything else has to beat that",
-      "notes": "Was: It's Never Been Harder To Pick A Good Investment - Because Bonds Pay 4.5%.  | US 10-yr ~5.15%, UK gilt ~5.3% (13 Nov). Recheck on filming day.",
+      "hook": "Text: It's Never Been Harder To Make A Good Property Investment | Speech: Doing nothing now pays over 5% - so everything else has to beat that",
+      "notes": "Was: It's Never Been Harder To Pick A Good Investment - Because Bonds Pay 4.5%.  | US 10-yr ~5.15%, UK gilt ~5.3% (13 Nov). Recheck on filming day. | Retitled by Calum 2026-11-18 (was: It's Never Been Harder To Make A Good Investment).",
       "stage": "hooked",
       "stageDate": "2026-11-16"
     },
     {
       "id": "c97",
-      "title": "How To Avoid The Wrong Payment Plan",
+      "title": "You Lose Money with a Bad Payment Plan",
       "series": "Hooks 14 Nov",
       "status": "drafted",
       "priority": "medium",
       "created": "2026-11-06",
       "postDate": null,
-      "hook": "Text: How To Avoid The Wrong Payment Plan | Speech: You can make the same profit with half the cash",
-      "notes": "Was: How Off-Plan Payment Plans Work In The UAE. ",
+      "hook": "Text: You Lose Money with a Bad Payment Plan | Speech: You can make the same profit with half the cash on a good one",
+      "notes": "Was: How Off-Plan Payment Plans Work In The UAE.  | Retitled by Calum 2026-11-18 (was: How To Avoid The Wrong Payment Plan).",
       "stage": "hooked",
       "stageDate": "2026-11-16"
     },
@@ -1482,14 +1491,14 @@
     },
     {
       "id": "c116",
-      "title": "5 Islands with 71% of Abu Dhabi's New Supply",
+      "title": "Oversupply? Abu Dhabi's 5 Islands with 71% of Sales",
       "series": "Hooks 14 Nov",
       "status": "drafted",
       "priority": "medium",
       "created": "2026-11-16",
       "postDate": null,
-      "hook": "Text: 5 Islands with 71% of Abu Dhabi's New Supply | Speech: Yas has almost a quarter for 44 million visitors, here's the rest",
-      "notes": "ADREC file: Yas 9,556, Reem 7,727, Hudayriyat 6,521, Saadiyat 5,944, Fahid 1,606 of 44,230 sold-not-handed-over.",
+      "hook": "Text: Oversupply? Abu Dhabi's 5 Islands with 71% of Sales | Speech: Yas has almost a quarter for 44 million visitors, here's the rest",
+      "notes": "ADREC file: Yas 9,556, Reem 7,727, Hudayriyat 6,521, Saadiyat 5,944, Fahid 1,606 of 44,230 sold-not-handed-over. | Retitled by Calum 2026-11-18 (was: 5 Islands with 71% of Abu Dhabi's New Supply).",
       "stage": "hooked",
       "stageDate": "2026-11-16"
     },
@@ -1510,14 +1519,14 @@
       "id": "c118",
       "title": "I Quit Every UK Business I Owned Except One",
       "series": "Personal (14 Nov)",
-      "status": "drafted",
+      "status": "template",
       "priority": "medium",
       "created": "2026-11-16",
       "postDate": null,
       "hook": "Text: I Quit Every UK Business I Owned Except One | Speech: Here's why I gave it all up and why I'll never quit the last one",
-      "notes": "Need: which business he kept.",
-      "stage": "hooked",
-      "stageDate": "2026-11-16"
+      "notes": "Need: which business he kept. | 2026-11-18: back to idea so the personal reels aren't written all at once. HOOK ALREADY LOCKED - keep as is, do not re-hook: Text: I Quit Every UK Business I Owned Except One | Speech: Here's why I gave it all up and why I'll never quit the last one",
+      "stage": "idea",
+      "stageDate": "2026-11-18"
     },
     {
       "id": "c119",
@@ -1534,14 +1543,14 @@
     },
     {
       "id": "c120",
-      "title": "I Went On Holiday in 2020 and Never Came Home",
+      "title": "I Went On Holiday to Dubai and Never Came Home",
       "series": "Personal (14 Nov)",
       "status": "drafted",
       "priority": "medium",
       "created": "2026-11-16",
       "postDate": null,
-      "hook": "Text: I Went On Holiday in 2020 and Never Came Home | Speech: 6 years in Dubai, here's why I'll never leave this country",
-      "notes": "",
+      "hook": "Text: I Went On Holiday to Dubai and Never Came Home | Speech: 6 years in Dubai, here's why I'll never leave this country",
+      "notes": " | Retitled by Calum 2026-11-18 (was: I Went On Holiday in 2020 and Never Came Home).",
       "stage": "hooked",
       "stageDate": "2026-11-16"
     },
@@ -1549,14 +1558,14 @@
       "id": "c121",
       "title": "I Spent 6 Years On My Life's Work, Then Quit",
       "series": "Personal (14 Nov)",
-      "status": "drafted",
+      "status": "template",
       "priority": "medium",
       "created": "2026-11-16",
       "postDate": null,
       "hook": "Text: I Spent 6 Years On My Life's Work, Then Quit | Speech: My dreams of the UK's biggest glamping site and how it came to an end for me",
-      "notes": "Check sold vs quit wording.",
-      "stage": "hooked",
-      "stageDate": "2026-11-16"
+      "notes": "Check sold vs quit wording. | 2026-11-18: back to idea so the personal reels aren't written all at once. HOOK ALREADY LOCKED - keep as is, do not re-hook: Text: I Spent 6 Years On My Life's Work, Then Quit | Speech: My dreams of the UK's biggest glamping site and how it came to an end for me",
+      "stage": "idea",
+      "stageDate": "2026-11-18"
     },
     {
       "id": "c122",
@@ -1783,7 +1792,8 @@
     "edited",
     "scheduled",
     "posted",
-    "measured"
+    "measured",
+    "dropped"
   ],
   "socialLeads": {
     "updated": "2026-11-17",
@@ -1807,5 +1817,23 @@
       "result": "Worked. 2,205 views in 17h vs 2,866 lifetime on the original; skip 43.1% (original 48%); shares and saves lower (0.3% / 0.6%) - strangers watch but pass it on less.",
       "decision": "Pending Calum - proposed: one proven re-run per week + two-opening hook tests on new reels."
     }
-  ]
+  ],
+  "qualityKpi": {
+    "set": "2026-11-18",
+    "by": "Calum",
+    "rule": "Drop lower-quality reels at every stage now there is volume. Dropped cards go to the Dropped column (recoverable), never deleted.",
+    "targets": {
+      "hookToPostedDropRate": ">= 30%",
+      "ideaDropRate": "about 50%"
+    },
+    "baseline": {
+      "date": "2026-11-18",
+      "reachedHook": 83,
+      "droppedAfterHook": 6,
+      "rate": "7%",
+      "ideasEver": 128,
+      "ideasDropped": 18,
+      "ideaRate": "14%"
+    }
+  }
 }
