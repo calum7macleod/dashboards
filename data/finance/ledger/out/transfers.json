@@ -2478,8 +2478,8 @@
   },
   {
    "pair_id": "P0250",
-   "out": "L03949",
-   "in": "L03948",
+   "out": "L03950",
+   "in": "L03949",
    "from": "BoS",
    "to": "BA Amex",
    "amount_out": -13.98,
@@ -5126,7 +5126,43 @@
    "desc": "Segments Cloud mining hosting Oct (USD 934.34, inv SCH-2026-00956)"
   },
   {
-   "id": "L03955",
+   "id": "L03941",
+   "date": "2026-11-11",
+   "account": "ADIB CC",
+   "amount": -5000.0,
+   "currency": "AED",
+   "type": "transfer",
+   "desc": "24 Seven Government Trans - visa DEPOSIT for Lucas (held, part of 5,788.55)"
+  },
+  {
+   "id": "L03942",
+   "date": "2026-11-11",
+   "account": "ADIB CC",
+   "amount": -788.55,
+   "currency": "AED",
+   "type": "transfer",
+   "desc": "24 Seven Government Trans - Lucas visa transfer FEE (part of 5,788.55)"
+  },
+  {
+   "id": "L03952",
+   "date": "2026-11-13",
+   "account": "ADIB CC",
+   "amount": -420.0,
+   "currency": "AED",
+   "type": "transfer",
+   "desc": "Pass-through - reimbursed in cash, not Calum's spend"
+  },
+  {
+   "id": "L03953",
+   "date": "2026-11-13",
+   "account": "ADIB CC",
+   "amount": -300.0,
+   "currency": "AED",
+   "type": "transfer",
+   "desc": "Pass-through - reimbursed in cash, not Calum's spend"
+  },
+  {
+   "id": "L03956",
    "date": "2026-11-13",
    "account": "Wise GBP",
    "amount": -18.0,
@@ -5135,13 +5171,31 @@
    "desc": "OpenAI ChatGPT (USD 24.00, GBP approx)"
   },
   {
-   "id": "L03961",
+   "id": "L03962",
    "date": "2026-11-14",
    "account": "Wise GBP",
    "amount": -11.99,
    "currency": "GBP",
    "type": "transfer",
    "desc": "Apple (Wise)"
+  },
+  {
+   "id": "L03970",
+   "date": "2026-11-15",
+   "account": "Wise GBP",
+   "amount": -14.2,
+   "currency": "GBP",
+   "type": "transfer",
+   "desc": "Canva (AED 70.00, GBP approx) - on the cancel list"
+  },
+  {
+   "id": "L03971",
+   "date": "2026-11-16",
+   "account": "BoS",
+   "amount": -47.54,
+   "currency": "GBP",
+   "type": "card_repayment",
+   "desc": "MBNA LIMITED"
   }
  ],
  "duplicates_dropped": [
