@@ -8,6 +8,12 @@
 
 ## ADIB TEST - RESULT (31 Oct statement lines, seen 1 Nov)
 Monthly Murabaha 2,408.70 charged; 'Profit earned and bonus' 1,207.33 credited. PARTIAL refund -> net cost 1,201.37. 30 Sep present balance 67,102.85 was paid 4,602.85 short by the 26 Oct due date. Finance's reading confirmed: full waiver requires the statement total paid by the due date; short = proportional refund on unused limit. RULE (now settled): pay the statement total by the due date every month - in practice, card to zero on payday before the statement date.
+## 18 NOV (h0154) - data to 17 Nov (ADIB), 16 Nov (BoS). Calum: no other changes on any account.
+BoS 15,388.07 | MBNA 2 1,782.95 (DD 47.54 paid 16 Nov) | Mashreq 7,112.90 and pot 77,069.83 unchanged.
+15-17 Nov card spend 1,565: food 610 (InstaShop x4 = 548, Deliveroo 62), iHerb 297 (misc) + intl fee 9, Holiday Inn 320 (ASK), Virgin Mobile 299.25 (ASK - prepaid year was meant to cover), YouTube 30.
+Nov to 17 Nov (57% of month): food 5,086/9,000 (57%, on pace; 301/day left) | whatever 4,236/5,000 (incl Tal present 2,670; 764 left) | misc 1,663/2,000 | baby 625/1,000 | phone 468/315 OVER | fixed 1,301/1,254 | Holiday Inn 320 unassigned.
+Card charges Nov-to-date ~19,005 incl 5,000 visa deposit (refund due ~29 Nov-6 Dec) -> own spend ~13,285.
+URGENT: M&S min 183.29 due Sat 21 Nov - no DD visible in BoS upcoming; Calum to check/pay manually by Fri 20 Nov. Canva still billing (AED 70, up from 48) - cancel. Oura, du still open.
 ## 15 NOV CASH (Calum, verbal - not in any bank): received ~D8,000 CASH for the FX/crypto exchange fee (J122 crypto fee; plan had 9,010 on 30 Nov - confirm exact amount and whether 1,010 is still owed; deals.json paid flag NOT set until confirmed). Handed straight to Tal as a PREPAYMENT of December's budget -> Tal due on 1 Dec = 23,600 - 8,000 = 15,600. 30 Nov expected now ~172,500 (181,508 - 9,010). Net effect on the plan: ~-1,010 if the fee was 8,000 not 9,010.
 ## 15 NOV (h0141) - SUNDAY CLOSE. Data to 14 Nov (ADIB), 12 Nov (BoS), 9 Nov (Mashreq), 14 Nov (Wise).
 Balances: BoS 15,435.61 | Mashreq 7,112.90 | Pot 77,069.83 (indicative 186.09 = accrued to date, ~12.4/day) | HSBC 1,353.87 (no interest; min 33.85 due 7 Dec) | BA Amex 11.99.
