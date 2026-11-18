@@ -36,12 +36,13 @@ All copy below is final.
 - Abu Dhabi: $10.7bn (2025) to $20.1bn (2026). Label: UP 89%
 - Dubai: $90bn (2025) to $54bn (2026). Label: DOWN 40%
 
-**Three lines under the chart:**
+**Four lines under the chart:**
 - Abu Dhabi sold 37% more homes. Dubai sold 31% fewer.
+- Across the whole of 2026 so far, Abu Dhabi's sales are up 90% on last year.
 - Yas Island's hotels averaged 85% full in August.
 - Abu Dhabi's oil reaches the sea at Fujairah without passing the Strait of Hormuz.
 
-**Honest line (smaller, still readable):** Against the seven months before it started, Abu Dhabi's sales are down 3%. Growth paused. It didn't fall.
+**Honest line (smaller, still readable):** Sales peaked in February, just before it began, and have run slower since. By value, every month since has still beaten the same month a year earlier.
 
 **Small print:** Sales: Abu Dhabi Real Estate Centre and Dubai Land Department records, residential, March-September 2025 and 2026, Calum MacLeod analysis, indicative. Hotels: Miral, August 2026.
 
@@ -72,20 +73,24 @@ All copy below is final.
 
 **Headline:** What your budget actually buys
 
-**Line above the table:** Three in four people I speak to want a villa or townhouse. Under 8 million dirhams, the choice today is apartments.
+**Line above the table:** Three in four people I speak to want a villa or townhouse. Under 8 million dirhams on the islands, the choice today is apartments.
 
 **Six rows. Design as six cards or a table, whichever reads best on a phone. Budget in AED.**
+
+**Image:** one small render per row - a thumbnail beside the project name, no bigger than the text block it sits next to. Official developer renders only (Modon, Aldar), from Calum's brochure files. The third hill row gets no image. If the thumbnails push the type size down, drop them before shrinking the text.
 
 | Budget | What it buys | Cash on day one | Also consider |
 |---|---|---|---|
 | Under 3M | 2-bed, Tara Park, Reem Island - from about 2.8M | about 200K | Yas Canopies, Muheira, Artery |
-| 3M - 5M | 3-bed, Bashayer, Hudayriyat - 4.2M | about 295K | 2-bed plus maid's at Yas Canopies, 3-bed Tara Park (about 3.6M), 2-bed Bashayer (3.2M) |
-| 5M - 8M | 3-bed, Yas Canopies, Yas Island - 5.2M | about 365K | Not much else sits here. Two smaller apartments, or stretch to a villa below |
+| 3M - 5M | 3-bed, Bashayer, Hudayriyat - 4.2M | about 295K | 2-bed plus maid's at The Canopies Sanctuary, 3-bed Tara Park (about 3.6M), 2-bed Bashayer (3.2M) |
+| 5M - 8M | 3-bed, The Canopies Sanctuary, Yas Island (new phase, launching 25-26 Nov) - 5.2M | about 365K | Not much else sits here. Two smaller apartments, or stretch to a villa below |
 | 8M - 12M | 4, 5 or 6-bed villa, Wadeem Gardens, Hudayriyat - 8.7M to 11.6M | about 610K, or 25% in total with the bank plan | A Naseem resale - needs more cash |
 | 12M - 20M | Villa, Marsa Al Saadiyat - 13.5M to 17.2M | about 950K | - |
 | 25M+ | Hudayriyat's third hill | Price not released. I expect it above 25M | - |
 
-**Honest line:** There are no townhouses on Hudayriyat today, and none coming.
+**Line under the table:** Further out, off the islands, Al Ghadeer has villas from about 3.5M.
+
+**Honest line:** No new townhouses on Hudayriyat today, and none announced. Resale only.
 
 **What I'm watching next (one block, small heading, five short lines):**
 - Around ADGM, where Modon holds a lot of land
@@ -106,13 +111,13 @@ All copy below is final.
 
 **Left column - Waiting is right if:**
 - You'll need the money back before 2030. Off-plan ties it up until handover.
-- You want a townhouse on Hudayriyat. There isn't one, and none is coming.
 - A slow year would make you sell.
+- You haven't seen it yet. Come and look first.
 
 **Right column - Waiting costs if:**
 - You want the launch payment plan. Those terms are set on day one.
-- You want first pick. The best units go on booking day.
-- You're waiting for certainty, the price is higher and the stock is worse when it comes.
+- You're holding out for a new townhouse on Hudayriyat. None is announced. Resale is the only route.
+- You're waiting for certainty. By the time it feels certain, the first units and the launch terms have usually gone.
 
 **One line on Calum (set apart):** I bought an apartment in Tara Park on Reem Island this year. I buy what I recommend.
 
@@ -121,7 +126,7 @@ All copy below is final.
 ---
 
 ## What is deliberately not in it
-Renders, yield promises, project histories, a bio, any statement that prices will rise.
+Full-size renders (thumbnails on page 3 only), yield promises, project histories, a bio, any statement that prices will rise.
 
 ## WhatsApp lines - for Calum to send himself, not part of the design
 - Maybe later: "No pitch - this is my one-minute read on Abu Dhabi this month. Reply with a budget and I'll only send what fits."
@@ -134,9 +139,10 @@ Copy is final and signed off by Calum, 18 Nov 2026. Nothing is waiting on an ans
 One check still running in the background: Market is stamping the page 1 sales figures and the three numbers on page 2. If any change, it will be a number swap, not a layout change.
 
 ## Where the page 3 prices came from
-Calum, 18 Nov 2026: Yas Canopies 3-bed 5.2M; Bashayer 2-bed 3.2M, 3-bed 4.2M; Marsa Al Saadiyat 13.5M to 17.2M; third hill price not released. Tara Park and Wadeem Gardens from the project files (Sep 2026). Day-one cash = 5% booking plus 2% registration, rounded.
+Calum, 18 Nov 2026: Canopies 3-bed 5.2M (taken as the new Sanctuary phase launching 25-26 Nov, 5% booking - Calum to confirm it is not a Phase 1 resale; Phase 1 sold out Aug 2026); Al Ghadeer villas about 3.5M; Bashayer 2-bed 3.2M, 3-bed 4.2M; Marsa Al Saadiyat 13.5M to 17.2M; third hill price not released. Tara Park and Wadeem Gardens from the project files (Sep 2026). Day-one cash = 5% booking plus 2% registration, rounded.
 
 ## How the page 1 numbers were worked out (for Market)
+- Abu Dhabi, year to date: Jan-Oct 2025 AED 61.3bn; Jan-Oct 2026 AED 116.5bn (+90%). Monthly value Mar-Oct 2026 was above the same month of 2025 in every month (closest: Jul 6.66 vs 5.99, Oct 13.29 vs 12.57). By NUMBER of sales, Jul, Sep and Oct 2026 were below 2025 - the honest line says 'by value' for that reason.
 - Abu Dhabi: ADREC sales file, residential, full-share sales only. Mar-Sep 2025: 12,131 sales, AED 39.1bn. Mar-Sep 2026: 16,672 sales, AED 73.9bn. Seven months before (Aug 2025-Feb 2026): 19,390 sales, AED 75.9bn. October 2026: 2,876 sales, AED 13.3bn.
 - Dubai: DLD residential, apartments plus villas and townhouses, title deed plus off-plan. Mar-Sep 2025: 120,901 sales, AED 330bn. Mar-Sep 2026: 82,970 sales, AED 197bn. October 2026 is incomplete in the file and is excluded.
 - USD at 3.6725. Conflict start taken as March 2026 (Calum).
