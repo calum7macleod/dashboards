@@ -20,7 +20,7 @@ A monthly one-minute read Calum sends on WhatsApp to people who said "maybe late
 3. What you can do - what each budget buys
 4. The decision - wait or not
 
-Items marked [CALUM] are waiting on an answer. Do not typeset anything in square brackets until it is replaced.
+All copy below is final.
 
 ---
 
@@ -79,11 +79,11 @@ Items marked [CALUM] are waiting on an answer. Do not typeset anything in square
 | Budget | What it buys | Cash on day one | Also consider |
 |---|---|---|---|
 | Under 3M | 2-bed, Tara Park, Reem Island - from about 2.8M | about 200K | Yas Canopies, Muheira, Artery |
-| 3M - 5M | 3-bed, Yas Canopies, Yas Island [CALUM: price] | 7% of the price | 3-bed Tara Park (about 3.6M), 2 or 3-bed Bashayer |
-| 5M - 8M | Not much sits here. A top-end apartment, or two smaller ones | - | Stretch to 8.7M for a 4-bed villa below |
+| 3M - 5M | 3-bed, Bashayer, Hudayriyat - 4.2M | about 295K | 3-bed Tara Park (about 3.6M), 2-bed Bashayer (3.2M) |
+| 5M - 8M | 3-bed, Yas Canopies, Yas Island - 5.2M | about 365K | Not much else sits here. Two smaller apartments, or stretch to a villa below |
 | 8M - 12M | 4, 5 or 6-bed villa, Wadeem Gardens, Hudayriyat - 8.7M to 11.6M | about 610K, or 25% in total with the bank plan | A Naseem resale - needs more cash |
-| 12M - 20M | Villa, Marsa Al Saadiyat [CALUM: OK to print 13.5M to 17.2M?] | [CALUM] | - |
-| 20M - 30M | Hudayriyat's third hill | Prices to be confirmed | - |
+| 12M - 20M | Villa, Marsa Al Saadiyat - 13.5M to 17.2M | about 950K | - |
+| 25M+ | Hudayriyat's third hill | Price not released. I expect it above 25M | - |
 
 **Honest line:** There are no townhouses on Hudayriyat today, and none coming.
 
@@ -128,12 +128,13 @@ Renders, yield promises, project histories, a bio, any statement that prices wil
 - Not interested right now: "Not chasing. I send this once a month so you've got the numbers if anything changes."
 - Send some info: "As promised - the short version. Page 3 is what each budget buys. Tell me yours and I'll narrow it down."
 
-## Open items before it can be sent
-1. CALUM: price for the 3-bed at Yas Canopies (row 2). Phase 1 on file was 5.5M for a 3-bed plus maid's, which is above this band.
-2. CALUM: Marsa Al Saadiyat - OK to print 13.5M to 17.2M and the day-one cash?
-3. CALUM: Bashayer 2 and 3-bed prices - two different sets on file.
-4. CALUM / JAKE: happy for "Hudayriyat's third hill, 20M to 30M" and the "watching next" list to go out in writing?
-5. MARKET: stamp the page 1 sales figures (Content's own analysis of the ADREC and DLD files, 18 Nov) and the 37,000 / 322,000 / 288,000 on page 2.
+## Status
+Copy is final and signed off by Calum, 18 Nov 2026. Nothing is waiting on an answer. Build it.
+
+One check still running in the background: Market is stamping the page 1 sales figures and the three numbers on page 2. If any change, it will be a number swap, not a layout change.
+
+## Where the page 3 prices came from
+Calum, 18 Nov 2026: Yas Canopies 3-bed 5.2M; Bashayer 2-bed 3.2M, 3-bed 4.2M; Marsa Al Saadiyat 13.5M to 17.2M; third hill price not released. Tara Park and Wadeem Gardens from the project files (Sep 2026). Day-one cash = 5% booking plus 2% registration, rounded.
 
 ## How the page 1 numbers were worked out (for Market)
 - Abu Dhabi: ADREC sales file, residential, full-share sales only. Mar-Sep 2025: 12,131 sales, AED 39.1bn. Mar-Sep 2026: 16,672 sales, AED 73.9bn. Seven months before (Aug 2025-Feb 2026): 19,390 sales, AED 75.9bn. October 2026: 2,876 sales, AED 13.3bn.
