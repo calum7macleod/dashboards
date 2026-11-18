@@ -1,0 +1,61 @@
+{
+ "meta": {
+  "account": "BoS",
+  "currency": "GBP",
+  "period": "16 Nov 26",
+  "source": "app screenshots Wed 18 Nov 26 07:40-07:48 Dubai",
+  "images": [
+   "IMG_5351"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balance": 15388.07,
+   "overdraftLimit": 3000.0,
+   "closingBalancePrinted": 15388.07,
+   "upcoming": [
+    {
+     "description": "SANTANDERCARDS LTD",
+     "amount": -318.06,
+     "when": "In 2 days",
+     "date": "2026-11-20",
+     "note": "Previously - prior amount; Santander min 334.99 due 21 Nov"
+    },
+    {
+     "description": "B/CARD PLAT VISA",
+     "amount": -118.45,
+     "when": "In 2 days",
+     "date": "2026-11-20",
+     "note": "Previously - prior amount; Barclaycard min 118.02 due 23 Nov"
+    },
+    {
+     "description": "CORRINA FLAHER",
+     "amount": -150.0,
+     "when": "In 6 days",
+     "date": "2026-11-24"
+    }
+   ]
+  },
+  "flags": [
+   "15,435.61 (15 Nov) - 47.54 = 15,388.07 printed",
+   "MBNA DD took 47.54, not the 49.66 'Previously' figure shown on 15 Nov",
+   "Only the next 3 upcoming payments shown; M&S 183.29 due 21 Nov not among them",
+   "Rows below 16 Nov cut off"
+  ],
+  "rowCount": 1,
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-18",
+  "accountType": "Classic current account",
+  "dates": "'In 2 days' = Fri 20 Nov; 'In 6 days' = Tue 24 Nov"
+ },
+ "transactions": [
+  {
+   "date": "2026-11-16",
+   "description": "MBNA LIMITED",
+   "amount": -47.54,
+   "balance": 15388.07,
+   "image": "IMG_5351",
+   "position": 1
+  }
+ ]
+}
