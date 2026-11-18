@@ -79,7 +79,7 @@ All copy below is final.
 | Budget | What it buys | Cash on day one | Also consider |
 |---|---|---|---|
 | Under 3M | 2-bed, Tara Park, Reem Island - from about 2.8M | about 200K | Yas Canopies, Muheira, Artery |
-| 3M - 5M | 3-bed, Bashayer, Hudayriyat - 4.2M | about 295K | 3-bed Tara Park (about 3.6M), 2-bed Bashayer (3.2M) |
+| 3M - 5M | 3-bed, Bashayer, Hudayriyat - 4.2M | about 295K | 2-bed plus maid's at Yas Canopies, 3-bed Tara Park (about 3.6M), 2-bed Bashayer (3.2M) |
 | 5M - 8M | 3-bed, Yas Canopies, Yas Island - 5.2M | about 365K | Not much else sits here. Two smaller apartments, or stretch to a villa below |
 | 8M - 12M | 4, 5 or 6-bed villa, Wadeem Gardens, Hudayriyat - 8.7M to 11.6M | about 610K, or 25% in total with the bank plan | A Naseem resale - needs more cash |
 | 12M - 20M | Villa, Marsa Al Saadiyat - 13.5M to 17.2M | about 950K | - |
