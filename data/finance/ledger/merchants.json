@@ -2,6 +2,26 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "iherb",
+   "category": "Life",
+   "sub": "Misc - iHerb (supplements)"
+  },
+  {
+   "rx": "holiday inn",
+   "category": "Life",
+   "sub": "Holiday Inn 320 (15 Nov) - what? ask Calum"
+  },
+  {
+   "rx": "virgin mobile",
+   "category": "Bills",
+   "sub": "Phone - Virgin Mobile (299.25 on 15 Nov - prepaid year was meant to cover it: ask)"
+  },
+  {
+   "rx": "youtubepremium",
+   "category": "Subscriptions",
+   "sub": "YouTube Premium"
+  },
+  {
    "rx": "visa deposit for lucas",
    "category": "Other",
    "sub": "Deposit held - Lucas visa (refundable? date TBC)",
