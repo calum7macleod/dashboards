@@ -9,7 +9,7 @@ A monthly one-minute read Calum sends on WhatsApp to people who said "maybe late
 - 4 pages, phone portrait, 1080 x 1350.
 - Deliver two ways: 4 separate images (sent as a WhatsApp album, readable without a tap) and one PDF of the same 4 pages.
 - No cover. Page 1 carries the value because it is the preview.
-- Big type. One idea per page. Maximum 120 words a page - the copy below is inside that.
+- Big type. One idea per page. Maximum about 120 words a page. Page 3 runs over because of the table - give it the room and keep the type large.
 - Dated. Built once as a template, reissued monthly with new numbers.
 - Brand system as standard. Small print on every page: source and date.
 - Footer on every page: Calum MacLeod - November 2026
@@ -20,7 +20,7 @@ A monthly one-minute read Calum sends on WhatsApp to people who said "maybe late
 3. What you can do - what each budget buys
 4. The decision - wait or not
 
-Items marked [MARKET] are not confirmed. Do not typeset a number in brackets until Market has stamped it.
+Items marked [CALUM] are waiting on an answer. Do not typeset anything in square brackets until it is replaced.
 
 ---
 
@@ -30,18 +30,20 @@ Items marked [MARKET] are not confirmed. Do not typeset a number in brackets unt
 
 **Headline:** What the conflict actually did to Abu Dhabi property
 
-**Chart:** two pairs of bars, sales value, first half of 2025 against first half of 2026.
-- Abu Dhabi: $6.6bn to $18.5bn. Label: up 178% [MARKET]
-- Dubai: $71.4bn to $60.3bn. Label: down 16% [MARKET]
+**Sub-line:** It began in March. These are the seven months since, against the same seven months a year earlier.
+
+**Chart:** two pairs of bars, total home sales value, March to September.
+- Abu Dhabi: $10.7bn (2025) to $20.1bn (2026). Label: UP 89%
+- Dubai: $90bn (2025) to $54bn (2026). Label: DOWN 40%
 
 **Three lines under the chart:**
-- Sales since the conflict began: [MARKET - before and since split]
-- Yas Island hotels were 92% full in August.
+- Abu Dhabi sold 37% more homes. Dubai sold 31% fewer.
+- Yas Island's hotels averaged 85% full in August.
 - Abu Dhabi's oil reaches the sea at Fujairah without passing the Strait of Hormuz.
 
-**Honest line (smaller, still readable):** Price growth slowed. Sales did not stop. [MARKET to confirm wording]
+**Honest line (smaller, still readable):** Against the seven months before it started, Abu Dhabi's sales are down 3%. Growth paused. It didn't fall.
 
-**Small print:** Sales: ADREC and DLD, H1 2025 and H1 2026. Hotels: [MARKET source], August 2026.
+**Small print:** Sales: Abu Dhabi Real Estate Centre and Dubai Land Department records, residential, March-September 2025 and 2026, Calum MacLeod analysis, indicative. Hotels: Miral, August 2026.
 
 ---
 
@@ -70,25 +72,31 @@ Items marked [MARKET] are not confirmed. Do not typeset a number in brackets unt
 
 **Headline:** What your budget actually buys
 
-**Line above the table:** Three in four people I speak to want a villa or townhouse. Under 5 million dirhams, the choice today is mostly apartments.
+**Line above the table:** Three in four people I speak to want a villa or townhouse. Under 8 million dirhams, the choice today is apartments.
 
-**Table - five rows, three columns: Budget / What it buys / Cash on day one**
+**Six rows. Design as six cards or a table, whichever reads best on a phone. Budget in AED.**
 
-| Budget (AED) | What it buys | Cash on day one |
-|---|---|---|
-| Under 2M | [MARKET - project, beds] | [MARKET] |
-| 2M - 3M | [MARKET] | [MARKET] |
-| 3M - 5M | [MARKET] | [MARKET] |
-| 5M - 8M | [MARKET] | [MARKET] |
-| 8M+ | [MARKET] | [MARKET] |
+| Budget | What it buys | Cash on day one | Also consider |
+|---|---|---|---|
+| Under 3M | 2-bed, Tara Park, Reem Island - from about 2.8M | about 200K | Yas Canopies, Muheira, Artery |
+| 3M - 5M | 3-bed, Yas Canopies, Yas Island [CALUM: price] | 7% of the price | 3-bed Tara Park (about 3.6M), 2 or 3-bed Bashayer |
+| 5M - 8M | Not much sits here. A top-end apartment, or two smaller ones | - | Stretch to 8.7M for a 4-bed villa below |
+| 8M - 12M | 4, 5 or 6-bed villa, Wadeem Gardens, Hudayriyat - 8.7M to 11.6M | about 610K, or 25% in total with the bank plan | A Naseem resale - needs more cash |
+| 12M - 20M | Villa, Marsa Al Saadiyat [CALUM: OK to print 13.5M to 17.2M?] | [CALUM] | - |
+| 20M - 30M | Hudayriyat's third hill | Prices to be confirmed | - |
 
-Shelf for Market to price: Artery, Tara Park, Muheira (Reem); Bashayer, Wadeem (Hudayriyat); Al Ghadeer. One project per row. No secondary stock.
+**Honest line:** There are no townhouses on Hudayriyat today, and none coming.
 
-**Honest line:** There is no Hudayriyat townhouse under 5 million this year. [MARKET to confirm]
+**What I'm watching next (one block, small heading, five short lines):**
+- Around ADGM, where Modon holds a lot of land
+- More apartments on Hudayriyat
+- Lulu Island
+- More on Yas with Aldar
+- More on Saadiyat with Aldar, probably apartments
 
-**One line on what's next:** Launching before spring: [JAKE to approve - area and type only]
+**Line under it:** These are my expectations, not announcements.
 
-**Small print:** Prices as of [MARKET date]. Indicative. Availability changes daily.
+**Small print:** Prices indicative, November 2026. Day-one cash includes the 2% registration fee. Availability changes daily.
 
 ---
 
@@ -98,13 +106,13 @@ Shelf for Market to price: Artery, Tara Park, Muheira (Reem); Bashayer, Wadeem (
 
 **Left column - Waiting is right if:**
 - You'll need the money back before 2030. Off-plan ties it up until handover.
-- You want a townhouse under 5 million. It isn't on the shelf today.
+- You want a townhouse on Hudayriyat. There isn't one, and none is coming.
 - A slow year would make you sell.
 
 **Right column - Waiting costs if:**
 - You want the launch payment plan. Those terms are set on day one.
 - You want first pick. The best units go on booking day.
-- You're waiting for certainty. It arrives after the price has moved.
+- You're waiting for certainty, the price is higher and the stock is worse when it comes.
 
 **One line on Calum (set apart):** I bought an apartment in Tara Park on Reem Island this year. I buy what I recommend.
 
@@ -121,13 +129,17 @@ Renders, yield promises, project histories, a bio, any statement that prices wil
 - Send some info: "As promised - the short version. Page 3 is what each budget buys. Tell me yours and I'll narrow it down."
 
 ## Open items before it can be sent
-1. MARKET: before-and-since split of sales for page 1, and the conflict start date used.
-2. MARKET: confirm the H1 2025 / H1 2026 sales figures and both percentages.
-3. MARKET: year of the 288,000 and the 15,900 behind "18 per home". Calum is happy to say "last year".
-4. MARKET: page 3 prices, beds and day-one cash, refreshed from the Jul-Sep 2026 file.
-5. MARKET: confirm no Hudayriyat townhouse under 5M.
-6. JAKE: what can go in writing about upcoming launches.
-7. Source for Yas hotel occupancy, August 2026.
+1. CALUM: price for the 3-bed at Yas Canopies (row 2). Phase 1 on file was 5.5M for a 3-bed plus maid's, which is above this band.
+2. CALUM: Marsa Al Saadiyat - OK to print 13.5M to 17.2M and the day-one cash?
+3. CALUM: Bashayer 2 and 3-bed prices - two different sets on file.
+4. CALUM / JAKE: happy for "Hudayriyat's third hill, 20M to 30M" and the "watching next" list to go out in writing?
+5. MARKET: stamp the page 1 sales figures (Content's own analysis of the ADREC and DLD files, 18 Nov) and the 37,000 / 322,000 / 288,000 on page 2.
+
+## How the page 1 numbers were worked out (for Market)
+- Abu Dhabi: ADREC sales file, residential, full-share sales only. Mar-Sep 2025: 12,131 sales, AED 39.1bn. Mar-Sep 2026: 16,672 sales, AED 73.9bn. Seven months before (Aug 2025-Feb 2026): 19,390 sales, AED 75.9bn. October 2026: 2,876 sales, AED 13.3bn.
+- Dubai: DLD residential, apartments plus villas and townhouses, title deed plus off-plan. Mar-Sep 2025: 120,901 sales, AED 330bn. Mar-Sep 2026: 82,970 sales, AED 197bn. October 2026 is incomplete in the file and is excluded.
+- USD at 3.6725. Conflict start taken as March 2026 (Calum).
+- Yas hotels: Miral's CEO, 85% average across its hotels in August 2026, one hotel at 92% (CNN via Forbes, 14 Sep 2026). Gulf News (22 Sep 2026) reports "92% in August" - use 85%, the average.
 
 ## Notes for next month
 - Keep the four page titles fixed so people recognise it. Change the numbers and the page 1 topic.
