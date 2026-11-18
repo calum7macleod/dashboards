@@ -64,7 +64,7 @@ All copy below is final.
 
 **Honest line:** The population figure covers the whole emirate, including workers who will never rent or own an apartment.
 
-**Small print:** Under construction: Knight Frank, July 2026 (Abu Dhabi); ValuStrat, August 2026 (Dubai). Population: Statistics Centre Abu Dhabi. Sales: ADREC. [MARKET to confirm years]
+**Small print:** Under construction: Knight Frank, July 2026 (Abu Dhabi); ValuStrat, August 2026 (Dubai). Population: Statistics Centre Abu Dhabi. Sales: ADREC.
 
 ---
 
