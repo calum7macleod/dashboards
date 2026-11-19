@@ -1064,16 +1064,17 @@
     },
     {
       "id": "c85",
-      "title": "10 Things UK Property Investors Hate and What the UAE Does Instead",
+      "title": "8 Things UK Property Investors Hate and What the UAE Does Instead",
       "series": "Batch 4",
       "status": "drafted",
       "priority": "medium",
       "created": "2026-11-05",
       "postDate": null,
       "hook": "The UK taxes the rent, sale and death. The UAE has one fee - here's everything else that's better and worse",
-      "notes": "",
-      "stage": "hooked",
-      "stageDate": "2026-11-05"
+      "notes": " | 19 Nov: parked by Calum in Might Use Later. Draft (8 points, ~235w, not locked): content-assets/scripts/2026-11-18-reel-8-things-uk-investors-hate-DRAFT.md",
+      "stage": "later",
+      "stageDate": "2026-11-19",
+      "laterFrom": "hooked"
     },
     {
       "id": "c86",
@@ -1797,6 +1798,7 @@
     "scheduled",
     "posted",
     "measured",
+    "later",
     "dropped"
   ],
   "socialLeads": {
