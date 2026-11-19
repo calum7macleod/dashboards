@@ -1286,5 +1286,13 @@
   "to": "Projects",
   "item": "For the Web site v1 (spec: CLAUDE.md in calum7macleod/site): (1) create data/projects/al-naseem.md (Modon, Hudayriyat) and nawayef.md - neither exists; (2) confirm which ADREC 'Project Name' strings map to Hudayriyat Golf Estates, Al Naseem and Tara Park - Web will send the distinct names per district; (3) in each project file, mark which 'Calum's position' lines are approved for public use. The site never copies Buyers sections.",
   "status": "open"
+ },
+ {
+  "id": "h0162",
+  "date": "2026-11-19",
+  "from": "PA",
+  "to": "Designer",
+  "item": "Web site fonts to lock: proposal TeX Gyre Pagella (display, GUST licence) + Manrope (body, OFL), self-hosted woff2. Contrast rule in the site spec: small gold text on cream uses #7A5E14; #C9A84C only for large type, rules, marks or on green. Web applies the system, you own it. Also fix the Instagram handle mismatch in design-system/README.md (@calumlmacleod vs @thecalummacleod) once Calum confirms one.",
+  "status": "open"
  }
 ]
