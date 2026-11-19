@@ -29,6 +29,7 @@ Notes for the next meeting: is 10% enough · type of Lagoons listings · UK road
 ## System
 - SWITCH STATUS 21 Sep 15:30: nine agents live on the new account (Fable 5.1 High), six timers created, owner data in private repo (crm-inbox data/owners/). Open: Inbox run hasn't left a triage file yet; Claude Code + phone app Tue; DRY RUN Tue 07:30 = the gate, old Max retires after it. Designer wrote a type specimen despite the hold (own folder, harmless). Finance's first call: written W&Co payout confirmation by Thu 24 (on the board). Mentor's first call: PF first, 09:00 Tue.
 Eight agents (agents/*.md). Repo is the bus. Speed rules in agents/_shared.md. Standing rituals: 07:30 brief with checkpoint, 19:30 scoreboard, match ritual both directions, launch bench on any new launch, day-3 follow-ups, pre-mortem on every script, Lagoons report Mon + Thu.
+- WEB (19 Nov): new Web agent for calummacleod.com - Astro site in calum7macleod/site (private), Cloudflare previews, WordPress live until launch. Setup pack doc https://claude.ai/artifact/M4psaPSFtPsHBzuhZEerkf; spec CLAUDE.md pushed. Calum creates the Project and sends the first prompt. Open: registrar/host, footer licence wording (Jake's compliance), one IG handle, revoke old GitHub token. Handoffs h0160-h0162.
 - D1 plan v1: data/state/jake-plan.md (Sat 26). Numbers to confirm Sun 27 - see challenge notes in the file.
 
 ## Calendar colour scheme (Calum, 28 Sep) - every agent reads the day by these
