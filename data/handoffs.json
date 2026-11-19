@@ -1278,5 +1278,13 @@
   "to": "Manager",
   "item": "New Web agent (11th): file agents/web.md from Block B and update agents/_shared.md to match Block A (count eleven; step 0 'Web also attaches calum7macleod/site'; Web ownership row). Both blocks are in the doc 'Web agent - setup pack' https://claude.ai/artifact/M4psaPSFtPsHBzuhZEerkf. Technical spec: CLAUDE.md in calum7macleod/site (pushed 19 Nov). Also check: Fitness agent missing from the ownership table if it exists; the PA Project's private block still has an old GITHUB TOKEN line - Calum deleting it and revoking; check SETUP.md and other Projects carry none.",
   "status": "open"
+ },
+ {
+  "id": "h0161",
+  "date": "2026-11-19",
+  "from": "PA",
+  "to": "Projects",
+  "item": "For the Web site v1 (spec: CLAUDE.md in calum7macleod/site): (1) create data/projects/al-naseem.md (Modon, Hudayriyat) and nawayef.md - neither exists; (2) confirm which ADREC 'Project Name' strings map to Hudayriyat Golf Estates, Al Naseem and Tara Park - Web will send the distinct names per district; (3) in each project file, mark which 'Calum's position' lines are approved for public use. The site never copies Buyers sections.",
+  "status": "open"
  }
 ]
