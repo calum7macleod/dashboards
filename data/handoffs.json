@@ -1270,5 +1270,13 @@
   "date": "2026-11-18",
   "status": "open",
   "item": "Your monthly report brief: Calum reviewed with Content 18 Nov. Changes: page 1 is now the conflict (his read of the calls: it is the biggest worry), overbuilding becomes page 2 as the reason the market held, budget table page 3, wait-or-not page 4. Four pages kept, sent as images plus a PDF. Full copy and brief at content-assets/scripts/2026-11-18-monthly-report-nov-design-brief.md, with Designer and Market. Please tally objections across the 198 calls to confirm conflict vs overbuilding."
+ },
+ {
+  "id": "h0160",
+  "date": "2026-11-19",
+  "from": "PA",
+  "to": "Manager",
+  "item": "New Web agent (11th): file agents/web.md from Block B and update agents/_shared.md to match Block A (count eleven; step 0 'Web also attaches calum7macleod/site'; Web ownership row). Both blocks are in the doc 'Web agent - setup pack' https://claude.ai/artifact/M4psaPSFtPsHBzuhZEerkf. Technical spec: CLAUDE.md in calum7macleod/site (pushed 19 Nov). Also check: Fitness agent missing from the ownership table if it exists; the PA Project's private block still has an old GITHUB TOKEN line - Calum deleting it and revoking; check SETUP.md and other Projects carry none.",
+  "status": "open"
  }
 ]
