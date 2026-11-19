@@ -1151,9 +1151,11 @@
       "created": "2026-11-05",
       "postDate": null,
       "hook": "43% below last October but there's some positives, here's the good and the bad",
-      "notes": "",
-      "stage": "hooked",
-      "stageDate": "2026-11-05"
+      "notes": " | Dropped by Calum 19 Nov - October data stale.",
+      "stage": "dropped",
+      "stageDate": "2026-11-19",
+      "droppedFrom": "hooked",
+      "droppedDate": "2026-11-19"
     },
     {
       "id": "c92",
@@ -1164,9 +1166,11 @@
       "created": "2026-11-05",
       "postDate": null,
       "hook": "56% below last year but there's some positives, here's the good and the bad [October villa line pending DXB Interact/Property Monitor]",
-      "notes": "",
-      "stage": "hooked",
-      "stageDate": "2026-11-05"
+      "notes": " | Dropped by Calum 19 Nov - October data stale.",
+      "stage": "dropped",
+      "stageDate": "2026-11-19",
+      "droppedFrom": "hooked",
+      "droppedDate": "2026-11-19"
     },
     {
       "id": "c93",
