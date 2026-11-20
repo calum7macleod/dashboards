@@ -177,3 +177,8 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Back to idea, hooks already locked (do not re-hook): I Quit Every UK Business I Owned Except One; I Spent 6 Years On My Life's Work, Then Quit - held so personal reels are not written all at once.
 - 18 Nov ratings of all 23 upcoming hooks given (idea/hook/viral/leads/followers). Film-first: 3m Tax, Next Property Crisis, 7% Yield, Holiday to Dubai, Convincing My Partner, Islands vs Mountains, Half of Hudayriyat.
 - Trial reel test passed 17-18 Nov: Rail re-run 2,205 views / 43.1% skip in 17h, not throttled.
+
+## FUNDAMENTAL - concern-first hooks (Calum, 20 Nov 2026)
+- People want answers to their concerns about investing in Abu Dhabi. State the concern in the hook.
+- Evidence: "Who Is Actually Going To Live In All These Abu Dhabi Off-Plan Properties" (16 Nov) - 4,849 views, 50 shares, 53 saves vs ~1,700 / 3 / 6 typical. Same data under a fact-first hook (4 Nov) got 1,106.
+- Apply at hooking: every hook session starts from a list of buyer concerns, not a list of facts.
