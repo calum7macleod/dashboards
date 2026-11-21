@@ -182,3 +182,8 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - People want answers to their concerns about investing in Abu Dhabi. State the concern in the hook.
 - Evidence: "Who Is Actually Going To Live In All These Abu Dhabi Off-Plan Properties" (16 Nov) - 4,849 views, 50 shares, 53 saves vs ~1,700 / 3 / 6 typical. Same data under a fact-first hook (4 Nov) got 1,106.
 - Apply at hooking: every hook session starts from a list of buyer concerns, not a list of facts.
+
+## REMIND CALUM AT THE START OF THE NEXT HOOK SESSION (set 21 Nov 2026)
+- First line of the next hooks session, reels AND YouTube titles/thumbnails: "Press on people's insecurities and fears about the market, and use them."
+- Builds on the 20 Nov fundamental (state the buyer's concern in the hook). Start the session from a list of fears, then write hooks to each.
+- Rail: the fear goes in the hook, the honest answer goes in the body. Never invent a fear or leave it unanswered.
