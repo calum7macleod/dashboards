@@ -187,3 +187,8 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - First line of the next hooks session, reels AND YouTube titles/thumbnails: "Press on people's insecurities and fears about the market, and use them."
 - Builds on the 20 Nov fundamental (state the buyer's concern in the hook). Start the session from a list of fears, then write hooks to each.
 - Rail: the fear goes in the hook, the honest answer goes in the body. Never invent a fear or leave it unanswered.
+
+## YOUTUBE STRATEGY (Calum, 21 Nov 2026)
+- Long-form = expand reels that already won. A reel is the test, YouTube is the full version.
+- First: Who Is Going To Live In All These Abu Dhabi Off-Plan Properties (c135) - record soon.
+- Queue by reel performance: Leaving Dubai for Hudayriyat (12,063), Who Will Live (4,849), EMAAR founder (3,129), Rail (2,905), Lulu (2,756).
