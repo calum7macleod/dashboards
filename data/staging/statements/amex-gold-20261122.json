@@ -1,0 +1,36 @@
+{
+ "meta": {
+  "account": "Amex Gold (charge)",
+  "currency": "GBP",
+  "period": "5-20 Nov 26",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5428"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 460.0,
+   "balanceDue": 0.0,
+   "paymentStatus": "Payment not required at this time",
+   "membershipRewards": 15035
+  },
+  "flags": [
+   "SP SHOP PLYMOUTH 460.00 on 20 Nov - same merchant and amount as 20 Oct (monthly)",
+   "5 Nov payment row faded under nav bar - already staged",
+   "card digits not stored"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "rowCount": 1
+ },
+ "transactions": [
+  {
+   "date": "2026-11-20",
+   "description": "SP SHOP PLYMOUTH",
+   "amount": 460.0,
+   "image": "IMG_5428",
+   "position": 1
+  }
+ ]
+}
