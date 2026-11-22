@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "account": "Santander Everyday",
+  "currency": "GBP",
+  "period": "27 Oct - 20 Nov 26 (card *1486)",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5418"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balance": 11284.13,
+   "available": 865.87,
+   "limit": 12150.0,
+   "pending": 0.0,
+   "lastStatementBalance": 11619.12,
+   "minPayment": 334.99,
+   "dueDate": "2026-11-21",
+   "directDebit": "Yes"
+  },
+  "flags": [
+   "11,619.12 - 334.99 = 11,284.13 printed. Min due 21 Nov paid by DD 20 Nov (BoS SANTANDERCARDS LTD -334.99)",
+   "'Tuesday, 27 Oct' header at bottom, rows not captured"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "rowCount": 1
+ },
+ "transactions": [
+  {
+   "date": "2026-11-20",
+   "description": "DD PAYMENT RECEIVED D/DEBIT",
+   "amount": -334.99,
+   "image": "IMG_5418",
+   "position": 1
+  }
+ ]
+}
