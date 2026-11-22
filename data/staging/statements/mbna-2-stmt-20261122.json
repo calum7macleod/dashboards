@@ -1,0 +1,38 @@
+{
+ "meta": {
+  "account": "MBNA 2",
+  "currency": "GBP",
+  "period": "November statement (22 Nov 26)",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5419"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "spent": 1782.95,
+   "available": 717.05,
+   "statementBalance": 1782.95,
+   "minimumPayment": 44.57,
+   "dueDate": "2026-12-17",
+   "statementDate": "2026-11-22"
+  },
+  "flags": [
+   "Statement balance equals the balance after the 16 Nov DD - no interest row visible (list cut below 16 Nov)"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "rowCount": 1
+ },
+ "transactions": [
+  {
+   "date": "2026-11-16",
+   "description": "DIRECT DEBIT PAYMENT -",
+   "amount": -47.54,
+   "asPrinted": "£47.54 cr",
+   "alreadyStaged": "mbna-2-20261118.json",
+   "image": "IMG_5419",
+   "position": 1
+  }
+ ]
+}
