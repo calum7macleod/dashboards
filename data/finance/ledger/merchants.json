@@ -2,6 +2,16 @@
  "note": "first match wins. type override optional. Grows with every statement.",
  "merchants": [
   {
+   "rx": "barkat quality",
+   "category": "Base Food",
+   "sub": "Groceries"
+  },
+  {
+   "rx": "anthropic\\* claude sub",
+   "category": "Subscriptions",
+   "sub": "Anthropic on ADIB 775.01 (21 Nov, pending) - CANCELLED in Oct, rebilled: dispute/cancel"
+  },
+  {
    "rx": "iherb",
    "category": "Life",
    "sub": "Misc - iHerb (supplements)"
