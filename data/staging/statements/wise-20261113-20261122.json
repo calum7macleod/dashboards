@@ -1,0 +1,66 @@
+{
+ "meta": {
+  "account": "Wise",
+  "currency": "multi (GBP/USD/AED)",
+  "period": "13-22 Nov 26",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5434"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "Wise prints outgoing unsigned: amount signed by direction (spent negative) as in earlier Wise files; asPrinted kept",
+  "printed": {
+   "balance": "not shown"
+  },
+  "flags": [
+   "'9 Nov 2026' header cut at bottom"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "dates": "'Today' = Sun 22 Nov",
+  "rowCount": 4
+ },
+ "transactions": [
+  {
+   "date": "2026-11-22",
+   "description": "Deepstash",
+   "amount": -27.13,
+   "currency": "GBP",
+   "asPrinted": "27.13 GBP",
+   "status": "Pending",
+   "dayLabel": "Today",
+   "image": "IMG_5434",
+   "position": 1
+  },
+  {
+   "date": "2026-11-15",
+   "description": "Canva",
+   "amount": -70.0,
+   "currency": "AED",
+   "asPrinted": "70 AED / 19.12 USD",
+   "alreadyStaged": "wise-20261109-20261115.json",
+   "image": "IMG_5434",
+   "position": 2
+  },
+  {
+   "date": "2026-11-14",
+   "description": "Apple",
+   "amount": -11.99,
+   "currency": "GBP",
+   "asPrinted": "11.99 GBP",
+   "alreadyStaged": "wise-20261109-20261115.json",
+   "image": "IMG_5434",
+   "position": 3
+  },
+  {
+   "date": "2026-11-13",
+   "description": "OpenAI ChatGPT",
+   "amount": -24.0,
+   "currency": "USD",
+   "asPrinted": "24 USD",
+   "alreadyStaged": "wise-20261109-20261115.json",
+   "image": "IMG_5434",
+   "position": 4
+  }
+ ]
+}
