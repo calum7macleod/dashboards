@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "account": "Mashreq - Tara and Rent",
+  "currency": "AED",
+  "period": "balance reading 22 Nov 26",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5431"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalAvailableBalance": 77069.83,
+   "currentBalance": 77069.83,
+   "lifetimeEarnings": 69.83,
+   "indicativeEarningsNov26": 272.93,
+   "currentInterestRate": "6.25%"
+  },
+  "flags": [
+   "Balance unchanged since 8 Nov",
+   "Indicative Nov earnings 186.09 (15 Nov) -> 272.93 (22 Nov): +86.84 in 7 days, identical to the prior week - accrual to date confirmed"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "accountType": "Mashreq Neo savings pot",
+  "redacted": "account numbers, customer id in TOC-MAE ref",
+  "rowCount": 1
+ },
+ "transactions": [
+  {
+   "date": "2026-11-04",
+   "description": "Acct to Acct transfer - FUND TRANSFER - [acct redacted] - CALUM LACHLAN MACLEOD TOC-MAE-[id redacted]-261104112042 FUND TRANSFER-MOBILE",
+   "amount": 56125.0,
+   "reference": "033AACT263086236",
+   "alreadyStaged": "mashreq-tara-and-rent-20261031-20261104.json",
+   "image": "IMG_5431",
+   "position": 1
+  }
+ ]
+}
