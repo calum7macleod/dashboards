@@ -1,0 +1,377 @@
+{
+ "meta": {
+  "account": "ADIB CC",
+  "currency": "AED",
+  "period": "17-22 Nov 26 (EMIRATES VC SIG *6789)",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5425",
+   "IMG_5424",
+   "IMG_5423",
+   "IMG_5422",
+   "IMG_5421",
+   "IMG_5420"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "availableCoverLimit": 47231.28,
+   "totalAmountDue": 0.0,
+   "lastStatementBalance": "hidden behind overlay",
+   "directDebit": "5% monthly payment percentage set",
+   "cardStatus": "Active"
+  },
+  "flags": [
+   "FIRST BALANCE READ SINCE 28 OCT: outstanding 22,268.72 derived = 69,500 limit (per 28 Oct file) - 47,231.28 available",
+   "21 Nov ANTHROPIC* CLAUDE SUB -775.01 pending - largest row",
+   "No Wednesday 18 Nov or Monday 16 Nov groups shown",
+   "17 Nov InstaShop 36.81 and 88.70 now posted (were pending 18 Nov)",
+   "IMG_5425 is the card summary - no rows"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "derived": {
+   "creditLimit": 69500.0,
+   "outstanding22Nov": 22268.72
+  },
+  "dates": "day labels resolved from screenshot date Sun 22 Nov 26",
+  "rowCount": 35
+ },
+ "images": [
+  {
+   "image": "IMG_5425",
+   "rows": []
+  },
+  {
+   "image": "IMG_5424",
+   "rows": [
+    {
+     "date": "2026-11-22",
+     "description": "www.instashop.com",
+     "amount": -159.49,
+     "dayLabel": "Today",
+     "status": "Pending",
+     "image": "IMG_5424",
+     "position": 1
+    },
+    {
+     "date": "2026-11-21",
+     "description": "www.instashop.com",
+     "amount": -180.19,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5424",
+     "position": 2
+    },
+    {
+     "date": "2026-11-21",
+     "description": "DELIVEROO (faded)",
+     "amount": -40.25,
+     "dayLabel": "Yesterday",
+     "note": "faded; same as IMG_5423 pos 2",
+     "image": "IMG_5424",
+     "position": 3
+    }
+   ]
+  },
+  {
+   "image": "IMG_5423",
+   "rows": [
+    {
+     "date": "2026-11-21",
+     "description": "www.instashop.com",
+     "amount": -180.19,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5423",
+     "position": 1
+    },
+    {
+     "date": "2026-11-21",
+     "description": "DELIVEROO",
+     "amount": -40.25,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5423",
+     "position": 2
+    },
+    {
+     "date": "2026-11-21",
+     "description": "DELIVEROO",
+     "amount": -96.6,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5423",
+     "position": 3
+    },
+    {
+     "date": "2026-11-21",
+     "description": "ANTHROPIC* CLAUDE SUB",
+     "amount": -775.01,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5423",
+     "position": 4
+    },
+    {
+     "date": "2026-11-21",
+     "description": "SPINNEYS NSHAMA",
+     "amount": -123.47,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5423",
+     "position": 5
+    },
+    {
+     "date": "2026-11-21",
+     "description": "SUNBERRY VEGETABLE",
+     "amount": -168.45,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5423",
+     "position": 6
+    },
+    {
+     "date": "2026-11-21",
+     "description": "www.instashop.com",
+     "amount": -87.2,
+     "dayLabel": "Yesterday",
+     "status": "Pending",
+     "image": "IMG_5423",
+     "position": 7
+    },
+    {
+     "date": "2026-11-20",
+     "description": "www.instashop.com (faded)",
+     "amount": -29.0,
+     "dayLabel": "Friday",
+     "note": "faded; same as IMG_5422 pos 1",
+     "image": "IMG_5423",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_5422",
+   "rows": [
+    {
+     "date": "2026-11-20",
+     "description": "www.instashop.com",
+     "amount": -29.0,
+     "dayLabel": "Friday",
+     "image": "IMG_5422",
+     "position": 1
+    },
+    {
+     "date": "2026-11-20",
+     "description": "Amazon Prime Subscript",
+     "amount": -16.0,
+     "dayLabel": "Friday",
+     "image": "IMG_5422",
+     "position": 2
+    },
+    {
+     "date": "2026-11-20",
+     "description": "www.instashop.com",
+     "amount": -91.08,
+     "dayLabel": "Friday",
+     "image": "IMG_5422",
+     "position": 3
+    },
+    {
+     "date": "2026-11-20",
+     "description": "BARKAT QUALITY PLUS L",
+     "amount": -7.89,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5422",
+     "position": 4
+    },
+    {
+     "date": "2026-11-20",
+     "description": "CARREFOUR MARKET NSHAMA",
+     "amount": -66.33,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5422",
+     "position": 5
+    },
+    {
+     "date": "2026-11-20",
+     "description": "SPINNEYS NSHAMA",
+     "amount": -183.25,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5422",
+     "position": 6
+    },
+    {
+     "date": "2026-11-20",
+     "description": "BARKAT QUALITY PLUS L",
+     "amount": -26.25,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5422",
+     "position": 7
+    },
+    {
+     "date": "2026-11-19",
+     "description": "Deliveroo (faded)",
+     "amount": -43.35,
+     "dayLabel": "Thursday",
+     "note": "faded; same as IMG_5421 pos 4",
+     "image": "IMG_5422",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_5421",
+   "rows": [
+    {
+     "date": "2026-11-20",
+     "description": "(CARREFOUR) MARKET NSHAMA (cut at top)",
+     "amount": null,
+     "note": "amount hidden; same as IMG_5422 pos 5",
+     "status": "Pending",
+     "image": "IMG_5421",
+     "position": 1
+    },
+    {
+     "date": "2026-11-20",
+     "description": "SPINNEYS NSHAMA",
+     "amount": -183.25,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5421",
+     "position": 2
+    },
+    {
+     "date": "2026-11-20",
+     "description": "BARKAT QUALITY PLUS L",
+     "amount": -26.25,
+     "dayLabel": "Friday",
+     "status": "Pending",
+     "image": "IMG_5421",
+     "position": 3
+    },
+    {
+     "date": "2026-11-19",
+     "description": "Deliveroo",
+     "amount": -43.35,
+     "dayLabel": "Thursday",
+     "image": "IMG_5421",
+     "position": 4
+    },
+    {
+     "date": "2026-11-19",
+     "description": "InstaShop",
+     "amount": -137.86,
+     "dayLabel": "Thursday",
+     "image": "IMG_5421",
+     "position": 5
+    },
+    {
+     "date": "2026-11-19",
+     "description": "InstaShop",
+     "amount": -17.95,
+     "dayLabel": "Thursday",
+     "image": "IMG_5421",
+     "position": 6
+    },
+    {
+     "date": "2026-11-19",
+     "description": "Deliveroo",
+     "amount": -96.02,
+     "dayLabel": "Thursday",
+     "image": "IMG_5421",
+     "position": 7
+    },
+    {
+     "date": "2026-11-17",
+     "description": "InstaShop (faded)",
+     "amount": -36.81,
+     "dayLabel": "Tuesday",
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "image": "IMG_5421",
+     "position": 8
+    }
+   ]
+  },
+  {
+   "image": "IMG_5420",
+   "rows": [
+    {
+     "date": "2026-11-19",
+     "description": "Deliveroo",
+     "amount": -96.02,
+     "image": "IMG_5420",
+     "position": 1
+    },
+    {
+     "date": "2026-11-17",
+     "description": "InstaShop",
+     "amount": -36.81,
+     "dayLabel": "Tuesday",
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "image": "IMG_5420",
+     "position": 2
+    },
+    {
+     "date": "2026-11-17",
+     "description": "InstaShop",
+     "amount": -88.7,
+     "dayLabel": "Tuesday",
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "image": "IMG_5420",
+     "position": 3
+    },
+    {
+     "date": "2026-11-17",
+     "description": "International Transaction Fee",
+     "amount": -8.16,
+     "dayLabel": "Tuesday",
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "image": "IMG_5420",
+     "position": 4
+    },
+    {
+     "date": "2026-11-17",
+     "description": "International Transaction Fee",
+     "amount": -0.83,
+     "dayLabel": "Tuesday",
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "image": "IMG_5420",
+     "position": 5
+    },
+    {
+     "date": "2026-11-17",
+     "description": "International Trxn Fee VAT Charges",
+     "amount": -0.41,
+     "dayLabel": "Tuesday",
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "image": "IMG_5420",
+     "position": 6
+    },
+    {
+     "date": "2026-11-17",
+     "description": "International Trxn Fee VAT Charges",
+     "amount": -0.04,
+     "dayLabel": "Tuesday",
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "image": "IMG_5420",
+     "position": 7
+    },
+    {
+     "date": "2026-11-15",
+     "description": "iHerb (faded)",
+     "amount": -296.57,
+     "alreadyStaged": "adib-cc-app-20261114-20261117.json",
+     "confidence": "low - faded",
+     "image": "IMG_5420",
+     "position": 8
+    }
+   ]
+  }
+ ]
+}
