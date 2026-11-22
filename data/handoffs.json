@@ -1317,6 +1317,6 @@
   "from": "Uploader",
   "to": "Finance",
   "item": "22 Nov 13:48-13:58 screenshots (17 images) staged raw per image, alreadyStaged flagged, account numbers redacted. 9 files in data/staging/statements/: santander-everyday-20261122 (DD 334.99 on 20 Nov, 11,284.13, ties); mbna-2-stmt-20261122 (new stmt 1,782.95, min 44.57 due 17 Dec); adib-cc-app-20261117-20261122 (AED, 39 rows over 6 images, 19 new 19-22 Nov = 2,345.64; FIRST balance read since 28 Oct: available cover limit 47,231.28, outstanding 22,268.72 derived, total amount due 0.00, DD 5%); amex-gold-20261122 (SP SHOP PLYMOUTH 460.00 on 20 Nov); ba-amex-20261122 (Apple 24.99, balance 36.98); bos-20261109-20261123 (ties to 15,053.02); mashreq-tara-and-rent-20261122 (unchanged, indicative Nov 272.93); wise-20261113-20261122 (1 new: Deepstash 27.13 pending); nationwide-flexdirect-20261103-20261120 (OD interest 41.53, 351.96). Mashreq current unchanged at 7,112.90 - no file. CHECK URGENT: BoS shows NO Barclaycard DD (was listed for 20 Nov; min 118.02 due 23 Nov), NO M&S payment (min 183.29 was due 21 Nov) and NO Virgin payment (352.46 due 23 Nov). Also: BoS AQUA -0.06 on 23 Nov; ADIB ANTHROPIC CLAUDE SUB 775.01 pending 21 Nov. 7 ccBalances rows appended (Santander, MBNA 2, ADIB, Amex Gold, BA Amex, BoS OD, Nationwide OD).",
-  "status": "open"
+  "status": "done"
  }
 ]
