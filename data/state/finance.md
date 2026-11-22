@@ -14,7 +14,7 @@ URGENT 22 NOV: M&S min 183.29 was due 21 Nov - NOT PAID (no BoS row). Barclaycar
 Nov to 22 Nov (73% of month): food 6,641/9,000 (74%; 2,359 left = 295/day; 19-22 Nov ran 389/day) | whatever 4,236/5,000 | misc 1,663/2,000 | baby 625/1,000 | phone 468/315 | InstaShop 27 orders = 2,672 this month.
 Card: ledger charges 21,351 vs 22,275 implied by the balance -> ~924 unseen (16 and 18 Nov not captured) - get those two days at the next upload. Statement 30 Nov heading ~25-27K incl the 5,000 visa deposit.
 REBILLED CANCELLED SUBS: Anthropic 775.01 pending on ADIB 21 Nov (cancelled Oct); Deepstash 27.13 pending on Wise 22 Nov (second rebill). Apple 24.99 on BA Amex 20 Nov. Aqua 0.06 DD 23 Nov (residual).
-STILL OPEN: Holiday Inn 320 and Virgin Mobile 299.25 (15 Nov) - no answer yet; visa deposit 5,000 refund not landed; J122 crypto fee 8,000 vs 9,010.
+ANSWERED 22 Nov: Holiday Inn 320 = eating out (food now 6,961/9,000, 255/day left); Virgin Mobile 299.25 = Calum's phone (phone 468/315). STILL OPEN: visa deposit 5,000 refund not landed; J122 crypto fee 8,000 vs 9,010.
 ## 18 NOV (h0154) - data to 17 Nov (ADIB), 16 Nov (BoS). Calum: no other changes on any account.
 BoS 15,388.07 | MBNA 2 1,782.95 (DD 47.54 paid 16 Nov) | Mashreq 7,112.90 and pot 77,069.83 unchanged.
 15-17 Nov card spend 1,565: food 610 (InstaShop x4 = 548, Deliveroo 62), iHerb 297 (misc) + intl fee 9, Holiday Inn 320 (ASK), Virgin Mobile 299.25 (ASK - prepaid year was meant to cover), YouTube 30.
