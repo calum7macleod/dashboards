@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "account": "BoS",
+  "currency": "GBP",
+  "period": "9-23 Nov 26",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5430",
+   "IMG_5429"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "balance": 15053.02,
+   "overdraftLimit": 3000.0,
+   "closingBalancePrinted": 15053.02,
+   "upcoming": [
+    {
+     "description": "CORRINA FLAHER",
+     "amount": -150.0,
+     "when": "In 2 days",
+     "date": "2026-11-24"
+    }
+   ]
+  },
+  "flags": [
+   "Chain ties 15,388.07 (16 Nov) - 334.99 = 15,053.08 - 0.06 = 15,053.02 printed",
+   "B/CARD PLAT VISA DD (listed 'In 2 days' on 18 Nov, i.e. 20 Nov) is NOT in the 20 Nov rows and not in upcoming - Barclaycard min 118.02 due 23 Nov",
+   "No M&S payment in rows 9-23 Nov - M&S min 183.29 was due 21 Nov",
+   "No Virgin Money payment visible - Virgin app said 352.46 would be taken 23 Nov",
+   "23 Nov AQUA -0.06 is forward-dated by the bank (captured Sun 22 Nov); Aqua balance was 0.00 on 28 Oct",
+   "Only 1 upcoming payment shown ('View all' not opened)"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "accountType": "Classic current account",
+  "dates": "'In 2 days' = Tue 24 Nov",
+  "rowCount": 7
+ },
+ "images": [
+  {
+   "image": "IMG_5430",
+   "rows": [
+    {
+     "date": "2026-11-23",
+     "description": "AQUA",
+     "amount": -0.06,
+     "balance": 15053.02,
+     "image": "IMG_5430",
+     "position": 1
+    },
+    {
+     "date": "2026-11-20",
+     "description": "SANTANDERCARDS LTD",
+     "amount": -334.99,
+     "balance": 15053.08,
+     "image": "IMG_5430",
+     "position": 2
+    }
+   ]
+  },
+  {
+   "image": "IMG_5429",
+   "rows": [
+    {
+     "date": "2026-11-20",
+     "description": "SANTANDERCARDS LTD",
+     "amount": -334.99,
+     "balance": 15053.08,
+     "image": "IMG_5429",
+     "position": 1
+    },
+    {
+     "date": "2026-11-16",
+     "description": "MBNA LIMITED",
+     "amount": -47.54,
+     "balance": 15388.07,
+     "alreadyStaged": "bos-20261116.json",
+     "image": "IMG_5429",
+     "position": 2
+    },
+    {
+     "date": "2026-11-12",
+     "description": "AMERICAN EXP 3773",
+     "amount": -13.98,
+     "balance": 15435.61,
+     "alreadyStaged": "bos-20261105-20261112.json",
+     "image": "IMG_5429",
+     "position": 3
+    },
+    {
+     "date": "2026-11-12",
+     "description": "L G PRICE",
+     "amount": -345.0,
+     "balance": 15449.59,
+     "alreadyStaged": "bos-20261105-20261112.json",
+     "image": "IMG_5429",
+     "position": 4
+    },
+    {
+     "date": "2026-11-09",
+     "description": "CALUM WISE",
+     "amount": -716.53,
+     "balance": 15794.59,
+     "alreadyStaged": "bos-20261105-20261112.json",
+     "image": "IMG_5429",
+     "position": 5
+    }
+   ]
+  }
+ ]
+}
