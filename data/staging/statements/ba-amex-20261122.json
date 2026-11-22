@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "account": "BA Amex",
+  "currency": "GBP",
+  "period": "5-20 Nov 26",
+  "source": "app screenshots Sun 22 Nov 26 13:48-13:58 Dubai",
+  "images": [
+   "IMG_5427",
+   "IMG_5426"
+  ],
+  "method": "per Finance h0018/h0045: per image, on-screen order, overlaps left in",
+  "sign": "as printed",
+  "printed": {
+   "totalBalance": 36.98,
+   "balanceDue": 0.0,
+   "paymentStatus": "Payment not required at this time",
+   "availableCredit": 763.0,
+   "avios": 8023
+  },
+  "flags": [
+   "11.99 (15 Nov) + 24.99 = 36.98 printed",
+   "card digits not stored"
+  ],
+  "enteredBy": "Uploader",
+  "enteredOn": "2026-11-22",
+  "rowCount": 5
+ },
+ "images": [
+  {
+   "image": "IMG_5427",
+   "rows": []
+  },
+  {
+   "image": "IMG_5426",
+   "rows": [
+    {
+     "date": "2026-11-20",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 24.99,
+     "image": "IMG_5426",
+     "position": 1
+    },
+    {
+     "date": "2026-11-12",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 11.99,
+     "alreadyStaged": "ba-amex-20261115.json",
+     "image": "IMG_5426",
+     "position": 2
+    },
+    {
+     "date": "2026-11-12",
+     "description": "PAYMENT RECEIVED - THANK YOU",
+     "amount": -13.98,
+     "alreadyStaged": "ba-amex-20261115.json",
+     "image": "IMG_5426",
+     "position": 3
+    },
+    {
+     "date": "2026-11-07",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "alreadyStaged": "ba-amex-20261115.json",
+     "image": "IMG_5426",
+     "position": 4
+    },
+    {
+     "date": "2026-11-05",
+     "description": "APPLE.COM/BILL HOLLYHILL",
+     "amount": 6.99,
+     "alreadyStaged": "ba-amex-20261115.json",
+     "image": "IMG_5426",
+     "position": 5
+    }
+   ]
+  }
+ ]
+}
