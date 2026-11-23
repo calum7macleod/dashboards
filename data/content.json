@@ -162,15 +162,15 @@
     {
       "id": "c18",
       "title": "Was Covid or The Iran War Worse for Dubai Property Market",
-      "series": "Dubai data (Jake-shape monthly update)",
+      "series": "Hooks 23 Nov (fear-led)",
       "status": "scripted",
       "priority": "high",
       "created": "2026-10-08",
       "postDate": null,
-      "hook": "Text: Was Covid or The Iran War Worse for Dubai Property Market",
-      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Covid Q3 2020: vol -19%, value -15% (14.3 -> 12.2), off-plan -47%, ready +19%, ready apts -16%, villas -9%. Conflict Q3 2026: vol -38%, value -47% (140 -> 73.9), off-plan -37%, ready -40%, ready apts 1.66m +2%, villas 6.46m -2%. Drop 66bn > whole Q3 2022. 2021 2.69x. Q3 2025 highest Q3 by value (Q2 2025 152.7 higher). All verified 8 Oct against DLD files. Add 'residential' once; last line (AD skin) recommended. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md. | 16 Nov: Calum re-raised as an idea - back to idea. 8 Oct script uses Q3 numbers, refresh before use. | 23 Nov ANSWER (DLD residential transfers, Calum's CSVs; PIX index): COVID Mar-Sep 2020 vs 2019: sales 19,837->14,772 (-26%), value AED 32.4bn->25.3bn (-22%); worst month May 2020 -59% sales/-60% value; back above prior year by Aug 2020 (5 months); ready -66% in Apr-May (lockdown), full-year 2020 -16% sales; prices -8% Jan 2020->Feb 2021 trough, back to pre-Covid Jul 2021. CONFLICT Mar-Sep 2026 vs 2025: sales 120,901->82,970 (-31%), value AED 330bn->197bn (-40%, ~$90bn->$54bn); every month down, Sep -46% as bad as May (-46% sales, -60% value) - no recovery yet; ready -48%, off-plan -22%; prices -7% from Jan 2026 peak to Oct, still falling ~1%/month, -5.5% YoY. VERDICT: conflict worse on depth, length and money; Covid sharper single shock but V-shaped. Caveat: 2026 at its worst still sells ~5x Covid-era volumes; Covid hit a 5-year falling market, conflict hit a record high. Oct 2026 in file is partial - exclude. Market to stamp.",
-      "stage": "idea",
-      "stageDate": "2026-11-16"
+      "hook": "Text: Was Covid or The Iran War Worse for Dubai Property Market | Speech: One was so much worse than the other here's the numbers",
+      "notes": "FINAL per Calum 8 Oct, numbers verified by Content. Covid Q3 2020: vol -19%, value -15% (14.3 -> 12.2), off-plan -47%, ready +19%, ready apts -16%, villas -9%. Conflict Q3 2026: vol -38%, value -47% (140 -> 73.9), off-plan -37%, ready -40%, ready apts 1.66m +2%, villas 6.46m -2%. Drop 66bn > whole Q3 2022. 2021 2.69x. Q3 2025 highest Q3 by value (Q2 2025 152.7 higher). All verified 8 Oct against DLD files. Add 'residential' once; last line (AD skin) recommended. Source files: DLD residential sales volume/value, title deed vs Oqood, apt + villa, Jan 2017-Sep 2026 (Calum upload 8 Oct). Scripts in content-assets/scripts/2026-10-08-dubai-data-reels.md. | 16 Nov: Calum re-raised as an idea - back to idea. 8 Oct script uses Q3 numbers, refresh before use. | 23 Nov ANSWER (DLD residential transfers, Calum's CSVs; PIX index): COVID Mar-Sep 2020 vs 2019: sales 19,837->14,772 (-26%), value AED 32.4bn->25.3bn (-22%); worst month May 2020 -59% sales/-60% value; back above prior year by Aug 2020 (5 months); ready -66% in Apr-May (lockdown), full-year 2020 -16% sales; prices -8% Jan 2020->Feb 2021 trough, back to pre-Covid Jul 2021. CONFLICT Mar-Sep 2026 vs 2025: sales 120,901->82,970 (-31%), value AED 330bn->197bn (-40%, ~$90bn->$54bn); every month down, Sep -46% as bad as May (-46% sales, -60% value) - no recovery yet; ready -48%, off-plan -22%; prices -7% from Jan 2026 peak to Oct, still falling ~1%/month, -5.5% YoY. VERDICT: conflict worse on depth, length and money; Covid sharper single shock but V-shaped. Caveat: 2026 at its worst still sells ~5x Covid-era volumes; Covid hit a 5-year falling market, conflict hit a record high. Oct 2026 in file is partial - exclude. Market to stamp. | 23 Nov: Alt speech: One cost Dubai 2 billion dollars of sales, the other has cost 36.",
+      "stage": "hooked",
+      "stageDate": "2026-11-23"
     },
     {
       "id": "c19",
@@ -1587,16 +1587,16 @@
     },
     {
       "id": "c123",
-      "title": "Why Dubai And Abu Dhabi Brokers Fight",
-      "series": "Ideas (Calum)",
+      "title": "Why Abu Dhabi and Dubai Brokers Fight",
+      "series": "Hooks 23 Nov (fear-led)",
       "status": "template",
       "priority": "medium",
       "created": "2026-11-16",
       "postDate": null,
-      "hook": "",
+      "hook": "Text: Why Abu Dhabi and Dubai Brokers Fight | Speech: Abu Dhabi has a better product but Dubai has better brokers",
       "notes": "Abu Dhabi: good product, no competition. Dubai: better brokers.",
-      "stage": "idea",
-      "stageDate": "2026-11-16"
+      "stage": "hooked",
+      "stageDate": "2026-11-23"
     },
     {
       "id": "c124",
@@ -1626,16 +1626,16 @@
     },
     {
       "id": "c126",
-      "title": "The UK Is Refinancing Its Debt From 1% To 5%",
-      "series": "Ideas (Calum)",
+      "title": "The UK is Refinancing its Debt from 1% to 5%",
+      "series": "Hooks 23 Nov (fear-led)",
       "status": "template",
       "priority": "medium",
       "created": "2026-11-16",
       "postDate": null,
-      "hook": "",
-      "notes": "UK vs UAE. Market to stamp.",
-      "stage": "idea",
-      "stageDate": "2026-11-16"
+      "hook": "Text: The UK is Refinancing its Debt from 1% to 5% | Speech: Interest alone already costs 109 billion pounds a year it's about to get a lot worse",
+      "notes": "UK vs UAE. Market to stamp. | 23 Nov: OBR Oct 2026: debt interest 2025-26 GBP 109bn (3.5% GDP), GBP 39bn in 2019-20, GBP 160bn forecast 2031-32. '1% to 5%' to stamp.",
+      "stage": "hooked",
+      "stageDate": "2026-11-23"
     },
     {
       "id": "c127",
@@ -1691,16 +1691,16 @@
     },
     {
       "id": "c131",
-      "title": "Is Abu Dhabi Overbuilding (Who Will Live, part 2)",
-      "series": "Ideas (Calum)",
+      "title": "Is Abu Dhabi Overbuilding",
+      "series": "Hooks 23 Nov (fear-led)",
       "status": "template",
       "priority": "high",
       "created": "2026-11-17",
       "postDate": null,
-      "hook": "",
-      "notes": "Calum idea 17 Nov: another reel on the same topic as 'Who Is Actually Going To Live In All These Abu Dhabi Offplan Properties' (c36, posted 16 Nov) with a stronger hook. 'Very good topic.' Hook to be written in his format (5 text, then 5 speech). | 17 Nov: Calum wants more of this data + hook, next one MORE AGGRESSIVE - state the objection as the claim, e.g. 'There's nobody to buy these Abu Dhabi off plan properties', then knock it down with the same data. Part 1 (c36) at 14h on Instagram: 2,321 views, 19 shares, 18 saves, skip 50%, avg watch 17s, 56.6% Reels tab - second best reel after Leave Dubai. Aim 60s (part 1 was 1:39; half gone by 4s, ~20% at 30s). | 17 Nov 09:13: Calum - 'screamer of a hook: Is Abu Dhabi Overbuilding'. Candidate text hooks now: 'Is Abu Dhabi Overbuilding' and 'There's Nobody To Buy These Abu Dhabi Off-Plan Properties'. Could be two separate reels.",
-      "stage": "idea",
-      "stageDate": "2026-11-17"
+      "hook": "Text: Is Abu Dhabi Overbuilding | Speech: Property sales up 178% year on year in the first half, that doesn't sound sustainable",
+      "notes": "Calum idea 17 Nov: another reel on the same topic as 'Who Is Actually Going To Live In All These Abu Dhabi Offplan Properties' (c36, posted 16 Nov) with a stronger hook. 'Very good topic.' Hook to be written in his format (5 text, then 5 speech). | 17 Nov: Calum wants more of this data + hook, next one MORE AGGRESSIVE - state the objection as the claim, e.g. 'There's nobody to buy these Abu Dhabi off plan properties', then knock it down with the same data. Part 1 (c36) at 14h on Instagram: 2,321 views, 19 shares, 18 saves, skip 50%, avg watch 17s, 56.6% Reels tab - second best reel after Leave Dubai. Aim 60s (part 1 was 1:39; half gone by 4s, ~20% at 30s). | 17 Nov 09:13: Calum - 'screamer of a hook: Is Abu Dhabi Overbuilding'. Candidate text hooks now: 'Is Abu Dhabi Overbuilding' and 'There's Nobody To Buy These Abu Dhabi Off-Plan Properties'. Could be two separate reels. | 23 Nov: 178% = Cavendish H1 2026 vs H1 2025 (Calum confirmed 23 Nov - say 'first half'). Jan-Oct is +90% (ADREC). Jul-Oct slowed to ~+21%.",
+      "stage": "hooked",
+      "stageDate": "2026-11-23"
     },
     {
       "id": "c132",
@@ -1717,16 +1717,16 @@
     },
     {
       "id": "c133",
-      "title": "Rental Prices Dropping (copy Jake's format)",
-      "series": "Ideas (Calum)",
+      "title": "How Much is Rent Dropping for Apartments in Dubai",
+      "series": "Hooks 23 Nov (fear-led)",
       "status": "template",
       "priority": "high",
       "created": "2026-11-17",
       "postDate": null,
-      "hook": "",
-      "notes": "Calum 17 Nov: strong idea from Jake - rental prices dropping; copy his format. Need the Jake reel to break down structure; Market for the rent data (Dubai vs Abu Dhabi).",
-      "stage": "idea",
-      "stageDate": "2026-11-17"
+      "hook": "Text: How Much is Rent Dropping for Apartments in Dubai | Speech: I looked at rental prices for apartments comparing November to February the last month before the war",
+      "notes": "Calum 17 Nov: strong idea from Jake - rental prices dropping; copy his format. Need the Jake reel to break down structure; Market for the rent data (Dubai vs Abu Dhabi). | 23 Nov: Calum has the data, to finish. Add same-month-last-year comparison (seasonality).",
+      "stage": "hooked",
+      "stageDate": "2026-11-23"
     },
     {
       "id": "c134",
@@ -1754,12 +1754,12 @@
     {
       "id": "c136",
       "title": "Could Hudayriyat Island Fail",
-      "series": "Hudayriyat",
-      "stage": "idea",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
       "status": "",
-      "stageDate": "2026-11-22",
-      "hook": "Text: Could Hudayriyat Island Fail",
-      "notes": "Calum 22 Nov: 'really good hook idea'. Fear-led (20-21 Nov fundamental) on his best-performing topic (Leave Dubai for Hudayriyat 12,360 views). Body must answer honestly: what would make it fail (nobody lives there yet, 5 years of construction, one developer, 165k planned population, more launches = more supply, Dubai-style stall) vs why it probably won't (Modon 85% L'imad, infrastructure built first - surf pool, velodrome, beaches open, launches sold out, 20 min to ADGM). Also a YouTube candidate. Speech hook to pick."
+      "stageDate": "2026-11-23",
+      "hook": "Text: Could Hudayriyat Island Fail | Speech: 13.4 billion dollars of sales so far without one property handed over, a lot is at stake",
+      "notes": "Calum 22 Nov: 'really good hook idea'. Fear-led (20-21 Nov fundamental) on his best-performing topic (Leave Dubai for Hudayriyat 12,360 views). Body must answer honestly: what would make it fail (nobody lives there yet, 5 years of construction, one developer, 165k planned population, more launches = more supply, Dubai-style stall) vs why it probably won't (Modon 85% L'imad, infrastructure built first - surf pool, velodrome, beaches open, launches sold out, 20 min to ADGM). Also a YouTube candidate. Speech hook to pick. | 23 Nov: ADREC to 30 Oct 2026: 6,841 sales, AED 49.3bn ($13.4bn); 320 off-plan resales."
     },
     {
       "id": "c137",
@@ -1770,6 +1770,96 @@
       "stageDate": "2026-11-23",
       "hook": "",
       "notes": "Calum 23 Nov - idea for another day. ADREC file to 30 Oct 2026: developer off-plan sales 2026 AED 88.9bn; Hudayriyat AED 31.5bn (35%), 3,779 homes of 17,346 (22% of homes, 35% of money). Hudayriyat total since Oct 2024: 6,841 sales, AED 49.3bn ($13.4bn)."
+    },
+    {
+      "id": "c138",
+      "notes": "23 Nov: True by value: AD = 9% of Dubai Jan-Sep 2024, 35% Jan-Sep 2026 (3.7x). By count 2.3x. Alt speech: Two years ago it sold a tenth of what Dubai did, now it's a third.",
+      "title": "Is Abu Dhabi Property Hype that Will Fail",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Is Abu Dhabi Property Hype that Will Fail | Speech: Sales have tripled relative to Dubai in 2 years, that sounds too fast"
+    },
+    {
+      "id": "c139",
+      "notes": "23 Nov: Self-implicating - Calum is one of them. Rated best of the 23 Nov set.",
+      "title": "Are Agents Saying They'll Move to Abu Dhabi Just to Make Money",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Are Agents Saying They'll Move to Abu Dhabi Just to Make Money | Speech: It's easier to sell something if you say you're going to buy it"
+    },
+    {
+      "id": "c140",
+      "notes": "23 Nov: Market to stamp what Dubai law lets a developer retain by build stage before filming. Dubai Mar-Sep 2026 value -40%.",
+      "title": "Can I get My Money Back if I Don't Like My Dubai Offplan Investment",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Can I get My Money Back if I Don't Like My Dubai Offplan Investment | Speech: Dubai property sales have dropped this year"
+    },
+    {
+      "id": "c141",
+      "notes": "23 Nov: Calum has the data, to finish. Add same-month-last-year comparison (seasonality).",
+      "title": "How Much is Rent Dropping for Villas in Dubai",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: How Much is Rent Dropping for Villas in Dubai | Speech: I looked at rental prices for villas comparing November to February the last month before the war"
+    },
+    {
+      "id": "c142",
+      "notes": "23 Nov: PIX: prices fell five months running Jun-Oct 2026, -7% from Jan peak; sales value -40% Mar-Sep.",
+      "title": "Is Dubai Property Finished",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Is Dubai Property Finished | Speech: Market sentiment hasn't recovered since the war, is this the beginning of the fall"
+    },
+    {
+      "id": "c143",
+      "notes": "23 Nov: 2008-11 ~50% (unstamped); 2014-21 -23% (PIX), 8 years to recover; Covid -8%.",
+      "title": "Will Abu Dhabi Property Market Crash Like Dubai",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Will Abu Dhabi Property Market Crash Like Dubai | Speech: The worst was a 50% price drop"
+    },
+    {
+      "id": "c144",
+      "notes": "",
+      "title": "Is Abu Dhabi Property a Bubble",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Is Abu Dhabi Property a Bubble | Speech: I bought offplan there myself, should I be scared"
+    },
+    {
+      "id": "c145",
+      "notes": "",
+      "title": "Should Owners Cut Losses on Dubai Property Now",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Should Owners Cut Losses on Dubai Property Now | Speech: My opinion on this is different to most agents"
+    },
+    {
+      "id": "c146",
+      "notes": "23 Nov: Confirmed 2026: Tara Park P1 + P2, Bashayer 3-4, Golf Estates (AED 13bn+), Bashayer final, Wadeem Gardens P1. Heads-up to Modon contact before posting suggested.",
+      "title": "Is Modon Launching Too Many Projects",
+      "series": "Hooks 23 Nov (fear-led)",
+      "stage": "hooked",
+      "stageDate": "2026-11-23",
+      "status": "",
+      "hook": "Text: Is Modon Launching Too Many Projects | Speech: 6 this year so far including one at 3.5 billion dollars the biggest in the country's history"
     }
   ],
   "posted": [

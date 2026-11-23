@@ -192,3 +192,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Long-form = expand reels that already won. A reel is the test, YouTube is the full version.
 - First: Who Is Going To Live In All These Abu Dhabi Off-Plan Properties (c135) - record soon.
 - Queue by reel performance: Leaving Dubai for Hudayriyat (12,063), Who Will Live (4,849), EMAAR founder (3,129), Rail (2,905), Lulu (2,756).
+
+## HOOKS 23 NOV - 15 fear-led hooks locked (Calum)
+- On the board as hooked, series "Hooks 23 Nov (fear-led)": c18, c136, c131, c138, c139, c140, c133, c141, c142, c143, c123, c126, c144, c145, c146.
+- Calum's calls: 178% stays for Overbuilding (it is H1 year on year - say "first half"); rent reels (apartments, villas) to finish, he has the data; fine with four reels on the same overbuild/hype/crash/bubble answer; fine with questioning Dubai.
+- His hook shape that works: a plain question in the viewer's own words, naming the thing they own and the fear. Not clever, not compressed.
+- Reminder set 21 Nov delivered at the start of this session.
