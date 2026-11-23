@@ -503,3 +503,4 @@
 {"date": "2026-11-22", "agent": "Finance", "did": "22 Nov Sunday close (h0165): ledger rebuilt, November vs budget, three card payments flagged urgent, two cancelled subs rebilling", "wrote": ["data/state/finance.md", "data/finance/ledger/", "data/handoffs.json"]}
 {"date": "2026-11-22", "agent": "Uploader", "did": "Staged 1 private WHOOP trends file (11 screenshots, 11 metrics); handoff to Life Coach", "wrote": ["private:data/staging/2026-11-22-whoop-trends.json", "data/handoffs.json"]}
 {"date": "2026-11-22", "agent": "Uploader", "did": "Staged 1 private MyFitnessPal week file (5 screenshots); handoff to Life Coach", "wrote": ["private:data/staging/2026-11-22-myfitnesspal-week.json", "data/handoffs.json"]}
+{"date": "2026-11-23", "agent": "Content", "did": "c18 retitled 'Was Covid or The Iran War Worse for Dubai Property Market'; DLD + PIX comparison saved to card", "wrote": ["data/content.json"]}
