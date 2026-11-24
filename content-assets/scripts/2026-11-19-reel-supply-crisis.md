@@ -57,3 +57,23 @@ Even if only half of them need a home like these, it's still 4 times short.
 - 4 people a property = assumption, said as one.
 - "Most projects hand over 4 years after launch" - Calum's figure.
 - Same numbers as c59 and c114 - film one, space or drop the others.
+
+
+## v4 - Calum's wording with Content's four fixes (19 Nov). NOT LOCKED. ~115 words, ~45s.
+
+Text: Abu Dhabi has a Property Supply Crisis
+Speech: The city needs 8 times more properties than it's handing over in the next 4 years
+
+It has 37 thousand in construction due to hand over by 2030
+
+At 4 people a property, capacity is being added for 148 thousand people
+
+288 thousand were added last year alone, nearly double
+
+At that pace, by 2030 it will have added a million people
+
+They need 288 thousand properties. It's building 37. 8 times short. (Content's addition - pays off the hook; Calum yet to accept)
+
+To add more supply takes time, most projects hand over 4 years after they launch, beyond 2030 even if launching today
+
+Very limited supply and increasing demand increases prices, this is why I invested in Abu Dhabi myself

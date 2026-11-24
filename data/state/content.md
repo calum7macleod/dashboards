@@ -198,3 +198,39 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Calum's calls: 178% stays for Overbuilding (it is H1 year on year - say "first half"); rent reels (apartments, villas) to finish, he has the data; fine with four reels on the same overbuild/hype/crash/bubble answer; fine with questioning Dubai.
 - His hook shape that works: a plain question in the viewer's own words, naming the thing they own and the fear. Not clever, not compressed.
 - Reminder set 21 Nov delivered at the start of this session.
+
+## HANDOVER FROM THE LONG CHAT (written 24 Nov 2026) - read this first in any new chat
+
+### Open, in order
+1. NOTHING SCHEDULED after 24 Nov. Ready to post: only the four held Third Hill reels (one a week, alternating days). Eight island reels + the islands YouTube film + AI Minister have been with the editor since 13 Nov / 19 Nov - chase.
+2. 24 Nov: Calum reposting the exact "Who Will Live" reel at 18:07 with a new caption (test of Jake's repost-a-week-later method; Jake's audience is looking after the 23 Nov announcement). Judge against the original at the same age: 2,321 at 14h, 3,172 at 20h, 4,849 at 3 days (now 6,701, 89 shares, 70 saves). Also posting a carousel cut of "Leave Dubai for Hudayriyat".
+3. Three scripts drafted, waiting on Calum's "locked": Supply Crisis (c86), Casino 2029 (c115), Paraguay (c103). Files in content-assets/scripts/.
+4. 15 fear-led hooks locked 23 Nov (series "Hooks 23 Nov (fear-led)") - none scripted. Content's first five: Agents moving to Abu Dhabi, Bubble, Could Hudayriyat Fail, Covid vs War, Is Dubai Finished. Seven speech lines are weak (no number or stake) - rewrites offered, not yet taken.
+5. Pile: ~33 hooked, ~20 scripted unfilmed. Next job is scripts and a filming day, not more hooks.
+6. YouTube: Calum wants a world-class channel. Content owns it (no new agent). Do it in a fresh chat: audit first (YouTube is in Metricool). Strategy: expand reels that won - Who Will Live first (c135, title to lock; Content's pick "Is Abu Dhabi Overbuilding? Who Will Live In All These Homes"). Islands film with editor; Mega-Projects scripted (title 67 chars - trim to under 60).
+7. AI Minister (c80): is it the same footage as the Anthropic reel posted 20 Nov, or separate? Unanswered.
+8. Friday scoreboard not delivered 20 Nov - owe leads per reel and both drop rates.
+
+### How Calum wants hooks (learned the hard way 23 Nov)
+- A plain question in the viewer's own words, naming the thing they own and the fear: "Could Hudayriyat Island Fail", "Is Abu Dhabi Overbuilding", "Is Dubai Property Finished". Longer and conversational is fine.
+- NOT clever or compressed. He rejected "When You Sell, You're Competing With Your Own Developer" style as "I barely understand them".
+- Bar: an owner thinks "I need to watch this"; someone scared of buying thinks the same.
+- Text stops them; speech must give a number or a stake.
+- Three root fears: is the demand real (market) / can I get my money out (deal) / am I being a fool (self). Fear 2 has almost no content yet and is closest to the deal.
+
+### Numbers pulled this week (sources: Calum's ADREC file to 30 Oct 2026, DLD monthly files, PropertyIndex; all unstamped by Market)
+- Abu Dhabi Jan-Oct 2026 vs 2025: value +90% ($16.7bn to $31.7bn), sales +37% (18,619 to 25,465); developer off-plan value +124%, homes +50%; off-plan resales +195% (1,048 to 3,091); ready sales -16%; villas +194%; Hudayriyat +316%. Growth was all H1 - Jul-Oct ~+21%, Oct sales count -24%.
+- 178% = Cavendish H1 2026 vs H1 2025 only. Scripts c76 and c83 say/imply "this year" - need "in the first half" or 90%.
+- Hudayriyat total: 6,841 sales, AED 49.3bn ($13.4bn) since Oct 2024; 320 off-plan resales; 35% of all 2026 off-plan money.
+- Off-plan by developers: $2.6bn in 2022 to $24.2bn in 2026 (10 months); projects selling 27 (2019) to 211 (2026); 66,430 off-plan homes since 2019.
+- Dubai vs Abu Dhabi value: 2022 10.6x, 2024 9.1x, 2026 Jan-Sep 2.9x ($80.7bn vs $28.1bn). Count: 11x to 5.1x. Dubai Jan-Sep -27%, Abu Dhabi +111%. Abu Dhabi 2019-2020 look odd - start charts at 2021.
+- Covid vs conflict (Dubai): Covid Mar-Sep 2020 sales -26%, value -22%, worst month -59%, recovered in 5 months, prices -8%. Conflict Mar-Sep 2026 sales -31%, value -40% ($90bn to $54bn), ready -48%, prices -7% from Jan peak and falling.
+- Dubai crashes: 2008-11 ~50% (unstamped); Jul 2014-Feb 2021 -23%, 8 years to recover; five straight monthly price falls Jun-Oct 2026.
+- UK debt interest: GBP 109bn 2025-26 (OBR Oct 2026), was 39bn in 2019-20. Reel caption says $150bn, TV screen 14 says $140bn - align to ~$145bn.
+- Modon 2026 launches confirmed: Tara Park P1, P2, Bashayer 3-4, Golf Estates, Bashayer final, Wadeem Gardens P1.
+- Instagram this week: floor ~2,000 (was ~1,200); ceiling 13,210 (Leave Dubai); nothing shared this week (best 26). Lead reels are low-view DM reels (Disney 2 leads, What Is Third Hill 1, Why I Bought 1).
+
+### Standing reminders
+- At the start of any hooks session, reels or YouTube: "Press on people's insecurities and fears about the market, and use them." (delivered 23 Nov; keep doing it)
+- Third hill reels: one a week. Personal reel: one a week, not written in batches.
+- Word counts: count them properly - Content miscounted the casino script (said 135, was 158).
