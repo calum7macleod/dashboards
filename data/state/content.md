@@ -234,3 +234,20 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - At the start of any hooks session, reels or YouTube: "Press on people's insecurities and fears about the market, and use them." (delivered 23 Nov; keep doing it)
 - Third hill reels: one a week. Personal reel: one a week, not written in batches.
 - Word counts: count them properly - Content miscounted the casino script (said 135, was 158).
+
+## YOUTUBE CHANNEL BUILD - started 24 Nov 2026 (Content owns; done in the main chat at Calum's choice)
+### Audit (Metricool, to 24 Nov)
+- 33 subscribers (31 a month ago). 43 uploads: 6 long-form, 37 Shorts (reels auto-posted).
+- Long-form: Hudayriyat Island Tour 300 views / avg 2:29; Modon First-Ever Villa 240 / 2:54; What Is Abu Dhabi Doing With AED 100 Billion 179 / 1:34; How to Buy Property in Dubai from the UK 72 / 2:01; Inside Dubai's AED 34M Villa 51 / 2:05; Why I'm Leaving Dubai For Hudayriyat 45 views / avg 3:59 (best hold on the channel).
+- Shorts: median ~12 views (same reels do 2,000+ on Instagram). Shorts feed delivered 20 views in 3 months.
+- Traffic, last 3 months: YouTube search 653 (60%), subscribers 283, suggested 63, channel page 23, Shorts feed 20, notifications 19.
+- Subscribers by country: UAE 27%, India 18%, UK 14%, US 6%. Target is UK.
+- Not yet seen: channel page (banner, about, handle, links, trailer), thumbnails, click-through rate, retention curves - need YouTube Studio screenshots from Calum.
+### Read
+- Search finds the long-form; nothing else does. Titles written for search are the growth lever.
+- Long-form holds 2-4 minutes. Shorts are not travelling on YouTube - not worth effort beyond auto-posting.
+- Positioning is mixed (Dubai villa tours, Dubai how-to, Abu Dhabi). Channel needs one promise.
+### Plan proposed to Calum 24 Nov (awaiting his go on positioning + release day)
+- Promise: Abu Dhabi property for UK investors, from someone who put his own money in.
+- First six: Islands Explained (filmed) / Is Abu Dhabi Overbuilding - Who Will Live (c135) / Why I'm Leaving Dubai for Hudayriyat (full version) / Mega-Projects - Is Off-Plan Safe (scripted) / How To Buy Off-Plan In Abu Dhabi From The UK / Could Hudayriyat Island Fail (c136).
+- Fixed release day, fortnightly to start; playlists by journey; description, chapter, pinned-comment and end-screen template on every upload; Designer for banner + thumbnail system.
