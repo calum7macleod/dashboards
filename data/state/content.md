@@ -257,3 +257,19 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Repost test (Who Will Live, exact repost 24 Nov): 2,926 views at ~13h vs 2,321 for the original at 14h. Ahead. Check again at 3 days vs 4,849.
 - Leave Dubai carousel (24 Nov): feed-post views 7,525 on day one.
 - Leisure Destination: 1,773, 62% skip - weakest of the fortnight.
+
+## INSTAGRAM NATIVE INSIGHTS, 30 days, screenshot 25 Nov 10:53 (beats Metricool for anything under 48h and for feed/collab posts)
+| Post | Views | Shares | Follows |
+|---|---|---|---|
+| Raphael Homes announcement (Jake collab, 23 Nov) | 42k | 169 | 12 |
+| "Time to move on from White & Co" letter post (11 Nov) | 21k | 24 | 17 |
+| Leave Dubai for Hudayriyat reel (12 Nov) | 14k | 138 | 66 |
+| Leave Dubai carousel (24 Nov, 20h old) | 8.5k | 23 | 14 |
+| Who Will Live reel (16 Nov) | 7.2k | 112 | 36 |
+| Who Will Live exact repost (24 Nov, 16h old) | 4.5k | 67 | 19 |
+| GTA carousel (19 Nov) | 3.5k | 0 | - |
+| Lulu (17 Nov) | 3.4k | 27 | 12 |
+- Repost verdict: 4.5k at 16h vs 3,172 for the original at 20h. Reposting a winner works - clearly.
+- Top three posts by views are all Calum's own career or life decisions (joining Raphael Homes, leaving White & Co, leaving Dubai).
+- Follows come from market reels, not announcements: Leave Dubai 66, Who Will Live 36+19; the 42k announcement 12.
+- Jake's brokerage = Raphael Homes.
