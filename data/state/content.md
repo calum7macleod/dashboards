@@ -251,3 +251,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Promise: Abu Dhabi property for UK investors, from someone who put his own money in.
 - First six: Islands Explained (filmed) / Is Abu Dhabi Overbuilding - Who Will Live (c135) / Why I'm Leaving Dubai for Hudayriyat (full version) / Mega-Projects - Is Off-Plan Safe (scripted) / How To Buy Off-Plan In Abu Dhabi From The UK / Could Hudayriyat Island Fail (c136).
 - Fixed release day, fortnightly to start; playlists by journey; description, chapter, pinned-comment and end-screen template on every upload; Designer for banner + thumbnail system.
+
+## NUMBERS 25 Nov 2026 (Metricool)
+- Instagram followers: 3,423 (2 Nov) -> 3,583 (21 Nov) -> 3,745 (23 Nov). About +8 a day before the Jake announcement; about +160 across 22-23 Nov (134 gained on the 23rd alone).
+- Repost test (Who Will Live, exact repost 24 Nov): 2,926 views at ~13h vs 2,321 for the original at 14h. Ahead. Check again at 3 days vs 4,849.
+- Leave Dubai carousel (24 Nov): feed-post views 7,525 on day one.
+- Leisure Destination: 1,773, 62% skip - weakest of the fortnight.
