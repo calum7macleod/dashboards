@@ -286,3 +286,6 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Not sovereign funds: MGX (AI fund, about $50bn, founded by Mubadala and G42), Lunate (asset manager), Abu Dhabi Pension Fund $57bn. Federal: Emirates Investment Authority $116bn. Dubai: ICD $458bn.
 - Per resident: about $438,000 (1.813tn / 4.14m).
 - Scripts in the 26 Nov shoot doc say 1.9 trillion (55 Years, I Quit, Beachfront, Dubai Down) and the YouTube scripts say 1.7 trillion. Align to 1.8.
+
+## Captions - 26 Nov
+- No hashtags on captions from 26 Nov (Calum decision). Overrides the "3-5 hashtags" line in content law until he edits the agent file.
