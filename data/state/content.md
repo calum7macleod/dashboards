@@ -273,3 +273,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - Top three posts by views are all Calum's own career or life decisions (joining Raphael Homes, leaving White & Co, leaving Dubai).
 - Follows come from market reels, not announcements: Leave Dubai 66, Who Will Live 36+19; the 42k announcement 12.
 - Jake's brokerage = Raphael Homes.
+
+## CORRECTION 26 Nov 2026 - the 288,000 figure
+- 288,000 (288,400) is Abu Dhabi's population growth in 2024, not 2025. SCAD, published 30 Jun 2025: 3,847,585 to 4,135,985, up 7.5 per cent.
+- No 2025 population figure found as of 26 Nov 2026. "Last year" is wrong when said in late 2026 - say "in 2024" or "in the latest official count".
+- "18 residents per home sold" mixes years: 2024 population against about 15,900 off-plan sales, which is 2025. Same-year 2024 is about 30-34 per home (8,578 developer off-plan sales; 9,745 including resales).
+- Handoff h0169 to Market. Until stamped: use "288,000 in 2024" and drop or re-base the 18-to-1 line.
