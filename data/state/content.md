@@ -279,3 +279,10 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 - No 2025 population figure found as of 26 Nov 2026. "Last year" is wrong when said in late 2026 - say "in 2024" or "in the latest official count".
 - "18 residents per home sold" mixes years: 2024 population against about 15,900 off-plan sales, which is 2025. Same-year 2024 is about 30-34 per home (8,578 developer off-plan sales; 9,745 including resales).
 - Handoff h0169 to Market. Until stamped: use "288,000 in 2024" and drop or re-base the 18-to-1 line.
+
+## SOVEREIGN WEALTH - latest, pulled 26 Nov 2026 (supersedes the "say 1.9 trillion" line above)
+- Global SWF ranking, updated Nov 2026: ADIA $1,128bn (estimate, 5th in the world; was $1,187bn at Dec 2025), Mubadala $385bn (its own audited figure, end-2025, up 17 per cent), L'imad $300bn (estimate; ADQ's $263bn plus transfers; took over ADQ Jan 2026). Three funds = $1,813bn. Say "around 1.8 trillion".
+- XRG (ADNOC's investment arm) $151bn is also ranked as an Abu Dhabi fund. With it, $1,964bn - "nearly 2 trillion" is defensible only if XRG is named.
+- Not sovereign funds: MGX (AI fund, about $50bn, founded by Mubadala and G42), Lunate (asset manager), Abu Dhabi Pension Fund $57bn. Federal: Emirates Investment Authority $116bn. Dubai: ICD $458bn.
+- Per resident: about $438,000 (1.813tn / 4.14m).
+- Scripts in the 26 Nov shoot doc say 1.9 trillion (55 Years, I Quit, Beachfront, Dubai Down) and the YouTube scripts say 1.7 trillion. Align to 1.8.
