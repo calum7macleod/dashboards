@@ -289,3 +289,9 @@ Format of my edits: strike-through + bold, sentences stay whole, word count by w
 
 ## Captions - 26 Nov
 - No hashtags on captions from 26 Nov (Calum decision). Overrides the "3-5 hashtags" line in content law until he edits the agent file.
+
+## Posting plan - set by Calum 27 Nov
+- Order and dates are on each card's postDate in content.json (27 Nov to 16 Dec). His order, do not reshuffle.
+- Not placed: Is Yas Island Overhyped, YouTube Abu Dhabi Islands, AI Minister.
+- Editor deadlines: 55 Years back by 1 Dec, Is Abu Dhabi Overbuilding by 2 Dec, Gov Spending by 4 Dec, Casino by 5 Dec.
+- Planner page: artifact 'Posting Planner' (saves on his device; he sends the order with Copy my order). Never use an in-chat widget for planning - it loses state.
